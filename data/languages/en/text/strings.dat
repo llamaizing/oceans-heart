@@ -1,0 +1,29 @@
+text{ key = "0", value = "" }
+text{ key = "a1", value = "Get some whisky from \nthe secret stash" }
+text{ key = "a2", value = "Meet Juglan at the pier" }
+text{ key = "a3", value = "Investigate the Sodden \nCormorant Tavern" }
+text{ key = "a4", value = "Explore Spruce Head" }
+text{ key = "a5", value = "Investigate Briarwood \nDistillery" }
+text{ key = "a6", value = "Find a keyhole on \nKingsdown Isle" }
+text{ key = "a7", value = "Find clues in Hourglass \nFort" }
+text{ key = "b1", value = "Find the chart salesman \nin Ballast Harbor" }
+text{ key = "b2", value = "Return the stolen charts" }
+text{ key = "b3", value = "Find a keyhole for \nMallow's Key" }
+text{ key = "a8", value = "Travel to Oakhaven" }
+text{ key = "b4", value = "Find Morus at the \nSalamander Heartache" }
+text{ key = "a9", value = "Search for Hazel in\nOakhaven" }
+text{ key = "a10", value = "Look for Hazel at \nHornwart Inn" }
+text{ key = "a11", value = "Investigate the \nLibrary" }
+text{ key = "a12", value = "Track down the Burglar\nCrew at the port" }
+text{ key = "a13", value = "Find the secret tunnel\non Marblecliff" }
+text{ key = "a13.5", value = "Meet Hazel at her inn" }
+text{ key = "a14", value = "Get a Tidy Starfruit \nfrom a mangrove thicket" }
+text{ key = "a14.5", value = "Give Hazel a second to\nget amulet supplies" }
+text{ key = "a15", value = "Look for the \nOcean's Temple" }
+text{ key = "b5", value = "Get sleeping potion\nfrom the apothecary" }
+text{ key = "b6", value = "Find Monkshood on\nMarblecliff Mountain" }
+text{ key = "b7", value = "Meet Morus back at\nthe Saloon" }
+text{ key = "b8", value = "Find the pirates' ale\nin the storehouse" }
+text{ key = "b9", value = "Sneak into Fort Crow" }
+text{ key = "b10", value = "Bring the Council's\nHideout Chart to Morus" }
+text{ key = "b11", value = "Sail to Snapmast Reef\nwith Morus" }
