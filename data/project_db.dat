@@ -798,6 +798,7 @@ sprite{ id = "npc/sitting_7", description = "sitting man 7" }
 sprite{ id = "npc/sitting_8", description = "sitting man 8" }
 sprite{ id = "npc/sleeping_pirate_left", description = "Sleeping Pirate-Left" }
 sprite{ id = "npc/sleeping_pirate_right", description = "Sleeping Pirate - Right" }
+sprite{ id = "npc/trumpet_player_1", description = "Trumpet Player 1" }
 sprite{ id = "npc/woman/sweeping_lady_1", description = "Sweeping Lady 1" }
 sprite{ id = "npc/woman/sweeping_lady_2", description = "Sweeping Lady 2" }
 sprite{ id = "npc/woman/sweeping_lady_3", description = "Sweeping Lady 3" }

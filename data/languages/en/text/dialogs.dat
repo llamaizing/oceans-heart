@@ -7538,6 +7538,14 @@ has been going great recently.
 }
 
 dialog{
+  id = "_oakhaven.npcs.saloon.trumpet_era.1",
+  text = [[
+Is it just me, or is that trumpet player...
+really bad?
+]]
+}
+
+dialog{
   id = "_oakhaven.npcs.shipyard.1",
   text = [[
 I messed up, I messed up, I messed up...

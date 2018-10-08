@@ -17,6 +17,15 @@ function map:on_started()
   if game:get_value("morus_available") ~= true then morus:set_enabled(false) end
 end
 
+
+--------------------------------------------------------------
+-------------------NPCS---------------------------------------
+
+function patron_1:on_interaction()
+  game:start_dialog("_oakhaven.npcs.saloon.trumpet_era.1")
+end
+
+
 function bartender:on_interaction()
   if game:get_value("morus_available") == true then
     if game:get_value("morus_counter") == nil then game:start_dialog("_oakhaven.npcs.saloon.bartender1")

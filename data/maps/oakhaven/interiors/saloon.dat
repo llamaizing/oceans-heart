@@ -5168,6 +5168,26 @@ npc{
   subtype = 1,
 }
 
+npc{
+  name = "trumpet_player",
+  layer = 0,
+  x = 184,
+  y = 77,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/trumpet_player_1",
+}
+
+npc{
+  name = "patron_1",
+  layer = 0,
+  x = 232,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/sitting_4",
+}
+
 tile{
   layer = 1,
   x = 184,
