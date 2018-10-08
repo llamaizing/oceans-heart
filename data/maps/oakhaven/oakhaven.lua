@@ -15,6 +15,12 @@ local hero = map:get_hero()
 function map:on_started()
   if game:get_value("hazel_is_here") == true then cervio:set_enabled(false) end
   if game:get_value("salamander_heartache_storehouse_door_open") ~= nil then bar_storehouse_door:set_enabled(false) end
+  if game:get_value("oakhaven_aubrey_unlocked") == true then
+    aubrey_door_npc:set_enabled(false)
+    aubrey_door:set_enabled(false)
+  end
+
+
 end
 
 
@@ -44,6 +50,67 @@ function palace_guard:on_interaction()
   else
     game:start_dialog("_oakhaven.npcs.guards.town.palace")
   end
+end
+
+
+
+function wishing_well:on_interaction()
+  if game:get_value("oakhaven_wishing_well_balance") == nil then game:set_value("oakhaven_wishing_well_balance", 0) end
+  game:start_dialog("_oakhaven.npcs.misc.wishing_well.1", function(answer)
+    if answer == 2 then
+      --if you have enough money
+      if game:get_money() >= 5 then
+        game:remove_money(5)
+        sol.audio.play_sound("splash")
+        initial_money = game:get_value("oakhaven_wishing_well_balance")
+        game:set_value("oakhaven_wishing_well_balance", initial_money + 5)
+
+        --now check if that was enough money finally
+        if initial_money == 195 then
+          hero:start_treasure("coral_ore")
+        end        
+      --if you don't have enough money
+      else
+        game:start_dialog("_game.insufficient_funds")
+      end
+    end
+  end)
+end
+
+
+--FRUIT IMPORTER
+function fruit_importer:on_interaction()
+  if game:get_value("oakhaven_fruit_importer_counter") == nil then
+    game:start_dialog("_oakhaven.npcs.market.fruit_importer.1")
+
+  --on the hunt for aubrey
+  elseif game:get_value("oakhaven_fruit_importer_counter") == 1 then
+    game:start_dialog("_oakhaven.npcs.market.fruit_importer.2")
+    game:set_value("oakhaven_have_oranges_box", true)
+    game:set_value("oakhaven_fruit_importer_counter", 2)
+
+  --have oranges, but not aubrey
+  elseif game:get_value("oakhaven_fruit_importer_counter") == 2 then
+    game:start_dialog("_oakhaven.npcs.market.fruit_importer.3")
+
+
+  end
+end
+
+--Aubrey the Orange Thief
+function aubrey_door_npc:on_interaction()
+  --if you don't have the oranges yet
+  if game:get_value("oakhaven_have_oranges_box") ~= true then
+    game:start_dialog("_oakhaven.npcs.misc.aubrey_door")
+  else
+    game:start_dialog("_oakhaven.npcs.misc.aubrey_door_2", function()
+      aubrey_door_npc:set_enabled(false)
+      aubrey_door:set_enabled(false)
+      game:set_value("oakhaven_aubrey_unlocked", true)
+    end)
+
+  end
+
 end
 
 

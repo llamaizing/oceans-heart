@@ -13,6 +13,13 @@ animation{
   },
 }
 animation{
+  name = "armor_tools",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 304, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "armor_upgrade_1",
   src_image = "entities/items.png",
   directions = {

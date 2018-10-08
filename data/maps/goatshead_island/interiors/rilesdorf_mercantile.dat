@@ -2226,6 +2226,28 @@ npc{
   behavior = "dialog#_goatshead.observations.rilesdorf.6",
 }
 
+dynamic_tile{
+  name = "broken_window_1",
+  layer = 0,
+  x = 512,
+  y = 184,
+  pattern = "537",
+  width = 16,
+  height = 24,
+  enabled_at_start = false,
+}
+
+dynamic_tile{
+  name = "broken_window_2",
+  layer = 0,
+  x = 472,
+  y = 184,
+  pattern = "537",
+  width = 16,
+  height = 24,
+  enabled_at_start = false,
+}
+
 tile{
   layer = 1,
   x = 184,

@@ -175,6 +175,7 @@ map{ id = "oakhaven/fort_crow/furnace_area", description = "Furnace Area" }
 map{ id = "oakhaven/fort_crow/tower", description = "Tower" }
 map{ id = "oakhaven/gull_rock", description = "Gull Rock" }
 map{ id = "oakhaven/interiors/apothecary", description = "Apothecary" }
+map{ id = "oakhaven/interiors/aubrey", description = "aubrey" }
 map{ id = "oakhaven/interiors/bakery", description = "bakery" }
 map{ id = "oakhaven/interiors/blacksmith", description = "blacksmith" }
 map{ id = "oakhaven/interiors/bomb_shop", description = "Bomb Shop" }
@@ -389,6 +390,7 @@ sprite{ id = "entities/ink_splash", description = "Ink Splash" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
 sprite{ id = "entities/nitrodendron", description = "Nitrodendron" }
+sprite{ id = "entities/orange_peel", description = "Orange Peel" }
 sprite{ id = "entities/ripple", description = "Ripple" }
 sprite{ id = "entities/rockpile", description = "Rock Pile" }
 sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
@@ -734,6 +736,7 @@ sprite{ id = "npc/man/man_9.8", description = "npc/man/man_9.8" }
 sprite{ id = "npc/morus", description = "Morus" }
 sprite{ id = "npc/nina", description = "Nina" }
 sprite{ id = "npc/old_man_1.2", description = "Old Man 1.2" }
+sprite{ id = "npc/orange_ana", description = "Orange Ana" }
 sprite{ id = "npc/phantom_squid", description = "Phantom Squid" }
 sprite{ id = "npc/phantom_squid_2", description = "Phantom Squid - No Mask" }
 sprite{ id = "npc/pirates/pirate_10.1", description = "npc/pirates/pirate_10.1" }
@@ -1079,6 +1082,7 @@ sound{ id = "zora", description = "zora" }
 
 item{ id = "amulet", description = "amulet" }
 item{ id = "apples", description = "Apples" }
+item{ id = "armor_tools", description = "Armorer Tools" }
 item{ id = "armor_upgrade_1", description = "Armor Upgrade 1" }
 item{ id = "armor_upgrade_2", description = "Armor Upgrade 2" }
 item{ id = "arrow", description = "arrow-map" }

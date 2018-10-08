@@ -36129,15 +36129,6 @@ tile{
 tile{
   layer = 0,
   x = 536,
-  y = 1184,
-  width = 16,
-  height = 16,
-  pattern = "637",
-}
-
-tile{
-  layer = 0,
-  x = 536,
   y = 1200,
   width = 16,
   height = 8,
@@ -36846,7 +36837,7 @@ teletransporter{
 }
 
 destination{
-  name = "from_ana",
+  name = "from_aubrey",
   layer = 0,
   x = 544,
   y = 1213,
@@ -36871,6 +36862,55 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/interiors/blacksmith",
   destination = "from_outside",
+}
+
+npc{
+  name = "wishing_well",
+  layer = 0,
+  x = 144,
+  y = 1181,
+  direction = 3,
+  subtype = 1,
+}
+
+dynamic_tile{
+  name = "aubrey_door",
+  layer = 0,
+  x = 536,
+  y = 1184,
+  pattern = "637",
+  width = 16,
+  height = 16,
+  enabled_at_start = true,
+}
+
+npc{
+  name = "aubrey_door_npc",
+  layer = 0,
+  x = 544,
+  y = 1197,
+  direction = 3,
+  subtype = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 536,
+  y = 1184,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/interiors/aubrey",
+  destination = "from_outside",
+}
+
+npc{
+  name = "fruit_importer",
+  layer = 0,
+  x = 904,
+  y = 1165,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_13.6",
 }
 
 tile{

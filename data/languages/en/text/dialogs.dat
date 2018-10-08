@@ -264,6 +264,19 @@ $? Nope
 }
 
 dialog{
+  id = "_ballast_harbor.npcs.honestbeard.armor_tools",
+  text = [[
+HONESTBEARD:
+Those are tools for a master armorer. Imagine
+in the right hands, someone would use them
+to make some mighty fine armor. 250 crowns.
+Will you be takin' them for 250 crowns?
+$?I'll take them
+$?Not today
+]]
+}
+
+dialog{
   id = "_ballast_harbor.npcs.honestbeard.coral_ore",
   text = [[
 HONESTBEARD:
@@ -936,6 +949,48 @@ dialog{
   id = "_ballast_harbor.signs.meadery",
   text = [[
 Marsh Meadery
+]]
+}
+
+dialog{
+  id = "_blacksmith.1",
+  text = [[
+BLACKSMITH:
+You look like you'd enjoy hurting things more
+efficiently. With some Coral Ore and 50
+crowns, I can improve a sword or bow.
+(Improve your sword or bow for 50 crowns?)
+$? Sword
+$? Bow
+$? Neither
+]]
+}
+
+dialog{
+  id = "_blacksmith.2",
+  text = [[
+BLACKSMITH:
+Need a sharper sword? Bigger bow? If
+you have 50 crowns and some Coral Ore, I
+can beef up your battling.
+(Improve your sword or bow for 50 crowns?)
+$? Sword
+$? Bow
+$? Neither
+]]
+}
+
+dialog{
+  id = "_blacksmith.3",
+  text = [[
+BLACKSMITH:
+I don't know your first name, but it looks like
+your middle name is danger. How about
+upgrading your sword or bow with Coral Ore?
+(Improve your sword or bow for 50 crowns?)
+$? Sword
+$? Bow
+$? Neither
 ]]
 }
 
@@ -5431,6 +5486,118 @@ Basswood Tavern
 }
 
 dialog{
+  id = "_oakhaven.npcs.ana_orange.1",
+  text = [[
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.ana_orange.2",
+  text = [[
+MYSTERIOUS TIC-TAC-TOE PLAYER:
+EEK! My plan!
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.ana_orange.3",
+  text = [[
+AUBREY:
+Hey, you're not the orange guy! $2Wait a
+second$3... do I know you from somewhere?
+
+TILIA:
+From the tic-tac-toe championship?
+
+
+AUBREY:
+Oh! Oh no! Look, I can explain. My dad runs
+an Orange Orchard and times have been
+really tough. I wanted to help him out...
+TILIA:
+So you just stole a bunch of money?
+
+
+AUBREY:
+No, I$1...$2 well. $3Yeah. I did. Ugh. Clearly
+you're here to do something about this.
+What do you want?
+TILIA:
+$? Hand over the prize money.
+$? Just keep it.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.ana_orange.4",
+  text = [[
+AUBREY:
+I hope the prize money went to somebody
+who REALLY DESERVED IT. For being
+good at tic-tac-toe. That's worth 200 crowns...
+TILIA:
+Look, I don't make the rules. About stealing
+money from people. But that's a pretty
+agreed-upon rule.
+AUBREY:
+Ugh! Fine.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.ana_orange.5",
+  text = [[
+AUBREY:
+Thank you so much. For letting me get
+away with stealing so much money. I promise
+it'll be put to good use.
+TILIA:
+Hey, don't make me seem like your
+accomplice. You stole that yourself.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.ana_orange.keep_money",
+  text = [[
+TILIA:
+Look, just... keep it. I don't really have a
+horse in this race. If this is how you want
+to fund a struggling orange orchard, with
+TILIA:
+stolen money, I don't know how to run an
+orchard. That's your business.
+
+AUBREY:
+Really? Thank you! You don't know how
+much this will help us! Please, come by the
+Orange Orchard on the road to the
+AUBREY:
+Isle of Lobb, we'll pay you back somehow.
+
+
+TILIA:
+Don't worry about it. Just watch out for the
+tic-tac-toe referee, he seems like a fighter.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.ana_orange.take_money",
+  text = [[
+TILIA:
+Give me that money. I'm taking it back to
+the tic-tac-toe guy.
+
+AUBREY:
+$1...$3fine. My dad and I will somehow
+struggle through and find the money
+to keep the farm open somewhere...
+(You received 200 crowns)
+]]
+}
+
+dialog{
   id = "_oakhaven.npcs.apothecary.1",
   text = [[
 ARAMIS:
@@ -5537,6 +5704,94 @@ right away$1...
 }
 
 dialog{
+  id = "_oakhaven.npcs.blacksmith.ferris.1",
+  text = [[
+FERRIS:
+Are you looking for a master armorer? If so,
+look no further! Unless you're looking for one
+who has the tools I need... then I guess keep
+FERRIS:
+looking. But I can do a decent job without
+any tools! I'd only charge you 100 crowns to
+increase your armor's defense.
+(Increase your defense for 100 crowns?)
+$?Do it!
+$?No thanks.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.blacksmith.ferris.2",
+  text = [[
+FERRIS:
+I could make your armor significantly
+stronger, if I could find some armorer's tools.
+If only my boss would get me some...
+TILIA:
+Do you know where some might be?
+
+
+FERRIS:
+I bet Ballast Harbor wouldn't be a bad place
+to look, lots of stolen goods move through
+there. But... also pirates... and they're scary.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.blacksmith.ferris.3",
+  text = [[
+FERRIS:
+I could really improve that armor you're
+wearing if I had some armorer's tools. But my
+boss won't get me any...
+FERRIS:
+Wait a second, you've got some armorer's
+tools. Let me have those, and I'll make your
+armor significantly stronger!
+(Hand over the tools?)
+$? Yes
+$? No
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.blacksmith.ferris.4",
+  text = [[
+FERRIS:
+Thank you for letting me have these armorer's
+tools. I hope the improvements I made will
+keep you safe.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.blacksmith.ferris.upgrade_armor",
+  text = [[
+FERRIS:
+Good, good.... Let me just... and this like...
+This could use a pin instead of a....
+There!
+(Your defense was increased by 1)
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.blacksmith.ferris.upgrade_armor_2",
+  text = [[
+FERRIS:
+Thank you! Let me just... let's add some
+chainmail... tighten this down... put some
+extra padding here...
+FERRIS:
+All done! You look much safer!
+
+
+(Your defense was increased by 2)
+]]
+}
+
+dialog{
   id = "_oakhaven.npcs.carpenter.1",
   text = [[
 I take a lot of pride in my drawers. I've been
@@ -5629,11 +5884,246 @@ here. This isn't one of thooose chests.
 }
 
 dialog{
+  id = "_oakhaven.npcs.game_hall.competitors.1",
+  text = [[
+TIC-TAC-TOE PLAYER:
+Have you ever even tic tacked before? You
+don't look too tough. Humph.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.competitors.2",
+  text = [[
+SERIOUS COMPETITOR:
+I might not look it, but I've been training in
+tic-tac-toe for decades.
+
+TILIA:
+I don't know what that would look like.
+
+
+SERIOUS COMPETITOR:
+I, uh... Well, it'd look like me!
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.competitors.3",
+  text = [[
+TIC-TAC-TOE PLAYER:
+My secret? I always play Os. They never
+expect that, because Xs are cooler, so you
+throw them off.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.competitors.4",
+  text = [[
+TIC-TAC-TOE-PLAYER:
+You might have learned to get three in a row,
+but I was born into it. I was raised a
+tic-tac-toe board.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.competitors.5",
+  text = [[
+MYSTERIOUS TIC-TAC-TOE PLAYER:
+...don't over think it. Just do it for the
+oranges.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.competitors.b1",
+  text = [[
+TIC-TAC-TOE PLAYER:
+Woah. That girl just made off with 200
+crowns. What a master thief. I need to
+go home and rethink my career.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.competitors.b2",
+  text = [[
+SERIOUS COMPETITOR:
+I... the championship is cancelled? But...
+I've been training for three years...
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.competitors.b3",
+  text = [[
+TIC-TAC-TOE PLAYER:
+You know, I'm almost relieved. The truth is,
+I'm really bad at tic-tac-toe.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.competitors.b4",
+  text = [[
+TIC-TAC-TOE PLAYER:
+I was sitting right next to a criminal all along.
+I hope I didn't get any crime germs on me.
+I better go home and shower.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.guard",
+  text = [[
+I heard this was a crime scene and came
+as quickly as I could! Unluckily for crime,
+I am very quick! A detective in on his way.
+Now we play the waiting game.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.guard2",
+  text = [[
+GUARD:
+Looks like the suspect escaped. Better go
+file a report or something then...
+]]
+}
+
+dialog{
   id = "_oakhaven.npcs.game_hall.officiant.1",
   text = [[
-We're setting up the tic-tac-toe
-championship. If you want to join, you'll
-have to wait until the side-quest is finished.
+REFEREE:
+We're almost ready for the tic tac toe
+championships, but we had a no-show...
+Hey! Would you fill in for us?
+(Join the tic tac toe championships?)
+$?Sign me up!
+$?I won't play your games!
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.officiant.2",
+  text = [[
+REFEREE:
+Great! We'll get started immediately.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.officiant.3",
+  text = [[
+REFEREE:
+Ladies and gentlemen, the 29th annual
+Oakhaven Tic Tac Toe Championship is
+about to begin. The prize money...
+REFEREE:
+$1...huh?$3
+Wait a second! The chest with the prize
+money is empty! Nobody leave the room,
+REFEREE:
+this is now a crime scene!
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.officiant.4",
+  text = [[
+REFEREE:
+Don't worry. We're locking this place down.
+Nobody in, nobody out, until the detective
+arrives and we can figure out who the thief is.
+REFEREE:
+It's just like a murder mystery novel. Except
+without the murder. Or the novel, I guess.
+So it's just a mystery.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.officiant.5",
+  text = [[
+REFEREE:
+Did you see that!? I suppose you did. Good
+job finding that suspicious character... but,
+poor job stopping her. At any rate, the money
+REFEREE:
+is gone, and we can't have our tournament
+anymore. Well, forget about that 200 crowns,
+kid.
+TILIA:
+What if I can find the girl. Or the money.
+Or both?
+
+REFEREE:
+Oh, you're in the Volunteer Navy, aren't you?
+Looking for trouble? To solve it? Well fine. If
+you get the money back, you get a cut.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.officiant.55",
+  text = [[
+REFEREE:
+Did you find that girl that stole the
+tic-tac-toe prize money?
+
+TILIA:
+I'm still looking.
+
+
+REFEREE:
+I've got the town guards on the case too.
+This is the heist of the century! I'm planning
+to write a book.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.officiant.6",
+  text = [[
+REFEREE:
+Did you track down the money that girl
+stole?
+
+TILIA:
+As a matter of fact, I did.
+
+
+REFEREE:
+No kidding! We can have the tournament
+after all! We won't need you to join anymore,
+since the thief is obviously disqualified, but
+REFEREE:
+I'll let you keep half of this. The town guard
+was useless in finding the thief, so we
+wouldn't have this if it weren't for you.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.officiant.7",
+  text = [[
+REFEREE:
+Thanks to you, we can continue to have
+the tic-tac-toe championship annually!
+You should train and try out next year.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.game_hall.orange_peel",
+  text = [[
+There's a pile of orange peel here. A very
+large pile of orange peel... Someone would
+possibly remember selling this many
+oranges.
 ]]
 }
 
@@ -6063,6 +6553,66 @@ self was entirely gone. Fascinating poem.
 }
 
 dialog{
+  id = "_oakhaven.npcs.market.fruit_importer.1",
+  text = [[
+FRUIT IMPORTER:
+I've got fruit from all over the north sea here!
+Need some oranges? They're quite popular,
+almost as good as local oranges.
+TILIA:
+You're advertising your fruit as \\"almost as
+good\\" as local fruit?
+
+FRUIT IMPORTER:
+Honesty is part of my brand. I'd never lie
+to anyone.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.fruit_importer.2",
+  text = [[
+FRUIT IMPORTER:
+Hey, I've got fruit from all over the north sea
+here. Need anything?
+
+TILIA:
+I'm actually looking for someone who might
+be one of your customers. A girl who buys
+a whole lot of oranges.
+FRUIT IMPORTER:
+Oh, you probably mean Aubrey. I actually
+deliver a box of oranges to her daily.
+
+TILIA:
+She just stole a lot of money from the
+tic-tac-toe championship guy. I'm trying to
+find her.
+FRUIT IMPORTER:
+Goodness! Well, I must do my civic duty.
+Here, take this box of oranges and
+impersonate me. Go just across the bridge
+FRUIT IMPORTER:
+west of here, first house on the right.
+She should open up for oranges.
+
+(You received a box of oranges.)
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.fruit_importer.3",
+  text = [[
+FRUIT IMPORTER:
+Did you take the box of oranges to Aubrey?
+I hope you can get everything resolved. I
+hate to have assisted a thief, even if she is
+FRUIT IMPORTER:
+my best customer.
+]]
+}
+
+dialog{
   id = "_oakhaven.npcs.market.grover.1",
   text = [[
 GROVER:
@@ -6139,6 +6689,35 @@ mangrove leaves yet?
 
 TILIA:
 Nope, but thanks for your help earlier.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.misc.aubrey_door",
+  text = [[
+???
+Who is it? Specifically, is it the orange
+salesman? If not, go away.
+
+TILIA:
+Uh, alright.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.misc.aubrey_door_2",
+  text = [[
+???
+Who is it?
+
+
+TILIA:
+Orange salesman! Box of oranges here!
+
+
+???
+You don't sound like yourself. Well, come on
+in.
 ]]
 }
 
@@ -6516,6 +7095,15 @@ Guarenteed to make you dance 20% more
 gracefully. Not that you aren't graceful enough.
 TILIA:
 Aww, thanks. But no thanks.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.misc.wishing_well.1",
+  text = [[
+There's a wishing well. Toss in 5 crowns?
+$? Sure
+$? I'll keep my money
 ]]
 }
 
@@ -7414,6 +8002,16 @@ You collected an apple.
 }
 
 dialog{
+  id = "_treasure.armor_tools.1",
+  text = [[
+You received some Armorer's Tools. There's
+a pair of pliers, some needles, some... other
+stuff? This isn't your job, you don't know
+how to use whatever this stuff is.
+]]
+}
+
+dialog{
   id = "_treasure.armor_upgrade_1.1",
   text = [[
 You found some armor that's slightly better
@@ -8084,7 +8682,7 @@ only missing a few sips. What a nice gift!
 dialog{
   id = "_yarrowmouth.npcs.blacksmith",
   text = [[
-NIKHIL:
+BLACKSMITH:
 You look like you'd enjoy hurting things more
 efficiently. With some Coral Ore and 50
 crowns, I can improve a sword or bow.
