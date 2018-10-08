@@ -1108,7 +1108,6 @@ enemy{
   y = 125,
   direction = 3,
   breed = "normal_enemies/aster_enemy",
-  savegame_variable = "aster_enemy_state",
 }
 
 door{

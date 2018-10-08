@@ -13,16 +13,28 @@ local game = map:get_game()
 
 function map:on_started()
   map:open_doors("front_door")
+
 --enable characters
   aster_enemy:set_enabled(false)
-  if game:get_value("barbell_brutes_defeated") ~= true then aster_2:set_enabled(false) else aster:set_enabled(false) end
+  if game:get_value("barbell_brutes_defeated") ~= true then
+    aster_2:set_enabled(false)
+  else
+    aster:set_enabled(false)
+  end
+if game:get_value("aster_murdered") == true then
+  aster:set_enabled(false)
+  aster_2:set_enabled(false)
+
+end
 
 end
 
 
 --discover he's the squid
 function secret_switch:on_interaction()
-  if game:get_value("accepted_merchant_guild_contracts_quest") ~= true then
+  if game:get_value("accepted_merchant_guild_contracts_quest") ~= true
+  and game:get_value("aster_house_pressed_sesecret_switch") ~= true then
+    game:set_value("aster_house_pressed_sesecret_switch", true)
     map:open_doors("secret_squid_head_door")
     sol.audio.play_sound("switch")
     --dialog and decide sides
@@ -95,4 +107,5 @@ end
 
 function aster_enemy:on_dead()
   map:open_doors("front_door")
+  game:set_value("aster_murdered", true)
 end
