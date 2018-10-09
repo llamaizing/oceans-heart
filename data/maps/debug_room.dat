@@ -1170,8 +1170,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/goatshead_harbor",
-  destination = "ferry_landing",
+  destination_map = "goatshead_island/crabhook_village",
+  destination = "from_tavern",
 }
 
 pickable{

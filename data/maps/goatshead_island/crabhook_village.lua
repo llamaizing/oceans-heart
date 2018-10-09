@@ -35,7 +35,7 @@ function armor_sale:on_interaction()
     game:start_dialog("_goatshead.npcs.crabhook.armor_saleslady.1", function(answer)
       if answer == 1 then
         map:get_hero():start_treasure("armor_upgrade_1")
-        game:set_value("crabook_armor_purchased", true)
+        game:set_value("crabhook_armor_purchased", true)
       end
     end)
   else

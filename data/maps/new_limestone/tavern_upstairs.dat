@@ -2008,7 +2008,7 @@ npc{
 npc{
   layer = 0,
   x = 200,
-  y = 341,
+  y = 349,
   direction = 3,
   subtype = 1,
   behavior = "dialog#_limestone_island.observations.control_scheme",
