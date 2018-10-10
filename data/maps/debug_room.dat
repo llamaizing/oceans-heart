@@ -1668,6 +1668,16 @@ destructible{
   damage_on_enemies = 2,
 }
 
+block{
+  layer = 0,
+  x = -48,
+  y = 29,
+  sprite = "entities/chairL",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
 tile{
   layer = 1,
   x = 192,

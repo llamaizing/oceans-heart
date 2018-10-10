@@ -5384,6 +5384,15 @@ and hops.
 }
 
 dialog{
+  id = "_new_limestone_island.observations.linden_chair",
+  text = [[
+TILIA:
+Ugh, I really need to clean out our room.
+Dragging this stuff out of the way
+]]
+}
+
+dialog{
   id = "_new_limestone_island.observations.linden_doodles",
   text = [[
 There's a messy, scribbled-up attempt to
@@ -6560,8 +6569,8 @@ I've got fruit from all over the north sea here!
 Need some oranges? They're quite popular,
 almost as good as local oranges.
 TILIA:
-You're advertising your fruit as \\"almost as
-good\\" as local fruit?
+You're advertising your fruit as \\\\"almost as
+good\\\\" as local fruit?
 
 FRUIT IMPORTER:
 Honesty is part of my brand. I'd never lie

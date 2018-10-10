@@ -3700,33 +3700,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
-  y = 296,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 280,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 296,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 0,
   x = 200,
   y = 264,
   width = 16,
@@ -5563,24 +5536,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 304,
-  y = 72,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 0,
   x = 352,
   y = 64,
   width = 16,
@@ -6738,6 +6693,56 @@ npc{
   subtype = 1,
   sprite = "npc/sitting_7",
   behavior = "dialog#_oakhaven.npcs.library.misc.1",
+}
+
+block{
+  layer = 0,
+  x = 216,
+  y = 301,
+  sprite = "entities/chairL",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+block{
+  layer = 0,
+  x = 96,
+  y = 317,
+  sprite = "entities/chairR",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+block{
+  layer = 0,
+  x = 112,
+  y = 293,
+  sprite = "entities/chairR",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+block{
+  layer = 0,
+  x = 312,
+  y = 77,
+  sprite = "entities/chairL",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+block{
+  layer = 0,
+  x = 264,
+  y = 93,
+  sprite = "entities/chairR",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
 }
 
 tile{

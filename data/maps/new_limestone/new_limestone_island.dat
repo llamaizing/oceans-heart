@@ -24319,26 +24319,6 @@ npc{
   behavior = "dialog#_new_limestone_island.signs.tavern",
 }
 
-block{
-  layer = 0,
-  x = 1208,
-  y = 173,
-  sprite = "entities/block_crate",
-  pushable = true,
-  pullable = false,
-  maximum_moves = 1,
-}
-
-block{
-  layer = 0,
-  x = 1224,
-  y = 189,
-  sprite = "entities/block_crate",
-  pushable = true,
-  pullable = false,
-  maximum_moves = 1,
-}
-
 npc{
   layer = 0,
   x = 1216,
@@ -24380,15 +24360,6 @@ destructible{
   can_be_cut = true,
 }
 
-chest{
-  layer = 0,
-  x = 1152,
-  y = 117,
-  treasure_name = "sword",
-  treasure_savegame_variable = "limestone_sword_chest_open",
-  sprite = "entities/chest",
-}
-
 door{
   layer = 0,
   x = 368,
@@ -24422,6 +24393,15 @@ destructible{
   y = 733,
   sprite = "entities/bush_forsythia",
   can_be_cut = true,
+}
+
+chest{
+  name = "sword_chest",
+  layer = 0,
+  x = 1168,
+  y = 117,
+  treasure_name = "sword",
+  sprite = "entities/chest",
 }
 
 tile{

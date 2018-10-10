@@ -1603,6 +1603,36 @@ npc{
   behavior = "dialog#_oakhaven.npcs.carpenter.2",
 }
 
+block{
+  layer = 0,
+  x = 232,
+  y = 93,
+  sprite = "entities/chairL",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+block{
+  layer = 0,
+  x = 240,
+  y = 109,
+  sprite = "entities/chairR",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+block{
+  layer = 0,
+  x = 232,
+  y = 125,
+  sprite = "entities/chairL",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
 tile{
   layer = 1,
   x = 216,

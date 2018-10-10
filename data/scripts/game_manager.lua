@@ -221,7 +221,7 @@ end)
 
 
 ------------------------------------------------------Game Over------------------------------------------------
-if game:get_value("music_volume") == nil then game:set_value("music_volume", 60) end
+if game:get_value("music_volume") == nil then game:set_value("music_volume", 60) end --this line is for old save files
 local function game_over_stuff()
     local elixer = game:get_item("elixer")
     local amount_elixer = elixer:get_amount()

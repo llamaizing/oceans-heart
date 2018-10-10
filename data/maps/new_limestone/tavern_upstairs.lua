@@ -16,3 +16,10 @@ function map:on_started()
   -- You can initialize the movement and sprites of various
   -- map entities here.
 end
+
+function chair_sensor:on_activated()
+  if game:get_value("limestone_room_is_messy_observation") == nil then
+    game:start_dialog("_new_limestone_island.observations.linden_chair")
+    game:set_value("limestone_room_is_messy_observation", true)
+  end
+end

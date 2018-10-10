@@ -2833,6 +2833,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "344",
+  ground = "wall",
+  default_layer = 0,
+  x = 304,
+  y = 320,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
   id = "35",
   ground = "hole",
   default_layer = 0,

@@ -2639,24 +2639,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 448,
-  y = 352,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 0,
-  x = 496,
-  y = 352,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 0,
   x = 416,
   y = 112,
   width = 16,
@@ -2826,24 +2808,6 @@ tile{
   pattern = "218",
 }
 
-tile{
-  layer = 0,
-  x = 432,
-  y = 168,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 0,
-  x = 480,
-  y = 168,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
 separator{
   layer = 0,
   x = 312,
@@ -2933,6 +2897,46 @@ chest{
   treasure_name = "coral_ore",
   treasure_savegame_variable = "juneberry_inn_treasure_chest",
   sprite = "entities/chest",
+}
+
+block{
+  layer = 0,
+  x = 488,
+  y = 173,
+  sprite = "entities/chairL",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+block{
+  layer = 0,
+  x = 440,
+  y = 173,
+  sprite = "entities/chairR",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+block{
+  layer = 0,
+  x = 504,
+  y = 357,
+  sprite = "entities/chairL",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
+}
+
+block{
+  layer = 0,
+  x = 456,
+  y = 357,
+  sprite = "entities/chairR",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
 }
 
 tile{

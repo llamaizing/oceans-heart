@@ -1793,15 +1793,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 0,
   x = 400,
   y = 48,
   width = 24,
@@ -2246,6 +2237,16 @@ dynamic_tile{
   width = 16,
   height = 24,
   enabled_at_start = false,
+}
+
+block{
+  layer = 0,
+  x = 440,
+  y = 149,
+  sprite = "entities/chairR",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
 }
 
 tile{

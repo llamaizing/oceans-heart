@@ -36,6 +36,7 @@ function armor_sale:on_interaction()
       if answer == 1 then
         map:get_hero():start_treasure("armor_upgrade_1")
         game:set_value("crabhook_armor_purchased", true)
+        game:remove_money(150)
       end
     end)
   else
