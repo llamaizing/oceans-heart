@@ -1715,8 +1715,8 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 112,
-  y = 93,
+  x = 200,
+  y = 85,
   treasure_name = "sword",
 }
 
