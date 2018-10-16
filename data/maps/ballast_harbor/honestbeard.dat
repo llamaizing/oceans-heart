@@ -1218,22 +1218,6 @@ npc{
   sprite = "entities/coral_ore",
 }
 
-pickable{
-  name = "armor_icon",
-  layer = 1,
-  x = 216,
-  y = 141,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  name = "armor_tools_icon",
-  layer = 1,
-  x = 128,
-  y = 141,
-  treasure_name = "armor_tools",
-}
-
 tile{
   layer = 2,
   x = 96,
@@ -1241,5 +1225,21 @@ tile{
   width = 16,
   height = 8,
   pattern = "191",
+}
+
+pickable{
+  name = "armor_tools_icon",
+  layer = 2,
+  x = 128,
+  y = 141,
+  treasure_name = "armor_tools",
+}
+
+pickable{
+  name = "armor_icon",
+  layer = 2,
+  x = 216,
+  y = 141,
+  treasure_name = "armor_upgrade_2",
 }
 

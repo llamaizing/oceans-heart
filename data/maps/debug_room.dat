@@ -1170,8 +1170,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/crabhook_village",
-  destination = "from_tavern",
+  destination_map = "goatshead_island/west_goat",
+  destination = "from_goat",
 }
 
 pickable{
@@ -1676,6 +1676,21 @@ block{
   pushable = true,
   pullable = true,
   maximum_moves = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 384,
+  y = 77,
+  treasure_name = "boomerang",
+}
+
+pickable{
+  layer = 0,
+  x = 384,
+  y = 61,
+  treasure_name = "boomerang",
+  treasure_variant = 2,
 }
 
 tile{

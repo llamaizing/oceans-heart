@@ -1097,6 +1097,7 @@ item{ id = "berries", description = "Berries" }
 item{ id = "bomb", description = "bombs-map" }
 item{ id = "bombs_counter", description = "bombs inventory item" }
 item{ id = "bombs_counter_2", description = "bombs- built in inventory item" }
+item{ id = "boomerang", description = "boomerang" }
 item{ id = "bow", description = "Bow" }
 item{ id = "bow_fire", description = "Fire Bow" }
 item{ id = "charts", description = "Charts (for Kelpton)" }

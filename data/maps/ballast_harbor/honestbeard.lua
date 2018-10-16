@@ -128,10 +128,10 @@ function armor_sale:on_interaction()
   else
   game:start_dialog("_ballast_harbor.npcs.honestbeard.out_of_coral")
   end
-
+end
 
 --buy armor tools
-function armor_sale:on_interaction()
+function tools_sale:on_interaction()
   if game:get_value("honestbeard_armor_tools") ~= true then
     game:start_dialog("_ballast_harbor.npcs.honestbeard.armor_tools", function(answer)
       if answer == 2 then

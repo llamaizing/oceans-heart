@@ -184,7 +184,8 @@ function behavior:create(enemy, properties)
 		  y = dxy[direction + 1][2],
 		})
 		children[#children + 1] = stone
---		stone:go(direction)
+    direction = enemy:get_angle(hero)
+		stone:go(direction)
 	  sprite:set_animation("walking")
     self:restart()
 	end

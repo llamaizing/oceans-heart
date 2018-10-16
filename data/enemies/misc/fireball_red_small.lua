@@ -80,7 +80,7 @@ function enemy:on_custom_attack_received(attack, sprite)
       angle = 2 * math.pi - old_angle
     end
 
-    go(angle)
+    enemy:go(angle)
     sol.audio.play_sound("enemy_hurt")
 
     -- The trailing fireballs are now on the hero: don't attack temporarily
