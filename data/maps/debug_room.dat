@@ -2,7 +2,7 @@ properties{
   x = 0,
   y = 0,
   width = 640,
-  height = 240,
+  height = 480,
   min_layer = 0,
   max_layer = 2,
   tileset = "temple",
@@ -904,7 +904,7 @@ tile{
   x = 272,
   y = 48,
   width = 320,
-  height = 144,
+  height = 416,
   pattern = "7",
 }
 
@@ -989,11 +989,31 @@ tile{
   pattern = "27",
 }
 
-pickable{
+tile{
   layer = 0,
-  x = 152,
-  y = 93,
-  treasure_name = "sword",
+  x = 240,
+  y = 224,
+  width = 32,
+  height = 240,
+  pattern = "wall.left.2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 448,
+  width = 320,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 224,
+  width = 32,
+  height = 224,
+  pattern = "wall.right.2",
 }
 
 pickable{
@@ -1691,6 +1711,13 @@ pickable{
   y = 61,
   treasure_name = "boomerang",
   treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 112,
+  y = 93,
+  treasure_name = "sword",
 }
 
 tile{
