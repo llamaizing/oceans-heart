@@ -737,6 +737,7 @@ sprite{ id = "npc/man/man_9.7", description = "npc/man/man_9.7" }
 sprite{ id = "npc/man/man_9.8", description = "npc/man/man_9.8" }
 sprite{ id = "npc/morus", description = "Morus" }
 sprite{ id = "npc/musician_2", description = "Musician 2" }
+sprite{ id = "npc/musician_3", description = "Musician 3" }
 sprite{ id = "npc/nina", description = "Nina" }
 sprite{ id = "npc/old_man_1.2", description = "Old Man 1.2" }
 sprite{ id = "npc/orange_ana", description = "Orange Ana" }
