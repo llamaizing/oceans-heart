@@ -11554,6 +11554,46 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "1994",
+  ground = "wall",
+  default_layer = 0,
+  x = 448,
+  y = 544,
+  width = 24,
+  height = 48,
+}
+
+tile_pattern{
+  id = "1995",
+  ground = "wall",
+  default_layer = 0,
+  x = 488,
+  y = 544,
+  width = 24,
+  height = 48,
+}
+
+tile_pattern{
+  id = "1996",
+  ground = "wall",
+  default_layer = 1,
+  x = 472,
+  y = 544,
+  width = 16,
+  height = 32,
+}
+
+tile_pattern{
+  id = "1997",
+  ground = "traversable",
+  default_layer = 0,
+  x = 512,
+  y = 568,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
   id = "2",
   ground = "wall",
   default_layer = 0,

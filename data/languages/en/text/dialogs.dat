@@ -6569,8 +6569,8 @@ I've got fruit from all over the north sea here!
 Need some oranges? They're quite popular,
 almost as good as local oranges.
 TILIA:
-You're advertising your fruit as \\\\\\\\\\\\\\\\"almost as
-good\\\\\\\\\\\\\\\\" as local fruit?
+You're advertising your fruit as \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"almost as
+good\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" as local fruit?
 
 FRUIT IMPORTER:
 Honesty is part of my brand. I'd never lie
@@ -7343,6 +7343,206 @@ $?Not now.
 }
 
 dialog{
+  id = "_oakhaven.npcs.musicians.brian.caught",
+  text = [[
+TILIA:
+What the heck!? Were you seriously
+dressed up as a monster?
+
+BRIAN:
+I was. I'm the trumpet player from the
+Salamander Heartache Saloon. I'm not a
+good musician, but except for Gunther and
+BRIAN:
+Gloria, I'm all there is. I had a great gig at
+the saloon, but if people knew how good
+those two were, they'd get all the attention.
+BRIAN:
+So I dressed up as a monster to tear down
+their advertising, keep people from discovering
+them, and break their spirit...
+BRIAN:
+...And I would have gotten away with it too!
+If it weren't for you meddling... jerk.
+
+TILIA:
+Look buddy. That's an elaborate plan.
+I don't know why you thought that would
+work.
+BRIAN:
+It was easier than learning to play trumpet.
+
+
+TILIA:
+I'm just gonna leave you here and go see
+if Gunther is playing at the saloon.
+
+BRIAN:
+...fine...
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.musicians.brian.caught2",
+  text = [[
+BRIAN:
+...grumble grumble...
+
+
+TILIA:
+Not planning on tearing down any more
+posters, are you?
+
+BRIAN:
+No!.... not with you around, anyway...
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.musicians.gloria.1",
+  text = [[
+GLORIA:
+...andasda duh dataee
+uhnduhh iruhgahh naaallll
+whuunnnh gaeee emnnhhh...
+(She's singing something, but the
+words could be literally anything.
+You have no idea.)
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.musicians.gunther.1",
+  text = [[
+GUNTHER (singing):
+...and that's the sad tale
+of the ironclad snail
+who repressed each and every emotion...
+TILIA:
+That's a pretty good song. Bravo.
+
+
+GUNTHER:
+Thanks, I think so too. Unfortunately, we
+can't get anyone to come to our gigs. We're
+like, the best band with no audience. It's
+GUNTHER:
+crazy, whenever we try to advertise a show
+at the Saloon, a monster shows up and
+tears down our posters.
+TILIA:
+That's... crazy.
+
+
+GUNTHER:
+Seriously. Oh, hey, you've got a sword! Are
+you like, part of the volunteer navy? Can
+you help protect our band posters?
+TILIA:
+$?I guess so?
+$?No way, man.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.musicians.gunther.2",
+  text = [[
+TILIA:
+I guess I can help out.
+
+
+GUNTHER:
+Bodacious! If you go tell the bartender at
+the Salamander Heartache Saloon that we'll
+play a show, I'll go hang up some posters,
+GUNTHER:
+but it'll be like, a trap! The posters are bait.
+You can go check out the posters, and beat
+up the monster. Then we can play a show.
+TILIA:
+Why not. I'll go tell the bartender at the
+Salamander Heartache Saloon that you're
+willing to play a show.
+GUNTER:
+Right on! I'll have some posters hanging up
+by the time you talk to him!
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.musicians.gunther.3",
+  text = [[
+GUNTHER:
+Hey, so like, did you let the bartender at
+the Salamander Heartache know that we're
+gonna play a show?
+TILIA:
+Not yet.
+
+
+GUNTHER:
+Well that's why I didn't hang up any posters
+yet either. The bartender said we could play
+a show whenever, so like, let him know.
+GUNTHER:
+Then you can go find the monster that's
+tearing down our band posters.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.musicians.gunther.4",
+  text = [[
+GUNTHER:
+Hey, I hung a bunch of posters up. Now it's
+all up to you. You've gotta protect my posters
+from being torn up by monsters.
+TILIA:
+I'll go check them out.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.musicians.gunther.5",
+  text = [[
+GUNTHER:
+How's the hunt going? Did you catch the
+monster?
+
+TILIA:
+I actually did. You were almost right Gunther,
+somebody was tearing down your posters.
+It wasn't a monster, though.
+GUNTHER:
+If your trying to ruin a musician's career,
+aren't you like, the real monster? Hey, we're
+gonna go play at the saloon! Come see us!
+TILIA:
+Sure, I'll meet you there.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.musicians.gunther.6",
+  text = [[
+GUNTHER:
+Hey, it's you! We've finally got a crowd in
+here! Look, it's like, only right to give you a
+cut of what we're earning. Take this.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.musicians.gunther.7",
+  text = [[
+GUNTHER (singing):
+...So I grabbed the pot
+And with my soup ladle, fought
+Off the barbarian chef invaaaaaasion...
+]]
+}
+
+dialog{
   id = "_oakhaven.npcs.port.blackbeard.1",
   text = [[
 BLACKBEARD:
@@ -7547,10 +7747,73 @@ has been going great recently.
 }
 
 dialog{
+  id = "_oakhaven.npcs.saloon.bartender_posters",
+  text = [[
+BARTENDER:
+Can I get you something?
+
+
+TILIA:
+A musician named Gunther told me to see
+you. He says he's going to play a show here.
+
+BARTENDER:
+Good, I told him to let me know whever he
+could play. They don't bring in big crowds,
+but that trumpet player over there? I can't
+BARTENDER:
+stand him... I guess he's better than nothing,
+but some days, I'm not even sure of that.
+Anyway, I hope people come to see Gunther.
+TILIA:
+I guess as long as I can protect the posters
+advertising the show, they'll come.
+
+BARTENDER:
+The posters need to be protected?
+
+
+TILIA:
+There's apparently a monster tearing them
+down? I don't know what's really going on.
+I'm just going to check on some posters.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.gunther_band.1",
+  text = [[
+I've never heard this band before, but
+they're good. Can't understand what the
+heck they're talking about, but I like it.
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.gunther_band.2",
+  text = [[
+I'm really groovin' to these musicians.
+It's helping me forget the creepy ruins I
+saw in the puzzlewood on Yarrowmouth.
+All those stone eyes, staring at me... ugh.
+]]
+}
+
+dialog{
   id = "_oakhaven.npcs.saloon.trumpet_era.1",
   text = [[
 Is it just me, or is that trumpet player...
 really bad?
+]]
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.trumpet_era.2",
+  text = [[
+I don't know who the sad trumpet guy is,
+but I've never heard a song so aggressive
+yet so pathetic. It's intriguing but not what I
+want to hear when I go out to drink.
 ]]
 }
 
@@ -7755,6 +8018,23 @@ dialog{
 There's a big stack of books here, mostly
 on history. Looks like the kind of stuff
 Hazel has been researching.
+]]
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.poster",
+  text = [[
+(There's a poster advertising Gunther's
+show at the Salamander Heartache Saloon)
+]]
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.poster_monster",
+  text = [[
+TILIA:
+Hey! There really is a monster tearing down
+the band's posters! Get back here!
 ]]
 }
 

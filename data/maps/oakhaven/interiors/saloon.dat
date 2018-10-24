@@ -4859,6 +4859,33 @@ tile{
   pattern = "153",
 }
 
+tile{
+  layer = 0,
+  x = 136,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "184",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "185",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "182",
+}
+
 destination{
   name = "from_outside",
   layer = 0,
@@ -5169,7 +5196,7 @@ npc{
 }
 
 npc{
-  name = "trumpet_player",
+  name = "brian",
   layer = 0,
   x = 184,
   y = 77,
@@ -5186,6 +5213,36 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/sitting_4",
+}
+
+npc{
+  name = "musician_1",
+  layer = 0,
+  x = 176,
+  y = 85,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/musician_2",
+}
+
+npc{
+  name = "musician_2",
+  layer = 0,
+  x = 192,
+  y = 77,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/musician_3",
+}
+
+npc{
+  name = "patron_2",
+  layer = 0,
+  x = 120,
+  y = 117,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/sitting_5",
 }
 
 tile{

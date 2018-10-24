@@ -11,6 +11,8 @@ local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
 
+local trumpet_player
+
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
   if game:get_value("hazel_is_here") == true then cervio:set_enabled(false) end
@@ -19,7 +21,17 @@ function map:on_started()
     aubrey_door_npc:set_enabled(false)
     aubrey_door:set_enabled(false)
   end
-
+  disguised_trumpet_player:set_traversable(true)
+  if not game:get_value("oakhaven_find_poster_monster") then
+    disguised_trumpet_player:set_enabled(false)
+    for poster in map:get_entities("band_poster") do
+      poster:set_enabled(false)
+    end
+  end
+  if game:get_value("oakhaven_musicians_saved") == true then
+    musician_1:set_enabled(false)
+    musician_2:set_enabled(false)
+  end
 
 end
 
@@ -110,11 +122,62 @@ function aubrey_door_npc:on_interaction()
     end)
 
   end
+end
 
+
+--Trumpet Player: Caught
+function brian:on_interaction()
+
+end
+
+--Gunther
+function musician_1:on_interaction()
+  if game:get_value("gunther_counter")==nil then
+    game:start_dialog("_oakhaven.npcs.musicians.gunther.1", function(answer)
+      if answer == 2 then
+        game:start_dialog("_oakhaven.npcs.musicians.gunther.2")
+        game:set_value("oakhaven_band_talk_to_bartender", true)
+        game:set_value("gunther_counter", 2)
+      end
+    end)
+  elseif game:get_value("gunther_counter") == 2 then
+    game:start_dialog("_oakhaven.npcs.musicians.gunther.3")
+  elseif game:get_value("gunther_counter") ==3 then
+    game:start_dialog("_oakhaven.npcs.musicians.gunther.4")
+  elseif game:get_value("gunther_counter") == 4 then
+    game:start_dialog("_oakhaven.npcs.musicians.gunther.5")
+  end
+end
+
+function musician_2:on_interaction()
+  game:start_dialog("_oakhaven.npcs.musicians.gloria.1")
+end
+
+for poster in map:get_entities("band_poster") do
+  function poster:on_interaction()
+    game:start_dialog("_oakhaven.observations.misc.poster")
+  end
 end
 
 
 ---------------------------
+
+--poster monster sensor
+for sensor in map:get_entities("poster_monster_sensor") do
+  function sensor:on_activated()
+    if game:get_value("oakhaven_find_poster_monster") then
+      game:start_dialog("_oakhaven.observations.misc.poster_monster")
+      poster_monster_wall:set_enabled(false)
+      game:set_value("poster_monster_caught", true)
+      sensor:set_enabled(false)
+    end
+  end
+end
+
+
+
+
+----------------------------
 
 
 --intro cutscene

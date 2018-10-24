@@ -1190,7 +1190,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/ivystump",
+  destination_map = "oakhaven/oakhaven",
+  destination = "from_saloon",
 }
 
 pickable{
@@ -1717,6 +1718,14 @@ pickable{
   x = 200,
   y = 85,
   treasure_name = "sword",
+}
+
+enemy{
+  layer = 0,
+  x = 456,
+  y = 229,
+  direction = 0,
+  breed = "normal_enemies/trumpet_player_disguise",
 }
 
 tile{
