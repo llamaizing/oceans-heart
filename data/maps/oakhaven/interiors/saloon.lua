@@ -32,6 +32,7 @@ function patron_1:on_interaction()
     game:start_dialog("_oakhaven.npcs.saloon.trumpet_era.1")
   else
     game:start_dialog("_oakhaven.npcs.saloon.gunther_band.1")
+  end
 end
 
 function patron_2:on_interaction()
@@ -39,6 +40,7 @@ function patron_2:on_interaction()
     game:start_dialog("_oakhaven.npcs.saloon.trumpet_era.1")
   else
     game:start_dialog("_oakhaven.npcs.saloon.gunther_band.1")
+  end
 end
 
 

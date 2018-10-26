@@ -5,7 +5,7 @@ properties{
   height = 480,
   min_layer = 0,
   max_layer = 2,
-  tileset = "temple",
+  tileset = "indoors_stone",
 }
 
 tile{
@@ -1016,6 +1016,168 @@ tile{
   pattern = "wall.right.2",
 }
 
+tile{
+  layer = 0,
+  x = 272,
+  y = 48,
+  width = 320,
+  height = 400,
+  pattern = "288",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "560",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 40,
+  width = 8,
+  height = 48,
+  pattern = "558",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 40,
+  width = 32,
+  height = 8,
+  pattern = "563",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 24,
+  width = 48,
+  height = 16,
+  pattern = "564",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 40,
+  width = 8,
+  height = 48,
+  pattern = "557",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "562",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 64,
+  width = 32,
+  height = 24,
+  pattern = "559",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "561",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 160,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 160,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 552,
+  y = 240,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 240,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 192,
+  width = 32,
+  height = 32,
+  pattern = "567",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 304,
+  width = 32,
+  height = 32,
+  pattern = "581",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 304,
+  width = 32,
+  height = 32,
+  pattern = "582",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -1720,14 +1882,6 @@ pickable{
   treasure_name = "sword",
 }
 
-enemy{
-  layer = 0,
-  x = 456,
-  y = 229,
-  direction = 0,
-  breed = "normal_enemies/trumpet_player_disguise",
-}
-
 tile{
   layer = 1,
   x = 192,
@@ -1807,5 +1961,86 @@ tile{
   width = 16,
   height = 16,
   pattern = "112",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 552,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 504,
+  y = 144,
+  width = 32,
+  height = 48,
+  pattern = "569",
+}
+
+tile{
+  layer = 1,
+  x = 536,
+  y = 280,
+  width = 32,
+  height = 24,
+  pattern = "583",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = 280,
+  width = 32,
+  height = 24,
+  pattern = "584",
 }
 

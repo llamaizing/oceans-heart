@@ -7412,6 +7412,20 @@ You have no idea.)
 }
 
 dialog{
+  id = "_oakhaven.npcs.musicians.gloria.2",
+  text = [[
+GLORIA:
+Isnaaah staaauu buuuh
+Ahhauu neeesii luuuuuh
+Ooooooooo
+(Despite how incomprehensible her words
+are, she has a good singing voice. Hopefully
+she isn't saying anything you'd be
+embarrassed to tap your foot to.
+]]
+}
+
+dialog{
   id = "_oakhaven.npcs.musicians.gunther.1",
   text = [[
 GUNTHER (singing):
