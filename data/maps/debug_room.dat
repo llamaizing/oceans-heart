@@ -1852,7 +1852,7 @@ destructible{
 
 block{
   layer = 0,
-  x = -48,
+  x = -40,
   y = 29,
   sprite = "entities/chairL",
   pushable = true,
@@ -1880,6 +1880,16 @@ pickable{
   x = 200,
   y = 85,
   treasure_name = "sword",
+}
+
+block{
+  layer = 0,
+  x = -56,
+  y = 29,
+  sprite = "entities/chair2R",
+  pushable = true,
+  pullable = true,
+  maximum_moves = 2,
 }
 
 tile{

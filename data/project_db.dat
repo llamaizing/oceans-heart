@@ -353,6 +353,8 @@ sprite{ id = "entities/bush_small_tree", description = "small tree" }
 sprite{ id = "entities/bush_violet", description = "Violet" }
 sprite{ id = "entities/bush_yarrow_white", description = "Yarrow - white" }
 sprite{ id = "entities/bush_yarrow_yellow", description = "Yarrow - Yellow" }
+sprite{ id = "entities/chair2L", description = "Chair2L" }
+sprite{ id = "entities/chair2R", description = "Chair 2R" }
 sprite{ id = "entities/chairL", description = "Chair L" }
 sprite{ id = "entities/chairR", description = "chair right" }
 sprite{ id = "entities/chest", description = "Chest" }
