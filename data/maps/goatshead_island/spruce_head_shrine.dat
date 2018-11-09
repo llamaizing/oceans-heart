@@ -35044,6 +35044,7 @@ block{
   layer = 0,
   x = 1232,
   y = 829,
+  direction = 3,
   sprite = "entities/block_crate",
   pushable = true,
   pullable = false,
@@ -62194,6 +62195,96 @@ tile{
   pattern = "691",
 }
 
+tile{
+  layer = 1,
+  x = 1320,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "2087",
+}
+
+tile{
+  layer = 1,
+  x = 1304,
+  y = 600,
+  width = 16,
+  height = 16,
+  pattern = "2088",
+}
+
+tile{
+  layer = 1,
+  x = 1224,
+  y = 384,
+  width = 24,
+  height = 16,
+  pattern = "690",
+}
+
+tile{
+  layer = 1,
+  x = 1248,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "2088",
+}
+
+tile{
+  layer = 1,
+  x = 1240,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "2088",
+}
+
+tile{
+  layer = 1,
+  x = 1224,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "2087",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 408,
+  width = 24,
+  height = 16,
+  pattern = "2089",
+}
+
+tile{
+  layer = 1,
+  x = 1488,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "2088",
+}
+
+tile{
+  layer = 1,
+  x = 1304,
+  y = 280,
+  width = 32,
+  height = 16,
+  pattern = "2088",
+}
+
+tile{
+  layer = 1,
+  x = 1312,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "2087",
+}
+
 pickable{
   layer = 1,
   x = 168,
@@ -62577,30 +62668,6 @@ destructible{
   layer = 1,
   x = 1224,
   y = 669,
-  sprite = "entities/bush_forest",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 1232,
-  y = 397,
-  sprite = "entities/bush_forest",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 1232,
-  y = 413,
-  sprite = "entities/bush_forest",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 1248,
-  y = 405,
   sprite = "entities/bush_forest",
   can_be_cut = true,
 }
@@ -66927,6 +66994,24 @@ tile{
   layer = 2,
   x = 752,
   y = 816,
+  width = 24,
+  height = 8,
+  pattern = "691",
+}
+
+tile{
+  layer = 2,
+  x = 1464,
+  y = 496,
+  width = 24,
+  height = 16,
+  pattern = "2089",
+}
+
+tile{
+  layer = 2,
+  x = 1224,
+  y = 376,
   width = 24,
   height = 8,
   pattern = "691",

@@ -20,7 +20,7 @@ function map:on_started()
    if game:get_value("phantom_squid_quest_completed") == true then eamon:set_enabled(false) end
   
   eamon_winner:set_enabled(false)
-  if game:get_value("aster_enemy_state") ~= nil and game:get_value("phantom_squid_quest_completed") ~= true then
+  if game:get_value("aster_murdered") == true  and game:get_value("phantom_squid_quest_completed") ~= true then
     eamon:set_enabled(false)
     eamon_winner:set_enabled(true)
   end

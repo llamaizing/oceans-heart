@@ -16285,6 +16285,54 @@ switch{
   inactivate_when_leaving = false,
 }
 
+destructible{
+  layer = 0,
+  x = 184,
+  y = 205,
+  sprite = "entities/vase",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 200,
+  y = 205,
+  sprite = "entities/vase",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 216,
+  y = 205,
+  sprite = "entities/vase",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 45,
+  sprite = "entities/vase",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 72,
+  y = 61,
+  sprite = "entities/vase",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 45,
+  sprite = "entities/vase",
+  can_be_cut = true,
+}
+
 tile{
   layer = 1,
   x = 1144,

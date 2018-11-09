@@ -25035,8 +25035,9 @@ chest{
   name = "sword_chest",
   layer = 0,
   x = 1160,
-  y = 109,
+  y = 117,
   treasure_name = "sword",
+  treasure_savegame_variable = "new_limestone_sword_chest",
   sprite = "entities/chest",
 }
 

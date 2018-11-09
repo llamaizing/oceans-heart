@@ -516,7 +516,7 @@ dialog{
   text = [[
 Hey, I've got all the best spices here. You
 want cardamom? I've got cardamom. Need
-cloves? Have 'em. Looking for tumeric?
+cloves? Have 'em. Looking for turmeric?
 I'll give you tumeric! I have the spices!
 ]]
 }
@@ -701,7 +701,7 @@ dialog{
   id = "_ballast_harbor.npcs.tavern.5",
   text = [[
 You get a nice cross-section of unsavory
-sorts here. I can really make you appreciate
+sorts here. It can really make you appreciate
 how decent your friends are, even if they're
 dishonest bilge-lizards.
 ]]
@@ -5388,7 +5388,7 @@ dialog{
   text = [[
 TILIA:
 Ugh, I really need to clean out our room.
-Dragging this stuff out of the way
+Better drag this stuff out of the way.
 ]]
 }
 

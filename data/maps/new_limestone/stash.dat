@@ -1001,7 +1001,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 248,
+  x = 240,
   y = 96,
   width = 32,
   height = 16,
@@ -1019,7 +1019,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 280,
+  x = 272,
   y = 88,
   width = 16,
   height = 16,
@@ -1089,7 +1089,7 @@ teletransporter{
 
 block{
   layer = 0,
-  x = 312,
+  x = 296,
   y = 117,
   sprite = "entities/block_crate",
   pushable = true,
@@ -1099,7 +1099,7 @@ block{
 
 block{
   layer = 0,
-  x = 312,
+  x = 296,
   y = 149,
   sprite = "entities/block_crate",
   pushable = true,
@@ -1109,12 +1109,36 @@ block{
 
 block{
   layer = 0,
-  x = 312,
+  x = 296,
   y = 133,
   sprite = "entities/block_crate",
   pushable = true,
   pullable = false,
   maximum_moves = 1,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 117,
+  sprite = "entities/vase",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 125,
+  sprite = "entities/vase",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 280,
+  y = 133,
+  sprite = "entities/vase",
+  can_be_cut = true,
 }
 
 tile{
@@ -1227,7 +1251,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 248,
+  x = 240,
   y = 80,
   width = 32,
   height = 16,
@@ -1245,7 +1269,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 280,
+  x = 272,
   y = 80,
   width = 16,
   height = 8,
@@ -1281,27 +1305,6 @@ destructible{
   layer = 1,
   x = 104,
   y = 93,
-  sprite = "entities/vase",
-}
-
-destructible{
-  layer = 1,
-  x = 296,
-  y = 117,
-  sprite = "entities/vase",
-}
-
-destructible{
-  layer = 1,
-  x = 280,
-  y = 117,
-  sprite = "entities/vase",
-}
-
-destructible{
-  layer = 1,
-  x = 288,
-  y = 125,
   sprite = "entities/vase",
 }
 
