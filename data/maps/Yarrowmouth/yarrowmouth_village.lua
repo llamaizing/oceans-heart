@@ -18,6 +18,7 @@ function map:on_started()
   oakhaven_teletransport:set_enabled(false)
   to_limestone:set_enabled(false)
   if game:get_value("dream_cannons_defeated") == true then carlov:set_enabled(false) end
+  if game:get_value("yarrowmouth_bird_temple_door_opened") == true then bird_repaired:set_enabled(true) end
 
   local gm=sol.movement.create("random")
   gm:set_speed(10)
@@ -59,6 +60,7 @@ function broken_bird_statue:on_interaction()
         bird_repaired:set_enabled(true)
         map:open_doors("bird_beak_door")
         sol.audio.play_sound("secret")
+        game:set_value("yarrowmouth_bird_temple_door_opened", true)
       end
     end)
   else

@@ -28035,6 +28035,60 @@ tile{
   pattern = "1579",
 }
 
+tile{
+  layer = 0,
+  x = 8,
+  y = 1160,
+  width = 8,
+  height = 8,
+  pattern = "492",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1160,
+  width = 8,
+  height = 8,
+  pattern = "491",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 1160,
+  width = 8,
+  height = 8,
+  pattern = "493",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 1096,
+  width = 8,
+  height = 8,
+  pattern = "492",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1096,
+  width = 8,
+  height = 8,
+  pattern = "491",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 1096,
+  width = 8,
+  height = 8,
+  pattern = "493",
+}
+
 stairs{
   layer = 0,
   x = 304,
@@ -55576,6 +55630,78 @@ tile{
   pattern = "14",
 }
 
+tile{
+  layer = 1,
+  x = 8,
+  y = 1152,
+  width = 8,
+  height = 8,
+  pattern = "496",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 1152,
+  width = 8,
+  height = 8,
+  pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 1152,
+  width = 8,
+  height = 8,
+  pattern = "497",
+}
+
+tile{
+  layer = 1,
+  x = 8,
+  y = 1088,
+  width = 8,
+  height = 8,
+  pattern = "496",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 1088,
+  width = 8,
+  height = 8,
+  pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 1088,
+  width = 8,
+  height = 8,
+  pattern = "497",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "2039",
+}
+
+tile{
+  layer = 1,
+  x = 1136,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "2038",
+}
+
 destructible{
   layer = 1,
   x = 336,
@@ -59868,6 +59994,24 @@ tile{
   width = 8,
   height = 8,
   pattern = "496",
+}
+
+tile{
+  layer = 2,
+  x = 1184,
+  y = 864,
+  width = 16,
+  height = 24,
+  pattern = "2041",
+}
+
+tile{
+  layer = 2,
+  x = 1136,
+  y = 864,
+  width = 16,
+  height = 24,
+  pattern = "2040",
 }
 
 enemy{

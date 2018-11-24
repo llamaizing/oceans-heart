@@ -4553,7 +4553,7 @@ sensor{
   layer = 0,
   x = 104,
   y = 869,
-  width = 144,
+  width = 160,
   height = 16,
 }
 

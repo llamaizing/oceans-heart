@@ -33362,6 +33362,50 @@ destructible{
   can_be_cut = true,
 }
 
+npc{
+  name = "block_again_guy",
+  layer = 0,
+  x = 512,
+  y = 157,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/man/man_12.6",
+  behavior = "dialog#_oakhaven.npcs.port.block_guy",
+}
+
+block{
+  name = "block_again_block_1",
+  layer = 0,
+  x = 528,
+  y = 141,
+  sprite = "entities/block_crate",
+  pushable = false,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  name = "block_again_block_2",
+  layer = 0,
+  x = 488,
+  y = 141,
+  sprite = "entities/block_crate",
+  pushable = false,
+  pullable = false,
+  maximum_moves = 1,
+}
+
+block{
+  name = "block_again_block_3",
+  layer = 0,
+  x = 496,
+  y = 157,
+  sprite = "entities/block_crate",
+  pushable = false,
+  pullable = false,
+  maximum_moves = 1,
+}
+
 tile{
   layer = 1,
   x = 80,

@@ -12949,12 +12949,82 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2115",
+  ground = "wall",
+  default_layer = 0,
+  x = 528,
+  y = 1040,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2116",
+  ground = "wall",
+  default_layer = 0,
+  x = 576,
+  y = 1040,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2117",
+  ground = "wall",
+  default_layer = 1,
+  x = 568,
+  y = 1008,
+  width = 24,
+  height = 32,
+}
+
+tile_pattern{
+  id = "2118",
+  ground = "wall",
+  default_layer = 1,
+  x = 528,
+  y = 1008,
+  width = 24,
+  height = 32,
+}
+
+tile_pattern{
+  id = "2119",
+  ground = "wall",
+  default_layer = 1,
+  x = 552,
+  y = 1008,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
   id = "212",
   ground = "traversable",
   default_layer = 1,
   x = 48,
   y = 464,
   width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2120",
+  ground = "wall",
+  default_layer = 1,
+  x = 528,
+  y = 992,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2121",
+  ground = "wall",
+  default_layer = 1,
+  x = 544,
+  y = 992,
+  width = 16,
   height = 16,
 }
 
