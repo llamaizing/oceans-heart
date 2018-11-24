@@ -32,6 +32,12 @@ function map:on_started()
     access_block_1:set_enabled(false) access_block_2:set_enabled(false) access_block_3:set_enabled(false)
   end
 
+  if game:get_value("hazel_is_here") == true then
+    for block in map:get_entities("block_again") do
+      block:set_enabled(false)
+    end
+  end
+
   if game:get_value("find_burglars") == true then burglar_lookout:set_enabled(false) end
 
 --NPC movement

@@ -34029,8 +34029,8 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 72,
-  y = 693,
+  x = 600,
+  y = 669,
   direction = 0,
   breed = "normal_enemies/birdfox_1",
 }
@@ -34593,6 +34593,56 @@ wall{
   stops_npcs = true,
   stops_enemies = true,
   stops_blocks = true,
+}
+
+enemy{
+  layer = 0,
+  x = 88,
+  y = 693,
+  direction = 0,
+  breed = "normal_enemies/seaweed_blob",
+}
+
+enemy{
+  layer = 0,
+  x = 152,
+  y = 717,
+  direction = 0,
+  breed = "normal_enemies/seaweed_blob",
+}
+
+enemy{
+  layer = 0,
+  x = 152,
+  y = 605,
+  direction = 0,
+  breed = "normal_enemies/seaweed_blob",
+}
+
+enemy{
+  layer = 0,
+  x = 136,
+  y = 661,
+  direction = 0,
+  breed = "normal_enemies/seaweed_blob",
+}
+
+wall{
+  layer = 0,
+  x = 96,
+  y = 736,
+  width = 56,
+  height = 8,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 144,
+  y = 528,
+  width = 88,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{

@@ -15,6 +15,12 @@ function map:on_started()
   if game:get_value("salamander_heartache_storehouse_door_open") == true then map:open_doors("storehouse_door") end
   if game:has_item("sleeping_draught") == true then star_barrel:set_enabled(true) end
   if game:get_value("morus_available") ~= true then morus:set_enabled(false) end
+  if game:get_value("oakhaven_musicians_saved") == true then
+    brian:set_enabled(false)
+  else
+    musician_1:set_enabled(false)
+    musician_2:set_enabled(false)
+  end
 end
 
 
@@ -22,12 +28,34 @@ end
 -------------------NPCS---------------------------------------
 
 function patron_1:on_interaction()
-  game:start_dialog("_oakhaven.npcs.saloon.trumpet_era.1")
+  if game:get_value("oakhaven_musicians_saved") ~= true then
+    game:start_dialog("_oakhaven.npcs.saloon.trumpet_era.1")
+  else
+    game:start_dialog("_oakhaven.npcs.saloon.gunther_band.1")
+  end
+end
+
+function patron_2:on_interaction()
+  if game:get_value("oakhaven_musicians_saved") ~= true then
+    game:start_dialog("_oakhaven.npcs.saloon.trumpet_era.1")
+  else
+    game:start_dialog("_oakhaven.npcs.saloon.gunther_band.1")
+  end
 end
 
 
+--BARTENDER----------
+
 function bartender:on_interaction()
-  if game:get_value("morus_available") == true then
+  --if you're on the gunther band quest
+  if game:get_value("oakhaven_band_talk_to_bartender") == true
+  and game:get_value("oakhaven_talked_to_bartender_about_monster") ~= true then
+    game:start_dialog("_oakhaven.npcs.saloon.bartender_posters")
+    game:set_value("oakhaven_find_poster_monster", true)
+    game:set_value("oakhaven_talked_to_bartender_about_monster", true)
+    game:set_value("gunther_counter", 3)
+  --if you're looking for Morus
+  elseif game:get_value("morus_available") == true then
     if game:get_value("morus_counter") == nil then game:start_dialog("_oakhaven.npcs.saloon.bartender1")
     else game:start_dialog("_oakhaven.npcs.saloon.bartender2")
     end
@@ -35,6 +63,10 @@ function bartender:on_interaction()
     game:start_dialog("_oakhaven.npcs.saloon.bartender2")
   end
 end
+
+
+
+--MORUS----------
 
 function morus:on_interaction()
   if game:get_value("morus_counter") == nil then
@@ -78,6 +110,20 @@ function morus:on_interaction()
 
   end
 end
+
+
+---GUNTHER--------------
+function musician_1:on_interaction()
+  if game:get_value("gunther_counter") ~= 5 then
+    game:start_dialog("_oakhaven.npcs.musicians.gunther.6", function()
+      game:get_hero():start_treasure("coral_ore")
+      game:set_value("gunther_counter", 5)
+    end) --end dialog callback
+  else
+    game:start_dialog("_oakhaven.npcs.musicians.gunther.7")
+  end
+end
+
 
 function storehouse_door_switch:on_activated()
   sol.audio.play_sound("switch")

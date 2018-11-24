@@ -303,6 +303,7 @@ sprite{ id = "enemies/normal_enemies/stump_duck", description = "Stump Duck" }
 sprite{ id = "enemies/normal_enemies/sword_soldier_blue", description = "sword soldier blue" }
 sprite{ id = "enemies/normal_enemies/sword_soldier_blue_weapon", description = "sword soldier blue weapon" }
 sprite{ id = "enemies/normal_enemies/triangle_crab_red", description = "Triangle crab-red" }
+sprite{ id = "enemies/normal_enemies/trumpet_player_disguise", description = "trumpet player disguise" }
 sprite{ id = "enemies/normal_enemies/zora", description = "Zora" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 sprite{ id = "entities/apple", description = "apple" }
@@ -352,6 +353,8 @@ sprite{ id = "entities/bush_small_tree", description = "small tree" }
 sprite{ id = "entities/bush_violet", description = "Violet" }
 sprite{ id = "entities/bush_yarrow_white", description = "Yarrow - white" }
 sprite{ id = "entities/bush_yarrow_yellow", description = "Yarrow - Yellow" }
+sprite{ id = "entities/chair2L", description = "Chair2L" }
+sprite{ id = "entities/chair2R", description = "Chair 2R" }
 sprite{ id = "entities/chairL", description = "Chair L" }
 sprite{ id = "entities/chairR", description = "chair right" }
 sprite{ id = "entities/chest", description = "Chest" }
@@ -737,6 +740,7 @@ sprite{ id = "npc/man/man_9.7", description = "npc/man/man_9.7" }
 sprite{ id = "npc/man/man_9.8", description = "npc/man/man_9.8" }
 sprite{ id = "npc/morus", description = "Morus" }
 sprite{ id = "npc/musician_2", description = "Musician 2" }
+sprite{ id = "npc/musician_3", description = "Musician 3" }
 sprite{ id = "npc/nina", description = "Nina" }
 sprite{ id = "npc/old_man_1.2", description = "Old Man 1.2" }
 sprite{ id = "npc/orange_ana", description = "Orange Ana" }
@@ -790,6 +794,7 @@ sprite{ id = "npc/pirates/pirate_9.1", description = "npc/pirates/pirate_9.1" }
 sprite{ id = "npc/pirates/pirate_9.2", description = "npc/pirates/pirate_9.2" }
 sprite{ id = "npc/pirates/pirate_9.3", description = "npc/pirates/pirate_9.3" }
 sprite{ id = "npc/pirates/pirate_9.4", description = "npc/pirates/pirate_9.4" }
+sprite{ id = "npc/poster", description = "Poster" }
 sprite{ id = "npc/seed", description = "seed" }
 sprite{ id = "npc/sitting_1", description = "sitting man" }
 sprite{ id = "npc/sitting_2", description = "npc/sitting_2" }
@@ -802,6 +807,7 @@ sprite{ id = "npc/sitting_8", description = "sitting man 8" }
 sprite{ id = "npc/sleeping_pirate_left", description = "Sleeping Pirate-Left" }
 sprite{ id = "npc/sleeping_pirate_right", description = "Sleeping Pirate - Right" }
 sprite{ id = "npc/trumpet_player_1", description = "Trumpet Player 1" }
+sprite{ id = "npc/trumpet_player_disguise", description = "trumpet player disguise" }
 sprite{ id = "npc/woman/sweeping_lady_1", description = "Sweeping Lady 1" }
 sprite{ id = "npc/woman/sweeping_lady_2", description = "Sweeping Lady 2" }
 sprite{ id = "npc/woman/sweeping_lady_3", description = "Sweeping Lady 3" }
@@ -1233,6 +1239,7 @@ enemy{ id = "normal_enemies/spitstump_small", description = "Spitstump - Small" 
 enemy{ id = "normal_enemies/stump_duck", description = "Stump Duck" }
 enemy{ id = "normal_enemies/sword_soldier_blue", description = "sword soldier blue" }
 enemy{ id = "normal_enemies/triangle_crab_red", description = "Triangle Crab-Red" }
+enemy{ id = "normal_enemies/trumpet_player_disguise", description = "Trumpet Player Disguise" }
 enemy{ id = "normal_enemies/zora", description = "Zora" }
 enemy{ id = "tentacle", description = "tentacle" }
 

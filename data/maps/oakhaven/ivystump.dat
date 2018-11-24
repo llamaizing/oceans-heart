@@ -17379,6 +17379,18 @@ teletransporter{
   destination = "from_outside",
 }
 
+wall{
+  layer = 0,
+  x = 224,
+  y = 440,
+  width = 64,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+}
+
 tile{
   layer = 1,
   x = 216,
@@ -19240,18 +19252,6 @@ tile{
   width = 96,
   height = 48,
   pattern = "2025",
-}
-
-wall{
-  layer = 1,
-  x = 224,
-  y = 440,
-  width = 64,
-  height = 8,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
 }
 
 tile{

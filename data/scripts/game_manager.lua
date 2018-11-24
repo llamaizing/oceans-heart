@@ -97,7 +97,7 @@ function game:on_key_pressed(key, modifiers)
       game:set_life(game:get_max_life())
       
 --end of debug functions
---
+--]]
 
   end
 

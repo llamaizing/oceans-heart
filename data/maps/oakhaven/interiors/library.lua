@@ -37,10 +37,12 @@ function rise_of_the_sea_king:on_interaction()
 end
 
 function note:on_interaction()
-  game:start_dialog("_oakhaven.observations.hazel_books.8-note", function()
-    sol.audio.play_sound("quest_log")
-    game:start_dialog("_game.quest_log_update")
-    game:set_value("quest_log_a", "a12")
-    game:set_value("find_burglars", true)
-  end)
+  if game:get_value("find_burglars") ~= true then
+    game:start_dialog("_oakhaven.observations.hazel_books.8-note", function()
+      sol.audio.play_sound("quest_log")
+      game:start_dialog("_game.quest_log_update")
+      game:set_value("quest_log_a", "a12")
+      game:set_value("find_burglars", true)
+    end)
+  end
 end

@@ -25227,15 +25227,6 @@ destructible{
   can_be_cut = true,
 }
 
-chest{
-  name = "sword_chest",
-  layer = 0,
-  x = 1176,
-  y = 133,
-  treasure_name = "sword",
-  sprite = "entities/chest",
-}
-
 destination{
   name = "from_sanctuary",
   layer = 0,
@@ -25260,6 +25251,16 @@ destructible{
   y = 717,
   sprite = "entities/bush_forsythia",
   can_be_cut = true,
+}
+
+chest{
+  name = "sword_chest",
+  layer = 0,
+  x = 1176,
+  y = 133,
+  treasure_name = "sword",
+  treasure_savegame_variable = "new_limestone_sword_chest",
+  sprite = "entities/chest",
 }
 
 tile{
