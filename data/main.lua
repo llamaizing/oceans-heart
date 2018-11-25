@@ -12,19 +12,11 @@ function sol.main:on_started()
   --set the language
   sol.language.set_language("en")
 
+  --Set the window title.
+  sol.video.set_window_title("Ocean's Heart")
 
---[[local solarus_logo = require("scripts/menus/solarus_logo")
-
-  -- Show the Solarus logo initially.
-  sol.menu.start(self, solarus_logo)
-
-  -- Start the game when the Solarus logo menu is finished.
-  solarus_logo.on_finished = function()
-
-  end
---]]
-
-    game_manager:start_game("save1.dat")
+    local game = game_manager:create("save1.dat")
+    sol.main.start_savegame(game)
 end
 
 
@@ -55,4 +47,11 @@ function sol.main:on_key_pressed(key, modifiers)
   end
 
   return handled
+end
+
+--Starts a game.
+function sol.main:start_savegame(game)
+  
+  sol.main.game = game
+  game:start()
 end

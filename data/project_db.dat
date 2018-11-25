@@ -1257,5 +1257,8 @@ language{ id = "en/images", description = "en/images" }
 font{ id = "alttp", description = "alttp" }
 font{ id = "green_digits", description = "Green digits" }
 font{ id = "oceansfont", description = "oceansfont" }
+font{ id = "pixolde/Pixolde", description = "pixolde/Pixolde" }
+font{ id = "pixolde/Pixolde-Bold", description = "pixolde/Pixolde-Bold" }
+font{ id = "proggy/ProggyTinySZ", description = "proggy/ProggyTinySZ" }
 font{ id = "white_digits", description = "White digits" }
 

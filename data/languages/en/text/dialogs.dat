@@ -10290,6 +10290,247 @@ Fast travel?
 }
 
 dialog{
+  id = "quest.another_sidequest",
+  title = "Another Sidequest",
+  text = [[
+]]
+}
+
+dialog{
+  id = "quest.bob_glasses",
+  title = "Meeting Bob",
+  text = [[
+@ Talk to Bob
+!
+! You can find him at the top
+! of the tower.
+ 
+@ Find Bob's glasses
+!
+! Try checking the library or
+! the tavern.
+ 
+@ Return the glasses to Bob
+! at the top of the tower.
+]]
+}
+
+dialog{
+  id = "quest.cake_for_charles",
+  title = "Cake for Charles",
+  text = [[
+##  Charles is looking to obtain
+##  a cake for his wife.
+!
+! Try asking around at the
+! general store.
+ ?
+@?  Maya told you to talk to her
+ ?  mother, Jill.
+
+@ Talk to Jill.
+!
+! She works at the inn.
+
+@ Bring some flour to Jill.
+!
+! You can buy some at the
+! general store.
+
+@ Give the cake to Charles.
+
+##  Reward: $v1 crowns
+]]
+}
+
+dialog{
+  id = "quest.meet_wizard",
+  title = "Meet the Wizard",
+  text = [[
+  Some intro text
+
+@ Talk to the Wizard
+
+@ Explore the dungeon
+
+@ and last this
+##
+##  some description text
+]]
+}
+
+dialog{
+  id = "quest.simple_example",
+  title = "",
+  text = [[
+@ Look for the key to the gate
+  in the cellar.
+
+@ Search the area behind the
+  gate for clues.
+
+@ Report your findings to the
+    wizzard.
+]]
+}
+
+dialog{
+  id = "quest.some_sidequest",
+  title = "Some Sidequest",
+  text = [[
+@ $s1
+
+@ $s2
+]]
+}
+
+dialog{
+  id = "quest.test1",
+  title = "One Fowl Day",
+  text = [[
+  This is the beginning
+  of the quest
+
+@ phase 1 objective
+
+@ phase 2 objective
+
+@ phase 3 objective
+]]
+}
+
+dialog{
+  id = "quest.test10",
+  title = "Pete's Adventure",
+  text = [[
+]]
+}
+
+dialog{
+  id = "quest.test11",
+  title = "Time Will Tell",
+  text = [[
+]]
+}
+
+dialog{
+  id = "quest.test12",
+  title = "No More Moves?",
+  text = [[
+]]
+}
+
+dialog{
+  id = "quest.test2",
+  title = "Part and Parcel",
+  text = [[
+  1 The
+@ 1 Red
+  1 Fox
+    
+  1 Watches
+; 
+  2 For
+@ 2 its
+@ 3 opportunity
+; 
+  4 to
+
+  4 prevail
+@ 4 fin
+]]
+}
+
+dialog{
+  id = "quest.test3",
+  title = "Cheer Up Dave",
+  text = [[
+  Dave is not feeling well,
+  but not for long. --//comment test
+  
+@ Find his missing item.
+]]
+}
+
+dialog{
+  id = "quest.test4",
+  title = "Celebration",
+  text = [[
+@ step 1
+  
+@ step 2
+  
+# Always bottom text test
+]]
+}
+
+dialog{
+  id = "quest.test5",
+  title = "Gone Again",
+  text = [[
+@ objective 1
+##
+##  This text does not grey out
+#
+# This text does
+
+@ objective 2
+#
+@#  objective 3 (always shown)
+# and includes line wrap
+#
+#!  This line will be hidden
+#!
+@ objective 4
+]]
+}
+
+dialog{
+  id = "quest.test6",
+  title = "Lost and Found",
+  text = [[
+@!? This line is not shown ever!
+ !  Talk to the old man
+ !
+@!?   --// first phase break is here
+ !  Obtain some item
+ !
+ ?  Congratulations, you did it!
+ ?
+# OBJECTIVES:
+#  Find the map
+#  Find the compass
+#  Find the Boss Key
+#  Collect the shards (3 of 4)
+]]
+}
+
+dialog{
+  id = "quest.test7",
+  title = "Best Wishes",
+  text = [[
+@ Collect all the gemstones
+  $@1 Find 5 Emeralds ($v1 of 5)
+  $@2 Find 3 Topazes ($v2 of 3)
+  $@3 Find 2 Rubies ($v3 of 2)
+]]
+}
+
+dialog{
+  id = "quest.test8",
+  title = "High Tide",
+  text = [[
+]]
+}
+
+dialog{
+  id = "quest.test9",
+  title = "Forgotten Memories",
+  text = [[
+]]
+}
+
+dialog{
   id = "seed_spot.plant",
   text = [[
 ]]
@@ -10301,6 +10542,43 @@ dialog{
 Would you like to water this seed?
      $? Yes
      $? No
+]]
+}
+
+dialog{
+  id = "welcome_dialog",
+  text = [[
+##Wizard
+Welcome!
+There are many
+Things to do here.
+The name is still
+displayed up top.
+
+##>&player_name
+How are you?
+
+
+###
+The name is now off.
+
+
+And still off.
+
+
+##And now a really long name
+Did it work?
+
+
+##Name on last line
+]]
+}
+
+dialog{
+  id = "wizard_welcome",
+  text = [[
+##Wizard
+Greetings Friend.
 ]]
 }
 

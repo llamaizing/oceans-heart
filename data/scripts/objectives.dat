@@ -1,0 +1,315 @@
+--[[ objectives.dat		23 Nov 2018
+	
+	This data file describes quests which are to be shown in the quest log menu. The quest
+	can be either a "main" quest or a "side" quest, where they get listed separately. Each
+	quest must define a dialog_id, which contains both the quest title and its description
+	text. It must also define calc_phase, which determines the progress of the quest (i.e.
+	the current phase value) based on the current state of save game variables (see below).
+	
+	The number of phases (subtasks) present in a quest is determined by the content of the
+	dialog_id text, which is equal to the number of lines beginning with the '@' character
+	(excluding whitespace). For more information on the content of the dialog construction
+	and syntax, see scripts/objectives_manager.lua.
+	
+	Possible entries main{} and side{} have the same properties that can be defined:
+	* dialog_id (string) - id of dialogs.dat entry that defines the title and description text
+	* calc_phase (string or table) - Specifies save game variable(s) to determine the current phase
+		(string) - name of save game variable to use. It can have the following values
+			false/nil - the player has not yet started the quest
+			0 - player started the quest but hasn't completed any objectives (subtasks)
+			1 and up - the current phase, also equal to the number of subtasks completed
+			Note: The number of phases in a quest is determined by the number of lines
+			beginning with an '@' character. When the current phase is equal to the
+			total number of phases, the quest is marked as complete.
+		(table) - contains as table indicies any number of save game variable names (strings)
+		whose values get passed to the custom callback function, which returns what the current
+		phase currently is. Keys are the following:
+			1 and up (string)- any number of save game variable names needed by the callback function
+			callback (function) - callback function that returns the current phase based on
+			the save game variable values that are passed back as a table in the first argument.
+			It has the following arguments:
+				args (table) - contains as indicies values for the save game variables listed above
+				It also has the following special keys that can be accessed:
+					num_phases (number) - the total number of phases for this quest --TODO not yet implemented
+			It has the following return values:
+				(number or nil/false) - what phase this quest should be set to (0 and up)
+					value of false means the player has not started the quest yet
+	* location (string or table, optional) - string.dat key(s) to specify the location text to show for this mission
+		(string) - strings.dat key to use for the location text for all phases
+		(table) - list of strings.dat keys to use each phase, where the index corresponds to the phase.
+			Values of true repeat the location of the previous phase
+			Values of false use an empty string as the location for that phase
+			Note: the location specified in index 1 would be shown in the quest log from
+			when the player starts the quest until beginning phase 1. When the quest is
+			complete, the location from the last phase will continue to be shown.
+		default: location text will not be shown for any phase
+	* replace_s
+	* replace_v
+	* show_at_start (boolean, optional) - The player begins a new game with this quest already in their quest log (default: false)
+	]]
+	
+	--## Examples of Variable Substitution Values and Strings ##--
+	--[=[
+	
+	Take the following description string:
+	[[
+	Collect all the shards ($v1 of 3 found)
+	
+	Good luck, $v2
+	]]
+	
+	A simple substitution would be as follows:
+	replace_v = {
+		"num_shards_collected", --value is number 0 to 3
+		"player_name", --value is a string
+	}
+	
+	There is no callback function specified in this case, so the save game values are used
+	directly for the substitution. $v1 becomes the the number of shards that are collected
+	by the player, and $v2 becomes the player's name. Note that since the player will have
+	chosen their own name, it does not need to be localized. Ensure that the length of the
+	players name won't exceed the line's max character count.
+	
+	Here is a more complicated substitution using a custom function:
+	[[
+	Kill 10 monsters ($v1 remaining)
+	
+	$v2 of $v3 subtasks complete
+	]]
+	
+	The custom function for the substitution would be specified as follows:
+	replace_v = {
+		"monsters_killed", --value is a number
+		callback = function(args)
+			local num_monsters_killed = args[1] --current value of first savegame variable
+			local monsters_remaining = 10 - num_monsters_killed
+			
+			return {
+				math.max(monsters_remaining, 0), --ensure number is not negative
+				args.phase, --current phase, equals number of subtasks that are complete
+				args.num_phases, --total number of phases (subtasks) in this quest
+			}
+		end
+	}
+	
+	So some arithmetic is used to convert the number of monsters killed into the number of
+	monsters remaining. The current phase and the total number of phases are available for
+	the callback function as well.
+	
+	And finally, an example of substituting for string values from strings.dat:
+	[[
+	Peter is looking for a new fishing rod.
+	
+	$s1
+	
+	You $s2 enough coins.
+	]]
+	
+	replace_s = {
+		"bought_fishing_rod", --value is true or false
+		"number_of_coins", --value is a number
+		callback = function(args)
+			return {
+				args[1] and "quest.finding_rod" or "quest.finding_peter",
+				args[2]>=50 and "quest.have_enough" or "quest.not_enough",
+			}
+		end
+	}
+	
+	--strings.dat
+	text{key="quest.finding_rod", value="You can buy a fishing rod at the general store."}
+	text{key="quest.finding_peter", value="You can find Peter at the pier"}
+	text{key="quest.have_enough", value="have"}
+	text{key="quest.not enough", value="do not have"}
+	
+	Since substituted strings need localization, the callback function returns strings.dat
+	keys this time instead of the direct string to be substituted. $s1 gets substituted by
+	a full line of text depending on whether the player obtained the fishing rod yet. Then
+	depending on whether the player has enough coins, $s2 becomes "do not have" or "have".
+	
+	Note that it is possible for a $s substitution to include $v in the substitution text,
+	which would then go through a second substitution. If a $s substitution has another $s
+	in the substituted text, it must only substitute for a higher value of $s than itself.
+	For example, $s2 could substitute for $s3, but not for a second $s.
+]=]
+
+
+side{
+	dialog_id = "quest.meet_wizard",
+	calc_phase = "quest_meet_wizard_phase",
+	location = {
+		"location.ballast_harbor",
+		"location.limestone_island",
+		"location.ballast_harbor",
+	},
+	npc = {
+		"NPC_wizard",
+		false,
+		"NPC_wizard",
+	},
+}
+
+side{
+	dialog_id = "quest.some_sidequest",
+	location = "location.limestone_island",
+	calc_phase = { --using a custom function to determine the current phase
+		"discovered_clues",
+		"found_key",
+		"unlocked_treasure",
+		callback = function(args)
+			if args[3] then return 2 --if unlocked_treasure==true
+			elseif args[2] then return 1 --if found_key==true
+			elseif args[1] then return 0 --if discovered_clues==true
+			else return false end --player has not started quest (discovered_clues==nil)
+		end
+	},
+	replace_s = { --using a custom function for string substitutions
+		"save_val1",
+		"save_val2",
+		callback = function(args)
+			return {
+				args[1] and "key1.true" or "key1.false", --strings.dat key for $s1
+				args[2] and args[2]>3 and "key2.true" or "key2.false", --strings.dat key for $s2
+			}
+		end
+	},
+	replace_v = { --using a custom function for value substitutions
+		"save_val1",
+		"save_val2",
+		callback = function(args)
+			return {
+				tonumber(args[1]) or 0, --value for $v1
+				args[2] and 3 or 5, --value for $v2
+			}
+		end
+	},
+}
+
+side{
+	dialog_id = "quest.another_sidequest",
+	calc_phase = "quest_another_sidequest_phase",
+	location = "location.goatshead_island",
+	replace_s = { --substitution for $s1 that depends on current phase
+		callback = function(args)
+			local possibilities = {
+				"quest.phase1_text",
+				"quest.phase2_text",
+				"quest.phase3_text",
+				[0] = "quest.initial_text", --need to define 0 separately because lua tables start at index 1
+			}
+			return {possibilities[args.phase]} --returns nil if quest not started
+		end
+	},
+	replace_v = { --direct save game variable substitution when no callback given (for $v only)
+		"num_shards_collected", --value is number 0 to 3; substituted for $v1
+		"player_name", --value is a string (no translation needed); substituted for $v2
+	},
+}
+
+main{
+	dialog_id = "quest.cake_for_charles",
+	calc_phase = "quest_phase_cake_for_charles",
+	location = "location.crabhook_village",
+	replace_v = {
+		callback = function() return {20} end
+	},
+}
+
+main{
+	dialog_id = "quest.test1",
+	calc_phase = "quest_test1",
+	--location = "location.ballast_harbor",
+	location = {
+		"location.yarrowmouth",
+		"location.goatshead_island",
+		"location.limestone_island",
+	},
+}
+main{
+	dialog_id = "quest.test2",
+	calc_phase = "quest_test2",
+	location = "location.goatshead_island",
+}
+main{
+	dialog_id = "quest.test3",
+	calc_phase = "quest_test3",
+	location = "location.ballast_harbor",
+}
+main{
+	dialog_id = "quest.test4",
+	calc_phase = "quest_test4",
+	location = "location.limestone_island",
+}
+main{
+	dialog_id = "quest.test5",
+	calc_phase = "quest_test5",
+	location = "location.yarrowmouth",
+}
+main{
+	dialog_id = "quest.test6",
+	calc_phase = "quest_test6",
+	location = "location.crabhook_village",
+}
+main{
+	dialog_id = "quest.test7",
+	calc_phase = {
+		"item_count_emerald",
+		"item_count_topaz",
+		"item_count_ruby",
+		callback = function(args)
+			if (args[1] and args[1]>=5) and (args[2] and args[2]>=3)
+			 and (args[3] and args[3]>=2) then return 1
+			else return 0 end --always available
+		end
+	},
+	location = "location.hourglass_fort",
+	replace_v = {
+		"item_count_emerald",
+		"item_count_topaz",
+		"item_count_ruby",
+		callback = function(args)
+			return {
+				args[1] or 0,
+				args[2] or 0,
+				args[3] or 0,
+			}
+		end
+	},
+	checkmarks = {
+		"item_count_emerald",
+		"item_count_topaz",
+		"item_count_ruby",
+		callback = function(args)
+			return {
+				args[1] and args[1]>=5 or false,
+				args[2] and args[2]>=3 or false,
+				args[3] and args[3]>=2 or false,
+			}
+		end
+	},
+}
+main{
+	dialog_id = "quest.test8",
+	calc_phase = "quest_test8",
+	location = "location.goatshead_harbor",
+}
+main{
+	dialog_id = "quest.test9",
+	calc_phase = "quest_test9",
+	location = "location.limestone_island",
+}
+main{
+	dialog_id = "quest.test10",
+	calc_phase = "quest_test10",
+	location = "location.kingsdown_isle",
+}
+main{
+	dialog_id = "quest.test11",
+	calc_phase = "quest_test11",
+	location = "location.ballast_harbor",
+}
+main{
+	dialog_id = "quest.test12",
+	calc_phase = "quest_test12",
+	location = "location.yarrowmouth",
+}

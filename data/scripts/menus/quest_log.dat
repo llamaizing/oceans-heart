@@ -1,0 +1,264 @@
+--[[ quest_log.dat		23 Nov 2018
+	
+	This data file describes the properties of the quest log menu.
+]]
+
+local data = {
+	--// bg content
+	
+	{ --black bar along bottom
+		--static content doesn't need id
+		layer = "fill.black",
+		width = 320, height = 24,
+		x = 0, y = 216,
+	},
+	{ --text that displays "XX of XX complete" below sidebar
+		id = "complete_status",
+		layer = "text.complete",
+		width = 120, height = 10,
+		x = 4, y = 227,
+		--max characters: 20
+	},
+	{
+		id = "back_prompt",
+		layer = "text.prompt",
+		width = 180, height = 10,
+		x = 137, y = 227,
+		--max characters: 30
+	},
+	{ --Quest Log title at top of menu
+		--static content doesn't need id
+		layer = "text.title",
+		width = 320, height = 16,
+		x = 0, y = 1,
+		text_key = "menu.quest_log.title",
+	},
+	
+	
+	--// sidebar frame & tabs
+	
+	{ --frame comprising sidebar dialog box
+		--static content doesn't need id
+		layer = "frame.dialog_box",
+		width = 126, height = 174,
+		x = 1, y = 49,
+		is_top_edge = false, --tabs will fill in top edge
+		fill = {
+			{
+				layer = "fill.dialog",
+				width = 122, height = 170,
+				x = 2, y = 2,
+			},
+		}
+	},
+	{ --inactive tab in sidebar
+		id = "inactive_tab",
+		layer = "frame.inactive_tab",
+		width = 56, height = 36,
+		x = 8, y = 17,
+	},
+	{ --active tab in sidebar
+		id = "active_tab",
+		layer = "frame.active_tab",
+		width = 56, height = 36,
+		x = 8, y = 17,
+		fill = { --need 2 fills because of irregular corner of frame
+			{
+				layer = "fill.dialog",
+				width = 42, height = 30,
+				x = 5, y = 4,
+			},
+			{
+				layer = "fill.dialog",
+				width = 4, height = 26,
+				x = 47, y = 8,
+			},
+		},
+	},
+	{
+		id = "main_tab_text",
+		layer = "array.tab_text",
+		subcomponent = {
+			layer = "text.tab",
+			width = 45, height = 10,
+			count = 2,
+			text_key = "menu.quest_log.main_quests_tab",
+		},
+		width = 45, height = 23,
+		x = 14, y = 25,
+		gap = 2,
+	},
+	{
+		id = "side_tab_text",
+		layer = "array.tab_text",
+		subcomponent = {
+			layer = "text.tab",
+			width = 45, height = 10,
+			count = 2,
+			text_key = "menu.quest_log.side_quests_tab",
+		},
+		width = 45, height = 23,
+		x = 70, y = 25,
+		gap = 2,
+	},
+	{ --arrow icon to display when can scroll to additional tab(s) to the left
+		id = "tabs_left_arrow",
+		layer = "sprite.arrow.left",
+		--height/width determined by sprite
+		x = 1, y = 28,
+	},
+	{ --arrow icon to display when can scroll to additional tab(s) to the right
+		id = "tabs_right_arrow",
+		layer = "sprite.arrow.right",
+		--height/width determined by sprite
+		x = 119, y = 28,
+	},
+	
+	
+	--// sidebar content
+	
+	{ --content of each item in sidebar list
+		id = "list_entries",
+		layer = "array.list_entries",
+		subcomponent = {
+			layer = "group.list_entry",
+			width = 115, height = 23,
+			count = 6,
+		},
+		width = 116, height = 143,
+		x = 6, y = 65,
+		gap = 1,
+	},
+	{ --image overlay to show the currently selected quest in the sidebar
+		id = "list_highlight",
+		layer = "frame.list_highlight",
+		width = 116, height = 25,
+		x = 6, y = 64,
+		x_offset = 0, y_offset = 24, --offset for each entry
+		--position is dynamic
+	},
+	{ --arrow icon to display when sidebar can scroll up for more content
+		id = "list_up_arrow",
+		layer = "sprite.arrow.up",
+		--height/width determined by image
+		x = 58, y = 55,
+	},
+	{ --arrow icon to display when sidebar can scroll down for more content
+		id = "list_down_arrow",
+		layer = "sprite.arrow.down",
+		--height/width determined by image
+		x = 58, y = 209,
+	},
+	
+	
+	--// desc pane
+	
+	{ --frame comprising desc dialog box
+		--static content doesn't need id
+		layer = "frame.dialog_box",
+		width = 190, height = 206,
+		x = 129, y = 17,
+		fill = {
+			{
+				layer = "fill.dialog",
+				width = 186, height = 202,
+				x = 2, y = 2,
+			},
+		}
+	},
+	{
+		id = "desc_complete",
+		layer = "image.complete",
+		x = 143, y = 89,
+		width = 119, height = 163,
+		opacity = 120,
+	},
+	{ --line underneath quest title in desc pane
+		--static content doesn't need id
+		layer = "fill.title_bar",
+		width = 176, height = 1,
+		x = 136, y = 38,
+	},
+	{ --title of quest in desc pane
+		id = "desc_title",
+		layer = "text.title",
+		width = 174, height = 16,
+		x = 137, y = 22,
+	},
+	{ --current location of quest in desc pane
+		id = "desc_location",
+		layer = "text.location",
+		width = 174, height = 10,
+		x = 137, y = 40,
+	},
+	{ --description text (multi-line) of quest in desc pane
+		id = "desc_text",
+		layer = "array.desc_text",
+		subcomponent = {
+			layer = "text.small",
+			width = 168, height = 10,
+			count = 14,
+		},
+		width = 168, height = 168,
+		x = 144, y = 52,
+		gap = 2,
+		--max chars per line: 28
+	},
+	{ --array of checkmark icons to display to mark each subtask of desc text once complete
+		id = "desc_checkmarks",
+		layer = "array.desc_checkmarks",
+		subcomponent = {
+			layer = "sprite.checkmark",
+			--height/width determined by image
+			count = 14,
+		},
+		width = 6, height = 162,
+		x = 135, y = 54,
+		gap = 6,
+	},
+	{ --array of checkmark icons to display dynamic checkmarks (x position will vary)
+		id = "dynamic_checkmarks",
+		layer = "array.dynamic_checkmarks",
+		subcomponent = {
+			layer = "sprite.checkmark",
+			--height/width determined by image
+			count = 14,
+		},
+		width = 168, height = 162,
+		x = 144, y = 54,
+		gap = 6,
+	},
+	
+	
+	--// other settings
+	
+	tab_offset_x = 56, --x offset for each tab in pixels
+	tab_offset_y = 0, --y offset for each tab in pixels
+	highlight_scroll_time = 0.23, --time for highlight box to scroll to next entry in seconds
+	list_entry = { --contents of group.list_entry
+		{ --quest title
+			sub_id = "title",
+			layer = "text.small",
+			text = "Quest Title",
+			width = 108, height = 10,
+			x = 7, y = 1,
+			--18 characters max
+		},
+		{ --current location of quest
+			sub_id = "location",
+			layer = "text.location",
+			text = "Ballast Harbor",
+			width = 114, height = 10,
+			x = 1, y = 11,
+			--19 characters max
+		},
+		{ --checkmark to show in sidebar when quest is complete
+			sub_id = "entry_checkmark",
+			layer = "image.checkmark",
+			--height/width determined by image
+			x = 0, y = 3,
+		},
+	}
+}
+
+return data
