@@ -220,6 +220,8 @@ tileset{ id = "temple", description = "temple" }
 tileset{ id = "temple_2", description = "Ancient Temple" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
+sprite{ id = "console/cursor", description = "cursor" }
+sprite{ id = "console/icons", description = "icons" }
 sprite{ id = "enemies/bosses/bart", description = "enemies/bosses/bart" }
 sprite{ id = "enemies/bosses/bart_weapon", description = "enemies/bosses/bart_weapon" }
 sprite{ id = "enemies/bosses/blackbeard", description = "Blackbeard" }
@@ -448,6 +450,8 @@ sprite{ id = "hud/bomb_icon", description = "bomb icon" }
 sprite{ id = "hud/gameover_fade", description = "HUD: Game-over fade" }
 sprite{ id = "hud/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "hud/piece_of_heart_icon", description = "Piece of Heart icon" }
+sprite{ id = "menus/arrows", description = "arrows" }
+sprite{ id = "menus/checkmark", description = "checkmark" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
