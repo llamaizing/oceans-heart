@@ -313,3 +313,7 @@ main{
 	calc_phase = "quest_test12",
 	location = "location.yarrowmouth",
 }
+side{
+	dialog_id = "quest.test13",
+	calc_phase = "quest_test13"
+}

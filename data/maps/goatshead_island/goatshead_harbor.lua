@@ -147,6 +147,10 @@ function upset_fisher:on_interaction()
   end
 end
 
+function upset_fisherman:on_interaction()
+  game:set_value("quest_test13", 0)
+end
+
 function orange_salesman:on_interaction()
   game:start_dialog("_goatshead.npcs.market_people.3", function(answer)
     if answer == 3 then

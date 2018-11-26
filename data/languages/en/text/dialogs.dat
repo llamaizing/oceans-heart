@@ -10529,6 +10529,19 @@ dialog{
 }
 
 dialog{
+  id = "quest.test13",
+  title = "A Carrot Cache",
+  text = [[
+An upset fisherman's spot has
+been overrun with monsters.
+@ Find the fishin' spot and
+destroy the monsters
+
+@ Return to the fisherman
+]]
+}
+
+dialog{
   id = "quest.test9",
   title = "Forgotten Memories",
   text = [[

@@ -24612,6 +24612,16 @@ npc{
   sprite = "npc/man/man_1.5",
 }
 
+npc{
+  name = "upset_fisherman",
+  layer = 0,
+  x = 1160,
+  y = 317,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_13.3",
+}
+
 tile{
   layer = 1,
   x = 1432,
