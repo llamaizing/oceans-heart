@@ -21,7 +21,7 @@ end
 
 function talk_to_dad_sensor:on_activated()
 local dad_counter = game:get_value("dad_dialog_counter_tavern")
-if dad_counter == 0 then
+if dad_counter == nil then
   local see_dad_movement = sol.movement.create("target")
   hero:freeze()
   see_dad_movement:set_target(128, 96)

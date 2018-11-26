@@ -43,9 +43,6 @@ function initial_game:initialize_new_savegame(game)
   game:set_value("quest_log_a", 0)
   game:set_value("quest_log_b", 0)
 
---NPC initial dialog counter initializer (this is a stupid way to do this, but I don't feel like
---figuring out how I did the weird code in Basswood Tavern to undo it and make it better, so it will stand for now)
-  game:set_value("dad_dialog_counter_tavern", 0)
 
 
 end

@@ -29,6 +29,8 @@ map_meta:register_event("on_draw", function(self, dst_surface, ...)
 	end
 end)
 
+map_meta.update_icons = update_npcs
+
 local function update_npcs(self)
 	local game = self:get_game()
 	
@@ -46,7 +48,6 @@ local function update_npcs(self)
 	return is_success
 end
 
-map_meta.update_icons = update_npcs
 map_meta:register_event("on_started", function(self)
 	local map = self
 	sol.timer.start(map, 1500, function()
