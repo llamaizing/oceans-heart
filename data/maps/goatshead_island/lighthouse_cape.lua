@@ -42,3 +42,7 @@ function carrots:on_interaction()
 
   end
 end
+
+function two_eye_rock_shroom:on_dead()
+  game:set_value("quest_test13", 1)
+end

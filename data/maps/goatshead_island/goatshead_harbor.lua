@@ -137,18 +137,16 @@ end
 function upset_fisher:on_interaction()
   if game:get_value("two_eye_rock_shroom_defeated") == nil then
     game:start_dialog("_goatshead.npcs.upset_fisher.1")
+    game:set_value("quest_test13", 0)
   else
     if game:get_value("manly_carrot_man_paid") ~= true then
       game:start_dialog("_goatshead.npcs.upset_fisher.2", function() game:add_money(80) end)
       game:set_value("manly_carrot_man_paid", true)
+      game:set_value("quest_test13", 2)
     else
       game:start_dialog("_goatshead.npcs.upset_fisher.3")
     end
   end
-end
-
-function upset_fisherman:on_interaction()
-  game:set_value("quest_test13", 0)
 end
 
 function orange_salesman:on_interaction()
