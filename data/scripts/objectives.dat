@@ -133,187 +133,44 @@
 	For example, $s2 could substitute for $s3, but not for a second $s.
 ]=]
 
-
-side{
-	dialog_id = "quest.meet_wizard",
-	calc_phase = "quest_meet_wizard_phase",
-	location = {
-		"location.ballast_harbor",
-		"location.limestone_island",
-		"location.ballast_harbor",
-	},
-	npc = {
-		"NPC_wizard",
-		false,
-		"NPC_wizard",
-	},
-}
-
-side{
-	dialog_id = "quest.some_sidequest",
+main{
+	dialog_id = "quest.main.limestone.get_whisky",
+	calc_phase = "quest_whisky_for_juglan_phase",
 	location = "location.limestone_island",
-	calc_phase = { --using a custom function to determine the current phase
-		"discovered_clues",
-		"found_key",
-		"unlocked_treasure",
-		callback = function(args)
-			if args[3] then return 2 --if unlocked_treasure==true
-			elseif args[2] then return 1 --if found_key==true
-			elseif args[1] then return 0 --if discovered_clues==true
-			else return false end --player has not started quest (discovered_clues==nil)
-		end
-	},
-	replace_s = { --using a custom function for string substitutions
-		"save_val1",
-		"save_val2",
-		callback = function(args)
-			return {
-				args[1] and "key1.true" or "key1.false", --strings.dat key for $s1
-				args[2] and args[2]>3 and "key2.true" or "key2.false", --strings.dat key for $s2
-			}
-		end
-	},
-	replace_v = { --using a custom function for value substitutions
-		"save_val1",
-		"save_val2",
-		callback = function(args)
-			return {
-				tonumber(args[1]) or 0, --value for $v1
-				args[2] and 3 or 5, --value for $v2
-			}
-		end
-	},
-}
-
-side{
-	dialog_id = "quest.another_sidequest",
-	calc_phase = "quest_another_sidequest_phase",
-	location = "location.goatshead_island",
-	replace_s = { --substitution for $s1 that depends on current phase
-		callback = function(args)
-			local possibilities = {
-				"quest.phase1_text",
-				"quest.phase2_text",
-				"quest.phase3_text",
-				[0] = "quest.initial_text", --need to define 0 separately because lua tables start at index 1
-			}
-			return {possibilities[args.phase]} --returns nil if quest not started
-		end
-	},
-	replace_v = { --direct save game variable substitution when no callback given (for $v only)
-		"num_shards_collected", --value is number 0 to 3; substituted for $v1
-		"player_name", --value is a string (no translation needed); substituted for $v2
-	},
 }
 
 main{
-	dialog_id = "quest.cake_for_charles",
-	calc_phase = "quest_phase_cake_for_charles",
-	location = "location.crabhook_village",
-	replace_v = {
-		callback = function() return {20} end
-	},
+	dialog_id = "quest.main.limestone.meet_juglan_at_pier",
+	location = "location.limestone_island",
+	calc_phase = "quest_meet_juglan_at_pier"
 }
 
 main{
-	dialog_id = "quest.test1",
-	calc_phase = "quest_test1",
-	--location = "location.ballast_harbor",
-	location = {
-		"location.yarrowmouth",
-		"location.goatshead_island",
-		"location.limestone_island",
-	},
-}
-main{
-	dialog_id = "quest.test2",
-	calc_phase = "quest_test2",
-	location = "location.goatshead_island",
-}
-main{
-	dialog_id = "quest.test3",
-	calc_phase = "quest_test3",
+	dialog_id = "quest.main.kelpton",
 	location = "location.ballast_harbor",
+	calc_phase = "quest_kelpton",
 }
+
 main{
-	dialog_id = "quest.test4",
-	calc_phase = "quest_test4",
-	location = "location.limestone_island",
+	dialog_id = "quest.main.spruce_head",
+	calc_phase = "quest_spruce_head",
+	location = "location.goatshead_island"
 }
+
 main{
-	dialog_id = "quest.test5",
-	calc_phase = "quest_test5",
-	location = "location.yarrowmouth",
+	dialog_id = "quest.main.hourglass_fort",
+	calc_phase = "quest_hourglass_fort",
+	location = "location.yarrowmouth"
 }
+
 main{
-	dialog_id = "quest.test6",
-	calc_phase = "quest_test6",
-	location = "location.crabhook_village",
+	dialog_id = "quest.main.hazel",
+	calc_phase = "quest_hazel",
+	location = "location.oakhaven"
 }
-main{
-	dialog_id = "quest.test7",
-	calc_phase = {
-		"item_count_emerald",
-		"item_count_topaz",
-		"item_count_ruby",
-		callback = function(args)
-			if (args[1] and args[1]>=5) and (args[2] and args[2]>=3)
-			 and (args[3] and args[3]>=2) then return 1
-			else return 0 end --always available
-		end
-	},
-	location = "location.hourglass_fort",
-	replace_v = {
-		"item_count_emerald",
-		"item_count_topaz",
-		"item_count_ruby",
-		callback = function(args)
-			return {
-				args[1] or 0,
-				args[2] or 0,
-				args[3] or 0,
-			}
-		end
-	},
-	checkmarks = {
-		"item_count_emerald",
-		"item_count_topaz",
-		"item_count_ruby",
-		callback = function(args)
-			return {
-				args[1] and args[1]>=5 or false,
-				args[2] and args[2]>=3 or false,
-				args[3] and args[3]>=2 or false,
-			}
-		end
-	},
-}
-main{
-	dialog_id = "quest.test8",
-	calc_phase = "quest_test8",
-	location = "location.goatshead_harbor",
-}
-main{
-	dialog_id = "quest.test9",
-	calc_phase = "quest_test9",
-	location = "location.limestone_island",
-}
-main{
-	dialog_id = "quest.test10",
-	calc_phase = "quest_test10",
-	location = "location.kingsdown_isle",
-}
-main{
-	dialog_id = "quest.test11",
-	calc_phase = "quest_test11",
-	location = "location.ballast_harbor",
-}
-main{
-	dialog_id = "quest.test12",
-	calc_phase = "quest_test12",
-	location = "location.yarrowmouth",
-}
+
 side{
 	dialog_id = "quest.test13",
-	calc_phase = "quest_test13"
+	calc_phase = "quest_test13",
+	location = "location.goatshead_island"
 }

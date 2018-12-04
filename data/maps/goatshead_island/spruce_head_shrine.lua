@@ -76,6 +76,7 @@ function ilex:on_interaction()
   elseif game:get_value("talked_to_ilex_2") ~= true then
     game:start_dialog("_goatshead.npcs.ilex.3")
     game:set_value("talked_to_ilex_2", true)
+    game:set_value("quest_spruce_head", 1) --quest log
   else
     game:start_dialog("_goatshead.npcs.ilex.4")
   end
@@ -102,6 +103,7 @@ function cutscene_sensor:on_activated()
 
               sol.audio.play_sound("quest_log")
               game:set_value("quest_log_a", "a5")
+              game:set_value("quest_spruce_head", 2) --quest log
               hero:unfreeze()
               game:set_value("seen_spruce_sanctuary", true)
               game:start_dialog("_game.quest_log_update", function()

@@ -220,8 +220,6 @@ tileset{ id = "temple", description = "temple" }
 tileset{ id = "temple_2", description = "Ancient Temple" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
-sprite{ id = "console/cursor", description = "cursor" }
-sprite{ id = "console/icons", description = "icons" }
 sprite{ id = "enemies/bosses/bart", description = "enemies/bosses/bart" }
 sprite{ id = "enemies/bosses/bart_weapon", description = "enemies/bosses/bart_weapon" }
 sprite{ id = "enemies/bosses/blackbeard", description = "Blackbeard" }
@@ -430,6 +428,7 @@ sprite{ id = "entities/vase_arrows", description = "Vase - Arrows" }
 sprite{ id = "entities/vase_berries", description = "Vase-Berries" }
 sprite{ id = "entities/vase_skull", description = "Vase (skull)" }
 sprite{ id = "entities/weak_tree", description = "weak tree" }
+sprite{ id = "entities/whisky", description = "Whisky" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
 sprite{ id = "hero/shield1", description = "Hero shield 1" }
@@ -450,8 +449,6 @@ sprite{ id = "hud/bomb_icon", description = "bomb icon" }
 sprite{ id = "hud/gameover_fade", description = "HUD: Game-over fade" }
 sprite{ id = "hud/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "hud/piece_of_heart_icon", description = "Piece of Heart icon" }
-sprite{ id = "menus/arrows", description = "arrows" }
-sprite{ id = "menus/checkmark", description = "checkmark" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }

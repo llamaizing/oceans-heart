@@ -10,15 +10,16 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+  if game:get_value("quest_whisky_for_juglan")<1 then
+    whisky:set_enabled(false)
+  end
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
+function whisky:on_interaction()
+    game:set_value("quest_whisky_for_juglan_phase", 1)
+    game:start_dialog("_game.quest_log_update")
+    sol.audio.play_sound("quest_log")
+    whisky:set_enabled(false)
 
 end

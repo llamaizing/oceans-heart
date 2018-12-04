@@ -42,6 +42,7 @@ if linden_check ~= true then
         game:start_dialog("_new_limestone_island.npcs.linden.6")
       end
       hero:unfreeze()
+      game:set_value("quest_meet_juglan_at_pier", 0)
       game:set_value("linden_dialog_check", true)
     end)
 

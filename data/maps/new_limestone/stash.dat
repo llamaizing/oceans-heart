@@ -905,15 +905,6 @@ tile{
   x = 336,
   y = 80,
   width = 16,
-  height = 16,
-  pattern = "107",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 80,
-  width = 16,
   height = 8,
   pattern = "108",
 }
@@ -1053,12 +1044,13 @@ tile{
   pattern = "ground1.2",
 }
 
-pickable{
+tile{
   layer = 0,
-  x = 344,
-  y = 101,
-  treasure_name = "whisky_for_juglan",
-  treasure_savegame_variable = "have_whisky_for_juglan",
+  x = 336,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "107",
 }
 
 destination{
@@ -1139,6 +1131,16 @@ destructible{
   y = 133,
   sprite = "entities/vase",
   can_be_cut = true,
+}
+
+npc{
+  name = "whisky",
+  layer = 0,
+  x = 344,
+  y = 101,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/whisky",
 }
 
 tile{

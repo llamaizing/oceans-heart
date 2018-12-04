@@ -131,6 +131,8 @@ function letter:on_interaction()
     game:start_dialog("_yarrowmouth.observations.hourglass_fort.letter", function()
       sol.audio.play_sound("quest_log")
       game:set_value("quest_log_a", "a8")
+      game:set_value("quest_hourglass_fort", 3) --quest log
+      game:set_value("quest_hazel", 0)
       game:start_dialog("_game.quest_log_update", function()
         hero:teleport("Yarrowmouth/kingsdown", "from_hourglass_fort", "fade")
       end)

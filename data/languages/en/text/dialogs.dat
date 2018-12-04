@@ -10289,243 +10289,100 @@ Fast travel?
 ]]
 }
 
-
-
-----------------------------------------------------------------------------------------------------
-
-
 dialog{
-  id = "quest.another_sidequest",
-  title = "Another Sidequest",
+  id = "quest.main.hourglass_fort",
+  title = "Hourglass Fort",
   text = [[
-]]
-}
-
-dialog{
-  id = "quest.bob_glasses",
-  title = "Meeting Bob",
-  text = [[
-@ Talk to Bob
-!
-! You can find him at the top
-! of the tower.
- 
-@ Find Bob's glasses
-!
-! Try checking the library or
-! the tavern.
- 
-@ Return the glasses to Bob
-! at the top of the tower.
-]]
-}
-
-dialog{
-  id = "quest.cake_for_charles",
-  title = "Cake for Charles",
-  text = [[
-##  Charles is looking to obtain
-##  a cake for his wife.
-!
-! Try asking around at the
-! general store.
- ?
-@?  Maya told you to talk to her
- ?  mother, Jill.
-
-@ Talk to Jill.
-!
-! She works at the inn.
-
-@ Bring some flour to Jill.
-!
-! You can buy some at the
-! general store.
-
-@ Give the cake to Charles.
-
-##  Reward: $v1 crowns
-]]
-}
-
-dialog{
-  id = "quest.meet_wizard",
-  title = "Meet the Wizard",
-  text = [[
-  Some intro text
-
-@ Talk to the Wizard
-
-@ Explore the dungeon
-
-@ and last this
-##
-##  some description text
-]]
-}
-
-dialog{
-  id = "quest.simple_example",
-  title = "",
-  text = [[
-@ Look for the key to the gate
-  in the cellar.
-
-@ Search the area behind the
-  gate for clues.
-
-@ Report your findings to the
-    wizzard.
-]]
-}
-
-dialog{
-  id = "quest.some_sidequest",
-  title = "Some Sidequest",
-  text = [[
-@ $s1
-
-@ $s2
-]]
-}
-
-dialog{
-  id = "quest.test1",
-  title = "One Fowl Day",
-  text = [[
-  This is the beginning
-  of the quest
-
-@ phase 1 objective
-
-@ phase 2 objective
-
-@ phase 3 objective
-]]
-}
-
-dialog{
-  id = "quest.test10",
-  title = "Pete's Adventure",
-  text = [[
-]]
-}
-
-dialog{
-  id = "quest.test11",
-  title = "Time Will Tell",
-  text = [[
-]]
-}
-
-dialog{
-  id = "quest.test12",
-  title = "No More Moves?",
-  text = [[
-]]
-}
-
-dialog{
-  id = "quest.test2",
-  title = "Part and Parcel",
-  text = [[
-  1 The
-@ 1 Red
-  1 Fox
-    
-  1 Watches
-; 
-  2 For
-@ 2 its
-@ 3 opportunity
-; 
-  4 to
-
-  4 prevail
-@ 4 fin
-]]
-}
-
-dialog{
-  id = "quest.test3",
-  title = "Cheer Up Dave",
-  text = [[
-  Dave is not feeling well,
-  but not for long. --//comment test
+Jerah from Briarwood
+Distillery might know where
+the Hourglass Crew is.
+@Find Jerah
+!He went to the Juniper
+!Grove near the docks
+@Investigate Hourglass Fort
+!It's on Kingsdown Isle,
+!but you'll need a key...
+@Find the pirates!
   
-@ Find his missing item.
 ]]
 }
 
 dialog{
-  id = "quest.test4",
-  title = "Celebration",
+  id = "quest.main.kelpton",
+  title = "The Chart Salesman",
   text = [[
-@ step 1
+Someone saw Mallow in
+Ballast Harbor.
+@Talk to the Chart Salesman
+he was speaking with
+@Return Kelpton's stolen
+sea charts
+!They're in the pirate
+!council's stone building
+@Find the lock for Mallow's
+key.
+!It says 'Northeast'
+!That's not much to go on.
+!Maybe try other leads.
   
-@ step 2
+]]
+}
+
+dialog{
+  id = "quest.main.limestone.get_whisky",
+  title = "Whisky for Juglan",
+  text = [[
+Your dad's friend Juglan
+has had a rough week.
+@Find a bottle of whisky in
+the secret stash
+!The stash is on the east
+!side of the island
+@Return the whisky to
+your dad
   
-# Always bottom text test
 ]]
 }
 
 dialog{
-  id = "quest.test5",
-  title = "Gone Again",
+  id = "quest.main.limestone.meet_juglan_at_pier",
+  title = "Hitching A Ride",
   text = [[
-@ objective 1
-##
-##  This text does not grey out
-#
-# This text does
-
-@ objective 2
-#
-@#  objective 3 (always shown)
-# and includes line wrap
-#
-#!  This line will be hidden
-#!
-@ objective 4
+Jugland will give you a
+ride to Goatshead Harbor.
+@Meet Juglan at the pier
+@Investigate the Sodden
+Cormorant Tavern.
+  
 ]]
 }
 
 dialog{
-  id = "quest.test6",
-  title = "Lost and Found",
+  id = "quest.main.spruce_head",
+  title = "Spruce Head",
   text = [[
-@!? This line is not shown ever!
- !  Talk to the old man
- !
-@!?   --// first phase break is here
- !  Obtain some item
- !
- ?  Congratulations, you did it!
- ?
-# OBJECTIVES:
-#  Find the map
-#  Find the compass
-#  Find the Boss Key
-#  Collect the shards (3 of 4)
+The Hourglass Pirates
+were seen looting
+Spruce Head.
+@Investigate Spruce Head
+@Find your way into the
+center of the shrine
+@Check with Briarwood
+Distillery
+!The distillery is on
+!Yarrowmouth Island
+  
 ]]
 }
 
 dialog{
-  id = "quest.test7",
-  title = "Best Wishes",
+  id = "quest.main.hazel",
+  title = "The Trail Warms Up",
   text = [[
-@ Collect all the gemstones
-  $@1 Find 5 Emeralds ($v1 of 5)
-  $@2 Find 3 Topazes ($v2 of 3)
-  $@3 Find 2 Rubies ($v3 of 2)
-]]
-}
-
-dialog{
-  id = "quest.test8",
-  title = "High Tide",
-  text = [[
-]]
+Captain Thyme fled to Oakhaven
+@Investigate Oakhaven
+@Search town for Hazel
+  ]]
 }
 
 dialog{
@@ -10538,65 +10395,6 @@ been overrun with monsters.
 destroy the monsters
 
 @ Return to the fisherman
-]]
-}
-
-dialog{
-  id = "quest.test9",
-  title = "Forgotten Memories",
-  text = [[
-]]
-}
-
-dialog{
-  id = "seed_spot.plant",
-  text = [[
-]]
-}
-
-dialog{
-  id = "seed_spot.water",
-  text = [[
-Would you like to water this seed?
-     $? Yes
-     $? No
-]]
-}
-
-dialog{
-  id = "welcome_dialog",
-  text = [[
-##Wizard
-Welcome!
-There are many
-Things to do here.
-The name is still
-displayed up top.
-
-##>&player_name
-How are you?
-
-
-###
-The name is now off.
-
-
-And still off.
-
-
-##And now a really long name
-Did it work?
-
-
-##Name on last line
-]]
-}
-
-dialog{
-  id = "wizard_welcome",
-  text = [[
-##Wizard
-Greetings Friend.
 ]]
 }
 

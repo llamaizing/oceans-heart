@@ -34,7 +34,7 @@ function kelpton:on_interaction()
     game:start_dialog("_ballast_harbor.npcs.kelpton.0")
   elseif game:get_value("kelpton_convo_counter") == nil then
     game:start_dialog("_ballast_harbor.npcs.kelpton.1", function() game:start_dialog("_game.quest_log_update") sol.audio.play_sound("quest_log") end)
-    game:set_value("quest_log_b", "b2")
+    game:set_value("quest_kelpton", 1) --quest log
     game:set_value("kelpton_convo_counter", 1)
   elseif game:get_value("kelpton_convo_counter") == 1 then
     game:start_dialog("_ballast_harbor.npcs.kelpton.2")
@@ -52,11 +52,11 @@ function kelpton_2:on_interaction()
         sol.audio.play_sound("quest_log")
       end)
       game:set_value("talked_to_kelpton_2", true)
-      game:set_value("quest_log_b", "b3")
+      game:set_value("quest_kelpton", 2) --quest log
     else --you haven't talked to kelpton, but you got the charts
       game:start_dialog("_ballast_harbor.npcs.kelpton.5", function() m:start(kelpton_2) end)
       game:set_value("talked_to_kelpton_2", true)
-      game:set_value("quest_log_b", "b3")
+      game:set_value("quest_kelpton", 2) --quest log
     end
   else
     game:start_dialog("_ballast_harbor.npcs.kelpton.4")

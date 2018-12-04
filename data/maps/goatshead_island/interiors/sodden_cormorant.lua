@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+  game:set_value("quest_meet_juglan_at_pier", 2)
   if game:get_value("goatshead_tunnels_accepted") == true then
     adventurer_1:set_enabled(false)
     adventurer_2:set_enabled(false)
@@ -63,6 +64,8 @@ function leigha:on_interaction()
       game:set_value("have_ballast_harbor_clue", true)
       game:set_value("have_spruce_clue", true)
       game:set_value("quest_log_a", "a4")
+      game:set_value("quest_kelpton", 0)
+      game:set_value("quest_spruce_head", 0)
       game:set_value("quest_log_b", "b1")
     end)
 

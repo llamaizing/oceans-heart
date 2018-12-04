@@ -24,7 +24,7 @@ function game_manager:create(file_name)
     quest_log:set_game(game)
 
     function game.objectives:on_new_task()
-      game:get_map():update_icons()
+--      game:get_map():update_icons()
     end
     	
     function game:on_paused()
@@ -91,6 +91,18 @@ function game_manager:create(file_name)
         showing_map = false
       end
 
+    elseif key == "s" then
+    game:start_dialog("_game.pause", function(answer)
+      if answer == 1 then
+        game:set_paused(false)
+      elseif answer == 2 then
+        game:save()
+        sol.audio.play_sound("elixer_upgrade")
+        game:set_paused(false)
+      elseif answer == 3 then
+        sol.main.exit()
+      end
+    end)
 
 
   --DEBUG FUNCTIONS

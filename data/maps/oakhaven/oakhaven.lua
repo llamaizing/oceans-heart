@@ -194,6 +194,7 @@ function remember_sensor:on_activated()
         sol.audio.play_sound("quest_log")
         game:start_dialog("_game.quest_log_update") end)
       game:set_value("quest_log_a", "a9")
+      game:set_value("quest_hazel", 1) --quest log
       hero:unfreeze() end
     game:set_value("hazel_is_here", true)
   end
