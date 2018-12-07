@@ -15,8 +15,8 @@ function sol.main:on_started()
   --Set the window title.
   sol.video.set_window_title("Ocean's Heart")
 
-    local game = game_manager:create("save1.dat")
-    sol.main:start_savegame(game)
+  local game = game_manager:create"save1.dat"
+  sol.main:start_savegame(game)
 end
 
 

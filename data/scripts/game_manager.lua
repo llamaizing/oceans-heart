@@ -8,6 +8,23 @@ require("scripts/weather/weather_manager")
 
 local game_manager = {}
 
+
+--Quest Log Menu: name of sound to play for different new task status keywords
+local QUEST_SOUNDS = {
+  main_all_completed = false, --TODO need sound
+  side_all_completed = false, --TODO need sound
+  main_completed = "quest_complete",
+  side_completed = "quest_complete",
+  main_started = "quest_started",
+  side_started = "quest_started",
+  main_advanced = "quest_advance",
+  side_advanced = "quest_advance",
+  new_checkmark = "quest_subtask",
+  obtained_quest_item = "quest_subtask",
+  main_advanced_again = false, --don't play sound
+  side_advanced_again = false, --don't play sound
+}
+
 -- Starts the game from the given savegame file,
 -- initializing it if necessary.
 function game_manager:create(file_name)
@@ -17,7 +34,6 @@ function game_manager:create(file_name)
     if not exists then -- Initialize a new savegame.
       initial_game:initialize_new_savegame(game)
     end
-    game:start()
 
   --From llamazing's quest log menu:
     objectives_manager.create(game)
