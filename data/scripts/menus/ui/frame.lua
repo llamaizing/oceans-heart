@@ -1,6 +1,6 @@
 --[[ frame.lua
 	version 1.0a1
-	16 Nov 2018
+	3 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -16,6 +16,20 @@
 local util = require"scripts/menus/ui/util"
 
 local control = {}
+
+--methods to inherit from sol.surface
+local SURFACE_METHODS = {
+	get_opacity = true,
+	set_opacity = true,
+	get_blend_mode = true,
+	set_blend_mode = true,
+	fade_in = true,
+	fade_out = true,
+	get_xy = true,
+	set_xy = true,
+	get_movement = true,
+	stop_movement = true,
+}
 
 --// Creates a new frame control
 	--properties (table) - table containing properties defining frame behavior
@@ -47,45 +61,92 @@ local control = {}
 function control.create(properties, width, height)
 	local new_control = {}
 	
+	--settings defined by data file property values and their default values
+	local width = tonumber(width) --(number, positive integer) max width of component in pixels
+	local height = tonumber(height) --(number, positive integer) max height of component in pixels
+	local region_width = tonumber(properties.region_width) --(number, positive integer) width of region in source image to use as frame image
+	local region_height = tonumber(properties.region_height) --(number, positive integer) height of region in source image to use as frame image
+	local region_x = tonumber(properties.region_x) --(number, integer) x coordinate of region in source image to use as frame image
+	local region_y = tonumber(properties.region_y) --(number, integer) y coordinate of region in source image to use as frame image
+	local borders = util.make_margins_4(properties.borders) --(table, array) 4 dimensions of borders in pixels corresponding to right, top, left and bottom edges.
+	local path = properties.image --(string) file path to use for frame source image relative to the sprites directory
+	local is_hollow = not not properties.is_hollow --(boolean) if true then only the borders are drawn and not the center region, default: false
+	local is_top_edge = properties.is_top_edge ~= false --(boolean) if false then middle section of top edge will not be drawn, default: true
+	local is_TL_corner = properties.is_TL_corner ~= false --(boolean) if false then top left corner will not be drawn, default: true
+	local is_TR_corner = properties.is_TR_corner ~= false --(boolean) if false then top right corner will not be drawn, default: true
+	local is_BL_corner = properties.is_BL_corner ~= false --(boolean) if false then bottom left corner will not be drawn, default: true
+	local is_BR_corner = properties.is_BR_corner ~= false --(boolean) if false then bottom right corner will not be drawn, default: true
+	
+	--additional settings
+	local surface --(sol.surface) intermediate surface to draw frame and fill subcomponents
+	local fills = {} --(table, array) list of fill subcomponents to draw behind the border
+	local is_visible = true --(boolean) component is not drawn if false, default: true
+	
+	
+	--// validate data file property values
+	
 	assert(type(properties)=="table", "Bad argument #1 to 'create' (table expected)")
 	
-	local region_width = tonumber(properties.region_width)
+	--validate width
+	assert(width, "Bad argument #2 to 'create' (number expected)")
+	width = math.floor(width)
+	assert(width>0, "Bad argument #2 to 'create' (number must be positive)")
+	
+	--validate height
+	assert(height, "Bad argument #2 to 'create' (number expected)")
+	height = math.floor(height)
+	assert(height>0, "Bad argument #2 to 'create' (number must be positive)")
+	
+	--validate region_width
 	assert(region_width, "Bad property region_width to 'create' (number expected)")
 	region_width = math.floor(region_width)
 	assert(region_width>0, "Bad property region_width to 'create' (number must be positive)")
 	
-	local region_height = tonumber(properties.region_height)
+	--validate region_height
 	assert(region_height, "Bad property region_height to 'create' (number expected)")
 	region_height = math.floor(region_height)
 	assert(region_height>0, "Bad property region_height to 'create' (number must be positive)")
 	
-	local region_x = tonumber(properties.region_x)
+	--validate region_x
 	assert(region_x, "Bad property region_x to 'create' (number expected)")
 	region_x = math.floor(region_x)
 	assert(region_x>=0, "Bad property region_x to 'create' (number must not be negative)")
 	
-	local region_y = tonumber(properties.region_y)
+	--validate region_y
 	assert(region_y, "Bad property region_y to 'create' (number expected)")
 	region_y = math.floor(region_y)
 	assert(region_y>=0, "Bad property region_y to 'create' (number must not be negative)")
 	
-	local borders = util.make_margins_4(properties.borders)
+	--validate borders
 	assert(borders[1]<=region_width, "Bad property borders to 'create' (right border exceeds region_width)")
 	assert(borders[2]<=region_height, "Bad property borders to 'create' (top border exceeds region_height)")
 	assert(borders[3]<=region_width, "Bad property borders to 'create' (left border exceeds region_width)")
 	assert(borders[4]<=region_height, "Bad property borders to 'create' (bottom border exceeds region_height)")
 	
-	local path = properties.image
+	--validate path
 	assert(type(path)=="string", "Bad property image to 'create' (string expected)")
 	local raw_image = util.get_image(path)
 	assert(raw_image, "Error in 'create', image cannot be loaded: "..path)
 	
+	
+	--// implementation
+	
+	surface = sol.surface.create(width, height)
+	
+	--inherit methods of sol.surface
+	setmetatable(new_control, { __index = function(self, name)
+		if SURFACE_METHODS[name] then
+			return function(_, ...) return surface[name](surface, ...) end
+		else return function() end end
+	end})
+	
 	--create fill objects
-	local fills = {}
+	--// Assigns the list of fill subcomponents to be elements in the frame, removing any existing elements first
+		--list (table, array) - list of fills to be used in the frame, specified as data file properties (see objectives.dat)
 	function new_control:set_fills(list)
 		assert(type(list)=="table", "Bad argument #1 to 'set_fills' (table expected)")
 		
-		local ui = require"scripts/menus/ui/ui"
+		local ui = require"scripts/menus/ui/ui" --do not require at start of script because will cause endless loading loop
 		
 		for i,entry in ipairs(list) do
 			assert(type(entry.layer)=="string", "Bad property ["..i.."].layer to 'set_fills' (string expected)")
@@ -96,25 +157,8 @@ function control.create(properties, width, height)
 		self:refresh()
 	end
 	
-	local is_visible = true --only draw if true
-	local is_hollow = not not properties.is_hollow --default value of false
-	local is_top_edge = properties.is_top_edge ~= false --default value of true
-	local is_TL_corner = properties.is_TL_corner ~= false --default value of true
-	local is_TR_corner = properties.is_TR_corner ~= false --default value of true
-	local is_BL_corner = properties.is_BL_corner ~= false --default value of true
-	local is_BR_corner = properties.is_BR_corner ~= false --default value of true
-	
-	local width = tonumber(width)
-	assert(width, "Bad argument #2 to 'create' (number expected)")
-	width = math.floor(width)
-	assert(width>0, "Bad argument #2 to 'create' (number must be positive)")
-	
-	local height = tonumber(height)
-	assert(height, "Bad argument #2 to 'create' (number expected)")
-	height = math.floor(height)
-	assert(height>0, "Bad argument #2 to 'create' (number must be positive)")
-	
-	local surface = sol.surface.create(width, height)
+	--// Returns the width and height (number) of the component in pixels
+	function new_control:get_size() return width, height end
 	
 	--// Returns the path (string) of the source image file
 	function new_control:get_image_path() return path end
@@ -132,48 +176,25 @@ function control.create(properties, width, height)
 		return is_top_edge
 	end
 	
-	--// Returns the width and height (number) of the frame in pixels
-	function new_control:get_size() return width, height end
-	
-	--// Get/set whether the frame should be drawn
-		--value (boolean) - frame will be drawn if true
+	--// Get/set whether the component should be drawn
+		--value (boolean) - component will be drawn if true
 	function new_control:get_visible() return is_visible end
 	function new_control:set_visible(value)
 		assert(type(value)=="boolean", "Bad arguement #1 to 'set_visible' (boolean expected)")
 		is_visible = value
 	end
 	
-	--// Get/set the opacity of the frame
-		--value (number, integer) - The opacity value from 0 (transparent) to 255 (opaque)
-	function new_control:get_opacity() return surface:get_opacity() end
-	function new_control:set_opacity(value) return surface:set_opacity(value) end
-	
-	--// Get/set the blend mode of the surface used by the frame
-	function new_control:get_blend_mode() return surface:get_blend_mode() end
-	function new_control:set_blend_mode(value) surface:set_blend_mode(value) end
-	
-	--// Start a fade in or fade out of the surface used by the frame
-	function new_control:fade_in(delay, callback) return surface:fade_in(delay, callback) end
-	function new_control:fade_out(delay, callback) return surface:fade_out(delay, callback) end
-	
-	--// Get/set the offset of the surface used by the frame
-	function new_control:get_xy() return surface:get_xy() end
-	function new_control:set_xy(x, y) return surface:set_xy(x, y) end
-	
-	--// Get/stop the current movement of the surface used by the frame
-	function new_control:get_movement() return surface:get_movement() end
+	--// Assign a movement to the component and start it
+		--movement (sol.movement) - movement to apply to the component
+		--callback (function, optional) - function to be called once the movement has finished
 	function new_control:start_movement(movement, callback) movement:start(surface, callback) end
-	function new_control:stop_movement() return surface:stop_movement() end
-	
-	
 	
 	--// Regenerates the surface containing the frame image scaled to correct width/height
-		--This function is called automatically whenever a refresh is necessary and should not need to be called manually
+		--This function is called automatically whenever a refresh is necessary and does not need to be called manually
 	function new_control:refresh()
 		surface:clear()
 		
 		--draw fills
-		
 		for _,entry in ipairs(fills) do
 			local fill = entry[1]
 			local x, y = entry[2], entry[3]
@@ -181,18 +202,18 @@ function control.create(properties, width, height)
 			fill:draw(surface, x, y)
 		end
 		
-		--draw frame
+		--// draw frame
 		
-		local region_mid_x = math.max(region_width - borders[1] - borders[3], 0)
-		local region_mid_y = math.max(region_height - borders[2] - borders[4], 0)
+		local region_mid_x = math.max(region_width - borders[1] - borders[3], 0) --width in pixels of middle region of source image
+		local region_mid_y = math.max(region_height - borders[2] - borders[4], 0) --height in pixels of middle region of source image
 		
-		if width<=region_width and height<=region_height then --no need to tile
+		if width<=region_width and height<=region_height then --no need to tile, frame component is not larger than source image
 			raw_image:draw_region(
 				region_x, region_y,
 				region_width, region_height,
 				surface
 			)
-		else
+		else --tile repeating sections by segment to fill component area
 			local x,y = borders[3], borders[2] --current position on surface
 			
 			--draw top and bottom edge (non-corner) across
@@ -243,8 +264,8 @@ function control.create(properties, width, height)
 				
 				x = borders[3] --beginning of middle segment
 				
+				--draw middle region across for this row
 				if not is_hollow and region_mid_x>0 and region_mid_y>0 then
-					--draw middle region across for this row
 					while x < width - borders[1] do
 						raw_image:draw_region(
 							region_x + borders[3],
@@ -259,8 +280,8 @@ function control.create(properties, width, height)
 					end
 				end
 				
+				--draw right edge for this row
 				if borders[1]>0 then
-					--draw right edge for this row
 					raw_image:draw_region(
 						region_x + region_width - borders[1],
 						region_y + borders[2],
@@ -277,8 +298,8 @@ function control.create(properties, width, height)
 			
 			--// draw four corners
 			
+			--Upper-left corner
 			if is_TL_corner and borders[2]>0 and borders[3]>0 then
-				--Upper-left corner
 				raw_image:draw_region(
 					region_x,
 					region_y,
@@ -288,8 +309,8 @@ function control.create(properties, width, height)
 				)
 			end
 			
+			--Upper-right corner
 			if is_TR_corner and borders[1]>0 and borders[2]>0 then
-				--Upper-right corner
 				raw_image:draw_region(
 					region_x + region_width - borders[1],
 					region_y,
@@ -301,8 +322,8 @@ function control.create(properties, width, height)
 				)
 			end
 			
+			--Lower-left corner
 			if is_BL_corner and borders[3]>0 and borders[4]>0 then
-				--Lower-left corner
 				raw_image:draw_region(
 					region_x,
 					region_y + region_height - borders[4],
@@ -314,8 +335,8 @@ function control.create(properties, width, height)
 				)
 			end
 			
+			--Lower-right corner
 			if is_BR_corner and borders[1]>0 and borders[4]>0 then
-				--Lower-right corner
 				raw_image:draw_region(
 					region_x + region_width - borders[1],
 					region_y + region_height - borders[4],

@@ -1,6 +1,6 @@
 --[[ sprite.lua
 	version 1.0a1
-	23 Nov 2018
+	3 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -17,6 +17,34 @@ local util = require"scripts/menus/ui/util"
 
 local control = {}
 
+-- methods to inherit from sol.sprite
+local SPRITE_METHODS = {
+	get_animation = true,
+	set_animation = true,
+	has_animation = true,
+	get_direction = true,
+	set_direction = true,
+	get_num_directions = true,
+	get_frame = true,
+	set_frame = true,
+	get_num_frames = true,
+	get_frame_delay = true,
+	set_frame_delay = true,
+	get_origin = true,
+	is_paused = true,
+	set_paused = true,
+	set_ignore_suspend = true,
+	synchronize = true,
+	get_blend_mode = true,
+	set_blend_mode = true,
+	fade_in = true,
+	fade_out = true,
+	get_xy = true,
+	set_xy = true,
+	get_movement = true,
+	stop_movement = true,
+}
+
 --// Creates a new image control
 	--properties (table) - table containing properties defining image behavior
 		--sprite (string) - id of the sprite to use
@@ -25,19 +53,39 @@ local control = {}
 function control.create(properties)
 	local new_control = {}
 	
+	--settings defined by data file property values and their default values
+	local sprite_id = properties.sprite --(string) animation set id of the sprite
+	
+	--additional settings
+	local sprite --(sol.sprite) sprite that is drawn for this component
+	local is_enabled = true --(boolean) determines animation of sprite, using "enabled" if true or "disabled" if false
+	local is_visible = true --(boolean) component is not drawn if false, default: true
+	
+	
+	--// validate data file property values
+	
 	assert(type(properties)=="table", "Bad argument #1 to 'create' (table expected)")
 	
-	local sprite_id = properties.sprite
+	--validate sprite_id
 	assert(type(sprite_id)=="string", "Bad property sprite_id to 'create' (string expected)")
-	local sprite = sol.sprite.create(sprite_id)
+	sprite = sol.sprite.create(sprite_id)
 	assert(sprite, "Error in 'create', sprite cannot be found: "..sprite_id)
 	
-	local animation_id = properties.animation
+	--validate animation_id
+	local animation_id = properties.animation --convenience, only used temporarily during creation
 	assert(not animation_id or type(animation_id)=="string", "Bad property animation_id to 'create' (string expected)")
 	if animation_id then sprite:set_animation(animation_id) end
+	animation_id = nil --no longer used
 	
-	local is_enabled = true --enabled by default
-	local is_visible = true --visible by default
+	
+	--//implementation
+	
+	--inherit methods of sol.sprite
+	setmetatable(new_control, { __index = function(self, name)
+		if SPRITE_METHODS[name] then
+			return function(_, ...) return sprite[name](sprite, ...) end
+		else return function() end end
+	end})
 	
 	--// Returns the width and height (number) of the image in pixels
 	function new_control:get_size() return sprite:get_size() end
@@ -62,22 +110,10 @@ function control.create(properties)
 		is_visible = value
 	end
 	
-	--// Get/set the blend mode of the surface used by the sprite
-	function new_control:get_blend_mode() return sprite:get_blend_mode() end
-	function new_control:set_blend_mode(value) sprite:set_blend_mode(value) end
-	
-	--// Start a fade in or fade out of the surface used by the sprite
-	function new_control:fade_in(delay, callback) return sprite:fade_in(delay, callback) end
-	function new_control:fade_out(delay, callback) return sprite:fade_out(delay, callback) end
-	
-	--// Get/set the offset of the surface used by the sprite
-	function new_control:get_xy() return sprite:get_xy() end
-	function new_control:set_xy(x, y) return sprite:set_xy(x, y) end
-	
-	--// Get/stop the current movement of the surface used by the frame
-	function new_control:get_movement() return sprite:get_movement() end
+	--// Assign a movement to the component and start it
+		--movement (sol.movement) - movement to apply to the component
+		--callback (function, optional) - function to be called once the movement has finished
 	function new_control:start_movement(movement, callback) movement:start(sprite, callback) end
-	function new_control:stop_movement() return sprite:stop_movement() end
 	
 	--// Draws the image on the specified destination surface
 		--dst_surface (sol.surface) - surface on which to draw the image

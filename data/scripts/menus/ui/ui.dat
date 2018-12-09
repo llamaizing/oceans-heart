@@ -1,4 +1,4 @@
---[[ ui.dat		23 Nov 2018
+--[[ ui.dat		1 Dec 2018
 	
 	This data file describes basic ui components.
 ]]
@@ -8,6 +8,7 @@ text{
 	font = "proggy/ProggyTinySZ",
 	font_size = 16,
 	font_color = {255, 255, 255}, --white
+	--shadow_color = "brown",
 	font_color_disabled = {166, 166, 166}, --grey
 	horizontal_alignment = "left",
 }
@@ -16,6 +17,7 @@ text{
 	font = "proggy/ProggyTinySZ",
 	font_size = 16,
 	font_color = {255, 255, 0}, --yellow
+	--shadow_color = "brown",
 	horizontal_alignment = "right",
 }
 text{
@@ -34,7 +36,7 @@ text{
 	vertical_alignment = "middle",
 }
 text{
-	id = "text.complete",
+	id = "text.completed_status",
 	font = "proggy/ProggyTinySZ",
 	font_size = 16,
 	font_color = {255, 255, 255}, --white
@@ -78,6 +80,13 @@ frame{
 	region_width = 28, region_height = 28,
 	region_x = 52, region_y = 0,
 	borders = {12, 12, 8, 8},
+}
+frame{
+	id = "frame.item_box",
+	image = "menus/ui.png",
+	region_width = 22, region_height = 22,
+	region_x = 58, region_y = 28,
+	borders = 5,
 }
 
 fill{
@@ -127,6 +136,12 @@ image{
 	id = "image.complete",
 	image = "menus/complete.png",
 }
+image{
+	id = "image.item_icon",
+	image = "hud/items.png",
+	region_width = 16, region_height = 16,
+	--region_x & region_y set dynamically
+}
 
 sprite{
 	id = "sprite.checkmark",
@@ -152,6 +167,11 @@ sprite{
 	sprite = "menus/arrows",
 	animation = "arrow_right",
 }
+sprite{
+	id = "sprite.ruby",
+	sprite = "entities/items",
+	animation = "ruby",
+}
 
 array{
 	id = "array.tab_text",
@@ -176,4 +196,7 @@ array{
 
 group{
 	id = "group.list_entry",
+}
+group{
+	id = "group.item_box",
 }

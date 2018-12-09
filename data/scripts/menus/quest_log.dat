@@ -1,4 +1,4 @@
---[[ quest_log.dat		23 Nov 2018
+--[[ quest_log.dat		1 Dec 2018
 	
 	This data file describes the properties of the quest log menu.
 ]]
@@ -14,7 +14,7 @@ local data = {
 	},
 	{ --text that displays "XX of XX complete" below sidebar
 		id = "complete_status",
-		layer = "text.complete",
+		layer = "text.completed_status",
 		width = 120, height = 10,
 		x = 4, y = 227,
 		--max characters: 20
@@ -228,13 +228,32 @@ local data = {
 		x = 144, y = 54,
 		gap = 6,
 	},
+	{ --box containing item icon, only shown on line beginning with %?
+		{
+			id = "item_icon",
+			layer = "image.item_icon",
+			width = 16, height = 16,
+			x = 3, y = 3,
+		},
+		{
+			id = "item_frame",
+			layer = "frame.item_box",
+			width = 22, height = 22,
+			x = 0, y = 0,
+		},
+		id = "desc_item_box",
+		layer = "group.item_box",
+		width = 22, height = 22,
+		x = 144, y = 52,
+	},
 	
 	
 	--// other settings
 	
 	tab_offset_x = 56, --x offset for each tab in pixels
 	tab_offset_y = 0, --y offset for each tab in pixels
-	highlight_scroll_time = 0.23, --time for highlight box to scroll to next entry in seconds
+	highlight_scroll_time = 0.23, --time for highlight box to scroll to next entry in seconds, if nil then moves instantly
+	quest_totals_milestone = "reveal_quest_totals", --when this save val is not false/nil then the counts of main and side quests will be revealed
 	list_entry = { --contents of group.list_entry
 		{ --quest title
 			sub_id = "title",
@@ -250,7 +269,7 @@ local data = {
 			text = "Ballast Harbor",
 			width = 114, height = 10,
 			x = 1, y = 11,
-			--19 characters max
+			--18 characters max
 		},
 		{ --checkmark to show in sidebar when quest is complete
 			sub_id = "entry_checkmark",

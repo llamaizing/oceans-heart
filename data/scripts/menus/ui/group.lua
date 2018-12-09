@@ -1,6 +1,6 @@
 --[[ group.lua
 	version 1.0a1
-	23 Nov 2018
+	3 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -14,9 +14,21 @@
 	those components are updated.
 ]]
 
---local util = require"scripts/menus/ui/util"
-
 local control = {}
+
+--methods to inherit from sol.surface
+local SURFACE_METHODS = {
+	get_opacity = true,
+	set_opacity = true,
+	get_blend_mode = true,
+	set_blend_mode = true,
+	fade_in = true,
+	fade_out = true,
+	get_xy = true,
+	set_xy = true,
+	get_movement = true,
+	stop_movement = true,
+}
 
 --// Creates a new group object
 	--properties (table) - table containing properties defining group behavior
@@ -28,30 +40,50 @@ local control = {}
 function control.create(properties, width, height)
 	local new_control = {}
 	
+	--// validate data file property values
+	local width = width --(number, positive integer) max width of component in pixels, if nil then fills entire destination surface
+	local height = height --(number, positive integer) max height of component in pixels, if nil then fills entire destination surface
+	
+	--additional settings
+	local surface --intermediate surface to draw subcomponents on
+	local subcomponents = {} --(table, array) list of each subcomponent in the group, order determines draw order, first drawn first
+	local is_visible = true --(boolean) component is not drawn if false, default: true
+	
+	
+	--// validate data file property values
+	
 	assert(type(properties)=="table", "Bad argument #1 to 'create' (table expected)")
 	
-	local width = width
-	local width_num = tonumber(width)
-	assert(width_num or not width, "Bad property width to 'create' (number or nil expected)")
-	if width_num then
-		width = math.floor(width_num)
-		assert(width>0, "Bad property width to 'create' (number must be positive)")
-		width_num = nil --no longer needed
+	--validate width
+	if width then
+		width = tonumber(width)
+		assert(width, "Bad argument #2 to 'create' (number or nil expected)")
+		width = math.floor(width)
+		assert(width>0, "Bad argument #2 to 'create' (number must be positive)")
 	end
 	
-	local height = height
-	local height_num = tonumber(height)
-	assert(height_num or not height, "Bad property height to 'create' (number or nil expected)")
-	if height_num then
+	--validate height
+	if height then
+		height = tonumber(height)
+		assert(height, "Bad argument #3 to 'create' (number or nil expected)")
 		height = math.floor(height)
-		assert(height>0, "Bad property height to 'create' (number must be positive)")
-		height_num = nil --no longer needed
+		assert(height>0, "Bad argument #3 to 'create' (number must be positive)")
 	end
 	
-	local surface = width and sol.surface.create(width, height) or sol.surface.create()
-	local is_visible = true --visible by default
 	
-	local subcomponents = {}
+	--// implementation
+	
+	surface = width and sol.surface.create(width, height) or sol.surface.create()
+	
+	--inherit methods of sol.surface
+	setmetatable(new_control, { __index = function(self, name)
+		if SURFACE_METHODS[name] then
+			return function(_, ...) return surface[name](surface, ...) end
+		else return function() end end
+	end})
+	
+	--// Assigns the list of subcomponents to be elements in the group, removing any existing elements first
+		--list (table, array) - list of subcomponents to be used in the group, specified as data file properties (see objectives.dat)
 	function new_control:set_subcomponents(list)
 		assert(type(list)=="table", "Bad argument #1 to 'set_subcomponents' (table expected)")
 		subcomponents = {} --clear previous subcomponents
@@ -61,7 +93,7 @@ function control.create(properties, width, height)
 			
 			local subcomponent = entry[1]
 			assert(type(subcomponent)=="table" or type(subcomponent)=="userdata",
-				"Bad argument #1, index "..i..", 1 to 'set_subcomponents' (table or userdata expected)"
+				"Bad argument #1, index "..i..", 1 to 'set_subcomponents' (table or userdata expected)".." got: "..type(subcomponent)
 			)
 			assert(subcomponent.draw, "Bad argument #1 to 'set_subcomponents' (no draw function found for item at index "..i..")")
 			
@@ -73,12 +105,29 @@ function control.create(properties, width, height)
 		assert(#subcomponents>0, "Bad argument #1 to 'set_subcomponents' (must include at least one subcomponent)")
 	end
 	
+	--if properties table contains an array portion then use it to specify list of subcomponents
 	if type(properties)=="table" and #properties>0 then
 		new_control:set_subcomponents(properties)
 	end
 	
 	--// Returns the width and height (number) of the frame in pixels
 	function new_control:get_size() return width, height end
+	
+	--// Custom iterator to get the subcomponents of the group (does not expose internal table)
+		--usage: for i,subcomponent in new_control:ipairs() do
+	function new_control:ipairs()
+		local iter,_,start_val = ipairs(subcomponents)
+		return function(_,i) return iter(subcomponents, i) end, {}, start_val
+	end
+	
+	--// Gets the number of subcomponents in the array
+		--returns (number, non-negative integer) - number of subcomponents
+	function new_control:get_count() return #subcomponents end
+	
+	--// Gets the ith subcomponent of the array
+		--i (number, positive integer) - index of the subcomponent to be returned
+		--returns (table or nil) - ui subcomponent at the specified index or nil if it does not exist
+	function new_control:get_subcomponent(i) return subcomponents[i].subcomponent end
 	
 	--// Get/set whether the group should be drawn
 		--value (boolean) - group will be drawn if true
@@ -88,30 +137,10 @@ function control.create(properties, width, height)
 		is_visible = value
 	end
 	
-	--// Get/set the opacity of the frame
-		--value (number, integer) - The opacity value from 0 (transparent) to 255 (opaque)
-	function new_control:get_opacity() return surface:get_opacity() end
-	function new_control:set_opacity(value) return surface:set_opacity(value) end
-	
-	--// Get/set the blend mode of the surface used by the frame
-	function new_control:get_blend_mode() return surface:get_blend_mode() end
-	function new_control:set_blend_mode(value) surface:set_blend_mode(value) end
-	
-	--// Start a fade in or fade out of the surface used by the text control
-	function new_control:fade_in(delay, callback) return surface:fade_in(delay, callback) end
-	function new_control:fade_out(delay, callback) return surface:fade_out(delay, callback) end
-	
-	--// Get/set the offset of the surface used by the frame
-	function new_control:get_xy() return surface:get_xy() end
-	function new_control:set_xy(x, y) return surface:set_xy(x, y) end
-	
-	--// Get/stop the current movement of the surface used by the frame
-	function new_control:get_movement() return surface:get_movement() end
+	--// Assign a movement to the component and start it
+		--movement (sol.movement) - movement to apply to the component
+		--callback (function, optional) - function to be called once the movement has finished
 	function new_control:start_movement(movement, callback) movement:start(surface, callback) end
-	function new_control:stop_movement() return surface:stop_movement() end
-	
-	function new_control:get_count() return #subcomponents end
-	function new_control:get_subcomponent(i) return subcomponents[i].subcomponent end
 	
 	--// Draws the group on the specified destination surface
 		--dst_surface (sol.surface) - surface on which to draw the group object
@@ -121,9 +150,9 @@ function control.create(properties, width, height)
 		if is_visible then
 			surface:clear()
 			for _,entry in ipairs(subcomponents) do
-				entry.subcomponent:draw(surface, entry.x, entry.y)
+				entry.subcomponent:draw(surface, entry.x, entry.y) --draw subcomponents on surface
 			end
-			surface:draw(dst_surface, x, y)
+			surface:draw(dst_surface, x, y) --draw surface to destination
 		end
 	end
 	

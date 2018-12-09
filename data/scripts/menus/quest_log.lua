@@ -1,6 +1,6 @@
 --[[ quest_log.lua
 	version 1.0a1
-	23 Nov 2018
+	2 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -54,7 +54,7 @@ local active_tab_index = 1 --index of active tab: 1="main", 2="side"
 local sel_index = 1 --position of highlight box, 1 to 6
 local list_index = 1 --selected index of current list
 local top_index = 1 --list index appearing at top of visibile objectives in sidebar
-local is_highlight = true --if true then highlight box is visible
+local is_highlight = true --if true then highlight box is visible (hidden when no quests in log)
 
 --// Parses quest_log.dat and creates the corresponding ui components
 local load_quest_data --function, only runs once
@@ -74,6 +74,17 @@ do
 						component[func_name](component, entry[key])
 					end
 				end
+				
+				local subcomponents = {}
+				for _,subentry in ipairs(entry) do
+					if type(subentry.layer)=="string" then
+						local sub = ui.create_preset(subentry.layer, subentry.width, subentry.height)
+						if sub then table.insert(subcomponents, {sub, subentry.x, subentry.y}) end
+					end
+				end
+				if #subcomponents > 0 and component.set_subcomponents then
+					component:set_subcomponents(subcomponents)
+				end
 		
 				--save reference to components in quest_data using value of entry_id as key
 				local entry_id = entry.id --convenience
@@ -87,12 +98,14 @@ do
 		
 				table.insert(quest_log, {component, entry.x, entry.y})
 			end
-	
+			
 			quest_log.menu = ui.new_group(quest_log) --create a new group containing all the menu components
 			quest_log.inactive_tab:set_xy(56,0) --move the inactive tab over to become the second tab
 	
 			quest_log.side_tab_text:set_all("set_enabled", false) --grey text of side tab because it is the inactive tab
 			quest_log.tabs_left_arrow:set_visible(false) --hide left arrow because main tab is active
+			
+			quest_log.desc_item_box:set_visible(false)
 	
 			--// populate subcomponents of each list entry group
 	
@@ -114,7 +127,7 @@ do
 					--setup accessing subcomponent using sub_id key
 					local sub_id = entry.sub_id
 					assert(type(sub_id)=="string", "Bad property list_entry["..i.."].sub_id to 'quest_log.dat' (string expected)")
-					assert(not group[sub_id], "Bad property list_entry["..i.."].sub_id to 'quest_log.dat' (must be unique)")
+					assert(not rawget(group,sub_id), "Bad property list_entry["..i.."].sub_id to 'quest_log.dat' (must be unique)")
 					group[sub_id] = subcomponent
 			
 					table.insert(group_list, {subcomponent, entry.x, entry.y})
@@ -135,10 +148,12 @@ do
 			assert(type(tab_offset_y)=="number", "Bad property tab_offset_y to 'quest_log.dat' (number or nil expected)")
 			quest_data.tab_offset_y = math.floor(tab_offset_y)
 			
-			local highlight_scroll_time = tonumber(quest_data.highlight_scroll_time or 0.25) --default 250ms
-			assert(type(highlight_scroll_time)=="number", "Bad property highlight_scroll_time to 'quest_log.dat' (number or nil expected)")
-			assert(highlight_scroll_time>0 and highlight_scroll_time<1, "Bad property highlight_scroll_time to 'quest_log.dat' (number between 0 & 1 or nil expected)")
-			quest_data.highlight_scroll_time = highlight_scroll_time
+			if quest_data.highlight_scroll_time then
+				local highlight_scroll_time = tonumber(quest_data.highlight_scroll_time)
+				assert(type(highlight_scroll_time)=="number", "Bad property highlight_scroll_time to 'quest_log.dat' (number or nil expected)")
+				assert(highlight_scroll_time>0 and highlight_scroll_time<1, "Bad property highlight_scroll_time to 'quest_log.dat' (number between 0 & 1 or nil expected)")
+				quest_data.highlight_scroll_time = highlight_scroll_time
+			end
 		end
 		
 		LIST_VISIBLE_MAX_COUNT = quest_log.list_entries:get_count()
@@ -176,8 +191,7 @@ function quest_log:recall_saved_position(tab)
 		assert(tab_index, "Bad savegame data: 'last_quest_log_tab' invalid tab name: "..tab_name.." ('main' or 'side' expected)")
 		
 		self:set_tab(tab_index) --change to specified tab
-		
-		--active_list = game.objectives:get_objectives_list(tab_name) --list of currently active objectives
+		return --self:set_tab() will call self:recall_saved_position() again
 	end
 	
 	local last_master_index = tonumber(game:get_value("last_quest_log_"..tab_name)) --may be nil
@@ -186,6 +200,21 @@ function quest_log:recall_saved_position(tab)
 	local last_list_index = 1 --tentative, use first entry if can't find better one
 	if last_master_index then --try to use savegame value
 		last_list_index = active_list[tostring(last_master_index)] --objective that was last selected, may be nil if objective is no longer in active list
+		
+		--if last selected was an alternate quest that is no longer in the quest log, see if one of the alternate variants is active and select that one instead
+		if not last_list_index then --last viewed objective is no longer in player's quest log
+			local last_objective = game.objectives:get_objective_by_index(last_master_index, tab_name)
+			if last_objective then
+				local alt_key = last_objective:get_alternate_key()
+				if alt_key then
+					local active_alt = game.objectives:get_active_alternate(alt_key)
+					if active_alt then
+						local new_master_index = active_alt:get_index()
+						last_list_index = active_list[tostring(new_master_index)] --switch selected to new alternate quest
+					end
+				end
+			end
+		end
 		
 		if not last_list_index then --last viewed objective is no longer in player's quest log
 			--choose next lower objective that is on active list instead, or use first entry
@@ -234,7 +263,7 @@ function quest_log:set_tab(index)
 	
 	--configuration of components depends on the index value
 	local components = {
-		{ --index 1
+		{ --if index == 1
 			left_tab = self.active_tab,
 			right_tab = self.inactive_tab,
 			visible_arrow = self.tabs_right_arrow,
@@ -242,7 +271,7 @@ function quest_log:set_tab(index)
 			enabled_text = self.main_tab_text,
 			disabled_text = self.side_tab_text,
 		},
-		{ --index 2
+		{ --if index == 2
 			left_tab = self.inactive_tab,
 			right_tab = self.active_tab,
 			visible_arrow = self.tabs_left_arrow,
@@ -272,9 +301,14 @@ function quest_log:set_tab(index)
 	
 	--set quest completion rate text below sidebar
 	local complete_status_text = sol.language.get_string"menu.quest_log.quests_count"
+	local v1,v2 = game.objectives:get_counts(new_tab_name)
+	
+	local milestone = quest_data.quest_totals_milestone --savegame variable to use to determine if milestone is reached
+	if milestone and not game:get_value(milestone) then v2 = "?" end --replace quest total count with question mark until milestone reached
+	
 	complete_status_text = util.substitute_text(
 		complete_status_text,
-		{game.objectives:get_counts(new_tab_name)},
+		{v1,v2},
 		"%$v"
 	)
 	self.complete_status:set_text(complete_status_text)
@@ -375,19 +409,17 @@ function quest_log:set_description(objective, phase)
 		if phase then phase = math.floor(phase) end
 		
 		local description = objective:get_description(phase)
-	
+		
 		self.desc_title:set_text(objective:get_title())
 		self.desc_location:set_text(objective:get_location(phase))
 		
 		--set description pane text and font color depending on if active
 		for i,subcomponent in self.desc_text:ipairs() do
 			local entry = description[i] or {}
-		
+			
 			subcomponent:set_text(entry.text or "")
-		
-			local is_active = entry.is_active==nil and true or entry.is_active --treat nil values as true
+			
 			local is_grey = not not entry.is_grey
-			--subcomponent:set_enabled(is_active)
 			subcomponent:set_enabled(not is_grey)
 		end
 		
@@ -395,7 +427,6 @@ function quest_log:set_description(objective, phase)
 		for i,subcomponent in self.desc_checkmarks:ipairs() do
 			local entry = description[i] or {}
 			subcomponent:set_visible(entry.is_check or false)
-			--subcomponent:set_enabled(entry.is_active==false or false)
 			subcomponent:set_enabled(not not entry.is_grey)
 		end
 		
@@ -406,9 +437,37 @@ function quest_log:set_description(objective, phase)
 			subcomponent:set_enabled(entry.check_state=="checkmark")
 			
 			if entry.check_position then
-				subcomponent:set_xy(6*(entry.check_position-1), 0)
+				--calculate x position of checkmark
+				local text_component = self.desc_text:get_subcomponent(i)
+				--local x = text_component:test_text_size(entry.check_position) --non-hack implementation
+				local xtra_x = text_component:test_text_size(entry.check_position.."a") --HAX
+				local xtra = text_component:test_text_size("a") --HAX
+				local x = xtra_x - xtra --HAX --TODO workaround for Solarus issue #1025
+				
+				subcomponent:set_xy(x, 0)
 			else subcomponent:set_xy(0,0) end
 		end
+		
+		--set visibility and position of item icon
+		local item_line = description.item_line
+		local item_position = description.item_position
+		if item_line then
+			self.desc_item_box:set_visible(true)
+			
+			--calculate horizontal position
+			local text_component = self.desc_text:get_subcomponent(item_line)
+			--local x = text_component:test_text_size(item_position) --non-hack implementation
+			local xtra_x = text_component:test_text_size(item_position.."a") --HAX
+			local xtra = text_component:test_text_size("a") --HAX
+			local x = xtra_x - xtra --HAX --TODO workaround for Solarus issue #1025
+			
+			--calculate vertical position
+			local line_height = quest_data.desc_text.subcomponent.height
+			local gap_height = quest_data.desc_text.gap or 0
+			local y = (item_line - 1)*(line_height + gap_height)
+			
+			self.desc_item_box:set_xy(x, y)
+		else self.desc_item_box:set_visible(false) end --don't show item box
 		
 		local is_done = objective:is_done()
 		if phase then is_done = phase>=objective:get_num_phases() end
@@ -418,7 +477,11 @@ function quest_log:set_description(objective, phase)
 		self.desc_location:set_text""
 		self.desc_text:set_text_key"menu.quest_log.no_quests"
 		self.desc_checkmarks:set_all("set_enabled", false)
+		self.desc_checkmarks:set_all("set_visible", false)
+		self.dynamic_checkmarks:set_all("set_enabled", false)
+		self.dynamic_checkmarks:set_all("set_visible", false)
 		self.desc_complete:set_visible(false)
+		self.desc_item_box:set_visible(false)
 	end
 end
 
@@ -469,6 +532,7 @@ function quest_log:set_highlight_position(index, is_animate)
 	assert(not is_animate or type(is_animate)=="boolean", "Bad argument #2 to 'set_highlight' (boolean or nil expected)")
 	local is_animate = is_animate~=false
 	
+	self.list_highlight:stop_movement() --in case an old movement is active
 	local x,y = self.list_highlight:get_xy()
 	
 	local x_offset = tonumber(quest_data.list_highlight.x_offset) or 0
@@ -477,12 +541,12 @@ function quest_log:set_highlight_position(index, is_animate)
 	local new_x = x_offset*(index - 1)
 	local new_y = y_offset*(index - 1)
 	
-	local delta_x = new_x - x
-	local delta_y = new_y - y
-	local distance = math.sqrt(delta_x*delta_x + delta_y*delta_y)
-	local speed = distance/quest_data.highlight_scroll_time
-	
-	if is_animate then
+	if is_animate and quest_data.highlight_scroll_time then
+		local delta_x = new_x - x
+		local delta_y = new_y - y
+		local distance = math.sqrt(delta_x*delta_x + delta_y*delta_y)
+		local speed = distance/quest_data.highlight_scroll_time
+		
 		local movement = sol.movement.create"target"
 		movement:set_speed(speed)
 		movement:set_target(new_x, new_y)

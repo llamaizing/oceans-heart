@@ -169,6 +169,11 @@ main{
 	location = "location.oakhaven"
 }
 
+
+
+
+
+
 side{
 	dialog_id = "quest.test13",
 	calc_phase = "quest_test13",

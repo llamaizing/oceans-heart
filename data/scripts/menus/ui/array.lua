@@ -1,6 +1,6 @@
 --[[ array.lua
 	version 1.0a1
-	23 Nov 2018
+	3 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -14,16 +14,13 @@
 	specified.
 ]]
 
---local util = require"scripts/menus/ui/util"
-
 local control = {}
 
 --// Creates a new fill control
 	--properties (table) - table containing properties defining fill behavior
 		--subcomponents (table, array) - array of each subcomponent (type of table or userdata) to be drawn
-			--each subcomponent must have a draw() function
-		--direction (string, optional) - direction to arrange subcomponents, either "vertical" or "horizontal"
-			--default: "vertical"
+			--each subcomponent must have a draw() method
+		--direction (string, optional) - direction to arrange subcomponents, either "vertical" or "horizontal", default: "vertical"
 		--gap (number, positive) distance in pixels for the gap between subcomponents
 	--width (number) - width of the entire draw region in pixels
 	--height (number) - height of the entire draw region in pixels
@@ -31,35 +28,50 @@ local control = {}
 function control.create(properties, width, height)
 	local new_control = {}
 	
+	--settings defined by data file property values
+	local width = tonumber(width) --(number, positive integer) max width of component in pixels
+	local height = tonumber(height) --(number, positive integer) max height of component in pixels
+	local gap = tonumber(properties.gap or 0) --(number, integer, optional) spacing between subcomponents of array in pixels, default: 0
+	local direction = properties.direction or "vertical" --(string, optional) direction to arrange subcomponents in array: "horizontal" or "vertical", default: "vertical"
+	
+	--additional settings
+	local subcomponents --(table, array) list of each subcomponent in the array
+	local position = {x=0,y=0} --(table, key/value) movements change the coordinates of this table, which are added as an offset to the component position when drawn
+		--x (number, integer) - amount of the horizontal offset in pixels
+		--y (number, integer) - amount of the vertical offset in pixels
+		--movement (sol.movement or nil) - active movement of the component, if nil then the movement is done
+	local is_visible = true --(boolean) component is not drawn if false, default: true
+	
+	--// validate data file property values
+	
 	assert(type(properties)=="table", "Bad argument #1 to 'create' (table expected)")
 	
-	local width = tonumber(width)
+	--validate width
 	assert(width, "Bad argument #2 to 'create' (number expected)")
 	width = math.floor(width)
 	assert(width>0, "Bad argument #2 to 'create' (number must be positive)")
 	
-	local height = tonumber(height)
+	--validate height
 	assert(height, "Bad argument #2 to 'create' (number expected)")
 	height = math.floor(height)
 	assert(height>0, "Bad argument #2 to 'create' (number must be positive)")
 	
-	local gap = tonumber(properties.gap or 0)
+	--validate gap
 	assert(gap, "Bad property gap to 'create' (number or nil expected)")
 	gap = math.floor(gap)
-	--assert(gap>=0, "Bad property gap to 'create' (number must not be negative)")
 	
-	local direction = properties.direction or "vertical"
+	--validate direction
 	assert(type(direction)=="string", "Bad property direction to 'create' (string or nil expected)")
 	
-	local is_visible = true --visible by default
-	local position = {x=0,y=0}
-	local movement = nil
 	
-	local subcomponents --table containing each subcomponent in the array
+	--// implementation
+	
+	--// Assigns the list of subcomponents to be elements in the array, removing any existing elements first
+		--list (table, array) - list of subcomponents to be used in the array, specified as data file properties (see objectives.dat)
 	function new_control:set_subcomponents(list)
 		assert(type(list)=="table", "Bad argument #1 to 'set_subcomponents' (table expected)")
 		
-		local ui = require"scripts/menus/ui/ui"
+		local ui = require"scripts/menus/ui/ui" --do not require at start of script because will cause endless loading loop
 		subcomponents = {} --clear previous subcomponents
 		
 		if #list>0 then --table is list of components to add
@@ -72,7 +84,7 @@ function control.create(properties, width, height)
 				table.insert(subcomponents, subcomponent)
 			end
 			assert(#subcomponents>0, "Bad argument #1 to 'set_subcomponents' (must include at least one subcomponent)")
-		else --table specifies ui layer to use (string) along with a count (number)
+		else --table specifies ui layer to use (string) as a template for all subcomponents along with a count (number) of the number to have in the array
 			assert(type(list.layer)=="string", "Bad argument #1 to 'set_subcomponents' (table must contain layer key with string value)")
 			
 			local count = tonumber(list.count)
@@ -85,15 +97,20 @@ function control.create(properties, width, height)
 			assert(#subcomponents>0, "Bad argument #1 to 'set_subcomponents' (key count must have value >= 1)")
 		end
 		
-		if list.text_key then
+		--handle additional subcomponent properties by calling associated setter function
+		if list.text_key and self.set_text_key then --do text_key property first so text property won't be used if text_key exists
 			self:set_text_key(list.text_key)
-		elseif list.text then
-			self:set_text(text)
+		elseif list.text and self.set_text then
+			self:set_text(list.text)
 		end
 	end
 	
-	--local surface = sol.surface.create(width, height) --TODO use intermediate surface to constrain length & width?
+	--// Returns the width and height (number) of the fill region in pixels
+		--a value of nil indicates to use the entire width/height, respectively
+	function new_control:get_size() return width, height end
 	
+	--// Get/set the distance between subcomponents in pixels
+		--gap (number) distance of spacing in pixels
 	function new_control:get_gap() return gap end
 	function new_control:set_gap(value)
 		local value = tonumber(value)
@@ -102,12 +119,20 @@ function control.create(properties, width, height)
 		gap = math.floor(value)
 	end
 	
-	--// Returns the width and height (number) of the fill region in pixels
-		--a value of nil indicates to use the entire width/height, respectively
-	function new_control:get_size() return width, height end
-	
+	--// Gets the number of subcomponents in the array
+		--returns (number, non-negative integer) - number of subcomponents
 	function new_control:get_count() return #subcomponents end
-	function new_control:ipairs() return ipairs(subcomponents) end
+	
+	--// Custom iterator to get the subcomponents of the array (does not expose internal table)
+		--usage: for i,subcomponent in new_control:ipairs() do
+	function new_control:ipairs()
+		local iter,_,start_val = ipairs(subcomponents)
+		return function(_,i) return iter(subcomponents, i) end, {}, start_val
+	end
+	
+	--// Gets the ith subcomponent of the array
+		--i (number, positive integer) - index of the subcomponent to be returned
+		--returns (table or nil) - ui subcomponent at the specified index or nil if it does not exist
 	function new_control:get_subcomponent(i) return subcomponents[i] end
 	
 	--// Splits a text string at line breaks and passes each one to subcomponent set_text function
@@ -121,6 +146,7 @@ function control.create(properties, width, height)
 			table.insert(lines, line)
 		end
 		
+		self:set_all("set_text", "") --clear existing text first
 		self:set_all("set_text", lines)
 	end
 	
@@ -171,44 +197,64 @@ function control.create(properties, width, height)
 		end	
 	end
 	
-	--// Get/set whether the array is visible (visible by default)
-		--value (boolean) - if true then the array is visible
+	--// Get/set whether the component should be drawn
+		--value (boolean) - component will be drawn if true
 	function new_control:get_visible() return is_visible end
 	function new_control:set_visible(value)
 		assert(type(value)=="boolean", "Bad argument #1 to 'set_visible' (boolean expected)")
 		is_visible = value
 	end
 	
-	--// Get/set the offset of the array
+	--// Get/set the x & y offset that is added to the position of where the component is drawn
+		--x (number) x coordinate of the offset
+		--y (number) y coordinate of the offset
 	function new_control:get_xy() return position.x, position.y end
 	function new_control:set_xy(x, y)
-		position.x = tonumber(x) or position.x
-		position.y = tonumber(y) or position.y
+		local x = tonumber(x)
+		assert(x, "Bad argument #1 to 'set_xy' (number expected)")
+		
+		local y = tonumber(y)
+		assert(y, "Bad argument #2 to 'set_xy' (number expected)")
+		
+		position.x = x
+		position.y = y
 	end
 	
-	--// Get/stop the current movement of the surface used by the array
-	function new_control:get_movement() return movement end
-	function new_control:start_movement(new_movement, callback)
-		movement = new_movement
+	--// Get the current movement of the component
+	function new_control:get_movement() return position.movement end
+	
+	--// Assign a movement to the component and start it
+		--movement (sol.movement) - movement to apply to the component
+		--callback (function, optional) - function to be called once the movement has finished
+	function new_control:start_movement(movement, callback)
+		position.movement = movement --save reference to active movement
 		movement:start(position, function(...)
-			movement = nil
+			position.movement = nil --remove reference once movement is done
 			callback(...)
 		end)
 	end
-	function new_control:stop_movement() return movement:stop_movement() end
+	
+	--// Stop the current movement of the component if it exists
+	function new_control:stop_movement()
+		local movement = position.movement --convenience
+		if movement then
+			movement:stop()
+			position.movement = nil
+		end
+	end
 
 	--// Draws the fill on the specified destination surface
 		--dst_surface (sol.surface) - surface on which to draw the fill
 		--x (number, optional) - x coordinate of where to draw the fill
 		--y (number, optional) - y coordinate of where to draw the fill
 	function new_control:draw(dst_surface, x, y)
-		x = x + position.x
-		y = y + position.y
-		
 		if is_visible then
-			local i_x, i_y = 0, 0
+			local x = x + position.x
+			local y = y + position.y
+			
+			local i_x, i_y = 0, 0 --offset for each element in array
 			for _,subcomponent in ipairs(subcomponents) do
-				subcomponent:draw(dst_surface, x+i_x, y+i_y)
+				subcomponent:draw(dst_surface, x + i_x, y + i_y)
 				local i_width,i_height = subcomponent:get_size()
 				
 				if direction=="vertical" then

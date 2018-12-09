@@ -36,7 +36,7 @@ function game_manager:create(file_name)
     end
 
   --From llamazing's quest log menu:
-objectives_manager.create(game)
+  objectives_manager.create(game)
   quest_log:set_game(game)
   
   function game.objectives:on_new_task(status)

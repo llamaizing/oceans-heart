@@ -1,6 +1,6 @@
 --[[ fill.lua
 	version 1.0a1
-	23 Nov 2018
+	3 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -30,30 +30,46 @@ local control = {}
 function control.create(properties, width, height)
 	local new_control = {}
 	
+	--settings defined by data file property values and their default values
+	local width = width --(number, positive integer) max width of component in pixels, if nil then fills entire destination surface
+	local height = height --(number, positive integer) max height of component in pixels, if nil then fills entire destination surface
+	local color --(table, array) RGB color of text when enabled
+	
+	--additional settings
+	local position = {x=0, y=0} --(table, key/value) movements change the coordinates of this table, which are added as an offset to the component position when drawn
+		--x (number, integer) - amount of the horizontal offset in pixels
+		--y (number, integer) - amount of the vertical offset in pixels
+		--movement (sol.movement or nil) - active movement of the component, if nil then the movement is done
+	local is_visible = true --(boolean) component is not drawn if false, default: true
+	
+	
+	--// validate data file property values
+	
 	assert(type(properties)=="table", "Bad argument #1 to 'create' (table expected)")
 	
-	local width = width
-	local width_num = tonumber(width)
-	assert(width_num or not width, "Bad argument #2 to 'create' (number or nil expected)")
-	if width_num then
-		width = math.floor(width_num)
+	--validate width
+	if width then
+		width = tonumber(width)
+		assert(width, "Bad argument #2 to 'create' (number or nil expected)")
+		width = math.floor(width)
 		assert(width>0, "Bad argument #2 to 'create' (number must be positive)")
 	end
-	width_num = nil --no longer needed
 	
-	local height = height
-	local height_num = tonumber(height)
-	assert(height_num, "Bad argument #3 to 'create' (number or nil expected)")
-	if height_num then
-		height = math.floor(height_num)
+	--validate height
+	if height then
+		height = tonumber(height)
+		assert(height, "Bad argument #3 to 'create' (number or nil expected)")
+		height = math.floor(height)
 		assert(height>0, "Bad argument #3 to 'create' (number must be positive)")
 	end
-	height_num = nil --no longer needed
 	
-	local color, err = util.make_RGB_color(properties.color)
+	--validate color
+	local err --temporary error message
+	color, err = util.make_RGB_color(properties.color)
 	assert(color, "Bad property color to 'create'"..tostring(err or ''))
 	
-	local is_visible = true --visible by default
+	
+	--// implementation
 	
 	--// Returns the width and height (number) of the fill region in pixels
 		--a value of nil indicates to use the entire width/height, respectively
@@ -76,12 +92,55 @@ function control.create(properties, width, height)
 		is_visible = value
 	end
 	
+	--// Get/set the x & y offset that is added to the position of where the component is drawn
+	function new_control:get_xy() return position.x, position.y end
+	function new_control:set_xy(x, y)
+		local x = tonumber(x)
+		assert(x, "Bad argument #1 to 'set_xy' (number expected)")
+		
+		local y = tonumber(y)
+		assert(y, "Bad argument #2 to 'set_xy' (number expected)")
+		
+		position.x = x
+		position.y = y
+	end
+	
+	--// Get the current movement of the text component
+	function new_control:get_movement() return position.movement end
+	
+	--// Assign a movement to the component and start it
+		--movement (sol.movement) - movement to apply to the component
+		--callback (function, optional) - function to be called once the movement has finished
+	function new_control:start_movement(movement, callback)
+		position.movement = movement --save reference to active movement
+		movement:start(position, function(...)
+			position.movement = nil --remove reference once movement is done
+			callback(...)
+		end)
+	end
+	
+	--// Stop the current movement of the component if it exists
+	function new_control:stop_movement()
+		local movement = position.movement --convenience
+		if movement then
+			movement:stop()
+			position.movement = nil
+		end
+	end
+	
 	--// Draws the fill on the specified destination surface
 		--dst_surface (sol.surface) - surface on which to draw the fill
 		--x (number, optional) - x coordinate of where to draw the fill
 		--y (number, optional) - y coordinate of where to draw the fill
 	function new_control:draw(dst_surface, x, y)
-		if is_visible then dst_surface:fill_color(color, x, y, width, height) end
+		if is_visible then
+			if width then
+				local x = x + position.x
+				local y = y + position.y
+				
+				dst_surface:fill_color(color, x, y, width, height)
+			else dst_surface:fill_color(color) end
+		end
 	end
 	
 	return new_control
