@@ -10379,9 +10379,18 @@ dialog{
   id = "quest.main.hazel",
   title = "The Trail Warms Up",
   text = [[
-Captain Thyme fled to Oakhaven
+Capt'n Thyme ran to Oakhaven
 @Investigate Oakhaven
 @Search town for Hazel
+@!She's staying at
+Hornwart inn
+;
+@!Hazel seems to have
+spent a lots of time
+at the library.
+;
+@She was meeting pirates
+at the port
   ]]
 }
 

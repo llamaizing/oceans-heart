@@ -41,7 +41,7 @@ function game_manager:create(file_name)
   
   function game.objectives:on_new_task(status)
     -- game:get_map():update_icons()
-    if self:is_new_task() then game:set_hud_icon("pause", "quest_alert") end
+    --if self:is_new_task() then game:set_hud_icon("pause", "quest_alert") end
     
     --play sound depending on the status
     local sound_name = QUEST_SOUNDS[status]
@@ -49,7 +49,7 @@ function game_manager:create(file_name)
   end
   
   function game.objectives:on_tasks_cleared()
-    game:set_hud_icon("pause", "normal")
+    --game:set_hud_icon("pause", "normal")
   end
   
   function game:on_paused()

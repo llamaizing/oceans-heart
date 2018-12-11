@@ -190,12 +190,13 @@ function remember_sensor:on_activated()
     m:start(hero)
     hero:set_direction(0)
     function m:on_finished()
+      hero:unfreeze()
       game:start_dialog("_oakhaven.npcs.port.cervio.1", function()
         sol.audio.play_sound("quest_log")
         game:start_dialog("_game.quest_log_update") end)
       game:set_value("quest_log_a", "a9")
       game:set_value("quest_hazel", 1) --quest log
-      hero:unfreeze() end
-    game:set_value("hazel_is_here", true)
+      game:set_value("hazel_is_here", true)
+    end
   end
 end
