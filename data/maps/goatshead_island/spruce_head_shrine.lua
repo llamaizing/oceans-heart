@@ -101,15 +101,17 @@ function cutscene_sensor:on_activated()
 
             game:start_dialog("_goatshead.npcs.ilex.9", function()
 
-              sol.audio.play_sound("quest_log")
               game:set_value("quest_log_a", "a5")
               game:set_value("quest_spruce_head", 2) --quest log
               hero:unfreeze()
               game:set_value("seen_spruce_sanctuary", true)
+
               game:start_dialog("_game.quest_log_update", function()
                 hero:teleport("goatshead/poplar_coast", "from_shrine", "fade")
               end)
+
             end)
+
           end)
 
       end

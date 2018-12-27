@@ -21,7 +21,7 @@ BENJAMIN:
 the marsh, and I know you're busy, but if
 you see some Hornet Honey, could you
 bring it by? I'll pay you 45 crowns.
-]]
+]],
 }
 
 dialog{
@@ -46,7 +46,7 @@ If you can grab some from the marsh and
 BENJAMIN:
 bring it by here, I'll pay you 60 crowns for
 it. If you're not too busy, I'd appreciate it.
-]]
+]],
 }
 
 dialog{
@@ -65,7 +65,7 @@ This is great! You aren't even stung, are
 you? Well, here.
 
 (You received 45 crowns)
-]]
+]],
 }
 
 dialog{
@@ -84,7 +84,7 @@ This is great! You aren't even stung, are
 you? Well, here.
 
 (You received 60 crowns)
-]]
+]],
 }
 
 dialog{
@@ -94,7 +94,7 @@ BENJAMIN:
 Thanks for tracking down that honeycomb.
 I'm going to make some extra-strength
 mead!
-]]
+]],
 }
 
 dialog{
@@ -108,7 +108,7 @@ be willin' to sell? I'll pay 10 crowns each.
 $? Sell him one
 $? Sell him 10
 $? Don't do it, he's weird
-]]
+]],
 }
 
 dialog{
@@ -116,7 +116,7 @@ dialog{
   text = [[
 Much obliged. If ye've ever got more bones
 than yeh need, I'll be here.
-]]
+]],
 }
 
 dialog{
@@ -136,7 +136,7 @@ prepare to have your bones tackled $2into little
 dusty... $1sized bits... $3 That wasn't scary...
 BRUTUS:
 Anyway, avast!
-]]
+]],
 }
 
 dialog{
@@ -158,7 +158,7 @@ BLACKBEARD:
 Nah. I'll head back to the hideout once
 I have the chart. Just need some rum for
 the journey.
-]]
+]],
 }
 
 dialog{
@@ -171,7 +171,7 @@ that way, I can take you for 10 crowns.
 (Sail to Crabhook Village?)
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -180,14 +180,14 @@ dialog{
 Hey! It's that girl I trapped in a cave
 earlier! She's obviously here for revenge.
 Get her!
-]]
+]],
 }
 
 dialog{
   id = "_ballast_harbor.npcs.dream_cannons.captain_2",
   text = [[
 Ahhh!
-]]
+]],
 }
 
 dialog{
@@ -197,7 +197,7 @@ Alright! We get it! We won't mess with
 Carlov or Nina or... you? Who are you
 even? You know what, it doesn't even matter.
 You're off the messing-with list.
-]]
+]],
 }
 
 dialog{
@@ -207,7 +207,7 @@ Hey! You can't come through here. This is
 the top-secret base of the amazingly tough
 pirate crew called the Dream Cannons!
 We'll blow yours up if you mess with us!
-]]
+]],
 }
 
 dialog{
@@ -225,7 +225,7 @@ you for 5 crowns a piece. Interested?
 $? Sell him 1
 $? Sell him 10
 $? Hoard your guts
-]]
+]],
 }
 
 dialog{
@@ -233,7 +233,7 @@ dialog{
   text = [[
 Mmm. Thanks. You feel the urge to
 trade any more, you find me, alright?
-]]
+]],
 }
 
 dialog{
@@ -246,7 +246,7 @@ I sell here has been obtained through
 HONESTBEARD:
 goes on here at all. Take a look around
 and see if there's anything you'd like.
-]]
+]],
 }
 
 dialog{
@@ -260,7 +260,7 @@ HONESTBEARD:
 you and sell your armor. Just 150 crowns!
 $? Buy it
 $? Nope
-]]
+]],
 }
 
 dialog{
@@ -273,7 +273,7 @@ to make some mighty fine armor. 250 crowns.
 Will you be takin' them for 250 crowns?
 $?I'll take them
 $?Not today
-]]
+]],
 }
 
 dialog{
@@ -285,7 +285,7 @@ could turn that into an upgrade for your
 sword or bow. I'll sell it for 120 crowns.
 $? Buy it
 $? Not now
-]]
+]],
 }
 
 dialog{
@@ -298,7 +298,7 @@ someone into a newt. 200 crowns.
 TILIA:
 I'm not a big fan of newts, actually.
 No thanks.
-]]
+]],
 }
 
 dialog{
@@ -306,7 +306,7 @@ dialog{
   text = [[
 HONESTBEARD:
 We're all out of that item, matey.
-]]
+]],
 }
 
 dialog{
@@ -320,7 +320,7 @@ TILIA:
 I've actually found talking to people
 pretty helpful for what I'm trying to do,
 so, no thanks.
-]]
+]],
 }
 
 dialog{
@@ -336,7 +336,7 @@ them on?
 
 HONESTBEARD:
 I, uh... huh. Dunno.
-]]
+]],
 }
 
 dialog{
@@ -348,7 +348,7 @@ in particular?
 
 TILIA:
 No, just browsing I guess.
-]]
+]],
 }
 
 dialog{
@@ -404,7 +404,7 @@ stone building? I'll be back soon.
 
 KELPTON:
 We'll see.
-]]
+]],
 }
 
 dialog{
@@ -418,7 +418,7 @@ TILIA:
 No, they're still in the Pirate Council's
 guarded building. But I'm figuring out how
 to get in.
-]]
+]],
 }
 
 dialog{
@@ -456,7 +456,7 @@ KELPTON:
 it in the chest. It seemed important, but I
 have no idea where it goes. If you ever
 find him, give it back I guess.
-]]
+]],
 }
 
 dialog{
@@ -465,7 +465,7 @@ dialog{
 KELPTON:
 You ever figure out where that key goes to?
 Eh. Good luck.
-]]
+]],
 }
 
 dialog{
@@ -495,7 +495,7 @@ KELPTON:
 No idea. Mallow forgot it here and it
 seemed important, so I held onto it. If
 you catch up to him, give it back I guess.
-]]
+]],
 }
 
 dialog{
@@ -508,7 +508,7 @@ captains have come in or out. Unless there's
 another way in or something. I guess
 sometimes buildings have more than one
 door.
-]]
+]],
 }
 
 dialog{
@@ -518,7 +518,7 @@ Hey, I've got all the best spices here. You
 want cardamom? I've got cardamom. Need
 cloves? Have 'em. Looking for turmeric?
 I'll give you tumeric! I have the spices!
-]]
+]],
 }
 
 dialog{
@@ -528,7 +528,7 @@ So you've probably heard you can't trust snake
 oil salesmen. And I'll grant you that. But have
 you tried fish oil? Imported from the exotic
 Zephyr Empire, it can cure anything!
-]]
+]],
 }
 
 dialog{
@@ -542,7 +542,7 @@ EXOTIC APPLE SALESMAN:
 Interested? Each is 8 crowns, heals two hearts.
 $? Sure
 $? No thanks
-]]
+]],
 }
 
 dialog{
@@ -551,7 +551,7 @@ dialog{
 You've really got to stay on top of
 sweeping up gunpowder. Learned that
 one the hard way.
-]]
+]],
 }
 
 dialog{
@@ -561,7 +561,7 @@ I'm selling arrows. It doesn't look like you
 have a bow, so maybe you could use them
 as like, shish kebab... you know what,
 nevermind. Come back when you have a bow.
-]]
+]],
 }
 
 dialog{
@@ -577,7 +577,7 @@ $1Any...$3 any proof of what now?
 
 MICHAEL THE MEAD MAKER:
 I thought not! Now scramble off, puny girl!
-]]
+]],
 }
 
 dialog{
@@ -611,7 +611,7 @@ MICHAEL THE MEAD MAKER:
 Look, I don't know if you've dealt with
 illegitimate alcohol makers before, but we
 don't negotiate! You're going down!
-]]
+]],
 }
 
 dialog{
@@ -649,7 +649,7 @@ MICHAEL THE MEAD MAKER:
 $1Wait...$3 You're the one who took down
 Beetle-Eyed Bartholemy, aren't you...
 You're going down, kiddo!
-]]
+]],
 }
 
 dialog{
@@ -661,7 +661,7 @@ We was just celebrating gettin' back from
 Goathead isle and he wandert off. Well,
 maybe he went to bed. Good for him,
 the rocky lad.
-]]
+]],
 }
 
 dialog{
@@ -671,7 +671,7 @@ You know what I just heard? They say
 there's a crew of art thieves in this town-
 they're supposed to have a hidden hideout.
 Well, I suppose all hideouts are hidden...
-]]
+]],
 }
 
 dialog{
@@ -684,7 +684,7 @@ But on the other hand, if I don't buy such
 cheap goods, then they'll have been stolen
 for no reason at all, which is really worse
 when you think about it. Right?
-]]
+]],
 }
 
 dialog{
@@ -694,7 +694,7 @@ Have you been to Honestbeard's
 Emporium? The deals there are great!
 But between you and me$1..... $3I don't
 think he's as honest as he says he is.
-]]
+]],
 }
 
 dialog{
@@ -704,7 +704,7 @@ You get a nice cross-section of unsavory
 sorts here. It can really make you appreciate
 how decent your friends are, even if they're
 dishonest bilge-lizards.
-]]
+]],
 }
 
 dialog{
@@ -718,7 +718,7 @@ treasure of some sort. We didn't want to join,
 so they sank our ship!... Makes me wonder,
 though, why would they need so many pirates
 to go after some treasure? It's that dangerous?
-]]
+]],
 }
 
 dialog{
@@ -731,7 +731,7 @@ like a.... different key or somthing,
 TIPSY PIRTAE:
 that's no good. How will I sleep? Where
 can I sleep without a bed?
-]]
+]],
 }
 
 dialog{
@@ -743,7 +743,7 @@ $1...zzz.....
 
 $3(He seems to have fallen asleep
 standing up.)
-]]
+]],
 }
 
 dialog{
@@ -751,7 +751,7 @@ dialog{
   text = [[
 There's a chart of the waters around
 some islands in the Zephyr empire.
-]]
+]],
 }
 
 dialog{
@@ -759,7 +759,7 @@ dialog{
   text = [[
 Various maps and charts are stacked
 in kind of a mess.
-]]
+]],
 }
 
 dialog{
@@ -773,7 +773,7 @@ or towns, and try to find corresponding
 areas shown on the map. Each area of
 the overworld has its own map. Keep in
 mind, not everything is shown on a map.
-]]
+]],
 }
 
 dialog{
@@ -787,7 +787,7 @@ deep would heed his call and the waves
 rolled where he directed. The king used his
 favor to grow his kingdom and protect his
 people at first, but he grew complacent."
-]]
+]],
 }
 
 dialog{
@@ -797,7 +797,7 @@ There's a letter from some pirate captain,
 wanting help. It says colonies from the
 Zeyphr empire are trying to oust the
 pirates from an... archeological site?
-]]
+]],
 }
 
 dialog{
@@ -807,7 +807,7 @@ Someone is going through a stack of books
 about the ancient Meurian Kingdom and
 taking notes... it looks like they're
 guessing locations of the king's palace.
-]]
+]],
 }
 
 dialog{
@@ -816,7 +816,7 @@ dialog{
 There's a map of the northern seas. Lots
 of spots are marked$1...$3 including your
 hometown on Limestone Island...
-]]
+]],
 }
 
 dialog{
@@ -825,7 +825,7 @@ dialog{
 There's a map of Yarrowmouth Island. A
 note by "Naerreturn Bay" says the Sea-King
 visited once and lit a lighthouse.
-]]
+]],
 }
 
 dialog{
@@ -839,7 +839,7 @@ a song. Charmed by his respect for her,
 the Ocean invited him into her depths
 and gave him her heart. At first, he
 wielded her power as a wise king..."
-]]
+]],
 }
 
 dialog{
@@ -853,7 +853,7 @@ waves and storms, the Ocean arrived in
 his palace and dragged the king down
 to the seabed, along with her heart. The
 kingdom collapsed in the flood."
-]]
+]],
 }
 
 dialog{
@@ -862,7 +862,7 @@ dialog{
 Huh. It's a suit of armor made for the
 Goatshead Harbor guards. Wonder why
 it's here.
-]]
+]],
 }
 
 dialog{
@@ -871,7 +871,7 @@ dialog{
 There's a suit of shiny metal armor. It
 doesn't look very practical for naval
 battles.
-]]
+]],
 }
 
 dialog{
@@ -887,7 +887,7 @@ paying for charts that don't relate to
 Ocean's Heart or the Meurian King...
 Huh. There's a lot more archeology and a
 lot less bloodlust than you'd expect.
-]]
+]],
 }
 
 dialog{
@@ -895,7 +895,7 @@ dialog{
   text = [[
 A bunch of rolled up sea charts. It looks
 like they keep the cheaper ones outside.
-]]
+]],
 }
 
 dialog{
@@ -905,14 +905,14 @@ It's a map of the Zephyr Empire, waaay
 south of here. Judging by the number of
 dragons and giants depicted, it's accuracy
 may be in dispute.
-]]
+]],
 }
 
 dialog{
   id = "_ballast_harbor.signs.charts",
   text = [[
 Kelpton Sea Charts
-]]
+]],
 }
 
 dialog{
@@ -920,7 +920,7 @@ dialog{
   text = [[
 North - Tern Marsh, Marsh Meadery
 South - Ballast Harbor Market
-]]
+]],
 }
 
 dialog{
@@ -928,28 +928,28 @@ dialog{
   text = [[
 Top-Secret Hideout of the
 Dream Cannon Crew
-]]
+]],
 }
 
 dialog{
   id = "_ballast_harbor.signs.emporium",
   text = [[
 Honestbeard's Emporium
-]]
+]],
 }
 
 dialog{
   id = "_ballast_harbor.signs.inn",
   text = [[
 Sharkfire Tavern and Inn
-]]
+]],
 }
 
 dialog{
   id = "_ballast_harbor.signs.meadery",
   text = [[
 Marsh Meadery
-]]
+]],
 }
 
 dialog{
@@ -963,7 +963,7 @@ crowns, I can improve a sword or bow.
 $? Sword
 $? Bow
 $? Neither
-]]
+]],
 }
 
 dialog{
@@ -977,7 +977,7 @@ can beef up your battling.
 $? Sword
 $? Bow
 $? Neither
-]]
+]],
 }
 
 dialog{
@@ -991,7 +991,7 @@ upgrading your sword or bow with Coral Ore?
 $? Sword
 $? Bow
 $? Neither
-]]
+]],
 }
 
 dialog{
@@ -1001,7 +1001,7 @@ This is the ferry to Goatshead Harbor.
 The trip costs 10 crowns. Want a ticket?
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -1011,7 +1011,7 @@ This ferry is heading to Oakhaven.
 Passage is 10 crowns. Will you board?
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -1021,7 +1021,7 @@ Ferry to Yarrowmouth Island. You want on
 it's 10 crowns. Sound good?
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -1031,7 +1031,7 @@ It's a flat rock, perfect for holding
 monster bait. Place monster bait here?
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -1041,21 +1041,21 @@ Game Over
   $? Save and Continue
   $? Continue without Saving
   $? Quit
-]]
+]],
 }
 
 dialog{
   id = "_game.insufficient_funds",
   text = [[
 You don't have enough money!
-]]
+]],
 }
 
 dialog{
   id = "_game.insufficient_items",
   text = [[
 You don't have what you need for this!
-]]
+]],
 }
 
 dialog{
@@ -1063,7 +1063,7 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
-]]
+]],
 }
 
 dialog{
@@ -1071,21 +1071,21 @@ dialog{
   text = [[
 Before you leave, you should probably
 pick up that key that monster dropped.
-]]
+]],
 }
 
 dialog{
   id = "_game.locked_door",
   text = [[
 The door is locked.
-]]
+]],
 }
 
 dialog{
   id = "_game.locked_gate",
   text = [[
 The gate seems to be locked.
-]]
+]],
 }
 
 dialog{
@@ -1094,21 +1094,21 @@ dialog{
   $? Continue
   $? Save and Continue
   $? Quit
-]]
+]],
 }
 
 dialog{
   id = "_game.quest_log_update",
   text = [[
 (Your quest log was updated)
-]]
+]],
 }
 
 dialog{
   id = "_game.tests_for_log.1",
   text = [[
 Find clues in Hourglass Fort
-]]
+]],
 }
 
 dialog{
@@ -1116,28 +1116,28 @@ dialog{
   text = [[
 $? Continue
 $? New Game
-]]
+]],
 }
 
 dialog{
   id = "_generic_dialogs.eh",
   text = [[
 Eh?
-]]
+]],
 }
 
 dialog{
   id = "_generic_dialogs.good_day",
   text = [[
 Good day.
-]]
+]],
 }
 
 dialog{
   id = "_generic_dialogs.hey",
   text = [[
 Hey!
-]]
+]],
 }
 
 dialog{
@@ -1149,7 +1149,7 @@ be nice if you let someone know how you
 managed to get over here, but also,
 I supposed congratulations are in order.
 You've managed to outwit someone.
-]]
+]],
 }
 
 dialog{
@@ -1161,7 +1161,7 @@ smack people with that bow you'll need some.
 
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -1170,7 +1170,7 @@ dialog{
 I'm selling arrows. It doesn't seem like you
 have a bow. You could try using these without
 one, but... well no. You really couldn't.
-]]
+]],
 }
 
 dialog{
@@ -1184,7 +1184,7 @@ ABBERFORTH:
 be after is the great stone goat! She swims
 through the earth itself and comes alive! To
 eat. But only when you scratch her left ear.
-]]
+]],
 }
 
 dialog{
@@ -1192,7 +1192,7 @@ dialog{
   text = [[
 Hey! The secret ancient tunnels
 are down here!
-]]
+]],
 }
 
 dialog{
@@ -1204,7 +1204,7 @@ small, flat, stones in some places. Each jar
 is 5 crowns.
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -1216,7 +1216,7 @@ things up. 5 bombs is 50 crowns. Want to buy?
 
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -1228,7 +1228,7 @@ have one of these on you. Just 100 crowns.
 
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -1241,7 +1241,7 @@ for 10 crowns. How's it sound?
 (Ride to Ballast Harbor?)
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -1253,7 +1253,7 @@ Bartholemy, the best, busiest beer brewer?
 $1... $3 I didn't think so. You can't handle
 BOUNCER:
 the alliteration, much less his power.
-]]
+]],
 }
 
 dialog{
@@ -1270,7 +1270,7 @@ Sodden Cormorant, right? I'm here to collect.
 BOUNCER:
 $1HA!$3 Hahahahaha. Alright, kid. You go
 on in and get the tavern's money from him.
-]]
+]],
 }
 
 dialog{
@@ -1288,7 +1288,7 @@ BEAUFORT:
 It's supposed to be a pretty beautiful
 blade, and I guess it's still up there.
 I'd love to see it one day.
-]]
+]],
 }
 
 dialog{
@@ -1302,7 +1302,7 @@ BEAUFORT:
 This is an amazing blade. And I've even
 seen Blackbeard's sword. Oooooh. I'm
 getting weak in the knees.
-]]
+]],
 }
 
 dialog{
@@ -1320,7 +1320,7 @@ BEETLE EYED BART:
 Those dirty, competent brewers! Always
 never buying my beer! You'll have to wrest
 my tab from my cold dead body!
-]]
+]],
 }
 
 dialog{
@@ -1332,7 +1332,7 @@ better than yours. Want to buy it for 150
 crowns?
 $? Buy the fishy armor
 $? Leave it
-]]
+]],
 }
 
 dialog{
@@ -1342,7 +1342,7 @@ Once I found some pots and pans tangled
 up in my fishing net, and I use those to cook
 every day now. Next I want to somehow find
 real estate tangled in my net. That'd be good.
-]]
+]],
 }
 
 dialog{
@@ -1356,7 +1356,7 @@ ARNI:
 where I'd heard you shouldn't because of the
 monster, and this monster jumped out at me!
 It was so unexpected!
-]]
+]],
 }
 
 dialog{
@@ -1394,7 +1394,7 @@ ARNI:
 would attack you too! So, I mean, probably
 avoid doing that. Or not. You're your own
 person.
-]]
+]],
 }
 
 dialog{
@@ -1408,7 +1408,7 @@ ARNI:
 you were to break open the vase of bait I
 left down there, the monster that attacked
 me might come attack you too.
-]]
+]],
 }
 
 dialog{
@@ -1420,7 +1420,7 @@ it to lure monsters out. Want to buy a jar
 for five crowns?
 $? Sure
 $? No thanks
-]]
+]],
 }
 
 dialog{
@@ -1429,7 +1429,7 @@ dialog{
 Yeah, there's a ferry to Ballast Harbor.
 But don't worry about it for now, okay?
 It's not running yet.
-]]
+]],
 }
 
 dialog{
@@ -1439,7 +1439,7 @@ Got plenty of decent fish for sale here
 for cheap. Can't take them down to
 Goatshead Harbor to sell, what with the
 taxes the Merchants' Guild charges.
-]]
+]],
 }
 
 dialog{
@@ -1449,7 +1449,7 @@ FISHERMAN:
 I hear that monster that was attacking people
 down on the soal is gone. Suppose that was
 you, wasn't it. Thanks, then.
-]]
+]],
 }
 
 dialog{
@@ -1458,7 +1458,7 @@ dialog{
 Interested in some fine fish? We've also
 just opened up a stall in Goatshead Harbor,
 too. Business is great these days!
-]]
+]],
 }
 
 dialog{
@@ -1472,7 +1472,7 @@ to the money he steals? It somehow makes
 its way back here. Which is where it came
 from in the first place, as many taxes as
 those merchants take out of us.
-]]
+]],
 }
 
 dialog{
@@ -1484,7 +1484,7 @@ responsible for getting the unfair taxes
 lifted off our aching shoulders! Turns out
 it was that boy Aster all along. Knew him
 since he was a child running around here.
-]]
+]],
 }
 
 dialog{
@@ -1497,7 +1497,7 @@ someone out there to dig up some treasure.
 So now we've got a haunted island, on top
 of some monster attacking any fishermen
 who head down towards Goatshead to fish.
-]]
+]],
 }
 
 dialog{
@@ -1506,7 +1506,7 @@ dialog{
 Box of fish coming through! Box of
 Meurian Boxing Bass. I'm the boss of boxed
 boxing bass!
-]]
+]],
 }
 
 dialog{
@@ -1516,7 +1516,7 @@ I've been wondering for a while... where
 are all these carrots coming from? It
 seems like there's more carrots coming
 through this port that there should be.
-]]
+]],
 }
 
 dialog{
@@ -1529,7 +1529,7 @@ I'd be down there right now if it weren't for
 FISHERMAN:
 this really pesky monster that's been attacking
 guys who go down there.
-]]
+]],
 }
 
 dialog{
@@ -1551,7 +1551,7 @@ FISHERMAN:
 Ain't seen it in a bit- I'm smart and don't like
 being attacked. Go ask Arni, he's an idiot
 and got bit yesterday. Lives just north of here.
-]]
+]],
 }
 
 dialog{
@@ -1561,7 +1561,7 @@ Have you used monster bait before? Stones
 like this are perfect for setting bait out
 on, and then it lures out monsters. Check
 it out.
-]]
+]],
 }
 
 dialog{
@@ -1574,7 +1574,7 @@ heal a heart and a half right away!
 TILIA:
 $? Sure
 $? Not right now
-]]
+]],
 }
 
 dialog{
@@ -1583,7 +1583,7 @@ dialog{
 Volunteer Navy member, huh? Some folk posted
 notices on the wall over there, looking for
 help with your kind of thing.
-]]
+]],
 }
 
 dialog{
@@ -1601,7 +1601,7 @@ WOMAN:
 Oh, he must have been. I don't know where he
 went. We'd run aground trying to get away from
 pirates and he rescued us. Good man.
-]]
+]],
 }
 
 dialog{
@@ -1614,7 +1614,7 @@ with something? I can pay you.
 TILIA:
 $? Sure
 $? I'm too busy right now
-]]
+]],
 }
 
 dialog{
@@ -1631,7 +1631,7 @@ asking some fishermen where the beast went,
 DANLEY:
 then come back to me once you've got it
 taken care of and I'll pay you.
-]]
+]],
 }
 
 dialog{
@@ -1650,7 +1650,7 @@ Did it eat someone's legs? I didn't hear about
 that. No matter, let me pay you.
 
 (You received 80 crowns)
-]]
+]],
 }
 
 dialog{
@@ -1660,7 +1660,7 @@ DANLEY:
 At least folk can go fishing on the shoal again.
 Now I've just got to worry about trade with
 Goatshead.
-]]
+]],
 }
 
 dialog{
@@ -1670,7 +1670,7 @@ DANLEY:
 That monster that was eating fishermen's legs
 is gone, the ridiculous taxes from Goatshead
 have been lifted... I'm a great mayor.
-]]
+]],
 }
 
 dialog{
@@ -1691,7 +1691,7 @@ water to attack? I think I already defeated it.
 DANLEY:
 Ah! Great. I have no reason to think you're
 lying. Take this.
-]]
+]],
 }
 
 dialog{
@@ -1708,7 +1708,7 @@ in that pot over there.
 TILIA:
 $? No thanks
 $? Please
-]]
+]],
 }
 
 dialog{
@@ -1721,7 +1721,7 @@ and Ghost Orchid petals.
 Brew a flask?
 $? No
 $? Yes
-]]
+]],
 }
 
 dialog{
@@ -1731,7 +1731,7 @@ It's nice that I'm not moving illicit beer
 to the warehouse for Beetle-Eyed
 Bart anymore. I didn't mind the work
 but the beer tasted awful when I stole it.
-]]
+]],
 }
 
 dialog{
@@ -1741,7 +1741,7 @@ Oh, sorry. If small crates are in your way,
 you can just push them aside. If you get
 them stuck, just leave this area and come
 back and you can try again.
-]]
+]],
 }
 
 dialog{
@@ -1749,7 +1749,7 @@ dialog{
   text = [[
 It happened. I picked up a crate and forgot
 entirely where I was headed with it.
-]]
+]],
 }
 
 dialog{
@@ -1762,7 +1762,7 @@ at the end of the dock, which is weird,
 because Beetle-Eyed Bartholemy is a brewer
 himself. I heard the tavern owner was looking
 for him... something about money?
-]]
+]],
 }
 
 dialog{
@@ -1787,7 +1787,7 @@ you help take the Phantom Squid down?
 TILIA:
 $?Yes
 $?No
-]]
+]],
 }
 
 dialog{
@@ -1808,7 +1808,7 @@ destroy monsters, so I figure the Squid will
 EAMON:
 pose no problem. Return to me once you
 have the Phantom Squid taken care of.
-]]
+]],
 }
 
 dialog{
@@ -1822,7 +1822,7 @@ EAMON:
 Phantom Squid when he invariably shows
 up to destroy the foundation this town's
 economy is built on!
-]]
+]],
 }
 
 dialog{
@@ -1845,7 +1845,7 @@ Well. I suppose I should thank you for at
 least protecting Rilesdorf's records. Here.
 
 (You received 10 crowns)
-]]
+]],
 }
 
 dialog{
@@ -1855,7 +1855,7 @@ EAMON:
 Well? Unless you've gone out and found
 the Phantom Squid, you've no use as an
 office decoration. Off with you.
-]]
+]],
 }
 
 dialog{
@@ -1874,7 +1874,7 @@ Well there it is. Rilesdorf tells me he still got
 ink on his carpet though, so you can't have
 been that good. Let's make it 60 crowns.
 (You received 60 crowns)
-]]
+]],
 }
 
 dialog{
@@ -1883,7 +1883,7 @@ dialog{
 EAMON:
 Eh? Are they still letting you in here?
 What for? Get out.
-]]
+]],
 }
 
 dialog{
@@ -1895,7 +1895,7 @@ secretive because I don't have my paperwork
 filed with the merchants' guild. Can't afford
 to, what with the taxes they charge to
 anyone from Crabhook Village.
-]]
+]],
 }
 
 dialog{
@@ -1906,7 +1906,7 @@ can be smuggled into the city. I mean, you
 can pay the stupidly-taxed price for like,
 REAL fresh fish, or you can make do!
 Open your mind to the possibilities! 
-]]
+]],
 }
 
 dialog{
@@ -1920,7 +1920,7 @@ Keeps our city from becoming a den of
 pirates like it is out in Ballast Harbor.
 Anyway, fresh fish here. Just 300 crowns
 each.
-]]
+]],
 }
 
 dialog{
@@ -1930,7 +1930,7 @@ New rules in town! I can finally sell
 non-bootleg fish. Although, if you're into fish
 that have been in a boot, we can do that
 too. The possibilities are endless!
-]]
+]],
 }
 
 dialog{
@@ -1939,7 +1939,7 @@ dialog{
 New varities of fish, just in! Inspected by the
 merchants' guild, all quality varities. Try a
 sample of our porgy.
-]]
+]],
 }
 
 dialog{
@@ -1949,7 +1949,7 @@ I've got my normal fish here... I've had to
 bring the price down from 300 crowns each.
 Stupid competetion from those thugs from
 Crabhook Village.
-]]
+]],
 }
 
 dialog{
@@ -1975,7 +1975,7 @@ plants better. I'll pay 15 crowns a piece.
 $? Sell him one
 $? Sell him five
 $? Don't sell him any
-]]
+]],
 }
 
 dialog{
@@ -1984,7 +1984,7 @@ dialog{
 ATEM:
 Hey, thanks. Come back if you have any
 more of these to sell.
-]]
+]],
 }
 
 dialog{
@@ -1999,7 +1999,7 @@ Not that we town guards couldn't handle them.
 We're the strongest guards there are!
 uhHUUUNH!
 (The guard flexes vehemently)
-]]
+]],
 }
 
 dialog{
@@ -2009,7 +2009,7 @@ GUARD:
 This is the headquarters of the Merchants'
 Guild. You don't need a password to get in or
 anything, but... you're not really welcome.
-]]
+]],
 }
 
 dialog{
@@ -2019,7 +2019,7 @@ GUARD:
 Used to be we wouldn't have to guard the
 gate to the Merchants' Guild, but what with
 the Phantom Squid attacking, ugh. Trouble.
-]]
+]],
 }
 
 dialog{
@@ -2032,7 +2032,7 @@ just kidding. The ferries are down here if
 GUARD:
 you're trying to get to Yarrowmouth or
 Oakhaven. 
-]]
+]],
 }
 
 dialog{
@@ -2041,7 +2041,7 @@ dialog{
 GUARD:
 Sorry, they told me not to let
 anybody go past me.
-]]
+]],
 }
 
 dialog{
@@ -2051,7 +2051,7 @@ GUARD:
 Just try and sneak past a guard... I mean
 that as advice- you can't fight us. We're all
 super strong! The stronguards! That's us!
-]]
+]],
 }
 
 dialog{
@@ -2061,7 +2061,7 @@ GUARD:
 We're the town guard, but most people call
 us the Barbell Brutes. Because we all lift
 barbells to get so ripped.
-]]
+]],
 }
 
 dialog{
@@ -2070,7 +2070,7 @@ dialog{
 If you're heading out of town, watch out for
 all the monsters. They can be pretty strong.
 Which I respect about them.
-]]
+]],
 }
 
 dialog{
@@ -2086,7 +2086,7 @@ guard.
 
 GUARD:
 Yeah, you're not... Well.
-]]
+]],
 }
 
 dialog{
@@ -2120,7 +2120,7 @@ GUARD:
 Hahaha. Alright. You do that. Why don't you
 go fight your way to the boss and show him
 your power?
-]]
+]],
 }
 
 dialog{
@@ -2129,7 +2129,7 @@ dialog{
 GUARD:
 Alright fighty girl. Go beat up our boss to
 show us how you're the most powerful.
-]]
+]],
 }
 
 dialog{
@@ -2139,7 +2139,7 @@ GUARD:
 I can't believe you actually beat your way
 through everyone. You've earned my
 allegiance, captain.
-]]
+]],
 }
 
 dialog{
@@ -2196,7 +2196,7 @@ I don't really want to be your captain.
 VICE CAPTAIN:
 Too late, captain! We'll stop enforcing the
 unfair contracts!
-]]
+]],
 }
 
 dialog{
@@ -2208,7 +2208,7 @@ heads with your inner strength recently? I've
 been thinking about taking a journey to
 VICE CAPTAIN:
 develop my inner strength.
-]]
+]],
 }
 
 dialog{
@@ -2216,7 +2216,7 @@ dialog{
   text = [[
 GUARD:
 Oh! Captain! How's it going, captain?
-]]
+]],
 }
 
 dialog{
@@ -2226,7 +2226,7 @@ GUARD:
 Hey, captain! Don't worry, we're keeping
 smugglers out of the harbor. But not innocent
 people. Anymore. Sorry about that.
-]]
+]],
 }
 
 dialog{
@@ -2234,7 +2234,7 @@ dialog{
   text = [[
 GUARD:
 Hey, captain. Come on in!
-]]
+]],
 }
 
 dialog{
@@ -2244,7 +2244,7 @@ GUARD:
 Sorry, can't let just anybody down through
 here. Eamon, head of the Merchants' Guild,
 will meet you across the hallway though.
-]]
+]],
 }
 
 dialog{
@@ -2265,7 +2265,7 @@ from Aster)
 GUARD:
 This $1is... Oh! $3Oh dear! Goodness, I need
 to leave! Excuse me!
-]]
+]],
 }
 
 dialog{
@@ -2282,7 +2282,7 @@ really sure where I'm headed.
 ILEX:
 Well I've got things I'm trying
 to figure out too. Best of luck.
-]]
+]],
 }
 
 dialog{
@@ -2320,7 +2320,7 @@ ILEX:
 I'll have to let you in, I locked it up. If you
 head up there, I'll unlock the gate and meet
 you inside.
-]]
+]],
 }
 
 dialog{
@@ -2329,7 +2329,7 @@ dialog{
 ILEX:
 The shrine is locked. I'll head up there to
 get it open and meet you inside.
-]]
+]],
 }
 
 dialog{
@@ -2351,7 +2351,7 @@ ILEX:
 As you start each fountain, a torch will light
 up, and all 4 will unlock this door in the
 center of the tree and we can look for clues.
-]]
+]],
 }
 
 dialog{
@@ -2361,7 +2361,7 @@ ILEX:
 As you activate each of the four fountains,
 the torches will light up. Once you have all
 four, this door will unlock.
-]]
+]],
 }
 
 dialog{
@@ -2371,7 +2371,7 @@ ILEX:
 Did you get all four fountains going? The
 door should be unlocked then, let's go on in
 and see what's there.
-]]
+]],
 }
 
 dialog{
@@ -2384,7 +2384,7 @@ over here. And there should not have been
 ILEX:
 bottles of... liquer? What is that stuff
 over there?
-]]
+]],
 }
 
 dialog{
@@ -2394,7 +2394,7 @@ ILEX:
 There's not much in here for clues about the
 pirates' whereabouts, huh. Except bottles of
 liquer over there, I don't know if that's helpful.
-]]
+]],
 }
 
 dialog{
@@ -2404,7 +2404,7 @@ ILEX:
 So you're going to Briarwood Distillery
 on Yarrowmouth to ask them about the
 pirates? Good luck.
-]]
+]],
 }
 
 dialog{
@@ -2436,7 +2436,7 @@ I couldn't have done it on my own. Good
 luck finding your dad.
 TILIA:
 Thanks Ilex.
-]]
+]],
 }
 
 dialog{
@@ -2457,7 +2457,7 @@ and it will restore all your health.
 TILIA:
 $? I'll stay a night
 $? No thanks
-]]
+]],
 }
 
 dialog{
@@ -2485,7 +2485,7 @@ Cormorant Tavern is on the east side of the
 docks, again, yeh might start there...
 TILIA:
 Juglan! I'll be fine$1...$3Thank you though.
-]]
+]],
 }
 
 dialog{
@@ -2498,7 +2498,7 @@ catch a boat back to Limestone Island?
 TILIA:
   $? Yes
   $? No
-]]
+]],
 }
 
 dialog{
@@ -2508,7 +2508,7 @@ OTHER KID:
 Hey, did you know there's a giant goat
 west of here? It's supposed to be a
 statue but it's alive! It ate Clyde! 
-]]
+]],
 }
 
 dialog{
@@ -2518,7 +2518,7 @@ OTHER KID:
 Me and my friends were exploring with no
 intention to graffiti the giant goat at all,
 but then it got angry and swallowed a kid!
-]]
+]],
 }
 
 dialog{
@@ -2527,7 +2527,7 @@ dialog{
 Get your limes here! Guarenteed to ward
 off scurvy, halitosis, even lack of cocktail
 garnishes! What can't they fix?
-]]
+]],
 }
 
 dialog{
@@ -2541,7 +2541,7 @@ nitrodendron. The thorns hurt. Obviously. But
 it's the flowers that are the problem. They're
 explosive, super dangerous. And they grow
 back right away. I have no idea how to weed.
-]]
+]],
 }
 
 dialog{
@@ -2551,7 +2551,7 @@ I used to think the merchants from the guild
 were all greedy and self-interested. After
 talking with Aster I'm not so sure I'll make as
 much money if I joined...
-]]
+]],
 }
 
 dialog{
@@ -2564,7 +2564,7 @@ There's a guy inside who's like, "I know
 about a sword", but what even is that?
 Knowing about a sword does not keep a
 shop in business.
-]]
+]],
 }
 
 dialog{
@@ -2573,7 +2573,7 @@ dialog{
 I just don't understand. If you're selling
 fruit, why do you have tomatoes? Are they...
 ...hm.
-]]
+]],
 }
 
 dialog{
@@ -2586,7 +2586,7 @@ restore a heart of your health.
 TILIA:
 $? No thanks
 $? Sure!
-]]
+]],
 }
 
 dialog{
@@ -2602,7 +2602,7 @@ You're... yes.
 
 SHADY POT SALESMAN:
 Well. Well, well, $2well, well... $1well..... uh.$3
-]]
+]],
 }
 
 dialog{
@@ -2612,7 +2612,7 @@ I can't decide if I should get some oranges
 or apples for lunch this week. They're so
 different! It's like trying to compare...
 I don't know. Different things.
-]]
+]],
 }
 
 dialog{
@@ -2626,7 +2626,7 @@ guards to do our bidding, then pirates might
 start showing up to sell stolen goods. Or
 just like, general riff-raff. We need guards to
 make sure we can do business.
-]]
+]],
 }
 
 dialog{
@@ -2638,7 +2638,7 @@ fiends who gouge prices to line their pockets
 with silk...
 I'm putting in an application to join today.
 Sounds like the place to be.
-]]
+]],
 }
 
 dialog{
@@ -2648,7 +2648,7 @@ There's a town called Crabhook if you follow
 the east road out of town. It's quaint, but, I
 don't know... dirty? Something about it is
 offputting to me. Probably the poverty.
-]]
+]],
 }
 
 dialog{
@@ -2662,7 +2662,7 @@ on Heron Hill to symbolize peace. Well right
 after that was the flood and he was killed by
 sea monsters. His ghost is supposedly still
 up there. That was a Goatshead Fact!
-]]
+]],
 }
 
 dialog{
@@ -2676,7 +2676,7 @@ HELGA:
 if you've got the ingredients, check that pot
 on the corner of the counter and we can brew
 up an Elixer for just 25 crowns.
-]]
+]],
 }
 
 dialog{
@@ -2690,7 +2690,7 @@ them. I'll buy one from you for 5 crowns!
 $? Sell her one
 $? Sell her ten
 $? No
-]]
+]],
 }
 
 dialog{
@@ -2698,7 +2698,7 @@ dialog{
   text = [[
 Thanks! Let me know if you have any more
 to sell.
-]]
+]],
 }
 
 dialog{
@@ -2714,7 +2714,7 @@ that explosions would cause them to break
 apart entirely. You can trust me on this,
 GERALD:
 I'm a geologist.
-]]
+]],
 }
 
 dialog{
@@ -2728,7 +2728,7 @@ GERALD:
 destroyed in that explosion. My new
 hypothesis is that most rocks with such
 cracks may be destroyed in a similar way.
-]]
+]],
 }
 
 dialog{
@@ -2741,7 +2741,7 @@ kill ya! There used to be a blacksmith
 who lived in the forest. He locked his
 house to go on a walk one day and what do
 you think? Killed by mandrakes! Watch out!
-]]
+]],
 }
 
 dialog{
@@ -2759,7 +2759,7 @@ Coral Ore, I can improve a sword or bow.
 $? Sword
 $? Bow
 $? Neither
-]]
+]],
 }
 
 dialog{
@@ -2767,7 +2767,7 @@ dialog{
   text = [[
 (Your bow was improved! It now deals
 more damage.)
-]]
+]],
 }
 
 dialog{
@@ -2775,7 +2775,7 @@ dialog{
   text = [[
 (Your sword was improved! It now deals
 more damage.)
-]]
+]],
 }
 
 dialog{
@@ -2783,7 +2783,7 @@ dialog{
   text = [[
 TILIA:
 Hey! Ink guy!
-]]
+]],
 }
 
 dialog{
@@ -2793,7 +2793,7 @@ ASTER:
 Since Crabhook finally has representation
 in the Merchants' Guild, I've got a lot of work
 to do. 
-]]
+]],
 }
 
 dialog{
@@ -2805,7 +2805,7 @@ how to get people imports from Oakhaven
 for a better price. Sound interesting?
 TILIA:
 Not to me.
-]]
+]],
 }
 
 dialog{
@@ -2823,7 +2823,7 @@ ASTER:
 I'm afraid I have no idea what you're talking
 about. Please don't touch anything on
 your way out. Especially the bookshelf.
-]]
+]],
 }
 
 dialog{
@@ -2852,7 +2852,7 @@ me free my village.
 TILIA:
 $? I'll side with you
 $? I'm turning you in.
-]]
+]],
 }
 
 dialog{
@@ -2868,7 +2868,7 @@ can talk like a hero doesn't make you one.
 
 ASTER:
 So be it.
-]]
+]],
 }
 
 dialog{
@@ -2894,7 +2894,7 @@ ASTER:
 This note might get one of the guards to let
 you past them if they're spineless enough.
 Good luck.
-]]
+]],
 }
 
 dialog{
@@ -2914,7 +2914,7 @@ the contract you're taking about.
 
 ASTER:
 What? Come show it to me!
-]]
+]],
 }
 
 dialog{
@@ -2927,7 +2927,7 @@ the Guild Headquarters. If we can get our
 ASTER:
 hands on it and destroy it, we can free the
 villagers.
-]]
+]],
 }
 
 dialog{
@@ -2967,7 +2967,7 @@ building on the north end of town, near the
 inn.
 TILIA:
 I'll see what I can do.
-]]
+]],
 }
 
 dialog{
@@ -2984,7 +2984,7 @@ advantage. There's supposedly an artifact
 ASTER:
 to the west of town that grants strength
 to whoever bears it. Maybe take a look.
-]]
+]],
 }
 
 dialog{
@@ -3011,7 +3011,7 @@ Things are better. Anyway, this is for you.
 It's what the Merchants' Guild should have
 paid you for bringing me in, in the first place.
 (You received 200 crowns)
-]]
+]],
 }
 
 dialog{
@@ -3021,7 +3021,7 @@ TILIA:
 Dang, that man is good at jumping through
 windows. He dropped some ink, maybe
 he'll have left some kind of trail...
-]]
+]],
 }
 
 dialog{
@@ -3030,7 +3030,7 @@ dialog{
 Wait here for the Phantom Squid?
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -3047,7 +3047,7 @@ can improve your armor for 50 crowns.
 TILIA:
 $?No thanks.
 $?That sounds great!
-]]
+]],
 }
 
 dialog{
@@ -3058,7 +3058,7 @@ That's the spirit! Let's get some more padding
 here, some chain link here... Done!
 
 (Your defense increased by 1)
-]]
+]],
 }
 
 dialog{
@@ -3071,7 +3071,7 @@ Simple stuff. They call the guard the
 PLUMBUM:
 Barbell Brutes. The most brutal thing about
 them is the schedule they need for armor.
-]]
+]],
 }
 
 dialog{
@@ -3084,7 +3084,7 @@ off my hands for 50 crowns. Yeah?
 TILIA:
 $? That's alright.
 $? I'll take it.
-]]
+]],
 }
 
 dialog{
@@ -3094,7 +3094,7 @@ RILESDORF:
 Th-this is a boutique of rare, hand-selected
 items from across the world. W-we cater to
 a specific clientele, which... Well. Not you.
-]]
+]],
 }
 
 dialog{
@@ -3115,7 +3115,7 @@ strike and obliterate my r-records. Please,
 RILESDORF:
 head upstairs. You can h-hide behind the
 bookshelf to wait for him to attack.
-]]
+]],
 }
 
 dialog{
@@ -3125,7 +3125,7 @@ RILESDORF:
 You've saved my documents! My accounts!
 I know exactly who owes me how much!
 $1...$3Don't expect any discounts here though.
-]]
+]],
 }
 
 dialog{
@@ -3134,14 +3134,14 @@ dialog{
 You have a great trial ahead of you, child.
 Your soul has the strength to make it through,
 but accept this gift to strengthen your body.
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.npcs.spirits.2",
   text = [[
 I have nothing else for you.
-]]
+]],
 }
 
 dialog{
@@ -3167,7 +3167,7 @@ BOUNCER:
 Look, if you think you can go over to the
 docks and get money out of that sociopathic
 brewer, go ahead. We'll talk then.
-]]
+]],
 }
 
 dialog{
@@ -3192,7 +3192,7 @@ into the Sodden Cormorant now?
 BOUNCER:
 Well... I'll take this to the owner. Come right
 on in.
-]]
+]],
 }
 
 dialog{
@@ -3202,7 +3202,7 @@ Seems like you're the type who can handle
 some odd jobs of the dangerous sort. Folk
 often hang notices for Volunteer Navymen
 in taverns.
-]]
+]],
 }
 
 dialog{
@@ -3211,7 +3211,7 @@ dialog{
 TRAVELER:
 Oh, are you in the volunteer navy? Talk to
 the guy with the mustache, he's our leader.
-]]
+]],
 }
 
 dialog{
@@ -3225,7 +3225,7 @@ ADVENTURER:
 used them before that. They date back to
 the days of the Meurian kingdom, before the
 big flood. So there's some archeology to do!
-]]
+]],
 }
 
 dialog{
@@ -3235,7 +3235,7 @@ ADVENTURER:
 Have you heard of the city's secret tunnels?
 I reckon all old cities have secret tunnels...
 Hey, maybe you could help us with our tunnels!
-]]
+]],
 }
 
 dialog{
@@ -3248,7 +3248,7 @@ We might have some work for you. Interested?
 TILIA:
 $? I just might be. Tell me more.
 $? I've got plenty on my own plate, thanks.
-]]
+]],
 }
 
 dialog{
@@ -3277,7 +3277,7 @@ So are you still interested?
 TILIA:
 $? Sign me up.
 $? Sounds terrible. No.
-]]
+]],
 }
 
 dialog{
@@ -3287,7 +3287,7 @@ ADVENTURER:
 Excellent! The entrance to the tunnels is just
 East of the Juneberry Inn, northeast corner of
 town. We'll meet you there and let you in.
-]]
+]],
 }
 
 dialog{
@@ -3297,7 +3297,7 @@ ADVENTURER:
 We'll meet you at the entrance to the city's
 old tunnels. It's just East of the Juneberry Inn.
 It's in the northeast corner of town.
-]]
+]],
 }
 
 dialog{
@@ -3311,7 +3311,7 @@ EXPLORER:
 You'll know it when you see it. Get rid
 of that guy and we're square, you can help
 yourself to whatever treasure you find.
-]]
+]],
 }
 
 dialog{
@@ -3329,7 +3329,7 @@ EXPLORER:
 Uh... yeah, for sure. Just the little spiders?
 Well anyway, thanks. We've got some
 archeology to do now!
-]]
+]],
 }
 
 dialog{
@@ -3339,7 +3339,7 @@ EXPLORER:
 The exploration is going well. Nobody has
 been devoured by little spiders yet, so it's
 a success by our standards.
-]]
+]],
 }
 
 dialog{
@@ -3357,7 +3357,7 @@ LEIGHA:
 I've heard of the Hourglass Crew. They like
 explosives. Hey! Any of you drunks know about
 the Hourglass Crew?
-]]
+]],
 }
 
 dialog{
@@ -3371,7 +3371,7 @@ LEIGHA:
 out east of here, and that someone's seen them
 in Ballast Harbor, a guy who sells sea charts?
 Better get looking, kid. Good luck.
-]]
+]],
 }
 
 dialog{
@@ -3385,7 +3385,7 @@ THIEL:
 was also a ship with triangles on its sails.
 Come to think of it, they must have plundered
 Spruce Head Shrine. Might look for clues there.
-]]
+]],
 }
 
 dialog{
@@ -3410,7 +3410,7 @@ someone who's seen them in Ballast Harbor.
 LEIGHA:
 Sounds like you've got a couple leads to follow.
 I'll leave you to it, then.
-]]
+]],
 }
 
 dialog{
@@ -3424,7 +3424,7 @@ obliterated. Covered in ink. Illegible.
 They call him the Phantom Squid... I can't
 even order dark-colored drinks, I'm so
 shook up about it.
-]]
+]],
 }
 
 dialog{
@@ -3447,7 +3447,7 @@ Council, but I wouldn't be a servant to those
 overambitious dogs. Think they can rule the
 seas like the ancients... grumble...
 (He lapses into muttered complaints)
-]]
+]],
 }
 
 dialog{
@@ -3472,7 +3472,7 @@ of it, they must have plundered old Spruce Head
 THIEL:
 Shrine. It's out east of here on the road to
 Crabhook Village. Take a look.
-]]
+]],
 }
 
 dialog{
@@ -3484,7 +3484,7 @@ check out Spruce Head yet, find any clues?
 
 TILIA:
 I did. It was a good lead. Thanks.
-]]
+]],
 }
 
 dialog{
@@ -3522,7 +3522,7 @@ THIESSON:
 Ain't supposed to be easy. It's a pirate market,
 south of Yarrowmouth. But I heard a man runs
 a ferry from somewhere around Crabhook Village.
-]]
+]],
 }
 
 dialog{
@@ -3534,7 +3534,7 @@ How did your trip to Ballast Harbor go? Find that man?
 
 TILIA:
 He wasn't there but I found a good lead. Thanks for the tip.
-]]
+]],
 }
 
 dialog{
@@ -3552,7 +3552,7 @@ MAN WHO TAKES HIS CARROTS SERIOUSLY:
 The manly fishing spot is just south of Poplar
 Forest. Little island. Lots o' carrots.
 And monsters. Which is the problem.
-]]
+]],
 }
 
 dialog{
@@ -3571,7 +3571,7 @@ Excellent! You're a fine member of the volunteer
 navy! I know not to pay you folks in carrots now,
 though lord knows why you prefer crowns. Here.
 (You received 80 crowns.)
-]]
+]],
 }
 
 dialog{
@@ -3581,7 +3581,7 @@ CALM MAN:
 Thank you for taking care of those beasts what
 had me manly fishing spot. I'm overtaken by a
 calm reverie knowing I can return to me carrots.
-]]
+]],
 }
 
 dialog{
@@ -3592,7 +3592,7 @@ Fish are animals that live in water. Maybe
 you want to eat them. If this is the case,
 you'll need to take them out of the water...
 It looks like this guy really is a beginner.
-]]
+]],
 }
 
 dialog{
@@ -3601,7 +3601,7 @@ dialog{
 There's some interesting documents that
 are... written in code? Wow, this looks
 like some secret agent stuff.
-]]
+]],
 }
 
 dialog{
@@ -3616,7 +3616,7 @@ Sodden Cormorant would buy my beer, I'd
 be rich! What do they know about beer!?
 I don't make undrinkable swill!
 ...do I?
-]]
+]],
 }
 
 dialog{
@@ -3631,7 +3631,7 @@ We are so strong we can lift rocks! (Hwah!)
 
 
 ...You have to admit it's got heart at least.
-]]
+]],
 }
 
 dialog{
@@ -3639,7 +3639,7 @@ dialog{
   text = [[
 There's a to-do list. It says, ''get stronger''.
 ...That's the only item.
-]]
+]],
 }
 
 dialog{
@@ -3647,7 +3647,7 @@ dialog{
   text = [[
 There's poetry scribbled down here. It's an ode
 to root vegetables. It's... not very good.
-]]
+]],
 }
 
 dialog{
@@ -3656,14 +3656,14 @@ dialog{
 There's a big barrel of carrots. Take one?
 $? Yes
 $? Nah
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.observations.carrots.2",
   text = [[
 You've already taken enough carrots.
-]]
+]],
 }
 
 dialog{
@@ -3680,7 +3680,7 @@ I'm worried Blackbeard will never think
 we're cool enough to join the pirate council.
 Worse, our rivals have shown up! They're
 building a fort of their own!
-]]
+]],
 }
 
 dialog{
@@ -3696,7 +3696,7 @@ Spooky, anyway captain, we've started
 building our own fort to impress Blackbeard.
 Unfortunately, our rivals have shown up
 and seem to be building their own fort!
-]]
+]],
 }
 
 dialog{
@@ -3706,7 +3706,7 @@ There's quite a few letters from people from
 Crabhook Village trying to figure out why
 their taxes are so much higher, or why they
 aren't allowed to open real shops.
-]]
+]],
 }
 
 dialog{
@@ -3715,7 +3715,7 @@ dialog{
 There's a book here... "How to Rule with
 an Iron Fist". Oh, it's published by the
 Merchants' Guild.
-]]
+]],
 }
 
 dialog{
@@ -3724,7 +3724,7 @@ dialog{
 There's a very, very long list of who owes
 money to the Merchants' Guild. It looks like
 the math isn't done entirely honestly...
-]]
+]],
 }
 
 dialog{
@@ -3733,7 +3733,7 @@ dialog{
 These are tomes of debts to the Merchants'
 Guild. They go waaay back. No books on
 who the Guild owes money to though.
-]]
+]],
 }
 
 dialog{
@@ -3754,7 +3754,7 @@ ever come back for our gold, my spirit is sure
 to be haunting it. Thought you should know.
         Sincerely,
         William
-]]
+]],
 }
 
 dialog{
@@ -3764,7 +3764,7 @@ There's some papers here. They're listing
 the colors of various ships and presenting an
 argument about higher taxation for uglier
 vessels.
-]]
+]],
 }
 
 dialog{
@@ -3773,7 +3773,7 @@ dialog{
 There's a table with numbers and names.
 But underneath someone was writing a
 steamy love letter... You blush.
-]]
+]],
 }
 
 dialog{
@@ -3781,7 +3781,7 @@ dialog{
   text = [[
 It's a book listing colors and trying to
 describe each.
-]]
+]],
 }
 
 dialog{
@@ -3790,7 +3790,7 @@ dialog{
 There's various, untapped markets listed
 down. It appears they're being crossed off,
 one by one.
-]]
+]],
 }
 
 dialog{
@@ -3799,7 +3799,7 @@ dialog{
 There's a reminder Eamon seems to have
 written himself to berate his assistant more
 often, he's becoming undiciplined.
-]]
+]],
 }
 
 dialog{
@@ -3808,7 +3808,7 @@ dialog{
 There's a few drafts of some trade
 agreement drawn up. It's a striking
 combination of boring and disconcerting.
-]]
+]],
 }
 
 dialog{
@@ -3817,7 +3817,7 @@ dialog{
 There's some instructions here from Eamon
 to the town guard. He's having them cook
 him waffles for breakfast saturday morning.
-]]
+]],
 }
 
 dialog{
@@ -3825,14 +3825,14 @@ dialog{
   text = [[
 TILIA:
 Huh. Looks like the lighthouse is lit now.
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.observations.rilesdorf.1",
   text = [[
 There's a very fancy looking hat for sale.
-]]
+]],
 }
 
 dialog{
@@ -3841,7 +3841,7 @@ dialog{
 There are silk shirts of many colors.
 They're marked as imported from the
 Zeyphr Empire.
-]]
+]],
 }
 
 dialog{
@@ -3849,7 +3849,7 @@ dialog{
   text = [[
 This seems like just a regular pot, but
 the price would suggest otherwise.
-]]
+]],
 }
 
 dialog{
@@ -3857,7 +3857,7 @@ dialog{
   text = [[
 This is labeled as "Ancient Night Light".
 You don't think they really know what it is.
-]]
+]],
 }
 
 dialog{
@@ -3866,7 +3866,7 @@ dialog{
 There's a note shoved in the book's pages:
 Ask Blemar for a refund, his sculptures
 are too artistic for Goatshead clients.
-]]
+]],
 }
 
 dialog{
@@ -3878,7 +3878,7 @@ Blemar, -1200
 Carlov, 800...
 It continues on like this and doesn't
 get any less boring.
-]]
+]],
 }
 
 dialog{
@@ -3891,7 +3891,7 @@ in from Yarrowmoth Island because
 TILIA:
 Briarwood Distillery is the only place that
 knows how to make it. Good stuff though.
-]]
+]],
 }
 
 dialog{
@@ -3904,7 +3904,7 @@ of statues. I have no idea anymore how
 to get that door open. The statues are
 suspicious though. Maybe they relate to
 their twins in the room just north of here.
-]]
+]],
 }
 
 dialog{
@@ -3912,7 +3912,7 @@ dialog{
   text = [[
 Looks like something important should
 be sitting here.
-]]
+]],
 }
 
 dialog{
@@ -3921,21 +3921,21 @@ dialog{
 There's all sorts of papers scattered
 across the desk. The pages look like they're
 from someone's journal.
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.signs.alchemist",
   text = [[
 Alchemist
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.signs.armorer",
   text = [[
 Hophorn Armor
-]]
+]],
 }
 
 dialog{
@@ -3945,7 +3945,7 @@ Badger Shoal:
 North - Crabhook Village
 Southeast - Thrush Fort, Spruce Head
 Quite Far South - Goatshead Harbor
-]]
+]],
 }
 
 dialog{
@@ -3953,14 +3953,14 @@ dialog{
   text = [[
 East - Crabhook Village
 West - Trail to Ballast Harbor
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.signs.fishing_spot",
   text = [[
 Manly Fishin' Spot, this way
-]]
+]],
 }
 
 dialog{
@@ -3968,7 +3968,7 @@ dialog{
   text = [[
 It's a locked gate. Should probably look
 around and see if anyone will open it for you.
-]]
+]],
 }
 
 dialog{
@@ -3978,21 +3978,21 @@ Northeast - Heron's Well Ruin
 
 WEST - ABBERFORTH AND GOATS
 (this part is scrawled in different handwriting)
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.signs.goatshead_rock",
   text = [[
 Goatshead Rock
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.signs.inn",
   text = [[
 Juneberry Inn
-]]
+]],
 }
 
 dialog{
@@ -4002,14 +4002,14 @@ North - Poplar Forest
 Further North, then East - Spruce Head
 Really Quite Far North - Crabhook Village
 West - Goatshead Harbor
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.signs.rilesdorf_mercantile",
   text = [[
 Rilesdorf Mercantile Exchange
-]]
+]],
 }
 
 dialog{
@@ -4017,14 +4017,14 @@ dialog{
   text = [[
 Continue following trail to reach
 Spruce Head Shrine
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.signs.sodden_cormorant",
   text = [[
 The Sodden Cormorant
-]]
+]],
 }
 
 dialog{
@@ -4035,7 +4035,7 @@ carrots I left there- has been overrun by
 monsters! I need someone to take them out
 for me. I'll be waiting on the east edge
 of town for help, next to the goat pen.
-]]
+]],
 }
 
 dialog{
@@ -4045,7 +4045,7 @@ Let it be known that the Merchants' Guild
 seeks an adventurer to destroy to menace to
 commerce known as the phantom squid. See
 Eamon at the guild headquarters for details.
-]]
+]],
 }
 
 dialog{
@@ -4057,7 +4057,7 @@ they've fished south of town. If anyone thinks
 they can deal with a monster, come see me,
 Danley, in the tavern. Here. I'm behind you,
 in the corner across the room drinking.
-]]
+]],
 }
 
 dialog{
@@ -4068,7 +4068,7 @@ priceless stone fish. I know none of you
 believe me. But I'll pay someone to get
 it back from where they've left it.
 Come see Dusit for details.
-]]
+]],
 }
 
 dialog{
@@ -4078,7 +4078,7 @@ East - Spruce Head
 Just a Little Bit North - Thrush Fort
 Still Further North - Crabhook Village
 South - Poplar Forest
-]]
+]],
 }
 
 dialog{
@@ -4088,14 +4088,14 @@ Goatshead Harbor
 North - Heron Hill
 East - Poplar Forest, Spruce Head, road to
 Crabhook Village
-]]
+]],
 }
 
 dialog{
   id = "_goatshead.signs.warehouse",
   text = [[
 Bartolemy's Totally Legitimate Warehouse
-]]
+]],
 }
 
 dialog{
@@ -4107,7 +4107,7 @@ Back before the old kingdom collapsed or
 whatever happened.
 But there were still people. So there were
 still monsters.
-]]
+]],
 }
 
 dialog{
@@ -4124,7 +4124,7 @@ you a nice sum if you slay the beast.
 Tilia:
 Sounds like my kind of job. I'll keep an eye
 out when I'm in the area.
-]]
+]],
 }
 
 dialog{
@@ -4141,7 +4141,7 @@ I took a few hits, but it's gone.
 Bernard:
 Excellent job, Tilia. You're becoming a great
 Volunteer Navy member.
-]]
+]],
 }
 
 dialog{
@@ -4151,7 +4151,7 @@ Bernard:
 You've grown quite a bit since you were
 a youngun wacking everyone's ankles with
 sticks.
-]]
+]],
 }
 
 dialog{
@@ -4167,13 +4167,13 @@ her yet, I'll bring her back too.
 
 Corylus:
 Thank you, dear. Safe travels.
-]]
+]],
 }
 
 dialog{
   id = "_limestone_island.npcs.corylus.2",
   text = [[
-]]
+]],
 }
 
 dialog{
@@ -4183,7 +4183,7 @@ Edson:
 Tilia! Oh, things are great. Yep. People love
 the new beer. Sunshine Stout. Got it from a
 merchant headed back to the west sea for cheap!
-]]
+]],
 }
 
 dialog{
@@ -4209,7 +4209,7 @@ Tilia:
 Huh. Well, if you've been making extra
 money, it doesn't bother me. Just keep better
 track of the key, alright?
-]]
+]],
 }
 
 dialog{
@@ -4222,7 +4222,7 @@ stuff to other taverns.
 Tilia:
 Well if you start a business empire on the
 side, make sure our customers are still happy.
-]]
+]],
 }
 
 dialog{
@@ -4232,7 +4232,7 @@ Eh, we're just passing through but that
 don't mean you can steal our fishing spot.
 We're camped out here 'till we catch at
 least eight or nine fish!
-]]
+]],
 }
 
 dialog{
@@ -4256,7 +4256,7 @@ Which way did you say he came from?
 
 Pirate:
 Thataway, just east of here.
-]]
+]],
 }
 
 dialog{
@@ -4265,7 +4265,7 @@ dialog{
 This island is the last stop from the North Sea
 if you're headed to the Zephyr Empire. We're
 kind of stalling because the trip is intimidating.
-]]
+]],
 }
 
 dialog{
@@ -4294,7 +4294,7 @@ any before we go?
 Tilia:
   $? I'm ready
   $? Couple things I need to do to get ready
-]]
+]],
 }
 
 dialog{
@@ -4306,7 +4306,7 @@ pirates, what flag did they fly? I think
 it was an hourglass? ...
 ... We'll have our chance to pay them back.
 But we've got a lot of rebuilding first.
-]]
+]],
 }
 
 dialog{
@@ -4319,7 +4319,7 @@ I've got everything I need.
 Juglan:
 Hop aboard then. Next stop,
 Goatshead Harbor.
-]]
+]],
 }
 
 dialog{
@@ -4343,7 +4343,7 @@ find him but just... be careful, alright?
 I'll miss you.
 Tilia:
 Don't worry Linden, I'll be back soon. With Dad.
-]]
+]],
 }
 
 dialog{
@@ -4357,7 +4357,7 @@ Linden
 fishing at the lake for my taste. I also haven't
 been able to get into the stockroom for some
 reason. Guess Edson has the key.
-]]
+]],
 }
 
 dialog{
@@ -4367,7 +4367,7 @@ Linden:
 Tilia. Dad's down at the pier. The tailor's
 daughter Hazel... I think the pirates
 took her.
-]]
+]],
 }
 
 dialog{
@@ -4377,7 +4377,7 @@ Oh, you got the stockroom unlocked. I'd sort
 of been wondering why I couldn't get in, but it
 hadn't become enough of a problem for me to
 worry about it yet.
-]]
+]],
 }
 
 dialog{
@@ -4413,7 +4413,7 @@ Mallow:
 
 Mallow:
 Sorry Tilia. But this is my duty.
-]]
+]],
 }
 
 dialog{
@@ -4435,14 +4435,14 @@ Nielson:
 I can't figure out why the Hourglass Pirates
 raided our sanctuary. It's just an old temple.
 And built to show respect to the sea!...
-]]
+]],
 }
 
 dialog{
   id = "_limestone_island.npcs.nielson.sanctuary",
   text = [[
 Nielson
-]]
+]],
 }
 
 dialog{
@@ -4456,7 +4456,7 @@ Paula:
 The buggers made off with my iron stockpot!
 I can't make stew anymore. I suppose I'll
 survive, but curse those pirates.
-]]
+]],
 }
 
 dialog{
@@ -4464,7 +4464,7 @@ dialog{
   text = [[
 Paula:
 Thank you for bringing me my pot, dearie.
-]]
+]],
 }
 
 dialog{
@@ -4482,7 +4482,7 @@ Paula:
 Oh, Tilia! A new stockpot. You're so sweet.
 Let me cook you up something nice as
 thanks.
-]]
+]],
 }
 
 dialog{
@@ -4500,7 +4500,7 @@ Paula:
 Oh, Tilia! My stockpot! I don't know how you
 got this back, but let me cook you up
 something nice as thanks.
-]]
+]],
 }
 
 dialog{
@@ -4517,7 +4517,7 @@ stories.
 Reuel:
 Then the real horror story is how much time
 I've wasted! You kids aren't scared of anything.
-]]
+]],
 }
 
 dialog{
@@ -4530,7 +4530,7 @@ attacked.
 Woman:
 Other than your self esteem, sure. And the
 sanctuary up on the mountain.
-]]
+]],
 }
 
 dialog{
@@ -4541,7 +4541,7 @@ is an import from the west sea. I've never heard
 of a beer you have to keep outside to preserve
 the taste, but I know a good beer!
 ...and this is one, is what I mean. It's good.
-]]
+]],
 }
 
 dialog{
@@ -4550,7 +4550,7 @@ dialog{
 Oh, Tilia. Tell Linden that the new stout
 you're serving knees the bees! I've had
 wonderful, and each one tasted seven!
-]]
+]],
 }
 
 dialog{
@@ -4560,7 +4560,7 @@ Have you seen the fisherman brother? The
 young one, Wally I think? He lost all his tackle.
 What's that make him? A fishlessman?
 A fishishman? I dunno...
-]]
+]],
 }
 
 dialog{
@@ -4569,7 +4569,7 @@ dialog{
 I've sailed the North Sea for years, seen my
 share of pirate raids. Your town has recovered
 pretty well, kid.
-]]
+]],
 }
 
 dialog{
@@ -4579,7 +4579,7 @@ Tilia! Have you tried the new Stout Edson is
 serving? He's charging more, but it's worth the
 crowns. Your father would be proud of how
 you and your sister are running the place.
-]]
+]],
 }
 
 dialog{
@@ -4589,7 +4589,7 @@ Elder Nielson's been all out of sorts since
 the pirates raided the Sanctuary up on the
 mountain. If I were you, Tilia, I'd go check it
 for treasure the scoundrels left behind.
-]]
+]],
 }
 
 dialog{
@@ -4599,7 +4599,7 @@ Did you know Shifty Ulrich is finally learning to
 cook? I passed his house and smelled a stew
 on. Must be the pirate attack taught him life is
 short and you ought to follow your dreams.
-]]
+]],
 }
 
 dialog{
@@ -4609,7 +4609,7 @@ Have you been down south to Sometimes
 Cape? You can't always visit because
 the tide takes the sand in and out, but
 there's a ruins filled with treasure.
-]]
+]],
 }
 
 dialog{
@@ -4633,7 +4633,7 @@ task, I'll pay you well. We can't get no timber
 from the grove with the beasts lurking about.
 Tilia:
 Huh. I'll look into it.
-]]
+]],
 }
 
 dialog{
@@ -4649,7 +4649,7 @@ being more honest in general?
 
 Shifty Ulrich:
 Uhg.
-]]
+]],
 }
 
 dialog{
@@ -4686,7 +4686,7 @@ learn to be good at...
 Tilia
   $? Hand over the crockery, thief.
   $? Fine, learn a useful skill for once.
-]]
+]],
 }
 
 dialog{
@@ -4696,7 +4696,7 @@ Shifty Ulrich:
 Hi Tilia! I'm learning a lot about soup! Did
 you know almost all soups use water to
 make broth?
-]]
+]],
 }
 
 dialog{
@@ -4709,7 +4709,7 @@ you figure out how to make a decent one.
 Shifty Ulrich:
 Thank you! I will! Here, have this, it should
 be enough to buy a new pot somewhere.
-]]
+]],
 }
 
 dialog{
@@ -4719,7 +4719,7 @@ Shifty Ulrich:
 Hi Tilia... how does Paula like her stockpot?
 I suppose there's one person who can cook
 good soups now...
-]]
+]],
 }
 
 dialog{
@@ -4729,7 +4729,7 @@ Tilia:
 Yeah. That's not a good enough reason to
 steal dishware from old ladies. Hand the
 stockpot over, Really Shifty Ulrich.
-]]
+]],
 }
 
 dialog{
@@ -4739,7 +4739,7 @@ Jorge
 I was sailing out to Oakhaven, and I saw an
 old lighthouse just like the one on the hill. It
 weren't lit either though. Too old, I suppose.
-]]
+]],
 }
 
 dialog{
@@ -4759,7 +4759,7 @@ when a gang of pirates rushed up on me and
 stole my tacklebox! You've got to get it back!
 Tilia:
 You bet I will.
-]]
+]],
 }
 
 dialog{
@@ -4771,7 +4771,7 @@ Tilia, did you beat up the pirates for me yet?
 
 Tilia:
 Not yet, but you bet it's on my list.
-]]
+]],
 }
 
 dialog{
@@ -4809,7 +4809,7 @@ Wally:
 Thanks. I was a bit embarrased about running
 from the rockspiders, and uh... look, just take
 these crowns and keep this quiet, maybe?
-]]
+]],
 }
 
 dialog{
@@ -4818,7 +4818,7 @@ dialog{
 Wally:
 Thanks for getting my tacklebox back from
 the uh... spiders...
-]]
+]],
 }
 
 dialog{
@@ -4826,7 +4826,7 @@ dialog{
   text = [[
 It's a really nice carving of a... deer? Rabbit maybe?
 It's still in progress.
-]]
+]],
 }
 
 dialog{
@@ -4837,7 +4837,7 @@ D - Menu
 M - Map
 Space - Talk, Open Doors, etc.
 What a cryptic message.
-]]
+]],
 }
 
 dialog{
@@ -4846,7 +4846,7 @@ dialog{
 Tilia:
 I haven't been here in a while. The flowers
 Linden and I planted are taking off well.
-]]
+]],
 }
 
 dialog{
@@ -4856,7 +4856,7 @@ There's a pretty big fish on the table.
 Looks like Juglan is planning on eating
 the whole thing for dinner. You're a bit
 surprised he can eat that much.
-]]
+]],
 }
 
 dialog{
@@ -4868,7 +4868,7 @@ keeping track of the tavern's sales. Gave
 me time to focus on training to fight.
 Tilia:
 ...and also I'd be terrible at it.
-]]
+]],
 }
 
 dialog{
@@ -4878,7 +4878,7 @@ Tilia:
 I forgot how bad the pirates messed up
 the sanctuary. Left explosives laying
 around everywhere too. Ugh.
-]]
+]],
 }
 
 dialog{
@@ -4888,7 +4888,7 @@ Tilia
 Our training spot, where Dad taught me to use a
 sword... I wish he could have finished teaching me.
 Whatever. I figured it out myself just fine.
-]]
+]],
 }
 
 dialog{
@@ -4896,7 +4896,7 @@ dialog{
   text = [[
 East - Sanctuary
 West - Old Lighthouse
-]]
+]],
 }
 
 dialog{
@@ -4905,7 +4905,7 @@ dialog{
 East - Lime Forest
 North - Limestone Mountain,
 also Limestone Sanctuary
-]]
+]],
 }
 
 dialog{
@@ -4913,28 +4913,28 @@ dialog{
   text = [[
 West, then South - Sometimes Cape
 West, then North - Castone Grove
-]]
+]],
 }
 
 dialog{
   id = "_limestone_island.signs.west_limestone_1",
   text = [[
 North - Castone Grove, Fishing Spot
-]]
+]],
 }
 
 dialog{
   id = "_limestone_island.signs.west_limestone_2",
   text = [[
 South - Sometimes Cape
-]]
+]],
 }
 
 dialog{
   id = "_limestone_island.year_later",
   text = [[
                 Six months later
-]]
+]],
 }
 
 dialog{
@@ -4947,7 +4947,7 @@ blocking the way in look really weak. I bet
 BER:
 if you could cause an explosion somehow,
 you'd be able to get in.
-]]
+]],
 }
 
 dialog{
@@ -4957,7 +4957,7 @@ BER:
 Eh, Tilia? I hear you're going looking for
 Mallow. Your Dad was a tough one, but...
 I mean, be cafeful. You come back.
-]]
+]],
 }
 
 dialog{
@@ -4977,7 +4977,7 @@ of water to help them root once they're in
 the dirt.
 TILIA:
 I will, Hazel. Thanks.
-]]
+]],
 }
 
 dialog{
@@ -4995,7 +4995,7 @@ JUGLAN:
 Well, don't fret none. He's a fine volunteer
 navyman. He'll have you trained up to take
 his place there one day.
-]]
+]],
 }
 
 dialog{
@@ -5009,7 +5009,7 @@ JUGLAN:
 mountain and lit everything up. Hazel's house is
 burning awful! Your sister Linden is fine, and
 your dad... he's at the pier. Go see him.
-]]
+]],
 }
 
 dialog{
@@ -5022,7 +5022,7 @@ Do you have your sword?
 TILIA:
   $? Anchors away
   $? I need some more time to get ready.
-]]
+]],
 }
 
 dialog{
@@ -5039,7 +5039,7 @@ The ocean?
 TILIA:
 That's the one. It's time we figured out
 what happened to Dad.
-]]
+]],
 }
 
 dialog{
@@ -5052,7 +5052,7 @@ catch. You needin' a ride there?
 TILIA:
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -5078,7 +5078,7 @@ LINDEN:
 Haha! Aren't you supposed to be training to
 protect the rest of us from monsters and
 pirates? Well, be careful, oh brave hero.
-]]
+]],
 }
 
 dialog{
@@ -5086,7 +5086,7 @@ dialog{
   text = [[
 LINDEN:
 Good morning, Tilia.
-]]
+]],
 }
 
 dialog{
@@ -5100,7 +5100,7 @@ LINDEN:
 came for but dad ran off to fight them. I
 guess it's his duty as a volunteer navyman.
 He's down at the pier.
-]]
+]],
 }
 
 dialog{
@@ -5130,7 +5130,7 @@ TILIA:
 I know the pirates flew a white hourglass on
 their flag. Seems like enough to get started.
 
-]]
+]],
 }
 
 dialog{
@@ -5139,7 +5139,7 @@ dialog{
 LINDEN:
 What, are you back already? I've got things
 covered here at the tavern, go look for Dad.
-]]
+]],
 }
 
 dialog{
@@ -5157,7 +5157,7 @@ LINDEN:
 Haha, you'll be fine, Tilia. Get your sword.
 Go find Dad. If you're ever lost, give me a
 call. Now get going!
-]]
+]],
 }
 
 dialog{
@@ -5167,7 +5167,7 @@ LINDEN:
 I'm sure if you ask around in the right places,
 you'll find clues. If you're ever lost, give me
 a call and we can talk it out. Now get going!
-]]
+]],
 }
 
 dialog{
@@ -5195,7 +5195,7 @@ No problem, dad.
 
 MALLOW:
 Thanks, Little Gull.
-]]
+]],
 }
 
 dialog{
@@ -5223,7 +5223,7 @@ years.
 
 TILIA:
 ...
-]]
+]],
 }
 
 dialog{
@@ -5269,7 +5269,7 @@ MALLOW:
 I'll be back home before you realize it.
 You and Linden just watch the tavern for a
 few days...
-]]
+]],
 }
 
 dialog{
@@ -5289,7 +5289,7 @@ usually right when it comes to plants and stuff.
 Did you try eating the willow leaves?
 TIM:
 Eh? I haven't tried them... huh.
-]]
+]],
 }
 
 dialog{
@@ -5302,7 +5302,7 @@ the worst thing to have in this situation!
 TIM:
 Why would pirates attack us? To raid the
 ol' ruin on the mountain? I don't get it!
-]]
+]],
 }
 
 dialog{
@@ -5316,7 +5316,7 @@ TIM:
 across someone on your trip who's looking to
 buy woodcarvings, let them know about me. I've
 been working on my carving technique.
-]]
+]],
 }
 
 dialog{
@@ -5324,7 +5324,7 @@ dialog{
   text = [[
 It's a really nice carving of a... deer? Rabbit
 maybe? It's still in progress.
-]]
+]],
 }
 
 dialog{
@@ -5333,7 +5333,7 @@ dialog{
 You dad has been trying to work out a
 budget for the tavern. There's a whole bunch
 of scribbling out.
-]]
+]],
 }
 
 dialog{
@@ -5342,7 +5342,7 @@ dialog{
 There's some names, dates, amounts,
 whatever dad writes when he works on the
 tavern's budget. Also doodles of ships.
-]]
+]],
 }
 
 dialog{
@@ -5352,7 +5352,7 @@ TILIA:
 Looks like there used to be something kept
 here. I wonder if the pirates took it or if it
 was already gone when they attacked.
-]]
+]],
 }
 
 dialog{
@@ -5360,7 +5360,7 @@ dialog{
   text = [[
 There's a box of fish blocking the door.
 You suppose that's a good problem to have.
-]]
+]],
 }
 
 dialog{
@@ -5370,7 +5370,7 @@ Linden has been trying to work out a
 budget for the tavern. All the lines and
 columns are lined up neatly. Does she use
 a ruler for this?
-]]
+]],
 }
 
 dialog{
@@ -5380,7 +5380,7 @@ It looks like your sister Linden has been
 reading the books she borrowed from
 Hazel. She's learning about growing barley
 and hops.
-]]
+]],
 }
 
 dialog{
@@ -5389,7 +5389,7 @@ dialog{
 TILIA:
 Ugh, I really need to clean out our room.
 Better drag this stuff out of the way.
-]]
+]],
 }
 
 dialog{
@@ -5398,7 +5398,7 @@ dialog{
 There's a messy, scribbled-up attempt to
 work out a budget for the tavern. It's hastily
 shoved under a book.
-]]
+]],
 }
 
 dialog{
@@ -5408,7 +5408,7 @@ To Do!
 Tilia: Repair leaky window, chop firewood,
 unload new mead shipment
 Linden: Inventory ale, order new mugs, budget!
-]]
+]],
 }
 
 dialog{
@@ -5422,7 +5422,7 @@ quite valuable. Let's see...
 Often blue or purple.
 2) The Mandrake will rise from the ground and
 easily kill the careless botanist. Take care.
-]]
+]],
 }
 
 dialog{
@@ -5432,7 +5432,7 @@ Chores this week:
 Sweeping - Linden
 Dishes - Tilia
 Balance Ledger! - Dad
-]]
+]],
 }
 
 dialog{
@@ -5441,7 +5441,7 @@ dialog{
 You've been reading various books on
 tracking and navigation. There's also some
 maps of nearby islands.
-]]
+]],
 }
 
 dialog{
@@ -5449,7 +5449,7 @@ dialog{
   text = [[
 It's a to-do list you made, stuff you wanted
 to get done before you left to find your dad.
-]]
+]],
 }
 
 dialog{
@@ -5458,7 +5458,7 @@ dialog{
 A bottle of decent wine, Juglan's favorite
 drink. He never gets anything else at the
 tavern.
-]]
+]],
 }
 
 dialog{
@@ -5468,7 +5468,7 @@ It's the wooden sword you've been learning
 to fight with. Some people say you can
 head off on an adventure with just this, but
 that seems unlikely.
-]]
+]],
 }
 
 dialog{
@@ -5476,7 +5476,7 @@ dialog{
   text = [[
 
                  Six Months Later
-]]
+]],
 }
 
 dialog{
@@ -5484,20 +5484,20 @@ dialog{
   text = [[
 Mallow's Secret Stash, this way
 (Don't tell anyone)
-]]
+]],
 }
 
 dialog{
   id = "_new_limestone_island.signs.tavern",
   text = [[
 Basswood Tavern
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.npcs.ana_orange.1",
   text = [[
-]]
+]],
 }
 
 dialog{
@@ -5505,7 +5505,7 @@ dialog{
   text = [[
 MYSTERIOUS TIC-TAC-TOE PLAYER:
 EEK! My plan!
-]]
+]],
 }
 
 dialog{
@@ -5534,7 +5534,7 @@ What do you want?
 TILIA:
 $? Hand over the prize money.
 $? Just keep it.
-]]
+]],
 }
 
 dialog{
@@ -5550,7 +5550,7 @@ money from people. But that's a pretty
 agreed-upon rule.
 AUBREY:
 Ugh! Fine.
-]]
+]],
 }
 
 dialog{
@@ -5563,7 +5563,7 @@ it'll be put to good use.
 TILIA:
 Hey, don't make me seem like your
 accomplice. You stole that yourself.
-]]
+]],
 }
 
 dialog{
@@ -5588,7 +5588,7 @@ Isle of Lobb, we'll pay you back somehow.
 TILIA:
 Don't worry about it. Just watch out for the
 tic-tac-toe referee, he seems like a fighter.
-]]
+]],
 }
 
 dialog{
@@ -5603,7 +5603,7 @@ $1...$3fine. My dad and I will somehow
 struggle through and find the money
 to keep the farm open somewhere...
 (You received 200 crowns)
-]]
+]],
 }
 
 dialog{
@@ -5613,7 +5613,7 @@ ARAMIS:
 Welcome to Metheglyn Apothecary. If you're
 looking to mix up some Elixer Vitae, please
 talk to my husband.
-]]
+]],
 }
 
 dialog{
@@ -5642,7 +5642,7 @@ there are some dangerous plants. I think
 ARAMIS:
 you'd be able to find Monkshood growing
 there.
-]]
+]],
 }
 
 dialog{
@@ -5668,7 +5668,7 @@ ARAMIS:
 Oh! Yes, that is Monkshood. I can quickly
 mix up something that should help you$1...
 ...$3Here you are!
-]]
+]],
 }
 
 dialog{
@@ -5677,7 +5677,7 @@ dialog{
 ARAMIS:
 I hope that sleeping draught is helping your
 friends get to sleep.
-]]
+]],
 }
 
 dialog{
@@ -5691,7 +5691,7 @@ ARAMIS:
 town. You'll follow the trail through a ruins on
 the mountain, then you'll go through a narrow
 canyon.
-]]
+]],
 }
 
 dialog{
@@ -5709,7 +5709,7 @@ ARAMIS:
 Excellent. I'll make the sleeping draught
 right away$1...
 ...$3and, done. Take this, and sleep well.
-]]
+]],
 }
 
 dialog{
@@ -5726,7 +5726,7 @@ increase your armor's defense.
 (Increase your defense for 100 crowns?)
 $?Do it!
 $?No thanks.
-]]
+]],
 }
 
 dialog{
@@ -5744,7 +5744,7 @@ FERRIS:
 I bet Ballast Harbor wouldn't be a bad place
 to look, lots of stolen goods move through
 there. But... also pirates... and they're scary.
-]]
+]],
 }
 
 dialog{
@@ -5761,7 +5761,7 @@ armor significantly stronger!
 (Hand over the tools?)
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -5771,7 +5771,7 @@ FERRIS:
 Thank you for letting me have these armorer's
 tools. I hope the improvements I made will
 keep you safe.
-]]
+]],
 }
 
 dialog{
@@ -5782,7 +5782,7 @@ Good, good.... Let me just... and this like...
 This could use a pin instead of a....
 There!
 (Your defense was increased by 1)
-]]
+]],
 }
 
 dialog{
@@ -5797,7 +5797,7 @@ All done! You look much safer!
 
 
 (Your defense was increased by 2)
-]]
+]],
 }
 
 dialog{
@@ -5807,7 +5807,7 @@ I take a lot of pride in my drawers. I've been
 importing knobs from the Isle of Lobb for a
 while- just because it rhymed- but I'm
 realizing that's not a business strategy.
-]]
+]],
 }
 
 dialog{
@@ -5817,7 +5817,7 @@ I got into carpentry thinking I'd be making
 warehouses of fancy furniture. But it turns
 out what people want more than anything is
 boxes and barrels.
-]]
+]],
 }
 
 dialog{
@@ -5839,7 +5839,7 @@ CAPTAIN AL-JAZARI:
 when I turned the boiler off. And also
 because I plan on destroying you here and
 now! Ha!
-]]
+]],
 }
 
 dialog{
@@ -5855,7 +5855,7 @@ Uh, no, I don't have any.
 
 GUARD:
 Well get lost then!
-]]
+]],
 }
 
 dialog{
@@ -5881,7 +5881,7 @@ CAPTAIN THYME:
 headquarters, but I've no predisposition to
 tell you where that is. Now, automaton!
 Attack!
-]]
+]],
 }
 
 dialog{
@@ -5889,7 +5889,7 @@ dialog{
   text = [[
 You shouldn't just take the money inside
 here. This isn't one of thooose chests.
-]]
+]],
 }
 
 dialog{
@@ -5898,7 +5898,7 @@ dialog{
 TIC-TAC-TOE PLAYER:
 Have you ever even tic tacked before? You
 don't look too tough. Humph.
-]]
+]],
 }
 
 dialog{
@@ -5914,7 +5914,7 @@ I don't know what that would look like.
 
 SERIOUS COMPETITOR:
 I, uh... Well, it'd look like me!
-]]
+]],
 }
 
 dialog{
@@ -5924,7 +5924,7 @@ TIC-TAC-TOE PLAYER:
 My secret? I always play Os. They never
 expect that, because Xs are cooler, so you
 throw them off.
-]]
+]],
 }
 
 dialog{
@@ -5934,7 +5934,7 @@ TIC-TAC-TOE-PLAYER:
 You might have learned to get three in a row,
 but I was born into it. I was raised a
 tic-tac-toe board.
-]]
+]],
 }
 
 dialog{
@@ -5943,7 +5943,7 @@ dialog{
 MYSTERIOUS TIC-TAC-TOE PLAYER:
 ...don't over think it. Just do it for the
 oranges.
-]]
+]],
 }
 
 dialog{
@@ -5953,7 +5953,7 @@ TIC-TAC-TOE PLAYER:
 Woah. That girl just made off with 200
 crowns. What a master thief. I need to
 go home and rethink my career.
-]]
+]],
 }
 
 dialog{
@@ -5962,7 +5962,7 @@ dialog{
 SERIOUS COMPETITOR:
 I... the championship is cancelled? But...
 I've been training for three years...
-]]
+]],
 }
 
 dialog{
@@ -5971,7 +5971,7 @@ dialog{
 TIC-TAC-TOE PLAYER:
 You know, I'm almost relieved. The truth is,
 I'm really bad at tic-tac-toe.
-]]
+]],
 }
 
 dialog{
@@ -5981,7 +5981,7 @@ TIC-TAC-TOE PLAYER:
 I was sitting right next to a criminal all along.
 I hope I didn't get any crime germs on me.
 I better go home and shower.
-]]
+]],
 }
 
 dialog{
@@ -5991,7 +5991,7 @@ I heard this was a crime scene and came
 as quickly as I could! Unluckily for crime,
 I am very quick! A detective in on his way.
 Now we play the waiting game.
-]]
+]],
 }
 
 dialog{
@@ -6000,7 +6000,7 @@ dialog{
 GUARD:
 Looks like the suspect escaped. Better go
 file a report or something then...
-]]
+]],
 }
 
 dialog{
@@ -6013,7 +6013,7 @@ Hey! Would you fill in for us?
 (Join the tic tac toe championships?)
 $?Sign me up!
 $?I won't play your games!
-]]
+]],
 }
 
 dialog{
@@ -6021,7 +6021,7 @@ dialog{
   text = [[
 REFEREE:
 Great! We'll get started immediately.
-]]
+]],
 }
 
 dialog{
@@ -6037,7 +6037,7 @@ Wait a second! The chest with the prize
 money is empty! Nobody leave the room,
 REFEREE:
 this is now a crime scene!
-]]
+]],
 }
 
 dialog{
@@ -6051,7 +6051,7 @@ REFEREE:
 It's just like a murder mystery novel. Except
 without the murder. Or the novel, I guess.
 So it's just a mystery.
-]]
+]],
 }
 
 dialog{
@@ -6073,7 +6073,7 @@ REFEREE:
 Oh, you're in the Volunteer Navy, aren't you?
 Looking for trouble? To solve it? Well fine. If
 you get the money back, you get a cut.
-]]
+]],
 }
 
 dialog{
@@ -6091,7 +6091,7 @@ REFEREE:
 I've got the town guards on the case too.
 This is the heist of the century! I'm planning
 to write a book.
-]]
+]],
 }
 
 dialog{
@@ -6113,7 +6113,7 @@ REFEREE:
 I'll let you keep half of this. The town guard
 was useless in finding the thief, so we
 wouldn't have this if it weren't for you.
-]]
+]],
 }
 
 dialog{
@@ -6123,7 +6123,7 @@ REFEREE:
 Thanks to you, we can continue to have
 the tic-tac-toe championship annually!
 You should train and try out next year.
-]]
+]],
 }
 
 dialog{
@@ -6133,7 +6133,7 @@ There's a pile of orange peel here. A very
 large pile of orange peel... Someone would
 possibly remember selling this many
 oranges.
-]]
+]],
 }
 
 dialog{
@@ -6142,7 +6142,7 @@ dialog{
 Have you been to Oakhaven's library? It's
 massive. Just go down those stairs and
 to the east, you can't miss it.
-]]
+]],
 }
 
 dialog{
@@ -6151,7 +6151,7 @@ dialog{
 TOWN GUARD:
 Just keeping the port free of blatantly
 suspicious characters. That's my job.
-]]
+]],
 }
 
 dialog{
@@ -6160,7 +6160,7 @@ dialog{
 This is a test.
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -6168,7 +6168,7 @@ dialog{
   text = [[
 GUARD:
 No entry permitted by the governor.
-]]
+]],
 }
 
 dialog{
@@ -6176,7 +6176,7 @@ dialog{
   text = [[
 GUARD:
 Hey, what are you doing over there!?
-]]
+]],
 }
 
 dialog{
@@ -6233,7 +6233,7 @@ Tidal Starfruit. From a mangrove thicket.
 TILIA:
 Whatever, I'll be back with a Tidy Starnut
 soon.
-]]
+]],
 }
 
 dialog{
@@ -6281,15 +6281,9 @@ while ago.
 
 HAZEL:
 Wait, what? I wasn't expecting you to do
-things in this order. I've still got to run to
-the market to get other items I need to make
-HAZEL:
-the amulet- why don't you do some shopping
-or fight some monsters or whatever it is you
-do, by the time you're done I'll be back with
-HAZEL:
-the other items I need to make this amulet.
-]]
+things in this order. Give me just a sec
+to get ready...
+]],
 }
 
 dialog{
@@ -6305,7 +6299,7 @@ you'll want to look.
 
 TILIA:
 I'll be back once I find one.
-]]
+]],
 }
 
 dialog{
@@ -6342,7 +6336,7 @@ try talking to him.
 TILIA:
 I will. Thanks Hazel. I'll bring this amulet to
 Dad and we'll defeat the pirates.
-]]
+]],
 }
 
 dialog{
@@ -6356,7 +6350,7 @@ HAZEL:
 can get to Ocean's Heart first and stop them
 from taking over the seas. Good luck finding
 your dad, Tilia.
-]]
+]],
 }
 
 dialog{
@@ -6406,7 +6400,7 @@ HAZEL:
 make one and bring it to Mallow. Then we
 can get the Heart before the Pirate Council
 does and...
-]]
+]],
 }
 
 dialog{
@@ -6420,7 +6414,7 @@ HAZEL:
 Shoot! Look, I'm stealing some books and
 heading back to the inn, I'll explain
 everything there!
-]]
+]],
 }
 
 dialog{
@@ -6430,7 +6424,7 @@ BEAUFORT:
 This is the Hornwart Inn. I'm afraid all our
 rooms are booked at the moment, quite
 sorry about that.
-]]
+]],
 }
 
 dialog{
@@ -6458,7 +6452,7 @@ Please do not break into our guests' rooms.
 
 TILIA:
 I'm going to.
-]]
+]],
 }
 
 dialog{
@@ -6468,7 +6462,7 @@ BEAUFORT:
 I don't approve of your tendency toward
 burglary. I've a mind to call the city guard
 if I thought they'd do anything about it.
-]]
+]],
 }
 
 dialog{
@@ -6476,7 +6470,7 @@ dialog{
   text = [[
 The door isn't locked, but it seems rude
 to just wander into someone's room.
-]]
+]],
 }
 
 dialog{
@@ -6494,7 +6488,7 @@ FESTUS:
 Well, fell free to have a look around. With
 so much information in here, you might be
 surprised what comes in handy.
-]]
+]],
 }
 
 dialog{
@@ -6531,7 +6525,7 @@ research.
 TILIA:
 Maybe there will be something in there that
 explains where she is. Thanks!
-]]
+]],
 }
 
 dialog{
@@ -6544,7 +6538,7 @@ last room on the right. Maybe you'll learn
 FESTUS:
 a bit of history while you're at it! Ha, that
 couldn't hurt.
-]]
+]],
 }
 
 dialog{
@@ -6558,7 +6552,7 @@ fought against a tyrant she once respected.
 While he'd lost his way and become
 dangerous, she died wondering if his humble
 self was entirely gone. Fascinating poem.
-]]
+]],
 }
 
 dialog{
@@ -6575,7 +6569,7 @@ good' as local fruit?
 FRUIT IMPORTER:
 Honesty is part of my brand. I'd never lie
 to anyone.
-]]
+]],
 }
 
 dialog{
@@ -6606,7 +6600,7 @@ west of here, first house on the right.
 She should open up for oranges.
 
 (You received a box of oranges.)
-]]
+]],
 }
 
 dialog{
@@ -6618,7 +6612,7 @@ I hope you can get everything resolved. I
 hate to have assisted a thief, even if she is
 FRUIT IMPORTER:
 my best customer.
-]]
+]],
 }
 
 dialog{
@@ -6646,7 +6640,7 @@ don't you go check the Hornwart Inn in the
 northwest corner of town, see if she's there?
 TILIA:
 I'll head over there. Thanks!
-]]
+]],
 }
 
 dialog{
@@ -6658,7 +6652,7 @@ staying the Hornwart inn. Also, did you decide
 to buy some mangrove leaves?
 TILIA:
 No, and no. Thanks for your help though.
-]]
+]],
 }
 
 dialog{
@@ -6686,7 +6680,7 @@ I think the Starfruits grow near the middle.
 
 TILIA:
 Thanks!
-]]
+]],
 }
 
 dialog{
@@ -6698,7 +6692,7 @@ mangrove leaves yet?
 
 TILIA:
 Nope, but thanks for your help earlier.
-]]
+]],
 }
 
 dialog{
@@ -6710,7 +6704,7 @@ salesman? If not, go away.
 
 TILIA:
 Uh, alright.
-]]
+]],
 }
 
 dialog{
@@ -6727,7 +6721,7 @@ Orange salesman! Box of oranges here!
 ???
 You don't sound like yourself. Well, come on
 in.
-]]
+]],
 }
 
 dialog{
@@ -6736,7 +6730,7 @@ dialog{
 MELINDA:
 Well, what are you still doing here? Get
 on with your life.
-]]
+]],
 }
 
 dialog{
@@ -6755,7 +6749,7 @@ Am I? Oh, you already cleaned them?
 I'm not wearing my glasses. Well, here's
 your tip.
 (You received one crown.) 
-]]
+]],
 }
 
 dialog{
@@ -6778,7 +6772,7 @@ Good girl. Here's your tip.
 
 
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -6801,7 +6795,7 @@ You'd better. Here's your tip.
 
 
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -6820,7 +6814,7 @@ Thank you. That's all I needed to know.
 
 
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -6839,7 +6833,7 @@ That's an odd way of putting it. Well,
 here's your tip.
 
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -6858,7 +6852,7 @@ You already set it over there? Excuse me,
 I'm not wearing my glasses. Here's your tip.
 
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -6881,7 +6875,7 @@ clash with the carpets. Sorry for the
 trouble for coming out here. Take this.
 
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -6900,7 +6894,7 @@ Did you? I wasn't watching. Here, your tip.
 
 
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -6919,7 +6913,7 @@ Is it? I don't have my glasses on, I thought
 that was a portrait of my cat. Well, take
 this for your efforts anyway.
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -6938,7 +6932,7 @@ Oh, right. I ordered cabbages this week.
 Well, set them down on the table. Here's
 your tip.
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -6965,7 +6959,7 @@ Excellent. Here's your payment.
 
 
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -6988,7 +6982,7 @@ Good. Arrive on time next time. Here's your
 tip.
 
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -7007,7 +7001,7 @@ You've already done it? Lord, you guys are
 quick. Here, take a tip.
 
 (You received one crown.)
-]]
+]],
 }
 
 dialog{
@@ -7033,14 +7027,14 @@ TYLER:
 Ah, well that's fine too. For what it's worth,
 the color does bring out your eyes. Well,
 feel free to have a look around!
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.npcs.misc.tailor.clothes1",
   text = [[
 A dashing ensamble stands before you.
-]]
+]],
 }
 
 dialog{
@@ -7048,7 +7042,7 @@ dialog{
   text = [[
 An incredibly loud outfit rests on the
 mannequin.
-]]
+]],
 }
 
 dialog{
@@ -7061,7 +7055,7 @@ your face.
 TILIA:
 That's not a terribly differentiating factor in
 a hat. I'll have to pass.
-]]
+]],
 }
 
 dialog{
@@ -7077,14 +7071,14 @@ Is that all it does?
 
 TYLER:
 It may also keep the sun out of your eyes.
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.npcs.misc.tailor.sequins",
   text = [[
 That's a lot of sequins.
-]]
+]],
 }
 
 dialog{
@@ -7092,7 +7086,7 @@ dialog{
   text = [[
 Several shirts are artfully arrayed on the
 counter. They're... wow, they're really soft.
-]]
+]],
 }
 
 dialog{
@@ -7104,7 +7098,7 @@ Guarenteed to make you dance 20% more
 gracefully. Not that you aren't graceful enough.
 TILIA:
 Aww, thanks. But no thanks.
-]]
+]],
 }
 
 dialog{
@@ -7113,7 +7107,7 @@ dialog{
 There's a wishing well. Toss in 5 crowns?
 $? Sure
 $? I'll keep my money
-]]
+]],
 }
 
 dialog{
@@ -7183,7 +7177,7 @@ TILIA:
 Deal. I'll meet you back here once I have it.
 Make sure you know where the alcohol is
 coming from by then.
-]]
+]],
 }
 
 dialog{
@@ -7197,7 +7191,7 @@ MORUS:
 plan, getting the pirates knocked out just
 might get us into the fort. I'll find out where
 their booze comes from and meet you here.
-]]
+]],
 }
 
 dialog{
@@ -7225,7 +7219,7 @@ you start spiking the booze.
 
 TILIA:
 Leave it to me.
-]]
+]],
 }
 
 dialog{
@@ -7238,7 +7232,7 @@ looking for barrels marked with stars in the
 MORUS:
 storehouse next door. Those are headed
 down to Fort Crow, should do the trick.
-]]
+]],
 }
 
 dialog{
@@ -7267,7 +7261,7 @@ weird that I've almost corned the captain.
 MORUS:
 Well, I hope he can help you find your dad
 or whatever.
-]]
+]],
 }
 
 dialog{
@@ -7303,7 +7297,7 @@ Let's set sail.
 
 MORUS:
 I'll meet you down at the port.
-]]
+]],
 }
 
 dialog{
@@ -7313,7 +7307,7 @@ MORUS:
 If you think you can take down the pirate
 council, then I'll take you to their hideout.
 I'll meet you down at the port.
-]]
+]],
 }
 
 dialog{
@@ -7326,7 +7320,7 @@ and track down the Pirate Council?
 TILIA:
 $?Anchors away!
 $?Not Yet.
-]]
+]],
 }
 
 dialog{
@@ -7339,7 +7333,7 @@ Do you need to go back to Oakhaven?
 TILIA:
 $?Let's set sail.
 $?Not now.
-]]
+]],
 }
 
 dialog{
@@ -7379,7 +7373,7 @@ if Gunther is playing at the saloon.
 
 BRIAN:
 ...fine...
-]]
+]],
 }
 
 dialog{
@@ -7395,7 +7389,7 @@ posters, are you?
 
 BRIAN:
 No!.... not with you around, anyway...
-]]
+]],
 }
 
 dialog{
@@ -7408,7 +7402,7 @@ whuunnnh gaeee emnnhhh...
 (She's singing something, but the
 words could be literally anything.
 You have no idea.)
-]]
+]],
 }
 
 dialog{
@@ -7422,7 +7416,7 @@ Ooooooooo
 are, she has a good singing voice. Hopefully
 she isn't saying anything you'd be
 embarrassed to tap your foot to.
-]]
+]],
 }
 
 dialog{
@@ -7455,7 +7449,7 @@ you help protect our band posters?
 TILIA:
 $?I guess so?
 $?No way, man.
-]]
+]],
 }
 
 dialog{
@@ -7480,7 +7474,7 @@ willing to play a show.
 GUNTER:
 Right on! I'll have some posters hanging up
 by the time you talk to him!
-]]
+]],
 }
 
 dialog{
@@ -7501,7 +7495,7 @@ a show whenever, so like, let him know.
 GUNTHER:
 Then you can go find the monster that's
 tearing down our band posters.
-]]
+]],
 }
 
 dialog{
@@ -7513,7 +7507,7 @@ all up to you. You've gotta protect my posters
 from being torn up by monsters.
 TILIA:
 I'll go check them out.
-]]
+]],
 }
 
 dialog{
@@ -7533,7 +7527,7 @@ aren't you like, the real monster? Hey, we're
 gonna go play at the saloon! Come see us!
 TILIA:
 Sure, I'll meet you there.
-]]
+]],
 }
 
 dialog{
@@ -7543,7 +7537,7 @@ GUNTHER:
 Hey, it's you! We've finally got a crowd in
 here! Look, it's like, only right to give you a
 cut of what we're earning. Take this.
-]]
+]],
 }
 
 dialog{
@@ -7553,7 +7547,7 @@ GUNTHER (singing):
 ...So I grabbed the pot
 And with my soup ladle, fought
 Off the barbarian chef invaaaaaasion...
-]]
+]],
 }
 
 dialog{
@@ -7563,7 +7557,7 @@ BLACKBEARD:
 Huh, you look kind of familiar. Well step
 aside, kiddo, I've got a treasure map to
 decipher.
-]]
+]],
 }
 
 dialog{
@@ -7576,7 +7570,7 @@ of time to clean these up. Maybe you should
 get back to whatever you were doing, it
 shouldn't be long before I'm finished taking
 care of this.
-]]
+]],
 }
 
 dialog{
@@ -7585,7 +7579,7 @@ dialog{
 SHIFTY LOOKING GUY:
 Hey! Help us out! We're being attacked
 by pirates!
-]]
+]],
 }
 
 dialog{
@@ -7595,7 +7589,7 @@ LEFTY:
 Thanks for saving us from those pirates.
 They came outta nowhere, demanding some
 chart we lifted last week. Wonder why.
-]]
+]],
 }
 
 dialog{
@@ -7605,7 +7599,7 @@ AMOS:
 I think those guys who attacked were from
 the pirate council. We're not pirates, just
 burglars. Difference is we don't have a ship.
-]]
+]],
 }
 
 dialog{
@@ -7647,7 +7641,7 @@ SHIFTY
 to the palace. But hey, if you sneak in,
 don't take all the good stuff! We like to
 burgle that place every once in a while.
-]]
+]],
 }
 
 dialog{
@@ -7661,7 +7655,7 @@ SHIFTY:
 there's three trees growing on rocks, and
 it's the middle on that has a secret tunnel
 that Hazel wanted to know about.
-]]
+]],
 }
 
 dialog{
@@ -7679,14 +7673,14 @@ SHIFTY LOOKING GUY:
 No, we had to change it. Look, if you don't
 know the password, you won't be gettin'
 past me. Bug off!
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.npcs.port.burglars.yikes",
   text = [[
 Watch out for those pirates!
-]]
+]],
 }
 
 dialog{
@@ -7720,7 +7714,7 @@ TILIA:
 Hazel! Dad must have rescued her!
 I'd better go talk to this fish vendor,
 Thanks, guy.
-]]
+]],
 }
 
 dialog{
@@ -7730,7 +7724,7 @@ CERVIO:
 Did you find your friend, Hazel? I met her
 buying fish in the market, maybe the vendor
 knows where she is.
-]]
+]],
 }
 
 dialog{
@@ -7747,7 +7741,7 @@ My friend told me I might find him here.
 BARTENDER:
 Ah, that guy. He's right over there, drinking
 alone at that table in the south corner.
-]]
+]],
 }
 
 dialog{
@@ -7757,7 +7751,7 @@ BARTENDER:
 Hey kid. If you're looking for extra seating,
 we just expanded our basement. Business
 has been going great recently.
-]]
+]],
 }
 
 dialog{
@@ -7791,7 +7785,7 @@ TILIA:
 There's apparently a monster tearing them
 down? I don't know what's really going on.
 I'm just going to check on some posters.
-]]
+]],
 }
 
 dialog{
@@ -7800,7 +7794,7 @@ dialog{
 I've never heard this band before, but
 they're good. Can't understand what the
 heck they're talking about, but I like it.
-]]
+]],
 }
 
 dialog{
@@ -7810,7 +7804,7 @@ I'm really groovin' to these musicians.
 It's helping me forget the creepy ruins I
 saw in the puzzlewood on Yarrowmouth.
 All those stone eyes, staring at me... ugh.
-]]
+]],
 }
 
 dialog{
@@ -7818,7 +7812,7 @@ dialog{
   text = [[
 Is it just me, or is that trumpet player...
 really bad?
-]]
+]],
 }
 
 dialog{
@@ -7828,14 +7822,14 @@ I don't know who the sad trumpet guy is,
 but I've never heard a song so aggressive
 yet so pathetic. It's intriguing but not what I
 want to hear when I go out to drink.
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.npcs.shipyard.1",
   text = [[
 I messed up, I messed up, I messed up...
-]]
+]],
 }
 
 dialog{
@@ -7848,7 +7842,7 @@ of Firethorn berries, and 15 crowns for labor.
 Buy bombs?
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -7856,14 +7850,14 @@ dialog{
   text = [[
 Good day, hun. Have a look around, check
 out anything that catches your eye.
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.npcs.shops.general_store.hat",
   text = [[
 It's a fairly fancy hat. Not too overbearing.
-]]
+]],
 }
 
 dialog{
@@ -7873,7 +7867,7 @@ Hey, this is a toll bridge! If you want to get
 across, it's 5 crowns!
 $? Pay the man
 $? No way
-]]
+]],
 }
 
 dialog{
@@ -7881,7 +7875,7 @@ dialog{
   text = [[
 Hahaha! Sucker! We're not letting you
 across!
-]]
+]],
 }
 
 dialog{
@@ -7891,7 +7885,7 @@ TILIA:
 What was it the burglars said? There's three
 rocks with trees growing over them, and the
 secret tunnel's in the middle one, right?
-]]
+]],
 }
 
 dialog{
@@ -7901,7 +7895,7 @@ There's a note:
 Please refrain from eating in the automaton
 service areas! The automatons are getting
 gunky and moving more slowly.
-]]
+]],
 }
 
 dialog{
@@ -7910,7 +7904,7 @@ dialog{
 There's an invoice here for... several
 automatons? It's for 'Automatic Crow
 Knights'. It's signed by Captain al-Jazari.
-]]
+]],
 }
 
 dialog{
@@ -7927,7 +7921,14 @@ the tower's door may become stuck while
 the boilers are off. It will begin working again
 once the boilers are back online.
 -Captain al-Jazari
-]]
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.fort_crow.opening_door",
+  text = [[
+You hear a door opening somewhere.
+]],
 }
 
 dialog{
@@ -7935,7 +7936,7 @@ dialog{
   text = [[
 There's a stack of books from the Oakhaven
 Library. They're all history books.
-]]
+]],
 }
 
 dialog{
@@ -7945,7 +7946,7 @@ It's a book from the Oakhaven Library. The
 title is "Fall of the Meurian Kingdom". Seems
 like Hazel is spending a lot of time at the
 library.
-]]
+]],
 }
 
 dialog{
@@ -7958,7 +7959,7 @@ would loan his amulet to whoever wished to
 visit with the sea. What is the amulet? Why
 don't any of the library's books go into detail?
 Are some missing?"
-]]
+]],
 }
 
 dialog{
@@ -7967,7 +7968,7 @@ dialog{
 There's a stack of atlases here. All of them
 are loaned from the Oakhaven Library- Hazel
 must visit there frequently.
-]]
+]],
 }
 
 dialog{
@@ -7977,7 +7978,7 @@ There's a book open on the desk called
 "Rise of the Sea King". Read it?
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -8003,13 +8004,13 @@ along with his palace, down to the seabed.
 The kingdom and all he treasured were
 flooded, and this is the great flood, half-
 remembered by history.
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.observations.hazel_books.7",
   text = [[
-]]
+]],
 }
 
 dialog{
@@ -8023,7 +8024,7 @@ handwriting! You take a look...
 -Meet Burglar Crew at Oakhaven Port
 (this last item is not checked. Maybe you
 can find Hazel near the port.)
-]]
+]],
 }
 
 dialog{
@@ -8032,7 +8033,7 @@ dialog{
 There's a big stack of books here, mostly
 on history. Looks like the kind of stuff
 Hazel has been researching.
-]]
+]],
 }
 
 dialog{
@@ -8040,7 +8041,7 @@ dialog{
   text = [[
 (There's a poster advertising Gunther's
 show at the Salamander Heartache Saloon)
-]]
+]],
 }
 
 dialog{
@@ -8049,7 +8050,7 @@ dialog{
 TILIA:
 Hey! There really is a monster tearing down
 the band's posters! Get back here!
-]]
+]],
 }
 
 dialog{
@@ -8059,7 +8060,7 @@ There's a cook book here. Looks like some
 one is trying to learn to make soup from
 Nitrodendron buds... those might cause
 quite a ruckus if you're not careful!
-]]
+]],
 }
 
 dialog{
@@ -8069,7 +8070,7 @@ GUARD:
 Holy cannoli, what was that!? I better go
 let someone know the vegetables are
 exploding!
-]]
+]],
 }
 
 dialog{
@@ -8079,7 +8080,7 @@ TILIA:
 That must be the archives back there, but
 if I get any closer, the guard will see me.
 I better cause some sort of distraction.
-]]
+]],
 }
 
 dialog{
@@ -8088,7 +8089,7 @@ dialog{
 There's a note written in angry handwriting:
 This area is for OUTGOING shipments only!
 Stop serving them at the saloon!
-]]
+]],
 }
 
 dialog{
@@ -8100,49 +8101,49 @@ in the Sleeping Draught?
 
 $? Spike it
 $? Nah
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.observations.saloon.star_barrel_2",
   text = [[
 Glug glug.
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.signs.bomb_shop",
   text = [[
 Bomb Shop
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.signs.fort_crow_deliveries",
   text = [[
 All deliveries use side door
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.signs.hall_of_champions",
   text = [[
 Hall of Champions
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.signs.hornwart_inn",
   text = [[
 Hornwart Inn
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.signs.library",
   text = [[
 Oakhaven Library
-]]
+]],
 }
 
 dialog{
@@ -8151,7 +8152,7 @@ dialog{
 Oakhaven South Gate
 South - Oakhaven Port
 West - Gull Rock, path to Marblecliff Moutain
-]]
+]],
 }
 
 dialog{
@@ -8159,21 +8160,21 @@ dialog{
   text = [[
 North - Oakhaven
 East - Fort Crow
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.signs.saloon",
   text = [[
 Salamander Heartache Saloon
-]]
+]],
 }
 
 dialog{
   id = "_oakhaven.signs.saloon_storehouse",
   text = [[
 Salamander Heartache Saloon Storehouse
-]]
+]],
 }
 
 dialog{
@@ -8182,7 +8183,7 @@ dialog{
 East - Oakhaven
 North - Marblecliff Mountain
 West - Veilwood Forest, Ivystump Village
-]]
+]],
 }
 
 dialog{
@@ -8192,7 +8193,7 @@ East - Oakhaven Port
 South - Gull Rock
 West - Seaglint Ruins
 North - Marblecliff Mountain
-]]
+]],
 }
 
 dialog{
@@ -8201,7 +8202,7 @@ dialog{
 Would you really like to quit?
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -8211,7 +8212,7 @@ Some pretty nice apples, great for your health.
 One is 8 crowns, and heals two hearts.
 $? Sure
 $? No thanks
-]]
+]],
 }
 
 dialog{
@@ -8220,7 +8221,7 @@ dialog{
 Arrows. You could try using your bow
 without these, but... Well, actually you
 really couldn't.
-]]
+]],
 }
 
 dialog{
@@ -8229,7 +8230,7 @@ dialog{
 Buy this for $v crowns?
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
@@ -8237,7 +8238,7 @@ dialog{
   text = [[
 Sometimes Cape
 North to Limestone Village
-]]
+]],
 }
 
 dialog{
@@ -8250,7 +8251,7 @@ North to Limestone Village
 Fast Travel?
   $? Yes
   $? No
-]]
+]],
 }
 
 dialog{
@@ -8258,7 +8259,7 @@ dialog{
   text = [[
 West Limestone Island
 South to Sometimes Cape
-]]
+]],
 }
 
 dialog{
@@ -8271,7 +8272,7 @@ South to Sometimes Cape
 Fast travel?
   $? Yes
   $? No
-]]
+]],
 }
 
 dialog{
@@ -8279,7 +8280,7 @@ dialog{
   text = [[
 West Limestone Island
 North to Castone Grove
-]]
+]],
 }
 
 dialog{
@@ -8292,7 +8293,7 @@ North to Castone Grove
 Fast travel?
   $? Yes
   $? No
-]]
+]],
 }
 
 dialog{
@@ -8302,14 +8303,14 @@ You received a magic amulet. Created
 following directions in an old book, this will
 somehow allow you to get into the Ocean's
 Temple, if you can find it.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.apples.1",
   text = [[
 You collected an apple.
-]]
+]],
 }
 
 dialog{
@@ -8319,7 +8320,7 @@ You received some Armorer's Tools. There's
 a pair of pliers, some needles, some... other
 stuff? This isn't your job, you don't know
 how to use whatever this stuff is.
-]]
+]],
 }
 
 dialog{
@@ -8328,7 +8329,7 @@ dialog{
 You found some armor that's slightly better
 than what you currently have!
 (Your defense increased by 1)
-]]
+]],
 }
 
 dialog{
@@ -8337,7 +8338,7 @@ dialog{
 You found some armor that's notably better
 than what you currently have!
 (Your defense increased by 2)
-]]
+]],
 }
 
 dialog{
@@ -8345,7 +8346,7 @@ dialog{
   text = [[
 Your sword and bow damage outputs
 were each increased by 1.
-]]
+]],
 }
 
 dialog{
@@ -8353,7 +8354,7 @@ dialog{
   text = [[
 You found a bag of money. It's a very
 specific amount.
-]]
+]],
 }
 
 dialog{
@@ -8362,7 +8363,7 @@ dialog{
 You found some monster bait. Place it in
 certain places to lure out various kinds of
 beasts and creatures.
-]]
+]],
 }
 
 dialog{
@@ -8371,7 +8372,7 @@ dialog{
 You found 3 jars of monster bait. Place it
 in certain places to lure out various kinds
 of beasts and creatures.
-]]
+]],
 }
 
 dialog{
@@ -8380,7 +8381,7 @@ dialog{
 You found 5 jars of monster bait. Place it
 in certain places to lure out various kinds
 of beasts and creatures.
-]]
+]],
 }
 
 dialog{
@@ -8388,7 +8389,7 @@ dialog{
   text = [[
 You found a bomb!
 Press V to set it.
-]]
+]],
 }
 
 dialog{
@@ -8396,7 +8397,7 @@ dialog{
   text = [[
 You found some bombs!
 Press V to set them.
-]]
+]],
 }
 
 dialog{
@@ -8404,7 +8405,7 @@ dialog{
   text = [[
 You found some bombs!
 Press V to set them.
-]]
+]],
 }
 
 dialog{
@@ -8412,7 +8413,7 @@ dialog{
   text = [[
 You found some bombs!
 Press V to set them.
-]]
+]],
 }
 
 dialog{
@@ -8420,21 +8421,21 @@ dialog{
   text = [[
 You found some bombs!
 Press V to set them.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.bombs_counter.1",
   text = [[
 You received some bombs. Press V to set them.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.bombs_counter_2.1",
   text = [[
 You received some bombs. Press V to set them.
-]]
+]],
 }
 
 dialog{
@@ -8442,7 +8443,7 @@ dialog{
   text = [[
 You found a bow. When you have arrows,
 shoot with the X button.
-]]
+]],
 }
 
 dialog{
@@ -8450,14 +8451,14 @@ dialog{
   text = [[
 Your bow gained the fire spell. The arrows
 you shoot will be engulfed in flame!
-]]
+]],
 }
 
 dialog{
   id = "_treasure.bow_silver.1",
   text = [[
 You got the silver bow now.
-]]
+]],
 }
 
 dialog{
@@ -8465,7 +8466,7 @@ dialog{
   text = [[
 You found a buzzer. Press the button to go buzz
 buzz buzz buzz
-]]
+]],
 }
 
 dialog{
@@ -8474,7 +8475,7 @@ dialog{
 You found some sea charts that say
 "Kelpton Cartography" on them. They
 look stolen.
-]]
+]],
 }
 
 dialog{
@@ -8482,7 +8483,7 @@ dialog{
   text = [[
 You found a contract with terrible terms
 for the second party. It looks exploitative.
-]]
+]],
 }
 
 dialog{
@@ -8491,7 +8492,7 @@ dialog{
 You found some Coral Ore. Using this rare
 material, blacksmiths can strengthen your
 equipment.
-]]
+]],
 }
 
 dialog{
@@ -8500,21 +8501,21 @@ dialog{
 You received the Dandelion Charm. Press
 the action button to dash as light and
 quickly as a dandelion seed in the wind.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.dandelion_seeds.1",
   text = [[
 You collected dandelion seeds.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.defense_upgrade.1",
   text = [[
 Your defense is increased!
-]]
+]],
 }
 
 dialog{
@@ -8523,63 +8524,63 @@ dialog{
 You received an Elixer Vitae. If you fall in
 battle, you'll drink this and regain a little
 health before it's too late.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.feather.1",
   text = [[
 Maybe you can jump now.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.firethorn_berries.1",
   text = [[
 You collected a bunch of firethorn berries.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.forsythia.1",
   text = [[
 You collected a branch of forsythia flowers.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.geode.1",
   text = [[
 You found a monster geode.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.geode.2",
   text = [[
 You found 5 monster geodes.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.geode.3",
   text = [[
 You found 10 monster geodes.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.ghost_orchid.1",
   text = [[
 You found a rare Ghost Orchid!
-]]
+]],
 }
 
 dialog{
   id = "_treasure.health_upgrade.1",
   text = [[
 Your health is increased by one.
-]]
+]],
 }
 
 dialog{
@@ -8589,7 +8590,7 @@ You found a chart showing the location of
 the Pirate Council's Headquarters! You
 don't recognize the area, but maybe Morus
 would.
-]]
+]],
 }
 
 dialog{
@@ -8598,7 +8599,7 @@ dialog{
 You found a hornet honeycomb. Hornets make
 some really strong honey, so you can't
 just eat it straight.
-]]
+]],
 }
 
 dialog{
@@ -8607,7 +8608,7 @@ dialog{
 You found a rare Iron Pinecone. It's
 surprisingly heavy. Or maybe that's not
 surprising. It's very heavy, as iron might be.
-]]
+]],
 }
 
 dialog{
@@ -8615,7 +8616,7 @@ dialog{
   text = [[
 You received the Ironwood Charm. Your lifting
 strength has increased even more.
-]]
+]],
 }
 
 dialog{
@@ -8623,7 +8624,7 @@ dialog{
   text = [[
 You received the Ivy Charm. Climb walls
 like a growing vine.
-]]
+]],
 }
 
 dialog{
@@ -8631,7 +8632,7 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
-]]
+]],
 }
 
 dialog{
@@ -8640,7 +8641,7 @@ dialog{
 You found a key. It looks suspiciously
 like the key to the stockroom at the
 Basswood Tavern.
-]]
+]],
 }
 
 dialog{
@@ -8648,7 +8649,7 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
-]]
+]],
 }
 
 dialog{
@@ -8656,7 +8657,7 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
-]]
+]],
 }
 
 dialog{
@@ -8665,7 +8666,7 @@ dialog{
 You found a rusty key. Just a little mold
 growing on it. It probably goes to a lock
 somewhere nearby.
-]]
+]],
 }
 
 dialog{
@@ -8673,7 +8674,7 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
-]]
+]],
 }
 
 dialog{
@@ -8682,7 +8683,7 @@ dialog{
 You found a key! It looks like it unlocks
 a door at an inn, but I guess not
 this one.
-]]
+]],
 }
 
 dialog{
@@ -8690,7 +8691,7 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
-]]
+]],
 }
 
 dialog{
@@ -8698,7 +8699,7 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
-]]
+]],
 }
 
 dialog{
@@ -8708,7 +8709,7 @@ You found an old key. There's a tag
 attached that says "northeast"...
 That's all you have to go on. You should
 probably follow up with other leads for now.
-]]
+]],
 }
 
 dialog{
@@ -8716,7 +8717,7 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
-]]
+]],
 }
 
 dialog{
@@ -8724,7 +8725,7 @@ dialog{
   text = [[
 You found a key. It's... sticky. Smells like
 honey?
-]]
+]],
 }
 
 dialog{
@@ -8732,7 +8733,7 @@ dialog{
   text = [[
 You found an old key. Probably goes to
 a lock somewhere nearby.
-]]
+]],
 }
 
 dialog{
@@ -8740,7 +8741,7 @@ dialog{
   text = [[
 You found a really old-looking key. It
 probably opens a door in these ruins.
-]]
+]],
 }
 
 dialog{
@@ -8748,7 +8749,7 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
-]]
+]],
 }
 
 dialog{
@@ -8756,28 +8757,28 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.kingscrown.1",
   text = [[
 You found a Kingscrown Bloom.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.mandrake.1",
   text = [[
 You collected a mandrake root.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.mandrake_white.1",
   text = [[
 You collected a white mandrake root.
-]]
+]],
 }
 
 dialog{
@@ -8785,56 +8786,56 @@ dialog{
   text = [[
 You found a box of matches. This will make it
 easy to light torches and stuff like that.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.monkshood.1",
   text = [[
 You collected a stem of monkshood flowers.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.monster_bones.1",
   text = [[
 You found some monster bones.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.monster_bones.2",
   text = [[
 You found some monster bones.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.monster_bones.3",
   text = [[
 You found some monster bones.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.monster_guts.1",
   text = [[
 You found some monster guts.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.monster_guts.2",
   text = [[
 You found some monster guts.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.monster_guts.3",
   text = [[
 You found some monster guts.
-]]
+]],
 }
 
 dialog{
@@ -8842,7 +8843,7 @@ dialog{
   text = [[
 You received the Oak charm. You feel as strong
 as an oak tree and can now lift heavy objects.
-]]
+]],
 }
 
 dialog{
@@ -8851,49 +8852,49 @@ dialog{
 You reveived an old stockpot. It's dented
 and the handles are worn, but that means
 it's clearly been loved.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.rupee.1",
   text = [[
 You found one crown.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.rupee.2",
   text = [[
 You found 5 crowns.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.rupee.3",
   text = [[
 You found 20 crowns.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.rupee.4",
   text = [[
 You found 50 crowns!
-]]
+]],
 }
 
 dialog{
   id = "_treasure.rupee.5",
   text = [[
 You found 100 crowns!
-]]
+]],
 }
 
 dialog{
   id = "_treasure.rupee.6",
   text = [[
 You found 200 crowns!
-]]
+]],
 }
 
 dialog{
@@ -8901,7 +8902,7 @@ dialog{
   text = [[
 You received the Seagrass Charm. Swimming in
 deep water shouldn't be a problem anymore.
-]]
+]],
 }
 
 dialog{
@@ -8911,7 +8912,7 @@ You received a Sleeping Draught. Bring this
 back to Morus at the saloon- hopefully he's
 figured out where the pirates get their ale
 from so you can spike it with this.
-]]
+]],
 }
 
 dialog{
@@ -8921,7 +8922,7 @@ You received a cast iron stockpot. Heavy
 enough to stand up to a cooking fire, or
 to smash someone's head in during an
 emergency.
-]]
+]],
 }
 
 dialog{
@@ -8929,7 +8930,7 @@ dialog{
   text = [[
 You found a stone... beak? That's what it
 looks like at least.
-]]
+]],
 }
 
 dialog{
@@ -8939,7 +8940,7 @@ You found an old sword. It's a little beat
 up, but perhaps with the right materials a
 blacksmith could make a fine weapon of it.
 Press C to swing it.
-]]
+]],
 }
 
 dialog{
@@ -8947,14 +8948,14 @@ dialog{
   text = [[
 Your sword has been strengthened! It will
 deal more damage to enemies.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.tacklebox.1",
   text = [[
 You found an old tacklebox.
-]]
+]],
 }
 
 dialog{
@@ -8963,14 +8964,14 @@ dialog{
 You found a Tidal Starfruit! It smells
 kind of like a mango and is a lot
 heavier than you'd expect.
-]]
+]],
 }
 
 dialog{
   id = "_treasure.violets.1",
   text = [[
 You collected some violet petals.
-]]
+]],
 }
 
 dialog{
@@ -8979,7 +8980,7 @@ dialog{
 You found a magic watering can. It seems
 so full it'll never run out of water. This
 is bound to come in handy.
-]]
+]],
 }
 
 dialog{
@@ -8987,7 +8988,7 @@ dialog{
   text = [[
 You took an old bottle of whisky. It's
 only missing a few sips. What a nice gift!
-]]
+]],
 }
 
 dialog{
@@ -9001,7 +9002,7 @@ crowns, I can improve a sword or bow.
 $? Sword
 $? Bow
 $? Neither
-]]
+]],
 }
 
 dialog{
@@ -9015,7 +9016,7 @@ CARLOV:
 to help me out, but now the pirates want to
 come see me to "chat"... So yeah, with so
 many carrots on the line... I'm pretty nervous.
-]]
+]],
 }
 
 dialog{
@@ -9028,7 +9029,7 @@ my carrots. I appreciate it so much. Please,
 CARLOV:
 help yourself to anything from my garden.
 I don't grow carrots.
-]]
+]],
 }
 
 dialog{
@@ -9039,14 +9040,14 @@ help you on your journey. Elixers will revive
 you if you fall in battle- let me increase
 their effectiveness.
 (Elixers now heal 3 extra hearts when used.)
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.npcs.elixer_spirit.2",
   text = [[
 There's nothing else I can do for you.
-]]
+]],
 }
 
 dialog{
@@ -9092,7 +9093,7 @@ EUDICOT:
 It's a deal since I'm giving you a key you'll
 need. Watch out for monsters and stuff.
 They're why the door is locked.
-]]
+]],
 }
 
 dialog{
@@ -9105,7 +9106,7 @@ east of here. Probably also their best gin.
 EUDICOT:
 If you can get in there, you'll probably be
 able to piece together where they went.
-]]
+]],
 }
 
 dialog{
@@ -9133,7 +9134,7 @@ What happened? I thought I'd be able to
 catch the guys who attacked my town.
 EUDICOT:
 Revenge has already been had, I'm afraid.
-]]
+]],
 }
 
 dialog{
@@ -9142,7 +9143,7 @@ dialog{
 EUDICOT:
 I'll just take these bottles with me back
 to the lighthouse...
-]]
+]],
 }
 
 dialog{
@@ -9151,7 +9152,7 @@ dialog{
 PIRATE:
 Are you Carlov? You're not Carlov. Get
 outta here.
-]]
+]],
 }
 
 dialog{
@@ -9168,7 +9169,7 @@ pirate crew on Carlov's behalf.
 PIRATE:
 Huh. Well... That can work. Alright, follow
 me.
-]]
+]],
 }
 
 dialog{
@@ -9185,7 +9186,7 @@ for 80 crowns?
 TILIA:
 $? I'd love some crafty armor
 $? You can keep your threads to yourself
-]]
+]],
 }
 
 dialog{
@@ -9199,7 +9200,7 @@ MERA:
 magnificant. And rare. They grow only in the
 depths of the Puzzlewood. If you bring me one,
 I would craft you marvelous armor!
-]]
+]],
 }
 
 dialog{
@@ -9216,7 +9217,7 @@ crowns, I'll improve your armor.
 TILIA:
 $? I'd love some
 $? Keep your foliage armor to yourself
-]]
+]],
 }
 
 dialog{
@@ -9227,7 +9228,7 @@ Excellent! I can reinforce these areas... do
 some plating here... Done! Oh, do you look
 artisanal!
 (Your defense was increased by 2)
-]]
+]],
 }
 
 dialog{
@@ -9236,7 +9237,7 @@ dialog{
 MERA:
 I'm all out of inspiration. I can't make any more
 armor. My artistic temperament won't allow it.
-]]
+]],
 }
 
 dialog{
@@ -9262,7 +9263,7 @@ NINA:
 sure you can handle it. You want to help me?
 $? Alright
 $? It's not for me
-]]
+]],
 }
 
 dialog{
@@ -9292,7 +9293,7 @@ NINA:
 that can get you to Tern Marsh, then
 I guess look for pirates to the west and say
 you're here on behalf of Carlov. Go get 'em!
-]]
+]],
 }
 
 dialog{
@@ -9305,7 +9306,7 @@ of my own.
 NINA:
 Hmm, well, I'm sure you'll get 'em. If you
 change your mind come on back.
-]]
+]],
 }
 
 dialog{
@@ -9319,7 +9320,7 @@ NINA:
 Seaweed Rock on the west side of the
 marsh. Tell them to stay away from Carlov-
 if they give you any trouble, beat 'em up!
-]]
+]],
 }
 
 dialog{
@@ -9357,7 +9358,7 @@ NINA:
 Harbor through Tern Marsh. It's a little twisty,
 but it's near the southeast end of the marsh.
 Go get em! And I'll pay you extra!
-]]
+]],
 }
 
 dialog{
@@ -9371,7 +9372,7 @@ NINA:
 way to Ballast Harbor is to travel to the
 southeast end of Tern Marsh, there's a bridge
 to Ballast Harbor there.
-]]
+]],
 }
 
 dialog{
@@ -9390,7 +9391,7 @@ Great to hear I can cross that off my list.
 Here, this is what Carlov paid me to take
 care of the pirates plus a little extra.
 (You received 120 crowns)
-]]
+]],
 }
 
 dialog{
@@ -9400,7 +9401,7 @@ NINA:
 So how's the most helpful member of the
 Volunteer Navy doing? Thanks for helping
 me out.
-]]
+]],
 }
 
 dialog{
@@ -9438,7 +9439,7 @@ NINA:
 Harbor through Tern Marsh. It's a little twisty,
 but it's near the southeast end of the marsh.
 Go get em! And I'll pay you extra!
-]]
+]],
 }
 
 dialog{
@@ -9474,7 +9475,7 @@ figure to the bay if you lit them all. Wouldn't
 it be fun to meet someone who's been lost
 STELLA:
 at sea for a thousand years.
-]]
+]],
 }
 
 dialog{
@@ -9495,7 +9496,7 @@ because it's so confusing. But my friend told
 LUNOS:
 me there's a tomb somewhere in the forest.
 I bet there's ghosts! So cool.
-]]
+]],
 }
 
 dialog{
@@ -9508,7 +9509,7 @@ Can I help you?
 TILIA:
 I don't have time for a drink right now. So
 no, I guess not...
-]]
+]],
 }
 
 dialog{
@@ -9535,7 +9536,7 @@ to ask Jerah. He went up to the Juniper
 Grove... quite a while ago, come to think of
 it. Here, take the key and go check on him.
 (Olin gave you the Juniper Grove Key)
-]]
+]],
 }
 
 dialog{
@@ -9545,7 +9546,7 @@ OLIN:
 Did you go check on Jerah? The path
 to the Juniper Grove starts down by the
 docks.
-]]
+]],
 }
 
 dialog{
@@ -9579,7 +9580,7 @@ JERAH:
 Anyway, I'm going to head back to the
 Distillery. If you want directions again,
 come see me.
-]]
+]],
 }
 
 dialog{
@@ -9592,7 +9593,7 @@ bunch of rocks, and the top-right one has
 JERAH:
 a secret keyhole. You'll have to find the
 key somehow, but that'll get you in.
-]]
+]],
 }
 
 dialog{
@@ -9606,7 +9607,7 @@ JERAH:
 of the Puzzlewood. On the island are a
 bunch of rocks, the top-right one has a
 secret keyhole.
-]]
+]],
 }
 
 dialog{
@@ -9619,7 +9620,7 @@ our local volunteer is super busy?
 TILIA:
 $? Tell me about it
 $? I'm busy too
-]]
+]],
 }
 
 dialog{
@@ -9651,7 +9652,7 @@ open the gate. Thank you for your help.
 
 (You received a key to get to the mushroom
 picking spot)
-]]
+]],
 }
 
 dialog{
@@ -9665,7 +9666,7 @@ ROHIT:
 is up some stairs and across a bridge.
 There's a sign there to guide you when
 you're close.
-]]
+]],
 }
 
 dialog{
@@ -9687,7 +9688,7 @@ ROHIT:
 look around for more clues and find out who
 put the bait there? I don't want to assume,
 but it seems like sabotage. I'll pay extra.
-]]
+]],
 }
 
 dialog{
@@ -9701,7 +9702,7 @@ ROHIT:
 for more clues and try to figure out who it
 was? I don't want to call names, but this
 seems like sabotage.
-]]
+]],
 }
 
 dialog{
@@ -9727,7 +9728,7 @@ ROHIT:
 He's given us trouble before. Why don't you
 go down and confront him? He's on the north
 end of Ballast Harbor.
-]]
+]],
 }
 
 dialog{
@@ -9737,7 +9738,7 @@ ROHIT:
 Can you go confront Michael the Mighty
 Mead Maker about the bait at our mushroom
 spot? I'm sure it was him.
-]]
+]],
 }
 
 dialog{
@@ -9760,7 +9761,7 @@ captured a fire spitting- well, anyway, I owe
 you something for all your help. Here you
 are.
 (You received 110 crowns)
-]]
+]],
 }
 
 dialog{
@@ -9774,7 +9775,7 @@ ROHIT:
 on Limestone Island. I hope you don't mind,
 but I've started sending her shipments of
 Briarwood Gin to help you kids out.
-]]
+]],
 }
 
 dialog{
@@ -9785,7 +9786,7 @@ town? There's suposedly some spirit deep
 in the woods that can teach people to run
 really quickly. Makes me wonder, why is
 that your thing, forest spirit? Running?
-]]
+]],
 }
 
 dialog{
@@ -9797,7 +9798,7 @@ statues or... Well, there's these stone figures.
 They're called the Silent People.
 Nobody knows what they are or where they
 came from.
-]]
+]],
 }
 
 dialog{
@@ -9808,7 +9809,7 @@ mushroom spot up in the woods. Except
 I hear it's been overrun by monsters. Bet if
 you were handy with a sword you could
 make a few crowns taking care of that.
-]]
+]],
 }
 
 dialog{
@@ -9820,7 +9821,7 @@ when he was killed by the Sea King. It's
 pretty cool, but most tourists are just
 interested in Briarwood Distillery, which
 in the Northwest corner of town.
-]]
+]],
 }
 
 dialog{
@@ -9830,7 +9831,7 @@ A new face in Yarrowmouth. Did you come
 to check out the Distillery in the northwest?
 Well, have a look around. I have some items
 that might come in handy for you.
-]]
+]],
 }
 
 dialog{
@@ -9838,7 +9839,7 @@ dialog{
   text = [[
 TILIA:
 Wait, what!? Is this seriously an ambush?
-]]
+]],
 }
 
 dialog{
@@ -9846,14 +9847,14 @@ dialog{
   text = [[
 TILIA:
 What? Is this someone's idea of a trap?
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.observations.broken_bird.1",
   text = [[
 This statue seems to be missing its beak.
-]]
+]],
 }
 
 dialog{
@@ -9863,7 +9864,7 @@ This statue seems to be missing its beak.
 Put the stone beak you found in its place?
 $? Repair it
 $? Leave it
-]]
+]],
 }
 
 dialog{
@@ -9872,7 +9873,7 @@ dialog{
 Huh, monster bait. Wonder who left this
 here, it's probably attracting the monsters
 to this area.
-]]
+]],
 }
 
 dialog{
@@ -9905,7 +9906,7 @@ the pirates out. I'd better go to Oakhaven
 TILIA:
 and look for this Captain Thyme guy, get
 him to tell me where my dad went.
-]]
+]],
 }
 
 dialog{
@@ -9914,7 +9915,7 @@ dialog{
 Looks like someone hastily dropped a mug
 of ale on the floor. There's even still a bit
 inside.
-]]
+]],
 }
 
 dialog{
@@ -9923,7 +9924,7 @@ dialog{
 TILIA:
 Isn't this the Hourglass Pirates' fort? Where
 is everyone?...
-]]
+]],
 }
 
 dialog{
@@ -9933,7 +9934,7 @@ TILIA:
 It's really dusty down here. It doesn't look
 like anyone's been here in a while...
 Where did those pirates go!?
-]]
+]],
 }
 
 dialog{
@@ -9946,7 +9947,7 @@ piece together, its coast would look like
 this. Recognize it?''
 ...There's a chart of Goatshead Harbor
 attached.
-]]
+]],
 }
 
 dialog{
@@ -9956,7 +9957,7 @@ There's a half finished letter here, someone
 was writing to the Pirate Council asking for
 more explosives. Apparently they needed
 extra to break into some ruins.
-]]
+]],
 }
 
 dialog{
@@ -9970,7 +9971,7 @@ trip to Spruce Head was successful, but it
 seems like it's the last amulet. Everyone
 might have to go in on one trip whenever we
 discover the Isle's location.
-]]
+]],
 }
 
 dialog{
@@ -9984,7 +9985,7 @@ Yarrowmouth - all sites searched
 Snapmast Reef - all sites searched
 ... there's some other islands listed, but it's
 all fairly inscrutable.
-]]
+]],
 }
 
 dialog{
@@ -9994,7 +9995,7 @@ Lighthouse closed for a bit. Happened
 across some free drinks. Let me know if
 it goes out.
 -Eudicot
-]]
+]],
 }
 
 dialog{
@@ -10004,7 +10005,7 @@ TILIA:
 That seems like all of the monsters, but is
 that monster bait over there? Who would've
 wanted monsters at the mushroom spot?
-]]
+]],
 }
 
 dialog{
@@ -10014,14 +10015,14 @@ There's several boxes of monster bait over
 here. It looks like someone was trying to
 lure monsters here on purpose. The bait...
 is kind of sticky?
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.observations.mushroom_spot.3",
   text = [[
 It's a beehive.
-]]
+]],
 }
 
 dialog{
@@ -10029,7 +10030,7 @@ dialog{
   text = [[
 There's a barrel with an M on it. The
 outside is kind of sticky.
-]]
+]],
 }
 
 dialog{
@@ -10037,7 +10038,7 @@ dialog{
   text = [[
 There's monster bait stored here. It's a
 little sticky and smells like honey.
-]]
+]],
 }
 
 dialog{
@@ -10058,14 +10059,14 @@ called Michael. Maybe I should report
 TILIA:
 back to Briarwood Distillery, they might
 know who Michael is.
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.observations.secret_switch.1",
   text = [[
 There's a secret keyhole here.
-]]
+]],
 }
 
 dialog{
@@ -10075,21 +10076,21 @@ There's a secret keyhole here. Try the
 key you got from the chart salesman?
 $? Yes
 $? No
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.signs.distillery",
   text = [[
 Briarwood Distillery
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.signs.juniper_grove",
   text = [[
 Path to Juniper Grove
-]]
+]],
 }
 
 dialog{
@@ -10098,7 +10099,7 @@ dialog{
 North - The Puzzlewood
 South - Yarrow Lighthouse
 East - Kingsdown Isle, Tern Marsh
-]]
+]],
 }
 
 dialog{
@@ -10107,14 +10108,14 @@ dialog{
 West - Road to Puzzlewood
 East - Kingsdown Isle
 South - Tern Marsh, Road to Ballast Harbor
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.signs.lighthouse",
   text = [[
 Yarrow Lighthouse
-]]
+]],
 }
 
 dialog{
@@ -10124,7 +10125,7 @@ Northwest - Tunnel to Yarrowmouth Village
 East - Road to Kingsdown Island, Puzzlewood
 Southeast - Bridge to Ballast Harbor
 West - Seaweed Rock
-]]
+]],
 }
 
 dialog{
@@ -10132,7 +10133,7 @@ dialog{
   text = [[
 South - Ballast Harbor
 West - Tern Marsh
-]]
+]],
 }
 
 dialog{
@@ -10141,14 +10142,14 @@ dialog{
 Briarwood Mushroom Picking Spot
 (Please don't steal our mushrooms)
 (This means you, Michael)
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.signs.nina",
   text = [[
 Yarrowmouth Volunteer Navy Outpost
-]]
+]],
 }
 
 dialog{
@@ -10158,28 +10159,28 @@ Left - Road to Yarrow Lighthouse and
 Kingsdown Isle
 Right - Mushroom Pickin' Spot
 North - it's confusing. Just explore.
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.signs.puzzlewood_2",
   text = [[
 Right - Road to Naerreturn Bay
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.signs.puzzlewood_3",
   text = [[
 East - Briarwood Mushroom Pickin' Spot
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.signs.shop",
   text = [[
 Yarrowmouth General Store
-]]
+]],
 }
 
 dialog{
@@ -10188,28 +10189,28 @@ dialog{
 East - The Puzzlewood
 (Roads to Yarrow Lighthouse, Kingsdown Isle,
 Naerreturn Bay are all through Puzzlewood)
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.signs.village_2",
   text = [[
 Yarrowmouth Village
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.signs.village_3",
   text = [[
 Tunnel to Tern Marsh
-]]
+]],
 }
 
 dialog{
   id = "_yarrowmouth.signs.village_blacksmith",
   text = [[
 Blacksmith and Armorer
-]]
+]],
 }
 
 dialog{
@@ -10218,7 +10219,7 @@ dialog{
 Look, I'll help you out this time but if you
 run out of arrows in the real game you'll have
 to deal with it another way.
-]]
+]],
 }
 
 dialog{
@@ -10227,7 +10228,7 @@ dialog{
 I'm the kind of guy who hands out arrows if
 you run out. But you don't have a bow, so
 like, what are you expecting here? Skedaddle.
-]]
+]],
 }
 
 dialog{
@@ -10236,7 +10237,7 @@ dialog{
 Does it make sense to be a blacksmith in such
 an inaccessible location? Not really. But
 don't look into it and I'll temper your sword.
-]]
+]],
 }
 
 dialog{
@@ -10247,7 +10248,7 @@ Hemlock Island Ruins
 
 
 South to East Verne Island
-]]
+]],
 }
 
 dialog{
@@ -10261,7 +10262,7 @@ South to east Verne Island
 Fast travel?
      $? Yes
      $? No
-]]
+]],
 }
 
 dialog{
@@ -10272,7 +10273,7 @@ East Verne Island
 
 
 East to Hemlock Island
-]]
+]],
 }
 
 dialog{
@@ -10286,7 +10287,28 @@ East to Hemlock Island
 Fast travel?
      $? Yes
      $? No
-]]
+]],
+}
+
+dialog{
+  id = "quest.main.hazel",
+  title = "The Trail Warms Up",
+  text = [[
+Capt'n Thyme ran to Oakhaven
+@Investigate Oakhaven
+@Search town for Hazel
+@!Try the Hornwart inn
+@!Search the library
+@!Hazel was going to meet
+!pirates at the port
+@Hazel's in the governor's
+secret archives.
+!There's a secret tunnel
+!on Marblecliff Mountain.
+!Head east from the ruins.
+@Meet Hazel back at the inn.
+  
+]],
 }
 
 dialog{
@@ -10304,7 +10326,7 @@ the Hourglass Crew is.
 !but you'll need a key...
 @Find the pirates!
   
-]]
+]],
 }
 
 dialog{
@@ -10325,7 +10347,7 @@ key.
 !That's not much to go on.
 !Maybe try other leads.
   
-]]
+]],
 }
 
 dialog{
@@ -10341,7 +10363,7 @@ the secret stash
 @Return the whisky to
 your dad
   
-]]
+]],
 }
 
 dialog{
@@ -10354,7 +10376,65 @@ ride to Goatshead Harbor.
 @Investigate the Sodden
 Cormorant Tavern.
   
-]]
+]],
+}
+
+dialog{
+  id = "quest.main.monkshood",
+  title = "Tiresome Herbs",
+  text = [[
+To sneak into Fort Crow,
+you'll need to make some
+sleeping draught.
+@Gather monkshood petals
+!-Look in the northwest
+!part of Marblecliff
+!mountain, near dangerous
+!plants
+@Bring the monkshood petals
+to the apothecary 
+    
+]],
+}
+
+dialog{
+  id = "quest.main.pirate_fort",
+  title = "The Pirate Fort",
+  text = [[
+Captin Thyme is hiding at
+Fort Crow. Find a way inside
+to question him.
+@Speak with Morus
+!He's a volunteer navyman
+!who's usually at the
+!Salamander Heartache saloon
+@Get sleeping potion from the
+town apothecary
+@!Return to Morus
+@Find the pirates' ale
+shipment and spike it.
+!Look for a barrel marked
+!with a star
+@Sneak into Fort Crow while
+the pirates are asleep
+@Find Captain Thyme
+@Bring the pirates' chart
+back to Morus to look at.
+    
+]],
+}
+
+dialog{
+  id = "quest.main.snapmast",
+  title = "The Hideout",
+  text = [[
+You've found the location of
+the Pirate Council's hideout
+@Meet Morus at Oakhaven Port
+@Search for the Pirate
+Council's hideout
+    
+]],
 }
 
 dialog{
@@ -10372,26 +10452,22 @@ Distillery
 !The distillery is on
 !Yarrowmouth Island
   
-]]
+]],
 }
 
 dialog{
-  id = "quest.main.hazel",
-  title = "The Trail Warms Up",
+  id = "quest.main.tidal_starfruit",
+  title = "A Tidy Starnut?",
   text = [[
-Capt'n Thyme ran to Oakhaven
-@Investigate Oakhaven
-@Search town for Hazel
-@!She's staying at
-Hornwart inn
-;
-@!Hazel seems to have
-spent a lots of time
-at the library.
-;
-@She was meeting pirates
-at the port
-  ]]
+Hazel needs a tiny Starfood
+or something to make an
+amulet to catch the pirates.
+@Find a mangrove thicket
+@!Look southwest of town
+!Around Gull Rock
+@Return the starfruit to Hazel
+    
+]],
 }
 
 dialog{
@@ -10404,6 +10480,62 @@ been overrun with monsters.
 destroy the monsters
 
 @ Return to the fisherman
-]]
+]],
 }
 
+dialog{
+    id = "quest.side.goatshead.secret_tunnels",
+    title = "Abandoned Tunnels",
+    text = [[
+Some adventurers who know their
+limits want help clearing
+monsters out of some old tunnels.
+@Meet the adventurers
+!-the entrance to the tunnels
+is near the inn.
+@Defeat the big spider
+@Let the adventurers know the
+tunnels have been cleared
+    ]]
+}
+
+dialog{
+    id = "quest.side.goatshead.phantom_squid",
+    title = "Phantom Squid Hunt",
+    text = [[
+The Phantom Squid is manacing
+merchants' records and causing
+economic chaos.
+@Set a trap with Rilesdorf
+!Rilesdorf's shop is by the
+!pier and blacksmith.
+@Track the Phantom Squid!
+@!Return to Eamon, back
+!at the Marchant's Guild
+    ]]
+}
+
+dialog{
+    id = "quest.side.goatshead.phantom_squid_part_2",
+    title = "A Broken Contract",
+    text = [[
+The people of Crabhook are
+trapped in an exploitative
+contract.
+@Find the contract in the
+Merchants' Guild building
+!Aster gave you a note-
+!try showing it to someone
+!who seems spineless.
+@Give Aster the contract
+@!Find a way to match the
+!Barbell Brute's strength-
+!There's something west of
+!town that might help
+@Show the Barbell Brutes
+your immense strength
+!to convince them to stop
+!helping Eamon
+
+    ]]
+}

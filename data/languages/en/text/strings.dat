@@ -29,6 +29,7 @@ text{ key = "menu.quest_log.quests_count", value = "$v1 of $v2 complete" } --dis
 	text{ key = "location.kingsdown_isle", value = "Kingsdown Isle" }
 	text{ key = "location.hourglass_fort", value = "Hourglass Fort" }
 	text{ key = "location.oakhaven", value = "Oakhaven" }
+    text{ key = "location.snapmast", value = "Snapmast Reef" }
 
 --// Button actions
 text{ key = "action.back", value = "Back" } --prompt text indicates the button to exit out of a menu

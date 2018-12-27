@@ -1485,7 +1485,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 crystal_block{
@@ -1504,7 +1504,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 block{
@@ -1514,7 +1514,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 destructible{
@@ -1532,7 +1532,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 block{
@@ -1542,7 +1542,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 tile{

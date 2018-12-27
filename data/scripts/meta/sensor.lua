@@ -16,6 +16,7 @@ function sensor_meta:on_activated()
   -- Sensors named "to_layer_X_sensor" move the hero on that layer.
   -- TODO use a custom entity or a wall to block enemies and thrown items?
   if name:match("^layer_up_sensor") then
+    print("up we go, sensor.lua ln 19")
     local x, y, layer = hero:get_position()
     if layer < map:get_max_layer() then
       hero:set_position(x, y, layer + 1)
@@ -43,14 +44,6 @@ function sensor_meta:on_activated()
     return
   end
 
-  -- Sensors prefixed by "dungeon_room_N" save the exploration state of the
-  -- room "N" of the current dungeon floor.
-  local room = name:match("^dungeon_room_(%d+)")
-  if room ~= nil then
-    game:set_explored_dungeon_room(nil, nil, tonumber(room))
-    self:remove()
-    return
-  end
 
   -- Sensors named "open_quiet_X_sensor" silently open doors prefixed with "X".
   local door_prefix = name:match("^open_quiet_([a-zA-X0-9_]+)_sensor")

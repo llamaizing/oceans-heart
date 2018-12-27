@@ -12,7 +12,10 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
-  game:set_value("quest_meet_juglan_at_pier", 2)
+  if not game:get_value("sodden_cormorant_found_quest") then
+    game:set_value("quest_meet_juglan_at_pier", 2)      ----quest log
+    game:set_value("sodden_cormorant_found_quest", true)
+  end
   if game:get_value("goatshead_tunnels_accepted") == true then
     adventurer_1:set_enabled(false)
     adventurer_2:set_enabled(false)
@@ -54,8 +57,8 @@ function leigha:on_interaction()
           function m2:on_finished()
             game:start_dialog("_goatshead.npcs.tavern_people.leigha.4", function()
               map:get_hero():unfreeze()
-              sol.audio.play_sound("quest_log")
-              game:start_dialog("_game.quest_log_update")
+              game:set_value("quest_kelpton", 0) --quest log
+              game:set_value("quest_spruce_head", 0) --quest log
             end)
           end
         end)
@@ -64,8 +67,7 @@ function leigha:on_interaction()
       game:set_value("have_ballast_harbor_clue", true)
       game:set_value("have_spruce_clue", true)
       game:set_value("quest_log_a", "a4")
-      game:set_value("quest_kelpton", 0)
-      game:set_value("quest_spruce_head", 0)
+
       game:set_value("quest_log_b", "b1")
     end)
 
@@ -81,8 +83,11 @@ if game:get_value("goatshead_tunnels_accepted") ~= true then
     if answer == 2 then
       game:start_dialog("_goatshead.npcs.tavern_people.adventurers.4", function(answer)
         if answer == 2 then
-          game:start_dialog("_goatshead.npcs.tavern_people.adventurers.5")
-          game:set_value("goatshead_tunnels_accepted", true)
+          game:start_dialog("_goatshead.npcs.tavern_people.adventurers.5", function()
+            game:set_value("goatshead_tunnels_accepted", true)
+            game:set_value("quest_goatshead_secret_tunnels", 0) --quest log update
+            game:start_dialog("_game.quest_log_update")
+          end)
         end
       end)
     end

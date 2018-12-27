@@ -46,6 +46,7 @@ function game_manager:create(file_name)
     --play sound depending on the status
     local sound_name = QUEST_SOUNDS[status]
     if sound_name then sol.audio.play_sound(sound_name) end
+    -- game:start_dialog("_game.quest_log_update")
   end
   
   function game.objectives:on_tasks_cleared()
@@ -63,35 +64,6 @@ function game_manager:create(file_name)
   function game.set_custom_command_effect() end --do nothing
   --end of from llamazings quest log menu
 
-  --Pause Menu
-  --[[
-  function game:on_paused()
-
-    require("scripts/menus/pause_infra")
-    pause_infra:update_game(game)
-    sol.menu.start(game, pause_infra)
-
-  --
-    --save dialog
-    game:start_dialog("_game.pause", function(answer)
-      if answer == 1 then
-        game:set_paused(false)
-      elseif answer == 2 then
-        game:save()
-        sol.audio.play_sound("elixer_upgrade")
-        game:set_paused(false)
-      elseif answer == 3 then
-        sol.main.exit()
-      end
-    end)
-  end --end of on:paused function
-
-  function game:on_unpaused()
-    require("scripts/menus/pause_infra")
-    sol.menu.stop(pause_infra)
-  end
-
-  --]]
 
   ---------------------------------------------KEYBOARD INPUTS-----------------------------
 

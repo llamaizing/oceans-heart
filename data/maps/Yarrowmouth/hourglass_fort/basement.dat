@@ -29195,7 +29195,6 @@ block{
   sprite = "entities/block_statue",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 enemy{
@@ -29522,7 +29521,6 @@ block{
   sprite = "entities/block_statue",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 enemy{
@@ -29540,7 +29538,6 @@ block{
   sprite = "entities/block_statue",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 enemy{
@@ -30800,7 +30797,6 @@ block{
   sprite = "entities/block_statue",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 block{
@@ -30810,7 +30806,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 block{
@@ -30820,7 +30816,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 enemy{

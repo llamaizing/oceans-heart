@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("westoak_tollbridge_switch_activated") == true then
     for tile in map:get_entities("tollbridge_") do
       tile:set_enabled(true)
@@ -19,7 +19,7 @@ function map:on_started()
     paytollbridge_sensor:set_enabled(false)
   end
 
-end
+end)
 
 function paytollbridge_sensor:on_activated()
   game:start_dialog("_oakhaven.npcs.westoak.tollbridge.1", function(answer)

@@ -38,11 +38,12 @@ if linden_check ~= true then
     game:start_dialog("_new_limestone_island.npcs.linden.4", function()
       if game:has_item("sword") == true then
         game:start_dialog("_new_limestone_island.npcs.linden.7")
+        game:set_value("quest_meet_juglan_at_pier", 0) --quest log
       else
         game:start_dialog("_new_limestone_island.npcs.linden.6")
+        game:set_value("quest_meet_juglan_at_pier", 0) --quest log
       end
       hero:unfreeze()
-      game:set_value("quest_meet_juglan_at_pier", 0)
       game:set_value("linden_dialog_check", true)
     end)
 

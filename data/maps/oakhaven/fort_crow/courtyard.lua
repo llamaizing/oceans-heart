@@ -13,6 +13,7 @@ local game = map:get_game()
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
 
+  if game:get_value("quest_pirate_fort") == 4 then game:set_value("quest_pirate_fort", 5) end
   if game:get_value("fort_crow_furnace_lit") == true then tower_door:set_enabled(false) end
   if game:get_value("fort_crow_furnace_r") == true then
     for entity in map:get_entities("tower_door_steam_b") do entity:set_enabled(true) end

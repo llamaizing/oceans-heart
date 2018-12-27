@@ -2539,15 +2539,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
-  y = 280,
-  width = 16,
-  height = 16,
-  pattern = "188",
-}
-
-tile{
-  layer = 0,
   x = 384,
   y = 344,
   width = 16,
@@ -2589,15 +2580,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "208",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "446",
 }
 
 destination{
@@ -2766,6 +2748,7 @@ npc{
 }
 
 npc{
+  name = "hazel_room_books_3",
   layer = 0,
   x = 488,
   y = 349,
@@ -2775,63 +2758,10 @@ npc{
 }
 
 npc{
-  layer = 0,
-  x = 488,
-  y = 341,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_oakhaven.observations.hazel_books.1",
-}
-
-npc{
-  layer = 0,
-  x = 400,
-  y = 357,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_oakhaven.observations.hazel_books.3",
-}
-
-npc{
-  layer = 0,
-  x = 392,
-  y = 357,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_oakhaven.observations.hazel_books.3",
-}
-
-npc{
-  layer = 0,
-  x = 392,
-  y = 365,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_oakhaven.observations.hazel_books.3",
-}
-
-npc{
-  layer = 0,
-  x = 400,
-  y = 365,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_oakhaven.observations.hazel_books.3",
-}
-
-npc{
+  name = "hazel_room_books_5",
   layer = 0,
   x = 376,
   y = 365,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_oakhaven.observations.hazel_books.4",
-}
-
-npc{
-  layer = 0,
-  x = 376,
-  y = 357,
   direction = 3,
   subtype = 1,
   behavior = "dialog#_oakhaven.observations.hazel_books.4",
@@ -2847,15 +2777,7 @@ sensor{
 }
 
 npc{
-  layer = 0,
-  x = 472,
-  y = 341,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_oakhaven.observations.hazel_books.2",
-}
-
-npc{
+  name = "hazel_room_books_1",
   layer = 0,
   x = 472,
   y = 349,
@@ -2869,10 +2791,10 @@ dynamic_tile{
   layer = 0,
   x = 400,
   y = 344,
-  pattern = "188",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "188",
 }
 
 dynamic_tile{
@@ -2880,10 +2802,102 @@ dynamic_tile{
   layer = 0,
   x = 384,
   y = 344,
-  pattern = "187",
+  enabled_at_start = false,
   width = 16,
   height = 16,
+  pattern = "187",
+}
+
+npc{
+  name = "hazel_room_books_2",
+  layer = 0,
+  x = 472,
+  y = 341,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.observations.hazel_books.2",
+}
+
+npc{
+  name = "hazel_room_books_4",
+  layer = 0,
+  x = 488,
+  y = 341,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.observations.hazel_books.1",
+}
+
+npc{
+  name = "hazel_room_book_5",
+  layer = 0,
+  x = 392,
+  y = 365,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.observations.hazel_books.3",
+}
+
+npc{
+  name = "hazel_room_book_6",
+  layer = 0,
+  x = 408,
+  y = 365,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.observations.hazel_books.3",
+}
+
+npc{
+  name = "hazel_room_books_6",
+  layer = 0,
+  x = 376,
+  y = 357,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.observations.hazel_books.4",
+}
+
+npc{
+  name = "hazel_room_book_7",
+  layer = 0,
+  x = 392,
+  y = 357,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.observations.hazel_books.3",
+}
+
+npc{
+  name = "hazel_room_book_8",
+  layer = 0,
+  x = 408,
+  y = 357,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.observations.hazel_books.3",
+}
+
+dynamic_tile{
+  name = "new_book",
+  layer = 0,
+  x = 416,
+  y = 368,
   enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "446",
+}
+
+dynamic_tile{
+  name = "new_book_5",
+  layer = 0,
+  x = 464,
+  y = 280,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "188",
 }
 
 dynamic_tile{
@@ -2891,10 +2905,10 @@ dynamic_tile{
   layer = 0,
   x = 456,
   y = 288,
-  pattern = "189",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "189",
 }
 
 npc{
@@ -3060,20 +3074,22 @@ tile{
   pattern = "210",
 }
 
-tile{
-  layer = 1,
-  x = 416,
-  y = 360,
-  width = 16,
-  height = 8,
-  pattern = "448",
-}
-
 destructible{
   layer = 1,
   x = 376,
   y = 261,
   sprite = "entities/bush_flowers_yellow",
   can_be_cut = true,
+}
+
+dynamic_tile{
+  name = "new_book_4",
+  layer = 1,
+  x = 416,
+  y = 360,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "448",
 }
 

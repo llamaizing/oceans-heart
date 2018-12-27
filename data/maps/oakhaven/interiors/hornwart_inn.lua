@@ -14,8 +14,10 @@ local hero = map:get_hero()
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
   if game:get_value("hornwart_know_hazel") ~= nil then map:open_doors("hazel_door") end
-  if game:get_value("found_hazel") ~= true then hazel:set_enabled(false)
-  else for book in map:get_entities("new_book") do book:set_enabled(true) end
+  if game:get_value("found_hazel") ~= true then
+    hazel:set_enabled(false)
+  else
+    for book in map:get_entities("new_book") do book:set_enabled(true) end
   end
 
 end
@@ -34,8 +36,14 @@ function beaufort:on_interaction()
 end
 
 function hazel_room_sensor:on_activated()
-  game:set_value("visited_hazel_room", true)
+  if game:get_value("hornwart_entered_hazel_room_once_already") == true then
+    game:set_value("visited_hazel_room", true)
+    game:set_value("quest_hazel", 3) --quest log
+    game:set_value("hornwart_entered_hazel_room_once_already", true)
+  end
 end
+
+
 
 function hazel:on_interaction()
 
@@ -44,40 +52,41 @@ function hazel:on_interaction()
   end
 
 
-  if game:get_value("hazel_counter") == nil then
-  --first time speaking to Hazel here
+  if game:get_value("hazel_counter") == nil then --first time speaking to hazel at inn
     game:set_value("grover_counter", 2)
-    if game:has_item("tidal_starfruit") then
-      --you have the fruit already for some reason
+
+    --you have the fruit already for some reason
+    if game:has_item("tidal_starfruit") then 
       game:start_dialog("_oakhaven.npcs.hazel.inn.1havefruit", function()
-        game:start_dialog("_game.quest_log_update")
-        sol.audio.play_sound("quest_log")
+        game:set_value("quest_tidal_starfruit", 3) --quest log, starfruit quest complete
+        game:set_value("quest_hazel", 7) --end hazel quest log
         game:set_value("quest_log_a", "a14.5")
+        game:set_value("hazel_counter", 2)
       end)
-      game:set_value("hazel_counter", 2)
     else
-      --normal sequence
+
+      --normal sequence, didn't get fruit yet
       game:start_dialog("_oakhaven.npcs.hazel.inn.1", function()
         game:start_dialog("_game.quest_log_update")
-        sol.audio.play_sound("quest_log")
+        game:set_value("quest_hazel", 7) -- quest log, end hazel quest
+        game:set_value("quest_tidal_starfruit", 0) --quest log
         game:set_value("quest_log_a", "a14")
+        game:set_value("hazel_counter", 1)
       end) --end of dialog callback function
-      game:set_value("hazel_counter", 1)
     end
 
 
-  elseif game:get_value("hazel_counter") == 1 then
-  --go get the starfruit
+  elseif game:get_value("hazel_counter") == 1 then --go get the starfruit
     game:start_dialog("_oakhaven.npcs.hazel.inn.2")
 
-  elseif game:get_value("hazel_counter") == 2 then
-  --have the starfruit, ready to make amulet
+  elseif game:get_value("hazel_counter") == 2 then --have the starfruit, ready to make amulet
+    game:set_value("quest_tidal_starfruit", 3) --quest log, finished starfruit quest
     game:start_dialog("_oakhaven.npcs.hazel.inn.3bringfruit", function()
       game:set_value("morus_available", true)
       game:set_value("grover_counter", 3)
       hero:start_treasure("amulet", 1, "have_amulet", function()
         game:start_dialog("_game.quest_log_update")
-        sol.audio.play_sound("quest_log")
+        game:set_value("quest_pirate_fort", 0) --quest log, start Morus quest
         game:set_value("quest_log_a", "a15")
         game:set_value("quest_log_b", "b4")
       end) --end of treasure callback function

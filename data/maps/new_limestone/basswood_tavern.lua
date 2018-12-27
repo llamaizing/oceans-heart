@@ -32,9 +32,8 @@ if dad_counter == nil then
       game:set_value("linden_intro_dialog", true)
       hero:unfreeze()
       game:set_value("dad_dialog_counter_tavern", 1)
-      game:set_value("quest_whisky_for_juglan_phase", 0)
+      game:set_value("quest_whisky_for_juglan_phase", 0) --quest log
       game:start_dialog("_game.quest_log_update")
-      sol.audio.play_sound("quest_log")
       end)
   end)
 end

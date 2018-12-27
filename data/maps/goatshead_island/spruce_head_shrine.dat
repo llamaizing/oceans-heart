@@ -35048,7 +35048,7 @@ block{
   sprite = "entities/block_crate",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 tile{
@@ -62300,7 +62300,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 wall{

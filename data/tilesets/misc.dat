@@ -1,0 +1,11 @@
+background_color{ 255, 255, 255 }
+tile_pattern{
+  id = "invisible_stairs",
+  ground = "ladder",
+  default_layer = 1,
+  x = 16,
+  y = 0,
+  width = 8,
+  height = 8,
+}
+

@@ -42,8 +42,8 @@ end
 
 function mallow:on_interaction()
   game:set_value("quest_log_a", "a2")
-  game:set_value("quest_whisky_for_juglan_phase", 2)
   game:start_dialog("_new_limestone_island.npcs.mallow.3", function ()
+    game:set_value("quest_whisky_for_juglan_phase", 2) --quest log
     timeskip_warp:set_enabled(true)
 
   end)

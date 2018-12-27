@@ -16,7 +16,7 @@ text{
 	id = "text.location",
 	font = "proggy/ProggyTinySZ",
 	font_size = 16,
-	font_color = {255, 255, 0}, --yellow
+	font_color = {166, 166, 166}, --grey
 	--shadow_color = "brown",
 	horizontal_alignment = "right",
 }

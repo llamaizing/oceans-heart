@@ -169,8 +169,29 @@ main{
 	location = "location.oakhaven"
 }
 
+main{
+    dialog_id = "quest.main.tidal_starfruit",
+    calc_phase = "quest_tidal_starfruit",
+    location = "location.oakhaven"
+}
 
+main{
+    dialog_id = "quest.main.pirate_fort",
+    calc_phase = "quest_pirate_fort",
+    location = "location.oakhaven"
+}
 
+main{
+    dialog_id = "quest.main.snapmast",
+    calc_phase = "quest_snapmast",
+    location = "location.snapmast"
+}
+
+main{
+    dialog_id = "quest.main.monkshood",
+    calc_phase = "quest_monkshood",
+    location = "location.oakhaven"
+}
 
 
 
@@ -178,4 +199,22 @@ side{
 	dialog_id = "quest.test13",
 	calc_phase = "quest_test13",
 	location = "location.goatshead_island"
+}
+
+side{
+    dialog_id = "quest.side.goatshead.secret_tunnels",
+    calc_phase = "quest_goatshead_secret_tunnels",
+    location = "location.goatshead_harbor"
+}
+
+side{
+    dialog_id = "quest.side.goatshead.phantom_squid",
+    calc_phase = "quest_phantom_squid",
+    location = "location.goatshead_harbor"
+}
+
+side{
+    dialog_id = "quest.side.goatshead.phantom_squid_part_2",
+    calc_phase = "quest_phantom_squid_contracts",
+    location = "location.goatshead_harbor"
 }

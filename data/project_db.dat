@@ -211,6 +211,7 @@ tileset{ id = "cave_2", description = "cave-mine" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
 tileset{ id = "indoors_stone", description = "indoors - stone" }
 tileset{ id = "light_world", description = "Light World" }
+tileset{ id = "misc", description = "misc tiles" }
 tileset{ id = "oceanheart_outdoors_1", description = "Overworld" }
 tileset{ id = "oceanheart_outdoors_spring", description = "Overworld-Spring" }
 tileset{ id = "overworld_oakhaven", description = "Overworld-Oakhaven" }
@@ -1269,4 +1270,5 @@ font{ id = "pixolde/Pixolde", description = "pixolde/Pixolde" }
 font{ id = "pixolde/Pixolde-Bold", description = "pixolde/Pixolde-Bold" }
 font{ id = "proggy/ProggyTinySZ", description = "proggy/ProggyTinySZ" }
 font{ id = "white_digits", description = "White digits" }
+
 

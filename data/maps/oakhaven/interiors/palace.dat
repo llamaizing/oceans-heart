@@ -4490,6 +4490,69 @@ tile{
   pattern = "188",
 }
 
+tile{
+  layer = 0,
+  x = 464,
+  y = 648,
+  width = 8,
+  height = 24,
+  pattern = "218",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 648,
+  width = 8,
+  height = 24,
+  pattern = "217",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 648,
+  width = 16,
+  height = 24,
+  pattern = "219",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "446",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 648,
+  width = 16,
+  height = 16,
+  pattern = "188",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 584,
+  width = 16,
+  height = 16,
+  pattern = "445",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "446",
+}
+
 separator{
   layer = 0,
   x = 312,
@@ -4712,9 +4775,9 @@ sensor{
   name = "hazel_sensor",
   layer = 0,
   x = 392,
-  y = 637,
+  y = 669,
   width = 16,
-  height = 64,
+  height = 32,
 }
 
 npc{
@@ -4751,7 +4814,6 @@ block{
   sprite = "entities/chairL",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 block{
@@ -4761,7 +4823,6 @@ block{
   sprite = "entities/chairL",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 block{
@@ -4771,7 +4832,6 @@ block{
   sprite = "entities/chairR",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 tile{
@@ -5591,6 +5651,33 @@ tile{
   width = 16,
   height = 8,
   pattern = "191",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 664,
+  width = 16,
+  height = 8,
+  pattern = "448",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 576,
+  width = 16,
+  height = 8,
+  pattern = "447",
+}
+
+tile{
+  layer = 1,
+  x = 376,
+  y = 632,
+  width = 16,
+  height = 8,
+  pattern = "448",
 }
 
 destructible{

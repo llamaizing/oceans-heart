@@ -17,9 +17,8 @@ function map:on_started()
 end
 
 function whisky:on_interaction()
-    game:set_value("quest_whisky_for_juglan_phase", 1)
+    game:set_value("quest_whisky_for_juglan_phase", 1) --quest log
     game:start_dialog("_game.quest_log_update")
-    sol.audio.play_sound("quest_log")
     whisky:set_enabled(false)
 
 end
