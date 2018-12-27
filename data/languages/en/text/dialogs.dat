@@ -10550,6 +10550,28 @@ tunnels have been cleared
 }
 
 dialog{
+    id = "quest.side.crabhook.monster",
+    title = "The Shoal Beast",
+    text = [[
+A monster has been attacking
+fisherman from Crabhook
+@!Speak to fishermen to find
+!out where the monster is.
+@!Arni was attacked recently,
+!ask him where.
+@Search Badger Shoal
+!The monster was last seen
+!near some rocks, by a cliff
+!with two spruce trees when
+!Arni was fishing with
+!monster bait
+@Return to Danley to get paid
+!he's probably still at the
+!tavern in Crabhook
+    ]]
+}
+
+dialog{
   id = "quest.test13",
   title = "A Carrot Cache",
   text = [[

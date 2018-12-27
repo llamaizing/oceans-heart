@@ -25,16 +25,20 @@ end
 
 
 function danley:on_interaction()
-  --first conversation
+  --if you already killed the monster without prompting:
   if game:get_value("danley_convo_counter") == "special" then
     game:start_dialog("_goatshead.npcs.crabhook.tavern.danley.defeated_first", function() game:add_money(80) end)
     game:set_value("danley_convo_counter", 3)
+  --if you haven't talked to danley before
   elseif game:get_value("danley_convo_counter") == nil then
     game:start_dialog("_goatshead.npcs.crabhook.tavern.danley.1", function(answer)
       if answer == 2 then
-        game:start_dialog("_goatshead.npcs.crabhook.tavern.danley.2")
-        game:set_value("danley_convo_counter", 1)
-        game:set_value("looking_for_crabhook_monster", true)
+        game:start_dialog("_goatshead.npcs.crabhook.tavern.danley.2", function()
+          game:set_value("danley_convo_counter", 1)
+          game:set_value("looking_for_crabhook_monster", true)
+          game:set_value("quest_crabhook_shoal_monster", 0) --quest log for monster quest started
+          game:start_dialog("_game.quest_log_update")
+        end)
       end
     end)
   elseif game:get_value("danley_convo_counter") == 1 then
@@ -43,6 +47,7 @@ function danley:on_interaction()
   elseif game:get_value("danley_convo_counter") == 2 then
     game:start_dialog("_goatshead.npcs.crabhook.tavern.danley.3", function()
       game:add_money(80)
+      game:set_value("quest_crabhook_shoal_monster", 4) --quest log
       game:set_value("looking_for_crabhook_monster", nil)
       game:set_value("danley_convo_counter", 3)
     end)

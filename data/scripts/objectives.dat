@@ -218,3 +218,9 @@ side{
     calc_phase = "quest_phantom_squid_contracts",
     location = "location.goatshead_harbor"
 }
+
+side{
+    dialog_id = "quest.side.crabhook.monster",
+    calc_phase = "quest_crabhook_shoal_monster",
+    location = "location.crabhook_village"
+}
