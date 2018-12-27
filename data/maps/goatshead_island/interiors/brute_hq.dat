@@ -5586,6 +5586,7 @@ teletransporter{
 }
 
 enemy{
+  name = "guard_enemy_2",
   layer = 0,
   x = 88,
   y = 645,
@@ -5667,6 +5668,7 @@ wall{
 }
 
 enemy{
+  name = "guard_enemy_3",
   layer = 0,
   x = 224,
   y = 565,
@@ -5746,6 +5748,7 @@ enemy{
 }
 
 enemy{
+  name = "guard_enemy_4",
   layer = 0,
   x = 552,
   y = 581,
@@ -5754,6 +5757,7 @@ enemy{
 }
 
 enemy{
+  name = "guard_enemy_1",
   layer = 0,
   x = 416,
   y = 821,

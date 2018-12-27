@@ -61,9 +61,12 @@ function old_fire_lady:on_interaction()
   end
 end
 
+--fisherman who tells you to talk to Arni
 function fishin_guy:on_interaction()
   if game:get_value("looking_for_crabhook_monster") ~= true then
     game:start_dialog("_goatshead.npcs.crabhook.market_people.8")
+    game:set_value("quest_crabhook_shoal_monster", 1) --quest log
+    game:start_dialog("_game.quest_log_update")
   else
     if game:get_value("poplar_coast_menace_state") ~= nil then
       game:start_dialog("_goatshead.npcs.crabhook.market_people.10")

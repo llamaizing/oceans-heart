@@ -21,7 +21,6 @@ end
 
 
 function bait_vase:on_lifting()
-print("bait removed")
 --  hero:freeze()
   sol.timer.start(1200, function()
     hero:unfreeze()
@@ -31,6 +30,11 @@ print("bait removed")
 end
 
 function bait_monster:on_dead()
-  if game:get_value("danley_convo_counter") == nil then game:set_value("danley_convo_counter", "special")
-  else game:set_value("danley_convo_counter", 2) end
+  if game:get_value("danley_convo_counter") == nil then
+    game:set_value("danley_convo_counter", "special")
+  else
+    game:set_value("danley_convo_counter", 2)
+    game:set_value("quest_crabhook_shoal_monster", 3) --quest log
+    game:start_dialog("_game.quest_log_update")
+  end
 end

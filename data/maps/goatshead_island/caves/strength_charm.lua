@@ -29,6 +29,7 @@ function spirit:on_interaction()
       })
       game:set_value("have_oak_charm_obtained", true)
     end)
+    if game:get_value("quest_phantom_squid_contracts") == 2 then game:set_value("quest_phantom_squid_contracts", 3) end
 
   else
     game:start_dialog("_goatshead.npcs.spirits.2")

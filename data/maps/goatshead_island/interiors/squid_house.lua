@@ -46,7 +46,6 @@ function secret_switch:on_interaction()
         --if you already have the contract
         if game:has_item("contract") == true then
           game:start_dialog("_goatshead.npcs.phantom_squid.5andahalf", function()
-            game:set_value("quest_phantom_squid_contracts", 2) --quest log, start part 2 of quest
             game:set_value("accepted_merchant_guild_contracts_quest", true)
             game:set_value("talked_to_eamon", 2)
             game:set_value("goatshead_harbor_footprints_visible", false)            
@@ -55,6 +54,7 @@ function secret_switch:on_interaction()
         else
           game:start_dialog("_goatshead.npcs.phantom_squid.5", function()
             game:set_value("quest_phantom_squid_contracts", 0) --quest log, start part 2 of quest
+            game:start_dialog("_game.quest_log_update")
             game:set_value("accepted_merchant_guild_contracts_quest", true)
             game:set_value("talked_to_eamon", 2)
             game:set_value("goatshead_harbor_footprints_visible", false)
@@ -69,6 +69,7 @@ function secret_switch:on_interaction()
           map:close_doors("front_door")
           game:set_value("goatshead_harbor_footprints_visible", false)
           game:set_value("quest_phantom_squid", 2) --quest log, return to Eamon
+          game:start_dialog("_game.quest_log_update")
         end)
 
       end
@@ -78,8 +79,11 @@ end
 
 --Aster, before beating barbell brutes.
 function aster:on_interaction()
+  --before you've even started the quest. Idk if you can ever see this one:
   if game:get_value("accepted_merchant_guild_contracts_quest") ~= true then
     game:start_dialog("_goatshead.npcs.phantom_squid.2")
+
+  --once you've accepted the quest to help him:
   else
     --see if you have the contract yet
     if game:has_item("contract") ~= true then
@@ -89,10 +93,17 @@ function aster:on_interaction()
       --have contract
       --have you already had this conversation?
       if game:get_value("accepted_barbell_brute_quest") ~= true then
-        game:start_dialog("_goatshead.npcs.phantom_squid.7")
-        game:set_value("accepted_barbell_brute_quest", true)
+        game:start_dialog("_goatshead.npcs.phantom_squid.7", function() --tell tilia about guards
+          game:set_value("accepted_barbell_brute_quest", true)
+          if game:has_item("oak_charm") then
+            game:set_value("quest_phantom_squid_contracts", 3) --quest log, go fight barbell brutes
+          else 
+            game:set_value("quest_phantom_squid_contracts", 2) --quest log, go get oak charm
+          end
+          game:start_dialog("_game.quest_log_update")
+        end)
       else
-        game:start_dialog("_goatshead.npcs.phantom_squid.8")
+        game:start_dialog("_goatshead.npcs.phantom_squid.8") --reiterate, fight guards
       end
 
     end
@@ -104,8 +115,11 @@ end
 --Aster, after beating barbell brutes.
 function aster_2:on_interaction()
   if game:get_value("phantom_squid_quest_completed") ~= true then
-    game:start_dialog("_goatshead.npcs.phantom_squid.9", function() game:add_money(200) end)
-    game:set_value("phantom_squid_quest_completed", true)
+    game:start_dialog("_goatshead.npcs.phantom_squid.9", function()
+      game:add_money(200)
+      game:set_value("phantom_squid_quest_completed", true) 
+      game:set_value("quest_phantom_squid_contracts", 5) --quest log, end of quest
+    end)
   else
     game:start_dialog("_goatshead.npcs.phantom_squid.10")
   end

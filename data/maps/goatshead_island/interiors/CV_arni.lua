@@ -30,6 +30,8 @@ function arni:on_interaction()
     else
       game:start_dialog("_goatshead.npcs.crabhook.arni.2", function()
         game:set_value("talked_to_arni", true)
+        game:set_value("quest_crabhook_shoal_monster", 2) --quest log
+        game:start_dialog("_game.quest_log_update")
       end)
     end
   else
