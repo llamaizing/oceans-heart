@@ -2805,6 +2805,11 @@ how to get people imports from Oakhaven
 for a better price. Sound interesting?
 TILIA:
 Not to me.
+
+
+ASTER:
+Ahaha! Very well. Thank you for your
+help.
 ]],
 }
 
@@ -2831,24 +2836,24 @@ dialog{
   text = [[
 ASTER:
 Well. I suppose I've been caught. I am the
-Phantom Squid. The name is Aster. Before
-you turn me over to the guards, perhaps you
+Phantom Squid. The name is Aster. But
+please listen to me, for just a moment.
 ASTER:
-have heard of Crabhook? It's a fishing village.
-Eamon, the head of the merchants' guild,
-despises the town and its people. He sent
+I'm from the village of Crabhook. It's
+a small fishing town to the north, but
+Eamon despises my people. While we once
 ASTER:
-the town guard there to force them into an
-exploitative contract. They can't sell their
-fish anywhere else or open real shops, and
+traded freely with Goatshead, Eamon
+brought the town guard to Crabhook and
+forced the fishers into awful contracts.
 ASTER:
-they're starving trying to pay the taxes they
-owe. I've been sneaking around, trying to
-find and destroy this contract and free the
+The town is starving trying to pay their
+taxes, while the Merchants' Guild treats
+us like scum. I've been searching offices
 ASTER:
-people of Crabhook Village. If you'd rather
-side with Eamon, you may, but please- help
-me free my village.
+for the contract to try and free my
+people from this false and cruel deal.
+Please, help me free my people.
 TILIA:
 $? I'll side with you
 $? I'm turning you in.
@@ -2867,7 +2872,7 @@ can talk like a hero doesn't make you one.
 
 
 ASTER:
-So be it.
+Fine then.
 ]],
 }
 
@@ -2875,17 +2880,25 @@ dialog{
   id = "_goatshead.npcs.phantom_squid.5",
   text = [[
 TILIA:
-Say I decide to help you out. Where would
-I find this contract?
+Say I decide to help you out. What do
+you need?
 
 ASTER:
-I've searched quite a bit. I'm starting to think
-Eamon is keeping it himself somewhere in
-the Merchants' Guild building. It's guarded
+While we'll have to deal with the town
+guards, first I need to find that
+contract- if I can show it was signed
 ASTER:
-quite well, but I've read through many
-documents and figured out how to forge a
-signature or two. This might help you.
+under threat, it's invalid. Eamon must
+be keeping it in his personal office.
+I've been trying to get in, but to the
+ASTER:
+guards, I just look like I'm from Crabhook.
+As soon as I walk near the building,
+they throw me out. You can obviously
+ASTER:
+get in, though. I've figured out how
+to forge a signature in my search, try
+showing this letter to a guard.
 (You received a threatening note from
 an authoritative source)
 
@@ -2901,13 +2914,17 @@ dialog{
   id = "_goatshead.npcs.phantom_squid.5andahalf",
   text = [[
 TILIA:
-Say I decide to help you out. Where would
-I find this contract?
+Say I decide to help you out. What do
+you need?
 
 ASTER:
-I've searched quite a bit. I'm starting to think
-Eamon is keeping it himself somewhere in
-the Merchants' Guild building. 
+While we'll have to deal with the town
+guards, first I need to find that
+contract- if I can show it was signed
+ASTER:
+under threat, it's invalid. Eamon must
+be keeping it in his personal office...
+ 
 TILIA:
 Wait a second... I think I already found
 the contract you're taking about.
@@ -2925,8 +2942,8 @@ Eamon is holding a contract that exploits the
 people of Crabhook Village somewhere in
 the Guild Headquarters. If we can get our
 ASTER:
-hands on it and destroy it, we can free the
-villagers.
+hands on it and destroy it, we can start
+my plan to free my people.
 ]],
 }
 
@@ -2934,7 +2951,7 @@ dialog{
   id = "_goatshead.npcs.phantom_squid.7",
   text = [[
 ASTER:
-Did you manage to find the contract Eamon
+So you managed to find the contract Eamon
 is using to keep the people of Crabhook on
 the... hook for taxes?
 TILIA:
@@ -2944,11 +2961,11 @@ they have ever held up their end?
 ASTER:
 That's not what it was meant to do. If Eamon
 didn't control the town guard, they never
-would have signed it. In fact, I'm not convinced
+would have signed it. That's why
 ASTER:
-destroying this will help much. As long as
-Eamon can have the guard enfore the terms,
-it might not matter if it exists.
+destroying this is just the first step.
+As long as Eamon can have the guard
+enforce the terms, my people are trapped.
 TILIA:
 You mean the guards will still get the taxes
 one way or another... So we'd have to get
@@ -10471,6 +10488,68 @@ amulet to catch the pirates.
 }
 
 dialog{
+  id = "quest.side.goatshead.phantom_squid",
+  title = "Phantom Squid Hunt",
+  text = [[
+The Phantom Squid is manacing
+merchants' records and causing
+economic chaos.
+@Set a trap with Rilesdorf
+!Rilesdorf's shop is by the
+!pier and blacksmith.
+@Track the Phantom Squid!
+@!Return to Eamon, back
+!at the Marchant's Guild
+    
+]],
+}
+
+dialog{
+  id = "quest.side.goatshead.phantom_squid_part_2",
+  title = "A Broken Contract",
+  text = [[
+The people of Crabhook are
+trapped in an exploitative
+contract.
+@Find the contract in the
+Merchants' Guild building
+!Aster gave you a note-
+!try showing it to someone
+!who seems spineless.
+@Give Aster the contract
+@!Find a way to match the
+!Barbell Brute's strength-
+!There's a treasure west of
+!town that might help
+@Show the Barbell Brutes
+your immense strength
+!to convince them to stop
+!helping Eamon. They live
+!on the north street in town
+@Check in with Aster
+
+    
+]],
+}
+
+dialog{
+  id = "quest.side.goatshead.secret_tunnels",
+  title = "Abandoned Tunnels",
+  text = [[
+Some adventurers who know their
+limits want help clearing
+monsters out of some old tunnels.
+@Meet the adventurers
+!-the entrance to the tunnels
+is near the inn.
+@Defeat the big spider
+@Let the adventurers know the
+tunnels have been cleared
+    
+]],
+}
+
+dialog{
   id = "quest.test13",
   title = "A Carrot Cache",
   text = [[
@@ -10483,59 +10562,3 @@ destroy the monsters
 ]],
 }
 
-dialog{
-    id = "quest.side.goatshead.secret_tunnels",
-    title = "Abandoned Tunnels",
-    text = [[
-Some adventurers who know their
-limits want help clearing
-monsters out of some old tunnels.
-@Meet the adventurers
-!-the entrance to the tunnels
-is near the inn.
-@Defeat the big spider
-@Let the adventurers know the
-tunnels have been cleared
-    ]]
-}
-
-dialog{
-    id = "quest.side.goatshead.phantom_squid",
-    title = "Phantom Squid Hunt",
-    text = [[
-The Phantom Squid is manacing
-merchants' records and causing
-economic chaos.
-@Set a trap with Rilesdorf
-!Rilesdorf's shop is by the
-!pier and blacksmith.
-@Track the Phantom Squid!
-@!Return to Eamon, back
-!at the Marchant's Guild
-    ]]
-}
-
-dialog{
-    id = "quest.side.goatshead.phantom_squid_part_2",
-    title = "A Broken Contract",
-    text = [[
-The people of Crabhook are
-trapped in an exploitative
-contract.
-@Find the contract in the
-Merchants' Guild building
-!Aster gave you a note-
-!try showing it to someone
-!who seems spineless.
-@Give Aster the contract
-@!Find a way to match the
-!Barbell Brute's strength-
-!There's something west of
-!town that might help
-@Show the Barbell Brutes
-your immense strength
-!to convince them to stop
-!helping Eamon
-
-    ]]
-}

@@ -46,9 +46,13 @@ end
 --guard captain
 function guard_captain:on_interaction()
   if game:get_value("barbell_brutes_defeated") ~= true then
-    game:start_dialog("_goatshead.npcs.guards.barrack_guard.5")
-    game:set_value("barbell_brutes_defeated", true)
-    entry_guard:set_enabled(false)
+    for entity in map:get_entities("guard_enemy") do entity:set_enabled(false) end
+    game:start_dialog("_goatshead.npcs.guards.barrack_guard.5", function()
+      game:set_value("barbell_brutes_defeated", true)
+      game:set_value("quest_phantom_squid_contracts", 4) --quest log
+      game:start_dialog("_game.quest_log_update")
+      entry_guard:set_enabled(false)
+    end)
   else
     game:start_dialog("_goatshead.npcs.guards.barrack_guard.6")
   end

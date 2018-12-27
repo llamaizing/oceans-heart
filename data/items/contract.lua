@@ -16,3 +16,7 @@ function item:on_pickable_created(pickable)
 
   -- You can set a particular movement here if you don't like the default one.
 end
+
+function item:on_obtained()
+  if game:get_value("quest_phantom_squid_contracts") then game:set_value("quest_phantom_squid_contracts", 1) end
+end
