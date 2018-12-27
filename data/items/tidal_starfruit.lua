@@ -16,3 +16,7 @@ function item:on_pickable_created(pickable)
 
   -- You can set a particular movement here if you don't like the default one.
 end
+
+function item:on_obtained()
+  game:set_value("quest_tidal_starfruit", 2)
+end

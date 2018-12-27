@@ -21,7 +21,7 @@ end
 
 function talk_to_dad_sensor:on_activated()
 local dad_counter = game:get_value("dad_dialog_counter_tavern")
-if dad_counter == 0 then
+if dad_counter == nil then
   local see_dad_movement = sol.movement.create("target")
   hero:freeze()
   see_dad_movement:set_target(128, 96)
@@ -31,10 +31,9 @@ if dad_counter == 0 then
     game:start_dialog("_new_limestone_island.npcs.mallow.1", function()
       game:set_value("linden_intro_dialog", true)
       hero:unfreeze()
-      game:set_value("dad_dialog_counter_tavern", dad_counter + 1)
-      game:set_value("quest_log_a", "a1")
+      game:set_value("dad_dialog_counter_tavern", 1)
+      game:set_value("quest_whisky_for_juglan_phase", 0) --quest log
       game:start_dialog("_game.quest_log_update")
-      sol.audio.play_sound("quest_log")
       end)
   end)
 end

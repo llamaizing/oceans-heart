@@ -33,10 +33,14 @@ function secret_keyhole:on_interaction()
         block_statue_2:set_enabled(false)
         sol.audio.play_sound("switch")
         sol.audio.play_sound("secret")
-        game:start_dialog("_game.quest_log_update", function() sol.audio.play_sound("quest_log") end)
-        game:set_value("kingsdown_island_unlocked", true)
-        game:set_value("quest_log_a", "a7")
-        game:set_value("quest_log_b", 0)
+        game:start_dialog("_game.quest_log_update", function()
+          game:set_value("kingsdown_island_unlocked", true)
+          game:set_value("quest_log_a", "a7")
+          game:set_value("quest_log_b", 0)
+          game:set_value("quest_hourglass_fort", 2) --quest log
+          game:set_value("quest_kelpton", 3) -- quest log
+        end)
+
       end
     end) --end of answer function
 

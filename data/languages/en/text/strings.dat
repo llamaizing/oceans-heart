@@ -1,29 +1,41 @@
-text{ key = "0", value = "" }
-text{ key = "a1", value = "Get some whisky from \nthe secret stash" }
-text{ key = "a2", value = "Meet Juglan at the pier" }
-text{ key = "a3", value = "Investigate the Sodden \nCormorant Tavern" }
-text{ key = "a4", value = "Explore Spruce Head" }
-text{ key = "a5", value = "Investigate Briarwood \nDistillery" }
-text{ key = "a6", value = "Find a keyhole on \nKingsdown Isle" }
-text{ key = "a7", value = "Find clues in Hourglass \nFort" }
-text{ key = "b1", value = "Find the chart salesman \nin Ballast Harbor" }
-text{ key = "b2", value = "Return the stolen charts" }
-text{ key = "b3", value = "Find a keyhole for \nMallow's Key" }
-text{ key = "a8", value = "Travel to Oakhaven" }
-text{ key = "b4", value = "Find Morus at the \nSalamander Heartache" }
-text{ key = "a9", value = "Search for Hazel in\nOakhaven" }
-text{ key = "a10", value = "Look for Hazel at \nHornwart Inn" }
-text{ key = "a11", value = "Investigate the \nLibrary" }
-text{ key = "a12", value = "Track down the Burglar\nCrew at the port" }
-text{ key = "a13", value = "Find the secret tunnel\non Marblecliff" }
-text{ key = "a13.5", value = "Meet Hazel at her inn" }
-text{ key = "a14", value = "Get a Tidy Starfruit \nfrom a mangrove thicket" }
-text{ key = "a14.5", value = "Give Hazel a second to\nget amulet supplies" }
-text{ key = "a15", value = "Look for the \nOcean's Temple" }
-text{ key = "b5", value = "Get sleeping potion\nfrom the apothecary" }
-text{ key = "b6", value = "Find Monkshood on\nMarblecliff Mountain" }
-text{ key = "b7", value = "Meet Morus back at\nthe Saloon" }
-text{ key = "b8", value = "Find the pirates' ale\nin the storehouse" }
-text{ key = "b9", value = "Sneak into Fort Crow" }
-text{ key = "b10", value = "Bring the Council's\nHideout Chart to Morus" }
-text{ key = "b11", value = "Sail to Snapmast Reef\nwith Morus" }
+--Llamazing's Quest Log:
+
+--[[ strings.dat	Language: EN	17 Nov 2018
+
+	This data file lists string key/value pairs for the purposes of english localization.
+]]
+
+text{ key = "player_name", value = "Tilia" }
+
+--## Menus ##--
+
+--// Quest Log Menu
+text{ key = "menu.quest_log.title", value = "Quest Log" } --title at top of quest log menu
+text{ key = "menu.quest_log.main_quests_tab", value = "Main\nQuests" } --name of Main Quests tab (2 lines), 6 char max per line
+text{ key = "menu.quest_log.side_quests_tab", value = "Side\nQuests" } --name of Side Quests tab (2 lines), 6 char max per line
+text{ key = "menu.quest_log.no_quests", value = "You have no quests" } --display in description pane when player has no quests
+text{ key = "menu.quest_log.quests_count", value = "$v1 of $v2 complete" } --displays completion rate of quests (for both main & side quests)
+	--$v1: number of quests completed, $v2: total number of quests (20 characters max after value substitutions)
+
+--// Location Names
+--displayed in quest log (18 character max)
+	text{ key = "location.limestone_island", value = "Limestone Island" }
+	text{ key = "location.goatshead_island", value = "Goatshead Island" }
+	text{ key = "location.goatshead_harbor", value = "Goatshead Harbor" }
+	text{ key = "location.spruce_head", value = "Spruce Head" }
+	text{ key = "location.crabhook_village", value = "Crabhook Village" }
+	text{ key = "location.yarrowmouth", value = "Yarrowmouth" }
+	text{ key = "location.ballast_harbor", value = "Ballast Harbor" }
+	text{ key = "location.kingsdown_isle", value = "Kingsdown Isle" }
+	text{ key = "location.hourglass_fort", value = "Hourglass Fort" }
+	text{ key = "location.oakhaven", value = "Oakhaven" }
+    text{ key = "location.snapmast", value = "Snapmast Reef" }
+
+--// Button actions
+text{ key = "action.back", value = "Back" } --prompt text indicates the button to exit out of a menu
+
+
+text{ key = "key1.true", value = "sub 1 is good" }
+text{ key = "key1.false", value = "sub 1 is bad" }
+text{ key = "key2.true", value = "really?" }
+text{ key = "key2.false", value = "I think so" }

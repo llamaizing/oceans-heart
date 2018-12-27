@@ -1352,8 +1352,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven",
-  destination = "from_saloon",
+  destination_map = "goatshead_island/goatshead_harbor",
 }
 
 pickable{
@@ -1857,7 +1856,6 @@ block{
   sprite = "entities/chairL",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 pickable{
@@ -1889,7 +1887,15 @@ block{
   sprite = "entities/chair2R",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
+}
+
+sensor{
+  name = "^layer_up_sensor",
+  layer = 0,
+  x = 56,
+  y = 293,
+  width = 32,
+  height = 16,
 }
 
 tile{
@@ -2052,5 +2058,51 @@ tile{
   width = 32,
   height = 24,
   pattern = "584",
+}
+
+dynamic_tile{
+  name = "^invisible_stairs",
+  layer = 1,
+  x = 48,
+  y = 272,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor",
+  layer = 1,
+  x = 56,
+  y = 301,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 1,
+  x = 40,
+  y = 272,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 80,
+  y = 272,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 

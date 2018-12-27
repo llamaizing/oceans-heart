@@ -9022,7 +9022,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 block{
@@ -9033,7 +9033,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 0,
+  max_moves = 0,
 }
 
 switch{
@@ -9219,7 +9219,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 0,
+  max_moves = 0,
 }
 
 block{
@@ -9230,7 +9230,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 0,
+  max_moves = 0,
 }
 
 tile{

@@ -113,7 +113,7 @@ function map:on_opening_transition_finished()
   if game:get_value("goatshead_opening") ~= true then
     game:start_dialog("_goatshead.npcs.juglan.1", function()
       game:start_dialog("_game.quest_log_update")
-      sol.audio.play_sound("quest_log")
+      game:set_value("quest_meet_juglan_at_pier",1)  --quest log
       game:set_value("quest_log_a", "a3")
       game:set_value("goatshead_opening", true)
     end)
@@ -137,10 +137,12 @@ end
 function upset_fisher:on_interaction()
   if game:get_value("two_eye_rock_shroom_defeated") == nil then
     game:start_dialog("_goatshead.npcs.upset_fisher.1")
+    game:set_value("quest_test13", 0)
   else
     if game:get_value("manly_carrot_man_paid") ~= true then
       game:start_dialog("_goatshead.npcs.upset_fisher.2", function() game:add_money(80) end)
       game:set_value("manly_carrot_man_paid", true)
+      game:set_value("quest_test13", 2)
     else
       game:start_dialog("_goatshead.npcs.upset_fisher.3")
     end

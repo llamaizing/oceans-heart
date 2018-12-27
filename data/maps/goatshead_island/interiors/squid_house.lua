@@ -42,16 +42,23 @@ function secret_switch:on_interaction()
 
       --side with Aster
       if answer == 2 then
+      game:set_value("quest_phantom_squid", 3) --quest log, finish hunt squid quest
+        --if you already have the contract
         if game:has_item("contract") == true then
-          game:start_dialog("_goatshead.npcs.phantom_squid.5andahalf")
-          game:set_value("accepted_merchant_guild_contracts_quest", true)
-          game:set_value("talked_to_eamon", 2)
-          game:set_value("goatshead_harbor_footprints_visible", false)
+          game:start_dialog("_goatshead.npcs.phantom_squid.5andahalf", function()
+            game:set_value("quest_phantom_squid_contracts", 2) --quest log, start part 2 of quest
+            game:set_value("accepted_merchant_guild_contracts_quest", true)
+            game:set_value("talked_to_eamon", 2)
+            game:set_value("goatshead_harbor_footprints_visible", false)            
+          end)
+        --or if you didn't already find the contract:
         else
-          game:start_dialog("_goatshead.npcs.phantom_squid.5")
-          game:set_value("accepted_merchant_guild_contracts_quest", true)
-          game:set_value("talked_to_eamon", 2)
-          game:set_value("goatshead_harbor_footprints_visible", false)
+          game:start_dialog("_goatshead.npcs.phantom_squid.5", function()
+            game:set_value("quest_phantom_squid_contracts", 0) --quest log, start part 2 of quest
+            game:set_value("accepted_merchant_guild_contracts_quest", true)
+            game:set_value("talked_to_eamon", 2)
+            game:set_value("goatshead_harbor_footprints_visible", false)
+          end)
         end
 
       --side with Eamon
@@ -61,6 +68,7 @@ function secret_switch:on_interaction()
           aster_enemy:set_enabled(true)
           map:close_doors("front_door")
           game:set_value("goatshead_harbor_footprints_visible", false)
+          game:set_value("quest_phantom_squid", 2) --quest log, return to Eamon
         end)
 
       end

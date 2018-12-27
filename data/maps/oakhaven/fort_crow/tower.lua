@@ -102,7 +102,7 @@ function chart_npc:on_interaction()
   hideout_chart:set_enabled(false)
   hero:start_treasure("hideout_chart", 1, "found_snapmast_reef_hideout_map", function()
     game:set_value("quest_log_b", "b10")
-    sol.audio.play_sound("quest_log")
+    game:set_value("quest_pirate_fort", 6) --quest log, take chart to morus
     game:set_value("morus_counter", 5)
     hero:teleport("oakhaven/eastoak", "from_fort_crow_front_door", "fade")
   end)

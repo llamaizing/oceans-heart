@@ -15813,7 +15813,6 @@ block{
   sprite = "entities/block_crate",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -15823,7 +15822,6 @@ block{
   sprite = "entities/block_crate",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -15833,7 +15831,6 @@ block{
   sprite = "entities/block_crate",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -15843,7 +15840,6 @@ block{
   sprite = "entities/block_crate",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -15853,7 +15849,6 @@ block{
   sprite = "entities/block_crate",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -15863,7 +15858,6 @@ block{
   sprite = "entities/block_crate",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 block{
@@ -15873,7 +15867,6 @@ block{
   sprite = "entities/block_crate",
   pushable = true,
   pullable = false,
-  maximum_moves = 2,
 }
 
 destination{
@@ -16211,7 +16204,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 block{
@@ -16221,7 +16214,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 block{
@@ -16231,7 +16224,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 block{
@@ -16241,7 +16234,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
-  maximum_moves = 1,
+  max_moves = 1,
 }
 
 npc{

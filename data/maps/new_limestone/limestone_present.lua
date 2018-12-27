@@ -27,6 +27,7 @@ function juglan:on_interaction()
         game:start_dialog("_new_limestone_island.npcs.juglan.first_time_leaving_confirm", function()
           to_goatshead:set_enabled(true)
           game:set_value("left_limestone", true)
+
         end)
       end
     end)

@@ -14,6 +14,7 @@ local game = map:get_game()
 function map:on_started()
   local world = map:get_world()
   game:set_world_rain_mode(world, "storm")
+  if game:get_value("quest_snapmast") == 0 then game:set_value("quest_snapmast", 1) end
 
 end
 

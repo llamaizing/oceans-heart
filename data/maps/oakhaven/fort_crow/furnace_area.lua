@@ -99,6 +99,7 @@ function switch_furnace_r:on_activated()
     sol.audio.play_sound("secret")
     furnace_c:set_enabled(true)
     game:set_value("fort_crow_furnace_lit", true)
+    game:start_dialog("_oakhaven.observations.fort_crow.opening_door")
   end
 end
 function switch_furnace_l:on_activated()
@@ -110,6 +111,7 @@ function switch_furnace_l:on_activated()
     sol.audio.play_sound("secret")
     furnace_c:set_enabled(true)
     game:set_value("fort_crow_furnace_lit", true)
+    game:start_dialog("_oakhaven.observations.fort_crow.opening_door")
   end
 end
 

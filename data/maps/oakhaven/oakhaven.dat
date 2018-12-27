@@ -36384,62 +36384,6 @@ wall{
   stops_projectiles = true,
 }
 
-stairs{
-  layer = 0,
-  x = 272,
-  y = 624,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 288,
-  y = 624,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 304,
-  y = 624,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 760,
-  y = 432,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 824,
-  y = 432,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 776,
-  y = 432,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 808,
-  y = 432,
-  direction = 1,
-  subtype = 4,
-}
-
 destructible{
   layer = 0,
   x = 120,
@@ -36769,22 +36713,6 @@ destructible{
   can_be_cut = true,
 }
 
-stairs{
-  layer = 0,
-  x = 1104,
-  y = 1104,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 1120,
-  y = 1104,
-  direction = 1,
-  subtype = 4,
-}
-
 destination{
   name = "from_bakery",
   layer = 0,
@@ -36878,10 +36806,9 @@ dynamic_tile{
   layer = 0,
   x = 536,
   y = 1184,
-  pattern = "637",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "637",
 }
 
 npc{
@@ -37140,6 +37067,42 @@ npc{
   direction = 3,
   subtype = 0,
   sprite = "npc/poster",
+}
+
+sensor{
+  name = "^layer_up_sensor",
+  layer = 0,
+  x = 280,
+  y = 645,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "^layer_up_sensor_2",
+  layer = 0,
+  x = 1112,
+  y = 1125,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "^layer_up_sensor_5",
+  layer = 0,
+  x = 768,
+  y = 453,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "^layer_up_sensor_6",
+  layer = 0,
+  x = 816,
+  y = 453,
+  width = 32,
+  height = 16,
 }
 
 tile{
@@ -59930,54 +59893,6 @@ tile{
   pattern = "2004",
 }
 
-stairs{
-  layer = 1,
-  x = 1168,
-  y = 912,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 1,
-  x = 1184,
-  y = 912,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 1,
-  x = 824,
-  y = 928,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 1,
-  x = 840,
-  y = 928,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 1,
-  x = 560,
-  y = 416,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 1,
-  x = 576,
-  y = 416,
-  direction = 1,
-  subtype = 4,
-}
-
 destructible{
   layer = 1,
   x = 736,
@@ -60462,6 +60377,217 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/musician_3",
+}
+
+dynamic_tile{
+  name = "^invisible_stairs",
+  layer = 1,
+  x = 272,
+  y = 624,
+  width = 48,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor",
+  layer = 1,
+  x = 280,
+  y = 653,
+  width = 48,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_2",
+  layer = 1,
+  x = 1104,
+  y = 1104,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor_2",
+  layer = 1,
+  x = 1112,
+  y = 1133,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "^layer_up_sensor_3",
+  layer = 1,
+  x = 1176,
+  y = 933,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "^layer_up_sensor_4",
+  layer = 1,
+  x = 832,
+  y = 949,
+  width = 32,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_5",
+  layer = 1,
+  x = 760,
+  y = 432,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor_5",
+  layer = 1,
+  x = 768,
+  y = 461,
+  width = 32,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_6",
+  layer = 1,
+  x = 808,
+  y = 432,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor_6",
+  layer = 1,
+  x = 816,
+  y = 461,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "^layer_up_sensor_7",
+  layer = 1,
+  x = 568,
+  y = 437,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 1,
+  x = 752,
+  y = 432,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 432,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 800,
+  y = 432,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 840,
+  y = 432,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 264,
+  y = 624,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 320,
+  y = 624,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 1096,
+  y = 1104,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 1136,
+  y = 1104,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -78202,10 +78328,9 @@ dynamic_tile{
   layer = 2,
   x = 808,
   y = 816,
-  pattern = "2047",
   width = 16,
   height = 32,
-  enabled_at_start = true,
+  pattern = "2047",
 }
 
 destructible{
@@ -78332,6 +78457,144 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/interiors/sculptor",
   destination = "from_outside",
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_3",
+  layer = 2,
+  x = 1168,
+  y = 912,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor_3",
+  layer = 2,
+  x = 1176,
+  y = 941,
+  width = 32,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_4",
+  layer = 2,
+  x = 824,
+  y = 928,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor_4",
+  layer = 2,
+  x = 832,
+  y = 957,
+  width = 32,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_7",
+  layer = 2,
+  x = 560,
+  y = 416,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor_7",
+  layer = 2,
+  x = 568,
+  y = 445,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 2,
+  x = 552,
+  y = 416,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 2,
+  x = 592,
+  y = 416,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 2,
+  x = 816,
+  y = 928,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 2,
+  x = 856,
+  y = 928,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 2,
+  x = 1160,
+  y = 912,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 2,
+  x = 1200,
+  y = 912,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -80166,9 +80429,9 @@ dynamic_tile{
   layer = 3,
   x = 744,
   y = 720,
-  pattern = "2046",
+  enabled_at_start = false,
   width = 112,
   height = 96,
-  enabled_at_start = false,
+  pattern = "2046",
 }
 

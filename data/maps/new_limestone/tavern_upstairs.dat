@@ -2048,7 +2048,6 @@ block{
   sprite = "entities/chairL",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 block{
@@ -2058,7 +2057,6 @@ block{
   sprite = "entities/chairL",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 sensor{

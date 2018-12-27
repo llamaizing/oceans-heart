@@ -72,7 +72,7 @@ function hazel_sensor:on_activated()
     hero:freeze()
     hero:get_sprite():set_animation("walking")
     local mt = sol.movement.create("path")
-    mt:set_path{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2}
+    mt:set_path{0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,}
     mt:set_speed(80)
     sol.timer.start(map, 1850, function() hero:get_sprite():set_direction(1) end)
     mt:start(hero, function()
@@ -89,7 +89,10 @@ function hazel_sensor:on_activated()
           local hm = sol.movement.create("path")
           hm:set_path{4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4}
           hm:set_speed(90)
-          hm:start(hazel, function() hazel:set_enabled(false) end)
+          hm:start(hazel, function()
+            hazel:set_enabled(false)
+            game:set_value("quest_hazel", 6) --quest log
+          end)
           enemy_guard:set_enabled(true)
           guard_3:set_enabled(false)
           game:set_value("quest_log_a", "a13.5")

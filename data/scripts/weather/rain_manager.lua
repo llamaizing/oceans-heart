@@ -33,15 +33,15 @@ local thunder_sounds = {"thunder1", "thunder2", "thunder3", "thunder_far", "thun
 local rain_speed, storm_speed = 180, 220 -- In pixels per second.
 local drop_min_distance, drop_max_distance = 100, 320
 local rain_drop_delay, storm_drop_delay = 10, 5 -- In milliseconds.
-local lightning_duration = 500 -- In milliseconds.
-local max_lightning_opacity = 190 -- (Opaque = 255).
-local min_lightning_delay, max_lightning_delay = 3000, 15000
+local lightning_duration = 200 -- In milliseconds.
+local max_lightning_opacity = 5 -- (Opaque = 255).
+local min_lightning_delay, max_lightning_delay = 6000, 18000
 local min_thunder_delay, max_thunder_delay = 500, 2500 
 local min_darkness, max_darkness = 60, 200 -- Opacity during storm.
 local current_darkness = 0 -- Opacity (transparent = 0, opaque = 255).
 --local color_darkness = {150, 150, 240} -- Used for full darkness.
 local color_darkness = {150, 150, 140} -- Used for full darkness.
-local max_num_drops_rain, max_num_drops_storm = 100, 300
+local max_num_drops_rain, max_num_drops_storm = 100, 250
 local sx, sy = 0, 0 -- Scrolling shifts for drop positions.
 
 -- Main variables.
@@ -356,7 +356,7 @@ function rain_manager:update_darkness()
   elseif darkness < current_darkness then d = -1 end
   self:stop_timers({"darkness_timer"}) -- Destroy old timer.
   -- Start modifying darkness towards the next value.
-  timers["darkness_timer"] = sol.timer.start(current_game, 15, function()
+  timers["darkness_timer"] = sol.timer.start(current_game, 45, function()
     if dark_surface == nil then return end
     current_darkness = current_darkness + d
     local r = 255 - math.floor(color_darkness[1] * (current_darkness / 255))

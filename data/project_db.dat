@@ -211,6 +211,7 @@ tileset{ id = "cave_2", description = "cave-mine" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
 tileset{ id = "indoors_stone", description = "indoors - stone" }
 tileset{ id = "light_world", description = "Light World" }
+tileset{ id = "misc", description = "misc tiles" }
 tileset{ id = "oceanheart_outdoors_1", description = "Overworld" }
 tileset{ id = "oceanheart_outdoors_spring", description = "Overworld-Spring" }
 tileset{ id = "overworld_oakhaven", description = "Overworld-Oakhaven" }
@@ -220,6 +221,8 @@ tileset{ id = "temple", description = "temple" }
 tileset{ id = "temple_2", description = "Ancient Temple" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
+sprite{ id = "console/cursor", description = "cursor" }
+sprite{ id = "console/icons", description = "icons" }
 sprite{ id = "enemies/bosses/bart", description = "enemies/bosses/bart" }
 sprite{ id = "enemies/bosses/bart_weapon", description = "enemies/bosses/bart_weapon" }
 sprite{ id = "enemies/bosses/blackbeard", description = "Blackbeard" }
@@ -448,6 +451,8 @@ sprite{ id = "hud/bomb_icon", description = "bomb icon" }
 sprite{ id = "hud/gameover_fade", description = "HUD: Game-over fade" }
 sprite{ id = "hud/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "hud/piece_of_heart_icon", description = "Piece of Heart icon" }
+sprite{ id = "menus/arrows", description = "arrows" }
+sprite{ id = "menus/checkmark", description = "checkmark" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
@@ -1041,7 +1046,11 @@ sound{ id = "picked_item", description = "picked_item" }
 sound{ id = "picked_rupee", description = "picked_rupee" }
 sound{ id = "picked_small_key", description = "picked_small_key" }
 sound{ id = "piece_of_heart", description = "piece_of_heart" }
+sound{ id = "quest_advance", description = "quest_advance" }
+sound{ id = "quest_complete", description = "quest_complete" }
 sound{ id = "quest_log", description = "Quest Log" }
+sound{ id = "quest_started", description = "quest_started" }
+sound{ id = "quest_subtask", description = "quest_subtask" }
 sound{ id = "running", description = "running" }
 sound{ id = "running_obstacle", description = "running_obstacle" }
 sound{ id = "rupee_counter", description = "rupee_counter" }
@@ -1257,5 +1266,9 @@ language{ id = "en/images", description = "en/images" }
 font{ id = "alttp", description = "alttp" }
 font{ id = "green_digits", description = "Green digits" }
 font{ id = "oceansfont", description = "oceansfont" }
+font{ id = "pixolde/Pixolde", description = "pixolde/Pixolde" }
+font{ id = "pixolde/Pixolde-Bold", description = "pixolde/Pixolde-Bold" }
+font{ id = "proggy/ProggyTinySZ", description = "proggy/ProggyTinySZ" }
 font{ id = "white_digits", description = "White digits" }
+
 

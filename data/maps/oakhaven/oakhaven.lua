@@ -14,7 +14,8 @@ local hero = map:get_hero()
 local trumpet_player
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
+
   if game:get_value("hazel_is_here") == true then cervio:set_enabled(false) end
   if game:get_value("salamander_heartache_storehouse_door_open") ~= nil then bar_storehouse_door:set_enabled(false) end
   if game:get_value("oakhaven_aubrey_unlocked") == true then
@@ -33,25 +34,36 @@ function map:on_started()
     musician_2:set_enabled(false)
   end
 
-end
+end)
 
 
 
 --NPCS---------------------
 
+--GROVER
 function grover:on_interaction()
+  --looking for Hazel advice
   if game:get_value("grover_counter") == nil then
-    game:start_dialog("_oakhaven.npcs.market.grover.1")
-    game:set_value("grover_counter", 1)
+    game:start_dialog("_oakhaven.npcs.market.grover.1", function()
+      game:set_value("quest_hazel", 2)  -- quest log, look at inn
+      game:start_dialog("_game.quest_log_update")
+      game:set_value("grover_counter", 1)
+    end)
+  --already spoken to
   elseif game:get_value("grover_counter") == 1 then
     game:start_dialog("_oakhaven.npcs.market.grover.2")
+  --looking for mangrove thicket
   elseif game:get_value("grover_counter") == 2 then
-    game:start_dialog("_oakhaven.npcs.market.grover.3")
+    game:start_dialog("_oakhaven.npcs.market.grover.3", function()
+      game:set_value("quest_tidal_starfruit", 1)
+    end)
+  --already found the thicket
   elseif game:get_value("grover_counter") == 3 then
     game:start_dialog("_oakhaven.npcs.market.grover.4")
   end
 end
 
+--PALACE GUARD
 function palace_guard:on_interaction()
   local _, hero_x, _ = hero:get_position()
   if hero_x < 376 then
@@ -65,7 +77,7 @@ function palace_guard:on_interaction()
 end
 
 
-
+--WISHING WELL
 function wishing_well:on_interaction()
   if game:get_value("oakhaven_wishing_well_balance") == nil then game:set_value("oakhaven_wishing_well_balance", 0) end
   game:start_dialog("_oakhaven.npcs.misc.wishing_well.1", function(answer)
@@ -105,9 +117,9 @@ function fruit_importer:on_interaction()
   elseif game:get_value("oakhaven_fruit_importer_counter") == 2 then
     game:start_dialog("_oakhaven.npcs.market.fruit_importer.3")
 
-
   end
 end
+
 
 --Aubrey the Orange Thief
 function aubrey_door_npc:on_interaction()
@@ -129,6 +141,7 @@ end
 function brian:on_interaction()
 
 end
+
 
 --Gunther
 function musician_1:on_interaction()
@@ -162,6 +175,8 @@ end
 
 ---------------------------
 
+
+
 --poster monster sensor
 for sensor in map:get_entities("poster_monster_sensor") do
   function sensor:on_activated()
@@ -190,11 +205,14 @@ function remember_sensor:on_activated()
     m:start(hero)
     hero:set_direction(0)
     function m:on_finished()
+      hero:unfreeze()
       game:start_dialog("_oakhaven.npcs.port.cervio.1", function()
-        sol.audio.play_sound("quest_log")
-        game:start_dialog("_game.quest_log_update") end)
+--        sol.audio.play_sound("quest_log")
+        game:start_dialog("_game.quest_log_update")
+        game:set_value("quest_hazel", 1) --quest log
+      end)
       game:set_value("quest_log_a", "a9")
-      hero:unfreeze() end
-    game:set_value("hazel_is_here", true)
+      game:set_value("hazel_is_here", true)
+    end
   end
 end

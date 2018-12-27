@@ -854,7 +854,6 @@ block{
   sprite = "entities/chairR",
   pushable = true,
   pullable = true,
-  maximum_moves = 2,
 }
 
 tile{

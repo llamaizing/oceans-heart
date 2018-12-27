@@ -3944,7 +3944,7 @@ block{
   sprite = "entities/block",
   pushable = false,
   pullable = false,
-  maximum_moves = 0,
+  max_moves = 0,
 }
 
 block{
@@ -3954,7 +3954,7 @@ block{
   sprite = "entities/block",
   pushable = false,
   pullable = false,
-  maximum_moves = 0,
+  max_moves = 0,
 }
 
 block{
@@ -3964,7 +3964,7 @@ block{
   sprite = "entities/block",
   pushable = false,
   pullable = false,
-  maximum_moves = 0,
+  max_moves = 0,
 }
 
 block{
@@ -3974,7 +3974,7 @@ block{
   sprite = "entities/block",
   pushable = false,
   pullable = false,
-  maximum_moves = 0,
+  max_moves = 0,
 }
 
 enemy{
@@ -4255,7 +4255,7 @@ block{
   sprite = "entities/block",
   pushable = false,
   pullable = false,
-  maximum_moves = 0,
+  max_moves = 0,
 }
 
 block{
@@ -4265,7 +4265,7 @@ block{
   sprite = "entities/block",
   pushable = false,
   pullable = false,
-  maximum_moves = 0,
+  max_moves = 0,
 }
 
 tile{

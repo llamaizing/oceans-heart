@@ -55,7 +55,7 @@ function lookout:on_interaction()
       game:start_dialog("_oakhaven.npcs.port.burglars.4", function() 
         game:set_value("oakhaven_palace_secret_passage_knowledge", true)
         game:set_value("quest_log_a", "a13")
-        sol.audio.play_sound("quest_log")
+        game:set_value("quest_hazel", 5) --quest log
         game:start_dialog("_game.quest_log_update")
       end)
     else

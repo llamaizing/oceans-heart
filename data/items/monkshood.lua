@@ -8,7 +8,7 @@ end
 
 function item:on_obtained()
   self:add_amount(1)
-  print(game:get_value("amount_monkshood"))
+  if game:get_value("quest_monkshood") then game:set_value("quest_monkshood", 1) end
 end
 
 -- Event called when a pickable treasure representing this item
