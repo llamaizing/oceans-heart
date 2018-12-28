@@ -1,6 +1,6 @@
 --[[ array.lua
 	version 1.0a1
-	3 Dec 2018
+	15 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -69,7 +69,7 @@ function control.create(properties, width, height)
 	--// Assigns the list of subcomponents to be elements in the array, removing any existing elements first
 		--list (table, array) - list of subcomponents to be used in the array, specified as data file properties (see objectives.dat)
 	function new_control:set_subcomponents(list)
-		assert(type(list)=="table", "Bad argument #1 to 'set_subcomponents' (table expected)")
+		assert(type(list)=="table", "Bad argument #2 to 'set_subcomponents' (table expected)")
 		
 		local ui = require"scripts/menus/ui/ui" --do not require at start of script because will cause endless loading loop
 		subcomponents = {} --clear previous subcomponents
@@ -77,24 +77,24 @@ function control.create(properties, width, height)
 		if #list>0 then --table is list of components to add
 			for i,subcomponent in ipairs(list) do
 				assert(type(subcomponent)=="table" or type(subcomponent)=="userdata",
-					"Bad argument #1 to 'set_subcomponents' (table or userdata expected)"
+					"Bad argument #2 to 'set_subcomponents' (table or userdata expected)"
 				)
-				assert(subcomponent.draw, "Bad argument #1 to 'set_subcomponents' (no draw function found for item at index "..i..")")
+				assert(subcomponent.draw, "Bad argument #2 to 'set_subcomponents' (no draw function found for item at index "..i..")")
 	
 				table.insert(subcomponents, subcomponent)
 			end
-			assert(#subcomponents>0, "Bad argument #1 to 'set_subcomponents' (must include at least one subcomponent)")
+			assert(#subcomponents>0, "Bad argument #2 to 'set_subcomponents' (must include at least one subcomponent)")
 		else --table specifies ui layer to use (string) as a template for all subcomponents along with a count (number) of the number to have in the array
-			assert(type(list.layer)=="string", "Bad argument #1 to 'set_subcomponents' (table must contain layer key with string value)")
+			assert(type(list.layer)=="string", "Bad argument #2 to 'set_subcomponents' (table must contain layer key with string value)")
 			
 			local count = tonumber(list.count)
-			assert(count, "Bad argument #1 to 'set_subcomponents' (table must contain count key with number value)")
+			assert(count, "Bad argument #2 to 'set_subcomponents' (table must contain count key with number value)")
 			
 			for i=1,count do
 				local component = ui.create_preset(list.layer, list.width, list.height)
 				table.insert(subcomponents, component)
 			end
-			assert(#subcomponents>0, "Bad argument #1 to 'set_subcomponents' (key count must have value >= 1)")
+			assert(#subcomponents>0, "Bad argument #2 to 'set_subcomponents' (key count must have value >= 1)")
 		end
 		
 		--handle additional subcomponent properties by calling associated setter function
@@ -114,7 +114,7 @@ function control.create(properties, width, height)
 	function new_control:get_gap() return gap end
 	function new_control:set_gap(value)
 		local value = tonumber(value)
-		assert(value, "Bad argument #1 tp 'set_gap' (number expected)")
+		assert(value, "Bad argument #2 tp 'set_gap' (number expected)")
 		
 		gap = math.floor(value)
 	end
@@ -138,7 +138,7 @@ function control.create(properties, width, height)
 	--// Splits a text string at line breaks and passes each one to subcomponent set_text function
 		--text (string) - string to pass to subcomponent set_text functions
 	function new_control:set_text(text)
-		assert(type(text)=="string", "Bad argument #1 to 'set_text' (string expected)")
+		assert(type(text)=="string", "Bad argument #2 to 'set_text' (string expected)")
 		local text = text:gsub("\r\n", "\n"):gsub("\r","\n").."\n" --consolidate line breaks
 		
 		local lines = {}
@@ -174,8 +174,8 @@ function control.create(properties, width, height)
 			--note: the function is assumed to be a method, so the subcomponent is passed
 			--      as arg 1 and the value as arg 2.
 	function new_control:set_all(key, values)
-		assert(type(key)=="string", "Bad argument #1 to 'set_all' (string expected)")
-		assert(values~=nil, "Bad argument #2 to 'set_all' (must not be nil)")
+		assert(type(key)=="string", "Bad argument #2 to 'set_all' (string expected)")
+		assert(values~=nil, "Bad argument #3 to 'set_all' (must not be nil)")
 		
 		if type(values)=="table" then --values contains list of values for each subcomponent
 			for i,subcomponent in ipairs(subcomponents) do
@@ -201,7 +201,7 @@ function control.create(properties, width, height)
 		--value (boolean) - component will be drawn if true
 	function new_control:get_visible() return is_visible end
 	function new_control:set_visible(value)
-		assert(type(value)=="boolean", "Bad argument #1 to 'set_visible' (boolean expected)")
+		assert(type(value)=="boolean", "Bad argument #2 to 'set_visible' (boolean expected)")
 		is_visible = value
 	end
 	
@@ -211,10 +211,10 @@ function control.create(properties, width, height)
 	function new_control:get_xy() return position.x, position.y end
 	function new_control:set_xy(x, y)
 		local x = tonumber(x)
-		assert(x, "Bad argument #1 to 'set_xy' (number expected)")
+		assert(x, "Bad argument #2 to 'set_xy' (number expected)")
 		
 		local y = tonumber(y)
-		assert(y, "Bad argument #2 to 'set_xy' (number expected)")
+		assert(y, "Bad argument #3 to 'set_xy' (number expected)")
 		
 		position.x = x
 		position.y = y

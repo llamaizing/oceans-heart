@@ -13,10 +13,11 @@ text{ key = "player_name", value = "Tilia" }
 text{ key = "menu.quest_log.title", value = "Quest Log" } --title at top of quest log menu
 text{ key = "menu.quest_log.main_quests_tab", value = "Main\nQuests" } --name of Main Quests tab (2 lines), 6 char max per line
 text{ key = "menu.quest_log.side_quests_tab", value = "Side\nQuests" } --name of Side Quests tab (2 lines), 6 char max per line
-text{ key = "menu.quest_log.no_quests", value = "You have no quests" } --display in description pane when player has no quests
+text{ key = "menu.quest_log.no_main_quests", value = "You have no main quests" } --display in description pane when player has no main quests
+text{ key = "menu.quest_log.no_side_quests", value = "You have no side quests" } --display in description pane when player has no side quests
 text{ key = "menu.quest_log.quests_count", value = "$v1 of $v2 complete" } --displays completion rate of quests (for both main & side quests)
 	--$v1: number of quests completed, $v2: total number of quests (20 characters max after value substitutions)
-
+    
 --// Location Names
 --displayed in quest log (18 character max)
 	text{ key = "location.limestone_island", value = "Limestone Island" }

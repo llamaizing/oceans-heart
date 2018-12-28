@@ -1,6 +1,6 @@
 --[[ image.lua
 	version 1.0a1
-	3 Dec 2018
+	15 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -105,7 +105,7 @@ function control.create(properties)
 	--// Adjusts region_x & region_y values based on specified index value
 	function new_control:set_index(value)
 		local index = tonumber(value)
-		assert(index, "Bad argument #1 to 'set_index' (number expected)")
+		assert(index, "Bad argument #2 to 'set_index' (number expected)")
 		index = math.min(math.max(math.floor(index), 1), max_index) - 1 --convert to zero-based
 		
 		local y = math.floor((index)/num_columns)
@@ -124,7 +124,7 @@ function control.create(properties)
 		--value (boolean) - if true then the image is visible
 	function new_control:get_visible() return is_visible end
 	function new_control:set_visible(value)
-		assert(type(value)=="boolean", "Bad argument #1 to 'set_visible' (boolean expected)")
+		assert(type(value)=="boolean", "Bad argument #2 to 'set_visible' (boolean expected)")
 		is_visible = value
 	end
 	
@@ -132,10 +132,10 @@ function control.create(properties)
 	function new_control:get_xy() return position.x, position.y end
 	function new_control:set_xy(x, y)
 		local x = tonumber(x)
-		assert(x, "Bad argument #1 to 'set_xy' (number expected)")
+		assert(x, "Bad argument #2 to 'set_xy' (number expected)")
 		
 		local y = tonumber(y)
-		assert(y, "Bad argument #2 to 'set_xy' (number expected)")
+		assert(y, "Bad argument #3 to 'set_xy' (number expected)")
 		
 		position.x = x
 		position.y = y

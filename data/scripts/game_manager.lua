@@ -1,10 +1,10 @@
 
 require("scripts/multi_events")
+require("scripts/weather/weather_manager")
 local initial_game = require("scripts/initial_game")
 local quest_log = require"scripts/menus/quest_log"
 local objectives_manager = require"scripts/objectives_manager"
 
-require("scripts/weather/weather_manager")
 
 local game_manager = {}
 
@@ -36,32 +36,17 @@ function game_manager:create(file_name)
     end
 
   --From llamazing's quest log menu:
-  objectives_manager.create(game)
-  quest_log:set_game(game)
-  
-  function game.objectives:on_new_task(status)
-    -- game:get_map():update_icons()
-    --if self:is_new_task() then game:set_hud_icon("pause", "quest_alert") end
-    
-    --play sound depending on the status
-    local sound_name = QUEST_SOUNDS[status]
-    if sound_name then sol.audio.play_sound(sound_name) end
-    -- game:start_dialog("_game.quest_log_update")
-  end
-  
-  function game.objectives:on_tasks_cleared()
-    --game:set_hud_icon("pause", "normal")
-  end
-  
-  function game:on_paused()
-    sol.menu.start(game, quest_log)
-  end
-  
-  function game:on_unpaused()
-    sol.menu.stop(quest_log)
-  end
-  
-  function game.set_custom_command_effect() end --do nothing
+    objectives_manager.create(game)
+    quest_log:set_game(game)
+    	
+    function game:on_paused()
+    	sol.menu.start(game, quest_log)
+    end
+    	
+    function game:on_unpaused()
+    	sol.menu.stop(quest_log)
+    end
+
   --end of from llamazings quest log menu
 
 

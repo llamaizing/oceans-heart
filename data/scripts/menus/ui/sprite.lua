@@ -1,6 +1,6 @@
 --[[ sprite.lua
 	version 1.0a1
-	3 Dec 2018
+	15 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -93,20 +93,11 @@ function control.create(properties)
 	--// Returns the path (string) of the source image file
 	function new_control:get_sprite_id() return sprite_id end
 	
-	--// Get/set whether the sprite is enabled, which uses a different animation when disabled
-		--value (boolean) - if true then the sprite is enabled
-	function new_control:get_enabled() return is_enabled end
-	function new_control:set_enabled(value)
-		assert(type(value)=="boolean", "Bad argument #1 to 'set_enabled' (boolean expected)")
-		is_enabled = value
-		sprite:set_animation(value and "enabled" or "disabled")
-	end
-	
 	--// Get/set whether the image is visible (newly created images are visible by default)
 		--value (boolean) - if true then the image is visible
 	function new_control:get_visible() return is_visible end
 	function new_control:set_visible(value)
-		assert(type(value)=="boolean", "Bad argument #1 to 'set_visible' (boolean expected)")
+		assert(type(value)=="boolean", "Bad argument #2 to 'set_visible' (boolean expected)")
 		is_visible = value
 	end
 	

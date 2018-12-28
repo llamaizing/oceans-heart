@@ -1,6 +1,6 @@
 --[[ quest_log.lua
 	version 1.0a1
-	2 Dec 2018
+	15 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -49,21 +49,22 @@ local COMPONENT_FUNCS = {
 
 local LIST_VISIBLE_MAX_COUNT
 
-local active_list = {} --list of active objectives
-local active_tab_index = 1 --index of active tab: 1="main", 2="side"
-local sel_index = 1 --position of highlight box, 1 to 6
-local list_index = 1 --selected index of current list
-local top_index = 1 --list index appearing at top of visibile objectives in sidebar
-local is_highlight = true --if true then highlight box is visible (hidden when no quests in log)
+local active_list = {} --(table, array) list of objectives to be displayed in quest log in the displayed order (active first followed by completed)
+local active_tab_index = 1 --(number, positive integer) index of active tab: 1="main", 2="side"
+local sel_index = 1 --(number, positive integer) position of highlight box, 1 to LIST_VISIBLE_MAX_COUNT
+local list_index = 1 --(number, positive integer) selected index of current list
+local top_index = 1 --(number, positive integer) list index appearing at top of visibile objectives in sidebar
+local is_highlight = true --(boolean) if true then highlight box is visible (hidden when no quests in log)
 
 --// Parses quest_log.dat and creates the corresponding ui components
-local load_quest_data --function, only runs once
+local load_quest_data --(function) only runs once, does nothing if called a second time
 do
-	local is_loaded = false
+	local is_loaded = false --set to true after load_quest_data is run to prevent it from running a second time
 	load_quest_data = function()
 		if not is_loaded then
 			assert(type(quest_data)=="table", "Bad data in 'quest_log.dat' (table expected)")
-	
+			
+			--load menu subcomponents
 			for i,entry in ipairs(quest_data) do
 				assert(type(entry.layer)=="string", "Bad property ["..i.."].layer to 'quest_log.dat' (string expected)")
 				local component = ui.create_preset(entry.layer, entry.width, entry.height)
@@ -91,6 +92,7 @@ do
 				if entry_id then
 					assert(type(entry_id)=="string", "Bad property ["..i.."].id to 'quest_log.dat' (string or nil expected)")
 					assert(not quest_log[entry_id], "Bad property ["..i.."].id to 'quest_log.dat', duplicate entry: "..entry_id)
+					assert(entry_id:match"^[%w_]+$", "Bad property ["..i.."].id to 'quest_log.dat', only alpha-numeric characters and underscore allowed")
 			
 					quest_log[entry_id] = component
 					if not quest_data[entry_id] then quest_data[entry_id] = entry end --add reverse lookup to quest_data
@@ -103,40 +105,71 @@ do
 			quest_log.inactive_tab:set_xy(56,0) --move the inactive tab over to become the second tab
 	
 			quest_log.side_tab_text:set_all("set_enabled", false) --grey text of side tab because it is the inactive tab
-			quest_log.tabs_left_arrow:set_visible(false) --hide left arrow because main tab is active
+			if quest_log.tabs_left_arrow then
+				quest_log.tabs_left_arrow:set_visible(false) --hide left arrow because main tab is active
+			end
 			
-			quest_log.desc_item_box:set_visible(false)
-	
+			if quest_log.desc_items then
+				quest_log.desc_items:set_all("set_visible", false) --hide until needed (only if defined in quest_log.dat)
+			end
+			
 			--// populate subcomponents of each list entry group
-	
+			
 			local group_data = quest_data.list_entry
 			assert(type(group_data)=="table", "Bad property list_entry to 'quest_log.dat' (table expected)")
-	
+			
 			for _,group in quest_log.list_entries:ipairs() do
 				local group_list = {} --list of components to be added to this group
 				for i,entry in ipairs(group_data) do
 					local subcomponent = ui.create_preset(entry.layer, entry.width, entry.height)
-			
+					
 					--handle special keys in quest_log.dat
 					for key,func_name in pairs(COMPONENT_FUNCS) do
 						if entry[key]~=nil and type(subcomponent[func_name])=="function" then
 							subcomponent[func_name](subcomponent, entry[key])
 						end
 					end
-			
+					
 					--setup accessing subcomponent using sub_id key
 					local sub_id = entry.sub_id
 					assert(type(sub_id)=="string", "Bad property list_entry["..i.."].sub_id to 'quest_log.dat' (string expected)")
 					assert(not rawget(group,sub_id), "Bad property list_entry["..i.."].sub_id to 'quest_log.dat' (must be unique)")
 					group[sub_id] = subcomponent
-			
+					
 					table.insert(group_list, {subcomponent, entry.x, entry.y})
 				end
-		
+				
 				group:set_subcomponents(group_list)
 			end
 			
-			quest_log.back_prompt:set_text"D Back" --TODO set text dynamically
+			local item_entry = quest_data.desc_item
+			assert(type(item_entry)=="table", "Bad property list_entry to 'quest_log.dat' (table expected)")
+			
+			for _,group in quest_log.desc_items:ipairs() do
+				local group_list = {} --list of components to be added to this group
+				for i,entry in ipairs(item_entry) do
+					local subcomponent = ui.create_preset(entry.layer, entry.width, entry.height)
+					
+					--handle special keys in quest_log.dat
+					for key,func_name in pairs(COMPONENT_FUNCS) do
+						if entry[key]~=nil and type(subcomponent[func_name])=="function" then
+							subcomponent[func_name](subcomponent, entry[key])
+						end
+					end
+					
+					--setup accessing subcomponent using sub_id key
+					local sub_id = entry.sub_id
+					assert(type(sub_id)=="string", "Bad property list_entry["..i.."].sub_id to 'quest_log.dat' (string expected)")
+					assert(not rawget(group,sub_id), "Bad property list_entry["..i.."].sub_id to 'quest_log.dat' (must be unique)")
+					group[sub_id] = subcomponent
+					
+					table.insert(group_list, {subcomponent, entry.x, entry.y})
+				end
+				
+				group:set_subcomponents(group_list)
+			end
+			
+			if quest_log.back_prompt then quest_log.back_prompt:set_text"D Back" end --TODO set text dynamically
 			
 			--// verify remaining data is valid
 			
@@ -174,14 +207,14 @@ function quest_log:recall_saved_position(tab)
 		local tab_num = tonumber(tab)
 		if tab_num then
 			tab = LIST_TYPES[tab_num]
-			assert(tab, "Bad argument #1 to 'recall_saved_position' (number, string or nil expected)")
+			assert(tab, "Bad argument #2 to 'recall_saved_position' (number, string or nil expected)")
 		else
-			assert(type(tab)=="string", "Bad argument #1 to 'recall_saved_position' (number, string or nil expected)")
+			assert(type(tab)=="string", "Bad argument #2 to 'recall_saved_position' (number, string or nil expected)")
 		end
 		
 		tab_name = tab:lower()
 		tab_index = LIST_TYPES[tab_name]
-		assert(tab_index, "Bad argument #1 to 'recall_saved_position', invalid tab name: "..tab)
+		assert(tab_index, "Bad argument #2 to 'recall_saved_position', invalid tab name: "..tab)
 	else --use the most recent tab, the value of which is retrieved from savegame data
 		tab_name = game:get_value"last_quest_log_tab" or "main"
 		assert(type(tab_name), "Bad savegame data: 'last_quest_log_tab' (string expected)") --shouldn't be necessary
@@ -256,10 +289,10 @@ end
 	--index (number) - tab index to make active: 1 = main quests, 2 = side quests
 function quest_log:set_tab(index)
 	local index = tonumber(index)
-	assert(type(index)=="number", "Bad argument #1 to 'set_tab' (number expected)")
+	assert(type(index)=="number", "Bad argument #2 to 'set_tab' (number expected)")
 	index = math.floor(index)
-	assert(index>0, "Bad argument #1 to 'set_tab' (number must be positive)")
-	assert(index<=#LIST_TYPES, "Bad argument #1 to 'set_tab' (maximum value: "..#LIST_TYPES)
+	assert(index>0, "Bad argument #2 to 'set_tab' (number must be positive)")
+	assert(index<=#LIST_TYPES, "Bad argument #2 to 'set_tab' (maximum value: "..#LIST_TYPES)
 	
 	--configuration of components depends on the index value
 	local components = {
@@ -284,8 +317,8 @@ function quest_log:set_tab(index)
 	local c = components[index] --convenience
 	c.left_tab:set_xy(0,0)
 	c.right_tab:set_xy(quest_data.tab_offset_x, quest_data.tab_offset_y)
-	c.visible_arrow:set_visible(true)
-	c.invisible_arrow:set_visible(false)
+	if c.visible_arrow then c.visible_arrow:set_visible(true) end
+	if c.invisible_arrow then c.invisible_arrow:set_visible(false) end
 	c.enabled_text:set_all("set_enabled", true)
 	c.disabled_text:set_all("set_enabled", false)
 	
@@ -297,23 +330,28 @@ function quest_log:set_tab(index)
 	active_list = game.objectives:get_objectives_list(new_tab_name) --update list of currently active objectives
 	
 	self:recall_saved_position(new_tab_name) --restores position of list for new tab from last time viewing it, uses specified tab instead of reading last tab from savegame variable
-	self:set_top_position()
 	
 	--set quest completion rate text below sidebar
-	local complete_status_text = sol.language.get_string"menu.quest_log.quests_count"
-	local v1,v2 = game.objectives:get_counts(new_tab_name)
-	
-	local milestone = quest_data.quest_totals_milestone --savegame variable to use to determine if milestone is reached
-	if milestone and not game:get_value(milestone) then v2 = "?" end --replace quest total count with question mark until milestone reached
-	
-	complete_status_text = util.substitute_text(
-		complete_status_text,
-		{v1,v2},
-		"%$v"
-	)
-	self.complete_status:set_text(complete_status_text)
+	if self.complete_status then
+		local complete_status_text = sol.language.get_string"menu.quest_log.quests_count"
+		local v1,v2 = game.objectives:get_counts(new_tab_name)
+		
+		local milestone = quest_data.quest_totals_milestone --savegame variable to use to determine if milestone is reached
+		if milestone and not game:get_value(milestone) then v2 = "?" end --replace quest total count with question mark until milestone reached
+		
+		complete_status_text = util.substitute_text(
+			complete_status_text,
+			{v1,v2},
+			"%$v"
+		)
+		self.complete_status:set_text(complete_status_text)
+	end
 end
 
+--// Changes the selected quest in the menu sidebar
+	--new_list_index (number, positive integer) - index of the quest to select, where the first sidebar entry is 1 and the last is equal to #active_list
+	--new_top_index (number, positive integer, optional) - index of the quest to be the top visible entry in the sidebar (i.e. the scroll position), default: 1
+	--new_sel_index (number, positive integer, optional) - index of the highlight box, 1 to LIST_VISIBLE_MAX_COUNT, default 1
 function quest_log:set_selected(new_list_index, new_top_index, new_sel_index)
 	if not new_list_index then
 		self:set_description(false)
@@ -323,11 +361,11 @@ function quest_log:set_selected(new_list_index, new_top_index, new_sel_index)
 	end
 	
 	local new_list_index = tonumber(new_list_index)
-	assert(new_list_index, "Bad argument #1 to 'set_selected' (number or nil expected)")
+	assert(new_list_index, "Bad argument #2 to 'set_selected' (number or nil expected)")
 	local new_top_index = tonumber(new_top_index or 1)
-	assert(new_top_index, "Bad argument #2 to 'set_selected' (number or nil expected)")
+	assert(new_top_index, "Bad argument #3 to 'set_selected' (number or nil expected)")
 	local new_sel_index = tonumber(new_sel_index or 1)
-	assert(new_sel_index, "Bad argument #3 to 'set_selected' (number or nil expected)")
+	assert(new_sel_index, "Bad argument #4 to 'set_selected' (number or nil expected)")
 	
 	list_index = new_list_index
 	self:set_top_position(new_top_index)
@@ -344,7 +382,7 @@ function quest_log:move_selection(amount)
 	if not is_highlight then return end --don't do anything if highlight box not visible
 	
 	amount = tonumber(amount)
-	assert(amount, "Bad argument #1 to 'move_selection' (number expected)")
+	assert(amount, "Bad argument #2 to 'move_selection' (number expected)")
 	amount = math.floor(amount)
 	
 	local new_index = list_index + amount
@@ -397,21 +435,21 @@ end
 function quest_log:set_description(objective, phase)
 	if objective then
 		if type(objective)~="table" then
-			assert(type(objective)=="number", "Bad argument #1 to 'set_description' (table or number or nil expected)")
+			assert(type(objective)=="number", "Bad argument #2 to 'set_description' (table or number or nil expected)")
 			local index = objective
 			objective = active_list[index]
-			assert(objective, "Bad argument #1 to 'set_description' (number out of range: "..index)
+			assert(objective, "Bad argument #2 to 'set_description' (number out of range: "..index)
 		end
 		
-		assert(type(objective)=="table", "Bad argument #1 to 'set_description' (table or number expected)")
+		assert(type(objective)=="table", "Bad argument #2 to 'set_description' (table or number expected)")
 		
 		local phase = tonumber(phase)
 		if phase then phase = math.floor(phase) end
 		
 		local description = objective:get_description(phase)
 		
-		self.desc_title:set_text(objective:get_title())
-		self.desc_location:set_text(objective:get_location(phase))
+		if self.desc_title then self.desc_title:set_text(objective:get_title()) end
+		if self.desc_location then self.desc_location:set_text(objective:get_location(phase)) end
 		
 		--set description pane text and font color depending on if active
 		for i,subcomponent in self.desc_text:ipairs() do
@@ -427,14 +465,14 @@ function quest_log:set_description(objective, phase)
 		for i,subcomponent in self.desc_checkmarks:ipairs() do
 			local entry = description[i] or {}
 			subcomponent:set_visible(entry.is_check or false)
-			subcomponent:set_enabled(not not entry.is_grey)
+			subcomponent:set_animation(entry.is_grey and "done" or "bullet")
 		end
 		
 		--set visibility/state of dynamic checkmarks in description pane
 		for i,subcomponent in self.dynamic_checkmarks:ipairs() do
 			local entry = description[i] or {}
 			subcomponent:set_visible(not not entry.check_state)
-			subcomponent:set_enabled(entry.check_state=="checkmark")
+			subcomponent:set_animation(entry.check_state or "bullet")
 			
 			if entry.check_position then
 				--calculate x position of checkmark
@@ -449,39 +487,76 @@ function quest_log:set_description(objective, phase)
 		end
 		
 		--set visibility and position of item icon
-		local item_line = description.item_line
-		local item_position = description.item_position
-		if item_line then
-			self.desc_item_box:set_visible(true)
+		local items = description.items --convenience
+		if self.desc_items then --only draw item box if defined in quest_log.dat
+			local max_line = quest_data.desc_text.subcomponent.count
+			local line_height = quest_data.desc_text.subcomponent.height --convenience
+			local gap_height = quest_data.desc_text.gap --convenience
+			local line_spacing = line_height + gap_height
 			
-			--calculate horizontal position
-			local text_component = self.desc_text:get_subcomponent(item_line)
-			--local x = text_component:test_text_size(item_position) --non-hack implementation
-			local xtra_x = text_component:test_text_size(item_position.."a") --HAX
-			local xtra = text_component:test_text_size("a") --HAX
-			local x = xtra_x - xtra --HAX --TODO workaround for Solarus issue #1025
-			
-			--calculate vertical position
-			local line_height = quest_data.desc_text.subcomponent.height
-			local gap_height = quest_data.desc_text.gap or 0
-			local y = (item_line - 1)*(line_height + gap_height)
-			
-			self.desc_item_box:set_xy(x, y)
-		else self.desc_item_box:set_visible(false) end --don't show item box
+			local active_icon_index = objective:get_active_item_icon()
+			if active_icon_index then --player has at least one quest item in inventory
+				for i=0,9 do
+					local sub_index = i==0 and 10 or i --$i0 uses subcomponent 10
+					
+					local info = items[i] --convenience
+					if info and info.line <= max_line then --this line contains "$i"..i, ignore if line number is greater than the number displayed
+						local item_group = self.desc_items:get_subcomponent(sub_index) --convenience
+						local item_line = info.line --convenience
+						local item_text = info.text --convenience
+						
+						if i==0 then	
+							item_group:set_visible(true)
+							item_group.item_icon:set_index(active_icon_index)
+						else
+							local icon_index = objective:get_item_icon(i)
+							local item_count = game:get_value(objective:get_item_save_val(i)) or 0
+							local has_item = item_count > 0
+							if icon_index and has_item then
+								--enable and calculate icon to show
+								item_group:set_visible(true)
+								item_group.item_icon:set_index(icon_index)
+							else item_group:set_visible(false) end
+						end
+						
+						if item_group:get_visible() then
+							--calculate horizontal position
+							local text_component = self.desc_text:get_subcomponent(item_line)
+							--local x = text_component:test_text_size(item_text) --non-hack implementation
+							local xtra_x = text_component:test_text_size(item_text.."a") --HAX
+							local xtra = text_component:test_text_size"a" --HAX
+							local x = xtra_x - xtra --HAX --TODO workaround for Solarus issue #1025
+							
+							--calculate vertical position
+							local y = (item_line - 1)*line_spacing
+							
+							item_group:set_xy(x, y)
+						end
+					else self.desc_items:get_subcomponent(sub_index):set_visible(false) end --don't show item box
+				end
+			else self.desc_items:set_all("set_visible", false) end --don't show any item boxes
+		end
 		
 		local is_done = objective:is_done()
 		if phase then is_done = phase>=objective:get_num_phases() end
-		self.desc_complete:set_visible(is_done)
+		if self.desc_complete then self.desc_complete:set_visible(is_done) end
+		
+		objective:clear_status()
 	else --display blank pane
-		self.desc_title:set_text""
-		self.desc_location:set_text""
-		self.desc_text:set_text_key"menu.quest_log.no_quests"
+		local TEXT_KEYS = {
+			"menu.quest_log.no_main_quests", --blank display text for tab 1
+			"menu.quest_log.no_side_quests", --blank display text for tab 2
+		}
+		
+		if self.desc_title then self.desc_title:set_text"" end
+		if self.desc_location then self.desc_location:set_text"" end
+		self.desc_text:set_text_key(TEXT_KEYS[active_tab_index])
 		self.desc_checkmarks:set_all("set_enabled", false)
 		self.desc_checkmarks:set_all("set_visible", false)
 		self.dynamic_checkmarks:set_all("set_enabled", false)
 		self.dynamic_checkmarks:set_all("set_visible", false)
-		self.desc_complete:set_visible(false)
-		self.desc_item_box:set_visible(false)
+		if self.desc_complete then self.desc_complete:set_visible(false) end
+		if self.desc_items then self.desc_items:set_all("set_visible", false) end
 	end
 end
 
@@ -490,7 +565,7 @@ end
 function quest_log:set_top_position(index)
 	local index = index or top_index --use current position if index not specified
 	index = tonumber(index)
-	assert(index, "Bad argument #1 to 'set_top_position' (number or nil expected)")
+	assert(index, "Bad argument #2 to 'set_top_position' (number or nil expected)")
 	index = math.min(math.max(math.floor(index), 1), #active_list)
 	
 	top_index = index --equal to zero if active_list is empty
@@ -503,7 +578,12 @@ function quest_log:set_top_position(index)
 			group.title:set_text(objective.get_title())
 			group.title:set_enabled(not objective:is_done())
 			group.location:set_text(objective:get_location())
-			group.entry_checkmark:set_visible(objective:is_done())
+			
+			local status = not not objective:get_status()
+			group.entry_checkmark:set_visible(objective:is_done() or status)
+			if status then
+				group.entry_checkmark:set_animation"new"
+			else group.entry_checkmark:set_animation"done" end
 		else --make blank entry
 			group.title:set_text""
 			group.title:set_enabled(true)
@@ -514,9 +594,11 @@ function quest_log:set_top_position(index)
 	
 	--set visibility of arrows based on current position
 	local is_full = #active_list >= LIST_VISIBLE_MAX_COUNT
-	self.list_up_arrow:set_visible(is_full and top_index>1)
+	if self.list_up_arrow then self.list_up_arrow:set_visible(is_full and top_index>1) end
 	local bottom_index = top_index + LIST_VISIBLE_MAX_COUNT - 1
-	self.list_down_arrow:set_visible(is_full and bottom_index < #active_list)
+	if self.list_down_arrow then
+		self.list_down_arrow:set_visible(is_full and bottom_index < #active_list)
+	end
 end
 
 --// Sets highlight box to the specified index
@@ -526,10 +608,10 @@ end
 function quest_log:set_highlight_position(index, is_animate)
 	local is_highlight_visible = not not index
 	local index = tonumber(index or 1)
-	assert(not is_highlight_visible or index, "Bad argument #1 to 'set_highlight_position' (number or nil expected)")
+	assert(not is_highlight_visible or index, "Bad argument #2 to 'set_highlight_position' (number or nil expected)")
 	index = math.min(math.min(math.max(math.floor(index), 1), LIST_VISIBLE_MAX_COUNT), #active_list) --zero if active_list is empty
 	
-	assert(not is_animate or type(is_animate)=="boolean", "Bad argument #2 to 'set_highlight' (boolean or nil expected)")
+	assert(not is_animate or type(is_animate)=="boolean", "Bad argument #3 to 'set_highlight' (boolean or nil expected)")
 	local is_animate = is_animate~=false
 	
 	self.list_highlight:stop_movement() --in case an old movement is active
@@ -568,7 +650,6 @@ function quest_log:on_started()
 	load_quest_data() --only loads on first call of function
 	
 	self:recall_saved_position() --restores position of list from last time viewing it
-	self:set_top_position()
 	
 	game.objectives:clear_new_tasks() --reset when quest log menu is opened
 end
