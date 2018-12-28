@@ -3,6 +3,7 @@ require("scripts/multi_events")
 require("scripts/weather/weather_manager")
 local initial_game = require("scripts/initial_game")
 local quest_log = require"scripts/menus/quest_log"
+local quest_update_icon = require"scripts/menus/quest_update_icon"
 local objectives_manager = require"scripts/objectives_manager"
 
 
@@ -35,6 +36,7 @@ function game_manager:create(file_name)
       initial_game:initialize_new_savegame(game)
     end
 
+
   --From llamazing's quest log menu:
     objectives_manager.create(game)
     quest_log:set_game(game)
@@ -46,6 +48,42 @@ function game_manager:create(file_name)
     function game:on_unpaused()
     	sol.menu.stop(quest_log)
     end
+
+    local QUEST_SOUNDS = {
+    	main_all_completed = "quest_complete",
+    	side_all_completed = "quest_complete",
+    	main_completed = "quest_complete",
+    	side_completed = "quest_complete",
+    	main_started = "quest_started",
+    	side_started = "quest_started",
+    	main_advanced = "quest_advance",
+    	side_advanced = "quest_advance",
+    	new_checkmark = "quest_subtask",
+    	obtained_quest_item = "quest_subtask",
+    	main_advanced_again = false, --don't play sound
+    	side_advanced_again = false, --don't play sound
+    }
+
+
+    function game.objectives:on_new_task(status, dialog_id)
+
+    	local sound_name = QUEST_SOUNDS[status]
+    	if sound_name then sol.audio.play_sound(sound_name) end
+
+    	if self:is_new_task() then
+        sol.menu.start(game, quest_update_icon)
+        sol.timer.start(game, 100, function()
+          if quest_update_icon:get_opacity() < 11 then
+            sol.menu.stop(quest_update_icon)
+          else
+            quest_update_icon:reduce_opacity(10)
+            return true
+          end
+        end)
+      end
+
+    end
+
 
   --end of from llamazings quest log menu
 

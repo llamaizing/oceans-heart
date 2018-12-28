@@ -22,11 +22,14 @@ end
 
 function lost_pirate:on_interaction()
   if game:has_item("key_juneberry_inn") ~= true then
-    game:start_dialog("_ballast_harbor.npcs.tavern.lost_pirate_1")
-    map:create_pickable({
-      x = 448, y = 192, layer = 0, 
-      treasure_name = "key_juneberry_inn", treasure_savegame_variable = "found_tipsy_pirate_inn_key",
-    })
+    game:start_dialog("_ballast_harbor.npcs.tavern.lost_pirate_1", function()
+      map:create_pickable({
+        x = 448, y = 192, layer = 0, 
+        treasure_name = "key_juneberry_inn", treasure_savegame_variable = "found_tipsy_pirate_inn_key",
+      })
+      game:set_value("quest_ballast_harbor_lost_inn_key", 0)
+    end)
+
 
   else
     game:start_dialog("_ballast_harbor.npcs.tavern.lost_pirate_2")

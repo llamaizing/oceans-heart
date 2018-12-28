@@ -10572,6 +10572,20 @@ fisherman from Crabhook
 }
 
 dialog{
+    id = "quest.side.ballast_harbor.lost_key",
+    title = "The Wrong Key",
+    text = [[
+A drunk man dropped a key
+in the Ballast Harbor inn,
+which seems to go to a
+completely different inn.
+@Take the key and let
+youself into some other
+room, I guess?
+    ]]
+}
+
+dialog{
   id = "quest.test13",
   title = "A Carrot Cache",
   text = [[
