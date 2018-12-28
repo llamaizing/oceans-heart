@@ -10586,6 +10586,19 @@ room, I guess?
 }
 
 dialog{
+    id = "quest.side.ballast_harbor.hornet_honey",
+    title = "Hornet Honey",
+    text = [[
+Somewhere in Tern Marsh
+you can find hornet honey.
+@Locate the hornets and
+take their honey
+@Return the honey to
+Benjamin at the meadery
+    ]]
+}
+
+dialog{
   id = "quest.test13",
   title = "A Carrot Cache",
   text = [[

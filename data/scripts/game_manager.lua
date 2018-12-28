@@ -70,17 +70,16 @@ function game_manager:create(file_name)
     	local sound_name = QUEST_SOUNDS[status]
     	if sound_name then sol.audio.play_sound(sound_name) end
 
-    	if self:is_new_task() then
-        sol.menu.start(game, quest_update_icon)
-        sol.timer.start(game, 100, function()
-          if quest_update_icon:get_opacity() < 11 then
-            sol.menu.stop(quest_update_icon)
-          else
-            quest_update_icon:reduce_opacity(10)
-            return true
-          end
-        end)
-      end
+      quest_update_icon:refresh_opacity()
+      sol.menu.start(game, quest_update_icon)
+      sol.timer.start(game, 100, function()
+        if quest_update_icon:get_opacity() < 11 then
+          sol.menu.stop(quest_update_icon)
+        else
+          quest_update_icon:reduce_opacity(10)
+          return true
+        end
+      end)
 
     end
 

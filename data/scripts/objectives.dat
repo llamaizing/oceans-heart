@@ -229,3 +229,9 @@ side{
     dialog_id = "quest.side.ballast_harbor.lost_key",
     calc_phase = "quest_ballast_harbor_lost_inn_key"
 }
+
+side{
+    dialog_id = "quest.side.ballast_harbor.hornet_honey",
+    calc_phase = "quest_ballast_harbor_hornet_honey",
+    location = "location.tern_marsh"
+}

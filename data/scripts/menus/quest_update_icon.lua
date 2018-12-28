@@ -22,4 +22,8 @@ function quest_update_icon:reduce_opacity(amount)
   text_surface:set_opacity(text_surface:get_opacity() - amount)
 end
 
+function quest_update_icon:refresh_opacity()
+  text_surface:set_opacity(255)
+end
+
 return quest_update_icon
