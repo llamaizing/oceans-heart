@@ -8,7 +8,7 @@ local dashing
 --adjustable stats
 local detection_distance = 65
 local walking_speed = 45
-local running_speed = 82
+local running_speed = 77
 local dash_distance = 80
 local dash_speed = 140
 
@@ -90,7 +90,7 @@ function enemy:on_dying()
       game:set_value("gunther_counter", 4)
       game:start_dialog("_oakhaven.npcs.musicians.brian.caught", function()
         trumpet_player:set_traversable(true)
-        
+        game:set_value("quest_oakhaven_musicians", 3) --quest log
       end)
     end)
   end

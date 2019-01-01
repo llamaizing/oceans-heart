@@ -13,7 +13,12 @@ local game = map:get_game()
 
 function map:on_started()
   map:set_doors_open("ambush_door")
-  if game:get_value("dream_cannons_defeated") == true then pirate_guard:set_enabled(false) end
+  if game:get_value("dream_cannons_defeated") == true then
+    pirate_guard:set_enabled(false)
+    for pirate in map:get_entities("dream_cannon_pirate") do
+      pirate:set_enabled(false)
+    end
+  end
 
 end
 
@@ -46,6 +51,7 @@ function map:dream_cannons_dead()
     m:set_path{0,0}
     m:start(pirate_guard)
     game:set_value("nina_dialog_counter", 4)
+    game:set_value("quest_yarrow_parley", 4) --quest log
   end
 end
 

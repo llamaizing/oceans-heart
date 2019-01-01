@@ -50,15 +50,19 @@ function bartender:on_interaction()
   --if you're on the gunther band quest
   if game:get_value("oakhaven_band_talk_to_bartender") == true
   and game:get_value("oakhaven_talked_to_bartender_about_monster") ~= true then
-    game:start_dialog("_oakhaven.npcs.saloon.bartender_posters")
-    game:set_value("oakhaven_find_poster_monster", true)
-    game:set_value("oakhaven_talked_to_bartender_about_monster", true)
-    game:set_value("gunther_counter", 3)
+    game:start_dialog("_oakhaven.npcs.saloon.bartender_posters", function()
+      game:set_value("quest_oakhaven_musicians", 1) --quest log
+      game:set_value("oakhaven_find_poster_monster", true)
+      game:set_value("oakhaven_talked_to_bartender_about_monster", true)
+      game:set_value("gunther_counter", 3)
+    end)
+
   --if you're looking for Morus
   elseif game:get_value("morus_available") == true then
     if game:get_value("morus_counter") == nil then game:start_dialog("_oakhaven.npcs.saloon.bartender1")
     else game:start_dialog("_oakhaven.npcs.saloon.bartender2")
     end
+
   else --if Morus isn't around yet.
     game:start_dialog("_oakhaven.npcs.saloon.bartender2")
   end
@@ -117,6 +121,7 @@ end
 function musician_1:on_interaction()
   if game:get_value("gunther_counter") ~= 5 then
     game:start_dialog("_oakhaven.npcs.musicians.gunther.6", function()
+      game:set_value("quest_oakhaven_musicians", 4) --quest log
       game:get_hero():start_treasure("coral_ore")
       game:set_value("gunther_counter", 5)
     end) --end dialog callback

@@ -109,9 +109,11 @@ function fruit_importer:on_interaction()
 
   --on the hunt for aubrey
   elseif game:get_value("oakhaven_fruit_importer_counter") == 1 then
-    game:start_dialog("_oakhaven.npcs.market.fruit_importer.2")
-    game:set_value("oakhaven_have_oranges_box", true)
-    game:set_value("oakhaven_fruit_importer_counter", 2)
+    game:start_dialog("_oakhaven.npcs.market.fruit_importer.2", function()
+      game:set_value("quest_tic_tac_toe", 4) --quest log
+      game:set_value("oakhaven_have_oranges_box", true)
+      game:set_value("oakhaven_fruit_importer_counter", 2)
+    end)
 
   --have oranges, but not aubrey
   elseif game:get_value("oakhaven_fruit_importer_counter") == 2 then
@@ -128,6 +130,7 @@ function aubrey_door_npc:on_interaction()
     game:start_dialog("_oakhaven.npcs.misc.aubrey_door")
   else
     game:start_dialog("_oakhaven.npcs.misc.aubrey_door_2", function()
+      game:set_value("quest_tic_tac_toe", 5) --quest log
       aubrey_door_npc:set_enabled(false)
       aubrey_door:set_enabled(false)
       game:set_value("oakhaven_aubrey_unlocked", true)
@@ -147,16 +150,22 @@ end
 function musician_1:on_interaction()
   if game:get_value("gunther_counter")==nil then
     game:start_dialog("_oakhaven.npcs.musicians.gunther.1", function(answer)
-      if answer == 2 then
-        game:start_dialog("_oakhaven.npcs.musicians.gunther.2")
-        game:set_value("oakhaven_band_talk_to_bartender", true)
-        game:set_value("gunther_counter", 2)
+      if answer == 2 then --let's help gunther!
+        game:start_dialog("_oakhaven.npcs.musicians.gunther.2", function()
+          game:set_value("quest_oakhaven_musicians", 0) --quest log
+          game:set_value("oakhaven_band_talk_to_bartender", true)
+          game:set_value("gunther_counter", 2)
+        end)
       end
     end)
+
+  --he's sent you to the bar
   elseif game:get_value("gunther_counter") == 2 then
     game:start_dialog("_oakhaven.npcs.musicians.gunther.3")
+
   elseif game:get_value("gunther_counter") ==3 then
     game:start_dialog("_oakhaven.npcs.musicians.gunther.4")
+
   elseif game:get_value("gunther_counter") == 4 then
     game:start_dialog("_oakhaven.npcs.musicians.gunther.5")
   end
@@ -181,10 +190,12 @@ end
 for sensor in map:get_entities("poster_monster_sensor") do
   function sensor:on_activated()
     if game:get_value("oakhaven_find_poster_monster") then
-      game:start_dialog("_oakhaven.observations.misc.poster_monster")
-      poster_monster_wall:set_enabled(false)
-      game:set_value("poster_monster_caught", true)
-      sensor:set_enabled(false)
+      game:start_dialog("_oakhaven.observations.misc.poster_monster", function() 
+        game:set_value("quest_oakhaven_musicians", 1) --quest log
+        poster_monster_wall:set_enabled(false)
+        game:set_value("poster_monster_caught", true)
+        sensor:set_enabled(false)
+      end)
     end
   end
 end

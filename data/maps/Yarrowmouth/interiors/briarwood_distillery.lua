@@ -1,12 +1,3 @@
--- Lua script of map Yarrowmouth/interiors/briarwood_distillery.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
@@ -46,13 +37,15 @@ end
 
 --Rohit - Meadery Quest
 function rohit:on_interaction()
-  rdc = game:get_value("rohit_dialog_counter")
+  local rdc = game:get_value("rohit_dialog_counter")
   if rdc == nil then
     game:start_dialog("_yarrowmouth.npcs.tavern.rohit.1", function(answer)
       if answer == 2 then
-        game:start_dialog("_yarrowmouth.npcs.tavern.rohit.2")
-        game:set_value("you_got_mushroom_spot_key", true)
-        game:set_value("rohit_dialog_counter", 1)
+        game:start_dialog("_yarrowmouth.npcs.tavern.rohit.2", function()
+          game:set_value("quest_briarwood_mushrooms", 0)
+          game:set_value("you_got_mushroom_spot_key", true)
+          game:set_value("rohit_dialog_counter", 1)
+        end)
       end
     end)
 
@@ -68,17 +61,22 @@ function rohit:on_interaction()
     game:start_dialog("_yarrowmouth.npcs.tavern.rohit.5")
 
   elseif rdc == 4 then
-    game:start_dialog("_yarrowmouth.npcs.tavern.rohit.6")
-    game:set_value("rohit_dialog_counter", 5)
-    game:set_value("suspect_michael", true)
+    game:start_dialog("_yarrowmouth.npcs.tavern.rohit.6", function()
+      game:set_value("quest_briarwood_mushrooms", 3) --quest log, go fight michael
+      game:set_value("rohit_dialog_counter", 5)
+      game:set_value("suspect_michael", true)
+    end)
 
   elseif rdc == 5 then
     game:start_dialog("_yarrowmouth.npcs.tavern.rohit.7")
 
   elseif rdc == 6 then
-    game:start_dialog("_yarrowmouth.npcs.tavern.rohit.8", function() game:add_money(110) end)
-    game:set_value("rohit_dialog_counter", 7)
-    game:set_value("briarwood_distillery_quest_complete", true)
+    game:start_dialog("_yarrowmouth.npcs.tavern.rohit.8", function()
+      game:set_value("quest_briarwood_mushrooms", 5) --quest log
+      game:add_money(110)
+      game:set_value("rohit_dialog_counter", 7)
+      game:set_value("briarwood_distillery_quest_complete", true)
+    end)
 
   elseif rdc == 7 then
     game:start_dialog("_yarrowmouth.npcs.tavern.rohit.9")

@@ -70,8 +70,11 @@ end
 
 function nina:on_interaction()
   if game:get_value("nina_dialog_counter") == 2 then
-    game:start_dialog("_yarrowmouth.npcs.nina.marsh1")
-    game:set_value("nina_dialog_counter", 3)
+    game:start_dialog("_yarrowmouth.npcs.nina.marsh1", function()
+      game:set_value("nina_dialog_counter", 3)
+      game:set_value("quest_yarrow_parley", 3) --quest log
+    end)
+
   elseif game:get_value("nina_dialog_counter") == 3 then
     game:start_dialog("_yarrowmouth.npcs.nina.6")
   end

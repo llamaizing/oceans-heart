@@ -22,44 +22,21 @@ end
 function trap_sensor:on_activated()
   if game:get_value("rohit_dialog_counter") < 2 then
     map:close_doors("gate")
+    trap_you_in_ambush_wall:set_enabled(true)
     game:start_dialog("_yarrowmouth.observations.ambush_2")
   end
 end
 
-
-
-function mushroom_golem_1:on_dead()
-  if map:get_entities_count("mushroom_golem") == 0 then
-    game:start_dialog("_yarrowmouth.observations.mushroom_spot.1")
-    game:set_value("rohit_dialog_counter", 2)
-    game:set_value("puzzlewood_footprints_visible", true)
-    map:open_doors("gate")
-  end
-end
-
-function mushroom_golem_3:on_dead()
-  if map:get_entities_count("mushroom_golem") == 0 then
-    game:start_dialog("_yarrowmouth.observations.mushroom_spot.1")
-    game:set_value("rohit_dialog_counter", 2)
-    game:set_value("puzzlewood_footprints_visible", true)
-    map:open_doors("gate")
-  end
-end
-
-function mushroom_golem_4:on_dead()
-  if map:get_entities_count("mushroom_golem") == 0 then
-    game:start_dialog("_yarrowmouth.observations.mushroom_spot.1")
-    game:set_value("rohit_dialog_counter", 2)
-    game:set_value("puzzlewood_footprints_visible", true)
-    map:open_doors("gate")
-  end
-end
-
-function mushroom_golem_5:on_dead()
-  if map:get_entities_count("mushroom_golem") == 0 then
-    game:start_dialog("_yarrowmouth.observations.mushroom_spot.1")
-    game:set_value("rohit_dialog_counter", 2)
-    game:set_value("puzzlewood_footprints_visible", true)
-    map:open_doors("gate")
+for golem in map:get_entities("mushroom_golem") do
+  function golem:on_dead()
+    if map:get_entities_count("mushroom_golem") == 0 then
+      game:start_dialog("_yarrowmouth.observations.mushroom_spot.1", function()
+        trap_you_in_ambush_wall:set_enabled(false)
+        game:set_value("quest_briarwood_mushrooms", 1) --quest log
+        game:set_value("rohit_dialog_counter", 2)
+        game:set_value("puzzlewood_footprints_visible", true)
+        map:open_doors("gate")
+      end)
+    end
   end
 end

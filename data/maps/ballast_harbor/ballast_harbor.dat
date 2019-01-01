@@ -33075,6 +33075,26 @@ tile{
   pattern = "1861",
 }
 
+tile{
+  layer = 0,
+  x = 216,
+  y = 1176,
+  width = 32,
+  height = 16,
+  pattern = "10",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 1240,
+  width = 16,
+  height = 24,
+  pattern = "7",
+  tileset = "misc",
+}
+
 destination{
   name = "from_tavern",
   layer = 0,
@@ -36097,15 +36117,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "1229",
-}
-
-tile{
-  layer = 1,
-  x = 520,
-  y = 1176,
-  width = 48,
-  height = 24,
-  pattern = "914",
 }
 
 tile{
@@ -39454,6 +39465,27 @@ tile{
   width = 16,
   height = 16,
   pattern = "1235",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 1256,
+  enabled_at_start = false,
+  width = 32,
+  height = 16,
+  pattern = "1",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 1088,
+  width = 16,
+  height = 8,
+  pattern = "8",
+  tileset = "misc",
 }
 
 pickable{

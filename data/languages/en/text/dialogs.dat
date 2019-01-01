@@ -10611,3 +10611,135 @@ destroy the monsters
 ]],
 }
 
+dialog{
+    id = "quest.side.yarrowmouth.parley",
+    title = "A Quick Errand",
+    text = [[
+Nina of Yarrowmouth asked if
+you could meet with some
+pirates of behalf of a man
+named Carlov.
+@Tell the pirates to piss off
+!They'll meet you at Seaweed
+!Rock, west of Tern Marsh
+@!What!? It's a trap!?
+@!Report back to Nina
+@Find the pirates hideout
+and teach them not to mess
+with Yarrowmouth. Or you.
+!If you go southeast of
+!Tern Marsh and east after
+!you pass the meadery, you
+!can find their hideout.
+@Let Nina know you defeated
+the pirate crew
+    ]]
+}
+
+dialog{
+    id = "quest.side.yarrowmouth.stone_beak",
+    title = "A Stone...Beak?",
+    text = [[
+You happened across a piece
+of stone shaped kind of like
+a bird beak.
+@Figure out where it may
+have come fom
+    ]]
+}
+
+dialog{
+    id = "quest.side.yarrowmouth.iron_pinecone",
+    title = "An Iron Pinecone",
+    text = [[
+An artisinal armorer will
+make you some armor if you
+bring her an iron pinecone.
+@Search Yarrowmouth for an
+iron pinecone.
+@Bring the pinecone to Mera
+the at the Yarrowmoth
+blacksmith and get some
+armor.
+    ]]
+}
+
+dialog{
+    id = "quest.side.yarrowmouth.meadery",
+    title = "Briarwood Mushrooms",
+    text = [[
+Briarwood Distillery's
+mushroom spot was overrun.
+@Defeat the monsters at
+the mushroom picking spot
+!The spot is east of
+!the Puzzlewood
+@Wait, who set that trap?
+@See if anyone at the
+distillery knows Michael
+@Confront Michael the
+Mighty Mead Maker
+!His meadery is just
+north of Ballast Harbor
+@Return to Briarwood
+    ]]
+}
+
+dialog{
+    id = "quest.side.oakhaven.orange_thief",
+    title = "The Tic Tac Champ",
+    text = [[
+You somehow joined Oakhaven's
+tic tac toe championship,
+but the prize was stolen!
+@Investigate the scene
+@!Talk to the emcee
+@!Search for clues
+@Find someone who would
+remember selling this
+many oranges.
+@Take the oranges you've
+been given to Aubrey
+!She lives across the
+!river from the market.
+@!Go on in
+@!Take the money back to
+!the tic tac toe guy.
+@Be confident knowing
+you made the right
+decision
+    ]]
+}
+
+dialog{
+    id = "quest.side.oakhaven.musicians",
+    title = "Battle of the Band",
+    text = [[
+You agreed to help some
+struggling musicians.
+@Let the bartender know
+they're willing to play
+!He'll be behind the bar
+!at the Salamander Heartache
+!Saloon
+@Check the band's posters
+and make sure monsters
+aren't attacking them
+@Beat up that monster!
+@Go see Gunther's show.
+    ]]
+}
+
+dialog{
+    id = "quest.side.ferris_tools",
+    title = "Black Market Tools",
+    text = [[
+Ferris could make you more
+armor if you could find her
+some blacksmith tools.
+@Find some tools somewhere
+!Ferris recommends looking
+!in Ballast Harbor
+@Return the tools to Ferris
+    ]]
+}

@@ -29,9 +29,9 @@ end
 function michael_npc:on_interaction()
   if game:get_value("suspect_michael") == true then
     if game:get_value("bart_defeated") == true then
-      game:start_dialog("_ballast_harbor.npcs.michael.2")
-    else
       game:start_dialog("_ballast_harbor.npcs.michael.3")
+    else
+      game:start_dialog("_ballast_harbor.npcs.michael.2")
     end
     michael_npc:set_enabled(false)
     michael_enemy:set_enabled(true)
@@ -41,8 +41,10 @@ function michael_npc:on_interaction()
 end
 
 function michael_enemy:on_dead()
+  game:set_value("quest_briarwood_mushrooms", 4) --quest log, go back to distillery
   game:set_value("michael_defeated", true)
   game:set_value("rohit_dialog_counter", 6)
+  
 end
 
 
