@@ -8801,14 +8801,6 @@ enemy{
   breed = "normal_enemies/ogre_1",
 }
 
-enemy{
-  layer = 0,
-  x = 400,
-  y = 117,
-  direction = 0,
-  breed = "normal_enemies/ogre_1",
-}
-
 destructible{
   layer = 0,
   x = 272,

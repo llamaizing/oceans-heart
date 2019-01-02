@@ -310,6 +310,8 @@ sprite{ id = "enemies/normal_enemies/trumpet_player_disguise", description = "tr
 sprite{ id = "enemies/normal_enemies/zora", description = "Zora" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 sprite{ id = "entities/apple", description = "apple" }
+sprite{ id = "entities/armor", description = "Armor" }
+sprite{ id = "entities/armor_tools", description = "Armor Tools" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/arrow_fire", description = "arrow_fire" }
 sprite{ id = "entities/arrow_silver", description = "arrow_silver" }

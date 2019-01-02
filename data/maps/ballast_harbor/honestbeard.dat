@@ -1046,6 +1046,16 @@ npc{
   subtype = 1,
 }
 
+npc{
+  name = "armor_tools_icon",
+  layer = 0,
+  x = 128,
+  y = 141,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/armor_tools",
+}
+
 tile{
   layer = 1,
   x = 144,
@@ -1225,14 +1235,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "191",
-}
-
-pickable{
-  name = "armor_tools_icon",
-  layer = 2,
-  x = 128,
-  y = 141,
-  treasure_name = "armor_tools",
 }
 
 pickable{

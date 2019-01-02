@@ -10278,10 +10278,9 @@ dynamic_tile{
   layer = 0,
   x = 704,
   y = 552,
-  pattern = "1726",
   width = 32,
   height = 40,
-  enabled_at_start = true,
+  pattern = "1726",
 }
 
 destructible{
@@ -10960,15 +10959,7 @@ pickable{
   y = 141,
   treasure_name = "rupee",
   treasure_variant = 3,
-  treasure_savegame_variable = "west_goat_x_spot_money",
-}
-
-destructible{
-  layer = 0,
-  x = 456,
-  y = 141,
-  sprite = "entities/bush_forest",
-  can_be_cut = true,
+  treasure_savegame_variable = "west_goat_x_spot_crowns",
 }
 
 destructible{
@@ -10985,6 +10976,15 @@ destructible{
   y = 269,
   sprite = "entities/bush_forest",
   can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 456,
+  y = 141,
+  sprite = "entities/block_stone_lv1",
+  weight = 1,
+  damage_on_enemies = 2,
 }
 
 tile{
@@ -15457,10 +15457,10 @@ dynamic_tile{
   layer = 1,
   x = 704,
   y = 552,
-  pattern = "1735",
+  enabled_at_start = false,
   width = 32,
   height = 32,
-  enabled_at_start = false,
+  pattern = "1735",
 }
 
 teletransporter{

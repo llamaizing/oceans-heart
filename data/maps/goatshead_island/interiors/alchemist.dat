@@ -1055,15 +1055,6 @@ npc{
 }
 
 npc{
-  name = "bait_sale",
-  layer = 0,
-  x = 232,
-  y = 69,
-  direction = 3,
-  subtype = 1,
-}
-
-npc{
   name = "bomb_sale",
   layer = 0,
   x = 208,
@@ -1323,14 +1314,5 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "entities/bomb",
-}
-
-npc{
-  layer = 1,
-  x = 232,
-  y = 53,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/bait",
 }
 

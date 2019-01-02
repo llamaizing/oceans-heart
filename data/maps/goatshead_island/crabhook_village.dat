@@ -5510,7 +5510,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
+  x = 408,
   y = 88,
   width = 16,
   height = 16,
@@ -11376,6 +11376,42 @@ tile{
   pattern = "512",
 }
 
+tile{
+  layer = 0,
+  x = 392,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "1652",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "1594",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "1616",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "1605",
+}
+
 teletransporter{
   layer = 0,
   x = 192,
@@ -11748,6 +11784,62 @@ destructible{
   y = 189,
   sprite = "entities/bush_violet",
   can_be_cut = true,
+}
+
+npc{
+  name = "armor_upgrade",
+  layer = 0,
+  x = 256,
+  y = 253,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/armor",
+}
+
+door{
+  layer = 0,
+  x = 368,
+  y = 136,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  opening_method = "explosion",
+}
+
+door{
+  layer = 0,
+  x = 384,
+  y = 120,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  opening_method = "explosion",
+}
+
+door{
+  layer = 0,
+  x = 400,
+  y = 120,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  opening_method = "explosion",
+}
+
+door{
+  layer = 0,
+  x = 424,
+  y = 112,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  opening_method = "explosion",
+}
+
+chest{
+  layer = 0,
+  x = 384,
+  y = 93,
+  treasure_name = "rupee",
+  treasure_variant = 3,
+  treasure_savegame_variable = "crabhook_village_hill_crowns_chest",
+  sprite = "entities/chest",
 }
 
 tile{
@@ -13940,6 +14032,42 @@ tile{
   pattern = "1061",
 }
 
+tile{
+  layer = 1,
+  x = 392,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "1655",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "1600",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "1617",
+}
+
+tile{
+  layer = 1,
+  x = 424,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "1598",
+}
+
 enemy{
   name = "seagull_9",
   layer = 1,
@@ -13974,14 +14102,6 @@ enemy{
   y = 413,
   direction = 0,
   breed = "misc/seagull",
-}
-
-pickable{
-  name = "armor_upgrade",
-  layer = 1,
-  x = 256,
-  y = 245,
-  treasure_name = "armor_upgrade_1",
 }
 
 tile{
