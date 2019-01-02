@@ -224,3 +224,54 @@ side{
     calc_phase = "quest_crabhook_shoal_monster",
     location = "location.crabhook_village"
 }
+
+side{
+    dialog_id = "quest.side.ballast_harbor.lost_key",
+    calc_phase = "quest_ballast_harbor_lost_inn_key"
+}
+
+side{
+    dialog_id = "quest.side.ballast_harbor.hornet_honey",
+    calc_phase = "quest_ballast_harbor_hornet_honey",
+    location = "location.tern_marsh"
+}
+
+side{
+    dialog_id = "quest.side.yarrowmouth.parley",
+    calc_phase = "quest_yarrow_parley"
+}
+
+side{
+    dialog_id = "quest.side.yarrowmouth.stone_beak",
+    calc_phase = "quest_stone_beak",
+    location = "location.yarrowmouth"
+}
+
+side{
+    dialog_id = "quest.side.yarrowmouth.iron_pinecone",
+    calc_phase = "quest_iron_pine_cone",
+    location = "location.yarrowmouth"
+}
+
+side{
+    dialog_id = "quest.side.yarrowmouth.meadery",
+    calc_phase = "quest_briarwood_mushrooms",
+    location = "location.yarrowmouth"
+}
+
+side{
+    dialog_id = "quest.side.oakhaven.orange_thief",
+    calc_phase = "quest_tic_tac_toe",
+    location = "location.oakhaven"
+}
+
+side{
+    dialog_id = "quest.side.oakhaven.musicians",
+    calc_phase = "quest_oakhaven_musicians",
+    location = "location.oakhaven"
+}
+
+side{
+    dialog_id = "quest.side.ferris_tools",
+    calc_phase = "quest_ferris_tools"
+}

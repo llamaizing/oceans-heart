@@ -34,3 +34,9 @@ function jude:on_interaction()
     end
   end)
 end
+
+function found_your_way_inn_sensor:on_activated()
+  if game:get_value("quest_ballast_harbor_lost_inn_key") == 0 then
+    game:set_value("quest_ballast_harbor_lost_inn_key", 1)
+  end
+end

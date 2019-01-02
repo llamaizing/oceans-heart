@@ -1,6 +1,7 @@
---[[ ui.dat		1 Dec 2018
+--[[ ui.dat		14 Dec 2018
 	
-	This data file describes basic ui components.
+	This data file describes ui component presets used as a starting point when generating
+	a new component.
 ]]
 
 text{
@@ -173,30 +174,10 @@ sprite{
 	animation = "ruby",
 }
 
-array{
-	id = "array.tab_text",
-	direction = "vertical",
-}
-array{
-	id = "array.desc_text",
-	direction = "vertical",
-}
-array{
-	id = "array.desc_checkmarks",
-	direction = "vertical",
-}
-array{
-	id = "array.dynamic_checkmarks",
-	direction = "vertical",
-}
-array{
-	id = "array.list_entries",
-	direction = "vertical",
+array{ --generic vertical array
+	id = "array.vertical",
 }
 
 group{
-	id = "group.list_entry",
-}
-group{
-	id = "group.item_box",
+	id = "group.generic",
 }

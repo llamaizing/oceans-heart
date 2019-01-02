@@ -136,7 +136,7 @@ function tools_sale:on_interaction()
     game:start_dialog("_ballast_harbor.npcs.honestbeard.armor_tools", function(answer)
       if answer == 2 then
         if game:get_money() >= 250 then
-          hero:start_treasure("armor_tools", 0, "found_armorer_tools_honestbeard")
+          hero:start_treasure("armor_tools", 1, "found_armorer_tools_honestbeard")
           game:remove_money(250)
           game:set_value("honestbeard_armor_tools", true)
           armor_tools_icon:set_enabled(false)

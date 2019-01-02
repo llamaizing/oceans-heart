@@ -1,6 +1,6 @@
 --[[ text.lua
 	version 1.0a1
-	3 Dec 2018
+	15 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -196,7 +196,7 @@ function control.create(properties, width, height)
 	function new_control:get_font_color() return util.make_RGB_color(color) end --returns a copy of color table
 	function new_control:set_font_color(value)
 		local value, err = util.make_RGB_color(value, 3) --don't allow alpha values
-		assert(value, "Bad argument #1 to 'set_font_color'"..tostring(err or ''))
+		assert(value, "Bad argument #2 to 'set_font_color'"..tostring(err or ''))
 		
 		font_color = value --font_color is now a table with 3 RGB values
 		
@@ -208,7 +208,7 @@ function control.create(properties, width, height)
 	function new_control:get_shadow_color() return util.make_RGB_color(color) end --returns a copy of color table
 	function new_control:set_shadow_color(value)
 		local value, err = util.make_RGB_color(value, 3) --don't allow alpha values
-		assert(value, "Bad argument #1 to 'set_shadow_color'"..tostring(err or ''))
+		assert(value, "Bad argument #2 to 'set_shadow_color'"..tostring(err or ''))
 		
 		shadow_color = value --shadow_color is now a table with 3 RGB values
 	end
@@ -217,8 +217,8 @@ function control.create(properties, width, height)
 		--possible values are: "left", "center", "right"
 	function new_control:get_horizontal_alignment() return horizontal_alignment end
 	function new_control:set_horizontal_alignment(keyword)
-		assert(type(keyword)=="string", "Bad argument #1 to set_horizontal_alignment' (string expected)")
-		assert(ALIGNMENT_OFFSETS[horizontal_alignment], "Bad argument #1 to 'set_horizontal_alignment', invalid string value: "..horizontal_alignment)
+		assert(type(keyword)=="string", "Bad argument #2 to set_horizontal_alignment' (string expected)")
+		assert(ALIGNMENT_OFFSETS[horizontal_alignment], "Bad argument #2 to 'set_horizontal_alignment', invalid string value: "..horizontal_alignment)
 		
 		horizontal_alignment = keyword
 	end
@@ -227,8 +227,8 @@ function control.create(properties, width, height)
 		--possible values are: "top", "middle", "bottom"
 	function new_control:get_vertical_alignment() return vertical_alignment end
 	function new_control:set_vertical_alignment(keyword)
-		assert(type(keyword)=="string", "Bad argument #1 to set_vertical_alignment' (string expected)")
-		assert(ALIGNMENT_OFFSETS[vertical_alignment], "Bad argument #1 to 'set_vertical_alignment', invalid string value: "..vertical_alignment)
+		assert(type(keyword)=="string", "Bad argument #2 to set_vertical_alignment' (string expected)")
+		assert(ALIGNMENT_OFFSETS[vertical_alignment], "Bad argument #2 to 'set_vertical_alignment', invalid string value: "..vertical_alignment)
 		
 		vertical_alignment = keyword
 	end
@@ -237,7 +237,7 @@ function control.create(properties, width, height)
 		--value (boolean) - if true then the text is enabled
 	function new_control:get_enabled() return is_enabled end
 	function new_control:set_enabled(value)
-		assert(type(value)=="boolean", "Bad argument #1 to 'set_enabled' (boolean expected)")
+		assert(type(value)=="boolean", "Bad argument #2 to 'set_enabled' (boolean expected)")
 		
 		if is_enabled ~= value then
 			is_enabled = value
@@ -260,10 +260,10 @@ function control.create(properties, width, height)
 	function new_control:get_xy() return position.x, position.y end
 	function new_control:set_xy(x, y)
 		local x = tonumber(x)
-		assert(x, "Bad argument #1 to 'set_xy' (number expected)")
+		assert(x, "Bad argument #2 to 'set_xy' (number expected)")
 		
 		local y = tonumber(y)
-		assert(y, "Bad argument #2 to 'set_xy' (number expected)")
+		assert(y, "Bad argument #3 to 'set_xy' (number expected)")
 		
 		position.x = x
 		position.y = y

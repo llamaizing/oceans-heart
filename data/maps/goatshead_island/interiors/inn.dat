@@ -2935,6 +2935,15 @@ block{
   pullable = true,
 }
 
+sensor{
+  name = "found_your_way_inn_sensor",
+  layer = 0,
+  x = 360,
+  y = 189,
+  width = 16,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 120,

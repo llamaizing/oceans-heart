@@ -13,7 +13,10 @@ local game = map:get_game()
 
 function map:on_started()
   if game:get_value("pirate_council_door_state") ~= nil then pirate_council_door:set_enabled(false) end
-  if game:get_value("nina_dialog_counter") ~= nil and game:get_value("nina_dialog_counter") >= 3 then dream_cannon_guard:set_enabled(false) end
+  if game:get_value("nina_dialog_counter") ~= nil and game:get_value("nina_dialog_counter") >= 3 then
+    dream_cannon_guard:set_enabled(false)
+  end
+  if game:get_value("oakhaven_port_bridge_unblocked") then bomb_sale:set_enabed(false) end
 
 end
 

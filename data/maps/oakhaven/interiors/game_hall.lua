@@ -51,19 +51,24 @@ function referee:on_interaction()
 
   --after Ana escapes
   elseif game:get_value("tic_tac_referee_counter") == 2 then
-    game:start_dialog("_oakhaven.npcs.game_hall.officiant.5")
-    game:set_value("tic_tac_referee_counter", 55) --I messed up the numbering system, oops
+    game:start_dialog("_oakhaven.npcs.game_hall.officiant.5", function()
+      game:set_value("quest_tic_tac_toe", 2) --quest log
+      game:set_value("tic_tac_referee_counter", 55) --I messed up the numbering system, oops
+    end)
 
   --still looking for Aubrey (I changed her name halfway through)
   elseif game:get_value("tic_tac_referee_counter") == 55 then
     game:start_dialog("_oakhaven.npcs.game_hall.officiant.55")
 
-  --if you got the money back
+  --if you got the money back from Aubrey
   elseif game:get_value("tic_tac_referee_counter") == 3 then
-    game:start_dialog("_oakhaven.npcs.game_hall.officiant.6", function() game:remove_money(100) end)
-    game:set_value("tic_tac_referee_counter", 4)
+    game:start_dialog("_oakhaven.npcs.game_hall.officiant.6", function()
+      game:remove_money(100)
+      game:set_value("tic_tac_referee_counter", 4)
+      game:set_value("quest_tic_tac_toe", 8) --quest log
+    end)
 
-  --if you got the money back
+  --if you gave the money back to the referee
   elseif game:get_value("tic_tac_referee_counter") == 4 then
     game:start_dialog("_oakhaven.npcs.game_hall.officiant.7")
 
@@ -91,8 +96,10 @@ function start_tournament()
     m:start(guard)
     game:set_value("oakhaven_tic_tac_treasure_stolen", true)
     game:set_value("tic_tac_referee_counter", 1)
+    game:set_value("quest_tic_tac_toe", 0) --quest log, start quest
   end)--end of dialog function
 end
+
 
 function ana_2:on_interaction()
   game:start_dialog("_oakhaven.npcs.ana_orange.2", function()
@@ -109,10 +116,10 @@ function ana_2:on_interaction()
     ana_2:set_enabled(false)
     game:set_value("tic_tac_referee_counter", 2)
     game:set_value("orange_ana_on_the_run", true)
-    game:set_value("oakhaven_fruit_importer_counter", 1)
     sol.timer.start(1000, function()
       map:get_camera():start_tracking(hero)
       hero:unfreeze()
+      game:set_value("quest_tic_tac_toe", 1)
     end)
 
 
@@ -177,4 +184,10 @@ function competitor_4:on_interaction()
   end
 end
 
-
+function orange_peel:on_interaction()
+  game:set_value("oakhaven_fruit_importer_counter", 1)
+  game:start_dialog("_oakhaven.npcs.game_hall.orange_peel")
+  if game:get_value("quest_tic_tac_toe") == 2 then
+    game:set_value("quest_tic_tac_toe", 3) --quest log
+  end
+end

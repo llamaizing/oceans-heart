@@ -29,9 +29,9 @@ end
 function michael_npc:on_interaction()
   if game:get_value("suspect_michael") == true then
     if game:get_value("bart_defeated") == true then
-      game:start_dialog("_ballast_harbor.npcs.michael.2")
-    else
       game:start_dialog("_ballast_harbor.npcs.michael.3")
+    else
+      game:start_dialog("_ballast_harbor.npcs.michael.2")
     end
     michael_npc:set_enabled(false)
     michael_enemy:set_enabled(true)
@@ -41,8 +41,10 @@ function michael_npc:on_interaction()
 end
 
 function michael_enemy:on_dead()
+  game:set_value("quest_briarwood_mushrooms", 4) --quest log, go back to distillery
   game:set_value("michael_defeated", true)
   game:set_value("rohit_dialog_counter", 6)
+  
 end
 
 
@@ -50,19 +52,29 @@ end
 --Benjamin
 function benjamin:on_interaction()
   if game:get_value("michael_defeated") == true then
-    game:start_dialog("_ballast_harbor.npcs.benjamin.2")
+    game:start_dialog("_ballast_harbor.npcs.benjamin.2", function()
+      game:set_value("quest_ballast_harbor_hornet_honey", 0) --quest log
+    end)
   else
-    game:start_dialog("_ballast_harbor.npcs.benjamin.1")
+    game:start_dialog("_ballast_harbor.npcs.benjamin.1", function()
+      game:set_value("quest_ballast_harbor_hornet_honey", 0) --quest log
+    end)
   end
 end
 
 function benjamin_2:on_interaction()
   if game:get_value("sold_honeycomb_to_benjamin") ~= true then
     if game:get_value("michael_defeated") == true then
-      game:start_dialog("_ballast_harbor.npcs.benjamin.4", function() game:add_money(60) end)
+      game:start_dialog("_ballast_harbor.npcs.benjamin.4", function()
+        game:add_money(60)
+        game:set_value("quest_ballast_harbor_hornet_honey", 2) --quest log
+        end)
       game:set_value("sold_honeycomb_to_benjamin", true)
     else
-      game:start_dialog("_ballast_harbor.npcs.benjamin.3", function() game:add_money(45) end)
+      game:start_dialog("_ballast_harbor.npcs.benjamin.3", function()
+        game:add_money(45)
+        game:set_value("quest_ballast_harbor_hornet_honey", 2) --quest log
+      end)
       game:set_value("sold_honeycomb_to_benjamin", true)
     end
   else

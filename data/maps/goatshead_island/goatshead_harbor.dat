@@ -9229,15 +9229,6 @@ tile{
 tile{
   layer = 0,
   x = 840,
-  y = 416,
-  width = 48,
-  height = 8,
-  pattern = "1447",
-}
-
-tile{
-  layer = 0,
-  x = 840,
   y = 376,
   width = 48,
   height = 32,
@@ -9251,15 +9242,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1445",
-}
-
-tile{
-  layer = 0,
-  x = 824,
-  y = 424,
-  width = 16,
-  height = 16,
-  pattern = "624",
 }
 
 tile{
@@ -11915,15 +11897,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "1215",
-}
-
-tile{
-  layer = 0,
-  x = 856,
-  y = 392,
-  width = 16,
-  height = 24,
-  pattern = "623",
 }
 
 tile{
@@ -16104,24 +16077,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
-  y = 272,
-  width = 24,
-  height = 16,
-  pattern = "1020",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 288,
-  width = 24,
-  height = 16,
-  pattern = "690",
-}
-
-tile{
-  layer = 0,
   x = 776,
   y = 208,
   width = 24,
@@ -16154,15 +16109,6 @@ tile{
   width = 24,
   height = 16,
   pattern = "690",
-}
-
-tile{
-  layer = 0,
-  x = 480,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "1018",
 }
 
 tile{
@@ -17225,15 +17171,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "592",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 456,
-  width = 24,
-  height = 16,
-  pattern = "690",
 }
 
 tile{
@@ -18350,42 +18287,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "1050",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 296,
-  width = 16,
-  height = 16,
-  pattern = "1538",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 280,
-  width = 48,
-  height = 16,
-  pattern = "1556",
-}
-
-tile{
-  layer = 0,
-  x = 704,
-  y = 296,
-  width = 16,
-  height = 16,
-  pattern = "1539",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 296,
-  width = 16,
-  height = 16,
-  pattern = "1541",
 }
 
 tile{
@@ -21838,7 +21739,7 @@ tile{
 tile{
   layer = 0,
   x = 400,
-  y = 376,
+  y = 352,
   width = 16,
   height = 16,
   pattern = "930",
@@ -22872,15 +22773,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 888,
-  y = 416,
-  width = 16,
-  height = 24,
-  pattern = "2083",
-}
-
-tile{
-  layer = 0,
   x = 896,
   y = 400,
   width = 16,
@@ -23273,6 +23165,122 @@ tile{
   width = 16,
   height = 16,
   pattern = "2090",
+}
+
+tile{
+  layer = 0,
+  x = 856,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "2",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 56,
+  width = 32,
+  height = 16,
+  pattern = "10",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 392,
+  width = 32,
+  height = 24,
+  pattern = "5",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 288,
+  width = 16,
+  height = 24,
+  pattern = "2130",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 328,
+  width = 16,
+  height = 24,
+  pattern = "2126",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "930",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "931",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "923",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 256,
+  width = 24,
+  height = 16,
+  pattern = "690",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 272,
+  width = 16,
+  height = 24,
+  pattern = "2124",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 296,
+  width = 16,
+  height = 24,
+  pattern = "2124",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 264,
+  width = 16,
+  height = 24,
+  pattern = "2128",
+  tileset = "overworld_oakhaven",
 }
 
 destination{
@@ -23959,8 +23967,8 @@ npc{
 npc{
   name = "preaster_fisher_2",
   layer = 0,
-  x = 416,
-  y = 397,
+  x = 408,
+  y = 381,
   direction = 3,
   subtype = 1,
   sprite = "npc/man/man_19.4",
@@ -23970,7 +23978,7 @@ npc{
 npc{
   name = "preaster_fisher_3",
   layer = 0,
-  x = 400,
+  x = 384,
   y = 485,
   direction = 3,
   subtype = 1,
@@ -24004,10 +24012,10 @@ dynamic_tile{
   layer = 0,
   x = 816,
   y = 328,
-  pattern = "1695",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1695",
 }
 
 dynamic_tile{
@@ -24015,10 +24023,10 @@ dynamic_tile{
   layer = 0,
   x = 904,
   y = 312,
-  pattern = "1695",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1695",
 }
 
 dynamic_tile{
@@ -24026,10 +24034,10 @@ dynamic_tile{
   layer = 0,
   x = 976,
   y = 336,
-  pattern = "1695",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1695",
 }
 
 dynamic_tile{
@@ -24037,10 +24045,10 @@ dynamic_tile{
   layer = 0,
   x = 1040,
   y = 352,
-  pattern = "1696",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1696",
 }
 
 dynamic_tile{
@@ -24048,10 +24056,10 @@ dynamic_tile{
   layer = 0,
   x = 1048,
   y = 400,
-  pattern = "1696",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1696",
 }
 
 dynamic_tile{
@@ -24059,10 +24067,10 @@ dynamic_tile{
   layer = 0,
   x = 1016,
   y = 472,
-  pattern = "1696",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1696",
 }
 
 dynamic_tile{
@@ -24070,21 +24078,10 @@ dynamic_tile{
   layer = 0,
   x = 1000,
   y = 552,
-  pattern = "1696",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
-}
-
-dynamic_tile{
-  name = "footprint_9",
-  layer = 0,
-  x = 1024,
-  y = 608,
   pattern = "1696",
-  width = 16,
-  height = 16,
-  enabled_at_start = false,
 }
 
 dynamic_tile{
@@ -24092,10 +24089,10 @@ dynamic_tile{
   layer = 0,
   x = 1088,
   y = 648,
-  pattern = "1695",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1695",
 }
 
 dynamic_tile{
@@ -24103,10 +24100,10 @@ dynamic_tile{
   layer = 0,
   x = 1192,
   y = 624,
-  pattern = "1695",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1695",
 }
 
 dynamic_tile{
@@ -24114,10 +24111,10 @@ dynamic_tile{
   layer = 0,
   x = 1224,
   y = 552,
-  pattern = "1694",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1694",
 }
 
 dynamic_tile{
@@ -24125,10 +24122,10 @@ dynamic_tile{
   layer = 0,
   x = 1216,
   y = 472,
-  pattern = "1694",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1694",
 }
 
 teletransporter{
@@ -24245,10 +24242,10 @@ dynamic_tile{
   layer = 0,
   x = 768,
   y = 344,
-  pattern = "1694",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1694",
 }
 
 dynamic_tile{
@@ -24256,10 +24253,10 @@ dynamic_tile{
   layer = 0,
   x = 752,
   y = 448,
-  pattern = "1694",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1694",
 }
 
 dynamic_tile{
@@ -24267,10 +24264,10 @@ dynamic_tile{
   layer = 0,
   x = 696,
   y = 464,
-  pattern = "1695",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1695",
 }
 
 teletransporter{
@@ -24308,10 +24305,9 @@ dynamic_tile{
   layer = 0,
   x = 448,
   y = 256,
-  pattern = "1702",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1702",
 }
 
 dynamic_tile{
@@ -24319,27 +24315,27 @@ dynamic_tile{
   layer = 0,
   x = 336,
   y = 480,
-  pattern = "1702",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1702",
 }
 
 dynamic_tile{
   name = "2fish_6",
   layer = 0,
-  x = 408,
+  x = 392,
   y = 472,
-  pattern = "1702",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1702",
 }
 
 npc{
   name = "postaster_fisher",
   layer = 0,
-  x = 384,
+  x = 368,
   y = 493,
   direction = 3,
   subtype = 1,
@@ -24350,7 +24346,7 @@ npc{
   name = "postaster_fisher_3",
   layer = 0,
   x = 408,
-  y = 373,
+  y = 381,
   direction = 0,
   subtype = 1,
   sprite = "npc/man/man_10.7",
@@ -24361,11 +24357,11 @@ dynamic_tile{
   name = "2fish_11",
   layer = 0,
   x = 464,
-  y = 448,
-  pattern = "931",
+  y = 432,
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "931",
 }
 
 dynamic_tile{
@@ -24373,10 +24369,10 @@ dynamic_tile{
   layer = 0,
   x = 464,
   y = 416,
-  pattern = "1702",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1702",
 }
 
 dynamic_tile{
@@ -24384,10 +24380,10 @@ dynamic_tile{
   layer = 0,
   x = 448,
   y = 416,
-  pattern = "1702",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1702",
 }
 
 npc{
@@ -24405,7 +24401,7 @@ npc{
   name = "preaster_fisher",
   layer = 0,
   x = 448,
-  y = 285,
+  y = 277,
   direction = 3,
   subtype = 1,
   sprite = "npc/man/man_24.5",
@@ -24620,6 +24616,17 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/man/man_13.3",
+}
+
+dynamic_tile{
+  name = "footprint_9",
+  layer = 0,
+  x = 1024,
+  y = 608,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1696",
 }
 
 tile{
@@ -25295,15 +25302,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1331",
-}
-
-tile{
-  layer = 1,
-  x = 1096,
-  y = 584,
-  width = 32,
-  height = 16,
-  pattern = "1061",
 }
 
 tile{
@@ -26766,24 +26764,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 560,
-  y = 264,
-  width = 24,
-  height = 8,
-  pattern = "1021",
-}
-
-tile{
-  layer = 1,
-  x = 560,
-  y = 280,
-  width = 24,
-  height = 8,
-  pattern = "691",
-}
-
-tile{
-  layer = 1,
   x = 776,
   y = 200,
   width = 24,
@@ -26816,15 +26796,6 @@ tile{
   width = 24,
   height = 8,
   pattern = "691",
-}
-
-tile{
-  layer = 1,
-  x = 480,
-  y = 440,
-  width = 16,
-  height = 8,
-  pattern = "1019",
 }
 
 tile{
@@ -27270,15 +27241,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 560,
-  y = 448,
-  width = 24,
-  height = 8,
-  pattern = "691",
-}
-
-tile{
-  layer = 1,
   x = 816,
   y = 440,
   width = 24,
@@ -27416,15 +27378,6 @@ tile{
   layer = 1,
   x = 448,
   y = 16,
-  width = 8,
-  height = 16,
-  pattern = "1459",
-}
-
-tile{
-  layer = 1,
-  x = 632,
-  y = 416,
   width = 8,
   height = 16,
   pattern = "1459",
@@ -27927,15 +27880,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 400,
-  y = 312,
-  width = 8,
-  height = 16,
-  pattern = "1459",
-}
-
-tile{
-  layer = 1,
   x = 424,
   y = 312,
   width = 8,
@@ -27945,29 +27889,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 400,
-  y = 344,
-  width = 64,
-  height = 8,
-  pattern = "1460",
-}
-
-tile{
-  layer = 1,
   x = 448,
   y = 312,
   width = 8,
   height = 16,
   pattern = "1459",
-}
-
-tile{
-  layer = 1,
-  x = 672,
-  y = 272,
-  width = 48,
-  height = 8,
-  pattern = "1557",
 }
 
 tile{
@@ -28828,7 +28754,7 @@ tile{
 tile{
   layer = 1,
   x = 400,
-  y = 368,
+  y = 344,
   width = 16,
   height = 8,
   pattern = "937",
@@ -28980,8 +28906,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 560,
-  y = 416,
+  x = 520,
+  y = 408,
   width = 16,
   height = 16,
   pattern = "2086",
@@ -29075,6 +29001,195 @@ tile{
   width = 8,
   height = 16,
   pattern = "1919",
+}
+
+tile{
+  layer = 1,
+  x = 760,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "8",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 840,
+  y = 416,
+  width = 48,
+  height = 8,
+  pattern = "1447",
+}
+
+tile{
+  layer = 1,
+  x = 888,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "624",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 424,
+  width = 16,
+  height = 8,
+  pattern = "8",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 632,
+  y = 416,
+  width = 8,
+  height = 16,
+  pattern = "1459",
+}
+
+tile{
+  layer = 1,
+  x = 1024,
+  y = 608,
+  width = 16,
+  height = 8,
+  pattern = "2088",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1096,
+  y = 584,
+  width = 32,
+  height = 16,
+  pattern = "1061",
+}
+
+tile{
+  layer = 1,
+  x = 824,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "624",
+}
+
+tile{
+  layer = 1,
+  x = 760,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 448,
+  y = 280,
+  width = 16,
+  height = 8,
+  pattern = "2131",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 320,
+  width = 16,
+  height = 8,
+  pattern = "2127",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 312,
+  width = 8,
+  height = 16,
+  pattern = "1459",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 344,
+  width = 64,
+  height = 8,
+  pattern = "1460",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 448,
+  width = 16,
+  height = 8,
+  pattern = "937",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 448,
+  width = 16,
+  height = 8,
+  pattern = "936",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 448,
+  width = 16,
+  height = 8,
+  pattern = "924",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 248,
+  width = 24,
+  height = 8,
+  pattern = "691",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 264,
+  width = 16,
+  height = 8,
+  pattern = "2125",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "2125",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 784,
+  y = 256,
+  width = 16,
+  height = 8,
+  pattern = "2129",
+  tileset = "overworld_oakhaven",
 }
 
 enemy{
@@ -29186,10 +29301,9 @@ dynamic_tile{
   layer = 1,
   x = 448,
   y = 248,
-  pattern = "1703",
   width = 16,
   height = 8,
-  enabled_at_start = true,
+  pattern = "1703",
 }
 
 dynamic_tile{
@@ -29197,10 +29311,10 @@ dynamic_tile{
   layer = 1,
   x = 368,
   y = 456,
-  pattern = "944",
+  enabled_at_start = false,
   width = 8,
   height = 16,
-  enabled_at_start = false,
+  pattern = "944",
 }
 
 dynamic_tile{
@@ -29208,10 +29322,10 @@ dynamic_tile{
   layer = 1,
   x = 360,
   y = 456,
-  pattern = "944",
+  enabled_at_start = false,
   width = 8,
   height = 16,
-  enabled_at_start = false,
+  pattern = "944",
 }
 
 dynamic_tile{
@@ -29219,32 +29333,32 @@ dynamic_tile{
   layer = 1,
   x = 336,
   y = 472,
-  pattern = "1703",
+  enabled_at_start = false,
   width = 16,
   height = 8,
-  enabled_at_start = false,
+  pattern = "1703",
 }
 
 dynamic_tile{
   name = "2fish_5",
   layer = 1,
-  x = 408,
+  x = 392,
   y = 464,
-  pattern = "1703",
+  enabled_at_start = false,
   width = 16,
   height = 8,
-  enabled_at_start = false,
+  pattern = "1703",
 }
 
 dynamic_tile{
   name = "2fish_12",
   layer = 1,
   x = 464,
-  y = 440,
-  pattern = "936",
+  y = 424,
+  enabled_at_start = false,
   width = 16,
   height = 8,
-  enabled_at_start = false,
+  pattern = "936",
 }
 
 dynamic_tile{
@@ -29252,10 +29366,10 @@ dynamic_tile{
   layer = 1,
   x = 464,
   y = 408,
-  pattern = "1703",
+  enabled_at_start = false,
   width = 16,
   height = 8,
-  enabled_at_start = false,
+  pattern = "1703",
 }
 
 dynamic_tile{
@@ -29263,10 +29377,10 @@ dynamic_tile{
   layer = 1,
   x = 448,
   y = 408,
-  pattern = "1703",
+  enabled_at_start = false,
   width = 16,
   height = 8,
-  enabled_at_start = false,
+  pattern = "1703",
 }
 
 tile{

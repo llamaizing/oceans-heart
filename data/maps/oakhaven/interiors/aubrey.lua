@@ -13,7 +13,6 @@ function aubrey:on_interaction()
   --if you took the money from her
   elseif game:get_value("tic_tac_prize_money_status") == "return" then
     game:start_dialog("_oakhaven.npcs.ana_orange.4")
-    game:set_value("tic_tac_referee_counter", 3)
 
   --if you let her keep the money
   elseif game:get_value("tic_tac_prize_money_status") == "keep" then
@@ -26,14 +25,19 @@ function aubrey_first_conversation()
   game:start_dialog("_oakhaven.npcs.ana_orange.3", function(answer)
     --hand over the money!
     if answer == 2 then
-    game:start_dialog("_oakhaven.npcs.ana_orange.take_money", function() game:add_money(200) end)
-    game:set_value("tic_tac_prize_money_status", "return")
+    game:start_dialog("_oakhaven.npcs.ana_orange.take_money", function()
+      game:add_money(200)
+      game:set_value("tic_tac_referee_counter", 3)
+      game:set_value("quest_tic_tac_toe", 6) --quest log
+      game:set_value("tic_tac_prize_money_status", "return")
+    end)
 
     --keep it
     elseif answer == 3 then
-    game:start_dialog("_oakhaven.npcs.ana_orange.keep_money")
-    game:set_value("tic_tac_prize_money_status", "keep")
-
+    game:start_dialog("_oakhaven.npcs.ana_orange.keep_money", function()
+      game:set_value("quest_tic_tac_toe", 8) --quest log
+      game:set_value("tic_tac_prize_money_status", "keep")
+    end)
 
     end
   end)

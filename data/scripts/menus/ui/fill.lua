@@ -1,6 +1,6 @@
 --[[ fill.lua
 	version 1.0a1
-	3 Dec 2018
+	15 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -79,7 +79,7 @@ function control.create(properties, width, height)
 	function new_control:get_color() return util.make_RGB_color(color) end --returns a copy of color table
 	function new_control:set_color(value)
 		local value, err = util.make_RGB_color(value)
-		assert(value, "Bad argument #1 to 'set_color'"..tostring(err or ''))
+		assert(value, "Bad argument #2 to 'set_color'"..tostring(err or ''))
 		
 		color = value
 	end
@@ -88,7 +88,7 @@ function control.create(properties, width, height)
 		--value (boolean) - if true then the fill is visible
 	function new_control:get_visible() return is_visible end
 	function new_control:set_visible(value)
-		assert(type(value)=="boolean", "Bad argument #1 to 'set_visible' (boolean expected)")
+		assert(type(value)=="boolean", "Bad argument #2 to 'set_visible' (boolean expected)")
 		is_visible = value
 	end
 	
@@ -96,10 +96,10 @@ function control.create(properties, width, height)
 	function new_control:get_xy() return position.x, position.y end
 	function new_control:set_xy(x, y)
 		local x = tonumber(x)
-		assert(x, "Bad argument #1 to 'set_xy' (number expected)")
+		assert(x, "Bad argument #2 to 'set_xy' (number expected)")
 		
 		local y = tonumber(y)
-		assert(y, "Bad argument #2 to 'set_xy' (number expected)")
+		assert(y, "Bad argument #3 to 'set_xy' (number expected)")
 		
 		position.x = x
 		position.y = y

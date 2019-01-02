@@ -1,6 +1,6 @@
 --[[ group.lua
 	version 1.0a1
-	3 Dec 2018
+	15 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -47,6 +47,7 @@ function control.create(properties, width, height)
 	--additional settings
 	local surface --intermediate surface to draw subcomponents on
 	local subcomponents = {} --(table, array) list of each subcomponent in the group, order determines draw order, first drawn first
+	local positions = {}
 	local is_visible = true --(boolean) component is not drawn if false, default: true
 	
 	
@@ -85,24 +86,45 @@ function control.create(properties, width, height)
 	--// Assigns the list of subcomponents to be elements in the group, removing any existing elements first
 		--list (table, array) - list of subcomponents to be used in the group, specified as data file properties (see objectives.dat)
 	function new_control:set_subcomponents(list)
-		assert(type(list)=="table", "Bad argument #1 to 'set_subcomponents' (table expected)")
+		assert(type(list)=="table", "Bad argument #2 to 'set_subcomponents' (table expected)")
+		
+		local ui = require"scripts/menus/ui/ui" --do not require at start of script because will cause endless loading loop
 		subcomponents = {} --clear previous subcomponents
 		
-		for i,entry in ipairs(list) do
-			assert(type(entry)=="table", "Bad argument #1 to 'set_subcomponents' (table expected)")
+		if #list>0 then
+			for i,entry in ipairs(list) do
+				assert(type(entry)=="table", "Bad argument #2 to 'set_subcomponents' (table expected)")
+				
+				local subcomponent = entry[1]
+				assert(type(subcomponent)=="table" or type(subcomponent)=="userdata",
+					"Bad argument #2, index "..i..", 1 to 'set_subcomponents' (table or userdata expected)".." got: "..type(subcomponent)
+				)
+				assert(subcomponent.draw, "Bad argument #2 to 'set_subcomponents' (no draw function found for item at index "..i..")")
+				
+				local x = math.max(math.floor(tonumber(entry[2])), 0) or 0
+				local y = math.max(math.floor(tonumber(entry[3])), 0) or 0
+				
+				table.insert(positions, {x=x, y=y})
+				table.insert(subcomponents, subcomponent)
+			end
+		else
+			assert(type(list.layer)=="string", "Bad argument #2 to 'set_subcomponents' (table must contain layer key with string value)")
 			
-			local subcomponent = entry[1]
-			assert(type(subcomponent)=="table" or type(subcomponent)=="userdata",
-				"Bad argument #1, index "..i..", 1 to 'set_subcomponents' (table or userdata expected)".." got: "..type(subcomponent)
-			)
-			assert(subcomponent.draw, "Bad argument #1 to 'set_subcomponents' (no draw function found for item at index "..i..")")
+			local count = tonumber(list.count)
+			assert(count, "Bad argument #2 to 'set_subcomponents' (table must contain count key with number value)")
 			
-			local x = math.max(math.floor(tonumber(entry[2])), 0) or 0
-			local y = math.max(math.floor(tonumber(entry[3])), 0) or 0
-			
-			table.insert(subcomponents, {subcomponent=subcomponent, x=x, y=y})
+			for i=1,count do
+				local subcomponent = ui.create_preset(list.layer, list.width, list.height)
+				
+				local x = math.max(math.floor(tonumber(list.x)), 0) or 0
+				local y = math.max(math.floor(tonumber(list.y)), 0) or 0
+				
+				table.insert(positions, {x=x, y=y})
+				table.insert(subcomponents, subcomponent)
+			end
+			assert(#subcomponents>0, "Bad argument #2 to 'set_subcomponents' (key count must have value >= 1)")
 		end
-		assert(#subcomponents>0, "Bad argument #1 to 'set_subcomponents' (must include at least one subcomponent)")
+		assert(#subcomponents>0, "Bad argument #2 to 'set_subcomponents' (must include at least one subcomponent)")
 	end
 	
 	--if properties table contains an array portion then use it to specify list of subcomponents
@@ -127,7 +149,41 @@ function control.create(properties, width, height)
 	--// Gets the ith subcomponent of the array
 		--i (number, positive integer) - index of the subcomponent to be returned
 		--returns (table or nil) - ui subcomponent at the specified index or nil if it does not exist
-	function new_control:get_subcomponent(i) return subcomponents[i].subcomponent end
+	function new_control:get_subcomponent(i) return subcomponents[i] end
+	
+	--// Calls the function for each subcomponent and passes it the specified value(s)
+		--key (string) - name of the function to call in each subcomponent
+			--any subcomponents that do not define the function will be ignored
+		--values (non-nil) - value(s) to pass to each component's function
+			--(table) - list of values to pass to each subcomponent's function
+				--i.e. the subcomponent[i] function is passed values[i]
+				--if the corresponding value in values[i] is nil then the function is not called
+			--(anything else) - This same value is passed to each subcomponent's function
+			--note: the function is assumed to be a method, so the subcomponent is passed
+			--      as arg 1 and the value as arg 2.
+	function new_control:set_all(key, values)
+		assert(type(key)=="string", "Bad argument #2 to 'set_all' (string expected)")
+		assert(values~=nil, "Bad argument #3 to 'set_all' (must not be nil)")
+		
+		if type(values)=="table" then --values contains list of values for each subcomponent
+			for i,subcomponent in ipairs(subcomponents) do
+				local func = subcomponent[key]
+				local value = values[i]
+			
+				if type(func)=="function" and value~=nil then
+					func(subcomponent, value)
+				end
+			end
+		else --values is single value to be used for all subcomponents
+			for _,subcomponent in ipairs(subcomponents) do
+				local func = subcomponent[key]
+				
+				if type(func)=="function" then
+					func(subcomponent, values)
+				end
+			end
+		end	
+	end
 	
 	--// Get/set whether the group should be drawn
 		--value (boolean) - group will be drawn if true
@@ -149,8 +205,9 @@ function control.create(properties, width, height)
 	function new_control:draw(dst_surface, x, y)
 		if is_visible then
 			surface:clear()
-			for _,entry in ipairs(subcomponents) do
-				entry.subcomponent:draw(surface, entry.x, entry.y) --draw subcomponents on surface
+			for i,subcomponent in ipairs(subcomponents) do
+				local position = positions[i] --convenience
+				subcomponent:draw(surface, position.x, position.y) --draw subcomponents on surface
 			end
 			surface:draw(dst_surface, x, y) --draw surface to destination
 		end

@@ -1,4 +1,4 @@
---[[ quest_log.dat		1 Dec 2018
+--[[ quest_log.dat		13 Dec 2018
 	
 	This data file describes the properties of the quest log menu.
 ]]
@@ -77,7 +77,7 @@ local data = {
 	},
 	{
 		id = "main_tab_text",
-		layer = "array.tab_text",
+		layer = "array.vertical",
 		subcomponent = {
 			layer = "text.tab",
 			width = 45, height = 10,
@@ -90,7 +90,7 @@ local data = {
 	},
 	{
 		id = "side_tab_text",
-		layer = "array.tab_text",
+		layer = "array.vertical",
 		subcomponent = {
 			layer = "text.tab",
 			width = 45, height = 10,
@@ -119,9 +119,9 @@ local data = {
 	
 	{ --content of each item in sidebar list
 		id = "list_entries",
-		layer = "array.list_entries",
+		layer = "array.vertical",
 		subcomponent = {
-			layer = "group.list_entry",
+			layer = "group.generic",
 			width = 115, height = 23,
 			count = 6,
 		},
@@ -193,7 +193,7 @@ local data = {
 	},
 	{ --description text (multi-line) of quest in desc pane
 		id = "desc_text",
-		layer = "array.desc_text",
+		layer = "array.vertical",
 		subcomponent = {
 			layer = "text.small",
 			width = 168, height = 10,
@@ -206,44 +206,38 @@ local data = {
 	},
 	{ --array of checkmark icons to display to mark each subtask of desc text once complete
 		id = "desc_checkmarks",
-		layer = "array.desc_checkmarks",
+		layer = "array.vertical",
 		subcomponent = {
 			layer = "sprite.checkmark",
 			--height/width determined by image
 			count = 14,
 		},
 		width = 6, height = 162,
-		x = 135, y = 54,
-		gap = 6,
+		x = 135, y = 53,
+		gap = 4,
 	},
 	{ --array of checkmark icons to display dynamic checkmarks (x position will vary)
 		id = "dynamic_checkmarks",
-		layer = "array.dynamic_checkmarks",
+		layer = "array.vertical",
 		subcomponent = {
 			layer = "sprite.checkmark",
 			--height/width determined by image
 			count = 14,
 		},
 		width = 168, height = 162,
-		x = 144, y = 54,
-		gap = 6,
+		x = 144, y = 53,
+		gap = 4,
 	},
-	{ --box containing item icon, only shown on line beginning with %?
-		{
-			id = "item_icon",
-			layer = "image.item_icon",
-			width = 16, height = 16,
-			x = 3, y = 3,
-		},
-		{
-			id = "item_frame",
-			layer = "frame.item_box",
+	{
+		id = "desc_items",
+		layer = "group.generic",
+		subcomponent = { --box containing item icon, inserted at $i0 to $i9 markers
+			layer = "group.generic",
 			width = 22, height = 22,
 			x = 0, y = 0,
+			count = 10,
 		},
-		id = "desc_item_box",
-		layer = "group.item_box",
-		width = 22, height = 22,
+		width = 168, height = 168,
 		x = 144, y = 52,
 	},
 	
@@ -253,7 +247,7 @@ local data = {
 	tab_offset_x = 56, --x offset for each tab in pixels
 	tab_offset_y = 0, --y offset for each tab in pixels
 	highlight_scroll_time = 0.23, --time for highlight box to scroll to next entry in seconds, if nil then moves instantly
-	quest_totals_milestone = "reveal_quest_totals", --when this save val is not false/nil then the counts of main and side quests will be revealed
+	--quest_totals_milestone = "reveal_quest_totals", --when this save val is not false/nil then the counts of main and side quests will be revealed
 	list_entry = { --contents of group.list_entry
 		{ --quest title
 			sub_id = "title",
@@ -273,11 +267,25 @@ local data = {
 		},
 		{ --checkmark to show in sidebar when quest is complete
 			sub_id = "entry_checkmark",
-			layer = "image.checkmark",
+			layer = "sprite.checkmark",
 			--height/width determined by image
-			x = 0, y = 3,
+			x = 0, y = 1,
 		},
-	}
+	},
+	desc_item = { --each icon in desc_items (10 instances for $i0 to $i9)
+		{
+			sub_id = "item_icon",
+			layer = "image.item_icon",
+			width = 16, height = 16,
+			x = 3, y = 3,
+		},
+		{
+			sub_id = "item_frame",
+			layer = "frame.item_box",
+			width = 22, height = 22,
+			x = 0, y = 0,
+		},
+	},
 }
 
 return data

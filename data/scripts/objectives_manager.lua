@@ -1,6 +1,6 @@
 --[[ objectives_manager.lua
 	version 1.0a2
-	5 Dec 2018
+	15 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -78,16 +78,16 @@
 local objectives_manager = {}
 
 local STATUS_LIST = {
-	"main_completed",
-	"side_completed",
-	"main_started",
-	"side_started",
-	"main_advanced",
-	"side_advanced",
-	"new_checkmark",
-	"obtained_quest_item",
-	"main_advanced_again",
 	"side_advanced_again",
+	"main_advanced_again",
+	"obtained_quest_item",
+	"new_checkmark",
+	"side_advanced",
+	"main_advanced",
+	"side_started",
+	"main_started",
+	"side_completed",
+	"main_completed",
 } for i,v in ipairs(STATUS_LIST) do STATUS_LIST[v]=i end --reverse look-up
 
 --// Creates an objectives manager to create & update list of objectives, accessible through game.objectives
@@ -107,6 +107,7 @@ function objectives_manager.create(game)
 	local alternates_list = {} --(table, key/value) set of alternate quest keys (string) with the objective_type (string) as the value
 	local save_val_list = {} --(table, array) set with keys of savegame variable names (string) that when changed will cause the objectives to be refreshed
 		--(table, array) values are a table that lists all the objectives (table) that are affected by that save game variable
+	local map_val_list = {} --(table, array) list of objectives that need to be refreshed whenever the map changes
 	local ids = {} --(table, key/value) set with dialog_ids (string) as keys and the corresponding objective (table) as the value, no duplicate dialog_ids allowed
 	local active_npcs = {} --(table, key/value) set with npc entity ids (string) as keys, value is set to true if the npc is related to an active quest, otherwise nil
 	
@@ -204,7 +205,7 @@ function objectives_manager.create(game)
 			--default: "scripts/objectives.dat"
 	function objectives:load_data(file)
 		local file = file or "scripts/objectives.dat"
-		assert(type(file)=="string", "Bad argument #1 to 'load_data' (string or nil expected)")
+		assert(type(file)=="string", "Bad argument #2 to 'load_data' (string or nil expected)")
 		
 		--how to parse the data file
 		local env = {}
@@ -267,6 +268,7 @@ function objectives_manager.create(game)
 		
 		--additional settings
 		local save_vals = {} --(table, key/value) set with keys of savegame variable names (string) that affect this objective, values are true
+		local is_map_refresh = false --(boolean) if true then this objective needs to be refreshed every time the map changes
 		local objective_type = objective_type --(string) keyword for which objective list this quest belongs to ("main" or "side")
 		local num_phases = 0 --(number, integer) the number of subtasks (phases) present in this quest
 		local index --(number, positive integer) the index value assigned to this quest, corresponds to the order in which the quest is defined in objectives.dat
@@ -290,18 +292,29 @@ function objectives_manager.create(game)
 			--true - dynamic checkmark displays as complete
 		local active_npc --(string) npc entity id corresponding to the npc (max 1 at any given time) related to the current phase of this quest
 		--| interacting with the npc will either add the quest to the player's log or advance it to the next phase
-		local active_item_index
+		local active_item_index --(number, positive integer) index of objectives.dat item with highest rank that is currently in player inventory
+		local active_items = {} --(table, key,value) status of first 9 quest items, keys are the number of the quest item, values are true if that item is currently in the player's inventory
+		local latest_status = nil --(string or false or nil) string describing the latest update status for this quest, or false if it hasn't been updated
+		--| value is nil prior to initial loading and becomes false when loading is done
+		
+		local function add_custom_input(keyword)
+			local map_val = keyword:match"^%$(.*)"
+			if map_val and not is_map_refresh then --TODO also need to refresh for map user-defined properties once implemented
+				local func_name = MAP_VALUES[map_val]
+				if func_name then is_map_refresh = true end
+			else save_vals[keyword] = true end
+		end
 		
 		
 		--// validate data file property values
 		
-		assert(type(properties)=="table", "Bad argument #1 to 'add_objective' (table expected)")
+		assert(type(properties)=="table", "Bad argument #2 to 'add_objective' (table expected)")
 		
 		--validate objective_type
-		assert(type(objective_type)=="string", "Bad argument #2 to 'add_objective' (string expected)")
+		assert(type(objective_type)=="string", "Bad argument #3 to 'add_objective' (string expected)")
 		
 		--validate full_list
-		assert(full_list, "Bad argument #2 to 'add_objective', invalid objective type: "..objective_type)
+		assert(full_list, "Bad argument #3 to 'add_objective', invalid objective type: "..objective_type)
 		
 		--validate dialog_id
 		assert(type(dialog_id)=="string", "Bad property dialog_id to 'add_objective' (string expected)")
@@ -339,9 +352,9 @@ function objectives_manager.create(game)
 			)
 			for i,save_key in ipairs(properties.calc_phase) do
 				assert(type(save_key)=="string", "Bad property calc_phase to 'add_objective' (string expected for index "..i..")")
-				save_vals[save_key] = true
+				add_custom_input(save_key)
 			end
-		else save_vals[calc_phase] = true end
+		else add_custom_input(calc_phase) end
 		
 		--location (table or string, optional): indexed table containing strings.dat values for the location name at each phase, or all phases if string (see scripts/objectives.dat)
 		--[[		--table index with value of true repeats the location of the previous phase (true not allowed for index 1)
@@ -373,7 +386,7 @@ function objectives_manager.create(game)
 			)
 			for i,save_val in ipairs(replace_s) do
 				assert(type(save_val)=="string", "Bad property replace_s to 'add_objective' (string expected for index "..i..")")
-				save_vals[save_val] = true
+				add_custom_input(save_val)
 			end
 		end
 		
@@ -385,7 +398,7 @@ function objectives_manager.create(game)
 			)
 			for i,save_val in ipairs(replace_v) do
 				assert(type(save_val)=="string", "Bad property replace_v to 'add_objective' (string expected for index "..i..")")
-				save_vals[save_val] = true
+				add_custom_input(save_val)
 			end
 		end
 		
@@ -397,7 +410,7 @@ function objectives_manager.create(game)
 			)
 			for i,save_val in ipairs(checkmarks) do
 				assert(type(save_val)=="string", "Bad property checkmarks to 'add_objective' (string expected for index "..i..")")
-				save_vals[save_val] = true
+				add_custom_input(save_val)
 			end
 		end
 		
@@ -422,7 +435,7 @@ function objectives_manager.create(game)
 				
 				local save_val = item:get_savegame_variable()
 				if save_val then
-					save_vals[save_val] = true
+					add_custom_input(save_val)
 					table.insert(item_info, {
 						id = item_id,
 						name_key = item_key,
@@ -444,6 +457,9 @@ function objectives_manager.create(game)
 			
 			table.insert(save_val_list[save_val], new_objective)
 		end
+		
+		--add objective to mav_val_list if it needs refresh when changing maps
+		if is_map_refresh then table.insert(map_val_list, new_objective) end
 		
 		--determine number of phases
 		local desc_text = "\n"..dialog.text --temporary
@@ -510,11 +526,12 @@ function objectives_manager.create(game)
 				
 				--determine if player has quest item in inventory
 				active_item_index = nil --start fresh
+				active_items = {}
 				for i=#item_info,1,-1 do --iterate backwards to find highest index of item in player's inventory
 					local item_save_val = item_info[i].save_val
 					if game:get_value(item_save_val) then
-						active_item_index = i
-						break --no need to continue checking after match found
+						if not active_item_index then active_item_index = i end --only save first entry
+						if i<=9 then active_items[i] = true end
 					end
 				end
 				
@@ -557,7 +574,7 @@ function objectives_manager.create(game)
 					else v_values = values end --use game save vals directly
 				else v_values = false end --no values to substitute
 				
-				--generate substitution string keys
+				--determine state of dynamic checkmarks
 				if checkmarks then
 					local values = get_values(checkmarks) --list of values obtained from save game variables
 					
@@ -582,39 +599,55 @@ function objectives_manager.create(game)
 			
 			--determine what was updated for this objective
 			local status = false --tentative; string indicating how quest was updated
-			if prev_phase~=current_phase then
-				if is_done then --quest completed
-					status = objective_type.."_completed"
-				elseif not prev_phase then --quest started
-					status = objective_type.."_started"
-				elseif current_phase > prev_phase then
-					if current_phase > reached_phase then
-						status = objective_type.."_advanced"
-					else status = objective_type.."_advanced_again" end
-				end --else status is false (not worth noting progress went backwards)
-			else
-				--check if any dynamic checkmarks became checked
-				local is_new_checkmark = false --tentative
-				if checkmark_states then
-					for i=1,9 do
-						if checkmark_states[i] and not prev_checkmarks[i] then
-							is_new_checkmark = true
-							break
+			if current_phase then --only check status of quests in player's log
+				if prev_phase~=current_phase then
+					if is_done then --quest completed
+						status = objective_type.."_completed"
+					elseif not prev_phase then --quest started
+						status = objective_type.."_started"
+					elseif current_phase > prev_phase then
+						if current_phase > reached_phase then
+							status = objective_type.."_advanced"
+						else status = objective_type.."_advanced_again" end
+					end --else status is false (not worth noting progress went backwards)
+				else
+					--check if any dynamic checkmarks became checked
+					local is_new_checkmark = false --tentative
+					if checkmark_states then
+						for i=1,9 do
+							if checkmark_states[i] and not prev_checkmarks[i] then
+								is_new_checkmark = true
+								break
+							end
 						end
 					end
+					
+					if is_new_checkmark then --dynamic checkmark became checked
+						status = "new_checkmark"
+					elseif (active_item_index or 0) > prev_item_index then
+						status = "obtained_quest_item"
+					end --else status is false (nothing updated worth noting)
 				end
-				
-				if is_new_checkmark then --dynamic checkmark became checked
-					status = "new_checkmark"
-				elseif (active_item_index or 0) > prev_item_index then
-					status = "obtained_quest_item"
-				end --else status is false (nothing updated worth noting)
 			end
 			
-			if current_phase and current_phase > reached_phase then reached_phase = current_phase end --update highest reached phase
+			--update highest reached phase
+			if current_phase and current_phase > reached_phase then
+				reached_phase = current_phase
+			end
+			
+			if latest_status~=nil then --not the first time updating
+				latest_status = status or latest_status --save latest status
+			else latest_status = false end --ignore any status updates for initial loading
 			
 			return status
 		end
+		
+		--// Returns the latest status update, which persists until new_objective:clear_status() is called
+			-- returns (string or false) string describing the latest status, or false if no new status
+		function new_objective:get_status() return latest_status end
+		
+		--// Reset objective status so no longer considered to have new updates
+		function new_objective:clear_status() latest_status = false end
 		
 		--// Returns a string of the title of the objective localized in the current language
 		function new_objective:get_title()
@@ -671,6 +704,33 @@ function objectives_manager.create(game)
 		end
 		function new_objective:get_active_npc() return active_npc end
 		
+		--// Returns the equipment item id of the highest ranked quest item in the player's inventory
+			--returns (string or nil) - equipment item id, or nil if the player doesn't have any quest items
+		function new_objective:get_active_item_id()
+			return active_item_index and item_info[active_item_index].id
+		end
+		
+		--// Returns the item index of the highest ranked quest item in the player's inventory
+			--returns (number, positive integer or nil) - item index, or nil if the player doesn't gave any quest items
+		function new_objective:get_active_item_index() return active_item_index end
+		
+		--// Returns the icon index corresponding to the highest ranked quest item in the player's inventory
+			--returns (number, positive integer or nil) - icon index, or nil if the player doesn't have any quest items
+		function new_objective:get_active_item_icon()
+			return active_item_index and item_info[active_item_index].icon_index
+		end
+		
+		--// Returns the icon index of the item at the specified index
+			--index (number, positive integer) - specified which item to return the icon of
+			--returns (number, positive integer or nil) - the icon index for the item, or nil if not defined in objectives.dat
+		function new_objective:get_item_icon(index)
+			return item_info[index] and item_info[index].icon_index
+		end
+		
+		function new_objective:get_item_save_val(index)
+			return item_info[index] and item_info[index].save_val
+		end
+		
 		--// Custom iterator to get $s strings.dat keys for current variable substitution values (does not expose internal table)
 			--usage: for i,str_key in new_objective:iter_s_keys() do
 		function new_objective:iter_s_keys()
@@ -708,11 +768,13 @@ function objectives_manager.create(game)
 			['?!'] = function(rank, phase) return false end, --never visible
 			['%?'] = function(rank, phase) return phase >= rank and active_item_index end,
 			['%!'] = function(rank, phase) return phase >= rank and not active_item_index end,
+			['#%?'] = function(rank, phase) return active_item_index end,
+			['#%!'] = function(rank, phase) return not active_item_index end,
+			['%%'] = function(rank, phase, digit) return phase >= rank and active_items[digit] end, --%0 thru %9
+			['#%%'] = function(rank, phase, digit) return active_items[digit] end, --#%0 thru #%9
 		} --do not include % escape char
 		SPECIAL_CHAR_VISIBILITY['##'] = SPECIAL_CHAR_VISIBILITY['#'] --visibility behavior is the same (coloring is not)
 		SPECIAL_CHAR_VISIBILITY['!?'] = SPECIAL_CHAR_VISIBILITY['?!'] --allow reverse order
-		SPECIAL_CHAR_VISIBILITY['#%?'] = SPECIAL_CHAR_VISIBILITY['%?'] --# does not affect visibility
-		SPECIAL_CHAR_VISIBILITY['#%!'] = SPECIAL_CHAR_VISIBILITY['%!'] --# does not affect visibility
 		SPECIAL_CHAR_VISIBILITY.default = SPECIAL_CHAR_VISIBILITY['']
 		
 		--// Returns indexed table with entry for each line of description from dialogs.dat
@@ -735,13 +797,13 @@ function objectives_manager.create(game)
 		function new_objective:get_description(phase, subs_s, subs_v, subs_check)
 			if phase then
 				phase = tonumber(phase)
-				assert(phase, "Bad argument #1 to 'get_description' (number or nil expected)")
+				assert(phase, "Bad argument #2 to 'get_description' (number or nil expected)")
 			else phase = current_phase or 0 end --ensure number if equal to false (quest not yet given to player)
 			--TODO should lines be visible if player hasn't received quest yet?
 			
-			assert(not subs_s or type(subs_s)=="table", "Bad argument #2 to 'get_description' (table or nil expected)")
-			assert(not subs_v or type(subs_v)=="table", "Bad argument #3 to 'get_description' (table or nil expected)")
-			assert(not subs_check or type(subs_check)=="table", "Bad argument #4 to 'get_description' (table or nil expected)")
+			assert(not subs_s or type(subs_s)=="table", "Bad argument #3 to 'get_description' (table or nil expected)")
+			assert(not subs_v or type(subs_v)=="table", "Bad argument #4 to 'get_description' (table or nil expected)")
+			assert(not subs_check or type(subs_check)=="table", "Bad argument #5 to 'get_description' (table or nil expected)")
 			
 			--use specified substitution valies if provided (for debugging)
 			--otherwise use normal substitutions determined based on current state of savegame variables
@@ -821,23 +883,37 @@ function objectives_manager.create(game)
 					if stripped_text:match"^%s*$" then entry.is_comment = true end --line contains exclusively whitespace and comments
 				else stripped_text = line end --line is already stripped of comments
 				
+				--strip %0 thru %9 characters (max of 1 per line)
+				local digit = tonumber(stripped_text:match"^%s*#?%%(%d)")
+				if digit then --contains instance of %0 thru %9
+					stripped_text = stripped_text:gsub("%%%d", "", 1) --remove first instance of $0 thru %9
+					entry.item_index = digit
+					line = line:gsub("%%%d", "%%%%", 1) --replace digit with second %
+				end
+				
+				--strip leading special characters
 				local search_pattern = "^%s*["..SPECIAL_CHARSET.."]["..SPECIAL_CHARSET
 					.."]?["..SPECIAL_CHARSET.."]?(.*)" --only want to remove leading whitespace if there is at least one special char
-				stripped_text = stripped_text:match(search_pattern) or stripped_text
-				entry.line = line --special chars now removed from body text
+				stripped_text = stripped_text:match(search_pattern) or stripped_text --special chars now removed from body text
+				entry.line = line --line preserves beginning special characters
 				
 				--check for first instance of item image marker $i, additional instances ignored
-				local item_image_position = stripped_text:find"%$i"
-				if item_image_position then
-					item_positions[#lines] = stripped_text:sub(1,item_image_position-1) --text preceding $i
+				item_positions[#lines] = {}
+				local pre_text, icon_num = stripped_text:match"^(.-)%$i(%d)" --text preceding $i
+				while pre_text do
+					if not item_positions[#lines][icon_num] then
+						item_positions[#lines][icon_num] = pre_text
+					end
+					stripped_text = stripped_text:gsub("%$i"..icon_num, "") --remove matching $i instances, no longer needed
+					pre_text, icon_num = stripped_text:match"^(.-)%$i(%d)" --text preceding $i for next loop
 				end
-				stripped_text = stripped_text:gsub("%$i", "") --remove all $i instances, no longer needed
+				
 				entry.text = stripped_text
 				
 				--look for special characters at beginning of line that affect how it is displayed
 				entry.is_check = not not line:match"^%s*@" --line begins with @ (has checkmark)
 				entry.is_persistent = not not line:match"^%s*[@;]?#" --line beginning with # (always active/visible)
-				entry.do_not_grey = not not line:match"^%s*[;]?##" --line must begin with ## in order to not be greyed out
+				entry.do_not_grey = not not (line:match"^%s*[;]?##" or line:match"^%s*#%%") --line must begin with ## or #% in order to not be greyed out
 				local is_empty = line:match"^%s*$" --non-nil if line contains entirely whitespace (no special chars or comments either)
 				local is_phase_break = line:match"^%s*;" --line begins with ;
 				
@@ -861,7 +937,26 @@ function objectives_manager.create(game)
 				elseif entry.is_check then look_for_next_break = true end --only look for @ now
 			end
 			
-			local visible_lines = {}
+			local visible_lines = {items={}} --(table, combo) list of lines to be visible in quest desc box, plus additional settings
+				--items (table, array) - entries at indices 1 thru 9 for the first instance of corresponding $i1 thru $i9 among visible liens, nil if not present
+					--(table, key/value) - contains the line number it is present on and preceding text to be able to calculate horz position of where it occurs
+						--line (number, positive integer) - line number where the "%i"..n instance occurs counting visible lines only. First visible line is 1, etc.
+						--text (string) - all the text on the line (special characters stripped out) before the "%i"..n instance, needed to calc horz position, may be empty string
+				--(table, key/value) - indices contain table of properties for each visible line
+					--line (string) - raw text of the current line (includes beginning special characters but comments removed)
+					--text (string) - text of the current line with all special characters and comments removed
+					--rank (number, non-negative integer) - each line is assigned a rank between 0 and the number of phases, increments at each phase break
+					--is_visible (boolean) - true if the line should be visible, determined by the line's beginning special characters and the current phase
+					--is_check (boolean) - true if line begins with "@" (has checkmark), leading whitespace ignored, else false
+					--check_index (number, positive integer or nil) - which dynamic checkmark index the line is associated with (e.g. $@5 is index of 5, as is $5), otherwise nil
+						--the first "$@"..n instance is used if it exists, otherwise the first "$"..n instance, otherwise nil
+					--check_position (number, positive integer or nil) - text preceding first "$@"..n instance if it exists, otherwise of first "$"..n instance, otherwise nil
+					--check_state (string or nil) - determines the sprite to use for the dynamic checkmark on this line. Possible values are "bullet" (incomplete objective) or "done" (checkmark). if nil then dynamic checkmark is hidden
+					--is_persistent (boolean) - true if line begins with "#" (always visible), leading whitespace ignored, else false
+					--is_grey (boolean) - true if the text on this line should be greyed out because its associated phase is completed
+					--do_not_grey (boolean) - true if the text on this line does not grey out until the quest is complete (line begins with "##" or "#%" ignoring leading whitespace)
+					--is_comment (true or nil) - true if the line contains a comment with nothing else besides whitespace, in which case the line will not be shown at all, otherwise nil
+					--item_index (number, non-negative integer or nil) - The number (0-9) following the % character at the beginning of a line, otherwise nil
 			
 			--second pass: determine visibility of each line based on its rank and the current phase
 			local rank = 0
@@ -874,34 +969,38 @@ function objectives_manager.create(game)
 				local special_chars = entry.line:match("^["..IGNORE_CHARSET.."]*(["..SPECIAL_VISIBLE.."]*)")
 				if special_chars then special_chars:sub(1,3) end --only care about the first (up to) 3 special chars
 				local visibility = SPECIAL_CHAR_VISIBILITY[special_chars] or SPECIAL_CHAR_VISIBILITY.default --lookup function to use
-				entry.is_visible = visibility(rank, phase)
-				
+				entry.is_visible = visibility(rank, phase, entry.item_index)
 				if entry.is_visible and not entry.is_comment then --don't bother with the rest if not visible
+					local primary_is_grey = not entry.do_not_grey and (phase>rank) --persistent lines never grey
+					local dynamic_is_grey = subs_check[entry.check_index] or false
+					
 					if phase<num_phases then --quest not done
-						local primary_is_active = entry.do_not_grey or not (phase>rank) --persistent lines never grey
-						local primary_is_grey = not entry.do_not_grey and (phase>rank) --persistent lines never grey
-						local dynamic_is_active = subs_check[entry.check_index]
-						local dynamic_is_grey = subs_check[entry.check_index] or false
 						if entry.check_index then
-							entry.is_active = primary_is_active and dynamic_is_active or false
-							entry.is_grey = primary_is_grey or dynamic_is_grey 
-						else entry.is_active = primary_is_active entry.is_grey = primary_is_grey end
-						
-						if entry.check_position then
-							if dynamic_is_grey then
-								entry.check_state = "checkmark"
-							elseif dynamic_is_active==false then
-								entry.check_state = "bullet"
-							end --else entry.check_state is implicitly nil
+							entry.is_grey = primary_is_grey or dynamic_is_grey
+						else entry.is_grey = primary_is_grey end
+					else entry.is_grey = true end --always grey out text if quest is done
+					
+					if entry.check_position then
+						if dynamic_is_grey then
+							entry.check_state = "done"
+						elseif dynamic_is_grey==false then
+							entry.check_state = "bullet"
 						end --else entry.check_state is implicitly nil
-					else entry.is_active = false entry.is_grey = true end --always grey out text if quest is done
+					end --else entry.check_state is implicitly nil
 					
 					table.insert(visible_lines, entry)
 					
-					--save first $i instance on visible line
-					if item_positions[i] and not visible_lines.item_line then
-						visible_lines.item_line = #visible_lines
-						visible_lines.item_position = item_positions[i]
+					--save first $i1 thru $i9 instance present in visible lines
+					if item_positions[i] then
+						for num,text in pairs(item_positions[i]) do
+							local num_index = tonumber(num)
+							if not visible_lines.items[num_index] then
+								visible_lines.items[num_index] = {
+									line = #visible_lines, --line number is when counting visible lines only
+									text = text,
+								}
+							end
+						end
 					end
 				else item_positions[i] = nil end --disregard the $i instance on this line since it is not visible
 			end
@@ -939,6 +1038,7 @@ function objectives_manager.create(game)
 		--// Returns the alternate_key (string or nil) for this quest, nil if not an alternate quest
 		function new_objective:get_alternate_key() return alternate_key end
 		
+		--// Removes objective from quest log, internal use only
 		function new_objective:deactivate()
 			assert(alternate_key and not alternates_list[alternate_key].active, "Error in 'deactivate', unable to deactivate objective")
 			current_phase = nil
@@ -952,25 +1052,44 @@ function objectives_manager.create(game)
 	
 	--// Refreshes only objectives influenced by the specified save game value
 		--savegame_value (string, optional): name of save game value that has changed value
+			--if "$MAP" then only refreshes objectives needing a refresh after a map change
 			--if nil then refreshes all objectives
 		--no return value
 	function objectives:refresh(savegame_value)
 		local status = 0 --tentative
+		local status_dialog_id --dialog_id corresponding to status
 		
-		if savegame_value then
-			assert(type(savegame_value)=="string", "Bad argument #1 to 'refresh' (string expected)")
+		if savegame_value=="$MAP" then
+			for _,objective in ipairs(map_val_list) do
+				--only refresh objectives already in quest log that are not done yet
+				if objective:get_current_phase() and not objective:is_done() then
+					local new_status = STATUS_LIST[objective:refresh()] or 0
+					if new_status > status then
+						status = new_status
+						status_dialog_id = objective:get_dialog_id()
+					end
+				end
+			end
+		elseif savegame_value then
+			assert(type(savegame_value)=="string", "Bad argument #2 to 'refresh' (string expected)")
 			local value = game:get_value(savegame_value, value)
 			
 			local to_refresh = save_val_list[savegame_value] or {}
 			for _,objective in ipairs(to_refresh) do
 				local new_status = STATUS_LIST[objective:refresh()] or 0
-				if new_status > status then status = new_status end
+				if new_status > status then
+					status = new_status
+					status_dialog_id = objective:get_dialog_id()
+				end
 			end
 		else --else have to refresh ALL objectives
 			for _,sub_list in pairs(objectives_list) do
 				for _,objective in ipairs(sub_list) do
 					local new_status = STATUS_LIST[objective:refresh()] or 0
-					if new_status > status then status = new_status end
+					if new_status > status then
+						status = new_status
+						status_dialog_id = objective:get_dialog_id()
+					end
 				end
 			end
 		end
@@ -990,7 +1109,7 @@ function objectives_manager.create(game)
 				if completed_count>=total_count then status_name = "side_all_completed" end
 			end
 			
-			if self.on_new_task then self:on_new_task(status_name) end --call event if it exists
+			if self.on_new_task then self:on_new_task(status_name, status_dialog_id) end --call event if it exists
 		end
 	end
 	
@@ -1006,9 +1125,9 @@ function objectives_manager.create(game)
 	--// The order of the returned list matches the order defined in objectives.dat
 		--objective_type (string) keyword corresponding to the objective list to use
 	function objectives:get_objectives_list(objective_type)
-		assert(type(objective_type)=="string", "Bad argument #1 to 'get_objectives_list' (string expected)")
+		assert(type(objective_type)=="string", "Bad argument #2 to 'get_objectives_list' (string expected)")
 		local full_list = objectives_list[objective_type] --convenience
-		assert(full_list, "Bad argument #1 to 'get_objectives_list', invalid type: "..objective_type)
+		assert(full_list, "Bad argument #2 to 'get_objectives_list', invalid type: "..objective_type)
 		
 		local sorted_list = {} --list to be returned
 		
@@ -1035,9 +1154,9 @@ function objectives_manager.create(game)
 		--id (string) - dialogs.dat id to identify the objective to be returned
 		--returns (table) - objective object matching the specified id
 	function objectives:get_objective(id)
-		assert(type(id)=="string", "Bad argument #1 to 'get_objective' (string expected)")
+		assert(type(id)=="string", "Bad argument #2 to 'get_objective' (string expected)")
 		local objective = ids[id]
-		assert(objective, "Bad argument #1 to 'get_objective', no objective found with id: "..id)
+		assert(objective, "Bad argument #2 to 'get_objective', no objective found with id: "..id)
 		
 		return objective
 	end
@@ -1048,11 +1167,11 @@ function objectives_manager.create(game)
 		--returns (table or nil) - objective object matching the specified index and objective type, nil if does not exist
 	function objectives:get_objective_by_index(index, obj_type)
 		local index = tonumber(index)
-		assert(index, "Bad argument #1 to 'get_objective_by_index' (number expected)")
+		assert(index, "Bad argument #2 to 'get_objective_by_index' (number expected)")
 		
-		assert(type(obj_type)=="string", "Bad argument #2 to 'get_objective_by_index' (string expected)")
+		assert(type(obj_type)=="string", "Bad argument #3 to 'get_objective_by_index' (string expected)")
 		local full_list = objectives_list[obj_type]
-		assert(full_list, "Bad argument #2 to 'get_objective_by_index', obj_type string must be 'main' or 'side'")
+		assert(full_list, "Bad argument #3 to 'get_objective_by_index', obj_type string must be 'main' or 'side'")
 		
 		return full_list[index] --may be nil
 	end
@@ -1060,9 +1179,9 @@ function objectives_manager.create(game)
 	--// objective_type (string): keyword for which objective list to use ("main" or "side") 
 	--// Returns 2 numbers: number of completed quests and total quests from the list corresponding to objective_type
 	function objectives:get_counts(objective_type)
-		assert(type(objective_type)=="string", "Bad argument #1 to 'get_counts' (string expected)")
+		assert(type(objective_type)=="string", "Bad argument #2 to 'get_counts' (string expected)")
 		local full_list = objectives_list[objective_type] --convenience
-		assert(full_list, "Bad argument #1 to 'get_counts', invalid type: "..objective_type)
+		assert(full_list, "Bad argument #2 to 'get_counts', invalid type: "..objective_type)
 		
 		return full_list.completed_count, #full_list - full_list.alternates_count
 	end
@@ -1071,27 +1190,27 @@ function objectives_manager.create(game)
 		--alternate_key (string) - unique identifier string of the group of alternate quests
 		--returns (table or nil) - the active objective object belonging to the specified alternate key, or nil if none are active
 	function objectives:get_active_alternate(alternate_key)
-		assert(type(alternate_key)=="string", "Bad argument #1 to 'get_active_alternate' (string expected)")
+		assert(type(alternate_key)=="string", "Bad argument #2 to 'get_active_alternate' (string expected)")
 		local alt_info = alternates_list[alternate_key]
-		assert(alt_info, "Bad argument #1 to 'get_active_alternate', invalid alternate key: "..alternate_key)
+		assert(alt_info, "Bad argument #2 to 'get_active_alternate', invalid alternate key: "..alternate_key)
 		
 		return alt_info.active --may be nil
 	end
 	
 	--// Call this function to switch the active quest
 	function objectives:set_alternate(alt_key, quest_index)
-		assert(type(alt_key)=="string", "Bad argument #1 to 'set_alternate' (string expected)")
+		assert(type(alt_key)=="string", "Bad argument #2 to 'set_alternate' (string expected)")
 		local alt_info = alternates_list[alt_key] --convenience
 		local alt_type = alt_info and alt_info.objective_type
-		assert(alt_type, "Bad argument #1 to 'set_alternate', alternate quest key not found: "..alt_key)
+		assert(alt_type, "Bad argument #2 to 'set_alternate', alternate quest key not found: "..alt_key)
 		
 		quest_index = tonumber(quest_index)
-		assert(quest_index, "Bad argument #2 to 'set_alternate' (number expected)")
+		assert(quest_index, "Bad argument #3 to 'set_alternate' (number expected)")
 		
 		local list = objectives_list[alt_type]
 		local new_alt = list[quest_index]
-		assert(new_alt, "Bad argument #2 to 'set_alternate', quest index not found: "..quest_index)
-		assert(new_alt:get_alternate_key()==alt_key, "Bad argument #2 to 'set_alternate', quest index "..quest_index.." does not belong to alternate key: "..alt_key)
+		assert(new_alt, "Bad argument #3 to 'set_alternate', quest index not found: "..quest_index)
+		assert(new_alt:get_alternate_key()==alt_key, "Bad argument #3 to 'set_alternate', quest index "..quest_index.." does not belong to alternate key: "..alt_key)
 		
 		--check if a different alternate quest is currently active
 		local old_alt = alt_info.active
@@ -1119,6 +1238,12 @@ function objectives_manager.create(game)
 	function objectives:is_new_task() return is_new_task end
 	function objectives:clear_new_tasks()
 		is_new_task = false
+		--for _,sub_list in pairs(objectives_list) do
+		--	for _,objective in ipairs(sub_list) do
+		--		objective:clear_status()
+		--	end
+		--end
+		
 		if self.on_tasks_cleared then self:on_tasks_cleared() end --call event if it exists
 	end
 	

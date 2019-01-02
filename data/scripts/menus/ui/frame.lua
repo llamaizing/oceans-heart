@@ -1,6 +1,6 @@
 --[[ frame.lua
 	version 1.0a1
-	3 Dec 2018
+	15 Dec 2018
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -144,7 +144,7 @@ function control.create(properties, width, height)
 	--// Assigns the list of fill subcomponents to be elements in the frame, removing any existing elements first
 		--list (table, array) - list of fills to be used in the frame, specified as data file properties (see objectives.dat)
 	function new_control:set_fills(list)
-		assert(type(list)=="table", "Bad argument #1 to 'set_fills' (table expected)")
+		assert(type(list)=="table", "Bad argument #2 to 'set_fills' (table expected)")
 		
 		local ui = require"scripts/menus/ui/ui" --do not require at start of script because will cause endless loading loop
 		
@@ -167,7 +167,7 @@ function control.create(properties, width, height)
 		--value (boolean) - if true then top edge of frame is drawn
 	function new_control:get_is_top_edge() return is_top_edge end
 	function new_control:set_is_top_edge(value)
-		assert(type(value)=="boolean", "Bad argument #1 to 'set_is_top_edge' (boolean expected)")
+		assert(type(value)=="boolean", "Bad argument #2 to 'set_is_top_edge' (boolean expected)")
 		local needs_refresh = is_top_edge ~= value
 		
 		is_top_edge = value

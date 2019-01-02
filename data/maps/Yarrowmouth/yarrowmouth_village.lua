@@ -57,6 +57,7 @@ function broken_bird_statue:on_interaction()
   if game:has_item("stone_beak") == true then
     game:start_dialog("_yarrowmouth.observations.broken_bird.2", function(answer)
       if answer == 3 then
+        game:set_value("quest_stone_beak", 1)
         bird_repaired:set_enabled(true)
         map:open_doors("bird_beak_door")
         sol.audio.play_sound("secret")
@@ -79,7 +80,7 @@ function mera:on_interaction()
         if answer == 2 then
           if game:get_money() >49 then
             game:remove_money(50)
-            game:start_dialog("_yarrowmouth.npcs.mera.4")
+            game:start_dialog("_yarrowmouth.npcs.mera.4", function() game:set_value("quest_iron_pine_cone", 2) end) --ql
             game:set_value("defense", game:get_value("defense") +2)
             game:set_value("yarrow_mera_armor_obtained", true)
 
@@ -90,11 +91,9 @@ function mera:on_interaction()
 
       end) --end of mera.3 dialog
 
-
     else --if you don't have the pinecone yet
       game:start_dialog("_yarrowmouth.npcs.mera.1", function(answer)
-        game:start_dialog("_yarrowmouth.npcs.mera.2")
-
+        game:start_dialog("_yarrowmouth.npcs.mera.2", function() game:set_value("quest_iron_pine_cone", 0) end) --ql
       end) --end of how you answer if you want armor
     end--end of if you have pinecone or not
   else --if you have already gotten the armor
