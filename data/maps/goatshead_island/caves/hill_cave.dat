@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "cave_2",
-  music = "overworld_01",
+  music = "goatshead_overworld_2",
 }
 
 tile{

@@ -9372,7 +9372,7 @@ tile{
 tile{
   layer = 0,
   x = 1144,
-  y = 264,
+  y = 272,
   width = 16,
   height = 24,
   pattern = "264",
@@ -29082,7 +29082,7 @@ tile{
 tile{
   layer = 0,
   x = 1152,
-  y = 192,
+  y = 208,
   width = 16,
   height = 8,
   pattern = "260",
@@ -29091,7 +29091,7 @@ tile{
 tile{
   layer = 0,
   x = 1144,
-  y = 192,
+  y = 208,
   width = 16,
   height = 8,
   pattern = "258",
@@ -33486,10 +33486,9 @@ dynamic_tile{
   layer = 0,
   x = 1736,
   y = 64,
-  pattern = "1652",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1652",
 }
 
 npc{
@@ -34453,7 +34452,7 @@ npc{
 npc{
   layer = 0,
   x = 1152,
-  y = 197,
+  y = 213,
   direction = 3,
   subtype = 1,
   behavior = "dialog#_yarrowmouth.signs.kingsdown_2",
@@ -34462,7 +34461,7 @@ npc{
 npc{
   layer = 0,
   x = 1160,
-  y = 197,
+  y = 213,
   direction = 3,
   subtype = 1,
   behavior = "dialog#_yarrowmouth.signs.kingsdown_2",
@@ -36142,7 +36141,7 @@ tile{
 tile{
   layer = 1,
   x = 1136,
-  y = 264,
+  y = 272,
   width = 8,
   height = 8,
   pattern = "266",
@@ -36151,7 +36150,7 @@ tile{
 tile{
   layer = 1,
   x = 1160,
-  y = 264,
+  y = 272,
   width = 8,
   height = 8,
   pattern = "267",
@@ -36160,7 +36159,7 @@ tile{
 tile{
   layer = 1,
   x = 1128,
-  y = 224,
+  y = 232,
   width = 48,
   height = 40,
   pattern = "265",
@@ -37159,7 +37158,7 @@ tile{
 tile{
   layer = 1,
   x = 1144,
-  y = 176,
+  y = 192,
   width = 16,
   height = 16,
   pattern = "259",
@@ -37168,7 +37167,7 @@ tile{
 tile{
   layer = 1,
   x = 1152,
-  y = 168,
+  y = 184,
   width = 16,
   height = 24,
   pattern = "261",
@@ -37674,10 +37673,9 @@ dynamic_tile{
   layer = 1,
   x = 1736,
   y = 48,
-  pattern = "1655",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1655",
 }
 
 enemy{
@@ -37693,9 +37691,9 @@ dynamic_tile{
   layer = 1,
   x = 96,
   y = 240,
-  pattern = "1458",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "1458",
 }
 

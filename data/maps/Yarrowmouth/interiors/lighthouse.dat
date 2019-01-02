@@ -1213,6 +1213,15 @@ npc{
   behavior = "dialog#_yarrowmouth.npcs.stella.kid",
 }
 
+chest{
+  layer = 0,
+  x = 520,
+  y = 93,
+  treasure_name = "elixer",
+  treasure_savegame_variable = "naerreturn_lighthouse_elixer_chest",
+  sprite = "entities/chest",
+}
+
 tile{
   layer = 1,
   x = 304,

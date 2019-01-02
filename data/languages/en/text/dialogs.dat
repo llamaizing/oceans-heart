@@ -10314,6 +10314,9 @@ dialog{
 Capt'n Thyme ran to Oakhaven
 @Investigate Oakhaven
 @Search town for Hazel
+!You were told to ask a
+!man selling mangrove
+!leaves.
 @!Try the Hornwart inn
 @!Search the library
 @!Hazel was going to meet
@@ -10322,7 +10325,8 @@ Capt'n Thyme ran to Oakhaven
 secret archives.
 !There's a secret tunnel
 !on Marblecliff Mountain.
-!Head east from the ruins.
+!Head east from the ruins,
+!over the waterfalls.
 @Meet Hazel back at the inn.
   
 ]],
@@ -10339,9 +10343,14 @@ the Hourglass Crew is.
 !He went to the Juniper
 !Grove near the docks
 @Investigate Hourglass Fort
-!It's on Kingsdown Isle,
+!It's on Kingsdown Isle-
+!there's a secret keyhole
+!in the northeast pillar
 !but you'll need a key...
-@Find the pirates!
+@You've finally found the
+pirate's fort... look for
+clues for where the pirates
+have gone.
   
 ]],
 }
@@ -10488,6 +10497,73 @@ amulet to catch the pirates.
 }
 
 dialog{
+  id = "quest.side.ballast_harbor.hornet_honey",
+  title = "Hornet Honey",
+  text = [[
+Somewhere in Tern Marsh
+you can find hornet honey.
+@Locate the hornets and
+take their honey
+@Return the honey to
+Benjamin at the meadery
+    
+]],
+}
+
+dialog{
+  id = "quest.side.ballast_harbor.lost_key",
+  title = "The Wrong Key",
+  text = [[
+A drunk man dropped a key
+in the Ballast Harbor inn,
+which seems to go to a
+completely different inn.
+@Take the key and let
+youself into some other
+room, I guess?
+    
+]],
+}
+
+dialog{
+  id = "quest.side.crabhook.monster",
+  title = "The Shoal Beast",
+  text = [[
+A monster has been attacking
+fisherman from Crabhook
+@!Speak to fishermen to find
+!out where the monster is.
+@!Arni was attacked recently,
+!ask him where.
+@Search Badger Shoal
+!The monster was last seen
+!near some rocks, by a cliff
+!with two spruce trees when
+!Arni was fishing with
+!monster bait
+@Return to Danley to get paid
+!he's probably still at the
+!tavern in Crabhook
+    
+]],
+}
+
+dialog{
+  id = "quest.side.ferris_tools",
+  title = "Black Market Tools",
+  text = [[
+Ferris could make you more
+armor if you could find her
+some blacksmith tools.
+@Find some tools somewhere
+!Ferris recommends looking
+!in Ballast Harbor
+@Return the tools to Ferris
+    
+]],
+}
+
+dialog{
   id = "quest.side.goatshead.phantom_squid",
   title = "Phantom Squid Hunt",
   text = [[
@@ -10550,145 +10626,29 @@ tunnels have been cleared
 }
 
 dialog{
-    id = "quest.side.crabhook.monster",
-    title = "The Shoal Beast",
-    text = [[
-A monster has been attacking
-fisherman from Crabhook
-@!Speak to fishermen to find
-!out where the monster is.
-@!Arni was attacked recently,
-!ask him where.
-@Search Badger Shoal
-!The monster was last seen
-!near some rocks, by a cliff
-!with two spruce trees when
-!Arni was fishing with
-!monster bait
-@Return to Danley to get paid
-!he's probably still at the
-!tavern in Crabhook
-    ]]
-}
-
-dialog{
-    id = "quest.side.ballast_harbor.lost_key",
-    title = "The Wrong Key",
-    text = [[
-A drunk man dropped a key
-in the Ballast Harbor inn,
-which seems to go to a
-completely different inn.
-@Take the key and let
-youself into some other
-room, I guess?
-    ]]
-}
-
-dialog{
-    id = "quest.side.ballast_harbor.hornet_honey",
-    title = "Hornet Honey",
-    text = [[
-Somewhere in Tern Marsh
-you can find hornet honey.
-@Locate the hornets and
-take their honey
-@Return the honey to
-Benjamin at the meadery
-    ]]
-}
-
-dialog{
-  id = "quest.test13",
-  title = "A Carrot Cache",
+  id = "quest.side.oakhaven.musicians",
+  title = "Battle of the Band",
   text = [[
-An upset fisherman's spot's
-been overrun with monsters.
-@ Find the fishin' spot and
-destroy the monsters
-
-@ Return to the fisherman
+You agreed to help some
+struggling musicians.
+@Let the bartender know
+they're willing to play
+!He'll be behind the bar
+!at the Salamander Heartache
+!Saloon
+@Check the band's posters
+and make sure monsters
+aren't attacking them
+@Beat up that monster!
+@Go see Gunther's show.
+    
 ]],
 }
 
 dialog{
-    id = "quest.side.yarrowmouth.parley",
-    title = "A Quick Errand",
-    text = [[
-Nina of Yarrowmouth asked if
-you could meet with some
-pirates of behalf of a man
-named Carlov.
-@Tell the pirates to piss off
-!They'll meet you at Seaweed
-!Rock, west of Tern Marsh
-@!What!? It's a trap!?
-@!Report back to Nina
-@Find the pirates hideout
-and teach them not to mess
-with Yarrowmouth. Or you.
-!If you go southeast of
-!Tern Marsh and east after
-!you pass the meadery, you
-!can find their hideout.
-@Let Nina know you defeated
-the pirate crew
-    ]]
-}
-
-dialog{
-    id = "quest.side.yarrowmouth.stone_beak",
-    title = "A Stone...Beak?",
-    text = [[
-You happened across a piece
-of stone shaped kind of like
-a bird beak.
-@Figure out where it may
-have come fom
-    ]]
-}
-
-dialog{
-    id = "quest.side.yarrowmouth.iron_pinecone",
-    title = "An Iron Pinecone",
-    text = [[
-An artisinal armorer will
-make you some armor if you
-bring her an iron pinecone.
-@Search Yarrowmouth for an
-iron pinecone.
-@Bring the pinecone to Mera
-the at the Yarrowmoth
-blacksmith and get some
-armor.
-    ]]
-}
-
-dialog{
-    id = "quest.side.yarrowmouth.meadery",
-    title = "Briarwood Mushrooms",
-    text = [[
-Briarwood Distillery's
-mushroom spot was overrun.
-@Defeat the monsters at
-the mushroom picking spot
-!The spot is east of
-!the Puzzlewood
-@Wait, who set that trap?
-@See if anyone at the
-distillery knows Michael
-@Confront Michael the
-Mighty Mead Maker
-!His meadery is just
-north of Ballast Harbor
-@Return to Briarwood
-    ]]
-}
-
-dialog{
-    id = "quest.side.oakhaven.orange_thief",
-    title = "The Tic Tac Champ",
-    text = [[
+  id = "quest.side.oakhaven.orange_thief",
+  title = "The Tic Tac Champ",
+  text = [[
 You somehow joined Oakhaven's
 tic tac toe championship,
 but the prize was stolen!
@@ -10708,38 +10668,98 @@ been given to Aubrey
 @Be confident knowing
 you made the right
 decision
-    ]]
+    
+]],
 }
 
 dialog{
-    id = "quest.side.oakhaven.musicians",
-    title = "Battle of the Band",
-    text = [[
-You agreed to help some
-struggling musicians.
-@Let the bartender know
-they're willing to play
-!He'll be behind the bar
-!at the Salamander Heartache
-!Saloon
-@Check the band's posters
-and make sure monsters
-aren't attacking them
-@Beat up that monster!
-@Go see Gunther's show.
-    ]]
+  id = "quest.side.yarrowmouth.iron_pinecone",
+  title = "An Iron Pinecone",
+  text = [[
+An artisinal armorer will
+make you some armor if you
+bring her an iron pinecone.
+@Search Yarrowmouth for an
+iron pinecone.
+@Bring the pinecone to Mera
+the at the Yarrowmoth
+blacksmith and get some
+armor.
+    
+]],
 }
 
 dialog{
-    id = "quest.side.ferris_tools",
-    title = "Black Market Tools",
-    text = [[
-Ferris could make you more
-armor if you could find her
-some blacksmith tools.
-@Find some tools somewhere
-!Ferris recommends looking
-!in Ballast Harbor
-@Return the tools to Ferris
-    ]]
+  id = "quest.side.yarrowmouth.meadery",
+  title = "Briarwood Mushrooms",
+  text = [[
+Briarwood Distillery's
+mushroom spot was overrun.
+@Defeat the monsters at
+the mushroom picking spot
+!The spot is east of
+!the Puzzlewood
+@Wait, who set that trap?
+@See if anyone at the
+distillery knows Michael
+@Confront Michael the
+Mighty Mead Maker
+!His meadery is just
+north of Ballast Harbor
+@Return to Briarwood
+    
+]],
 }
+
+dialog{
+  id = "quest.side.yarrowmouth.parley",
+  title = "A Quick Errand",
+  text = [[
+Nina of Yarrowmouth asked if
+you could meet with some
+pirates of behalf of a man
+named Carlov.
+@Tell the pirates to piss off
+!They'll meet you at Seaweed
+!Rock, west of Tern Marsh
+@!What!? It's a trap!?
+@!Report back to Nina
+@Find the pirates hideout
+and teach them not to mess
+with Yarrowmouth. Or you.
+!If you go southeast of
+!Tern Marsh and east after
+!you pass the meadery, you
+!can find their hideout.
+@Let Nina know you defeated
+the pirate crew
+    
+]],
+}
+
+dialog{
+  id = "quest.side.yarrowmouth.stone_beak",
+  title = "A Stone...Beak?",
+  text = [[
+You happened across a piece
+of stone shaped kind of like
+a bird beak.
+@Figure out where it may
+have come fom
+    
+]],
+}
+
+dialog{
+  id = "quest.test13",
+  title = "A Carrot Cache",
+  text = [[
+An upset fisherman's spot's
+been overrun with monsters.
+@ Find the fishin' spot and
+destroy the monsters
+
+@ Return to the fisherman
+]],
+}
+

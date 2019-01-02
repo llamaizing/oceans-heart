@@ -699,7 +699,7 @@ enemy{
   x = 104,
   y = 125,
   direction = 0,
-  breed = "normal_enemies/mud_golem_1",
+  breed = "normal_enemies/seaweed_golem_1",
 }
 
 enemy{

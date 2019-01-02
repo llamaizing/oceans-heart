@@ -76,22 +76,6 @@ function elixer_sale:on_interaction()
   end)
 end
 
---buy bait
-function bait_sale:on_interaction()
-  game:start_dialog("_goatshead.npcs.alchemist.bait", function(answer)
-    if answer == 1 then
-      if game:get_money() >= 5 then
-        map:create_pickable({
-          layer = 0, x = 232, y = 104,
-          treasure_name = "bait",
-        })
-        game:remove_money(5)
-      else
-        game:start_dialog("_game.insufficient_funds")
-      end
-    end
-  end)
-end
 
 --buy bombs
 function bomb_sale:on_interaction()

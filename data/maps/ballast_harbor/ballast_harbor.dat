@@ -34280,33 +34280,6 @@ wall{
   stops_enemies = true,
 }
 
-enemy{
-  name = "seagull",
-  layer = 0,
-  x = 296,
-  y = 1557,
-  direction = 2,
-  breed = "misc/seagull",
-}
-
-enemy{
-  name = "seagull_2",
-  layer = 0,
-  x = 312,
-  y = 1549,
-  direction = 0,
-  breed = "misc/seagull",
-}
-
-enemy{
-  name = "seagull_5",
-  layer = 0,
-  x = 696,
-  y = 1349,
-  direction = 2,
-  breed = "misc/seagull",
-}
-
 jumper{
   layer = 0,
   x = 1024,
@@ -34397,6 +34370,27 @@ npc{
   sprite = "entities/vase_arrows",
 }
 
+custom_entity{
+  name = "rock_pile",
+  layer = 0,
+  x = 120,
+  y = 1205,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+enemy{
+  name = "seagull_5",
+  layer = 0,
+  x = 696,
+  y = 1349,
+  direction = 2,
+  breed = "misc/seagull",
+}
+
 enemy{
   name = "seagull_6",
   layer = 0,
@@ -34451,16 +34445,22 @@ enemy{
   breed = "misc/seagull",
 }
 
-custom_entity{
-  name = "rock_pile",
+enemy{
+  name = "seagull",
   layer = 0,
-  x = 120,
-  y = 1205,
-  width = 32,
-  height = 32,
+  x = 296,
+  y = 1557,
+  direction = 2,
+  breed = "misc/seagull",
+}
+
+enemy{
+  name = "seagull_2",
+  layer = 0,
+  x = 312,
+  y = 1549,
   direction = 0,
-  sprite = "entities/rockpile",
-  model = "rockpile",
+  breed = "misc/seagull",
 }
 
 tile{

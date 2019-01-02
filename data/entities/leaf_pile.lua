@@ -37,9 +37,7 @@ local function destroy_self()
   end)
 end
 
- 
--- If you wish to preform the checks another way, please feel free to do so.
--- this was the best way that I could come up with personally though.
+
 map:register_event("on_update", function()
   if map:has_entity(name) then
     if entity:overlaps(hero) and collapsing == false and game:get_value("hero_dashing") == false then

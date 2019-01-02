@@ -6545,15 +6545,6 @@ tile{
 tile{
   layer = 1,
   x = 448,
-  y = 64,
-  width = 16,
-  height = 32,
-  pattern = "488",
-}
-
-tile{
-  layer = 1,
-  x = 448,
   y = 48,
   width = 16,
   height = 16,
@@ -15452,15 +15443,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 448,
-  y = 56,
-  width = 16,
-  height = 56,
-  pattern = "1996",
-}
-
-tile{
-  layer = 2,
   x = 416,
   y = 232,
   width = 16,
@@ -15529,6 +15511,24 @@ tile{
   width = 16,
   height = 24,
   pattern = "2041",
+}
+
+tile{
+  layer = 2,
+  x = 448,
+  y = 64,
+  width = 16,
+  height = 32,
+  pattern = "488",
+}
+
+tile{
+  layer = 2,
+  x = 448,
+  y = 56,
+  width = 16,
+  height = 56,
+  pattern = "1996",
 }
 
 tile{
