@@ -5,7 +5,7 @@ local behavior = require("enemies/lib/toward_hero_octorok")
 
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),
-  life = 15,
+  life = 8,
   damage = 2,
   normal_speed = 35,
   faster_speed = 50,
@@ -15,7 +15,8 @@ local properties = {
   detection_distance = 125,
   push_hero_on_sword = true,
   pushed_when_hurt = false,
-  projectile_breed = "misc/big_stone"
+  projectile_breed = "misc/big_stone",
+  shooting_frequency = 800
 }
 
 behavior:create(enemy, properties)
