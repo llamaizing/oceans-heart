@@ -33679,6 +33679,7 @@ destination{
 }
 
 door{
+  name = "seaglint_ruins_lighthouse_door",
   layer = 0,
   x = 56,
   y = 1288,

@@ -22,3 +22,7 @@ end
 function map:on_opening_transition_finished()
 
 end
+
+function entered_shack_sensor:on_activated()
+  game:set_value("quest_poplar_shack_lost_key", 1)
+end

@@ -42,6 +42,7 @@ function initial_game:initialize_new_savegame(game)
   game:set_item_assigned(2, game:get_item("bombs_counter_2"))
   game:set_value("quest_log_a", 0)
   game:set_value("quest_log_b", 0)
+  game:set_value("reveal_quest_totals", false)
 
 
 

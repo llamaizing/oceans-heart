@@ -37,7 +37,9 @@ function secret_keyhole:on_interaction()
           game:set_value("kingsdown_island_unlocked", true)
           game:set_value("quest_log_a", "a7")
           game:set_value("quest_log_b", 0)
-          game:set_value("quest_hourglass_fort", 2) --quest log
+          if game:get_value("quest_hourglass_fort") == 1 then
+            game:set_value("quest_hourglass_fort", 2) --quest log
+          end
           game:set_value("quest_kelpton", 3) -- quest log
         end)
 

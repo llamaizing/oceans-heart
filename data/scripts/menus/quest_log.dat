@@ -12,13 +12,13 @@ local data = {
 		width = 320, height = 24,
 		x = 0, y = 216,
 	},
-	{ --text that displays "XX of XX complete" below sidebar
-		id = "complete_status",
-		layer = "text.completed_status",
-		width = 120, height = 10,
-		x = 4, y = 227,
-		--max characters: 20
-	},
+--	{ --text that displays "XX of XX complete" below sidebar
+--		id = "complete_status",
+--		layer = "text.completed_status",
+--		width = 120, height = 10,
+--		x = 4, y = 227,
+--		--max characters: 20
+--	},
 	{
 		id = "back_prompt",
 		layer = "text.prompt",
@@ -247,7 +247,7 @@ local data = {
 	tab_offset_x = 56, --x offset for each tab in pixels
 	tab_offset_y = 0, --y offset for each tab in pixels
 	highlight_scroll_time = 0.23, --time for highlight box to scroll to next entry in seconds, if nil then moves instantly
-	--quest_totals_milestone = "reveal_quest_totals", --when this save val is not false/nil then the counts of main and side quests will be revealed
+	quest_totals_milestone = "reveal_quest_totals", --when this save val is not false/nil then the counts of main and side quests will be revealed
 	list_entry = { --contents of group.list_entry
 		{ --quest title
 			sub_id = "title",
