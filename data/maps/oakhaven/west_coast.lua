@@ -45,3 +45,9 @@ end
 for sensor in map:get_entities("rsg_sensor") do
 function sensor:on_activated() hero:reset_solid_ground() end
 end
+
+function seaglint_ruins_lighthouse_door:on_opened()
+  if   game:get_value("quest_seaglint_ruins_lighthouse") == 0 then
+    game:set_value("quest_seaglint_ruins_lighthouse", 1)
+  end
+end

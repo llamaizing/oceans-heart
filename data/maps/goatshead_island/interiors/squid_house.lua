@@ -79,7 +79,7 @@ end
 
 --Aster, before beating barbell brutes.
 function aster:on_interaction()
-  --before you've even started the quest. Idk if you can ever see this one:
+  --before you've even started his quest. Don't touch the bookshelf.
   if game:get_value("accepted_merchant_guild_contracts_quest") ~= true then
     game:start_dialog("_goatshead.npcs.phantom_squid.2")
 
@@ -91,7 +91,7 @@ function aster:on_interaction()
       game:start_dialog("_goatshead.npcs.phantom_squid.6")
     else
       --have contract
-      --have you already had this conversation?
+      --tells you about the guards situation:
       if game:get_value("accepted_barbell_brute_quest") ~= true then
         game:start_dialog("_goatshead.npcs.phantom_squid.7", function() --tell tilia about guards
           game:set_value("accepted_barbell_brute_quest", true)
@@ -102,7 +102,7 @@ function aster:on_interaction()
           end
           game:start_dialog("_game.quest_log_update")
         end)
-      else
+      else --reminds you to fight guards
         game:start_dialog("_goatshead.npcs.phantom_squid.8") --reiterate, fight guards
       end
 

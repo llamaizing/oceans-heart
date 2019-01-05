@@ -9,5 +9,6 @@ function item:on_created()
 end
 
 function item:on_obtained()
+  game:set_value("quest_seaglint_ruins_lighthouse", 0)
   self:add_amount(1)
 end

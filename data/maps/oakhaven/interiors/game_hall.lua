@@ -52,7 +52,11 @@ function referee:on_interaction()
   --after Ana escapes
   elseif game:get_value("tic_tac_referee_counter") == 2 then
     game:start_dialog("_oakhaven.npcs.game_hall.officiant.5", function()
-      game:set_value("quest_tic_tac_toe", 2) --quest log
+      if game:get_value("oakhaven_checkout_out_pile_of_orange_peels_in_game_hall") == true then
+        game:set_value("quest_tic_tac_toe", 3) --quest log
+      else
+        game:set_value("quest_tic_tac_toe", 2) --quest log
+      end
       game:set_value("tic_tac_referee_counter", 55) --I messed up the numbering system, oops
     end)
 
@@ -184,8 +188,11 @@ function competitor_4:on_interaction()
   end
 end
 
+
+--THAT PILE OF ORANGE PEELS!
 function orange_peel:on_interaction()
   game:set_value("oakhaven_fruit_importer_counter", 1)
+  game:set_value("oakhaven_checkout_out_pile_of_orange_peels_in_game_hall", true)
   game:start_dialog("_oakhaven.npcs.game_hall.orange_peel")
   if game:get_value("quest_tic_tac_toe") == 2 then
     game:set_value("quest_tic_tac_toe", 3) --quest log

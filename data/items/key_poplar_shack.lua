@@ -9,5 +9,6 @@ function item:on_created()
 end
 
 function item:on_obtained()
+  game:set_value("quest_poplar_shack_lost_key", 0)
   self:add_amount(1)
 end

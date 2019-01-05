@@ -10987,6 +10987,15 @@ destructible{
   damage_on_enemies = 2,
 }
 
+npc{
+  name = "goat_ear_2",
+  layer = 0,
+  x = 752,
+  y = 549,
+  direction = 3,
+  subtype = 1,
+}
+
 tile{
   layer = 1,
   x = 984,

@@ -18,7 +18,7 @@ function olin:on_interaction()
     if game:get_value("seen_spruce_sanctuary") == true then
       game:start_dialog("_yarrowmouth.npcs.tavern.Olin.2", function()
         game:set_value("have_juniper_key", true)
-        game:set_value("quest_spruce_head", 3) --quest log
+        game:set_value("quest_spruce_head", 4) --quest log
         game:set_value("quest_hourglass_fort", 0) --quest log
       end)
     else

@@ -17,11 +17,13 @@ function map:on_started()
   -- map entities here.
 end
 
-function goat_ear:on_interaction()
-  sol.audio.play_sound("switch_2")
-  goat_snout_open:set_enabled(true)
-  goat_snout_closed:set_enabled(false)
-  goat_ear:set_enabled(false)
+for ear in map:get_entities("goat_ear") do
+  function ear:on_interaction()
+    sol.audio.play_sound("switch_2")
+    goat_snout_open:set_enabled(true)
+    goat_snout_closed:set_enabled(false)
+    goat_ear:set_enabled(false)
+  end
 end
 
 function gerald:on_interaction()

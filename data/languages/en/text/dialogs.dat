@@ -10334,7 +10334,7 @@ secret archives.
 
 dialog{
   id = "quest.main.hourglass_fort",
-  title = "Hourglass Fort",
+  title = "The Hourglass Crew",
   text = [[
 Jerah from Briarwood
 Distillery might know where
@@ -10466,19 +10466,22 @@ Council's hideout
 dialog{
   id = "quest.main.spruce_head",
   title = "Spruce Head",
-  text = [[
+    text=[[
 The Hourglass Pirates
 were seen looting
 Spruce Head.
+@!Investigate Spruce Head
 @Investigate Spruce Head
+!Meet Ilex at the Spruce Head
+!shrine
 @Find your way into the
 center of the shrine
+!  $v1 of 4 torches lit
 @Check with Briarwood
 Distillery
 !The distillery is on
 !Yarrowmouth Island
-  
-]],
+    ]]
 }
 
 dialog{
@@ -10521,6 +10524,8 @@ completely different inn.
 @Take the key and let
 youself into some other
 room, I guess?
+?- Turns out the key went to
+?Juneberry Inn on Goatshead.
     
 ]],
 }
@@ -10656,8 +10661,9 @@ but the prize was stolen!
 @!Talk to the emcee
 @!Search for clues
 @Find someone who would
-remember selling this
-many oranges.
+remember selling enough
+oranges to generate that
+many peels.
 @Take the oranges you've
 been given to Aubrey
 !She lives across the
@@ -10763,3 +10769,30 @@ destroy the monsters
 ]],
 }
 
+dialog{
+    id = "quest.side.goatshead.poplar_shack_key",
+    title = "Mossy Key",
+    text = [[
+You found a key laying in
+Poplar Forest. Wonder where
+it goes?
+@Find a locked door for the
+key you found in the woods.
+?- It went to an abandoned
+?shack.
+    ]]
+}
+
+dialog{
+    id = "quest.side.oakhaven.sinking_lighthouse",
+    title = "Seaglint Ruins Key",
+    text = [[
+You found a key in a
+sinking ruins. It likely
+unlocks a nearby door.
+@Find the locked door.
+? - It was a locked
+?lighthouse in the
+?ruins.
+    ]]
+}

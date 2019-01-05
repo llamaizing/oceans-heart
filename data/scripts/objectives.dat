@@ -152,9 +152,12 @@ main{
 }
 
 main{
-	dialog_id = "quest.main.spruce_head",
-	calc_phase = "quest_spruce_head",
-	location = "location.goatshead_island"
+    dialog_id = "quest.main.spruce_head",
+    calc_phase = "quest_spruce_head",
+    location = "location.goatshead_island",
+    replace_v = {
+        "spruce_head_shirine_num_fountains_activated"
+    }
 }
 
 main{
@@ -274,4 +277,16 @@ side{
 side{
     dialog_id = "quest.side.ferris_tools",
     calc_phase = "quest_ferris_tools"
+}
+
+side{
+    dialog_id = "quest.side.goatshead.poplar_shack_key",
+    calc_phase = "quest_poplar_shack_lost_key",
+    location = "location.goatshead_island"
+}
+
+side{
+    dialog_id = "quest.side.oakhaven.sinking_lighthouse",
+    calc_phase = "quest_seaglint_ruins_lighthouse",
+    location = "location.oakhaven"
 }

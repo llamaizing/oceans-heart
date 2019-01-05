@@ -47,6 +47,12 @@ function map:on_started()
     f4_2:set_enabled(true)
     f4_3:set_enabled(true)
   end
+
+--the you haven't initialized this value, do so now
+  if game:get_value("spruce_head_shirine_num_fountains_activated") == nil then
+    game:set_value("spruce_head_shirine_num_fountains_activated", 0)
+  end
+
 end
 
 
@@ -76,7 +82,7 @@ function ilex:on_interaction()
   elseif game:get_value("talked_to_ilex_2") ~= true then
     game:start_dialog("_goatshead.npcs.ilex.3")
     game:set_value("talked_to_ilex_2", true)
-    game:set_value("quest_spruce_head", 1) --quest log
+    game:set_value("quest_spruce_head", 2) --quest log
   else
     game:start_dialog("_goatshead.npcs.ilex.4")
   end
@@ -102,7 +108,7 @@ function cutscene_sensor:on_activated()
             game:start_dialog("_goatshead.npcs.ilex.9", function()
 
               game:set_value("quest_log_a", "a5")
-              game:set_value("quest_spruce_head", 2) --quest log
+              game:set_value("quest_spruce_head", 3) --quest log
               hero:unfreeze()
               game:set_value("seen_spruce_sanctuary", true)
 
@@ -157,14 +163,15 @@ end
 --fountains
 function fountain_switch_1:on_activated()
   if   game:get_value("shsf1") ~= true then
-  torch_1:set_enabled(true)
-  sol.audio.play_sound("switch_2")
-  sol.audio.play_sound("water_flowing_in_2")end
-  f1_1:set_enabled(true)
-  f1_2:set_enabled(true)
-  f1_3:set_enabled(true)
-  game:set_value("shsf1", true)
-  fountain_switch_1:set_locked(true)
+    game:set_value("spruce_head_shirine_num_fountains_activated", game:get_value("spruce_head_shirine_num_fountains_activated") +1 )
+    torch_1:set_enabled(true)
+    sol.audio.play_sound("switch_2")
+    sol.audio.play_sound("water_flowing_in_2")end
+    f1_1:set_enabled(true)
+    f1_2:set_enabled(true)
+    f1_3:set_enabled(true)
+    game:set_value("shsf1", true)
+    fountain_switch_1:set_locked(true)
     if game:get_value("shsf1") == true
     and game:get_value("shsf2") == true
     and game:get_value("shsf3") == true
@@ -174,14 +181,15 @@ end
 
 function fountain_switch_2:on_activated()
   if   game:get_value("shsf2") ~= true then
-  torch_2:set_enabled(true)
-  sol.audio.play_sound("switch_2")
-  sol.audio.play_sound("water_flowing_in_2")end
-  f2_1:set_enabled(true)
-  f2_2:set_enabled(true)
-  f2_3:set_enabled(true)
-  game:set_value("shsf2", true)
-  fountain_switch_2:set_locked(true)
+    game:set_value("spruce_head_shirine_num_fountains_activated", game:get_value("spruce_head_shirine_num_fountains_activated") +1 )
+    torch_2:set_enabled(true)
+    sol.audio.play_sound("switch_2")
+    sol.audio.play_sound("water_flowing_in_2")end
+    f2_1:set_enabled(true)
+    f2_2:set_enabled(true)
+    f2_3:set_enabled(true)
+    game:set_value("shsf2", true)
+    fountain_switch_2:set_locked(true)
     if game:get_value("shsf1") == true
     and game:get_value("shsf2") == true
     and game:get_value("shsf3") == true
@@ -191,14 +199,15 @@ end
 
 function fountain_switch_3:on_activated()
   if   game:get_value("shsf3") ~= true then
-  torch_3:set_enabled(true)
-  sol.audio.play_sound("switch_2")
-  sol.audio.play_sound("water_flowing_in_2")end
-  f3_1:set_enabled(true)
-  f3_2:set_enabled(true)
-  f3_3:set_enabled(true)
-  game:set_value("shsf3", true)
-  fountain_switch_3:set_locked(true)
+    game:set_value("spruce_head_shirine_num_fountains_activated", game:get_value("spruce_head_shirine_num_fountains_activated") +1 )
+    torch_3:set_enabled(true)
+    sol.audio.play_sound("switch_2")
+    sol.audio.play_sound("water_flowing_in_2")end
+    f3_1:set_enabled(true)
+    f3_2:set_enabled(true)
+    f3_3:set_enabled(true)
+    game:set_value("shsf3", true)
+    fountain_switch_3:set_locked(true)
     if game:get_value("shsf1") == true
     and game:get_value("shsf2") == true
     and game:get_value("shsf3") == true
@@ -208,14 +217,15 @@ end
 
 function fountain_switch_4:on_activated()
   if   game:get_value("shsf4") ~= true then
-  torch_4:set_enabled(true)
-  sol.audio.play_sound("switch_2")
-  sol.audio.play_sound("water_flowing_in_2")end
-  f4_1:set_enabled(true)
-  f4_2:set_enabled(true)
-  f4_3:set_enabled(true)
-  game:set_value("shsf4", true)
-  fountain_switch_4:set_locked(true)
+    game:set_value("spruce_head_shirine_num_fountains_activated", game:get_value("spruce_head_shirine_num_fountains_activated") +1 )
+    torch_4:set_enabled(true)
+    sol.audio.play_sound("switch_2")
+    sol.audio.play_sound("water_flowing_in_2")end
+    f4_1:set_enabled(true)
+    f4_2:set_enabled(true)
+    f4_3:set_enabled(true)
+    game:set_value("shsf4", true)
+    fountain_switch_4:set_locked(true)
     if game:get_value("shsf1") == true
     and game:get_value("shsf2") == true
     and game:get_value("shsf3") == true

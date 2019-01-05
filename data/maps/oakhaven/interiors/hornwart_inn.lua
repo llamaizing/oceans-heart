@@ -35,11 +35,15 @@ function beaufort:on_interaction()
 
 end
 
-function hazel_room_sensor:on_activated()
-  if game:get_value("hornwart_entered_hazel_room_once_already") == true then
-    game:set_value("visited_hazel_room", true)
-    game:set_value("quest_hazel", 3) --quest log
-    game:set_value("hornwart_entered_hazel_room_once_already", true)
+for book in map:get_entities("hazel_room_book") do
+  function book:on_interaction()
+print("TALKING TO BOOK")
+    game:start_dialog(book:get_property("dialog"))
+    if game:get_value("hornwart_checkout_books_first_time") ~= true then
+      game:set_value("visited_hazel_room", true)
+      game:set_value("quest_hazel", 3) --quest log
+      game:set_value("hornwart_checkout_books_first_time", true)
+    end
   end
 end
 

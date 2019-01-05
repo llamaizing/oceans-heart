@@ -696,6 +696,15 @@ block{
   max_moves = 1,
 }
 
+sensor{
+  name = "entered_shack_sensor",
+  layer = 0,
+  x = 144,
+  y = 189,
+  width = 48,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 112,
