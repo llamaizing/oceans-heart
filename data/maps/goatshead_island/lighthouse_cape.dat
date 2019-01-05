@@ -5,7 +5,6 @@ properties{
   height = 720,
   min_layer = 0,
   max_layer = 2,
-  world = "lighthouse coast",
   tileset = "oceanheart_outdoors_1",
   music = "goatshead_overworld_2",
 }
@@ -13291,10 +13290,10 @@ dynamic_tile{
   layer = 1,
   x = 224,
   y = 464,
-  pattern = "1458",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "1458",
 }
 
 dynamic_tile{
@@ -13302,10 +13301,10 @@ dynamic_tile{
   layer = 1,
   x = 240,
   y = 464,
-  pattern = "1461",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "1461",
 }
 
 dynamic_tile{
@@ -13313,10 +13312,10 @@ dynamic_tile{
   layer = 1,
   x = 208,
   y = 464,
-  pattern = "1458",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "1458",
 }
 
 dynamic_tile{
@@ -13324,9 +13323,9 @@ dynamic_tile{
   layer = 1,
   x = 192,
   y = 464,
-  pattern = "1442",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "1442",
 }
 

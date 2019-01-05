@@ -5,7 +5,6 @@ properties{
   height = 1440,
   min_layer = 0,
   max_layer = 3,
-  world = "spruce head shrine",
   tileset = "oceanheart_outdoors_1",
   music = "ruins_1",
 }
