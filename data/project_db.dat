@@ -458,6 +458,8 @@ sprite{ id = "hud/quest_log_update_icon", description = "Quest Log Update Icon" 
 sprite{ id = "menus/arrows", description = "arrows" }
 sprite{ id = "menus/checkmark", description = "checkmark" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
+sprite{ id = "menus/inventory/inventory_background", description = "Inventory Background" }
+sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "npc/big_guy_1", description = "big guy 1" }
@@ -1158,6 +1160,7 @@ item{ id = "kingscrown", description = "Kingscrown Flowers" }
 item{ id = "mandrake", description = "Mandrake" }
 item{ id = "mandrake_white", description = "white mandrake" }
 item{ id = "matches", description = "matches" }
+item{ id = "menu_berry", description = "Menu Berry For Testing Inventory" }
 item{ id = "monkshood", description = "Monkshood" }
 item{ id = "monster_bones", description = "Monster Bones" }
 item{ id = "monster_guts", description = "Monster Guts" }

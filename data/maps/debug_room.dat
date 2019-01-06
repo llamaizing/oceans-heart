@@ -1898,6 +1898,13 @@ sensor{
   height = 16,
 }
 
+pickable{
+  layer = 0,
+  x = 280,
+  y = 133,
+  treasure_name = "menu_berry",
+}
+
 tile{
   layer = 1,
   x = 192,
