@@ -33,8 +33,8 @@ function inventory:initialize(game)
             if variant > 0 then
                 self.equipment_sprites[i] = sol.sprite.create("entities/items")
                 self.equipment_sprites[i]:set_animation(all_equipment_items[i])
---                self.equipment_sprites[i]:set_direction(variant - 1)
-                self.equipment_sprites[i]:set_direction(0)
+               self.equipment_sprites[i]:set_direction(variant - 1)
+                -- self.equipment_sprites[i]:set_direction(0)
             end
         end
     end
@@ -46,12 +46,12 @@ function inventory:initialize_assigned_item_sprites(game)
     if game:get_item_assigned(1) then
         self.assigned_item_sprite_1 = sol.sprite.create("entities/items")
         self.assigned_item_sprite_1:set_animation(game:get_item_assigned(1):get_name())
-        self.assigned_item_sprite_1:set_direction(0)
+        self.assigned_item_sprite_1:set_direction(game:get_item_assigned(1):get_variant()-1)
     end
     if game:get_item_assigned(2) then
         self.assigned_item_sprite_2 = sol.sprite.create("entities/items")
         self.assigned_item_sprite_2:set_animation(game:get_item_assigned(2):get_name())
-        self.assigned_item_sprite_2:set_direction(0)
+        self.assigned_item_sprite_2:set_direction(game:get_item_assigned(2):get_variant()-1)
     end
         
 end
