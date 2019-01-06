@@ -1901,7 +1901,7 @@ sensor{
 pickable{
   layer = 0,
   x = 280,
-  y = 133,
+  y = 101,
   treasure_name = "menu_berry",
 }
 
