@@ -13,7 +13,7 @@ local GRID_ORIGIN_X = 10
 local GRID_ORIGIN_Y = 72
 local GRID_ORIGIN_EQUIP_X = GRID_ORIGIN_X
 local GRID_ORIGIN_EQUIP_Y = GRID_ORIGIN_Y
-local ROWS = 3
+local ROWS = 4
 local COLUMNS = 4
 
 local cursor_index
@@ -49,7 +49,12 @@ end
 
 
 function inventory:on_draw(dst_surface)
+    self.cursor_column = (cursor_index % ROWS)
+    self.cursor_row = (cursor_index / ROWS)
+    print(self.cursor_column)
     --draw the menu background
+--    dst_surface:clear()
+--    self.menu_background:clear()
     self.menu_background:draw(dst_surface)
     self.cursor_sprite:draw(self.menu_background, self.cursor_column * 32 + GRID_ORIGIN_X,  self.cursor_row + GRID_ORIGIN_Y)
 
@@ -79,6 +84,8 @@ function inventory:on_command_pressed(command)
     return handled
 end
 
+function inventory:get_item_at_current_index()
 
+end
 
 return inventory
