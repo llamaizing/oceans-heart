@@ -24,7 +24,6 @@ end
 
 -- set to item slot 1
 function item:on_obtained()
-  game:set_item_assigned(1, self)
 --increase bow damage
   bow_damage = game:get_value("bow_damage")
   bow_damage = bow_damage + 2

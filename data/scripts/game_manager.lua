@@ -3,6 +3,7 @@ require("scripts/multi_events")
 require("scripts/weather/weather_manager")
 local initial_game = require("scripts/initial_game")
 local quest_log = require"scripts/menus/quest_log"
+local inventory = require"scripts/menus/inventory"
 local quest_update_icon = require"scripts/menus/quest_update_icon"
 local objectives_manager = require"scripts/objectives_manager"
 
@@ -42,11 +43,12 @@ function game_manager:create(file_name)
     quest_log:set_game(game)
     	
     function game:on_paused()
-    	sol.menu.start(game, quest_log)
+      inventory:initialize(game)
+    	sol.menu.start(game, inventory)
     end
     	
     function game:on_unpaused()
-    	sol.menu.stop(quest_log)
+    	sol.menu.stop(inventory)
     end
 
     local QUEST_SOUNDS = {
@@ -271,7 +273,6 @@ function game_manager:create(file_name)
 
 
   ------------------------------------------------------Game Over------------------------------------------------
-  if game:get_value("music_volume") == nil then game:set_value("music_volume", 60) end --this line is for old save files
   local function game_over_stuff()
       local elixer = game:get_item("elixer")
       local amount_elixer = elixer:get_amount()

@@ -8326,7 +8326,7 @@ Temple, if you can find it.
 dialog{
   id = "_treasure.apples.1",
   text = [[
-You collected an apple.
+You collected an apple. It'll heal 2 hearts!
 ]],
 }
 
@@ -8456,6 +8456,23 @@ You received some bombs. Press V to set them.
 }
 
 dialog{
+  id = "_treasure.boomerang.1",
+  text = [[
+You found a boomerang. Luckily, you know
+how to throw it so it always comes back.
+]],
+}
+
+dialog{
+  id = "_treasure.boomerang.2",
+  text = [[
+You found a really well-made boomerang.
+This one can be thrown harder, better, faster,
+and stronger.
+]],
+}
+
+dialog{
   id = "_treasure.bow.1",
   text = [[
 You found a bow. When you have arrows,
@@ -8475,6 +8492,15 @@ dialog{
   id = "_treasure.bow_silver.1",
   text = [[
 You got the silver bow now.
+]],
+}
+
+dialog{
+  id = "_treasure.bread.1",
+  text = [[
+You received a loaf of Burroak Bread. Made
+from acorns, it's wrapped in leaves to keep it
+fresh. Eat it to recover 5 hearts.
 ]],
 }
 
@@ -8531,16 +8557,20 @@ You collected dandelion seeds.
 dialog{
   id = "_treasure.defense_upgrade.1",
   text = [[
-Your defense is increased!
+Your defense is increased.
 ]],
 }
 
 dialog{
   id = "_treasure.elixer.1",
   text = [[
-You received an Elixer Vitae. If you fall in
-battle, you'll drink this and regain a little
-health before it's too late.
+You received an Elixer Vitae. Drinking
+it will replenesh much of your health.
+Additionally, when you fall in battle, you
+will drink a little bit of it automatically
+and return to the fight with a little
+health. Some say their effectiveness
+can be increased somehow.
 ]],
 }
 
@@ -8807,6 +8837,13 @@ easy to light torches and stuff like that.
 }
 
 dialog{
+  id = "_treasure.menu_berry.1",
+  text = [[
+You found some berries!
+]],
+}
+
+dialog{
   id = "_treasure.monkshood.1",
   text = [[
 You collected a stem of monkshood flowers.
@@ -8929,6 +8966,14 @@ You received a Sleeping Draught. Bring this
 back to Morus at the saloon- hopefully he's
 figured out where the pirates get their ale
 from so you can spike it with this.
+]],
+}
+
+dialog{
+  id = "_treasure.soup.1",
+  text = [[
+You received a bowl of soup! Eat it later
+to recover 5 hearts.
 ]],
 }
 
@@ -10466,7 +10511,7 @@ Council's hideout
 dialog{
   id = "quest.main.spruce_head",
   title = "Spruce Head",
-    text=[[
+  text = [[
 The Hourglass Pirates
 were seen looting
 Spruce Head.
@@ -10481,7 +10526,8 @@ center of the shrine
 Distillery
 !The distillery is on
 !Yarrowmouth Island
-    ]]
+    
+]],
 }
 
 dialog{
@@ -10615,6 +10661,21 @@ your immense strength
 }
 
 dialog{
+  id = "quest.side.goatshead.poplar_shack_key",
+  title = "Mossy Key",
+  text = [[
+You found a key laying in
+Poplar Forest. Wonder where
+it goes?
+@Find a locked door for the
+key you found in the woods.
+?- It went to an abandoned
+?shack.
+    
+]],
+}
+
+dialog{
   id = "quest.side.goatshead.secret_tunnels",
   title = "Abandoned Tunnels",
   text = [[
@@ -10675,6 +10736,21 @@ been given to Aubrey
 @Be confident knowing
 you made the right
 decision
+    
+]],
+}
+
+dialog{
+  id = "quest.side.oakhaven.sinking_lighthouse",
+  title = "Seaglint Ruins Key",
+  text = [[
+You found a key in a
+sinking ruins. It likely
+unlocks a nearby door.
+@Find the locked door.
+? - It was a locked
+?lighthouse in the
+?ruins.
     
 ]],
 }
@@ -10770,30 +10846,3 @@ destroy the monsters
 ]],
 }
 
-dialog{
-    id = "quest.side.goatshead.poplar_shack_key",
-    title = "Mossy Key",
-    text = [[
-You found a key laying in
-Poplar Forest. Wonder where
-it goes?
-@Find a locked door for the
-key you found in the woods.
-?- It went to an abandoned
-?shack.
-    ]]
-}
-
-dialog{
-    id = "quest.side.oakhaven.sinking_lighthouse",
-    title = "Seaglint Ruins Key",
-    text = [[
-You found a key in a
-sinking ruins. It likely
-unlocks a nearby door.
-@Find the locked door.
-? - It was a locked
-?lighthouse in the
-?ruins.
-    ]]
-}

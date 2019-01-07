@@ -458,6 +458,8 @@ sprite{ id = "hud/quest_log_update_icon", description = "Quest Log Update Icon" 
 sprite{ id = "menus/arrows", description = "arrows" }
 sprite{ id = "menus/checkmark", description = "checkmark" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
+sprite{ id = "menus/inventory/inventory_background", description = "Inventory Background" }
+sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "npc/big_guy_1", description = "big guy 1" }
@@ -1104,7 +1106,7 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
 item{ id = "amulet", description = "amulet" }
-item{ id = "apples", description = "Apples" }
+item{ id = "apples", description = "Apple" }
 item{ id = "armor_tools", description = "Armorer Tools" }
 item{ id = "armor_upgrade_1", description = "Armor Upgrade 1" }
 item{ id = "armor_upgrade_2", description = "Armor Upgrade 2" }
@@ -1115,10 +1117,11 @@ item{ id = "bait", description = "Bait" }
 item{ id = "berries", description = "Berries" }
 item{ id = "bomb", description = "bombs-map" }
 item{ id = "bombs_counter", description = "bombs inventory item" }
-item{ id = "bombs_counter_2", description = "bombs- built in inventory item" }
-item{ id = "boomerang", description = "boomerang" }
+item{ id = "bombs_counter_2", description = "Bombs" }
+item{ id = "boomerang", description = "Boomerang" }
 item{ id = "bow", description = "Bow" }
-item{ id = "bow_fire", description = "Fire Bow" }
+item{ id = "bow_fire", description = "Flame Arrows" }
+item{ id = "bread", description = "Burroak Bread" }
 item{ id = "charts", description = "Charts (for Kelpton)" }
 item{ id = "contract", description = "contract" }
 item{ id = "coral_ore", description = "Coral Ore" }
@@ -1158,6 +1161,7 @@ item{ id = "kingscrown", description = "Kingscrown Flowers" }
 item{ id = "mandrake", description = "Mandrake" }
 item{ id = "mandrake_white", description = "white mandrake" }
 item{ id = "matches", description = "matches" }
+item{ id = "menu_berry", description = "Menu Berry For Testing Inventory" }
 item{ id = "monkshood", description = "Monkshood" }
 item{ id = "monster_bones", description = "Monster Bones" }
 item{ id = "monster_guts", description = "Monster Guts" }
@@ -1171,6 +1175,7 @@ item{ id = "rupee", description = "rupee" }
 item{ id = "seagrass_charm", description = "Seagrass Charm" }
 item{ id = "shield", description = "shield" }
 item{ id = "sleeping_draught", description = "Sleeping Draught" }
+item{ id = "soup", description = "Soup" }
 item{ id = "stockpot", description = "stockpot" }
 item{ id = "stone_beak", description = "Stone Beak" }
 item{ id = "sword", description = "sword" }

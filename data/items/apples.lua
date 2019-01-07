@@ -1,13 +1,29 @@
 local item = ...
+local game = item:get_game()
 
 function item:on_created()
-
   self:set_can_disappear(true)
   self:set_brandish_when_picked(false)
 end
 
+function item:on_started()
+  item:set_savegame_variable("possession_apples")       --variable
+  item:set_amount_savegame_variable("amount_apples")    --amount variable
+  item:set_max_amount(999)
+  item:set_assignable(true)
+end
+
+--obtained
 function item:on_obtaining(variant, savegame_variable)
+  self:add_amount(1)
+end
 
-  self:get_game():add_life(6)
-
+--used
+function item:on_using()
+  if self:get_amount() > 0 then
+    game:add_life(4)              --health amount!
+    self:remove_amount(1)
+    sol.audio.play_sound("heart")
+  end
+  item:set_finished()
 end

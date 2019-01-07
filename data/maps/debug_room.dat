@@ -1178,6 +1178,15 @@ tile{
   pattern = "582",
 }
 
+tile{
+  layer = 0,
+  x = 440,
+  y = 80,
+  width = 16,
+  height = 48,
+  pattern = "45",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -1402,14 +1411,6 @@ pickable{
   x = 288,
   y = 189,
   treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 328,
-  y = 61,
-  treasure_name = "rupee",
-  treasure_variant = 5,
 }
 
 pickable{
@@ -1896,6 +1897,193 @@ sensor{
   y = 293,
   width = 32,
   height = 16,
+}
+
+pickable{
+  layer = 0,
+  x = 320,
+  y = 61,
+  treasure_name = "rupee",
+  treasure_variant = 6,
+}
+
+pickable{
+  layer = 0,
+  x = 328,
+  y = 61,
+  treasure_name = "rupee",
+  treasure_variant = 6,
+}
+
+pickable{
+  layer = 0,
+  x = 336,
+  y = 61,
+  treasure_name = "rupee",
+  treasure_variant = 6,
+}
+
+pickable{
+  layer = 0,
+  x = 336,
+  y = 69,
+  treasure_name = "rupee",
+  treasure_variant = 6,
+}
+
+pickable{
+  layer = 0,
+  x = 328,
+  y = 69,
+  treasure_name = "rupee",
+  treasure_variant = 6,
+}
+
+pickable{
+  layer = 0,
+  x = 320,
+  y = 69,
+  treasure_name = "rupee",
+  treasure_variant = 6,
+}
+
+pickable{
+  layer = 0,
+  x = 320,
+  y = 77,
+  treasure_name = "rupee",
+  treasure_variant = 6,
+}
+
+pickable{
+  layer = 0,
+  x = 320,
+  y = 69,
+  treasure_name = "rupee",
+  treasure_variant = 6,
+}
+
+pickable{
+  layer = 0,
+  x = 328,
+  y = 77,
+  treasure_name = "rupee",
+  treasure_variant = 6,
+}
+
+pickable{
+  layer = 0,
+  x = 336,
+  y = 77,
+  treasure_name = "rupee",
+  treasure_variant = 6,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 61,
+  treasure_name = "berries",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 61,
+  treasure_name = "berries",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 69,
+  treasure_name = "berries",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 69,
+  treasure_name = "berries",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 61,
+  treasure_name = "berries",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 61,
+  treasure_name = "berries",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 69,
+  treasure_name = "berries",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 69,
+  treasure_name = "berries",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 61,
+  treasure_name = "berries",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 61,
+  treasure_name = "berries",
+}
+
+pickable{
+  layer = 0,
+  x = 360,
+  y = 69,
+  treasure_name = "elixer",
+}
+
+pickable{
+  layer = 0,
+  x = 360,
+  y = 77,
+  treasure_name = "elixer",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 93,
+  treasure_name = "bread",
+}
+
+enemy{
+  layer = 0,
+  x = 304,
+  y = 397,
+  direction = 0,
+  breed = "normal_enemies/arborgeist_rogue",
+}
+
+enemy{
+  layer = 0,
+  x = 440,
+  y = 429,
+  direction = 0,
+  breed = "normal_enemies/arborgeist_rogue",
 }
 
 tile{

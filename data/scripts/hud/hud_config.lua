@@ -22,10 +22,6 @@ local hud_config = {
   -- Rupee counter.
   {
     menu_script = "scripts/hud/rupees",
-    -- these coordinates are like, top middle of the screen
-    -- x = 121,
-    -- y = 10,
-    -- but I want bottom right:
     x = 285,
     y = 220,
   },
@@ -33,6 +29,7 @@ local hud_config = {
 
 
   -- Bombs counter.
+  --[[
 {
     menu_script = "scripts/hud/bombs",
     x = 235,
@@ -45,13 +42,13 @@ local hud_config = {
     x = 260,
     y = 220,
   },
+--]]
 
-
-  --[[ Item assigned to slot 1.
+  -- Item assigned to slot 1.
   {
     menu_script = "scripts/hud/item",
-    x = 20,
-    y = 10,
+    x = 266,
+    y = 1,
     slot = 1,  -- Item slot (1 or 2).
   },
  
@@ -60,11 +57,11 @@ local hud_config = {
  -- Item assigned to slot 2.
   {
     menu_script = "scripts/hud/item",
-    x = 35,
-    y = 10,
+    x = 290,
+    y = 8,
     slot = 2,  -- Item slot (1 or 2).
   },
---]]
+
 
   -- You can add more HUD elements here.
 }
