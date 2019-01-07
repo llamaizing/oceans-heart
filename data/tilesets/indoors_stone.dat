@@ -24,10 +24,12 @@ tile_pattern{
   id = "100",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 464, 464, 464, 464 },
+  x = { 0, 16, 32 },
+  y = { 464, 464, 464 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "vertical",
 }
 
@@ -35,10 +37,12 @@ tile_pattern{
   id = "101",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 480, 480, 480, 480 },
+  x = { 0, 16, 32 },
+  y = { 480, 480, 480 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -46,10 +50,12 @@ tile_pattern{
   id = "102",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 496, 496, 496, 496 },
+  x = { 0, 16, 32 },
+  y = { 496, 496, 496 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "vertical",
 }
 
@@ -57,10 +63,12 @@ tile_pattern{
   id = "103",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 512, 512, 512, 512 },
+  x = { 0, 16, 32 },
+  y = { 512, 512, 512 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "none",
 }
 
@@ -68,10 +76,12 @@ tile_pattern{
   id = "104",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 528, 528, 528, 528 },
+  x = { 0, 16, 32 },
+  y = { 528, 528, 528 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "none",
 }
 
@@ -79,10 +89,12 @@ tile_pattern{
   id = "105",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 544, 544, 544, 544 },
+  x = { 0, 16, 32 },
+  y = { 544, 544, 544 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "none",
 }
 
@@ -90,10 +102,12 @@ tile_pattern{
   id = "106",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 560, 560, 560, 560 },
+  x = { 0, 16, 32 },
+  y = { 560, 560, 560 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "none",
 }
 
@@ -728,6 +742,7 @@ tile_pattern{
   y = { 272, 272, 272 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -1271,6 +1286,7 @@ tile_pattern{
   y = { 400, 400, 400 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -2110,10 +2126,12 @@ tile_pattern{
   id = "281",
   ground = "traversable",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 584, 584, 584, 584 },
+  x = { 0, 16, 32 },
+  y = { 584, 584, 584 },
   width = 16,
   height = 8,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -2121,10 +2139,12 @@ tile_pattern{
   id = "282",
   ground = "traversable",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 576, 576, 576, 576 },
+  x = { 0, 16, 32 },
+  y = { 576, 576, 576 },
   width = 16,
   height = 8,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -2132,10 +2152,12 @@ tile_pattern{
   id = "283",
   ground = "traversable",
   default_layer = 0,
-  x = { 0, 0, 0, 0 },
-  y = { 592, 608, 624, 608 },
+  x = { 0, 0, 0 },
+  y = { 592, 608, 624 },
   width = 8,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "vertical",
 }
 
@@ -2143,10 +2165,12 @@ tile_pattern{
   id = "284",
   ground = "traversable",
   default_layer = 0,
-  x = { 8, 8, 8, 8 },
-  y = { 592, 608, 624, 608 },
+  x = { 8, 8, 8 },
+  y = { 592, 608, 624 },
   width = 8,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "vertical",
 }
 
@@ -2608,6 +2632,7 @@ tile_pattern{
   y = { 368, 368, 368 },
   width = 16,
   height = 24,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -2970,6 +2995,7 @@ tile_pattern{
   y = { 448, 448, 448 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -3200,6 +3226,7 @@ tile_pattern{
   y = { 544, 544, 544 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -3350,6 +3377,7 @@ tile_pattern{
   y = { 240, 240, 240 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -3476,6 +3504,7 @@ tile_pattern{
   y = { 232, 232, 232 },
   width = 16,
   height = 8,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -3586,6 +3615,7 @@ tile_pattern{
   y = { 256, 256, 256 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -3930,6 +3960,7 @@ tile_pattern{
   y = { 288, 288, 288 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -4040,6 +4071,7 @@ tile_pattern{
   y = { 320, 320, 320 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -4762,6 +4794,7 @@ tile_pattern{
   y = { 296, 296, 296 },
   width = 32,
   height = 8,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -4772,6 +4805,7 @@ tile_pattern{
   y = { 272, 272, 272 },
   width = 32,
   height = 24,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -4802,6 +4836,7 @@ tile_pattern{
   y = { 496, 496, 496 },
   width = 16,
   height = 16,
+  frame_delay = 250,
 }
 
 tile_pattern{
@@ -5394,6 +5429,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "571",
+  ground = "empty",
+  default_layer = 0,
+  x = 384,
+  y = 544,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "572",
   ground = "wall",
   default_layer = 0,
@@ -5534,6 +5579,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "585",
+  ground = "empty",
+  default_layer = 0,
+  x = 368,
+  y = 544,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "59",
   ground = "traversable",
   default_layer = 1,
@@ -5587,10 +5642,12 @@ tile_pattern{
   id = "63",
   ground = "wall",
   default_layer = 0,
-  x = { 48, 48, 48, 48 },
-  y = { 448, 464, 480, 464 },
+  x = { 48, 48, 48 },
+  y = { 448, 464, 480 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "none",
 }
 
@@ -5598,10 +5655,12 @@ tile_pattern{
   id = "64",
   ground = "wall",
   default_layer = 0,
-  x = { 64, 64, 64, 64 },
-  y = { 448, 464, 480, 464 },
+  x = { 64, 64, 64 },
+  y = { 448, 464, 480 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -5609,10 +5668,12 @@ tile_pattern{
   id = "65",
   ground = "wall",
   default_layer = 0,
-  x = { 80, 80, 80, 80 },
-  y = { 448, 464, 480, 464 },
+  x = { 80, 80, 80 },
+  y = { 448, 464, 480 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "none",
 }
 
@@ -5991,10 +6052,12 @@ tile_pattern{
   id = "99",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 448, 448, 448, 448 },
+  x = { 0, 16, 32 },
+  y = { 448, 448, 448 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -6849,10 +6912,12 @@ tile_pattern{
   id = "pier.shadow",
   ground = "deep_water",
   default_layer = 0,
-  x = { 48, 64, 80, 64 },
-  y = { 424, 424, 424, 424 },
+  x = { 48, 64, 80 },
+  y = { 424, 424, 424 },
   width = 16,
   height = 8,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -6900,10 +6965,12 @@ tile_pattern{
   id = "post_bottom.water",
   ground = "wall",
   default_layer = 0,
-  x = { 48, 64, 80, 64 },
-  y = { 336, 336, 336, 336 },
+  x = { 48, 64, 80 },
+  y = { 336, 336, 336 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -6911,10 +6978,12 @@ tile_pattern{
   id = "post_bottom.water.shadow",
   ground = "wall",
   default_layer = 0,
-  x = { 48, 64, 80, 64 },
-  y = { 320, 320, 320, 320 },
+  x = { 48, 64, 80 },
+  y = { 320, 320, 320 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -6952,10 +7021,12 @@ tile_pattern{
   id = "shallow_water",
   ground = "shallow_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 336, 336, 336, 336 },
+  x = { 0, 16, 32 },
+  y = { 336, 336, 336 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{
@@ -7357,10 +7428,12 @@ tile_pattern{
   id = "water_edge.down",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 384, 384, 384, 384 },
+  x = { 0, 16, 32 },
+  y = { 384, 384, 384 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -7368,10 +7441,12 @@ tile_pattern{
   id = "water_edge.left",
   ground = "deep_water",
   default_layer = 0,
-  x = { 16, 16, 16, 16 },
-  y = { 400, 416, 432, 416 },
+  x = { 16, 16, 16 },
+  y = { 400, 416, 432 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "vertical",
 }
 
@@ -7379,10 +7454,12 @@ tile_pattern{
   id = "water_edge.right",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 0, 0, 0 },
-  y = { 400, 416, 432, 416 },
+  x = { 0, 0, 0 },
+  y = { 400, 416, 432 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "vertical",
 }
 
@@ -7390,10 +7467,12 @@ tile_pattern{
   id = "water_edge.up",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 368, 368, 368, 368 },
+  x = { 0, 16, 32 },
+  y = { 368, 368, 368 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -7401,9 +7480,11 @@ tile_pattern{
   id = "wave",
   ground = "deep_water",
   default_layer = 0,
-  x = { 0, 16, 32, 16 },
-  y = { 352, 352, 352, 352 },
+  x = { 0, 16, 32 },
+  y = { 352, 352, 352 },
   width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 

@@ -25,7 +25,6 @@ end
 
 -- set to item slot 1
 function item:on_obtained()
-  game:set_item_assigned(1, self)
   game:set_value("bow_damage", 1)
   self:add_amount(20)
 end

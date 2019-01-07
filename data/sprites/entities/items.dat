@@ -141,6 +141,13 @@ animation{
   },
 }
 animation{
+  name = "bread",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 336, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "charts",
   src_image = "entities/items.png",
   directions = {
@@ -533,6 +540,15 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 304, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "soup",
+  src_image = "entities/items.png",
+  frame_delay = 300,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 288, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
   },
 }
 animation{
