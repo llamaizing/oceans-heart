@@ -5,7 +5,6 @@ properties{
   height = 720,
   min_layer = 0,
   max_layer = 2,
-  world = "poplar forest",
   tileset = "oceanheart_outdoors_1",
   music = "goatshead_overworld_2",
 }
@@ -19921,10 +19920,10 @@ dynamic_tile{
   layer = 0,
   x = 1600,
   y = 536,
-  pattern = "1484",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1484",
 }
 
 dynamic_tile{
@@ -19932,10 +19931,10 @@ dynamic_tile{
   layer = 0,
   x = 1552,
   y = 536,
-  pattern = "1482",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1482",
 }
 
 dynamic_tile{
@@ -19943,10 +19942,10 @@ dynamic_tile{
   layer = 0,
   x = 1568,
   y = 536,
-  pattern = "1483",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1483",
 }
 
 destination{
@@ -19972,10 +19971,10 @@ dynamic_tile{
   layer = 0,
   x = 1584,
   y = 536,
-  pattern = "1483",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1483",
 }
 
 chest{

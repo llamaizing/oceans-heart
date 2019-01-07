@@ -5,7 +5,6 @@ properties{
   height = 720,
   min_layer = 0,
   max_layer = 2,
-  world = "goat_caverns",
   tileset = "temple_2",
   music = "ruins_1",
 }
