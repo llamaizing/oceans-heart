@@ -24,6 +24,10 @@ end
 function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
   local game = self:get_game()
   local sword_damage = game:get_value("sword_damage")
+  local hero_state = hero:get_state()
+  if hero_state == "sword spin attack" or hero_state == "running" then
+    sword_damage = sword_damage * 2
+  end
   self:remove_life(sword_damage)
 
 end

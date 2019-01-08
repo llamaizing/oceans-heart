@@ -11,13 +11,14 @@ local all_equipment_items = {
     "boomerang",
     "spear",
     "ball_and_chain",
+    "hookshot",
     "tornado_dash",
     "gust",
     "crystal_spark",
+    "bombs_counter_2",
     "bow",
     "bow_fire",
     "bow_bombs",
-    "bombs_counter_2"
 }
 
 --captions for each item. Has to be in same order
@@ -29,13 +30,14 @@ local item_descriptions = {
     "Boomerang",
     "Spear",
     "Flail",
+    "Hookshot",
     "Tornado Dash",
     "Zephyrine's Tempest",
     "Ophira's Ember",
+    "Bombs",
     "Bow",
     "Flame Arrows",
     "Bomb Arrows",
-    "Bombs"
 }
 
 --constants:

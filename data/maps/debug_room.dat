@@ -1626,55 +1626,6 @@ pickable{
   treasure_name = "armor_upgrade_2",
 }
 
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "sword",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "bow",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "health_upgrade",
-}
-
 door{
   layer = 0,
   x = 128,
@@ -1715,76 +1666,6 @@ custom_entity{
   direction = 0,
   sprite = "entities/leaf_pile",
   model = "leaf_pile",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "bomb",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "bomb",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "bomb",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "bomb",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "arrow",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "arrow",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "rupee",
-  treasure_variant = 5,
 }
 
 destructible{
@@ -2114,7 +1995,7 @@ custom_entity{
 pickable{
   layer = 0,
   x = 280,
-  y = 109,
+  y = 93,
   treasure_name = "spear",
 }
 
@@ -2229,6 +2110,22 @@ pickable{
   x = 432,
   y = 165,
   treasure_name = "crystal_spark",
+}
+
+pickable{
+  layer = 0,
+  x = 120,
+  y = 61,
+  treasure_name = "hookshot",
+}
+
+block{
+  layer = 0,
+  x = 224,
+  y = 157,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
 }
 
 tile{
