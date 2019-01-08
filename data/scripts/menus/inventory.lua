@@ -15,6 +15,7 @@ local all_equipment_items = {
     "ball_and_chain",
     "bow",
     "bow_fire",
+    "bow_bombs",
     "bombs_counter_2"
 }
 
@@ -31,6 +32,7 @@ local item_descriptions = {
     "Flail",
     "Bow",
     "Flame Arrows",
+    "Bomb Arrows",
     "Bombs"
 }
 

@@ -1130,6 +1130,7 @@ item{ id = "bombs_counter", description = "bombs inventory item" }
 item{ id = "bombs_counter_2", description = "Bombs" }
 item{ id = "boomerang", description = "Boomerang" }
 item{ id = "bow", description = "Bow" }
+item{ id = "bow_bombs", description = "Bomb Arrows" }
 item{ id = "bow_fire", description = "Flame Arrows" }
 item{ id = "bread", description = "Burroak Bread" }
 item{ id = "charts", description = "Charts (for Kelpton)" }
@@ -1276,6 +1277,7 @@ enemy{ id = "normal_enemies/zora", description = "Zora" }
 enemy{ id = "tentacle", description = "tentacle" }
 
 entity{ id = "arrow", description = "arrow" }
+entity{ id = "arrow_bomb", description = "Bomb Arrow" }
 entity{ id = "arrow_fire", description = "arrow_fire" }
 entity{ id = "chain_link", description = "Chain Link" }
 entity{ id = "cliff", description = "cliff" }
