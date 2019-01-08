@@ -77,6 +77,29 @@ local function attach_to_obstacle()
     y = y,
     layer = layer,
   })
+  map:create_fire({
+    x = x+8,
+    y = y,
+    layer = layer,
+  })
+  map:create_fire({
+    x = x-8,
+    y = y,
+    layer = layer,
+  })
+  map:create_fire({
+    x = x,
+    y = y+8,
+    layer = layer,
+  })
+
+  map:create_fire({
+    x = x,
+    y = y-8,
+    layer = layer,
+  })
+
+
 
   -- Remove the arrow after a delay.
   sol.timer.start(map, 1500, function()

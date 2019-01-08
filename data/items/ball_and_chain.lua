@@ -15,7 +15,8 @@ function item:on_using()
   hero:freeze()
   local x, y, layer = hero:get_position()
 
-  local RADIUS = 36
+  local MIN_RADIUS = 2
+  local RADIUS = 52
   
   --now move x or y depending on hero facing direction
   local start_x = x
@@ -68,27 +69,29 @@ function item:on_using()
   local m = sol.movement.create("circle")
   m:set_center(flail_x, flail_y)
 --  m:set_angle_from_center(start_angle)
-  m:set_radius(RADIUS)
-  m:set_radius_speed(80)
+  m:set_radius(MIN_RADIUS)
+  m:set_radius_speed(100)
   m:set_max_rotations(2)
   m:set_angular_speed(13)
-  m:set_clockwise()
+  if hero_dir == 0 or hero_dir == 3 then m:set_clockwise() end
+
   local m2 = sol.movement.create("circle")
   m2:set_center(flail_x, flail_y)
 --  m:set_angle_from_center(start_angle)
-  m2:set_radius(RADIUS / 3 * 2)
-  m2:set_radius_speed(80)
+  m2:set_radius(MIN_RADIUS)
+  m2:set_radius_speed(100)
   m2:set_max_rotations(2)
   m2:set_angular_speed(13)
-  m2:set_clockwise()  
+  if hero_dir == 0 or hero_dir == 3 then m2:set_clockwise() end
+
   local m3 = sol.movement.create("circle")
   m3:set_center(flail_x, flail_y)
 --  m:set_angle_from_center(start_angle)
-  m3:set_radius(RADIUS / 3)
-  m3:set_radius_speed(80)
+  m3:set_radius(MIN_RADIUS)
+  m3:set_radius_speed(100)
   m3:set_max_rotations(2)
   m3:set_angular_speed(13)
-  m3:set_clockwise()
+  if hero_dir == 0 or hero_dir == 3 then m3:set_clockwise() end
 
 
   --START CHARGING (because this is too powerful to not charge)
@@ -101,6 +104,9 @@ function item:on_using()
     m:start(spike_ball, function() spike_ball:remove() end)
     m2:start(link1, function() link1:remove() end)
     m3:start(link2, function() link2:remove() end)
+    m:set_radius(RADIUS)
+    m2:set_radius(RADIUS / 3 * 2)
+    m3:set_radius(RADIUS / 3)
   end)
 
 
