@@ -8,15 +8,11 @@ function item:on_created()
 end
 
 
-function item:on_obtained()
-  game:set_item_assigned(2, self)
-end
-
 function item:on_using()
 
   local hero = self:get_map():get_entity("hero")
   if self:get_variant() == 1 then
-    hero:start_boomerang(100, 160, "boomerang1", "entities/boomerang1")
+    hero:start_boomerang(75, 155, "boomerang1", "entities/boomerang1")
   else
     -- boomerang 2: longer and faster movement
     hero:start_boomerang(150, 250, "boomerang1", "entities/boomerang1")

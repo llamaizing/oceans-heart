@@ -8402,6 +8402,26 @@ of beasts and creatures.
 }
 
 dialog{
+  id = "_treasure.ball_and_chain.1",
+  text = [[
+You obtained a large flail. Press its
+button to swing it around recklessly,
+smashing into enemies and probaly walls
+and trees and stuff. It's hard to control.
+]],
+}
+
+dialog{
+  id = "_treasure.ball_and_chain.2",
+  text = [[
+You obtained an explosive flail!
+It will explode whenever it smashes
+into anything. This is actually
+pretty dangerous! Be careful!
+]],
+}
+
+dialog{
   id = "_treasure.bomb.1",
   text = [[
 You found a bomb!
@@ -8978,6 +8998,15 @@ to recover 5 hearts.
 }
 
 dialog{
+  id = "_treasure.spear.1",
+  text = [[
+You acquired a spear! It has a longer
+reach than your sword and can do a
+little more damage.
+]],
+}
+
+dialog{
   id = "_treasure.stockpot.1",
   text = [[
 You received a cast iron stockpot. Heavy
@@ -9026,6 +9055,16 @@ dialog{
 You found a Tidal Starfruit! It smells
 kind of like a mango and is a lot
 heavier than you'd expect.
+]],
+}
+
+dialog{
+  id = "_treasure.tornado_dash.1",
+  text = [[
+You received the Tornado Dash charm!
+Hold the button to start running in
+a single direction and smash into
+things.
 ]],
 }
 

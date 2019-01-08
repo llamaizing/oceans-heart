@@ -358,6 +358,7 @@ sprite{ id = "entities/bush_small_tree", description = "small tree" }
 sprite{ id = "entities/bush_violet", description = "Violet" }
 sprite{ id = "entities/bush_yarrow_white", description = "Yarrow - white" }
 sprite{ id = "entities/bush_yarrow_yellow", description = "Yarrow - Yellow" }
+sprite{ id = "entities/chain_link", description = "Chain Link" }
 sprite{ id = "entities/chair2L", description = "Chair2L" }
 sprite{ id = "entities/chair2R", description = "Chair 2R" }
 sprite{ id = "entities/chairL", description = "Chair L" }
@@ -407,6 +408,7 @@ sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/solid_switch", description = "Solid switch" }
+sprite{ id = "entities/spike_ball", description = "Spike Ball" }
 sprite{ id = "entities/spirit_1", description = "Spirit 01" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
@@ -435,9 +437,11 @@ sprite{ id = "entities/vase_skull", description = "Vase (skull)" }
 sprite{ id = "entities/weak_tree", description = "weak tree" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
+sprite{ id = "hero/gust", description = "Gust" }
 sprite{ id = "hero/shield1", description = "Hero shield 1" }
 sprite{ id = "hero/shield2", description = "Hero shield 2" }
 sprite{ id = "hero/shield3", description = "Hero shield 3" }
+sprite{ id = "hero/spear", description = "Spear" }
 sprite{ id = "hero/sword1", description = "Hero sword 1" }
 sprite{ id = "hero/sword2", description = "Hero sword 2" }
 sprite{ id = "hero/sword3", description = "Hero sword 3" }
@@ -1012,10 +1016,14 @@ sound{ id = "breaking_glass", description = "Breaking Glass" }
 sound{ id = "burrow1", description = "Burrow 1" }
 sound{ id = "burrow2", description = "Burrow 2" }
 sound{ id = "bush", description = "bush" }
+sound{ id = "bush_default", description = "bush_default" }
 sound{ id = "cane", description = "cane" }
 sound{ id = "chest_open", description = "chest_open" }
+sound{ id = "click_low", description = "click_low" }
 sound{ id = "cursor", description = "cursor" }
+sound{ id = "cursor_2", description = "cursor_2" }
 sound{ id = "danger", description = "danger" }
+sound{ id = "dash", description = "dash" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
 sound{ id = "door_unlocked", description = "door_unlocked" }
@@ -1089,6 +1097,7 @@ sound{ id = "thunder2", description = "thunder2" }
 sound{ id = "thunder3", description = "thunder3" }
 sound{ id = "thunder_double", description = "thunder_double" }
 sound{ id = "thunder_far", description = "thunder_far" }
+sound{ id = "thunk1", description = "thunk1" }
 sound{ id = "timer", description = "timer" }
 sound{ id = "timer_hurry", description = "timer_hurry" }
 sound{ id = "treasure", description = "treasure" }
@@ -1114,6 +1123,7 @@ item{ id = "arrow", description = "arrow-map" }
 item{ id = "attack_upgrade", description = "Attack Upgrade - For Testing" }
 item{ id = "bag_of_money", description = "bag of money" }
 item{ id = "bait", description = "Bait" }
+item{ id = "ball_and_chain", description = "Ball and Chain" }
 item{ id = "berries", description = "Berries" }
 item{ id = "bomb", description = "bombs-map" }
 item{ id = "bombs_counter", description = "bombs inventory item" }
@@ -1136,6 +1146,7 @@ item{ id = "flippers", description = "flippers" }
 item{ id = "forsythia", description = "Forsythia" }
 item{ id = "geode", description = "Geode" }
 item{ id = "ghost_orchid", description = "Ghost Orchid" }
+item{ id = "gust", description = "Gust" }
 item{ id = "health_upgrade", description = "health upgrade" }
 item{ id = "hideout_chart", description = "Hideout Chart" }
 item{ id = "honeycomb", description = "Honeycomb" }
@@ -1176,12 +1187,15 @@ item{ id = "seagrass_charm", description = "Seagrass Charm" }
 item{ id = "shield", description = "shield" }
 item{ id = "sleeping_draught", description = "Sleeping Draught" }
 item{ id = "soup", description = "Soup" }
+item{ id = "spear", description = "Spear" }
 item{ id = "stockpot", description = "stockpot" }
 item{ id = "stone_beak", description = "Stone Beak" }
 item{ id = "sword", description = "sword" }
+item{ id = "sword_2", description = "Sword 2 - TEST" }
 item{ id = "sword_upgrade", description = "sword upgrade" }
 item{ id = "tacklebox", description = "Tacklebox" }
 item{ id = "tidal_starfruit", description = "Tidy Starnut" }
+item{ id = "tornado_dash", description = "Tornado Dash" }
 item{ id = "violets", description = "violets" }
 item{ id = "watering_can", description = "watering can" }
 item{ id = "whisky_for_juglan", description = "Whisky for Juglan" }
@@ -1263,7 +1277,9 @@ enemy{ id = "tentacle", description = "tentacle" }
 
 entity{ id = "arrow", description = "arrow" }
 entity{ id = "arrow_fire", description = "arrow_fire" }
+entity{ id = "chain_link", description = "Chain Link" }
 entity{ id = "cliff", description = "cliff" }
+entity{ id = "damaging_sparkle", description = "Damaging Sparkle" }
 entity{ id = "leaf_pile", description = "Leaf Pile" }
 entity{ id = "rockpile", description = "Rock Pile" }
 entity{ id = "rockpile_3", description = "rockpile 3" }

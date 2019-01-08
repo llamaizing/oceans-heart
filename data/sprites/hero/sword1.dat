@@ -10,6 +10,14 @@ animation{
   },
 }
 animation{
+  name = "spear",
+  src_image = "hero/spear.png",
+  frame_delay = 80,
+  directions = {
+    { x = 432, y = 0, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 43, num_frames = 6 },
+  },
+}
+animation{
   name = "spin_attack",
   src_image = "hero/spin_attack.sword1.OLD2.png",
   frame_delay = 50,

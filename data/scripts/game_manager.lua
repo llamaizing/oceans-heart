@@ -1,6 +1,7 @@
 
 require("scripts/multi_events")
 require("scripts/weather/weather_manager")
+local game_restart = require("scripts/game_restart")
 local initial_game = require("scripts/initial_game")
 local quest_log = require"scripts/menus/quest_log"
 local inventory = require"scripts/menus/inventory"
@@ -147,6 +148,9 @@ function game_manager:create(file_name)
 
       elseif key == "h" then
         game:set_life(game:get_max_life())
+
+      elseif key == "j" then
+        game:remove_life(2)
         
   --end of debug functions
   --]]
@@ -213,32 +217,6 @@ function game_manager:create(file_name)
     end --end of if action == condition
   end
 
-
-  --MOVE WHILE ATTACKING FUNCTION
-  --[[
-  local command
-  function game:on_command_pressed(command)
-    local hero = game:get_hero()
-    if command == "attack" and hero:get_movement() ~= nil then
-      hero:start_attack()
-      local dir = hero:get_direction()
-      local dx, dy
-      if dir == 0 then dx = 16 dy = 0
-      elseif dir == 1 then dx = 0 dy = -16
-      elseif dir == 2 then dx = -16 dy = 0
-      elseif dir == 3 then dx = 0 dy = 16 end
-      if hero:test_obstacles(dx, dy) == false then
-        local m = sol.movement.create("path")
-        m:set_path{dir*2, dir*2}
-        m:set_speed(90)
-        m:start(hero)
-        function m:on_obstacle_reached() hero:unfreeze() end
-      end
-    end
-  return false
-
-  end
-  --]]
 
 
 
@@ -317,6 +295,13 @@ function game_manager:create(file_name)
     sol.audio.play_sound("hero_dying")
     sol.timer.start(game, 1500, game_over_stuff)
   end
+
+  --reset some values whenever game starts or restarts
+  game:register_event("on_started", function()
+    game_restart:reset_values(game)
+  end)
+
+
 
   return game
 end

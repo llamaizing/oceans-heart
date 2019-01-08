@@ -1178,15 +1178,6 @@ tile{
   pattern = "582",
 }
 
-tile{
-  layer = 0,
-  x = 440,
-  y = 80,
-  width = 16,
-  height = 48,
-  pattern = "45",
-}
-
 pickable{
   layer = 0,
   x = 72,
@@ -2065,7 +2056,7 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 416,
+  x = 432,
   y = 93,
   treasure_name = "bread",
 }
@@ -2084,6 +2075,114 @@ enemy{
   y = 429,
   direction = 0,
   breed = "normal_enemies/arborgeist_rogue",
+}
+
+pickable{
+  layer = 0,
+  x = 432,
+  y = 117,
+  treasure_name = "tornado_dash",
+}
+
+custom_entity{
+  name = "rock_pile_2",
+  layer = 0,
+  x = 280,
+  y = 277,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_3",
+  layer = 0,
+  x = 312,
+  y = 277,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_4",
+  layer = 0,
+  x = 344,
+  y = 277,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_5",
+  layer = 0,
+  x = 376,
+  y = 277,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_6",
+  layer = 0,
+  x = 408,
+  y = 277,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_7",
+  layer = 0,
+  x = 440,
+  y = 277,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+pickable{
+  layer = 0,
+  x = 280,
+  y = 109,
+  treasure_name = "spear",
+}
+
+pickable{
+  layer = 0,
+  x = 432,
+  y = 141,
+  treasure_name = "gust",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 181,
+  treasure_name = "ball_and_chain",
+}
+
+pickable{
+  layer = 0,
+  x = 432,
+  y = 213,
+  treasure_name = "ball_and_chain",
+  treasure_variant = 2,
 }
 
 tile{

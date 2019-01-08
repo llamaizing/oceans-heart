@@ -9,16 +9,13 @@ local all_equipment_items = {
     "bread",
     "elixer",
     "boomerang",
+    "spear",
+    "tornado_dash",
+    "gust",
+    "ball_and_chain",
     "bow",
     "bow_fire",
-    "bombs_counter_2",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries"
+    "bombs_counter_2"
 }
 
 --captions for each item. Has to be in same order
@@ -28,17 +25,13 @@ local item_descriptions = {
     "Bread",
     "Elixer Vitae",
     "Boomerang",
+    "Spear",
+    "Tornado Dash",
+    "Gust",
+    "Flail",
     "Bow",
     "Flame Arrows",
-    "Bombs",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries"
+    "Bombs"
 }
 
 --constants:
@@ -194,7 +187,7 @@ function inventory:on_command_pressed(command)
         local item = self:get_item_at_current_index()
         if item and item:is_assignable() then
             game:set_item_assigned(1, item)
-            sol.audio.play_sound("cane")
+            sol.audio.play_sound("ok")
         else sol.audio.play_sound("wrong")
         end
         self:initialize_assigned_item_sprites(game)
@@ -202,7 +195,7 @@ function inventory:on_command_pressed(command)
         local item = self:get_item_at_current_index()
         if item and item:is_assignable() then
             game:set_item_assigned(2, item)
-            sol.audio.play_sound("cane")
+            sol.audio.play_sound("ok")
         else sol.audio.play_sound("wrong")
         end
         self:initialize_assigned_item_sprites(game)

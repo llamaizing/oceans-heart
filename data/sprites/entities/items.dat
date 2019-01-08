@@ -68,6 +68,14 @@ animation{
   },
 }
 animation{
+  name = "ball_and_chain",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 352, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 352, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "berries",
   src_image = "entities/items.png",
   directions = {
@@ -240,6 +248,13 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 320, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "gust",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 336, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -552,6 +567,13 @@ animation{
   },
 }
 animation{
+  name = "spear",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 336, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "stockpot",
   src_image = "entities/items.png",
   directions = {
@@ -573,6 +595,13 @@ animation{
   },
 }
 animation{
+  name = "sword_2",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 56, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "tacklebox",
   src_image = "entities/items.png",
   directions = {
@@ -586,6 +615,13 @@ animation{
   frame_to_loop_on = 0,
   directions = {
     { x = 320, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2 },
+  },
+}
+animation{
+  name = "tornado_dash",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 336, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
