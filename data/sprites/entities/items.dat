@@ -185,6 +185,13 @@ animation{
   },
 }
 animation{
+  name = "crystal_spark",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 352, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "dandelion_charm",
   src_image = "entities/items.png",
   directions = {

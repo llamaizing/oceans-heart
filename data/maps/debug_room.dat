@@ -2127,15 +2127,15 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 424,
-  y = 181,
+  x = 432,
+  y = 197,
   treasure_name = "ball_and_chain",
 }
 
 pickable{
   layer = 0,
-  x = 432,
-  y = 213,
+  x = 464,
+  y = 189,
   treasure_name = "ball_and_chain",
   treasure_variant = 2,
 }
@@ -2222,6 +2222,13 @@ pickable{
   x = 56,
   y = 85,
   treasure_name = "bow_bombs",
+}
+
+pickable{
+  layer = 0,
+  x = 432,
+  y = 165,
+  treasure_name = "crystal_spark",
 }
 
 tile{

@@ -10,9 +10,10 @@ local all_equipment_items = {
     "elixer",
     "boomerang",
     "spear",
+    "ball_and_chain",
     "tornado_dash",
     "gust",
-    "ball_and_chain",
+    "crystal_spark",
     "bow",
     "bow_fire",
     "bow_bombs",
@@ -27,9 +28,10 @@ local item_descriptions = {
     "Elixer Vitae",
     "Boomerang",
     "Spear",
-    "Tornado Dash",
-    "Gust",
     "Flail",
+    "Tornado Dash",
+    "Zephyrine's Tempest",
+    "Ophira's Ember",
     "Bow",
     "Flame Arrows",
     "Bomb Arrows",
@@ -127,7 +129,7 @@ function inventory:on_draw(dst_surface)
     --draw the elements
     self.menu_background:draw(dst_surface)
     self.cursor_sprite:draw(dst_surface, self.cursor_column * 32 + GRID_ORIGIN_X + 32,  self.cursor_row * 32 + GRID_ORIGIN_Y)
-    self.description_panel:draw(dst_surface, (COLUMNS * 32) / 2 + GRID_ORIGIN_X, ROWS *32 + GRID_ORIGIN_Y - 8)
+    self.description_panel:draw(dst_surface, (COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16, ROWS *32 + GRID_ORIGIN_Y - 8)
     --draw assigned items: (or, if you can see what items you have assigned elsewhere, maybe don't!)
 --    if self.assigned_item_sprite_1 then self.assigned_item_sprite_1:draw(dst_surface, GRID_ORIGIN_X + 32, GRID_ORIGIN_Y-32) end
 --    if self.assigned_item_sprite_2 then self.assigned_item_sprite_2:draw(dst_surface, GRID_ORIGIN_X + 32 + 32, GRID_ORIGIN_Y-32) end

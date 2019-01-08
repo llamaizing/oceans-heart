@@ -388,6 +388,7 @@ sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "entities/elixer", description = "elixer" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
+sprite{ id = "entities/flame_pillar", description = "Flame Pillar" }
 sprite{ id = "entities/floating_sparkle", description = "Floating Sparkle" }
 sprite{ id = "entities/footprints_1", description = "Footprints 1" }
 sprite{ id = "entities/gate_small", description = "Gate - Small" }
@@ -1010,7 +1011,9 @@ sound{ id = "boiling", description = "boiling" }
 sound{ id = "bomb", description = "bomb" }
 sound{ id = "boomerang", description = "boomerang" }
 sound{ id = "boss_hurt", description = "boss_hurt" }
+sound{ id = "boss_hurt1", description = "boss_hurt1" }
 sound{ id = "boss_killed", description = "boss_killed" }
+sound{ id = "boss_killed1", description = "boss_killed1" }
 sound{ id = "bow", description = "bow" }
 sound{ id = "breaking_glass", description = "Breaking Glass" }
 sound{ id = "burrow1", description = "Burrow 1" }
@@ -1030,6 +1033,9 @@ sound{ id = "door_unlocked", description = "door_unlocked" }
 sound{ id = "elixer_upgrade", description = "Elixer Upgrade" }
 sound{ id = "enemy_awake", description = "enemy_awake" }
 sound{ id = "enemy_hurt", description = "enemy_hurt" }
+sound{ id = "enemy_hurt1", description = "enemy_hurt1" }
+sound{ id = "enemy_hurt_01", description = "enemy_hurt_01" }
+sound{ id = "enemy_hurt_default", description = "enemy_hurt_default" }
 sound{ id = "enemy_killed", description = "enemy_killed" }
 sound{ id = "explosion", description = "explosion" }
 sound{ id = "external_stairs_down", description = "external_stairs_down" }
@@ -1041,6 +1047,9 @@ sound{ id = "heart", description = "heart" }
 sound{ id = "hero_dying", description = "hero_dying" }
 sound{ id = "hero_falls", description = "hero_falls" }
 sound{ id = "hero_hurt", description = "hero_hurt" }
+sound{ id = "hero_hurt_02", description = "hero_hurt_02" }
+sound{ id = "hero_hurt_03", description = "hero_hurt_03" }
+sound{ id = "hero_hurt_04", description = "hero_hurt_04" }
 sound{ id = "hero_lands", description = "hero_lands" }
 sound{ id = "hero_pushes", description = "hero_pushes" }
 sound{ id = "hookshot", description = "hookshot" }
@@ -1092,6 +1101,7 @@ sound{ id = "sword_spin_attack_release", description = "sword_spin_attack_releas
 sound{ id = "sword_tapping", description = "sword_tapping" }
 sound{ id = "sword_tapping_weak_wall", description = "sword_tapping_weak_wall" }
 sound{ id = "throw", description = "throw" }
+sound{ id = "throw_01", description = "throw_01" }
 sound{ id = "thunder1", description = "thunder1" }
 sound{ id = "thunder2", description = "thunder2" }
 sound{ id = "thunder3", description = "thunder3" }
@@ -1136,6 +1146,7 @@ item{ id = "bread", description = "Burroak Bread" }
 item{ id = "charts", description = "Charts (for Kelpton)" }
 item{ id = "contract", description = "contract" }
 item{ id = "coral_ore", description = "Coral Ore" }
+item{ id = "crystal_spark", description = "Crystal Spark - Ophira's Ember" }
 item{ id = "dandelion_charm", description = "Dandelion Charm" }
 item{ id = "dandelion_seeds", description = "Dandelion Seeds" }
 item{ id = "dash", description = "dash" }

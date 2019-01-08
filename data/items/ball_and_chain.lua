@@ -56,6 +56,7 @@ function item:on_using()
     sprite = "entities/spike_ball",
     model = "damaging_sparkle"
   }
+  spike_ball:set_damage(game:get_value("sword_damage") + game:get_value("sword_damage")/2)
 
   local flail_x = x
   local flail_y = y

@@ -65,6 +65,7 @@ function item:on_using()
     m2:set_max_rotations(1)
     m2:set_angular_speed(13)
     m2:set_clockwise(false)
+
     hero:set_sword_sprite_id("hero/gust")
 
     --now attack

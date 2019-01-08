@@ -2,7 +2,7 @@ local sparkle = ...
 local game = sparkle:get_game()
 local map = sparkle:get_map()
 
-local damage
+local damage = 10
 
 sparkle:set_can_traverse("crystal", true)
 sparkle:set_can_traverse("crystal_block", true)
@@ -19,6 +19,7 @@ sparkle:set_can_traverse_ground("lava", true)
 sparkle:set_can_traverse_ground("prickles", true)
 sparkle:set_can_traverse_ground("low_wall", true)
 
+sparkle:set_drawn_in_y_order(true)
 
 function sparkle:on_created()
   damage = game:get_value("sword_damage") + game:get_value("sword_damage")/2
