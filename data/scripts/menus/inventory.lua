@@ -117,11 +117,7 @@ end
 
 
 function inventory:on_started()
-    --moved this stuff up to inventory:initialize()
-    -- self.menu_background = sol.surface.create("menus/inventory/inventory_background.png")
-    -- self.cursor_sprite = sol.sprite.create("menus/inventory/selector")
-    -- self.cursor_column = (cursor_index % ROWS)
-    -- self.cursor_row = (cursor_index / ROWS)
+    self:update_description_panel()
 end
 
 
@@ -158,10 +154,15 @@ function inventory:update_cursor_position(new_index)
     local new_row = math.floor(cursor_index / ROWS)
     if new_row < ROWS then self.cursor_row = new_row end
     game:set_value("inventory_cursor_index", cursor_index)
+    self:update_description_panel()
+end
 
+function inventory:update_description_panel()
     --update description panel
     if self:get_item_at_current_index() and self.description_panel then
         self.description_panel:set_text(item_descriptions[cursor_index + 1])
+    elseif self.description_panel then
+        self.description_panel:set_text("")
     end
 end
 
@@ -217,10 +218,6 @@ function inventory:get_item_at_current_index()
         return item
     else return nil
     end
-end
-
-function update_description_panel()
-
 end
 
 return inventory
