@@ -21,7 +21,7 @@ function enemy:on_created()
   sprites[3] = sol.sprite.create("enemies/" .. enemy:get_breed())
 end
 
-local function go(angle)
+function enemy:go(angle)
 
   local movement = sol.movement.create("straight")
   movement:set_speed(175)
@@ -47,14 +47,10 @@ end
 
 function enemy:on_restarted()
 
-  local hero = enemy:get_map():get_hero()
-  local angle = enemy:get_angle(hero:get_center_position())
-  go(angle)
 end
 
 -- Destroy the fireball when the hero is touched.
 function enemy:on_attacking_hero(hero, enemy_sprite)
-
   hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
   enemy:remove()
 end
@@ -78,7 +74,7 @@ function enemy:on_custom_attack_received(attack, sprite)
       angle = 2 * math.pi - old_angle
     end
 
-    go(angle)
+    enemy:go(angle)
     sol.audio.play_sound("enemy_hurt")
 
     -- The trailing fireballs are now on the hero: don't attack temporarily

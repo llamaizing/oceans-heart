@@ -2249,12 +2249,48 @@ custom_entity{
   model = "rockpile",
 }
 
+pickable{
+  layer = 0,
+  x = 96,
+  y = 165,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 96,
+  y = 181,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 64,
+  y = 165,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 64,
+  y = 181,
+  treasure_name = "health_upgrade",
+}
+
 enemy{
   layer = 0,
   x = 320,
-  y = 325,
+  y = 413,
   direction = 0,
-  breed = "normal_enemies/ogre_1",
+  breed = "normal_enemies/rock_spider_red",
+}
+
+enemy{
+  layer = 0,
+  x = 424,
+  y = 365,
+  direction = 0,
+  breed = "normal_enemies/rock_spider_red",
 }
 
 tile{

@@ -44,7 +44,7 @@ function properties_setter:set_properties(enemy, properties)
   end
 
   if properties.detection_distance == nil then
-    properties.detection_distance = 900
+    properties.detection_distance = 180
   end
 
   if properties.obstacle_behavior == nil then

@@ -58,7 +58,7 @@ function behavior:create(enemy, properties)
     if properties.must_be_aligned_to_attack then
       if not ((math.abs(hero_x - x) < 16 or math.abs(hero_y - y) < 16)) then aligned = false end
     end
-    if aligned and can_attack and self:get_distance(hero) <= properties.melee_distance then
+    if aligned and can_attack then
       self:attack()
       can_attack = false
       sol.timer.start(map, properties.attack_frequency, function() can_attack = true end)        
@@ -68,56 +68,44 @@ function behavior:create(enemy, properties)
 
   --Attack!
   function enemy:attack()
+    attacking = true
+    enemy:stop_movement()
+    going_hero = false
+    enemy:get_sprite():set_animation("shooting")
+    sol.timer.start(map, properties.wind_up_time, function()
+      enemy:create_projectile()
+    end)
+  end
+
+  function create_projectile()
+    --get direction and position
     local direction = self:get_sprite():get_direction()
     local x, y, layer = self:get_position()
     local dx = {[0] = -16, [1] = 0, [2] = 16, [3] = 0}
     local dy = {[0] = 0, [1] = -16, [2] = 0, [3] = 16}
     dx, dy = dx[direction], dy[direction]
-
-    attacking = true
-    enemy:stop_movement()
-    going_hero = false
-    enemy:set_pushed_back_when_hurt(false)
-    enemy:get_sprite():set_animation("wind_up")
-    enemy:set_attack_consequence("sword", "protected")
-    sol.timer.start(map, properties.wind_up_time, function()
-      enemy:get_sprite():set_animation("attack", function()
-        enemy:set_attack_consequence("sword", "protected")
-        enemy:set_attack_consequence("sword", 1)
-        enemy:get_sprite():set_animation("walking")
-        enemy:go_random()
-        enemy:check_hero()
-      end)
-      enemy:set_pushed_back_when_hurt(true)
-
-      if properties.attack_sprites then
-        for i=1, #properties.attack_sprites do
-          local attack_sprite = enemy:create_sprite(properties.attack_sprites[i])
-          attack_sprite:set_direction(direction)
-          enemy:set_invincible_sprite(attack_sprite)
-          enemy:set_attack_consequence_sprite(attack_sprite, "sword", "custom")
-        end
-      end
-
-      attacking = false
-    end)
-  end
-
-
-  --if you deflect the attack
-  function enemy:on_custom_attack_received(attack, sprite)
-    if attack == "sword" and sprite == attack_sprite then
-      sol.audio.play_sound("sword_tapping")
-      being_pushed = true
-      local x, y = enemy:get_position()
-      local angle = hero:get_angle(enemy)
-      local movement = sol.movement.create("straight")
-      movement:set_speed(128)
-      movement:set_angle(angle)
-      movement:set_max_distance(26)
-      movement:set_smooth(true)
-      movement:start(enemy)
+    --create projectile
+    local projectile = enemy:create_enemy({
+      x = dx, y = dy, layer = layer, direction = direction,
+      breed = properties.projectile_breed
+    })
+    --initialize projectile properties
+    if properties.projectile_angle == "any" then
+      projectile:go(enemy:get_angle(hero))
+    else
+      projectile:go(direction)
     end
+    if properties.projectile_split_children then
+      projectile:set_num_children(properties.projectile_split_children)
+    end
+    if properties.projectile_num_bounces then
+      projectile:set_max_bounces(properties.projectile_num_bounces)
+    end
+
+    attacking = false
+    going_hero = false
+    enemy:go_random()
+    enemy:check_hero()
   end
 
 

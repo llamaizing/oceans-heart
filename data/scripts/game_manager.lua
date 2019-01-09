@@ -163,36 +163,50 @@ function game_manager:create(file_name)
   ---------------------------------------------command inputs-------------------------------------------------
   function game:on_command_pressed(action)
 
+  --Roll / Dash
   local ignoring_obstacles
   local hero = game:get_hero()
     if action == "action" then
       local effect = game:get_command_effect("action")
       local hero_state = hero:get_state()
 
-      if game:has_item("dandelion_charm") and effect == nil and hero_state == "free"
-      and game:is_suspended() == false and can_dash == true then
+      if  effect == nil and hero_state == "free"
+      and not game:is_suspended() and can_dash then
 
         local dir = hero:get_direction()
-        if dir == 1 then dir = (math.pi/2) elseif dir == 2 then dir = math.pi elseif dir == 3 then dir = (3*math.pi/2) end
+        local dd = {[0]=0,[1]=math.pi/2,[2]=math.pi,[3]=3*math.pi/2} --to convert 0-4 direction to radians
+        dir = dd[dir]
         local m = sol.movement.create("straight")
         m:set_angle(dir)
-        m:set_speed(325)
-        m:set_max_distance(75)
+        if game:has_item("dandelion_charm") then
+          m:set_speed(325)
+          m:set_max_distance(88)
+        else
+          m:set_speed(200)
+          m:set_max_distance(64)
+        end
         m:set_smooth(true)
-        hero:freeze()
+--        hero:freeze()
   --      hero:set_blinking(true, 200)
-        hero:get_sprite():set_animation("dash", function() hero:get_sprite():set_animation("walking") end)
+        if game:has_item("dandelion_charm") then
+          hero:get_sprite():set_animation("dash", function() hero:get_sprite():set_animation("walking") end)
+          game:set_value("hero_dashing", true)
+        else
+          hero:get_sprite():set_animation("roll", function() hero:get_sprite():set_animation("walking") end)
+          game:set_value("hero_rolling", true)
+        end
         sol.audio.play_sound("dash")
-        game:set_value("hero_dashing", true)
 
         m:start(hero, function()
-          hero:unfreeze() game:set_value("hero_dashing", false)
+          hero:unfreeze()
+          game:set_value("hero_dashing", false)
+          game:set_value("hero_rolling", false)
           can_dash = false
-          sol.timer.start(hero, 1000, function()
+          sol.timer.start(hero, 800, function()
             can_dash = true
           end)
         end)
-        hero:set_invincible(true, 300)
+        if game:has_item("dandelion_charm") then hero:set_invincible(true, 300) end
 
         function m:on_obstacle_reached()
           hero:unfreeze()
@@ -202,18 +216,15 @@ function game_manager:create(file_name)
         end
 
         hero:register_event("on_position_changed", function()
-          if game:get_value("hero_dashing") == true then
+          if game:get_value("hero_dashing") or game:get_value("hero_rolling") then
             local ground = hero:get_ground_below()
             if ground == "deep_water" or ground == "hole" or ground == "lava" then
               m:stop()
             end
           end
         end)
-
-  --      function hero:on_state_changed(state)
-  --        if state == "falling" then m:stop() end
-  --      end
       end
+
     end --end of if action == condition
   end
 

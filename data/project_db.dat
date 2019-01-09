@@ -236,6 +236,7 @@ sprite{ id = "enemies/bosses/rock_spider_big", description = "rock spider - big"
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/ground1", description = "Ground 1 - Grass" }
+sprite{ id = "enemies/misc/air_wave", description = "Air Wave Attack" }
 sprite{ id = "enemies/misc/arrow_4", description = "Arrow - 4 directions" }
 sprite{ id = "enemies/misc/big_stone", description = "big stone" }
 sprite{ id = "enemies/misc/crusher_0.5", description = "Crusher 0.5" }
@@ -243,14 +244,18 @@ sprite{ id = "enemies/misc/crusher_1.0", description = "Crusher 1.0" }
 sprite{ id = "enemies/misc/crusher_2.0", description = "Crusher 2.0" }
 sprite{ id = "enemies/misc/crusher_3.0", description = "Crusher 3.0" }
 sprite{ id = "enemies/misc/crusher_4.0", description = "Crusher 4.0" }
+sprite{ id = "enemies/misc/energy_ball", description = "Energy Ball" }
+sprite{ id = "enemies/misc/energy_ball_small", description = "Energy Ball - Small" }
 sprite{ id = "enemies/misc/explosive_barrel", description = "Explosive Barrel" }
 sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small, red" }
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 sprite{ id = "enemies/misc/octorok_stone", description = "small stone" }
 sprite{ id = "enemies/misc/octorok_stone_2", description = "Stone 2" }
+sprite{ id = "enemies/misc/pop", description = "Pop-For Enemy Attacks" }
 sprite{ id = "enemies/misc/root_small", description = "Root - Small" }
 sprite{ id = "enemies/misc/seagull", description = "seagull" }
 sprite{ id = "enemies/misc/steam_attack", description = "Steam Attack" }
+sprite{ id = "enemies/misc/sword_slash", description = "Sword Slash" }
 sprite{ id = "enemies/misc/thyme_bomb", description = "Thyme Bomb" }
 sprite{ id = "enemies/misc/weak_tree", description = "weak tree" }
 sprite{ id = "enemies/misc/zora_fire", description = "Zora Fire" }
@@ -1230,6 +1235,10 @@ enemy{ id = "misc/crusher_1.0", description = "Crusher 1.0 sec" }
 enemy{ id = "misc/crusher_2.0", description = "Crusher 2 sec" }
 enemy{ id = "misc/crusher_3.0", description = "Crusher 3 sec" }
 enemy{ id = "misc/crusher_4.0", description = "Crusher 4 sec" }
+enemy{ id = "misc/default", description = "default" }
+enemy{ id = "misc/energy_ball_bounce", description = "Energy Ball" }
+enemy{ id = "misc/energy_ball_small", description = "Energy Ball Small" }
+enemy{ id = "misc/energy_ball_split", description = "Energy Ball Split" }
 enemy{ id = "misc/explosive_barrel", description = "explosive barrel" }
 enemy{ id = "misc/fireball_red_small", description = "Fireball - red, small" }
 enemy{ id = "misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
