@@ -1897,22 +1897,6 @@ pickable{
   treasure_name = "bread",
 }
 
-enemy{
-  layer = 0,
-  x = 304,
-  y = 397,
-  direction = 0,
-  breed = "normal_enemies/arborgeist_rogue",
-}
-
-enemy{
-  layer = 0,
-  x = 440,
-  y = 429,
-  direction = 0,
-  breed = "normal_enemies/arborgeist_rogue",
-}
-
 pickable{
   layer = 0,
   x = 432,
@@ -1924,7 +1908,7 @@ custom_entity{
   name = "rock_pile_2",
   layer = 0,
   x = 280,
-  y = 277,
+  y = 245,
   width = 32,
   height = 32,
   direction = 0,
@@ -1935,8 +1919,8 @@ custom_entity{
 custom_entity{
   name = "rock_pile_3",
   layer = 0,
-  x = 312,
-  y = 277,
+  x = 376,
+  y = 245,
   width = 32,
   height = 32,
   direction = 0,
@@ -1947,44 +1931,8 @@ custom_entity{
 custom_entity{
   name = "rock_pile_4",
   layer = 0,
-  x = 344,
-  y = 277,
-  width = 32,
-  height = 32,
-  direction = 0,
-  sprite = "entities/rockpile",
-  model = "rockpile",
-}
-
-custom_entity{
-  name = "rock_pile_5",
-  layer = 0,
-  x = 376,
-  y = 277,
-  width = 32,
-  height = 32,
-  direction = 0,
-  sprite = "entities/rockpile",
-  model = "rockpile",
-}
-
-custom_entity{
-  name = "rock_pile_6",
-  layer = 0,
-  x = 408,
-  y = 277,
-  width = 32,
-  height = 32,
-  direction = 0,
-  sprite = "entities/rockpile",
-  model = "rockpile",
-}
-
-custom_entity{
-  name = "rock_pile_7",
-  layer = 0,
-  x = 440,
-  y = 277,
+  x = 424,
+  y = 245,
   width = 32,
   height = 32,
   direction = 0,
@@ -2126,6 +2074,187 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "attack_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "attack_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "bow",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "bow_fire",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "bow_bombs",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "spear",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "dandelion_charm",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "crystal_spark",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "gust",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "ball_and_chain",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "boomerang",
+}
+
+custom_entity{
+  name = "rock_pile_5",
+  layer = 0,
+  x = 328,
+  y = 245,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+enemy{
+  layer = 0,
+  x = 320,
+  y = 325,
+  direction = 0,
+  breed = "normal_enemies/ogre_1",
 }
 
 tile{

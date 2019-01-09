@@ -277,6 +277,7 @@ sprite{ id = "enemies/normal_enemies/grim_1", description = "Grim 1" }
 sprite{ id = "enemies/normal_enemies/guard_goatshead_1", description = "Guard - Goatshead 1" }
 sprite{ id = "enemies/normal_enemies/guard_goatshead_1_weapon", description = "Guard Goatshead 1 Weapon" }
 sprite{ id = "enemies/normal_enemies/hinox", description = "hinox" }
+sprite{ id = "enemies/normal_enemies/hive", description = "Hive" }
 sprite{ id = "enemies/normal_enemies/hornet", description = "Hornet" }
 sprite{ id = "enemies/normal_enemies/mandrake", description = "mandrake" }
 sprite{ id = "enemies/normal_enemies/mandrake_white", description = "white mandrake" }
@@ -1259,6 +1260,7 @@ enemy{ id = "normal_enemies/ghost_1", description = "Ghost 1" }
 enemy{ id = "normal_enemies/ghost_2", description = "Ghost 2" }
 enemy{ id = "normal_enemies/grim_1", description = "Grim 1" }
 enemy{ id = "normal_enemies/guard_goatshead_1", description = "Guard - Goatshead 1" }
+enemy{ id = "normal_enemies/hive", description = "Hornet Hive" }
 enemy{ id = "normal_enemies/hornet", description = "Hornet" }
 enemy{ id = "normal_enemies/mandrake", description = "mandrake" }
 enemy{ id = "normal_enemies/mandrake_white", description = "White Mandrake" }

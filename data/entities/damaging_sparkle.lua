@@ -22,7 +22,7 @@ sparkle:set_can_traverse_ground("low_wall", true)
 sparkle:set_drawn_in_y_order(true)
 
 function sparkle:on_created()
-  damage = game:get_value("sword_damage") + game:get_value("sword_damage")/2
+  damage = game:get_value("sword_damage")
 end
 
 function sparkle:set_damage(amount)

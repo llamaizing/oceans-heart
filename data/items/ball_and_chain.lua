@@ -16,7 +16,7 @@ function item:on_using()
   local x, y, layer = hero:get_position()
 
   local MIN_RADIUS = 2
-  local RADIUS = 52
+  local RADIUS = 64
   
   --now move x or y depending on hero facing direction
   local start_x = x
