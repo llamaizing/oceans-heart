@@ -1,8 +1,10 @@
 animation{
   name = "on_ground",
   src_image = "entities/bush.png",
+  frame_delay = 510,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 192, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 192, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 4 },
   },
 }
 animation{
@@ -17,13 +19,13 @@ animation{
   name = "stopped",
   src_image = "entities/bush.png",
   directions = {
-    { x = 192, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 192, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
   name = "walking",
   src_image = "entities/bush.png",
   directions = {
-    { x = 192, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 192, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }

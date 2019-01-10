@@ -1,11 +1,11 @@
 local enemy = ...
 local bounces = 0
 local MAX_BOUNCES = 1
-local FUSE_LENGTH = 1000
+local FUSE_LENGTH = 2000
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/misc/energy_ball_small")
-  enemy:set_life(2)
+  enemy:set_life(1)
   enemy:set_damage(4)
   enemy:set_origin(4, 4)
   enemy:set_obstacle_behavior("flying")
@@ -27,7 +27,7 @@ function enemy:go(direction)
   movement:start(enemy)
 
   function movement:on_obstacle_reached()
-    if bounces <= MAX_BOUNCES then
+    if bounces < MAX_BOUNCES then
       bounces = bounces + 1
       enemy:go(enemy:get_new_direction())
     else

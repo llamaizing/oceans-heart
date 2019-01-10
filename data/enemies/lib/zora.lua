@@ -4,7 +4,6 @@ local behavior = {}
 
 function behavior:create(enemy, properties)
 
-  local children = {}
   local map = enemy:get_map()
   local hero = map:get_hero()
   
@@ -93,19 +92,6 @@ function behavior:create(enemy, properties)
   end
 
 
-	local previous_on_removed = enemy.on_removed
-	function enemy:on_removed()
-
-	  if previous_on_removed then
-		previous_on_removed(enemy)
-	  end
-
-	  for _, child in ipairs(children) do
-		child:remove()
-	  end
-	end
-
-
   function enemy:on_obstacle_reached(movement)
       self:go_random()
   end
@@ -113,8 +99,7 @@ function behavior:create(enemy, properties)
   function enemy:on_restarted()
     self:go_random()
     sol.timer.stop_all(self)
-    sol.timer.start(self, (properties.time_aboveground), function() self:burrow_down() end)
-    
+    sol.timer.start(self, (properties.time_aboveground), function() self:burrow_down() end)    
   end
 
 
@@ -167,26 +152,19 @@ function behavior:create(enemy, properties)
 	  local x, y, layer = enemy:get_position()
 	  local direction = sprite:get_direction()
 
-	  -- Where to create the projectile.
-	  local dxy = {
-		{  8,  -4 },
-		{  0, -13 },
-		{ -8,  -4 },
-		{  0,   0 },
-	  }
-
 	  sprite:set_animation("shooting")
---	  enemy:stop_movement()
+	  enemy:stop_movement()
 		sol.audio.play_sound("stone")
-		local stone = enemy:create_enemy({
-		  breed = properties.projectile_breed,
-		  x = dxy[direction + 1][1],
-		  y = dxy[direction + 1][2],
-		})
-		children[#children + 1] = stone
-    direction = enemy:get_angle(hero)
-		stone:go(direction)
+    --create projectile
+    local projectile = enemy:create_enemy({
+      x = x, y = y, layer = layer, direction = direction,
+      breed = properties.projectile_breed
+    })
+  --Fire!
+    projectile:go(enemy:get_angle(hero))
+
 	  sprite:set_animation("walking")
+    self:go_random()
     self:restart()
 	end
 

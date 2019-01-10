@@ -18,7 +18,17 @@ function item:on_using()
   local PILLAR_RANGE = 125
 
   --charge for 500ms
-  hero:freeze()
+--  hero:freeze()
+  local summoning_state = sol.state.create()
+  summoning_state:set_can_control_movement(false)
+  summoning_state:set_can_be_hurt(true)
+  summoning_state:set_can_use_sword(false)
+  summoning_state:set_can_use_item(false)
+  summoning_state:set_can_interact(false)
+  summoning_state:set_can_grab(false)
+  summoning_state:set_can_pick_treasure(false)
+  hero:start_state(summoning_state)
+
   hero:set_animation("charging")
   sol.audio.play_sound("cane")
   sol.timer.start(game, 1200, function()
@@ -59,7 +69,7 @@ function item:on_using()
     end)
 
     hero:set_sword_sprite_id("hero/gust")
-    hero:unfreeze()
+--    hero:unfreeze()
     hero:start_attack()
     sol.audio.play_sound("sword_spin_attack_release")
     sol.audio.play_sound("thunk1")
@@ -68,6 +78,7 @@ function item:on_using()
     function sprite:on_animation_finished()
       hero:set_sword_sprite_id("hero/sword1")
     end
+    hero:unfreeze()
     item:set_finished()
 
 

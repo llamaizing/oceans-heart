@@ -4,11 +4,12 @@ local behavior = require("enemies/lib/zora")
 
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),
-  life = 1,
+  life = 10,
   damage = 8,
   burrow_sound = "splash",
   obstacle_behavior = "swimming",
-  projectile_breed = "zora_fire",
+  projectile_breed = "misc/energy_ball_split",
+  projectile_damage = 2,
   
 }
 

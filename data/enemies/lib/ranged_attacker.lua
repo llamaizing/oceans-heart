@@ -77,11 +77,12 @@ function behavior:create(enemy, properties)
     end)
   end
 
-  function create_projectile()
+  function enemy:create_projectile()
     --get direction and position
     local direction = self:get_sprite():get_direction()
+print(direction)
     local x, y, layer = self:get_position()
-    local dx = {[0] = -16, [1] = 0, [2] = 16, [3] = 0}
+    local dx = {[0] = 16, [1] = 0, [2] = -16, [3] = 0}
     local dy = {[0] = 0, [1] = -16, [2] = 0, [3] = 16}
     dx, dy = dx[direction], dy[direction]
     --create projectile
@@ -89,11 +90,15 @@ function behavior:create(enemy, properties)
       x = dx, y = dy, layer = layer, direction = direction,
       breed = properties.projectile_breed
     })
-    --initialize projectile properties
+    --Fire!
     if properties.projectile_angle == "any" then
       projectile:go(enemy:get_angle(hero))
     else
       projectile:go(direction)
+    end
+    --initialize projectile properties
+    if properties.projectile_damage then
+      projectile:set_damage(properties.projectile_damage)
     end
     if properties.projectile_split_children then
       projectile:set_num_children(properties.projectile_split_children)

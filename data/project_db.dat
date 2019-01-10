@@ -275,6 +275,7 @@ sprite{ id = "enemies/normal_enemies/crow", description = "Crow" }
 sprite{ id = "enemies/normal_enemies/crow_xxl", description = "Crow Knight XXL" }
 sprite{ id = "enemies/normal_enemies/crowbot", description = "Crowbot" }
 sprite{ id = "enemies/normal_enemies/cyclops_1", description = "Cyclops 01" }
+sprite{ id = "enemies/normal_enemies/frog" }
 sprite{ id = "enemies/normal_enemies/gel_black", description = "Black Gel" }
 sprite{ id = "enemies/normal_enemies/ghost_1", description = "Ghost 1" }
 sprite{ id = "enemies/normal_enemies/ghost_2", description = "Ghost 2" }
@@ -284,6 +285,7 @@ sprite{ id = "enemies/normal_enemies/guard_goatshead_1_weapon", description = "G
 sprite{ id = "enemies/normal_enemies/hinox", description = "hinox" }
 sprite{ id = "enemies/normal_enemies/hive", description = "Hive" }
 sprite{ id = "enemies/normal_enemies/hornet", description = "Hornet" }
+sprite{ id = "enemies/normal_enemies/kappa", description = "Kappa" }
 sprite{ id = "enemies/normal_enemies/mandrake", description = "mandrake" }
 sprite{ id = "enemies/normal_enemies/mandrake_white", description = "white mandrake" }
 sprite{ id = "enemies/normal_enemies/meandershroom_1", description = "Meandershroom 1" }
@@ -306,6 +308,7 @@ sprite{ id = "enemies/normal_enemies/seaweed_blob", description = "Seaweed Blob"
 sprite{ id = "enemies/normal_enemies/seaweed_golem_1", description = "Seaweed Golem 1" }
 sprite{ id = "enemies/normal_enemies/shooty_fish", description = "Shooty Fish" }
 sprite{ id = "enemies/normal_enemies/skeleton_1", description = "Skeleton 1" }
+sprite{ id = "enemies/normal_enemies/skeleton_summoner", description = "Skeleton Summoner" }
 sprite{ id = "enemies/normal_enemies/spitrock_small", description = "Spitrock - Small" }
 sprite{ id = "enemies/normal_enemies/spitstump_small", description = "Spitstump - Small" }
 sprite{ id = "enemies/normal_enemies/stump_duck", description = "Stump Duck" }
@@ -442,6 +445,7 @@ sprite{ id = "entities/vase_arrows", description = "Vase - Arrows" }
 sprite{ id = "entities/vase_berries", description = "Vase-Berries" }
 sprite{ id = "entities/vase_skull", description = "Vase (skull)" }
 sprite{ id = "entities/weak_tree", description = "weak tree" }
+sprite{ id = "hero/barrier", description = "Barrier" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
 sprite{ id = "hero/gust", description = "Gust" }
@@ -1140,6 +1144,7 @@ item{ id = "attack_upgrade", description = "Attack Upgrade - For Testing" }
 item{ id = "bag_of_money", description = "bag of money" }
 item{ id = "bait", description = "Bait" }
 item{ id = "ball_and_chain", description = "Ball and Chain" }
+item{ id = "barrier", description = "Barrier" }
 item{ id = "berries", description = "Berries" }
 item{ id = "bomb", description = "bombs-map" }
 item{ id = "bombs_counter", description = "bombs inventory item" }
@@ -1264,6 +1269,7 @@ enemy{ id = "normal_enemies/crow", description = "Crow" }
 enemy{ id = "normal_enemies/crow_xxl", description = "Crow Knight XXL" }
 enemy{ id = "normal_enemies/crowbot", description = "Crowbot" }
 enemy{ id = "normal_enemies/cyclops_1", description = "Cyclops Bomber" }
+enemy{ id = "normal_enemies/frog", description = "Frog" }
 enemy{ id = "normal_enemies/gel_black", description = "Black Gel" }
 enemy{ id = "normal_enemies/ghost_1", description = "Ghost 1" }
 enemy{ id = "normal_enemies/ghost_2", description = "Ghost 2" }
@@ -1271,6 +1277,7 @@ enemy{ id = "normal_enemies/grim_1", description = "Grim 1" }
 enemy{ id = "normal_enemies/guard_goatshead_1", description = "Guard - Goatshead 1" }
 enemy{ id = "normal_enemies/hive", description = "Hornet Hive" }
 enemy{ id = "normal_enemies/hornet", description = "Hornet" }
+enemy{ id = "normal_enemies/kappa", description = "Kappa" }
 enemy{ id = "normal_enemies/mandrake", description = "mandrake" }
 enemy{ id = "normal_enemies/mandrake_white", description = "White Mandrake" }
 enemy{ id = "normal_enemies/meandershroom_1", description = "Meandershroom 1" }
@@ -1290,6 +1297,7 @@ enemy{ id = "normal_enemies/seaweed_blob", description = "Seaweed Blob" }
 enemy{ id = "normal_enemies/seaweed_golem_1", description = "Seaweed Golem 1" }
 enemy{ id = "normal_enemies/shooty_fish", description = "Shooty Fish" }
 enemy{ id = "normal_enemies/skeleton_1", description = "Skeleton 1" }
+enemy{ id = "normal_enemies/skeleton_summoner", description = "Skeleton Summoner" }
 enemy{ id = "normal_enemies/spitrock_small", description = "Spitrock-small" }
 enemy{ id = "normal_enemies/spitstump_small", description = "Spitstump - Small" }
 enemy{ id = "normal_enemies/stump_duck", description = "Stump Duck" }

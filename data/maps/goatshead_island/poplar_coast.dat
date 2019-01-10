@@ -43087,10 +43087,10 @@ teletransporter{
 enemy{
   name = "bait_monster",
   layer = 0,
-  x = 224,
+  x = 200,
   y = 533,
-  direction = 2,
-  breed = "normal_enemies/shooty_fish",
+  direction = 3,
+  breed = "normal_enemies/kappa",
   treasure_variant = 2,
 }
 

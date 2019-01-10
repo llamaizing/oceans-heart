@@ -5,7 +5,7 @@ local NUM_CHILDREN
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/misc/energy_ball")
-  enemy:set_life(2)
+  enemy:set_life(1)
   enemy:set_damage(4)
   enemy:set_origin(4, 4)
   enemy:set_obstacle_behavior("flying")
@@ -35,7 +35,6 @@ end
 
 --Split into smaller energy balls
 function enemy:split()
-print("splitting")
   local x, y, layer = enemy:get_position()
   for i=1, NUM_CHILDREN do
         local child = enemy:get_map():create_enemy({
