@@ -10,6 +10,7 @@ local properties = {
   obstacle_behavior = "swimming",
   projectile_breed = "misc/energy_ball_split",
   projectile_damage = 2,
+  time_aboveground = 2000
   
 }
 

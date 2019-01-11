@@ -80,7 +80,6 @@ function behavior:create(enemy, properties)
   function enemy:create_projectile()
     --get direction and position
     local direction = self:get_sprite():get_direction()
-print(direction)
     local x, y, layer = self:get_position()
     local dx = {[0] = 16, [1] = 0, [2] = -16, [3] = 0}
     local dy = {[0] = 0, [1] = -16, [2] = 0, [3] = 16}

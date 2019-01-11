@@ -3830,34 +3830,10 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 792,
-  y = 285,
-  direction = 0,
-  breed = "normal_enemies/frog",
-}
-
-enemy{
-  layer = 0,
   x = 896,
   y = 253,
   direction = 0,
   breed = "normal_enemies/ogre_1",
-}
-
-enemy{
-  layer = 0,
-  x = 944,
-  y = 205,
-  direction = 0,
-  breed = "normal_enemies/hive",
-}
-
-enemy{
-  layer = 0,
-  x = 352,
-  y = 357,
-  direction = 0,
-  breed = "normal_enemies/kappa",
 }
 
 tile{

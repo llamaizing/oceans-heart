@@ -6,6 +6,7 @@ function behavior:create(enemy, properties)
 
   local map = enemy:get_map()
   local hero = map:get_hero()
+  local gonna_burrow_timer_set = false
   
 
   -- Set default properties.
@@ -97,9 +98,16 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:on_restarted()
+    self:set_default_attack_consequences()
     self:go_random()
-    sol.timer.stop_all(self)
-    sol.timer.start(self, (properties.time_aboveground), function() self:burrow_down() end)    
+    if not gonna_burrow_timer_set then
+      sol.timer.start(map, (properties.time_aboveground), function()
+        enemy:set_invincible()
+        if enemy:exists() then enemy:burrow_down()end
+        gonna_burrow_timer_set = false
+      end)    
+      gonna_burrow_timer_set = true
+    end
   end
 
 
@@ -121,12 +129,16 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:burrow_down()
+--    self:set_consequence_for_all_attacks("protected")
+    self:set_invincible()
     self:get_sprite():set_animation("burrowing")
     if enemy:get_distance(hero) < properties.detection_distance then sol.audio.play_sound(properties.burrow_sound) end
     sol.timer.start(self, 400, function() self:go_underground() end)
   end
 
   function enemy:burrow_up()
+--    self:set_consequence_for_all_attacks("protected")
+    self:set_invincible()
     self:get_sprite():set_animation("burrowing")
     if enemy:get_distance(hero) < properties.detection_distance then sol.audio.play_sound(properties.burrow_sound) end
     sol.timer.start(self, 1000, function() self:go_aboveground() end)
@@ -141,6 +153,7 @@ function behavior:create(enemy, properties)
 
   function enemy:go_aboveground()
     self:set_can_attack(true)
+    self:set_default_attack_consequences()
     self:get_sprite():set_animation("walking")
     if enemy:get_distance(hero) < properties.detection_distance then self:shoot() end
     self:restart()
@@ -156,10 +169,11 @@ function behavior:create(enemy, properties)
 	  enemy:stop_movement()
 		sol.audio.play_sound("stone")
     --create projectile
-    local projectile = enemy:create_enemy({
+    local projectile = map:create_enemy({
       x = x, y = y, layer = layer, direction = direction,
       breed = properties.projectile_breed
     })
+
   --Fire!
     projectile:go(enemy:get_angle(hero))
 

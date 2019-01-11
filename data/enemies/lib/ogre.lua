@@ -108,7 +108,7 @@ function behavior:create(enemy, properties)
   function enemy:on_custom_attack_received(attack, sprite)
     if attack == "sword" and sprite == attack_sprite then
       sol.audio.play_sound("sword_tapping")
-      being_pushed = true
+--      being_pushed = true
       local x, y = enemy:get_position()
       local angle = hero:get_angle(enemy)
       local movement = sol.movement.create("straight")
