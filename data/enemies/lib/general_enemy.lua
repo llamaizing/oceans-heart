@@ -7,16 +7,27 @@
     --optional, melee_attack_wind_up_time (this is an optional property for each attack, assume it's true for all)
 --has_teleport, teleport_cooldown,
 --has_dash_attack, dash_attack_distance (hero distance threshold), dash_attack_cooldown,
-    --dash_attack_direction ("any" or "straight"), dash_attack_length (how far the enemy will dash before stopping)
-    --dash_attack_speed, dash_attack_wind_up, dash_attack_sound
+    --dash_attack_direction ("target_hero" or "straight"), dash_attack_length (how far the enemy will dash before stopping)
+    --dash_attack_speed, dash_attack_wind_up, dash_attack_sound, invincible_while_dashing(bool)
     --TODO allow to set a function as a property for a callback when the dash is over or a collision with an obstacle happens
---has_ranged_attack, ranged_attack_distance, ranged_attack_cooldown, ranged_attack_sound, projectile_breed (enemy breed dat)
+--has_ranged_attack, ranged_attack_distance, ranged_attack_cooldown, ranged_attack_sound,
+    --projectile_breed, projectile_angle ("any", or "straight")
     --optional properties for ranged attack are projectile_damage, projectile_split_children, and projectile_num_bounces
     --(make sure the projectile breed you set can take these parameters to avoid errors)
+    --(the projectile breed also requires an enemy:go(angle) function which is called right after it's created)
 --has_summon_attack, summon_attack_distance, summon_attack_cooldown, summoning_sound,
     --summon_breed, summon_group_size, summon_group_delay, protected_while_summoning,
     --summon group size refers to, for instance, if the enemy summons 3 bolts of lightning at a time.
     --summon group delay refers to time between each of those 3 bolts of lightning. After that, cooldown will start
+--has_orbit_attack, orbit_attack_distance, orbit_attack_cooldown, orbit_attack_sound, orbit_attack_num_projectiles
+      --orbit_attack_charge_time, orbit_attack_shoot_delay, orbit_attack_projectile_breed, orbit_attack_radius
+--For a custom attack (TODO - debug custom attack, which sometimes results in the enemy stopping the check_hero() loop)
+      --properties.has_custom_attack - For this script to check requirements, and if met, start the attack
+      --properties.custom_attack_cooldown - cooldown in ms for custom attack
+      --properties.custom_attack_requirements - function that returns a boolean to check if custom attack can be done
+        --this should check for distance from hero, alignment, etc.
+      --properties.custom_attack - function that determines what happens.
+        --This function must take a callback function as an argument for what to do when attack is finished.
 
 
 --Required Animations:
@@ -32,6 +43,8 @@
   --optional:summoning_wind_up
 --For a ranged attack: "shooting" (must not loop)
   --optional: shooting_wind_up
+--For an orbit attack
+  --optional: "orbit_attack_wind_up"
 
 --TODO - allow to set a function as a property that is called for enemy:go_hero()
     --to allow more complex movements, such as circling the hero.
@@ -59,11 +72,13 @@ function behavior:create(enemy, properties)
   local map = enemy:get_map()
   local hero = map:get_hero()
   local going_hero = false
+  local can_custom_attack = true
   local can_melee = true
   local can_teleport = true
   local can_dash_attack = true
   local can_summon = true
   local can_shoot = true
+  local can_orbit_attack = true
   local attacking = false
 
   --initialize universal enemy stuff:
@@ -78,16 +93,19 @@ function behavior:create(enemy, properties)
 
 
   --RESTART
+  local n = 0
   function enemy:on_restarted()
     self:get_sprite():set_animation("walking")
     going_hero = false
     self:go_random()
-    self:check_hero()
+--    self:check_hero()
+    sol.timer.start(self, 200, function() print("checking " .. n) n=n+1 enemy:check_hero() return true end)
   end
 
 
   --Check hero
   function enemy:check_hero()
+    print(attacking)
     if not attacking then
       local near_hero = self:is_near_hero()
       if near_hero and not going_hero then
@@ -99,9 +117,6 @@ function behavior:create(enemy, properties)
       end
       --and also decide if we should attack or something
       if going_hero then self:check_to_attack() end
-      sol.timer.start(self, 200, function()
-        self:check_hero()
-      end)
     end
   end
 
@@ -116,29 +131,54 @@ function behavior:create(enemy, properties)
     end
 
     --choose what attack to do:
+    -- if properties.has_custom_attack and can_custom_attack and properties.custom_attack_requirements then
+    --   attacking = true
+    --   going_hero = false
+    --   can_custom_attack = false
+    --   local f = properties.custom_attack
+    --   f(function() attacking = false enemy:go_random() enemy:check_hero() end)
+    --   sol.timer.start(map, properties.custom_attack_cooldown, function() can_custom_attack = true end)
+
     if properties.has_melee_attack and aligned and can_melee and dist_hero <= properties.melee_distance then
+      attacking = true
+      going_hero = false
       self:melee_attack()
       can_melee = false
-      sol.timer.start(map, properties.melee_attack_cooldown, function() can_melee = true end)        
+      sol.timer.start(map, properties.melee_attack_cooldown, function() can_melee = true end)
+
     elseif properties.has_teleport and dist_hero <= properties.teleport_distance then
       print("would teleport")
       can_teleport = false
       sol.timer.start(map, properties.teleport_cooldown, function() can_teleport = true end)
+
     elseif properties.has_dash_attack and can_dash_attack and dist_hero <= properties.dash_attack_distance then
-      print("would dash attack")
+      attacking = true
+      going_hero = false
+      self:dash_attack()
       can_dash_attack = false
       sol.timer.start(map, properties.dash_attack_cooldown, function() can_dash_attack = true end)
+
     elseif properties.has_summon_attack and can_summon and dist_hero <= properties.summon_attack_distance then
+      attacking = true
+      going_hero = false
       self:summon()
       can_summon = false
       sol.timer.start(map, properties.summon_attack_cooldown, function() can_summon = true end)
+
     elseif properties.has_ranged_attack and aligned and can_shoot and dist_hero <= properties.ranged_attack_distance then
+      attacking = true
+      going_hero = false
       self:ranged_attack()
       can_shoot = false
       sol.timer.start(map, properties.ranged_attack_cooldown, function() can_shoot = true end)
+
+    elseif properties.has_orbit_attack and can_orbit_attack and dist_hero <= properties.orbit_attack_distance then
+      attacking = true
+      going_hero = false
+      self:orbit_attack()
+      can_orbit_attack = false
+      sol.timer.start(map, properties.orbit_attack_cooldown, function() can_orbit_attack = true end)
     end
-
-
 
   end
 
@@ -150,9 +190,7 @@ function behavior:create(enemy, properties)
   function enemy:melee_attack()
     local direction = self:get_sprite():get_direction()
     local x, y, layer = self:get_position()
-    attacking = true
     enemy:stop_movement()
-    going_hero = false
     enemy:set_pushed_back_when_hurt(false)
     local wind_up_animation
     local sprite = enemy:get_sprite()
@@ -161,7 +199,7 @@ function behavior:create(enemy, properties)
     else wind_up_animation = sprite:get_animation("wind_up")
     end
     sprite:set_animation(wind_up_animation)
-    enemy:set_attack_consequence("sword", "protected")
+--    enemy:set_attack_consequence("sword", "protected")
     local telegraph_time = properties.wind_up_time
     if properties.melee_attack_wind_up_time then telegraph_time = properties.melee_attack_wind_up_time end
     sol.timer.start(map, telegraph_time, function()
@@ -189,7 +227,7 @@ function behavior:create(enemy, properties)
 
 
   --Teleport
-
+--TODO: make teleport
 
 
   --Dash Attack
@@ -207,15 +245,17 @@ function behavior:create(enemy, properties)
       sprite:set_animation("walking")
       if sprite:has_animation("dashing") then sprite:set_animation("dashing") end
       local m = sol.movement.create("straight")
-      if properties.dash_attack_direction == "any" then
+      if properties.dash_attack_direction == "target_hero" then
         m:set_angle(enemy:get_angle(hero))
       else
-        m:set_angle(sprite:get_direction())
+        m:set_angle(enemy:get_movement():get_direction4())
       end
       m:set_speed(properties.dash_attack_speed)
       m:set_smooth(false)
       sol.audio.play_sound(properties.dash_attack_sound)
+      if properties.invincible_while_dashing then enemy:set_invincible() end
       m:start(enemy, function()
+        enemy:set_default_attack_consequences()
         attacking = false
         enemy:go_random()
         enemy:check_hero()
@@ -225,6 +265,7 @@ function behavior:create(enemy, properties)
         enemy:go_random()
         enemy:check_hero()
       end
+      sol.timer.start(map, 1000, function() attacking = false end) --just in case
     end)
   end
 
@@ -232,15 +273,10 @@ function behavior:create(enemy, properties)
 
   --Summon Attack
   function enemy:summon()
-    attacking = true
     enemy:stop_movement()
-    going_hero = false
     local sprite = enemy:get_sprite()
-    local wind_up_animation
-    if sprite:has_animation("summoning_wind_up") then
-      wind_up_animation = sprite:get_animation("summoning_wind_up")
-    else wind_up_animation = sprite:get_animation("wind_up")
-    end
+    local wind_up_animation = "wind_up"
+    if sprite:has_animation("summoning_wind_up") then wind_up_animation = "summoning_wind_up" end
     sprite:set_animation(wind_up_animation)
     if properties.protected_while_summoning then enemy:set_invincible() end
     local telegraph_time = properties.wind_up_time
@@ -248,28 +284,26 @@ function behavior:create(enemy, properties)
     sol.timer.start(map, telegraph_time, function()
       enemy:set_default_attack_consequences()
       sol.audio.play_sound(properties.summoning_sound)
-      local herox, heroy, herol = hero:get_position()
       local i = 0
       sol.timer.start(map, properties.summon_group_delay, function()
+        local herox, heroy, herol = hero:get_position()
         map:create_enemy({
           name = enemy_summon, layer = herol, x = herox, y = heroy, direction = 0, breed = properties.summon_breed, 
         })
         i = i + 1
         if i < properties.summon_group_size then return true end
       end)
+      attacking = false
+      enemy:go_random()
+      enemy:check_hero()
     end)
-    attacking = false
-    enemy:go_random()
-    enemy:check_hero()
   end
 
 
 
   --Ranged Attack
   function enemy:ranged_attack()
-    attacking = true
     enemy:stop_movement()
-    going_hero = false
     local sprite = enemy:get_sprite()
     local wind_up_animation
     if sprite:has_animation("shooting_wind_up") then
@@ -321,6 +355,50 @@ function behavior:create(enemy, properties)
   end
 
 
-end
 
+  --Orbit Attack
+  function enemy:orbit_attack()
+    local sprite = enemy:get_sprite()
+    local x, y, layer = enemy:get_position()
+    local direction = sprite:get_direction()
+    local projectiles = {}
+    local NUM_PROJECTILES = properties.orbit_attack_num_projectiles
+    local CHARGE_TIME = properties.orbit_attack_charge_time
+    local SHOOT_DELAY = properties.orbit_attack_shoot_delay
+    enemy:stop_movement()
+    sprite:set_animation("wind_up")
+    if sprite:has_animation("orbit_attack_wind_up") then sprite:set_animation("orbit_attack_wind_up") end
+    for i=1, NUM_PROJECTILES do
+      sol.timer.start(map, CHARGE_TIME/NUM_PROJECTILES * i, function()
+        sol.audio.play_sound("shield")
+        projectiles[i] = map:create_enemy({
+          x = x, y = y, layer = layer, direction = direction,
+          breed = properties.orbit_attack_projectile_breed
+        })
+        local m = sol.movement.create("circle")
+        m:set_center(enemy)
+        m:set_radius(properties.orbit_attack_radius)
+        m:set_angular_speed(8)
+        m:start(projectiles[i])
+        if i == NUM_PROJECTILES then attacking = false end
+      end)
+    end
+    sol.timer.start(map, CHARGE_TIME + SHOOT_DELAY, function()
+      sol.audio.play_sound("sword2")
+      for i=1, #projectiles do
+        if projectiles[i] then
+          local m = sol.movement.create("straight")
+          m:set_angle(enemy:get_angle(hero))
+          m:set_speed(160)
+          m:set_smooth(false)
+          projectiles[i]:stop_movement()
+          m:start(projectiles[i], function() projectiles[i]:remove() end)
+          function m:on_obstacle_reached() projectiles[i]:remove() end
+        end
+      end
+    end)
+  end
+
+
+end --end of bahavior:create() fuction
 return behavior

@@ -48,8 +48,8 @@ end
 -- Change the direction of the movement when hit with the sword.
 function enemy:on_custom_attack_received(attack, sprite)
   if attack == "sword" then
-    enemy:go(enemy:get_movement():get_angle()+math.pi)
     sol.audio.play_sound("enemy_hurt")
+    enemy:go(enemy:get_angle(hero) + math.pi)
   end
 end
 

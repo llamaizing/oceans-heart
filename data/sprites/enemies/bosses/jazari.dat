@@ -34,6 +34,17 @@ animation{
   },
 }
 animation{
+  name = "shooting",
+  src_image = "enemies/bosses/jazari.png",
+  frame_delay = 90,
+  directions = {
+    { x = 248, y = 8, frame_width = 80, frame_height = 40, origin_x = 32, origin_y = 37, num_frames = 6 },
+    { x = 240, y = 216, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 6 },
+    { x = 256, y = 56, frame_width = 80, frame_height = 40, origin_x = 40, origin_y = 37, num_frames = 6 },
+    { x = 240, y = 104, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 6 },
+  },
+}
+animation{
   name = "stopped",
   src_image = "enemies/bosses/jazari.png",
   frame_delay = 130,
