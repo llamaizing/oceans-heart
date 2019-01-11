@@ -1224,6 +1224,7 @@ item{ id = "violets", description = "violets" }
 item{ id = "watering_can", description = "watering can" }
 item{ id = "whisky_for_juglan", description = "Whisky for Juglan" }
 
+enemy{ id = "bosses/al_jazari", description = "Jazari - General Enemy" }
 enemy{ id = "bosses/bart", description = "Bart" }
 enemy{ id = "bosses/blackbeard", description = "Blackbeard" }
 enemy{ id = "bosses/burrow_crab", description = "Burrow Crab" }

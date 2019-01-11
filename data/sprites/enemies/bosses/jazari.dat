@@ -56,9 +56,21 @@ animation{
   },
 }
 animation{
+  name = "summoning_wind_up",
+  src_image = "enemies/bosses/jazari.png",
+  frame_delay = 150,
+  directions = {
+    { x = 800, y = 144, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 10 },
+    { x = 800, y = 144, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 10 },
+    { x = 800, y = 176, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 10 },
+    { x = 800, y = 208, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 10 },
+  },
+}
+animation{
   name = "wind_up",
   src_image = "enemies/bosses/jazari.png",
   frame_delay = 200,
+  frame_to_loop_on = 0,
   directions = {
     { x = 192, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
     { x = 192, y = 208, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },

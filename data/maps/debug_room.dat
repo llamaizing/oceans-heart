@@ -3836,6 +3836,14 @@ enemy{
   breed = "normal_enemies/ogre_1",
 }
 
+enemy{
+  layer = 0,
+  x = 368,
+  y = 365,
+  direction = 0,
+  breed = "bosses/al_jazari",
+}
+
 tile{
   layer = 1,
   x = 192,

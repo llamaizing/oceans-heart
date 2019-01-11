@@ -3,17 +3,18 @@
 --each attack has it's own <attack>_wind_up_time that will override this.
 
 --Which attacks the enemy can do are set in the enemy's properties. Values are:
---has_melee_attack, melee_distance, melee_attack_cooldown, attack_sprites{} (a table of sprites)
+--has_melee_attack, melee_distance, melee_attack_cooldown, melee_attack_sound("sound effect"), attack_sprites{} (a table of sprites)
     --optional, melee_attack_wind_up_time (this is an optional property for each attack, assume it's true for all)
 --has_teleport, teleport_cooldown,
 --has_dash_attack, dash_attack_distance (hero distance threshold), dash_attack_cooldown,
     --dash_attack_direction ("any" or "straight"), dash_attack_length (how far the enemy will dash before stopping)
-    --dash_attack_speed, dash_attack_wind_up
+    --dash_attack_speed, dash_attack_wind_up, dash_attack_sound
     --TODO allow to set a function as a property for a callback when the dash is over or a collision with an obstacle happens
---has_ranged_attack, ranged_attack_distance, ranged_attack_cooldown, projectile_breed (enemy breed dat)
+--has_ranged_attack, ranged_attack_distance, ranged_attack_cooldown, ranged_attack_sound, projectile_breed (enemy breed dat)
     --optional properties for ranged attack are projectile_damage, projectile_split_children, and projectile_num_bounces
     --(make sure the projectile breed you set can take these parameters to avoid errors)
---has_summon_attack, summon_attack_distance, summon_attack_cooldown, summon_breed, summon_group_size, summon_group_delay
+--has_summon_attack, summon_attack_distance, summon_attack_cooldown, summoning_sound,
+    --summon_breed, summon_group_size, summon_group_delay, protected_while_summoning,
     --summon group size refers to, for instance, if the enemy summons 3 bolts of lightning at a time.
     --summon group delay refers to time between each of those 3 bolts of lightning. After that, cooldown will start
 
@@ -98,7 +99,7 @@ function behavior:create(enemy, properties)
       end
       --and also decide if we should attack or something
       if going_hero then self:check_to_attack() end
-      sol.timer.start(self, 150, function()
+      sol.timer.start(self, 200, function()
         self:check_hero()
       end)
     end
@@ -126,8 +127,8 @@ function behavior:create(enemy, properties)
     elseif properties.has_dash_attack and can_dash_attack and dist_hero <= properties.dash_attack_distance then
       print("would dash attack")
       can_dash_attack = false
-      sol.timer.start(map, properties.dash_attack_cooldown, function() can_dash_attack = true and)
-    elseif properties.has_summon_attack and can_summon and dist_hero <= properties.summon_attack_cooldown then
+      sol.timer.start(map, properties.dash_attack_cooldown, function() can_dash_attack = true end)
+    elseif properties.has_summon_attack and can_summon and dist_hero <= properties.summon_attack_distance then
       self:summon()
       can_summon = false
       sol.timer.start(map, properties.summon_attack_cooldown, function() can_summon = true end)
@@ -164,8 +165,8 @@ function behavior:create(enemy, properties)
     local telegraph_time = properties.wind_up_time
     if properties.melee_attack_wind_up_time then telegraph_time = properties.melee_attack_wind_up_time end
     sol.timer.start(map, telegraph_time, function()
+      sol.audio.play_sound(properties.melee_attack_sound)
       enemy:get_sprite():set_animation("attack", function()
-        enemy:set_attack_consequence("sword", "protected")
         enemy:set_attack_consequence("sword", 1)
         enemy:get_sprite():set_animation("walking")
         enemy:go_random()
@@ -205,7 +206,7 @@ function behavior:create(enemy, properties)
     sol.timer.start(map, telegraph_time, function()
       sprite:set_animation("walking")
       if sprite:has_animation("dashing") then sprite:set_animation("dashing") end
-      local m - sol.movement.create("straight")
+      local m = sol.movement.create("straight")
       if properties.dash_attack_direction == "any" then
         m:set_angle(enemy:get_angle(hero))
       else
@@ -213,6 +214,7 @@ function behavior:create(enemy, properties)
       end
       m:set_speed(properties.dash_attack_speed)
       m:set_smooth(false)
+      sol.audio.play_sound(properties.dash_attack_sound)
       m:start(enemy, function()
         attacking = false
         enemy:go_random()
@@ -240,9 +242,12 @@ function behavior:create(enemy, properties)
     else wind_up_animation = sprite:get_animation("wind_up")
     end
     sprite:set_animation(wind_up_animation)
+    if properties.protected_while_summoning then enemy:set_invincible() end
     local telegraph_time = properties.wind_up_time
     if properties.summon_attack_wind_up_time then telegraph_time = properties.summon_attack_wind_up_time end
     sol.timer.start(map, telegraph_time, function()
+      enemy:set_default_attack_consequences()
+      sol.audio.play_sound(properties.summoning_sound)
       local herox, heroy, herol = hero:get_position()
       local i = 0
       sol.timer.start(map, properties.summon_group_delay, function()
@@ -275,6 +280,7 @@ function behavior:create(enemy, properties)
     local telegraph_time = properties.wind_up_time
     if properties.ranged_attack_wind_up_time then telegraph_time = properties.ranged_attack_wind_up_time end
     sol.timer.start(map, telegraph_time, function()
+      sol.audio.play_sound(properties.ranged_attack_sound)
       sprite:set_animation("shooting", function()
         going_hero = false
         enemy:go_random()
