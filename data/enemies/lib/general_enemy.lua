@@ -20,7 +20,8 @@
     --summon group size refers to, for instance, if the enemy summons 3 bolts of lightning at a time.
     --summon group delay refers to time between each of those 3 bolts of lightning. After that, cooldown will start
 --has_orbit_attack, orbit_attack_distance, orbit_attack_cooldown, orbit_attack_sound, orbit_attack_num_projectiles
-      --orbit_attack_charge_time, orbit_attack_shoot_delay, orbit_attack_projectile_breed, orbit_attack_radius
+      --orbit_attack_charge_time, orbit_attack_shoot_delay, orbit_attack_projectile_delay, orbit_attack_projectile_breed,
+      --orbit_attack_radius, orbit_attack_launch_sound
 --For a custom attack (TODO - debug custom attack, which sometimes results in the enemy stopping the check_hero() loop)
       --properties.has_custom_attack - For this script to check requirements, and if met, start the attack
       --properties.custom_attack_cooldown - cooldown in ms for custom attack
@@ -93,19 +94,17 @@ function behavior:create(enemy, properties)
 
 
   --RESTART
-  local n = 0
   function enemy:on_restarted()
     self:get_sprite():set_animation("walking")
     going_hero = false
     self:go_random()
 --    self:check_hero()
-    sol.timer.start(self, 200, function() print("checking " .. n) n=n+1 enemy:check_hero() return true end)
+    sol.timer.start(self, 200, function() enemy:check_hero() return true end)
   end
 
 
   --Check hero
   function enemy:check_hero()
-    print(attacking)
     if not attacking then
       local near_hero = self:is_near_hero()
       if near_hero and not going_hero then
@@ -242,6 +241,7 @@ function behavior:create(enemy, properties)
     local telegraph_time = properties.wind_up_time
     if properties.dash_attack_wind_up_time then telegraph_time = properties.dash_attack_wind_up_time end
     sol.timer.start(map, telegraph_time, function()
+      attacking = false
       sprite:set_animation("walking")
       if sprite:has_animation("dashing") then sprite:set_animation("dashing") end
       local m = sol.movement.create("straight")
@@ -386,14 +386,17 @@ function behavior:create(enemy, properties)
     sol.timer.start(map, CHARGE_TIME + SHOOT_DELAY, function()
       sol.audio.play_sound("sword2")
       for i=1, #projectiles do
-        if projectiles[i] then
-          local m = sol.movement.create("straight")
-          m:set_angle(enemy:get_angle(hero))
-          m:set_speed(160)
-          m:set_smooth(false)
-          projectiles[i]:stop_movement()
-          m:start(projectiles[i], function() projectiles[i]:remove() end)
-          function m:on_obstacle_reached() projectiles[i]:remove() end
+        if projectiles[i]:exists() then
+          sol.timer.start(map, (properties.orbit_attack_projectile_delay * i), function()
+            local m = sol.movement.create("straight")
+            m:set_angle(enemy:get_angle(hero))
+            m:set_speed(160)
+            m:set_smooth(false)
+            projectiles[i]:stop_movement()
+            sol.audio.play_sound(properties.orbit_attack_launch_sound or "shoot")
+            m:start(projectiles[i], function() projectiles[i]:remove() end)
+            function m:on_obstacle_reached() projectiles[i]:remove() end
+          end)
         end
       end
     end)

@@ -3838,10 +3838,10 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 368,
-  y = 365,
+  x = 376,
+  y = 349,
   direction = 0,
-  breed = "bosses/al_jazari",
+  breed = "bosses/avalanche_golem",
 }
 
 tile{
