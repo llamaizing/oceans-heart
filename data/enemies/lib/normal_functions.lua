@@ -2,7 +2,9 @@
 
 local normal_functions = {}
 
+
 function normal_functions:set(enemy, properties)
+
   local game = enemy:get_game()
   local map = enemy:get_map()
   local hero = map:get_hero()
@@ -45,12 +47,24 @@ function normal_functions:set(enemy, properties)
 
   --head toward the hero
   function enemy:go_hero()
-    local m = sol.movement.create("target")
-    m:set_speed(properties.faster_speed)
-    m:set_ignore_obstacles(properties.ignore_obstacles)
-    m:start(self)
-    self:get_sprite():set_animation("walking")
+
+    if properties.movement_circle_hero then
+      local m = sol.movement.create("circle")
+      m:set_center(hero)
+      m:set_radius(properties.movement_circle_hero_radius)
+      m:set_radius_speed(properties.movement_circle_hero_radius_speed)
+      m:start(self)
+      self:get_sprite():set_animation("walking")
+    else
+      local m = sol.movement.create("target")
+      m:set_speed(properties.faster_speed)
+      m:set_ignore_obstacles(properties.ignore_obstacles)
+      m:start(self)
+      self:get_sprite():set_animation("walking")
+
+    end
   end
+
 
 end
 

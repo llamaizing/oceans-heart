@@ -99,12 +99,8 @@ local function attach_to_obstacle()
     layer = layer,
   })
 
-
-
-  -- Remove the arrow after a delay.
-  sol.timer.start(map, 1500, function()
-    arrow:remove()
-  end)
+-- Remove the arrow after fire.
+  arrow:remove()
 end
 
 -- Attaches the arrow to an entity and make it follow it.

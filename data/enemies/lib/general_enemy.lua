@@ -5,7 +5,9 @@
 --Which attacks the enemy can do are set in the enemy's properties. Values are:
 --has_melee_attack, melee_distance, melee_attack_cooldown, melee_attack_sound("sound effect"), attack_sprites{} (a table of sprites)
     --optional, melee_attack_wind_up_time (this is an optional property for each attack, assume it's true for all)
---has_teleport, teleport_cooldown,
+--has_teleport, teleport_distance, teleport_cooldown,invincible_while_charging_teleport, teleport_length (how far enemy travels)
+  --time_phased_out, stop_movement_while_teleporting
+  --optional: teleport_wind_up_time (assume this for all attacks, again)
 --has_dash_attack, dash_attack_distance (hero distance threshold), dash_attack_cooldown,
     --dash_attack_direction ("target_hero" or "straight"), dash_attack_length (how far the enemy will dash before stopping)
     --dash_attack_speed, dash_attack_wind_up, dash_attack_sound, invincible_while_dashing(bool)
@@ -21,7 +23,7 @@
     --summon group delay refers to time between each of those 3 bolts of lightning. After that, cooldown will start
 --has_orbit_attack, orbit_attack_distance, orbit_attack_cooldown, orbit_attack_sound, orbit_attack_num_projectiles
       --orbit_attack_charge_time, orbit_attack_shoot_delay, orbit_attack_projectile_delay, orbit_attack_projectile_breed,
-      --orbit_attack_radius, orbit_attack_launch_sound
+      --orbit_attack_radius, orbit_attack_launch_sound, orbit_attack_stop_while_charging
 --For a custom attack (TODO - debug custom attack, which sometimes results in the enemy stopping the check_hero() loop)
       --properties.has_custom_attack - For this script to check requirements, and if met, start the attack
       --properties.custom_attack_cooldown - cooldown in ms for custom attack
@@ -37,7 +39,8 @@
 --Certain animations are required for certain attacks:
 --For a melee attack:"attack" (must not loop)
   --optional: melee_attack_wind_up
---For teleporting away:
+--For teleporting away: "phasing_out (must not loop)", "phasing_in (must not loop)", "teleporting"
+  --optional: teleport_wind_up
 --For a dash attack:
   --optional: "dashing", "dash_attack_wind_up"
 -- For a summon attack
@@ -66,6 +69,7 @@
 local behavior = {}
 
 local normal_functions = require("enemies/lib/normal_functions")
+local movement_patterns = require("enemies/lib/movement_patterns")
 
 function behavior:create(enemy, properties)
 
@@ -98,13 +102,13 @@ function behavior:create(enemy, properties)
     self:get_sprite():set_animation("walking")
     going_hero = false
     self:go_random()
---    self:check_hero()
     sol.timer.start(self, 200, function() enemy:check_hero() return true end)
   end
 
-
+--local n=0
   --Check hero
   function enemy:check_hero()
+--print("checking"..n) n=n+1 print("attacking: ")print(attacking) print("going hero: ")print(going_hero)
     if not attacking then
       local near_hero = self:is_near_hero()
       if near_hero and not going_hero then
@@ -145,8 +149,10 @@ function behavior:create(enemy, properties)
       can_melee = false
       sol.timer.start(map, properties.melee_attack_cooldown, function() can_melee = true end)
 
-    elseif properties.has_teleport and dist_hero <= properties.teleport_distance then
-      print("would teleport")
+    elseif properties.has_teleport and can_teleport and dist_hero <= properties.teleport_distance then
+      attacking = true
+      going_hero = false
+      self:teleport()
       can_teleport = false
       sol.timer.start(map, properties.teleport_cooldown, function() can_teleport = true end)
 
@@ -193,12 +199,8 @@ function behavior:create(enemy, properties)
     enemy:set_pushed_back_when_hurt(false)
     local wind_up_animation
     local sprite = enemy:get_sprite()
-    if sprite:has_animation("melee_wind_up") then
-      wind_up_animation = sprite:get_animation("melee_wind_up")
-    else wind_up_animation = sprite:get_animation("wind_up")
-    end
-    sprite:set_animation(wind_up_animation)
---    enemy:set_attack_consequence("sword", "protected")
+    sprite:set_animation("wind_up")
+    if sprite:has_animation("melee_wind_up") then sprite:set_animation("melee_wind_up") end
     local telegraph_time = properties.wind_up_time
     if properties.melee_attack_wind_up_time then telegraph_time = properties.melee_attack_wind_up_time end
     sol.timer.start(map, telegraph_time, function()
@@ -226,17 +228,46 @@ function behavior:create(enemy, properties)
 
 
   --Teleport
---TODO: make teleport
+function enemy:teleport()
+  if properties.stop_movement_while_teleporting then enemy:stop_movement() end
+  if properties.invincible_while_charging_teleport then enemy:set_invincible() end
+  local sprite = enemy:get_sprite()
+  sprite:set_animation("wind_up")
+  if sprite:has_animation("teleport_wind_up") then sprite:set_animation("teleport_wind_up") end
+  local telegraph_time = properties.wind_up_time
+  if properties.teleport_wind_up_time then telegraph_time = properties.teleport_wind_up_time end
+  sol.timer.start(map, telegraph_time, function()
+    enemy:set_can_attack(false) --temporary fix
+    enemy:set_invincible()
+      sprite:set_animation("phasing_out")
+      sol.timer.start(map, 1000, function()
+        print(sprite:get_animation())
+        sprite:set_animation("teleporting")
+        local m = sol.movement.create("straight")
+        m:set_speed(100)
+        m:set_smooth()
+        m:set_max_distance(properties.teleport_length)
+        m:set_angle(math.random(0, math.pi * 2))
+        m:start(enemy)
+        sol.timer.start(map, properties.time_phased_out, function()
+          enemy:set_default_attack_consequences()
+          enemy:set_can_attack() --temporary fix
+          sprite:set_animation("phasing_in", function() sprite:set_animation("walking") end)
+          attacking = false
+          enemy:go_random()
+          enemy:check_hero()
+        end)
+    end)
+  end)
+end
 
 
   --Dash Attack
   function enemy:dash_attack()
     local sprite = enemy:get_sprite()
     local wind_up_animation
-    if sprite:has_animation("dash_attack_wind_up") then
-      wind_up_animation = sprite:get_animation("dash_attack_wind_up")
-    else wind_up_animation = sprite:get_animation("wind_up")
-    end
+    sprite:set_animation("wind_up")
+    if sprite:has_animation("dash_attack_wind_up") then sprite:set_animation("dash_attack_wind_up") end
     sprite:set_animation(wind_up_animation)
     local telegraph_time = properties.wind_up_time
     if properties.dash_attack_wind_up_time then telegraph_time = properties.dash_attack_wind_up_time end
@@ -305,12 +336,8 @@ function behavior:create(enemy, properties)
   function enemy:ranged_attack()
     enemy:stop_movement()
     local sprite = enemy:get_sprite()
-    local wind_up_animation
-    if sprite:has_animation("shooting_wind_up") then
-      wind_up_animation = sprite:get_animation("shooting_wind_up")
-    else wind_up_animation = sprite:get_animation("wind_up")
-    end
-    sprite:set_animation(wind_up_animation)
+    sprite:set_animation("wind_up")
+    if sprite:has_animation("shooting_wind_up") then sprite:set_animation("shooting_wind_up") end
     local telegraph_time = properties.wind_up_time
     if properties.ranged_attack_wind_up_time then telegraph_time = properties.ranged_attack_wind_up_time end
     sol.timer.start(map, telegraph_time, function()
@@ -365,7 +392,7 @@ function behavior:create(enemy, properties)
     local NUM_PROJECTILES = properties.orbit_attack_num_projectiles
     local CHARGE_TIME = properties.orbit_attack_charge_time
     local SHOOT_DELAY = properties.orbit_attack_shoot_delay
-    enemy:stop_movement()
+    if properties.orbit_attack_stop_while_charging then enemy:stop_movement() end
     sprite:set_animation("wind_up")
     if sprite:has_animation("orbit_attack_wind_up") then sprite:set_animation("orbit_attack_wind_up") end
     for i=1, NUM_PROJECTILES do
@@ -380,13 +407,14 @@ function behavior:create(enemy, properties)
         m:set_radius(properties.orbit_attack_radius)
         m:set_angular_speed(8)
         m:start(projectiles[i])
-        if i == NUM_PROJECTILES then attacking = false end
+        if i == NUM_PROJECTILES then sprite:set_animation("walking") end
       end)
     end
     sol.timer.start(map, CHARGE_TIME + SHOOT_DELAY, function()
       sol.audio.play_sound("sword2")
+      attacking = false
       for i=1, #projectiles do
-        if projectiles[i]:exists() then
+        if projectiles[i]:exists() and projectiles[i]:get_life() > 0 then
           sol.timer.start(map, (properties.orbit_attack_projectile_delay * i), function()
             local m = sol.movement.create("straight")
             m:set_angle(enemy:get_angle(hero))
