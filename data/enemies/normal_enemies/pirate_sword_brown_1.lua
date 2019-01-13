@@ -1,17 +1,24 @@
 local enemy = ...
 
-local behavior = require("enemies/lib/soldier")
+local properties_setter = require("enemies/lib/properties_setter")
+local behavior = require("enemies/lib/ogre")
 
 local properties = {
-  main_sprite = "enemies/" .. enemy:get_breed(),
-  sword_sprite = "enemies/" .. enemy:get_breed() .. "_weapon",
+  sprite = "enemies/" .. enemy:get_breed(),
   life = 4,
   damage = 2,
   normal_speed = 16,
   faster_speed = 64,
-  distance = 100,
+  detection_distance = 120,
+  attack_distance = 55,
+  wind_up_time = 450,
+  attack_sound = "sword2",
+  must_be_aligned_to_attack = false,
+  push_hero_on_sword = true,
+  attack_sprites = {"enemies/misc/sword_slash"},
 }
 
+properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)
 
 function enemy:on_dead()

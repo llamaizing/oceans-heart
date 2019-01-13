@@ -4,9 +4,9 @@ local behavior = {}
 
 function behavior:create(enemy, properties)
 
-  local children = {}
   local map = enemy:get_map()
   local hero = map:get_hero()
+  local gonna_burrow_timer_set = false
   
 
   -- Set default properties.
@@ -93,28 +93,21 @@ function behavior:create(enemy, properties)
   end
 
 
-	local previous_on_removed = enemy.on_removed
-	function enemy:on_removed()
-
-	  if previous_on_removed then
-		previous_on_removed(enemy)
-	  end
-
-	  for _, child in ipairs(children) do
-		child:remove()
-	  end
-	end
-
-
   function enemy:on_obstacle_reached(movement)
       self:go_random()
   end
 
   function enemy:on_restarted()
+    self:set_default_attack_consequences()
     self:go_random()
-    sol.timer.stop_all(self)
-    sol.timer.start(self, (properties.time_aboveground), function() self:burrow_down() end)
-    
+    if not gonna_burrow_timer_set then
+      sol.timer.start(map, (properties.time_aboveground), function()
+        enemy:set_invincible()
+        if enemy:exists() then enemy:burrow_down()end
+        gonna_burrow_timer_set = false
+      end)    
+      gonna_burrow_timer_set = true
+    end
   end
 
 
@@ -136,12 +129,16 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:burrow_down()
+--    self:set_consequence_for_all_attacks("protected")
+    self:set_invincible()
     self:get_sprite():set_animation("burrowing")
     if enemy:get_distance(hero) < properties.detection_distance then sol.audio.play_sound(properties.burrow_sound) end
     sol.timer.start(self, 400, function() self:go_underground() end)
   end
 
   function enemy:burrow_up()
+--    self:set_consequence_for_all_attacks("protected")
+    self:set_invincible()
     self:get_sprite():set_animation("burrowing")
     if enemy:get_distance(hero) < properties.detection_distance then sol.audio.play_sound(properties.burrow_sound) end
     sol.timer.start(self, 1000, function() self:go_aboveground() end)
@@ -156,6 +153,7 @@ function behavior:create(enemy, properties)
 
   function enemy:go_aboveground()
     self:set_can_attack(true)
+    self:set_default_attack_consequences()
     self:get_sprite():set_animation("walking")
     if enemy:get_distance(hero) < properties.detection_distance then self:shoot() end
     self:restart()
@@ -167,26 +165,20 @@ function behavior:create(enemy, properties)
 	  local x, y, layer = enemy:get_position()
 	  local direction = sprite:get_direction()
 
-	  -- Where to create the projectile.
-	  local dxy = {
-		{  8,  -4 },
-		{  0, -13 },
-		{ -8,  -4 },
-		{  0,   0 },
-	  }
-
 	  sprite:set_animation("shooting")
---	  enemy:stop_movement()
+	  enemy:stop_movement()
 		sol.audio.play_sound("stone")
-		local stone = enemy:create_enemy({
-		  breed = properties.projectile_breed,
-		  x = dxy[direction + 1][1],
-		  y = dxy[direction + 1][2],
-		})
-		children[#children + 1] = stone
-    direction = enemy:get_angle(hero)
-		stone:go(direction)
+    --create projectile
+    local projectile = map:create_enemy({
+      x = x, y = y, layer = layer, direction = direction,
+      breed = properties.projectile_breed
+    })
+
+  --Fire!
+    projectile:go(enemy:get_angle(hero))
+
 	  sprite:set_animation("walking")
+    self:go_random()
     self:restart()
 	end
 

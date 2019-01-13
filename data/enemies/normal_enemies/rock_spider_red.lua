@@ -1,7 +1,7 @@
 local enemy = ...
 
-
-local behavior = require("enemies/lib/toward_hero_octorok")
+local properties_setter = require("enemies/lib/properties_setter")
+local behavior = require("enemies/lib/ranged_attacker")
 
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),
@@ -14,4 +14,5 @@ local properties = {
   projectile_angle = "any",
 }
 
+properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)

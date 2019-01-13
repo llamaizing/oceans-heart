@@ -5,25 +5,26 @@ require("scripts/meta/hero")
 
 local enemy_meta = sol.main.get_metatable("enemy")
 
--- Redefine how to calculate the damage inflicted by the sword.
---[[
-function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
 
-  local reaction = self:get_attack_consequence_sprite(enemy_sprite, "sword")
-  -- Multiply the sword consequence by the force of the hero.
-  local life_lost = reaction * sword_damage
-  if hero:get_state() == "sword spin attack" then
-    -- And multiply this by 2 during a spin attack.
-    life_lost = life_lost * 2
-  end
-  self:remove_life(life_lost)
+function enemy_meta:set_consequence_for_all_attacks(consequence)
+  -- "sword", "thrown_item", "explosion", "arrow", "hookshot", "boomerang" or "fire"
+  self:set_attack_consequence("sword", consequence)
+  self:set_attack_consequence("thrown_item", consequence)
+  self:set_attack_consequence("explosion", consequence)
+  self:set_attack_consequence("arrow", consequence)
+  self:set_attack_consequence("hookshot", consequence)
+  self:set_attack_consequence("boomerang", consequence)
+  self:set_attack_consequence("fire", consequence)
 end
---]]
 
 
 function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
   local game = self:get_game()
   local sword_damage = game:get_value("sword_damage")
+  local hero_state = hero:get_state()
+  if hero_state == "sword spin attack" or hero_state == "running" then
+    sword_damage = sword_damage * 2
+  end
   self:remove_life(sword_damage)
 
 end

@@ -25,7 +25,8 @@ end
 --Checking to see if the hero is ramming into the pile of rocks
 map:register_event("on_update", function()
   if map:has_entity(name) then
-    if entity:overlaps(hero, "facing") and game:get_value("hero_dashing") == true then
+    if entity:overlaps(hero, "facing")
+    and (game:get_value("hero_dashing") == true or hero:get_state() == "running") then
       if being_destroyed == false then destroy_self() end
       being_destroyed = true
     end

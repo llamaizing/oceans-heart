@@ -1,7 +1,7 @@
 properties{
   x = 0,
   y = 0,
-  width = 640,
+  width = 1200,
   height = 480,
   min_layer = 0,
   max_layer = 2,
@@ -213,51 +213,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "148",
-}
-
-tile{
-  layer = 0,
-  x = 56,
-  y = 48,
-  width = 8,
-  height = 8,
-  pattern = "150",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 48,
-  width = 8,
-  height = 8,
-  pattern = "149",
-}
-
-tile{
-  layer = 0,
-  x = 112,
-  y = 48,
-  width = 8,
-  height = 8,
-  pattern = "135",
-}
-
-tile{
-  layer = 0,
-  x = 120,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "150",
-}
-
-tile{
-  layer = 0,
-  x = 120,
-  y = 48,
-  width = 8,
-  height = 8,
-  pattern = "149",
 }
 
 tile{
@@ -1180,11 +1135,1499 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
-  y = 80,
+  x = 704,
+  y = 128,
+  width = 384,
+  height = 256,
+  pattern = "brick_floor",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "corner.in.4",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "corner.in.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 384,
+  width = 32,
+  height = 32,
+  pattern = "corner.in.3",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 384,
+  width = 32,
+  height = 32,
+  pattern = "corner.in.2",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 96,
   width = 16,
-  height = 48,
-  pattern = "45",
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.1",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 96,
+  width = 16,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.1",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "wall.down.2",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 128,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 144,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 144,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 128,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 160,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 176,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 176,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 160,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 192,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 208,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 208,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 192,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 240,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 240,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 304,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 304,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 320,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 320,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 352,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 368,
+  width = 32,
+  height = 16,
+  pattern = "wall.left.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 368,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.2",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 352,
+  width = 32,
+  height = 16,
+  pattern = "wall.right.1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 160,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 240,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 320,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 160,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 240,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 320,
+  width = 32,
+  height = 32,
+  pattern = "565",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 160,
+  width = 32,
+  height = 32,
+  pattern = "568",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 176,
+  width = 80,
+  height = 96,
+  pattern = "411",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 240,
+  width = 80,
+  height = 64,
+  pattern = "411",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "411",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 192,
+  width = 16,
+  height = 64,
+  pattern = "411",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 208,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 192,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 224,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 256,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 272,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 208,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 192,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 296,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 296,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 280,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 296,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 296,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 272,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 280,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 256,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 248,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 264,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 216,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 224,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 208,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 216,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 208,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 232,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 248,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 168,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 168,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 176,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 168,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 160,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 168,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 160,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 216,
+  width = 16,
+  height = 8,
+  pattern = "630",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "415",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "415",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "415",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "415",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "416",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "416",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "416",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "413",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "413",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 208,
+  width = 32,
+  height = 24,
+  pattern = "1120",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "1747",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "1747",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "1749",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "1751",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "1749",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "1751",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "1747",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 352,
+  width = 112,
+  height = 16,
+  pattern = "ground1.1",
 }
 
 pickable{
@@ -1211,7 +2654,7 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 200,
+  x = 184,
   y = 189,
   treasure_name = "dandelion_charm",
 }
@@ -1433,8 +2876,7 @@ teletransporter{
   y = 32,
   width = 16,
   height = 16,
-  destination_map = "demo_1/central_area",
-  destination = "starting_destination",
+  destination_map = "Limestone Island/limestone_village/limestone_village",
 }
 
 destructible{
@@ -1680,55 +3122,6 @@ pickable{
   treasure_name = "armor_upgrade_2",
 }
 
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "sword",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "bow",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "health_upgrade",
-}
-
 door{
   layer = 0,
   x = 128,
@@ -1769,76 +3162,6 @@ custom_entity{
   direction = 0,
   sprite = "entities/leaf_pile",
   model = "leaf_pile",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "bomb",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "bomb",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "bomb",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "bomb",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "arrow",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "arrow",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 224,
-  y = 117,
-  treasure_name = "rupee",
-  treasure_variant = 5,
 }
 
 destructible{
@@ -2065,25 +3388,335 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 416,
+  x = 432,
   y = 93,
   treasure_name = "bread",
 }
 
-enemy{
+pickable{
   layer = 0,
-  x = 304,
-  y = 397,
+  x = 432,
+  y = 117,
+  treasure_name = "tornado_dash",
+}
+
+custom_entity{
+  name = "rock_pile_2",
+  layer = 0,
+  x = 280,
+  y = 245,
+  width = 32,
+  height = 32,
   direction = 0,
-  breed = "normal_enemies/arborgeist_rogue",
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_3",
+  layer = 0,
+  x = 376,
+  y = 245,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_4",
+  layer = 0,
+  x = 424,
+  y = 245,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+pickable{
+  layer = 0,
+  x = 280,
+  y = 93,
+  treasure_name = "spear",
+}
+
+pickable{
+  layer = 0,
+  x = 432,
+  y = 141,
+  treasure_name = "gust",
+}
+
+pickable{
+  layer = 0,
+  x = 432,
+  y = 197,
+  treasure_name = "ball_and_chain",
+}
+
+pickable{
+  layer = 0,
+  x = 464,
+  y = 189,
+  treasure_name = "ball_and_chain",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 69,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 77,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 85,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 93,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 93,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 85,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 77,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 69,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 77,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 85,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 93,
+  treasure_name = "apples",
+}
+
+pickable{
+  layer = 0,
+  x = 56,
+  y = 85,
+  treasure_name = "bow_bombs",
+}
+
+pickable{
+  layer = 0,
+  x = 432,
+  y = 165,
+  treasure_name = "crystal_spark",
+}
+
+pickable{
+  layer = 0,
+  x = 120,
+  y = 61,
+  treasure_name = "hookshot",
+}
+
+block{
+  layer = 0,
+  x = 200,
+  y = 189,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+}
+
+custom_entity{
+  name = "rock_pile_5",
+  layer = 0,
+  x = 328,
+  y = 245,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+pickable{
+  layer = 0,
+  x = 96,
+  y = 165,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 96,
+  y = 181,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 64,
+  y = 165,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 64,
+  y = 181,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 101,
+  treasure_name = "barrier",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "sword",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "health_upgrade",
 }
 
 enemy{
+  name = "problem_child",
   layer = 0,
-  x = 440,
-  y = 429,
+  x = 896,
+  y = 253,
   direction = 0,
-  breed = "normal_enemies/arborgeist_rogue",
+  breed = "normal_enemies/grim_1",
 }
 
 tile{
@@ -2102,51 +3735,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "44",
-}
-
-tile{
-  layer = 1,
-  x = 64,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "152",
-}
-
-tile{
-  layer = 1,
-  x = 64,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "151",
-}
-
-tile{
-  layer = 1,
-  x = 48,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "153",
-}
-
-tile{
-  layer = 1,
-  x = 112,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "152",
-}
-
-tile{
-  layer = 1,
-  x = 128,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "153",
 }
 
 tile{
@@ -2246,6 +3834,149 @@ tile{
   width = 32,
   height = 24,
   pattern = "584",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 288,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = 288,
+  width = 32,
+  height = 32,
+  pattern = "566",
+}
+
+tile{
+  layer = 1,
+  x = 904,
+  y = 112,
+  width = 32,
+  height = 48,
+  pattern = "570",
+}
+
+tile{
+  layer = 1,
+  x = 1016,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = "1121",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1016,
+  y = 168,
+  width = 48,
+  height = 40,
+  pattern = "1123",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1056,
+  y = 208,
+  width = 8,
+  height = 16,
+  pattern = "1122",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1064,
+  y = 200,
+  width = 16,
+  height = 24,
+  pattern = "1748",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 216,
+  width = 16,
+  height = 24,
+  pattern = "1748",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 232,
+  width = 32,
+  height = 32,
+  pattern = "1753",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 992,
+  y = 152,
+  width = 32,
+  height = 32,
+  pattern = "1753",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 208,
+  width = 16,
+  height = 24,
+  pattern = "1748",
+  tileset = "overworld_oakhaven",
 }
 
 dynamic_tile{

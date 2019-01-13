@@ -11,6 +11,17 @@ animation{
   },
 }
 animation{
+  name = "attack",
+  src_image = "enemies/normal_enemies/grim_1.png",
+  frame_delay = 120,
+  directions = {
+    { x = 192, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+    { x = 192, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+    { x = 192, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+    { x = 192, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 6 },
+  },
+}
+animation{
   name = "burrowing",
   src_image = "enemies/normal_enemies/grim_1.png",
   frame_delay = 120,
@@ -45,6 +56,40 @@ animation{
   },
 }
 animation{
+  name = "melee_attack_wind_up",
+  src_image = "enemies/normal_enemies/grim_1.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 224, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
+    { x = 224, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
+    { x = 224, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
+    { x = 224, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
+  },
+}
+animation{
+  name = "phasing_in",
+  src_image = "enemies/normal_enemies/grim_1.png",
+  frame_delay = 120,
+  directions = {
+    { x = 32, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 32, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 32, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 32, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+  },
+}
+animation{
+  name = "phasing_out",
+  src_image = "enemies/normal_enemies/grim_1.png",
+  frame_delay = 120,
+  directions = {
+    { x = 32, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 32, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 32, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+    { x = 32, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 8 },
+  },
+}
+animation{
   name = "shaking",
   src_image = "enemies/normal_enemies/grim_1.png",
   frame_delay = 150,
@@ -69,6 +114,16 @@ animation{
   },
 }
 animation{
+  name = "teleporting",
+  src_image = "enemies/normal_enemies/grim_1.png",
+  directions = {
+    { x = 160, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 160, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 160, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 160, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
   name = "underground",
   src_image = "enemies/normal_enemies/grim_1.png",
   directions = {
@@ -76,5 +131,17 @@ animation{
     { x = 160, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
     { x = 160, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
     { x = 160, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
+  name = "wind_up",
+  src_image = "enemies/normal_enemies/grim_1.png",
+  frame_delay = 140,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 160, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
+    { x = 160, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
+    { x = 160, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
+    { x = 160, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29, num_frames = 4 },
   },
 }

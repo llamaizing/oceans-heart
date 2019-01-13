@@ -85,6 +85,9 @@ function behavior:create(enemy, properties)
   if properties.vulnerable_in_windup == nil then
     properties.vulnerable_in_windup = false
   end
+  if properties.create_enemy_on_attack == nil then
+    properties.create_enemy_on_attack = false
+  end
 
 
   function enemy:on_created()
@@ -105,7 +108,6 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:on_movement_changed(movement)
-
     local direction4 = movement:get_direction4()
     local sprite = self:get_sprite()
     sprite:set_direction(direction4)
@@ -113,7 +115,6 @@ function behavior:create(enemy, properties)
 
 
   function enemy:on_obstacle_reached(movement)
-
     if not going_hero then
       self:go_random()
       self:check_hero()

@@ -11,7 +11,7 @@ text_surface:set_text("Quest Log Updated!")
 
 
 function quest_update_icon:on_draw(dst_surface)
-  text_surface:draw(dst_surface, 200, 10)
+  text_surface:draw(dst_surface, 200, 5)
 end
 
 function quest_update_icon:get_opacity()

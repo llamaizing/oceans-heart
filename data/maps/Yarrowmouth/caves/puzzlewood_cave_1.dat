@@ -1426,15 +1426,6 @@ crystal_block{
   subtype = 0,
 }
 
-crystal_block{
-  layer = 0,
-  x = 224,
-  y = 136,
-  width = 16,
-  height = 16,
-  subtype = 0,
-}
-
 destructible{
   layer = 0,
   x = 232,
@@ -1482,6 +1473,7 @@ block{
   layer = 0,
   x = 200,
   y = 117,
+  direction = 0,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -1499,8 +1491,8 @@ crystal_block{
 
 block{
   layer = 0,
-  x = 184,
-  y = 133,
+  x = 344,
+  y = 173,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -1511,6 +1503,7 @@ block{
   layer = 0,
   x = 136,
   y = 117,
+  direction = 2,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -1527,22 +1520,45 @@ destructible{
 
 block{
   layer = 0,
-  x = 120,
-  y = 117,
+  x = 376,
+  y = 173,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
   max_moves = 1,
 }
 
-block{
+crystal_block{
   layer = 0,
-  x = 216,
-  y = 133,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-  max_moves = 1,
+  x = 224,
+  y = 104,
+  width = 16,
+  height = 48,
+  subtype = 0,
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 93,
+  sprite = "entities/vase",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = 93,
+  sprite = "entities/vase",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 88,
+  y = 109,
+  sprite = "entities/vase",
+  can_be_cut = true,
 }
 
 tile{

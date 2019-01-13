@@ -8,17 +8,18 @@ local all_equipment_items = {
     "apples",
     "bread",
     "elixer",
+    "barrier",
     "boomerang",
+    "spear",
+    "ball_and_chain",
+    "hookshot",
+    "tornado_dash",
+    "gust",
+    "crystal_spark",
+    "bombs_counter_2",
     "bow",
     "bow_fire",
-    "bombs_counter_2",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries"
+    "bow_bombs",
 }
 
 --captions for each item. Has to be in same order
@@ -27,18 +28,18 @@ local item_descriptions = {
     "Apple",
     "Bread",
     "Elixer Vitae",
+    "Barrier Charm",
     "Boomerang",
+    "Spear",
+    "Flail",
+    "Hookshot",
+    "Tornado Dash",
+    "Zephyrine's Tempest",
+    "Ophira's Ember",
+    "Bombs",
     "Bow",
     "Flame Arrows",
-    "Bombs",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries",
-    "berries"
+    "Bomb Arrows",
 }
 
 --constants:
@@ -120,11 +121,7 @@ end
 
 
 function inventory:on_started()
-    --moved this stuff up to inventory:initialize()
-    -- self.menu_background = sol.surface.create("menus/inventory/inventory_background.png")
-    -- self.cursor_sprite = sol.sprite.create("menus/inventory/selector")
-    -- self.cursor_column = (cursor_index % ROWS)
-    -- self.cursor_row = (cursor_index / ROWS)
+    self:update_description_panel()
 end
 
 
@@ -132,7 +129,7 @@ function inventory:on_draw(dst_surface)
     --draw the elements
     self.menu_background:draw(dst_surface)
     self.cursor_sprite:draw(dst_surface, self.cursor_column * 32 + GRID_ORIGIN_X + 32,  self.cursor_row * 32 + GRID_ORIGIN_Y)
-    self.description_panel:draw(dst_surface, (COLUMNS * 32) / 2 + GRID_ORIGIN_X, ROWS *32 + GRID_ORIGIN_Y - 8)
+    self.description_panel:draw(dst_surface, (COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16, ROWS *32 + GRID_ORIGIN_Y - 8)
     --draw assigned items: (or, if you can see what items you have assigned elsewhere, maybe don't!)
 --    if self.assigned_item_sprite_1 then self.assigned_item_sprite_1:draw(dst_surface, GRID_ORIGIN_X + 32, GRID_ORIGIN_Y-32) end
 --    if self.assigned_item_sprite_2 then self.assigned_item_sprite_2:draw(dst_surface, GRID_ORIGIN_X + 32 + 32, GRID_ORIGIN_Y-32) end
@@ -161,10 +158,15 @@ function inventory:update_cursor_position(new_index)
     local new_row = math.floor(cursor_index / ROWS)
     if new_row < ROWS then self.cursor_row = new_row end
     game:set_value("inventory_cursor_index", cursor_index)
+    self:update_description_panel()
+end
 
+function inventory:update_description_panel()
     --update description panel
     if self:get_item_at_current_index() and self.description_panel then
         self.description_panel:set_text(item_descriptions[cursor_index + 1])
+    elseif self.description_panel then
+        self.description_panel:set_text("")
     end
 end
 
@@ -194,7 +196,7 @@ function inventory:on_command_pressed(command)
         local item = self:get_item_at_current_index()
         if item and item:is_assignable() then
             game:set_item_assigned(1, item)
-            sol.audio.play_sound("cane")
+            sol.audio.play_sound("ok")
         else sol.audio.play_sound("wrong")
         end
         self:initialize_assigned_item_sprites(game)
@@ -202,7 +204,7 @@ function inventory:on_command_pressed(command)
         local item = self:get_item_at_current_index()
         if item and item:is_assignable() then
             game:set_item_assigned(2, item)
-            sol.audio.play_sound("cane")
+            sol.audio.play_sound("ok")
         else sol.audio.play_sound("wrong")
         end
         self:initialize_assigned_item_sprites(game)
@@ -220,10 +222,6 @@ function inventory:get_item_at_current_index()
         return item
     else return nil
     end
-end
-
-function update_description_panel()
-
 end
 
 return inventory
