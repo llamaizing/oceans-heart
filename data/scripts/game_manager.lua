@@ -195,17 +195,20 @@ function game_manager:create(file_name)
           hero:get_sprite():set_animation("roll", function() hero:get_sprite():set_animation("walking") end)
           game:set_value("hero_rolling", true)
         end
-        sol.audio.play_sound("dash")
+        if game:has_item("dandelion_charm") then sol.audio.play_sound("dash")
+        else sol.audio.play_sound("roll_2") end
         can_dash = false
 
         m:start(hero, function()
           hero:unfreeze()
           game:set_value("hero_dashing", false)
           game:set_value("hero_rolling", false)
-          sol.timer.start(hero, 800, function()
-            can_dash = true
-          end)
         end)
+
+        sol.timer.start(hero, 1000, function()
+          can_dash = true
+        end)
+
         if game:has_item("dandelion_charm") then hero:set_invincible(true, 300) end
 
         function m:on_obstacle_reached()
