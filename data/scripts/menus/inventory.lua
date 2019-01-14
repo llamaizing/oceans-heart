@@ -231,9 +231,9 @@ end
 
 function inventory:on_draw(dst_surface)
     --draw the elements
-    self.menu_background:draw(dst_surface)
-    self.cursor_sprite:draw(dst_surface, (self.cursor_column * 32 + GRID_ORIGIN_X + 32),  (self.cursor_row * 32 + GRID_ORIGIN_Y))
-    self.description_panel:draw(dst_surface, ((COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16), (ROWS *32 + GRID_ORIGIN_Y - 8))
+    self.menu_background:draw(dst_surface, self.x, self.y)
+    self.cursor_sprite:draw(dst_surface, (self.cursor_column * 32 + GRID_ORIGIN_X + 32) + self.x,  (self.cursor_row * 32 + GRID_ORIGIN_Y) + self.y)
+    self.description_panel:draw(dst_surface, ((COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16) + self.x, (ROWS *32 + GRID_ORIGIN_Y - 8)+self.y)
     --draw assigned items: (or, if you can see what items you have assigned elsewhere, maybe don't!)
 --    if self.assigned_item_sprite_1 then self.assigned_item_sprite_1:draw(dst_surface, GRID_ORIGIN_X + 32, GRID_ORIGIN_Y-32) end
 --    if self.assigned_item_sprite_2 then self.assigned_item_sprite_2:draw(dst_surface, GRID_ORIGIN_X + 32 + 32, GRID_ORIGIN_Y-32) end
@@ -244,10 +244,10 @@ function inventory:on_draw(dst_surface)
             --draw the item's sprite from the sprites table
             local x = ((i-1)%ROWS) * 32 + GRID_ORIGIN_EQUIP_X + 32
             local y = math.floor((i-1) / ROWS) * 32 + GRID_ORIGIN_EQUIP_Y
-            self.equipment_sprites[i]:draw(dst_surface, x, y)
+            self.equipment_sprites[i]:draw(dst_surface, x + self.x, y + self.y)
             if self.counters[i] then
                 --draw the item's counter
-                self.counters[i]:draw(dst_surface, x+8, y+4 )
+                self.counters[i]:draw(dst_surface, x+8 + self.x, y+4 + self.y )
             end
         end
     end
