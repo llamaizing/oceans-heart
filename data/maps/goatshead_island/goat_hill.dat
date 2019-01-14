@@ -16787,8 +16787,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1520,
-  y = 512,
+  x = 1512,
+  y = 544,
   width = 8,
   height = 8,
   pattern = "1044",
@@ -27080,6 +27080,24 @@ destructible{
   x = 1112,
   y = 333,
   sprite = "entities/bush_forsythia",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1512,
+  y = 517,
+  treasure_name = "chamomile",
+  sprite = "entities/bush_chamomile",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1528,
+  y = 517,
+  treasure_name = "chamomile",
+  sprite = "entities/bush_chamomile",
   can_be_cut = true,
 }
 

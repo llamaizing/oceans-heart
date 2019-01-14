@@ -12,7 +12,7 @@ function behavior:create(enemy, properties)
   local attacking = false
 
   --initialize universal enemy stuff:
-  normal_functions:set(enemy, properties)
+  normal_functions:initialize(enemy, properties)
   --this is pretty notmal too, but needs check_hero()
   function enemy:on_obstacle_reached(movement)
     if not going_hero then

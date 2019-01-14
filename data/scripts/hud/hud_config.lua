@@ -16,9 +16,16 @@ local hud_config = {
   {
     menu_script = "scripts/hud/hearts",
     x = 10,
-    y = -253,
+    y = -250,
   },
-
+  
+    --magic meter
+    {
+      menu_script = "scripts/hud/magic_bar",
+      x = 10,
+      y = 1,
+    },
+  
   -- Rupee counter.
   {
     menu_script = "scripts/hud/rupees",
@@ -62,8 +69,6 @@ local hud_config = {
     slot = 2,  -- Item slot (1 or 2).
   },
 
-
-  -- You can add more HUD elements here.
 }
 
 return hud_config

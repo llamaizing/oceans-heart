@@ -2897,8 +2897,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 8,
-  y = 61,
+  x = 136,
+  y = -3,
   treasure_name = "berries",
   sprite = "entities/bush_berries",
   can_be_cut = true,
@@ -2916,7 +2916,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 48,
+  x = 40,
   y = -3,
   treasure_name = "arrow",
   treasure_variant = 2,
@@ -2947,8 +2947,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = -40,
-  y = 61,
+  x = -56,
+  y = 101,
   sprite = "entities/bush_forsythia",
   can_be_cut = true,
 }
@@ -2956,7 +2956,7 @@ destructible{
 destructible{
   layer = 0,
   x = -40,
-  y = 93,
+  y = 101,
   sprite = "entities/bush_monkshood",
   can_be_cut = true,
 }
@@ -3011,15 +3011,15 @@ destructible{
 
 destructible{
   layer = 0,
-  x = -24,
-  y = 61,
+  x = -40,
+  y = 77,
   sprite = "entities/bush_dandelion",
   can_be_cut = true,
 }
 
 destructible{
   layer = 0,
-  x = 72,
+  x = 64,
   y = -3,
   treasure_name = "apples",
   sprite = "entities/bush_apple_tree",
@@ -3029,7 +3029,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 104,
+  x = 88,
   y = -3,
   treasure_name = "kingscrown",
   sprite = "entities/bush_kingscrown",
@@ -3039,7 +3039,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 152,
+  x = 224,
   y = -3,
   sprite = "entities/block_stone_lv1",
   weight = 1,
@@ -3057,8 +3057,8 @@ sensor{
 
 destructible{
   layer = 0,
-  x = -40,
-  y = 117,
+  x = -24,
+  y = 109,
   sprite = "entities/bush_field",
   can_be_cut = true,
 }
@@ -3115,7 +3115,7 @@ pickable{
 
 door{
   layer = 0,
-  x = 128,
+  x = 200,
   y = -16,
   direction = 3,
   sprite = "entities/door_weak_block",
@@ -3707,7 +3707,7 @@ enemy{
   x = 896,
   y = 253,
   direction = 0,
-  breed = "normal_enemies/grim_1",
+  breed = "normal_enemies/ogre_1",
 }
 
 enemy{
@@ -3716,6 +3716,89 @@ enemy{
   y = 349,
   direction = 0,
   breed = "bosses/fiend_1",
+}
+
+destructible{
+  layer = 0,
+  x = 120,
+  y = -3,
+  treasure_name = "chamomile",
+  sprite = "entities/bush_chamomile",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 104,
+  y = -3,
+  treasure_name = "burdock",
+  sprite = "entities/bush_burdock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 8,
+  y = 61,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 152,
+  y = -3,
+  treasure_name = "lavendar",
+  sprite = "entities/bush_lavendar",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 176,
+  y = -3,
+  treasure_name = "witch_hazel",
+  sprite = "entities/bush_witch_hazel",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 176,
+  y = 109,
+  treasure_name = "burdock",
+  sprite = "entities/bush_burdock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1016,
+  y = 245,
+  treasure_name = "witch_hazel",
+  sprite = "entities/bush_witch_hazel",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1032,
+  y = 269,
+  treasure_name = "witch_hazel",
+  sprite = "entities/bush_witch_hazel",
+  weight = -1,
+  can_be_cut = true,
+}
+
+enemy{
+  name = "problem_child_2",
+  layer = 0,
+  x = 800,
+  y = 189,
+  direction = 0,
+  breed = "normal_enemies/ogre_knight",
 }
 
 tile{

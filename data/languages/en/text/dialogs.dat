@@ -8422,6 +8422,15 @@ pretty dangerous! Be careful!
 }
 
 dialog{
+  id = "_treasure.barrier.1",
+  text = [[
+You received the barrier spell. Use this
+spell to deflect incoming projectiles.
+It will use a small amount of your magic.
+]],
+}
+
+dialog{
   id = "_treasure.bomb.1",
   text = [[
 You found a bomb!
@@ -8503,16 +8512,18 @@ dialog{
   id = "_treasure.bow_bombs.1",
   text = [[
 You received bomb arrows. These will create
-an explosion on impact- be careful not to
-shoot at your feet!
+an explosion on impact- make sure they're
+far away from you when they hit something!
 ]],
 }
 
 dialog{
   id = "_treasure.bow_fire.1",
   text = [[
-Your bow gained the fire spell. The arrows
-you shoot will be engulfed in flame!
+Your bow gained the flame spell. By using
+a little of your magic power, your arrows
+will be create a burst of fire when they
+impact.
 ]],
 }
 
@@ -8533,10 +8544,24 @@ fresh. Eat it to recover 5 hearts.
 }
 
 dialog{
+  id = "_treasure.burdock.1",
+  text = [[
+You found a burdock root.
+]],
+}
+
+dialog{
   id = "_treasure.buzzer.1",
   text = [[
 You found a buzzer. Press the button to go buzz
 buzz buzz buzz
+]],
+}
+
+dialog{
+  id = "_treasure.chamomile.1",
+  text = [[
+You found some chamomile flowers.
 ]],
 }
 
@@ -8571,7 +8596,8 @@ dialog{
   text = [[
 You received the Ophira's Ember.
 This spell will summon a furious
-firestorm.
+firestorm. It will use most of
+your magic power.
 ]],
 }
 
@@ -8666,6 +8692,7 @@ dialog{
 You received Zephyrine's Tempest.
 This spell will summon the spirits of
 the west wind to aid you in battle.
+It will use most of your magic power.
 ]],
 }
 
@@ -8857,6 +8884,13 @@ dialog{
   id = "_treasure.kingscrown.1",
   text = [[
 You found a Kingscrown Bloom.
+]],
+}
+
+dialog{
+  id = "_treasure.lavendar.1",
+  text = [[
+You found a lavendar stem.
 ]],
 }
 
@@ -9115,6 +9149,13 @@ dialog{
   text = [[
 You took an old bottle of whisky. It's
 only missing a few sips. What a nice gift!
+]],
+}
+
+dialog{
+  id = "_treasure.witch_hazel.1",
+  text = [[
+You found a branch of Witch Hazel flowers.
 ]],
 }
 

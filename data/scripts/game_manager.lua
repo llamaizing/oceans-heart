@@ -32,64 +32,67 @@ local QUEST_SOUNDS = {
 -- initializing it if necessary.
 function game_manager:create(file_name)
 
-    local exists = sol.game.exists(file_name)
-    local game = sol.game.load(file_name)
-    if not exists then -- Initialize a new savegame.
-      initial_game:initialize_new_savegame(game)
-    end
+  local exists = sol.game.exists(file_name)
+  local game = sol.game.load(file_name)
+  if not exists then -- Initialize a new savegame.
+    initial_game:initialize_new_savegame(game)
+  end
+
+  objectives_manager.create(game)
+  pause_menu:set_game(game)
+
+  -- function game:on_started()
+  --   game:start_magic_regen_timer()
+  -- end
+  game:register_event("on_started", function()
+    game:start_magic_regen_timer()
+  end)
+
+  function game:on_paused()
+    sol.menu.start(game, pause_menu)
+  end
+
+  local QUEST_SOUNDS = {
+    main_all_completed = "quest_complete",
+    side_all_completed = "quest_complete",
+    main_completed = "quest_complete",
+    side_completed = "quest_complete",
+    main_started = "quest_started",
+    side_started = "quest_started",
+    main_advanced = "quest_advance",
+    side_advanced = "quest_advance",
+    new_checkmark = "quest_subtask",
+    obtained_quest_item = "quest_subtask",
+    main_advanced_again = false, --don't play sound
+    side_advanced_again = false, --don't play sound
+  }
 
 
-  --From llamazing's quest log menu:
-    objectives_manager.create(game)
---    quest_log:set_game(game)
-    pause_menu:set_game(game)
-    	
-    function game:on_paused()
---      inventory:initialize(game)
---    	sol.menu.start(game, inventory)
-      sol.menu.start(game, pause_menu)
-    end
-    	
-    -- function game:on_unpaused()
-    -- 	sol.menu.stop(inventory)
-    -- end
+  function game.objectives:on_new_task(status, dialog_id)
+    local sound_name = QUEST_SOUNDS[status]
+    if sound_name then sol.audio.play_sound(sound_name) end
 
-    local QUEST_SOUNDS = {
-    	main_all_completed = "quest_complete",
-    	side_all_completed = "quest_complete",
-    	main_completed = "quest_complete",
-    	side_completed = "quest_complete",
-    	main_started = "quest_started",
-    	side_started = "quest_started",
-    	main_advanced = "quest_advance",
-    	side_advanced = "quest_advance",
-    	new_checkmark = "quest_subtask",
-    	obtained_quest_item = "quest_subtask",
-    	main_advanced_again = false, --don't play sound
-    	side_advanced_again = false, --don't play sound
-    }
+    quest_update_icon:refresh_opacity()
+    sol.menu.start(game, quest_update_icon)
+    sol.timer.start(game, 100, function()
+      if quest_update_icon:get_opacity() < 11 then
+        sol.menu.stop(quest_update_icon)
+      else
+        quest_update_icon:reduce_opacity(10)
+        return true
+      end
+    end)
+  end
 
-
-    function game.objectives:on_new_task(status, dialog_id)
-
-    	local sound_name = QUEST_SOUNDS[status]
-    	if sound_name then sol.audio.play_sound(sound_name) end
-
-      quest_update_icon:refresh_opacity()
-      sol.menu.start(game, quest_update_icon)
-      sol.timer.start(game, 100, function()
-        if quest_update_icon:get_opacity() < 11 then
-          sol.menu.stop(quest_update_icon)
-        else
-          quest_update_icon:reduce_opacity(10)
-          return true
-        end
-      end)
-
-    end
-
-
-  --end of from llamazings quest log menu
+  function game:start_magic_regen_timer()
+    sol.timer.start(game, 200, function()
+      if not game:is_suspended() then
+        game:add_magic(1)
+      end  
+      return true
+    end)
+  end
+  
 
 
   ---------------------------------------------KEYBOARD INPUTS-----------------------------
@@ -100,62 +103,47 @@ function game_manager:create(file_name)
 
   --display a map when m is pressed
   function game:on_key_pressed(key, modifiers)
-    local hero = game:get_hero()
-    if key == "m" then
-      require("scripts/menus/map")
-      if showing_map ~= true then
-        sol.audio.play_sound("heart")
-        hero:freeze()
-        map_screen:get_map(game)
-        sol.menu.start(game, map_screen)
-        showing_map = true
+
+    if key == "s" then
+      game:start_dialog("_game.pause", function(answer)
+        if answer == 1 then
+          game:set_paused(false)
+        elseif answer == 2 then
+          game:save()
+          sol.audio.play_sound("elixer_upgrade")
+          game:set_paused(false)
+        elseif answer == 3 then
+          sol.main.exit()
+        end
+      end)
+
+
+      --DEBUG FUNCTIONS
+    elseif key == "r" then
+      if hero:get_walking_speed() == 300 then
+        hero:set_walking_speed(debug.normal_walking_speed)
       else
-        sol.menu.stop(map_screen)
-        hero:unfreeze()
-        showing_map = false
+        debug.normal_walking_speed = hero:get_walking_speed()
+        hero:set_walking_speed(300)
       end
 
-    elseif key == "s" then
-    game:start_dialog("_game.pause", function(answer)
-      if answer == 1 then
-        game:set_paused(false)
-      elseif answer == 2 then
-        game:save()
-        sol.audio.play_sound("elixer_upgrade")
-        game:set_paused(false)
-      elseif answer == 3 then
-        sol.main.exit()
+    elseif key == "t" then
+      if not ignoring_obstacles then
+        hero:get_movement():set_ignore_obstacles(true)
+        ignoring_obstacles = true
+      else
+        hero:get_movement():set_ignore_obstacles(false)
+        ignoring_obstacles = false
       end
-    end)
 
+    elseif key == "h" then
+      game:set_life(game:get_max_life())
 
-  --DEBUG FUNCTIONS
-  --
-      elseif key == "r" then
-        if hero:get_walking_speed() == 300 then
-          hero:set_walking_speed(debug.normal_walking_speed)
-        else
-          debug.normal_walking_speed = hero:get_walking_speed()
-          hero:set_walking_speed(300)
-        end
-
-      elseif key == "t" then
-        if not ignoring_obstacles then
-          hero:get_movement():set_ignore_obstacles(true)
-          ignoring_obstacles = true
-        else
-          hero:get_movement():set_ignore_obstacles(false)
-          ignoring_obstacles = false
-        end
-
-      elseif key == "h" then
-        game:set_life(game:get_max_life())
-
-      elseif key == "j" then
-        game:remove_life(2)
+    elseif key == "j" then
+      game:remove_life(2)
         
-  --end of debug functions
-  --]]
+         --end of debug functions
+          --]]
 
     end
 

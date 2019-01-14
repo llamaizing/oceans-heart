@@ -351,6 +351,8 @@ sprite{ id = "entities/bush", description = "Bush (from tileset)" }
 sprite{ id = "entities/bush_apple_tree", description = "Apple Tree" }
 sprite{ id = "entities/bush_arrowwood", description = "Arrowwood" }
 sprite{ id = "entities/bush_berries", description = "Berry Bush" }
+sprite{ id = "entities/bush_burdock", description = "Burdock" }
+sprite{ id = "entities/bush_chamomile", description = "chamomile" }
 sprite{ id = "entities/bush_dandelion", description = "Dandelion" }
 sprite{ id = "entities/bush_field", description = "Bush (field)" }
 sprite{ id = "entities/bush_firethorn", description = "Firethorn" }
@@ -363,10 +365,13 @@ sprite{ id = "entities/bush_forsythia", description = "Forsythia" }
 sprite{ id = "entities/bush_ghost_orchid", description = "Ghost Orchid" }
 sprite{ id = "entities/bush_green", description = "Bush (oracle)" }
 sprite{ id = "entities/bush_kingscrown", description = "Kingscrown" }
+sprite{ id = "entities/bush_lavendar", description = "Lavendar" }
+sprite{ id = "entities/bush_marigold", description = "Marigold" }
 sprite{ id = "entities/bush_monkshood", description = "Monkshood" }
 sprite{ id = "entities/bush_oak_forest", description = "Bush-Oak Forest" }
 sprite{ id = "entities/bush_small_tree", description = "small tree" }
 sprite{ id = "entities/bush_violet", description = "Violet" }
+sprite{ id = "entities/bush_witch_hazel", description = "Witch Hazel" }
 sprite{ id = "entities/bush_yarrow_white", description = "Yarrow - white" }
 sprite{ id = "entities/bush_yarrow_yellow", description = "Yarrow - Yellow" }
 sprite{ id = "entities/chain_link", description = "Chain Link" }
@@ -469,6 +474,7 @@ sprite{ id = "hud/arrow_icon", description = "arrow icon" }
 sprite{ id = "hud/bomb_icon", description = "bomb icon" }
 sprite{ id = "hud/gameover_fade", description = "HUD: Game-over fade" }
 sprite{ id = "hud/icon_pause", description = "icon_pause" }
+sprite{ id = "hud/magic_bar", description = "magic bar" }
 sprite{ id = "hud/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "hud/piece_of_heart_icon", description = "Piece of Heart icon" }
 sprite{ id = "hud/quest_log_update_icon", description = "Quest Log Update Icon" }
@@ -1033,6 +1039,7 @@ sound{ id = "burrow2", description = "Burrow 2" }
 sound{ id = "bush", description = "bush" }
 sound{ id = "bush_default", description = "bush_default" }
 sound{ id = "cane", description = "cane" }
+sound{ id = "charge_1", description = "charge_1" }
 sound{ id = "chest_open", description = "chest_open" }
 sound{ id = "click_low", description = "click_low" }
 sound{ id = "cursor", description = "cursor" }
@@ -1160,6 +1167,8 @@ item{ id = "bow", description = "Bow" }
 item{ id = "bow_bombs", description = "Bomb Arrows" }
 item{ id = "bow_fire", description = "Flame Arrows" }
 item{ id = "bread", description = "Burroak Bread" }
+item{ id = "burdock", description = "Burdock Root" }
+item{ id = "chamomile", description = "Chamomile" }
 item{ id = "charts", description = "Charts (for Kelpton)" }
 item{ id = "contract", description = "contract" }
 item{ id = "coral_ore", description = "Coral Ore" }
@@ -1199,6 +1208,7 @@ item{ id = "key_sinking_lighthouse", description = "Key - Sinking Lighthouse" }
 item{ id = "key_sometimes_cape_ruins", description = "Key - Sometimes Cape Ruins" }
 item{ id = "key_spruce_head", description = "Key - Spruce Head" }
 item{ id = "kingscrown", description = "Kingscrown Flowers" }
+item{ id = "lavendar", description = "Lavendar" }
 item{ id = "mandrake", description = "Mandrake" }
 item{ id = "mandrake_white", description = "white mandrake" }
 item{ id = "matches", description = "matches" }
@@ -1229,6 +1239,7 @@ item{ id = "tornado_dash", description = "Tornado Dash" }
 item{ id = "violets", description = "violets" }
 item{ id = "watering_can", description = "watering can" }
 item{ id = "whisky_for_juglan", description = "Whisky for Juglan" }
+item{ id = "witch_hazel", description = "Witch Hazel" }
 
 enemy{ id = "bosses/avalanche_golem", description = "Avalanche Golem" }
 enemy{ id = "bosses/bart", description = "Bart" }
@@ -1240,6 +1251,7 @@ enemy{ id = "bosses/jazari", description = "al Jazari" }
 enemy{ id = "bosses/michael", description = "Michael Mighty Mead Maker" }
 enemy{ id = "bosses/rock_spider_big", description = "rock spider - big" }
 enemy{ id = "bosses/thyme", description = "Captain Thyme" }
+enemy{ id = "general_enemy_example", description = "General Enemy Example" }
 enemy{ id = "misc/arrow_4", description = "Arrow - 4 directions" }
 enemy{ id = "misc/big_stone", description = "Big Stone" }
 enemy{ id = "misc/crusher_0.5", description = "Crusher 0.5 sec" }
@@ -1313,7 +1325,6 @@ enemy{ id = "normal_enemies/sword_soldier_blue", description = "sword soldier bl
 enemy{ id = "normal_enemies/triangle_crab_red", description = "Triangle Crab-Red" }
 enemy{ id = "normal_enemies/trumpet_player_disguise", description = "Trumpet Player Disguise" }
 enemy{ id = "normal_enemies/zora", description = "Zora" }
-enemy{ id = "tentacle", description = "tentacle" }
 
 entity{ id = "arrow", description = "arrow" }
 entity{ id = "arrow_bomb", description = "Bomb Arrow" }

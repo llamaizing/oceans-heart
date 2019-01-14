@@ -171,6 +171,20 @@ animation{
   },
 }
 animation{
+  name = "burdock",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 384, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "chamomile",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 368, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "charts",
   src_image = "entities/items.png",
   directions = {
@@ -458,6 +472,13 @@ animation{
   },
 }
 animation{
+  name = "lavendar",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "mandrake",
   src_image = "entities/items.png",
   directions = {
@@ -665,5 +686,12 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 256, y = 16, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "witch_hazel",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 192, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
