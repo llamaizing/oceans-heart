@@ -110,7 +110,7 @@ function behavior:create(enemy, properties)
     sol.timer.start(self, 200, function() enemy:check_hero() return true end)
   end
 
---local n=0
+local n=0
   --Check hero
   function enemy:check_hero()
 --print("checking"..n) n=n+1 print("attacking: ")print(attacking) print("going hero: ")print(going_hero)
@@ -307,17 +307,20 @@ end
       sol.audio.play_sound(properties.dash_attack_sound or "gravel")
       if properties.invincible_while_dashing then enemy:set_invincible() end
       m:start(enemy, function()
+--        print("movement done"..n)n=n+1
         enemy:set_default_attack_consequences()
         enemy:wrap_up_attack()
         enemy:go_random()
         enemy:check_hero()
       end) --movement callback function end
       function m:on_obstacle_reached()
+--        print("obstacle reached! "..n)
+        enemy:set_default_attack_consequences()
         enemy:wrap_up_attack()
         enemy:go_random()
         enemy:check_hero()
       end
-      sol.timer.start(map, 1000, function() enemy:wrap_up_attack() end) --just in case
+--      sol.timer.start(map, 1000, function() enemy:wrap_up_attack() end) --just in case
     end)
   end
 
