@@ -218,7 +218,7 @@ function behavior:create(enemy, properties)
       m:set_max_distance(8)
       m:start(enemy)
 
-      sol.audio.play_sound(properties.melee_attack_sound)
+      sol.audio.play_sound(properties.melee_attack_sound or "sword2")
       enemy:get_sprite():set_animation("attack", function()
         enemy:set_attack_consequence("sword", 1)
         enemy:get_sprite():set_animation("walking")
@@ -254,6 +254,7 @@ function enemy:teleport()
     enemy:set_can_attack(false) --temporary fix
     enemy:set_invincible()
       sprite:set_animation("phasing_out")
+      sol.audio.play_sound(properties.teleport_sound or "warp")
       sol.timer.start(map, 1000, function()
         print(sprite:get_animation())
         sprite:set_animation("teleporting")
@@ -279,14 +280,15 @@ end
   --Dash Attack
   function enemy:dash_attack()
     local sprite = enemy:get_sprite()
-    local wind_up_animation
+    --set the general wind-up animation
     sprite:set_animation("wind_up")
+    --actually, change it to a specific dash wind up if there is one
     if sprite:has_animation("dash_attack_wind_up") then sprite:set_animation("dash_attack_wind_up") end
-    sprite:set_animation(wind_up_animation)
+    --set general telegraph time, then change it to dash attack telegraph telegraph time if applicable
     local telegraph_time = properties.wind_up_time
     if properties.dash_attack_wind_up_time then telegraph_time = properties.dash_attack_wind_up_time end
+    --after the telegraph, dash at the hero!
     sol.timer.start(map, telegraph_time, function()
-      attacking = false
       sprite:set_animation("walking")
       if sprite:has_animation("dashing") then sprite:set_animation("dashing") end
       local m = sol.movement.create("straight")
@@ -297,7 +299,7 @@ end
       end
       m:set_speed(properties.dash_attack_speed)
       m:set_smooth(false)
-      sol.audio.play_sound(properties.dash_attack_sound)
+      sol.audio.play_sound(properties.dash_attack_sound or "gravel")
       if properties.invincible_while_dashing then enemy:set_invincible() end
       m:start(enemy, function()
         enemy:set_default_attack_consequences()
@@ -328,7 +330,7 @@ end
     if properties.summon_attack_wind_up_time then telegraph_time = properties.summon_attack_wind_up_time end
     sol.timer.start(map, telegraph_time, function()
       enemy:set_default_attack_consequences()
-      sol.audio.play_sound(properties.summoning_sound)
+      sol.audio.play_sound(properties.summoning_sound or "charge_1")
       local i = 0
       sol.timer.start(map, properties.summon_group_delay, function()
         local herox, heroy, herol = hero:get_position()
@@ -355,7 +357,7 @@ end
     local telegraph_time = properties.wind_up_time
     if properties.ranged_attack_wind_up_time then telegraph_time = properties.ranged_attack_wind_up_time end
     sol.timer.start(map, telegraph_time, function()
-      sol.audio.play_sound(properties.ranged_attack_sound)
+      sol.audio.play_sound(properties.ranged_attack_sound or "shoot")
       sprite:set_animation("shooting", function()
         going_hero = false
         enemy:go_random()
@@ -411,7 +413,7 @@ end
     if sprite:has_animation("orbit_attack_wind_up") then sprite:set_animation("orbit_attack_wind_up") end
     for i=1, NUM_PROJECTILES do
       sol.timer.start(map, CHARGE_TIME/NUM_PROJECTILES * i, function()
-        sol.audio.play_sound("shield")
+        sol.audio.play_sound(properties.orbit_attack_summon_sound or "shield")
         projectiles[i] = map:create_enemy({
           x = x, y = y, layer = layer, direction = direction,
           breed = properties.orbit_attack_projectile_breed

@@ -1086,6 +1086,9 @@ sound{ id = "quest_complete", description = "quest_complete" }
 sound{ id = "quest_log", description = "Quest Log" }
 sound{ id = "quest_started", description = "quest_started" }
 sound{ id = "quest_subtask", description = "quest_subtask" }
+sound{ id = "roll_1", description = "roll_1" }
+sound{ id = "roll_2", description = "roll_2" }
+sound{ id = "roll_2_grass", description = "roll_2_grass" }
 sound{ id = "running", description = "running" }
 sound{ id = "running_obstacle", description = "running_obstacle" }
 sound{ id = "rupee_counter", description = "rupee_counter" }
