@@ -1,6 +1,6 @@
 --[[ quest_log.lua
 	version 1.0a1
-	15 Dec 2018
+	6 Jan 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -20,11 +20,13 @@
 	the player can switch between using the left/right keys.
 ]]
 
+local multi_events = require"scripts/multi_events"
 local ui = require"scripts/menus/ui/ui"
 local util = require"scripts/menus/ui/util"
 local quest_data = require"scripts/menus/quest_log.dat"
 
-local quest_log = {}
+local quest_log = {x=0, y=0}
+multi_events:enable(quest_log)
 
 local game --the current game, must be manually updated using quest_log:set_game()
 
@@ -47,7 +49,7 @@ local COMPONENT_FUNCS = {
 	opacity = "set_opacity",
 }
 
-local LIST_VISIBLE_MAX_COUNT
+local LIST_VISIBLE_MAX_COUNT --(number, positive integer) - how many quests can be viewed in sidebar at one time
 
 local active_list = {} --(table, array) list of objectives to be displayed in quest log in the displayed order (active first followed by completed)
 local active_tab_index = 1 --(number, positive integer) index of active tab: 1="main", 2="side"
@@ -190,6 +192,9 @@ do
 		end
 		
 		LIST_VISIBLE_MAX_COUNT = quest_log.list_entries:get_count()
+		
+		--call this event (if defined) when initialization is done so other scripts can customize quest log
+		if quest_log.on_initialized then quest_log:on_initialized() end
 		
 		is_loaded = true --don't re-create surfaces next time menu is opened
 	end
@@ -334,11 +339,20 @@ function quest_log:set_tab(index)
 	--set quest completion rate text below sidebar
 	if self.complete_status then
 		local complete_status_text = sol.language.get_string"menu.quest_log.quests_count"
+		assert(complete_status_text, "Error: strings.dat entry 'menu.quest_log.quests_count' not found")
+		
 		local v1,v2 = game.objectives:get_counts(new_tab_name)
 		
 		local milestone = quest_data.quest_totals_milestone --savegame variable to use to determine if milestone is reached
-		if milestone and not game:get_value(milestone) then v2 = "?" end --replace quest total count with question mark until milestone reached
+		if milestone and not game:get_value(milestone) then --hide total quest count if milestone defined and not yet reached
+			local no_total_status_text = sol.language.get_string"menu.quest_log.quests_count_no_total"
+			if no_total_status_text then --use alternate strings.dat entry if it is defined (excludes total count)
+				complete_status_text = no_total_status_text --use alternate text instead
+				v2 = nil --don't make $v2 substitution for total quest count
+			else v2 = "?" end --alternate strings.dat entry is not defined, replace quest total with "?" instead (until milestone reached)
+		end
 		
+		--substitute for $v1 (quests completed) & $v2 (total quest count)
 		complete_status_text = util.substitute_text(
 			complete_status_text,
 			{v1,v2},
@@ -486,16 +500,16 @@ function quest_log:set_description(objective, phase)
 			else subcomponent:set_xy(0,0) end
 		end
 		
-		--set visibility and position of item icon
+		
 		local items = description.items --convenience
+		local max_line = quest_data.desc_text.subcomponent.count
+		local line_height = quest_data.desc_text.subcomponent.height --convenience
+		local gap_height = quest_data.desc_text.gap --convenience
+		local line_spacing = line_height + gap_height
+		
+		--set visibility and position of desc_items icons
 		if self.desc_items then --only draw item box if defined in quest_log.dat
-			local max_line = quest_data.desc_text.subcomponent.count
-			local line_height = quest_data.desc_text.subcomponent.height --convenience
-			local gap_height = quest_data.desc_text.gap --convenience
-			local line_spacing = line_height + gap_height
-			
-			local active_icon_index = objective:get_active_item_icon()
-			if active_icon_index then --player has at least one quest item in inventory
+			if objective:get_active_item_index() then --player has at least one quest item in inventory
 				for i=0,9 do
 					local sub_index = i==0 and 10 or i --$i0 uses subcomponent 10
 					
@@ -505,21 +519,25 @@ function quest_log:set_description(objective, phase)
 						local item_line = info.line --convenience
 						local item_text = info.text --convenience
 						
-						if i==0 then	
-							item_group:set_visible(true)
-							item_group.item_icon:set_index(active_icon_index)
-						else
-							local icon_index = objective:get_item_icon(i)
-							local item_count = game:get_value(objective:get_item_save_val(i)) or 0
-							local has_item = item_count > 0
-							if icon_index and has_item then
-								--enable and calculate icon to show
-								item_group:set_visible(true)
-								item_group.item_icon:set_index(icon_index)
-							else item_group:set_visible(false) end
-						end
+						local item_id,variant --may be nil
+						local has_item = true --may prove to be false later
+						if i>=1 then
+							item_id,variant = objective:get_item_id(i)
+							local current_variant = game:get_value(objective:get_item_save_val(i)) or 0
+							local has_item = current_variant == variant
+						else item_id,variant = objective:get_item_id() end
 						
-						if item_group:get_visible() then
+						if item_id and has_item then
+							item_group:set_visible(true)
+							
+							--set sprite to corresponding item
+							local sprite = item_group.item_sprite --convenience
+							local animation = item_id --convenience
+							local direction = variant - 1 --convenience
+							sprite:set_animation(animation)
+							sprite:set_direction(direction)
+							sprite:set_xy(sprite:get_origin())
+							
 							--calculate horizontal position
 							local text_component = self.desc_text:get_subcomponent(item_line)
 							--local x = text_component:test_text_size(item_text) --non-hack implementation
@@ -528,18 +546,54 @@ function quest_log:set_description(objective, phase)
 							local x = xtra_x - xtra --HAX --TODO workaround for Solarus issue #1025
 							
 							--calculate vertical position
-							local y = (item_line - 1)*line_spacing
+							local group_width,group_height = item_group:get_size()
+							local y = (item_line - 1)*line_spacing --top of sprite aligned to top of line
 							
 							item_group:set_xy(x, y)
-						end
-					else self.desc_items:get_subcomponent(sub_index):set_visible(false) end --don't show item box
+						else item_group:set_visible(false) end --hide because player doesn't have this item
+					else self.desc_items:get_subcomponent(sub_index):set_visible(false) end --don't show since it is an off-screen line
 				end
-			else self.desc_items:set_all("set_visible", false) end --don't show any item boxes
+			else self.desc_items:set_all("set_visible", false) end --player doesn't have any quest items, don't show any item sprites
+		end
+		
+		--set visibility and position of misc_item icon
+		if self.misc_items then --only draw misc item icon if defined in quest_log.dat
+			local info = items[11] --convenience
+			if info and info.line <= max_line then
+				local item_group = self.misc_items --convenience
+				local sprite = item_group:get_subcomponent(1) --convenience
+				local item_line = info.line --convenience
+				local item_text = info.text --convenience
+				local item_id = info.item_id --convenience
+				local variant = info.variant --convenience
+				
+				item_group:set_visible(true)
+				
+				local animation = item_id --convenience
+				local direction = variant - 1 --convenience
+				sprite:set_animation(animation)
+				sprite:set_direction(direction)
+				sprite:set_xy(sprite:get_origin())
+				
+				--calculate horizontal position
+				local text_component = self.desc_text:get_subcomponent(item_line)
+				--local x = text_component:test_text_size(item_text) --non-hack implementation
+				local xtra_x = text_component:test_text_size(item_text.."a") --HAX
+				local xtra = text_component:test_text_size"a" --HAX
+				local x = xtra_x - xtra --HAX --TODO workaround for Solarus issue #1025
+				
+				--calculate vertical position
+				local sprite_width,sprite_height = sprite:get_size()
+				local y = (item_line - 1)*line_spacing - sprite_height + line_height --bottom of sprite aligned to bottom of line
+				
+				item_group:set_xy(x, y)
+			else self.misc_items:set_visible(false) end --don't show not present or if it is an off-screen line
 		end
 		
 		local is_done = objective:is_done()
 		if phase then is_done = phase>=objective:get_num_phases() end
 		if self.desc_complete then self.desc_complete:set_visible(is_done) end
+		if self.desc_location then self.desc_location:set_enabled(not is_done) end
 		
 		objective:clear_status()
 	else --display blank pane
@@ -557,6 +611,7 @@ function quest_log:set_description(objective, phase)
 		self.dynamic_checkmarks:set_all("set_visible", false)
 		if self.desc_complete then self.desc_complete:set_visible(false) end
 		if self.desc_items then self.desc_items:set_all("set_visible", false) end
+		if self.misc_items then self.misc_items:set_visible(false) end
 	end
 end
 
@@ -575,12 +630,14 @@ function quest_log:set_top_position(index)
 		local objective = active_list[top_index + i - 1] --may be nil
 		
 		if objective then --populate contents per objective
+			local is_done = objective:is_done()
 			group.title:set_text(objective.get_title())
-			group.title:set_enabled(not objective:is_done())
+			group.title:set_enabled(not is_done)
 			group.location:set_text(objective:get_location())
+			group.location:set_enabled(not is_done)
 			
 			local status = not not objective:get_status()
-			group.entry_checkmark:set_visible(objective:is_done() or status)
+			group.entry_checkmark:set_visible(is_done or status)
 			if status then
 				group.entry_checkmark:set_animation"new"
 			else group.entry_checkmark:set_animation"done" end
@@ -642,6 +699,18 @@ function quest_log:set_highlight_position(index, is_animate)
 	sel_index = index
 end
 
+--// Gets/sets the x,y position of the menu in pixels
+function quest_log:get_xy() return self.x, self.y end
+function quest_log:set_xy(x, y)
+	x = tonumber(x)
+	assert(x, "Bad argument #2 to 'set_xy' (number expected)")
+	y = tonumber(y)
+	assert(y, "Bad argument #3 to 'set_xy' (number expected)")
+	
+	self.x = math.floor(x)
+	self.y = math.floor(y)
+end
+
 function quest_log:on_started()
 	assert(game, "The current game must be set using 'quest_log:set_game(game)'")
 	--TODO v1.6 get game using sol.main.get_game() instead
@@ -666,13 +735,15 @@ function quest_log:on_command_pressed(command)
 		self:move_selection(1)
 		return true
 	elseif command=="left" then
-		if active_tab_index==2 then self:set_tab(1) end
-		
-		return true
+		if active_tab_index==2 then
+			self:set_tab(1)
+			return true
+		end
 	elseif command=="right" then
-		if active_tab_index==1 then self:set_tab(2) end
-		
-		return true
+		if active_tab_index==1 then
+			self:set_tab(2)
+			return true
+		end
 	elseif command=="attack" then
 		--TODO exit menu
 		return true
@@ -723,12 +794,12 @@ function quest_log:on_key_released(key)
 end
 
 function quest_log:on_draw(dst_surface)
-	self.menu:draw(dst_surface)
+	self.menu:draw(dst_surface, self.x, self.y)
 end
 
 return quest_log
 
---[[ Copyright 2018 Llamazing
+--[[ Copyright 2018-2019 Llamazing
   [[ 
   [[ This program is free software: you can redistribute it and/or modify it under the
   [[ terms of the GNU General Public License as published by the Free Software Foundation,
