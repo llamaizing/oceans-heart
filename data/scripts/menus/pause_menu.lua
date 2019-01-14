@@ -167,7 +167,6 @@ function pause_menu:on_started()
 
     --STUFF FROM MAX:
     --a couple submenus need to be initialized before they can be started.
-
     inventory:initialize(game)
     
 	self:recall_saved_submenu()
