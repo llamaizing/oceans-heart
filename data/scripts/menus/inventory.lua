@@ -1,6 +1,10 @@
-local inventory = {}
+local multi_events = require"scripts/multi_events"
 
-local quest_log = require"scripts/menus/quest_log"
+local inventory = {x=0, y=0}
+multi_events:enable(inventory)
+
+local game --the current game, must be manually updated using pause_menu:set_game()
+
 
 --All items that could ever show up in the inventory:
 local all_equipment_items = {
@@ -53,10 +57,31 @@ local MAX_INDEX = 15 --when every slot is full of an item, this should equal #al
 
 local cursor_index
 
+--// Call whenever starting new game
+function inventory:set_game(current_game) game = current_game end
+
+--// Gets/sets the x,y position of the menu in pixels
+function inventory:get_xy() return self.x, self.y end
+function inventory:set_xy(x, y)
+	x = tonumber(x)
+	assert(x, "Bad argument #2 to 'set_xy' (number expected)")
+	y = tonumber(y)
+	assert(y, "Bad argument #3 to 'set_xy' (number expected)")
+	
+	self.x = math.floor(x)
+	self.y = math.floor(y)
+end
+
+function inventory:on_started()
+	assert(game, "The current game must be set using 'inventory:set_game(game)'")
+end
+
 
 function inventory:initialize(game)
     --set the cursor index, or which item the cursor is over
-    --remember, the cursor index is 0 based and the all_equipment_items table starts at 1
+    --remember, the cursor index is 0 based but the all_equipment_items table starts at 1
+    --since the cursor index is zero based, so are rows and columns.
+    --So if ROWS is set to 4, that means you have rows 0, 1, 2, and 3. I'm writing this here because I'm gonna forget.
     cursor_index = game:get_value("inventory_cursor_index") or 0
     --initialize cursor's row and column
     self.cursor_column = 0
@@ -125,30 +150,6 @@ function inventory:on_started()
 end
 
 
-function inventory:on_draw(dst_surface)
-    --draw the elements
-    self.menu_background:draw(dst_surface)
-    self.cursor_sprite:draw(dst_surface, self.cursor_column * 32 + GRID_ORIGIN_X + 32,  self.cursor_row * 32 + GRID_ORIGIN_Y)
-    self.description_panel:draw(dst_surface, (COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16, ROWS *32 + GRID_ORIGIN_Y - 8)
-    --draw assigned items: (or, if you can see what items you have assigned elsewhere, maybe don't!)
---    if self.assigned_item_sprite_1 then self.assigned_item_sprite_1:draw(dst_surface, GRID_ORIGIN_X + 32, GRID_ORIGIN_Y-32) end
---    if self.assigned_item_sprite_2 then self.assigned_item_sprite_2:draw(dst_surface, GRID_ORIGIN_X + 32 + 32, GRID_ORIGIN_Y-32) end
-
-    --draw inventory items
-    for i=1, #all_equipment_items do
-        if self.equipment_sprites[i] then
-            --draw the item's sprite from the sprites table
-            local x = ((i-1)%ROWS) * 32 + GRID_ORIGIN_EQUIP_X + 32
-            local y = math.floor((i-1) / ROWS) * 32 + GRID_ORIGIN_EQUIP_Y
-            self.equipment_sprites[i]:draw(dst_surface, x, y)
-            if self.counters[i] then
-                --draw the item's counter
-                self.counters[i]:draw(dst_surface, x+8, y+4 )
-            end
-        end
-    end
-
-end
 
 function inventory:update_cursor_position(new_index)
     local game = sol.main.game
@@ -174,24 +175,26 @@ end
 function inventory:on_command_pressed(command)
     local game = sol.main.game
     local handled = false
-
+    
     if command == "right" then
+        if self.cursor_column == COLUMNS - 1 then return false end
         sol.audio.play_sound("cursor")
         self:update_cursor_position(cursor_index + 1)
         handled = true
     elseif command == "left" then
+        if self.cursor_column == 0 then return false end
         sol.audio.play_sound("cursor")
         self:update_cursor_position(cursor_index -1)
         handled = true
     elseif command == "up" then
         sol.audio.play_sound("cursor")
         self:update_cursor_position(cursor_index - COLUMNS)
-        hendled = true
+        handled = true
     elseif command == "down" then
         sol.audio.play_sound("cursor")
         self:update_cursor_position(cursor_index + COLUMNS)
-        hendled = true
-
+        handled = true
+        
     elseif command == "item_1" then
         local item = self:get_item_at_current_index()
         if item and item:is_assignable() then
@@ -200,6 +203,7 @@ function inventory:on_command_pressed(command)
         else sol.audio.play_sound("wrong")
         end
         self:initialize_assigned_item_sprites(game)
+        handled = true
     elseif command == "item_2" then
         local item = self:get_item_at_current_index()
         if item and item:is_assignable() then
@@ -208,9 +212,10 @@ function inventory:on_command_pressed(command)
         else sol.audio.play_sound("wrong")
         end
         self:initialize_assigned_item_sprites(game)
-
+        handled = true
     elseif command == "action" then
---        sol.menu.start(game, quest_log)
+        --        sol.menu.start(game, quest_log)
+        handled = true
     end
     return handled
 end
@@ -221,6 +226,30 @@ function inventory:get_item_at_current_index()
     if item:get_variant() > 0 then
         return item
     else return nil
+    end
+end
+
+function inventory:on_draw(dst_surface)
+    --draw the elements
+    self.menu_background:draw(dst_surface)
+    self.cursor_sprite:draw(dst_surface, (self.cursor_column * 32 + GRID_ORIGIN_X + 32),  (self.cursor_row * 32 + GRID_ORIGIN_Y))
+    self.description_panel:draw(dst_surface, ((COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16), (ROWS *32 + GRID_ORIGIN_Y - 8))
+    --draw assigned items: (or, if you can see what items you have assigned elsewhere, maybe don't!)
+--    if self.assigned_item_sprite_1 then self.assigned_item_sprite_1:draw(dst_surface, GRID_ORIGIN_X + 32, GRID_ORIGIN_Y-32) end
+--    if self.assigned_item_sprite_2 then self.assigned_item_sprite_2:draw(dst_surface, GRID_ORIGIN_X + 32 + 32, GRID_ORIGIN_Y-32) end
+
+    --draw inventory items
+    for i=1, #all_equipment_items do
+        if self.equipment_sprites[i] then
+            --draw the item's sprite from the sprites table
+            local x = ((i-1)%ROWS) * 32 + GRID_ORIGIN_EQUIP_X + 32
+            local y = math.floor((i-1) / ROWS) * 32 + GRID_ORIGIN_EQUIP_Y
+            self.equipment_sprites[i]:draw(dst_surface, x, y)
+            if self.counters[i] then
+                --draw the item's counter
+                self.counters[i]:draw(dst_surface, x+8, y+4 )
+            end
+        end
     end
 end
 

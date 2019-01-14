@@ -3,11 +3,11 @@ require("scripts/multi_events")
 require("scripts/weather/weather_manager")
 local game_restart = require("scripts/game_restart")
 local initial_game = require("scripts/initial_game")
-local quest_log = require"scripts/menus/quest_log"
-local inventory = require"scripts/menus/inventory"
+local pause_menu = require"scripts/menus/pause_menu"
+--local quest_log = require"scripts/menus/quest_log"
+--local inventory = require"scripts/menus/inventory"
 local quest_update_icon = require"scripts/menus/quest_update_icon"
 local objectives_manager = require"scripts/objectives_manager"
-
 
 local game_manager = {}
 
@@ -41,16 +41,18 @@ function game_manager:create(file_name)
 
   --From llamazing's quest log menu:
     objectives_manager.create(game)
-    quest_log:set_game(game)
+--    quest_log:set_game(game)
+    pause_menu:set_game(game)
     	
     function game:on_paused()
-      inventory:initialize(game)
-    	sol.menu.start(game, inventory)
+--      inventory:initialize(game)
+--    	sol.menu.start(game, inventory)
+      sol.menu.start(game, pause_menu)
     end
     	
-    function game:on_unpaused()
-    	sol.menu.stop(inventory)
-    end
+    -- function game:on_unpaused()
+    -- 	sol.menu.stop(inventory)
+    -- end
 
     local QUEST_SOUNDS = {
     	main_all_completed = "quest_complete",
