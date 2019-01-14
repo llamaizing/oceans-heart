@@ -33,7 +33,7 @@ local properties = {
   projectile_damage = 5,
   projectile_split_children = 5,
 
---  has_dash_attack = true,
+  has_dash_attack = true,
   dash_attack_distance = 150,
   dash_attack_cooldown = 3000,
   dash_attack_direction = "target_hero",

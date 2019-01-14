@@ -3712,26 +3712,10 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 336,
-  y = 357,
+  x = 384,
+  y = 349,
   direction = 0,
-  breed = "normal_enemies/pirate_sword_brown_1",
-}
-
-enemy{
-  layer = 0,
-  x = 504,
-  y = 317,
-  direction = 0,
-  breed = "normal_enemies/pirate_sword_brown_1",
-}
-
-enemy{
-  layer = 0,
-  x = 440,
-  y = 405,
-  direction = 0,
-  breed = "normal_enemies/pirate_sword_brown_1",
+  breed = "bosses/fiend_1",
 }
 
 tile{
