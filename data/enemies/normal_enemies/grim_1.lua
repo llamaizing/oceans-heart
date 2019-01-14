@@ -10,7 +10,8 @@ local properties = {
   damage = 30,
   normal_speed = 20,
   faster_speed = 85,
-  detection_distance = 75,
+--  detection_distance = 80,
+  detection_distance = 100, --this is just for testing, 80 works better for the actual enemy
   movement_create = function()
     local m = sol.movement.create("random")
     return m
@@ -23,7 +24,7 @@ local properties = {
   has_melee_attack = true,
   melee_attack_wind_up_time = 500,
   melee_distance = 70,
-  melee_attack_cooldown = 3000,
+  melee_attack_cooldown = 6000,
   melee_attack_sound = "sword2",
   attack_sprites = {"enemies/misc/air_wave"},
 
@@ -48,10 +49,6 @@ local properties = {
   orbit_attack_projectile_breed = "normal_enemies/bat_1",
   orbit_attack_radius = 16,
 
---for circleing hero movement:
---  movement_circle_hero = true,
-  movement_circle_hero_radius = 64,
-    movement_circle_hero_radius_speed = 25,
 
 }
 

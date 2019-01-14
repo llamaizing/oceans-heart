@@ -1,7 +1,7 @@
 local enemy = ...
 
 local properties_setter = require("enemies/lib/properties_setter")
-local behavior = require("enemies/lib/ogre")
+local behavior = require("enemies/lib/general_enemy")
 
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),
@@ -15,7 +15,19 @@ local properties = {
   attack_sound = "sword2",
   must_be_aligned_to_attack = false,
   push_hero_on_sword = true,
+  must_be_aligned_to_attack = true,
+
+  has_melee_attack = true,
+  melee_attack_wind_up_time = 400,
+  melee_distance = 75,
+  melee_attack_cooldown = 5000,
+  melee_attack_sound = "sword2",
   attack_sprites = {"enemies/misc/sword_slash"},
+
+--for circleing hero movement:
+  movement_circle_hero = true,
+  movement_circle_hero_radius = 54,
+    movement_circle_hero_radius_speed = 10,
 }
 
 properties_setter:set_properties(enemy, properties)
