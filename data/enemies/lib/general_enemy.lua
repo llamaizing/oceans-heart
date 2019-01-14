@@ -109,10 +109,10 @@ function behavior:create(enemy, properties)
     sol.timer.start(self, 200, function() enemy:check_hero() return true end)
   end
 
-local n=0
+--local n=0
   --Check hero
   function enemy:check_hero()
-print("checking"..n) n=n+1 print("attacking: ")print(attacking) print("going hero: ")print(going_hero)
+--print("checking"..n) n=n+1 print("attacking: ")print(attacking) print("going hero: ")print(going_hero)
     if not attacking then
       local near_hero = self:is_near_hero()
       enemy:check_to_break_circle()
