@@ -92,9 +92,10 @@ function behavior:create(enemy, properties)
 
   --initialize universal enemy stuff:
   normal_functions:initialize(enemy, properties)
-  --this is pretty notmal too, but needs check_hero()
+
+  --Deal with hitting obstacle in movement
   function enemy:on_obstacle_reached(movement)
-    if not going_hero then
+    if not going_hero and attacking == false then
       self:go_random()
       self:check_hero()
     end
@@ -147,7 +148,7 @@ function behavior:create(enemy, properties)
     --   going_hero = false
     --   can_custom_attack = false
     --   local f = properties.custom_attack
-    --   f(function() attacking = false enemy:go_random() enemy:check_hero() end)
+    --   f(function() enemy:wrap_up_attack() enemy:go_random() enemy:check_hero() end)
     --   sol.timer.start(map, properties.custom_attack_cooldown, function() can_custom_attack = true end)
 
     if properties.has_melee_attack and aligned and can_melee and dist_hero <= properties.melee_distance then
@@ -197,6 +198,12 @@ function behavior:create(enemy, properties)
 
 
 
+  --this needs to be called after each attack:
+  function enemy:wrap_up_attack()
+    sol.timer.start(map, properties.time_between_attacks or 1300, function()
+      attacking = false
+    end)
+  end
 
 
   --Melee Attack
@@ -235,7 +242,7 @@ function behavior:create(enemy, properties)
           enemy:set_attack_consequence_sprite(attack_sprite, "sword", "protected")
         end
       end
-      attacking = false
+      enemy:wrap_up_attack()
     end)
   end
 
@@ -244,36 +251,34 @@ function behavior:create(enemy, properties)
   --Teleport
 function enemy:teleport()
   if properties.stop_movement_while_teleporting then enemy:stop_movement() end
-  if properties.invincible_while_charging_teleport then enemy:set_invincible() end
   local sprite = enemy:get_sprite()
-  sprite:set_animation("wind_up")
-  if sprite:has_animation("teleport_wind_up") then sprite:set_animation("teleport_wind_up") end
-  local telegraph_time = properties.wind_up_time
-  if properties.teleport_wind_up_time then telegraph_time = properties.teleport_wind_up_time end
-  sol.timer.start(map, telegraph_time, function()
-    enemy:set_can_attack(false) --temporary fix
-    enemy:set_invincible()
-      sprite:set_animation("phasing_out")
+  enemy:set_can_attack(false)
+  enemy:set_invincible()
+  sprite:set_animation("phasing_out")
+  sol.audio.play_sound(properties.teleport_sound or "warp")
+  sol.timer.start(map, 1000, function()
+    sprite:set_animation("teleporting")
+    local m = sol.movement.create("straight")
+    m:set_speed(100)
+    m:set_smooth()
+    m:set_max_distance(properties.teleport_length)
+    m:set_angle(math.random(0, math.pi * 2))
+    m:start(enemy)
+    sol.timer.start(map, properties.time_phased_out, function()
       sol.audio.play_sound(properties.teleport_sound or "warp")
-      sol.timer.start(map, 1000, function()
-        print(sprite:get_animation())
-        sprite:set_animation("teleporting")
-        local m = sol.movement.create("straight")
-        m:set_speed(100)
-        m:set_smooth()
-        m:set_max_distance(properties.teleport_length)
-        m:set_angle(math.random(0, math.pi * 2))
-        m:start(enemy)
-        sol.timer.start(map, properties.time_phased_out, function()
-          enemy:set_default_attack_consequences()
-          enemy:set_can_attack() --temporary fix
-          sprite:set_animation("phasing_in", function() sprite:set_animation("walking") end)
-          attacking = false
-          enemy:go_random()
-          enemy:check_hero()
-        end)
+      sprite:set_animation("phasing_in", function()
+        sprite:set_animation("walking")
+      end)
+      sol.timer.start(map, 1500, function()
+        enemy:set_default_attack_consequences()
+        enemy:set_can_attack()
+        enemy:wrap_up_attack()
+        enemy:go_random()
+        enemy:check_hero()
+      end)
     end)
   end)
+
 end
 
 
@@ -303,16 +308,16 @@ end
       if properties.invincible_while_dashing then enemy:set_invincible() end
       m:start(enemy, function()
         enemy:set_default_attack_consequences()
-        attacking = false
+        enemy:wrap_up_attack()
         enemy:go_random()
         enemy:check_hero()
       end) --movement callback function end
       function m:on_obstacle_reached()
-        attacking = false
+        enemy:wrap_up_attack()
         enemy:go_random()
         enemy:check_hero()
       end
-      sol.timer.start(map, 1000, function() attacking = false end) --just in case
+      sol.timer.start(map, 1000, function() enemy:wrap_up_attack() end) --just in case
     end)
   end
 
@@ -340,7 +345,7 @@ end
         i = i + 1
         if i < properties.summon_group_size then return true end
       end)
-      attacking = false
+      enemy:wrap_up_attack()
       enemy:go_random()
       enemy:check_hero()
     end)
@@ -394,7 +399,7 @@ end
     if properties.projectile_num_bounces then
       projectile:set_max_bounces(properties.projectile_num_bounces)
     end
-    attacking = false
+    enemy:wrap_up_attack()
   end
 
 
@@ -428,7 +433,7 @@ end
     end
     sol.timer.start(map, CHARGE_TIME + SHOOT_DELAY, function()
       sol.audio.play_sound("sword2")
-      attacking = false
+      enemy:wrap_up_attack()
       for i=1, #projectiles do
         if projectiles[i]:exists() and projectiles[i]:get_life() > 0 then
           sol.timer.start(map, (properties.orbit_attack_projectile_delay * i), function()

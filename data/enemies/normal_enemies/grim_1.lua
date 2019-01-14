@@ -29,12 +29,11 @@ local properties = {
   attack_sprites = {"enemies/misc/air_wave"},
 
 --  has_teleport = true,
-  teleport_wind_up = 400,
   teleport_distance = 60,
   teleport_cooldown = 10000,
-  invincible_while_charging_teleport = false,
+  invincible_while_charging_teleport = true,
   teleport_length = 120,
-  time_phased_out = 2500,
+  time_phased_out = 4000,
 
   has_orbit_attack = true,
   orbit_attack_distance = 190,

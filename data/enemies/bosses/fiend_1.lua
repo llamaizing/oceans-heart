@@ -40,7 +40,7 @@ local properties = {
   dash_attack_length = 96,
   dash_attack_speed = 120,
   dash_attack_wind_up = 600,
-  dash_attack_sound = "running",
+  dash_attack_sound = "monster_roar_1",
 
 --  has_orbit_attack = true,
   orbit_attack_distance = 190,
