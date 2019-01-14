@@ -196,12 +196,12 @@ function game_manager:create(file_name)
           game:set_value("hero_rolling", true)
         end
         sol.audio.play_sound("dash")
+        can_dash = false
 
         m:start(hero, function()
           hero:unfreeze()
           game:set_value("hero_dashing", false)
           game:set_value("hero_rolling", false)
-          can_dash = false
           sol.timer.start(hero, 800, function()
             can_dash = true
           end)

@@ -49,7 +49,7 @@ local properties = {
   orbit_attack_radius = 16,
 
 --for circleing hero movement:
-  movement_circle_hero = true,
+--  movement_circle_hero = true,
   movement_circle_hero_radius = 64,
     movement_circle_hero_radius_speed = 25,
 

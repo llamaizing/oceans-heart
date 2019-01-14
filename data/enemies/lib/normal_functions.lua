@@ -50,7 +50,10 @@ function normal_functions:set(enemy, properties)
 
     if properties.movement_circle_hero then
       local m = sol.movement.create("circle")
+      m:set_ignore_obstacles(properties.ignore_obstacles)
       m:set_center(hero)
+      local angle_from_center = self:get_angle(hero)
+      m:set_angle_from_center(angle_from_center + math.pi)
       m:set_radius(properties.movement_circle_hero_radius)
       m:set_radius_speed(properties.movement_circle_hero_radius_speed)
       m:start(self)
