@@ -7,5 +7,10 @@ function item:on_started()
 end
 
 function item:on_obtaining(variant, savegame_variable)
-  self:add_amount(1)
+  local amounts = {1, 3, 5, 10}
+  local amount = amounts[variant]
+  if amount == nil then
+    error("Invalid variant '" .. variant .. "' for item")
+  end
+  self:add_amount(amount)
 end

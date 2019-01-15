@@ -7,8 +7,12 @@ function item:on_started()
 end
 
 function item:on_obtained()
-  self:add_amount(1)
-  print(game:get_value("amount_firethorn_berries"))
+  local amounts = {1, 5, 10}
+  local amount = amounts[variant]
+  if amount == nil then
+    error("Invalid variant '" .. variant .. "' for item")
+  end
+  self:add_amount(amount)
 end
 
 -- Event called when a pickable treasure representing this item

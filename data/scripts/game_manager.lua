@@ -85,7 +85,7 @@ function game_manager:create(file_name)
   end
 
   function game:start_magic_regen_timer()
-    sol.timer.start(game, 200, function()
+    sol.timer.start(game, 300, function()
       if not game:is_suspended() then
         game:add_magic(1)
       end  

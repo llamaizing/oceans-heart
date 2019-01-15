@@ -10,7 +10,7 @@ end
 
 function item:on_obtaining(variant, savegame_variable)
 
-  local amounts = {5, 10, 20, 50, 100, 200, 500}
+  local amounts = {5, 10, 20, 50, 100, 200, 500, 1000}
   local amount = amounts[variant]
   if amount == nil then
     error("Invalid variant '" .. variant .. "' for item 'rupee'")

@@ -24,6 +24,7 @@ local all_equipment_items = {
     "bow",
     "bow_fire",
     "bow_bombs",
+    "potion_magic_restoration",
 }
 
 --captions for each item. Has to be in same order
@@ -44,6 +45,7 @@ local item_descriptions = {
     "Bow",
     "Flame Arrows",
     "Bomb Arrows",
+    "Magic Potion"
 }
 
 --constants:
@@ -52,8 +54,8 @@ local GRID_ORIGIN_Y = 72
 local GRID_ORIGIN_EQUIP_X = GRID_ORIGIN_X
 local GRID_ORIGIN_EQUIP_Y = GRID_ORIGIN_Y
 local ROWS = 4
-local COLUMNS = 4
-local MAX_INDEX = 15 --when every slot is full of an item, this should equal #all_equipment_items
+local COLUMNS = 5
+local MAX_INDEX = ROWS*COLUMNS --when every slot is full of an item, this should equal #all_equipment_items
 
 local cursor_index
 
@@ -154,12 +156,13 @@ end
 function inventory:update_cursor_position(new_index)
     local game = sol.main.game
     if(new_index <= MAX_INDEX and new_index >= 0) then cursor_index = new_index end
-    local new_column = (cursor_index % ROWS)
+    local new_column = (cursor_index % COLUMNS)
     self.cursor_column = new_column
-    local new_row = math.floor(cursor_index / ROWS)
+    local new_row = math.floor(cursor_index / COLUMNS)
     if new_row < ROWS then self.cursor_row = new_row end
     game:set_value("inventory_cursor_index", cursor_index)
     self:update_description_panel()
+--    print("column: " .. self.cursor_column .. " row: " .. self.cursor_row)
 end
 
 function inventory:update_description_panel()
@@ -200,7 +203,7 @@ function inventory:on_command_pressed(command)
         if item and item:is_assignable() then
             game:set_item_assigned(1, item)
             sol.audio.play_sound("ok")
-        else sol.audio.play_sound("wrong")
+        else sol.audio.play_sound("no")
         end
         self:initialize_assigned_item_sprites(game)
         handled = true
@@ -209,7 +212,7 @@ function inventory:on_command_pressed(command)
         if item and item:is_assignable() then
             game:set_item_assigned(2, item)
             sol.audio.play_sound("ok")
-        else sol.audio.play_sound("wrong")
+        else sol.audio.play_sound("no")
         end
         self:initialize_assigned_item_sprites(game)
         handled = true
@@ -242,8 +245,8 @@ function inventory:on_draw(dst_surface)
     for i=1, #all_equipment_items do
         if self.equipment_sprites[i] then
             --draw the item's sprite from the sprites table
-            local x = ((i-1)%ROWS) * 32 + GRID_ORIGIN_EQUIP_X + 32
-            local y = math.floor((i-1) / ROWS) * 32 + GRID_ORIGIN_EQUIP_Y
+            local x = ((i-1)%COLUMNS) * 32 + GRID_ORIGIN_EQUIP_X + 32
+            local y = math.floor((i-1) / COLUMNS) * 32 + GRID_ORIGIN_EQUIP_Y
             self.equipment_sprites[i]:draw(dst_surface, x + self.x, y + self.y)
             if self.counters[i] then
                 --draw the item's counter

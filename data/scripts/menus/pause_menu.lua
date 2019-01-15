@@ -13,8 +13,8 @@ local game --the current game, must be manually updated using pause_menu:set_gam
 local is_changing_menus = false --true while switching between submenus to block keyboard/controller inputs during that time
 
 local SUBMENU_LIST = { --order matters
+	inventory,
 	quest_log,
-    inventory,
     map_screen
 } for i,v in ipairs(SUBMENU_LIST) do SUBMENU_LIST[v]=i end --add reverse lookup
 

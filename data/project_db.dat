@@ -1060,6 +1060,7 @@ sound{ id = "explosion", description = "explosion" }
 sound{ id = "external_stairs_down", description = "external_stairs_down" }
 sound{ id = "external_stairs_up", description = "external_stairs_up" }
 sound{ id = "fire_burning", description = "fire_burning" }
+sound{ id = "fire_burst_1", description = "Fire Burst 1" }
 sound{ id = "gravel", description = "gravel" }
 sound{ id = "gravel2", description = "gravel2" }
 sound{ id = "heart", description = "heart" }
@@ -1077,10 +1078,12 @@ sound{ id = "internal_stairs_up", description = "internal_stairs_up" }
 sound{ id = "item_in_water", description = "item_in_water" }
 sound{ id = "jump", description = "jump" }
 sound{ id = "lift", description = "lift" }
+sound{ id = "magic_bar", description = "magic_bar" }
 sound{ id = "message_end", description = "message_end" }
 sound{ id = "message_letter", description = "message_letter" }
 sound{ id = "monster_hurt", description = "monster_hurt" }
 sound{ id = "monster_roar_1", description = "Monster Roar 1" }
+sound{ id = "no", description = "no" }
 sound{ id = "ok", description = "ok" }
 sound{ id = "pause_closed", description = "pause_closed" }
 sound{ id = "pause_open", description = "pause_open" }
@@ -1149,42 +1152,42 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
 item{ id = "amulet", description = "amulet" }
-item{ id = "apples", description = "Apple" }
+item{ id = "apples", description = "Apples - 1,3,5,10" }
 item{ id = "armor_tools", description = "Armorer Tools" }
 item{ id = "armor_upgrade_1", description = "Armor Upgrade 1" }
 item{ id = "armor_upgrade_2", description = "Armor Upgrade 2" }
-item{ id = "arrow", description = "arrow-map" }
+item{ id = "arrow", description = "arrow-map-1,5,10" }
 item{ id = "attack_upgrade", description = "Attack Upgrade - For Testing" }
 item{ id = "bag_of_money", description = "bag of money" }
 item{ id = "bait", description = "Bait" }
 item{ id = "ball_and_chain", description = "Ball and Chain" }
 item{ id = "barrier", description = "Barrier" }
-item{ id = "berries", description = "Berries" }
-item{ id = "bomb", description = "bombs-map" }
+item{ id = "berries", description = "Berries-1,3,5,10" }
+item{ id = "bomb", description = "bombs-map-1,3,5,10,20" }
 item{ id = "bombs_counter", description = "bombs inventory item" }
 item{ id = "bombs_counter_2", description = "Bombs" }
 item{ id = "boomerang", description = "Boomerang" }
 item{ id = "bow", description = "Bow" }
 item{ id = "bow_bombs", description = "Bomb Arrows" }
 item{ id = "bow_fire", description = "Flame Arrows" }
-item{ id = "bread", description = "Burroak Bread" }
-item{ id = "burdock", description = "Burdock Root" }
-item{ id = "chamomile", description = "Chamomile" }
+item{ id = "bread", description = "Burroak Bread-1,5,10" }
+item{ id = "burdock", description = "Burdock Root-1,3,5,10" }
+item{ id = "chamomile", description = "Chamomile-1,5,10" }
 item{ id = "charts", description = "Charts (for Kelpton)" }
 item{ id = "contract", description = "contract" }
 item{ id = "coral_ore", description = "Coral Ore" }
 item{ id = "crystal_spark", description = "Crystal Spark - Ophira's Ember" }
 item{ id = "dandelion_charm", description = "Dandelion Charm" }
-item{ id = "dandelion_seeds", description = "Dandelion Seeds" }
+item{ id = "dandelion_seeds", description = "Dandelion Seeds-1,5,10" }
 item{ id = "dash", description = "dash" }
 item{ id = "defense_upgrade", description = "defense upgrade" }
 item{ id = "elixer", description = "Elixer Vitae" }
 item{ id = "empty", description = "test" }
-item{ id = "firethorn_berries", description = "Firethorn Berries" }
+item{ id = "firethorn_berries", description = "Firethorn Berries-1,5,10" }
 item{ id = "flippers", description = "flippers" }
-item{ id = "forsythia", description = "Forsythia" }
-item{ id = "geode", description = "Geode" }
-item{ id = "ghost_orchid", description = "Ghost Orchid" }
+item{ id = "forsythia", description = "Forsythia-1,5,10" }
+item{ id = "geode", description = "Geode-1,5,10" }
+item{ id = "ghost_orchid", description = "Ghost Orchid-1,3,5" }
 item{ id = "gust", description = "Gust" }
 item{ id = "health_upgrade", description = "health upgrade" }
 item{ id = "hideout_chart", description = "Hideout Chart" }
@@ -1209,21 +1212,22 @@ item{ id = "key_sinking_lighthouse", description = "Key - Sinking Lighthouse" }
 item{ id = "key_sometimes_cape_ruins", description = "Key - Sometimes Cape Ruins" }
 item{ id = "key_spruce_head", description = "Key - Spruce Head" }
 item{ id = "kingscrown", description = "Kingscrown Flowers" }
-item{ id = "lavendar", description = "Lavendar" }
-item{ id = "mandrake", description = "Mandrake" }
-item{ id = "mandrake_white", description = "white mandrake" }
+item{ id = "lavendar", description = "Lavendar-1,5,10" }
+item{ id = "mandrake", description = "Mandrake-1,5,10" }
+item{ id = "mandrake_white", description = "white mandrake-1,3,5" }
 item{ id = "matches", description = "matches" }
 item{ id = "menu_berry", description = "Menu Berry For Testing Inventory" }
 item{ id = "monkshood", description = "Monkshood" }
-item{ id = "monster_bones", description = "Monster Bones" }
-item{ id = "monster_guts", description = "Monster Guts" }
+item{ id = "monster_bones", description = "Monster Bones-1,3,5" }
+item{ id = "monster_guts", description = "Monster Guts-1,3,5" }
 item{ id = "oak_charm", description = "oak charm" }
 item{ id = "oceansheart_chart", description = "Ocean's Heart Chart" }
 item{ id = "old_stockpot", description = "old stockpot" }
+item{ id = "potion_magic_restoration", description = "Potion-Magic Restoration" }
 item{ id = "random_drop_berries", description = "Random Drop-Berries" }
 item{ id = "rock_spider_treasure", description = "rock spider treasure" }
 item{ id = "rock_spider_treasure_dropper", description = "rock spider treasure DROPPER" }
-item{ id = "rupee", description = "rupee" }
+item{ id = "rupee", description = "Crowns-5,10,20,50,100,200,500" }
 item{ id = "seagrass_charm", description = "Seagrass Charm" }
 item{ id = "shield", description = "shield" }
 item{ id = "sleeping_draught", description = "Sleeping Draught" }
@@ -1237,10 +1241,10 @@ item{ id = "sword_upgrade", description = "sword upgrade" }
 item{ id = "tacklebox", description = "Tacklebox" }
 item{ id = "tidal_starfruit", description = "Tidy Starnut" }
 item{ id = "tornado_dash", description = "Tornado Dash" }
-item{ id = "violets", description = "violets" }
+item{ id = "violets", description = "violets-1,5,10" }
 item{ id = "watering_can", description = "watering can" }
 item{ id = "whisky_for_juglan", description = "Whisky for Juglan" }
-item{ id = "witch_hazel", description = "Witch Hazel" }
+item{ id = "witch_hazel", description = "Witch Hazel-1,3,5,10" }
 
 enemy{ id = "bosses/avalanche_golem", description = "Avalanche Golem" }
 enemy{ id = "bosses/bart", description = "Bart" }
