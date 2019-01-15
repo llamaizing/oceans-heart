@@ -31,7 +31,7 @@ function item:on_using()
     hero:start_state(summoning_state)
 
     hero:set_animation("charging")
-    sol.audio.play_sound("cane")
+    sol.audio.play_sound("charge_1")
     sol.timer.start(game, 1200, function()
 
       --create a spirit that spirals around the hero
@@ -65,17 +65,36 @@ function item:on_using()
       spike_ball_2:set_can_traverse_ground("wall", true)
       spike_ball_2:set_damage(game:get_value("sword_damage") * 2)
 
+      --add functionality for if a spirit damages an enemy, it heals you:
+      local ball_1_healing = false
+      local ball_2_healing = false
+      spike_ball:add_collision_test("sprite", function(spike_ball, entity)
+        if entity:get_type() == "enemy" and ball_1_healing == false then
+          game:add_life(1)
+          ball_1_healing = true
+          sol.timer.start(self, 300, function() ball_1_healing = false end)
+        end
+      end)
+      spike_ball_2:add_collision_test("sprite", function(spike_ball, entity)
+        if entity:get_type() == "enemy" and ball_1_healing == false then
+          game:add_life(1)
+          ball_2_healing = true
+          sol.timer.start(self, 300, function() ball_2_healing = false end)
+        end
+      end)
+
+
       --create a movement for the spirits
       local m = sol.movement.create("circle")
       m:set_center(x, y)
-      m:set_radius(48) --radius of spirit attack
+      m:set_radius(64) --radius of spirit attack
       m:set_radius_speed(80)
       m:set_max_rotations(1)
       m:set_angular_speed(13)
       m:set_clockwise()
       local m2 = sol.movement.create("circle")
       m2:set_center(x, y)
-      m2:set_radius(48) --radius of spirit attack
+      m2:set_radius(56) --radius of spirit attack
       m2:set_radius_speed(80)
       m2:set_max_rotations(1)
       m2:set_angular_speed(13)
@@ -88,8 +107,9 @@ function item:on_using()
       m:start(spike_ball, function() spike_ball:remove() end)
       m2:start(spike_ball_2, function() spike_ball_2:remove() end)
       hero:start_attack()
-      sol.audio.play_sound("sword_spin_attack_release")
+--      sol.audio.play_sound("sword_spin_attack_release")
       sol.audio.play_sound("thunk1")
+      sol.audio.play_sound("sea_spirit")
       local sprite = hero:get_sprite()
       local animation = sprite:get_animation()
       function sprite:on_animation_finished()
