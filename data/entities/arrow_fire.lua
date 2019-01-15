@@ -15,7 +15,15 @@ local entity_reached
 local entity_reached_dxy
 local flying
 
+local MAGIC_COST = 10
+local enough_magic
+
 function arrow:on_created()
+  if game:get_magic() > MAGIC_COST then
+    enough_magic = true
+    game:remove_magic(MAGIC_COST)
+  else enough_magic = false
+  end
 
   local direction = arrow:get_direction()
   local horizontal = direction % 2 == 0
@@ -72,35 +80,37 @@ local function attach_to_obstacle()
     y = y + 8
   end
 
-  map:create_fire({
-    x = x,
-    y = y,
-    layer = layer,
-  })
-  map:create_fire({
-    x = x+8,
-    y = y,
-    layer = layer,
-  })
-  map:create_fire({
-    x = x-8,
-    y = y,
-    layer = layer,
-  })
-  map:create_fire({
-    x = x,
-    y = y+8,
-    layer = layer,
-  })
+  if enough_magic then
+    map:create_fire({
+      x = x,
+      y = y,
+      layer = layer,
+    })
+    map:create_fire({
+      x = x+8,
+      y = y,
+      layer = layer,
+    })
+    map:create_fire({
+      x = x-8,
+      y = y,
+      layer = layer,
+    })
+    map:create_fire({
+      x = x,
+      y = y+8,
+      layer = layer,
+    })
 
-  map:create_fire({
-    x = x,
-    y = y-8,
-    layer = layer,
-  })
+    map:create_fire({
+      x = x,
+      y = y-8,
+      layer = layer,
+    })
+    -- Remove the arrow after fire.
+    arrow:remove()
+  end
 
--- Remove the arrow after fire.
-  arrow:remove()
 end
 
 -- Attaches the arrow to an entity and make it follow it.

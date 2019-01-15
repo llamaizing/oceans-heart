@@ -33,14 +33,14 @@ local properties = {
   projectile_damage = 5,
   projectile_split_children = 5,
 
---  has_dash_attack = true,
+  has_dash_attack = true,
   dash_attack_distance = 150,
   dash_attack_cooldown = 3000,
   dash_attack_direction = "target_hero",
   dash_attack_length = 96,
   dash_attack_speed = 120,
   dash_attack_wind_up = 600,
-  dash_attack_sound = "running",
+  dash_attack_sound = "monster_roar_1",
 
 --  has_orbit_attack = true,
   orbit_attack_distance = 190,

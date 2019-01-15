@@ -8331,6 +8331,30 @@ You collected an apple. It'll heal 2 hearts!
 }
 
 dialog{
+  id = "_treasure.apples.2",
+  text = [[
+You collected 3 apples! They'll each
+heal two hearts.
+]],
+}
+
+dialog{
+  id = "_treasure.apples.3",
+  text = [[
+You collected 5 apples! They'll each
+heal two hearts.
+]],
+}
+
+dialog{
+  id = "_treasure.apples.4",
+  text = [[
+You collected 10 apples! They'll each
+heal two hearts.
+]],
+}
+
+dialog{
   id = "_treasure.armor_tools.1",
   text = [[
 You received some Armorer's Tools. There's
@@ -8355,6 +8379,30 @@ dialog{
 You found some armor that's notably better
 than what you currently have!
 (Your defense increased by 2)
+]],
+}
+
+dialog{
+  id = "_treasure.arrow.1",
+  text = [[
+You found an arrow. Send it toward some
+monsters with your bow.
+]],
+}
+
+dialog{
+  id = "_treasure.arrow.2",
+  text = [[
+You collected 5 arrows.
+]],
+}
+
+dialog{
+  id = "_treasure.arrow.3",
+  text = [[
+You collected 10 arrows! This should
+take out a lot of enemies if you don't
+mean too much.
 ]],
 }
 
@@ -8422,37 +8470,95 @@ pretty dangerous! Be careful!
 }
 
 dialog{
+  id = "_treasure.barrier.1",
+  text = [[
+You received the barrier spell. Use this
+spell to deflect incoming projectiles.
+It will use a small amount of your magic.
+]],
+}
+
+dialog{
+  id = "_treasure.berries.1",
+  text = [[
+You found a berry. Eat it to restore
+half a heart.
+]],
+}
+
+dialog{
+  id = "_treasure.berries.2",
+  text = [[
+You found 3 berries. Each will restore
+half a heart when you eat it.
+]],
+}
+
+dialog{
+  id = "_treasure.berries.3",
+  text = [[
+You received 5 berries. Each will restore
+half a heart when you eat it.
+]],
+}
+
+dialog{
+  id = "_treasure.berries.4",
+  text = [[
+You received 10 berries. Each will
+restore half a heart when you eat it.
+Or you could bake them all into a pie
+if you beat the game and settle down.
+]],
+}
+
+dialog{
   id = "_treasure.bomb.1",
   text = [[
-You found a bomb!
+You found a bomb! Equip it to set
+it on the ground and blow things up.
+You can pick the bomb back up to
+throw it as well.
 ]],
 }
 
 dialog{
   id = "_treasure.bomb.2",
   text = [[
-You found some bombs!
+You found some bombs! Equip it to set
+it on the ground and blow things up.
+You can pick the bomb back up to
+throw it as well.
 ]],
 }
 
 dialog{
   id = "_treasure.bomb.3",
   text = [[
-You found some bombs!
+You found some bombs! Equip it to set
+it on the ground and blow things up.
+You can pick the bomb back up to
+throw it as well.
 ]],
 }
 
 dialog{
   id = "_treasure.bomb.4",
   text = [[
-You found some bombs!
+You found some bombs! Equip it to set
+it on the ground and blow things up.
+You can pick the bomb back up to
+throw it as well.
 ]],
 }
 
 dialog{
   id = "_treasure.bomb.5",
   text = [[
-You found some bombs!
+You found some bombs! Equip it to set
+it on the ground and blow things up.
+You can pick the bomb back up to
+throw it as well.
 ]],
 }
 
@@ -8503,16 +8609,18 @@ dialog{
   id = "_treasure.bow_bombs.1",
   text = [[
 You received bomb arrows. These will create
-an explosion on impact- be careful not to
-shoot at your feet!
+an explosion on impact- make sure they're
+far away from you when they hit something!
 ]],
 }
 
 dialog{
   id = "_treasure.bow_fire.1",
   text = [[
-Your bow gained the fire spell. The arrows
-you shoot will be engulfed in flame!
+Your bow gained the flame spell. By using
+a little of your magic power, your arrows
+will be create a burst of fire when they
+impact.
 ]],
 }
 
@@ -8527,8 +8635,57 @@ dialog{
   id = "_treasure.bread.1",
   text = [[
 You received a loaf of Burroak Bread. Made
-from acorns, it's wrapped in leaves to keep it
-fresh. Eat it to recover 5 hearts.
+from acorns, it's traditionally wrapped in
+leaves to keep it fresh. Eat it to
+recover 5 hearts.
+]],
+}
+
+dialog{
+  id = "_treasure.bread.2",
+  text = [[
+You received 5 loaves of Burroak Bread. Made
+from acorns, it's traditionally wrapped in
+leaves to keep it fresh. Eat it to
+recover 5 hearts.
+]],
+}
+
+dialog{
+  id = "_treasure.bread.3",
+  text = [[
+You received 10 loaves of Burroak Bread. Made
+from acorns, it's traditionally wrapped in
+leaves to keep it fresh. Eat it to
+recover 5 hearts.
+]],
+}
+
+dialog{
+  id = "_treasure.burdock.1",
+  text = [[
+You found a burdock root.
+]],
+}
+
+dialog{
+  id = "_treasure.burdock.2",
+  text = [[
+You found three burdock roots.
+]],
+}
+
+dialog{
+  id = "_treasure.burdock.3",
+  text = [[
+You found 5 burdock roots.
+]],
+}
+
+dialog{
+  id = "_treasure.burdock.4",
+  text = [[
+You found 10 burdock roots.
 ]],
 }
 
@@ -8537,6 +8694,27 @@ dialog{
   text = [[
 You found a buzzer. Press the button to go buzz
 buzz buzz buzz
+]],
+}
+
+dialog{
+  id = "_treasure.chamomile.1",
+  text = [[
+You found some chamomile flowers.
+]],
+}
+
+dialog{
+  id = "_treasure.chamomile.2",
+  text = [[
+You found 5 chamomile flowers.
+]],
+}
+
+dialog{
+  id = "_treasure.chamomile.3",
+  text = [[
+You found 10 chamomile flowers!
 ]],
 }
 
@@ -8571,7 +8749,8 @@ dialog{
   text = [[
 You received the Ophira's Ember.
 This spell will summon a furious
-firestorm.
+firestorm. It will use most of
+your magic power.
 ]],
 }
 
@@ -8588,6 +8767,20 @@ dialog{
   id = "_treasure.dandelion_seeds.1",
   text = [[
 You collected dandelion seeds.
+]],
+}
+
+dialog{
+  id = "_treasure.dandelion_seeds.2",
+  text = [[
+You collected several dandelion seeds.
+]],
+}
+
+dialog{
+  id = "_treasure.dandelion_seeds.3",
+  text = [[
+You collected many dandelion seeds.
 ]],
 }
 
@@ -8626,9 +8819,37 @@ You collected a bunch of firethorn berries.
 }
 
 dialog{
+  id = "_treasure.firethorn_berries.2",
+  text = [[
+You collected 5 bunches of firethorn berries.
+]],
+}
+
+dialog{
+  id = "_treasure.firethorn_berries.3",
+  text = [[
+You collected 10 bunches of firethorn berries.
+]],
+}
+
+dialog{
   id = "_treasure.forsythia.1",
   text = [[
 You collected a branch of forsythia flowers.
+]],
+}
+
+dialog{
+  id = "_treasure.forsythia.2",
+  text = [[
+You collected 5 branches of forsythia flowers.
+]],
+}
+
+dialog{
+  id = "_treasure.forsythia.3",
+  text = [[
+You found 10 branches of forsithya flowers!
 ]],
 }
 
@@ -8661,11 +8882,26 @@ You found a rare Ghost Orchid!
 }
 
 dialog{
+  id = "_treasure.ghost_orchid.10",
+  text = [[
+You found 5 ghost orchid blooms!
+]],
+}
+
+dialog{
+  id = "_treasure.ghost_orchid.2",
+  text = [[
+You found 3 ghost orchids!
+]],
+}
+
+dialog{
   id = "_treasure.gust.1",
   text = [[
 You received Zephyrine's Tempest.
 This spell will summon the spirits of
 the west wind to aid you in battle.
+It will use most of your magic power.
 ]],
 }
 
@@ -8861,6 +9097,41 @@ You found a Kingscrown Bloom.
 }
 
 dialog{
+  id = "_treasure.kingscrown.2",
+  text = [[
+You found 3 Kingscrown Blooms.
+]],
+}
+
+dialog{
+  id = "_treasure.kingscrown.3",
+  text = [[
+You found 5 Kingscrown Blooms!
+]],
+}
+
+dialog{
+  id = "_treasure.lavendar.1",
+  text = [[
+You found a lavendar stem.
+]],
+}
+
+dialog{
+  id = "_treasure.lavendar.2",
+  text = [[
+You found 5 stems of lavendar flowers!
+]],
+}
+
+dialog{
+  id = "_treasure.lavendar.3",
+  text = [[
+You found 10 stems of lavendar flowers!
+]],
+}
+
+dialog{
   id = "_treasure.mandrake.1",
   text = [[
 You collected a mandrake root.
@@ -8868,9 +9139,37 @@ You collected a mandrake root.
 }
 
 dialog{
+  id = "_treasure.mandrake.2",
+  text = [[
+You found 5 mandrake roots.
+]],
+}
+
+dialog{
+  id = "_treasure.mandrake.3",
+  text = [[
+You found 10 mandrake roots!
+]],
+}
+
+dialog{
   id = "_treasure.mandrake_white.1",
   text = [[
 You collected a white mandrake root.
+]],
+}
+
+dialog{
+  id = "_treasure.mandrake_white.2",
+  text = [[
+You found three white mandrake roots.
+]],
+}
+
+dialog{
+  id = "_treasure.mandrake_white.3",
+  text = [[
+You found 5 white mandrake roots!
 ]],
 }
 
@@ -8952,6 +9251,15 @@ dialog{
 You reveived an old stockpot. It's dented
 and the handles are worn, but that means
 it's clearly been loved.
+]],
+}
+
+dialog{
+  id = "_treasure.potion_magic_restoration.1",
+  text = [[
+You found a potion of magic restoration!
+Drink this to recover your magic power
+immediately.
 ]],
 }
 
@@ -9102,6 +9410,20 @@ You collected some violet petals.
 }
 
 dialog{
+  id = "_treasure.violets.2",
+  text = [[
+You collected some violet petals.
+]],
+}
+
+dialog{
+  id = "_treasure.violets.3",
+  text = [[
+You collected quite a few violet petals!
+]],
+}
+
+dialog{
   id = "_treasure.watering_can.1",
   text = [[
 You found a magic watering can. It seems
@@ -9115,6 +9437,34 @@ dialog{
   text = [[
 You took an old bottle of whisky. It's
 only missing a few sips. What a nice gift!
+]],
+}
+
+dialog{
+  id = "_treasure.witch_hazel.1",
+  text = [[
+You found a branch of Witch Hazel flowers.
+]],
+}
+
+dialog{
+  id = "_treasure.witch_hazel.2",
+  text = [[
+You collected some witch hazel flowers!
+]],
+}
+
+dialog{
+  id = "_treasure.witch_hazel.3",
+  text = [[
+You collected a few witch hazel flowers.
+]],
+}
+
+dialog{
+  id = "_treasure.witch_hazel.4",
+  text = [[
+You collected a whole bunch of witch hazel flowers.
 ]],
 }
 
