@@ -2504,6 +2504,16 @@ tile{
   pattern = "ground1.1",
 }
 
+tile{
+  layer = 0,
+  x = 320,
+  y = 104,
+  width = 112,
+  height = 112,
+  pattern = "1",
+  tileset = "sky_scroll",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -2678,7 +2688,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/goatshead_harbor",
+  destination_map = "oakhaven/marblecliff",
+  destination = "from_westoak",
 }
 
 pickable{
@@ -3664,7 +3675,7 @@ enemy{
   x = 800,
   y = 189,
   direction = 0,
-  breed = "normal_enemies/ogre_knight",
+  breed = "normal_enemies/frog",
 }
 
 pickable{
@@ -3691,6 +3702,25 @@ pickable{
   x = 488,
   y = 61,
   treasure_name = "potion_magic_restoration",
+}
+
+enemy{
+  name = "problem_child_3",
+  layer = 0,
+  x = 928,
+  y = 301,
+  direction = 0,
+  breed = "normal_enemies/frog",
+}
+
+destructible{
+  layer = 0,
+  x = 8,
+  y = -3,
+  treasure_name = "ghost_orchid",
+  sprite = "entities/bush_ghost_orchid",
+  weight = -1,
+  can_be_cut = true,
 }
 
 tile{

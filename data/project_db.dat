@@ -187,12 +187,14 @@ map{ id = "oakhaven/interiors/hornwart_inn", description = "Hornwart Inn" }
 map{ id = "oakhaven/interiors/library", description = "Library" }
 map{ id = "oakhaven/interiors/library2", description = "library" }
 map{ id = "oakhaven/interiors/melinda", description = "Melinda" }
+map{ id = "oakhaven/interiors/monastery", description = "Monastery" }
 map{ id = "oakhaven/interiors/palace", description = "Palace" }
 map{ id = "oakhaven/interiors/saloon", description = "Salamander Heartache" }
 map{ id = "oakhaven/interiors/sculptor", description = "sculptor" }
 map{ id = "oakhaven/interiors/tailor", description = "Tailor" }
 map{ id = "oakhaven/ivystump", description = "Ivystump Village" }
 map{ id = "oakhaven/ivystump_interiors/sawmill", description = "Sawmill" }
+map{ id = "oakhaven/marble_summit", description = "Marble Summit" }
 map{ id = "oakhaven/marblecliff", description = "Marblecliff" }
 map{ id = "oakhaven/oakhaven", description = "Oakhaven City" }
 map{ id = "oakhaven/poison_grove", description = "Poison Grove" }
@@ -217,6 +219,7 @@ tileset{ id = "oceanheart_outdoors_spring", description = "Overworld-Spring" }
 tileset{ id = "overworld_oakhaven", description = "Overworld-Oakhaven" }
 tileset{ id = "overworld_yarrowmouth", description = "Overworld-Yarrowmouth" }
 tileset{ id = "pirate_overworld_test", description = "pirate_test1" }
+tileset{ id = "sky_scroll", description = "Sky Scroll" }
 tileset{ id = "temple", description = "temple" }
 tileset{ id = "temple_2", description = "Ancient Temple" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
@@ -398,6 +401,7 @@ sprite{ id = "entities/door_locked", description = "Door - Locked" }
 sprite{ id = "entities/door_npc_tall", description = "NPC door - tall" }
 sprite{ id = "entities/door_posts", description = "Door - Posts" }
 sprite{ id = "entities/door_shutter", description = "door (shutter)" }
+sprite{ id = "entities/door_unmarked_wall", description = "Door - Unmarked Wall" }
 sprite{ id = "entities/door_vines", description = "Door-Vines" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
