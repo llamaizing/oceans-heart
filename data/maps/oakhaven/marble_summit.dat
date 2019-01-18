@@ -9789,6 +9789,16 @@ destructible{
   can_be_cut = true,
 }
 
+pickable{
+  name = "manna_oak_twig",
+  layer = 0,
+  x = 432,
+  y = 173,
+  enabled_at_start = false,
+  treasure_name = "manna_oak_twig",
+  treasure_savegame_variable = "found_marblecliff_manna_oak_twig",
+}
+
 tile{
   layer = 1,
   x = 216,
@@ -9973,6 +9983,7 @@ tile{
   layer = 1,
   x = 392,
   y = 152,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "2049",

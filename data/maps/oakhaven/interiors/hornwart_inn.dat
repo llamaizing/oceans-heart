@@ -2889,8 +2889,8 @@ dynamic_tile{
 npc{
   name = "hazel",
   layer = 0,
-  x = 400,
-  y = 397,
+  x = 408,
+  y = 381,
   direction = 3,
   subtype = 1,
   sprite = "npc/hazel",

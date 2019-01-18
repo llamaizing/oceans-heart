@@ -103,7 +103,7 @@ function game_manager:create(file_name)
 
   --display a map when m is pressed
   function game:on_key_pressed(key, modifiers)
-
+--    local hero = game:get_hero()
     if key == "s" then
       game:start_dialog("_game.pause", function(answer)
         if answer == 1 then

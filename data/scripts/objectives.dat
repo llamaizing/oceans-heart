@@ -290,3 +290,9 @@ side{
     calc_phase = "quest_seaglint_ruins_lighthouse",
     location = "location.oakhaven"
 }
+
+side{
+	dialog_id = "quest.side.oakhaven.manna_oaks",
+	calc_phase = "quest_manna_oaks",
+	location = "location.oakhaven"
+}

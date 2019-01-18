@@ -12,9 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+  if game:get_value("quest_manna_oaks") then manna_oak_twig:set_enabled(true) end
 end
 
 -- Event called after the opening transition effect of the map,

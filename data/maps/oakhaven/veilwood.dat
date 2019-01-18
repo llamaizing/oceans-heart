@@ -36218,60 +36218,59 @@ dynamic_tile{
   layer = 0,
   x = 792,
   y = 792,
-  pattern = "2047",
   width = 16,
   height = 32,
-  enabled_at_start = true,
+  pattern = "2047",
 }
 
 dynamic_tile{
   layer = 0,
   x = 56,
   y = 1032,
-  pattern = "103",
+  enabled_at_start = false,
   width = 96,
   height = 80,
-  enabled_at_start = false,
+  pattern = "103",
 }
 
 dynamic_tile{
   layer = 0,
   x = -104,
   y = 568,
-  pattern = "103",
+  enabled_at_start = false,
   width = 96,
   height = 80,
-  enabled_at_start = false,
+  pattern = "103",
 }
 
 dynamic_tile{
   layer = 0,
   x = 760,
   y = 1056,
-  pattern = "103",
+  enabled_at_start = false,
   width = 96,
   height = 80,
-  enabled_at_start = false,
+  pattern = "103",
 }
 
 dynamic_tile{
   layer = 0,
   x = 1056,
   y = 360,
-  pattern = "103",
+  enabled_at_start = false,
   width = 80,
   height = 80,
-  enabled_at_start = false,
+  pattern = "103",
 }
 
 dynamic_tile{
   layer = 0,
   x = 776,
   y = 88,
-  pattern = "103",
+  enabled_at_start = false,
   width = 80,
   height = 80,
-  enabled_at_start = false,
+  pattern = "103",
 }
 
 destructible{
@@ -37034,6 +37033,31 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/ivystump",
   destination = "from_veilwood",
+}
+
+pickable{
+  layer = 0,
+  x = 760,
+  y = 837,
+  enabled_at_start = false,
+  treasure_name = "manna_oak_twig",
+  treasure_savegame_variable = "found_veilwood_manna_oak_twig",
+}
+
+enemy{
+  layer = 0,
+  x = 824,
+  y = 853,
+  direction = 0,
+  breed = "normal_enemies/arborgeist_gust",
+}
+
+enemy{
+  layer = 0,
+  x = 744,
+  y = 829,
+  direction = 0,
+  breed = "normal_enemies/arborgeist_gust",
 }
 
 tile{
@@ -40767,10 +40791,10 @@ dynamic_tile{
   layer = 1,
   x = 728,
   y = 696,
-  pattern = "2046",
+  enabled_at_start = false,
   width = 112,
   height = 96,
-  enabled_at_start = false,
+  pattern = "2046",
 }
 
 separator{
@@ -40794,10 +40818,10 @@ dynamic_tile{
   layer = 3,
   x = -56,
   y = -128,
-  pattern = "606",
+  enabled_at_start = false,
   width = 1408,
   height = 1584,
-  enabled_at_start = false,
+  pattern = "606",
 }
 
 dynamic_tile{
@@ -40805,9 +40829,8 @@ dynamic_tile{
   layer = 3,
   x = -16,
   y = -32,
-  pattern = "2076",
   width = 1344,
   height = 1536,
-  enabled_at_start = true,
+  pattern = "2076",
 }
 

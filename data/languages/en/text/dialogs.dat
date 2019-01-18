@@ -6353,20 +6353,68 @@ try talking to him.
 TILIA:
 I will. Thanks Hazel. I'll bring this amulet to
 Dad and we'll defeat the pirates.
+
+HAZEL:
+Good. And if you ever have some free time,
+I've got some other stuff I could use
+your help with.
 ]],
 }
 
 dialog{
-  id = "_oakhaven.npcs.hazel.inn.4lookforpirates",
+  id = "_oakhaven.npcs.hazel.inn.4gochecktrees",
   text = [[
 HAZEL:
-I've done all I can for now. You have the
-same magic amulet thing the pirates have,
-so if you can find the Ocean's Temple, you
+Hey Tilia. Have you seen the big tree at the
+center of the city?
+
+TILIA:
+Maybe? There's a lot of trees in this town.
+
+
 HAZEL:
-can get to Ocean's Heart first and stop them
-from taking over the seas. Good luck finding
-your dad, Tilia.
+It's the biggest one, also the oldest. And it
+looks pretty sick. It's got some kind of blight
+that I've never seen before. There's supposed
+HAZEL:
+to be two more trees like this on the island.
+Could you go find another one and get a twig
+from it for me to look at?
+TILIA:
+Sure, you know plants, so if you think it's
+important. Any idea where the other two
+might be?
+HAZEL:
+I've heard there's one in the Veilwood Forest,
+and one on Marblecliff Mountain's peak. I just
+want to know if the other trees have the same
+HAZEL:
+blight, it could help me figure out what's going
+on. I'm going to the library to research these
+trees more, find me there once you have a
+HAZEL:
+twig from another tree.
+
+
+TILIA:
+No problem, Hazel.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.inn.5gogettwigs",
+  text = [[
+HAZEL:
+There's two more big trees like the sick one
+in the center of the city. One in the
+Veilwood, another on the summit of
+HAZEL:
+Marblecliff Mountain. Can you go get a twig
+from one of them for me to check out? I'll
+be at the library.
+TILIA:
+No problem, Hazel. If that's what you need.
+  
 ]],
 }
 
@@ -11108,6 +11156,24 @@ tunnels have been cleared
 }
 
 dialog{
+  id = "quest.side.oakhaven.manna_oaks",
+  title = "The Oak Blight",
+  text = [[
+Hazel asked you to check out
+Oakhaven's trees, which are
+getting sick.
+@Collect a twig from one of
+the other two giant oaks.
+!There are giant trees in
+!Veilwood forest and on top
+!of Marblecliff Mountain.
+@!Take the twig back to Hazel
+!She's at Oakhaven's library.
+  
+]],
+}
+
+dialog{
   id = "quest.side.oakhaven.musicians",
   title = "Battle of the Band",
   text = [[
@@ -11250,7 +11316,7 @@ have come fom
 
 dialog{
   id = "quest.test13",
-  title = "A Carrot Cache",
+  title = "The Carrot Cache",
   text = [[
 An upset fisherman's spot's
 been overrun with monsters.

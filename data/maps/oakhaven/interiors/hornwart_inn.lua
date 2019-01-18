@@ -14,6 +14,7 @@ local hero = map:get_hero()
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
   if game:get_value("hornwart_know_hazel") ~= nil then map:open_doors("hazel_door") end
+  if game:get_value("quest_manna_oaks") then hazel:set_enabled(false) end
   if game:get_value("found_hazel") ~= true then
     hazel:set_enabled(false)
   else
@@ -97,8 +98,13 @@ function hazel:on_interaction()
       game:set_value("hazel_counter", 3)
     end) --end of make the amulet dialog function
 
-  elseif game:get_value("hazel_counter") == 3 then
-    game:start_dialog("_oakhaven.npcs.hazel.inn.4lookforpirates")
-
+  elseif game:get_value("hazel_counter") == 3 then --if Hazel has sent you off to find Morus already
+    if game:get_value("quest_manna_oaks") == nil then  --check if you've started Manna Oak quest
+      game:start_dialog("_oakhaven.npcs.hazel.inn.4gochecktrees", function()
+        game:set_value("quest_manna_oaks", 0)
+      end)
+    else --you've already started the manna oak quest
+      game:start_dialog("_oakhaven.npcs.hazel.inn.5gogettwigs")
+    end
   end --end of hazel counter branches
 end
