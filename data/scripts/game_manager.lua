@@ -8,6 +8,7 @@ local pause_menu = require"scripts/menus/pause_menu"
 --local inventory = require"scripts/menus/inventory"
 local quest_update_icon = require"scripts/menus/quest_update_icon"
 local objectives_manager = require"scripts/objectives_manager"
+local dash_manager = require"scripts/action/dash_manager"
 
 local game_manager = {}
 
@@ -162,60 +163,7 @@ function game_manager:create(file_name)
 
       if  effect == nil and hero_state == "free"
       and not game:is_suspended() and can_dash then
-
-        local dir = hero:get_direction()
-        local dd = {[0]=0,[1]=math.pi/2,[2]=math.pi,[3]=3*math.pi/2} --to convert 0-4 direction to radians
-        dir = dd[dir]
-        local m = sol.movement.create("straight")
-        m:set_angle(dir)
-        if game:has_item("dandelion_charm") then
-          m:set_speed(325)
-          m:set_max_distance(88)
-        else
-          m:set_speed(200)
-          m:set_max_distance(64)
-        end
-        m:set_smooth(true)
---        hero:freeze()
-  --      hero:set_blinking(true, 200)
-        if game:has_item("dandelion_charm") then
-          hero:get_sprite():set_animation("dash", function() hero:get_sprite():set_animation("walking") end)
-          game:set_value("hero_dashing", true)
-        else
-          hero:get_sprite():set_animation("roll", function() hero:get_sprite():set_animation("walking") end)
-          game:set_value("hero_rolling", true)
-        end
-        if game:has_item("dandelion_charm") then sol.audio.play_sound("dash")
-        else sol.audio.play_sound("roll_2") end
-        can_dash = false
-
-        m:start(hero, function()
-          hero:unfreeze()
-          game:set_value("hero_dashing", false)
-          game:set_value("hero_rolling", false)
-        end)
-
-        sol.timer.start(hero, 1000, function()
-          can_dash = true
-        end)
-
-        if game:has_item("dandelion_charm") then hero:set_invincible(true, 300) end
-
-        function m:on_obstacle_reached()
-          hero:unfreeze()
-          sol.timer.start(hero, 800, function()
-            can_dash = true
-          end)
-        end
-
-        hero:register_event("on_position_changed", function()
-          if game:get_value("hero_dashing") or game:get_value("hero_rolling") then
-            local ground = hero:get_ground_below()
-            if ground == "deep_water" or ground == "hole" or ground == "lava" then
-              m:stop()
-            end
-          end
-        end)
+        dash_manager:dash(game)
       end
 
     end --end of if action == condition

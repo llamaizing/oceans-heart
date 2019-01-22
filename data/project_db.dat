@@ -388,6 +388,8 @@ sprite{ id = "entities/chest_green", description = "Chest - Green" }
 sprite{ id = "entities/coral_ore", description = "Coral Ore" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
+sprite{ id = "entities/dandelion_burst", description = "Dandelion Burst" }
+sprite{ id = "entities/dandelion_seed", description = "Dandelion Seed" }
 sprite{ id = "entities/destination", description = "Destination" }
 sprite{ id = "entities/door_archway_locked", description = "Door - Archway, locked" }
 sprite{ id = "entities/door_archway_shutter", description = "Door- Archway, Shutter" }
@@ -422,6 +424,7 @@ sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ink_splash", description = "Ink Splash" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
+sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/nitrodendron", description = "Nitrodendron" }
 sprite{ id = "entities/orange_peel", description = "Orange Peel" }
 sprite{ id = "entities/ripple", description = "Ripple" }
@@ -1161,7 +1164,7 @@ item{ id = "apples", description = "Apples - 1,3,5,10" }
 item{ id = "armor_tools", description = "Armorer Tools" }
 item{ id = "armor_upgrade_1", description = "Armor Upgrade 1" }
 item{ id = "armor_upgrade_2", description = "Armor Upgrade 2" }
-item{ id = "arrow", description = "arrow-map-1,5,10" }
+item{ id = "arrow", description = "arrow-map-1,3,5,10" }
 item{ id = "attack_upgrade", description = "Attack Upgrade - For Testing" }
 item{ id = "bag_of_money", description = "bag of money" }
 item{ id = "bait", description = "Bait" }
@@ -1175,6 +1178,7 @@ item{ id = "boomerang", description = "Boomerang" }
 item{ id = "bow", description = "Bow" }
 item{ id = "bow_bombs", description = "Bomb Arrows" }
 item{ id = "bow_fire", description = "Flame Arrows" }
+item{ id = "bow_warp", description = "Warp Arrows" }
 item{ id = "bread", description = "Burroak Bread-1,5,10" }
 item{ id = "burdock", description = "Burdock Root-1,3,5,10" }
 item{ id = "chamomile", description = "Chamomile-1,5,10" }
@@ -1341,9 +1345,11 @@ enemy{ id = "normal_enemies/zora", description = "Zora" }
 entity{ id = "arrow", description = "arrow" }
 entity{ id = "arrow_bomb", description = "Bomb Arrow" }
 entity{ id = "arrow_fire", description = "arrow_fire" }
+entity{ id = "arrow_warp", description = "Arrow- Warp" }
 entity{ id = "chain_link", description = "Chain Link" }
 entity{ id = "cliff", description = "cliff" }
 entity{ id = "damaging_sparkle", description = "Damaging Sparkle" }
+entity{ id = "dash_moth", description = "Dash Moth" }
 entity{ id = "leaf_pile", description = "Leaf Pile" }
 entity{ id = "rockpile", description = "Rock Pile" }
 entity{ id = "rockpile_3", description = "rockpile 3" }

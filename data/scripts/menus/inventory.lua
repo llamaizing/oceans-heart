@@ -24,6 +24,7 @@ local all_equipment_items = {
     "bow",
     "bow_fire",
     "bow_bombs",
+    "bow_warp",
     "potion_magic_restoration",
 }
 
@@ -45,7 +46,8 @@ local item_descriptions = {
     "Bow",
     "Flame Arrows",
     "Bomb Arrows",
-    "Magic Potion"
+    "Warp Arrows",
+    "Magic Restoring Potion"
 }
 
 --constants:

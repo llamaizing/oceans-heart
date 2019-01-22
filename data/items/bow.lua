@@ -40,7 +40,7 @@ function item:on_using()
   local hero = map:get_hero()
 
   if self:get_amount() == 0 then
-    sol.audio.play_sound("wrong")
+    sol.audio.play_sound("no")
     self:set_finished()
   else
     hero:set_animation("bow")
@@ -72,41 +72,6 @@ function item:on_using()
   end
 end
 
--- Function called when the amount changes.
--- This function also works for the silver bow.
-function item:on_amount_changed(amount)
-
-arrows_amount = self:get_amount()
-
-  if self:get_variant() ~= 0 then
-    -- update the icon (with or without arrow).
-    if amount == 0 then
-      self:set_variant(1)
-    else
-      self:set_variant(2)
-    end
-  end
-
-end
-
-function item:on_obtaining(variant, savegame_variable)
-
-  local arrow = game:get_item("arrow")
-
-  if variant > 0 then
-    self:set_max_amount(50)
-    -- Variant 1: bow without arrow.
-    -- Variant 2: bow with arrows.
-    if variant > 1 then
-      self:set_amount(self:get_max_amount())
-    end
-    arrow:set_obtainable(true)
-  else
-    -- Variant 0: no bow and arrows are not obtainable.
-    self:set_max_amount(0)
-    arrow:set_obtainable(false)
-  end
-end
 
 function item:get_force()
 

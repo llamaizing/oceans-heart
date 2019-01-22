@@ -37,7 +37,7 @@ function initial_game:initialize_new_savegame(game)
   game:set_value("sword_damage", 1)
   game:set_value("bow_damage", 2)
   game:set_value("bomb_damage", 8)
-  game:set_value("fire_damage", 2)
+  game:set_value("fire_damage", 3)
   game:set_value("amount_bow", 0)
   game:set_value("elixer_restoration_level", 6) --starts at 6 (3 hearts), then goes to 12, then 18, then 24
   game:set_value("quest_log_a", 0)

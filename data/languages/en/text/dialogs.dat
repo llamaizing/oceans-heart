@@ -8441,12 +8441,19 @@ monsters with your bow.
 dialog{
   id = "_treasure.arrow.2",
   text = [[
-You collected 5 arrows.
+You collected some arrows.
 ]],
 }
 
 dialog{
   id = "_treasure.arrow.3",
+  text = [[
+You collected some arrows!
+]],
+}
+
+dialog{
+  id = "_treasure.arrow.4",
   text = [[
 You collected 10 arrows! This should
 take out a lot of enemies if you don't
@@ -8676,6 +8683,16 @@ dialog{
   id = "_treasure.bow_silver.1",
   text = [[
 You got the silver bow now.
+]],
+}
+
+dialog{
+  id = "_treasure.bow_warp.1",
+  text = [[
+You received the warp spell for your
+arrows. When these arrows hit certain
+things, they'll teleport you right
+to them.
 ]],
 }
 

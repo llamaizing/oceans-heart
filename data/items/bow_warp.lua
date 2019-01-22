@@ -13,7 +13,7 @@ local game = item:get_game()
 
 function item:on_created()
 
-  item:set_savegame_variable("possession_bow_bombs")
+  item:set_savegame_variable("possession_bow_warp")
   item:set_amount_savegame_variable("amount_bow")
   item:set_assignable(true)
 end
@@ -25,9 +25,7 @@ end
 -- set to item slot 1
 function item:on_obtained()
 --increase bow damage
-  bow_damage = game:get_value("bow_damage")
-  bow_damage = bow_damage + 1
-  game:set_value("bow_damage", bow_damage)
+  game:set_value("bow_damage", game:get_value("bow_damage") + 2)
 end
 
 
@@ -50,9 +48,6 @@ function item:on_using()
     sol.audio.play_sound("bow")
       self:remove_amount(1)
       self:set_finished()
---also, shoot a normal arrow so we can activate switches and stuff.
---actually, this causes a whole bunch of problems. Find a way to make this entity activate switches for real or else avoid that possibility in game.
---      hero:start_bow()
 
        local x, y = hero:get_center_position()
        local _, _, layer = hero:get_position()
@@ -63,7 +58,7 @@ function item:on_using()
          width = 16,
          height = 16,
          direction = hero:get_direction(),
-         model = "arrow_bomb",
+         model = "arrow_warp",
        })
 
 
@@ -85,7 +80,7 @@ end
 -- Set the sprite for the arrow entity
 
 function item:get_arrow_sprite_id()
-     return "entities/arrow_fire"
+     return "entities/arrow_warp"
 
 end
 
