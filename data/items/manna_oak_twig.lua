@@ -13,3 +13,11 @@ function item:on_pickable_created(pickable)
 
   -- You can set a particular movement here if you don't like the default one.
 end
+
+function item:on_obtained()
+  game:set_value("quest_manna_oaks", 1)
+  local x, y, layer = hero:get_position()
+  game:get_map():create_enemy({
+    x = x, y = y, layer = layer, direction = 0, breed = "normal_enemies/arborgeist_gust"
+  })
+end

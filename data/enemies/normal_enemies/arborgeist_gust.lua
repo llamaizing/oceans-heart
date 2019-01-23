@@ -29,7 +29,7 @@ local properties = {
 --optional properties for ranged attack are projectile_damage, projectile_split_children, and projectile_num_bounces, if the projectile breed will accept them!
   projectile_angle = "any",
 
-  has_summon_attack = true,
+--  has_summon_attack = true,
   summon_attack_distance = 200,
   summon_attack_cooldown = 4000,
   summon_attack_wind_up_time = 1200,
@@ -39,7 +39,7 @@ local properties = {
   summon_group_delay = 800,
   protected_while_summoning = true,
 
---  has_orbit_attack = true,
+  has_orbit_attack = true,
   orbit_attack_distance = 190,
   orbit_attack_cooldown = 7000,
   orbit_attack_sound = "gravel",

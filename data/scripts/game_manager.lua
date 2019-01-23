@@ -102,9 +102,10 @@ function game_manager:create(file_name)
   local ignoring_obstacles
   local can_dash = true
 
-  --display a map when m is pressed
+  local DEBUG_MODE = true                       --HERE IS THE DEBUG MODE SWITCH, MAX!
+
+
   function game:on_key_pressed(key, modifiers)
---    local hero = game:get_hero()
     if key == "s" then
       game:start_dialog("_game.pause", function(answer)
         if answer == 1 then
@@ -120,7 +121,7 @@ function game_manager:create(file_name)
 
 
       --DEBUG FUNCTIONS
-    elseif key == "r" then
+    elseif key == "r"  and DEBUG_MODE then
       if hero:get_walking_speed() == 300 then
         hero:set_walking_speed(debug.normal_walking_speed)
       else
@@ -128,7 +129,7 @@ function game_manager:create(file_name)
         hero:set_walking_speed(300)
       end
 
-    elseif key == "t" then
+    elseif key == "t" and DEBUG_MODE then
       if not ignoring_obstacles then
         hero:get_movement():set_ignore_obstacles(true)
         ignoring_obstacles = true
@@ -137,10 +138,10 @@ function game_manager:create(file_name)
         ignoring_obstacles = false
       end
 
-    elseif key == "h" then
+    elseif key == "h" and DEBUG_MODE then
       game:set_life(game:get_max_life())
 
-    elseif key == "j" then
+    elseif key == "j" and DEBUG_MODE then
       game:remove_life(2)
         
          --end of debug functions
@@ -164,6 +165,8 @@ function game_manager:create(file_name)
       if  effect == nil and hero_state == "free"
       and not game:is_suspended() and can_dash then
         dash_manager:dash(game)
+        can_dash = false
+        sol.timer.start(game, 500, function() can_dash = true end)
       end
 
     end --end of if action == condition
