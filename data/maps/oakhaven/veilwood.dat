@@ -37474,6 +37474,24 @@ npc{
   sprite = "npc/woman/woman_8.6",
 }
 
+destination{
+  name = "from_manna_oak_tunnels",
+  layer = 0,
+  x = 800,
+  y = 829,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 792,
+  y = 800,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/manna_oak_tunnels",
+  destination = "from_veilwood",
+}
+
 tile{
   layer = 1,
   x = 1136,

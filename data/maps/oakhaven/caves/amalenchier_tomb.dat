@@ -3497,6 +3497,60 @@ sensor{
   height = 16,
 }
 
+enemy{
+  name = "pollutant_blocker",
+  layer = 0,
+  x = 240,
+  y = 93,
+  direction = 2,
+  breed = "misc/pollutant_blocker",
+}
+
+enemy{
+  name = "pollutant_blocker_2",
+  layer = 0,
+  x = 216,
+  y = 101,
+  direction = 1,
+  breed = "misc/pollutant_blocker",
+}
+
+enemy{
+  name = "pollutant_blocker_3",
+  layer = 0,
+  x = 232,
+  y = 117,
+  direction = 0,
+  breed = "misc/pollutant_blocker",
+}
+
+enemy{
+  name = "pollutant_blocker_4",
+  layer = 0,
+  x = 72,
+  y = 109,
+  direction = 2,
+  breed = "misc/pollutant_blocker",
+}
+
+enemy{
+  name = "pollutant_blocker_5",
+  layer = 0,
+  x = 48,
+  y = 117,
+  direction = 1,
+  breed = "misc/pollutant_blocker",
+}
+
+enemy{
+  name = "pollutant_blocker_6",
+  layer = 0,
+  x = 24,
+  y = 197,
+  direction = 0,
+  breed = "misc/pollutant_blocker",
+}
+
 tile{
   layer = 1,
   x = 152,

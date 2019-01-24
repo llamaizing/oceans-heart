@@ -134,9 +134,6 @@ local function attach_to_entity(entity)
   -- Stop flying.
   attach_to_obstacle()
 
-  --warp hero to enemy's location
-  warp_hero(entity)
-
   -- Make the arrow follow the entity reached when it moves.
   entity_reached = entity
   local entity_reached_x, entity_reached_y = entity_reached:get_position()
@@ -180,13 +177,14 @@ arrow:add_collision_test("sprite", function(arrow, entity)
       return
     end
     enemies_touched[enemy] = true
---  (this is the code OLB has, I think it's outdated or something):
---    local reaction = enemy:get_arrow_reaction(enemy_sprite)
-    local fire_reaction = enemy:get_attack_consequence_sprite(sprite, "fire")
     local arrow_reaction = enemy:get_attack_consequence_sprite(sprite, "arrow")
     attach_to_entity(enemy)
-    if arrow_reaction ~= "protected" or fire_reaction ~= "protected" then
-     bow_damage = game:get_value("bow_damage")
+    if arrow_reaction ~= "protected" and arrow_reaction ~= "ignored" then
+      if enemy:get_life() - game:get_value("bow_damage") <= 0 then
+        --warp hero to enemy's location
+        warp_hero(entity)
+      end
+      bow_damage = game:get_value("bow_damage")
      enemy:hurt(bow_damage)
     end
 

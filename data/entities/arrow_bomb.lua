@@ -145,7 +145,7 @@ arrow:add_collision_test("sprite", function(arrow, entity)
 --    local reaction = enemy:get_arrow_reaction(enemy_sprite)
     local arrow_reaction = enemy:get_attack_consequence_sprite(sprite, "arrow")
     attach_to_entity(enemy)
-    if arrow_reaction ~= "protected" then
+    if arrow_reaction ~= "protected" and arrow_reaction ~= "ignored" then
      bow_damage = game:get_value("bow_damage")
      enemy:hurt(bow_damage)
     end

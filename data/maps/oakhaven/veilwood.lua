@@ -46,9 +46,13 @@ function forest_revenant:on_dead()
 end
 --lamia
 function lamia:on_interaction()
-  game:start_dialog("_oakhaven.npcs.ivystump.lamia.4", function()
-    game:set_value("quest_manna_oaks", 7)
-    game:set_value("manna_oaks_investigated", 0)
-    manna_tree_door:set_enabled(false)
-  end)
+  if game:get_value("quest_manna_oaks") == 6 then
+    game:start_dialog("_oakhaven.npcs.ivystump.lamia.4", function()
+      game:set_value("quest_manna_oaks", 7)
+      game:set_value("manna_oaks_investigated", 0)
+      manna_tree_door:set_enabled(false)
+    end)
+  else
+    game:start_dialog("_oakhaven.npcs.ivystump.lamia.4")
+  end
 end

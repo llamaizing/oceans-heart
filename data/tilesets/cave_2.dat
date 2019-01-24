@@ -961,6 +961,122 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "180",
+  ground = "wall",
+  default_layer = 0,
+  x = 368,
+  y = 168,
+  width = 32,
+  height = 40,
+}
+
+tile_pattern{
+  id = "181",
+  ground = "wall",
+  default_layer = 0,
+  x = 400,
+  y = 168,
+  width = 32,
+  height = 40,
+}
+
+tile_pattern{
+  id = "182",
+  ground = "wall",
+  default_layer = 0,
+  x = 432,
+  y = 160,
+  width = 32,
+  height = 48,
+}
+
+tile_pattern{
+  id = "183",
+  ground = "empty",
+  default_layer = 0,
+  x = 464,
+  y = 160,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "184",
+  ground = "empty",
+  default_layer = 0,
+  x = 464,
+  y = 176,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "185",
+  ground = "empty",
+  default_layer = 0,
+  x = 464,
+  y = 192,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "186",
+  ground = "empty",
+  default_layer = 0,
+  x = 464,
+  y = 208,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "187",
+  ground = "empty",
+  default_layer = 0,
+  x = 464,
+  y = 224,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "189",
+  ground = "wall",
+  default_layer = 0,
+  x = { 368, 368, 368 },
+  y = { 208, 224, 240 },
+  width = 32,
+  height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "189_2",
+  ground = "wall",
+  default_layer = 0,
+  x = { 400, 400, 400 },
+  y = { 208, 224, 240 },
+  width = 32,
+  height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "189_3",
+  ground = "wall",
+  default_layer = 0,
+  x = { 432, 432, 432 },
+  y = { 208, 224, 240 },
+  width = 32,
+  height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
   id = "19",
   ground = "wall",
   default_layer = 0,

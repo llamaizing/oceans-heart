@@ -22,6 +22,9 @@ function boss_sensor:on_activated()
 end
 
 function forest_revenant:on_dead()
+  for entity in map:get_entities("pollutant_blocker") do
+    entity:remove_life(100)
+  end
   map:get_camera():shake({count = 12, amplitude = 7, speed = 80})
   game:set_value("quest_manna_oaks", 6)
 end
