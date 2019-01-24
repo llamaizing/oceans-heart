@@ -56,17 +56,10 @@ function enemy_meta:on_hurt(attack)
     local game = self:get_game()
     local map = self:get_map()
     local camera = map:get_camera()
-    local hero = map:get_entity("hero")
-    local cammov = sol.movement.create("pixel")
     game:set_suspended(true)
     sol.timer.start(game, 120, function()
       game:set_suspended(false)
-      cammov:set_trajectory{{1,0},{1,0},{1,0},{1,0},{1,0},{-1,0},{-1,0},{-1,0},{-1,0},{-1,0},{-1,0},{-1,0},{-1,0},{-1,0},{-1,0},{1,0},{1,0},{1,0},{1,0},{1,0},}
-      cammov:set_delay(5)
-      cammov:set_ignore_obstacles(true)
-      cammov:start(camera, function()
-        camera:start_tracking(hero)
-      end) --end of after movement function
+      map:get_camera():shake({count = 4, amplitude = 4, speed = 80})
      end) --end of timer
 
   if attack == "explosion" then
