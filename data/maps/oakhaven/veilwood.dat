@@ -37426,12 +37426,13 @@ dynamic_tile{
   pattern = "2170",
 }
 
-enemy{
+npc{
+  name = "tombstone_npc",
   layer = 0,
-  x = 152,
-  y = 653,
-  direction = 0,
-  breed = "",
+  x = 160,
+  y = 541,
+  direction = 3,
+  subtype = 1,
 }
 
 tile{

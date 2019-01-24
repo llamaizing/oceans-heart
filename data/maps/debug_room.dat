@@ -3751,6 +3751,15 @@ pickable{
   treasure_variant = 4,
 }
 
+npc{
+  name = "camera_shaker",
+  layer = 0,
+  x = 200,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+}
+
 tile{
   layer = 1,
   x = 192,

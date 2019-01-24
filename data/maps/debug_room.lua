@@ -22,3 +22,7 @@ end
 function map:on_opening_transition_finished()
 
 end
+
+function camera_shaker:on_interaction()
+  map:get_camera():shake({count = 6, amplitude = 4, speed = 80})
+end

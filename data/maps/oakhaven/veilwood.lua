@@ -22,7 +22,7 @@ function tombstone_npc:on_interaction()
     game:start_dialog("plaaaaaaaaceholder")
   else
     game:start_dialog("plaaaaaceholder", function()
-      
+      map:get_camera():shake({count = 6, amplitude = 4, speed = 80})
     end)
   end
 end
