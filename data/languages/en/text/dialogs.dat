@@ -6419,6 +6419,104 @@ No problem, Hazel. If that's what you need.
 }
 
 dialog{
+  id = "_oakhaven.npcs.hazel.library.1",
+  text = [[
+HAZEL:
+Hey, Tilia! You got a sample from another
+one of those big trees?
+
+TILIA:
+I did. What did you find out?
+
+
+HAZEL:
+These trees are called Manna Oaks. From
+what I can tell, the Sea King had them
+planted ages ago. A man named Amalenchier
+HAZEL:
+tended to them, and cared for them as all
+the other trees on Oakhaven grew around
+their root system. Amalenchier lived where
+HAZEL:
+the village of Ivystump is now. Supposedly,
+his spirit still protects the woods.
+Anyway, let me see the twig you brought me.
+TILIA:
+Sure, here.
+
+
+HAZEL:
+$1...hmm... $3Yeah, this confirms what I had
+been thinking. The other Manna Oaks have
+the blight too. It seems to be coming from
+HAZEL:
+their roots, up through their cambrium. But
+if they're all sick... do their roots all
+connect? $1...$3Alright. Can you go to Ivystump
+HAZEL:
+and ask around? See if anyone there knows
+about the history of the Manna Oaks or why
+they're sick.
+TILIA:
+You think just because that's where this
+Amalenchier figure lived, someone there
+would know?
+HAZEL:
+Sometimes people keep weird old traditions
+around. And they say there's a ghost. And
+anyway, I'm going to look at each of the trees
+HAZEL:
+myself and see if they'll respond to any
+treatment I can come up with. Take this letter
+with you, it describes what's going on with
+HAZEL:
+the trees. J$1uuuu$3st in case you can't describe
+it yourself.
+
+TILIA:
+Thanks, Hazel. Alright, I'll go ask around
+Ivystump and see what turns up.
+
+HAZEL:
+Thank- woah, what's that!?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.library.2",
+  text = [[
+TILIA:
+I have no idea where that came from, but
+it looked just like a monster that attacked me
+when I took that twig from the Manna Oak.
+HAZEL:
+That doesn't make sense. I don't think-
+$2...$3Is there something smart enough to be
+trying to protect the blight on the trees?
+TILIA:
+Is that the kind of thing that sounds
+ridiculous? I don't understand biology.
+
+HAZEL:
+Yeah, that'd be ridiculous. Still, be careful.
+It's definitely weird.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.library.3",
+  text = [[
+HAZEL:
+I'm going to go try a few different treatments
+on the Manna Oaks. You bring that letter I
+gave you to someone in Ivystump Village and
+HAZEL:
+see if anyone there might know why the
+trees are getting sick.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.hazel.palace.1",
   text = [[
 TILIA:
@@ -6535,6 +6633,84 @@ dialog{
   text = [[
 The door isn't locked, but it seems rude
 to just wander into someone's room.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.1",
+  text = [[
+LAMIA:
+Hello dear. New faces in town have always
+come through the Veilwood. How did it
+treat you?
+TILIA:
+Well it's full of monsters. So...
+
+
+LAMIA:
+In this town, we've tried always to respect
+the Veilwood. I've studied its life forms as
+a botanist. It hasn't always been home to
+LAMIA:
+so many monsters. And I don't think they're
+doing the trees any good.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.2",
+  text = [[
+LAMIA:
+Hello, dear. New face in town, you must
+have crossed through the Veilwood to
+get here.
+TILIA:
+I did. I came here looking for someone who
+knows about the Manna Oaks. They're
+getting sick and my friend is trying to
+TILIA:
+help. She wrote a letter explaining what
+she's figured out so far. Take a look.
+
+LAMIA:
+$1hmm...$3 She's noticed the Oakblight. I'm
+impressed with her observations. Especially
+because the blight is starting to spread to
+LAMIA:
+other trees. I've been keeping an eye on the
+Oakblight for several months, but... I have no
+idea what's causing it. People used to say
+LAMIA:
+that the Manna Oaks were given to the Sea
+King by the Ocean herself, so he could shelter
+his people. Their roots grow so deep that
+LAMIA:
+they draw water from the sea. A man named
+Amalenchier tended to the trees as saplings.
+His grave is in the Veilwood, in a grove of
+LAMIA:
+fir trees. If his spirit still protects the woods,
+perhaps you ought to visit his grave.
+
+TILIA:
+I'm not a big fan of ghosts, but I'll give it a
+shot. Thanks.
+
+LAMIA:
+The blight on the forest has corrupted some
+of the trees' spirits. Be careful.
+
+TILIA:
+Not sure what to make of that, but all right.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.3",
+  text = [[
+LAMIA:
+Have you been to visit Amalenchier's grave?
+They say his spirit watches over the Veilwood.
 ]],
 }
 
@@ -9239,6 +9415,15 @@ You found 5 white mandrake roots!
 }
 
 dialog{
+  id = "_treasure.manna_oak_twig.1",
+  text = [[
+You picked up a twig from this enormous
+tree. It looks healthy enough, but has a
+rotten scent.
+]],
+}
+
+dialog{
   id = "_treasure.matches.1",
   text = [[
 You found a box of matches. This will make it
@@ -11186,7 +11371,22 @@ the other two giant oaks.
 !of Marblecliff Mountain.
 @!Take the twig back to Hazel
 !She's at Oakhaven's library.
-  
+@!Defend Hazel!
+@Visit Ivystump and ask if
+anyone knows about the Oaks
+!Ivystump is on the western
+!edge of Oakhaven, past the
+!Veilwood forest
+@!An old botanist, Lamia,
+!lives in the southeast part
+!of town. She might know
+!about the Manna Oaks.
+@Check Amalenchier's grave.
+!It's in a grove of fir trees
+!in the west of the Veilwood.
+@Investigate the 3 Manna Oaks.
+!You've looked at $v1 so far.
+@Follow the tunnels.
 ]],
 }
 

@@ -3591,7 +3591,7 @@ enemy{
   x = 384,
   y = 349,
   direction = 0,
-  breed = "bosses/fiend_1",
+  breed = "bosses/forest_revenant",
 }
 
 destructible{

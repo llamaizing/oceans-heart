@@ -193,6 +193,7 @@ map{ id = "oakhaven/interiors/saloon", description = "Salamander Heartache" }
 map{ id = "oakhaven/interiors/sculptor", description = "sculptor" }
 map{ id = "oakhaven/interiors/tailor", description = "Tailor" }
 map{ id = "oakhaven/ivystump", description = "Ivystump Village" }
+map{ id = "oakhaven/ivystump_interiors/lamia", description = "Lamia's House" }
 map{ id = "oakhaven/ivystump_interiors/sawmill", description = "Sawmill" }
 map{ id = "oakhaven/marble_summit", description = "Marble Summit" }
 map{ id = "oakhaven/marblecliff", description = "Marblecliff" }
@@ -233,6 +234,7 @@ sprite{ id = "enemies/bosses/blackbeard", description = "Blackbeard" }
 sprite{ id = "enemies/bosses/burrow_crab", description = "Burrow Crab" }
 sprite{ id = "enemies/bosses/charging_pirate_1", description = "Charging Pirate 1" }
 sprite{ id = "enemies/bosses/fiend_1", description = "Fiend 1" }
+sprite{ id = "enemies/bosses/forest_revenant", description = "Forest Revenant" }
 sprite{ id = "enemies/bosses/jazari", description = "al Jazari" }
 sprite{ id = "enemies/bosses/michael", description = "Michael Mighty Mead Maker" }
 sprite{ id = "enemies/bosses/michael_weapon", description = "Michael-Weapon" }
@@ -307,6 +309,7 @@ sprite{ id = "enemies/normal_enemies/pirate_sword_brown_2", description = "Pirat
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_2_weapon", description = "weapon - pirate sword brown 2" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_3", description = "pirate - sword brown 3" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_3_weapon", description = "weapon - pirate sword brown 3" }
+sprite{ id = "enemies/normal_enemies/pollutant_blob", description = "Pollutant Blob" }
 sprite{ id = "enemies/normal_enemies/rambleshroom", description = "Rambleshroom" }
 sprite{ id = "enemies/normal_enemies/rock_spider_brown", description = "rock spider - brown" }
 sprite{ id = "enemies/normal_enemies/rock_spider_red", description = "enemies/normal_enemies/rock_spider_red" }
@@ -427,6 +430,7 @@ sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
 sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/nitrodendron", description = "Nitrodendron" }
 sprite{ id = "entities/orange_peel", description = "Orange Peel" }
+sprite{ id = "entities/pollution_ash", description = "Pollution Ash" }
 sprite{ id = "entities/ripple", description = "Ripple" }
 sprite{ id = "entities/rockpile", description = "Rock Pile" }
 sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
@@ -1262,6 +1266,7 @@ enemy{ id = "bosses/blackbeard", description = "Blackbeard" }
 enemy{ id = "bosses/burrow_crab", description = "Burrow Crab" }
 enemy{ id = "bosses/charging_pirate_1", description = "Charging Pirate 1" }
 enemy{ id = "bosses/fiend_1", description = "Fiend 1" }
+enemy{ id = "bosses/forest_revenant", description = "Forest Revenant" }
 enemy{ id = "bosses/jazari", description = "al Jazari" }
 enemy{ id = "bosses/michael", description = "Michael Mighty Mead Maker" }
 enemy{ id = "bosses/rock_spider_big", description = "rock spider - big" }
@@ -1326,6 +1331,7 @@ enemy{ id = "normal_enemies/pirate_bow_brown_1", description = "Pirate - Bow/Dod
 enemy{ id = "normal_enemies/pirate_sword_brown_1", description = "Pirate lv1" }
 enemy{ id = "normal_enemies/pirate_sword_brown_2", description = "Pirate lv2" }
 enemy{ id = "normal_enemies/pirate_sword_brown_3", description = "Pirate lv3" }
+enemy{ id = "normal_enemies/pollutant_blob", description = "Pollutant Blob" }
 enemy{ id = "normal_enemies/rambleshroom", description = "Rambleshroom" }
 enemy{ id = "normal_enemies/rock_spider_brown", description = "rock spider - brown" }
 enemy{ id = "normal_enemies/rock_spider_red", description = "rock spider - red" }

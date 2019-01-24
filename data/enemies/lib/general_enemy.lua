@@ -89,6 +89,8 @@ function behavior:create(enemy, properties)
   local can_shoot = true
   local can_orbit_attack = true
   local attacking = false
+  local currently_dashing = false
+  local currently_teleporting = false
 
   --initialize universal enemy stuff:
   normal_functions:initialize(enemy, properties)
@@ -104,6 +106,7 @@ function behavior:create(enemy, properties)
 
   --RESTART
   function enemy:on_restarted()
+    if currently_dashing then attacking = false currently_dashing = false end
     self:get_sprite():set_animation("walking")
     going_hero = false
     self:go_random()
@@ -257,6 +260,7 @@ function enemy:teleport()
   sprite:set_animation("phasing_out")
   sol.audio.play_sound(properties.teleport_sound or "warp")
   sol.timer.start(map, 1000, function()
+    currently_teleporting = true
     sprite:set_animation("teleporting")
     local m = sol.movement.create("straight")
     m:set_speed(100)
@@ -270,6 +274,7 @@ function enemy:teleport()
         sprite:set_animation("walking")
       end)
       sol.timer.start(map, 1500, function()
+        currently_teleporting = false
         enemy:set_default_attack_consequences()
         enemy:set_can_attack()
         enemy:wrap_up_attack()
@@ -284,6 +289,7 @@ end
 
   --Dash Attack
   function enemy:dash_attack()
+    enemy:stop_movement() --stop moving while winding up
     local sprite = enemy:get_sprite()
     --set the general wind-up animation
     sprite:set_animation("wind_up")
@@ -294,6 +300,7 @@ end
     if properties.dash_attack_wind_up_time then telegraph_time = properties.dash_attack_wind_up_time end
     --after the telegraph, dash at the hero!
     sol.timer.start(map, telegraph_time, function()
+      currently_dashing = true
       sprite:set_animation("walking")
       if sprite:has_animation("dashing") then sprite:set_animation("dashing") end
       local m = sol.movement.create("straight")
@@ -308,6 +315,7 @@ end
       if properties.invincible_while_dashing then enemy:set_invincible() end
       m:start(enemy, function()
 --        print("movement done"..n)n=n+1
+        currently_dashing = false
         enemy:set_default_attack_consequences()
         enemy:wrap_up_attack()
         enemy:go_random()
@@ -315,6 +323,7 @@ end
       end) --movement callback function end
       function m:on_obstacle_reached()
 --        print("obstacle reached! "..n)
+        currently_dashing = false
         enemy:set_default_attack_consequences()
         enemy:wrap_up_attack()
         enemy:go_random()
@@ -328,7 +337,7 @@ end
 
   --Summon Attack
   function enemy:summon()
-    enemy:stop_movement()
+    enemy:stop_movement() -- don't move while summoning
     local sprite = enemy:get_sprite()
     local wind_up_animation = "wind_up"
     if sprite:has_animation("summoning_wind_up") then wind_up_animation = "summoning_wind_up" end
@@ -409,6 +418,7 @@ end
 
   --Orbit Attack
   function enemy:orbit_attack()
+    enemy:stop_movement() --don't move while summoning the orbiting projectiles
     local sprite = enemy:get_sprite()
     local x, y, layer = enemy:get_position()
     local direction = sprite:get_direction()
