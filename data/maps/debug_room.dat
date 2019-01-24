@@ -2678,8 +2678,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/marblecliff",
-  destination = "from_westoak",
+  destination_map = "oakhaven/ivystump",
 }
 
 pickable{

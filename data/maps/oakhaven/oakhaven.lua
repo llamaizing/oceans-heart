@@ -21,6 +21,7 @@ map:register_event("on_started", function()
     aubrey_door_npc:set_enabled(false)
     aubrey_door:set_enabled(false)
   end
+  --musicians sidequest:
   disguised_trumpet_player:set_traversable(true)
   if not game:get_value("oakhaven_find_poster_monster") then
     disguised_trumpet_player:set_enabled(false)
@@ -32,6 +33,8 @@ map:register_event("on_started", function()
     musician_1:set_enabled(false)
     musician_2:set_enabled(false)
   end
+  --manna oak
+  if game:get_value("quest_manna_oaks") >= 7 then manna_tree_door:set_enabled(false) end
 
 
 end)

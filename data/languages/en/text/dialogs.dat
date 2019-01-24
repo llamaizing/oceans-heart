@@ -6689,9 +6689,9 @@ they draw water from the sea. A man named
 Amalenchier tended to the trees as saplings.
 His grave is in the Veilwood, in a grove of
 LAMIA:
-fir trees. If his spirit still protects the woods,
-perhaps you ought to visit his grave.
-
+fir trees. If his spirit still protects the
+woods, perhaps you ought to visit
+his grave.
 TILIA:
 I'm not a big fan of ghosts, but I'll give it a
 shot. Thanks.
@@ -6711,6 +6711,24 @@ dialog{
 LAMIA:
 Have you been to visit Amalenchier's grave?
 They say his spirit watches over the Veilwood.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.4",
+  text = [[
+LAMIA:
+I thought I might find you here. Did you
+feel that earthquake?
+
+TILIA:
+Yeah. It happened right as I destroyed some
+monster down in Amalenchier's tomb.
+
+LAMIA:
+Something in the forest has been upset. I
+think you should go check the Manna Oaks.
+I just have a feeling.
 ]],
 }
 
@@ -8274,6 +8292,23 @@ dialog{
 There's a big stack of books here, mostly
 on history. Looks like the kind of stuff
 Hazel has been researching.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.amalenchier_grave",
+  text = [[
+It's an old tomb. The writing on the
+gravestone is worn off.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.amalenchier_revenant_still_alive",
+  text = [[
+TILIA:
+What? I thought I took care of you
+upstairs! Alright, buddy.
 ]],
 }
 
@@ -11373,7 +11408,7 @@ the other two giant oaks.
 !She's at Oakhaven's library.
 @!Defend Hazel!
 @Visit Ivystump and ask if
-anyone knows about the Oaks
+anyone knows about the Oaks.
 !Ivystump is on the western
 !edge of Oakhaven, past the
 !Veilwood forest
@@ -11384,6 +11419,7 @@ anyone knows about the Oaks
 @Check Amalenchier's grave.
 !It's in a grove of fir trees
 !in the west of the Veilwood.
+@Return to the tomb entrance.
 @Investigate the 3 Manna Oaks.
 !You've looked at $v1 so far.
 @Follow the tunnels.

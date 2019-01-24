@@ -19,7 +19,7 @@ end
 
 function lamia:on_interaction()
   --if you aren't yet on this phase of her quest:
-  if game:get_value("quest_manna_oaks") < 3 or game:get_value("quest_manna_oaks") == nil then
+  if game:get_value("quest_manna_oaks") == nil or game:get_value("quest_manna_oaks") < 3 then
     game:start_dialog("_oakhaven.npcs.ivystump.lamia.1")
 
   --if Hazel has just sent you to talk to Lamia

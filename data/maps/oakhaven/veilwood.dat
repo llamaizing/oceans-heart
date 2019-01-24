@@ -25994,15 +25994,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 792,
-  y = 792,
-  width = 16,
-  height = 32,
-  pattern = "2048",
-}
-
-tile{
-  layer = 0,
   x = 856,
   y = 760,
   width = 16,
@@ -35766,6 +35757,42 @@ tile{
   pattern = "1879",
 }
 
+tile{
+  layer = 0,
+  x = 792,
+  y = 792,
+  width = 16,
+  height = 32,
+  pattern = "2048",
+}
+
+teletransporter{
+  layer = 0,
+  x = 152,
+  y = 520,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/amalenchier_tomb",
+  destination = "from_outside",
+}
+
+destination{
+  name = "from_tomb",
+  layer = 0,
+  x = 160,
+  y = 549,
+  direction = 3,
+}
+
+npc{
+  name = "tombstone_npc",
+  layer = 0,
+  x = 160,
+  y = 541,
+  direction = 3,
+  subtype = 1,
+}
+
 destination{
   name = "from_westoak",
   layer = 0,
@@ -36503,7 +36530,7 @@ destructible{
 }
 
 dynamic_tile{
-  name = "mana_tree_door",
+  name = "manna_tree_door",
   layer = 0,
   x = 792,
   y = 792,
@@ -37426,13 +37453,25 @@ dynamic_tile{
   pattern = "2170",
 }
 
-npc{
-  name = "tombstone_npc",
+enemy{
+  name = "forest_revenant",
   layer = 0,
   x = 160,
-  y = 541,
+  y = 677,
+  enabled_at_start = false,
+  direction = 3,
+  breed = "bosses/forest_revenant",
+}
+
+npc{
+  name = "lamia",
+  layer = 0,
+  x = 128,
+  y = 565,
+  enabled_at_start = false,
   direction = 3,
   subtype = 1,
+  sprite = "npc/woman/woman_8.6",
 }
 
 tile{
@@ -39233,15 +39272,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "245",
-}
-
-tile{
-  layer = 1,
-  x = 792,
-  y = 792,
-  width = 16,
-  height = 16,
-  pattern = "2049",
 }
 
 tile{
@@ -41231,6 +41261,15 @@ tile{
   width = 32,
   height = 32,
   pattern = "1880",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 792,
+  width = 16,
+  height = 16,
+  pattern = "2049",
 }
 
 dynamic_tile{

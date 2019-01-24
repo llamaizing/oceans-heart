@@ -78771,7 +78771,7 @@ teletransporter{
 }
 
 dynamic_tile{
-  name = "mana_tree_door",
+  name = "manna_tree_door",
   layer = 2,
   x = 808,
   y = 816,

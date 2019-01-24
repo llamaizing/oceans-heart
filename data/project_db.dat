@@ -165,6 +165,7 @@ map{ id = "new_limestone/tavern_up_present", description = "Tavern Present-Upsta
 map{ id = "new_limestone/tavern_upstairs", description = "Tavern Upstairs" }
 map{ id = "new_limestone/tim", description = "Tim" }
 map{ id = "new_limestone/transition", description = "transition" }
+map{ id = "oakhaven/caves/amalenchier_tomb", description = "Amalenchier's Tomb" }
 map{ id = "oakhaven/caves/palace_tunnel", description = "Palace Tunnel" }
 map{ id = "oakhaven/caves/port_bush_hole", description = "Port Bush Hole" }
 map{ id = "oakhaven/eastoak", description = "Eastoak" }
@@ -1091,6 +1092,7 @@ sound{ id = "item_in_water", description = "item_in_water" }
 sound{ id = "jump", description = "jump" }
 sound{ id = "lift", description = "lift" }
 sound{ id = "magic_bar", description = "magic_bar" }
+sound{ id = "magic_regen", description = "magic_regen" }
 sound{ id = "message_end", description = "message_end" }
 sound{ id = "message_letter", description = "message_letter" }
 sound{ id = "monster_hurt", description = "monster_hurt" }
@@ -1150,6 +1152,7 @@ sound{ id = "thunk1", description = "thunk1" }
 sound{ id = "timer", description = "timer" }
 sound{ id = "timer_hurry", description = "timer_hurry" }
 sound{ id = "treasure", description = "treasure" }
+sound{ id = "uncorking_and_drinking_1", description = "uncorking_and_drinking_1" }
 sound{ id = "victory", description = "victory" }
 sound{ id = "walk_on_grass", description = "walk_on_grass" }
 sound{ id = "walk_on_water", description = "walk_on_water" }
