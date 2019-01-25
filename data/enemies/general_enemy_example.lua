@@ -31,7 +31,7 @@ local properties = {
   has_ranged_attack = true,
   ranged_attack_distance = 170,
   ranged_attack_cooldown = 5000,
-  ranged_attack_sound = "heart",
+  ranged_attack_sound = "shoot",
   projectile_breed = "misc/energy_ball_bounce",
 --optional properties for ranged attack are projectile_damage, projectile_split_children, and projectile_num_bounces, if the projectile breed will accept them!
   projectile_angle = "any",

@@ -29,7 +29,6 @@ function item:on_using()
   if self:get_amount() > 0 then
     game:add_life(4)              --health amount!
     self:remove_amount(1)
-    sol.audio.play_sound("heart")
   end
   item:set_finished()
 end

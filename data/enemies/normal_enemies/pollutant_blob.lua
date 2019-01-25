@@ -1,5 +1,8 @@
 local enemy = ...
 local map = enemy:get_map()
+local particles = {}
+local MAX_PARTICLES = 2
+local PARTICLE_SPEED = 15
 
 local properties_setter = require("enemies/lib/properties_setter")
 local behavior = require("enemies/lib/general_enemy")
@@ -48,20 +51,24 @@ properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)
 
 enemy:register_event("on_created", function()
-  sol.timer.start(map, math.random(100,225), function()
-      local x, y, layer = enemy:get_position()
-      local particle = map:create_custom_entity{
-      name = "enemy_particle_effect",
-      direction = enemy:get_sprite():get_direction(),
-      layer = layer,
-      x = math.random(x-8, x+8),
-      y = math.random(y-8, y+8),
-      width = 8,
-      height = 8,
-      sprite = "entities/pollution_ash",
-      model = "dash_moth"
-      }
-      particle:set_drawn_in_y_order(true)
-      if enemy:exists() and enemy:is_enabled() then return true end
+--particle effect creation
+  local i = 1
+  sol.timer.start(map, math.random(100,250), function()
+    particles[i] = sol.sprite.create("entities/pollution_ash")
+    particles[i]:set_xy(math.random(-16, 16), math.random(-16, 8))
+    local m = sol.movement.create("random")
+    m:set_speed(PARTICLE_SPEED)
+    m:start(particles[i])
+    i = i + 1
+    if i > MAX_PARTICLES then i = 0 end
+    if enemy:exists() and enemy:is_enabled() then return true end
   end)
 end)
+
+--particle effect draw
+function enemy:on_post_draw()
+    local x, y, layer = enemy:get_position()
+    for i=1, #particles do
+      map:draw_visual(particles[i], x, y)
+    end
+end
