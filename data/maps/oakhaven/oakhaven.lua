@@ -192,7 +192,7 @@ end
 function hazel:on_interaction()
   if game:get_value("quest_manna_oaks") == 9 then
     game:start_dialog("_oakhaven.npcs.hazel.tree.1", function()
-      hero:start_treasure("coral_ore")
+      hero:start_treasure("elixer")           --IS AN ELIXER THE BEST REWARD?????
       game:set_value("quest_manna_oaks", 10)
     end)
   else

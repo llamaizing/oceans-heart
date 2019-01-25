@@ -6825,6 +6825,28 @@ I just have a feeling.
 }
 
 dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.5",
+  text = [[
+LAMIA:
+I noticed the Manna Oaks have leaves on
+their branches once more. It's not much,
+but I'm very thankful.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.6",
+  text = [[
+LAMIA:
+The Manna Oaks have been growing for
+thousands of years. They've survived the
+flood and will outlive our great grandchildren
+LAMIA:
+if people like you continue to protect them.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.library.festus.1",
   text = [[
 FESTUS:

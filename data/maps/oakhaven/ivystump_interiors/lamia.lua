@@ -12,9 +12,9 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+  if game:get_value("quest_manna_oaks") > 5 and game:get_value("quest_manna_oaks") <9 then
+    lamia:set_enabled(false)
+  end
 end
 
 function lamia:on_interaction()
@@ -30,5 +30,15 @@ function lamia:on_interaction()
 
   elseif game:get_value("quest_manna_oaks") == 5 then
     game:start_dialog("_oakhaven.npcs.ivystump.lamia.3")
+
+  elseif game:get_value("quest_manna_oaks") >= 9 and not game:get_value("ivystump_received_apples_from_lamia") then
+    game:start_dialog("_oakhaven.npcs.ivystump.lamia.5", function()
+      map:get_hero():start_treasure("apples", 4)
+      game:set_value("ivystump_received_apples_from_lamia", true)
+    end)
+
+  else
+    game:start_dialog("_oakhaven.npcs.ivystump.lamia.6")
+
   end
 end
