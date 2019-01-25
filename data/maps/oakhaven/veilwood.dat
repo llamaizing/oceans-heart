@@ -41291,7 +41291,7 @@ tile{
 }
 
 dynamic_tile{
-  name = "mana_tree_leaves",
+  name = "manna_oak_leaves",
   layer = 1,
   x = 728,
   y = 696,

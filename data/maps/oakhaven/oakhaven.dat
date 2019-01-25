@@ -79054,6 +79054,35 @@ jumper{
   jump_length = 56,
 }
 
+destination{
+  name = "from_manna_oak_tunnels",
+  layer = 2,
+  x = 816,
+  y = 853,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 2,
+  x = 808,
+  y = 824,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/manna_oak_tunnels",
+  destination = "from_oakhaven",
+}
+
+npc{
+  name = "hazel",
+  layer = 2,
+  x = 848,
+  y = 829,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hazel",
+}
+
 tile{
   layer = 3,
   x = 864,
@@ -80902,7 +80931,7 @@ tile{
 }
 
 dynamic_tile{
-  name = "mana_tree_leaves",
+  name = "manna_oak_leaves",
   layer = 3,
   x = 744,
   y = 720,

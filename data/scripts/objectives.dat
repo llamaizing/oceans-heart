@@ -294,5 +294,8 @@ side{
 side{
 	dialog_id = "quest.side.oakhaven.manna_oaks",
 	calc_phase = "quest_manna_oaks",
-	location = "location.oakhaven"
+	location = "location.oakhaven",
+    replace_v = {
+		"manna_oaks_investigated"
+    }
 }

@@ -68,7 +68,7 @@ animation{
   },
 }
 animation{
-  name = "summoning_wind_up (copy)",
+  name = "summoning_wind_up",
   src_image = "enemies/bosses/forest_revenant.png",
   frame_delay = 250,
   frame_to_loop_on = 0,

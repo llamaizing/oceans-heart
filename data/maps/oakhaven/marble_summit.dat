@@ -9800,6 +9800,24 @@ pickable{
   treasure_savegame_variable = "found_marblecliff_manna_oak_twig",
 }
 
+teletransporter{
+  layer = 0,
+  x = 392,
+  y = 160,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/manna_oak_tunnels",
+  destination = "from_marblecliff",
+}
+
+destination{
+  name = "from_manna_oak_tunnels",
+  layer = 0,
+  x = 400,
+  y = 189,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 216,
@@ -10175,7 +10193,7 @@ tile{
 }
 
 dynamic_tile{
-  name = "mana_tree_leaves",
+  name = "manna_oak_leaves",
   layer = 1,
   x = 328,
   y = 56,

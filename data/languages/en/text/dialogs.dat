@@ -6581,6 +6581,98 @@ everything there!
 }
 
 dialog{
+  id = "_oakhaven.npcs.hazel.tree.1",
+  text = [[
+HAZEL:
+How did it go down in the tunnels?
+
+
+TILIA:
+There were a whole bunch of monsters
+all around the trees' roots, but I took care
+of them. Down at the center of the tunnels
+TILIA:
+there's some old shrine where the Oaks'
+roots grow into a pool of salt water. It
+seems like the kind of plant thing you might
+TILIA:
+like to check out.
+
+
+HAZEL:
+That's entirely accurate. I'm going to keep
+studying these trees. It seems like they have
+a lot to do with the entire ecosystem's health.
+HAZEL:
+Here, thanks for your help. I think you might
+find this useful as you look for your dad.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.tree.2",
+  text = [[
+HAZEL:
+I'm going to keep studying these trees.
+I think they have a lot to do with the entire
+island's ecosystem. But you need to get
+HAZEL:
+back to looking for your dad. I know you'll
+fight your way through anything to do what
+you think is right. Thanks for helping me.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.tunnels.1",
+  text = [[
+TILIA:
+Sure wasn't expecting to find you fighting
+monsters in these tunnels.
+
+HAZEL:
+Yeah, I was trying to see if the blight would
+respond to Elixer Vitae when the entrance
+to these tunnels opened up. I read that the
+HAZEL:
+Manna Oak's roots grew all the way down
+to the sea. These tunnels must wind down
+along with them. And then I think obviously
+HAZEL:
+the fact that there are monsters running
+around here is why the trees are sick.
+
+TILIA:
+Yeah, that's what I was thinking too.
+
+
+HAZEL:
+Well I don't mind fighting a monster here
+and there, but I'm going to let you take it
+from here. Meet me at the Manna Oak in
+HAZEL:
+Oakhaven once you've figured out this
+monster thing?
+
+TILIA:
+I'll see you there then.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.tunnels.2",
+  text = [[
+HAZEL:
+I think obiously it's the monsters running
+around their roots that are making the
+trees sick. That's really your department,
+HAZEL:
+so meet me back at the tree in Oakhaven
+once you've gotten this sorted out.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.inn.beaufort.1",
   text = [[
 BEAUFORT:
@@ -11422,7 +11514,10 @@ anyone knows about the Oaks.
 @Return to the tomb entrance.
 @Investigate the 3 Manna Oaks.
 !You've looked at $v1 so far.
-@Follow the tunnels.
+@Investigate further down
+the tunnels.
+@Let Hazel know there were
+monsters infesting the roots.
 ]],
 }
 

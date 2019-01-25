@@ -35,7 +35,10 @@ map:register_event("on_started", function()
   end
   --manna oak
   if game:get_value("quest_manna_oaks") >= 7 then manna_tree_door:set_enabled(false) end
-
+  if game:get_value("quest_manna_oaks") >= 9 then
+    hazel:set_enabled(true)
+    manna_oak_leaves:set_enabled(true)
+  end
 
 end)
 
@@ -184,6 +187,18 @@ for poster in map:get_entities("band_poster") do
   end
 end
 
+
+--HAZEL, post tree quest
+function hazel:on_interaction()
+  if game:get_value("quest_manna_oaks") == 9 then
+    game:start_dialog("_oakhaven.npcs.hazel.tree.1", function()
+      hero:start_treasure("coral_ore")
+      game:set_value("quest_manna_oaks", 10)
+    end)
+  else
+    game:start_dialog("_oakhaven.npcs.hazel.tree.2")
+  end
+end
 
 ---------------------------
 
