@@ -3825,8 +3825,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 520,
-  y = 333,
+  x = 360,
+  y = 381,
   direction = 0,
   breed = "bosses/pollutant_boss",
 }

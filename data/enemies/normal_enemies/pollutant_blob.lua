@@ -55,7 +55,7 @@ enemy:register_event("on_created", function()
   local i = 1
   sol.timer.start(map, math.random(100,250), function()
     particles[i] = sol.sprite.create("entities/pollution_ash")
-    particles[i]:set_xy(math.random(-16, 16), math.random(-16, 8))
+    particles[i]:set_xy(math.random(-16, 16), math.random(-16, 0))
     local m = sol.movement.create("random")
     m:set_speed(PARTICLE_SPEED)
     m:start(particles[i])

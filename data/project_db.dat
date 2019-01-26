@@ -339,6 +339,7 @@ sprite{ id = "entities/armor_tools", description = "Armor Tools" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/arrow_fire", description = "arrow_fire" }
 sprite{ id = "entities/arrow_silver", description = "arrow_silver" }
+sprite{ id = "entities/arrow_warp", description = "arrow warp" }
 sprite{ id = "entities/bait", description = "bait" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/block_crate", description = "Block (Crate)" }

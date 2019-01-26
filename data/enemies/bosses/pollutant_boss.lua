@@ -1,8 +1,8 @@
 local enemy = ...
 local map = enemy:get_map()
 local particles = {}
-local MAX_PARTICLES = 4
-local PARTICLE_SPEED = 15
+local MAX_PARTICLES = 5
+local PARTICLE_SPEED = 11
 
 local properties_setter = require("enemies/lib/properties_setter")
 local behavior = require("enemies/lib/general_enemy")
@@ -56,7 +56,7 @@ enemy:register_event("on_created", function()
   local i = 1
   sol.timer.start(map, math.random(100,250), function()
     particles[i] = sol.sprite.create("entities/pollution_ash")
-    particles[i]:set_xy(math.random(-16, 16), math.random(-16, 8))
+    particles[i]:set_xy(math.random(-20, 20), math.random(-24, 0))
     local m = sol.movement.create("random")
     m:set_speed(PARTICLE_SPEED)
     m:start(particles[i])
