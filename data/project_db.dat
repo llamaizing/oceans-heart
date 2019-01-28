@@ -438,6 +438,7 @@ sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/nitrodendron", description = "Nitrodendron" }
 sprite{ id = "entities/orange_peel", description = "Orange Peel" }
 sprite{ id = "entities/pollution_ash", description = "Pollution Ash" }
+sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/ripple", description = "Ripple" }
 sprite{ id = "entities/rockpile", description = "Rock Pile" }
 sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
@@ -470,6 +471,7 @@ sprite{ id = "entities/vase", description = "Vase" }
 sprite{ id = "entities/vase_arrows", description = "Vase - Arrows" }
 sprite{ id = "entities/vase_berries", description = "Vase-Berries" }
 sprite{ id = "entities/vase_skull", description = "Vase (skull)" }
+sprite{ id = "entities/warp_block", description = "Warp Block" }
 sprite{ id = "entities/weak_tree", description = "weak tree" }
 sprite{ id = "hero/barrier", description = "Barrier" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
@@ -1029,10 +1031,12 @@ music{ id = "crabhook", description = "crabhook" }
 music{ id = "fire_burning", description = "fire_burning" }
 music{ id = "fort_crow", description = "Fort Crow" }
 music{ id = "goatshead_harbor", description = "Goatshead Harbor" }
+music{ id = "goatshead_harbor_old", description = "OLD goatshead Harbor" }
 music{ id = "goatshead_overworld_2", description = "Goatshead Overworld 2" }
 music{ id = "hourglass_fort", description = "Hourglass Fort" }
 music{ id = "new_limestone_island", description = "New Limestone" }
 music{ id = "new_limestone_island_slow", description = "New Limestone Slow" }
+music{ id = "oak_hornpipe", description = "oak_hornpipe" }
 music{ id = "oakhaven_overworld", description = "Oakhaven Overworld" }
 music{ id = "oceans_heart", description = "Ocean's Heart" }
 music{ id = "overworld_01", description = "Overworld 01" }
@@ -1369,10 +1373,12 @@ entity{ id = "chain_link", description = "Chain Link" }
 entity{ id = "cliff", description = "cliff" }
 entity{ id = "damaging_sparkle", description = "Damaging Sparkle" }
 entity{ id = "dash_moth", description = "Dash Moth" }
+entity{ id = "ephemeral_effect", description = "Ephereral Effect" }
 entity{ id = "leaf_pile", description = "Leaf Pile" }
 entity{ id = "rockpile", description = "Rock Pile" }
 entity{ id = "rockpile_3", description = "rockpile 3" }
 entity{ id = "torch", description = "torch" }
+entity{ id = "warp_block", description = "Warp Block" }
 
 language{ id = "en", description = "en" }
 language{ id = "en/images", description = "en/images" }

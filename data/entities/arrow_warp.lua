@@ -62,7 +62,6 @@ arrow.apply_cliffs = true
 -- Triggers the animation and sound of the arrow reaching something
 -- and removes the arrow after some delay.
 local function attach_to_obstacle()
-
   flying = false
   sprite:set_animation("reached_obstacle")
   sol.audio.play_sound("arrow_hit")
@@ -74,58 +73,64 @@ local function attach_to_obstacle()
 
 end
 
-
 local function warp_hero(entity)
   if enough_magic then
-  initial_pos_x, initial_pos_y = entity:get_position()
+    enemy_x, enemy_y, enemy_layer = entity:get_position()
     if entity:get_type() == "enemy" then entity:stop_movement() end
     sol.audio.play_sound("warp")
     hero:freeze()
     hero:set_animation("arrow_warping", function()
-      local dx = {[0] = 24, [1] = 0, [2] = -24, [3] = 0}
-      local dy = {[0] = 0, [1] = -24, [2] = 0, [3] = 24}
-      local dir = entity:get_direction4_to(hero)
-      dx, dy = dx[dir], dy[dir]
-      -- local m = sol.movement.create("target")
-      -- m:set_target(initial_pos_x + dx, initial_pos_y + dy)
-      -- m:set_speed(200)
-      -- m:set_smooth()
-      local m = sol.movement.create("straight")
-      m:set_angle(hero:get_angle(entity))
-      m:set_max_distance(entity:get_distance(hero))
-      m:set_speed(200)
-      
-      local warping_state = sol.state.create()
-      warping_state:set_visible(false)
-      warping_state:set_can_traverse(true)
---      warping_state:set_can_traverse_ground("wall", true)
---      warping_state:set_can_traverse_ground("low_wall", true)
-      warping_state:set_can_traverse_ground("deep_water", true)
-      warping_state:set_can_traverse_ground("hole", true)
-      warping_state:set_can_traverse_ground("prickles", true)
-      warping_state:set_can_traverse_ground("lava", true)
-      warping_state:set_can_control_movement(false)
-      warping_state:set_can_be_hurt(false)
-      warping_state:set_can_use_sword(false)
-      warping_state:set_can_use_item(false)
-      warping_state:set_can_interact(false)
-      warping_state:set_can_grab(false)
-      warping_state:set_can_pick_treasure(false)
-      warping_state:set_can_use_stairs(false)
-      warping_state:set_can_use_jumper(false)
-      hero:start_state(warping_state)
+      local camera = map:get_camera()
+      local hero_x, hero_y, hero_layer = hero:get_position()
+      --lock camera
+      local tracking_object = map:create_custom_entity{
+        direction = 0, x = hero_x, y = hero_y, layer = hero_layer,
+        width = 16, height = 16,
+      }
+      tracking_object:set_can_traverse(true)
+      tracking_object:set_can_traverse_ground("wall", true)
+      tracking_object:set_can_traverse_ground("deep_water", true)
+      tracking_object:set_can_traverse_ground("prickles", true)
+      tracking_object:set_can_traverse_ground("lava", true)
+      camera:start_tracking(tracking_object)
 
-      m:start(hero, function() hero:unfreeze() end)
+      local poof1 = map:create_custom_entity{
+        direction = 0, x = hero_x, y = hero_y+2, layer = hero_layer,
+        width = 32,
+        height = 32,
+        sprite = "entities/poof",
+        model = "ephemeral_effect"
+      }
+      local poof2 = map:create_custom_entity{
+        direction = 0, x = enemy_x, y = enemy_y+2, layer = enemy_layer,
+        width = 32,
+        height = 32,
+        sprite = "entities/poof",
+        model = "ephemeral_effect"
+      }
+      poof1:start()
+      poof2:start()
+      hero:set_position(enemy_x, enemy_y, enemy_layer)
+      entity:set_position(hero_x, hero_y, hero_layer)
+      hero:set_animation("stopped")
+      --move camera to hero
+      local m = sol.movement.create("target")
+      m:set_speed(200)
+      m:start(tracking_object, function()
+        hero:unfreeze()
+        camera:start_tracking(hero)
+        poof1:remove()
+        poof2:remove()
+        tracking_object:remove()
+      end)
     end)
-  else --not enough magic
-    sol.audio.play_sound("no")
+
   end
 end
 
 
 -- Attaches the arrow to an entity and make it follow it.
 local function attach_to_entity(entity)
-
   if entity_reached ~= nil then
     -- Already attached.
     return
@@ -169,6 +174,10 @@ end
 
 -- Hurt enemies.
 arrow:add_collision_test("sprite", function(arrow, entity)
+  if entity:get_type() == "custom_entity" and entity:get_model() == "warp_block" then
+    warp_hero(entity)
+    arrow:remove()
+  end
 
   if entity:get_type() == "enemy" then
     local enemy = entity
@@ -180,12 +189,13 @@ arrow:add_collision_test("sprite", function(arrow, entity)
     local arrow_reaction = enemy:get_attack_consequence_sprite(sprite, "arrow")
     attach_to_entity(enemy)
     if arrow_reaction ~= "protected" and arrow_reaction ~= "ignored" then
-      if enemy:get_life() - game:get_value("bow_damage") <= 0 then
-        --warp hero to enemy's location
-        warp_hero(entity)
-      end
+      -- if enemy:get_life() - game:get_value("bow_damage") <= 0 then
+      --   --warp hero to enemy's location
+      --   warp_hero(entity)
+      -- end
       bow_damage = game:get_value("bow_damage")
-     enemy:hurt(bow_damage)
+      enemy:hurt(bow_damage)
+      warp_hero(entity)
     end
 
   end
