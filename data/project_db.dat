@@ -434,6 +434,7 @@ sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ink_splash", description = "Ink Splash" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
+sprite{ id = "entities/leaf_whirl_green", description = "Leaf Whirl- Green" }
 sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/nitrodendron", description = "Nitrodendron" }
 sprite{ id = "entities/orange_peel", description = "Orange Peel" }
@@ -1239,6 +1240,7 @@ item{ id = "key_sometimes_cape_ruins", description = "Key - Sometimes Cape Ruins
 item{ id = "key_spruce_head", description = "Key - Spruce Head" }
 item{ id = "kingscrown", description = "Kingscrown Flowers" }
 item{ id = "lavendar", description = "Lavendar-1,5,10" }
+item{ id = "leaf_tornado", description = "Leaf Tornado" }
 item{ id = "mandrake", description = "Mandrake-1,5,10" }
 item{ id = "mandrake_white", description = "white mandrake-1,3,5" }
 item{ id = "manna_oak_twig", description = "Manna Oak Twig" }

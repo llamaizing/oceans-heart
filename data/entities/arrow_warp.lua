@@ -83,11 +83,14 @@ local function warp_hero(entity)
       local camera = map:get_camera()
       local hero_x, hero_y, hero_layer = hero:get_position()
       --lock camera
+      local new_layer = hero_layer + 1
+      if new_layer > map:get_max_layer() then new_layer = new_layer - 2 end
       local tracking_object = map:create_custom_entity{
-        direction = 0, x = hero_x, y = hero_y, layer = hero_layer,
+        direction = 0, x = hero_x, y = hero_y, layer = new_layer,
         width = 16, height = 16,
       }
       tracking_object:set_can_traverse(true)
+      tracking_object:set_can_traverse("custom_entity", true)
       tracking_object:set_can_traverse_ground("wall", true)
       tracking_object:set_can_traverse_ground("deep_water", true)
       tracking_object:set_can_traverse_ground("prickles", true)

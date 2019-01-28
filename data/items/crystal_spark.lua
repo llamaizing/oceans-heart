@@ -87,11 +87,15 @@ function item:on_using()
 
 
       sol.timer.start(game, 2000, function()
-        for i=1,12 do flame_pillars[i]:remove() end
+        for i=1,12 do
+          if flame_pillars[i] then
+            flame_pillars[i]:remove()
+          end
+        end
       end)
 
       hero:set_sword_sprite_id("hero/gust")
-  --    hero:unfreeze()
+      hero:unfreeze()
       hero:start_attack()
       sol.audio.play_sound("sword_spin_attack_release")
       sol.audio.play_sound("thunk1")
@@ -100,7 +104,6 @@ function item:on_using()
       function sprite:on_animation_finished()
         hero:set_sword_sprite_id("hero/sword1")
       end
-      hero:unfreeze()
       item:set_finished()
 
 
