@@ -43,7 +43,7 @@ local item_descriptions = {
     "Tornado Dash",
     "Zephyrine's Tempest",
     "Ophira's Ember",
-    "Amalenchier's Shield",
+    "Amalenchier's Wrath",
     "Bombs",
     "Bow",
     "Flame Arrows",

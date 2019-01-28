@@ -4618,6 +4618,20 @@ pickable{
   treasure_name = "potion_magic_restoration",
 }
 
+pickable{
+  layer = 0,
+  x = 496,
+  y = 61,
+  treasure_name = "potion_magic_restoration",
+}
+
+pickable{
+  layer = 0,
+  x = 488,
+  y = 61,
+  treasure_name = "potion_magic_restoration",
+}
+
 tile{
   layer = 1,
   x = 192,

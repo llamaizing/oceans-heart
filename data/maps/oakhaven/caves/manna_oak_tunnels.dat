@@ -12651,8 +12651,8 @@ pickable{
   layer = 0,
   x = 160,
   y = 597,
-  treasure_name = "health_upgrade",
-  treasure_savegame_variable = "manna_oak_tunnels_health_upgrade",
+  treasure_name = "leaf_tornado",
+  treasure_savegame_variable = "manna_oak_tunnels_leaf_upgrade",
 }
 
 enemy{
