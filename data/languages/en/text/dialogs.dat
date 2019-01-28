@@ -9522,6 +9522,16 @@ You found 10 stems of lavendar flowers!
 }
 
 dialog{
+  id = "_treasure.leaf_tornado.1",
+  text = [[
+You received Amalenchier's Shield. This
+spell consumes much of your magic power
+to summon a whirl of leaves to protect you
+for a short time.
+]],
+}
+
+dialog{
   id = "_treasure.mandrake.1",
   text = [[
 You collected a mandrake root.

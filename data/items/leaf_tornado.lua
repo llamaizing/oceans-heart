@@ -1,7 +1,7 @@
 local item = ...
 local game = item:get_game()
 
-local MAGIC_COST = 85
+local MAGIC_COST = 90
 local NUM_ATTACKS = 8
 
 function item:on_started()
@@ -38,6 +38,7 @@ function item:on_using()
     sol.timer.start(game, 800, function()
       --summon some stuff to hurt enemies
       local leaf_attacks = {}
+      local root_attacks = {}
       for i = 1, NUM_ATTACKS do
         sol.timer.start(game, 800/NUM_ATTACKS * i, function()
           leaf_attacks[i] = map:create_custom_entity{
@@ -63,6 +64,25 @@ function item:on_using()
           end)
           m:set_radius(56)
         end)
+      end
+
+      local dx = {[0] = 32, [1] = 0, [2] = -32, [3] = 0}
+      local dy = {[0] = 0, [1] = -32, [2] = 0, [3] = 32}
+
+      for i = 0, 3 do
+        root_attacks[i] = map:create_custom_entity{
+        name = "root_attack",
+        direction = 0,
+        layer = layer,
+        x = x + dx[i],
+        y = y + dy[i],
+        width = 16,
+        height = 16,
+        sprite = "enemies/misc/root_small",
+        model = "damaging_sparkle"
+        }
+        root_attacks[i]:set_damage((game:get_value("sword_damage") * 2) or 10)
+        root_attacks[i]:get_sprite():set_animation("growing", function() root_attacks[i]:remove() end)
       end
 
       sol.timer.start(game, 5000, function()
