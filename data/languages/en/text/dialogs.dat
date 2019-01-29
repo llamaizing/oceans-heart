@@ -6163,6 +6163,28 @@ to the east, you can't miss it.
 }
 
 dialog{
+  id = "_oakhaven.npcs.guards.palace.archives.1",
+  text = [[
+GUARD:
+Hey! Are you the new cook?
+
+
+TILIA:
+Oh, uh. Yeah. Of course. Aren't I late?
+
+
+GUARD:
+Yeah you are! I'm glad you remembered to
+use the side tunnel though. Head down that
+hallway to get to the kitchen.
+TILIA:
+Will do!
+
+$1...$3need to find a way to lure you away...
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.guards.port.1",
   text = [[
 TOWN GUARD:
@@ -9789,6 +9811,56 @@ dialog{
   id = "_treasure.tacklebox.1",
   text = [[
 You found an old tacklebox.
+]],
+}
+
+dialog{
+  id = "_treasure.thunder_charm.1",
+  text = [[
+You received the Seabird's Tear.
+This spell will use some of your magic
+to pull a lightning bolt from the sky,
+hitting one nearby enemy.
+]],
+}
+
+dialog{
+  id = "_treasure.thunder_charm.2",
+  text = [[
+You upgraded the Seabird's Tear.
+This spell will use some of your magic
+to pull a lightning bolt from the sky,
+hitting two nearby enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.thunder_charm.3",
+  text = [[
+You upgraded the Seabird's Tear.
+This spell will use some of your magic
+to pull a lightning bolt from the sky,
+hitting three nearby enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.thunder_charm.4",
+  text = [[
+You upgraded the Seabird's Tear.
+This spell will use some of your magic
+to pull a lightning bolt from the sky,
+hitting four nearby enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.thunder_charm.5",
+  text = [[
+You upgraded the Seabird's Tear.
+This spell will use some of your magic
+to pull a lightning bolt from the sky,
+hitting five nearby enemies.
 ]],
 }
 

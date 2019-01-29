@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "indoors_cabin",
+  music = "same",
 }
 
 tile{
@@ -5180,10 +5181,10 @@ dynamic_tile{
   layer = 0,
   x = 576,
   y = 144,
-  pattern = "333",
+  enabled_at_start = false,
   width = 24,
   height = 16,
-  enabled_at_start = false,
+  pattern = "333",
 }
 
 npc{

@@ -1,0 +1,8 @@
+animation{
+  name = "walking",
+  src_image = "entities/lightning_bolt_attack.png",
+  frame_delay = 60,
+  directions = {
+    { x = 32, y = 0, frame_width = 16, frame_height = 48, origin_x = 8, origin_y = 45, num_frames = 11 },
+  },
+}

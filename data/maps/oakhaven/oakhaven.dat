@@ -32043,15 +32043,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 248,
-  y = 656,
-  width = 16,
-  height = 16,
-  pattern = "95",
-}
-
-tile{
-  layer = 0,
   x = 656,
   y = 592,
   width = 16,
@@ -36307,6 +36298,24 @@ tile{
   width = 16,
   height = 16,
   pattern = "1702",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "189",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "95",
 }
 
 wall{
@@ -40734,15 +40743,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 152,
-  y = 568,
-  width = 16,
-  height = 16,
-  pattern = "192",
-}
-
-tile{
-  layer = 1,
   x = 8,
   y = 528,
   width = 16,
@@ -41544,15 +41544,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
-  y = 592,
-  width = 16,
-  height = 16,
-  pattern = "189",
-}
-
-tile{
-  layer = 1,
   x = 40,
   y = 568,
   width = 16,
@@ -42112,7 +42103,7 @@ tile{
 tile{
   layer = 1,
   x = 248,
-  y = 576,
+  y = 584,
   width = 16,
   height = 16,
   pattern = "186",
@@ -51039,28 +51030,10 @@ tile{
 
 tile{
   layer = 1,
-  x = 144,
-  y = 576,
-  width = 16,
-  height = 8,
-  pattern = "1908",
-}
-
-tile{
-  layer = 1,
   x = 136,
   y = 560,
   width = 8,
   height = 16,
-  pattern = "1911",
-}
-
-tile{
-  layer = 1,
-  x = 152,
-  y = 576,
-  width = 8,
-  height = 32,
   pattern = "1911",
 }
 
@@ -53541,10 +53514,10 @@ tile{
 
 tile{
   layer = 1,
-  x = 176,
+  x = 160,
   y = 576,
-  width = 64,
-  height = 16,
+  width = 80,
+  height = 32,
   pattern = "1924",
 }
 
@@ -54426,7 +54399,7 @@ tile{
   x = 176,
   y = 560,
   width = 8,
-  height = 32,
+  height = 16,
   pattern = "1910",
 }
 
@@ -54459,9 +54432,9 @@ tile{
 
 tile{
   layer = 1,
-  x = 176,
-  y = 584,
-  width = 64,
+  x = 160,
+  y = 600,
+  width = 48,
   height = 8,
   pattern = "1909",
 }
@@ -60313,6 +60286,141 @@ tile{
   pattern = "189",
 }
 
+tile{
+  layer = 1,
+  x = 144,
+  y = 576,
+  width = 32,
+  height = 8,
+  pattern = "1908",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 592,
+  width = 32,
+  height = 16,
+  pattern = "193",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 592,
+  width = 8,
+  height = 16,
+  pattern = "1911",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 584,
+  width = 32,
+  height = 8,
+  pattern = "1909",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "189",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "192",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 608,
+  width = 8,
+  height = 8,
+  pattern = "523",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 608,
+  width = 8,
+  height = 8,
+  pattern = "522",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 608,
+  width = 8,
+  height = 8,
+  pattern = "524",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 608,
+  width = 8,
+  height = 8,
+  pattern = "525",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 1328,
+  width = 8,
+  height = 8,
+  pattern = "524",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 1328,
+  width = 8,
+  height = 8,
+  pattern = "525",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 1328,
+  width = 8,
+  height = 8,
+  pattern = "523",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 1328,
+  width = 8,
+  height = 8,
+  pattern = "522",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 1320,
+  width = 16,
+  height = 16,
+  pattern = "97",
+}
+
 destructible{
   layer = 1,
   x = 736,
@@ -60999,6 +61107,14 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+destination{
+  name = "from_guard_office",
+  layer = 1,
+  x = 96,
+  y = 621,
+  direction = 3,
 }
 
 tile{
@@ -79082,6 +79198,16 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/hazel",
+}
+
+teletransporter{
+  layer = 2,
+  x = 480,
+  y = 0,
+  width = 32,
+  height = 16,
+  destination_map = "oakhaven/interiors/palace",
+  destination = "from_city",
 }
 
 tile{

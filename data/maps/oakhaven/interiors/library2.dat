@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "indoors_stone",
+  music = "same",
 }
 
 tile{
@@ -5754,10 +5755,9 @@ dynamic_tile{
   layer = 0,
   x = 592,
   y = 456,
-  pattern = "445",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "445",
 }
 
 dynamic_tile{
@@ -5765,10 +5765,9 @@ dynamic_tile{
   layer = 0,
   x = 584,
   y = 464,
-  pattern = "190",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "190",
 }
 
 npc{
@@ -7027,10 +7026,9 @@ dynamic_tile{
   layer = 1,
   x = 592,
   y = 448,
-  pattern = "447",
   width = 16,
   height = 8,
-  enabled_at_start = true,
+  pattern = "447",
 }
 
 dynamic_tile{
@@ -7038,9 +7036,8 @@ dynamic_tile{
   layer = 1,
   x = 584,
   y = 456,
-  pattern = "191",
   width = 16,
   height = 8,
-  enabled_at_start = true,
+  pattern = "191",
 }
 

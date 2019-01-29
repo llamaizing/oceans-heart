@@ -11,13 +11,24 @@ local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
+
 function map:on_started()
   guard_2:set_enabled(false)
   guard_3:set_enabled(false)
   enemy_guard:set_enabled(false)
   if game:get_value("oak_palace_kitchen_fire") == true then guard_1:set_enabled(false) end
   if game:get_value("found_hazel") == true then hazel:set_enabled(false) end
+end
+
+
+
+
+--BREAKING IN, SECRET ARCHIVES QUEST
+function first_see_archives_guard_sensor:on_activated()
+  if not game:get_value("seen_archives_guard_first_time") then
+    game:set_value("seen_archives_guard_first_time", true)
+    game:start_dialog("_oakhaven.npcs.guards.palace.archives.1")
+  end
 end
 
 function sensor_down:on_activated()
@@ -63,7 +74,6 @@ function bomb_flower:on_exploded()
     end)
   end --end of conditional branch
 end
-
 
 --find hazel!
 function hazel_sensor:on_activated()

@@ -34,8 +34,10 @@ map:register_event("on_started", function()
     musician_2:set_enabled(false)
   end
   --manna oak
-  if game:get_value("quest_manna_oaks") >= 7 then manna_tree_door:set_enabled(false) end
-  if game:get_value("quest_manna_oaks") >= 9 then
+  if game:get_value("quest_manna_oaks") and game:get_value("quest_manna_oaks") >= 7 then
+    manna_tree_door:set_enabled(false)
+  end
+  if game:get_value("quest_manna_oaks") and game:get_value("quest_manna_oaks") >= 9 then
     hazel:set_enabled(true)
     manna_oak_leaves:set_enabled(true)
   end

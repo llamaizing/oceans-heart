@@ -3245,8 +3245,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/port",
-  destination = "from_city",
+  destination_map = "oakhaven/oakhaven",
+  destination = "from_port",
 }
 
 pickable{
@@ -3858,7 +3858,7 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 520,
+  x = 536,
   y = 117,
   treasure_name = "ball_and_chain",
 }
@@ -4559,30 +4559,6 @@ enemy{
   breed = "normal_enemies/skeleton_summoner",
 }
 
-enemy{
-  layer = 0,
-  x = 376,
-  y = 285,
-  direction = 0,
-  breed = "normal_enemies/meandershroom_1",
-}
-
-enemy{
-  layer = 0,
-  x = 536,
-  y = 333,
-  direction = 0,
-  breed = "normal_enemies/meandershroom_1",
-}
-
-enemy{
-  layer = 0,
-  x = 376,
-  y = 389,
-  direction = 0,
-  breed = "normal_enemies/meandershroom_1",
-}
-
 pickable{
   layer = 0,
   x = 440,
@@ -4630,6 +4606,14 @@ pickable{
   x = 488,
   y = 61,
   treasure_name = "potion_magic_restoration",
+}
+
+pickable{
+  layer = 0,
+  x = 512,
+  y = 117,
+  treasure_name = "thunder_charm",
+  treasure_variant = 5,
 }
 
 tile{

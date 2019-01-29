@@ -435,6 +435,7 @@ sprite{ id = "entities/ink_splash", description = "Ink Splash" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
 sprite{ id = "entities/leaf_whirl_green", description = "Leaf Whirl- Green" }
+sprite{ id = "entities/lightning_bolt_attack", description = "Lightning Bolt Attack" }
 sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/nitrodendron", description = "Nitrodendron" }
 sprite{ id = "entities/orange_peel", description = "Orange Peel" }
@@ -474,6 +475,7 @@ sprite{ id = "entities/vase_berries", description = "Vase-Berries" }
 sprite{ id = "entities/vase_skull", description = "Vase (skull)" }
 sprite{ id = "entities/warp_block", description = "Warp Block" }
 sprite{ id = "entities/weak_tree", description = "weak tree" }
+sprite{ id = "entities/whisky", description = "whisky" }
 sprite{ id = "hero/barrier", description = "Barrier" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }
@@ -1268,6 +1270,7 @@ item{ id = "sword", description = "sword" }
 item{ id = "sword_2", description = "Sword 2 - TEST" }
 item{ id = "sword_upgrade", description = "sword upgrade" }
 item{ id = "tacklebox", description = "Tacklebox" }
+item{ id = "thunder_charm", description = "Thunder Charm" }
 item{ id = "tidal_starfruit", description = "Tidy Starnut" }
 item{ id = "tornado_dash", description = "Tornado Dash" }
 item{ id = "violets", description = "violets-1,5,10" }
