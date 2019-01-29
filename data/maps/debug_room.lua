@@ -14,7 +14,7 @@ local game = map:get_game()
 function map:on_started()
   hero = game:get_hero()
   hero:set_walking_speed(96)
-
+  HIDETHESE:set_visible(false)
 
 end
 
