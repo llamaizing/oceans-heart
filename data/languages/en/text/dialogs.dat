@@ -5529,15 +5529,7 @@ dialog{
   id = "_oakhaven.npcs.ana_orange.3",
   text = [[
 AUBREY:
-Hey, you're not the orange guy! $2Wait a
-second$3... do I know you from somewhere?
-
-TILIA:
-From the tic-tac-toe championship?
-
-
-AUBREY:
-Oh! Oh no! Look, I can explain. My dad runs
+Oh no! Look, I can explain. My dad runs
 an Orange Orchard and times have been
 really tough. I wanted to help him out...
 TILIA:
@@ -5580,6 +5572,23 @@ it'll be put to good use.
 TILIA:
 Hey, don't make me seem like your
 accomplice. You stole that yourself.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ana_orange.get_into_fight",
+  text = [[
+AUBREY:
+Hey, you're not the orange guy! $2Wait a
+second$3... do I know you from somewhere?
+
+TILIA:
+From the tic-tac-toe championship?
+
+
+AUBREY:
+Oh. Oh! Oh no! You'll never take me
+alive, copper!
 ]],
 }
 
@@ -7087,6 +7096,207 @@ mangrove leaves yet?
 
 TILIA:
 Nope, but thanks for your help earlier.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.clues.1",
+  text = [[
+GUEST:
+I do say. I was making small talk in
+the foyer and a man in a red shirt
+passed by wearing what seemed to be
+GUEST:
+an enormous sack as a scarf. A most
+singular form of fashion, I must
+say.
+TILIA:
+Indeed? Was the sack... Might he
+have been wearing last year's
+"painting-sized-sack" line?
+GUEST:
+Oh! A fashion line$1...$2I have definitely
+heard of.$3 The sack did appear to be
+painting-sized. That must have been it.
+GUEST:
+I haven't noticed him in some time however,
+so he must have removed his scarf.
+
+TILIA:
+It was last year's line after all. Not
+extraordinarily fashionable.
+
+GUEST:
+Indeed.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.clues.2",
+  text = [[
+GUEST:
+Ah, what$1... $3practical clothes you
+have. Although I do suppose this palace
+is prone to a draught. Soon after I
+GUEST:
+arrived at the party -fashionably on
+time, as it were- I found someone had
+left the window in the study open.
+GUEST:
+of course, the help quickly closed it.
+But I might have caught pneumonia.
+I see you've prepared against that.
+TILIA:
+Why yes. One never knows where the
+potential for pneumonia lurks. Of if one
+might need to actually move their legs.
+GUEST:
+Why on earth would one need to do
+that? Is your valet unreliable? I say.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.clues.3",
+  text = [[
+GUEST:
+You look a bit haggard, dear. Have you
+not eaten yet? It seems most of the
+guests who arrived earlier have already
+GUEST:
+eaten and retired to the library, awaiting
+when the Mayor's dog's portrait is to be
+revealed.
+
+TILIA:
+Why is that so indeed? This painting
+fascines me. I must take it in.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.clues.spoken_to_already",
+  text = [[
+GUEST:
+Ah, you again? Please, I must say I've
+quite run out of topics of conversation.
+Please seek out another guest.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.1",
+  text = [[
+GUEST:
+I'm extraordinarily excited to see the Mayor's
+Dog's new portrait. I imagine a masterwork
+like that must have been commissioned for
+GUEST:
+hundreds of crowns. The mayor spares
+no expense on that dog, indeed.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.2",
+  text = [[
+GUEST:
+Between you and me$1...$3 I wasn't actually
+invited here. But I'm such a big fan of the
+mayor's dog! I had to come.
+GUEST:
+$1...please don't tell anyone.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.3",
+  text = [[
+GUEST:
+The mayor's palace, by far, has the city's
+finest rugs. I consider myself a purveyor
+of fine carpet. I've traveled all the way to
+GUEST:
+the Zeyphr empire to observe their intricate
+weaving techniques with a mind to start
+manufacturing here.
+TILIA:
+$1...
+
+
+GUEST:
+Escuse me, miss? Have you dozed off?
+
+
+TILIA:
+Oh! Ah, my delicate fancy constitution is
+highly affected by the elevation here in
+Oakhaven. I'm from... Fancyburg, you see.
+GUEST:
+Oh, I see, that must be near sea level.
+
+
+TILIA:
+...yes.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.4",
+  text = [[
+GUEST:
+Oh, do try a canape. They pair wonderfully
+with the reisling.
+
+TILIA:
+Oh, yes. I'll try an$1... $3au pair?
+
+
+GUEST:
+That's... not one. Here, maybe just have
+a strawberry.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.5",
+  text = [[
+GUEST:
+I hear the Mayor's Dog eats this well every
+day. I hope to spoil my own dog or maybe
+children this much one day.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.6",
+  text = [[
+GUEST:
+I do believe the Mayor had the orchard in
+Ivystump grow these apples especially for
+his dog's birthday party.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.7",
+  text = [[
+GUEST:
+What's a fete without a dog's birthday at
+the center? Did you know my cousin owns
+the shipyard down at the port? He had a
+GUEST:
+party for his cat last month, but it lacked
+that joie de vivre that dogs bring.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.8",
+  text = [[
+GUEST:
+The Mayor knows only to stock the finest
+from across the north seas. 
 ]],
 }
 
@@ -11622,6 +11832,52 @@ anyone knows about the Oaks.
 the tunnels.
 @Let Hazel know there were
 monsters infesting the roots.
+]],
+}
+
+dialog{
+  id = "quest.side.oakhaven.master_thief",
+  title = "Mayor's Jubilee",
+  text = [[
+The guard captains wants you
+to find a thief at the mayor's
+dog's birthday party.
+@Head to the palace
+!and present your invitation
+@Speak to party guests
+!and ask about susicious
+!characters.
+@!Clues:
+!Someone in a red shirt
+!has a painting-size sack.
+@!Clues:
+!The thief is in red.
+!The windows in the study
+!was opened soon after
+!the party started.
+@!Clues:
+!The thief is in red.
+!The thief arrived early.
+!The guests who arrived
+!earlier are in the library
+!Look for someone in
+!a red shirt in the
+!library!
+@!A troll somehow got
+!into the attic!
+!Defend the party guests!
+@Confront your suspect!
+!Hopefully the man in
+!the red shirt is still
+!in the library.
+@Run to the port and
+try to catch the thief!
+@!Ask around about the
+!man in the red shirt.
+@!Check the warehouse
+!next to the shop.
+@Save the mayor's dog!
+  
 ]],
 }
 

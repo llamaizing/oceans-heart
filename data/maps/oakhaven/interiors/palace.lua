@@ -21,6 +21,41 @@ function map:on_started()
 end
 
 
+--MAYOR'S DOG'S BIRTHDAY PARTY QUEST
+for npc in map:get_entities("clue_npc") do
+  function npc:on_interaction()
+    if not game:get_value("quest_mayor_dog_clue_npc"..npc:get_name().."spoken_to") then
+
+      if game:get_value("mayors_dog_clue_npcs_spoken_to") == nil then
+        game:start_dialog("_oakhaven.npcs.mayors_party.clues.1", function()
+          game:set_value("mayors_dog_clue_npcs_spoken_to", 1)
+          game:set_value("quest_mayors_dog", 2)
+        end)
+
+      elseif game:get_value("mayors_dog_clue_npcs_spoken_to") == 1 then
+        game:start_dialog("_oakhaven.npcs.mayors_party.clues.2", function()
+          game:set_value("mayors_dog_clue_npcs_spoken_to", 2)
+          game:set_value("quest_mayors_dog", 3)
+        end)
+
+      elseif game:get_value("mayors_dog_clue_npcs_spoken_to") == 2 then
+        game:start_dialog("_oakhaven.npcs.mayors_party.clues.3", function()
+          game:set_value("mayors_dog_clue_npcs_spoken_to", 3)
+          game:set_value("quest_mayors_dog", 4)
+        end)
+
+      end --end which npc this is
+      game:set_value("quest_mayor_dog_clue_npc"..npc:get_name().."spoken_to", true)
+
+    else --if you've already received this clue
+      game:start_dialog("_oakhaven.npcs.mayors_party.clues.spoken_to_already")
+
+    end
+  end
+end
+
+
+
 
 
 --BREAKING IN, SECRET ARCHIVES QUEST

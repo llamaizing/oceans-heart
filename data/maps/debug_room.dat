@@ -3513,7 +3513,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "oakhaven/oakhaven",
-  destination = "from_port",
+  destination = "from_palace",
 }
 
 pickable{
@@ -4942,6 +4942,126 @@ dynamic_tile{
   height = 128,
   pattern = "invisible_stairs",
   tileset = "misc",
+}
+
+custom_entity{
+  name = "rock_pile_44",
+  layer = 0,
+  x = 264,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_45",
+  layer = 0,
+  x = 312,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_46",
+  layer = 0,
+  x = 344,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_47",
+  layer = 0,
+  x = 376,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_48",
+  layer = 0,
+  x = 408,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_49",
+  layer = 0,
+  x = 440,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_50",
+  layer = 0,
+  x = 472,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_51",
+  layer = 0,
+  x = 504,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_52",
+  layer = 0,
+  x = 536,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
+}
+
+custom_entity{
+  name = "rock_pile_53",
+  layer = 0,
+  x = 568,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
 }
 
 tile{

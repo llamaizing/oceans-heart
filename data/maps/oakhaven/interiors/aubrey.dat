@@ -947,8 +947,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
-  y = 104,
+  x = 184,
+  y = 80,
   width = 8,
   height = 24,
   pattern = "218",
@@ -956,17 +956,17 @@ tile{
 
 tile{
   layer = 0,
-  x = 160,
-  y = 104,
-  width = 32,
+  x = 168,
+  y = 80,
+  width = 16,
   height = 24,
   pattern = "219",
 }
 
 tile{
   layer = 0,
-  x = 152,
-  y = 104,
+  x = 160,
+  y = 80,
   width = 8,
   height = 24,
   pattern = "217",
@@ -974,17 +974,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 216,
-  y = 104,
-  width = 24,
-  height = 16,
-  pattern = "161",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 104,
+  x = 168,
+  y = 80,
   width = 16,
   height = 16,
   pattern = "176",
@@ -1056,8 +1047,8 @@ teletransporter{
 npc{
   name = "aubrey",
   layer = 0,
-  x = 144,
-  y = 133,
+  x = 152,
+  y = 109,
   direction = 3,
   subtype = 1,
   sprite = "npc/orange_ana",
@@ -1065,8 +1056,8 @@ npc{
 
 block{
   layer = 0,
-  x = 192,
-  y = 141,
+  x = 136,
+  y = 61,
   sprite = "entities/chairL",
   pushable = true,
   pullable = true,
@@ -1079,6 +1070,25 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "entities/orange_peel",
+}
+
+sensor{
+  name = "walking_in_sensor",
+  layer = 0,
+  x = 136,
+  y = 189,
+  width = 48,
+  height = 16,
+}
+
+enemy{
+  name = "aubrey_enemy",
+  layer = 0,
+  x = 152,
+  y = 109,
+  enabled_at_start = false,
+  direction = 3,
+  breed = "bosses/aubrey",
 }
 
 tile{
@@ -1124,14 +1134,5 @@ tile{
   width = 16,
   height = 16,
   pattern = "148",
-}
-
-tile{
-  layer = 1,
-  x = 216,
-  y = 96,
-  width = 24,
-  height = 8,
-  pattern = "162",
 }
 

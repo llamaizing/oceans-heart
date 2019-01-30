@@ -185,6 +185,7 @@ map{ id = "oakhaven/interiors/burglar_hideout", description = "Burglar Hideout" 
 map{ id = "oakhaven/interiors/carpenter", description = "Carpenter" }
 map{ id = "oakhaven/interiors/game_hall", description = "Game Hall" }
 map{ id = "oakhaven/interiors/general_store", description = "General Store" }
+map{ id = "oakhaven/interiors/guard_hq", description = "Guard HQ" }
 map{ id = "oakhaven/interiors/hornwart_inn", description = "Hornwart Inn" }
 map{ id = "oakhaven/interiors/library", description = "Library" }
 map{ id = "oakhaven/interiors/library2", description = "library" }
@@ -229,6 +230,7 @@ tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
 sprite{ id = "console/cursor", description = "cursor" }
 sprite{ id = "console/icons", description = "icons" }
+sprite{ id = "enemies/bosses/aubrey", description = "Aubrey" }
 sprite{ id = "enemies/bosses/avalanche_golem", description = "Avalanche Golem" }
 sprite{ id = "enemies/bosses/bart", description = "enemies/bosses/bart" }
 sprite{ id = "enemies/bosses/bart_weapon", description = "enemies/bosses/bart_weapon" }
@@ -262,6 +264,7 @@ sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small,
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 sprite{ id = "enemies/misc/octorok_stone", description = "small stone" }
 sprite{ id = "enemies/misc/octorok_stone_2", description = "Stone 2" }
+sprite{ id = "enemies/misc/orange", description = "Orange" }
 sprite{ id = "enemies/misc/pollutant_blocker", description = "Pollutant Blocker" }
 sprite{ id = "enemies/misc/pop", description = "Pop-For Enemy Attacks" }
 sprite{ id = "enemies/misc/root_small", description = "Root - Small" }
@@ -539,6 +542,7 @@ sprite{ id = "npc/guards/oakhaven_1", description = "Oakhaven 1" }
 sprite{ id = "npc/guards/oakhaven_2", description = "Oakhaven 2" }
 sprite{ id = "npc/guards/oakhaven_3", description = "Oakhaven 3" }
 sprite{ id = "npc/guards/oakhaven_4", description = "Oakhaven 4" }
+sprite{ id = "npc/guards/oakhaven_captain", description = "Oakhaven Captain" }
 sprite{ id = "npc/hazel", description = "Hazel" }
 sprite{ id = "npc/ilex", description = "ilex" }
 sprite{ id = "npc/juglan", description = "Juglan" }
@@ -571,6 +575,7 @@ sprite{ id = "npc/kid/kid_6.4", description = "npc/kid/kid_6.4" }
 sprite{ id = "npc/leigha", description = "leigha" }
 sprite{ id = "npc/linden", description = "Linden" }
 sprite{ id = "npc/linden_sweeping", description = "Linden Sweeping" }
+sprite{ id = "npc/litton", description = "Litton" }
 sprite{ id = "npc/mallow", description = "Mallow" }
 sprite{ id = "npc/man/man_1.1", description = "npc/man/man_1.1" }
 sprite{ id = "npc/man/man_1.2", description = "npc/man/man_1.2" }
@@ -796,6 +801,8 @@ sprite{ id = "npc/man/man_9.5", description = "npc/man/man_9.5" }
 sprite{ id = "npc/man/man_9.6", description = "npc/man/man_9.6" }
 sprite{ id = "npc/man/man_9.7", description = "npc/man/man_9.7" }
 sprite{ id = "npc/man/man_9.8", description = "npc/man/man_9.8" }
+sprite{ id = "npc/man/man_red_herring_1", description = "Man-Red Herring 1" }
+sprite{ id = "npc/man/man_red_herring_2", description = "Man-Red Herring 2" }
 sprite{ id = "npc/morus", description = "Morus" }
 sprite{ id = "npc/musician_2", description = "Musician 2" }
 sprite{ id = "npc/musician_3", description = "Musician 3" }
@@ -1278,6 +1285,7 @@ item{ id = "watering_can", description = "watering can" }
 item{ id = "whisky_for_juglan", description = "Whisky for Juglan" }
 item{ id = "witch_hazel", description = "Witch Hazel-1,3,5,10" }
 
+enemy{ id = "bosses/aubrey", description = "Aubrey" }
 enemy{ id = "bosses/avalanche_golem", description = "Avalanche Golem" }
 enemy{ id = "bosses/bart", description = "Bart" }
 enemy{ id = "bosses/blackbeard", description = "Blackbeard" }
@@ -1309,6 +1317,7 @@ enemy{ id = "misc/fireball_red_small", description = "Fireball - red, small" }
 enemy{ id = "misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 enemy{ id = "misc/octorok_stone", description = "Small Stone" }
 enemy{ id = "misc/octorok_stone_2", description = "Stone 2" }
+enemy{ id = "misc/orange", description = "Orange" }
 enemy{ id = "misc/pollutant_blocker", description = "Pollutant Blocker" }
 enemy{ id = "misc/root_small", description = "Root - Small" }
 enemy{ id = "misc/seagull", description = "Seagull" }

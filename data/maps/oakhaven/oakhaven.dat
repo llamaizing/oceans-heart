@@ -61117,6 +61117,16 @@ destination{
   direction = 3,
 }
 
+teletransporter{
+  layer = 1,
+  x = 88,
+  y = 592,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/interiors/guard_hq",
+  destination = "from_outside",
+}
+
 tile{
   layer = 2,
   x = 272,

@@ -28,6 +28,8 @@
 --has_orbit_attack, orbit_attack_distance, orbit_attack_cooldown, orbit_attack_sound, orbit_attack_num_projectiles
       --orbit_attack_charge_time, orbit_attack_shoot_delay, orbit_attack_projectile_delay, orbit_attack_projectile_breed,
       --orbit_attack_radius, orbit_attack_launch_sound, orbit_attack_stop_while_charging
+      --use_projectile_go_method, if true this will call projectile:go(angle to hero) and allow bouncing, so make sure
+      --your projectile has a go(angle) method or else errors.
 --For a custom attack (TODO - debug custom attack, which sometimes results in the enemy stopping the check_hero() loop)
       --properties.has_custom_attack - For this script to check requirements, and if met, start the attack
       --properties.custom_attack_cooldown - cooldown in ms for custom attack
@@ -458,6 +460,10 @@ end
             sol.audio.play_sound(properties.orbit_attack_launch_sound or "shoot")
             m:start(projectiles[i], function() projectiles[i]:remove() end)
             function m:on_obstacle_reached() projectiles[i]:remove() end
+            if properties.use_projectile_go_method then
+              projectiles[i]:stop_movement()
+              projectiles[i]:go(enemy:get_angle(hero))
+            end
           end)
         end
       end
