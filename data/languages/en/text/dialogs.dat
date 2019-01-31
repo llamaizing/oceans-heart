@@ -7369,6 +7369,24 @@ Please seek out another guest.
 }
 
 dialog{
+  id = "_oakhaven.npcs.mayors_party.dog.1",
+  text = [[
+DOG:
+Arf!
+(His eyes are full of innocence.)
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.dog.2",
+  text = [[
+DOG:
+Arf!
+(His eyes are full of determination.)
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.mayors_party.guards.litton_gone",
   text = [[
 GUARD:
@@ -7380,7 +7398,7 @@ grabbed the Mayor's dog and ran away!
 He went into the city and down out the
 south gate! You gotta catch him!
 TILIA:
-Alright! I'll stop the dognapper!
+What!? Ugh, I'll stop the dognapper!
 ...Wait, aren't you going to go after him?
 
 GUARD:
@@ -7394,7 +7412,7 @@ dognapper!
 TILIA:
 Alright. If he went out the south gate he's
 probably headed to the port to get off the
-island.
+island. I'd better run.
 ]],
 }
 
@@ -7450,6 +7468,11 @@ attic. I don't know how it got to the attic.
 Go down the hall, take a left, then a right
 GUARD:
 the stairs are in the study!
+
+
+TILIA:
+Got it. You make sure this guy doesn't
+steal the mayor's painting!
 ]],
 }
 
@@ -7473,7 +7496,7 @@ No way. I'm taking this pup to Ballast
 Harbor to auction off. He'll fetch quite a sum,
 heh heh heh...
 LITTON:
-No prepare to be stopped from stopping me!
+Now prepare to be stopped from stopping me!
 ]],
 }
 
@@ -7540,9 +7563,116 @@ dialog{
   id = "_oakhaven.npcs.mayors_party.mayor.4",
   text = [[
 MAYOR:
-I'm so happy you rescued my dog. I would
-declare today a holiday for you. But it's already
-my dog's birthday, so it's pretty holidayed up.
+I'm so happy you rescued my dog. I'd declare
+today a holiday for you. But it's already my
+dog's birthday, so it's pretty holidayed up.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.1a",
+  text = [[
+GUEST:
+I hear the Mayor's dog went skiing last
+year and won second place. He's been
+taking lessons to win this year. I bought him
+GUEST:
+a cashmere scarf for his birthday.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.1b",
+  text = [[
+GUEST:
+Good gracious! I saw it happen! That man
+in the red shirt dashed past, scooped up the
+Mayor's dog, and like a bolt of lightning, ran
+GUEST:
+right out the gate. What will become of
+our society without the Mayor's dog?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.1c",
+  text = [[
+GUEST:
+The Mayor's dog is once again home.
+He holds himself differently. I think this
+ordeal has made him stronger.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.2a",
+  text = [[
+GUEST:
+I've been so excited for the Mayor's dog's
+birthday all month that I simply forgot to
+weigh anchor when I sailed in on my yacht.
+GUEST:
+My yacht has since drifted out to sea, but
+all is well.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.2b",
+  text = [[
+GUEST:
+Every fiber of my being feels wronged. To
+see such a heartless man just snatch an
+innocent dog... Be still, my shaking hands.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.2c",
+  text = [[
+GUEST:
+By jove, the dog has returned! The heights
+of elation I felt this morning have been
+exceeded even, by this triumphant canine!
+GUEST:
+See how he holds his head with pride! With
+grace. And dare I say it, grit!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.3a",
+  text = [[
+GUEST:
+My dear, you absolutely must try one of
+these Lobb oranges. Or perhaps even
+better, try to play fetch with the Mayor's
+GUEST:
+dog with an orange. Oh-ho-ho, what a sight
+that would be. Instead of using a gold-plated
+tennis ball, an orange. Ohhoho.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.3b",
+  text = [[
+GUEST:
+I've entirely lost my appetite. Dognapping!
+In our fair city! Egads.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.3c",
+  text = [[
+GUEST:
+What a wonderful end to all this commotion.
+Hmm, yes. I do say.
+
+TILIA:
+You sound as weird as I do when I'm faking
+trying to talk like you guys.
 ]],
 }
 
