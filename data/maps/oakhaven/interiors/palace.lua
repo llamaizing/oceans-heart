@@ -18,7 +18,19 @@ function map:on_started()
   enemy_guard:set_enabled(false)
   if game:get_value("oak_palace_kitchen_fire") == true then guard_1:set_enabled(false) end
   if game:get_value("found_hazel") == true then hazel:set_enabled(false) end
+  if game:get_value("mayors_dog_quest_cant_check_litton") == true then
+    cant_check_litton_sensor:set_enabled(true)
+  end
+  if game:get_value("quest_mayors_dog") and game:get_value("quest_mayors_dog") > 5 then
+    attic_guard:set_enabled(false)
+  end
+  if game:get_value("quest_mayors_dog") and game:get_value("quest_mayors_dog") >= 7 and game:get_value("quest_mayors_dog") < 11 then
+    happy_mayor:set_enabled(false)
+    sad_mayor:set_enabled(true)
+  end
 end
+
+
 
 
 --MAYOR'S DOG'S BIRTHDAY PARTY QUEST
@@ -55,6 +67,85 @@ for npc in map:get_entities("clue_npc") do
 end
 
 
+function litton:on_interaction()
+  if game:get_value("quest_mayors_dog") < 4 then
+    game:start_dialog("_oakhaven.npcs.mayors_party.litton.1")
+
+  elseif game:get_value("quest_mayors_dog") == 4 then
+    hero:freeze()
+    game:start_dialog("_oakhaven.npcs.mayors_party.litton.2-confrontation", function()
+      quirrel_guard:set_enabled(true)
+      attic_guard:set_enabled(false)
+      local m = sol.movement.create("path")
+      m:set_speed(90)
+      m:set_path{4,4,4,4,4,4,4,4,4,4,}
+      m:start(quirrel_guard, function()
+        game:start_dialog("_oakhaven.npcs.mayors_party.litton.3-troll_in_dungeon", function()
+          m = sol.movement.create("target")
+          m:set_target(tile_target)
+          m:set_speed(85)
+          m:set_smooth(true)
+          hero:set_direction(0)
+          hero:set_animation("walking")
+          m:start(hero, function()
+            game:set_value("quest_mayors_dog", 5)
+            litton:set_enabled(false)
+            quirrel_guard:set_enabled(false)
+            cant_check_litton_sensor:set_enabled(true)
+            game:set_value("mayors_dog_quest_cant_check_litton", true)
+            troll:set_enabled(true)
+            hero:unfreeze()
+          end)
+        end)
+      end)
+    end)
+  end
+end
+
+function cant_check_litton_sensor:on_activated()
+  game:start_dialog("_oakhaven.npcs.mayors_party.protect_guests")
+  hero:walk("00")
+end
+
+function troll:on_dead()
+  game:set_value("quest_mayors_dog", 6)
+  litton_gone_guard:set_enabled(true)
+  cant_check_litton_sensor:set_enabled(false)
+  happy_mayor:set_enabled(false)
+  sad_mayor:set_enabled(true)
+  game:set_value("mayors_dog_quest_cant_check_litton", false)
+end
+
+function litton_gone_guard:on_interaction()
+  if game:get_value("quest_mayors_dog") == 6 then
+    game:start_dialog("_oakhaven.npcs.mayors_party.guards.litton_gone", function()
+      local m = sol.movement.create("path")
+      m:set_path{4,4,4,4}
+      m:start(litton_gone_guard)
+      game:set_value("quest_mayors_dog", 7)
+    end)
+
+  elseif game:get_value("quest_mayors_dog") == 7 then
+
+  end
+end
+
+function happy_mayor:on_interaction()
+  if game:get_value("quest_mayors_dog") <= 6 then
+    game:start_dialog("_oakhaven.npcs.mayors_party.mayor.1")
+
+  elseif game:get_value("quest_mayors_dog") > 10 then
+    if not game:has_item("key_to_oakhaven") then
+      game:start_dialog("_oakhaven.npcs.mayors_party.mayor.3", function()
+        hero:start_treasure("key_to_oakhaven")
+      end)
+    else game:start_dialog("_oakhaven.npcs.mayors_party.mayor.4") end
+    
+  end
+end
+
+
+
 
 
 
@@ -86,6 +177,12 @@ function sensor_right:on_activated()
       m:start(hero, function() hero:unfreeze() end)
     end)
   end
+end
+
+function dont_upstairs_sensor:on_activated()
+  game:start_dialog("_oakhaven.observations.palace_break_in.dont_upstairs", function()
+    hero:walk("66")
+  end)
 end
 
 function bomb_flower:on_exploded()

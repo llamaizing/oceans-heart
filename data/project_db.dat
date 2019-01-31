@@ -192,6 +192,7 @@ map{ id = "oakhaven/interiors/library2", description = "library" }
 map{ id = "oakhaven/interiors/melinda", description = "Melinda" }
 map{ id = "oakhaven/interiors/monastery", description = "Monastery" }
 map{ id = "oakhaven/interiors/palace", description = "Palace" }
+map{ id = "oakhaven/interiors/port_warehouse", description = "Port Warehouse" }
 map{ id = "oakhaven/interiors/saloon", description = "Salamander Heartache" }
 map{ id = "oakhaven/interiors/sculptor", description = "sculptor" }
 map{ id = "oakhaven/interiors/tailor", description = "Tailor" }
@@ -240,6 +241,7 @@ sprite{ id = "enemies/bosses/charging_pirate_1", description = "Charging Pirate 
 sprite{ id = "enemies/bosses/fiend_1", description = "Fiend 1" }
 sprite{ id = "enemies/bosses/forest_revenant", description = "Forest Revenant" }
 sprite{ id = "enemies/bosses/jazari", description = "al Jazari" }
+sprite{ id = "enemies/bosses/litton", description = "Litton" }
 sprite{ id = "enemies/bosses/michael", description = "Michael Mighty Mead Maker" }
 sprite{ id = "enemies/bosses/michael_weapon", description = "Michael-Weapon" }
 sprite{ id = "enemies/bosses/pollutant_boss", description = "Pollutant Boss" }
@@ -344,6 +346,7 @@ sprite{ id = "entities/arrow_fire", description = "arrow_fire" }
 sprite{ id = "entities/arrow_silver", description = "arrow_silver" }
 sprite{ id = "entities/arrow_warp", description = "arrow warp" }
 sprite{ id = "entities/bait", description = "bait" }
+sprite{ id = "entities/big_barrel", description = "Big Barrel" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/block_crate", description = "Block (Crate)" }
 sprite{ id = "entities/block_statue", description = "Block - Statue" }
@@ -404,6 +407,7 @@ sprite{ id = "entities/crystal_block", description = "Crystal block" }
 sprite{ id = "entities/dandelion_burst", description = "Dandelion Burst" }
 sprite{ id = "entities/dandelion_seed", description = "Dandelion Seed" }
 sprite{ id = "entities/destination", description = "Destination" }
+sprite{ id = "entities/dog_mayors", description = "Dog - Mayor's" }
 sprite{ id = "entities/door_archway_locked", description = "Door - Archway, locked" }
 sprite{ id = "entities/door_archway_shutter", description = "Door- Archway, Shutter" }
 sprite{ id = "entities/door_boarded", description = "Door-Boarded" }
@@ -803,6 +807,8 @@ sprite{ id = "npc/man/man_9.7", description = "npc/man/man_9.7" }
 sprite{ id = "npc/man/man_9.8", description = "npc/man/man_9.8" }
 sprite{ id = "npc/man/man_red_herring_1", description = "Man-Red Herring 1" }
 sprite{ id = "npc/man/man_red_herring_2", description = "Man-Red Herring 2" }
+sprite{ id = "npc/mayor_oakhaven", description = "Mayor of Oakhaven" }
+sprite{ id = "npc/mayor_oakhaven_sad", description = "Mayor of Oakhaven-Sad" }
 sprite{ id = "npc/morus", description = "Morus" }
 sprite{ id = "npc/musician_2", description = "Musician 2" }
 sprite{ id = "npc/musician_3", description = "Musician 3" }
@@ -1247,6 +1253,7 @@ item{ id = "key_poplar_shack", description = "Key - Poplar Shack" }
 item{ id = "key_sinking_lighthouse", description = "Key - Sinking Lighthouse" }
 item{ id = "key_sometimes_cape_ruins", description = "Key - Sometimes Cape Ruins" }
 item{ id = "key_spruce_head", description = "Key - Spruce Head" }
+item{ id = "key_to_oakhaven", description = "Key to Oakhaven" }
 item{ id = "kingscrown", description = "Kingscrown Flowers" }
 item{ id = "lavendar", description = "Lavendar-1,5,10" }
 item{ id = "leaf_tornado", description = "Leaf Tornado" }
@@ -1294,6 +1301,7 @@ enemy{ id = "bosses/charging_pirate_1", description = "Charging Pirate 1" }
 enemy{ id = "bosses/fiend_1", description = "Fiend 1" }
 enemy{ id = "bosses/forest_revenant", description = "Forest Revenant" }
 enemy{ id = "bosses/jazari", description = "al Jazari" }
+enemy{ id = "bosses/litton", description = "Litton" }
 enemy{ id = "bosses/michael", description = "Michael Mighty Mead Maker" }
 enemy{ id = "bosses/pollutant_boss", description = "Pollutant Boss" }
 enemy{ id = "bosses/rock_spider_big", description = "rock spider - big" }

@@ -21,7 +21,7 @@ function map:on_started()
   m1:set_path{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,6,6,6,6,6,6,6,6,6,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
     2,2,2,2,2,2,2,2,2,2,2}
   m1:set_speed(40)
+  m1:set_ignore_obstacles(true)
   m1:start(circulate_guy)
   circulate_guy:set_traversable(true)
-  circulate_guy:set_ignore_obstacles(true)
 end
