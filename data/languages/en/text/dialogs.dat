@@ -8995,6 +8995,15 @@ knows where she is.
 }
 
 dialog{
+  id = "_oakhaven.npcs.port.warhouse_blocker_guy.1",
+  text = [[
+STRIPED SHIRT GUY:
+Sorry man, no 'mittance here. This is
+just a normal warehouse is all.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.saloon.bartender1",
   text = [[
 BARTENDER:
@@ -10920,6 +10929,15 @@ You collected a whole bunch of witch hazel flowers.
 }
 
 dialog{
+  id = "_yarrowmouth.ghost_ship.board_question",
+  text = [[
+Board the ghost ship?
+$? Yes
+$? Nope, nope, nope!
+]],
+}
+
+dialog{
   id = "_yarrowmouth.npcs.blacksmith",
   text = [[
 BLACKSMITH:
@@ -12559,6 +12577,23 @@ tunnels have been cleared
 }
 
 dialog{
+  id = "quest.side.lighthouses",
+  title = "Old Lighthouses",
+  text = [[
+You hear about four ancient
+lighthouses built to guide
+a lost lover back from sea.
+@Light all four lighthouses.
+!You've lit $v1 so far.
+@You feel drawn back to
+Naerreturn Bay.
+!It's on Yarrowmouth.
+@Board the ghost ship.
+  
+]],
+}
+
+dialog{
   id = "quest.side.oakhaven.manna_oaks",
   title = "The Oak Blight",
   text = [[
@@ -12597,7 +12632,7 @@ monsters infesting the roots.
 
 dialog{
   id = "quest.side.oakhaven.master_thief",
-  title = "Mayor's Jubilee",
+  title = "The Dog's Birthday",
   text = [[
 The guard captains wants you
 to find a thief at the mayor's

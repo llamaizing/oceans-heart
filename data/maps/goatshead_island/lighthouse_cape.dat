@@ -9183,19 +9183,10 @@ tile{
 tile{
   layer = 0,
   x = 216,
-  y = 552,
+  y = 536,
   width = 16,
   height = 16,
   pattern = "1806",
-}
-
-tile{
-  layer = 0,
-  x = 232,
-  y = 568,
-  width = 8,
-  height = 24,
-  pattern = "628",
 }
 
 tile{
@@ -9376,24 +9367,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1786",
-}
-
-tile{
-  layer = 0,
-  x = 208,
-  y = 568,
-  width = 8,
-  height = 24,
-  pattern = "627",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 568,
-  width = 16,
-  height = 24,
-  pattern = "631",
 }
 
 tile{
@@ -11934,6 +11907,76 @@ tile{
   pattern = "494",
 }
 
+tile{
+  layer = 0,
+  x = 216,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "620",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "2174",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "2177",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "2172",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "2175",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "2173",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "2176",
+  tileset = "overworld_oakhaven",
+}
+
 teletransporter{
   layer = 0,
   x = -16,
@@ -13841,15 +13884,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
-  y = 568,
-  width = 32,
-  height = 8,
-  pattern = "1446",
-}
-
-tile{
-  layer = 1,
   x = 976,
   y = 144,
   width = 32,
@@ -14242,6 +14276,16 @@ tile{
   width = 8,
   height = 8,
   pattern = "498",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 440,
+  width = 16,
+  height = 32,
+  pattern = "2178",
+  tileset = "overworld_oakhaven",
 }
 
 dynamic_tile{

@@ -24,5 +24,10 @@ function map:on_opening_transition_finished()
 end
 
 function stella:on_interaction()
-  game:start_dialog("_yarrowmouth.npcs.stella.1")
+  game:start_dialog("_yarrowmouth.npcs.stella.1", function()
+    if not game:get_value("quest_lighthouses") then
+      game:set_value("quest_lighthouses", 0)
+      game:set_value("lighthouses_quest_num_lit", game:get_value("lighthouses_quest_num_lit") + 1)
+    end
+  end)
 end

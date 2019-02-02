@@ -17,6 +17,13 @@ function map:on_started()
       entity:set_enabled(false)
     end
   end
+
+  if game:get_value("quest_lighthouses") and game:get_value("quest_lighthouses") >= 1 and game:get_value("quest_lighthouses") < 3 then
+    fog:set_enabled(true)
+    ghost_ship:set_enabled(true)
+    ghost_ship_sensor:set_enabled(true)
+    sol.audio.stop_music()
+  end
 end
 
 function trap_sensor:on_activated()
@@ -39,4 +46,14 @@ for golem in map:get_entities("mushroom_golem") do
       end)
     end
   end
+end
+
+
+--ghost ship
+function ghost_ship_sensor:on_activated()
+  game:start_dialog("_yarrowmouth.ghost_ship.board_question", function(answer)
+    if answer == 2 then
+      hero:teleport("Yarrowmouth/caves/ghost_ship", "from_outside")
+    end
+  end)
 end

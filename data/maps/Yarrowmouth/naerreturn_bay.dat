@@ -8804,7 +8804,7 @@ enemy{
 destructible{
   layer = 0,
   x = 272,
-  y = 429,
+  y = 437,
   treasure_name = "firethorn_berries",
   sprite = "entities/bush_firethorn",
   weight = -1,
@@ -9337,6 +9337,35 @@ teletransporter{
   height = 16,
   destination_map = "Yarrowmouth/caves/naerreturn_cave",
   destination = "from_outside",
+}
+
+npc{
+  name = "ghost_ship",
+  layer = 0,
+  x = 648,
+  y = 349,
+  enabled_at_start = false,
+  direction = 0,
+  subtype = 1,
+  sprite = "entities/boat_ghost",
+}
+
+sensor{
+  name = "ghost_ship_sensor",
+  layer = 0,
+  x = 680,
+  y = 269,
+  enabled_at_start = false,
+  width = 64,
+  height = 16,
+}
+
+destination{
+  name = "from_ghost_ship",
+  layer = 0,
+  x = 704,
+  y = 253,
+  direction = 1,
 }
 
 tile{
@@ -13773,5 +13802,17 @@ tile{
   width = 8,
   height = 8,
   pattern = "266",
+}
+
+dynamic_tile{
+  name = "fog",
+  layer = 2,
+  x = -40,
+  y = -16,
+  enabled_at_start = false,
+  width = 1056,
+  height = 768,
+  pattern = "2076",
+  tileset = "overworld_oakhaven",
 }
 

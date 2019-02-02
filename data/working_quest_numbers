@@ -1,28 +1,13 @@
-quest_mayors_dog
 
-0 - Head to the palace
-1 - Speak to party guests
-2 - Clues:
-Someone in a red shirt
-had a big sack
-3 - Clues:
-Thief is in a red shirt
-The windows in the study
-was opened soon after
-the party started.
-4 - Clues:
-Thief is in a red shirt
-Thief arrived earlier
-Earlier guests are in the library
-Look for someone in a red shirt in the library!
-5 - A troll somehow got into the attic!
-Defend the party guests!
-6 - Confront your suspect!
-Hopefully the man in
-the red shirt is still
-in the library.
-7 - Run to the port
-8 - Ask around about the man in the red shirt.
-9 - Check the warehouse
-10 - Save the mayor's dog!
-11 - report to the captain
+quest_lighthouses
+
+You hear about four ancient
+lighthouses built to guide
+a lost lover back from sea.
+@Light all four lighthouses.
+!You've lit $v so far.
+@You feel drawn back to
+Naerreturn Bay.
+!It's on Yarrowmouth.
+@Board the ghost ship.
+@Search the ghost ship.
