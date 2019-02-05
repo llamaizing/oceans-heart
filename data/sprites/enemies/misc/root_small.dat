@@ -1,8 +1,12 @@
 animation{
   name = "stopped",
   src_image = "enemies/misc/root_small.png",
+  frame_delay = 80,
   directions = {
-    { x = 168, y = 0, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 20 },
+    { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 20 },
+    { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 20 },
+    { x = 0, y = 24, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 20 },
   },
 }
 animation{

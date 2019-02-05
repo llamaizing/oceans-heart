@@ -40,6 +40,12 @@ function map:on_started()
 
   if game:get_value("find_burglars") == true then burglar_lookout:set_enabled(false) end
 
+  if game:get_value("quest_mayors_dog") and game:get_value("quest_mayors_dog") >=8 then
+    see_litton_sensor:set_enabled(false)
+  end
+  if game:get_value("quest_mayors_dog") == 7 then running_litton:set_enabled(true) end
+
+
 --NPC movement
   local dw1 = sol.movement.create("path")
   dw1:set_path{0,0,0,0,0,0,0,0,0,0,4,4,4,4,4,4,4,4,4,4,}
@@ -77,6 +83,36 @@ function blackbeard_sensor:on_activated()
     end--end of p1:on_finished()
   end--end of conditional branch
 end
+
+
+function see_litton_sensor:on_activated()
+  if game:get_value("quest_mayors_dog") == 7 then
+    hero:freeze()
+    local m = sol.movement.create("path")
+    m:set_path{6,6,6,6,6,6,6,6,6,6,6,6,6,6}
+    m:set_speed(100)
+    m:start(running_litton, function()
+      hero:unfreeze()
+      running_litton:set_enabled(false)
+      game:set_value("quest_mayors_dog", 8)
+    end)
+    see_litton_sensor:set_enabled(false)
+  end
+end
+
+for guard in map:get_entities("guard") do
+function guard:on_interaction()
+  if game:get_value("quest_mayors_dog") == 8 then
+    game:start_dialog("_oakhaven.npcs.guards.port.2", function()
+      game:set_value("quest_mayors_dog", 9)
+    end)
+  else
+    game:start_dialog("_oakhaven.npcs.guards.port.1")
+  end
+
+end
+end
+
 
 
 

@@ -17,8 +17,8 @@ function initial_game:initialize_new_savegame(game)
   game:set_starting_location("debug_room", "starting_destination")
 --  game:set_starting_location("new_limestone/tavern_upstairs", "destination")
 
-  sol.audio.set_music_volume(60)
-  game:set_value("music_volume", 60)
+  sol.audio.set_music_volume(70)
+  game:set_value("music_volume", 70)
 
 -- hero stats
   game:set_max_life(6)
@@ -40,10 +40,14 @@ function initial_game:initialize_new_savegame(game)
   game:set_value("fire_damage", 3)
   game:set_value("amount_bow", 0)
   game:set_value("elixer_restoration_level", 6) --starts at 6 (3 hearts), then goes to 12, then 18, then 24
+
+--system stuff
   game:set_value("quest_log_a", 0)
   game:set_value("quest_log_b", 0)
   game:set_value("reveal_quest_totals", false)
 
+--side quests
+  game:set_value("lighthouses_quest_num_lit", 0)
 
 
 end

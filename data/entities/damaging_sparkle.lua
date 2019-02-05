@@ -35,7 +35,7 @@ sparkle:add_collision_test("sprite", function(sparkle, entity)
   if entity:get_type() == "enemy" then
     local enemy = entity
     local reaction = enemy:get_attack_consequence("sword")
-    if reaction ~= "protected" or reaction ~= "ignored" then
+    if reaction ~= "protected" and reaction ~= "ignored" then
      enemy:hurt(damage)
     end
   end

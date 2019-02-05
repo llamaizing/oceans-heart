@@ -13,6 +13,7 @@ tile{
   layer = -1,
   x = -192,
   y = -248,
+  enabled_at_start = false,
   width = 1344,
   height = 1232,
   pattern = "2149",
@@ -8367,7 +8368,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 432,
+  x = 448,
   y = 168,
   width = 16,
   height = 16,
@@ -8725,8 +8726,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
-  y = 168,
+  x = 472,
+  y = 200,
   width = 16,
   height = 16,
   pattern = "2093",
@@ -8734,7 +8735,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 384,
+  x = 368,
   y = 192,
   width = 16,
   height = 16,
@@ -9601,7 +9602,7 @@ teletransporter{
 }
 
 dynamic_tile{
-  name = "mana_tree_door",
+  name = "manna_tree_door",
   layer = 0,
   x = 392,
   y = 152,
@@ -9792,11 +9793,29 @@ destructible{
 pickable{
   name = "manna_oak_twig",
   layer = 0,
-  x = 432,
+  x = 440,
   y = 173,
   enabled_at_start = false,
   treasure_name = "manna_oak_twig",
   treasure_savegame_variable = "found_marblecliff_manna_oak_twig",
+}
+
+teletransporter{
+  layer = 0,
+  x = 392,
+  y = 160,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/manna_oak_tunnels",
+  destination = "from_marblecliff",
+}
+
+destination{
+  name = "from_manna_oak_tunnels",
+  layer = 0,
+  x = 400,
+  y = 189,
+  direction = 3,
 }
 
 tile{
@@ -10076,8 +10095,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 464,
-  y = 152,
+  x = 472,
+  y = 184,
   width = 16,
   height = 16,
   pattern = "2094",
@@ -10085,7 +10104,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 384,
+  x = 368,
   y = 184,
   width = 16,
   height = 8,
@@ -10174,7 +10193,7 @@ tile{
 }
 
 dynamic_tile{
-  name = "mana_tree_leaves",
+  name = "manna_oak_leaves",
   layer = 1,
   x = 328,
   y = 56,

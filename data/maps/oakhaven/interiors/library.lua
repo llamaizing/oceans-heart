@@ -15,6 +15,9 @@ function map:on_started()
   if game:get_value("visited_hazel_room") == true then
     for entity in map:get_entities("block_book") do entity:set_enabled(false) end
   end
+
+  if game:get_value("quest_manna_oaks") >= 1 then hazel:set_enabled(true) end
+
 end
 
 function festus:on_interaction()
@@ -45,4 +48,24 @@ function note:on_interaction()
       game:set_value("find_burglars", true)
     end)
   end
+end
+
+
+function hazel:on_interaction()
+  if game:get_value("quest_manna_oaks") == 1 then
+    game:start_dialog("_oakhaven.npcs.hazel.library.1", function()
+      pollutant_battle_wall:set_enabled(true)
+      pollutant_enemy:set_enabled(true)
+      game:set_value("quest_manna_oaks", 2)
+    end)
+  elseif game:get_value("quest_manna_oaks") == 3 then
+    game:start_dialog("_oakhaven.npcs.hazel.library.3")
+  end
+end
+
+function pollutant_enemy:on_dead()
+  pollutant_battle_wall:set_enabled(false)
+  game:start_dialog("_oakhaven.npcs.hazel.library.2", function()
+    game:set_value("quest_manna_oaks", 3)
+  end)
 end

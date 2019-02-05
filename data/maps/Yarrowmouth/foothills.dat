@@ -27398,7 +27398,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1128,
+  x = 1136,
   y = 1520,
   width = 16,
   height = 8,
@@ -28404,7 +28404,7 @@ destructible{
 
 npc{
   layer = 0,
-  x = 1136,
+  x = 1144,
   y = 1525,
   direction = 3,
   subtype = 1,
@@ -28691,10 +28691,10 @@ dynamic_tile{
   layer = 0,
   x = 24,
   y = 1112,
-  pattern = "1697",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1697",
 }
 
 dynamic_tile{
@@ -28702,10 +28702,9 @@ dynamic_tile{
   layer = 0,
   x = 88,
   y = 1048,
-  pattern = "1696",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "1696",
 }
 
 teletransporter{
@@ -54759,7 +54758,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 1128,
+  x = 1136,
   y = 1504,
   width = 16,
   height = 16,
@@ -56308,10 +56307,10 @@ dynamic_tile{
   layer = 1,
   x = 152,
   y = 960,
-  pattern = "1697",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1697",
 }
 
 dynamic_tile{
@@ -56319,10 +56318,10 @@ dynamic_tile{
   layer = 1,
   x = 432,
   y = 1128,
-  pattern = "1697",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1697",
 }
 
 dynamic_tile{
@@ -56330,10 +56329,10 @@ dynamic_tile{
   layer = 1,
   x = 608,
   y = 1128,
-  pattern = "1697",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1697",
 }
 
 dynamic_tile{
@@ -56341,10 +56340,10 @@ dynamic_tile{
   layer = 1,
   x = 864,
   y = 1208,
-  pattern = "1697",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1697",
 }
 
 dynamic_tile{
@@ -56352,10 +56351,10 @@ dynamic_tile{
   layer = 1,
   x = 1008,
   y = 1224,
-  pattern = "1697",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1697",
 }
 
 dynamic_tile{
@@ -56363,10 +56362,10 @@ dynamic_tile{
   layer = 1,
   x = 1184,
   y = 1224,
-  pattern = "1697",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "1697",
 }
 
 npc{

@@ -294,5 +294,22 @@ side{
 side{
 	dialog_id = "quest.side.oakhaven.manna_oaks",
 	calc_phase = "quest_manna_oaks",
+	location = "location.oakhaven",
+    replace_v = {
+		"manna_oaks_investigated"
+    }
+}
+
+side{
+	dialog_id = "quest.side.oakhaven.master_thief",
+	calc_phase = "quest_mayors_dog",
 	location = "location.oakhaven"
+}
+
+side{
+	dialog_id = "quest.side.lighthouses",
+	calc_phase = "quest_lighthouses",
+	replace_v = {
+		"lighthouses_quest_num_lit"
+	}
 }

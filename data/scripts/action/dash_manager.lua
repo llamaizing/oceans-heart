@@ -92,7 +92,6 @@ function dash_manager:generate_moths(game)
         moth:set_drawn_in_y_order(true)
         n = n + 1
         if n <= MAX_MOTHS then return true end
---        if game:get_value("hero_dashing") then return true end
     end)
 end
 

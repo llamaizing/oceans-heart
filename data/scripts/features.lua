@@ -10,6 +10,7 @@ require("scripts/hud/hud")
 require("scripts/meta/hero")
 require("scripts/meta/enemy")
 require("scripts/meta/destructable")
+require("scripts/meta/camera")
 --require("scripts/meta/sensor")
 require("scripts/meta/map")
 

@@ -2,8 +2,24 @@ local map = ...
 local game = map:get_game()
 
 function map:on_started()
-
+  if game:get_value("aubrey_defeated") then walking_in_sensor:set_enabled(false) end
 end
+
+function walking_in_sensor:on_activated()
+  game:start_dialog("_oakhaven.npcs.ana_orange.get_into_fight", function()
+    walking_in_sensor:set_enabled(false)
+    aubrey:set_enabled(false)
+    aubrey_enemy:set_enabled(true)
+  end)
+end
+
+
+function aubrey_enemy:on_dying()
+  aubrey:set_position(aubrey_enemy:get_position())
+  aubrey:set_enabled(true)
+  game:set_value("aubrey_defeated", true)
+end
+
 
 function aubrey:on_interaction()
   --confront aubrey!

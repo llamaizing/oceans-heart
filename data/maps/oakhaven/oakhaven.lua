@@ -21,6 +21,7 @@ map:register_event("on_started", function()
     aubrey_door_npc:set_enabled(false)
     aubrey_door:set_enabled(false)
   end
+  --musicians sidequest:
   disguised_trumpet_player:set_traversable(true)
   if not game:get_value("oakhaven_find_poster_monster") then
     disguised_trumpet_player:set_enabled(false)
@@ -32,7 +33,14 @@ map:register_event("on_started", function()
     musician_1:set_enabled(false)
     musician_2:set_enabled(false)
   end
-
+  --manna oak
+  if game:get_value("quest_manna_oaks") and game:get_value("quest_manna_oaks") >= 7 then
+    manna_tree_door:set_enabled(false)
+  end
+  if game:get_value("quest_manna_oaks") and game:get_value("quest_manna_oaks") >= 9 then
+    hazel:set_enabled(true)
+    manna_oak_leaves:set_enabled(true)
+  end
 
 end)
 
@@ -182,19 +190,49 @@ for poster in map:get_entities("band_poster") do
 end
 
 
+--HAZEL, post tree quest
+function hazel:on_interaction()
+  if game:get_value("quest_manna_oaks") == 9 then
+    game:start_dialog("_oakhaven.npcs.hazel.tree.1", function()
+      hero:start_treasure("elixer")           --IS AN ELIXER THE BEST REWARD?????
+      game:set_value("quest_manna_oaks", 10)
+    end)
+  else
+    game:start_dialog("_oakhaven.npcs.hazel.tree.2")
+  end
+end
+
 ---------------------------
 
 
 
 --poster monster sensor
+local monster_sensor_tripped = false
 for sensor in map:get_entities("poster_monster_sensor") do
   function sensor:on_activated()
-    if game:get_value("oakhaven_find_poster_monster") then
+    if game:get_value("oakhaven_find_poster_monster") and monster_sensor_tripped == false then
+      monster_sensor_tripped = true
       game:start_dialog("_oakhaven.observations.misc.poster_monster", function() 
         game:set_value("quest_oakhaven_musicians", 1) --quest log
         poster_monster_wall:set_enabled(false)
         game:set_value("poster_monster_caught", true)
         sensor:set_enabled(false)
+      end)
+    end
+  end
+end
+
+--palace entry sensor
+function palace_entry_sensor:on_activated()
+  if not game:get_value("oakhaven_palace_party_permission_granted") then
+    --don't have the invitation
+    if not game:get_value("quest_mayors_dog") then
+      game:start_dialog("_oakhaven.npcs.guards.town.party_entrance_no")
+      hero:walk("666")
+    else
+      game:start_dialog("_oakhaven.npcs.guards.town.party_entrance_yes", function()
+        game:set_value("quest_mayors_dog", 1)
+        game:set_value("oakhaven_palace_party_permission_granted", true)
       end)
     end
   end

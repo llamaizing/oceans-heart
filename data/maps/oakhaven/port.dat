@@ -18767,15 +18767,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
-  y = 632,
-  width = 8,
-  height = 24,
-  pattern = "633",
-}
-
-tile{
-  layer = 0,
   x = 136,
   y = 632,
   width = 16,
@@ -20126,7 +20117,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 168,
+  x = 176,
   y = 656,
   width = 40,
   height = 16,
@@ -20405,20 +20396,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
-  y = 656,
+  x = 216,
+  y = 664,
   width = 16,
   height = 16,
   pattern = "99",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 688,
-  width = 16,
-  height = 16,
-  pattern = "101",
 }
 
 tile{
@@ -22354,15 +22336,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1934",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 656,
-  width = 16,
-  height = 16,
-  pattern = "1931",
 }
 
 tile{
@@ -31968,6 +31941,131 @@ tile{
   pattern = "242",
 }
 
+tile{
+  layer = 0,
+  x = 128,
+  y = 656,
+  width = 8,
+  height = 8,
+  pattern = "290",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 656,
+  width = 8,
+  height = 8,
+  pattern = "290",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 656,
+  width = 8,
+  height = 8,
+  pattern = "290",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 656,
+  width = 8,
+  height = 8,
+  pattern = "290",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "1931",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 688,
+  width = 8,
+  height = 8,
+  pattern = "290",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 688,
+  width = 8,
+  height = 8,
+  pattern = "290",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 688,
+  width = 8,
+  height = 8,
+  pattern = "290",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 688,
+  width = 8,
+  height = 8,
+  pattern = "290",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "1571",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "1571",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 632,
+  width = 8,
+  height = 24,
+  pattern = "633",
+}
+
 npc{
   layer = 0,
   x = 592,
@@ -32068,6 +32166,7 @@ destructible{
 }
 
 npc{
+  name = "guard_2",
   layer = 0,
   x = 408,
   y = 797,
@@ -32077,6 +32176,7 @@ npc{
 }
 
 npc{
+  name = "guard_1",
   layer = 0,
   x = 328,
   y = 797,
@@ -33406,6 +33506,54 @@ block{
   max_moves = 1,
 }
 
+npc{
+  name = "running_litton",
+  layer = 0,
+  x = 688,
+  y = 189,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/litton",
+}
+
+sensor{
+  name = "see_litton_sensor",
+  layer = 0,
+  x = 672,
+  y = 45,
+  width = 48,
+  height = 16,
+}
+
+npc{
+  layer = 0,
+  x = 168,
+  y = 653,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.signs.port_office",
+}
+
+npc{
+  layer = 0,
+  x = 80,
+  y = 685,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.signs.port_warehouse",
+}
+
+teletransporter{
+  layer = 0,
+  x = 48,
+  y = 672,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/interiors/port_warehouse",
+  destination = "from_outside",
+}
+
 tile{
   layer = 1,
   x = 80,
@@ -34281,7 +34429,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 168,
+  x = 176,
   y = 640,
   width = 40,
   height = 16,
@@ -36327,9 +36475,9 @@ dynamic_tile{
   layer = 2,
   x = 472,
   y = 1232,
-  pattern = "1540",
+  enabled_at_start = false,
   width = 16,
   height = 32,
-  enabled_at_start = false,
+  pattern = "1540",
 }
 

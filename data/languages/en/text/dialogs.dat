@@ -5529,15 +5529,7 @@ dialog{
   id = "_oakhaven.npcs.ana_orange.3",
   text = [[
 AUBREY:
-Hey, you're not the orange guy! $2Wait a
-second$3... do I know you from somewhere?
-
-TILIA:
-From the tic-tac-toe championship?
-
-
-AUBREY:
-Oh! Oh no! Look, I can explain. My dad runs
+Oh no! Look, I can explain. My dad runs
 an Orange Orchard and times have been
 really tough. I wanted to help him out...
 TILIA:
@@ -5580,6 +5572,23 @@ it'll be put to good use.
 TILIA:
 Hey, don't make me seem like your
 accomplice. You stole that yourself.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ana_orange.get_into_fight",
+  text = [[
+AUBREY:
+Hey, you're not the orange guy! $2Wait a
+second$3... do I know you from somewhere?
+
+TILIA:
+From the tic-tac-toe championship?
+
+
+AUBREY:
+Oh. Oh! Oh no! You'll never take me
+alive, copper!
 ]],
 }
 
@@ -6163,6 +6172,146 @@ to the east, you can't miss it.
 }
 
 dialog{
+  id = "_oakhaven.npcs.guards.hq.captain.1_ask",
+  text = [[
+GUARD CAPTAIN:
+Good afternoon. Hey, don't take this the
+wrong way, but you look unassuming. Do
+you want to help the town guard out?
+GUARD CAPTAIN:
+I've got an assignment none of my men
+will be able to do. I can pay you 200 crowns.
+
+TILIA:
+$?Sure
+$?No way, Jose
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.hq.captain.2_quest",
+  text = [[
+TILIA:
+I'm not sure how else you want me to take
+that, but sure. What do you need help with?
+
+GUARD CAPTAIN:
+As you may have heard, the Mayor is holding
+a birthday party for his dog. The Mayor plans
+to unveil a fabulous portrait of his dog at
+GUARD CAPTAIN:
+the event. The thing is, there's rumors the
+master thief Litton is in town. We're worried
+he's here to steal the painting.
+TILIA:
+How is a painting of someone's dog so
+valuable?
+
+GUARD CAPTAIN:
+I have no idea. I'm not an art dealer, I've
+just been told it is. Anyway, we need someone
+to pretend to be a fancy party guest and
+GUARD CAPTAIN:
+infiltrate the party, figure out who Litton is,
+and prevent him from stealing the painting
+of the dog.
+TILIA:
+Sounds like a blast, honestly. Sure.
+
+
+GUARD CAPTAIN:
+Really? Okay, excellent. Here, this is an
+invitation to the party. Just head over to the
+palace, present your invitation, and act like
+GUARD CAPTAIN:
+you belong there. Report back once you've
+saved the day.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.hq.captain.3",
+  text = [[
+GUARD CAPTAIN:
+Hey, thanks for helping us out. Just head up
+to the palace and present your invitation,
+act natural$1...$3 or, well, act like you belong
+GUARD CAPTAIN:
+there, and figure out who the master thief
+Litton is. And stop him from stealing the
+portrait of the Mayor's dog. It's simple.
+TILIA:
+Yep, sounds simple.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.hq.captain.4",
+  text = [[
+GUARD CAPTAIN:
+You're back! I heard from my men stationed
+at the palace that there was a dognapping,
+but the dog is back now?
+TILIA:
+Yep. I tracked the thief back to the harbor
+and beat him up.
+
+GUARD CAPTAIN:
+You've done Oakhaven a great service.
+That dog is such a good dog. Such a good
+boy. Thank you. Your reward.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.hq.captain.5",
+  text = [[
+GUARD CAPTAIN:
+You'll always be remembered as the hero
+who, on the Mayor's Dog's Birthday, saved
+the dog from certain doom. I salute you.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.hq.guard",
+  text = [[
+GUARD:
+I'm just over here filing our swords
+alphabetically. It's probably the captain
+you want to talk to.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.palace.archives.1",
+  text = [[
+GUARD:
+Hey! Are you the new cook?
+
+
+TILIA:
+Oh, uh. Yeah. Of course. Aren't I late?
+
+
+GUARD:
+Yeah you are! I'm glad you remembered to
+use the side door though. Head down that
+hallway to get to the kitchen.
+TILIA:
+Will do!
+
+$1...$3need to find a way to lure you away...
+GUARD:
+What was that?
+
+
+TILIA:
+Nothing! I'll check the kitchen!
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.guards.port.1",
   text = [[
 TOWN GUARD:
@@ -6174,9 +6323,20 @@ suspicious characters. That's my job.
 dialog{
   id = "_oakhaven.npcs.guards.port.2",
   text = [[
-This is a test.
-$? Yes
-$? No
+TOWN GUARD:
+Good afternoon.
+
+
+TILIA:
+Hey, question. Have you seen a blatantly
+suspicious guy running around down here
+carring a sack with a dog in it?
+TOWN GUARD:
+Now that you mention it, that guy was kind
+of suspicious. Yeah, he ran into the
+warehouse up those stairs.
+TILIA:
+Thanks. Keep up the good work.
 ]],
 }
 
@@ -6193,6 +6353,62 @@ dialog{
   text = [[
 GUARD:
 Hey, what are you doing over there!?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.town.party_entrance",
+  text = [[
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.town.party_entrance_ambivalent",
+  text = [[
+GUARD:
+There's a party for the Mayor's dog's
+birthday taking place right now.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.town.party_entrance_no",
+  text = [[
+GUARD:
+Excuse me. Do you have an invitation to the
+Mayor's dog's birthday party?
+
+TILIA:
+That's a thing? No, I dont.
+
+
+GUARD:
+I'm sorry, but the party is by invitation
+only.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.town.party_entrance_yes",
+  text = [[
+GUARD:
+Excuse me. Do you have an invitation to the
+Mayor's dog's birthday party?
+
+TILIA (PRETENDING TO BE FANCY):
+Why yes indeed my good sir. May I present
+my invitation to you here now.
+
+GUARD:
+$2Um.$3 Alright, well, yes, everything seems
+to be in order. Have a nice time at the party.
+
+TILIA (CONTINUING TO BE FANCY):
+Absolutely, thank you sir. I, a fancy noble
+person like the other guests, shall aquiesce
+with my peers.
+GUARD:
+You go right on in.
 ]],
 }
 
@@ -6419,6 +6635,104 @@ No problem, Hazel. If that's what you need.
 }
 
 dialog{
+  id = "_oakhaven.npcs.hazel.library.1",
+  text = [[
+HAZEL:
+Hey, Tilia! You got a sample from another
+one of those big trees?
+
+TILIA:
+I did. What did you find out?
+
+
+HAZEL:
+These trees are called Manna Oaks. From
+what I can tell, the Sea King had them
+planted ages ago. A man named Amalenchier
+HAZEL:
+tended to them, and cared for them as all
+the other trees on Oakhaven grew around
+their root system. Amalenchier lived where
+HAZEL:
+the village of Ivystump is now. Supposedly,
+his spirit still protects the woods.
+Anyway, let me see the twig you brought me.
+TILIA:
+Sure, here.
+
+
+HAZEL:
+$1...hmm... $3Yeah, this confirms what I had
+been thinking. The other Manna Oaks have
+the blight too. It seems to be coming from
+HAZEL:
+their roots, up through their cambrium. But
+if they're all sick... do their roots all
+connect? $1...$3Alright. Can you go to Ivystump
+HAZEL:
+and ask around? See if anyone there knows
+about the history of the Manna Oaks or why
+they're sick.
+TILIA:
+You think just because that's where this
+Amalenchier figure lived, someone there
+would know?
+HAZEL:
+Sometimes people keep weird old traditions
+around. And they say there's a ghost. And
+anyway, I'm going to look at each of the trees
+HAZEL:
+myself and see if they'll respond to any
+treatment I can come up with. Take this letter
+with you, it describes what's going on with
+HAZEL:
+the trees. J$1uuuu$3st in case you can't describe
+it yourself.
+
+TILIA:
+Thanks, Hazel. Alright, I'll go ask around
+Ivystump and see what turns up.
+
+HAZEL:
+Thank- woah, what's that!?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.library.2",
+  text = [[
+TILIA:
+I have no idea where that came from, but
+it looked just like a monster that attacked me
+when I took that twig from the Manna Oak.
+HAZEL:
+That doesn't make sense. I don't think-
+$2...$3Is there something smart enough to be
+trying to protect the blight on the trees?
+TILIA:
+Is that the kind of thing that sounds
+ridiculous? I don't understand biology.
+
+HAZEL:
+Yeah, that'd be ridiculous. Still, be careful.
+It's definitely weird.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.library.3",
+  text = [[
+HAZEL:
+I'm going to go try a few different treatments
+on the Manna Oaks. You bring that letter I
+gave you to someone in Ivystump Village and
+HAZEL:
+see if anyone there might know why the
+trees are getting sick.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.hazel.palace.1",
   text = [[
 TILIA:
@@ -6483,6 +6797,98 @@ everything there!
 }
 
 dialog{
+  id = "_oakhaven.npcs.hazel.tree.1",
+  text = [[
+HAZEL:
+How did it go down in the tunnels?
+
+
+TILIA:
+There were a whole bunch of monsters
+all around the trees' roots, but I took care
+of them. Down at the center of the tunnels
+TILIA:
+there's some old shrine where the Oaks'
+roots grow into a pool of salt water. It
+seems like the kind of plant thing you might
+TILIA:
+like to check out.
+
+
+HAZEL:
+That's entirely accurate. I'm going to keep
+studying these trees. It seems like they have
+a lot to do with the entire ecosystem's health.
+HAZEL:
+Here, thanks for your help. I think you might
+find this useful as you look for your dad.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.tree.2",
+  text = [[
+HAZEL:
+I'm going to keep studying these trees.
+I think they have a lot to do with the entire
+island's ecosystem. But you need to get
+HAZEL:
+back to looking for your dad. I know you'll
+fight your way through anything to do what
+you think is right. Thanks for helping me.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.tunnels.1",
+  text = [[
+TILIA:
+Sure wasn't expecting to find you fighting
+monsters in these tunnels.
+
+HAZEL:
+Yeah, I was trying to see if the blight would
+respond to Elixer Vitae when the entrance
+to these tunnels opened up. I read that the
+HAZEL:
+Manna Oak's roots grew all the way down
+to the sea. These tunnels must wind down
+along with them. And then I think obviously
+HAZEL:
+the fact that there are monsters running
+around here is why the trees are sick.
+
+TILIA:
+Yeah, that's what I was thinking too.
+
+
+HAZEL:
+Well I don't mind fighting a monster here
+and there, but I'm going to let you take it
+from here. Meet me at the Manna Oak in
+HAZEL:
+Oakhaven once you've figured out this
+monster thing?
+
+TILIA:
+I'll see you there then.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.tunnels.2",
+  text = [[
+HAZEL:
+I think obiously it's the monsters running
+around their roots that are making the
+trees sick. That's really your department,
+HAZEL:
+so meet me back at the tree in Oakhaven
+once you've gotten this sorted out.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.inn.beaufort.1",
   text = [[
 BEAUFORT:
@@ -6535,6 +6941,124 @@ dialog{
   text = [[
 The door isn't locked, but it seems rude
 to just wander into someone's room.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.1",
+  text = [[
+LAMIA:
+Hello dear. New faces in town have always
+come through the Veilwood. How did it
+treat you?
+TILIA:
+Well it's full of monsters. So...
+
+
+LAMIA:
+In this town, we've tried always to respect
+the Veilwood. I've studied its life forms as
+a botanist. It hasn't always been home to
+LAMIA:
+so many monsters. And I don't think they're
+doing the trees any good.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.2",
+  text = [[
+LAMIA:
+Hello, dear. New face in town, you must
+have crossed through the Veilwood to
+get here.
+TILIA:
+I did. I came here looking for someone who
+knows about the Manna Oaks. They're
+getting sick and my friend is trying to
+TILIA:
+help. She wrote a letter explaining what
+she's figured out so far. Take a look.
+
+LAMIA:
+$1hmm...$3 She's noticed the Oakblight. I'm
+impressed with her observations. Especially
+because the blight is starting to spread to
+LAMIA:
+other trees. I've been keeping an eye on the
+Oakblight for several months, but... I have no
+idea what's causing it. People used to say
+LAMIA:
+that the Manna Oaks were given to the Sea
+King by the Ocean herself, so he could shelter
+his people. Their roots grow so deep that
+LAMIA:
+they draw water from the sea. A man named
+Amalenchier tended to the trees as saplings.
+His grave is in the Veilwood, in a grove of
+LAMIA:
+fir trees. If his spirit still protects the
+woods, perhaps you ought to visit
+his grave.
+TILIA:
+I'm not a big fan of ghosts, but I'll give it a
+shot. Thanks.
+
+LAMIA:
+The blight on the forest has corrupted some
+of the trees' spirits. Be careful.
+
+TILIA:
+Not sure what to make of that, but all right.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.3",
+  text = [[
+LAMIA:
+Have you been to visit Amalenchier's grave?
+They say his spirit watches over the Veilwood.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.4",
+  text = [[
+LAMIA:
+I thought I might find you here. Did you
+feel that earthquake?
+
+TILIA:
+Yeah. It happened right as I destroyed some
+monster down in Amalenchier's tomb.
+
+LAMIA:
+Something in the forest has been upset. I
+think you should go check the Manna Oaks.
+I just have a feeling.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.5",
+  text = [[
+LAMIA:
+I noticed the Manna Oaks have leaves on
+their branches once more. It's not much,
+but I'm very thankful.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.lamia.6",
+  text = [[
+LAMIA:
+The Manna Oaks have been growing for
+thousands of years. They've survived the
+flood and will outlive our great grandchildren
+LAMIA:
+if people like you continue to protect them.
 ]],
 }
 
@@ -6757,6 +7281,684 @@ mangrove leaves yet?
 
 TILIA:
 Nope, but thanks for your help earlier.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.clues.1",
+  text = [[
+GUEST:
+I do say. I was making small talk in
+the foyer and a man in a red shirt
+passed by wearing what seemed to be
+GUEST:
+an enormous sack as a scarf. A most
+singular form of fashion, I must
+say.
+TILIA:
+Indeed? Was the sack... Might he
+have been wearing last year's
+"painting-sized-sack" line?
+GUEST:
+Oh! A fashion line$1...$2I have definitely
+heard of.$3 The sack did appear to be
+painting-sized. That must have been it.
+GUEST:
+I haven't noticed him in some time however,
+so he must have removed his scarf.
+
+TILIA:
+It was last year's line after all. Not
+extraordinarily fashionable.
+
+GUEST:
+Indeed.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.clues.2",
+  text = [[
+GUEST:
+Ah, what$1... $3practical clothes you
+have. Although I do suppose this palace
+is prone to a draught. Soon after I
+GUEST:
+arrived at the party -fashionably on
+time, as it were- I found someone had
+left the window in the study open.
+GUEST:
+of course, the help quickly closed it.
+But I might have caught pneumonia.
+I see you've prepared against that.
+TILIA:
+Why yes. One never knows where the
+potential for pneumonia lurks. Of if one
+might need to actually move their legs.
+GUEST:
+Why on earth would one need to do
+that? Is your valet unreliable? I say.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.clues.3",
+  text = [[
+GUEST:
+You look a bit haggard, dear. Have you
+not eaten yet? It seems most of the
+guests who arrived earlier have already
+GUEST:
+eaten and retired to the library, awaiting
+when the Mayor's dog's portrait is to be
+revealed.
+TILIA:
+Why is that so indeed? This painting
+fascines me. I must take it in.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.clues.spoken_to_already",
+  text = [[
+GUEST:
+Ah, you again? Please, I must say I've
+quite run out of topics of conversation.
+Please seek out another guest.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.dog.1",
+  text = [[
+DOG:
+Arf!
+(His eyes are full of innocence.)
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.dog.2",
+  text = [[
+DOG:
+Arf!
+(His eyes are full of determination.)
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.guards.litton_gone",
+  text = [[
+GUARD:
+Did you battle that troll!? Look, it doesn't
+matter! While you were fighting it, that guy
+you were confronting in the library
+GUARD:
+grabbed the Mayor's dog and ran away!
+He went into the city and down out the
+south gate! You gotta catch him!
+TILIA:
+What!? Ugh, I'll stop the dognapper!
+...Wait, aren't you going to go after him?
+
+GUARD:
+I've got to stay here and comfort the Mayor.
+He's inconsolable. Very upset about the dog.
+Don't want him to issue any executive orders
+GUARD:
+in this state, it could be really bad. I'm going
+to stay here and do that, you go stop that
+dognapper!
+TILIA:
+Alright. If he went out the south gate he's
+probably headed to the port to get off the
+island. I'd better run.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.litton.1",
+  text = [[
+GUEST:
+Ah, a new face. You must be a fellow
+admirer of the Mayor's dog. Have you been
+a fan for long?
+TILIA:
+Why absolutely. I fondly recall the day I
+first heard stories of the dog's glory. Such
+magnificient tales. And a magnificent tail. On
+TILIA:
+the dog. I mean to say his tail is magnificent.
+As are the rest of his features. I am such an
+admirer.
+GUEST:
+Ah, indeed. Well, I shan't keep you from
+the party guests.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.litton.2-confrontation",
+  text = [[
+GUEST:
+Ah, the Mayor's dog's portrait shall soon
+be revealed. I say, have you-
+
+TILIA:
+Can it, rose nose. You're here to steal
+the dog painting! I deduced it like a cool
+detective!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.litton.3-troll_in_dungeon",
+  text = [[
+GUARD:
+Troll in the dungeon! Troll in the dungeon!
+
+
+TILIA:
+What! I'll take care of it! Where's the
+dungeon?
+
+GUARD:
+I mean, uh, sorry, I'm flustered. It's in the
+attic. I don't know how it got to the attic.
+Go down the hall, take a left, then a right
+GUARD:
+the stairs are in the study!
+
+
+TILIA:
+Got it. You make sure this guy doesn't
+steal the mayor's painting!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.litton.4-encounter",
+  text = [[
+LITTON:
+What's this? How did you find me!?
+
+
+TILIA:
+Really good detective skills! And I asked
+some people if they'd seen you and you
+weren't very sneaky. Give back the Mayor's
+TILIA:
+dog you dognapper!
+
+
+LITTON:
+No way. I'm taking this pup to Ballast
+Harbor to auction off. He'll fetch quite a sum,
+heh heh heh...
+LITTON:
+Now prepare to be stopped from stopping me!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayor.1",
+  text = [[
+MAYOR:
+Well hey there, kiddo. It's my dog's birthday!
+Welcome to the party!
+
+TILIA (STILL PRETENDING TO BE FANCY):
+Well thank you, my good Mayor. But I do
+say, have you condoned to spy anyone
+suspiciously eyeing your dog?
+MAYOR:
+I don't know, man, it's his birthday. Everybody
+wants to check him out! Just wait till I reveal
+the new portrait I comissioned. Oh man,
+MAYOR:
+the people won't be able to help themselves,
+he's so cute.
+
+TILIA (TRYING TO THINK OF FANCY WORDS):
+Ah, most distrordinary.
+
+
+MAYOR:
+What?
+
+
+TILIA:
+Uh, I'm going to go get a drink now!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayor.2",
+  text = [[
+MAYOR:
+This is like... the worst possible thing that
+could happen. Someone made off with my
+dog. Why would... why? Why?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayor.3",
+  text = [[
+MAYOR:
+Hey, miss. I hear you rescued my dog from
+the dognapper! I can't, I don't even have
+words for how radical that is.
+TILIA:
+Don't worry about it. This is the kind of thing
+I do. I'm joining the Volunteer Navy, like my
+dad.
+MAYOR:
+That's like. Dude. That's so sincere. My dog
+is such a good boy. I want you to have this.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayor.4",
+  text = [[
+MAYOR:
+I'm so happy you rescued my dog. I'd declare
+today a holiday for you. But it's already my
+dog's birthday, so it's pretty holidayed up.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.1a",
+  text = [[
+GUEST:
+I hear the Mayor's dog went skiing last
+year and won second place. He's been
+taking lessons to win this year. I bought him
+GUEST:
+a cashmere scarf for his birthday.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.1b",
+  text = [[
+GUEST:
+Good gracious! I saw it happen! That man
+in the red shirt dashed past, scooped up the
+Mayor's dog, and like a bolt of lightning, ran
+GUEST:
+right out the gate. What will become of
+our society without the Mayor's dog?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.1c",
+  text = [[
+GUEST:
+The Mayor's dog is once again home.
+He holds himself differently. I think this
+ordeal has made him stronger.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.2a",
+  text = [[
+GUEST:
+I've been so excited for the Mayor's dog's
+birthday all month that I simply forgot to
+weigh anchor when I sailed in on my yacht.
+GUEST:
+My yacht has since drifted out to sea, but
+all is well.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.2b",
+  text = [[
+GUEST:
+Every fiber of my being feels wronged. To
+see such a heartless man just snatch an
+innocent dog... Be still, my shaking hands.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.2c",
+  text = [[
+GUEST:
+By jove, the dog has returned! The heights
+of elation I felt this morning have been
+exceeded even, by this triumphant canine!
+GUEST:
+See how he holds his head with pride! With
+grace. And dare I say it, grit!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.3a",
+  text = [[
+GUEST:
+My dear, you absolutely must try one of
+these Lobb oranges. Or perhaps even
+better, try to play fetch with the Mayor's
+GUEST:
+dog with an orange. Oh-ho-ho, what a sight
+that would be. Instead of using a gold-plated
+tennis ball, an orange. Ohhoho.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.3b",
+  text = [[
+GUEST:
+I've entirely lost my appetite. Dognapping!
+In our fair city! Egads.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.mayors_friends.3c",
+  text = [[
+GUEST:
+What a wonderful end to all this commotion.
+Hmm, yes. I do say.
+
+TILIA:
+You sound as weird as I do when I'm faking
+trying to talk like you guys.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.1",
+  text = [[
+GUEST:
+I'm extraordinarily excited to see the Mayor's
+Dog's new portrait. I imagine a masterwork
+like that must have been commissioned for
+GUEST:
+hundreds of crowns. The mayor spares
+no expense on that dog, indeed.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.10",
+  text = [[
+GUEST:
+I've absolutely captivated by this painting.
+It depects Oakhaven before the Great Flood.
+It evokes such resilliance, of a people
+GUEST:
+beaten, but not broken. A city that suffers
+though the injustices of the world, but
+persists nonetheless.
+TILIA:
+Didn't almost everyone die?
+
+
+GUEST:
+$1...$3well yes. But now that we live here,
+it's our- look miss. You don't understand art.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.11",
+  text = [[
+GUEST:
+Isn't it humbling, to stand in the ancient
+palace of the Sea King. He must have paced
+these corridors, agonizing over his battles.
+TILIA:
+Ah, most indeed. And now it is befallen to
+we nobles to maintain his heavy mantle.
+
+GUEST:
+An astute observation. The direction of
+the people is a heavy burden.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.12",
+  text = [[
+GUEST:
+While the Sea King likely wasn't this tall in
+real life, I imagine his stature must have
+felt similar to his enemies.
+TILIA:
+Ah yes, and his fancy armor managed even
+to exceed our own fancy clothes. Such a man.
+
+GUEST:
+Uh, yes. Surely.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.13",
+  text = [[
+GUEST:
+Ah, what a feeling it is to walk though such
+an ancient courtyard on such a momentus
+day as the Mayor's Dog's birthday.
+TILIA:
+Why absolutely. It surpasses even my own
+lavish gardens at home.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.14",
+  text = [[
+GUEST:
+Did you know? The hedges in this courtyard
+have been meticulously maintained for
+hundreds of years.
+TILIA:
+What a sight. Even longer lived than the
+hedge maze I, a fancy noble, have at my
+estate.
+GUEST:
+My own hedges as well. Such history.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.15",
+  text = [[
+GUEST:
+So gracious of the Mayor to allow us into
+his study during his dog's birthday party.
+We can take in the surrounding in which
+GUEST:
+he makes the decisions that keep our city
+atop the heap. Still the jewl of the North Seas.
+
+TILIA:
+Oh, I don't know. I understand that Limestone
+Island is quite the destination as well. Such
+kind and smart young women live there.
+GUEST:
+I, uh. Oh, well, I'm sure it might be. Perhaps
+one day this small island you speak of may
+become relevant to trade.
+TILIA:
+I don't know, they might already be able to
+make a profit trading even an intellect like
+yours.
+GUEST:
+With tariffs such as they are, they could-
+wait, excuse me?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.16",
+  text = [[
+GUEST:
+I do occasionally catch myself staring at
+that chair and wondering what it would be
+like to have an audience chamber of my own.
+TILIA:
+You don't have you own audience chamber?
+Oh, how drab. I find one very much spices
+up my estate.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.17",
+  text = [[
+GUEST:
+While I do find the ostentation delightful,
+much about the architecture from the
+pre-flood era is rather bulky for my tastes.
+TILIA:
+Oh absolutely. Why on earth did they insist
+on making building from such, uh, rocky
+stones?
+GUEST:
+Indeed. Although much of their masonry
+knowledge was lost, so was the brutalism
+of their scope, which I can live with.
+TILIA:
+Oh, um. Absolutely. I also feel that way.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.2",
+  text = [[
+GUEST:
+Between you and me$1...$3 I wasn't actually
+invited here. But I'm such a big fan of the
+mayor's dog! I had to come.
+GUEST:
+$1...$3please don't tell anyone.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.3",
+  text = [[
+GUEST:
+The mayor's palace, by far, has the city's
+finest rugs. I consider myself a purveyor
+of fine carpet. I've traveled all the way to
+GUEST:
+the Zeyphr empire to observe their intricate
+weaving techniques with a mind to start
+manufacturing here.
+TILIA:
+$1...$3
+
+
+GUEST:
+Escuse me, miss? Have you dozed off?
+
+
+TILIA:
+Oh! Ah, my delicate fancy constitution is
+highly affected by the elevation here in
+Oakhaven. I'm from... Fancyburg, you see.
+GUEST:
+Oh, I see, that must be near sea level.
+
+
+TILIA:
+...yes.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.4",
+  text = [[
+GUEST:
+Oh, do try a canape. They pair wonderfully
+with the reisling.
+
+TILIA:
+Oh, yes. I'll try an$1... $3au pair?
+
+
+GUEST:
+That's... not one. Here, maybe just have
+a strawberry.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.5",
+  text = [[
+GUEST:
+I hear the Mayor's Dog eats this well every
+day. I hope to spoil my own dog or maybe
+children this much one day.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.6",
+  text = [[
+GUEST:
+I do believe the Mayor had the orchard in
+Ivystump grow these apples especially for
+his dog's birthday party.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.7",
+  text = [[
+GUEST:
+What's a fete without a dog's birthday at
+the center? Did you know my cousin owns
+the shipyard down at the port? He had a
+GUEST:
+party for his cat last month, but it lacked
+that joie de vivre that dogs bring.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.8",
+  text = [[
+GUEST:
+While the Mayor serves very fine wine to
+his guests, I hear tell that the rarest vintages
+are reserved exclusively for him and his dog.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.normal_guests.9",
+  text = [[
+GUEST:
+My understanding is that the Mayor has
+arranged for thirty jugglers and acrobats
+to preform tonight$1....$3
+GUEST:
+I didn't realize the town's government could
+all be hired for such occasions. Aha, haha.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.mayors_party.protect_guests",
+  text = [[
+TILIA:
+I need to protect the party guests from the
+troll in the attic! Probably should also keep
+calm to there isn't a riot or something.
 ]],
 }
 
@@ -7793,6 +8995,15 @@ knows where she is.
 }
 
 dialog{
+  id = "_oakhaven.npcs.port.warhouse_blocker_guy.1",
+  text = [[
+STRIPED SHIRT GUY:
+Sorry man, no 'mittance here. This is
+just a normal warehouse is all.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.saloon.bartender1",
   text = [[
 BARTENDER:
@@ -8102,6 +9313,33 @@ Hazel has been researching.
 }
 
 dialog{
+  id = "_oakhaven.observations.misc.amalenchier_grave",
+  text = [[
+It's an old tomb. The writing on the
+gravestone is worn off.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.amalenchier_revenant_still_alive",
+  text = [[
+TILIA:
+What? I thought I took care of you
+upstairs! Alright, buddy.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.dog_went_back",
+  text = [[
+TILIA:
+Huh. I guess that dog probably wanted to
+get back to his birthday party. Better go let
+the city guard captain know.
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.misc.poster",
   text = [[
 (There's a poster advertising Gunther's
@@ -8119,6 +9357,51 @@ the band's posters! Get back here!
 }
 
 dialog{
+  id = "_oakhaven.observations.palace.attic_painting",
+  text = [[
+It appears to be the portrait of the
+Mayor's dog.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.palace.crossword",
+  text = [[
+There's a suspiciously difficult, almost entirely
+completed crossword puzzle the Mayor has
+conveniently left out on his desk.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.palace.impressive_books",
+  text = [[
+There's a couple thick books on the table
+with poetic-sounding titles. They seem to
+have been laid on the table to impress the
+party guests.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.palace.painting_heron_and_king",
+  text = [[
+The card below the painting reads:
+"The Sea King and his advisor, Heron".
+There's a couple men in the painting, smiling.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.palace.painting_oakhaven",
+  text = [[
+The painting is titled:
+''Oakhaven, Jewl of the North Seas''.
+It seems to depict the city before the flood.
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.palace_break_in.cookbook",
   text = [[
 There's a cook book here. Looks like some
@@ -8129,12 +9412,31 @@ quite a ruckus if you're not careful!
 }
 
 dialog{
+  id = "_oakhaven.observations.palace_break_in.dont_upstairs",
+  text = [[
+TILIA:
+I shouldn't go upstairs, I'd definitely get
+caught if I headed up there.
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.palace_break_in.guard_sees_explosion",
   text = [[
 GUARD:
 Holy cannoli, what was that!? I better go
 let someone know the vegetables are
 exploding!
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.palace_break_in.mayor_letters",
+  text = [[
+There are a few drafts of a letter on the table.
+It looks like the Mayor was trying to tactfully
+dis-invite the pirate Blackbeard from coming
+to his dog's birthday party?
 ]],
 }
 
@@ -8225,6 +9527,21 @@ dialog{
   text = [[
 North - Oakhaven
 East - Fort Crow
+]],
+}
+
+dialog{
+  id = "_oakhaven.signs.port_office",
+  text = [[
+Oakhaven Port
+Port Office
+]],
+}
+
+dialog{
+  id = "_oakhaven.signs.port_warehouse",
+  text = [[
+Warehouse
 ]],
 }
 
@@ -9155,6 +10472,15 @@ in the area.
 }
 
 dialog{
+  id = "_treasure.key_to_oakhaven.1",
+  text = [[
+You received the key to Oakhaven.
+It's just a ceremonial, symbolic key as
+far as you can tell.
+]],
+}
+
+dialog{
   id = "_treasure.kingscrown.1",
   text = [[
 You found a Kingscrown Bloom.
@@ -9197,6 +10523,16 @@ You found 10 stems of lavendar flowers!
 }
 
 dialog{
+  id = "_treasure.leaf_tornado.1",
+  text = [[
+You received Amalenchier's Wrath. This
+spell consumes much of your magic power
+to summon the wrath of the forest to
+aid you in battle.
+]],
+}
+
+dialog{
   id = "_treasure.mandrake.1",
   text = [[
 You collected a mandrake root.
@@ -9235,6 +10571,15 @@ dialog{
   id = "_treasure.mandrake_white.3",
   text = [[
 You found 5 white mandrake roots!
+]],
+}
+
+dialog{
+  id = "_treasure.manna_oak_twig.1",
+  text = [[
+You picked up a twig from this enormous
+tree. It looks healthy enough, but has a
+rotten scent.
 ]],
 }
 
@@ -9449,6 +10794,56 @@ You found an old tacklebox.
 }
 
 dialog{
+  id = "_treasure.thunder_charm.1",
+  text = [[
+You received the Seabird's Tear.
+This spell will use some of your magic
+to pull a lightning bolt from the sky,
+hitting one nearby enemy.
+]],
+}
+
+dialog{
+  id = "_treasure.thunder_charm.2",
+  text = [[
+You upgraded the Seabird's Tear.
+This spell will use some of your magic
+to pull a lightning bolt from the sky,
+hitting two nearby enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.thunder_charm.3",
+  text = [[
+You upgraded the Seabird's Tear.
+This spell will use some of your magic
+to pull a lightning bolt from the sky,
+hitting three nearby enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.thunder_charm.4",
+  text = [[
+You upgraded the Seabird's Tear.
+This spell will use some of your magic
+to pull a lightning bolt from the sky,
+hitting four nearby enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.thunder_charm.5",
+  text = [[
+You upgraded the Seabird's Tear.
+This spell will use some of your magic
+to pull a lightning bolt from the sky,
+hitting five nearby enemies.
+]],
+}
+
+dialog{
   id = "_treasure.tidal_starfruit.1",
   text = [[
 You found a Tidal Starfruit! It smells
@@ -9530,6 +10925,15 @@ dialog{
   id = "_treasure.witch_hazel.4",
   text = [[
 You collected a whole bunch of witch hazel flowers.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.ghost_ship.board_question",
+  text = [[
+Board the ghost ship?
+$? Yes
+$? Nope, nope, nope!
 ]],
 }
 
@@ -11173,6 +12577,23 @@ tunnels have been cleared
 }
 
 dialog{
+  id = "quest.side.lighthouses",
+  title = "Old Lighthouses",
+  text = [[
+You hear about four ancient
+lighthouses built to guide
+a lost lover back from sea.
+@Light all four lighthouses.
+!You've lit $v1 so far.
+@You feel drawn back to
+Naerreturn Bay.
+!It's on Yarrowmouth.
+@Board the ghost ship.
+  
+]],
+}
+
+dialog{
   id = "quest.side.oakhaven.manna_oaks",
   title = "The Oak Blight",
   text = [[
@@ -11186,7 +12607,75 @@ the other two giant oaks.
 !of Marblecliff Mountain.
 @!Take the twig back to Hazel
 !She's at Oakhaven's library.
-  
+@!Defend Hazel!
+@Visit Ivystump and ask if
+anyone knows about the Oaks.
+!Ivystump is on the western
+!edge of Oakhaven, past the
+!Veilwood forest
+@!An old botanist, Lamia,
+!lives in the southeast part
+!of town. She might know
+!about the Manna Oaks.
+@Check Amalenchier's grave.
+!It's in a grove of fir trees
+!in the west of the Veilwood.
+@Return to the tomb entrance.
+@Investigate the 3 Manna Oaks.
+!You've looked at $v1 so far.
+@Investigate further down
+the tunnels.
+@Let Hazel know there were
+monsters infesting the roots.
+]],
+}
+
+dialog{
+  id = "quest.side.oakhaven.master_thief",
+  title = "The Dog's Birthday",
+  text = [[
+The guard captains wants you
+to find a thief at the mayor's
+dog's birthday party.
+@Head to the palace
+!and present your invitation
+@!Speak to party guests
+!and ask about susicious
+!characters.
+@!Speak to party guests
+!Clues:
+!Someone in a red shirt
+!has a painting-size sack.
+@!Speak to party guests
+!Clues:
+!The thief is in red.
+!The thief arrived soon
+!after the party started.
+@!Speak to party guests
+!Clues:
+!The thief is in red.
+!The thief arrived early.
+!The guests who arrived
+!earlier are in the library
+!Ha! Look for someone
+!in a red shirt in the
+!library!
+@!A troll somehow got
+!into the attic!
+!Defend the party guests!
+@Confront your suspect!
+!Hopefully the man in
+!the red shirt is still
+!in the library.
+@Run to the port and
+try to catch the thief!
+@!Ask around about the
+!man in the red shirt.
+@!Check the warehouse
+!up the stairs.
+@!Save the mayor's dog!
+@Report to the Captain
+!of the Guard back in town.
 ]],
 }
 

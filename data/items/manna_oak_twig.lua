@@ -16,8 +16,8 @@ end
 
 function item:on_obtained()
   game:set_value("quest_manna_oaks", 1)
-  local x, y, layer = hero:get_position()
+  local x, y, layer = game:get_hero():get_position()
   game:get_map():create_enemy({
-    x = x, y = y, layer = layer, direction = 0, breed = "normal_enemies/arborgeist_gust"
+    x = x, y = y-32, layer = layer, direction = 0, breed = "normal_enemies/pollutant_blob"
   })
 end

@@ -22,13 +22,19 @@ function map:on_started()
 end
 
 function lighthouse_switch:on_activated()
-  game:set_value("goatshead_lighthouse_activated", true)
-  sol.audio.play_sound("switch_2")
-  torch_1:set_enabled(true)
-  torch_2:set_enabled(true)
-  torch_3:set_enabled(true)
-  torch_4:set_enabled(true)
-  torch_5:set_enabled(true)
-  game:start_dialog("_goatshead.observations.lighthouse_lit")
+  if not game:get_value("goatshead_lighthouse_activated") then
+    game:set_value("goatshead_lighthouse_activated", true)
+    sol.audio.play_sound("switch_2")
+    torch_1:set_enabled(true)
+    torch_2:set_enabled(true)
+    torch_3:set_enabled(true)
+    torch_4:set_enabled(true)
+    torch_5:set_enabled(true)
+    game:start_dialog("_goatshead.observations.lighthouse_lit")
+    game:set_value("lighthouses_quest_num_lit", game:get_value("lighthouses_quest_num_lit") + 1)
+    if game:get_value("lighthouses_quest_num_lit") >= 4 then
+      game:set_value("quest_lighthouses", 1)
+    end
+  end
 
 end
