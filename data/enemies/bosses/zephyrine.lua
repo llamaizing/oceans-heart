@@ -52,9 +52,6 @@ local properties = {
   dash_attack_speed = 120,
   dash_attack_wind_up = 600,
   dash_attack_sound = "running",
-  
-
-
 }
 
 properties_setter:set_properties(enemy, properties)

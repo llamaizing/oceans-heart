@@ -10,19 +10,14 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
 
 function boss_sensor:on_activated()
   boss_sensor:set_enabled(false)
   local x, y, layer = zephyrine:get_position()
   local effect = map:create_custom_entity{
     width = 16, height = 16,
-    direction = 0, x = x, y = y, layer = layer, model = "ephemeral_effect", sprite = "entities/poof"
+    direction = 0, x = x, y = y+8, layer = layer, model = "ephemeral_effect", sprite = "entities/poof"
   }
   zephyrine:set_enabled(true)
 end
@@ -31,7 +26,7 @@ function zephyrine:on_dead()
   local x, y, layer = zephyrines_tempest:get_position()
   local effect = map:create_custom_entity{
     width = 16, height = 16,
-    direction = 0, x = x, y = y, layer = layer, model = "ephemeral_effect", sprite = "entities/poof"
+    direction = 0, x = x, y = y+8, layer = layer, model = "ephemeral_effect", sprite = "entities/poof"
   }
   zephyrines_tempest:set_enabled(true)
   leave_sensor:set_enabled()

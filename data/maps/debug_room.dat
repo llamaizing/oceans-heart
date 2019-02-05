@@ -3338,6 +3338,51 @@ tile{
   pattern = "wall.pillar.up",
 }
 
+tile{
+  layer = 0,
+  x = 176,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 328,
+  width = 8,
+  height = 8,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 328,
+  width = 8,
+  height = 8,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "26",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -3512,8 +3557,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/naerreturn_bay",
-  destination = "from_lighthouse",
+  destination_map = "oakhaven/oakhaven",
+  destination = "from_lake_house",
 }
 
 pickable{
@@ -5133,6 +5178,18 @@ enemy{
   y = 365,
   direction = 0,
   breed = "bosses/zephyrine",
+}
+
+custom_entity{
+  name = "leaf_pile_2",
+  layer = 0,
+  x = -24,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_wood",
+  model = "leaf_pile",
 }
 
 tile{

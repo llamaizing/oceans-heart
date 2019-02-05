@@ -185,9 +185,11 @@ map{ id = "oakhaven/interiors/blacksmith", description = "blacksmith" }
 map{ id = "oakhaven/interiors/bomb_shop", description = "Bomb Shop" }
 map{ id = "oakhaven/interiors/burglar_hideout", description = "Burglar Hideout" }
 map{ id = "oakhaven/interiors/carpenter", description = "Carpenter" }
+map{ id = "oakhaven/interiors/cave_house", description = "Cave house" }
 map{ id = "oakhaven/interiors/game_hall", description = "Game Hall" }
 map{ id = "oakhaven/interiors/general_store", description = "General Store" }
 map{ id = "oakhaven/interiors/guard_hq", description = "Guard HQ" }
+map{ id = "oakhaven/interiors/haunted_house", description = "Haunted House" }
 map{ id = "oakhaven/interiors/hornwart_inn", description = "Hornwart Inn" }
 map{ id = "oakhaven/interiors/library", description = "Library" }
 map{ id = "oakhaven/interiors/library2", description = "library" }
@@ -408,6 +410,7 @@ sprite{ id = "entities/chairL", description = "Chair L" }
 sprite{ id = "entities/chairR", description = "chair right" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/chest_green", description = "Chest - Green" }
+sprite{ id = "entities/collapsing_floor_wood", description = "Collapsing Floor - Wood" }
 sprite{ id = "entities/coral_ore", description = "Coral Ore" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }

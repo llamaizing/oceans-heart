@@ -21,6 +21,10 @@ function enemy:on_created()
   sprites[3] = sol.sprite.create("enemies/" .. enemy:get_breed())
 end
 
+function enemy:print_hi()
+print("hi")
+end
+
 function enemy:go(angle)
 
   local movement = sol.movement.create("straight")

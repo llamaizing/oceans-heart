@@ -8,7 +8,7 @@ local properties = {
   damage = 8,
   burrow_sound = "splash",
   obstacle_behavior = "swimming",
-  projectile_breed = "zora_fire",
+  projectile_breed = "energy_ball_small",
   
 }
 

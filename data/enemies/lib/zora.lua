@@ -169,12 +169,11 @@ function behavior:create(enemy, properties)
 	  enemy:stop_movement()
 		sol.audio.play_sound("stone")
     --create projectile
-    local projectile = map:create_enemy({
+    local projectile = enemy:create_enemy({
       x = x, y = y, layer = layer, direction = direction,
       breed = properties.projectile_breed
     })
 
-  --Fire!
     projectile:go(enemy:get_angle(hero))
 
 	  sprite:set_animation("walking")
