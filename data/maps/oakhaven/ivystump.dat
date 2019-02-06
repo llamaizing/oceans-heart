@@ -18358,6 +18358,15 @@ teletransporter{
   destination = "from_outside",
 }
 
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 416,
+  y = 925,
+  width = 32,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 216,

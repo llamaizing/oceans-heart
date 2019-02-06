@@ -12,11 +12,11 @@ local game = map:get_game()
 local hero = map:get_hero()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("talked_to_ilex_1") == true then gate:set_enabled(false) end
   bait_monster:set_enabled(false)
 
-end
+end)
 
 
 

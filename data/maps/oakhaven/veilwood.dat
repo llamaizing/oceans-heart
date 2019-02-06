@@ -37492,6 +37492,24 @@ teletransporter{
   destination = "from_veilwood",
 }
 
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 1136,
+  y = 1405,
+  width = 32,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor_2",
+  layer = 0,
+  x = 528,
+  y = 29,
+  width = 32,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 1136,

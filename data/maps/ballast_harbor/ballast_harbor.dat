@@ -33712,7 +33712,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/kingsdown",
+  destination_map = "Yarrowmouth/tern_marsh",
   destination = "from_ballast_harbor",
 }
 
@@ -34461,6 +34461,24 @@ enemy{
   y = 1549,
   direction = 0,
   breed = "misc/seagull",
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 552,
+  y = 29,
+  width = 48,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor_2",
+  layer = 0,
+  x = 128,
+  y = 1645,
+  width = 32,
+  height = 32,
 }
 
 tile{

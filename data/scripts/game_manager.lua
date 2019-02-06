@@ -9,6 +9,7 @@ local pause_menu = require"scripts/menus/pause_menu"
 local quest_update_icon = require"scripts/menus/quest_update_icon"
 local objectives_manager = require"scripts/objectives_manager"
 local dash_manager = require"scripts/action/dash_manager"
+local map_banner = require"scripts/menus/map_banner"
 
 local game_manager = {}
 
@@ -38,6 +39,9 @@ function game_manager:create(file_name)
   if not exists then -- Initialize a new savegame.
     initial_game:initialize_new_savegame(game)
   end
+
+  --for the location banner on entering locations
+  game.map_banner = map_banner
 
   objectives_manager.create(game)
   pause_menu:set_game(game)

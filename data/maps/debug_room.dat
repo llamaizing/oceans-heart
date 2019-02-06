@@ -3557,8 +3557,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven",
-  destination = "from_lake_house",
+  destination_map = "oakhaven/port",
+  destination = "from_ferry",
 }
 
 pickable{
@@ -5190,6 +5190,15 @@ custom_entity{
   direction = 0,
   sprite = "entities/collapsing_floor_wood",
   model = "leaf_pile",
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = -24,
+  y = 237,
+  width = 32,
+  height = 32,
 }
 
 tile{

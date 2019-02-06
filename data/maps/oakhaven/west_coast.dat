@@ -35915,6 +35915,33 @@ destructible{
   can_be_cut = true,
 }
 
+sensor{
+  name = "^map_banner_sensor_4",
+  layer = 0,
+  x = 480,
+  y = 1885,
+  width = 32,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 1240,
+  y = 1541,
+  width = 32,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor_5",
+  layer = 0,
+  x = 120,
+  y = 29,
+  width = 32,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 848,
@@ -59714,6 +59741,24 @@ enemy{
   y = 533,
   direction = 0,
   breed = "normal_enemies/arborgeist_gust",
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 1,
+  x = 1240,
+  y = 349,
+  width = 32,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor_2",
+  layer = 1,
+  x = 1192,
+  y = 29,
+  width = 32,
+  height = 32,
 }
 
 tile{

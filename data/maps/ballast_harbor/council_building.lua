@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   charging_pirate:set_enabled(false)
   return_sensor:set_enabled(false)
   if game:get_value("ballast_charging_pirate_defeated") == true then
@@ -24,7 +24,7 @@ function map:on_started()
     blackbeard:set_enabled(false)
   end
 
-end
+end)
 
 function front_door_switch:on_activated()
   map:open_doors("front_door")

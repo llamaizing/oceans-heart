@@ -9,6 +9,24 @@ map_meta:register_event("on_started", function(self)
 	local map = self
   local hero = map:get_hero()
 
+
+  --sensors for triggering location title banners
+  for sensor in map:get_entities("^map_banner_sensor") do
+    function sensor:on_activated()
+      sol.menu.start(map, map:get_game().map_banner)
+      sensor:set_enabled(false)
+    end
+    sol.timer.start(map, 1000, function() sensor:set_enabled(false) end)
+  end
+
+--  for sensor in map:get_entities("^map_banner_reenabler_sensor") do
+--    function sensor:on_activated()
+--      for sensor in map:get_entities("^map_banner_sensor") do
+--        sensor:set_enabled(true)
+--      end
+--    end
+--  end
+
   --make invisible stairs invisible
   for stairs in map:get_entities("^invisible_stairs") do
     stairs:set_visible(false)

@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("quest_manna_oaks") == 0 then manna_oak_twig:set_enabled(true) end
   if game:get_value("amalenchier_tomb_open") then
     amalenchier_tombstone:set_enabled(false)
@@ -21,7 +21,7 @@ function map:on_started()
   if game:get_value("quest_manna_oaks") >= 7 then manna_tree_door:set_enabled(false) end
   if game:get_value("quest_manna_oaks") >= 9 then manna_oak_leaves:set_enabled(true) end
 
-end
+end)
 
 
 

@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("kingsdown_island_unlocked") == true then
     block_statue_1:set_enabled(false)
     block_statue_2:set_enabled(false)
@@ -22,7 +22,7 @@ function map:on_started()
 
   if game:get_value("nina_dialog_counter") ~= 2 then nina:set_enabled(false) end
 
-end
+end)
 
 
 function secret_keyhole:on_interaction()

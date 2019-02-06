@@ -48,7 +48,7 @@ map{ id = "Yarrowmouth/caves/puzzlewood_cave_1", description = "Puzzlewood Cave 
 map{ id = "Yarrowmouth/caves/tern_marsh_ambush", description = "Marsh Ambush Cave" }
 map{ id = "Yarrowmouth/foothills", description = "Foothills" }
 map{ id = "Yarrowmouth/hourglass_fort/basement", description = "Basement" }
-map{ id = "Yarrowmouth/hourglass_fort/outside", description = "Hourglass Fort - Outside" }
+map{ id = "Yarrowmouth/hourglass_fort/hourglass_fort", description = "Hourglass Fort - Outside" }
 map{ id = "Yarrowmouth/hourglass_fort/tunnel", description = "tunnel" }
 map{ id = "Yarrowmouth/interiors/briarwood_distillery", description = "Briarwood Distillery" }
 map{ id = "Yarrowmouth/interiors/carlov_house", description = "Carlov's House" }
@@ -58,9 +58,9 @@ map{ id = "Yarrowmouth/interiors/nina", description = "Nina's House" }
 map{ id = "Yarrowmouth/interiors/shop", description = "Shop" }
 map{ id = "Yarrowmouth/interiors/silent_glade_health", description = "Silent Glade Health Upgrade" }
 map{ id = "Yarrowmouth/juniper_grove", description = "Juniper Grove" }
-map{ id = "Yarrowmouth/kingsdown", description = "Kingsdown Isle" }
 map{ id = "Yarrowmouth/naerreturn_bay", description = "Naerreturn Bay" }
 map{ id = "Yarrowmouth/silent_glade", description = "Silent Glade" }
+map{ id = "Yarrowmouth/tern_marsh", description = "Kingsdown Isle" }
 map{ id = "Yarrowmouth/yarrowmouth_village", description = "Yarrowmouth Village" }
 map{ id = "ballast_harbor/ballast_harbor", description = "Ballast Harbor" }
 map{ id = "ballast_harbor/cave_1", description = "Cave 1" }
@@ -212,7 +212,7 @@ map{ id = "oakhaven/sunken_palace", description = "Sunken Palace" }
 map{ id = "oakhaven/veilwood", description = "Veilwood" }
 map{ id = "oakhaven/west_coast", description = "West Coast" }
 map{ id = "respawn_map", description = "blank room - leave empty" }
-map{ id = "snapmast_reef/landing", description = "Landing Area" }
+map{ id = "snapmast_reef/snapmast_landing", description = "Landing Area" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }
@@ -1421,6 +1421,8 @@ language{ id = "en/images", description = "en/images" }
 font{ id = "alttp", description = "alttp" }
 font{ id = "green_digits", description = "Green digits" }
 font{ id = "oceansfont", description = "oceansfont" }
+font{ id = "oceansfont_medium", description = "oceansfont_medium" }
+font{ id = "oceanstitle", description = "Oceanstitle" }
 font{ id = "pixolde/Pixolde", description = "pixolde/Pixolde" }
 font{ id = "pixolde/Pixolde-Bold", description = "pixolde/Pixolde-Bold" }
 font{ id = "proggy/ProggyTinySZ", description = "proggy/ProggyTinySZ" }

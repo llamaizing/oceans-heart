@@ -22875,7 +22875,7 @@ teletransporter{
   y = 1184,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/kingsdown",
+  destination_map = "Yarrowmouth/tern_marsh",
   destination = "from_hourglass_fort",
 }
 
@@ -23826,6 +23826,15 @@ sensor{
   y = 885,
   width = 16,
   height = 80,
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 240,
+  y = 1165,
+  width = 32,
+  height = 32,
 }
 
 tile{

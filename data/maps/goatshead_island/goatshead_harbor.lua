@@ -16,7 +16,7 @@ local step_up = sol.movement.create("path")
        step_up:set_ignore_obstacles(true)
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   to_limestone:set_enabled(false)
   yarrowmouth_teletransport:set_enabled(false)
   oakhaven_teletransport:set_enabled(false)
@@ -104,12 +104,13 @@ function map:on_started()
   horiz_walk2:set_ignore_obstacles()
   horiz_walk2:start(dockworker_3)
 
-end
+end)
 
 
 -- Event called after the opening transition effect of the map,
 -- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
+map:register_event("on_opening_transition_finished", function()
+
   if game:get_value("goatshead_opening") ~= true then
     game:start_dialog("_goatshead.npcs.juglan.1", function()
       game:start_dialog("_game.quest_log_update")
@@ -119,7 +120,7 @@ function map:on_opening_transition_finished()
     end)
 
   end
-end
+end)
 
 
 

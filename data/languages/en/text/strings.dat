@@ -20,11 +20,12 @@ text{ key = "menu.quest_log.quests_count", value = "$v1 of $v2 complete" } --dis
 text{ key = "menu.quest_log.quest_log_update", value = "Quest Log Updated!"}
 
 --// Location Names
---displayed in quest log (18 character max)
+--displayed in quest log and map banners (18 character max)
 	text{ key = "location.limestone_island", value = "Limestone Island" }
 	text{ key = "location.goatshead_island", value = "Goatshead Island" }
 	text{ key = "location.goatshead_harbor", value = "Goatshead Harbor" }
 	text{ key = "location.spruce_head", value = "Spruce Head" }
+	text{ key = "location.spruce_head_shrine", value = "Spruce Head Shrine" }
 	text{ key = "location.crabhook_village", value = "Crabhook Village" }
 	text{ key = "location.yarrowmouth", value = "Yarrowmouth" }
 	text{ key = "location.ballast_harbor", value = "Ballast Harbor" }
@@ -33,6 +34,27 @@ text{ key = "menu.quest_log.quest_log_update", value = "Quest Log Updated!"}
 	text{ key = "location.oakhaven", value = "Oakhaven" }
     text{ key = "location.snapmast", value = "Snapmast Reef" }
     text{ key = "location.tern_marsh", value = "Tern Marsh" }
+	text{ key = "location.west_coast", value = "West Oak"}
+	text{ key = "location.sunken_palace", value = "Sinking Palace"}
+	text{ key = "location.marblecliff", value = "Marblecliff Mountain"}
+	text{ key = "location.gull_rock", value = "Gull Rock"}
+	text{ key = "location.veilwood", value = "The Veilwood"}
+	text{ key = "location.port", value = "Oakhaven Port"}
+	text{ key = "location.ivystump", value = "Ivystump Village"}
+	text{ key = "location.eastoak", value = "Fort Crow"}
+	text{ key = "location.poplar_forest", value = "Poplar Forest"}
+	text{ key = "location.poplar_coast", value = "Spruce Head"}
+	text{ key = "location.council_building", value = "Pirate's Outpost"}
+	text{ key = "location.lighthouse", value = "Crumbling Lighthouse"}
+	text{ key = "location.limestone_present", value = "Limestone Island"}
+	text{ key = "location.ghost_ship", value = "Zephyrine's Salvation"}
+	text{ key = "location.hourglass_fort", value = "Hourglass Fort"}
+	text{ key = "location.foothills", value = "The Puzzlewood"}
+	text{ key = "location.naerreturn_bay", value = "Naerreturn Bay"}
+	text{ key = "location.yarrowmouth_village", value = "Yarrowmouth"}
+	text{ key = "location.amalenchier_tomb", value = "Amalenchier's Tomb"}
+	text{ key = "location.silent_glade", value = "Silent Glade"}
+	text{ key = "location.silent_glade_health", value = "Last Chief's Tomb"}
 
 --// Button actions
 text{ key = "action.back", value = "Back" } --prompt text indicates the button to exit out of a menu

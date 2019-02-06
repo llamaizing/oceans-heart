@@ -12,14 +12,14 @@ local game = map:get_game()
 local switches_on = 0
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   sol.timer.start(map, 100, function()
     if switches_on >= 5 then
       map:open_doors("silent_glade_door")
     end
     return true
   end)
-end
+end)
 
 
 

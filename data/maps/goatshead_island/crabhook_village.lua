@@ -11,9 +11,9 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
 
-end
+end)
 
 --Carrot Salesman
 function salesman:on_interaction()

@@ -11150,6 +11150,15 @@ enemy{
   breed = "normal_enemies/arborgeist_gust",
 }
 
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 920,
+  y = 189,
+  width = 32,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = -40,
