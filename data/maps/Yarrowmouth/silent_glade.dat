@@ -11249,6 +11249,126 @@ tile{
   pattern = "2039",
 }
 
+tile{
+  layer = 1,
+  x = 512,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "27",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "27",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "28",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "28",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "27",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "28",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "27",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "28",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "27",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "28",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "27",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 608,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "28",
+  tileset = "misc",
+}
+
 teletransporter{
   layer = 1,
   x = -16,
@@ -12154,6 +12274,15 @@ enemy{
   y = 189,
   direction = 0,
   breed = "normal_enemies/ghost_2",
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 1,
+  x = 8,
+  y = 509,
+  width = 32,
+  height = 32,
 }
 
 tile{
@@ -13612,15 +13741,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "267",
-}
-
-tile{
-  layer = 2,
-  x = 344,
-  y = 72,
-  width = 48,
-  height = 40,
-  pattern = "265",
 }
 
 tile{
@@ -15529,6 +15649,15 @@ tile{
   width = 16,
   height = 56,
   pattern = "1996",
+}
+
+tile{
+  layer = 2,
+  x = 344,
+  y = 72,
+  width = 48,
+  height = 40,
+  pattern = "265",
 }
 
 tile{

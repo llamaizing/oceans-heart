@@ -5842,60 +5842,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 752,
-  y = 280,
-  width = 16,
-  height = 16,
-  pattern = "175",
-}
-
-tile{
-  layer = 0,
-  x = 832,
-  y = 280,
-  width = 16,
-  height = 16,
-  pattern = "175",
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 336,
-  width = 16,
-  height = 16,
-  pattern = "175",
-}
-
-tile{
-  layer = 0,
-  x = 832,
-  y = 336,
-  width = 16,
-  height = 16,
-  pattern = "175",
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 392,
-  width = 16,
-  height = 16,
-  pattern = "175",
-}
-
-tile{
-  layer = 0,
-  x = 832,
-  y = 392,
-  width = 16,
-  height = 16,
-  pattern = "175",
-}
-
-tile{
-  layer = 0,
   x = 792,
   y = 448,
   width = 16,
@@ -5937,6 +5883,361 @@ tile{
   width = 8,
   height = 32,
   pattern = "door.down.right_side",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 368,
+  width = 8,
+  height = 16,
+  pattern = "76",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 336,
+  width = 8,
+  height = 32,
+  pattern = "73",
+}
+
+tile{
+  layer = 0,
+  x = 776,
+  y = 320,
+  width = 8,
+  height = 16,
+  pattern = "69",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 336,
+  width = 8,
+  height = 32,
+  pattern = "74",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 368,
+  width = 8,
+  height = 16,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 816,
+  y = 320,
+  width = 8,
+  height = 16,
+  pattern = "72",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "71",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "126",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 328,
+  width = 32,
+  height = 8,
+  pattern = "129",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 352,
+  width = 32,
+  height = 16,
+  pattern = "123",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 336,
+  width = 16,
+  height = 32,
+  pattern = "14",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "1579",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 432,
+  width = 32,
+  height = 16,
+  pattern = "1586",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "1588",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "1579",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "175",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "175",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "1587",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 264,
+  width = 32,
+  height = 24,
+  pattern = "32",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 264,
+  width = 32,
+  height = 24,
+  pattern = "32",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 824,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 760,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 280,
+  width = 32,
+  height = 24,
+  pattern = "32",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 24,
+  width = 32,
+  height = 24,
+  pattern = "32",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 24,
+  width = 32,
+  height = 24,
+  pattern = "32",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 792,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "21",
+  tileset = "misc",
 }
 
 crystal_block{
@@ -6139,6 +6440,15 @@ pickable{
   y = 69,
   treasure_name = "health_upgrade",
   treasure_savegame_variable = "silent_glade_health_upgrade_found",
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 800,
+  y = 461,
+  width = 16,
+  height = 16,
 }
 
 tile{
@@ -6557,64 +6867,188 @@ tile{
 
 tile{
   layer = 1,
-  x = 752,
-  y = 264,
-  width = 16,
-  height = 16,
-  pattern = "177",
-}
-
-tile{
-  layer = 1,
-  x = 832,
-  y = 264,
-  width = 16,
-  height = 16,
-  pattern = "177",
-}
-
-tile{
-  layer = 1,
-  x = 752,
-  y = 320,
-  width = 16,
-  height = 16,
-  pattern = "177",
-}
-
-tile{
-  layer = 1,
-  x = 832,
-  y = 320,
-  width = 16,
-  height = 16,
-  pattern = "177",
-}
-
-tile{
-  layer = 1,
-  x = 752,
-  y = 376,
-  width = 16,
-  height = 16,
-  pattern = "177",
-}
-
-tile{
-  layer = 1,
-  x = 832,
-  y = 376,
-  width = 16,
-  height = 16,
-  pattern = "177",
-}
-
-tile{
-  layer = 1,
   x = 784,
   y = 464,
   width = 32,
   height = 16,
   pattern = "door.down.high",
+}
+
+tile{
+  layer = 1,
+  x = 792,
+  y = 328,
+  width = 16,
+  height = 8,
+  pattern = "15",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 968,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "177",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "177",
+}
+
+tile{
+  layer = 1,
+  x = 704,
+  y = 240,
+  width = 32,
+  height = 24,
+  pattern = "33",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 248,
+  width = 16,
+  height = 24,
+  pattern = "30",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 864,
+  y = 240,
+  width = 32,
+  height = 24,
+  pattern = "33",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 872,
+  y = 248,
+  width = 16,
+  height = 24,
+  pattern = "30",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 976,
+  y = 320,
+  width = 16,
+  height = 24,
+  pattern = "30",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 760,
+  y = 296,
+  width = 16,
+  height = 24,
+  pattern = "30",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 824,
+  y = 296,
+  width = 16,
+  height = 24,
+  pattern = "30",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 824,
+  y = 352,
+  width = 16,
+  height = 24,
+  pattern = "30",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 760,
+  y = 352,
+  width = 16,
+  height = 24,
+  pattern = "30",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 968,
+  y = 256,
+  width = 32,
+  height = 24,
+  pattern = "33",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 976,
+  y = 264,
+  width = 16,
+  height = 24,
+  pattern = "30",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 864,
+  y = 0,
+  width = 32,
+  height = 24,
+  pattern = "33",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 872,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "30",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 704,
+  y = 0,
+  width = 32,
+  height = 24,
+  pattern = "33",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "30",
+  tileset = "misc",
 }
 

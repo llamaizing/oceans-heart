@@ -11,9 +11,9 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("quest_manna_oaks") >= 6 then boss_sensor:set_enabled(false) end
-end
+end)
 
 function boss_sensor:on_activated()
   boss_blocker:set_enabled(false)

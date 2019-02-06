@@ -70,6 +70,46 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "16",
+  ground = "wall",
+  default_layer = 0,
+  x = 80,
+  y = 48,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "17",
+  ground = "wall",
+  default_layer = 0,
+  x = 96,
+  y = 48,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "18",
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 48,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "19",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 48,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "2",
   ground = "wall",
   default_layer = 0,
@@ -80,6 +120,106 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "20",
+  ground = "wall",
+  default_layer = 0,
+  x = 80,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "21",
+  ground = "wall",
+  default_layer = 0,
+  x = 96,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "22",
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "23",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "24",
+  ground = "wall",
+  default_layer = 0,
+  x = 80,
+  y = 104,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "25",
+  ground = "wall",
+  default_layer = 0,
+  x = 96,
+  y = 104,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "26",
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 104,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "27",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 104,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "28",
+  ground = "wall",
+  default_layer = 1,
+  x = 128,
+  y = 80,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "29",
+  ground = "wall",
+  default_layer = 1,
+  x = 112,
+  y = 80,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
   id = "3",
   ground = "wall",
   default_layer = 0,
@@ -87,6 +227,46 @@ tile_pattern{
   y = 80,
   width = 32,
   height = 32,
+}
+
+tile_pattern{
+  id = "30",
+  ground = "wall",
+  default_layer = 1,
+  x = 96,
+  y = 80,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "31",
+  ground = "wall",
+  default_layer = 1,
+  x = 80,
+  y = 80,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "32",
+  ground = "wall",
+  default_layer = 0,
+  x = 144,
+  y = 104,
+  width = 32,
+  height = 24,
+}
+
+tile_pattern{
+  id = "33",
+  ground = "wall",
+  default_layer = 1,
+  x = 144,
+  y = 80,
+  width = 32,
+  height = 24,
 }
 
 tile_pattern{

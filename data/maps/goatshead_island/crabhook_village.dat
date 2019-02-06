@@ -11842,6 +11842,15 @@ chest{
   sprite = "entities/chest",
 }
 
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 200,
+  y = 701,
+  width = 48,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 104,

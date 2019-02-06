@@ -12,7 +12,7 @@ local game = map:get_game()
 local hero = game:get_hero()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   blackbeard:set_enabled(false)
   morus:set_enabled(false)
   if game:get_value("oakhaven_port_bridge_unblocked") == true then
@@ -54,7 +54,7 @@ function map:on_started()
   dw1:set_speed(20)
   dw1:start(dockworker_1)
 
-end
+end)
 
 
 
@@ -157,7 +157,7 @@ function morus:on_interaction()
   else
     game:start_dialog("_oakhaven.npcs.morus.ferry_1", function(answer)
       if answer == 2 then
-        hero:teleport("snapmast_reef/landing", "ferry_landing")
+        hero:teleport("snapmast_reef/snapmast_landing", "ferry_landing")
       end
     end)
   end

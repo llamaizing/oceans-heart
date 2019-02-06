@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("marblecliff_secret_tunnel_opened") == true then
     rock_door:set_enabled(false) rock_door_2:set_enabled(false) hidden_tunnel_npc:set_enabled(false) end
 
@@ -20,7 +20,7 @@ function map:on_started()
     for entity in map:get_entities("fall_tree") do entity:set_enabled(true) end
   end
 
-end
+end)
 
 
 function hidden_tunnel_npc:on_interaction()

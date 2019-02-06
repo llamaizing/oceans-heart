@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("rohit_dialog_counter") ~= nil and game:get_value("rohit_dialog_counter") >= 2 then
     for entity in map:get_entities("mushroom_golem") do
       entity:set_enabled(false)
@@ -24,7 +24,7 @@ function map:on_started()
     ghost_ship_sensor:set_enabled(true)
     sol.audio.stop_music()
   end
-end
+end)
 
 function trap_sensor:on_activated()
   if game:get_value("rohit_dialog_counter") < 2 then

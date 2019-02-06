@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   guard_2:set_enabled(false)
   if game:get_value("spiked_crow_ale") then guard_1:set_enabled(false) guard_2:set_enabled(true) end
   if game:get_value("fort_crow_front_door_open") == true then map:set_doors_open("front_door") end
@@ -24,4 +24,4 @@ function map:on_started()
   m1:set_ignore_obstacles(true)
   m1:start(circulate_guy)
   circulate_guy:set_traversable(true)
-end
+end)

@@ -3,13 +3,13 @@
 local map = ...
 local game = map:get_game()
 
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("sinking_palace_lighthouse_lit") then
     for fire in map:get_entities("lighthouse_flame") do
       fire:set_enabled(true)
     end
   end
-end
+end)
 
 function map:on_opening_transition_finished()
 

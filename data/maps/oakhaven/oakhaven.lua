@@ -13,7 +13,7 @@ local hero = map:get_hero()
 
 local trumpet_player
 
--- Event called at initialization time, as soon as this map becomes is loaded.
+
 map:register_event("on_started", function()
   if game:get_value("hazel_is_here") == true then cervio:set_enabled(false) end
   if game:get_value("salamander_heartache_storehouse_door_open") ~= nil then bar_storehouse_door:set_enabled(false) end
@@ -43,7 +43,6 @@ map:register_event("on_started", function()
   end
 
 end)
-
 
 
 --NPCS---------------------

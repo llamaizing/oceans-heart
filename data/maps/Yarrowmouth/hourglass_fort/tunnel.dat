@@ -3730,7 +3730,7 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_fort/outside",
+  destination_map = "Yarrowmouth/hourglass_fort/hourglass_fort",
   destination = "from_tunnel_east",
 }
 
@@ -3740,7 +3740,7 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_fort/outside",
+  destination_map = "Yarrowmouth/hourglass_fort/hourglass_fort",
   destination = "from_tunnel_west",
 }
 

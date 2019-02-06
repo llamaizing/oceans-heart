@@ -35086,6 +35086,15 @@ block{
   max_moves = 1,
 }
 
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 736,
+  y = 1373,
+  width = 144,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 32,

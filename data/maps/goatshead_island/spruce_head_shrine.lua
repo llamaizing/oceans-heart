@@ -12,7 +12,7 @@ local game = map:get_game()
 local hero = map:get_hero()
 
 
-function map:on_started()
+map:register_event("on_started", function()
   ilex_2:set_enabled(false)
   statue_treasure_chest:set_enabled(false)
   if game:get_value("spruce_head_arborgeist_defeated") == true then
@@ -53,7 +53,7 @@ function map:on_started()
     game:set_value("spruce_head_shirine_num_fountains_activated", 0)
   end
 
-end
+end)
 
 
 

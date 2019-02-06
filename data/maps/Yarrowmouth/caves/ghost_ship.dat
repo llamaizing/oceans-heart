@@ -1846,6 +1846,15 @@ destination{
   direction = 2,
 }
 
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 232,
+  y = 357,
+  width = 32,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 64,

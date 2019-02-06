@@ -28991,7 +28991,7 @@ teletransporter{
   y = 1216,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_fort/outside",
+  destination_map = "Yarrowmouth/hourglass_fort/hourglass_fort",
   destination = "A",
 }
 
@@ -29081,7 +29081,7 @@ teletransporter{
   y = 1216,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_fort/outside",
+  destination_map = "Yarrowmouth/hourglass_fort/hourglass_fort",
   destination = "2",
 }
 
@@ -29099,7 +29099,7 @@ teletransporter{
   y = 1456,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_fort/outside",
+  destination_map = "Yarrowmouth/hourglass_fort/hourglass_fort",
   destination = "3",
 }
 
@@ -29117,7 +29117,7 @@ teletransporter{
   y = 1216,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_fort/outside",
+  destination_map = "Yarrowmouth/hourglass_fort/hourglass_fort",
   destination = "B",
 }
 
@@ -29135,7 +29135,7 @@ teletransporter{
   y = 736,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_fort/outside",
+  destination_map = "Yarrowmouth/hourglass_fort/hourglass_fort",
   destination = "C",
 }
 
@@ -29153,7 +29153,7 @@ teletransporter{
   y = 976,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_fort/outside",
+  destination_map = "Yarrowmouth/hourglass_fort/hourglass_fort",
   destination = "D",
 }
 
@@ -29961,7 +29961,7 @@ teletransporter{
   y = 704,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_fort/outside",
+  destination_map = "Yarrowmouth/hourglass_fort/hourglass_fort",
   destination = "from_north_tower",
 }
 
@@ -30775,7 +30775,7 @@ teletransporter{
   y = 944,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_fort/outside",
+  destination_map = "Yarrowmouth/hourglass_fort/hourglass_fort",
   destination = "from_south_tower",
 }
 

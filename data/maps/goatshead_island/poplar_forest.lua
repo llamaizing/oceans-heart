@@ -10,6 +10,9 @@
 local map = ...
 local game = map:get_game()
 
+map:register_event("on_started", function()
+
+end)
 
 function weak_tree_enemy:on_disabled()
   fall_tree_1:set_enabled(true)

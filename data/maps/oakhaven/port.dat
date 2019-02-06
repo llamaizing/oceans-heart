@@ -33554,6 +33554,33 @@ teletransporter{
   destination = "from_outside",
 }
 
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 344,
+  y = 789,
+  width = 64,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor_2",
+  layer = 0,
+  x = 608,
+  y = 1141,
+  width = 32,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 448,
+  y = 1253,
+  width = 32,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 80,

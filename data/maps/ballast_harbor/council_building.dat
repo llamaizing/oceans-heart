@@ -15520,10 +15520,9 @@ dynamic_tile{
   layer = 0,
   x = 80,
   y = 744,
-  pattern = "169",
   width = 48,
   height = 24,
-  enabled_at_start = true,
+  pattern = "169",
 }
 
 destructible{
@@ -15674,10 +15673,9 @@ dynamic_tile{
   layer = 0,
   x = 784,
   y = 744,
-  pattern = "209",
   width = 32,
   height = 24,
-  enabled_at_start = true,
+  pattern = "209",
 }
 
 npc{
@@ -16324,6 +16322,24 @@ destructible{
   y = 45,
   sprite = "entities/vase",
   can_be_cut = true,
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 1152,
+  y = 429,
+  width = 32,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor_2",
+  layer = 0,
+  x = 472,
+  y = 909,
+  width = 32,
+  height = 32,
 }
 
 tile{
@@ -17924,10 +17940,9 @@ dynamic_tile{
   layer = 1,
   x = 80,
   y = 728,
-  pattern = "170",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "170",
 }
 
 dynamic_tile{
@@ -17935,10 +17950,9 @@ dynamic_tile{
   layer = 1,
   x = 784,
   y = 728,
-  pattern = "210",
   width = 32,
   height = 16,
-  enabled_at_start = true,
+  pattern = "210",
 }
 
 npc{

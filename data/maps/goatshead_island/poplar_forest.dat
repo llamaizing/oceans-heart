@@ -19791,6 +19791,42 @@ tile{
   pattern = "526",
 }
 
+tile{
+  layer = 0,
+  x = 1488,
+  y = 0,
+  width = 8,
+  height = 16,
+  pattern = "570",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 0,
+  width = 8,
+  height = 16,
+  pattern = "571",
+}
+
+tile{
+  layer = 0,
+  x = 1472,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "562",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "561",
+}
+
 jumper{
   layer = 0,
   x = 504,
@@ -20528,12 +20564,12 @@ destructible{
 
 teletransporter{
   layer = 0,
-  x = 1472,
-  y = -16,
-  width = 64,
+  x = 1496,
+  y = 0,
+  width = 16,
   height = 16,
   destination_map = "goatshead_island/poplar_coast",
-  destination = "_side",
+  destination = "from_poplar_forest",
 }
 
 destructible{
@@ -20901,6 +20937,32 @@ destructible{
   treasure_name = "berries",
   sprite = "entities/bush_berries",
   can_be_cut = true,
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 1480,
+  y = 29,
+  width = 64,
+  height = 16,
+}
+
+sensor{
+  name = "^map_banner_sensor_2",
+  layer = 0,
+  x = 936,
+  y = 701,
+  width = 32,
+  height = 32,
+}
+
+destination{
+  name = "from_poplar_coast",
+  layer = 0,
+  x = 1504,
+  y = 29,
+  direction = 3,
 }
 
 tile{

@@ -13,7 +13,7 @@ local shop = require("scripts/shops/blacksmith")
 
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   goatshead_teletransport:set_enabled(false)
   oakhaven_teletransport:set_enabled(false)
   to_limestone:set_enabled(false)
@@ -24,7 +24,7 @@ function map:on_started()
   gm:set_speed(10)
   gm:start(goat)
 
-end
+end)
 
 
 function goatshead_ferry:on_interaction()
