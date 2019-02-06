@@ -3557,8 +3557,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/port",
-  destination = "from_ferry",
+  destination_map = "snapmast_reef/snapmast_landing",
+  destination = "ferry_landing",
 }
 
 pickable{

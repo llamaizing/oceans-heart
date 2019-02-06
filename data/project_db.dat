@@ -212,6 +212,7 @@ map{ id = "oakhaven/sunken_palace", description = "Sunken Palace" }
 map{ id = "oakhaven/veilwood", description = "Veilwood" }
 map{ id = "oakhaven/west_coast", description = "West Coast" }
 map{ id = "respawn_map", description = "blank room - leave empty" }
+map{ id = "snapmast_reef/drowned_village", description = "Drowned Village" }
 map{ id = "snapmast_reef/snapmast_landing", description = "Landing Area" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }

@@ -18,11 +18,7 @@ map:register_event("on_started", function()
 
 end)
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
 
-end
 
 function morus:on_interaction()
   if game:has_item("oceansheart_chart") == true then

@@ -54,7 +54,9 @@ text{ key = "menu.quest_log.quest_log_update", value = "Quest Log Updated!"}
 	text{ key = "location.yarrowmouth_village", value = "Yarrowmouth"}
 	text{ key = "location.amalenchier_tomb", value = "Amalenchier's Tomb"}
 	text{ key = "location.silent_glade", value = "Silent Glade"}
-	text{ key = "location.silent_glade_health", value = "Last Chief's Tomb"}
+	text{ key = "location.silent_glade_health", value = "Last Chieftan's Tomb"}
+	text{ key = "location.snapmast_landing", value = "Snapmast Reef"}
+	text{ key = "location.drowned_village", value = "The Drowned Village"}
 
 --// Button actions
 text{ key = "action.back", value = "Back" } --prompt text indicates the button to exit out of a menu

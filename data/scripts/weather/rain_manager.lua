@@ -88,7 +88,7 @@ function rain_manager:on_created()
   flash_surface = sol.surface.create(w, h)
   dark_surface:set_blend_mode("multiply")
 --Max addition this next line
---  rain_surface:set_blend_mode("add")
+  rain_surface:set_blend_mode("add")
   flash_surface:fill_color({250, 250, 250})
   flash_surface:set_blend_mode("add")
   -- Initialize main variables.
