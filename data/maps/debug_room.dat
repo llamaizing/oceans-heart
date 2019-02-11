@@ -3383,6 +3383,46 @@ tile{
   pattern = "26",
 }
 
+tile{
+  layer = 0,
+  x = 464,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "2046",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "2046",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "2046",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "2046",
+  tileset = "oceanheart_outdoors_1",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -3557,8 +3597,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "snapmast_reef/snapmast_landing",
-  destination = "ferry_landing",
+  destination_map = "snapmast_reef/drowned_village",
+  destination = "from_shipwreck",
 }
 
 pickable{
@@ -4523,7 +4563,7 @@ npc{
 
 custom_entity{
   layer = 0,
-  x = 248,
+  x = 256,
   y = -3,
   width = 16,
   height = 16,
@@ -5052,54 +5092,6 @@ custom_entity{
   model = "rockpile",
 }
 
-custom_entity{
-  name = "rock_pile_50",
-  layer = 0,
-  x = 472,
-  y = 269,
-  width = 32,
-  height = 32,
-  direction = 0,
-  sprite = "entities/rockpile",
-  model = "rockpile",
-}
-
-custom_entity{
-  name = "rock_pile_51",
-  layer = 0,
-  x = 504,
-  y = 269,
-  width = 32,
-  height = 32,
-  direction = 0,
-  sprite = "entities/rockpile",
-  model = "rockpile",
-}
-
-custom_entity{
-  name = "rock_pile_52",
-  layer = 0,
-  x = 536,
-  y = 269,
-  width = 32,
-  height = 32,
-  direction = 0,
-  sprite = "entities/rockpile",
-  model = "rockpile",
-}
-
-custom_entity{
-  name = "rock_pile_53",
-  layer = 0,
-  x = 568,
-  y = 269,
-  width = 32,
-  height = 32,
-  direction = 0,
-  sprite = "entities/rockpile",
-  model = "rockpile",
-}
-
 enemy{
   layer = 0,
   x = 424,
@@ -5199,6 +5191,45 @@ sensor{
   y = 237,
   width = 32,
   height = 32,
+}
+
+destructible{
+  layer = 0,
+  x = -40,
+  y = 141,
+  sprite = "entities/bush_seagrass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+block{
+  layer = 0,
+  x = 272,
+  y = -3,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+}
+
+block{
+  layer = 0,
+  x = 288,
+  y = -3,
+  sprite = "entities/block_statue",
+  pushable = true,
+  pullable = true,
+}
+
+custom_entity{
+  name = "rock_pile_50",
+  layer = 0,
+  x = 552,
+  y = 269,
+  width = 32,
+  height = 32,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "rockpile",
 }
 
 tile{
@@ -5428,6 +5459,86 @@ tile{
   height = 16,
   pattern = "213",
   tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "2048",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 256,
+  width = 8,
+  height = 16,
+  pattern = "2047",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "2047",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 496,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "2048",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 512,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "2048",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 528,
+  y = 248,
+  width = 8,
+  height = 16,
+  pattern = "2048",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "2048",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 248,
+  width = 8,
+  height = 16,
+  pattern = "2048",
+  tileset = "oceanheart_outdoors_1",
 }
 
 dynamic_tile{

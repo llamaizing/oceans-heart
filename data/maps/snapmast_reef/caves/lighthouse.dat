@@ -11,6 +11,87 @@ properties{
 
 tile{
   layer = 0,
+  x = 64,
+  y = 112,
+  width = 192,
+  height = 16,
+  pattern = "120",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 96,
+  width = 192,
+  height = 16,
+  pattern = "123",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 80,
+  width = 192,
+  height = 16,
+  pattern = "126",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 64,
+  width = 128,
+  height = 16,
+  pattern = "120",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 48,
+  width = 128,
+  height = 16,
+  pattern = "123",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 160,
+  width = 128,
+  height = 16,
+  pattern = "120",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 144,
+  width = 192,
+  height = 16,
+  pattern = "123",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 128,
+  width = 192,
+  height = 16,
+  pattern = "126",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 176,
+  width = 128,
+  height = 16,
+  pattern = "126",
+}
+
+tile{
+  layer = 0,
   x = 224,
   y = 16,
   width = 32,
@@ -691,42 +772,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "corner.out.3",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 288,
-  width = 128,
-  height = 144,
-  pattern = "7",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 320,
-  width = 192,
-  height = 80,
-  pattern = "7",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 48,
-  width = 128,
-  height = 144,
-  pattern = "7",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 80,
-  width = 192,
-  height = 80,
-  pattern = "7",
 }
 
 tile{
@@ -1044,6 +1089,366 @@ tile{
   pattern = "42",
 }
 
+tile{
+  layer = 0,
+  x = 64,
+  y = 352,
+  width = 192,
+  height = 16,
+  pattern = "120",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 336,
+  width = 192,
+  height = 16,
+  pattern = "123",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 320,
+  width = 192,
+  height = 16,
+  pattern = "126",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 304,
+  width = 128,
+  height = 16,
+  pattern = "120",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 288,
+  width = 128,
+  height = 16,
+  pattern = "123",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 400,
+  width = 128,
+  height = 16,
+  pattern = "120",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 384,
+  width = 192,
+  height = 16,
+  pattern = "123",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 368,
+  width = 192,
+  height = 16,
+  pattern = "126",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 416,
+  width = 128,
+  height = 16,
+  pattern = "126",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "127",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "124",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "124",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "127",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "121",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "119",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "121",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "119",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "121",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "119",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "121",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "124",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "265",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "261",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 344,
+  width = 16,
+  height = 32,
+  pattern = "270",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 376,
+  width = 8,
+  height = 16,
+  pattern = "256",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 376,
+  width = 8,
+  height = 16,
+  pattern = "266",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "259",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 344,
+  width = 16,
+  height = 32,
+  pattern = "269",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "264",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "260",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 344,
+  width = 8,
+  height = 32,
+  pattern = "257",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 328,
+  width = 8,
+  height = 16,
+  pattern = "262",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 344,
+  width = 8,
+  height = 32,
+  pattern = "267",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 328,
+  width = 8,
+  height = 16,
+  pattern = "258",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "263",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 344,
+  width = 16,
+  height = 32,
+  pattern = "268",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 328,
+  width = 32,
+  height = 32,
+  pattern = "corner.out.1",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 360,
+  width = 32,
+  height = 32,
+  pattern = "corner.out.3",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 328,
+  width = 32,
+  height = 32,
+  pattern = "corner.out.4",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 360,
+  width = 32,
+  height = 32,
+  pattern = "corner.out.2",
+}
+
 separator{
   layer = 0,
   x = 0,
@@ -1074,7 +1479,7 @@ teletransporter{
   y = 32,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/caves/lighthouse",
+  destination_map = "snapmast_reef/caves/lighthouse",
   destination = "from_upstairs",
 }
 
@@ -1084,7 +1489,7 @@ teletransporter{
   y = 272,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/caves/lighthouse",
+  destination_map = "snapmast_reef/caves/lighthouse",
   destination = "from_downstairs",
 }
 
@@ -1102,8 +1507,8 @@ teletransporter{
   y = 448,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/sunken_palace",
-  destination = "from_sinking_lighthouse",
+  destination_map = "snapmast_reef/snapmast_lighthouse",
+  destination = "from_lighthouse",
 }
 
 dynamic_tile{
@@ -1128,54 +1533,6 @@ switch{
   inactivate_when_leaving = false,
 }
 
-enemy{
-  layer = 0,
-  x = 72,
-  y = 333,
-  direction = 0,
-  breed = "normal_enemies/blade_trap",
-}
-
-enemy{
-  layer = 0,
-  x = 72,
-  y = 397,
-  direction = 0,
-  breed = "normal_enemies/blade_trap",
-}
-
-enemy{
-  layer = 0,
-  x = 248,
-  y = 333,
-  direction = 0,
-  breed = "normal_enemies/blade_trap",
-}
-
-enemy{
-  layer = 0,
-  x = 248,
-  y = 397,
-  direction = 0,
-  breed = "normal_enemies/blade_trap",
-}
-
-enemy{
-  layer = 0,
-  x = 120,
-  y = 357,
-  direction = 0,
-  breed = "normal_enemies/arborgeist_gust",
-}
-
-enemy{
-  layer = 0,
-  x = 208,
-  y = 309,
-  direction = 0,
-  breed = "normal_enemies/arborgeist_gust",
-}
-
 sensor{
   name = "^map_banner_sensor",
   layer = 0,
@@ -1183,6 +1540,30 @@ sensor{
   y = 413,
   width = 32,
   height = 32,
+}
+
+enemy{
+  layer = 0,
+  x = 96,
+  y = 349,
+  direction = 3,
+  breed = "normal_enemies/seaweed_golem_1",
+}
+
+enemy{
+  layer = 0,
+  x = 200,
+  y = 309,
+  direction = 3,
+  breed = "normal_enemies/seaweed_golem_1",
+}
+
+enemy{
+  layer = 0,
+  x = 224,
+  y = 389,
+  direction = 3,
+  breed = "normal_enemies/seaweed_golem_1",
 }
 
 tile{

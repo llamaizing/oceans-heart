@@ -3700,6 +3700,60 @@ destination{
   direction = 2,
 }
 
+destructible{
+  layer = 0,
+  x = 368,
+  y = 101,
+  sprite = "entities/bush_seagrass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 376,
+  y = 117,
+  sprite = "entities/bush_seagrass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 264,
+  y = 157,
+  sprite = "entities/bush_seagrass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 157,
+  sprite = "entities/bush_seagrass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 424,
+  y = 309,
+  sprite = "entities/bush_seagrass",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 440,
+  y = 317,
+  sprite = "entities/bush_seagrass",
+  weight = -1,
+  can_be_cut = true,
+}
+
 tile{
   layer = 1,
   x = 304,
