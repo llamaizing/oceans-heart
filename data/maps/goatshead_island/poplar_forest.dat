@@ -20756,18 +20756,6 @@ chest{
   sprite = "entities/chest",
 }
 
-custom_entity{
-  name = "rock_pile_2",
-  layer = 0,
-  x = 408,
-  y = 69,
-  width = 32,
-  height = 32,
-  direction = 0,
-  sprite = "entities/rockpile",
-  model = "rockpile",
-}
-
 destructible{
   layer = 0,
   x = 304,
@@ -20963,6 +20951,19 @@ destination{
   x = 1504,
   y = 29,
   direction = 3,
+}
+
+custom_entity{
+  name = "rock_pile_6",
+  layer = 0,
+  x = 408,
+  y = 77,
+  width = 32,
+  height = 16,
+  origin_y = -3,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "flail_obstacle",
 }
 
 tile{

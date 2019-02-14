@@ -2910,6 +2910,54 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "353",
+  ground = "wall",
+  default_layer = 0,
+  x = { 0, 16, 32 },
+  y = { 592, 592, 592 },
+  width = 16,
+  height = 16,
+  frame_delay = 270,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "354",
+  ground = "wall",
+  default_layer = 1,
+  x = { 0, 16, 32 },
+  y = { 576, 576, 576 },
+  width = 16,
+  height = 16,
+  frame_delay = 270,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "355",
+  ground = "wall",
+  default_layer = 0,
+  x = { 0, 32, 64 },
+  y = { 624, 624, 624 },
+  width = 32,
+  height = 16,
+  frame_delay = 290,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "356",
+  ground = "wall",
+  default_layer = 1,
+  x = { 0, 32, 64 },
+  y = { 608, 608, 608 },
+  width = 32,
+  height = 16,
+  frame_delay = 290,
+  mirror_loop = true,
+}
+
+tile_pattern{
   id = "36",
   ground = "traversable",
   default_layer = 0,
