@@ -11,12 +11,12 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   hero = game:get_hero()
   hero:set_walking_speed(96)
   HIDETHESE:set_visible(false)
 
-end
+end)
 
 
 function map:on_opening_transition_finished()

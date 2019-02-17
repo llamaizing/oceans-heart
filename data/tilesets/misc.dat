@@ -346,6 +346,27 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "40",
+  ground = "shallow_water",
+  default_layer = 0,
+  x = { 0, 48, 96, 144 },
+  y = { 208, 208, 208, 208 },
+  width = 48,
+  height = 48,
+  frame_delay = 120,
+}
+
+tile_pattern{
+  id = "41",
+  ground = "hole",
+  default_layer = 0,
+  x = 192,
+  y = 240,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "5",
   ground = "wall",
   default_layer = 0,

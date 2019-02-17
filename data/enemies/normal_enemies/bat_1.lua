@@ -12,6 +12,7 @@ local properties = {
   normal_speed = 75,
   faster_speed = 75,
   detection_distance = 2,
+  dying_sprite = "enemies/enemy_killed_projectile",
 }
 
 behavior:create(enemy, properties)

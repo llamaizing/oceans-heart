@@ -1,12 +1,14 @@
 local enemy = ...
 local game = enemy:get_game()
 local map = enemy:get_map()
-
+local startx, starty, startl
 
 function enemy:on_created()
 
   sprite = enemy:create_sprite("enemies/normal_enemies/blade_trap")
   enemy:set_life(1)
+  enemy:set_obstacle_behavior("flying")
+  startx, starty, startl = enemy:get_position()
   if enemy:get_property("damage") then
     enemy:set_damage(enemy:get_property("damage"))
   else
@@ -22,7 +24,7 @@ function enemy:on_restarted()
   m:set_max_rotations(0) --infinite rotations
 
   --Center
-  m:set_center(enemy:get_property("center_x"), enemy:get_property("center_y"))
+  m:set_center(startx, starty)
 
   --Radius
   if not enemy:get_property("radius") then

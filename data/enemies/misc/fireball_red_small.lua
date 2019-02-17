@@ -16,6 +16,7 @@ function enemy:on_created()
   enemy:set_obstacle_behavior("flying")
   enemy:set_can_hurt_hero_running(true)
   enemy:set_invincible()
+  enemy:set_dying_sprite_id("enemies/enemy_killed_projectile")
   enemy:set_attack_consequence("sword", "custom")
 
   sprites[1] = enemy:create_sprite("enemies/" .. enemy:get_breed())

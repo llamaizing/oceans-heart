@@ -9,8 +9,9 @@ function enemy:on_created()
   enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_size(8, 8)
   enemy:set_origin(4, 4)
-  enemy:set_invincible()
+--  enemy:set_invincible()
   enemy:set_obstacle_behavior("flying")
+  enemy:set_dying_sprite_id("enemies/enemy_killed_projectile")
   enemy:set_attack_consequence("sword", "custom")
 end
 

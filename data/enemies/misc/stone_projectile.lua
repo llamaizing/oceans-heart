@@ -4,11 +4,10 @@ function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(1)
   enemy:set_damage(4)
-  enemy:set_origin(4, 4)
+--  enemy:set_origin(4, 4)
   enemy:set_obstacle_behavior("flying")
   enemy:set_can_hurt_hero_running(true)
-  enemy:set_invincible()
-  enemy:set_attack_consequence("sword", function() enemy:remove() end)
+  enemy:set_dying_sprite_id("enemies/enemy_killed_small")
 end
 
 
@@ -20,13 +19,17 @@ function enemy:go(direction)
   movement:start(enemy)
 
   function movement:on_obstacle_reached()
-      enemy:remove()
+    enemy:stop_movement()
+    enemy:remove_life(2)
   end
 end
 
+function enemy:on_hurt()
+  enemy:stop_movement()
+end
 
--- Destroy the fireball when the hero is touched.
 function enemy:on_attacking_hero(hero, enemy_sprite)
-  hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
-  enemy:remove()
+  hero:start_hurt(enemy, enemy:get_damage())
+  enemy:stop_movement()
+  enemy:remove_life(2)
 end

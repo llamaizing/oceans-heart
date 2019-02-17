@@ -259,6 +259,8 @@ sprite{ id = "enemies/bosses/rock_spider_big", description = "rock spider - big"
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
 sprite{ id = "enemies/bosses/zephyrine", description = "Zeyphyrine" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/enemy_killed_projectile", description = "Enemy Killed-Projectile" }
+sprite{ id = "enemies/enemy_killed_small", description = "Enemy Killed-Small" }
 sprite{ id = "enemies/ground1", description = "Ground 1 - Grass" }
 sprite{ id = "enemies/misc/air_wave", description = "Air Wave Attack" }
 sprite{ id = "enemies/misc/arrow_4", description = "Arrow - 4 directions" }
