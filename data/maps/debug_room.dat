@@ -3044,7 +3044,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "snapmast_reef/drowned_village",
-  destination = "from_shipwreck",
+  destination = "from_smoldering_rock",
 }
 
 pickable{
@@ -4283,32 +4283,6 @@ custom_entity{
   model = "flail_obstacle",
 }
 
-enemy{
-  layer = 0,
-  x = 384,
-  y = -3,
-  direction = 0,
-  breed = "normal_enemies/blade_trap_linear",
-}
-
-enemy{
-  layer = 0,
-  x = 360,
-  y = -27,
-  properties = {
-    {
-      key = "direction",
-      value = "vertical",
-    },
-    {
-      key = "speed",
-      value = "90",
-    },
-  },
-  direction = 0,
-  breed = "normal_enemies/blade_trap_linear",
-}
-
 pickable{
   layer = 0,
   x = 120,
@@ -4555,28 +4529,6 @@ sensor{
 
 enemy{
   layer = 0,
-  x = 440,
-  y = -35,
-  properties = {
-    {
-      key = "radius",
-      value = "32",
-    },
-    {
-      key = "clockwise",
-      value = "false",
-    },
-    {
-      key = "damage",
-      value = "1",
-    },
-  },
-  direction = 0,
-  breed = "normal_enemies/blade_trap_circle",
-}
-
-enemy{
-  layer = 0,
   x = 320,
   y = 341,
   properties = {
@@ -4784,10 +4736,68 @@ enemy{
   breed = "misc/barrel_cannon",
 }
 
+npc{
+  name = "title",
+  layer = 0,
+  x = 96,
+  y = 45,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/door_vines",
+}
+
+enemy{
+  layer = 0,
+  x = 56,
+  y = 573,
+  direction = 0,
+  breed = "normal_enemies/blade_trap_linear",
+}
+
+enemy{
+  layer = 0,
+  x = 16,
+  y = 541,
+  properties = {
+    {
+      key = "direction",
+      value = "vertical",
+    },
+    {
+      key = "speed",
+      value = "90",
+    },
+  },
+  direction = 0,
+  breed = "normal_enemies/blade_trap_linear",
+}
+
+enemy{
+  layer = 0,
+  x = 64,
+  y = 525,
+  properties = {
+    {
+      key = "radius",
+      value = "32",
+    },
+    {
+      key = "clockwise",
+      value = "false",
+    },
+    {
+      key = "damage",
+      value = "1",
+    },
+  },
+  direction = 0,
+  breed = "normal_enemies/blade_trap_circle",
+}
+
 block{
   layer = 0,
-  x = 360,
-  y = -3,
+  x = 16,
+  y = 573,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4795,8 +4805,8 @@ block{
 
 block{
   layer = 0,
-  x = 408,
-  y = -3,
+  x = 16,
+  y = 509,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4804,8 +4814,8 @@ block{
 
 block{
   layer = 0,
-  x = 360,
-  y = -51,
+  x = 88,
+  y = 573,
   sprite = "entities/block",
   pushable = true,
   pullable = false,

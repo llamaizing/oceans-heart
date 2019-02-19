@@ -60,7 +60,7 @@ function pause_infra:update_game(game)
     text_surface:set_text(next_line()) --line 2 of quest_log_b
     text_surface:draw(current_log, 0, 55)
  
-    --Now current_log contains and image rendered from text strings of log A & log B (up to 4 lines)
+    --Now current_log contains an image rendered from text strings of log A & log B (up to 4 lines)
     --content won't change while pause menu open
 
 

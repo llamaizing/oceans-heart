@@ -20698,22 +20698,6 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 280,
-  y = 237,
-  direction = 0,
-  breed = "normal_enemies/hive",
-}
-
-enemy{
-  layer = 0,
-  x = 440,
-  y = 381,
-  direction = 0,
-  breed = "normal_enemies/hive",
-}
-
-enemy{
-  layer = 0,
   x = 368,
   y = 301,
   direction = 0,

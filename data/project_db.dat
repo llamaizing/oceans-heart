@@ -459,6 +459,7 @@ sprite{ id = "entities/goat_03", description = "Goat 03" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ink_splash", description = "Ink Splash" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/leaf_blowing", description = "Leaf - Blowing" }
 sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
 sprite{ id = "entities/leaf_whirl_green", description = "Leaf Whirl- Green" }
 sprite{ id = "entities/lightning_bolt_attack", description = "Lightning Bolt Attack" }
@@ -529,11 +530,16 @@ sprite{ id = "hud/piece_of_heart_icon", description = "Piece of Heart icon" }
 sprite{ id = "hud/quest_log_update_icon", description = "Quest Log Update Icon" }
 sprite{ id = "menus/arrows", description = "arrows" }
 sprite{ id = "menus/checkmark", description = "checkmark" }
+sprite{ id = "menus/cursor", description = "Cursor" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
 sprite{ id = "menus/inventory/inventory_background", description = "Inventory Background" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
+sprite{ id = "menus/title_screen/background", description = "Background" }
+sprite{ id = "menus/title_screen/cloud_1", description = "Cloud 1" }
+sprite{ id = "menus/title_screen/cloud_2", description = "Cloud 2" }
+sprite{ id = "menus/title_screen/sea_sparkle", description = "Sea Sparkle" }
 sprite{ id = "npc/big_guy_1", description = "big guy 1" }
 sprite{ id = "npc/blackbeard", description = "Blackbeard" }
 sprite{ id = "npc/blacksmith_01", description = "Blacksmith 1" }
