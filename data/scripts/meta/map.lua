@@ -57,7 +57,6 @@ map_meta:register_event("on_started", function(self)
   for sensor in map:get_entities("^reset_solid_ground_sensor") do
     function sensor:on_activated()
       hero:reset_solid_ground()
-print("reset!")
     end
   end
 

@@ -134,7 +134,9 @@ function behavior:create(enemy, properties)
     local near_hero = self:get_distance(hero) < properties.waking_distance and self:is_in_same_region(hero)
 
     if awaken then
-      if near_hero and not going_hero then
+      if self:get_property("endless_pursuit") then
+      
+      elseif near_hero and not going_hero then
         self:go_hero()
       elseif not near_hero and going_hero then
         self:go_random()

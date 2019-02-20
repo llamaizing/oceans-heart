@@ -28,7 +28,7 @@ local function go()
   m:start(enemy)
 
   function m:on_obstacle_reached()
-    sol.audio.play_sound("sword_tapping")
+--    sol.audio.play_sound("sword_tapping")
     direction = direction + math.pi
     go()    
   end

@@ -5,8 +5,10 @@ local sea_sparkle = sol.sprite.create("menus/title_screen/sea_sparkle")
 local cloud_1 = sol.sprite.create("menus/title_screen/cloud_1")
 local cloud_2 = sol.sprite.create("menus/title_screen/cloud_2")
 local sky = sol.surface.create("menus/title_screen/sky.png")
+local seagull = sol.sprite.create("menus/title_screen/seagull")
 local cursor_sprite = sol.sprite.create("menus/cursor")
 local selection_surface = sol.surface.create(144, 72)
+local black_fill = sol.surface.create()
 local text_surface = sol.text_surface.create({
         font = "oceansfont",
         vertical_alignment = "top",
@@ -45,6 +47,8 @@ end
 
 
 function title_screen:on_started()
+  black_fill:fill_color({0,0,0, 255})
+  black_fill:fade_out(40)
   cursor_index = 0
   create_cloud(1)
   local j = 2
@@ -70,6 +74,18 @@ function title_screen:on_started()
     i = i + 1
     return true
   end)
+
+  sol.timer.start(title_screen, math.random(2000, 3000), function()
+    local pose = math.random()*100
+    if pose < 35 then
+      seagull:set_animation("looking")
+      sol.timer.start(title_screen, 1999, function() seagull:set_animation("stopped") end)
+    elseif pose >= 35 then
+      seagull:set_animation("shuffling")
+      sol.timer.start(title_screen, math.random(600, 1100), function() seagull:set_animation("stopped") end)
+    end
+    return true
+  end)
 end
 
 
@@ -86,16 +102,19 @@ function title_screen:on_draw(dst_surface)
   end
   background_sprite:draw(dst_surface)
   sea_sparkle:draw(dst_surface)
-  selection_surface:draw(dst_surface, 250, 200)
+  seagull:draw(dst_surface, 300, 42)
+  selection_surface:draw(dst_surface, 245, 190)
   leaf_surface:draw(dst_surface)
   for i=1 , #leaves do
     leaves[i]:draw(dst_surface)
   end
   if cursor_index == 0 then
-    cursor_sprite:draw(dst_surface, 250, 204)
+    cursor_sprite:draw(dst_surface, 245, 194)
   elseif cursor_index == 1 then
-    cursor_sprite:draw(dst_surface, 250, 220)
+    cursor_sprite:draw(dst_surface, 245, 210)
   end
+
+  black_fill:draw(dst_surface)
 end
 
 

@@ -2869,6 +2869,96 @@ tile{
   tileset = "misc",
 }
 
+tile{
+  layer = 0,
+  x = 448,
+  y = 320,
+  width = 80,
+  height = 112,
+  pattern = "deep_water",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 320,
+  width = 80,
+  height = 80,
+  pattern = "35",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 392,
+  width = 8,
+  height = 8,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 328,
+  width = 8,
+  height = 64,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 392,
+  width = 64,
+  height = 8,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 328,
+  width = 8,
+  height = 64,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 320,
+  width = 64,
+  height = 8,
+  pattern = "27",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -3022,8 +3112,8 @@ pickable{
 destination{
   name = "starting_destination",
   layer = 0,
-  x = 152,
-  y = 141,
+  x = 328,
+  y = 333,
   direction = 3,
 }
 
@@ -4205,14 +4295,14 @@ custom_entity{
   height = 16,
   direction = 0,
   sprite = "entities/collapsing_floor_wood",
-  model = "leaf_pile",
+  model = "collapsing_floor",
 }
 
 sensor{
   name = "^map_banner_sensor",
   layer = 0,
   x = -40,
-  y = 237,
+  y = 261,
   width = 32,
   height = 32,
 }
@@ -4519,34 +4609,12 @@ sensor{
 }
 
 sensor{
-  name = "^reset_solid_ground_sensor_5",
+  name = "^save_solid_ground_sensor_5",
   layer = 0,
   x = 280,
   y = 301,
   width = 320,
   height = 16,
-}
-
-enemy{
-  layer = 0,
-  x = 320,
-  y = 341,
-  properties = {
-    {
-      key = "radius",
-      value = "32",
-    },
-    {
-      key = "clockwise",
-      value = "false",
-    },
-    {
-      key = "damage",
-      value = "1",
-    },
-  },
-  direction = 0,
-  breed = "normal_enemies/blade_trap_circle",
 }
 
 sensor{
@@ -4819,6 +4887,106 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
+}
+
+custom_entity{
+  layer = 0,
+  x = 448,
+  y = 149,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_2",
+  layer = 0,
+  x = 344,
+  y = 197,
+  width = 16,
+  height = 32,
+}
+
+custom_entity{
+  name = "leaf_pile_8",
+  layer = 0,
+  x = -32,
+  y = 237,
+  properties = {
+    {
+      key = "can_respawn",
+      value = "true",
+    },
+  },
+  width = 32,
+  height = 32,
+  origin_x = 16,
+  origin_y = 29,
+  direction = 0,
+  sprite = "entities/collapsing_platform_floating",
+  model = "collapsing_floor",
+}
+
+block{
+  layer = 0,
+  x = 200,
+  y = 381,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+}
+
+custom_entity{
+  layer = 0,
+  x = 392,
+  y = 373,
+  width = 32,
+  height = 32,
+  origin_x = 16,
+  origin_y = 29,
+  direction = 0,
+  sprite = "entities/moving_platform",
+  model = "moving_platform",
+}
+
+custom_entity{
+  layer = 0,
+  x = 488,
+  y = 373,
+  width = 32,
+  height = 32,
+  origin_x = 16,
+  origin_y = 29,
+  direction = 3,
+  sprite = "entities/moving_platform_wood",
+  model = "moving_platform",
+}
+
+enemy{
+  layer = 0,
+  x = 464,
+  y = -3,
+  properties = {
+    {
+      key = "endless_pursuit",
+      value = "true",
+    },
+  },
+  direction = 0,
+  breed = "normal_enemies/chest_mimic",
+}
+
+custom_entity{
+  layer = 0,
+  x = 488,
+  y = 365,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
 }
 
 tile{
