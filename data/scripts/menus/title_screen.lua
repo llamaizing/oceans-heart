@@ -37,11 +37,17 @@ local function create_cloud(j)
     clouds[j] = sol.sprite.create("menus/title_screen/cloud_2")
     speed = 12
   end
+
+  if j % 2 == 0 then
+    clouds[j].y = 75
+  else
+    clouds[j].y = 5
+  end
   local m1 = sol.movement.create("straight")
   m1:set_angle(0)
   m1:set_speed(speed)
-  m1:set_max_distance(400)
-  m1:start(clouds[j])
+  m1:set_max_distance(700)
+  m1:start(clouds[j], function() clouds[j]:remove() end)
 
 end
 
@@ -50,12 +56,11 @@ function title_screen:on_started()
   black_fill:fill_color({0,0,0, 255})
   black_fill:fade_out(40)
   cursor_index = 0
-  create_cloud(1)
-  local j = 2
-  sol.timer.start(title_screen, math.random(8000, 9000), function()
+  local j = 1
+  sol.timer.start(title_screen, 0, function()
     create_cloud(j)
     j = j+ 1
-    return true
+    return math.random(8000, 9000)
   end)
 
   text_surface:set_text("  Continue")
@@ -64,15 +69,15 @@ function title_screen:on_started()
   text_surface2:draw(selection_surface, 0, 16)
 
   local i = 1
-  sol.timer.start(title_screen, math.random(2800, 3500), function()
+  sol.timer.start(title_screen, math.random(1000, 2000), function()
     leaves[i] = sol.sprite.create("entities/leaf_blowing")
-    leaves[i]:set_xy(math.random(0, 120), 0)
+    leaves[i]:set_xy(math.random(-120, 30), 0)
     local m3 = sol.movement.create("straight")
     m3:set_angle(math.random(5.3, 5.9))
     m3:set_speed(25)
     m3:start(leaves[i])
     i = i + 1
-    return true
+    return math.random(2400, 3500)
   end)
 
   sol.timer.start(title_screen, math.random(2000, 3000), function()
@@ -84,7 +89,7 @@ function title_screen:on_started()
       seagull:set_animation("shuffling")
       sol.timer.start(title_screen, math.random(600, 1100), function() seagull:set_animation("stopped") end)
     end
-    return true
+    return math.random(2000, 3000)
   end)
 end
 
@@ -92,13 +97,7 @@ end
 function title_screen:on_draw(dst_surface)
   sky:draw(dst_surface)
   for i=1 , #clouds do
-    local y
-    if i % 2 == 0 then
-      y = 75
-    else
-      y = 5
-    end
-    clouds[i]:draw(dst_surface, -140, y)
+    clouds[i]:draw(dst_surface, -140, clouds[i].y)
   end
   background_sprite:draw(dst_surface)
   sea_sparkle:draw(dst_surface)

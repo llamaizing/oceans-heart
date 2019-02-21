@@ -426,6 +426,7 @@ sprite{ id = "entities/collapsing_platform_floating", description = "Collapsing 
 sprite{ id = "entities/coral_ore", description = "Coral Ore" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
+sprite{ id = "entities/current_shallow" }
 sprite{ id = "entities/dandelion_burst", description = "Dandelion Burst" }
 sprite{ id = "entities/dandelion_seed", description = "Dandelion Seed" }
 sprite{ id = "entities/destination", description = "Destination" }

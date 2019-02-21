@@ -3,6 +3,8 @@ local dash_manager = {}
 local MAX_MOTHS = 15
 local MAGIC_COST = 0
 local enough_magic
+local movement_id = 1
+local current_movement
 
 function dash_manager:dash(game)
     enough_magic = false
@@ -45,18 +47,19 @@ function dash_manager:dash(game)
     if enough_magic then hero:set_invincible(true, 400) end
 
     function m:on_obstacle_reached()
-        hero:unfreeze()
-          game:set_value("hero_dashing", false)
-          game:set_value("hero_rolling", false)
+      hero:unfreeze()
+      game:set_value("hero_dashing", false)
+      game:set_value("hero_rolling", false)
     end
 
+
     hero:register_event("on_position_changed", function()
-        if game:get_value("hero_dashing") or game:get_value("hero_rolling") then
+      if game:get_value("hero_dashing") or game:get_value("hero_rolling") then
         local ground = hero:get_ground_below()
         if ground == "deep_water" or ground == "hole" or ground == "lava" then
             m:stop()
         end
-        end
+      end
     end)
 end
 

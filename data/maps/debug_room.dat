@@ -2959,6 +2959,15 @@ tile{
   pattern = "27",
 }
 
+tile{
+  layer = 0,
+  x = 384,
+  y = 176,
+  width = 160,
+  height = 80,
+  pattern = "shallow_water",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -3133,8 +3142,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "snapmast_reef/drowned_village",
-  destination = "from_smoldering_rock",
+  destination_map = "oakhaven/fort_crow/basement",
 }
 
 pickable{
@@ -4987,6 +4995,67 @@ custom_entity{
   direction = 0,
   sprite = "entities/warp_block",
   model = "warp_block",
+}
+
+stream{
+  name = "current_a",
+  layer = 0,
+  x = 392,
+  y = 197,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_2",
+  layer = 0,
+  x = 408,
+  y = 197,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_3",
+  layer = 0,
+  x = 424,
+  y = 197,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_4",
+  layer = 0,
+  x = 440,
+  y = 197,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_5",
+  layer = 0,
+  x = 456,
+  y = 197,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+switch{
+  name = "current_switch",
+  layer = 0,
+  x = 544,
+  y = 208,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
 }
 
 tile{
