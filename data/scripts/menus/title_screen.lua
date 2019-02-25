@@ -28,8 +28,9 @@ local cursor_index
 local MAX_CURSOR_INDEX = 1
 
 
-local function create_cloud(j)
+local function create_cloud()
   local speed
+  local j = #clouds + 1
   if j % 2 == 0 then
     clouds[j] = sol.sprite.create("menus/title_screen/cloud_1")
     speed = 16
@@ -47,7 +48,7 @@ local function create_cloud(j)
   m1:set_angle(0)
   m1:set_speed(speed)
   m1:set_max_distance(700)
-  m1:start(clouds[j], function() clouds[j]:remove() end)
+  m1:start(clouds[j], function() table.remove(clouds, 1) end)
 
 end
 
@@ -56,10 +57,8 @@ function title_screen:on_started()
   black_fill:fill_color({0,0,0, 255})
   black_fill:fade_out(40)
   cursor_index = 0
-  local j = 1
   sol.timer.start(title_screen, 0, function()
-    create_cloud(j)
-    j = j+ 1
+    create_cloud()
     return math.random(8000, 9000)
   end)
 
@@ -68,15 +67,16 @@ function title_screen:on_started()
   text_surface2:set_text("  New Game")
   text_surface2:draw(selection_surface, 0, 16)
 
-  local i = 1
+
   sol.timer.start(title_screen, math.random(1000, 2000), function()
+    local i = #leaves + 1
     leaves[i] = sol.sprite.create("entities/leaf_blowing")
     leaves[i]:set_xy(math.random(-120, 30), 0)
     local m3 = sol.movement.create("straight")
     m3:set_angle(math.random(5.3, 5.9))
     m3:set_speed(25)
-    m3:start(leaves[i])
-    i = i + 1
+    m3:set_max_distance(700)
+    m3:start(leaves[i], function() table.remove(leaves, 1) end)
     return math.random(2400, 3500)
   end)
 

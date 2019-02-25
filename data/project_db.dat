@@ -213,7 +213,7 @@ map{ id = "oakhaven/veilwood", description = "Veilwood" }
 map{ id = "oakhaven/west_coast", description = "West Coast" }
 map{ id = "respawn_map", description = "blank room - leave empty" }
 map{ id = "snapmast_reef/caves/lighthouse", description = "Lighthouse" }
-map{ id = "snapmast_reef/cemetery_of_the_waves/", description = "test" }
+map{ id = "snapmast_reef/cemetery_of_the_waves/test", description = "test" }
 map{ id = "snapmast_reef/drowned_village", description = "Drowned Village" }
 map{ id = "snapmast_reef/smoldering_rock", description = "Smoldering Rock" }
 map{ id = "snapmast_reef/snapmast_landing", description = "Landing Area" }
@@ -320,6 +320,7 @@ sprite{ id = "enemies/normal_enemies/guard_goatshead_1_weapon", description = "G
 sprite{ id = "enemies/normal_enemies/hinox", description = "hinox" }
 sprite{ id = "enemies/normal_enemies/hive", description = "Hive" }
 sprite{ id = "enemies/normal_enemies/hornet", description = "Hornet" }
+sprite{ id = "enemies/normal_enemies/jellyfish", description = "Jellyfish" }
 sprite{ id = "enemies/normal_enemies/kappa", description = "Kappa" }
 sprite{ id = "enemies/normal_enemies/mandrake", description = "mandrake" }
 sprite{ id = "enemies/normal_enemies/mandrake_white", description = "white mandrake" }
@@ -1394,6 +1395,7 @@ enemy{ id = "normal_enemies/grim_1", description = "Grim 1" }
 enemy{ id = "normal_enemies/guard_goatshead_1", description = "Guard - Goatshead 1" }
 enemy{ id = "normal_enemies/hive", description = "Hornet Hive" }
 enemy{ id = "normal_enemies/hornet", description = "Hornet" }
+enemy{ id = "normal_enemies/jellyfish", description = "Jellyfish" }
 enemy{ id = "normal_enemies/kappa", description = "Kappa" }
 enemy{ id = "normal_enemies/mandrake", description = "mandrake" }
 enemy{ id = "normal_enemies/mandrake_white", description = "White Mandrake" }

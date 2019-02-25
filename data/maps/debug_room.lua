@@ -34,3 +34,10 @@ function current_switch:on_activated()
     e:set_direction(new_direction)
   end
 end
+function current_switch:on_inactivated()
+  for e in map:get_entities("current_a") do
+    local new_direction = e:get_direction() + 4
+    if new_direction > 7 then new_direction = new_direction - 8 end
+    e:set_direction(new_direction)
+  end
+end

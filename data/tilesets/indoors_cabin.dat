@@ -4529,7 +4529,7 @@ tile_pattern{
 tile_pattern{
   id = "hole_stairs_overlay",
   ground = "traversable",
-  default_layer = 0,
+  default_layer = 1,
   x = 160,
   y = 120,
   width = 32,
