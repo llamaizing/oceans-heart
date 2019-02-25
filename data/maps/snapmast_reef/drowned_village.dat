@@ -21611,6 +21611,16 @@ enemy{
   breed = "normal_enemies/drowned_spirit",
 }
 
+teletransporter{
+  layer = 0,
+  x = 696,
+  y = 808,
+  width = 16,
+  height = 16,
+  destination_map = "snapmast_reef/cemetery_of_the_waves/shipwreck_chain",
+  destination = "entrance",
+}
+
 tile{
   layer = 1,
   x = 304,

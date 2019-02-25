@@ -37,6 +37,7 @@ text{ key = "location.smoldering_rock", value = "Smoldering Rock" }
 text{ key = "location.tern_marsh", value = "Tern Marsh" }
 text{ key = "location.veilwood", value = "The Veilwood" }
 text{ key = "location.west_coast", value = "West Oak" }
+text{ key = "location.shipwreck_chain", value = "Cemetery of the Waves"}
 text{ key = "location.yarrowmouth", value = "Yarrowmouth" }
 text{ key = "location.yarrowmouth_village", value = "Yarrowmouth" }
 text{ key = "menu.quest_log.main_quests_tab", value = "Main\nQuests" }
