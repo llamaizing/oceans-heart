@@ -10,7 +10,7 @@ local properties = {
   damage = 20,
   normal_speed = 20,
   faster_speed = 30,
-  detection_distance = 140,
+  detection_distance = 90,
   must_be_aligned_to_attack = false,
   push_hero_on_sword = false,
   pushed_when_hurt = false,
@@ -18,9 +18,9 @@ local properties = {
 
   --Attacks--
   has_radial_attack = true,
-  radial_attack_projectile_breed = "misc/energy_ball_small",
+  radial_attack_projectile_breed = "misc/blue_fire",
   radial_attack_cooldown = 3500,
-  radial_attack_distance = 70,
+  radial_attack_distance = 60,
   radial_attack_num_projectiles = 5,
   radial_attack_stop_while_charging = true,
 

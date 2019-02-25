@@ -20674,10 +20674,10 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 368,
-  y = 301,
+  x = 336,
+  y = 293,
   direction = 0,
-  breed = "normal_enemies/ogre_knight",
+  breed = "normal_enemies/drowned_spirit",
 }
 
 destructible{
@@ -21601,6 +21601,14 @@ block{
   sprite = "entities/block_floating",
   pushable = true,
   pullable = true,
+}
+
+enemy{
+  layer = 0,
+  x = 440,
+  y = 421,
+  direction = 0,
+  breed = "normal_enemies/drowned_spirit",
 }
 
 tile{

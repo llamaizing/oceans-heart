@@ -310,6 +310,7 @@ sprite{ id = "enemies/normal_enemies/crow", description = "Crow" }
 sprite{ id = "enemies/normal_enemies/crow_xxl", description = "Crow Knight XXL" }
 sprite{ id = "enemies/normal_enemies/crowbot", description = "Crowbot" }
 sprite{ id = "enemies/normal_enemies/cyclops_1", description = "Cyclops 01" }
+sprite{ id = "enemies/normal_enemies/drowned_spirit", description = "Drowned Spirit" }
 sprite{ id = "enemies/normal_enemies/frog" }
 sprite{ id = "enemies/normal_enemies/gel_black", description = "Black Gel" }
 sprite{ id = "enemies/normal_enemies/ghost_1", description = "Ghost 1" }
@@ -1387,6 +1388,7 @@ enemy{ id = "normal_enemies/crow", description = "Crow" }
 enemy{ id = "normal_enemies/crow_xxl", description = "Crow Knight XXL" }
 enemy{ id = "normal_enemies/crowbot", description = "Crowbot" }
 enemy{ id = "normal_enemies/cyclops_1", description = "Cyclops Bomber" }
+enemy{ id = "normal_enemies/drowned_spirit", description = "Drowned Spirit" }
 enemy{ id = "normal_enemies/frog", description = "Frog" }
 enemy{ id = "normal_enemies/gel_black", description = "Black Gel" }
 enemy{ id = "normal_enemies/ghost_1", description = "Ghost 1" }

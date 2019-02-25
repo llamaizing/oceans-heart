@@ -9,11 +9,18 @@ function enemy:on_created()
   enemy:set_damage(4)
   enemy:set_origin(4, 4)
   enemy:set_obstacle_behavior("flying")
+  enemy:set_layer_independent_collisions(true)
   enemy:set_can_hurt_hero_running(true)
 --  enemy:set_invincible()
   enemy:set_attack_consequence("sword", "custom")
   bounces = 0
   enemy:set_dying_sprite_id("enemies/enemy_killed_small")
+
+  --hack to make go through walls
+  sol.timer.start(enemy, 300, function()
+      local m = enemy:get_movemet()
+      m:set_ignore_obstacles(true)
+  end)
 end
 
 function enemy:set_max_bounces(amount)

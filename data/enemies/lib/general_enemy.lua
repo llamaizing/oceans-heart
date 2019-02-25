@@ -30,6 +30,8 @@
       --orbit_attack_radius, orbit_attack_launch_sound, orbit_attack_stop_while_charging
       --use_projectile_go_method, if true this will call projectile:go(angle to hero) and allow bouncing, so make sure
       --your projectile has a go(angle) method or else errors.
+--has_radial_attack, radial_attack_distance, radial_attack_cooldown, radial_attack_sound, radial_attack_num_projectiles,
+      --radial_attack_charge_time, radial_attack_shoot_delay, radial_attack_projectile_breed, radial_attack_stop_while_charging
 --For a custom attack (TODO - debug custom attack, which sometimes results in the enemy stopping the check_hero() loop)
       --properties.has_custom_attack - For this script to check requirements, and if met, start the attack
       --properties.custom_attack_cooldown - cooldown in ms for custom attack
@@ -90,6 +92,7 @@ function behavior:create(enemy, properties)
   local can_summon = true
   local can_shoot = true
   local can_orbit_attack = true
+  local can_radial_attack = true
   local attacking = false
   local currently_dashing = false
   local currently_teleporting = false
@@ -197,6 +200,14 @@ local n=0
       self:orbit_attack()
       can_orbit_attack = false
       sol.timer.start(map, properties.orbit_attack_cooldown + math.random(1000), function() can_orbit_attack = true end)
+    
+    elseif properties.has_radial_attack and can_radial_attack and dist_hero <= (properties.radial_attack_distance or 100) then
+      attacking = true
+      going_hero = false
+      self:radial_attack()
+      can_radial_attack = false
+      sol.timer.start(map, properties.radial_attack_cooldown + math.random(800), function() can_radial_attack = true end)
+
     end
 
   end
@@ -425,9 +436,9 @@ end
     local x, y, layer = enemy:get_position()
     local direction = sprite:get_direction()
     local projectiles = {}
-    local NUM_PROJECTILES = properties.orbit_attack_num_projectiles
-    local CHARGE_TIME = properties.orbit_attack_charge_time
-    local SHOOT_DELAY = properties.orbit_attack_shoot_delay
+    local NUM_PROJECTILES = properties.orbit_attack_num_projectiles or 6
+    local CHARGE_TIME = properties.orbit_attack_charge_time or 800
+    local SHOOT_DELAY = properties.orbit_attack_shoot_delay or 1500
     if properties.orbit_attack_stop_while_charging then enemy:stop_movement() end
     sprite:set_animation("wind_up")
     if sprite:has_animation("orbit_attack_wind_up") then sprite:set_animation("orbit_attack_wind_up") end
@@ -440,7 +451,7 @@ end
         })
         local m = sol.movement.create("circle")
         m:set_center(enemy)
-        m:set_radius(properties.orbit_attack_radius)
+        m:set_radius(properties.orbit_attack_radius or 32)
         m:set_angular_speed(8)
         m:start(projectiles[i])
         if i == NUM_PROJECTILES then sprite:set_animation("walking") end
@@ -449,9 +460,10 @@ end
     sol.timer.start(map, CHARGE_TIME + SHOOT_DELAY, function()
       sol.audio.play_sound("sword2")
       enemy:wrap_up_attack()
+      local DELAY = properties.orbit_attack_projectile_delay or 300
       for i=1, #projectiles do
         if projectiles[i]:exists() and projectiles[i]:get_life() > 0 then
-          sol.timer.start(map, (properties.orbit_attack_projectile_delay * i), function()
+          sol.timer.start(map, (DELAY * i), function()
             local m = sol.movement.create("straight")
             m:set_angle(enemy:get_angle(hero))
             m:set_speed(160)
@@ -465,6 +477,59 @@ end
               projectiles[i]:go(enemy:get_angle(hero))
             end
           end)
+        end
+      end
+    end)
+  end
+
+  --Radial Attack
+  function enemy:radial_attack()
+--    enemy:stop_movement() --don't move while summoning the orbiting projectiles
+    local sprite = enemy:get_sprite()
+    local x, y, layer = enemy:get_position()
+    local direction = sprite:get_direction()
+    local projectiles = {}
+    local NUM_PROJECTILES = properties.radial_attack_num_projectiles or 8
+    local CHARGE_TIME = properties.radial_attack_charge_time or 1500
+    local SHOOT_DELAY = properties.radial_attack_shoot_delay or 500
+    if properties.radial_attack_stop_while_charging then enemy:stop_movement() end
+    sprite:set_animation("wind_up")
+    if sprite:has_animation("radial_attack_wind_up") then sprite:set_animation("radial_attack_wind_up") end
+    for i=1, NUM_PROJECTILES do
+      sol.timer.start(map, CHARGE_TIME / NUM_PROJECTILES * i, function()
+        sol.audio.play_sound(properties.radial_attack_summon_sound or "shield")
+        projectiles[i] = map:create_enemy({
+          x = x, y = y, layer = layer, direction = direction,
+          breed = properties.radial_attack_projectile_breed
+        })
+        local m = sol.movement.create("circle")
+        m:set_center(enemy)
+        m:set_radius(properties.radial_attack_radius or 32)
+        m:set_angular_speed(2 * math.pi / CHARGE_TIME * 1000)
+        m:start(projectiles[i])
+        if i == NUM_PROJECTILES then sprite:set_animation("walking") end
+      end)
+    end
+
+    sol.timer.start(map, CHARGE_TIME, function() enemy:wrap_up_attack() end)
+
+    sol.timer.start(map, CHARGE_TIME + SHOOT_DELAY, function()
+      sol.audio.play_sound("sword2")
+      sol.audio.play_sound(properties.radial_attack_launch_sound or "shoot")
+      for i=1, NUM_PROJECTILES do
+        if projectiles[i]:exists() and projectiles[i]:get_life() > 0 then
+          local m = sol.movement.create("straight")
+          m:set_angle(enemy:get_angle(projectiles[i]))
+          m:set_speed(160)
+          m:set_smooth(false)
+          projectiles[i]:stop_movement()
+          m:start(projectiles[i], function() projectiles[i]:remove() end)
+          function m:on_obstacle_reached() projectiles[i]:remove() end
+          if properties.use_projectile_go_method then
+            projectiles[i]:stop_movement()
+            projectiles[i]:go(enemy:get_angle(hero))
+          end
+
         end
       end
     end)

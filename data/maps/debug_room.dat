@@ -3008,7 +3008,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "snapmast_reef/cemetery_of_the_waves/test",
+  destination_map = "snapmast_reef/drowned_village",
 }
 
 pickable{
@@ -4978,10 +4978,10 @@ sensor{
 
 enemy{
   layer = 0,
-  x = 360,
-  y = 181,
+  x = 448,
+  y = 205,
   direction = 0,
-  breed = "normal_enemies/jellyfish",
+  breed = "normal_enemies/drowned_spirit",
 }
 
 tile{
