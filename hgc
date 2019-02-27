@@ -1,0 +1,41 @@
+[33mcommit a766f32a5e01d2abf100f1af6b810d43e0da4de7[m
+Author: unknown <gabrieljmccoard@gmail.com>
+Date:   Tue Oct 16 15:14:59 2018 -0400
+
+    add boomerang, bug fix with burrow crab boss
+
+[33mcommit 37f43b7971e92ab29eec025e157c040196bd08f1[m
+Author: Max <max.mraz.11@gmail.com>
+Date:   Wed Oct 10 16:36:37 2018 -0400
+
+    fix bug where getting many sucessive health upgrades quickly can mute the background music
+
+[33mcommit a93e2876c314a0bb25e8ae8897a2696b11ec1352[m
+Author: Max <max.mraz.11@gmail.com>
+Date:   Tue Oct 9 11:05:29 2018 -0400
+
+    fix infinite armor buying typo in Crabhook Village
+
+[33mcommit a6248c6fb22b953705a3612d3e441b25ba3d6595[m
+Author: Max <max.mraz.11@gmail.com>
+Date:   Mon Oct 8 15:44:35 2018 -0400
+
+    fix double Aster bug after defeating him, Phantom Squid quest
+
+[33mcommit feccfbedebb16057303fc9e60031f81583745837[m
+Author: Max <max.mraz.11@gmail.com>
+Date:   Sun Oct 7 23:53:14 2018 -0400
+
+    add a trumpet player to the Oakhaven Saloon. Will be part of a sidequest later.
+
+[33mcommit f4db0df8ed8cff6b3138200f79b745cfd8bfc70f[m
+Author: Max <max.mraz.11@gmail.com>
+Date:   Sun Oct 7 23:23:20 2018 -0400
+
+    add tic-tac-toe championship side quest in Oakhaven, plus associated assets
+
+[33mcommit fd92177d0c280491f35a5c229117347d059b6d47[m
+Author: Adam Dzierzko <dzierzko.a@gmail.com>
+Date:   Thu Oct 4 12:57:30 2018 -0400
+
+    Initial commit

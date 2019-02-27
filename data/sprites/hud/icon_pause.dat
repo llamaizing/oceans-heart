@@ -1,0 +1,16 @@
+animation{
+  name = "normal",
+  src_image = "hud/icon_pause.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 28, frame_height = 28, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "quest_alert",
+  src_image = "hud/icon_pause.png",
+  frame_delay = 450,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 28, y = 0, frame_width = 28, frame_height = 28, origin_x = 0, origin_y = 0, num_frames = 4 },
+  },
+}

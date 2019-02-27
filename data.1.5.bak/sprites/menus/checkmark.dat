@@ -1,0 +1,14 @@
+animation{
+  name = "disabled",
+  src_image = "menus/ui.png",
+  directions = {
+    { x = 42, y = 28, frame_width = 6, frame_height = 6, origin_x = 0, origin_y = 0 },
+  },
+}
+animation{
+  name = "enabled",
+  src_image = "menus/ui.png",
+  directions = {
+    { x = 48, y = 28, frame_width = 6, frame_height = 6, origin_x = 0, origin_y = 0 },
+  },
+}
