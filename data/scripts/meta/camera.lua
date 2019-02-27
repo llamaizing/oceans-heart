@@ -56,4 +56,11 @@ function camera_meta:shake(config, callback)
   shake_step()
 end
 
+-- Set the camera to a 4:3 aspect ratio for this map.
+-- Useful as a fallback for old maps that need this.
+function camera_meta:letterbox()
+  self:set_size(320, 240)
+  self:set_position_on_screen(48, 0)
+end
+
 return true
