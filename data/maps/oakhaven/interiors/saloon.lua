@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+  self:get_camera():letterbox()
   if game:get_value("salamander_heartache_storehouse_door_open") == true then map:open_doors("storehouse_door") end
   if game:has_item("sleeping_draught") == true then star_barrel:set_enabled(true) end
   if game:get_value("morus_available") ~= true then morus:set_enabled(false) end

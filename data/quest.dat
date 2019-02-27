@@ -9,8 +9,8 @@ quest{
   quest_version = "",
   release_date = "",
   website = "maxmraz.github.io/oceans-heart-website",
-  normal_quest_size = "320x240",
-  min_quest_size = "320x240",
-  max_quest_size = "320x240",
+  normal_quest_size = "416x240",
+  min_quest_size = "416x240",
+  max_quest_size = "416x240",
 }
 

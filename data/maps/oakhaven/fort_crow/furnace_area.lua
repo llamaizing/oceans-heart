@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+  self:get_camera():letterbox()
   al_jazari:set_enabled(false)
   for entity in map:get_entities("switchsteam_b") do entity:set_enabled(false) end
   if game:get_value("fort_crow_furnace_door_a") == true then map:set_doors_open("door_a") end

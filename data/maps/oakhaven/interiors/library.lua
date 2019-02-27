@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+  self:get_camera():letterbox()
   if game:get_value("visited_hazel_room") == true then
     for entity in map:get_entities("block_book") do entity:set_enabled(false) end
   end

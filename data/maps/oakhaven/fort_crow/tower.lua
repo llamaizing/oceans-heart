@@ -13,6 +13,7 @@ local hero = game:get_hero()
 
 
 function map:on_started()
+  self:get_camera():letterbox()
   if game:has_item("hideout_chart") == true then
   hideout_chart:set_enabled(false)
   end
