@@ -13,6 +13,7 @@ local hero = map:get_hero()
 
 
 function map:on_started()
+  self:get_camera():letterbox()
   guard_2:set_enabled(false)
   guard_3:set_enabled(false)
   enemy_guard:set_enabled(false)

@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+  self:get_camera():letterbox()
 
   if game:get_value("have_dandelion_charm") == true and game:get_value("dandelion_charm_obtained") == nil then
       map:create_pickable({

@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
+  self:get_camera():letterbox()
   if game:get_value("spoken_with_hazel_in_manna_oak_tunnels") then
     gonna_die_blob:set_enabled(false)
   end

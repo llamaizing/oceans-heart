@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
+  self:get_camera():letterbox()
   if game:get_value("quest_manna_oaks") == 0 then manna_oak_twig:set_enabled(true) end
   if game:get_value("amalenchier_tomb_open") then
     amalenchier_tombstone:set_enabled(false)

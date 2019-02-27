@@ -13,6 +13,7 @@ local guard_run
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+   self:get_camera():letterbox()
 --enable entities
    if game:get_value("mhq_thomas_left") == true then thomas:set_enabled(false) end
    if game:get_value("phantom_squid_quest_completed") ~= true then merchant_hopeful:set_enabled(false) end

@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
+  self:get_camera():letterbox()
   charging_pirate:set_enabled(false)
   return_sensor:set_enabled(false)
   if game:get_value("ballast_charging_pirate_defeated") == true then

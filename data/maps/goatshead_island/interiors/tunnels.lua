@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+  self:get_camera():letterbox()
   --initialize adventurers if quest accepted
   if game:get_value("goatshead_tunnels_accepted") ~= true then
     adventurer_1:set_enabled(false)

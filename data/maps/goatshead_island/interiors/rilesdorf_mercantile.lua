@@ -15,6 +15,7 @@ local hero = game:get_hero()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+  self:get_camera():letterbox()
 --enable entities
   if game:get_value("squid_fled") ~= true then
     rilesdorf_2:set_enabled(false)
