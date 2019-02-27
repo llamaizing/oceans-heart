@@ -42444,8 +42444,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 672,
-  y = 232,
+  x = 680,
+  y = 216,
   width = 16,
   height = 16,
   pattern = "39",
