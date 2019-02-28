@@ -152,6 +152,7 @@ map{ id = "grass_template_green", description = "grass template" }
 map{ id = "grass_template_yellow", description = "Grass Template 2" }
 map{ id = "indoor_house_template", description = "Indoor House Template" }
 map{ id = "indoor_template", description = "Temple/Cave Template" }
+map{ id = "mysterious_wood", description = "Mysterious Wood" }
 map{ id = "new_limestone/basswood_tavern", description = "Basswood Tavern" }
 map{ id = "new_limestone/cave_1", description = "Cave 1" }
 map{ id = "new_limestone/hazel", description = "Hazel" }
