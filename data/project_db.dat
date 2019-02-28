@@ -423,6 +423,7 @@ sprite{ id = "entities/chair2R", description = "Chair 2R" }
 sprite{ id = "entities/chairL", description = "Chair L" }
 sprite{ id = "entities/chairR", description = "chair right" }
 sprite{ id = "entities/chest", description = "Chest" }
+sprite{ id = "entities/chest_big", description = "Chest-Big" }
 sprite{ id = "entities/chest_green", description = "Chest - Green" }
 sprite{ id = "entities/collapsing_floor_wood", description = "Collapsing Floor - Wood" }
 sprite{ id = "entities/collapsing_platform_floating", description = "Collapsing Platform - Floating" }
@@ -1276,6 +1277,7 @@ item{ id = "key_basswood_tavern", description = "key- Basswood Tavern" }
 item{ id = "key_dandelion_charm", description = "Key - Dandelion Charm" }
 item{ id = "key_goat_caverns", description = "Key - Goat Caverns" }
 item{ id = "key_goat_tunnels", description = "Key - Goat Tunnels" }
+item{ id = "key_graveyard_of_the_waves", description = "Key-Graveyard of the Waves" }
 item{ id = "key_hourglass_fort", description = "Key - Hourglass Fort" }
 item{ id = "key_juneberry_inn", description = "Key - Juneberry Inn" }
 item{ id = "key_juniper_grove", description = "Key - Juniper Grove" }

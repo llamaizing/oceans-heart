@@ -4919,7 +4919,7 @@ stream{
   name = "current_a_12",
   layer = 0,
   x = 448,
-  y = 309,
+  y = 301,
   direction = 0,
   sprite = "entities/current_shallow",
   speed = 128,

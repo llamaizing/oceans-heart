@@ -10381,6 +10381,14 @@ somewhere nearby.
 }
 
 dialog{
+  id = "_treasure.key_graveyard_of_the_waves.1",
+  text = [[
+You found a key! It probably unlocks
+a door in this area.
+]],
+}
+
+dialog{
   id = "_treasure.key_hourglass_fort.1",
   text = [[
 You found a key. It will unlock a door

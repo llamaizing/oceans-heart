@@ -20,3 +20,18 @@ function b7_switch:on_activated()
   sol.audio.play_sound("switch")
   map:focus_on(map:get_camera(), b7_door, function() map:open_doors("b7_door") end)
 end
+
+function d4_door_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:focus_on(map:get_camera(), d4_door, function() map:open_doors("d4_door") end)
+end
+
+function c5_door_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:focus_on(map:get_camera(), c5_door, function() map:open_doors("c5_door") end)
+end
+
+function door_a1_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:open_doors("door_a1")
+end

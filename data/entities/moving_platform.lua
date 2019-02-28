@@ -72,6 +72,9 @@ function entity:is_on_platform(other_entity)
   local ex, ey, el = self:get_position()
   if ol ~= el then return false end
   local sx, sy = self:get_size()
+  local fudge = 9
+  sx = sx + fudge
+  sy = sy + fudge
   if math.abs(ox - ex) < sx/2 -1 and math.abs(oy - ey) < sy/2 -1 then return true end
   return false
 end
