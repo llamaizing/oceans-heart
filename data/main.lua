@@ -45,7 +45,11 @@ function sol.main:on_key_pressed(key, modifiers)
     -- Escape in title screens: stop the program.
 --    sol.main.exit()
     handled = true
-
+  elseif key == "escape" and sol.video.is_fullscreen() then
+    -- Escape fullscreen
+    sol.video.set_fullscreen(false)
+    sol.video.set_cursor_visible(true)
+    handled = true
   end
 
   return handled
