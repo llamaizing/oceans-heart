@@ -152,6 +152,7 @@ map{ id = "grass_template_green", description = "grass template" }
 map{ id = "grass_template_yellow", description = "Grass Template 2" }
 map{ id = "indoor_house_template", description = "Indoor House Template" }
 map{ id = "indoor_template", description = "Temple/Cave Template" }
+map{ id = "mysterious_wood", description = "Mysterious Wood" }
 map{ id = "new_limestone/basswood_tavern", description = "Basswood Tavern" }
 map{ id = "new_limestone/cave_1", description = "Cave 1" }
 map{ id = "new_limestone/hazel", description = "Hazel" }
@@ -212,7 +213,13 @@ map{ id = "oakhaven/sunken_palace", description = "Sunken Palace" }
 map{ id = "oakhaven/veilwood", description = "Veilwood" }
 map{ id = "oakhaven/west_coast", description = "West Coast" }
 map{ id = "respawn_map", description = "blank room - leave empty" }
+map{ id = "snapmast_reef/caves/lighthouse", description = "Lighthouse" }
+map{ id = "snapmast_reef/cemetery_of_the_waves/shipwreck_chain", description = "shipwreck-chain:Main Dungeon" }
+map{ id = "snapmast_reef/cemetery_of_the_waves/test", description = "test" }
+map{ id = "snapmast_reef/drowned_village", description = "Drowned Village" }
+map{ id = "snapmast_reef/smoldering_rock", description = "Smoldering Rock" }
 map{ id = "snapmast_reef/snapmast_landing", description = "Landing Area" }
+map{ id = "snapmast_reef/snapmast_lighthouse", description = "Snapmast Lighthouse" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }
@@ -254,9 +261,12 @@ sprite{ id = "enemies/bosses/rock_spider_big", description = "rock spider - big"
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
 sprite{ id = "enemies/bosses/zephyrine", description = "Zeyphyrine" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/enemy_killed_projectile", description = "Enemy Killed-Projectile" }
+sprite{ id = "enemies/enemy_killed_small", description = "Enemy Killed-Small" }
 sprite{ id = "enemies/ground1", description = "Ground 1 - Grass" }
 sprite{ id = "enemies/misc/air_wave", description = "Air Wave Attack" }
 sprite{ id = "enemies/misc/arrow_4", description = "Arrow - 4 directions" }
+sprite{ id = "enemies/misc/barrel_cannon", description = "Barrel Cannon" }
 sprite{ id = "enemies/misc/big_stone", description = "big stone" }
 sprite{ id = "enemies/misc/blue_fire", description = "Blue Fire" }
 sprite{ id = "enemies/misc/crusher_0.5", description = "Crusher 0.5" }
@@ -296,11 +306,13 @@ sprite{ id = "enemies/normal_enemies/bat_1", description = "Bat 1" }
 sprite{ id = "enemies/normal_enemies/birdfox_1", description = "Birdfox 1" }
 sprite{ id = "enemies/normal_enemies/blade_trap", description = "Blade Trap" }
 sprite{ id = "enemies/normal_enemies/burrow_like", description = "Burrow Like" }
+sprite{ id = "enemies/normal_enemies/chest_mimic", description = "Chest Mimic" }
 sprite{ id = "enemies/normal_enemies/clayman_mother3", description = "Clayman (Mother 3)" }
 sprite{ id = "enemies/normal_enemies/crow", description = "Crow" }
 sprite{ id = "enemies/normal_enemies/crow_xxl", description = "Crow Knight XXL" }
 sprite{ id = "enemies/normal_enemies/crowbot", description = "Crowbot" }
 sprite{ id = "enemies/normal_enemies/cyclops_1", description = "Cyclops 01" }
+sprite{ id = "enemies/normal_enemies/drowned_spirit", description = "Drowned Spirit" }
 sprite{ id = "enemies/normal_enemies/frog" }
 sprite{ id = "enemies/normal_enemies/gel_black", description = "Black Gel" }
 sprite{ id = "enemies/normal_enemies/ghost_1", description = "Ghost 1" }
@@ -311,6 +323,7 @@ sprite{ id = "enemies/normal_enemies/guard_goatshead_1_weapon", description = "G
 sprite{ id = "enemies/normal_enemies/hinox", description = "hinox" }
 sprite{ id = "enemies/normal_enemies/hive", description = "Hive" }
 sprite{ id = "enemies/normal_enemies/hornet", description = "Hornet" }
+sprite{ id = "enemies/normal_enemies/jellyfish", description = "Jellyfish" }
 sprite{ id = "enemies/normal_enemies/kappa", description = "Kappa" }
 sprite{ id = "enemies/normal_enemies/mandrake", description = "mandrake" }
 sprite{ id = "enemies/normal_enemies/mandrake_white", description = "white mandrake" }
@@ -356,6 +369,7 @@ sprite{ id = "entities/bait", description = "bait" }
 sprite{ id = "entities/big_barrel", description = "Big Barrel" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/block_crate", description = "Block (Crate)" }
+sprite{ id = "entities/block_floating", description = "Block- Floating" }
 sprite{ id = "entities/block_statue", description = "Block - Statue" }
 sprite{ id = "entities/block_stone_lv1", description = "Block Stone lv1" }
 sprite{ id = "entities/boat_01", description = "Boat 01" }
@@ -398,6 +412,7 @@ sprite{ id = "entities/bush_marigold", description = "Marigold" }
 sprite{ id = "entities/bush_monkshood", description = "Monkshood" }
 sprite{ id = "entities/bush_oak_forest", description = "Bush-Oak Forest" }
 sprite{ id = "entities/bush_philodendron", description = "Philodendron Bush" }
+sprite{ id = "entities/bush_seagrass", description = "Seagrass" }
 sprite{ id = "entities/bush_small_tree", description = "small tree" }
 sprite{ id = "entities/bush_violet", description = "Violet" }
 sprite{ id = "entities/bush_witch_hazel", description = "Witch Hazel" }
@@ -409,11 +424,14 @@ sprite{ id = "entities/chair2R", description = "Chair 2R" }
 sprite{ id = "entities/chairL", description = "Chair L" }
 sprite{ id = "entities/chairR", description = "chair right" }
 sprite{ id = "entities/chest", description = "Chest" }
+sprite{ id = "entities/chest_big", description = "Chest-Big" }
 sprite{ id = "entities/chest_green", description = "Chest - Green" }
 sprite{ id = "entities/collapsing_floor_wood", description = "Collapsing Floor - Wood" }
+sprite{ id = "entities/collapsing_platform_floating", description = "Collapsing Platform - Floating" }
 sprite{ id = "entities/coral_ore", description = "Coral Ore" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
+sprite{ id = "entities/current_shallow" }
 sprite{ id = "entities/dandelion_burst", description = "Dandelion Burst" }
 sprite{ id = "entities/dandelion_seed", description = "Dandelion Seed" }
 sprite{ id = "entities/destination", description = "Destination" }
@@ -434,7 +452,7 @@ sprite{ id = "entities/door_shutter", description = "door (shutter)" }
 sprite{ id = "entities/door_unmarked_wall", description = "Door - Unmarked Wall" }
 sprite{ id = "entities/door_vines", description = "Door-Vines" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
-sprite{ id = "entities/door_weak_wall", description = "Door (weak wall)" }
+sprite{ id = "entities/door_weak_wall", description = "Weak Wall Door" }
 sprite{ id = "entities/elixer", description = "elixer" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
@@ -446,14 +464,16 @@ sprite{ id = "entities/gate_tall", description = "Gate - Tall" }
 sprite{ id = "entities/goat_01", description = "Goat 01" }
 sprite{ id = "entities/goat_02", description = "Goat 02" }
 sprite{ id = "entities/goat_03", description = "Goat 03" }
-sprite{ id = "entities/grass", description = "Grass" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ink_splash", description = "Ink Splash" }
 sprite{ id = "entities/items", description = "Items" }
+sprite{ id = "entities/leaf_blowing", description = "Leaf - Blowing" }
 sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
 sprite{ id = "entities/leaf_whirl_green", description = "Leaf Whirl- Green" }
 sprite{ id = "entities/lightning_bolt_attack", description = "Lightning Bolt Attack" }
 sprite{ id = "entities/moth", description = "Moth" }
+sprite{ id = "entities/moving_platform", description = "Moving Platform" }
+sprite{ id = "entities/moving_platform_wood", description = "Moving platform-Wood" }
 sprite{ id = "entities/nitrodendron", description = "Nitrodendron" }
 sprite{ id = "entities/orange_peel", description = "Orange Peel" }
 sprite{ id = "entities/pollution_ash", description = "Pollution Ash" }
@@ -469,8 +489,6 @@ sprite{ id = "entities/spirit_1", description = "Spirit 01" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/steam_stream", description = "Steam Stream" }
-sprite{ id = "entities/stone_black", description = "Stone (black)" }
-sprite{ id = "entities/stone_black_skull", description = "Stone (black skull)" }
 sprite{ id = "entities/stone_person", description = "Stone Person" }
 sprite{ id = "entities/stone_white1", description = "stone: white 1" }
 sprite{ id = "entities/stone_white2", description = "stone: white 2" }
@@ -522,11 +540,17 @@ sprite{ id = "hud/piece_of_heart_icon", description = "Piece of Heart icon" }
 sprite{ id = "hud/quest_log_update_icon", description = "Quest Log Update Icon" }
 sprite{ id = "menus/arrows", description = "arrows" }
 sprite{ id = "menus/checkmark", description = "checkmark" }
+sprite{ id = "menus/cursor", description = "Cursor" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
 sprite{ id = "menus/inventory/inventory_background", description = "Inventory Background" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
+sprite{ id = "menus/title_screen/background", description = "Background" }
+sprite{ id = "menus/title_screen/cloud_1", description = "Cloud 1" }
+sprite{ id = "menus/title_screen/cloud_2", description = "Cloud 2" }
+sprite{ id = "menus/title_screen/sea_sparkle", description = "Sea Sparkle" }
+sprite{ id = "menus/title_screen/seagull", description = "Seagull - title screen" }
 sprite{ id = "npc/big_guy_1", description = "big guy 1" }
 sprite{ id = "npc/blackbeard", description = "Blackbeard" }
 sprite{ id = "npc/blacksmith_01", description = "Blacksmith 1" }
@@ -1213,6 +1237,7 @@ item{ id = "attack_upgrade", description = "Attack Upgrade - For Testing" }
 item{ id = "bag_of_money", description = "bag of money" }
 item{ id = "bait", description = "Bait" }
 item{ id = "ball_and_chain", description = "Ball and Chain" }
+item{ id = "ball_and_chain_2", description = "Ball and Chain 2" }
 item{ id = "barrier", description = "Barrier" }
 item{ id = "berries", description = "Berries-1,3,5,10" }
 item{ id = "bomb", description = "bombs-map-1,3,5,10,20" }
@@ -1253,6 +1278,7 @@ item{ id = "key_basswood_tavern", description = "key- Basswood Tavern" }
 item{ id = "key_dandelion_charm", description = "Key - Dandelion Charm" }
 item{ id = "key_goat_caverns", description = "Key - Goat Caverns" }
 item{ id = "key_goat_tunnels", description = "Key - Goat Tunnels" }
+item{ id = "key_graveyard_of_the_waves", description = "Key-Graveyard of the Waves" }
 item{ id = "key_hourglass_fort", description = "Key - Hourglass Fort" }
 item{ id = "key_juneberry_inn", description = "Key - Juneberry Inn" }
 item{ id = "key_juniper_grove", description = "Key - Juniper Grove" }
@@ -1320,6 +1346,7 @@ enemy{ id = "bosses/thyme", description = "Captain Thyme" }
 enemy{ id = "bosses/zephyrine", description = "Zephyrine" }
 enemy{ id = "general_enemy_example", description = "General Enemy Example" }
 enemy{ id = "misc/arrow_4", description = "Arrow - 4 directions" }
+enemy{ id = "misc/barrel_cannon", description = "Barrel Cannon" }
 enemy{ id = "misc/big_stone", description = "Big Stone" }
 enemy{ id = "misc/blue_fire", description = "Blue Fire" }
 enemy{ id = "misc/crusher_0.5", description = "Crusher 0.5 sec" }
@@ -1357,11 +1384,15 @@ enemy{ id = "normal_enemies/automatic_crow_knight", description = "Automatic Cro
 enemy{ id = "normal_enemies/bat_1", description = "Bat 1" }
 enemy{ id = "normal_enemies/birdfox_1", description = "Birdfox Burrower" }
 enemy{ id = "normal_enemies/blade_trap", description = "Blade Trap" }
+enemy{ id = "normal_enemies/blade_trap_circle", description = "Blade Trap - Circle" }
+enemy{ id = "normal_enemies/blade_trap_linear", description = "Blade Trap - Linear" }
 enemy{ id = "normal_enemies/burrow_like", description = "Burrow Like" }
+enemy{ id = "normal_enemies/chest_mimic", description = "Chest Mimic" }
 enemy{ id = "normal_enemies/crow", description = "Crow" }
 enemy{ id = "normal_enemies/crow_xxl", description = "Crow Knight XXL" }
 enemy{ id = "normal_enemies/crowbot", description = "Crowbot" }
 enemy{ id = "normal_enemies/cyclops_1", description = "Cyclops Bomber" }
+enemy{ id = "normal_enemies/drowned_spirit", description = "Drowned Spirit" }
 enemy{ id = "normal_enemies/frog", description = "Frog" }
 enemy{ id = "normal_enemies/gel_black", description = "Black Gel" }
 enemy{ id = "normal_enemies/ghost_1", description = "Ghost 1" }
@@ -1370,6 +1401,7 @@ enemy{ id = "normal_enemies/grim_1", description = "Grim 1" }
 enemy{ id = "normal_enemies/guard_goatshead_1", description = "Guard - Goatshead 1" }
 enemy{ id = "normal_enemies/hive", description = "Hornet Hive" }
 enemy{ id = "normal_enemies/hornet", description = "Hornet" }
+enemy{ id = "normal_enemies/jellyfish", description = "Jellyfish" }
 enemy{ id = "normal_enemies/kappa", description = "Kappa" }
 enemy{ id = "normal_enemies/mandrake", description = "mandrake" }
 enemy{ id = "normal_enemies/mandrake_white", description = "White Mandrake" }
@@ -1406,10 +1438,13 @@ entity{ id = "arrow_fire", description = "arrow_fire" }
 entity{ id = "arrow_warp", description = "Arrow- Warp" }
 entity{ id = "chain_link", description = "Chain Link" }
 entity{ id = "cliff", description = "cliff" }
+entity{ id = "collapsing_floor", description = "Collapsing Floor" }
 entity{ id = "damaging_sparkle", description = "Damaging Sparkle" }
 entity{ id = "dash_moth", description = "Dash Moth" }
 entity{ id = "ephemeral_effect", description = "Ephereral Effect" }
+entity{ id = "flail_obstacle", description = "Flail Obstacle" }
 entity{ id = "leaf_pile", description = "Leaf Pile" }
+entity{ id = "moving_platform", description = "Moving Platform" }
 entity{ id = "rockpile", description = "Rock Pile" }
 entity{ id = "rockpile_3", description = "rockpile 3" }
 entity{ id = "torch", description = "torch" }

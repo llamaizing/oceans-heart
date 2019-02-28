@@ -11,6 +11,7 @@ function enemy:on_created()
   enemy:set_size(8, 8)
   enemy:set_origin(4, 4)
   enemy:set_invincible()
+  enemy:set_dying_sprite_id("enemies/enemy_killed_small")
   enemy:set_obstacle_behavior("flying")
 end
 

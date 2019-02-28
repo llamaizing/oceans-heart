@@ -2900,6 +2900,30 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "349",
+  ground = "wall",
+  default_layer = 0,
+  x = { 48, 48, 48 },
+  y = { 560, 576, 592 },
+  width = 24,
+  height = 16,
+  frame_delay = 270,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "349_2",
+  ground = "wall",
+  default_layer = 0,
+  x = { 72, 72, 72 },
+  y = { 560, 576, 592 },
+  width = 24,
+  height = 16,
+  frame_delay = 270,
+  mirror_loop = true,
+}
+
+tile_pattern{
   id = "35",
   ground = "hole",
   default_layer = 0,
@@ -2907,6 +2931,76 @@ tile_pattern{
   y = 112,
   width = 8,
   height = 8,
+}
+
+tile_pattern{
+  id = "353",
+  ground = "wall",
+  default_layer = 0,
+  x = { 0, 16, 32 },
+  y = { 592, 592, 592 },
+  width = 16,
+  height = 16,
+  frame_delay = 270,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "354",
+  ground = "wall",
+  default_layer = 1,
+  x = { 0, 16, 32 },
+  y = { 576, 576, 576 },
+  width = 16,
+  height = 16,
+  frame_delay = 270,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "355",
+  ground = "wall",
+  default_layer = 0,
+  x = { 0, 32, 64 },
+  y = { 624, 624, 624 },
+  width = 32,
+  height = 16,
+  frame_delay = 290,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "356",
+  ground = "wall",
+  default_layer = 1,
+  x = { 0, 32, 64 },
+  y = { 608, 608, 608 },
+  width = 32,
+  height = 16,
+  frame_delay = 290,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "358",
+  ground = "wall",
+  default_layer = 0,
+  x = { 96, 96, 96 },
+  y = { 568, 592, 616 },
+  width = 32,
+  height = 24,
+  frame_delay = 300,
+}
+
+tile_pattern{
+  id = "358_2",
+  ground = "wall",
+  default_layer = 0,
+  x = { 128, 128, 128 },
+  y = { 568, 592, 616 },
+  width = 32,
+  height = 24,
+  frame_delay = 300,
 }
 
 tile_pattern{
@@ -4435,7 +4529,7 @@ tile_pattern{
 tile_pattern{
   id = "hole_stairs_overlay",
   ground = "traversable",
-  default_layer = 0,
+  default_layer = 1,
   x = 160,
   y = 120,
   width = 32,

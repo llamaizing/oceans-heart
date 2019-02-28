@@ -30,7 +30,7 @@ function enemy:on_created()
   enemy:set_attack_consequence("fire", 1)
   enemy:set_attack_consequence("sword", "protected")
   enemy:set_attack_consequence("arrow", "protected")
-  
+  enemy:set_dying_sprite_id("enemies/enemy_killed_small")
 end
 
 --make it so nothing happens when hero collides with barrel

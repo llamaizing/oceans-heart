@@ -103,11 +103,13 @@ function properties_setter:set_properties(enemy, properties)
   end
 
 
+
   enemy:register_event("on_created", function()
     enemy:set_life(properties.life)
     enemy:set_damage(properties.damage)
     enemy:create_sprite(properties.sprite)
     enemy:set_hurt_style(properties.hurt_style)
+    if properties.dying_sprite then enemy:set_dying_sprite_id(properties.dying_sprite) end
     enemy:set_pushed_back_when_hurt(properties.pushed_when_hurt)
     enemy:set_push_hero_on_sword(properties.push_hero_on_sword)
     enemy:set_obstacle_behavior(properties.obstacle_behavior)

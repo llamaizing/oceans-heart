@@ -61,7 +61,26 @@ map_meta:register_event("on_started", function(self)
   end
 
 
-end)
+end) --end of on_started registered event
 
+
+function map_meta:focus_on(camera, target_entity, callback)
+  hero:freeze()
+  local m = sol.movement.create("target")
+  m:set_target(camera:get_position_to_track(target_entity))
+  m:set_speed(160)
+  m:set_ignore_obstacles(true)
+  m:start(camera, function()
+    callback()
+    sol.timer.start(camera:get_map(), 500, function()
+      hero:unfreeze()
+      m2 = sol.movement.create("target")
+      m2:set_ignore_obstacles(true)
+      m2:set_target(camera:get_position_to_track(hero))
+      m2:set_speed(160)
+      m2:start(camera, function() camera:start_tracking(hero) end)
+    end)
+  end)
+end
 
 return true

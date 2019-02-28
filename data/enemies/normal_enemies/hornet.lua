@@ -11,6 +11,7 @@ local properties = {
   detection_distance = 96,
   obstacle_behavior = flying,
   dashing_speed = 100,
+  dying_sprite = "enemies/enemy_killed_projectile",
   movement_create = function()
     local m = sol.movement.create("random")
     return m

@@ -10,7 +10,7 @@ function enemy:on_created()
   enemy:set_origin(4, 4)
   enemy:set_obstacle_behavior("flying")
   enemy:set_can_hurt_hero_running(true)
-  enemy:set_invincible()
+  enemy:set_dying_sprite_id("enemies/enemy_killed_projectile")
   enemy:set_attack_consequence("sword", "custom")
   bounces = 0
 end
@@ -31,7 +31,7 @@ function enemy:go(direction)
       bounces = bounces + 1
       enemy:go(enemy:get_new_direction())
     else
-      enemy:remove()
+      enemy:remove_life(1)
     end
   end
 
@@ -42,7 +42,7 @@ end
 -- Destroy the fireball when the hero is touched.
 function enemy:on_attacking_hero(hero, enemy_sprite)
   hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
-  enemy:remove()
+  enemy:remove_life(1)
 end
 
 -- Change the direction of the movement when hit with the sword.

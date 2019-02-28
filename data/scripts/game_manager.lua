@@ -10,6 +10,7 @@ local quest_update_icon = require"scripts/menus/quest_update_icon"
 local objectives_manager = require"scripts/objectives_manager"
 local dash_manager = require"scripts/action/dash_manager"
 local map_banner = require"scripts/menus/map_banner"
+local title_screen = require"scripts/menus/title_screen"
 
 local game_manager = {}
 
@@ -123,6 +124,7 @@ function game_manager:create(file_name)
         end
       end)
 
+    elseif key == "l" then sol.menu.start(game, title_screen)
 
       --DEBUG FUNCTIONS
     elseif key == "r"  and DEBUG_MODE then

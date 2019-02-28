@@ -37,7 +37,7 @@ local lightning_duration = 200 -- In milliseconds.
 local max_lightning_opacity = 5 -- (Opaque = 255).
 local min_lightning_delay, max_lightning_delay = 6000, 18000
 local min_thunder_delay, max_thunder_delay = 500, 2500 
-local min_darkness, max_darkness = 60, 200 -- Opacity during storm.
+local min_darkness, max_darkness = 60, 150 -- Opacity during storm.
 local current_darkness = 0 -- Opacity (transparent = 0, opaque = 255).
 --local color_darkness = {150, 150, 240} -- Used for full darkness.
 local color_darkness = {150, 150, 140} -- Used for full darkness.

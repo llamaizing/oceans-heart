@@ -1,18 +1,21 @@
 animation{
   name = "closed",
-  src_image = "tileset",
+  src_image = "entities/door_vines.png",
   directions = {
-    { x = 96, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 96, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 96, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 96, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+    { x = 0, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
   },
 }
 animation{
   name = "destroy",
-  src_image = "tileset",
-  frame_delay = 100,
+  src_image = "entities/door_vines.png",
+  frame_delay = 160,
   directions = {
-    { x = 128, y = 32, frame_width = 32, frame_height = 32, origin_x = 32, origin_y = 29, num_frames = 6 },
+    { x = 0, y = 16, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 7, num_columns = 1 },
+    { x = 0, y = 16, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 7, num_columns = 1 },
+    { x = 0, y = 16, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 7, num_columns = 1 },
+    { x = 0, y = 16, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13, num_frames = 7, num_columns = 1 },
   },
 }

@@ -30,9 +30,9 @@ function entity:on_created()
 
 local function destroy_self()
   -- If your sprite has a diffrent animation for being destoryed, change the string "destroy"  into that animation id.
-  entity:set_modified_ground("empty")
   entity:get_sprite():set_animation("destroy",
   function()
+    entity:set_modified_ground("empty")
     entity:set_enabled(false)
   end)
 end

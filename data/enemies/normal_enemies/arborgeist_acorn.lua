@@ -12,7 +12,8 @@ local properties = {
   detection_distance = 96,
   attack_distance = 56,
   wind_up_time = 100,
-  attack_sound = "bush"
+  attack_sound = "bush",
+  dying_sprite = "enemies/enemy_killed_small",
 }
 
 behavior:create(enemy, properties)

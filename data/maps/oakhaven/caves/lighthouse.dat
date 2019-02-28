@@ -1122,7 +1122,7 @@ switch{
   layer = 0,
   x = 184,
   y = 48,
-  subtype = "walkable",
+  subtype = "solid",
   sprite = "entities/switch_lever_1",
   needs_block = false,
   inactivate_when_leaving = false,

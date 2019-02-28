@@ -11,6 +11,7 @@ function enemy:on_created()
   enemy:set_obstacle_behavior("flying")
   enemy:set_can_hurt_hero_running(true)
   enemy:set_invincible()
+  enemy:set_dying_sprite_id("enemies/enemy_killed_projectile")
   enemy:set_attack_consequence("sword", "custom")
   NUM_CHILDREN = 6
 end

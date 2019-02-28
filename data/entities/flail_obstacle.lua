@@ -1,0 +1,28 @@
+local entity = ...
+local game = entity:get_game()
+local map = entity:get_map()
+
+local function destroy_self()
+  sol.audio.play_sound("running_obstacle")
+  if entity:get_sprite():has_animation("destroy") then
+    entity:get_sprite():set_animation("destroy", function()
+      entity:remove()
+    end)
+  else
+    entity:remove()
+  end
+end
+
+function entity:on_created()
+  entity:set_drawn_in_y_order(true)
+  entity:set_modified_ground("wall")
+
+  --collision test
+  entity:add_collision_test("sprite", function(entity, other_entity)
+
+    if other_entity:get_name() == "flail_chain_link" or other_entity:get_name() == "flail_spike_ball" then
+      destroy_self()
+    end
+  end)
+
+end

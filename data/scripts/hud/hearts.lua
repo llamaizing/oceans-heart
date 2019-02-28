@@ -1,4 +1,6 @@
 -- Hearts view used in game screen and in the savegames selection screen.
+local MAX_HEARTS = 26
+
 
 local hearts_builder = {}
 
@@ -8,7 +10,7 @@ function hearts_builder:new(game, config)
 
   local hearts = {}
 
-  hearts.surface = sol.surface.create(80, 16)
+  hearts.surface = sol.surface.create(4*MAX_HEARTS, 16)
   hearts.dst_x = config.x
   hearts.dst_y = config.y
   hearts.max_life_displayed = game:get_max_life()
@@ -17,9 +19,8 @@ function hearts_builder:new(game, config)
 
   function hearts:repeat_danger_sound()
     if game:get_life() <= game:get_max_life() / 4 then
---maybe I'll leave this in but, come on, it's annoying.
---      sol.audio.play_sound("danger")
-      hearts.danger_sound_timer = sol.timer.start(hearts, 3000, function()
+      sol.audio.play_sound("danger")
+      hearts.danger_sound_timer = sol.timer.start(hearts, 5000, function()
         hearts:repeat_danger_sound()
       end)
       hearts.danger_sound_timer:set_suspended_with_map(true)
@@ -38,11 +39,11 @@ function hearts_builder:new(game, config)
     for j = 1, max_life do
       if j % 2 == 0 then
         local x, y
-        if j <= 20 then
+        if j <= MAX_HEARTS then
           x = 4 * (j - 2)
           y = 0
         else
-          x = 4 * (j - 22)
+          x = 4 * (j - MAX_HEARTS - 2)
           y = 8
         end
         if life >= j then
@@ -54,11 +55,11 @@ function hearts_builder:new(game, config)
     end
     if life % 2 == 1 then
       local x, y
-      if life <= 20 then
+      if life <= MAX_HEARTS then
         x = 4 * (life - 1)
         y = 0
       else
-        x = 4 * (life - 21)
+        x = 4 * (life - MAX_HEARTS - 1)
         y = 8
       end
       hearts_img:draw_region(8, 0, 8, 8, hearts.surface, x, y)
