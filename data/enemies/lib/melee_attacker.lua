@@ -105,7 +105,7 @@ function behavior:create(enemy, properties)
     self:set_attack_consequence("fire", properties.fire_consequence)
     self:set_attack_consequence("sword", properties.sword_consequence)
     self:set_attack_consequence("arrow", properties.arrow_consequence)
-    if properties.dying_sprite then self:set_dying_sprite_id(properties.dying_sprite)
+    if properties.dying_sprite then self:set_dying_sprite_id(properties.dying_sprite) end
   end
 
   function enemy:on_movement_changed(movement)

@@ -12,7 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
-
+  map:get_camera():letterbox()
 
 end)
 

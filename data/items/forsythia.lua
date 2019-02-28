@@ -6,7 +6,7 @@ function item:on_started()
   item:set_amount_savegame_variable("amount_forsythia")
 end
 
-function item:on_obtained()
+function item:on_obtained(variant)
   local amounts = {1, 5, 10}
   local amount = amounts[variant]
   if amount == nil then

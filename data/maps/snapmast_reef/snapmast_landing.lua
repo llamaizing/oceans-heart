@@ -12,7 +12,6 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
-  self:get_camera():letterbox()
   local world = map:get_world()
   game:set_world_rain_mode(world, "storm")
   if game:get_value("quest_snapmast") == 0 then game:set_value("quest_snapmast", 1) end

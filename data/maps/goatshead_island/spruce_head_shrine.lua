@@ -13,7 +13,7 @@ local hero = map:get_hero()
 
 
 map:register_event("on_started", function()
-  self:get_camera():letterbox()
+  map:get_camera():letterbox()
   ilex_2:set_enabled(false)
   statue_treasure_chest:set_enabled(false)
   if game:get_value("spruce_head_arborgeist_defeated") == true then
