@@ -33,7 +33,9 @@ function sol.main:on_key_pressed(key, modifiers)
   elseif key == "f11" or
     (key == "return" and (modifiers.alt or modifiers.control)) then
     -- F11 or Ctrl + return or Alt + Return: switch fullscreen.
-    sol.video.set_fullscreen(not sol.video.is_fullscreen())
+    local is_fullscreen = sol.video.is_fullscreen()
+    sol.video.set_fullscreen(not is_fullscreen)
+    sol.video.set_cursor_visible(is_fullscreen) -- hide mouse on fullscreen
     handled = true
   elseif key == "f4" and modifiers.alt then
     -- Alt + F4: stop the program.
@@ -43,7 +45,11 @@ function sol.main:on_key_pressed(key, modifiers)
     -- Escape in title screens: stop the program.
 --    sol.main.exit()
     handled = true
-
+  elseif key == "escape" and sol.video.is_fullscreen() then
+    -- Escape fullscreen
+    sol.video.set_fullscreen(false)
+    sol.video.set_cursor_visible(true)
+    handled = true
   end
 
   return handled
@@ -51,7 +57,7 @@ end
 
 --Starts a game.
 function sol.main:start_savegame(game)
-  
+
   sol.main.game = game
   game:start()
 end
