@@ -2,6 +2,6 @@ animation{
   name = "walking",
   src_image = "menus/title_screen/cloud_2.png",
   directions = {
-    { x = 8, y = 16, frame_width = 136, frame_height = 64, origin_x = 0, origin_y = 0 },
+    { x = 0, y = 0, frame_width = 136, frame_height = 88, origin_x = 0, origin_y = 0 },
   },
 }

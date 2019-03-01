@@ -2,8 +2,6 @@ local title_screen = {}
 
 local background_sprite = sol.sprite.create("menus/title_screen/background")
 local sea_sparkle = sol.sprite.create("menus/title_screen/sea_sparkle")
-local cloud_1 = sol.sprite.create("menus/title_screen/cloud_1")
-local cloud_2 = sol.sprite.create("menus/title_screen/cloud_2")
 local sky = sol.surface.create("menus/title_screen/sky.png")
 local seagull = sol.sprite.create("menus/title_screen/seagull")
 local cursor_sprite = sol.sprite.create("menus/cursor")
@@ -32,10 +30,10 @@ local function create_cloud()
   local speed
   local j = #clouds + 1
   if j % 2 == 0 then
-    clouds[j] = sol.sprite.create("menus/title_screen/cloud_1")
+    clouds[j] = sol.sprite.create("menus/title_screen/cloud_" .. math.floor(math.random(1,8)))
     speed = 16
   else
-    clouds[j] = sol.sprite.create("menus/title_screen/cloud_2")
+    clouds[j] = sol.sprite.create("menus/title_screen/cloud_" .. math.floor(math.random(1,8)))
     speed = 12
   end
 
@@ -101,16 +99,16 @@ function title_screen:on_draw(dst_surface)
   end
   background_sprite:draw(dst_surface)
   sea_sparkle:draw(dst_surface)
-  seagull:draw(dst_surface, 300, 42)
-  selection_surface:draw(dst_surface, 245, 190)
+  seagull:draw(dst_surface, 340, 42)
+  selection_surface:draw(dst_surface, 344, 190)
   leaf_surface:draw(dst_surface)
   for i=1 , #leaves do
     leaves[i]:draw(dst_surface)
   end
   if cursor_index == 0 then
-    cursor_sprite:draw(dst_surface, 245, 194)
+    cursor_sprite:draw(dst_surface, 347, 194)
   elseif cursor_index == 1 then
-    cursor_sprite:draw(dst_surface, 245, 210)
+    cursor_sprite:draw(dst_surface, 347, 210)
   end
 
   black_fill:draw(dst_surface)
