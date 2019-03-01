@@ -549,6 +549,12 @@ sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/title_screen/background", description = "Background" }
 sprite{ id = "menus/title_screen/cloud_1", description = "Cloud 1" }
 sprite{ id = "menus/title_screen/cloud_2", description = "Cloud 2" }
+sprite{ id = "menus/title_screen/cloud_3", description = "Cloud 3" }
+sprite{ id = "menus/title_screen/cloud_4", description = "Cloud 4" }
+sprite{ id = "menus/title_screen/cloud_5", description = "Cloud 5" }
+sprite{ id = "menus/title_screen/cloud_6", description = "Cloud 6" }
+sprite{ id = "menus/title_screen/cloud_7", description = "Cloud 7" }
+sprite{ id = "menus/title_screen/cloud_8", description = "Cloud 8" }
 sprite{ id = "menus/title_screen/sea_sparkle", description = "Sea Sparkle" }
 sprite{ id = "menus/title_screen/seagull", description = "Seagull - title screen" }
 sprite{ id = "npc/big_guy_1", description = "big guy 1" }

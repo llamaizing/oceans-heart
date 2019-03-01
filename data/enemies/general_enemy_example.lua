@@ -33,10 +33,10 @@ local properties = {
   ranged_attack_cooldown = 5000,
   ranged_attack_sound = "shoot",
   projectile_breed = "misc/energy_ball_bounce",
---optional properties for ranged attack are projectile_damage, projectile_split_children, and projectile_num_bounces, if the projectile breed will accept them!
   projectile_angle = "any",
+--optional properties for ranged attack are projectile_damage, projectile_split_children, and projectile_num_bounces, if the projectile breed will accept them!
 
-  has_summon_attack = true,
+--  has_summon_attack = true,
   summon_attack_distance = 200,
   summon_attack_cooldown = 9000,
   summon_attack_wind_up_time = 1000,
@@ -46,7 +46,7 @@ local properties = {
   summon_group_delay = 1000,
   protected_while_summoning = true,
 
-  has_orbit_attack = true,
+--  has_orbit_attack = true,
   orbit_attack_distance = 190,
   orbit_attack_cooldown = 7000,
   orbit_attack_sound = "gravel",
@@ -64,7 +64,7 @@ local properties = {
   dash_attack_direction = "target_hero",
   dash_attack_length = 96,
   dash_attack_speed = 120,
-  dash_attack_wind_up = 600,
+  dash_attack_wind_up = 600,  
   dash_attack_sound = "running",
  
 --  has_teleport = true,
@@ -73,6 +73,16 @@ local properties = {
   invincible_while_charging_teleport = true,
   teleport_length = 120,
   time_phased_out = 4000, 
+
+--  has_radial_attack = true,
+  radial_attack_projectile_breed = "misc/blue_fire",
+  radial_attack_cooldown = 3500,
+  radial_attack_distance = 60,
+  radial_attack_sound = "dash",
+  radial_attack_num_projectiles = 6,
+  radial_attack_charging_time = 1500,
+  radial_attack_shoot_delay = 500,
+  radial_attack_stop_while_charging = true,
 
 
 }
