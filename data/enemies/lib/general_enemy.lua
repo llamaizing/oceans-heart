@@ -444,7 +444,7 @@ end
     if sprite:has_animation("orbit_attack_wind_up") then sprite:set_animation("orbit_attack_wind_up") end
     for i=1, NUM_PROJECTILES do
       sol.timer.start(map, CHARGE_TIME/NUM_PROJECTILES * i, function()
-        sol.audio.play_sound(properties.orbit_attack_summon_sound or "shield")
+        sol.audio.play_sound(properties.orbit_attack_summon_sound or "summon_in")
         projectiles[i] = map:create_enemy({
           x = x, y = y, layer = layer, direction = direction,
           breed = properties.orbit_attack_projectile_breed
@@ -469,7 +469,7 @@ end
             m:set_speed(160)
             m:set_smooth(false)
             projectiles[i]:stop_movement()
-            sol.audio.play_sound(properties.orbit_attack_launch_sound or "shoot")
+            sol.audio.play_sound(properties.orbit_attack_launch_sound or "shoot_magic")
             m:start(projectiles[i], function() projectiles[i]:remove() end)
             function m:on_obstacle_reached() projectiles[i]:remove() end
             if properties.use_projectile_go_method then
@@ -497,7 +497,7 @@ end
     if sprite:has_animation("radial_attack_wind_up") then sprite:set_animation("radial_attack_wind_up") end
     for i=1, NUM_PROJECTILES do
       sol.timer.start(map, CHARGE_TIME / NUM_PROJECTILES * i, function()
-        sol.audio.play_sound(properties.radial_attack_summon_sound or "shield")
+        sol.audio.play_sound(properties.radial_attack_summon_sound or "summon_in")
         projectiles[i] = map:create_enemy({
           x = x, y = y, layer = layer, direction = direction,
           breed = properties.radial_attack_projectile_breed
@@ -515,7 +515,7 @@ end
 
     sol.timer.start(map, CHARGE_TIME + SHOOT_DELAY, function()
       sol.audio.play_sound("sword2")
-      sol.audio.play_sound(properties.radial_attack_launch_sound or "shoot")
+      sol.audio.play_sound(properties.radial_attack_launch_sound or "shoot_magic")
       for i=1, NUM_PROJECTILES do
         if projectiles[i]:exists() and projectiles[i]:get_life() > 0 then
           local m = sol.movement.create("straight")

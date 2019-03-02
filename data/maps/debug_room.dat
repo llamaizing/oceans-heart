@@ -4783,9 +4783,9 @@ block{
 enemy{
   layer = 0,
   x = 456,
-  y = 317,
+  y = 309,
   direction = 0,
-  breed = "normal_enemies/pirate_bruiser",
+  breed = "normal_enemies/drowned_spirit",
 }
 
 enemy{
@@ -4793,7 +4793,15 @@ enemy{
   x = 544,
   y = 325,
   direction = 0,
-  breed = "normal_enemies/pirate_bruiser",
+  breed = "normal_enemies/skeleton_summoner",
+}
+
+enemy{
+  layer = 0,
+  x = 536,
+  y = 421,
+  direction = 0,
+  breed = "bosses/fiend_1",
 }
 
 tile{
