@@ -125,7 +125,7 @@ function sound_atmosphere_manager:start_atmosphere(map, type)
 
   if type == "rain_inside" then
     sol.timer.start(map, 1, function()
-      sol.audio.play_sound(rain_sounds[math.random(1, #rain_sounds)])
+      sol.audio.play_sound(rain_inside_sounds[math.random(1, #rain_inside_sounds)])
       return 3000
     end)
   end
