@@ -191,6 +191,11 @@ main{
 }
 
 main{
+	dialog_id = "quest.main.isle_of_storms",
+	calc_phase = "quest_isle_of_storms"
+}
+
+main{
     dialog_id = "quest.main.monkshood",
     calc_phase = "quest_monkshood",
     location = "location.oakhaven"

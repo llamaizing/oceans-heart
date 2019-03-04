@@ -63,14 +63,25 @@ map_meta:register_event("on_started", function(self)
 
 end) --end of on_started registered event
 
+local function calculate_speed(entity1, entity2, duration)
+  local x1, y1 = entity1:get_position()
+  local x2, y2 = entity2:get_position()
+  local distance = math.abs(sol.main.get_distance(x1, y1, x2, y2))
+  return (distance / duration)  
+end
 
 function map_meta:focus_on(camera, target_entity, callback)
+  local game = sol.main.get_game()
   hero:freeze()
+  game:set_suspended(true)
   local m = sol.movement.create("target")
   m:set_target(camera:get_position_to_track(target_entity))
-  m:set_speed(160)
+  local speed = calculate_speed(camera, target_entity, 2000)
+  if speed < 140 then speed = 140 end
+  m:set_speed(speed)
   m:set_ignore_obstacles(true)
   m:start(camera, function()
+    game:set_suspended(false)
     callback()
     sol.timer.start(camera:get_map(), 500, function()
       hero:unfreeze()

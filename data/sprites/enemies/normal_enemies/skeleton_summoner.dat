@@ -48,6 +48,17 @@ animation{
   name = "shooting",
   src_image = "enemies/normal_enemies/skeleton_summoner.png",
   frame_delay = 120,
+  directions = {
+    { x = 128, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 128, y = 32, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 128, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 128, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+  },
+}
+animation{
+  name = "wind_up",
+  src_image = "enemies/normal_enemies/skeleton_summoner.png",
+  frame_delay = 120,
   frame_to_loop_on = 0,
   directions = {
     { x = 128, y = 0, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },

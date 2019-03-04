@@ -286,7 +286,7 @@ local can_shoot = true
 	  sprite:set_animation("shooting")
 	  enemy:stop_movement()
 	  sol.timer.start(enemy, 300, function()
-		sol.audio.play_sound("stone")
+		sol.audio.play_sound("shoot")
 		local stone = enemy:create_enemy({
 		  breed = properties.projectile_breed,
 		  x = dxy[dir_sprite + 1][1],

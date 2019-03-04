@@ -7,7 +7,6 @@ properties{
   max_layer = 2,
   world = "snapmast",
   tileset = "oceanheart_outdoors_1",
-  music = "same",
 }
 
 tile{

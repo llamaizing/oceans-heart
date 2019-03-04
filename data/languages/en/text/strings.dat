@@ -32,7 +32,7 @@ text{ key = "location.snapmast", value = "Snapmast Reef" }
 text{ key = "location.snapmast_landing", value = "Snapmast Reef" }
 text{ key = "location.spruce_head", value = "Spruce Head" }
 text{ key = "location.spruce_head_shrine", value = "Spruce Head Shrine" }
-text{ key = "location.sunken_palace", value = "Sinking Palace" }
+text{ key = "location.sunken_palace", value = "The Old Summer Court" }
 text{ key = "location.smoldering_rock", value = "Smoldering Rock" }
 text{ key = "location.tern_marsh", value = "Tern Marsh" }
 text{ key = "location.veilwood", value = "The Veilwood" }
