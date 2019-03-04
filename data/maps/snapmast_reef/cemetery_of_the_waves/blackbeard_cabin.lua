@@ -9,6 +9,7 @@
 
 local map = ...
 local game = map:get_game()
+loca hero = map:get_hero()
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
@@ -22,6 +23,7 @@ end)
 function boss_sensor:on_activated()
   boss_wall:set_enabled(false)
   map:close_doors("boss_doors")
+  --insert dialog here
 end
 
 function assassinbeard:on_dead()
@@ -30,4 +32,17 @@ function assassinbeard:on_dead()
   map:create_pickable({
     layer = 0, x = 208, y = 592, treasure_name = "health_upgrade",
   })
+end
+
+function first_mate:on_interaction()
+  if game:get_value("quest_snapmast") ~= 3 then
+    game:start_dialog("_snapmast.cemetery_of_the_waves.first_mate.1", function()
+      hero:start_treasure("oceansheart_chart", function()
+        game:set_value("quest_snapmast", 3)
+        game:set_value("quest_isle_of_storms", 0)
+      end)
+    end)
+  else
+    game:start_dialog("_snapmast.cemetery_of_the_waves.first_mate.2")
+  end
 end

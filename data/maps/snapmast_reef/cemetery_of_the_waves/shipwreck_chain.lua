@@ -15,6 +15,8 @@ map:register_event("on_started", function()
   require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain_inside")
   map:get_camera():letterbox()
 
+  if game:get_value("quest_snapmast") == 1 then game:set_value("quest_snapmast", 2) end
+
 end)
 
 function b7_switch:on_activated()

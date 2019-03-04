@@ -9679,6 +9679,70 @@ Fast travel?
 }
 
 dialog{
+  id = "_snapmast.cemetery_of_the_waves.first_mate.1",
+  text = [[
+HORNIGOLD:
+Aye, I figured somethin' like this must be
+going on when I heard the ruckus. I'm
+Hornigold, Blackbeard's first mate. Seems
+HORNIGOLD:
+we're making more and more enemies
+these days.
+
+TILIA:
+Between trying to take over the seas and
+being pirates, you guys should expect that.
+I'm here to find the Isle of Storms, and
+TILIA:
+if I have to fight every pirate in this
+hideout to get its location, I will.
+
+HORNIGOLD:
+Ah, that won't be necessary. We found the
+Isle of Storms just a while ago. Some kids
+on Oakhaven had an acient chart they
+HORNIGOLD:
+couldnae even read. Blackbeard came back
+here with it, summoned the Captains and
+crews he could, and left to find the isle, but...
+HORNIGOLD:
+honestly, I'm worried about him. Blackbeard
+is me best friend. I've known him since he
+was a kid. He's a skilled fighter and leader,
+HORNIGOLD:
+but I'm worried this search for the Ocean's
+Heart is going to drive him to do something
+dangerous. Or stupid. The ancient sea-king
+HORNIGOLD:
+who first had the Ocean's Heart was destroyed
+because he lost his humility and didnae
+respect the sea. I don't want to see that
+HORNIGOLD:
+happen to Blackbeard. Here, take this chart.
+Go to the Isle of Storms. Maybe you can
+talk some sense into Blackbeard before he
+HORNIGOLD:
+makes an enemy of the Ocean herself.
+]],
+}
+
+dialog{
+  id = "_snapmast.cemetery_of_the_waves.first_mate.2",
+  text = [[
+HORNIGOLD:
+I hope you can use that chart to sail to the
+Isle of Storms and talk Blackbeard outta
+taking the Ocean's Heart for himself and
+HORNIGOLD:
+invoking the wrath of the ocean herself
+or something like that.
+
+TILIA:
+I hope I can too. Thanks, man.
+]],
+}
+
+dialog{
   id = "_treasure.amulet.1",
   text = [[
 You received a magic amulet. Created
@@ -10660,6 +10724,15 @@ dialog{
   text = [[
 You received the Oak charm. You feel as strong
 as an oak tree and can now lift heavy objects.
+]],
+}
+
+dialog{
+  id = "_treasure.oceansheart_chart.1",
+  text = [[
+You received a chart. It shows the location
+of the Isle of Storms, where the entrance
+to the Sea King's sunken palace lies.
 ]],
 }
 
@@ -12293,6 +12366,21 @@ have gone.
 }
 
 dialog{
+  id = "quest.main.isle_of_storms",
+  title = "The Isle of Storms",
+  text = [[
+Blackbeard's worried first
+mate gave you a chart showing
+the location of the Isle of Storms
+@Ask Morus to sail you to the Isle
+@Find a way into the Sea King's
+sunken palace
+@Search for the Ocean's Heart
+  
+]],
+}
+
+dialog{
   id = "quest.main.kelpton",
   title = "The Chart Salesman",
   text = [[
@@ -12396,7 +12484,8 @@ the Pirate Council's hideout
 @Meet Morus at Oakhaven Port
 @Search for the Pirate
 Council's hideout
-    
+@Find information on the
+Isle of Storms   
 ]],
 }
 
