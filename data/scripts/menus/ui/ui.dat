@@ -1,4 +1,4 @@
---[[ ui.dat		14 Dec 2018
+--[[ ui.dat		3 Mar 2019
 	
 	This data file describes ui component presets used as a starting point when generating
 	a new component.
@@ -17,7 +17,8 @@ text{
 	id = "text.location",
 	font = "proggy/ProggyTinySZ",
 	font_size = 16,
-	font_color = {166, 166, 166}, --grey
+	font_color = {214, 198, 57},--light tan
+	font_color_disabled = {166, 166, 166}, --grey
 	--shadow_color = "brown",
 	horizontal_alignment = "right",
 }
@@ -59,6 +60,13 @@ frame{
 	region_x = 0, region_y = 0,
 	borders = 8,
 	is_hollow = true,
+}
+frame{ --just the top edge for frame.dialog_box
+	id = "frame.dialog_box_top_edge",
+	image = "menus/ui.png",
+	region_width = 8, region_height = 8,
+	region_x = 8, region_y = 0,
+	borders = {0,8,0,0},
 }
 frame{
 	id = "frame.list_highlight",
