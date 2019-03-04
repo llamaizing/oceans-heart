@@ -36,3 +36,13 @@ function door_a1_switch:on_activated()
   sol.audio.play_sound("switch")
   map:open_doors("door_a1")
 end
+
+
+
+
+function chest_mimic:on_dead()
+  if not cemetery_of_the_waves_chest_d1_state then
+    sol.audio.play_sound("secret")
+    coral_ore_chest:set_enabled(true)
+  end
+end

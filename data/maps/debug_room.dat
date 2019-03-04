@@ -2973,7 +2973,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "snapmast_reef/drowned_village",
+  destination_map = "snapmast_reef/cemetery_of_the_waves/shipwreck_chain",
+  destination = "entrance",
 }
 
 pickable{
