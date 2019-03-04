@@ -4804,6 +4804,13 @@ enemy{
   breed = "bosses/fiend_1",
 }
 
+pickable{
+  layer = 0,
+  x = 256,
+  y = 1181,
+  treasure_name = "bow_warp",
+}
+
 tile{
   layer = 1,
   x = 192,
