@@ -4727,6 +4727,15 @@ tile{
   tileset = "overworld_oakhaven",
 }
 
+tile{
+  layer = 0,
+  x = 152,
+  y = 576,
+  width = 96,
+  height = 96,
+  pattern = "2028",
+}
+
 separator{
   layer = 0,
   x = 0,
@@ -4767,6 +4776,24 @@ teletransporter{
   height = 16,
   destination_map = "snapmast_reef/cemetery_of_the_waves/shipwreck_chain",
   destination = "from_blackbeard_cabin",
+}
+
+destination{
+  name = "from_entrance",
+  layer = 0,
+  x = 200,
+  y = 653,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 216,
+  y = 920,
+  width = 16,
+  height = 16,
+  destination_map = "snapmast_reef/cemetery_of_the_waves/blackbeard_cabin",
+  destination = "from_entrance",
 }
 
 tile{
@@ -5101,5 +5128,14 @@ tile{
   width = 16,
   height = 16,
   pattern = "2176",
+}
+
+tile{
+  layer = 2,
+  x = -24,
+  y = 720,
+  width = 480,
+  height = 512,
+  pattern = "2006",
 }
 
