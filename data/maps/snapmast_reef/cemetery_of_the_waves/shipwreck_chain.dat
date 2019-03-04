@@ -47212,26 +47212,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 528,
-  y = 16,
-  width = 16,
-  height = 32,
-  pattern = "wall.pillar.up",
-  tileset = "cave_2",
-}
-
-tile{
-  layer = 0,
-  x = 608,
-  y = 16,
-  width = 16,
-  height = 32,
-  pattern = "wall.pillar.up",
-  tileset = "cave_2",
-}
-
-tile{
-  layer = 0,
   x = 584,
   y = 16,
   width = 16,
@@ -47248,24 +47228,6 @@ tile{
   height = 32,
   pattern = "wall.pillar.up",
   tileset = "cave_2",
-}
-
-tile{
-  layer = 0,
-  x = 528,
-  y = 24,
-  width = 16,
-  height = 24,
-  pattern = "2178",
-}
-
-tile{
-  layer = 0,
-  x = 608,
-  y = 24,
-  width = 16,
-  height = 24,
-  pattern = "2178",
 }
 
 tile{
@@ -47455,6 +47417,62 @@ tile{
   width = 16,
   height = 16,
   pattern = "686",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "2163",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 16,
+  width = 32,
+  height = 32,
+  pattern = "wall.pillar.up",
+  tileset = "cave_2",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 24,
+  width = 16,
+  height = 24,
+  pattern = "2178",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 24,
+  width = 16,
+  height = 8,
+  pattern = "2164",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 16,
+  width = 32,
+  height = 32,
+  pattern = "wall.pillar.up",
+  tileset = "cave_2",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 24,
+  width = 16,
+  height = 24,
+  pattern = "2178",
 }
 
 sensor{
@@ -52879,6 +52897,18 @@ block{
   pullable = false,
 }
 
+door{
+  layer = 0,
+  x = 568,
+  y = 24,
+  direction = 3,
+  sprite = "entities/door_locked",
+  savegame_variable = "graveyard_of_the_waves_locked_door_b1",
+  opening_method = "interaction_if_item",
+  opening_condition = "key_graveyard_of_the_waves",
+  opening_condition_consumed = true,
+}
+
 tile{
   layer = 1,
   x = 960,
@@ -54372,24 +54402,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 512,
-  y = 24,
-  width = 16,
-  height = 8,
-  pattern = "2163",
-}
-
-tile{
-  layer = 1,
-  x = 624,
-  y = 24,
-  width = 16,
-  height = 8,
-  pattern = "2164",
-}
-
-tile{
-  layer = 1,
   x = 624,
   y = 72,
   width = 16,
@@ -55866,6 +55878,33 @@ tile{
   width = 16,
   height = 8,
   pattern = "687",
+}
+
+tile{
+  layer = 1,
+  x = 568,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "518",
+}
+
+tile{
+  layer = 1,
+  x = 560,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "516",
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "517",
 }
 
 enemy{
