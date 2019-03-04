@@ -3754,6 +3754,13 @@ destructible{
   can_be_cut = true,
 }
 
+pickable{
+  layer = 0,
+  x = 432,
+  y = 237,
+  treasure_name = "oceansheart_chart",
+}
+
 tile{
   layer = 1,
   x = 304,

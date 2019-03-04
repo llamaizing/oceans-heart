@@ -22,7 +22,31 @@ end)
 
 function morus:on_interaction()
   if game:has_item("oceansheart_chart") == true then
+    if not game:get_value("showed_morus_the_oceansheart_chart") then
+      game:start_dialog("_oakhaven.npcs.morus.8_have_ocean_chart", function()
+        game:start_dialog("_oakhaven.npcs.morus.ferry_2", function(answer)
+          if answer == 1 then
+            hero:teleport("oakhaven/port", "morus_landing")
+          elseif answer == 2 then
+            game:start_dialog("_oakhaven.npcs.morus.ferry_already")
+          elseif answer == 3 then
+            hero:teleport("isle_of_storms/isle_of_storms_landing", "ferry_landing")
+          end
+        end)
+      end)
+      game:set_value("showed_morus_the_oceansheart_chart", true)
 
+    else
+      game:start_dialog("_oakhaven.npcs.morus.ferry_2", function(answer)
+        if answer == 1 then
+          hero:teleport("oakhaven/port", "morus_landing")
+        elseif answer == 2 then
+          game:start_dialog("_oakhaven.npcs.morus.ferry_already")
+        elseif answer == 3 then
+          hero:teleport("isle_of_storms/isle_of_storms_landing", "ferry_landing")
+        end
+      end)
+    end
   else
     game:start_dialog("_oakhaven.npcs.morus.ferry_1_reef", function(answer)
       if answer == 2 then

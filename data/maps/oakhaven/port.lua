@@ -151,9 +151,18 @@ function yarrowmouth_ferry:on_interaction()
   end)
 end
 
+
 function morus:on_interaction()
   if game:has_item("oceansheart_chart") == true then
-
+    game:start_dialog("_oakhaven.npcs.morus.ferry_2", function(answer)
+      if answer == 1 then
+        game:start_dialog("_oakhaven.npcs.morus.ferry_already")
+      elseif answer == 2 then
+        hero:teleport("snapmast_reef/snapmast_landing", "ferry_landing")
+      elseif answer == 3 then
+        hero:teleport("isle_of_storms/isle_of_storms_landing", "ferry_landing")
+      end
+    end)
   else
     game:start_dialog("_oakhaven.npcs.morus.ferry_1", function(answer)
       if answer == 2 then

@@ -8578,6 +8578,23 @@ I'll meet you down at the port.
 }
 
 dialog{
+  id = "_oakhaven.npcs.morus.8_have_ocean_chart",
+  text = [[
+MORUS:
+Ready to head out, Tilia?
+
+
+TILIA:
+Yeah. I got a chart that shows where the
+Isle of Storms is!
+
+MORUS:
+Alright, kiddo. If you're sure, then I can
+take you there.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.morus.ferry_1",
   text = [[
 MORUS:
@@ -8600,6 +8617,28 @@ Do you need to go back to Oakhaven?
 TILIA:
 $?Let's set sail.
 $?Not now.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.ferry_2",
+  text = [[
+MORUS:
+Where to, Tilia?
+
+
+$?Oakhaven
+$?Snapmast Reef
+$?The Isle of Storms
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.ferry_already",
+  text = [[
+MORUS:
+What? That's where we already are,
+Tilia.
 ]],
 }
 
