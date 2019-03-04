@@ -244,6 +244,7 @@ tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
 sprite{ id = "console/cursor", description = "cursor" }
 sprite{ id = "console/icons", description = "icons" }
+sprite{ id = "enemies/bosses/assassinbeard", description = "Assassinbeard" }
 sprite{ id = "enemies/bosses/aubrey", description = "Aubrey" }
 sprite{ id = "enemies/bosses/avalanche_golem", description = "Avalanche Golem" }
 sprite{ id = "enemies/bosses/bart", description = "enemies/bosses/bart" }
@@ -576,6 +577,7 @@ sprite{ id = "npc/dockworker_6", description = "Dockworker 6" }
 sprite{ id = "npc/dockworker_7", description = "Dockworker 7" }
 sprite{ id = "npc/dockworker_8", description = "Dockworker 8" }
 sprite{ id = "npc/eamon", description = "Eamon" }
+sprite{ id = "npc/first_mate", description = "First Mate" }
 sprite{ id = "npc/fishing_2_left", description = "Fishing 2 - left" }
 sprite{ id = "npc/fishing_2_right", description = "Fishing 2 - Right" }
 sprite{ id = "npc/fishing_left", description = "npc/fishing_left" }
@@ -1337,6 +1339,7 @@ item{ id = "watering_can", description = "watering can" }
 item{ id = "whisky_for_juglan", description = "Whisky for Juglan" }
 item{ id = "witch_hazel", description = "Witch Hazel-1,3,5,10" }
 
+enemy{ id = "bosses/assassinbeard", description = "Assassinbeard" }
 enemy{ id = "bosses/aubrey", description = "Aubrey" }
 enemy{ id = "bosses/avalanche_golem", description = "Avalanche Golem" }
 enemy{ id = "bosses/bart", description = "Bart" }

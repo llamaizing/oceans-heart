@@ -26,10 +26,10 @@ local hud_config = {
       y = 1,
     },
 
-  --[[ Rupee counter.
+  -- Rupee counter.
   {
     menu_script = "scripts/hud/rupees",
-    x = 333,
+    x = 360,
     y = 220,
   },
 -- ]]
