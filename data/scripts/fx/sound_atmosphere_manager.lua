@@ -110,7 +110,7 @@ local rain_inside_sounds = {
 function sound_atmosphere_manager:start_atmosphere(map, type)
 
   if type == "birds" then
-    sol.timer.start(map, math.random(1000, 1800), function()
+    local timer = sol.timer.start(map, math.random(1000, 1800), function()
       local sound
       local set = math.random(1, 3)
       if set <= 2 then sound = robin_sounds[math.random(1, #robin_sounds)]
@@ -118,16 +118,19 @@ function sound_atmosphere_manager:start_atmosphere(map, type)
       sol.audio.play_sound(sound)
       return math.random(300, 1800)
     end)
-    sol.timer.start(map, math.random(300, 1800), function()
+    timer:set_suspended_with_map(false)
+    local timer2 = sol.timer.start(map, math.random(300, 1800), function()
       sol.audio.play_sound(bird_sounds[math.random(1, #bird_sounds)])
     end)
+    timer2:set_suspended_with_map(false)
   end
 
   if type == "rain_inside" then
-    sol.timer.start(map, 1, function()
+    local timer = sol.timer.start(map, 1, function()
       sol.audio.play_sound(rain_inside_sounds[math.random(1, #rain_inside_sounds)])
       return 3000
     end)
+    timer:set_suspended_with_map(false)
   end
 
 end
