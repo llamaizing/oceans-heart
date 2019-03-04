@@ -52909,6 +52909,15 @@ door{
   opening_condition_consumed = true,
 }
 
+wall{
+  layer = 0,
+  x = 112,
+  y = 376,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
 tile{
   layer = 1,
   x = 960,

@@ -10529,78 +10529,7 @@ enemy{
 }
 
 enemy{
-  layer = 0,
-  x = 72,
-  y = 549,
-  properties = {
-    {
-      key = "delay",
-      value = "4000",
-    },
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  direction = 0,
-  breed = "misc/barrel_cannon",
-}
-
-enemy{
-  layer = 0,
-  x = 72,
-  y = 565,
-  properties = {
-    {
-      key = "delay",
-      value = "4000",
-    },
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  direction = 0,
-  breed = "misc/barrel_cannon",
-}
-
-enemy{
-  layer = 0,
-  x = 72,
-  y = 581,
-  properties = {
-    {
-      key = "delay",
-      value = "4000",
-    },
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  direction = 0,
-  breed = "misc/barrel_cannon",
-}
-
-enemy{
-  layer = 0,
-  x = 72,
-  y = 597,
-  properties = {
-    {
-      key = "delay",
-      value = "4000",
-    },
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  direction = 0,
-  breed = "misc/barrel_cannon",
-}
-
-enemy{
+  name = "barrel_cannon_4",
   layer = 0,
   x = 344,
   y = 613,
@@ -10615,48 +10544,7 @@ enemy{
 }
 
 enemy{
-  layer = 0,
-  x = 344,
-  y = 629,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  direction = 2,
-  breed = "misc/barrel_cannon",
-}
-
-enemy{
-  layer = 0,
-  x = 344,
-  y = 645,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  direction = 2,
-  breed = "misc/barrel_cannon",
-}
-
-enemy{
-  layer = 0,
-  x = 344,
-  y = 661,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  direction = 2,
-  breed = "misc/barrel_cannon",
-}
-
-enemy{
+  name = "barrel_cannon",
   layer = 0,
   x = 72,
   y = 533,
@@ -10674,20 +10562,6 @@ enemy{
   breed = "misc/barrel_cannon",
 }
 
-enemy{
-  layer = 0,
-  x = 344,
-  y = 677,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  direction = 2,
-  breed = "misc/barrel_cannon",
-}
-
 custom_entity{
   name = "leaf_pile_2",
   layer = 0,
@@ -10701,6 +10575,7 @@ custom_entity{
 }
 
 enemy{
+  name = "barrel_cannon_3",
   layer = 0,
   x = 264,
   y = 517,
@@ -10719,44 +10594,9 @@ enemy{
 }
 
 enemy{
-  layer = 0,
-  x = 280,
-  y = 517,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-    {
-      key = "delay",
-      value = "2000",
-    },
-  },
-  direction = 3,
-  breed = "misc/barrel_cannon",
-}
-
-enemy{
+  name = "barrel_cannon_2",
   layer = 0,
   x = 136,
-  y = 517,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-    {
-      key = "delay",
-      value = "6000",
-    },
-  },
-  direction = 3,
-  breed = "misc/barrel_cannon",
-}
-
-enemy{
-  layer = 0,
-  x = 152,
   y = 517,
   properties = {
     {
@@ -10817,6 +10657,180 @@ npc{
   direction = 1,
   subtype = 1,
   sprite = "npc/first_mate",
+}
+
+enemy{
+  name = "barrel_cannon_5",
+  layer = 0,
+  x = 72,
+  y = 549,
+  properties = {
+    {
+      key = "delay",
+      value = "4000",
+    },
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  direction = 0,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "barrel_cannon_6",
+  layer = 0,
+  x = 72,
+  y = 565,
+  properties = {
+    {
+      key = "delay",
+      value = "4000",
+    },
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  direction = 0,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "barrel_cannon_7",
+  layer = 0,
+  x = 72,
+  y = 581,
+  properties = {
+    {
+      key = "delay",
+      value = "4000",
+    },
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  direction = 0,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "barrel_cannon_8",
+  layer = 0,
+  x = 72,
+  y = 597,
+  properties = {
+    {
+      key = "delay",
+      value = "4000",
+    },
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  direction = 0,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "barrel_cannon_9",
+  layer = 0,
+  x = 344,
+  y = 629,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  direction = 2,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "barrel_cannon_10",
+  layer = 0,
+  x = 344,
+  y = 645,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  direction = 2,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "barrel_cannon_11",
+  layer = 0,
+  x = 344,
+  y = 661,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  direction = 2,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "barrel_cannon_12",
+  layer = 0,
+  x = 344,
+  y = 677,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  direction = 2,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "barrel_cannon_13",
+  layer = 0,
+  x = 280,
+  y = 517,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+    {
+      key = "delay",
+      value = "2000",
+    },
+  },
+  direction = 3,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "barrel_cannon_14",
+  layer = 0,
+  x = 152,
+  y = 517,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+    {
+      key = "delay",
+      value = "6000",
+    },
+  },
+  direction = 3,
+  breed = "misc/barrel_cannon",
 }
 
 tile{
