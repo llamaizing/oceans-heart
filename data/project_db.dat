@@ -338,6 +338,7 @@ sprite{ id = "enemies/normal_enemies/ogre_armor", description = "Ogre-Armor" }
 sprite{ id = "enemies/normal_enemies/ogre_knight", description = "Ogre Knight" }
 sprite{ id = "enemies/normal_enemies/pirate_bow_brown_1", description = "Pirate - Bow 1" }
 sprite{ id = "enemies/normal_enemies/pirate_bruiser", description = "Pirate Bruiser" }
+sprite{ id = "enemies/normal_enemies/pirate_gunner", description = "Pirate Gunner" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_1", description = "Pirate- Brown 1" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_1_weapon", description = "weapon - pirate brown 1" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_2", description = "Pirate - sword brown 2" }
@@ -1361,6 +1362,7 @@ enemy{ id = "misc/arrow_4", description = "Arrow - 4 directions" }
 enemy{ id = "misc/barrel_cannon", description = "Barrel Cannon" }
 enemy{ id = "misc/big_stone", description = "Big Stone" }
 enemy{ id = "misc/blue_fire", description = "Blue Fire" }
+enemy{ id = "misc/bomb_4_direction", description = "Bomb - 4 direction" }
 enemy{ id = "misc/bomb_any_direction", description = "Bomb-Any Direction" }
 enemy{ id = "misc/crusher_0.5", description = "Crusher 0.5 sec" }
 enemy{ id = "misc/crusher_1.0", description = "Crusher 1.0 sec" }
@@ -1426,6 +1428,7 @@ enemy{ id = "normal_enemies/ogre_armor", description = "Ogre - Armored" }
 enemy{ id = "normal_enemies/ogre_knight", description = "Ogre Knight" }
 enemy{ id = "normal_enemies/pirate_bow_brown_1", description = "Pirate - Bow/Dodge" }
 enemy{ id = "normal_enemies/pirate_bruiser", description = "Pirate Bruiser" }
+enemy{ id = "normal_enemies/pirate_gunner", description = "Pirate Gunner" }
 enemy{ id = "normal_enemies/pirate_sword_brown_1", description = "Pirate lv1" }
 enemy{ id = "normal_enemies/pirate_sword_brown_2", description = "Pirate lv2" }
 enemy{ id = "normal_enemies/pirate_sword_brown_3", description = "Pirate lv3" }

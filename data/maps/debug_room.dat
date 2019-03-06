@@ -4790,10 +4790,10 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 544,
-  y = 325,
+  x = 400,
+  y = 181,
   direction = 0,
-  breed = "normal_enemies/skeleton_summoner",
+  breed = "normal_enemies/pirate_gunner",
 }
 
 enemy{
