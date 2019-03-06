@@ -292,6 +292,7 @@ sprite{ id = "enemies/misc/pop", description = "Pop-For Enemy Attacks" }
 sprite{ id = "enemies/misc/root_small", description = "Root - Small" }
 sprite{ id = "enemies/misc/seagull", description = "seagull" }
 sprite{ id = "enemies/misc/steam_attack", description = "Steam Attack" }
+sprite{ id = "enemies/misc/stone_dragon_turret", description = "Stone Dragon Turret" }
 sprite{ id = "enemies/misc/stone_projectile", description = "Stone projectile" }
 sprite{ id = "enemies/misc/sword_slash", description = "Sword Slash" }
 sprite{ id = "enemies/misc/thyme_bomb", description = "Thyme Bomb" }
@@ -1385,6 +1386,7 @@ enemy{ id = "misc/pollutant_blocker", description = "Pollutant Blocker" }
 enemy{ id = "misc/root_small", description = "Root - Small" }
 enemy{ id = "misc/seagull", description = "Seagull" }
 enemy{ id = "misc/steam_attack", description = "Steam Attack" }
+enemy{ id = "misc/stone_dragon_turret", description = "Stone Dragon Turret" }
 enemy{ id = "misc/stone_projectile", description = "Stone Projectile" }
 enemy{ id = "misc/thyme_bomb", description = "Thyme Bomb" }
 enemy{ id = "misc/weak_tree", description = "weak tree" }

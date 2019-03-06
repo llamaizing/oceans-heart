@@ -2955,6 +2955,7 @@ destination{
   x = 152,
   y = 133,
   direction = 3,
+  default = true,
 }
 
 teletransporter{
@@ -4732,7 +4733,7 @@ custom_entity{
   origin_x = 16,
   origin_y = 29,
   direction = 3,
-  sprite = "entities/moving_platform_wood",
+  sprite = "entities/moving_platform",
   model = "moving_platform",
 }
 
@@ -4782,26 +4783,10 @@ block{
 
 enemy{
   layer = 0,
-  x = 456,
-  y = 309,
-  direction = 0,
-  breed = "normal_enemies/drowned_spirit",
-}
-
-enemy{
-  layer = 0,
-  x = 400,
-  y = 181,
+  x = 520,
+  y = 325,
   direction = 0,
   breed = "normal_enemies/pirate_gunner",
-}
-
-enemy{
-  layer = 0,
-  x = 536,
-  y = 421,
-  direction = 0,
-  breed = "bosses/fiend_1",
 }
 
 pickable{
