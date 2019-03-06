@@ -50,7 +50,7 @@ local item_descriptions = {
     "Bow",
     "Flame Arrows",
     "Bomb Arrows",
-    "Warp Arrows",
+    "Warpbolt Charm",
     "Magic Restoring Potion"
 }
 

@@ -10109,10 +10109,12 @@ You got the silver bow now.
 dialog{
   id = "_treasure.bow_warp.1",
   text = [[
-You received the warp spell for your
-arrows. When these arrows hit certain
-things, they'll teleport you right
-to them.
+You found the Warpbolt Charm. Use this to
+shoot bolts of light from your bow instead of
+arrows. The will consume some of your
+magic, but will affect enemies and some
+other objects in the world in unexpected
+ways.
 ]],
 }
 
