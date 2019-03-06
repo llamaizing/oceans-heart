@@ -17,16 +17,8 @@ local flying
 local initial_pos_x
 local initial_pos_y
 
-local MAGIC_COST = 25
-local enough_magic
 
 function arrow:on_created()
-  if game:get_magic() > MAGIC_COST then
-    enough_magic = true
-    game:remove_magic(MAGIC_COST)
-  else enough_magic = false
-  end
-
   local direction = arrow:get_direction()
   local horizontal = direction % 2 == 0
   if horizontal then
@@ -36,9 +28,6 @@ function arrow:on_created()
     arrow:set_size(8, 16)
     arrow:set_origin(4, 8)
   end
-
-  local bow = game:get_item("bow")
-  force = bow.get_force and bow:get_force() or 1
 
 end
 
@@ -59,22 +48,8 @@ arrow:set_can_traverse_ground("prickles", true)
 arrow:set_can_traverse_ground("low_wall", true)
 arrow.apply_cliffs = true
 
--- Triggers the animation and sound of the arrow reaching something
--- and removes the arrow after some delay.
-local function attach_to_obstacle()
-  flying = false
-  sprite:set_animation("reached_obstacle")
-  sol.audio.play_sound("arrow_hit")
-  arrow:stop_movement()
-
-  sol.timer.start(map, 1500, function()
-    arrow:remove()
-  end)
-
-end
 
 local function warp_hero(entity)
-  if enough_magic then
     enemy_x, enemy_y, enemy_layer = entity:get_position()
     if entity:get_type() == "enemy" then entity:stop_movement() end
     sol.audio.play_sound("warp")
@@ -127,52 +102,8 @@ local function warp_hero(entity)
         tracking_object:remove()
       end)
     end)
-
-  end
 end
 
-
--- Attaches the arrow to an entity and make it follow it.
-local function attach_to_entity(entity)
-  if entity_reached ~= nil then
-    -- Already attached.
-    return
-  end
-
-  -- Stop flying.
-  attach_to_obstacle()
-
-  -- Make the arrow follow the entity reached when it moves.
-  entity_reached = entity
-  local entity_reached_x, entity_reached_y = entity_reached:get_position()
-  local x, y = arrow:get_position()
-  entity_reached_dxy = { entity_reached_x - x, entity_reached_y - y }
-
-  sol.timer.start(arrow, 10, function()
-
-    if not entity_reached:exists() then
-      arrow:remove()
-      return false
-    end
-
-    if entity_reached:get_type() == "enemy" then
-      local enemy_sprite = entity_reached:get_sprite()
-      if entity_reached:get_life() <= 0 and
-          enemy_sprite ~= nil and
-          enemy_sprite:get_animation() ~= "hurt" then
-        -- Dying animation of an enemy: don't keep the arrow.
-        arrow:remove()
-        return false
-      end
-    end
-
-    x, y = entity_reached:get_position()
-    x, y = x - entity_reached_dxy[1], y - entity_reached_dxy[2]
-    arrow:set_position(x, y)
-
-    return true
-  end)
-end
 
 
 -- Hurt enemies.
@@ -181,6 +112,10 @@ arrow:add_collision_test("sprite", function(arrow, entity)
     warp_hero(entity)
     arrow:remove()
   end
+--TODO add functionality for activating ancient statues or something? Like:
+--if entity:get_type() == "custom_entity" and entity:get_model() == "ancient_statue" then
+    --entity:react_to_warp_arrow()
+--end
 
   if entity:get_type() == "enemy" then
     local enemy = entity
@@ -190,15 +125,11 @@ arrow:add_collision_test("sprite", function(arrow, entity)
     end
     enemies_touched[enemy] = true
     local arrow_reaction = enemy:get_attack_consequence_sprite(sprite, "arrow")
-    attach_to_entity(enemy)
     if arrow_reaction ~= "protected" and arrow_reaction ~= "ignored" then
-      -- if enemy:get_life() - game:get_value("bow_damage") <= 0 then
-      --   --warp hero to enemy's location
-      --   warp_hero(entity)
-      -- end
       bow_damage = game:get_value("bow_damage")
       enemy:hurt(bow_damage)
       warp_hero(entity)
+      arrow:remove()
     end
 
   end
@@ -283,5 +214,5 @@ end
 
 function arrow:on_obstacle_reached()
 
-  attach_to_obstacle()
+  arrow:remove()
 end

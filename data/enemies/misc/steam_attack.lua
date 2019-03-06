@@ -20,7 +20,7 @@ function enemy:on_created()
   enemy:set_attack_consequence("explosion", 1)
   enemy:set_can_attack(false)
   sprite:set_animation("burrowing")
-
+  enemy:set_attack_consequence("arrow", "ignored")
 
 end
 

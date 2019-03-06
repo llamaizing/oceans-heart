@@ -18,6 +18,7 @@ function enemy:on_created()
   enemy:set_invincible()
   enemy:set_dying_sprite_id("enemies/enemy_killed_projectile")
   enemy:set_attack_consequence("sword", "custom")
+  enemy:set_attack_consequence("arrow", "ignored")
 
   sprites[1] = enemy:create_sprite("enemies/" .. enemy:get_breed())
   -- Sprites 2 and 3 do not belong to the enemy to avoid testing collisions with them.

@@ -13,6 +13,7 @@ function enemy:on_created()
   enemy:set_can_hurt_hero_running(true)
 --  enemy:set_invincible()
   enemy:set_attack_consequence("sword", "custom")
+  enemy:set_attack_consequence("arrow", "ignored")
   bounces = 0
   enemy:set_dying_sprite_id("enemies/enemy_killed_small")
 

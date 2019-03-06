@@ -11,14 +11,14 @@
 local item = ...
 local game = item:get_game()
 
+local MAGIC_COST = 15
+
 function item:on_created()
 
   item:set_savegame_variable("possession_bow_warp")
-  item:set_amount_savegame_variable("amount_bow")
   item:set_assignable(true)
 end
 function item:on_started()
-  item:set_max_amount(100)
 end
 
 
@@ -38,15 +38,15 @@ function item:on_using()
   local map = game:get_map()
   local hero = map:get_hero()
 
-  if self:get_amount() == 0 then
+  if game:get_magic() < MAGIC_COST then
     sol.audio.play_sound("no")
     self:set_finished()
   else
+    game:remove_magic(MAGIC_COST)
     hero:set_animation("bow")
 
     sol.timer.start(map, 290, function()
     sol.audio.play_sound("bow")
-      self:remove_amount(1)
       self:set_finished()
 
        local x, y = hero:get_center_position()
@@ -61,27 +61,9 @@ function item:on_using()
          model = "arrow_warp",
        })
 
-
-      arrow:set_force(self:get_force())
-      arrow:set_sprite_id(self:get_arrow_sprite_id())
+      arrow:set_sprite_id("entities/arrow_warp")
       arrow:go()
 
     end)
   end
 end
-
-
-function item:get_force()
-
-  return 2
-end
-
-
--- Set the sprite for the arrow entity
-
-function item:get_arrow_sprite_id()
-     return "entities/arrow_warp"
-
-end
-
-
