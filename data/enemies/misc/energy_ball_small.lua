@@ -13,6 +13,7 @@ function enemy:on_created()
   enemy:set_invincible()
   enemy:set_dying_sprite_id("enemies/enemy_killed_projectile")
   enemy:set_attack_consequence("sword", "custom")
+  enemy:set_attack_consequence("arrow", "ignored")
   bounces = 0
 end
 

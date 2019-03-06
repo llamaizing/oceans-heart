@@ -12,6 +12,7 @@ function enemy:on_created()
 --  enemy:set_invincible()
   enemy:set_obstacle_behavior("flying")
   enemy:set_attack_consequence("sword", "custom")
+  enemy:set_attack_consequence("arrow", "ignored")
   enemy:set_dying_sprite_id("enemies/enemy_killed_projectile")
 end
 
