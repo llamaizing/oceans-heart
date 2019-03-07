@@ -12023,6 +12023,16 @@ $? Leave it
 }
 
 dialog{
+  id = "_yarrowmouth.observations.chieftans_tomb_plaque",
+  text = [[
+There's an old, weathered piece of
+wood here. Carved into it, it says:
+"Here lies the last true chieftan
+of the Bear Warriors"
+]],
+}
+
+dialog{
   id = "_yarrowmouth.observations.hidden_bait",
   text = [[
 Huh, monster bait. Wonder who left this

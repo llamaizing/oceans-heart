@@ -2974,8 +2974,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/naerreturn_bay",
-  destination = "from_lighthouse",
+  destination_map = "Yarrowmouth/interiors/silent_glade_health",
+  destination = "from_outside",
 }
 
 pickable{
