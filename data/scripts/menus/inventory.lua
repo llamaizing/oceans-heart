@@ -30,30 +30,6 @@ local all_equipment_items = {
     {item = "elixer", name = "Elixer Vitae", use_immediately = true,},
 }
 
---captions for each item. Has to be in same order
-local item_descriptions = {
-    "Barrier Charm",
-    "Boomerang",
-    "Spear",
-    "Flail",
-    "Hookshot",
-    "Tornado Dash",
-    "Zephyrine's Tempest",
-    "Ophira's Ember",
-    "Amalenchier's Wrath",
-    "Seabird's Tear",
-    "Bombs",
-    "Bow",
-    "Flame Arrows",
-    "Bomb Arrows",
-    "Warpbolt Charm",
-    "Magic Restoring Potion",
-    "Berries",
-    "Apple",
-    "Bread",
-    "Elixer Vitae",
-}
-
 --constants:
 local GRID_ORIGIN_X = 10
 local GRID_ORIGIN_Y = 72
