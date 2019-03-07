@@ -18,6 +18,12 @@ map:register_event("on_started", function()
     end
   end
 
+  if not game:get_value("yarrowmouth_lighthouse_activated") then
+    light_1:set_enabled(false)
+    light_2:set_enabled(false)
+    light_3:set_enabled(false)
+  end
+
   if game:get_value("quest_lighthouses") and game:get_value("quest_lighthouses") >= 1 and game:get_value("quest_lighthouses") < 3 then
     fog:set_enabled(true)
     ghost_ship:set_enabled(true)

@@ -1858,6 +1858,7 @@ dynamic_tile{
   layer = 0,
   x = 152,
   y = 336,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "377",
@@ -2126,40 +2127,11 @@ tile{
 }
 
 dynamic_tile{
-  name = "torch_1",
-  layer = 1,
-  x = 96,
-  y = 272,
-  width = 16,
-  height = 16,
-  pattern = "44",
-}
-
-dynamic_tile{
-  name = "torch_2",
-  layer = 1,
-  x = 64,
-  y = 304,
-  width = 16,
-  height = 16,
-  pattern = "44",
-}
-
-dynamic_tile{
-  name = "torch_3",
-  layer = 1,
-  x = 64,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "44",
-}
-
-dynamic_tile{
   name = "torch_4",
   layer = 1,
   x = 96,
   y = 400,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "44",
@@ -2168,8 +2140,9 @@ dynamic_tile{
 dynamic_tile{
   name = "torch_5",
   layer = 1,
-  x = 208,
-  y = 400,
+  x = 64,
+  y = 368,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "44",
@@ -2178,8 +2151,9 @@ dynamic_tile{
 dynamic_tile{
   name = "torch_6",
   layer = 1,
-  x = 240,
-  y = 368,
+  x = 64,
+  y = 304,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "44",
@@ -2188,8 +2162,9 @@ dynamic_tile{
 dynamic_tile{
   name = "torch_7",
   layer = 1,
-  x = 240,
-  y = 304,
+  x = 96,
+  y = 272,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "44",
@@ -2200,6 +2175,40 @@ dynamic_tile{
   layer = 1,
   x = 208,
   y = 272,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "torch_9",
+  layer = 1,
+  x = 240,
+  y = 304,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "torch_10",
+  layer = 1,
+  x = 240,
+  y = 368,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "torch_11",
+  layer = 1,
+  x = 208,
+  y = 400,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "44",

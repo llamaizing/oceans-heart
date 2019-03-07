@@ -31,7 +31,6 @@ function stella:on_interaction()
       map:open_doors("upstairs_door")
       if not game:get_value("quest_lighthouses") then
         game:set_value("quest_lighthouses", 0)
-        game:set_value("lighthouses_quest_num_lit", game:get_value("lighthouses_quest_num_lit") + 1 or 1)
       end
     end)
 
