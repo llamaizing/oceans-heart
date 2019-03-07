@@ -153,3 +153,12 @@ function star_barrel_2:on_interaction()
     end)--end of dialog 1 function
   end
 end
+
+
+
+
+--------------RANDOM BAR NPCS-------------------------------------
+
+function weak_wall_clue_guy:on_interaction()
+  game:start_dialog("_oakhaven.npcs.saloon.weak_wall_guy.1")
+end
