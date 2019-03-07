@@ -23,11 +23,11 @@ local all_equipment_items = {
     {item = "bow_fire", name = "Flame Arrows", use_immediately = false,},
     {item = "bow_bombs", name = "Bomb Arrows", use_immediately = false,},
     {item = "bow_warp", name = "Warpbolt Charm", use_immediately = false,},
-    {item = "potion_magic_restoration", name = "Magic Restoring Potion", use_immediately = false,},
-    {item = "berries", name = "Berries", use_immediately = false,},
-    {item = "apples", name = "Apples", use_immediately = false,},
-    {item = "bread", name = "Burroak Bread", use_immediately = false,},
-    {item = "elixer", name = "Elixer Vitae", use_immediately = false,},
+    {item = "potion_magic_restoration", name = "Magic Restoring Potion", use_immediately = true,},
+    {item = "berries", name = "Berries", use_immediately = true,},
+    {item = "apples", name = "Apples", use_immediately = true,},
+    {item = "bread", name = "Burroak Bread", use_immediately = true,},
+    {item = "elixer", name = "Elixer Vitae", use_immediately = true,},
 }
 
 --captions for each item. Has to be in same order
@@ -174,7 +174,7 @@ end
 function inventory:update_description_panel()
     --update description panel
     if self:get_item_at_current_index() and self.description_panel then
-        self.description_panel:set_text(item_descriptions[cursor_index + 1])
+        self.description_panel:set_text(all_equipment_items[cursor_index + 1].name)
     elseif self.description_panel then
         self.description_panel:set_text("")
     end
