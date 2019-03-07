@@ -5166,8 +5166,8 @@ Yeah, $1I...$3 Shoot! No, I left it over there!
 
 LINDEN:
 Haha, you'll be fine, Tilia. Get your sword.
-Go find Dad. If you're ever lost, give me a
-call. Now get going!
+And maybe come back to visit occasionally.
+Now go find Dad!
 ]],
 }
 
@@ -5176,8 +5176,8 @@ dialog{
   text = [[
 LINDEN:
 I'm sure if you ask around in the right places,
-you'll find clues. If you're ever lost, give me
-a call and we can talk it out. Now get going!
+you'll find clues. Be sure to come back and
+visit from time to time. Now get going!
 ]],
 }
 
@@ -12748,7 +12748,7 @@ You hear about four ancient
 lighthouses built to guide
 a lost lover back from sea.
 @Light all four lighthouses.
-!You've lit $v1 so far.
+! $v1 lighthouses are burning.
 @You feel drawn back to
 Naerreturn Bay.
 !It's on Yarrowmouth.
