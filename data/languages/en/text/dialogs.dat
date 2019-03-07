@@ -9170,6 +9170,38 @@ It's a fairly fancy hat. Not too overbearing.
 }
 
 dialog{
+  id = "_oakhaven.npcs.vice_captain.1",
+  text = [[
+VICE CAPTAIN:
+O-ho! Captain Tilia!
+
+
+TILIA:
+Oh man, you again? I told you I'm not you
+guys' captain just because I beat all the
+Barbell Brutes in a fight.
+VICE CAPTAIN:
+No, you are because I promoted you to
+captain. Anyway, I'm taking a journey to
+develop my inner strength. I climbed to the
+VICE CAPTAIN:
+monastery on the peak of Marblecliff
+Mountain yesterday and had tea with the
+monks. Tomorrow I'm going to learn to
+VICE CAPTAIN:
+cook pasta in the city. I'm really finding
+myself on this trip.
+
+TILIA:
+Good for you man. Look, I've gotta get back
+to what I'm doing, but keep it up I guess.
+
+VICE CAPTAIN:
+Aye, aye, captain!
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.westoak.tollbridge.1",
   text = [[
 Hey, this is a toll bridge! If you want to get
