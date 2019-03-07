@@ -2950,7 +2950,7 @@ my plan to free my people.
 dialog{
   id = "_goatshead.npcs.phantom_squid.7",
   text = [[
-ASTER:
+Aster:
 So you managed to find the contract Eamon
 is using to keep the people of Crabhook on
 the... hook for taxes?
@@ -2973,17 +2973,14 @@ control of the guards away from Eamon.
 ASTER:
 Exactly. They say the guards only respect
 strength. That's why they call them the
-Barbell Brutes. I've heard about some
+Barbell Brutes. I think if you got fight them
 ASTER:
-treasure west of town that can bestow great
-physical strength on a person. Perhaps with
-that, you could show the Brutes who's really
-ASTER:
-worth following. You can find the guards in a
-building on the north end of town, near the
-inn.
+and beat them up, you might be able to
+persuade them to follow you over Eamon.
+
 TILIA:
-I'll see what I can do.
+You know what, if that's what it takes, I'll
+go do it.
 ]],
 }
 
@@ -2996,11 +2993,8 @@ he's going to get taxes from the people of
 Crabhook. We'll need to earn their alligence 
 ASTER:
 somehow. It's said they only truely respect
-strength. Perhaps we can use that to our
-advantage. There's supposedly an artifact
-ASTER:
-to the west of town that grants strength
-to whoever bears it. Maybe take a look.
+strength. I think you ought to go fight them
+all.
 ]],
 }
 
@@ -11339,10 +11333,10 @@ dialog{
   text = [[
 NINA:
 Great! So here's the deal. A local man,
-Carlov, ships carrots from Oakhaven. His
-cargo was stolen by a pirate crew a couple
+Carlov, ships carrots from Oakhaven. He's
+being pressured by a pirate crew the do some
 NINA:
-times, so he came to me for help. The crew
+smuggling for the Pirate Council. The crew
 is called the "Dream Cannons". Absurd name.
 Anyway, I torched their boat and now they're
 NINA:

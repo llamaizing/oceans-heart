@@ -95,11 +95,7 @@ function aster:on_interaction()
       if game:get_value("accepted_barbell_brute_quest") ~= true then
         game:start_dialog("_goatshead.npcs.phantom_squid.7", function() --tell tilia about guards
           game:set_value("accepted_barbell_brute_quest", true)
-          if game:has_item("oak_charm") then
-            game:set_value("quest_phantom_squid_contracts", 3) --quest log, go fight barbell brutes
-          else 
-            game:set_value("quest_phantom_squid_contracts", 2) --quest log, go get oak charm
-          end
+          game:set_value("quest_phantom_squid_contracts", 3) --quest log, go get oak charm
           game:start_dialog("_game.quest_log_update")
         end)
       else --reminds you to fight guards

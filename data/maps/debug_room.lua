@@ -19,9 +19,6 @@ map:register_event("on_started", function()
 end)
 
 
-function map:on_opening_transition_finished()
---sol.timer.start(map, 500, function() print(hero:get_ground_below()) return true end)
-end
 
 function camera_shaker:on_interaction()
   map:get_camera():shake({count = 6, amplitude = 4, speed = 80})
