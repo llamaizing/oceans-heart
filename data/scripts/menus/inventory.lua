@@ -8,26 +8,26 @@ local game --the current game, must be manually updated using pause_menu:set_gam
 
 --All items that could ever show up in the inventory:
 local all_equipment_items = {
-    {item = "barrier", name = "Barrier Charm", use_immediately = false,},
-    {item = "boomerang", name = "Boomerang", use_immediately = false,},
-    {item = "spear", name = "Spear", use_immediately = false,},
-    {item = "ball_and_chain", name = "Flail", use_immediately = false,},
-    {item = "hookshot", name = "Hookshot", use_immediately = false,},
-    {item = "tornado_dash", name = "Tornado Dash", use_immediately = false,},
-    {item = "gust", name = "Zephyrine's Tempest", use_immediately = false,},
-    {item = "crystal_spark", name = "Ophira's Ember", use_immediately = false,},
-    {item = "leaf_tornado", name = "Amalenchier's Wrath", use_immediately = false,},
-    {item = "thunder_charm", name = "Seabird's Tear", use_immediately = false,},
-    {item = "bombs_counter_2", name = "Bombs", use_immediately = false,},
-    {item = "bow", name = "Bow", use_immediately = false,},
-    {item = "bow_fire", name = "Flame Arrows", use_immediately = false,},
-    {item = "bow_bombs", name = "Bomb Arrows", use_immediately = false,},
-    {item = "bow_warp", name = "Warpbolt Charm", use_immediately = false,},
-    {item = "potion_magic_restoration", name = "Magic Restoring Potion", use_immediately = true,},
-    {item = "berries", name = "Berries", use_immediately = true,},
-    {item = "apples", name = "Apples", use_immediately = true,},
-    {item = "bread", name = "Burroak Bread", use_immediately = true,},
-    {item = "elixer", name = "Elixer Vitae", use_immediately = true,},
+    {item = "barrier", name = "Barrier Charm", assignable = true,},
+    {item = "boomerang", name = "Boomerang", assignable = true,},
+    {item = "spear", name = "Spear", assignable = true,},
+    {item = "ball_and_chain", name = "Flail", assignable = true},
+    {item = "hookshot", name = "Hookshot", assignable = true,},
+    {item = "tornado_dash", name = "Tornado Dash", assignable = true,},
+    {item = "gust", name = "Zephyrine's Tempest", assignable = true,},
+    {item = "crystal_spark", name = "Ophira's Ember", assignable = true,},
+    {item = "leaf_tornado", name = "Amalenchier's Wrath", assignable = true,},
+    {item = "thunder_charm", name = "Seabird's Tear", assignable = true,},
+    {item = "bombs_counter_2", name = "Bombs", assignable = true,},
+    {item = "bow", name = "Bow", assignable = true,},
+    {item = "bow_fire", name = "Flame Arrows", assignable = true,},
+    {item = "bow_bombs", name = "Bomb Arrows", assignable = true,},
+    {item = "bow_warp", name = "Warpbolt Charm", assignable = true,},
+    {item = "potion_magic_restoration", name = "Magic Restoring Potion", assignable = false,},
+    {item = "berries", name = "Berries", assignable = false,},
+    {item = "apples", name = "Apples", assignable = false,},
+    {item = "bread", name = "Burroak Bread", assignable = false,},
+    {item = "elixer", name = "Elixer Vitae", assignable = false,},
 }
 
 --constants:
@@ -199,7 +199,12 @@ function inventory:on_command_pressed(command)
         self:initialize_assigned_item_sprites(game)
         handled = true
     elseif command == "action" then
-        --        sol.menu.start(game, quest_log)
+        if all_equipment_items[cursor_index + 1].assignable == false then
+            local item = self:get_item_at_current_index()
+            item:on_using()
+            inventory:initialize(game)
+            --use the item
+        end
         handled = true
     end
     return handled
@@ -220,8 +225,7 @@ function inventory:on_draw(dst_surface)
     self.cursor_sprite:draw(dst_surface, (self.cursor_column * 32 + GRID_ORIGIN_X + 32) + self.x,  (self.cursor_row * 32 + GRID_ORIGIN_Y) + self.y)
     self.description_panel:draw(dst_surface, ((COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16) + self.x, (ROWS *32 + GRID_ORIGIN_Y - 8)+self.y)
     --draw assigned items: (or, if you can see what items you have assigned elsewhere, maybe don't!)
---    if self.assigned_item_sprite_1 then self.assigned_item_sprite_1:draw(dst_surface, GRID_ORIGIN_X + 32, GRID_ORIGIN_Y-32) end
---    if self.assigned_item_sprite_2 then self.assigned_item_sprite_2:draw(dst_surface, GRID_ORIGIN_X + 32 + 32, GRID_ORIGIN_Y-32) end
+
 
     --draw inventory items
     for i=1, #all_equipment_items do

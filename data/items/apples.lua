@@ -10,7 +10,7 @@ function item:on_started()
   item:set_savegame_variable("possession_apples")       --variable
   item:set_amount_savegame_variable("amount_apples")    --amount variable
   item:set_max_amount(999)
-  item:set_assignable(true)
+  item:set_assignable(false)
 end
 
 --obtained
@@ -26,9 +26,10 @@ end
 
 --used
 function item:on_using()
-  if self:get_amount() > 0 then
+  if self:get_amount() > 0 and game:get_life() < game:get_max_life() then
     game:add_life(4)              --health amount!
     self:remove_amount(1)
+  else sol.audio.play_sound("no")
   end
   item:set_finished()
 end
