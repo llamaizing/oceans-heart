@@ -2974,8 +2974,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "snapmast_reef/drowned_village",
-  destination = "from_landing",
+  destination_map = "Yarrowmouth/naerreturn_bay",
+  destination = "from_lighthouse",
 }
 
 pickable{
