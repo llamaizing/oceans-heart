@@ -8,34 +8,30 @@ local game --the current game, must be manually updated using pause_menu:set_gam
 
 --All items that could ever show up in the inventory:
 local all_equipment_items = {
-    "berries",
-    "apples",
-    "bread",
-    "elixer",
-    "barrier",
-    "boomerang",
-    "spear",
-    "ball_and_chain",
-    "hookshot",
-    "tornado_dash",
-    "gust",
-    "crystal_spark",
-    "leaf_tornado",
-    "thunder_charm",
-    "bombs_counter_2",
-    "bow",
-    "bow_fire",
-    "bow_bombs",
-    "bow_warp",
-    "potion_magic_restoration",
+    {item = "barrier", name = "Barrier Charm", use_immediately = false,},
+    {item = "boomerang", name = "Boomerang", use_immediately = false,},
+    {item = "spear", name = "Spear", use_immediately = false,},
+    {item = "ball_and_chain", name = "Flail", use_immediately = false,},
+    {item = "hookshot", name = "Hookshot", use_immediately = false,},
+    {item = "tornado_dash", name = "Tornado Dash", use_immediately = false,},
+    {item = "gust", name = "Zephyrine's Tempest", use_immediately = false,},
+    {item = "crystal_spark", name = "Ophira's Ember", use_immediately = false,},
+    {item = "leaf_tornado", name = "Amalenchier's Wrath", use_immediately = false,},
+    {item = "thunder_charm", name = "Seabird's Tear", use_immediately = false,},
+    {item = "bombs_counter_2", name = "Bombs", use_immediately = false,},
+    {item = "bow", name = "Bow", use_immediately = false,},
+    {item = "bow_fire", name = "Flame Arrows", use_immediately = false,},
+    {item = "bow_bombs", name = "Bomb Arrows", use_immediately = false,},
+    {item = "bow_warp", name = "Warpbolt Charm", use_immediately = false,},
+    {item = "potion_magic_restoration", name = "Magic Restoring Potion", use_immediately = false,},
+    {item = "berries", name = "Berries", use_immediately = false,},
+    {item = "apples", name = "Apples", use_immediately = false,},
+    {item = "bread", name = "Burroak Bread", use_immediately = false,},
+    {item = "elixer", name = "Elixer Vitae", use_immediately = false,},
 }
 
 --captions for each item. Has to be in same order
 local item_descriptions = {
-    "Berries",
-    "Apple",
-    "Bread",
-    "Elixer Vitae",
     "Barrier Charm",
     "Boomerang",
     "Spear",
@@ -51,7 +47,11 @@ local item_descriptions = {
     "Flame Arrows",
     "Bomb Arrows",
     "Warpbolt Charm",
-    "Magic Restoring Potion"
+    "Magic Restoring Potion",
+    "Berries",
+    "Apple",
+    "Bread",
+    "Elixer Vitae",
 }
 
 --constants:
@@ -111,13 +111,13 @@ function inventory:initialize(game)
 
     --create the item sprites:
     for i=1, #all_equipment_items do
-        if all_equipment_items[i] ~= "" then
-            local item = game:get_item(all_equipment_items[i])
+        if all_equipment_items[i].item ~= "" then
+            local item = game:get_item(all_equipment_items[i].item)
             local variant = item:get_variant()
             if variant > 0 then
                 --initialize the sprite
                 self.equipment_sprites[i] = sol.sprite.create("entities/items")
-                self.equipment_sprites[i]:set_animation(all_equipment_items[i])
+                self.equipment_sprites[i]:set_animation(all_equipment_items[i].item)
                 self.equipment_sprites[i]:set_direction(variant - 1)
 
                 --if the item has an amount, make a counter in the counters table
@@ -231,7 +231,7 @@ end
 
 function inventory:get_item_at_current_index()
     local game = sol.main.game
-    local item = game:get_item(all_equipment_items[cursor_index + 1])
+    local item = game:get_item(all_equipment_items[cursor_index + 1].item)
     if item:get_variant() > 0 then
         return item
     else return nil
