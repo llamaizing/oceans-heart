@@ -132,6 +132,18 @@ function musician_1:on_interaction()
 end
 
 
+
+--------------RANDOM BAR NPCS-------------------------------------
+
+function weak_wall_clue_guy:on_interaction()
+  game:start_dialog("_oakhaven.npcs.saloon.weak_wall_guy.1")
+end
+
+
+
+
+------------INANIMATE OBJECTS-------------------------------------
+
 function storehouse_door_switch:on_activated()
   sol.audio.play_sound("switch")
   map:open_doors("storehouse_door")
@@ -154,11 +166,3 @@ function star_barrel_2:on_interaction()
   end
 end
 
-
-
-
---------------RANDOM BAR NPCS-------------------------------------
-
-function weak_wall_clue_guy:on_interaction()
-  game:start_dialog("_oakhaven.npcs.saloon.weak_wall_guy.1")
-end

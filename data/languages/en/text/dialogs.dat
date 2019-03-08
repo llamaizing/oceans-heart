@@ -9538,6 +9538,16 @@ Stop serving them at the saloon!
 }
 
 dialog{
+  id = "_oakhaven.observations.saloon.see_booze_go",
+  text = [[
+TILIA:
+That guy was carrying the ale I fixed up.
+Guess I got it just in time. The pirates should
+be good and sleepy by the time I get there.
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.saloon.star_barrel_1",
   text = [[
 There's a barrel marked with a star here,

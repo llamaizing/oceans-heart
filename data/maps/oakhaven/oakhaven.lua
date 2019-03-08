@@ -42,7 +42,24 @@ map:register_event("on_started", function()
     manna_oak_leaves:set_enabled(true)
   end
 
-end)
+  --spiked ale
+  if not game:get_value("observed_spiked_ale_leaving") and game:get_value("spiked_crow_ale") then
+    hero:freeze()
+    barrel_carrier:set_enabled()
+    watch_carrier_wall:set_enabled(true)
+    local m = sol.movement.create("path")
+    m:set_path{6,6,6,6,6,6,6,6,6,6,6,6,6,6}
+    m:set_speed(70)
+    m:start(barrel_carrier, function()
+      game:start_dialog("_oakhaven.observations.saloon.see_booze_go")
+      barrel_carrier:set_enabled(false)
+      watch_carrier_wall:set_enabled(false)
+      hero:unfreeze()
+      game:set_value("observed_spiked_ale_leaving", true)
+    end)
+  end
+
+end) --end of on_started
 
 
 --NPCS---------------------

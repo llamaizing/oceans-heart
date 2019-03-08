@@ -37733,6 +37733,28 @@ sensor{
   height = 16,
 }
 
+npc{
+  name = "barrel_carrier",
+  layer = 0,
+  x = 296,
+  y = 797,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/barrel_carrier_spiked",
+}
+
+wall{
+  name = "watch_carrier_wall",
+  layer = 0,
+  x = 232,
+  y = 784,
+  enabled_at_start = false,
+  width = 160,
+  height = 24,
+  stops_hero = true,
+}
+
 tile{
   layer = 1,
   x = 984,
