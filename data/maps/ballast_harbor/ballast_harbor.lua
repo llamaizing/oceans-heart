@@ -94,10 +94,7 @@ function arrow_sale:on_interaction()
     game:start_dialog("_generic_dialogs.shop.arrows", function(answer)  
       if answer == 1 then
         if game:get_money() >= 10 then
-          map:create_pickable({
-            layer = 0, x = 152, y = 1336,
-            treasure_name = "arrow", treasure_variant = 2,
-          })
+          hero:start_treasure("arrow", 2)
           game:remove_money(10)
         else
           game:start_dialog("_game.insufficient_funds")
