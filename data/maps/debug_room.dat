@@ -2974,7 +2974,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "1_empty_grass",
+  destination_map = "ballast_harbor/tavern",
 }
 
 pickable{
