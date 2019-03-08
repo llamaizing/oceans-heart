@@ -56,7 +56,6 @@ function kelpton_2:on_interaction()
       game:start_dialog("_ballast_harbor.npcs.kelpton.3", function()
 --        m:start(kelpton_2)
         game:get_hero():start_treasure("key_kingsdown", 1)
-        game:start_dialog("_game.quest_log_update")
         game:set_value("talked_to_kelpton_2", true)
         game:set_value("quest_kelpton", 2) --quest log
       end)
