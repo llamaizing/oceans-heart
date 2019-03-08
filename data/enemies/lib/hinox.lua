@@ -99,17 +99,6 @@ function behavior:create(enemy, properties)
     sprite:set_direction(direction4)
   end
 
-	local previous_on_removed = enemy.on_removed
-	function enemy:on_removed()
-
-	  if previous_on_removed then
-		previous_on_removed(enemy)
-	  end
-
-	  for _, child in ipairs(children) do
-		child:remove()
-	  end
-	end
 
   function enemy:on_obstacle_reached(movement)
 

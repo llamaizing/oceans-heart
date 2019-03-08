@@ -2974,7 +2974,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor",
+  destination_map = "Yarrowmouth/tern_marsh",
+  destination = "from_ambush_cave",
 }
 
 pickable{

@@ -17219,24 +17219,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 224,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "132",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "131",
-}
-
-tile{
-  layer = 0,
   x = 256,
   y = 448,
   width = 16,
@@ -17607,28 +17589,10 @@ tile{
 tile{
   layer = 0,
   x = 232,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 232,
   y = 432,
   width = 16,
   height = 16,
   pattern = "350",
-}
-
-tile{
-  layer = 0,
-  x = 232,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "351",
 }
 
 tile{
@@ -33126,6 +33090,78 @@ tile{
   tileset = "misc",
 }
 
+tile{
+  layer = 0,
+  x = 224,
+  y = 464,
+  width = 8,
+  height = 16,
+  pattern = "1029",
+}
+
+tile{
+  layer = 0,
+  x = 248,
+  y = 464,
+  width = 8,
+  height = 16,
+  pattern = "1041",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "131",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "1035",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "1036",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "351",
+}
+
 teletransporter{
   layer = 0,
   x = 312,
@@ -34066,16 +34102,6 @@ destination{
   direction = 3,
 }
 
-npc{
-  name = "pirate_guard",
-  layer = 0,
-  x = 240,
-  y = 485,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/pirates/pirate_7.1",
-}
-
 teletransporter{
   layer = 0,
   x = 232,
@@ -34333,6 +34359,16 @@ custom_entity{
   direction = 0,
   sprite = "entities/rockpile",
   model = "flail_obstacle",
+}
+
+npc{
+  name = "pirate_guard",
+  layer = 0,
+  x = 240,
+  y = 477,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/pirates/pirate_7.1",
 }
 
 tile{
