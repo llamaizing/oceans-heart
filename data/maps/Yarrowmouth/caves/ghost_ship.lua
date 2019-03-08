@@ -10,9 +10,9 @@
 local map = ...
 local game = map:get_game()
 
-function map:on_started()
-  self:get_camera():letterbox()
-end
+map:register_event("on_started", function()
+
+end)
 
 function boss_sensor:on_activated()
   boss_sensor:set_enabled(false)

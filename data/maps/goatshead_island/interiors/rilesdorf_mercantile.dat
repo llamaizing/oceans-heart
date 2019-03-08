@@ -1064,24 +1064,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 304,
-  y = -24,
-  width = 16,
-  height = 16,
-  pattern = "shallow_water",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = -24,
-  width = 16,
-  height = 16,
-  pattern = "shallow_water",
-}
-
-tile{
-  layer = 0,
   x = 368,
   y = 24,
   width = 32,
@@ -2222,10 +2204,10 @@ dynamic_tile{
   layer = 0,
   x = 512,
   y = 184,
-  pattern = "537",
+  enabled_at_start = false,
   width = 16,
   height = 24,
-  enabled_at_start = false,
+  pattern = "537",
 }
 
 dynamic_tile{
@@ -2233,10 +2215,10 @@ dynamic_tile{
   layer = 0,
   x = 472,
   y = 184,
-  pattern = "537",
+  enabled_at_start = false,
   width = 16,
   height = 24,
-  enabled_at_start = false,
+  pattern = "537",
 }
 
 block{

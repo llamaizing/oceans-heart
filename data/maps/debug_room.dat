@@ -2974,8 +2974,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/interiors/saloon",
-  destination = "from_downstairs_storehouse",
+  destination_map = "1_empty_grass",
 }
 
 pickable{

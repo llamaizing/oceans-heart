@@ -1881,15 +1881,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 648,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = "ground1.2",
-}
-
-tile{
-  layer = 0,
   x = 432,
   y = 64,
   width = 144,
@@ -2932,6 +2923,36 @@ tile{
   pattern = "73",
 }
 
+tile{
+  layer = 0,
+  x = 480,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "46",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "1685",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 152,
+  width = 16,
+  height = 8,
+  pattern = "230",
+  tileset = "overworld_oakhaven",
+}
+
 separator{
   layer = 0,
   x = 0,
@@ -3222,5 +3243,15 @@ tile{
   width = 8,
   height = 8,
   pattern = "82",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 112,
+  width = 16,
+  height = 24,
+  pattern = "1687",
+  tileset = "overworld_oakhaven",
 }
 
