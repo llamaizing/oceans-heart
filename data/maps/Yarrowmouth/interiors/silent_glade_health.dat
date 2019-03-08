@@ -6941,26 +6941,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
-  y = 560,
-  width = 16,
-  height = 16,
-  pattern = "25",
-  tileset = "misc",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 560,
-  width = 16,
-  height = 16,
-  pattern = "25",
-  tileset = "misc",
-}
-
-tile{
-  layer = 0,
   x = 208,
   y = 296,
   width = 16,
@@ -7430,23 +7410,23 @@ npc{
 enemy{
   layer = 0,
   x = 408,
-  y = 605,
+  y = 613,
   direction = 0,
   breed = "misc/stone_dragon_turret",
 }
 
 enemy{
   layer = 0,
-  x = 64,
-  y = 589,
+  x = 72,
+  y = 573,
   direction = 2,
   breed = "misc/stone_dragon_turret",
 }
 
 enemy{
   layer = 0,
-  x = 160,
-  y = 589,
+  x = 152,
+  y = 573,
   direction = 0,
   breed = "misc/stone_dragon_turret",
 }
@@ -7462,7 +7442,7 @@ separator{
 enemy{
   layer = 0,
   x = 408,
-  y = 669,
+  y = 661,
   direction = 0,
   breed = "misc/stone_dragon_turret",
 }
@@ -8185,26 +8165,6 @@ tile{
   layer = 1,
   x = 144,
   y = 480,
-  width = 16,
-  height = 24,
-  pattern = "30",
-  tileset = "misc",
-}
-
-tile{
-  layer = 1,
-  x = 64,
-  y = 536,
-  width = 16,
-  height = 24,
-  pattern = "30",
-  tileset = "misc",
-}
-
-tile{
-  layer = 1,
-  x = 144,
-  y = 536,
   width = 16,
   height = 24,
   pattern = "30",
