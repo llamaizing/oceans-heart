@@ -2972,7 +2972,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
+  x = 104,
   y = 344,
   width = 16,
   height = 16,
@@ -4665,7 +4665,7 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 312,
+  y = 296,
   width = 16,
   height = 16,
   pattern = "1747",
@@ -33060,6 +33060,72 @@ tile{
   pattern = "2028",
 }
 
+tile{
+  layer = 0,
+  x = 64,
+  y = 272,
+  width = 32,
+  height = 24,
+  pattern = "2022",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 344,
+  width = 32,
+  height = 24,
+  pattern = "2018",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "2038",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "2028",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "misc",
+}
+
 teletransporter{
   layer = 0,
   x = 312,
@@ -34234,6 +34300,41 @@ sensor{
   height = 32,
 }
 
+chest{
+  layer = 0,
+  x = 112,
+  y = 285,
+  treasure_name = "coral_ore",
+  treasure_savegame_variable = "eudicot_ligthhouse_coral_ore",
+  sprite = "entities/chest",
+}
+
+custom_entity{
+  name = "rock_pile_3",
+  layer = 0,
+  x = 160,
+  y = 309,
+  width = 32,
+  height = 16,
+  origin_y = -3,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "flail_obstacle",
+}
+
+custom_entity{
+  name = "rock_pile_4",
+  layer = 0,
+  x = 144,
+  y = 325,
+  width = 32,
+  height = 16,
+  origin_y = -3,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "flail_obstacle",
+}
+
 tile{
   layer = 1,
   x = 64,
@@ -34507,7 +34608,7 @@ tile{
 tile{
   layer = 1,
   x = 176,
-  y = 288,
+  y = 272,
   width = 16,
   height = 24,
   pattern = "1748",
@@ -37274,6 +37375,63 @@ tile{
   width = 16,
   height = 16,
   pattern = "2046",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 264,
+  width = 32,
+  height = 8,
+  pattern = "2024",
+}
+
+tile{
+  layer = 1,
+  x = 136,
+  y = 336,
+  width = 32,
+  height = 8,
+  pattern = "2019",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 248,
+  width = 16,
+  height = 24,
+  pattern = "2040",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "misc",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
 }
 
 dynamic_tile{
