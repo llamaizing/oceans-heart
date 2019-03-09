@@ -56,7 +56,7 @@ function lookout:on_interaction()
         game:set_value("oakhaven_palace_secret_passage_knowledge", true)
         game:set_value("quest_log_a", "a13")
         game:set_value("quest_hazel", 5) --quest log
-        game:start_dialog("_game.quest_log_update")
+        
       end)
     else
       game:start_dialog("_oakhaven.npcs.port.burglars.5")

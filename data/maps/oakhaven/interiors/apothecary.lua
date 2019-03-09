@@ -26,7 +26,7 @@ function apothecary:on_interaction()
     --and you don't already have the flowers:
     if game:has_item("monkshood") == false then
       game:start_dialog("_oakhaven.npcs.apothecary.2", function()
-        game:start_dialog("_game.quest_log_update")
+        
         game:set_value("quest_monkshood", 0) --quest log, start monkshood quest
         game:set_value("quest_log_b", "b6")
         game:set_value("talked_to_aramis", true)
@@ -61,7 +61,7 @@ function apothecary_2:on_interaction() --for once you've talked to aramis once
         --map:create_pickable({ x=128, y=128, layer=0, treasure_name = "sleeping_draught"})
         hero:start_treasure("sleeping_draught", 1, "", function()
           game:set_value("quest_log_b", "b7")
-          game:start_dialog("_game.quest_log_update")
+          
           game:set_value("quest_monkshood", 2) --finish monkshood quest
           game:set_value("quest_pirate_fort", 2) --quest log, back to morus
           game:set_value("morus_counter", 2)

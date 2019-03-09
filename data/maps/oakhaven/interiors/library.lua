@@ -44,7 +44,7 @@ function note:on_interaction()
   if game:get_value("find_burglars") ~= true then
     game:start_dialog("_oakhaven.observations.hazel_books.8-note", function()
       game:set_value("quest_hazel", 4)
-      game:start_dialog("_game.quest_log_update")
+      
       game:set_value("quest_log_a", "a12")
       game:set_value("find_burglars", true)
     end)

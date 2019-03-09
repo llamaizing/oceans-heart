@@ -76,7 +76,7 @@ end
 function morus:on_interaction()
   if game:get_value("morus_counter") == nil then
     game:start_dialog("_oakhaven.npcs.morus.1", function()
-      game:start_dialog("_game.quest_log_update")
+      
       game:set_value("quest_log_b", "b5")
       game:set_value("looking_for_sleeping_potion", true)
       game:set_value("quest_pirate_fort", 1) --quest log, go find sleeping potion
@@ -89,7 +89,7 @@ function morus:on_interaction()
   elseif game:get_value("morus_counter") == 2 then
     game:start_dialog("_oakhaven.npcs.morus.3-spike_ale", function()
       game:set_value("quest_log_b", "b8")
-      game:start_dialog("_game.quest_log_update")
+      
       game:set_value("quest_pirate_fort", 3) --quest log, go spike ale
       game:set_value("morus_counter", 3)
     end)
@@ -102,7 +102,7 @@ function morus:on_interaction()
 
   elseif game:get_value("morus_counter") == 5 then
     game:start_dialog("_oakhaven.npcs.morus.6", function()
-      game:start_dialog("_game.quest_log_update")
+      
       game:set_value("quest_pirate_fort", 7) --quest log, pirate fort complete
       game:set_value("quest_snapmast", 0) --start snapmast quest
       game:set_value("quest_log_b", "b11")
@@ -155,7 +155,7 @@ function star_barrel_2:on_interaction()
     game:start_dialog("_oakhaven.observations.saloon.star_barrel_1", function(answer)
       if answer == 1 then
         game:start_dialog("_oakhaven.observations.saloon.star_barrel_2", function()
-          game:start_dialog("_game.quest_log_update")
+          
           game:set_value("quest_pirate_fort", 4) --quest log update, go sneak in now
           game:set_value("quest_log_b", "b9")
           game:set_value("morus_counter", 4)

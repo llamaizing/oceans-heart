@@ -86,7 +86,6 @@ if game:get_value("goatshead_tunnels_accepted") ~= true then
           game:start_dialog("_goatshead.npcs.tavern_people.adventurers.5", function()
             game:set_value("goatshead_tunnels_accepted", true)
             game:set_value("quest_goatshead_secret_tunnels", 0) --quest log update
-            game:start_dialog("_game.quest_log_update")
           end)
         end
       end)

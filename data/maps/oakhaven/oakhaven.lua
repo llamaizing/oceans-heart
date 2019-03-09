@@ -70,7 +70,7 @@ function grover:on_interaction()
   if game:get_value("grover_counter") == nil then
     game:start_dialog("_oakhaven.npcs.market.grover.1", function()
       game:set_value("quest_hazel", 2)  -- quest log, look at inn
-      game:start_dialog("_game.quest_log_update")
+      
       game:set_value("grover_counter", 1)
     end)
   --already spoken to
@@ -273,7 +273,7 @@ function remember_sensor:on_activated()
       hero:unfreeze()
       game:start_dialog("_oakhaven.npcs.port.cervio.1", function()
 --        sol.audio.play_sound("quest_log")
-        game:start_dialog("_game.quest_log_update")
+        
         game:set_value("quest_hazel", 1) --quest log
       end)
       game:set_value("quest_log_a", "a9")

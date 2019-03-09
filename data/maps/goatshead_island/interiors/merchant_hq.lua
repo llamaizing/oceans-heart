@@ -46,7 +46,6 @@ function eamon:on_interaction()
       if answer == 2 then
         game:start_dialog("_goatshead.npcs.eamon.2", function()
           game:set_value("quest_phantom_squid", 0) --quest log, accept quest
-          game:start_dialog("_game.quest_log_update")
         end)
         game:set_value("talked_to_eamon", 1)
         game:set_value("phantom_squid_quest_accepted", true)
