@@ -35766,6 +35766,15 @@ tile{
   pattern = "2048",
 }
 
+tile{
+  layer = 0,
+  x = 944,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "202",
+}
+
 teletransporter{
   layer = 0,
   x = 152,
@@ -37353,25 +37362,7 @@ enemy{
 
 destructible{
   layer = 0,
-  x = 952,
-  y = 893,
-  treasure_name = "burdock",
-  sprite = "entities/bush_burdock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 968,
-  y = 893,
-  treasure_name = "burdock",
-  sprite = "entities/bush_burdock",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 984,
   y = 909,
   sprite = "entities/bush_forest",
   can_be_cut = true,
@@ -37380,7 +37371,7 @@ destructible{
 destructible{
   layer = 0,
   x = 968,
-  y = 909,
+  y = 893,
   sprite = "entities/bush_forest",
   can_be_cut = true,
 }
@@ -37403,7 +37394,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 992,
+  x = 984,
   y = 893,
   sprite = "entities/bush_forest",
   can_be_cut = true,
@@ -37508,6 +37499,24 @@ sensor{
   y = 29,
   width = 32,
   height = 32,
+}
+
+destructible{
+  layer = 0,
+  x = 992,
+  y = 709,
+  treasure_name = "burdock",
+  sprite = "entities/bush_burdock",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1008,
+  y = 709,
+  treasure_name = "burdock",
+  sprite = "entities/bush_burdock",
+  can_be_cut = true,
 }
 
 tile{
@@ -41317,22 +41326,6 @@ dynamic_tile{
   width = 112,
   height = 96,
   pattern = "2046",
-}
-
-separator{
-  layer = 2,
-  x = 944,
-  y = -64,
-  width = 16,
-  height = 304,
-}
-
-separator{
-  layer = 2,
-  x = 960,
-  y = 232,
-  width = 352,
-  height = 16,
 }
 
 dynamic_tile{

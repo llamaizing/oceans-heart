@@ -46,5 +46,6 @@ function clue_sensor:on_activated()
 end
 
 function ruins_switch:on_activated()
-  map:open_doors("ruins_door")
+  sol.audio.play_sound("switch")
+  map:focus_on(map:get_camera(), ruins_door_1, function() map:open_doors("ruins_door") end)
 end

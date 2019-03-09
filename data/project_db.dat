@@ -172,8 +172,11 @@ map{ id = "new_limestone/transition", description = "transition" }
 map{ id = "oakhaven/caves/amalenchier_tomb", description = "Amalenchier's Tomb" }
 map{ id = "oakhaven/caves/lighthouse", description = "Lighthouse - Sinking" }
 map{ id = "oakhaven/caves/manna_oak_tunnels", description = "Manna Oak Tunnels" }
+map{ id = "oakhaven/caves/marblecliff_NE_cave", description = "Marblecliff NE Cave" }
+map{ id = "oakhaven/caves/marblecliff_ruins", description = "Marblecliff Ruins" }
 map{ id = "oakhaven/caves/palace_tunnel", description = "Palace Tunnel" }
 map{ id = "oakhaven/caves/port_bush_hole", description = "Port Bush Hole" }
+map{ id = "oakhaven/caves/veilwood_health_upgrade_tunnel", description = "Veilwood Health Upgrade Tunnel" }
 map{ id = "oakhaven/eastoak", description = "Eastoak" }
 map{ id = "oakhaven/fort_crow/basement", description = "Basement" }
 map{ id = "oakhaven/fort_crow/courtyard", description = "Courtyard" }

@@ -3011,7 +3011,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "oakhaven/marblecliff",
-  destination = "from_summit",
+  destination = "from_falling_tunnel",
 }
 
 pickable{
@@ -4778,7 +4778,7 @@ custom_entity{
   height = 32,
   origin_x = 16,
   origin_y = 29,
-  direction = 3,
+  direction = 0,
   sprite = "entities/moving_platform",
   model = "moving_platform",
 }

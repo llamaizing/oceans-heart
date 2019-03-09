@@ -24331,14 +24331,6 @@ destructible{
   can_be_cut = true,
 }
 
-enemy{
-  layer = 0,
-  x = 584,
-  y = 765,
-  direction = 0,
-  breed = "normal_enemies/spitstump_small",
-}
-
 dynamic_tile{
   name = "fall_tree_3",
   layer = 0,
@@ -24969,6 +24961,61 @@ sensor{
   height = 32,
 }
 
+switch{
+  name = "ruins_switch",
+  layer = 0,
+  x = 480,
+  y = 432,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+destination{
+  name = "from_falling_tunnel",
+  layer = 0,
+  x = 480,
+  y = 429,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 472,
+  y = 400,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/marblecliff_ruins",
+  destination = "from_one_way_exit",
+}
+
+teletransporter{
+  layer = 0,
+  x = 576,
+  y = 752,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/marblecliff_ruins",
+  destination = "from_roof_fall",
+}
+
+enemy{
+  layer = 0,
+  x = 584,
+  y = 765,
+  direction = 0,
+  breed = "normal_enemies/spitstump_small",
+}
+
+destination{
+  name = "from_elixer_area",
+  layer = 0,
+  x = 344,
+  y = 405,
+  direction = 3,
+}
+
 door{
   name = "ruins_door_1",
   layer = 0,
@@ -24989,15 +25036,32 @@ door{
   savegame_variable = "marblecliff_ruins_entrance_door_state",
 }
 
-switch{
-  name = "ruins_switch",
+teletransporter{
   layer = 0,
-  x = 480,
-  y = 432,
-  subtype = "walkable",
-  sprite = "entities/switch",
-  needs_block = false,
-  inactivate_when_leaving = false,
+  x = 336,
+  y = 376,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/marblecliff_ruins",
+  destination = "from_ouside_elixer_area",
+}
+
+destination{
+  name = "from_marblecliff_NE_cave",
+  layer = 0,
+  x = 688,
+  y = 333,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 680,
+  y = 304,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/marblecliff_NE_cave",
+  destination = "from_outside",
 }
 
 tile{
