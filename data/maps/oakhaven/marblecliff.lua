@@ -44,3 +44,7 @@ function clue_sensor:on_activated()
     game:set_value("marblecliff_palace_tunnel_clue_reminder", true)
   end
 end
+
+function ruins_switch:on_activated()
+  map:open_doors("ruins_door")
+end

@@ -454,6 +454,7 @@ sprite{ id = "entities/door_grass_yellow", description = "Door-Yellow Grass" }
 sprite{ id = "entities/door_int_1", description = "door - interior 1" }
 sprite{ id = "entities/door_locked", description = "Door - Locked" }
 sprite{ id = "entities/door_npc_tall", description = "NPC door - tall" }
+sprite{ id = "entities/door_post_stone", description = "Door-Stone Post" }
 sprite{ id = "entities/door_posts", description = "Door - Posts" }
 sprite{ id = "entities/door_shutter", description = "door (shutter)" }
 sprite{ id = "entities/door_unmarked_wall", description = "Door - Unmarked Wall" }
