@@ -9,41 +9,24 @@
 
 local map = ...
 local game = map:get_game()
+local enemies_killed
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
   self:get_camera():letterbox()
-
-  if game:get_value("have_dandelion_charm") == true and game:get_value("dandelion_charm_obtained") == nil then
-      map:create_pickable({
-        layer=0,
-        x = 160, y = 128,
-        treasure_name = "dandelion_charm",
-        treasure_savegame_variable = "dandelion_charm_obtained"
-      })
-  end
-
+  enemies_killed = 0
 end
 
 
 function door_switch_1:on_activated()
   map:open_doors("shutter_door")
-  print("switch_activated")
 end
 
-function spirit:on_interaction()
-  if game:get_value("have_dandelion_charm") ~= true then
-    game:start_dialog("_goatshead.npcs.spirits.1", function()
-      map:create_pickable({
-        layer=0,
-        x = 160, y = 128,
-        treasure_name = "dandelion_charm",
-        treasure_savegame_variable = "dandelion_charm_obtained"
-      })
-      game:set_value("have_dandelion_charm", true)
-    end)
-
-  else
-    game:start_dialog("_goatshead.npcs.spirits.2")
+for enemy in map:get_entities("room_1_enemy") do
+  function enemy:on_dead()
+    enemies_killed = enemies_killed + 1
+    if enemies_killed == 2 then
+      map:open_doors("room_1_door")
+    end    
   end
 end
