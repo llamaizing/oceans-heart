@@ -9,6 +9,7 @@
 
 local map = ...
 local game = map:get_game()
+local hero = map:get_hero()
 
 
 map:register_event("on_started", function()
@@ -78,10 +79,7 @@ function bomb_sale:on_interaction()
   game:start_dialog("_goatshead.npcs.alchemist.bombs", function(answer)
     if answer == 1 then
       if game:get_money() >= 50 then
-        map:create_pickable({
-          layer = 0, x = 592, y = 1336,
-          treasure_name = "bomb", treasure_variant = 3,
-        })
+        hero:start_treasure("bomb", 3)
         game:remove_money(50)
       else
         game:start_dialog("_game.insufficient_funds")
@@ -96,10 +94,7 @@ function arrow_sale:on_interaction()
     game:start_dialog("_generic_dialogs.shop.arrows", function(answer)  
       if answer == 1 then
         if game:get_money() >= 10 then
-          map:create_pickable({
-            layer = 0, x = 152, y = 1336,
-            treasure_name = "arrow", treasure_variant = 2,
-          })
+          hero:start_treasure("arrow", 2)
           game:remove_money(10)
         else
           game:start_dialog("_game.insufficient_funds")

@@ -52,7 +52,7 @@ arrow.apply_cliffs = true
 -- Triggers the animation and sound of the arrow reaching something
 -- and removes the arrow after some delay.
 local function attach_to_obstacle()
-
+  arrow:clear_collision_tests()
   flying = false
   sprite:set_animation("reached_obstacle")
   sol.audio.play_sound("arrow_hit")
@@ -66,7 +66,7 @@ end
 
 -- Attaches the arrow to an entity and make it follow it.
 local function attach_to_entity(entity)
-
+  arrow:clear_collision_tests()
   if entity_reached ~= nil then
     -- Already attached.
     return
@@ -109,8 +109,7 @@ end
 
 
 -- Hurt enemies.
-arrow:add_collision_test("sprite", function(arrow, entity)
-
+arrow:add_collision_test("sprite", function(arrow, entity)  
   if entity:get_type() == "enemy" then
     local enemy = entity
     if enemies_touched[enemy] then

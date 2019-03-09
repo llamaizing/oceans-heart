@@ -12,7 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
-  self:get_camera():letterbox()
+  map:get_camera():letterbox()
   -- You can initialize the movement and sprites of various
   -- map entities here.
 end
@@ -21,9 +21,10 @@ end
 -- that is, when the player takes control of the hero.
 
 function lost_pirate:on_interaction()
-  if game:has_item("key_juneberry_inn") ~= true then
+  if not map:has_entity("dropped_key") and game:has_item("key_juneberry_inn") ~= true then
     game:start_dialog("_ballast_harbor.npcs.tavern.lost_pirate_1", function()
       map:create_pickable({
+        name = "dropped_key",
         x = 448, y = 192, layer = 0, 
         treasure_name = "key_juneberry_inn", treasure_savegame_variable = "found_tipsy_pirate_inn_key",
       })

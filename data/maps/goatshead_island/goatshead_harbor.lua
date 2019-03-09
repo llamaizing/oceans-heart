@@ -113,7 +113,6 @@ map:register_event("on_opening_transition_finished", function()
 
   if game:get_value("goatshead_opening") ~= true then
     game:start_dialog("_goatshead.npcs.juglan.1", function()
-      game:start_dialog("_game.quest_log_update")
       game:set_value("quest_meet_juglan_at_pier",1)  --quest log
       game:set_value("quest_log_a", "a3")
       game:set_value("goatshead_opening", true)

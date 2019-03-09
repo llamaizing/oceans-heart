@@ -4,8 +4,6 @@ local behavior = {}
 
 
 function behavior:create(enemy, properties)
-
-  local children = {}
   local dist_hero
   local can_shoot = true
   local going_hero = false
@@ -91,6 +89,7 @@ function behavior:create(enemy, properties)
     self:set_attack_consequence("fire", properties.fire_consequence)
     self:set_attack_consequence("sword", properties.sword_consequence)
     self:set_attack_consequence("arrow", properties.arrow_consequence)
+    bomb_i = 1
   end
 
   function enemy:on_movement_changed(movement)
@@ -100,17 +99,6 @@ function behavior:create(enemy, properties)
     sprite:set_direction(direction4)
   end
 
-	local previous_on_removed = enemy.on_removed
-	function enemy:on_removed()
-
-	  if previous_on_removed then
-		previous_on_removed(enemy)
-	  end
-
-	  for _, child in ipairs(children) do
-		child:remove()
-	  end
-	end
 
   function enemy:on_obstacle_reached(movement)
 
@@ -234,24 +222,18 @@ function behavior:create(enemy, properties)
 
 	  sprite:set_animation("shooting")
 	  enemy:stop_movement()
-    --destroy an old bomb before creating a new one (mainly so we don't move the old bomb with our movement)
-    if map:has_entity("hinox_bomb") == true then
-      local bombx, bomby, bombl = map:get_entity("hinox_bomb"):get_position()
-      map:create_explosion({x = bombx, y = bomby, layer = bombl, })
-      sol.audio.play_sound("explosion")
-      map:get_entity("hinox_bomb"):remove()
-    end
     --now let's create a new bomb after we give the enemy a second to pull it out of his pocket
 	  sol.timer.start(enemy, 400, function()
-      map:create_bomb({
+      local bomb = map:create_bomb({
         name = "hinox_bomb", x = x, y = y, layer = layer,
       })
+      bomb_i = bomb_i + 1
       local bomb_toss = sol.movement.create("jump")
       local dir_to_hero = self:get_direction8_to(hero)
       bomb_toss:set_direction8(dir_to_hero)
       bomb_toss:set_distance(dist_hero + 16)
       bomb_toss:set_speed(120)
-      bomb_toss:start(map:get_entity("hinox_bomb"))
+      bomb_toss:start(bomb)
       sol.audio.play_sound("throw")
   	  sprite:set_animation("walking")
       self:go_random()

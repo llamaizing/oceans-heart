@@ -39,7 +39,6 @@ function jerah:on_interaction()
     game:start_dialog("_yarrowmouth.npcs.tavern.jerah.2")
   else
     game:start_dialog("_yarrowmouth.npcs.tavern.jerah.1", function()
-      game:start_dialog("_game.quest_log_update")
       game:set_value("talked_to_jerah_in_the_grove", true)
       game:set_value("quest_log_a", "a6")
       game:set_value("quest_hourglass_fort", 1) --quest log

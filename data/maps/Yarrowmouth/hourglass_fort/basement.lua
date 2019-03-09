@@ -132,10 +132,10 @@ function letter:on_interaction()
   if game:get_value("hourglass_fort_read_letter") ~= true then
     game:start_dialog("_yarrowmouth.observations.hourglass_fort.letter", function()
       game:set_value("quest_log_a", "a8")
-      game:start_dialog("_game.quest_log_update")
+      
       game:set_value("quest_hourglass_fort", 3) --quest log
       game:set_value("quest_hazel", 0) --quest log
-      hero:teleport("Yarrowmouth/kingsdown", "from_hourglass_fort", "fade")
+      hero:teleport("Yarrowmouth/tern_marsh", "from_hourglass_fort", "fade")
     end)
     game:set_value("hourglass_fort_read_letter", true)
     game:set_value("oakhaven_ferries_activated", true) --this is juuuust in case I used this value somewhere else

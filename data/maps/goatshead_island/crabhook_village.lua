@@ -65,7 +65,6 @@ end
 function fishin_guy:on_interaction()
   if game:get_value("looking_for_crabhook_monster") ~= true then
     game:start_dialog("_goatshead.npcs.crabhook.market_people.8")
-    game:start_dialog("_game.quest_log_update")
   else
     if game:get_value("poplar_coast_menace_state") ~= nil then
       game:start_dialog("_goatshead.npcs.crabhook.market_people.10")

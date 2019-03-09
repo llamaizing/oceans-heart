@@ -73,7 +73,7 @@ function hazel:on_interaction()
 
       --normal sequence, didn't get fruit yet
       game:start_dialog("_oakhaven.npcs.hazel.inn.1", function()
-        game:start_dialog("_game.quest_log_update")
+        
         game:set_value("quest_hazel", 7) -- quest log, end hazel quest
         game:set_value("quest_tidal_starfruit", 0) --quest log
         game:set_value("quest_log_a", "a14")
@@ -91,7 +91,7 @@ function hazel:on_interaction()
       game:set_value("morus_available", true)
       game:set_value("grover_counter", 3)
       hero:start_treasure("amulet", 1, "have_amulet", function()
-        game:start_dialog("_game.quest_log_update")
+        
         game:set_value("quest_pirate_fort", 0) --quest log, start Morus quest
         game:set_value("quest_log_a", "a15")
         game:set_value("quest_log_b", "b4")

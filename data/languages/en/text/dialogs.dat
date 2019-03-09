@@ -5166,8 +5166,8 @@ Yeah, $1I...$3 Shoot! No, I left it over there!
 
 LINDEN:
 Haha, you'll be fine, Tilia. Get your sword.
-Go find Dad. If you're ever lost, give me a
-call. Now get going!
+And maybe come back to visit occasionally.
+Now go find Dad!
 ]],
 }
 
@@ -5176,8 +5176,8 @@ dialog{
   text = [[
 LINDEN:
 I'm sure if you ask around in the right places,
-you'll find clues. If you're ever lost, give me
-a call and we can talk it out. Now get going!
+you'll find clues. Be sure to come back and
+visit from time to time. Now get going!
 ]],
 }
 
@@ -9135,6 +9135,19 @@ want to hear when I go out to drink.
 }
 
 dialog{
+  id = "_oakhaven.npcs.saloon.weak_wall_guy.1",
+  text = [[
+SALOON PATRON:
+Maybe it's just me, but when they put up
+the walls for this new basement seating
+area, that spot right over there has always
+SALOON PATRON:
+looked a bit of. Like they did a bad job
+just over there to our left.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.shipyard.1",
   text = [[
 I messed up, I messed up, I messed up...
@@ -9166,6 +9179,38 @@ dialog{
   id = "_oakhaven.npcs.shops.general_store.hat",
   text = [[
 It's a fairly fancy hat. Not too overbearing.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.vice_captain.1",
+  text = [[
+VICE CAPTAIN:
+O-ho! Captain Tilia!
+
+
+TILIA:
+Oh man, you again? I told you I'm not you
+guys' captain just because I beat all the
+Barbell Brutes in a fight.
+VICE CAPTAIN:
+No, you are because I promoted you to
+captain. Anyway, I'm taking a journey to
+develop my inner strength. I climbed to the
+VICE CAPTAIN:
+monastery on the peak of Marblecliff
+Mountain yesterday and had tea with the
+monks. Tomorrow I'm going to learn to
+VICE CAPTAIN:
+cook pasta in the city. I'm really finding
+myself on this trip.
+
+TILIA:
+Good for you man. Look, I've gotta get back
+to what I'm doing, but keep it up I guess.
+
+VICE CAPTAIN:
+Aye, aye, captain!
 ]],
 }
 
@@ -9489,6 +9534,16 @@ dialog{
 There's a note written in angry handwriting:
 This area is for OUTGOING shipments only!
 Stop serving them at the saloon!
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.saloon.see_booze_go",
+  text = [[
+TILIA:
+That guy was carrying the ale I fixed up.
+Guess I got it just in time. The pirates should
+be good and sleepy by the time I get there.
 ]],
 }
 
@@ -11512,31 +11567,79 @@ Don't see many people wandering out this
 far. Welcome to Naerreturn Lighthouse.
 
 TILIA:
-I didn't expect to see a lighthouse so far from
-a town. Do you keep it lit?
+Thanks. That lighthouse looks super old,
+does it still work?
 
 STELLA:
-It's an old family tradition. According to
-legend, there were four lighthouses built by
-a man named Heron ages ago. They were
-STELLA:
-to guide his lover, Zephyrine, back from sea,
-after she left to save the people of
-Yarrowmouth from a tyrant. She never came
-STELLA:
-back, but my family lit the lighthouse after
-the great flood and has kept it burning ever
-since. I don't know about the other lighthouses.
+Is it not lit? Lunos, I told you not to play
+upstairs! Could you do me a favor and go
+light it again? There's a switch upstairs.
 TILIA:
-This isn't the first lighthouse like this I've
-seen as I've been traveling.
+Yeah, no problem. You know, this isn't the
+first lighthouse just like this one I've seen
+as I've been traveling.
+STELLA:
+There are four, actually. According to legend,
+a man called Heron built them. When the
+ancient people of Yarrowmouth were drawn
+STELLA:
+into a war, his lover led a group of refugees
+out of the north seas to safety. Heron felt
+guilty he couldn't stop the war, and built the
+STELLA:
+lighthouses to try to guide her back, but a
+flood happened and the lights were put out.
+I don't think all four have ever been lit since.
+TILIA:
+Interesting story. I wonder if anything would
+happen if all four were lit again.
 
 STELLA:
 Haha, well perhaps you'd guide a mythical
 figure to the bay if you lit them all. Wouldn't
 it be fun to meet someone who's been lost
 STELLA:
-at sea for a thousand years.
+at sea for a thousand years. Or well. Actually
+that'd probably be pretty creepy.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.stella.2",
+  text = [[
+STELLA:
+Thanks for lighting that for me, dear.
+Best of luck on your travels. Be careful if
+you do go about lighting all four of those
+STELLA:
+lighthouses, if old legends mean anything,
+I'm not sure what might happen.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.stella.3",
+  text = [[
+STELLA:
+Something is wrong. I didn't like the feel of
+this fog as it blew in, and now there's a
+ship in the bay. No one has anchored here
+STELLA:
+in as long as I can remember...
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.stella.4",
+  text = [[
+STELLA:
+Did you board that ship? What was on it?
+
+
+TILIA:
+Like actually, a ghost, but I'm fine. I don't
+know though, the ghost... seemed really
+sad,in a way? It's hard to say.
 ]],
 }
 
@@ -11926,6 +12029,16 @@ This statue seems to be missing its beak.
 Put the stone beak you found in its place?
 $? Repair it
 $? Leave it
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.observations.chieftans_tomb_plaque",
+  text = [[
+There's an old, weathered piece of
+wood here. Carved into it, it says:
+"Here lies the last true chieftan
+of the Bear Warriors"
 ]],
 }
 
@@ -12716,7 +12829,7 @@ You hear about four ancient
 lighthouses built to guide
 a lost lover back from sea.
 @Light all four lighthouses.
-!You've lit $v1 so far.
+! $v1 lighthouses are burning.
 @You feel drawn back to
 Naerreturn Bay.
 !It's on Yarrowmouth.

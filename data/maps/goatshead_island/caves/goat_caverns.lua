@@ -12,7 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
-    self:get_camera():letterbox()
+    map:get_camera():letterbox()
     key_chest:set_enabled(false)
   if game:get_value("goat_caverns_key_spider") ~= nil then
     key_chest:set_enabled(true)

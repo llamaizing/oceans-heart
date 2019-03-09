@@ -33,7 +33,7 @@ if dad_counter == nil then
       hero:unfreeze()
       game:set_value("dad_dialog_counter_tavern", 1)
       game:set_value("quest_whisky_for_juglan_phase", 0) --quest log
-      game:start_dialog("_game.quest_log_update")
+      
       end)
   end)
 end

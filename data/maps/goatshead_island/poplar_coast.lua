@@ -35,6 +35,5 @@ function bait_monster:on_dead()
   else
     game:set_value("danley_convo_counter", 2)
     game:set_value("quest_crabhook_shoal_monster", 3) --quest log
-    game:start_dialog("_game.quest_log_update")
   end
 end

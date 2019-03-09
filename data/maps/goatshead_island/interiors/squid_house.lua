@@ -54,7 +54,7 @@ function secret_switch:on_interaction()
         else
           game:start_dialog("_goatshead.npcs.phantom_squid.5", function()
             game:set_value("quest_phantom_squid_contracts", 0) --quest log, start part 2 of quest
-            game:start_dialog("_game.quest_log_update")
+            
             game:set_value("accepted_merchant_guild_contracts_quest", true)
             game:set_value("talked_to_eamon", 2)
             game:set_value("goatshead_harbor_footprints_visible", false)
@@ -69,7 +69,6 @@ function secret_switch:on_interaction()
           map:close_doors("front_door")
           game:set_value("goatshead_harbor_footprints_visible", false)
           game:set_value("quest_phantom_squid", 2) --quest log, return to Eamon
-          game:start_dialog("_game.quest_log_update")
         end)
 
       end
@@ -96,7 +95,6 @@ function aster:on_interaction()
         game:start_dialog("_goatshead.npcs.phantom_squid.7", function() --tell tilia about guards
           game:set_value("accepted_barbell_brute_quest", true)
           game:set_value("quest_phantom_squid_contracts", 3) --quest log, go get oak charm
-          game:start_dialog("_game.quest_log_update")
         end)
       else --reminds you to fight guards
         game:start_dialog("_goatshead.npcs.phantom_squid.8") --reiterate, fight guards

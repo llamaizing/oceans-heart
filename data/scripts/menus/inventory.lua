@@ -8,50 +8,26 @@ local game --the current game, must be manually updated using pause_menu:set_gam
 
 --All items that could ever show up in the inventory:
 local all_equipment_items = {
-    "berries",
-    "apples",
-    "bread",
-    "elixer",
-    "barrier",
-    "boomerang",
-    "spear",
-    "ball_and_chain",
-    "hookshot",
-    "tornado_dash",
-    "gust",
-    "crystal_spark",
-    "leaf_tornado",
-    "thunder_charm",
-    "bombs_counter_2",
-    "bow",
-    "bow_fire",
-    "bow_bombs",
-    "bow_warp",
-    "potion_magic_restoration",
-}
-
---captions for each item. Has to be in same order
-local item_descriptions = {
-    "Berries",
-    "Apple",
-    "Bread",
-    "Elixer Vitae",
-    "Barrier Charm",
-    "Boomerang",
-    "Spear",
-    "Flail",
-    "Hookshot",
-    "Tornado Dash",
-    "Zephyrine's Tempest",
-    "Ophira's Ember",
-    "Amalenchier's Wrath",
-    "Seabird's Tear",
-    "Bombs",
-    "Bow",
-    "Flame Arrows",
-    "Bomb Arrows",
-    "Warpbolt Charm",
-    "Magic Restoring Potion"
+    {item = "barrier", name = "Barrier Charm", assignable = true,},
+    {item = "boomerang", name = "Boomerang", assignable = true,},
+    {item = "spear", name = "Spear", assignable = true,},
+    {item = "ball_and_chain", name = "Flail", assignable = true},
+    {item = "hookshot", name = "Hookshot", assignable = true,},
+    {item = "tornado_dash", name = "Tornado Dash", assignable = true,},
+    {item = "gust", name = "Zephyrine's Tempest", assignable = true,},
+    {item = "crystal_spark", name = "Ophira's Ember", assignable = true,},
+    {item = "leaf_tornado", name = "Amalenchier's Wrath", assignable = true,},
+    {item = "thunder_charm", name = "Seabird's Tear", assignable = true,},
+    {item = "bombs_counter_2", name = "Bombs", assignable = true,},
+    {item = "bow", name = "Bow", assignable = true,},
+    {item = "bow_fire", name = "Flame Arrows", assignable = true,},
+    {item = "bow_bombs", name = "Bomb Arrows", assignable = true,},
+    {item = "bow_warp", name = "Warpbolt Charm", assignable = true,},
+    {item = "potion_magic_restoration", name = "Magic Restoring Potion", assignable = false,},
+    {item = "berries", name = "Berries", assignable = false,},
+    {item = "apples", name = "Apples", assignable = false,},
+    {item = "bread", name = "Burroak Bread", assignable = false,},
+    {item = "elixer", name = "Elixer Vitae", assignable = false,},
 }
 
 --constants:
@@ -111,13 +87,13 @@ function inventory:initialize(game)
 
     --create the item sprites:
     for i=1, #all_equipment_items do
-        if all_equipment_items[i] ~= "" then
-            local item = game:get_item(all_equipment_items[i])
+        if all_equipment_items[i].item ~= "" then
+            local item = game:get_item(all_equipment_items[i].item)
             local variant = item:get_variant()
             if variant > 0 then
                 --initialize the sprite
                 self.equipment_sprites[i] = sol.sprite.create("entities/items")
-                self.equipment_sprites[i]:set_animation(all_equipment_items[i])
+                self.equipment_sprites[i]:set_animation(all_equipment_items[i].item)
                 self.equipment_sprites[i]:set_direction(variant - 1)
 
                 --if the item has an amount, make a counter in the counters table
@@ -174,7 +150,7 @@ end
 function inventory:update_description_panel()
     --update description panel
     if self:get_item_at_current_index() and self.description_panel then
-        self.description_panel:set_text(item_descriptions[cursor_index + 1])
+        self.description_panel:set_text(all_equipment_items[cursor_index + 1].name)
     elseif self.description_panel then
         self.description_panel:set_text("")
     end
@@ -223,7 +199,12 @@ function inventory:on_command_pressed(command)
         self:initialize_assigned_item_sprites(game)
         handled = true
     elseif command == "action" then
-        --        sol.menu.start(game, quest_log)
+        if all_equipment_items[cursor_index + 1].assignable == false then
+            local item = self:get_item_at_current_index()
+            item:on_using()
+            inventory:initialize(game)
+            --use the item
+        end
         handled = true
     end
     return handled
@@ -231,7 +212,7 @@ end
 
 function inventory:get_item_at_current_index()
     local game = sol.main.game
-    local item = game:get_item(all_equipment_items[cursor_index + 1])
+    local item = game:get_item(all_equipment_items[cursor_index + 1].item)
     if item:get_variant() > 0 then
         return item
     else return nil
@@ -244,8 +225,7 @@ function inventory:on_draw(dst_surface)
     self.cursor_sprite:draw(dst_surface, (self.cursor_column * 32 + GRID_ORIGIN_X + 32) + self.x,  (self.cursor_row * 32 + GRID_ORIGIN_Y) + self.y)
     self.description_panel:draw(dst_surface, ((COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16) + self.x, (ROWS *32 + GRID_ORIGIN_Y - 8)+self.y)
     --draw assigned items: (or, if you can see what items you have assigned elsewhere, maybe don't!)
---    if self.assigned_item_sprite_1 then self.assigned_item_sprite_1:draw(dst_surface, GRID_ORIGIN_X + 32, GRID_ORIGIN_Y-32) end
---    if self.assigned_item_sprite_2 then self.assigned_item_sprite_2:draw(dst_surface, GRID_ORIGIN_X + 32 + 32, GRID_ORIGIN_Y-32) end
+
 
     --draw inventory items
     for i=1, #all_equipment_items do

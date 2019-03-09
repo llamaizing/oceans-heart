@@ -30,7 +30,6 @@ function danley:on_interaction()
           game:set_value("danley_convo_counter", 1)
           game:set_value("looking_for_crabhook_monster", true)
           game:set_value("quest_crabhook_shoal_monster", 0) --quest log for monster quest started
-          game:start_dialog("_game.quest_log_update")
         end)
       end
     end)

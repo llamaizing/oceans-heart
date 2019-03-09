@@ -17,7 +17,6 @@ map:register_event("on_started", function()
     block_statue_2:set_enabled(false)
   end
 
-  if game:get_value("oakhaven_ferries_activated") == true then lighthouse_light:set_enabled(true) end
   if game:get_value("yarrow_village_pirate_guard_left") == true then pirate_guard:set_enabled(false) end
 
   if game:get_value("nina_dialog_counter") ~= 2 then nina:set_enabled(false) end
@@ -57,9 +56,12 @@ function pirate_guard:on_interaction()
   if game:get_value("going_to_meet_carlov_pirates") == true then
     game:start_dialog("_yarrowmouth.npcs.guard_pirate.2")
     local m = sol.movement.create("path")
-    m:set_path{2,2}
+    m:set_path{2,2,2}
+    m:set_speed(40)
     m:set_speed(20)
+    m:set_ignore_obstacles(true)
     m:start(pirate_guard, function()
+--      sol.timer.start(map, 1000, function() pirate_guard:set_enabled(false) end)
       pirate_guard:set_enabled(false)
       game:set_value("yarrow_village_pirate_guard_left", true)
     end)
