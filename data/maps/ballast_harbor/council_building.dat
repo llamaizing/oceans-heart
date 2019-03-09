@@ -15880,6 +15880,7 @@ enemy{
   layer = 0,
   x = 128,
   y = 333,
+  enabled_at_start = false,
   direction = 3,
   breed = "bosses/charging_pirate_1",
 }
