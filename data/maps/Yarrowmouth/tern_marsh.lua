@@ -17,7 +17,6 @@ map:register_event("on_started", function()
     block_statue_2:set_enabled(false)
   end
 
-  if game:get_value("oakhaven_ferries_activated") == true then lighthouse_light:set_enabled(true) end
   if game:get_value("yarrow_village_pirate_guard_left") == true then pirate_guard:set_enabled(false) end
 
   if game:get_value("nina_dialog_counter") ~= 2 then nina:set_enabled(false) end
