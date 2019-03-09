@@ -10915,8 +10915,8 @@ to recover 5 hearts.
 dialog{
   id = "_treasure.spear.1",
   text = [[
-You acquired a spear! It has a longer
-reach than your sword and can do a
+You found the Bear Warriors' Spear. It has
+a longer reach than a sword and can do a
 little more damage.
 ]],
 }

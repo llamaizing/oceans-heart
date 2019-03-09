@@ -34246,16 +34246,6 @@ destination{
   direction = 3,
 }
 
-door{
-  layer = 0,
-  x = 112,
-  y = 1136,
-  direction = 3,
-  sprite = "entities/door_weak_wall",
-  savegame_variable = "ballast_harbor_market_bomb_wall",
-  opening_method = "explosion",
-}
-
 npc{
   layer = 0,
   x = 256,
@@ -35657,6 +35647,34 @@ enemy{
   y = 325,
   direction = 3,
   breed = "normal_enemies/pirate_sword_brown_1",
+}
+
+destination{
+  name = "from_back_alley_cave",
+  layer = 0,
+  x = 120,
+  y = 1165,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 112,
+  y = 1136,
+  width = 16,
+  height = 16,
+  destination_map = "ballast_harbor/cave_alley",
+  destination = "from_outside",
+}
+
+door{
+  layer = 0,
+  x = 112,
+  y = 1136,
+  direction = 3,
+  sprite = "entities/door_weak_wall",
+  savegame_variable = "ballast_harbor_market_bomb_wall",
+  opening_method = "explosion",
 }
 
 tile{

@@ -64,6 +64,7 @@ map{ id = "Yarrowmouth/tern_marsh", description = "Kingsdown Isle" }
 map{ id = "Yarrowmouth/yarrowmouth_village", description = "Yarrowmouth Village" }
 map{ id = "ballast_harbor/ballast_harbor", description = "Ballast Harbor" }
 map{ id = "ballast_harbor/cave_1", description = "Cave 1" }
+map{ id = "ballast_harbor/cave_alley", description = "Cave - Back Alley" }
 map{ id = "ballast_harbor/chart_shop", description = "Chart Shop" }
 map{ id = "ballast_harbor/council_building", description = "Pirate Council Building" }
 map{ id = "ballast_harbor/dream_cannon_hideout", description = "Dream Cannon Hideout" }
