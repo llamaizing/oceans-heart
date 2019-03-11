@@ -1603,6 +1603,16 @@ enemy{
   breed = "normal_enemies/kappa",
 }
 
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 112,
+  width = 16,
+  height = 16,
+  destination_map = "snapmast_reef/drowned_village",
+  destination = "from_health_wreck",
+}
+
 tile{
   layer = 1,
   x = 0,

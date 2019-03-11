@@ -13,12 +13,12 @@ local game = map:get_game()
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
 
-end
+end)
 
 
 for enemy in map:get_entities("enemy") do
   function enemy:on_dead()
-    if not map:has_entities("enemy") and not game:get_value("snapmast_health_ship_upgrade") then
+    if not game:get_value("snapmast_health_ship_upgrade") and map:has_entities("enemy") == false then
       map:create_pickable{
         name="health_upgrade",
         x = 256, y = 120, layer = 0, treasure_savegame_variable = "snapmast_health_ship_upgrade"}
