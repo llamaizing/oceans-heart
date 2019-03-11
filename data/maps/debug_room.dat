@@ -2983,8 +2983,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/eastoak",
-  destination = "from_fort_crow_front_door",
+  destination_map = "oakhaven/west_coast",
+  destination = "from_ruins_vault",
 }
 
 pickable{
