@@ -2808,33 +2808,6 @@ tile{
   pattern = "deep_water",
 }
 
-tile{
-  layer = 0,
-  x = 368,
-  y = 216,
-  width = 8,
-  height = 24,
-  pattern = "stairs_up.right_low",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 216,
-  width = 16,
-  height = 24,
-  pattern = "stairs_up.center_low",
-}
-
-tile{
-  layer = 0,
-  x = 344,
-  y = 216,
-  width = 8,
-  height = 24,
-  pattern = "siairs_up.left_low",
-}
-
 pickable{
   layer = 0,
   x = 72,
@@ -3010,8 +2983,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/marblecliff",
-  destination = "from_falling_tunnel",
+  destination_map = "oakhaven/eastoak",
+  destination = "from_fort_crow_front_door",
 }
 
 pickable{
@@ -4834,12 +4807,20 @@ pickable{
   treasure_name = "bow_warp",
 }
 
-stairs{
+enemy{
   layer = 0,
-  x = 352,
-  y = 224,
-  direction = 1,
-  subtype = 4,
+  x = 504,
+  y = 349,
+  direction = 3,
+  breed = "normal_enemies/dasher",
+}
+
+enemy{
+  layer = 0,
+  x = 416,
+  y = 421,
+  direction = 3,
+  breed = "normal_enemies/dasher",
 }
 
 tile{
@@ -5121,51 +5102,6 @@ tile{
   tileset = "misc",
 }
 
-tile{
-  layer = 1,
-  x = 336,
-  y = 168,
-  width = 48,
-  height = 48,
-  pattern = "ground1.1",
-}
-
-tile{
-  layer = 1,
-  x = 456,
-  y = 168,
-  width = 48,
-  height = 48,
-  pattern = "ground1.1",
-}
-
-tile{
-  layer = 1,
-  x = 344,
-  y = 208,
-  width = 8,
-  height = 8,
-  pattern = "stairs_up.left_high",
-}
-
-tile{
-  layer = 1,
-  x = 352,
-  y = 208,
-  width = 16,
-  height = 8,
-  pattern = "stairs_up.center_high",
-}
-
-tile{
-  layer = 1,
-  x = 368,
-  y = 208,
-  width = 8,
-  height = 8,
-  pattern = "stairs_up.right_high",
-}
-
 dynamic_tile{
   name = "^invisible_stairs_2",
   layer = 1,
@@ -5210,18 +5146,5 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
-}
-
-custom_entity{
-  layer = 1,
-  x = 400,
-  y = 205,
-  width = 32,
-  height = 32,
-  origin_x = 16,
-  origin_y = 29,
-  direction = 0,
-  sprite = "entities/moving_platform",
-  model = "moving_platform",
 }
 
