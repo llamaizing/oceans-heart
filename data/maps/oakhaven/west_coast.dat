@@ -58885,8 +58885,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 792,
-  y = 368,
+  x = 808,
+  y = 344,
   width = 64,
   height = 64,
   pattern = "103",
