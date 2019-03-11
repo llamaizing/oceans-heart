@@ -1,0 +1,42 @@
+-- Lua script of map oakhaven/caves/eastoak_health_shrine.
+-- This script is executed every time the hero enters this map.
+
+-- Feel free to modify the code below.
+-- You can add more events and remove the ones you don't need.
+
+-- See the Solarus Lua API documentation:
+-- http://www.solarus-games.org/doc/latest
+
+local map = ...
+local game = map:get_game()
+
+-- Event called at initialization time, as soon as this map is loaded.
+map:register_event("on_started", function()
+
+end)
+
+
+
+for enemy in map:get_entities("enemy_a") do
+  function enemy:on_dead()
+    if not map:has_entities("enemy_a") then
+      map:open_doors("door_a")
+    end
+  end
+end
+
+for enemy in map:get_entities("enemy_b") do
+  function enemy:on_dead()
+    if not map:has_entities("enemy_b") then
+      map:open_doors("door_b")
+    end
+  end
+end
+
+for enemy in map:get_entities("enemy_c") do
+  function enemy:on_dead()
+    if not map:has_entities("enemy_c") then
+      map:open_doors("door_c")
+    end
+  end
+end

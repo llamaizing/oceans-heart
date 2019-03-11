@@ -899,6 +899,78 @@ tile{
   pattern = "30",
 }
 
+tile{
+  layer = 0,
+  x = 392,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 200,
+  width = 8,
+  height = 32,
+  pattern = "door.down.left_side",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "door.down.top_low",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 200,
+  width = 8,
+  height = 32,
+  pattern = "door.down.right_side",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 232,
+  width = 8,
+  height = 32,
+  pattern = "door.up.left_side",
+}
+
+tile{
+  layer = 0,
+  x = 408,
+  y = 232,
+  width = 8,
+  height = 32,
+  pattern = "door.up.right_side",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "door.up.top_low",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
 wall{
   layer = 0,
   x = 32,
@@ -1108,6 +1180,24 @@ tile{
   layer = 1,
   x = 128,
   y = 320,
+  width = 32,
+  height = 16,
+  pattern = "door.up.high",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 216,
+  width = 32,
+  height = 16,
+  pattern = "door.down.high",
+}
+
+tile{
+  layer = 1,
+  x = 384,
+  y = 232,
   width = 32,
   height = 16,
   pattern = "door.up.high",
