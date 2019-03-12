@@ -22853,6 +22853,24 @@ door{
   sprite = "entities/door_shutter",
 }
 
+destination{
+  name = "from_coral_cave",
+  layer = 0,
+  x = 912,
+  y = 397,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 904,
+  y = 368,
+  width = 16,
+  height = 16,
+  destination_map = "snapmast_reef/caves/coral_cave",
+  destination = "from_outside",
+}
+
 tile{
   layer = 1,
   x = 304,
