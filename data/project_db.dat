@@ -38,6 +38,7 @@ map{ id = "Yarrowmouth/caves/mushroom_cave", description = "Mushroom Cave" }
 map{ id = "Yarrowmouth/caves/naerreturn_cave", description = "Naerreturn Cave" }
 map{ id = "Yarrowmouth/caves/puzzlewood_cave_1", description = "Puzzlewood Cave 1" }
 map{ id = "Yarrowmouth/caves/tern_marsh_ambush", description = "Marsh Ambush Cave" }
+map{ id = "Yarrowmouth/caves/warp_cave", description = "Warp Cave" }
 map{ id = "Yarrowmouth/foothills", description = "Foothills" }
 map{ id = "Yarrowmouth/hourglass_fort/basement", description = "Basement" }
 map{ id = "Yarrowmouth/hourglass_fort/hourglass_fort", description = "Hourglass Fort - Outside" }
