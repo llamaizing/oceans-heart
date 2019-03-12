@@ -21791,6 +21791,34 @@ tile{
   pattern = "2073",
 }
 
+tile{
+  layer = 0,
+  x = 360,
+  y = 104,
+  enabled_at_start = false,
+  width = 32,
+  height = 32,
+  pattern = "1644",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "1521",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "1521",
+}
+
 sensor{
   name = "^map_banner_sensor",
   layer = 0,
@@ -22094,15 +22122,6 @@ destructible{
   sprite = "entities/bush_seagrass",
   weight = -1,
   can_be_cut = true,
-}
-
-door{
-  name = "tower_door",
-  layer = 0,
-  x = 368,
-  y = 136,
-  direction = 3,
-  sprite = "entities/door_shutter",
 }
 
 switch{
@@ -22805,6 +22824,33 @@ custom_entity{
   direction = 0,
   sprite = "entities/warp_block",
   model = "warp_block",
+}
+
+destination{
+  name = "from_elixer_upgrade",
+  layer = 0,
+  x = 376,
+  y = 165,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 368,
+  y = 136,
+  width = 16,
+  height = 16,
+  destination_map = "snapmast_reef/caves/elixer_upgrade_tower",
+  destination = "from_outside",
+}
+
+door{
+  name = "tower_door",
+  layer = 0,
+  x = 368,
+  y = 136,
+  direction = 3,
+  sprite = "entities/door_shutter",
 }
 
 tile{

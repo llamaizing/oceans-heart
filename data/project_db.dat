@@ -212,6 +212,7 @@ map{ id = "oakhaven/sunken_palace", description = "Sunken Palace" }
 map{ id = "oakhaven/veilwood", description = "Veilwood" }
 map{ id = "oakhaven/west_coast", description = "West Coast" }
 map{ id = "respawn_map", description = "blank room - leave empty" }
+map{ id = "snapmast_reef/caves/elixer_upgrade_tower", description = "Elixer Upgrade Tower" }
 map{ id = "snapmast_reef/caves/health_ship", description = "Health Ship" }
 map{ id = "snapmast_reef/caves/lighthouse", description = "Lighthouse" }
 map{ id = "snapmast_reef/cemetery_of_the_waves/blackbeard_cabin", description = "Blackbeard Cabin" }
@@ -306,6 +307,7 @@ sprite{ id = "enemies/normal_enemies/aster_enemy", description = "Aster - Enemy"
 sprite{ id = "enemies/normal_enemies/aster_enemy_weapon", description = "Aster - Enemy - Weapon" }
 sprite{ id = "enemies/normal_enemies/automatic_crow_knight", description = "Automatic Crow Knight" }
 sprite{ id = "enemies/normal_enemies/bat_1", description = "Bat 1" }
+sprite{ id = "enemies/normal_enemies/bat_2", description = "Dash Bat" }
 sprite{ id = "enemies/normal_enemies/birdfox_1", description = "Birdfox 1" }
 sprite{ id = "enemies/normal_enemies/blade_trap", description = "Blade Trap" }
 sprite{ id = "enemies/normal_enemies/burrow_like", description = "Burrow Like" }
@@ -1402,6 +1404,7 @@ enemy{ id = "normal_enemies/arborgeist_stump", description = "Arborgeist Stump" 
 enemy{ id = "normal_enemies/aster_enemy", description = "Aster - Enemy" }
 enemy{ id = "normal_enemies/automatic_crow_knight", description = "Automatic Crow Knight" }
 enemy{ id = "normal_enemies/bat_1", description = "Bat 1" }
+enemy{ id = "normal_enemies/bat_2", description = "Dash Bat" }
 enemy{ id = "normal_enemies/birdfox_1", description = "Birdfox Burrower" }
 enemy{ id = "normal_enemies/blade_trap", description = "Blade Trap" }
 enemy{ id = "normal_enemies/blade_trap_circle", description = "Blade Trap - Circle" }
