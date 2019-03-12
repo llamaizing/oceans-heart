@@ -34733,6 +34733,15 @@ tile{
   pattern = "350",
 }
 
+tile{
+  layer = 0,
+  x = 224,
+  y = 544,
+  width = 48,
+  height = 8,
+  pattern = "1562",
+}
+
 destination{
   name = "from_tavern",
   layer = 0,
@@ -36187,7 +36196,8 @@ teletransporter{
   y = 552,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor",
+  destination_map = "ballast_harbor/well-pit",
+  destination = "from_falling",
 }
 
 jumper{
@@ -41655,15 +41665,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 224,
-  y = 544,
-  width = 48,
-  height = 8,
-  pattern = "1562",
 }
 
 tile{

@@ -18,10 +18,9 @@ end)
 
 for enemy in map:get_entities("enemy") do
   function enemy:on_dead()
-    if not game:get_value("snapmast_health_ship_upgrade") and map:has_entities("enemy") == false then
-      map:create_pickable{
-        name="health_upgrade",
-        x = 256, y = 120, layer = 0, treasure_savegame_variable = "snapmast_health_ship_upgrade"}
+    if game:get_value("snapmast_health_ship_upgrade") == nil and map:has_entities("enemy") == false then
+      sol.audio.play_sound("secret")
+      health:set_enabled(true)
     end
   end
 end

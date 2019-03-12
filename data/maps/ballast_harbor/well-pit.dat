@@ -4331,6 +4331,24 @@ door{
   sprite = "entities/door_post_stone",
 }
 
+sensor{
+  name = "^save_solid_ground_sensor_5",
+  layer = 0,
+  x = 488,
+  y = 117,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_6",
+  layer = 0,
+  x = 664,
+  y = 429,
+  width = 32,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 256,
