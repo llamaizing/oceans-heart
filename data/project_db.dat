@@ -1,12 +1,4 @@
 map{ id = "1_empty_grass", description = "test" }
-map{ id = "Demo 1 area/central_area_test", description = "idea for central area" }
-map{ id = "Demo 1 area/pine_head_test", description = "test pines and rocks" }
-map{ id = "Goatshead Island/crossroad_east", description = "Crossroad East" }
-map{ id = "Goatshead Island/goatshead_harbor", description = "Goatshead Harbor" }
-map{ id = "Goatshead Island/lighthouse_cape", description = "Lighthouse Cape" }
-map{ id = "Goatshead Island/poplar_forest", description = "poplar_forest" }
-map{ id = "Limestone Island/Limestone Village/juglan", description = "Juglan's House" }
-map{ id = "Limestone Island/Limestone Village/limestone_village", description = "Limestone Village" }
 map{ id = "Limestone Island/cape_ruins", description = "cape_ruins" }
 map{ id = "Limestone Island/caves/hidden_lake_cave", description = "hidden lake cave" }
 map{ id = "Limestone Island/caves/hole", description = "hole" }
@@ -71,6 +63,7 @@ map{ id = "ballast_harbor/dream_cannon_hideout", description = "Dream Cannon Hid
 map{ id = "ballast_harbor/honestbeard", description = "Honestbeard's Emporium" }
 map{ id = "ballast_harbor/meadery", description = "Meadery" }
 map{ id = "ballast_harbor/tavern", description = "Sharkfire Tavern" }
+map{ id = "ballast_harbor/well-pit", description = "Well Pit" }
 map{ id = "debug_room", description = "Debug Room" }
 map{ id = "demo_1/boss_cave_antechamber", description = "boss cave - antechamber" }
 map{ id = "demo_1/boss_cave_boss_room", description = "boss cave - boss room" }
@@ -120,7 +113,6 @@ map{ id = "goatshead_island/caves/poplar_forest_cave", description = "Poplar For
 map{ id = "goatshead_island/caves/spruce_head_cave", description = "spruce head cave" }
 map{ id = "goatshead_island/caves/strength_charm", description = "Strength Charm Cave" }
 map{ id = "goatshead_island/crabhook_village", description = "Crabhook Village" }
-map{ id = "goatshead_island/crossroad_east", description = "Crossroads_East" }
 map{ id = "goatshead_island/goat_hill", description = "goat hill" }
 map{ id = "goatshead_island/goatshead_harbor", description = "Goatshead Harbor" }
 map{ id = "goatshead_island/interiors/CV_arni", description = "Crabhook - Arni" }
@@ -143,10 +135,7 @@ map{ id = "goatshead_island/lighthouse_cape", description = "Lighthouse Cape" }
 map{ id = "goatshead_island/merchant_hq_ext", description = "Merchant HQ Ext." }
 map{ id = "goatshead_island/poplar_coast", description = "Poplar Coast" }
 map{ id = "goatshead_island/poplar_forest", description = "Poplar Forest" }
-map{ id = "goatshead_island/spruce_head", description = "Spruce Head" }
-map{ id = "goatshead_island/spruce_head_entrance", description = "spruce head entrance" }
 map{ id = "goatshead_island/spruce_head_shrine", description = "Spruce Head Shrine" }
-map{ id = "goatshead_island/thrush_fort", description = "Thrush Fort" }
 map{ id = "goatshead_island/west_goat", description = "West Goat" }
 map{ id = "grass_template_blue", description = "Blue Grass Template" }
 map{ id = "grass_template_green", description = "grass template" }
@@ -443,6 +432,7 @@ sprite{ id = "entities/chairR", description = "chair right" }
 sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/chest_big", description = "Chest-Big" }
 sprite{ id = "entities/chest_green", description = "Chest - Green" }
+sprite{ id = "entities/collapsing_floor_cave", description = "CollapsingFloor-Cave" }
 sprite{ id = "entities/collapsing_floor_wood", description = "Collapsing Floor - Wood" }
 sprite{ id = "entities/collapsing_platform_floating", description = "Collapsing Platform - Floating" }
 sprite{ id = "entities/coral_ore", description = "Coral Ore" }

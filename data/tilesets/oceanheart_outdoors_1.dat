@@ -15619,6 +15619,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2335",
+  ground = "hole",
+  default_layer = 0,
+  x = 56,
+  y = 16,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "234",
   ground = "traversable",
   default_layer = 1,

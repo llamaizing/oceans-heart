@@ -571,7 +571,7 @@ chest{
   x = 96,
   y = 93,
   treasure_name = "rupee",
-  treasure_variant = 2,
+  treasure_variant = 3,
   treasure_savegame_variable = "spruce_head_cave_coins",
   sprite = "entities/chest",
 }
