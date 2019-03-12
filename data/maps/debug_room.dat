@@ -2983,8 +2983,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "snapmast_reef/drowned_village",
-  destination = "from_elixer_upgrade",
+  destination_map = "oakhaven/west_coast",
+  destination = "from_warp_cave",
 }
 
 pickable{

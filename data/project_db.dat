@@ -170,6 +170,7 @@ map{ id = "oakhaven/caves/port_bush_hole", description = "Port Bush Hole" }
 map{ id = "oakhaven/caves/port_bush_hole_2", description = "Port Bush Hole 2" }
 map{ id = "oakhaven/caves/veilwood_health_upgrade_tunnel", description = "Veilwood Health Upgrade Tunnel" }
 map{ id = "oakhaven/caves/westoak_shrine", description = "Westoak Shrine" }
+map{ id = "oakhaven/caves/westoak_warp_cave", description = "Westoak Warp Cave" }
 map{ id = "oakhaven/eastoak", description = "Eastoak" }
 map{ id = "oakhaven/fort_crow/basement", description = "Basement" }
 map{ id = "oakhaven/fort_crow/courtyard", description = "Courtyard" }
