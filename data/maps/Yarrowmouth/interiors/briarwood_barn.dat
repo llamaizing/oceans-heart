@@ -740,60 +740,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
-  y = 288,
-  width = 32,
-  height = 8,
-  pattern = "331",
-}
-
-tile{
-  layer = 0,
-  x = 440,
-  y = 296,
-  width = 8,
-  height = 8,
-  pattern = "329",
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 296,
-  width = 16,
-  height = 8,
-  pattern = "330",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 296,
-  width = 8,
-  height = 8,
-  pattern = "328",
-}
-
-tile{
-  layer = 0,
-  x = 440,
-  y = 280,
-  width = 32,
-  height = 8,
-  pattern = "332",
-}
-
-tile{
-  layer = 0,
-  x = 440,
-  y = 280,
-  width = 32,
-  height = 16,
-  pattern = "324",
-}
-
-tile{
-  layer = 0,
   x = 96,
   y = 56,
   width = 32,
@@ -2076,6 +2022,123 @@ tile{
   pattern = "door.down.left_side",
 }
 
+tile{
+  layer = 0,
+  x = 280,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "157",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "157",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 48,
+  width = 24,
+  height = 16,
+  pattern = "161",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 304,
+  width = 32,
+  height = 16,
+  pattern = "346",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 296,
+  width = 32,
+  height = 8,
+  pattern = "347",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "358",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 304,
+  width = 24,
+  height = 16,
+  pattern = "359",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "343",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "343",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "343",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "343",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "343",
+  tileset = "indoors_stone",
+}
+
 enemy{
   name = "briar_hive",
   layer = 0,
@@ -2143,28 +2206,19 @@ enemy{
 enemy{
   name = "briar_hive_5",
   layer = 0,
-  x = 304,
+  x = 264,
   y = 77,
   direction = 0,
   breed = "normal_enemies/hive",
 }
 
-tile{
-  layer = 1,
-  x = 440,
-  y = 256,
-  width = 32,
-  height = 24,
-  pattern = "325",
-}
-
-tile{
-  layer = 1,
-  x = 440,
-  y = 248,
-  width = 32,
-  height = 24,
-  pattern = "326",
+chest{
+  layer = 0,
+  x = 312,
+  y = 69,
+  treasure_name = "coral_ore",
+  treasure_savegame_variable = "briarwood_barn_coral_ore",
+  sprite = "entities/chest",
 }
 
 tile{
@@ -2460,5 +2514,102 @@ tile{
   width = 32,
   height = 16,
   pattern = "door.down.high",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 40,
+  width = 16,
+  height = 8,
+  pattern = "158",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 56,
+  width = 16,
+  height = 8,
+  pattern = "158",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 40,
+  width = 24,
+  height = 8,
+  pattern = "162",
+}
+
+tile{
+  layer = 1,
+  x = 296,
+  y = 264,
+  width = 24,
+  height = 40,
+  pattern = "360",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 264,
+  y = 264,
+  width = 32,
+  height = 24,
+  pattern = "361",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "344",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "344",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "344",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 304,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "344",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "344",
+  tileset = "indoors_stone",
 }
 

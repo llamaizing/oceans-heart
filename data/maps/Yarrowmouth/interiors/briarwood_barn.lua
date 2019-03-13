@@ -13,6 +13,11 @@ local talked_to_richardo
 
 map:register_event("on_started", function()
   talked_to_richardo = false
+  if game:get_value("briarwood_hornet_quest") and game:get_value("briarwood_hornet_quest") >= 1 then
+    for hive in map:get_entities("hive") do
+      hive:remove()
+    end
+  end
 end)
 
 function richardo:on_interaction()
@@ -33,7 +38,7 @@ function richardo:on_interaction()
   elseif game:get_value("briarwood_hornet_quest") == 1 then
       game:start_dialog("_yarrowmouth.npcs.richardo.2", function()
         game:set_value("briarwood_hornet_quest", 2)
-        game:add_money(100)
+        game:add_money(40)
       end)
 
   elseif game:get_value("briarwood_hornet_quest") == 2 then
