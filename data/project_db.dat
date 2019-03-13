@@ -105,7 +105,9 @@ map{ id = "demo_1/test_town", description = "test town" }
 map{ id = "demo_1/test_town_2", description = "test town 2-limestone" }
 map{ id = "demo_1/testing_room", description = "testing room" }
 map{ id = "goatshead_island/ball_trail", description = "Ballast Trail" }
+map{ id = "goatshead_island/brickabranch_island", description = "Brickabranch Island" }
 map{ id = "goatshead_island/caves/ball_trail_cave", description = "Ball Trail Cave" }
+map{ id = "goatshead_island/caves/brickabranch_shrine", description = "Brickabranch Shrine" }
 map{ id = "goatshead_island/caves/goat_caverns", description = "Goat Cavern" }
 map{ id = "goatshead_island/caves/hill_cave", description = "Goat Hill Cave" }
 map{ id = "goatshead_island/caves/hill_cave_2", description = "Goat Hill Cave 2" }
