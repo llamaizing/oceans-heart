@@ -1162,6 +1162,15 @@ pickable{
   treasure_savegame_variable = "brickabranch_shrine_health_upgrade",
 }
 
+sensor{
+  name = "seen_lack_of_statue_sensor",
+  layer = 0,
+  x = 200,
+  y = 189,
+  width = 32,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 192,

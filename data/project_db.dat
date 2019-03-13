@@ -119,6 +119,7 @@ map{ id = "goatshead_island/crabhook_village", description = "Crabhook Village" 
 map{ id = "goatshead_island/goat_hill", description = "goat hill" }
 map{ id = "goatshead_island/goatshead_harbor", description = "Goatshead Harbor" }
 map{ id = "goatshead_island/interiors/CV_arni", description = "Crabhook - Arni" }
+map{ id = "goatshead_island/interiors/CV_dusit", description = "Dusit" }
 map{ id = "goatshead_island/interiors/CV_tavern", description = "Crabhook Tavern" }
 map{ id = "goatshead_island/interiors/CV_witch", description = "Crabhook - Witch" }
 map{ id = "goatshead_island/interiors/alchemist", description = "Alchemist" }

@@ -1433,6 +1433,129 @@ It's not running yet.
 }
 
 dialog{
+  id = "_goatshead.npcs.crabhook.dusit.1",
+  text = [[
+DUSIT:
+Ah! You see my sign in the tavern? Some
+pirates traded me a treasure map last
+week. There's treasure on the haunted
+DUSIT:
+Brickenbranch Island. Gold! Jewls! But
+I'm super old, and I need someone to
+do the actual fetching of it for me.
+TILIA:
+I'm sorry, did you say the island is
+haunted?
+
+DUSIT:
+Eh? Yeah, all the trees died a couple
+years back and they say some abomination
+moved in. But I'll pay you well!
+$?Help this fool
+$?Move on with your life
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.2",
+  text = [[
+DUSIT:
+Excellent! Alright, head down to the
+docks and take my boat and this map.
+It'll get you to Brickenbranch Island.
+DUSIT:
+As you can see from this treasure map,
+the treasure is inside the shrine on
+the island. Find the heaps of saphires
+DUSIT:
+or whatever is there, bring it back,
+and we'll split it.
+
+TILIA:
+I'm not sure what pirates you got this
+from that convinced you that is exactly
+how this will go, but alright man.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.3",
+  text = [[
+DUSIT:
+Yeah, so just take my boat- it's down
+at the docks. Sail to Brickenbranch
+Island, which is totally haunted, and
+DUSIT:
+find the treasure that this map says
+is in the shrine there. Simple!
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.4",
+  text = [[
+DUSIT:
+Hey, you survived! Well, did you find
+buckets of rubies or gold or what?
+
+TILIA:
+I think you got sold a dud. There
+wasn't any gold or anything on the
+island.
+DUSIT:
+What!? Well that wasn't worth the
+three squid I traded for it at all!
+
+TILIA:
+Why did you think a treasure map some
+pirate was willing to trade for three
+squid would actually lead to treasure?
+DUSIT:
+Because- well, hm. That's actually a
+good point. Well, thanks for helping
+me out. As thanks, you can take my
+DUSIT:
+boat out to the haunted island whenever
+you want.
+
+TILIA:
+Wonderful.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.5",
+  text = [[
+DUSIT:
+How's it going? I've decided I need to
+stop bartering with pirates for a
+while.
+TILIA:
+That's probably for the best.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.go_to_brickenbranch",
+  text = [[
+This is Dusit's boat. Do you want to
+sail it to Brickenbranch Island?
+$? Set sail!
+$? Stay here!
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.go_to_crabhook",
+  text = [[
+Is it time to get off the island and
+sail back to Crabhook?
+$? Set sail!
+$? Stay here!
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.crabhook.market_people.1",
   text = [[
 Got plenty of decent fish for sale here
@@ -4074,10 +4197,9 @@ in the corner across the room drinking.
 dialog{
   id = "_goatshead.signs.tavern_notices.4",
   text = [[
-Emergency! Pirates made off with me
-priceless stone fish. I know none of you
-believe me. But I'll pay someone to get
-it back from where they've left it.
+Emergency! I've found a totally real
+treasure map, and I'm looking for a
+partner to help me fetch the treasure.
 Come see Dusit for details.
 ]],
 }
@@ -12702,6 +12824,21 @@ room, I guess?
 ?- Turns out the key went to
 ?Juneberry Inn on Goatshead.
     
+]],
+}
+
+dialog{
+  id = "quest.side.crabhook.dusit",
+  title = "Brickenbranch Island",
+  text = [[
+A man in Crabhook wants your help
+searching Brickenbranch Island
+for treasure.
+@Go to the dock and sail Dusit's boat
+to the island
+@Find your way into the shrine
+@Let Dusit know there wasn't
+anything inside the shrine.
 ]],
 }
 

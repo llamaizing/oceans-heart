@@ -234,12 +234,6 @@ side{
 }
 
 side{
-	dialog_id = "quest.side.crabhook.dusit",
-	calc_phase = "quest_dusit",
-	location = "location.crabhook"
-}
-
-side{
     dialog_id = "quest.side.ballast_harbor.lost_key",
     calc_phase = "quest_ballast_harbor_lost_inn_key"
 }

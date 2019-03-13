@@ -74,3 +74,13 @@ function fishin_guy:on_interaction()
     end
   end
 end
+
+function boat_sensor:on_activated()
+  if game:get_value("quest_dusit") then
+    game:start_dialog("_goatshead.npcs.crabhook.dusit.go_to_brickenbranch", function(answer)
+      if answer == 3 then
+        game:get_hero():teleport("goatshead_island/brickabranch_island", "landing")
+      end
+    end)
+  end
+end

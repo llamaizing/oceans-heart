@@ -18,6 +18,8 @@ map:register_event("on_started", function()
   game:set_world_rain_mode(world, "rain")
   switches_pressed = 0
 
+  if game:get_value("quest_dusit") == 0 then game:set_value("quest_dusit", 1) end
+
 end)
 
 for switch in map:get_entities("door_switch") do
@@ -30,4 +32,12 @@ for switch in map:get_entities("door_switch") do
       end)
     end
   end
+end
+
+function boat_sensor:on_activated()
+  game:start_dialog("_goatshead.npcs.crabhook.dusit.go_to_crabhook", function(answer)
+    if answer == 3 then
+      game:get_hero():teleport("goatshead_island/crabhook_village", "from_brickenbranch")
+    end
+  end)
 end
