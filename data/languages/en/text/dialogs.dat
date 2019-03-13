@@ -11682,6 +11682,67 @@ Go get em! And I'll pay you extra!
 }
 
 dialog{
+  id = "_yarrowmouth.npcs.richardo.1",
+  text = [[
+RICHARDO:
+Ah, ah, uh. Oh no. I messed up.
+
+
+TILIA:
+What's going on, buddy?
+
+
+RICHARDO:
+So, Briarwood's rival, a mead maker,
+we don't like him. He's underhanded and
+stuff, so I thought maybe we could, uh,
+RICHARDO:
+maybe we could out-compete him. On the
+market. And make our own mead. So I got
+a whole bunch of bees. Well. Kinda.
+RICHARDO:
+I actually accidentially got a whole
+bunch of hornets. It's bad.They've
+infested the whole barn. It's dangerous.
+RICHARDO:
+Hey, you've got a sword. I'll pay you
+100 crowns if you can destroy all of
+these hornet nests for me.
+TILIA:
+Alright. Step aside, let me see
+what I can do about this for you.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.richardo.1-5",
+  text = [[
+RICHARDO:
+Okay! Cool! Go beat those hornets!
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.richardo.2",
+  text = [[
+RICHARDO:
+You did it! You took care of all those
+hornet nests. Hives. Oooh. Oh man, that
+was a bad idea. Anyway, 100 crowns, yep.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.richardo.3",
+  text = [[
+RICHARDO:
+Ooh man. Thanks again, you saved my
+butt. If the boss had found out I
+infested the barn with hornets...
+]],
+}
+
+dialog{
   id = "_yarrowmouth.npcs.stella.1",
   text = [[
 STELLA:

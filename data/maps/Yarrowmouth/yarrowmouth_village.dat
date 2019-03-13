@@ -36099,6 +36099,24 @@ destination{
   direction = 3,
 }
 
+destination{
+  name = "from_barn",
+  layer = 0,
+  x = 376,
+  y = 317,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 368,
+  y = 288,
+  width = 16,
+  height = 16,
+  destination_map = "Yarrowmouth/interiors/briarwood_barn",
+  destination = "from_outside",
+}
+
 tile{
   layer = 1,
   x = 456,

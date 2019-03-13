@@ -43,6 +43,7 @@ map{ id = "Yarrowmouth/foothills", description = "Foothills" }
 map{ id = "Yarrowmouth/hourglass_fort/basement", description = "Basement" }
 map{ id = "Yarrowmouth/hourglass_fort/hourglass_fort", description = "Hourglass Fort - Outside" }
 map{ id = "Yarrowmouth/hourglass_fort/tunnel", description = "tunnel" }
+map{ id = "Yarrowmouth/interiors/briarwood_barn", description = "Briarwood Barn" }
 map{ id = "Yarrowmouth/interiors/briarwood_distillery", description = "Briarwood Distillery" }
 map{ id = "Yarrowmouth/interiors/carlov_house", description = "Carlov's House" }
 map{ id = "Yarrowmouth/interiors/lighthouse", description = "Lighthouse" }
