@@ -2984,7 +2984,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "goatshead_island/goatshead_harbor",
-  destination = "from_warehouse",
+  destination = "from_tunnels",
 }
 
 pickable{
@@ -4055,38 +4055,6 @@ dynamic_tile{
   tileset = "misc",
 }
 
-enemy{
-  layer = 0,
-  x = 560,
-  y = 149,
-  direction = 0,
-  breed = "misc/octorok_stone",
-}
-
-enemy{
-  layer = 0,
-  x = 584,
-  y = 141,
-  direction = 0,
-  breed = "misc/octorok_stone",
-}
-
-enemy{
-  layer = 0,
-  x = 576,
-  y = 149,
-  direction = 0,
-  breed = "misc/octorok_stone",
-}
-
-enemy{
-  layer = 0,
-  x = 552,
-  y = 141,
-  direction = 0,
-  breed = "misc/octorok_stone",
-}
-
 pickable{
   layer = 0,
   x = 208,
@@ -4818,17 +4786,219 @@ enemy{
 enemy{
   layer = 0,
   x = 408,
-  y = 357,
+  y = 349,
   direction = 3,
   breed = "normal_enemies/bat_2",
 }
 
+stream{
+  name = "current_a_2",
+  layer = 0,
+  x = 400,
+  y = 205,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_3",
+  layer = 0,
+  x = 416,
+  y = 205,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_4",
+  layer = 0,
+  x = 432,
+  y = 205,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_5",
+  layer = 0,
+  x = 448,
+  y = 205,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_6",
+  layer = 0,
+  x = 464,
+  y = 205,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_7",
+  layer = 0,
+  x = 400,
+  y = 221,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_8",
+  layer = 0,
+  x = 416,
+  y = 221,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_9",
+  layer = 0,
+  x = 432,
+  y = 221,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_10",
+  layer = 0,
+  x = 448,
+  y = 221,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_11",
+  layer = 0,
+  x = 464,
+  y = 221,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_12",
+  layer = 0,
+  x = 400,
+  y = 237,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_13",
+  layer = 0,
+  x = 416,
+  y = 237,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_14",
+  layer = 0,
+  x = 432,
+  y = 237,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_15",
+  layer = 0,
+  x = 448,
+  y = 237,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_16",
+  layer = 0,
+  x = 464,
+  y = 237,
+  direction = 0,
+  sprite = "entities/current_shallow",
+  speed = 128,
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/block_stone_lv1",
+  model = "toss_ball",
+}
+
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/block_stone_lv1",
+  model = "toss_ball",
+}
+
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/block_stone_lv1",
+  model = "toss_ball",
+}
+
+custom_entity{
+  layer = 0,
+  x = 352,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/block_stone_lv1",
+  model = "toss_ball",
+}
+
 enemy{
   layer = 0,
-  x = 520,
-  y = 413,
+  x = 544,
+  y = 333,
   direction = 3,
-  breed = "normal_enemies/bat_2",
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 576,
+  y = 437,
+  direction = 3,
+  breed = "bosses/pollutant_boss",
 }
 
 tile{

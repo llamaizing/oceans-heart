@@ -168,7 +168,7 @@ function game_manager:create(file_name)
       local effect = game:get_command_effect("action")
       local hero_state = hero:get_state()
 
-      if  effect == nil and hero_state == "free"
+      if  effect == nil and hero_state == "free" and hero:get_controlling_stream() == nil
       and not game:is_suspended() and can_dash then
         dash_manager:dash(game)
         can_dash = false

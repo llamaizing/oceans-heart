@@ -1124,6 +1124,7 @@ music{ id = "triumph_theme", description = "Triumph Theme" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "bird_flying_away", description = "bird_flying_away" }
+sound{ id = "bird_many_birds", description = "bird_many_birds" }
 sound{ id = "boiling", description = "boiling" }
 sound{ id = "bomb", description = "bomb" }
 sound{ id = "boomerang", description = "boomerang" }
@@ -1481,6 +1482,7 @@ entity{ id = "moving_platform", description = "Moving Platform" }
 entity{ id = "rockpile", description = "Rock Pile" }
 entity{ id = "rockpile_3", description = "rockpile 3" }
 entity{ id = "torch", description = "torch" }
+entity{ id = "toss_ball", description = "Toss Ball" }
 entity{ id = "warp_block", description = "Warp Block" }
 
 language{ id = "en", description = "en" }
