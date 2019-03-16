@@ -2983,8 +2983,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/goatshead_harbor",
-  destination = "from_tunnels",
+  destination_map = "ballast_harbor/ballast_harbor",
+  destination = "from_pirate_building_upstairs",
 }
 
 pickable{
@@ -4943,62 +4943,13 @@ stream{
 
 custom_entity{
   layer = 0,
-  x = 304,
-  y = 245,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/block_stone_lv1",
-  model = "toss_ball",
-}
-
-custom_entity{
-  layer = 0,
   x = 320,
-  y = 245,
+  y = -3,
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "entities/block_stone_lv1",
+  sprite = "entities/iron_ball",
   model = "toss_ball",
-}
-
-custom_entity{
-  layer = 0,
-  x = 336,
-  y = 245,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/block_stone_lv1",
-  model = "toss_ball",
-}
-
-custom_entity{
-  layer = 0,
-  x = 352,
-  y = 245,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/block_stone_lv1",
-  model = "toss_ball",
-}
-
-enemy{
-  layer = 0,
-  x = 544,
-  y = 333,
-  direction = 3,
-  breed = "normal_enemies/triangle_crab_red",
-}
-
-enemy{
-  layer = 0,
-  x = 576,
-  y = 437,
-  direction = 3,
-  breed = "bosses/pollutant_boss",
 }
 
 tile{

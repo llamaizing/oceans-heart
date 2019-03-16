@@ -211,6 +211,47 @@ We'll blow yours up if you mess with us!
 }
 
 dialog{
+  id = "_ballast_harbor.npcs.dropoff_guys.1",
+  text = [[
+SAILOR:
+Ah, feels nice to have solid planks
+'neath me feet. Pirate Council will
+send you out to sea for the longest
+SAILOR:
+stretches when they're really looking
+for something.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.dropoff_guys.2",
+  text = [[
+SAILOR:
+Ugh, gotta carry all these barrels
+to the Pirate Council's vault. Don't
+even know what's in most of 'em,
+SAILOR:
+we just had a contract to ship cargo
+from a few different pirate crews
+back here to the vault.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.dropoff_guys.3",
+  text = [[
+SAILOR:
+Hey, don't be playing around in those
+barrels. We're busy carrying them into
+the Pirate Council's vault. Maybe
+SAILOR:
+just give us some space, eh? I'm
+trying to do figure out how to move
+all these.
+]],
+}
+
+dialog{
   id = "_ballast_harbor.npcs.guts_buyer.1",
   text = [[
 Hey, you look gutsy. I mean, like, covered
@@ -340,6 +381,48 @@ I, uh... huh. Dunno.
 }
 
 dialog{
+  id = "_ballast_harbor.npcs.hornigold.1",
+  text = [[
+SAILOR:
+Ah, sorry lass, I was lost in thought  and
+didnae see yeh there. You happen to see
+a big galleon comin' into port? Carrying
+SAILOR:
+a bunch of loot they're gonna be moving
+to the Pirate Council's Vault? That big
+stone building, that is. It's the council's.
+TILIA:
+I didn't see anything like that. I don't
+know much about the Pirate Council, but I
+don't think they're up to any good anyway.
+SAILOR:
+Ahaha! The Pirate Council is a bunch of
+pirate captains. Blackbeard is trying to
+get them all together so they won't be
+SAILOR:
+fighting each other$1...$3 But, well...
+Between you and me, Blackbeard might be
+tryin' to get too much power. He's got
+SAILOR:
+the council's crews all lookin' for some
+magic treasure or somethin'. I don't$1...$3
+Don't honestly know if he's up to much
+SAILOR:
+of anything good meself anymore either.
+
+
+TILIA:
+So, you sound like you're involved in that
+or something? That's not just an unrelated
+person's thoughts on pirate politics, is it?
+SAILOR:
+Ahahaha, oh look at me. Yeah, lost in
+thought I am. Anyway, I gotta get goin'!
+Lots of ships comin' in today.
+]],
+}
+
+dialog{
   id = "_ballast_harbor.npcs.kelpton.0",
   text = [[
 KELPTON:
@@ -388,22 +471,26 @@ they sent some heavys in here and took a
 bunch of my charts. I want them back. As
 KELPTON:
 best I can figure, they're somewhere in the
-Pirate Council's hideout around here, that
-big stone building. Locked. If you can
+Pirate Council's Vault. It's that big stone
+building. The captains in the pirate council
 KELPTON:
-find your way in there, find a green trunk
-full of sea charts, and get them back without
-being killed by the Pirate Council, I'd be so
+used to use it to keep really big hauls
+safe, but lately they're collecting some
+weird stuff in there. My charts are in
 KELPTON:
-impressed I'd give you some very, very good
-information about that Mallow guy.
+a green trunk. If you could sneak in, get
+my charts, and bring them back to me,
+I'd be so impressed that I would give you
+KELPTON:
+some very, very interesting information
+about this Mallow guy.
 
 TILIA:
-So a green chest of sea charts in the big
-stone building? I'll be back soon.
+No problem. I can get your charts back.
+
 
 KELPTON:
-We'll see.
+Don't get killed.
 ]],
 }
 
@@ -416,8 +503,7 @@ charts out of my green trunk?
 
 TILIA:
 No, they're still in the Pirate Council's
-guarded building. But I'm figuring out how
-to get in.
+vault. But I'm figuring it out.
 ]],
 }
 
@@ -887,6 +973,19 @@ paying for charts that don't relate to
 Ocean's Heart or the Meurian King...
 Huh. There's a lot more archeology and a
 lot less bloodlust than you'd expect.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.observations.inviting_barrel",
+  text = [[
+This barrel looks really inviting. If you
+climbed in and closed the lid, you might
+just get scooped up and carried into the
+Pirate Council's vault with the other cargo.
+Climb into the barrel?
+$?Yes
+$?No
 ]],
 }
 
@@ -12719,16 +12818,16 @@ Someone saw Mallow in
 Ballast Harbor.
 @Talk to the Chart Salesman
 he was speaking with
+@Find a way into the
+Pirate Council's vault.
 @Return Kelpton's stolen
 sea charts
-!They're in the pirate
-!council's stone building
-@Find the lock for Mallow's
-key.
-!It says 'Northeast'
-!That's not much to go on.
-!Maybe try other leads.
-  
+@You received a key Mallow
+left with Kelpton.
+!It might have something to
+!do with the Hourglass crew,
+!but you might have to follow
+!other leads for now.
 ]],
 }
 

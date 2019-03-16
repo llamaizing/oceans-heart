@@ -483,6 +483,8 @@ sprite{ id = "entities/goat_02", description = "Goat 02" }
 sprite{ id = "entities/goat_03", description = "Goat 03" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ink_splash", description = "Ink Splash" }
+sprite{ id = "entities/inviting_barrel", description = "Inviting Barrel" }
+sprite{ id = "entities/iron_ball", description = "Iron Ball" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/leaf_blowing", description = "Leaf - Blowing" }
 sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
