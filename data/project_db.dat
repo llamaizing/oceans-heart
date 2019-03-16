@@ -64,6 +64,7 @@ map{ id = "ballast_harbor/council_building", description = "Pirate Council Build
 map{ id = "ballast_harbor/dream_cannon_hideout", description = "Dream Cannon Hideout" }
 map{ id = "ballast_harbor/honestbeard", description = "Honestbeard's Emporium" }
 map{ id = "ballast_harbor/meadery", description = "Meadery" }
+map{ id = "ballast_harbor/pirate_vault", description = "Pirate Vault" }
 map{ id = "ballast_harbor/tavern", description = "Sharkfire Tavern" }
 map{ id = "ballast_harbor/well-pit", description = "Well Pit" }
 map{ id = "debug_room", description = "Debug Room" }
@@ -249,6 +250,7 @@ tileset{ id = "sky_scroll", description = "Sky Scroll" }
 tileset{ id = "temple", description = "temple" }
 tileset{ id = "temple_2", description = "Ancient Temple" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
+tileset{ id = "vault_walls", description = "Vault Walls" }
 
 sprite{ id = "console/cursor", description = "cursor" }
 sprite{ id = "console/icons", description = "icons" }

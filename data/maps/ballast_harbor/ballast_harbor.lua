@@ -54,7 +54,7 @@ end
 function inviting_barrel:on_interaction()
   game:start_dialog("_ballast_harbor.observations.inviting_barrel", function(answer)
     if answer == 2 then
-      hero:teleport("ballast_harbor/ballast_harbor")
+      hero:teleport("ballast_harbor/pirate_vault", "from_smuggled_in")
 print("there's no dungeon to be teleported to yet!")
       game:set_value("ballast_harbor_dropoff_guys_in_port", false)
     end

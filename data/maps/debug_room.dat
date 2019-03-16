@@ -4614,18 +4614,14 @@ enemy{
 enemy{
   layer = 0,
   x = 16,
-  y = 541,
+  y = 533,
   properties = {
-    {
-      key = "direction",
-      value = "vertical",
-    },
     {
       key = "speed",
       value = "90",
     },
   },
-  direction = 0,
+  direction = 3,
   breed = "normal_enemies/blade_trap_linear",
 }
 

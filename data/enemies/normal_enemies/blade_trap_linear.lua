@@ -10,9 +10,8 @@ function enemy:on_created()
   enemy:set_damage(2)
   if enemy:get_property("damage") then enemy:set_damage(enemy:get_property("damage")) end
   enemy:set_invincible(true)
-  direction = 0
+  direction = enemy:get_sprite():get_direction()
   if enemy:get_property("direction") and enemy:get_property("direction") == "vertical" then direction = math.pi/2 end
-end
 
 local function go()
   local m = sol.movement.create("straight")
