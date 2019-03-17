@@ -5,6 +5,8 @@ local map = entity:get_map()
 
 function entity:on_created()
   entity:set_traversable_by(false)
+  entity:set_traversable_by("hero", true)
+  entity:set_impassable_by_hero()
   entity:set_drawn_in_y_order(true)
   entity:set_follow_streams(true)
   entity:set_traversable_by("enemy", true)
@@ -14,6 +16,7 @@ function entity:on_created()
   end
 end
 
+--Bash into enemies
 local enemies_touched = {}
 entity:add_collision_test("sprite", function(entity, other)
   if other:get_type() == "enemy" then
@@ -25,6 +28,9 @@ entity:add_collision_test("sprite", function(entity, other)
     sol.timer.start(map, 1000, function() enemies_touched[enemy] = false end)
   end
 end)
+
+
+
 
 function entity:on_lifting(carrier, carried_object)
   carried_object:set_damage_on_enemies(game:get_value("sword_damage") + 4)
@@ -40,13 +46,22 @@ function entity:on_lifting(carrier, carried_object)
     local sprite = carried_object:get_sprite()
     local direction = sprite:get_direction()
 
-    if carried_object:get_ground_below() == "wall" then y = y + 34 end
+    if carried_object:get_ground_below() == "wall" then y = y + 16 end
     carried_object:get_map():create_custom_entity({
       width = width, height = height, x = x, y = y, layer = layer,
       direction = direction, model = "toss_ball", sprite = sprite:get_animation_set()
     })
-
-
   end
 
+end
+
+
+function entity:set_impassable_by_hero()
+  if not map:get_hero():overlaps(entity) then
+    entity:set_traversable_by("hero", false)
+    return
+  end
+  sol.timer.start(10, function() -- Retry later.
+    entity:set_impassable_by_hero()
+  end)
 end

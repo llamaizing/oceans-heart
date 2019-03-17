@@ -17,12 +17,17 @@ function entity:on_created()
   entity:set_drawn_in_y_order(true)
   entity:set_modified_ground("wall")
 
-  --collision test
+  --collision tests
   entity:add_collision_test("sprite", function(entity, other_entity)
 
     if other_entity:get_name() == "flail_chain_link" or other_entity:get_name() == "flail_spike_ball" then
       destroy_self()
     end
+
+    if other_entity:get_type() == "custom_entity" and other_entity:get_model() == "toss_ball" then
+      destroy_self()
+    end
   end)
+
 
 end

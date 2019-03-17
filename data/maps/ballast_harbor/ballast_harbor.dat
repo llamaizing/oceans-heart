@@ -35521,8 +35521,8 @@ teletransporter{
   y = 1232,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/council_building",
-  destination = "from_front_door",
+  destination_map = "ballast_harbor/pirate_vault",
+  destination = "from_outside",
 }
 
 door{

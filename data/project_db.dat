@@ -319,6 +319,8 @@ sprite{ id = "enemies/normal_enemies/bat_1", description = "Bat 1" }
 sprite{ id = "enemies/normal_enemies/bat_2", description = "Dash Bat" }
 sprite{ id = "enemies/normal_enemies/birdfox_1", description = "Birdfox 1" }
 sprite{ id = "enemies/normal_enemies/blade_trap", description = "Blade Trap" }
+sprite{ id = "enemies/normal_enemies/blade_trap_circle", description = "Blade Trap-Circle" }
+sprite{ id = "enemies/normal_enemies/blade_trap_linear", description = "Blade Trap-Linear" }
 sprite{ id = "enemies/normal_enemies/burrow_like", description = "Burrow Like" }
 sprite{ id = "enemies/normal_enemies/chest_mimic", description = "Chest Mimic" }
 sprite{ id = "enemies/normal_enemies/clayman_mother3", description = "Clayman (Mother 3)" }
@@ -444,6 +446,7 @@ sprite{ id = "entities/chest", description = "Chest" }
 sprite{ id = "entities/chest_big", description = "Chest-Big" }
 sprite{ id = "entities/chest_green", description = "Chest - Green" }
 sprite{ id = "entities/collapsing_floor_cave", description = "CollapsingFloor-Cave" }
+sprite{ id = "entities/collapsing_floor_vault", description = "CollapsingFloor-Vault" }
 sprite{ id = "entities/collapsing_floor_wood", description = "Collapsing Floor - Wood" }
 sprite{ id = "entities/collapsing_platform_floating", description = "Collapsing Platform - Floating" }
 sprite{ id = "entities/coral_ore", description = "Coral Ore" }
@@ -504,6 +507,7 @@ sprite{ id = "entities/rockpile", description = "Rock Pile" }
 sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
+sprite{ id = "entities/smashable_gate", description = "Smashable Gate" }
 sprite{ id = "entities/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/spike_ball", description = "Spike Ball" }
 sprite{ id = "entities/spirit_1", description = "Spirit 01" }

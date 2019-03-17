@@ -5,7 +5,7 @@ local startx, starty, startl
 
 function enemy:on_created()
 
-  sprite = enemy:create_sprite("enemies/normal_enemies/blade_trap")
+  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(1)
   enemy:set_obstacle_behavior("flying")
   startx, starty, startl = enemy:get_position()

@@ -4773,18 +4773,10 @@ pickable{
 
 enemy{
   layer = 0,
-  x = 416,
-  y = 421,
-  direction = 3,
-  breed = "normal_enemies/bat_2",
-}
-
-enemy{
-  layer = 0,
   x = 408,
   y = 349,
   direction = 3,
-  breed = "normal_enemies/bat_2",
+  breed = "normal_enemies/triangle_crab_red",
 }
 
 stream{
@@ -4939,13 +4931,37 @@ stream{
 
 custom_entity{
   layer = 0,
-  x = 320,
+  x = 328,
   y = -3,
   width = 16,
   height = 16,
   direction = 0,
   sprite = "entities/iron_ball",
   model = "toss_ball",
+}
+
+enemy{
+  layer = 0,
+  x = 504,
+  y = 357,
+  direction = 3,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 456,
+  y = 381,
+  direction = 3,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 496,
+  y = 429,
+  direction = 3,
+  breed = "normal_enemies/triangle_crab_red",
 }
 
 tile{
