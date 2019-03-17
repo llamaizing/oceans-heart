@@ -41,6 +41,7 @@ function entity:on_lifting(carrier, carried_object)
 
   --landing, and therefore needing to create a new toss_ball
   function carried_object:on_breaking()
+    map:get_camera():shake({count = 3, amplitude = 5, speed = 80})
     local x, y, layer = carried_object:get_position()
     local width, height = carried_object:get_size()
     local sprite = carried_object:get_sprite()

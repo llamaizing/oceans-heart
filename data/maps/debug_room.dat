@@ -4964,6 +4964,17 @@ enemy{
   breed = "normal_enemies/triangle_crab_red",
 }
 
+custom_entity{
+  layer = 0,
+  x = 336,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/iron_ball",
+  model = "toss_ball",
+}
+
 tile{
   layer = 1,
   x = 192,

@@ -508,6 +508,7 @@ sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/smashable_gate", description = "Smashable Gate" }
+sprite{ id = "entities/smashable_wall", description = "Smashable Wall" }
 sprite{ id = "entities/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/spike_ball", description = "Spike Ball" }
 sprite{ id = "entities/spirit_1", description = "Spirit 01" }
