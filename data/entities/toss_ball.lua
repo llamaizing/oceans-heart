@@ -25,7 +25,7 @@ entity:add_collision_test("sprite", function(entity, other)
       enemy:hit_by_toss_ball()
     end
     enemies_touched[enemy] = enemy
-    sol.timer.start(map, 1000, function() enemies_touched[enemy] = false end)
+    sol.timer.start(map, 2000, function() enemies_touched[enemy] = false end)
   end
 end)
 

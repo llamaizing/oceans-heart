@@ -1217,6 +1217,7 @@ sound{ id = "sea_spirit", description = "Sea Spirit" }
 sound{ id = "secret", description = "secret" }
 sound{ id = "shield", description = "shield" }
 sound{ id = "shoot", description = "shoot" }
+sound{ id = "shoot_magic", description = "shoot_magic" }
 sound{ id = "splash", description = "splash" }
 sound{ id = "stairs_down_end", description = "stairs_down_end" }
 sound{ id = "stairs_down_start", description = "stairs_down_start" }
@@ -1225,6 +1226,7 @@ sound{ id = "stairs_up_start", description = "stairs_up_start" }
 sound{ id = "steam_01", description = "Steam 01" }
 sound{ id = "steam_high", description = "Steam - High" }
 sound{ id = "stone", description = "stone" }
+sound{ id = "summon_in", description = "summon_in" }
 sound{ id = "swim", description = "swim" }
 sound{ id = "switch", description = "switch" }
 sound{ id = "switch_2", description = "switch_2" }

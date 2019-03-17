@@ -13,11 +13,85 @@ local hero = map:get_hero()
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
+  map:set_doors_open("boss_door")
+  if game:has_item("charts") then dummy_boss:set_enabled(false) end
 
-
+  if game:get_value("seen_pirate_vault_cutscene") then
+    black_screen:set_enabled(false)
+    gavrillo:set_enabled(false)
+    blackbeard:set_enabled(false)
+    brutus:set_enabled(false)
+  else
+    map:intro_cutscene_1()
+  end
 end)
 
+--intro cutscene--
+function map:intro_cutscene_1()
+  hero:freeze()
+  blackbeard:get_sprite():set_animation("stopped")
+  brutus:get_sprite():set_animation("stopped")
+  gavrillo:get_sprite():set_animation("stopped")
+  game:set_value("seen_pirate_vault_cutscene", true)
+  game:start_dialog("_ballast_harbor.npcs.pirate_vault.intro.1", function()
+    hero:freeze()
+    black_screen:set_enabled(false)
+    game:start_dialog("_ballast_harbor.npcs.pirate_vault.intro.2", function()
+      map:intro_cutscene_2()
+    end)
+  end)
+end
 
+function map:intro_cutscene_2()
+  local m = sol.movement.create("path")
+  m:set_path{0,0,0,0,6}
+  m:start(blackbeard, function()
+    sol.timer.start(map, 500, function()
+      sol.audio.play_sound("running")
+      fake_sword:set_enabled(false)
+      sol.timer.start(map, 1000, function()
+        sol.audio.play_sound("sword4")
+        sol.audio.play_sound("sword1")
+        blackbeard:get_sprite():set_animation("attack", function()
+          blackbeard:get_sprite():set_animation("stopped")
+          sol.timer.start(map, 2000, function()
+            fake_sword:set_enabled(true)
+            sol.audio.play_sound("bomb")
+            sol.audio.play_sound("sword_tapping")
+            sol.timer.start(map, 1500, function() map:intro_cutscene_3() end)
+          end)
+        end)        
+      end)
+    end)
+  end)
+end
+
+function map:intro_cutscene_3()
+  game:start_dialog("_ballast_harbor.npcs.pirate_vault.intro.3", function()
+    local m = sol.movement.create("path")
+    m:set_path{0,0,0,2,2}
+    m:start(gavrillo, function()
+      game:start_dialog("_ballast_harbor.npcs.pirate_vault.intro.4", function()
+        m:set_path{6,6,6,6,6,6,6,6,6,6,6,6,6,6}
+        m:set_speed(70)
+        m:start(gavrillo, function()
+          gavrillo:set_enabled(false)
+          game:start_dialog("_ballast_harbor.npcs.pirate_vault.intro.5", function()
+            m:set_path{4,4,4,4,4,4,4,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6}
+            m:start(blackbeard, function()
+              blackbeard:set_enabled(false)
+              m:set_path{0,0,6,6,6,0,0,0,0,0,6,6,6,6,6,6}
+              m:start(brutus, function()
+                hero:unfreeze()
+                brutus:set_enabled(false)
+              end)
+            end)
+          end)
+        end)
+      end)
+    end)
+  end)
+end
 
 -----------------------SWITCHES----------------------------
 
@@ -67,7 +141,7 @@ end
 
 function door_c6_switch:on_activated()
   sol.audio.play_sound("switch")
-  map:open_doors("door_c6_switch")
+  map:open_doors("door_c6")
 end
 
 
@@ -95,6 +169,25 @@ end
 
 
 
+-----Boss------------
+function boss_sensor:on_activated()
+  if not game:has_item("charts") then
+    map:close_doors("boss_door")
+    game:start_dialog("_ballast_harbor.npcs.charging_pirate.1", function()
+      dummy_boss:set_enabled(false)
+      boss:set_enabled(true)
+      boss_sensor:set_enabled(false)
+    end)
+  end
+end
+
+
+function boss:on_dead()
+  map:create_pickable({
+    x = 1456, y = 1328, layer = 0, name = "health_upgrade"
+  })
+  map:open_doors("boss_door")
+end
 
 
 ------End treasure chest--------

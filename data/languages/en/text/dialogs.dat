@@ -123,19 +123,31 @@ dialog{
   id = "_ballast_harbor.npcs.charging_pirate.1",
   text = [[
 BRUTUS:
-Eh! I'm getting sick and tired of fighting
-people from the volunteer navy.
+Eh! What's about you doing in here!? You
+here to steal my Sea King's sword? 'Cause
+I found out it isn't the real one, so
+BRUTUS:
+joke's on you! Hahaha!
+
 
 TILIA:
-Wait, did you fight a guy named Mallow?
-
+Uh, it's not on me, because I'm here to
+take back the sea charts you guys took
+from Kelpton.
+BRUTUS:
+Oh, so viliganty justice, huh? Well the
+joke's still on you, because those charts
+didn't even lead us to the Isle o' Storms!
+TILIA:
+That's not why I want them, so the joke
+still isn't-
 
 BRUTUS:
-I don't ask names before I smash ya! Now
-prepare to have your bones tackled $2into little
-dusty... $1sized bits... $3 That wasn't scary...
-BRUTUS:
-Anyway, avast!
+Don't matter! I'm about to grind your
+dust into bones! Better start thinking
+what you want in your otibuary!
+TILIA:
+What?
 ]],
 }
 
@@ -735,6 +747,107 @@ MICHAEL THE MEAD MAKER:
 $1Wait...$3 You're the one who took down
 Beetle-Eyed Bartholemy, aren't you...
 You're going down, kiddo!
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.pirate_vault.intro.1",
+  text = [[
+???:
+$1...$3so you're saying this is the
+Sword of the Sea King? I'm a little
+skeptical, Brutus.
+SOMEONE WHO MUST BE BRUTUS:
+That's what me guys said, is that it is.
+Pulled it from the ruins on Yarrowmouth,
+where they say the Bear Warriors dueled
+SOMEONE WHO MUST BE BRUTUS:
+with the Sea King. Or, well, we didn't,
+but we stole it from someone who said
+that's where it's from, Mr. Beard.
+???:
+It's not Mr$1...$3 You can just call me
+Blackbeard.
+
+(You should probably climb out of this
+barrel if you want to see what's going
+on.)
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.pirate_vault.intro.2",
+  text = [[
+BRUTUS:
+Yessir, Mr. Blackbeard. But the people
+what who we stole this from swore up and
+backward it was the Sea King sword.
+BLACKBEARD:
+The Sword of the Sea King is blessed by
+the Ocean. It can cut through any armor
+and break curses. Let me see this blade.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.pirate_vault.intro.3",
+  text = [[
+BLACKBEARD:
+It's a fake. But the good news is that the
+real one is lost forever. Once we get the
+Ocean's Heart, the sword of the Sea King
+BLACKBEARD:
+might be one of the few things that could
+stand against us. Anyway, while I'm here,
+I have a job for you, Gavrillo.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.pirate_vault.intro.4",
+  text = [[
+GAVRILLO:
+What do you want, boss?
+
+
+BLACKBEARD:
+Our old friend, Captain Thyme, has decided
+to leave the Pirate Council. He's gone into
+hiding. I don't know where his hideout is,
+BLACKBEARD:
+but I want you to track him down. He knows
+what happens when you leave the Pirate
+Council.
+GAVRILLO:
+You got it, boss.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.pirate_vault.intro.5",
+  text = [[
+BLACKBEARD:
+I have some business on Oakhaven. We've
+heard a small crew of burglars found a chart
+that might show the Isle of Storms. If that's
+BLACKBEARD:
+true, then we might be able to find the
+Ocean's Heart very soon.
+
+BRUTUS:
+I'd be estastic. We been lookin' for this
+conflangeld thing forever.
+
+BLACKBEARD:
+Being able to control the sea will be worth
+it, Brutus.
+
+BRUTUS:
+Aye aye, Mr. Beard.
+
+
+BLACKBEARD:
+It's not$1...$3
 ]],
 }
 
