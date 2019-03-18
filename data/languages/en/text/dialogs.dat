@@ -123,19 +123,31 @@ dialog{
   id = "_ballast_harbor.npcs.charging_pirate.1",
   text = [[
 BRUTUS:
-Eh! I'm getting sick and tired of fighting
-people from the volunteer navy.
+Eh! What's about you doing in here!? You
+here to steal my Sea King's sword? 'Cause
+I found out it isn't the real one, so
+BRUTUS:
+joke's on you! Hahaha!
+
 
 TILIA:
-Wait, did you fight a guy named Mallow?
-
+Uh, it's not on me, because I'm here to
+take back the sea charts you guys took
+from Kelpton.
+BRUTUS:
+Oh, so viliganty justice, huh? Well the
+joke's still on you, because those charts
+didn't even lead us to the Isle o' Storms!
+TILIA:
+That's not why I want them, so the joke
+still isn't-
 
 BRUTUS:
-I don't ask names before I smash ya! Now
-prepare to have your bones tackled $2into little
-dusty... $1sized bits... $3 That wasn't scary...
-BRUTUS:
-Anyway, avast!
+Don't matter! I'm about to grind your
+dust into bones! Better start thinking
+what you want in your otibuary!
+TILIA:
+What?
 ]],
 }
 
@@ -207,6 +219,47 @@ Hey! You can't come through here. This is
 the top-secret base of the amazingly tough
 pirate crew called the Dream Cannons!
 We'll blow yours up if you mess with us!
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.dropoff_guys.1",
+  text = [[
+SAILOR:
+Ah, feels nice to have solid planks
+'neath me feet. Pirate Council will
+send you out to sea for the longest
+SAILOR:
+stretches when they're really looking
+for something.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.dropoff_guys.2",
+  text = [[
+SAILOR:
+Ugh, gotta carry all these barrels
+to the Pirate Council's vault. Don't
+even know what's in most of 'em,
+SAILOR:
+we just had a contract to ship cargo
+from a few different pirate crews
+back here to the vault.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.dropoff_guys.3",
+  text = [[
+SAILOR:
+Hey, don't be playing around in those
+barrels. We're busy carrying them into
+the Pirate Council's vault. Maybe
+SAILOR:
+just give us some space, eh? I'm
+trying to do figure out how to move
+all these.
 ]],
 }
 
@@ -340,6 +393,48 @@ I, uh... huh. Dunno.
 }
 
 dialog{
+  id = "_ballast_harbor.npcs.hornigold.1",
+  text = [[
+SAILOR:
+Ah, sorry lass, I was lost in thought  and
+didnae see yeh there. You happen to see
+a big galleon comin' into port? Carrying
+SAILOR:
+a bunch of loot they're gonna be moving
+to the Pirate Council's Vault? That big
+stone building, that is. It's the council's.
+TILIA:
+I didn't see anything like that. I don't
+know much about the Pirate Council, but I
+don't think they're up to any good anyway.
+SAILOR:
+Ahaha! The Pirate Council is a bunch of
+pirate captains. Blackbeard is trying to
+get them all together so they won't be
+SAILOR:
+fighting each other$1...$3 But, well...
+Between you and me, Blackbeard might be
+tryin' to get too much power. He's got
+SAILOR:
+the council's crews all lookin' for some
+magic treasure or somethin'. I don't$1...$3
+Don't honestly know if he's up to much
+SAILOR:
+of anything good meself anymore either.
+
+
+TILIA:
+So, you sound like you're involved in that
+or something? That's not just an unrelated
+person's thoughts on pirate politics, is it?
+SAILOR:
+Ahahaha, oh look at me. Yeah, lost in
+thought I am. Anyway, I gotta get goin'!
+Lots of ships comin' in today.
+]],
+}
+
+dialog{
   id = "_ballast_harbor.npcs.kelpton.0",
   text = [[
 KELPTON:
@@ -388,22 +483,26 @@ they sent some heavys in here and took a
 bunch of my charts. I want them back. As
 KELPTON:
 best I can figure, they're somewhere in the
-Pirate Council's hideout around here, that
-big stone building. Locked. If you can
+Pirate Council's Vault. It's that big stone
+building. The captains in the pirate council
 KELPTON:
-find your way in there, find a green trunk
-full of sea charts, and get them back without
-being killed by the Pirate Council, I'd be so
+used to use it to keep really big hauls
+safe, but lately they're collecting some
+weird stuff in there. My charts are in
 KELPTON:
-impressed I'd give you some very, very good
-information about that Mallow guy.
+a green trunk. If you could sneak in, get
+my charts, and bring them back to me,
+I'd be so impressed that I would give you
+KELPTON:
+some very, very interesting information
+about this Mallow guy.
 
 TILIA:
-So a green chest of sea charts in the big
-stone building? I'll be back soon.
+No problem. I can get your charts back.
+
 
 KELPTON:
-We'll see.
+Don't get killed.
 ]],
 }
 
@@ -416,8 +515,7 @@ charts out of my green trunk?
 
 TILIA:
 No, they're still in the Pirate Council's
-guarded building. But I'm figuring out how
-to get in.
+vault. But I'm figuring it out.
 ]],
 }
 
@@ -451,9 +549,9 @@ he got caught, because he comes back to me
 KELPTON:
 with a gash on his leg. I stitched him up
 like I would a torn map, then he left. But
-he accidentally left this key here. I put
+he accidentally left this key here. I guess
 KELPTON:
-it in the chest. It seemed important, but I
+it seemed important, so I kept it. But I
 have no idea where it goes. If you ever
 find him, give it back I guess.
 ]],
@@ -649,6 +747,107 @@ MICHAEL THE MEAD MAKER:
 $1Wait...$3 You're the one who took down
 Beetle-Eyed Bartholemy, aren't you...
 You're going down, kiddo!
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.pirate_vault.intro.1",
+  text = [[
+???:
+$1...$3so you're saying this is the
+Sword of the Sea King? I'm a little
+skeptical, Brutus.
+SOMEONE WHO MUST BE BRUTUS:
+That's what me guys said, is that it is.
+Pulled it from the ruins on Yarrowmouth,
+where they say the Bear Warriors dueled
+SOMEONE WHO MUST BE BRUTUS:
+with the Sea King. Or, well, we didn't,
+but we stole it from someone who said
+that's where it's from, Mr. Beard.
+???:
+It's not Mr$1...$3 You can just call me
+Blackbeard.
+
+(You should probably climb out of this
+barrel if you want to see what's going
+on.)
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.pirate_vault.intro.2",
+  text = [[
+BRUTUS:
+Yessir, Mr. Blackbeard. But the people
+what who we stole this from swore up and
+backward it was the Sea King sword.
+BLACKBEARD:
+The Sword of the Sea King is blessed by
+the Ocean. It can cut through any armor
+and break curses. Let me see this blade.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.pirate_vault.intro.3",
+  text = [[
+BLACKBEARD:
+It's a fake. But the good news is that the
+real one is lost forever. Once we get the
+Ocean's Heart, the sword of the Sea King
+BLACKBEARD:
+might be one of the few things that could
+stand against us. Anyway, while I'm here,
+I have a job for you, Gavrillo.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.pirate_vault.intro.4",
+  text = [[
+GAVRILLO:
+What do you want, boss?
+
+
+BLACKBEARD:
+Our old friend, Captain Thyme, has decided
+to leave the Pirate Council. He's gone into
+hiding. I don't know where his hideout is,
+BLACKBEARD:
+but I want you to track him down. He knows
+what happens when you leave the Pirate
+Council.
+GAVRILLO:
+You got it, boss.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.pirate_vault.intro.5",
+  text = [[
+BLACKBEARD:
+I have some business on Oakhaven. We've
+heard a small crew of burglars found a chart
+that might show the Isle of Storms. If that's
+BLACKBEARD:
+true, then we might be able to find the
+Ocean's Heart very soon.
+
+BRUTUS:
+I'd be estastic. We been lookin' for this
+conflangeld thing forever.
+
+BLACKBEARD:
+Being able to control the sea will be worth
+it, Brutus.
+
+BRUTUS:
+Aye aye, Mr. Beard.
+
+
+BLACKBEARD:
+It's not$1...$3
 ]],
 }
 
@@ -891,6 +1090,19 @@ lot less bloodlust than you'd expect.
 }
 
 dialog{
+  id = "_ballast_harbor.observations.inviting_barrel",
+  text = [[
+This barrel looks really inviting. If you
+climbed in and closed the lid, you might
+just get scooped up and carried into the
+Pirate Council's vault with the other cargo.
+Climb into the barrel?
+$?Yes
+$?No
+]],
+}
+
+dialog{
   id = "_ballast_harbor.observations.outdoor_charts",
   text = [[
 A bunch of rolled up sea charts. It looks
@@ -905,6 +1117,13 @@ It's a map of the Zephyr Empire, waaay
 south of here. Judging by the number of
 dragons and giants depicted, it's accuracy
 may be in dispute.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.observations.pirate_vault.door_opened",
+  text = [[
+Sounds like several doors opened nearby.
 ]],
 }
 
@@ -1429,6 +1648,129 @@ dialog{
 Yeah, there's a ferry to Ballast Harbor.
 But don't worry about it for now, okay?
 It's not running yet.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.1",
+  text = [[
+DUSIT:
+Ah! You see my sign in the tavern? Some
+pirates traded me a treasure map last
+week. There's treasure on the haunted
+DUSIT:
+Brickenbranch Island. Gold! Jewls! But
+I'm super old, and I need someone to
+do the actual fetching of it for me.
+TILIA:
+I'm sorry, did you say the island is
+haunted?
+
+DUSIT:
+Eh? Yeah, all the trees died a couple
+years back and they say some abomination
+moved in. But I'll pay you well!
+$?Help this fool
+$?Move on with your life
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.2",
+  text = [[
+DUSIT:
+Excellent! Alright, head down to the
+docks and take my boat and this map.
+It'll get you to Brickenbranch Island.
+DUSIT:
+As you can see from this treasure map,
+the treasure is inside the shrine on
+the island. Find the heaps of saphires
+DUSIT:
+or whatever is there, bring it back,
+and we'll split it.
+
+TILIA:
+I'm not sure what pirates you got this
+from that convinced you that is exactly
+how this will go, but alright man.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.3",
+  text = [[
+DUSIT:
+Yeah, so just take my boat- it's down
+at the docks. Sail to Brickenbranch
+Island, which is totally haunted, and
+DUSIT:
+find the treasure that this map says
+is in the shrine there. Simple!
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.4",
+  text = [[
+DUSIT:
+Hey, you survived! Well, did you find
+buckets of rubies or gold or what?
+
+TILIA:
+I think you got sold a dud. There
+wasn't any gold or anything on the
+island.
+DUSIT:
+What!? Well that wasn't worth the
+three squid I traded for it at all!
+
+TILIA:
+Why did you think a treasure map some
+pirate was willing to trade for three
+squid would actually lead to treasure?
+DUSIT:
+Because- well, hm. That's actually a
+good point. Well, thanks for helping
+me out. As thanks, you can take my
+DUSIT:
+boat out to the haunted island whenever
+you want.
+
+TILIA:
+Wonderful.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.5",
+  text = [[
+DUSIT:
+How's it going? I've decided I need to
+stop bartering with pirates for a
+while.
+TILIA:
+That's probably for the best.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.go_to_brickenbranch",
+  text = [[
+This is Dusit's boat. Do you want to
+sail it to Brickenbranch Island?
+$? Set sail!
+$? Stay here!
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.dusit.go_to_crabhook",
+  text = [[
+Is it time to get off the island and
+sail back to Crabhook?
+$? Set sail!
+$? Stay here!
 ]],
 }
 
@@ -4074,10 +4416,9 @@ in the corner across the room drinking.
 dialog{
   id = "_goatshead.signs.tavern_notices.4",
   text = [[
-Emergency! Pirates made off with me
-priceless stone fish. I know none of you
-believe me. But I'll pay someone to get
-it back from where they've left it.
+Emergency! I've found a totally real
+treasure map, and I'm looking for a
+partner to help me fetch the treasure.
 Come see Dusit for details.
 ]],
 }
@@ -10578,10 +10919,10 @@ in the area.
 dialog{
   id = "_treasure.key_kingsdown.1",
   text = [[
-You found an old key. There's a tag
-attached that says "northeast"...
-That's all you have to go on. You should
-probably follow up with other leads for now.
+You received an old key your dad accidentially
+lost. It seems important, but it could unlock
+anything. Maybe just hold on to this and
+follow up on some other leads for now.
 ]],
 }
 
@@ -10915,8 +11256,8 @@ to recover 5 hearts.
 dialog{
   id = "_treasure.spear.1",
   text = [[
-You acquired a spear! It has a longer
-reach than your sword and can do a
+You found the Bear Warriors' Spear. It has
+a longer reach than a sword and can do a
 little more damage.
 ]],
 }
@@ -11556,6 +11897,67 @@ NINA:
 Harbor through Tern Marsh. It's a little twisty,
 but it's near the southeast end of the marsh.
 Go get em! And I'll pay you extra!
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.richardo.1",
+  text = [[
+RICHARDO:
+Ah, ah, uh. Oh no. I messed up.
+
+
+TILIA:
+What's going on, buddy?
+
+
+RICHARDO:
+So, Briarwood's rival, a mead maker,
+we don't like him. He's underhanded and
+stuff, so I thought maybe we could, uh,
+RICHARDO:
+maybe we could out-compete him. On the
+market. And make our own mead. So I got
+a whole bunch of bees. Well. Kinda.
+RICHARDO:
+I actually accidentially got a whole
+bunch of hornets. It's bad.They've
+infested the whole barn. It's dangerous.
+RICHARDO:
+Hey, you've got a sword. I'll pay you
+40 crowns if you can destroy all of
+these hornet nests for me.
+TILIA:
+Alright. Step aside, let me see
+what I can do about this for you.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.richardo.1-5",
+  text = [[
+RICHARDO:
+Okay! Cool! Go beat those hornets!
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.richardo.2",
+  text = [[
+RICHARDO:
+You did it! You took care of all those
+hornet nests. Hives. Oooh. Oh man, that
+was a bad idea. Anyway, 40 crowns, yep.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.richardo.3",
+  text = [[
+RICHARDO:
+Ooh man. Thanks again, you saved my
+butt. If the boss had found out I
+infested the barn with hornets...
 ]],
 }
 
@@ -12536,16 +12938,16 @@ Someone saw Mallow in
 Ballast Harbor.
 @Talk to the Chart Salesman
 he was speaking with
+@Find a way into the
+Pirate Council's vault.
 @Return Kelpton's stolen
 sea charts
-!They're in the pirate
-!council's stone building
-@Find the lock for Mallow's
-key.
-!It says 'Northeast'
-!That's not much to go on.
-!Maybe try other leads.
-  
+@You received a key Mallow
+left with Kelpton.
+!It might have something to
+!do with the Hourglass crew,
+!but you might have to follow
+!other leads for now.
 ]],
 }
 
@@ -12702,6 +13104,21 @@ room, I guess?
 ?- Turns out the key went to
 ?Juneberry Inn on Goatshead.
     
+]],
+}
+
+dialog{
+  id = "quest.side.crabhook.dusit",
+  title = "Brickenbranch Island",
+  text = [[
+A man in Crabhook wants your help
+searching Brickenbranch Island
+for treasure.
+@Go to the dock and sail Dusit's boat
+to the island
+@Find your way into the shrine
+@Let Dusit know there wasn't
+anything inside the shrine.
 ]],
 }
 

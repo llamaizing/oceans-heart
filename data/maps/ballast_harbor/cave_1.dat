@@ -719,60 +719,6 @@ chest{
 
 destructible{
   layer = 0,
-  x = 128,
-  y = 93,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 0,
-  x = 112,
-  y = 77,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 0,
-  x = 160,
-  y = 77,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 0,
-  x = 176,
-  y = 93,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 0,
-  x = 248,
-  y = 149,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 0,
-  x = 240,
-  y = 165,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 0,
   x = 176,
   y = 77,
   sprite = "entities/bush_forest",
@@ -839,15 +785,6 @@ block{
   max_moves = 1,
 }
 
-destructible{
-  layer = 0,
-  x = 144,
-  y = 109,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
 teletransporter{
   layer = 0,
   x = 216,
@@ -856,6 +793,24 @@ teletransporter{
   height = 16,
   destination_map = "ballast_harbor/ballast_harbor",
   destination = "from_cave_1",
+}
+
+door{
+  layer = 0,
+  x = 152,
+  y = 64,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  opening_method = "explosion",
+}
+
+door{
+  layer = 0,
+  x = 120,
+  y = 80,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  opening_method = "explosion",
 }
 
 tile{

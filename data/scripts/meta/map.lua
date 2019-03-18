@@ -70,6 +70,8 @@ local function calculate_speed(entity1, entity2, duration)
   return (distance / duration)  
 end
 
+
+-----Map Focus-----
 function map_meta:focus_on(camera, target_entity, callback)
   local game = sol.main.get_game()
   hero:freeze()
@@ -88,10 +90,22 @@ function map_meta:focus_on(camera, target_entity, callback)
       m2 = sol.movement.create("target")
       m2:set_ignore_obstacles(true)
       m2:set_target(camera:get_position_to_track(hero))
-      m2:set_speed(160)
+      m2:set_speed(speed + 40)
       m2:start(camera, function() camera:start_tracking(hero) end)
     end)
   end)
 end
+
+
+-----Make a poof--------
+function map_meta:create_poof(x, y, layer)
+  local map = self
+  map:create_custom_entity({
+    model = "ephemeral_effect",
+    x = x, y = y, layer = layer, direction = 0, height = 16, width = 16,
+    sprite = "entities/poof"
+  })
+end
+
 
 return true

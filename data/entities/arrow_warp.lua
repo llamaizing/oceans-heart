@@ -1,39 +1,21 @@
--- Arrow shot by the bow.
--- Replaces the built-in one to allow silver arrows.
-
 local arrow = ...
 local game = arrow:get_game()
 local map = arrow:get_map()
 local hero = map:get_hero()
 local direction = hero:get_direction()
-local bow = game:get_item("bow")
-local force
 local sprite_id
 local sprite
-local enemies_touched = {}
-local entity_reached
-local entity_reached_dxy
 local flying
-local initial_pos_x
-local initial_pos_y
 
 
 function arrow:on_created()
-  local direction = arrow:get_direction()
-  local horizontal = direction % 2 == 0
-  if horizontal then
-    arrow:set_size(16, 8)
-    arrow:set_origin(8, 4)
-  else
-    arrow:set_size(8, 16)
-    arrow:set_origin(4, 8)
-  end
 
 end
 
 -- Traversable rules.
 arrow:set_can_traverse("crystal", true)
 arrow:set_can_traverse("crystal_block", true)
+arrow:set_can_traverse("custom_entity", true)
 arrow:set_can_traverse("hero", true)
 arrow:set_can_traverse("jumper", true)
 arrow:set_can_traverse("stairs", false)
@@ -185,14 +167,6 @@ end
 
 function arrow:set_sprite_id(id)
   sprite_id = id
-end
-
-function arrow:get_force()
-  return force
-end
-
-function arrow:set_force(f)
-  force = f
 end
 
 function arrow:go()

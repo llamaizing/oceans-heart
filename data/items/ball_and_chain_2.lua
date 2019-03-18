@@ -1,6 +1,8 @@
 local item = ...
 local game = item:get_game()
 
+--WHAT IS THIS? WHY DID I MAKE IT? WHAT'S THE DIFFERENCE BETWEEN THE OTHER BALL AND CHAIN!?!?!?
+
 -- Event called when the game is initialized.
 function item:on_started()
   item:set_savegame_variable("possession_ball_and_chain")

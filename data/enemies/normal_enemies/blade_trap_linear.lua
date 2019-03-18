@@ -2,16 +2,15 @@ local enemy = ...
 local game = enemy:get_game()
 local map = enemy:get_map()
 local direction
+local direction_set
 
 function enemy:on_created()
-
-  sprite = enemy:create_sprite("enemies/normal_enemies/blade_trap")
+  direction_set = false
+  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(1)
   enemy:set_damage(2)
   if enemy:get_property("damage") then enemy:set_damage(enemy:get_property("damage")) end
   enemy:set_invincible(true)
-  direction = 0
-  if enemy:get_property("direction") and enemy:get_property("direction") == "vertical" then direction = math.pi/2 end
 end
 
 local function go()
@@ -35,5 +34,9 @@ local function go()
 end
 
 function enemy:on_restarted()
+  if not direction_set then
+    direction = (enemy:get_sprite():get_direction() * math.pi / 2)
+    direction_set = true
+  end
   go()
 end

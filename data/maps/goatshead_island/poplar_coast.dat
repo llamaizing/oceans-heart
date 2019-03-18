@@ -43142,24 +43142,6 @@ npc{
   behavior = "dialog#_generic_dialogs.out_of_bounds",
 }
 
-destructible{
-  layer = 0,
-  x = 2200,
-  y = 1021,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
-destructible{
-  layer = 0,
-  x = 2216,
-  y = 1029,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-  damage_on_enemies = 2,
-}
-
 destination{
   name = "from_hut",
   layer = 0,

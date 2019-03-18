@@ -13,12 +13,4 @@ function movement_patterns:initialize(enemy)
     end
 end
 
--- function enemy:circle_hero(radius, radius_speed)
---     local m = sol.movement.create("circle")
---     m:set_center(hero)
---     m:set_radius(radius)
---     m:set_radius_speed(radius_speed)
---     m:start(enemy)
--- end
-
 return movement_patterns

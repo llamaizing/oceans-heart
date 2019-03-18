@@ -10009,7 +10009,7 @@ tile{
 tile{
   layer = 0,
   x = 424,
-  y = 408,
+  y = 416,
   width = 8,
   height = 8,
   pattern = "mushroom_4",
@@ -10017,7 +10017,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 416,
+  x = 408,
   y = 400,
   width = 8,
   height = 8,
@@ -10027,7 +10027,7 @@ tile{
 tile{
   layer = 0,
   x = 424,
-  y = 400,
+  y = 408,
   width = 8,
   height = 8,
   pattern = "mushroom.2",
@@ -12723,7 +12723,7 @@ enemy{
 chest{
   layer = 0,
   x = 424,
-  y = 445,
+  y = 405,
   treasure_name = "coral_ore",
   treasure_savegame_variable = "manna_oak_tunnels_coral_ore_chest",
   sprite = "entities/chest",

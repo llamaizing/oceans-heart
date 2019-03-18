@@ -119,6 +119,11 @@ function properties_setter:set_properties(enemy, properties)
     enemy:set_attack_consequence("fire", properties.fire_consequence)
     enemy:set_attack_consequence("sword", properties.sword_consequence)
     enemy:set_attack_consequence("arrow", properties.arrow_consequence)
+    if properties.shield_sprite then
+      sword_sprite = enemy:create_sprite(properties.shield_sprite)
+      enemy:set_invincible_sprite(sword_sprite)
+      enemy:set_attack_consequence_sprite(sword_sprite, "sword", "protected")
+    end
   end)
 
 end

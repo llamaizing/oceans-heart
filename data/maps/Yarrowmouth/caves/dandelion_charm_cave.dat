@@ -3649,10 +3649,10 @@ enemy{
 door{
   name = "room_1_door",
   layer = 0,
-  x = 272,
-  y = 352,
+  x = 264,
+  y = 344,
   direction = 3,
-  sprite = "entities/door_posts",
+  sprite = "entities/door_post_stone",
 }
 
 enemy{
@@ -3662,6 +3662,15 @@ enemy{
   y = 357,
   direction = 3,
   breed = "normal_enemies/ogre_1",
+}
+
+door{
+  name = "room_1_door_2",
+  layer = 0,
+  x = 264,
+  y = 352,
+  direction = 3,
+  sprite = "entities/door_post_stone",
 }
 
 tile{

@@ -32066,6 +32066,24 @@ tile{
   pattern = "633",
 }
 
+tile{
+  layer = 0,
+  x = 912,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "202",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 296,
+  width = 32,
+  height = 16,
+  pattern = "1889",
+}
+
 npc{
   layer = 0,
   x = 592,
@@ -33579,6 +33597,96 @@ sensor{
   y = 1253,
   width = 32,
   height = 32,
+}
+
+destination{
+  name = "from_port_bush_hole_2",
+  layer = 0,
+  x = 936,
+  y = 341,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 912,
+  y = 312,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/port_bush_hole_2",
+  destination = "from_outside",
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 325,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 936,
+  y = 325,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 341,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 904,
+  y = 325,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 936,
+  y = 309,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 904,
+  y = 341,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 840,
+  y = 461,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 856,
+  y = 461,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 840,
+  y = 477,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
 }
 
 tile{
@@ -36468,6 +36576,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "246",
+}
+
+tile{
+  layer = 1,
+  x = 888,
+  y = 256,
+  width = 48,
+  height = 40,
+  pattern = "1890",
 }
 
 tile{

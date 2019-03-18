@@ -44,3 +44,8 @@ function clue_sensor:on_activated()
     game:set_value("marblecliff_palace_tunnel_clue_reminder", true)
   end
 end
+
+function ruins_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:focus_on(map:get_camera(), ruins_door_1, function() map:open_doors("ruins_door") end)
+end

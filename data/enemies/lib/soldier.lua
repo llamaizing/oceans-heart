@@ -69,11 +69,10 @@ function behavior:create(enemy, properties)
     enemy:set_life(properties.life)
     enemy:set_damage(properties.damage)
     enemy:set_hurt_style(properties.hurt_style)
-    sword_sprite = enemy:create_sprite(properties.sword_sprite)
     main_sprite = enemy:create_sprite(properties.main_sprite)
     self:set_size(properties.size_x, properties.size_y)
     self:set_origin(properties.size_x / 2, properties.size_y - 3)
-
+    sword_sprite = enemy:create_sprite(properties.sword_sprite)
     enemy:set_invincible_sprite(sword_sprite)
     enemy:set_attack_consequence_sprite(sword_sprite, "sword", "custom")
   end

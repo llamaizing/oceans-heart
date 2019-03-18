@@ -9,3 +9,14 @@
 
 local map = ...
 local game = map:get_game()
+
+function lever_switch:on_activated()
+  sol.audio.play_sound("switch")
+  sol.audio.play_sound("hero_pushes")
+  for entity in map:get_entities("hook") do
+    local m = sol.movement.create("path")
+    m:set_path{0,0}
+    m:set_ignore_obstacles(true)
+    m:start(entity)
+  end
+end

@@ -96,6 +96,9 @@ function behavior:create(enemy, properties)
   local attacking = false
   local currently_dashing = false
   local currently_teleporting = false
+  if properties.has_shield then
+    enemy.shield_down = false
+  end
 
   --initialize universal enemy stuff:
   normal_functions:initialize(enemy, properties)
@@ -111,6 +114,15 @@ function behavior:create(enemy, properties)
 
   --RESTART
   function enemy:on_restarted()
+
+    if properties.has_shield and enemy.shield_down == true then
+      enemy:remove_sprite(enemy:get_sprite())
+      enemy:create_sprite("enemies/" .. enemy:get_breed() .. "_vulnerable")
+      enemy:set_default_attack_consequences()
+    elseif properties.has_shield then
+      enemy:set_consequence_for_all_attacks("protected")
+    end
+
     if currently_dashing then attacking = false currently_dashing = false end
     self:get_sprite():set_animation("walking")
     going_hero = false
@@ -118,10 +130,9 @@ function behavior:create(enemy, properties)
     sol.timer.start(self, 200, function() enemy:check_hero() return true end)
   end
 
-local n=0
+
   --Check hero
   function enemy:check_hero()
---print("checking"..n) n=n+1 print("attacking: ")print(attacking) print("going hero: ")print(going_hero)
     if not attacking then
       local near_hero = self:is_near_hero()
       enemy:check_to_break_circle()
@@ -256,6 +267,7 @@ local n=0
           attack_sprite:set_direction(direction)
           enemy:set_invincible_sprite(attack_sprite)
           enemy:set_attack_consequence_sprite(attack_sprite, "sword", "protected")
+          sol.timer.start(enemy, 1000, function() enemy:remove_sprite(attack_sprite) end)
         end
       end
       enemy:wrap_up_attack()

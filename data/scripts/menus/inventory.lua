@@ -10,7 +10,7 @@ local game --the current game, must be manually updated using pause_menu:set_gam
 local all_equipment_items = {
     {item = "barrier", name = "Barrier Charm", assignable = true,},
     {item = "boomerang", name = "Boomerang", assignable = true,},
-    {item = "spear", name = "Spear", assignable = true,},
+    {item = "spear", name = "Bear Warriors' Spear", assignable = true,},
     {item = "ball_and_chain", name = "Flail", assignable = true},
     {item = "hookshot", name = "Hookshot", assignable = true,},
     {item = "tornado_dash", name = "Tornado Dash", assignable = true,},
