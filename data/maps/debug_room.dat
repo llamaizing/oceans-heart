@@ -4897,24 +4897,6 @@ custom_entity{
   model = "toss_ball",
 }
 
-enemy{
-  name = "test_enemy",
-  layer = 0,
-  x = 360,
-  y = 365,
-  direction = 0,
-  breed = "normal_enemies/pirate_shield",
-}
-
-enemy{
-  name = "test_enemy_2",
-  layer = 0,
-  x = 496,
-  y = 405,
-  direction = 0,
-  breed = "normal_enemies/pirate_shield",
-}
-
 tile{
   layer = 1,
   x = 192,

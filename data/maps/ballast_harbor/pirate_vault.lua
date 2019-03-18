@@ -14,6 +14,8 @@ local hero = map:get_hero()
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
   map:set_doors_open("boss_door")
+  map:set_doors_open("door_f5")
+  map:set_doors_open("d1_door_3")
   if game:has_item("charts") then dummy_boss:set_enabled(false) end
 
   if game:get_value("seen_pirate_vault_cutscene") then
@@ -49,16 +51,16 @@ function map:intro_cutscene_2()
     sol.timer.start(map, 500, function()
       sol.audio.play_sound("running")
       fake_sword:set_enabled(false)
-      sol.timer.start(map, 1000, function()
+      sol.timer.start(map, 700, function()
         sol.audio.play_sound("sword4")
         sol.audio.play_sound("sword1")
         blackbeard:get_sprite():set_animation("attack", function()
           blackbeard:get_sprite():set_animation("stopped")
-          sol.timer.start(map, 2000, function()
+          sol.timer.start(map, 1000, function()
             fake_sword:set_enabled(true)
             sol.audio.play_sound("bomb")
             sol.audio.play_sound("sword_tapping")
-            sol.timer.start(map, 1500, function() map:intro_cutscene_3() end)
+            sol.timer.start(map, 800, function() map:intro_cutscene_3() end)
           end)
         end)        
       end)
@@ -148,6 +150,19 @@ end
 
 
 
+-------Sensors------------------
+function door_f5_sensor:on_activated()
+  map:close_doors("door_f5")
+  door_f5_sensor:set_enabled(false)
+end
+
+function charm_room_door_sensor:on_activated()
+  map:close_doors("d1_door")
+  charm_room_door_sensor:set_enabled(false)
+end
+
+
+
 --------Enemies----------------
 
 for enemy in map:get_entities("a5_enemy") do
@@ -164,6 +179,14 @@ for enemy in map:get_entities("c1_enemy") do
   function enemy:on_dead()
     if not map:has_entities("c1_enemy") then
       map:open_doors("c1_door")
+    end
+  end
+end
+
+for enemy in map:get_entities("f5_enemy") do
+  function enemy:on_dead()
+    if not map:has_entities("f5_enemy") then
+      map:open_doors("door_f5")
     end
   end
 end
