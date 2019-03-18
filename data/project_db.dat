@@ -250,6 +250,7 @@ tileset{ id = "sky_scroll", description = "Sky Scroll" }
 tileset{ id = "temple", description = "temple" }
 tileset{ id = "temple_2", description = "Ancient Temple" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
+tileset{ id = "treasure", description = "Treasure" }
 tileset{ id = "vault_walls", description = "Vault Walls" }
 
 sprite{ id = "console/cursor", description = "cursor" }
@@ -352,6 +353,7 @@ sprite{ id = "enemies/normal_enemies/ogre_armor", description = "Ogre-Armor" }
 sprite{ id = "enemies/normal_enemies/ogre_knight", description = "Ogre Knight" }
 sprite{ id = "enemies/normal_enemies/pirate_bow_brown_1", description = "Pirate - Bow 1" }
 sprite{ id = "enemies/normal_enemies/pirate_bruiser", description = "Pirate Bruiser" }
+sprite{ id = "enemies/normal_enemies/pirate_bruiser_shield", description = "Shield-Pirate Bruiser" }
 sprite{ id = "enemies/normal_enemies/pirate_gunner", description = "Pirate Gunner" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_1", description = "Pirate- Brown 1" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_1_weapon", description = "weapon - pirate brown 1" }
@@ -1457,6 +1459,7 @@ enemy{ id = "normal_enemies/ogre_knight", description = "Ogre Knight" }
 enemy{ id = "normal_enemies/pirate_bow_brown_1", description = "Pirate - Bow/Dodge" }
 enemy{ id = "normal_enemies/pirate_bruiser", description = "Pirate Bruiser" }
 enemy{ id = "normal_enemies/pirate_gunner", description = "Pirate Gunner" }
+enemy{ id = "normal_enemies/pirate_shield", description = "Pirate Shield Troop" }
 enemy{ id = "normal_enemies/pirate_sword_brown_1", description = "Pirate lv1" }
 enemy{ id = "normal_enemies/pirate_sword_brown_2", description = "Pirate lv2" }
 enemy{ id = "normal_enemies/pirate_sword_brown_3", description = "Pirate lv3" }

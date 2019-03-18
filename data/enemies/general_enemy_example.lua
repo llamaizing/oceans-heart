@@ -19,6 +19,8 @@ local properties = {
   push_hero_on_sword = false,
   pushed_when_hurt = false,
   wind_up_time = 1000,
+  has_shield = false,
+  shield_sprite = "pirate_bruiser_shield", --this is an example
 
   --Attacks--
   has_melee_attack = true,

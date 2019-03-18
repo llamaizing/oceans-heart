@@ -4897,6 +4897,22 @@ custom_entity{
   model = "toss_ball",
 }
 
+enemy{
+  layer = 0,
+  x = 376,
+  y = 253,
+  direction = 0,
+  breed = "normal_enemies/pirate_shield",
+}
+
+enemy{
+  layer = 0,
+  x = 528,
+  y = 181,
+  direction = 0,
+  breed = "normal_enemies/sword_soldier_blue",
+}
+
 tile{
   layer = 1,
   x = 192,

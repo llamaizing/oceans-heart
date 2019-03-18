@@ -549,9 +549,9 @@ he got caught, because he comes back to me
 KELPTON:
 with a gash on his leg. I stitched him up
 like I would a torn map, then he left. But
-he accidentally left this key here. I put
+he accidentally left this key here. I guess
 KELPTON:
-it in the chest. It seemed important, but I
+it seemed important, so I kept it. But I
 have no idea where it goes. If you ever
 find him, give it back I guess.
 ]],
@@ -1117,6 +1117,13 @@ It's a map of the Zephyr Empire, waaay
 south of here. Judging by the number of
 dragons and giants depicted, it's accuracy
 may be in dispute.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.observations.pirate_vault.door_opened",
+  text = [[
+Sounds like several doors opened nearby.
 ]],
 }
 
@@ -10912,10 +10919,10 @@ in the area.
 dialog{
   id = "_treasure.key_kingsdown.1",
   text = [[
-You found an old key. There's a tag
-attached that says "northeast"...
-That's all you have to go on. You should
-probably follow up with other leads for now.
+You received an old key your dad accidentially
+lost. It seems important, but it could unlock
+anything. Maybe just hold on to this and
+follow up on some other leads for now.
 ]],
 }
 

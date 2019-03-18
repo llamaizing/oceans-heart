@@ -103,6 +103,7 @@ end
 function hub_room_door_switch:on_activated()
   sol.audio.play_sound("switch_2")
   map:get_camera():shake({count = 8, amplitude = 4, speed = 80})
+  game:start_dialog("_ballast_harbor.observations.pirate_vault.door_opened")
   map:open_doors("hub_room_door")
 end
 
