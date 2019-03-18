@@ -1,6 +1,7 @@
 local sparkle = ...
 local game = sparkle:get_game()
 local map = sparkle:get_map()
+local is_flail = false
 
 local damage = 10
 
@@ -29,6 +30,10 @@ function sparkle:set_damage(amount)
   damage = amount
 end
 
+function sparkle:set_is_flail(bool)
+  is_flail = bool
+end
+
 
 -- Hurt enemies.
 sparkle:add_collision_test("sprite", function(sparkle, entity)
@@ -38,5 +43,6 @@ sparkle:add_collision_test("sprite", function(sparkle, entity)
     if reaction ~= "protected" and reaction ~= "ignored" then
      enemy:hurt(damage)
     end
+    if is_flail then enemy:hit_by_toss_ball() end
   end
 end)

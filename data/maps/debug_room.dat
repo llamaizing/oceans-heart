@@ -4897,6 +4897,14 @@ custom_entity{
   model = "toss_ball",
 }
 
+enemy{
+  layer = 0,
+  x = 576,
+  y = 333,
+  direction = 3,
+  breed = "normal_enemies/boulder_bro",
+}
+
 tile{
   layer = 1,
   x = 192,

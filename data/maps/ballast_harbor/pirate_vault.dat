@@ -27792,36 +27792,12 @@ enemy{
 }
 
 enemy{
-  layer = 0,
-  x = 1984,
-  y = 813,
-  direction = 3,
-  breed = "normal_enemies/pirate_shield",
-}
-
-enemy{
-  layer = 0,
-  x = 1840,
-  y = 805,
-  direction = 3,
-  breed = "normal_enemies/pirate_shield",
-}
-
-enemy{
-  layer = 0,
-  x = 1904,
-  y = 813,
-  direction = 3,
-  breed = "normal_enemies/pirate_sword_brown_1",
-}
-
-enemy{
   name = "f5_enemy",
   layer = 0,
   x = 2288,
   y = 1069,
   direction = 3,
-  breed = "normal_enemies/pirate_shield",
+  breed = "normal_enemies/boulder_bro",
 }
 
 door{
@@ -27866,7 +27842,7 @@ enemy{
   x = 2344,
   y = 1093,
   direction = 3,
-  breed = "normal_enemies/pirate_shield",
+  breed = "normal_enemies/boulder_bro",
 }
 
 custom_entity{
@@ -28222,7 +28198,7 @@ enemy{
   x = 1032,
   y = 1557,
   direction = 3,
-  breed = "normal_enemies/pirate_shield",
+  breed = "normal_enemies/boulder_bro",
 }
 
 enemy{
@@ -28230,7 +28206,7 @@ enemy{
   x = 1120,
   y = 1581,
   direction = 3,
-  breed = "normal_enemies/pirate_shield",
+  breed = "normal_enemies/gravel_guy",
 }
 
 custom_entity{
@@ -28781,6 +28757,111 @@ sensor{
   y = 1405,
   width = 32,
   height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 1024,
+  y = 1597,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 1080,
+  y = 1541,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
+}
+
+wall{
+  layer = 0,
+  x = 1056,
+  y = 1640,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
+enemy{
+  layer = 0,
+  x = 816,
+  y = 1757,
+  direction = 3,
+  breed = "normal_enemies/boulder_bro",
+}
+
+enemy{
+  layer = 0,
+  x = 648,
+  y = 1861,
+  direction = 3,
+  breed = "normal_enemies/boulder_bro",
+}
+
+enemy{
+  layer = 0,
+  x = 1816,
+  y = 821,
+  direction = 3,
+  breed = "normal_enemies/boulder_bro",
+}
+
+enemy{
+  layer = 0,
+  x = 1944,
+  y = 869,
+  direction = 3,
+  breed = "normal_enemies/boulder_bro",
+}
+
+enemy{
+  layer = 0,
+  x = 1888,
+  y = 789,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 1992,
+  y = 829,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 1872,
+  y = 861,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 2240,
+  y = 1101,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 2328,
+  y = 1141,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 2280,
+  y = 1141,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
 }
 
 tile{

@@ -9,11 +9,12 @@ function entity:on_created()
   entity:set_impassable_by_hero()
   entity:set_drawn_in_y_order(true)
   entity:set_follow_streams(true)
-  entity:set_traversable_by("enemy", true)
+  entity:set_traversable_by("enemy", false)
   entity:set_weight(1)
   if entity:get_property("weight") then
     entity:set_weight(entity:get_property("weight"))
   end
+  entity:set_size(16, 16)
 end
 
 --Bash into enemies
@@ -25,7 +26,7 @@ entity:add_collision_test("sprite", function(entity, other)
       enemy:hit_by_toss_ball()
     end
     enemies_touched[enemy] = enemy
-    sol.timer.start(map, 2000, function() enemies_touched[enemy] = false end)
+--    sol.timer.start(map, 2000, function() enemies_touched[enemy] = false end)
   end
 end)
 

@@ -76,7 +76,7 @@ function item:on_using()
     link_movements[i]:set_max_rotations(MAX_ROTATIONS)
     link_movements[i]:set_angular_speed(ANGULAR_SPEED)
     if hero_dir == 0 or hero_dir == 3 then link_movements[i]:set_clockwise() end
-
+    links[i]:set_is_flail(true)
   end
 
   --create the spike ball
@@ -92,6 +92,7 @@ function item:on_using()
     model = "damaging_sparkle"
   }
   spike_ball:set_damage(game:get_value("sword_damage") + game:get_value("sword_damage")/2)
+  spike_ball:set_is_flail(true)
 
 
   --create a movement for the flail

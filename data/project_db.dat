@@ -322,6 +322,7 @@ sprite{ id = "enemies/normal_enemies/birdfox_1", description = "Birdfox 1" }
 sprite{ id = "enemies/normal_enemies/blade_trap", description = "Blade Trap" }
 sprite{ id = "enemies/normal_enemies/blade_trap_circle", description = "Blade Trap-Circle" }
 sprite{ id = "enemies/normal_enemies/blade_trap_linear", description = "Blade Trap-Linear" }
+sprite{ id = "enemies/normal_enemies/boulder_bro", description = "Boulder Bro" }
 sprite{ id = "enemies/normal_enemies/burrow_like", description = "Burrow Like" }
 sprite{ id = "enemies/normal_enemies/chest_mimic", description = "Chest Mimic" }
 sprite{ id = "enemies/normal_enemies/clayman_mother3", description = "Clayman (Mother 3)" }
@@ -335,6 +336,7 @@ sprite{ id = "enemies/normal_enemies/frog" }
 sprite{ id = "enemies/normal_enemies/gel_black", description = "Black Gel" }
 sprite{ id = "enemies/normal_enemies/ghost_1", description = "Ghost 1" }
 sprite{ id = "enemies/normal_enemies/ghost_2", description = "Ghost 2" }
+sprite{ id = "enemies/normal_enemies/gravel_guy", description = "Gravel Guy" }
 sprite{ id = "enemies/normal_enemies/grim_1", description = "Grim 1" }
 sprite{ id = "enemies/normal_enemies/guard_goatshead_1", description = "Guard - Goatshead 1" }
 sprite{ id = "enemies/normal_enemies/guard_goatshead_1_weapon", description = "Guard Goatshead 1 Weapon" }
@@ -1434,6 +1436,7 @@ enemy{ id = "normal_enemies/birdfox_1", description = "Birdfox Burrower" }
 enemy{ id = "normal_enemies/blade_trap", description = "Blade Trap" }
 enemy{ id = "normal_enemies/blade_trap_circle", description = "Blade Trap - Circle" }
 enemy{ id = "normal_enemies/blade_trap_linear", description = "Blade Trap - Linear" }
+enemy{ id = "normal_enemies/boulder_bro", description = "Boulder Bro" }
 enemy{ id = "normal_enemies/burrow_like", description = "Burrow Like" }
 enemy{ id = "normal_enemies/chest_mimic", description = "Chest Mimic" }
 enemy{ id = "normal_enemies/crow", description = "Crow" }
@@ -1446,6 +1449,7 @@ enemy{ id = "normal_enemies/frog", description = "Frog" }
 enemy{ id = "normal_enemies/gel_black", description = "Black Gel" }
 enemy{ id = "normal_enemies/ghost_1", description = "Ghost 1" }
 enemy{ id = "normal_enemies/ghost_2", description = "Ghost 2" }
+enemy{ id = "normal_enemies/gravel_guy", description = "Gravel Guy" }
 enemy{ id = "normal_enemies/grim_1", description = "Grim 1" }
 enemy{ id = "normal_enemies/guard_goatshead_1", description = "Guard - Goatshead 1" }
 enemy{ id = "normal_enemies/hive", description = "Hornet Hive" }
