@@ -96,6 +96,9 @@ function behavior:create(enemy, properties)
   local attacking = false
   local currently_dashing = false
   local currently_teleporting = false
+  if properties.has_shield then
+    enemy.shield_down = false
+  end
 
   --initialize universal enemy stuff:
   normal_functions:initialize(enemy, properties)
@@ -111,6 +114,15 @@ function behavior:create(enemy, properties)
 
   --RESTART
   function enemy:on_restarted()
+
+    if properties.has_shield and enemy.shield_down == true then
+      enemy:remove_sprite()
+      enemy:create_sprite("enemies/" .. enemy:get_breed() .. "_vulnerable")
+      enemy:set_default_attack_consequences()
+    elseif properties.has_shield then
+      enemy:set_consequence_for_all_attacks("protected")
+    end
+
     if currently_dashing then attacking = false currently_dashing = false end
     self:get_sprite():set_animation("walking")
     going_hero = false

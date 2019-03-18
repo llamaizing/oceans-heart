@@ -367,6 +367,8 @@ sprite{ id = "enemies/normal_enemies/rock_spider_brown", description = "rock spi
 sprite{ id = "enemies/normal_enemies/rock_spider_red", description = "enemies/normal_enemies/rock_spider_red" }
 sprite{ id = "enemies/normal_enemies/seaweed_blob", description = "Seaweed Blob" }
 sprite{ id = "enemies/normal_enemies/seaweed_golem_1", description = "Seaweed Golem 1" }
+sprite{ id = "enemies/normal_enemies/shield_beetle", description = "Shield Beetle" }
+sprite{ id = "enemies/normal_enemies/shield_beetle_vulnerable", description = "ShieldBeetle-Vulnerable" }
 sprite{ id = "enemies/normal_enemies/shooty_fish", description = "Shooty Fish" }
 sprite{ id = "enemies/normal_enemies/skeleton_1", description = "Skeleton 1" }
 sprite{ id = "enemies/normal_enemies/skeleton_summoner", description = "Skeleton Summoner" }
@@ -1469,6 +1471,7 @@ enemy{ id = "normal_enemies/rock_spider_brown", description = "rock spider - bro
 enemy{ id = "normal_enemies/rock_spider_red", description = "rock spider - red" }
 enemy{ id = "normal_enemies/seaweed_blob", description = "Seaweed Blob" }
 enemy{ id = "normal_enemies/seaweed_golem_1", description = "Seaweed Golem 1" }
+enemy{ id = "normal_enemies/shield_beetle", description = "Shield Beetle" }
 enemy{ id = "normal_enemies/shooty_fish", description = "Shooty Fish" }
 enemy{ id = "normal_enemies/skeleton_1", description = "Skeleton 1" }
 enemy{ id = "normal_enemies/skeleton_summoner", description = "Skeleton Summoner" }
