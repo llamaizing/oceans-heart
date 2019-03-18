@@ -116,7 +116,7 @@ function behavior:create(enemy, properties)
   function enemy:on_restarted()
 
     if properties.has_shield and enemy.shield_down == true then
-      enemy:remove_sprite()
+      enemy:remove_sprite(enemy:get_sprite())
       enemy:create_sprite("enemies/" .. enemy:get_breed() .. "_vulnerable")
       enemy:set_default_attack_consequences()
     elseif properties.has_shield then
@@ -267,6 +267,7 @@ function behavior:create(enemy, properties)
           attack_sprite:set_direction(direction)
           enemy:set_invincible_sprite(attack_sprite)
           enemy:set_attack_consequence_sprite(attack_sprite, "sword", "protected")
+          sol.timer.start(enemy, 1000, function() enemy:remove_sprite(attack_sprite) end)
         end
       end
       enemy:wrap_up_attack()

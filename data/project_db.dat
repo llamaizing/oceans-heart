@@ -355,6 +355,8 @@ sprite{ id = "enemies/normal_enemies/pirate_bow_brown_1", description = "Pirate 
 sprite{ id = "enemies/normal_enemies/pirate_bruiser", description = "Pirate Bruiser" }
 sprite{ id = "enemies/normal_enemies/pirate_bruiser_shield", description = "Shield-Pirate Bruiser" }
 sprite{ id = "enemies/normal_enemies/pirate_gunner", description = "Pirate Gunner" }
+sprite{ id = "enemies/normal_enemies/pirate_shield", description = "Pirate-Shield" }
+sprite{ id = "enemies/normal_enemies/pirate_shield_vulnerable", description = "Pirate-Shield-Vulnerable" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_1", description = "Pirate- Brown 1" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_1_weapon", description = "weapon - pirate brown 1" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_2", description = "Pirate - sword brown 2" }

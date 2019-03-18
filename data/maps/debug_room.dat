@@ -4903,7 +4903,16 @@ enemy{
   x = 360,
   y = 365,
   direction = 0,
-  breed = "normal_enemies/shield_beetle",
+  breed = "normal_enemies/pirate_shield",
+}
+
+enemy{
+  name = "test_enemy_2",
+  layer = 0,
+  x = 496,
+  y = 405,
+  direction = 0,
+  breed = "normal_enemies/pirate_shield",
 }
 
 tile{
