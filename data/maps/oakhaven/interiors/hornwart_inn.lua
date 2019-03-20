@@ -21,7 +21,9 @@ function map:on_started()
   else
     for book in map:get_entities("new_book") do book:set_enabled(true) end
   end
-
+  if game:get_value("quest_mangrove_sword") and game:get_value("quest_mangrove_sword") < 4 then
+      hazel:set_enabled(false)
+  end
 end
 
 
@@ -66,7 +68,6 @@ function hazel:on_interaction()
         width = 16, height = 16,
       })
       game:set_value("hazel_is_currently_following_you", true)
-      hazel:set_enabled(false)
       end)
 
   --finished sword quest

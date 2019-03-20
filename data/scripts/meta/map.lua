@@ -61,17 +61,6 @@ map_meta:register_event("on_started", function(self)
     end
   end
 
-
-  if game:get_value("hazel_is_currently_following_you") then
-    local x, y, layer = hero:get_position()
-    local direction = hero:get_direction()
-    map:create_custom_entity({
-      model = "ally", sprite = "npc/hazel",
-      x = x, y = y, layer = layer, direction = direction,
-      width = 16, height = 16,
-    })
-  end
-
 end) --end of on_started registered event
 
 

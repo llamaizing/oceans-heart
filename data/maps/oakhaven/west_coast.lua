@@ -19,7 +19,12 @@ map:register_event("on_started", function()
     paytollbridge_sensor:set_enabled(false)
   end
 
+  --put Hazel Ally on the map
+  if game:get_value("hazel_is_currently_following_you") and game:get_value("spoken_to_hazel_south_gate") then
+    hazel:set_enabled(true)
+  end
 end)
+
 
 function paytollbridge_sensor:on_activated()
   game:start_dialog("_oakhaven.npcs.westoak.tollbridge.1", function(answer)

@@ -32084,6 +32084,15 @@ tile{
   pattern = "1889",
 }
 
+sensor{
+  name = "meet_hazel_sensor",
+  layer = 0,
+  x = 672,
+  y = 61,
+  width = 48,
+  height = 48,
+}
+
 npc{
   layer = 0,
   x = 592,
@@ -33687,6 +33696,19 @@ destructible{
   y = 477,
   sprite = "entities/bush_forest",
   can_be_cut = true,
+}
+
+custom_entity{
+  name = "hazel",
+  layer = 0,
+  x = 672,
+  y = 93,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hazel",
+  model = "ally",
 }
 
 tile{

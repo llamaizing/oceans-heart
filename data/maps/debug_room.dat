@@ -2788,6 +2788,15 @@ tile{
   pattern = "deep_water",
 }
 
+tile{
+  layer = 0,
+  x = 584,
+  y = 368,
+  width = 128,
+  height = 16,
+  pattern = "ground1.1",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -2963,8 +2972,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/interiors/palace",
-  destination = "from_outside_downstairs",
+  destination_map = "oakhaven/oakhaven",
+  destination = "from_port",
 }
 
 pickable{
@@ -4899,8 +4908,8 @@ custom_entity{
 
 enemy{
   layer = 0,
-  x = 528,
-  y = 389,
+  x = 328,
+  y = 429,
   direction = 3,
   breed = "normal_enemies/boulder_bro",
 }
@@ -4908,8 +4917,8 @@ enemy{
 custom_entity{
   name = "hazel",
   layer = 0,
-  x = 368,
-  y = 181,
+  x = 904,
+  y = 285,
   width = 16,
   height = 16,
   direction = 0,
