@@ -4721,7 +4721,7 @@ switch{
 block{
   layer = 0,
   x = 584,
-  y = 61,
+  y = 53,
   sprite = "entities/block",
   pushable = true,
   pullable = false,
@@ -4895,17 +4895,6 @@ custom_entity{
   model = "toss_ball",
 }
 
-custom_entity{
-  layer = 0,
-  x = 336,
-  y = 157,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/iron_ball",
-  model = "toss_ball",
-}
-
 enemy{
   layer = 0,
   x = 328,
@@ -4924,6 +4913,102 @@ custom_entity{
   direction = 0,
   sprite = "npc/hazel",
   model = "ally",
+}
+
+stream{
+  name = "current_a_18",
+  layer = 0,
+  x = 432,
+  y = 205,
+  direction = 6,
+  sprite = "entities/steam_stream",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_19",
+  layer = 0,
+  x = 432,
+  y = 221,
+  direction = 6,
+  sprite = "entities/steam_stream",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_20",
+  layer = 0,
+  x = 432,
+  y = 237,
+  direction = 6,
+  sprite = "entities/steam_stream",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_21",
+  layer = 0,
+  x = 432,
+  y = 253,
+  direction = 6,
+  sprite = "entities/steam_stream",
+  speed = 128,
+}
+
+stream{
+  name = "current_a_36",
+  layer = 0,
+  x = 432,
+  y = 253,
+  direction = 0,
+  sprite = "entities/steam_stream",
+  speed = 128,
+}
+
+switch{
+  name = "pressure_switch",
+  layer = 0,
+  x = 576,
+  y = 120,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = true,
+}
+
+block{
+  name = "ac_bloc",
+  layer = 0,
+  x = 584,
+  y = 101,
+  enabled_at_start = false,
+  sprite = "entities/block",
+  pushable = true,
+  pullable = false,
+}
+
+custom_entity{
+  layer = 0,
+  x = 560,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/iron_ball",
+  model = "toss_ball",
+}
+
+custom_entity{
+  name = "rock_pile_4",
+  layer = 0,
+  x = 448,
+  y = 205,
+  width = 32,
+  height = 16,
+  origin_y = -1,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "flail_obstacle",
 }
 
 tile{

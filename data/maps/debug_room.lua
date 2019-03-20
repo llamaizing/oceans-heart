@@ -18,7 +18,13 @@ map:register_event("on_started", function()
 
 end)
 
+function pressure_switch:on_activated()
+  ac_bloc:set_enabled(true)
+end
 
+function pressure_switch:on_inactivated()
+ ac_bloc:set_enabled(false)
+end
 
 function camera_shaker:on_interaction()
   map:get_camera():shake({count = 6, amplitude = 4, speed = 80})
