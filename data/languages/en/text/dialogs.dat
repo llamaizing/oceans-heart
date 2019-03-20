@@ -6775,7 +6775,27 @@ and fleets with the Sea's power. Storms and
 stuff. And then there's the story in this
 book I found in the archives. It talks about
 HAZEL:
-The
+the Sea King offering his sword to the Sea
+in front of an ancient mangrove tree. I
+wonder if he left it there.
+TILIA:
+I mean, I guess. So what, we go look for
+a mangrove tree and just check it for
+swords?
+HAZEL:
+So you'll help?
+
+
+TILIA:
+Well, yeah. You're my best friend, and
+my dad's doing this too. I'll do what I
+can, I guess.
+HAZEL:
+Thanks, Tilia. So, there's this guy at the
+market, named Grover. He sells mangrove
+leaves, let's find out where he gets them!
+TILIA:
+Alright. Let's go.
 ]],
 }
 
@@ -6956,7 +6976,7 @@ learned about the Pirate Council. They're
 HAZEL:
 trying to unite all the pirate crews and
 find this legendary treasure that will
-let the control the sea and storms and stuff.
+let them control the sea and storms and stuff.
 TILIA:
 The Ocean's Heart, right?
 
@@ -7462,19 +7482,19 @@ Hazel? Or decide to buy mangrove leaves?
 TILIA:
 I finally did catch up with Hazel actually.
 And actually, I don't need any mangrove
-leaves, but I am looking for an ancient
+leaves, but I am looking for a mangrove
 TILIA:
-mangrove thicket. Hazel needs a, what was
-it, a Tidy Starnut?
+thicket. Preferably like, a really
+old one. Ancient?
 
 GROVER:
-Oh, Tidal Starfruits? They grow deep in the
-mangrove thicket around Gull Rock. If you
-head west from town and southwest along
+Oh, you want to head down to Gull Rock! If
+you head west from town and southwest along
+the road, you should find the thicket pretty
 GROVER:
-the road, you should find the thicket easily.
-I think the Starfruits grow near the middle.
-
+easily. I heard some pirates took to keeping
+people from getting across the bridge, though,
+you might want to go around.
 TILIA:
 Thanks!
 ]],
@@ -12854,6 +12874,28 @@ Cormorant Tavern.
 }
 
 dialog{
+  id = "quest.main.mangrove_sword",
+  title = "The Mangrove Sword",
+  text = [[
+Hazel thinks the Sword of the
+Sea King can destroy the
+Ocean's Heart.
+@Find an ancient mangrove thicket
+!The fish seller in the market
+!also sells mangrove leaves,
+!he might know
+@Find an ancient mangrove thicket
+!There's one on Gull Rock,
+!Southwest of Oakhaven
+@Find the oldest mangrove
+tree in the thicket
+@Retrieve the Sword of the
+Sea King
+    
+]],
+}
+
+dialog{
   id = "quest.main.monkshood",
   title = "Tiresome Herbs",
   text = [[
@@ -13360,7 +13402,7 @@ dialog{
   title = "The Carrot Cache",
   text = [[
 An upset fisherman's spot's
-been overrun with monsters.
+been overrun with monsters
 @ Find the fishin' spot and
 destroy the monsters
 

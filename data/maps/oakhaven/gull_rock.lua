@@ -16,3 +16,10 @@ map:register_event("on_started", function()
   -- You can initialize the movement and sprites of various
   -- map entities here.
 end)
+
+function mangrove_sensor:on_activated()
+  if game:get_value("quest_mangrove_sword") and game:get_value("quest_mangrove_sword") < 2 then
+    game:set_value("quest_mangrove_sword", 2)
+  end
+  mangrove_sensor:set_enabled(false)
+end

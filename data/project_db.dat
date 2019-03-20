@@ -1489,6 +1489,7 @@ enemy{ id = "normal_enemies/triangle_crab_red", description = "Triangle Crab-Red
 enemy{ id = "normal_enemies/trumpet_player_disguise", description = "Trumpet Player Disguise" }
 enemy{ id = "normal_enemies/zora", description = "Zora" }
 
+entity{ id = "ally", description = "ally" }
 entity{ id = "arrow", description = "arrow" }
 entity{ id = "arrow_bomb", description = "Bomb Arrow" }
 entity{ id = "arrow_fire", description = "arrow_fire" }

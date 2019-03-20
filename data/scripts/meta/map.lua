@@ -8,6 +8,7 @@ local map_meta = sol.main.get_metatable"map"
 map_meta:register_event("on_started", function(self)
 	local map = self
   local hero = map:get_hero()
+  local game = map:get_game()
 
 
   --sensors for triggering location title banners
@@ -61,7 +62,21 @@ map_meta:register_event("on_started", function(self)
   end
 
 
+  if game:get_value("hazel_is_currently_following_you") then
+    local x, y, layer = hero:get_position()
+    local direction = hero:get_direction()
+    map:create_custom_entity({
+      model = "ally", sprite = "npc/hazel",
+      x = x, y = y, layer = layer, direction = direction,
+      width = 16, height = 16,
+    })
+  end
+
 end) --end of on_started registered event
+
+
+
+
 
 local function calculate_speed(entity1, entity2, duration)
   local x1, y1 = entity1:get_position()

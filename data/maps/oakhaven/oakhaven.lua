@@ -73,16 +73,16 @@ function grover:on_interaction()
       
       game:set_value("grover_counter", 1)
     end)
+  --looking for mangrove thicket
+  elseif game:get_value("quest_mangrove_sword") == 0 then
+    game:start_dialog("_oakhaven.npcs.market.grover.3", function()
+      game:set_value("quest_mangrove_sword", 1)
+    end)
   --already spoken to
   elseif game:get_value("grover_counter") == 1 then
     game:start_dialog("_oakhaven.npcs.market.grover.2")
-  --looking for mangrove thicket
-  elseif game:get_value("grover_counter") == 2 then
-    game:start_dialog("_oakhaven.npcs.market.grover.3", function()
-      game:set_value("quest_tidal_starfruit", 1)
-    end)
   --already found the thicket
-  elseif game:get_value("grover_counter") == 3 then
+  elseif game:get_value("quest_mangrove_sword") > 0 then
     game:start_dialog("_oakhaven.npcs.market.grover.4")
   end
 end
