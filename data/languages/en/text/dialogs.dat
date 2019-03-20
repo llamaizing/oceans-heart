@@ -6751,164 +6751,57 @@ dialog{
   id = "_oakhaven.npcs.hazel.inn.1",
   text = [[
 HAZEL:
-Good, you escaped too!
+Good, you made it out! I got my books, too.
+That heist went pretty well, honestly.
+
+TILIA:
+I'm glad I could help you rob a library?
+So you're trying to destroy the Ocean's
+Heart?
+HAZEL:
+Exactly. Mallow wants to get it before the
+pirates do, but... if we can't, we'll need
+some way to stop them. Look at this book.
+TILIA:
+$1...$3The sword of the Sea King? I heard
+about this, his sword was supposed to be
+magic. Cut through anything, break curses?
+HAZEL:
+Exactly. I assumed that legend was about
+the sword he battled with, but most records
+I've been reading, he destoryed armies
+HAZEL:
+and fleets with the Sea's power. Storms and
+stuff. And then there's the story in this
+book I found in the archives. It talks about
+HAZEL:
+the Sea King offering his sword to the Sea
+in front of an ancient mangrove tree. I
+wonder if he left it there.
+TILIA:
+I mean, I guess. So what, we go look for
+a mangrove tree and just check it for
+swords?
+HAZEL:
+So you'll help?
 
 
 TILIA:
-Yeah, no problem. So you stole these books
-so you can learn to make an amulet to help
-Dad?
+Well, yeah. You're my best friend, and
+my dad's doing this too. I'll do what I
+can, I guess.
 HAZEL:
-Exactly. The treasure the pirates are after,
-Ocean's Heart, is said to be hidden deep
-underwater, on the sea floor. There's some
+Thanks, Tilia. So, there's this guy at the
+market, named Grover. He sells mangrove
+leaves, you go ask him where he gets them,
 HAZEL:
-lost island called Ocean's Temple though,
-where if you have this special amulet, you
-can get down to where the treasure is. So
-HAZEL:
-if I can make Mallow an amulet, he'll stand
-a better chance of stopping the pirates.
-Maybe even get the treasure first.
+I'm gonna read up a little bit more about
+this mangrove offering legend. I'll meet
+you at the south gate of town, okay?
 TILIA:
-An amulet$1...$3 I think the pirates already
-have one of these. They looted a place called
-Spruce Head and took an amulet from there.
-TILIA:
-I think Captain Thyme might have it, or be
-bringing it to Blackbeard.
-
-HAZEL:
-Then we're already one step behind! I've
-been looking through these books, I think
-I know where to find almost everything I need
-HAZEL:
-to make this amulet, except a Tidal Starfruit.
-They only grow in ancient mangrove thickets.
-
-TILIA:
-Look, how about I look around for one of 
-those while you get everything else you
-need. I'll meet you back here once I have a
-TILIA:
-Tiny Starfood or whatever, and we can bring
-the amulet to my dad.
-
-HAZEL:
-Tidal Starfruit. From a mangrove thicket.
-
-
-TILIA:
-Whatever, I'll be back with a Tidy Starnut
-soon.
-]],
-}
-
-dialog{
-  id = "_oakhaven.npcs.hazel.inn.1havefruit",
-  text = [[
-HAZEL:
-Good, you escaped too!
-
-
-TILIA:
-Yeah, no problem. So you stole these books
-so you can learn to make an amulet to help
-Dad?
-HAZEL:
-Exactly. The treasure the pirates are after,
-Ocean's Heart, is said to be hidden deep
-underwater, on the sea floor. There's some
-HAZEL:
-lost island called Ocean's Temple though,
-where if you have this special amulet, you
-can get down to where the treasure is. So
-HAZEL:
-if I can make Mallow an amulet, he'll stand
-a better chance of stopping the pirates.
-Maybe even get the treasure first.
-TILIA:
-An amulet$1...$3 I think the pirates already
-have one of these. They looted a place called
-Spruce Head and took an amulet from there.
-TILIA:
-I think Captain Thyme might have it, or be
-bringing it to Blackbeard.
-
-HAZEL:
-Then we're already one step behind! I've
-been looking through these books, I think
-I know where to find almost everything I need
-HAZEL:
-to make this amulet, except a Tidal Starfruit.
-They only grow in ancient mangrove thickets.
-
-TILIA:
-Oh, I have one of those. I found it a little
-while ago.
-
-HAZEL:
-Wait, what? I wasn't expecting you to do
-things in this order. Give me just a sec
-to get ready...
-]],
-}
-
-dialog{
-  id = "_oakhaven.npcs.hazel.inn.2",
-  text = [[
-HAZEL:
-I think I can make a new amulet that will
-allow us to get to Ocean's Heart, but I
-need a Tidal Starfruit. They only grow in
-HAZEL:
-ancient mangrove thickets, so that's where
-you'll want to look.
-
-TILIA:
-I'll be back once I find one.
-]],
-}
-
-dialog{
-  id = "_oakhaven.npcs.hazel.inn.3bringfruit",
-  text = [[
-TILIA:
-Hey Hazel, I'm back.
-
-
-HAZEL:
-What? Oh, the starfruit! I'm ready to use it.
-$2I've just gotta use this like this...
-Put the seeds here$1...$3
-HAZEL:
-Done! This amulet should let you get down
-to the sea floor to get Ocean's Heart... now
-we've somehow gotta find Mallow.
-TILIA:
-You said he left you here before following
-Captain Thyme, right? I'm pretty sure Thyme
-is at Fort Crow. I'm sure Dad's caught up
-TILIA:
-to him by now. If Dad isn't still at Fort Crow,
-the pirates there might at least know where
-he went.
-HAZEL:
-That's not a bad plan, if you think you can
-fight Captain Thyme. I know a guy called Morus.
-He's in the Volunteer Navy and might help
-HAZEL:
-you get into Fort Crow. He is usually drinking
-at the Salamander Heartache Saloon, maybe
-try talking to him.
-TILIA:
-I will. Thanks Hazel. I'll bring this amulet to
-Dad and we'll defeat the pirates.
-
-HAZEL:
-Good. And if you ever have some free time,
-I've got some other stuff I could use
-your help with.
+Alright. I'll meet you at the south gate
+once I ask the guy in the market where
+he gets his mangrove leaves.
 ]],
 }
 
@@ -7079,41 +6972,47 @@ Tilia!? What are you doing here?
 
 
 TILIA:
-I just said, I've been looking everywhere for
-you! I was worried you were still kidnapped
-by pirates!
+I just said, I've been looking everywhere
+for you!$1...$3 Are you stealing books? And dad,
+isn't he here?
 HAZEL:
-No, your dad found me and we beat up the
-Hourglass Crew. But the Captain escaped...
-Oh! You can help us stop the Pirate Council!
+No, he- well. It's kind of a long story.
+When I was with the Hourglass Crew, I
+learned about the Pirate Council. They're
+HAZEL:
+trying to unite all the pirate crews and
+find this legendary treasure that will
+let them control the sea and storms and stuff.
 TILIA:
-I, uh, sure? I've heard about them, aren't they
-trying to unite all the pirate crews?
+The Ocean's Heart, right?
+
 
 HAZEL:
-Yes. They need their help to get a treasure
-called Ocean's Heart. It's supposed to allow
-you to control the storms and sea monsters-
+Oh, you've probably run into some pirates
+trying to find us, huh. Yeah. So the Ocean's
+Heart is supposedly on the Isle of Storms,
 HAZEL:
-if the Council gets it, they'll be the most
-powerful force in the North Sea, they'll rule
-all the islands. We've got to stop them.
+and if you want to get to it, you need a
+magic amulet to get into the Sea King's
+palace.
 TILIA:
-So that's why you didn't come home, isn't it?
-Dad's duty as a Volunteer Navyman, he
-decided to fight the Council?
+And the Pirate Council already has it,
+because they stole it from Spruce Head.
+
 HAZEL:
-Yeah. After he rescued me, we split up. He
-dropped me off here, then kept following
-Captain Thyme. I'm doing research to make
+You've been around, I see. Yeah, after your
+dad beat up the Hourglass Crew and rescued
+me, we decided to split up to stop the
 HAZEL:
-on how to get to the Ocean's Heart, you need
-some kind of magic amulet to get into the
-temple, so I'm going to figure out how to
+Pirate Council. Mallow went off to figure
+out where the Isle of Storms is, and I
+stayed here in Oakhaven to try and find a
 HAZEL:
-make one and bring it to Mallow. Then we
-can get the Heart before the Pirate Council
-does and...
+way to destroy the Ocean's Heart. That's
+why I'm here, stealing some books.
+
+TILIA:
+Destroy it? Did you-
 ]],
 }
 
@@ -7125,9 +7024,129 @@ Hey! What are you doing here!?
 
 
 HAZEL:
-Shoot! Look, I'm stealing some books and
+Shoot! Look, I'm taking these books and
 heading back to the inn, I'll explain
 everything there!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.thicket.1",
+  text = [[
+HAZEL:
+I think I know how to find the Sword of the
+Sea king. You lead the way to the mangrove
+thicket! I'll follow you.
+TILIA:
+You got it, Hazel.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.thicket.2",
+  text = [[
+HAZEL:
+That's gotta be the tree. Hold on.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.thicket.3",
+  text = [[
+HAZEL:
+$1...$3Ocean, help us stop men from using your
+powers for themselves.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.thicket.4",
+  text = [[
+HAZEL:
+Go on in, Tilia.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.thicket.5",
+  text = [[
+HAZEL:
+That was really cool. And now we have it-
+something that sould be able to destroy the
+Ocean's Heart. Something to keep people from
+HAZEL:
+being able to abuse nature. So... man.
+I don't actually know what to do next.
+
+TILIA:
+Well, my dad has been looking for the Isle
+of Storms, but... It's been a while since
+I've heard from him.
+HAZEL:
+Honestly, I haven't heard from him in a
+couple weeks. He tough, so I'm not worried
+about him, but...
+TILIA:
+The Pirate Council might already have found
+the Isle of Storms. We need to know what
+they know.
+HAZEL:
+Oh, I have an idea! There's a pirate captain
+nearby. His name is Al-Jazari, and he's
+hiding out in Fort Crow. I don't know how
+HAZEL:
+you'd possibly be able to get in, but I do
+know this guy, Morus, who really, really
+wants to capture him. You could help Morus.
+TILIA:
+Tell me where I can find him. I'll get into
+Fort Crow, and try and find out if the
+pirates know where the Isle of Storms is.
+HAZEL:
+So Morus is a bit cantankerous, but I think
+you can help him. He's also a bit of a
+drinker, so probably you can find him at the
+HAZEL:
+Salamander Heartache saloon in Oakhaven.
+I can show you where it is if you want on
+my way back to the inn.
+TILIA:
+$?Yeah, take me there.
+$?I'll find it on my own.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.thicket.6",
+  text = [[
+HAZEL:
+Great, I'll drop you off at the door. Also,
+if you have some time later, I've got a bit
+of a side project I could use your help with.
+TILIA:
+I'll swing by the inn when I have time.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.thicket.7",
+  text = [[
+HAZEL:
+I'm sure you've got a lot to do. Well, the
+Salamander Heartache Saloon is in town,
+south of the inn, but north of the blacksmith.
+HAZEL:
+I'm sure you'll be able to find it. Ask
+around for Morus, I bet you can help him
+get into Fort Crow.
+TILIA:
+Thanks, Hazel.
+
+
+HAZEL:
+Sure thing. Oh, also, if you have some time
+later, I've got a bit of a side project.
+Come by the inn, I could use your help.
 ]],
 }
 
@@ -7589,19 +7608,19 @@ Hazel? Or decide to buy mangrove leaves?
 TILIA:
 I finally did catch up with Hazel actually.
 And actually, I don't need any mangrove
-leaves, but I am looking for an ancient
+leaves, but I am looking for a mangrove
 TILIA:
-mangrove thicket. Hazel needs a, what was
-it, a Tidy Starnut?
+thicket. Preferably like, a really
+old one. Ancient?
 
 GROVER:
-Oh, Tidal Starfruits? They grow deep in the
-mangrove thicket around Gull Rock. If you
-head west from town and southwest along
+Oh, you want to head down to Gull Rock! If
+you head west from town and southwest along
+the road, you should find the thicket pretty
 GROVER:
-the road, you should find the thicket easily.
-I think the Starfruits grow near the middle.
-
+easily. I heard some pirates took to keeping
+people from getting across the bridge, though,
+you might want to go around.
 TILIA:
 Thanks!
 ]],
@@ -11291,6 +11310,16 @@ Press C to swing it.
 }
 
 dialog{
+  id = "_treasure.sword_of_the_sea_king.1",
+  text = [[
+You found the Sword of the Sea King.
+It was blessed by the Ocean herself ages
+ago. Hold the attack button to charge an
+attack.
+]],
+}
+
+dialog{
   id = "_treasure.sword_upgrade.1",
   text = [[
 Your sword has been strengthened! It will
@@ -12878,6 +12907,8 @@ Capt'n Thyme ran to Oakhaven
 !man selling mangrove
 !leaves.
 @!Try the Hornwart inn
+!It's in the northwest
+!corner of town
 @!Search the library
 @!Hazel was going to meet
 !pirates at the port
@@ -12981,6 +13012,27 @@ Cormorant Tavern.
 }
 
 dialog{
+  id = "quest.main.mangrove_sword",
+  title = "The Mangrove Sword",
+  text = [[
+Hazel thinks the Sword of the
+Sea King can destroy the
+Ocean's Heart.
+@Locate an ancient mangrove thicket
+!The fish seller in the market
+!also sells mangrove leaves,
+!he might know where one is
+@Meet Hazel at the south gate
+!and take her to Gull Rock,
+!southwest of the city.
+@Find the oldest mangrove
+tree in the thicket
+@Retrieve the Sword of the
+Sea King
+]],
+}
+
+dialog{
   id = "quest.main.monkshood",
   title = "Tiresome Herbs",
   text = [[
@@ -13002,9 +13054,9 @@ dialog{
   id = "quest.main.pirate_fort",
   title = "The Pirate Fort",
   text = [[
-Captin Thyme is hiding at
-Fort Crow. Find a way inside
-to question him.
+You need to find out if the
+Pirate Council knows where
+the Isle of Storms is yet.
 @Speak with Morus
 !He's a volunteer navyman
 !who's usually at the
@@ -13487,7 +13539,7 @@ dialog{
   title = "The Carrot Cache",
   text = [[
 An upset fisherman's spot's
-been overrun with monsters.
+been overrun with monsters
 @ Find the fishin' spot and
 destroy the monsters
 

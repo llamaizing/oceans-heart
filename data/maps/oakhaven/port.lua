@@ -54,6 +54,11 @@ map:register_event("on_started", function()
   dw1:set_speed(20)
   dw1:start(dockworker_1)
 
+  --put Hazel Ally on the map
+  if game:get_value("hazel_is_currently_following_you") then
+hazel:set_enabled(true)
+  end
+
 end)
 
 
@@ -98,6 +103,15 @@ function see_litton_sensor:on_activated()
     end)
     see_litton_sensor:set_enabled(false)
   end
+end
+
+
+function meet_hazel_sensor:on_activated()
+  if game:get_value("hazel_is_currently_following_you") and not game:get_value("spoken_to_hazel_south_gate") then
+    game:start_dialog("_oakhaven.npcs.hazel.thicket.1")
+    game:set_value("spoken_to_hazel_south_gate", true)
+  end
+  meet_hazel_sensor:set_enabled(false)
 end
 
 for guard in map:get_entities("guard") do

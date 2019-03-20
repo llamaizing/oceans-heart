@@ -196,6 +196,11 @@ main{
 }
 
 main{
+	dialog_id = "quest.main.mangrove_sword",
+	calc_phase = "quest_mangrove_sword"
+}
+
+main{
     dialog_id = "quest.main.monkshood",
     calc_phase = "quest_monkshood",
     location = "location.oakhaven"

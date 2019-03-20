@@ -2773,7 +2773,7 @@ tile{
   layer = 0,
   x = 304,
   y = 288,
-  width = 288,
+  width = 224,
   height = 16,
   pattern = "34",
   tileset = "misc",
@@ -2786,6 +2786,15 @@ tile{
   width = 32,
   height = 16,
   pattern = "deep_water",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 368,
+  width = 128,
+  height = 16,
+  pattern = "ground1.1",
 }
 
 pickable{
@@ -2963,8 +2972,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/pirate_vault",
-  destination = "from_smuggled_in",
+  destination_map = "oakhaven/oakhaven",
+  destination = "from_port",
 }
 
 pickable{
@@ -4899,10 +4908,22 @@ custom_entity{
 
 enemy{
   layer = 0,
-  x = 576,
-  y = 333,
+  x = 328,
+  y = 429,
   direction = 3,
   breed = "normal_enemies/boulder_bro",
+}
+
+custom_entity{
+  name = "hazel",
+  layer = 0,
+  x = 904,
+  y = 285,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "npc/hazel",
+  model = "ally",
 }
 
 tile{
@@ -5138,7 +5159,7 @@ tile{
   layer = 1,
   x = 304,
   y = 272,
-  width = 288,
+  width = 224,
   height = 16,
   pattern = "35",
   tileset = "misc",

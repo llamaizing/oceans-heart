@@ -168,6 +168,7 @@ map{ id = "oakhaven/caves/amalenchier_tomb", description = "Amalenchier's Tomb" 
 map{ id = "oakhaven/caves/eastoak_coral_ore_cave", description = "Eastoak Coral Ore Cave" }
 map{ id = "oakhaven/caves/eastoak_health_shrine", description = "Eastoak Health Shrine" }
 map{ id = "oakhaven/caves/lighthouse", description = "Lighthouse - Sinking" }
+map{ id = "oakhaven/caves/mangrove_tree", description = "Mangrove Tree" }
 map{ id = "oakhaven/caves/manna_oak_tunnels", description = "Manna Oak Tunnels" }
 map{ id = "oakhaven/caves/marblecliff_NE_cave", description = "Marblecliff NE Cave" }
 map{ id = "oakhaven/caves/marblecliff_ruins", description = "Marblecliff Ruins" }
@@ -475,6 +476,7 @@ sprite{ id = "entities/door_grass_green", description = "Door-Green Grass" }
 sprite{ id = "entities/door_grass_yellow", description = "Door-Yellow Grass" }
 sprite{ id = "entities/door_int_1", description = "door - interior 1" }
 sprite{ id = "entities/door_locked", description = "Door - Locked" }
+sprite{ id = "entities/door_mangrove_tree", description = "door-MangroveTree" }
 sprite{ id = "entities/door_npc_tall", description = "NPC door - tall" }
 sprite{ id = "entities/door_post_stone", description = "Door-Stone Post" }
 sprite{ id = "entities/door_posts", description = "Door - Posts" }
@@ -1364,6 +1366,7 @@ item{ id = "stockpot", description = "stockpot" }
 item{ id = "stone_beak", description = "Stone Beak" }
 item{ id = "sword", description = "sword" }
 item{ id = "sword_2", description = "Sword 2 - TEST" }
+item{ id = "sword_of_the_sea_king", description = "Sword of the Sea King" }
 item{ id = "sword_upgrade", description = "sword upgrade" }
 item{ id = "tacklebox", description = "Tacklebox" }
 item{ id = "thunder_charm", description = "Thunder Charm" }
@@ -1489,6 +1492,7 @@ enemy{ id = "normal_enemies/triangle_crab_red", description = "Triangle Crab-Red
 enemy{ id = "normal_enemies/trumpet_player_disguise", description = "Trumpet Player Disguise" }
 enemy{ id = "normal_enemies/zora", description = "Zora" }
 
+entity{ id = "ally", description = "ally" }
 entity{ id = "arrow", description = "arrow" }
 entity{ id = "arrow_bomb", description = "Bomb Arrow" }
 entity{ id = "arrow_fire", description = "arrow_fire" }

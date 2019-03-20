@@ -727,6 +727,13 @@ animation{
   },
 }
 animation{
+  name = "sword_of_the_sea_king",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 416, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
   name = "tacklebox",
   src_image = "entities/items.png",
   directions = {
