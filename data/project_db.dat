@@ -182,6 +182,7 @@ map{ id = "oakhaven/eastoak", description = "Eastoak" }
 map{ id = "oakhaven/fort_crow/basement", description = "Basement" }
 map{ id = "oakhaven/fort_crow/courtyard", description = "Courtyard" }
 map{ id = "oakhaven/fort_crow/dandelion_charm", description = "Dendelion Charm Area" }
+map{ id = "oakhaven/fort_crow/fort_crow", description = "Fort Crow" }
 map{ id = "oakhaven/fort_crow/furnace_area", description = "Furnace Area" }
 map{ id = "oakhaven/fort_crow/tower", description = "Tower" }
 map{ id = "oakhaven/gull_rock", description = "Gull Rock" }
@@ -238,6 +239,7 @@ map{ id = "testtest", description = "yayayaya" }
 
 tileset{ id = "Full Hyrule", description = "Full Hyrule" }
 tileset{ id = "cave_2", description = "cave-mine" }
+tileset{ id = "fort_crow_walls", description = "Fort Crow Walls" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
 tileset{ id = "indoors_stone", description = "indoors - stone" }
 tileset{ id = "light_world", description = "Light World" }
@@ -283,11 +285,7 @@ sprite{ id = "enemies/misc/arrow_4", description = "Arrow - 4 directions" }
 sprite{ id = "enemies/misc/barrel_cannon", description = "Barrel Cannon" }
 sprite{ id = "enemies/misc/big_stone", description = "big stone" }
 sprite{ id = "enemies/misc/blue_fire", description = "Blue Fire" }
-sprite{ id = "enemies/misc/crusher_0.5", description = "Crusher 0.5" }
-sprite{ id = "enemies/misc/crusher_1.0", description = "Crusher 1.0" }
-sprite{ id = "enemies/misc/crusher_2.0", description = "Crusher 2.0" }
-sprite{ id = "enemies/misc/crusher_3.0", description = "Crusher 3.0" }
-sprite{ id = "enemies/misc/crusher_4.0", description = "Crusher 4.0" }
+sprite{ id = "enemies/misc/crusher", description = "Crusher" }
 sprite{ id = "enemies/misc/energy_ball", description = "Energy Ball" }
 sprite{ id = "enemies/misc/energy_ball_black", description = "Energy Ball-Black" }
 sprite{ id = "enemies/misc/energy_ball_small", description = "Energy Ball - Small" }
@@ -480,6 +478,7 @@ sprite{ id = "entities/door_mangrove_tree", description = "door-MangroveTree" }
 sprite{ id = "entities/door_npc_tall", description = "NPC door - tall" }
 sprite{ id = "entities/door_post_stone", description = "Door-Stone Post" }
 sprite{ id = "entities/door_posts", description = "Door - Posts" }
+sprite{ id = "entities/door_posts_pipes", description = "Door-Posts-Pipes" }
 sprite{ id = "entities/door_shutter", description = "door (shutter)" }
 sprite{ id = "entities/door_unmarked_wall", description = "Door - Unmarked Wall" }
 sprite{ id = "entities/door_vines", description = "Door-Vines" }
@@ -1323,6 +1322,7 @@ item{ id = "ironwood_charm", description = "Ironwood Charm" }
 item{ id = "key_ballast_council_building", description = "Key - Ballast Council Building" }
 item{ id = "key_basswood_tavern", description = "key- Basswood Tavern" }
 item{ id = "key_dandelion_charm", description = "Key - Dandelion Charm" }
+item{ id = "key_fort_crow", description = "Key-Fort Crow" }
 item{ id = "key_goat_caverns", description = "Key - Goat Caverns" }
 item{ id = "key_goat_tunnels", description = "Key - Goat Tunnels" }
 item{ id = "key_graveyard_of_the_waves", description = "Key-Graveyard of the Waves" }
@@ -1400,11 +1400,7 @@ enemy{ id = "misc/big_stone", description = "Big Stone" }
 enemy{ id = "misc/blue_fire", description = "Blue Fire" }
 enemy{ id = "misc/bomb_4_direction", description = "Bomb - 4 direction" }
 enemy{ id = "misc/bomb_any_direction", description = "Bomb-Any Direction" }
-enemy{ id = "misc/crusher_0.5", description = "Crusher 0.5 sec" }
-enemy{ id = "misc/crusher_1.0", description = "Crusher 1.0 sec" }
-enemy{ id = "misc/crusher_2.0", description = "Crusher 2 sec" }
-enemy{ id = "misc/crusher_3.0", description = "Crusher 3 sec" }
-enemy{ id = "misc/crusher_4.0", description = "Crusher 4 sec" }
+enemy{ id = "misc/crusher", description = "Crusher" }
 enemy{ id = "misc/default", description = "default" }
 enemy{ id = "misc/energy_ball_black", description = "Energy Ball-Black" }
 enemy{ id = "misc/energy_ball_bounce", description = "Energy Ball" }

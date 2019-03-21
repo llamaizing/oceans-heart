@@ -10860,7 +10860,7 @@ enemy{
   x = 200,
   y = 621,
   direction = 1,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 enemy{
@@ -10868,7 +10868,7 @@ enemy{
   x = 216,
   y = 621,
   direction = 1,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 enemy{
@@ -10876,7 +10876,7 @@ enemy{
   x = 504,
   y = 837,
   direction = 3,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 enemy{
@@ -10884,7 +10884,7 @@ enemy{
   x = 184,
   y = 621,
   direction = 1,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 stream{
@@ -11247,7 +11247,7 @@ enemy{
   x = 448,
   y = 597,
   direction = 3,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 enemy{
@@ -11332,7 +11332,7 @@ enemy{
   x = 504,
   y = 877,
   direction = 1,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 wall{

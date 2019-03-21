@@ -10874,6 +10874,14 @@ in the area.
 }
 
 dialog{
+  id = "_treasure.key_fort_crow.1",
+  text = [[
+You found a key. It can unlock a door in
+this fort.
+]],
+}
+
+dialog{
   id = "_treasure.key_goat_caverns.1",
   text = [[
 You found a key. It will unlock a door

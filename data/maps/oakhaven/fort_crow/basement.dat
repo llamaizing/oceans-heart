@@ -10646,7 +10646,7 @@ enemy{
   x = 752,
   y = 533,
   direction = 3,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 enemy{
@@ -10654,7 +10654,7 @@ enemy{
   x = 784,
   y = 533,
   direction = 3,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 enemy{
@@ -10662,7 +10662,7 @@ enemy{
   x = 768,
   y = 557,
   direction = 1,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 tile{
