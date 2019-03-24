@@ -786,7 +786,7 @@ tile{
 tile{
   layer = 0,
   x = 272,
-  y = 40,
+  y = 48,
   width = 320,
   height = 416,
   pattern = "7",
@@ -2797,76 +2797,6 @@ tile{
   pattern = "ground1.1",
 }
 
-tile{
-  layer = 0,
-  x = 384,
-  y = 176,
-  width = 112,
-  height = 48,
-  pattern = "58",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 224,
-  width = 112,
-  height = 8,
-  pattern = "62",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 224,
-  width = 32,
-  height = 32,
-  pattern = "59",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 256,
-  width = 32,
-  height = 8,
-  pattern = "60",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 232,
-  width = 48,
-  height = 32,
-  pattern = "61",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 264,
-  width = 48,
-  height = 8,
-  pattern = "62",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 144,
-  width = 32,
-  height = 32,
-  pattern = "63",
-  tileset = "fort_crow_walls",
-}
-
 pickable{
   layer = 0,
   x = 72,
@@ -4191,6 +4121,7 @@ block{
   sprite = "entities/block",
   pushable = true,
   pullable = false,
+  max_moves = 1,
 }
 
 block{
@@ -4454,7 +4385,7 @@ sensor{
   name = "^save_solid_ground_sensor_5",
   layer = 0,
   x = 280,
-  y = 317,
+  y = 285,
   width = 32,
   height = 16,
 }
@@ -4814,26 +4745,6 @@ stream{
   speed = 128,
 }
 
-stream{
-  name = "current_a_7",
-  layer = 0,
-  x = 528,
-  y = 213,
-  direction = 0,
-  sprite = "entities/current_shallow",
-  speed = 128,
-}
-
-stream{
-  name = "current_a_12",
-  layer = 0,
-  x = 544,
-  y = 213,
-  direction = 0,
-  sprite = "entities/current_shallow",
-  speed = 128,
-}
-
 custom_entity{
   layer = 0,
   x = 328,
@@ -4843,14 +4754,6 @@ custom_entity{
   direction = 0,
   sprite = "entities/iron_ball",
   model = "toss_ball",
-}
-
-enemy{
-  layer = 0,
-  x = 328,
-  y = 429,
-  direction = 3,
-  breed = "normal_enemies/boulder_bro",
 }
 
 custom_entity{
@@ -4863,6 +4766,15 @@ custom_entity{
   direction = 0,
   sprite = "npc/hazel",
   model = "ally",
+}
+
+enemy{
+  name = "crow",
+  layer = 0,
+  x = 464,
+  y = 373,
+  direction = 3,
+  breed = "normal_enemies/crow_xxl",
 }
 
 tile{

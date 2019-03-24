@@ -15,7 +15,6 @@ map:register_event("on_started", function()
   hero = game:get_hero()
   hero:set_walking_speed(96)
   HIDETHESE:set_visible(false)
-
 end)
 
 

@@ -134,7 +134,7 @@ arrow:add_collision_test("overlapping", function(arrow, entity)
       attach_to_entity(entity)
     end --end of if flying
 
-  elseif entity_type == "switch" then
+  elseif entity_type == "switch" and not entity:is_walkable() then
     --activate the switch you hit if it's solid or arrow-type
     local switch = entity
     local sprite = switch:get_sprite()
@@ -146,9 +146,11 @@ arrow:add_collision_test("overlapping", function(arrow, entity)
       if not switch:is_activated() then
         sol.audio.play_sound("switch")
         switch:set_activated(true)
+        switch:on_activated()
       else
         sol.audio.play_sound("switch")
         switch:set_activated(false)
+        switch:on_inactivated()
       end
       attach_to_entity(entity)
 

@@ -9981,10 +9981,9 @@ dynamic_tile{
   layer = 0,
   x = 880,
   y = 160,
-  pattern = "123",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "123",
 }
 
 dynamic_tile{
@@ -9992,10 +9991,9 @@ dynamic_tile{
   layer = 0,
   x = 880,
   y = 144,
-  pattern = "126",
   width = 48,
   height = 16,
-  enabled_at_start = true,
+  pattern = "126",
 }
 
 switch{
@@ -10045,10 +10043,10 @@ dynamic_tile{
   layer = 0,
   x = 720,
   y = 80,
-  pattern = "36",
+  enabled_at_start = false,
   width = 32,
   height = 64,
-  enabled_at_start = false,
+  pattern = "36",
 }
 
 destination{
@@ -10109,10 +10107,9 @@ dynamic_tile{
   layer = 0,
   x = 424,
   y = 528,
-  pattern = "73",
   width = 8,
   height = 48,
-  enabled_at_start = true,
+  pattern = "73",
 }
 
 switch{

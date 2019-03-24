@@ -266,6 +266,7 @@ sprite{ id = "enemies/bosses/bart_weapon", description = "enemies/bosses/bart_we
 sprite{ id = "enemies/bosses/blackbeard", description = "Blackbeard" }
 sprite{ id = "enemies/bosses/burrow_crab", description = "Burrow Crab" }
 sprite{ id = "enemies/bosses/charging_pirate_1", description = "Charging Pirate 1" }
+sprite{ id = "enemies/bosses/crow_mech", description = "Crow Mech" }
 sprite{ id = "enemies/bosses/fiend_1", description = "Fiend 1" }
 sprite{ id = "enemies/bosses/forest_revenant", description = "Forest Revenant" }
 sprite{ id = "enemies/bosses/jazari", description = "al Jazari" }
@@ -1179,6 +1180,8 @@ sound{ id = "external_stairs_down", description = "external_stairs_down" }
 sound{ id = "external_stairs_up", description = "external_stairs_up" }
 sound{ id = "fire_burning", description = "fire_burning" }
 sound{ id = "fire_burst_1", description = "Fire Burst 1" }
+sound{ id = "flail_swing", description = "flail_swing" }
+sound{ id = "flail_throw", description = "flail_throw" }
 sound{ id = "gravel", description = "gravel" }
 sound{ id = "gravel2", description = "gravel2" }
 sound{ id = "heart", description = "heart" }
@@ -1384,6 +1387,7 @@ enemy{ id = "bosses/bart", description = "Bart" }
 enemy{ id = "bosses/blackbeard", description = "Blackbeard" }
 enemy{ id = "bosses/burrow_crab", description = "Burrow Crab" }
 enemy{ id = "bosses/charging_pirate_1", description = "Charging Pirate 1" }
+enemy{ id = "bosses/crow_mech", description = "Crow Mech" }
 enemy{ id = "bosses/fiend_1", description = "Fiend 1" }
 enemy{ id = "bosses/forest_revenant", description = "Forest Revenant" }
 enemy{ id = "bosses/jazari", description = "al Jazari" }
@@ -1402,6 +1406,7 @@ enemy{ id = "misc/bomb_4_direction", description = "Bomb - 4 direction" }
 enemy{ id = "misc/bomb_any_direction", description = "Bomb-Any Direction" }
 enemy{ id = "misc/crusher", description = "Crusher" }
 enemy{ id = "misc/default", description = "default" }
+enemy{ id = "misc/enemy_weapon", description = "Enemy Weapon" }
 enemy{ id = "misc/energy_ball_black", description = "Energy Ball-Black" }
 enemy{ id = "misc/energy_ball_bounce", description = "Energy Ball" }
 enemy{ id = "misc/energy_ball_small", description = "Energy Ball Small" }

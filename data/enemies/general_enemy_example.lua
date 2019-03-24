@@ -86,6 +86,15 @@ local properties = {
   radial_attack_shoot_delay = 500,
   radial_attack_stop_while_charging = true,
 
+--  has_flail_attack = true,
+  flail_attack_distance = 128,
+  flail_attack_cooldown = 9000,
+  flail_wind_up_time = 500,
+  flail_sprite = "entities/spike_ball",
+  flail_radius = 56,
+  flail_max_rotations = 2,
+  flail_max_distance = 120, flail_speed = 200,
+  
 
 }
 

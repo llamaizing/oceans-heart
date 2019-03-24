@@ -31,7 +31,10 @@
       --use_projectile_go_method, if true this will call projectile:go(angle to hero) and allow bouncing, so make sure
       --your projectile has a go(angle) method or else errors.
 --has_radial_attack, radial_attack_distance, radial_attack_cooldown, radial_attack_sound, radial_attack_num_projectiles,
-      --radial_attack_charge_time, radial_attack_shoot_delay, radial_attack_projectile_breed, radial_attack_stop_while_charging
+      --radial_attack_charge_time, radial_attack_shoot_delay, radial_attack_projectile_breed, 
+--has_flail_attack, flail_attack_distance, flail_attack_cooldown,
+--optional: flail_wind_up_time, flail_sprite, flail_radius flail_max_rotations, flail_max_distance, flail_speed
+
 --For a custom attack (TODO - debug custom attack, which sometimes results in the enemy stopping the check_hero() loop)
       --properties.has_custom_attack - For this script to check requirements, and if met, start the attack
       --properties.custom_attack_cooldown - cooldown in ms for custom attack
@@ -57,6 +60,8 @@
   --optional: shooting_wind_up
 --For an orbit attack
   --optional: "orbit_attack_wind_up"
+--For flail attack
+--optional sprite:"flail_wind_up"
 
 --TODO - allow to set a function as a property that is called for enemy:go_hero()
     --to allow more complex movements, such as circling the hero.
@@ -93,6 +98,7 @@ function behavior:create(enemy, properties)
   local can_shoot = true
   local can_orbit_attack = true
   local can_radial_attack = true
+  local can_flail_attack = true
   local attacking = false
   local currently_dashing = false
   local currently_teleporting = false
@@ -116,7 +122,9 @@ function behavior:create(enemy, properties)
   function enemy:on_restarted()
 
     if properties.has_shield and enemy.shield_down == true then
-      enemy:remove_sprite(enemy:get_sprite())
+      for sprite_name, sprite in entity:get_sprites() do
+        enemy:remove_sprite(sprite)
+      end
       enemy:create_sprite("enemies/" .. enemy:get_breed() .. "_vulnerable")
       enemy:set_default_attack_consequences()
     elseif properties.has_shield then
@@ -219,6 +227,13 @@ function behavior:create(enemy, properties)
       can_radial_attack = false
       sol.timer.start(map, properties.radial_attack_cooldown + math.random(800), function() can_radial_attack = true end)
 
+    elseif properties.has_flail_attack and can_flail_attack and dist_hero <= properties.flail_attack_distance then
+      attacking = true
+      going_hero = false
+      self:flail_attack()
+      can_flail_attack = false
+      sol.timer.start(map, properties.flail_attack_cooldown + math.random(500), function() can_flail_attack = true end)
+
     end
 
   end
@@ -256,6 +271,7 @@ function behavior:create(enemy, properties)
       enemy:get_sprite():set_animation("attack", function()
         enemy:set_attack_consequence("sword", 1)
         enemy:get_sprite():set_animation("walking")
+        going_hero = false
         enemy:go_random()
         enemy:check_hero()
       end)
@@ -303,6 +319,7 @@ function enemy:teleport()
         enemy:set_default_attack_consequences()
         enemy:set_can_attack()
         enemy:wrap_up_attack()
+        going_hero = false
         enemy:go_random()
         enemy:check_hero()
       end)
@@ -351,6 +368,7 @@ end
         currently_dashing = false
         enemy:set_default_attack_consequences()
         enemy:wrap_up_attack()
+        going_hero = false
         enemy:go_random()
         enemy:check_hero()
       end
@@ -383,6 +401,7 @@ end
         if i < properties.summon_group_size then return true end
       end)
       enemy:wrap_up_attack()
+      going_hero = false
       enemy:go_random()
       enemy:check_hero()
     end)
@@ -547,6 +566,69 @@ end
     end)
   end
 
+
+--Flail Attack
+function enemy:flail_attack()
+  enemy:stop_movement()
+  local sprite = enemy:get_sprite()
+  sprite:set_animation("wind_up")
+  if sprite:has_animation("flail_wind_up") then sprite:set_animation("flail_wind_up") end  
+  sol.timer.start(map, properties.flail_wind_up_time or 500, function()
+    sprite:set_animation("walking")
+    if sprite:has_animation("attack") then
+      sprite:set_animation("attack", function() sprite:set_animation("walking") end)
+    end
+    if sprite:has_animation("flail_attack") then
+      sprite:set_animation("flail_attack", function() sprite:set_animation("walking") end)
+    end
+    --Actual Attack part:
+    local x, y, layer = enemy:get_position()
+    local flail = enemy:create_enemy({
+      x = x, y = y, layer = layer, direction = 0, breed = "misc/enemy_weapon"
+    })
+    flail:set_damage(enemy:get_damage())
+    flail:create_sprite(properties.flail_sprite or "entities/spike_ball")
+    local circling = true
+    sol.timer.start(map, 2, function()
+      if circling then
+        sol.audio.play_sound("flail_swing")
+        return 500
+      end
+    end)
+    local m = sol.movement.create("circle")
+    m:set_center(enemy)
+    m:set_radius(1)
+    m:set_radius_speed(250)
+    m:set_angular_speed(10)
+    m:set_max_rotations(properties.flail_max_rotations or 2)
+    m:set_ignore_obstacles(true)
+    m:start(flail, function()
+      circling = false
+      sol.audio.play_sound("flail_throw")
+      local m2 = sol.movement.create("straight")
+      m2:set_angle(enemy:get_angle(hero))
+      m2:set_max_distance(properties.flail_max_distance or 128)
+      m2:set_speed(properties.flail_speed)
+      m2:set_ignore_obstacles(true)
+      m2:start(flail, function()
+        sol.timer.start(map, 200, function()
+          local m3 = sol.movement.create("straight")
+          m3:set_angle(flail:get_angle(enemy))
+          m3:set_ignore_obstacles(true)
+          m3:set_speed(properties.flail_speed)
+          m3:set_max_distance(properties.flail_max_distance or 128)
+          m3:start(flail, function()
+            flail:remove()
+            enemy:wrap_up_attack()
+            enemy:go_random()
+            enemy:check_hero()
+          end)
+        end)
+      end)
+    end)
+    m:set_radius(properties.flail_radius or 48)
+  end)
+end
 
 end --end of bahavior:create() fuction
 return behavior

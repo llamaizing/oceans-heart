@@ -111,10 +111,16 @@ function item:on_using()
   hero:set_animation("charging")
   sol.timer.start(game, CHARGING_TIME, function()
     --AND GO! ATTACK!
+    local circling = true
+    sol.timer.start(map, 2, function()
+      if circling then
+        sol.audio.play_sound("flail_swing")
+        return 450
+      end
+    end)
     --Start the movements and change the hero's animation
     hero:set_animation("hookshot")
-    sol.audio.play_sound("boomerang")
-    m:start(spike_ball, function() spike_ball:remove() hero:unfreeze() end)
+    m:start(spike_ball, function() spike_ball:remove() hero:unfreeze() circling = false end)
     for i=1, NUM_LINKS do
       link_movements[i]:start(links[i], function() links[i]:remove() end)
       link_movements[i]:set_radius(RADIUS / NUM_LINKS * i)
@@ -126,6 +132,7 @@ function item:on_using()
   --end the movement if it doesn't collide with something
   function m:on_finished()
     hero:unfreeze()
+    circling = false
     spike_ball:remove()
     for i=1, NUM_LINKS do links[i]:remove() end
     item:set_finished()
