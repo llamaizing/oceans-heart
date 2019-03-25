@@ -239,7 +239,10 @@ function behavior:create(enemy, properties)
 	  local direction = sprite:get_direction()
 
 	  sprite:set_animation("wind_up")
-    if properties.vulnerable_in_windup == false then enemy:set_attack_consequence("sword", "protected") end
+    if properties.vulnerable_in_windup == false then
+      enemy:set_attack_consequence("sword", "protected")
+      enemy:set_push_hero_on_sword(true)
+    end
 	  enemy:stop_movement()
     --charging phase
 	  sol.timer.start(enemy, properties.wind_up_time, function()
@@ -249,6 +252,7 @@ function behavior:create(enemy, properties)
       function sprite:on_animation_finished()
         sprite:set_animation("walking")
         enemy:set_attack_consequence("sword", properties.sword_consequence)
+        enemy:set_push_hero_on_sword(properties.push_hero_on_sword)
         enemy:go_random()
         enemy:check_hero()
       end
