@@ -9,7 +9,7 @@
 
 local map = ...
 local game = map:get_game()
-
+local need_to_be_insibible = false
 
 map:register_event("on_started", function()
   if not game:get_value("fort_crow_miniboss_defeated") then miniboss:set_enabled(true)
@@ -19,7 +19,7 @@ map:register_event("on_started", function()
   --Alternating Steam Timer
   for steam in map:get_entities("alternating_steam_b") do steam:set_enabled(false) end
   sol.timer.start(map, 4000, function()
-    sol.audio.play_sound("switch_2")
+    sol.audio.play_sound("click_low")
     for steam in map:get_entities("alternating_steam") do
       if steam:is_enabled() then steam:set_enabled(false)
       else steam:set_enabled(true) end
@@ -72,6 +72,42 @@ end
 function b4_switch:on_activated()
   sol.audio.play_sound("switch")
   map:focus_on(map:get_camera(), a4_door, function() map:open_doors("a4_door") end)
+end
+
+function e1_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:open_doors("e1_door")
+end
+
+function d1_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:open_doors("d1_door")
+end
+
+--pre-miniboss switch
+function f3_switch:on_activated()
+  hero:freeze()
+  sol.audio.play_sound("switch")
+  hero:set_animation("invisible")
+  need_to_be_insibible = true
+  hero:teleport("oakhaven/fort_crow/fort_crow", "to_check_on_door")
+  hero:set_animation("invisible")
+  sol.timer.start(map, 1000, function()
+    map:open_doors("c4_door")
+    sol.timer.start(map, 1000, function()
+      hero:teleport("oakhaven/fort_crow/fort_crow", "from_check_on_door")
+      need_to_be_insibible = false
+    end)
+  end)
+end
+
+
+
+-----Sensors----------
+function invisible_sensor:on_activated()
+  if need_to_be_insibible then 
+    hero:set_animation("invisible")
+  end
 end
 
 

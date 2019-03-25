@@ -16,10 +16,10 @@ end
 function entity:shoot_fire()
   local sprite = entity:get_sprite()
   sprite:set_animation("glowing")
-  if entity:get_distance(map:get_hero()) < 400 then sol.audio.play_sound("steam_01") end
+  if entity:get_distance(map:get_hero()) < 400 and entity:is_in_same_region(hero) then sol.audio.play_sound("steam_01") end
   sol.timer.start(entity, WINDUP_TIME, function()
     sprite:set_animation("off")
-    if entity:get_distance(map:get_hero()) < 300 then sol.audio.play_sound("fire_burst_1") end
+    if entity:get_distance(map:get_hero()) < 300 and entity:is_in_same_region(hero) then sol.audio.play_sound("fire_burst_2") end
     local x, y, layer = entity:get_position()
     map:create_enemy({
       x = x, y = y-8, layer = layer, direction = 0, breed = "misc/fire_blast"
