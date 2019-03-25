@@ -26,6 +26,13 @@ map:register_event("on_started", function()
     end
   return true
   end)
+
+  --Robot Part Spawners
+  for spawner in map:get_entities("robot_part_spawner") do
+    local x, y, layer = spawner:get_position()
+    sol.timer.start(map, 2000, function() map:spawn_robot_part(x, y, layer, 0) return true end)
+  end
+
 end)
 
 
@@ -81,4 +88,19 @@ end
 
 function miniboss:on_dead()
   map:open_doors("b3_door")
+end
+
+
+
+-------Robot Parts------------
+function map:spawn_robot_part(x, y, layer, direction)
+  local bot_part = map:create_stream({
+    x = x+8, y = y+11, layer = layer, direction = direction,
+    sprite = "entities/robot_parts", speed = 96,
+  })
+  bot_part:set_drawn_in_y_order(true)
+  local m = sol.movement.create("straight")
+  m:set_angle(direction * math.pi / 2)
+  m:start(bot_part, function() bot_part:remove() end)
+  function m:on_obstacle_reached() bot_part:remove() end
 end

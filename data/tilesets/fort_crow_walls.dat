@@ -849,6 +849,98 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "81",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 400,
+  width = 32,
+  height = 8,
+}
+
+tile_pattern{
+  id = "82",
+  ground = "wall",
+  default_layer = 0,
+  x = 160,
+  y = 400,
+  width = 32,
+  height = 8,
+}
+
+tile_pattern{
+  id = "83",
+  ground = "wall",
+  default_layer = 0,
+  x = 160,
+  y = 424,
+  width = 32,
+  height = 8,
+}
+
+tile_pattern{
+  id = "84",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 424,
+  width = 32,
+  height = 8,
+}
+
+tile_pattern{
+  id = "85",
+  ground = "traversable",
+  default_layer = 0,
+  x = 128,
+  y = 408,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "86",
+  ground = "wall",
+  default_layer = 0,
+  x = 160,
+  y = 408,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "87",
+  ground = "wall",
+  default_layer = 1,
+  x = 160,
+  y = 432,
+  width = 8,
+  height = 32,
+}
+
+tile_pattern{
+  id = "88",
+  ground = "wall",
+  default_layer = 1,
+  x = 152,
+  y = 432,
+  width = 8,
+  height = 32,
+}
+
+tile_pattern{
+  id = "89",
+  ground = "wall",
+  default_layer = 1,
+  x = { 176, 176, 176, 176 },
+  y = { 368, 376, 384, 392 },
+  width = 16,
+  height = 8,
+  frame_delay = 100,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
   id = "9",
   ground = "wall",
   default_layer = 0,

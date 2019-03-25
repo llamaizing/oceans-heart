@@ -292,6 +292,7 @@ sprite{ id = "enemies/misc/energy_ball_black", description = "Energy Ball-Black"
 sprite{ id = "enemies/misc/energy_ball_small", description = "Energy Ball - Small" }
 sprite{ id = "enemies/misc/energy_ball_small_black", description = "Energy Ball Small Black" }
 sprite{ id = "enemies/misc/explosive_barrel", description = "Explosive Barrel" }
+sprite{ id = "enemies/misc/fire_blast", description = "Fire Blast" }
 sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small, red" }
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 sprite{ id = "enemies/misc/octorok_stone", description = "small stone" }
@@ -488,6 +489,7 @@ sprite{ id = "entities/door_weak_wall", description = "Weak Wall Door" }
 sprite{ id = "entities/elixer", description = "elixer" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
+sprite{ id = "entities/fire_grate", description = "Fire Grate" }
 sprite{ id = "entities/flame_pillar", description = "Flame Pillar" }
 sprite{ id = "entities/floating_sparkle", description = "Floating Sparkle" }
 sprite{ id = "entities/footprints_1", description = "Footprints 1" }
@@ -513,6 +515,7 @@ sprite{ id = "entities/orange_peel", description = "Orange Peel" }
 sprite{ id = "entities/pollution_ash", description = "Pollution Ash" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/ripple", description = "Ripple" }
+sprite{ id = "entities/robot_parts", description = "RobotParts" }
 sprite{ id = "entities/rockpile", description = "Rock Pile" }
 sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
@@ -1413,6 +1416,7 @@ enemy{ id = "misc/energy_ball_small", description = "Energy Ball Small" }
 enemy{ id = "misc/energy_ball_small_black", description = "EnergyBallSmallBlack" }
 enemy{ id = "misc/energy_ball_split", description = "Energy Ball Split" }
 enemy{ id = "misc/explosive_barrel", description = "explosive barrel" }
+enemy{ id = "misc/fire_blast", description = "Fire Blast" }
 enemy{ id = "misc/fireball_red_small", description = "Fireball - red, small" }
 enemy{ id = "misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 enemy{ id = "misc/octorok_stone", description = "Small Stone" }
@@ -1504,6 +1508,7 @@ entity{ id = "collapsing_floor", description = "Collapsing Floor" }
 entity{ id = "damaging_sparkle", description = "Damaging Sparkle" }
 entity{ id = "dash_moth", description = "Dash Moth" }
 entity{ id = "ephemeral_effect", description = "Ephereral Effect" }
+entity{ id = "fire_grate", description = "Fire Grate" }
 entity{ id = "flail_obstacle", description = "Flail Obstacle" }
 entity{ id = "leaf_pile", description = "Leaf Pile" }
 entity{ id = "moving_platform", description = "Moving Platform" }
