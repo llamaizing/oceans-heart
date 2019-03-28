@@ -33710,6 +33710,17 @@ teletransporter{
   destination = "from_outside",
 }
 
+npc{
+  name = "morus",
+  layer = 0,
+  x = 1368,
+  y = 93,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/morus",
+}
+
 tile{
   layer = 1,
   x = -48,

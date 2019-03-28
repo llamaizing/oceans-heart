@@ -12,9 +12,14 @@ local game = map:get_game()
 local need_to_be_insibible = false
 
 map:register_event("on_started", function()
+  map:set_doors_open("boss_door")
   if not game:get_value("fort_crow_miniboss_defeated") then miniboss:set_enabled(true)
   else map:set_doors_open("b3_door")
   end
+  if game:get_value("fort_crow_interior_morus_counter") == 1 then morus_1:set_enabled(true) end
+  if game:get_value("fort_crow_interior_morus_counter") == 2 then morus_2:set_enabled(true) end
+  if game:get_value("fort_crow_interior_morus_counter") == 3 then morus_3:set_enabled(true) end
+  if game:get_value("fort_crow_interior_morus_counter") == 4 then morus_4:set_enabled(true) end
 
   --Alternating Steam Timer
   for steam in map:get_entities("alternating_steam_b") do steam:set_enabled(false) end
@@ -77,6 +82,12 @@ end
 function e1_switch:on_activated()
   sol.audio.play_sound("switch")
   map:open_doors("e1_door")
+  game:start_dialog("_oakhaven.npcs.morus.fort.5", function()
+    local m = sol.movement.create("path")
+    m:set_path{2,2,2,2,2,2,2,2}
+    m:start(morus_3, function() morus_3:set_enabled(false) end)
+    game:set_value("fort_crow_interior_morus_counter", 4)
+  end)
 end
 
 function d1_switch:on_activated()
@@ -86,28 +97,19 @@ end
 
 --pre-miniboss switch
 function f3_switch:on_activated()
-  hero:freeze()
   sol.audio.play_sound("switch")
-  hero:set_animation("invisible")
-  need_to_be_insibible = true
-  hero:teleport("oakhaven/fort_crow/fort_crow", "to_check_on_door")
-  hero:set_animation("invisible")
-  sol.timer.start(map, 1000, function()
-    map:open_doors("c4_door")
-    sol.timer.start(map, 1000, function()
-      hero:teleport("oakhaven/fort_crow/fort_crow", "from_check_on_door")
-      need_to_be_insibible = false
-    end)
-  end)
+  map:open_doors("c4_door")
+  game:start_dialog("_oakhaven.npcs.morus.fort.4")
+  morus_2:set_enabled(false)
+  morus_3:set_enabled(true)
 end
 
 
 
 -----Sensors----------
-function invisible_sensor:on_activated()
-  if need_to_be_insibible then 
-    hero:set_animation("invisible")
-  end
+function boss_sensor:on_activated()
+  jazari_dummy:set_enabled(false)
+  jazari_boss:set_enabled(true)
 end
 
 
@@ -139,4 +141,18 @@ function map:spawn_robot_part(x, y, layer, direction)
   m:set_angle(direction * math.pi / 2)
   m:start(bot_part, function() bot_part:remove() end)
   function m:on_obstacle_reached() bot_part:remove() end
+end
+
+
+
+--------Morus'es------------
+function morus_1:on_interaction()
+  game:start_dialog("_oakhaven.npcs.morus.fort.2", function()
+    local m = sol.movement.create("path")
+    m:set_speed(80)
+    m:set_path{2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2}
+    m:start(morus_1, function() morus_1:remove() end)
+    game:set_value("fort_crow_interior_morus_counter", 2)
+    morus_2:set_enabled(true)
+  end)
 end

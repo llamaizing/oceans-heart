@@ -8922,7 +8922,7 @@ dialog{
   text = [[
 MORUS:
 If you think you can take down the pirate
-council, then I'll take you to their hideout.
+council, I'll take you to their hideout.
 I'll meet you down at the port.
 ]],
 }
@@ -8989,6 +8989,59 @@ dialog{
 MORUS:
 What? That's where we already are,
 Tilia.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.1",
+  text = [[
+MORUS:
+That sleeping potion in the ale seems to
+have done the trick. Let's go track down
+Al-Jazari.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.2",
+  text = [[
+MORUS:
+Al-Jazari will finally be held accountable
+for sinking my ships! And his other crimes.
+Alright, let's split up. Even though the
+MORUS:
+pirates are asleep, Al-jazari's automatons
+will still be active.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.3",
+  text = [[
+MORUS:
+It looks like the center of the automaton
+factory is past this door. I'm trying to
+find a way to open it...
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.4",
+  text = [[
+MORUS (echoing from elsewhere in the fort):
+A-ha! I've found a way to get the door
+open! On my own! I'm coming for you,
+Al-Jazari!
+(It seems the door Morus was trying to
+open has finally unlocked)
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.5",
+  text = [[
+MORUS:
+A-ha!
 ]],
 }
 
