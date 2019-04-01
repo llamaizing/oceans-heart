@@ -2800,14 +2800,14 @@ tile{
 pickable{
   layer = 0,
   x = 72,
-  y = 85,
+  y = 93,
   treasure_name = "bow",
 }
 
 pickable{
   layer = 0,
   x = 56,
-  y = 53,
+  y = 77,
   treasure_name = "bow_fire",
 }
 
@@ -2920,8 +2920,8 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 104,
-  y = 157,
+  x = 112,
+  y = 165,
   treasure_name = "health_upgrade",
 }
 
@@ -3349,7 +3349,7 @@ pickable{
 pickable{
   layer = 0,
   x = 384,
-  y = 53,
+  y = 45,
   treasure_name = "boomerang",
   treasure_variant = 2,
 }
@@ -3543,8 +3543,8 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 520,
-  y = 61,
+  x = 584,
+  y = 69,
   treasure_name = "tornado_dash",
 }
 
@@ -3558,14 +3558,14 @@ pickable{
 pickable{
   layer = 0,
   x = 464,
-  y = 117,
+  y = 125,
   treasure_name = "gust",
 }
 
 pickable{
   layer = 0,
   x = 392,
-  y = 117,
+  y = 125,
   treasure_name = "ball_and_chain",
 }
 
@@ -3649,20 +3649,20 @@ pickable{
 pickable{
   layer = 0,
   x = 56,
-  y = 85,
+  y = 93,
   treasure_name = "bow_bombs",
 }
 
 pickable{
   layer = 0,
   x = 488,
-  y = 117,
+  y = 125,
   treasure_name = "crystal_spark",
 }
 
 pickable{
   layer = 0,
-  x = 120,
+  x = 568,
   y = 61,
   treasure_name = "hookshot",
 }
@@ -3698,7 +3698,7 @@ pickable{
 pickable{
   layer = 0,
   x = 416,
-  y = 117,
+  y = 125,
   treasure_name = "barrier",
 }
 
@@ -3871,7 +3871,7 @@ destructible{
 pickable{
   layer = 0,
   x = 72,
-  y = 61,
+  y = 77,
   treasure_name = "bow_warp",
 }
 
@@ -3929,7 +3929,7 @@ custom_entity{
 pickable{
   layer = 0,
   x = 440,
-  y = 117,
+  y = 125,
   treasure_name = "leaf_tornado",
 }
 
@@ -3978,7 +3978,7 @@ pickable{
 pickable{
   layer = 0,
   x = 512,
-  y = 117,
+  y = 125,
   treasure_name = "thunder_charm",
   treasure_variant = 5,
 }
@@ -4577,16 +4577,6 @@ enemy{
   breed = "misc/barrel_cannon",
 }
 
-npc{
-  name = "title",
-  layer = 0,
-  x = 96,
-  y = 45,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/door_vines",
-}
-
 enemy{
   layer = 0,
   x = 56,
@@ -4775,6 +4765,29 @@ enemy{
   y = 373,
   direction = 3,
   breed = "normal_enemies/crow_xxl",
+}
+
+destructible{
+  layer = 0,
+  x = 96,
+  y = 45,
+  sprite = "entities/door_vines",
+  weight = -1,
+  can_be_cut = true,
+}
+
+pickable{
+  layer = 0,
+  x = 464,
+  y = 69,
+  treasure_name = "bread",
+}
+
+pickable{
+  layer = 0,
+  x = 464,
+  y = 53,
+  treasure_name = "bread",
 }
 
 tile{
