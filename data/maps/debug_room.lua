@@ -12,6 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
+  require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "ravens")
   hero = game:get_hero()
   hero:set_walking_speed(96)
   HIDETHESE:set_visible(false)
