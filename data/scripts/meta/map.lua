@@ -78,6 +78,7 @@ end
 -----Map Focus-----
 function map_meta:focus_on(camera, target_entity, callback)
   local game = sol.main.get_game()
+  local hero = game:get_hero()
   hero:freeze()
   game:set_suspended(true)
   local m = sol.movement.create("target")

@@ -1,6 +1,7 @@
 local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
+local hero = map:get_hero()
 local WINDUP_TIME = 1000
 
 -- Event called when the custom entity is initialized.
@@ -16,7 +17,7 @@ end
 function entity:shoot_fire()
   local sprite = entity:get_sprite()
   sprite:set_animation("glowing")
-  if entity:get_distance(map:get_hero()) < 400 and entity:is_in_same_region(hero) then sol.audio.play_sound("steam_01") end
+  if entity:get_distance(hero) < 400 and entity:is_in_same_region(hero) then sol.audio.play_sound("steam_01") end
   sol.timer.start(entity, WINDUP_TIME, function()
     sprite:set_animation("off")
     if entity:get_distance(map:get_hero()) < 300 and entity:is_in_same_region(hero) then sol.audio.play_sound("fire_burst_2") end

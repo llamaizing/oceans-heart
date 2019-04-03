@@ -24933,7 +24933,7 @@ chest{
   x = 144,
   y = 1237,
   treasure_name = "key_fort_crow",
-  treasure_savegame_variable = "fort_crow_chest_f4",
+  treasure_savegame_variable = "fort_crow_chest_a5",
   sprite = "entities/chest",
 }
 
@@ -25587,6 +25587,7 @@ door{
   savegame_variable = "fort_crow_d5_locked_door",
   opening_method = "interaction_if_item",
   opening_condition = "key_fort_crow",
+  opening_condition_consumed = true,
 }
 
 chest{
@@ -26482,6 +26483,7 @@ door{
   savegame_variable = "fort_crow_d3_locked_door",
   opening_method = "interaction_if_item",
   opening_condition = "key_fort_crow",
+  opening_condition_consumed = true,
 }
 
 dynamic_tile{
@@ -27155,69 +27157,7 @@ door{
   y = 1008,
   direction = 3,
   sprite = "entities/door_posts_pipes",
-}
-
-door{
-  name = "c4_door_2",
-  layer = 0,
-  x = 1064,
-  y = 1016,
-  direction = 3,
-  sprite = "entities/door_posts_pipes",
-}
-
-door{
-  name = "c4_door_3",
-  layer = 0,
-  x = 1064,
-  y = 1024,
-  direction = 3,
-  sprite = "entities/door_posts_pipes",
-}
-
-door{
-  name = "c4_door_4",
-  layer = 0,
-  x = 1112,
-  y = 1008,
-  direction = 3,
-  sprite = "entities/door_posts_pipes",
-}
-
-door{
-  name = "c4_door_5",
-  layer = 0,
-  x = 1112,
-  y = 1016,
-  direction = 3,
-  sprite = "entities/door_posts_pipes",
-}
-
-door{
-  name = "c4_door_6",
-  layer = 0,
-  x = 1112,
-  y = 1024,
-  direction = 3,
-  sprite = "entities/door_posts_pipes",
-}
-
-door{
-  name = "c4_door_7",
-  layer = 0,
-  x = 1096,
-  y = 1024,
-  direction = 3,
-  sprite = "entities/door_posts_pipes",
-}
-
-door{
-  name = "c4_door_8",
-  layer = 0,
-  x = 1080,
-  y = 1024,
-  direction = 3,
-  sprite = "entities/door_posts_pipes",
+  savegame_variable = "fort_crow_c4_door_state",
 }
 
 enemy{
@@ -28872,6 +28812,7 @@ door{
   savegame_variable = "fort_crow_e2_locked_door",
   opening_method = "interaction_if_item",
   opening_condition = "key_fort_crow",
+  opening_condition_consumed = true,
 }
 
 door{
@@ -28883,6 +28824,7 @@ door{
   savegame_variable = "fort_crow_d2_locked_door",
   opening_method = "interaction_if_item",
   opening_condition = "key_fort_crow",
+  opening_condition_consumed = true,
 }
 
 custom_entity{
@@ -29011,6 +28953,9 @@ chest{
   layer = 0,
   x = 952,
   y = 325,
+  treasure_name = "rupee",
+  treasure_variant = 4,
+  treasure_savegame_variable = "fort_crow_c1_chest",
   sprite = "entities/chest",
 }
 
@@ -29941,6 +29886,7 @@ npc{
   layer = 0,
   x = 1064,
   y = 1061,
+  enabled_at_start = false,
   direction = 1,
   subtype = 1,
   sprite = "npc/morus",
@@ -29952,10 +29898,121 @@ npc{
   layer = 0,
   x = 1872,
   y = 317,
+  enabled_at_start = false,
   direction = 1,
   subtype = 1,
   sprite = "npc/morus",
   behavior = "dialog#_oakhaven.npcs.morus.fort.3",
+}
+
+destructible{
+  layer = 0,
+  x = 232,
+  y = 1525,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 248,
+  y = 1525,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 224,
+  y = 1541,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 240,
+  y = 1541,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+door{
+  name = "c4_door_2",
+  layer = 0,
+  x = 1064,
+  y = 1016,
+  direction = 3,
+  sprite = "entities/door_posts_pipes",
+  savegame_variable = "fort_crow_c4_door_state",
+}
+
+door{
+  name = "c4_door_3",
+  layer = 0,
+  x = 1064,
+  y = 1024,
+  direction = 3,
+  sprite = "entities/door_posts_pipes",
+  savegame_variable = "fort_crow_c4_door_state",
+}
+
+door{
+  name = "c4_door_4",
+  layer = 0,
+  x = 1112,
+  y = 1008,
+  direction = 3,
+  sprite = "entities/door_posts_pipes",
+  savegame_variable = "fort_crow_c4_door_state",
+}
+
+door{
+  name = "c4_door_5",
+  layer = 0,
+  x = 1112,
+  y = 1016,
+  direction = 3,
+  sprite = "entities/door_posts_pipes",
+  savegame_variable = "fort_crow_c4_door_state",
+}
+
+door{
+  name = "c4_door_6",
+  layer = 0,
+  x = 1112,
+  y = 1024,
+  direction = 3,
+  sprite = "entities/door_posts_pipes",
+  savegame_variable = "fort_crow_c4_door_state",
+}
+
+door{
+  name = "c4_door_7",
+  layer = 0,
+  x = 1080,
+  y = 1024,
+  direction = 3,
+  sprite = "entities/door_posts_pipes",
+  savegame_variable = "fort_crow_c4_door_state",
+}
+
+door{
+  name = "c4_door_8",
+  layer = 0,
+  x = 1096,
+  y = 1024,
+  direction = 3,
+  sprite = "entities/door_posts_pipes",
+  savegame_variable = "fort_crow_c4_door_state",
 }
 
 tile{

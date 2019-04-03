@@ -14,7 +14,7 @@ end)
 
 
 function lighthouse_switch:on_activated()
-  if not game:get_value("sinking_palace_lighthouse_lit") then
+  if not game:get_value("snapmast_lighthouse_lit") then
     for fire in map:get_entities("lighthouse_flame") do
       fire:set_enabled(true)
     end

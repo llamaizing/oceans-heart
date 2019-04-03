@@ -2,11 +2,12 @@ local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
 local sprite
-local SPEED = 110
+local SPEED = 120
 local following_hero
 
 function entity:on_created()
   sprite = entity:get_sprite()
+  entity:set_drawn_in_y_order(true)
   entity:set_can_traverse_ground("shallow_water", true)
 
   sol.timer.start(map, 400, function()
@@ -19,7 +20,7 @@ function entity:check_hero()
   local dist = entity:get_distance(map:get_hero())
   if dist <= 24 and following_hero then
     entity:stop_walking()
-  elseif dist >= 74 and not following_hero then
+  elseif dist >= 50 and not following_hero then
     entity:follow_hero()
   end
 --  if dist > 400 then
