@@ -11,6 +11,46 @@ properties{
 
 tile{
   layer = 0,
+  x = 1696,
+  y = 32,
+  width = 32,
+  height = 64,
+  pattern = "45",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1696,
+  y = 144,
+  width = 32,
+  height = 64,
+  pattern = "45",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1696,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "15",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1696,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
   x = 1184,
   y = 1408,
   width = 128,
@@ -22991,16 +23031,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1696,
-  y = 32,
-  width = 32,
-  height = 192,
-  pattern = "45",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
   x = 2016,
   y = 32,
   width = 32,
@@ -23176,26 +23206,6 @@ tile{
   layer = 0,
   x = 1728,
   y = 88,
-  width = 16,
-  height = 16,
-  pattern = "473",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1728,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "472",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1728,
-  y = 120,
   width = 16,
   height = 16,
   pattern = "473",
@@ -23749,6 +23759,1070 @@ tile{
   pattern = "80",
 }
 
+tile{
+  layer = 0,
+  x = 1728,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "495",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1728,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "496",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1720,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "513",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1720,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "513",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1664,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "1",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1664,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "4",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1664,
+  y = 112,
+  width = 32,
+  height = 16,
+  pattern = "9",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1704,
+  y = 112,
+  width = 16,
+  height = 8,
+  pattern = "34",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1720,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "35",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1696,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "41",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1696,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "39",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1704,
+  y = 120,
+  width = 16,
+  height = 8,
+  pattern = "38",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1720,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "37",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 96,
+  width = 128,
+  height = 48,
+  pattern = "33",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 48,
+  width = 160,
+  height = 144,
+  pattern = "33",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1384,
+  y = 48,
+  width = 144,
+  height = 8,
+  pattern = "34",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 56,
+  width = 8,
+  height = 128,
+  pattern = "40",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 56,
+  width = 8,
+  height = 48,
+  pattern = "36",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 96,
+  width = 96,
+  height = 8,
+  pattern = "34",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1624,
+  y = 104,
+  width = 8,
+  height = 32,
+  pattern = "36",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 136,
+  width = 96,
+  height = 8,
+  pattern = "38",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 136,
+  width = 8,
+  height = 48,
+  pattern = "36",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1384,
+  y = 184,
+  width = 144,
+  height = 8,
+  pattern = "38",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "41",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "35",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "35",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1624,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "35",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "37",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1624,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "37",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "39",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 184,
+  width = 8,
+  height = 8,
+  pattern = "37",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 16,
+  width = 160,
+  height = 32,
+  pattern = "42",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 48,
+  width = 32,
+  height = 160,
+  pattern = "45",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "43",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1568,
+  y = 64,
+  width = 64,
+  height = 32,
+  pattern = "42",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 96,
+  width = 32,
+  height = 64,
+  pattern = "43",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1568,
+  y = 144,
+  width = 64,
+  height = 32,
+  pattern = "44",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 160,
+  width = 32,
+  height = 32,
+  pattern = "43",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 192,
+  width = 160,
+  height = 32,
+  pattern = "44",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 16,
+  width = 32,
+  height = 32,
+  pattern = "1",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 16,
+  width = 32,
+  height = 32,
+  pattern = "2",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "16",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "2",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 144,
+  width = 32,
+  height = 32,
+  pattern = "14",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 144,
+  width = 32,
+  height = 32,
+  pattern = "3",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 192,
+  width = 32,
+  height = 32,
+  pattern = "4",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 192,
+  width = 32,
+  height = 32,
+  pattern = "3",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 112,
+  width = 64,
+  height = 16,
+  pattern = "33",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 128,
+  width = 32,
+  height = 8,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 104,
+  width = 32,
+  height = 8,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 112,
+  width = 32,
+  height = 16,
+  pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 1664,
+  y = 104,
+  width = 32,
+  height = 8,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 1664,
+  y = 128,
+  width = 32,
+  height = 8,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 1664,
+  y = 112,
+  width = 32,
+  height = 16,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "572",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "580",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1432,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "579",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "576",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1432,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "575",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "574",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "396",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1496,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "395",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "394",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "393",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1496,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "392",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "391",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "390",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1496,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "389",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "388",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 48,
+  width = 48,
+  height = 16,
+  pattern = "66",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 32,
+  width = 48,
+  height = 24,
+  pattern = "64",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1496,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "400",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1496,
+  y = 72,
+  width = 16,
+  height = 8,
+  pattern = "399",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 56,
+  width = 8,
+  height = 24,
+  pattern = "398",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1488,
+  y = 56,
+  width = 8,
+  height = 24,
+  pattern = "397",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "637",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "195",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1432,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "193",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1448,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "194",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1432,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "190",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "500",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1400,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "580",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1384,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "579",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1384,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "578",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1400,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "577",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1400,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "576",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1384,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "575",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "574",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "573",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "572",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "499",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1384,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "498",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1384,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "485",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 48,
+  width = 16,
+  height = 8,
+  pattern = "486",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "486",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 56,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "484",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1448,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "480",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "481",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1448,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "480",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "481",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1448,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "480",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "481",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 112,
+  width = 48,
+  height = 24,
+  pattern = "219",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 112,
+  width = 8,
+  height = 24,
+  pattern = "218",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1400,
+  y = 112,
+  width = 8,
+  height = 24,
+  pattern = "217",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "190",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "189",
+  tileset = "indoors_stone",
+}
+
 dynamic_tile{
   name = "robot_part_spawner_2",
   layer = 0,
@@ -23818,9 +24892,9 @@ separator{
 separator{
   layer = 0,
   x = 1240,
-  y = 240,
+  y = 0,
   width = 16,
-  height = 960,
+  height = 1200,
 }
 
 separator{
@@ -29374,6 +30448,7 @@ separator{
 }
 
 custom_entity{
+  name = "fire_grate_boss_room_2",
   layer = 0,
   x = 1784,
   y = 157,
@@ -29391,6 +30466,7 @@ custom_entity{
 }
 
 custom_entity{
+  name = "fire_grate_boss_room",
   layer = 0,
   x = 1784,
   y = 77,
@@ -29402,272 +30478,6 @@ custom_entity{
     {
       key = "delay",
       value = "4000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1800,
-  y = 157,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1800,
-  y = 77,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-    {
-      key = "delay",
-      value = "4000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1784,
-  y = 173,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1784,
-  y = 93,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-    {
-      key = "delay",
-      value = "4000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1800,
-  y = 173,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1800,
-  y = 93,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-    {
-      key = "delay",
-      value = "4000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1944,
-  y = 157,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-    {
-      key = "delay",
-      value = "4000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1960,
-  y = 157,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-    {
-      key = "delay",
-      value = "4000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1944,
-  y = 173,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-    {
-      key = "delay",
-      value = "4000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1960,
-  y = 173,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-    {
-      key = "delay",
-      value = "4000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1944,
-  y = 77,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1960,
-  y = 77,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1944,
-  y = 93,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
-    },
-  },
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/fire_grate",
-  model = "fire_grate",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1960,
-  y = 93,
-  properties = {
-    {
-      key = "frequency",
-      value = "8000",
     },
   },
   width = 16,
@@ -29856,7 +30666,8 @@ npc{
   y = 93,
   direction = 3,
   subtype = 1,
-  sprite = "enemies/bosses/jazari",
+  sprite = "npc/jazari",
+  behavior = "dialog#_oakhaven.npcs.fort_crow.jazari.3",
 }
 
 dynamic_tile{
@@ -30013,6 +30824,375 @@ door{
   direction = 3,
   sprite = "entities/door_posts_pipes",
   savegame_variable = "fort_crow_c4_door_state",
+}
+
+npc{
+  name = "morus_4",
+  layer = 0,
+  x = 1896,
+  y = 45,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/morus",
+  behavior = "dialog#_oakhaven.npcs.morus.fort.7",
+}
+
+door{
+  name = "boss_door_2",
+  layer = 0,
+  x = 1680,
+  y = 112,
+  direction = 0,
+  sprite = "entities/door_shutter",
+}
+
+door{
+  name = "boss_door_3",
+  layer = 0,
+  x = 1632,
+  y = 112,
+  direction = 2,
+  sprite = "entities/door_shutter",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_3",
+  layer = 0,
+  x = 1800,
+  y = 157,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_4",
+  layer = 0,
+  x = 1800,
+  y = 77,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+    {
+      key = "delay",
+      value = "4000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_5",
+  layer = 0,
+  x = 1784,
+  y = 173,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_6",
+  layer = 0,
+  x = 1784,
+  y = 93,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+    {
+      key = "delay",
+      value = "4000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_7",
+  layer = 0,
+  x = 1800,
+  y = 173,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_8",
+  layer = 0,
+  x = 1800,
+  y = 93,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+    {
+      key = "delay",
+      value = "4000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_9",
+  layer = 0,
+  x = 1944,
+  y = 77,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_10",
+  layer = 0,
+  x = 1960,
+  y = 77,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_11",
+  layer = 0,
+  x = 1944,
+  y = 93,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_12",
+  layer = 0,
+  x = 1960,
+  y = 93,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_13",
+  layer = 0,
+  x = 1944,
+  y = 157,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+    {
+      key = "delay",
+      value = "4000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_14",
+  layer = 0,
+  x = 1960,
+  y = 157,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+    {
+      key = "delay",
+      value = "4000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_15",
+  layer = 0,
+  x = 1944,
+  y = 173,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+    {
+      key = "delay",
+      value = "4000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+custom_entity{
+  name = "fire_grate_boss_room_16",
+  layer = 0,
+  x = 1960,
+  y = 173,
+  properties = {
+    {
+      key = "frequency",
+      value = "8000",
+    },
+    {
+      key = "delay",
+      value = "4000",
+    },
+  },
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/fire_grate",
+  model = "fire_grate",
+}
+
+pickable{
+  layer = 0,
+  x = 1504,
+  y = 69,
+  treasure_name = "health_upgrade",
+  treasure_savegame_variable = "fort_crow_health_upgrade",
+}
+
+destructible{
+  name = "jar",
+  layer = 0,
+  x = 1504,
+  y = 69,
+  sprite = "entities/bell_jar",
+  destruction_sound = "breaking_glass",
+  can_be_cut = true,
+}
+
+block{
+  layer = 0,
+  x = 1440,
+  y = 93,
+  sprite = "entities/chair2R",
+  pushable = true,
+  pullable = true,
+}
+
+npc{
+  name = "chart_npc",
+  layer = 0,
+  x = 1432,
+  y = 133,
+  direction = 3,
+  subtype = 1,
+}
+
+dynamic_tile{
+  name = "hideout_chart",
+  layer = 0,
+  x = 1424,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "636",
+  tileset = "indoors_stone",
+}
+
+npc{
+  name = "morus_5",
+  layer = 0,
+  x = 1640,
+  y = 125,
+  enabled_at_start = false,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/morus",
+  behavior = "dialog#_oakhaven.npcs.morus.fort.7",
 }
 
 tile{
@@ -32138,6 +33318,54 @@ tile{
   width = 32,
   height = 16,
   pattern = "24",
+}
+
+tile{
+  layer = 1,
+  x = 1664,
+  y = 104,
+  width = 16,
+  height = 32,
+  pattern = "32",
+}
+
+tile{
+  layer = 1,
+  x = 1648,
+  y = 104,
+  width = 16,
+  height = 32,
+  pattern = "31",
+}
+
+tile{
+  layer = 1,
+  x = 1432,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "191",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1408,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "501",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1408,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "191",
+  tileset = "indoors_stone",
 }
 
 tile{

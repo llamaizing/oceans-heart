@@ -3,13 +3,14 @@ local game = entity:get_game()
 local map = entity:get_map()
 local hero = map:get_hero()
 local WINDUP_TIME = 1000
+local turned_off = false
 
 -- Event called when the custom entity is initialized.
 function entity:on_created()
   local frequency = entity:get_property("frequency") or 4000
 
   sol.timer.start(self, entity:get_property("delay") or 1, function()
-    entity:shoot_fire()
+    if not turned_off then entity:shoot_fire() end
     return frequency
   end)
 end
@@ -29,4 +30,8 @@ function entity:shoot_fire()
       x = x, y = y-16, layer = layer, direction = 0, breed = "misc/fire_blast"
     })
   end)
+end
+
+function entity:set_turned_off(state)
+  turned_off = state
 end

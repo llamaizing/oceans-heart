@@ -9,6 +9,16 @@ animation{
   },
 }
 animation{
+  name = "unconscious",
+  src_image = "npc/morus.png",
+  directions = {
+    { x = 64, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 64, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 64, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 64, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
   name = "walking",
   src_image = "npc/morus.png",
   frame_delay = 150,

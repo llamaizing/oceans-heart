@@ -394,6 +394,7 @@ sprite{ id = "entities/arrow_fire", description = "arrow_fire" }
 sprite{ id = "entities/arrow_silver", description = "arrow_silver" }
 sprite{ id = "entities/arrow_warp", description = "arrow warp" }
 sprite{ id = "entities/bait", description = "bait" }
+sprite{ id = "entities/bell_jar", description = "Bell Jar" }
 sprite{ id = "entities/big_barrel", description = "Big Barrel" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/block_crate", description = "Block (Crate)" }
@@ -631,6 +632,7 @@ sprite{ id = "npc/guards/oakhaven_4", description = "Oakhaven 4" }
 sprite{ id = "npc/guards/oakhaven_captain", description = "Oakhaven Captain" }
 sprite{ id = "npc/hazel", description = "Hazel" }
 sprite{ id = "npc/ilex", description = "ilex" }
+sprite{ id = "npc/jazari", description = "Al Jazari" }
 sprite{ id = "npc/juglan", description = "Juglan" }
 sprite{ id = "npc/juglan_fishing", description = "Juglan Fishing" }
 sprite{ id = "npc/kelpton", description = "Kelpton" }

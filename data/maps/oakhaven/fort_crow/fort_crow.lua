@@ -10,9 +10,11 @@
 local map = ...
 local game = map:get_game()
 local need_to_be_insibible = false
+local hero = map:get_hero()
 
 map:register_event("on_started", function()
   map:set_doors_open("boss_door")
+  morus_4:get_sprite():set_animation("unconscious")
   if not game:get_value("fort_crow_miniboss_defeated") then miniboss:set_enabled(true)
   else map:set_doors_open("b3_door")
   end
@@ -79,7 +81,7 @@ function b4_switch:on_activated()
   map:focus_on(map:get_camera(), a4_door, function() map:open_doors("a4_door") end)
 end
 
-function e1_switch:on_activated()
+function e1_switch:on_activated() --opens boss door
   sol.audio.play_sound("switch")
   map:open_doors("e1_door")
   game:start_dialog("_oakhaven.npcs.morus.fort.5", function()
@@ -87,6 +89,7 @@ function e1_switch:on_activated()
     m:set_path{2,2,2,2,2,2,2,2}
     m:start(morus_3, function() morus_3:set_enabled(false) end)
     game:set_value("fort_crow_interior_morus_counter", 4)
+    morus_4:set_enabled(true)
   end)
 end
 
@@ -108,8 +111,10 @@ end
 
 -----Sensors----------
 function boss_sensor:on_activated()
-  jazari_dummy:set_enabled(false)
-  jazari_boss:set_enabled(true)
+  game:start_dialog("_oakhaven.npcs.fort_crow.jazari.2", function()
+    jazari_dummy:set_enabled(false)
+    jazari_boss:set_enabled(true)
+  end)
 end
 
 
@@ -156,3 +161,83 @@ function morus_1:on_interaction()
     morus_2:set_enabled(true)
   end)
 end
+
+
+------BOSSSSS------------------
+function boss_sensor:on_activated()
+  boss_sensor:set_enabled(false)
+  hero:freeze()
+  local m = sol.movement.create("path")
+  m:set_path{2,2,2,2,2,2,2,2}
+  m:set_speed(90)
+  m:start(hero, function()
+    game:start_dialog("_oakhaven.npcs.fort_crow.jazari.2", function()
+      hero:unfreeze()
+      jazari_dummy:set_enabled(false)
+      jazari_boss:set_enabled(true)
+    end)
+  end)
+end
+
+local jazari_x, jazari_y, jazari_l
+function jazari_boss:on_dying()
+  jazari_x, jazari_y, jazari_l = jazari_boss:get_position()
+  for grate in map:get_entities("fire_grate_boss_room") do
+    grate:set_turned_off(true)
+  end
+end
+
+function jazari_boss:on_dead()
+  if not game:get_value("quest_snapmast") then
+    hero:freeze()
+    map:open_doors("boss_door_2")
+    jazari_dummy:set_enabled(true)
+    jazari_dummy:set_position(jazari_x, jazari_y, jazari_l)
+    jazari_dummy:get_sprite():set_animation("unconscious")
+    sol.timer.start(map, 800, function()
+      morus_4:get_sprite():set_animation("stopped")
+      sol.timer.start(map, 400, function()
+        game:start_dialog("_oakhaven.npcs.morus.fort.6", function() hero:unfreeze() end)
+      end)
+    end)
+  end
+end
+
+
+------------------------Post Boss-------
+function chart_npc:on_interaction()
+  if game:has_item("hideout_chart") ~= true then
+  hideout_chart:set_enabled(false)
+  hero:start_treasure("hideout_chart", 1, "found_snapmast_reef_hideout_map", function()
+    game:set_value("quest_log_b", "b10")
+    game:set_value("quest_pirate_fort", 6) --quest log, take chart to morus
+    game:set_value("morus_counter", 5)
+    hero:freeze()
+    morus_5:set_enabled(true)
+    local m = sol.movement.create("path")
+    m:set_path{4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4}
+    m:set_speed(70)
+    m:start(morus_5, function()
+      game:start_dialog("_oakhaven.npcs.morus.fort.8", function(answer)
+        hero:unfreeze()
+        game:set_value("quest_pirate_fort", 7) --quest log, pirate fort complete
+        game:set_value("quest_snapmast", 0) --start snapmast quest
+        game:set_value("quest_log_b", "b11")
+        game:set_value("morus_counter", 6)
+        game:set_value("morus_available", false)
+        game:set_value("morus_at_port", true)
+        if answer == 2 then --right to port
+          hero:teleport("oakhaven/port", "morus_landing", "fade")
+        else
+          game:start_dialog("_oakhaven.npcs.morus.fort.9", function()
+            hero:teleport("oakhaven/eastoak", "from_fort_crow_front_door", "fade")
+          end)
+        end
+      end)
+    end)
+    
+  end)
+  end
+end
+
+
