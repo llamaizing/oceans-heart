@@ -19,7 +19,7 @@ animation{
 }
 animation{
   name = "spin_attack",
-  src_image = "hero/spin_attack.sword1.OLD2.png",
+  src_image = "hero/spin_attack.sword1.heavy_attack.png",
   frame_delay = 50,
   directions = {
     { x = 0, y = 0, frame_width = 96, frame_height = 96, origin_x = 48, origin_y = 48, num_frames = 11 },

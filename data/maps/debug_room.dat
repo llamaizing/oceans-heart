@@ -4758,15 +4758,6 @@ custom_entity{
   model = "ally",
 }
 
-enemy{
-  name = "crow",
-  layer = 0,
-  x = 464,
-  y = 373,
-  direction = 3,
-  breed = "normal_enemies/crow_xxl",
-}
-
 destructible{
   layer = 0,
   x = 96,
@@ -4788,6 +4779,13 @@ pickable{
   x = 464,
   y = 53,
   treasure_name = "bread",
+}
+
+pickable{
+  layer = 0,
+  x = 520,
+  y = 61,
+  treasure_name = "sword_of_the_sea_king",
 }
 
 tile{
