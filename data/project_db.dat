@@ -1309,6 +1309,7 @@ item{ id = "charts", description = "Charts (for Kelpton)" }
 item{ id = "contract", description = "contract" }
 item{ id = "coral_ore", description = "Coral Ore" }
 item{ id = "crystal_spark", description = "Crystal Spark - Ophira's Ember" }
+item{ id = "cyclone_charm", description = "Cyclone Charm" }
 item{ id = "dandelion_charm", description = "Dandelion Charm" }
 item{ id = "dandelion_seeds", description = "Dandelion Seeds-1,5,10" }
 item{ id = "dash", description = "dash" }

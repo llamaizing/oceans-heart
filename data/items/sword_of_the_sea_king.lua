@@ -11,4 +11,5 @@ end
 
 function item:on_obtaining(variant, savegame_variable)
   game:set_value("sword_damage", game:get_value("sword_damage") + 2)
+--  game:set_ability("sword_knowledge", 1)
 end

@@ -10811,6 +10811,15 @@ your magic power.
 }
 
 dialog{
+  id = "_treasure.cyclone_charm.1",
+  text = [[
+FILLER TEXT, YO!
+Use this item to do a crazy spin attack
+thing
+]],
+}
+
+dialog{
   id = "_treasure.dandelion_charm.1",
   text = [[
 You received the Dandelion Charm. Press

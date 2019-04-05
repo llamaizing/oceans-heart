@@ -3662,9 +3662,9 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 568,
+  x = 536,
   y = 61,
-  treasure_name = "hookshot",
+  treasure_name = "cyclone_charm",
 }
 
 pickable{
@@ -4786,6 +4786,27 @@ pickable{
   x = 520,
   y = 61,
   treasure_name = "sword_of_the_sea_king",
+}
+
+pickable{
+  layer = 0,
+  x = 208,
+  y = 109,
+  treasure_name = "sword_of_the_sea_king",
+}
+
+pickable{
+  layer = 0,
+  x = 208,
+  y = 109,
+  treasure_name = "cyclone_charm",
+}
+
+pickable{
+  layer = 0,
+  x = 208,
+  y = 109,
+  treasure_name = "sword",
 }
 
 tile{
