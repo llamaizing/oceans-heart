@@ -6182,6 +6182,12 @@ boxes and barrels.
 }
 
 dialog{
+  id = "_oakhaven.npcs.fort_crow.jazari.01",
+  text = [[
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.fort_crow.jazari.1",
   text = [[
 CAPTAIN AL-JAZARI:
@@ -6200,6 +6206,46 @@ CAPTAIN AL-JAZARI:
 when I turned the boiler off. And also
 because I plan on destroying you here and
 now! Ha!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.fort_crow.jazari.2",
+  text = [[
+CAPTAIN AL-JAZARI:
+Oh, another one? Look, I don't have time for
+this. I'm building automatons and digger
+machines and stuff. You're with Morus?
+TILIA:
+Yeah, he's here to bring you in. Well, I
+guess maybe he's here to get his butt
+kicked, it looks like.
+CAPTAIN AL-JAZARI:
+Yes, he's had it out for me ever since I
+accidentially sank his first ship while
+testing my robotic sharks. But so is life.
+TILIA:
+Huh. You don't seem interested in fighting.
+Maybe we can make a deal. I'll just drag
+Morus out of here if you can help me. I'm
+TILIA:
+looking for the Isle of Storms. Have you
+pirate guys found it yet?
+
+CAPTAIN AL-JAZARI:
+Oh, that place. Yes, I don't know. That's
+all Blackbeard stuff, he probably has a
+chart at the Council's hideout. But look,
+CAPTAIN AL-JAZARI:
+this is actually taking up more of my time
+than fighting you would, so...
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.fort_crow.jazari.3",
+  text = [[
+He's totally out for the count.
 ]],
 }
 
@@ -8739,65 +8785,64 @@ Eh, what do you want?
 
 
 TILIA:
-You must be Morus. My friend Hazel
-told me you might be able to help me. I'm
-trying to get into Fort Crow. The Captain of
+You're Morus, right? I heard from my friend
+Hazel that you want to capture the pirate
+Al-Jazari. I want to help you. I need some
 TILIA:
-the Hourglass Crew fled there, and I think he
-can help me find my dad. I'm planning to
-beat it out of him.
-MORUS:
-Huh, that's a weird backstory, kid. Look, I
-appreciate your enthusiasm, but you can't
-take down Fort Crow. Maybe if we could
-MORUS:
-convince the town guard to help, but that
-won't happen. The city's governor is on the
-Pirate Council's payroll. The pirates at Fort
-MORUS:
-Crow are pretty much official guests. And the
-two of us could never fight them all, even if
-they weren't in a fort. Just give it up.
-TILIA:
-Aren't you in the Voluneer Navy? What kind
-of attitude is that?
+information from him. The location of the
+Pirate Council's hideout.
 
 MORUS:
-The right one! Go ahead and try to knock
-down that Fort's doors, I'll be here waiting.
+Huh, alright. That greasy, bolt-toothed
+nut sank two of my ships. But here's what
+you don't understand. Al-Jazari makes
+MORUS:
+automatons for the Pirate Council. Steam-
+powered, metal demons. So besides two-foot
+thick iron gates at his fort, he's got a
+MORUS:
+giant crew of council pirates. Ain't no way
+an old man like me with a girl like you, or
+even a team of thirty men could get in there.
+TILIA:
+Hmm. Don't they have like, a back door or
+something?
+
+MORUS:
+Nope. And they've got plenty of manpower
+to watch for sneaker-in-ers. Honestly, their
+numbers are great for the town's economy.
+TILIA:
+$1Hmm... $3Oh! Well here's what you don't understand.
+If you want to get into a pirate fort, you
+don't have to kick down the doors and fight
+TILIA:
+every pirate. Although I would. But we can
+be clever, not strong. Where do the pirates
+get their ale? Pirate forts always need ale.
+MORUS:
+Eh. I hadn't thought of that. I don't know.
+
 
 TILIA:
-$1...$3You've got your plan all wrong. I just need
-to get into the fort, I don't need the doors
-knocked down. Your problem is you're too
+Because we could slip some sleeping-powder
+or something into their drinks, and we
+wouldn't need to fight eighty guys. Is there
 TILIA:
-head-on. If you're not strong enough, you've
-got to be clever enough. You're not the only
-one who drinks, you know?
+like, an apothecary or something in town?
+
+
 MORUS:
-I don't follow, kid.
+Yeah, up on the east side of town. Alright.
+I can find out where the pirates at Fort
+Crow get their grog is you can get something
+MORUS:
+effective to put inside a shipment.
 
 
 TILIA:
-My family runs a tavern back at home- if the
-pirates are at the fort, they're drinking, and
-their alcohol is coming from somewhere. If
-TILIA:
-I can find out where they're getting it, I can
-fill the next batch with sleeping potion or
-something and sneak right into the fort.
-MORUS:
-Huh, that's not actually a bad plan. Alright,
-I'll do some asking around and see if I can
-find out where their booze comes from. You
-MORUS:
-can concentrate on finding some sleeping
-potion then. There's an apothecary up on the
-east edge of town, maybe ask there.
-TILIA:
-Deal. I'll meet you back here once I have it.
-Make sure you know where the alcohol is
-coming from by then.
+I'll meet you back here once I have some
+sleeping potion or something.
 ]],
 }
 
@@ -8831,15 +8876,12 @@ Well, it actually comes from this very
 establishment. There's a storehouse next
 door, where they keep their stock. I overheard
 MORUS:
-the bartender saying the pirates ale was
-marked with stars on the barrels. If you can
-somehow get into the storehouse and find
+the bartender saying the pirates ale was in
+the basement, marked with stars on the
+barrels. If you can get into the storehouse's
 MORUS:
-the barrels with stars, I guess that's when
-you start spiking the booze.
-
-TILIA:
-Leave it to me.
+basement, just pour that sleeping potion
+into the barrels with stars on them.
 ]],
 }
 
@@ -8851,8 +8893,13 @@ So if you want to get your sleeping potion
 into the Fort Crow pirates' ale, you'll be
 looking for barrels marked with stars in the
 MORUS:
-storehouse next door. Those are headed
-down to Fort Crow, should do the trick.
+storehouse next door. Somewhere in the
+basement. Those are headed down to
+Fort Crow, should do the trick. Meanwhile,
+MORUS:
+I'll go wait for you at Fort Crow. We can
+sneak in together once the pirates are
+knocked out.
 ]],
 }
 
@@ -8876,12 +8923,11 @@ by the time you find you way down to
 Fort Crow.
 
 TILIA:
-Just what I wanted to hear. I've been chasing
-after the Hourglass Crew for so long, it's
-weird that I've almost corned the captain.
+Just what I wanted to hear.
+
+
 MORUS:
-Well, I hope he can help you find your dad
-or whatever.
+Great. I'll meet you down at Fort Crow.
 ]],
 }
 
@@ -8926,7 +8972,7 @@ dialog{
   text = [[
 MORUS:
 If you think you can take down the pirate
-council, then I'll take you to their hideout.
+council, I'll take you to their hideout.
 I'll meet you down at the port.
 ]],
 }
@@ -8993,6 +9039,120 @@ dialog{
 MORUS:
 What? That's where we already are,
 Tilia.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.1",
+  text = [[
+MORUS:
+That sleeping potion in the ale seems to
+have done the trick. Let's go track down
+Al-Jazari.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.2",
+  text = [[
+MORUS:
+Al-Jazari will finally be held accountable
+for sinking my ships! And his other crimes.
+Alright, let's split up. Even though the
+MORUS:
+pirates are asleep, Al-jazari's automatons
+will still be active.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.3",
+  text = [[
+MORUS:
+It looks like the center of the automaton
+factory is past this door. I'm trying to
+find a way to open it...
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.4",
+  text = [[
+MORUS (echoing from elsewhere in the fort):
+A-ha! I've found a way to get the door
+open! On my own! I'm coming for you,
+Al-Jazari!
+(It seems the door Morus was trying to
+open has finally unlocked)
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.5",
+  text = [[
+MORUS:
+A-ha!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.6",
+  text = [[
+MORUS:
+Ah! Excellent work, Tilia. I'll finally be
+able to bring this ruffian to justice. You
+should check his office, he's likely to
+MORUS:
+have a chart showing how to get to the
+Pirate Council's headquarters.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.7",
+  text = [[
+MORUS:
+I uh, I accidentally hit my head on the
+door frame as I was running in. Then
+Al-Jazari just finished me off, is all.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.8",
+  text = [[
+MORUS:
+You find what you're looking for?
+
+
+TILIA:
+Yeah, there's a chart here. You recognize
+this area?
+
+MORUS:
+Hmm... yeah, that's Snapmast Reef. There's
+a chain of shipwrecks there called the
+Cemetery of the Waves, looks like their
+MORUS:
+hideout is nestled in there. I can get
+you there if you want. My current ship is
+at Oakhaven Port. I can take you there
+MORUS:
+now, or meet you when you're ready.
+
+
+TILIA:
+$?Take me to your boat
+$?I'll meet you later
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.morus.fort.9",
+  text = [[
+MORUS:
+That's fine. I'll be waiting for you at
+Oakhaven Port.
 ]],
 }
 
@@ -10874,6 +11034,14 @@ dialog{
   text = [[
 You found a key. It will unlock a door
 in the area.
+]],
+}
+
+dialog{
+  id = "_treasure.key_fort_crow.1",
+  text = [[
+You found a key. It can unlock a door in
+this fort.
 ]],
 }
 
@@ -13063,6 +13231,9 @@ the Isle of Storms is yet.
 !Salamander Heartache saloon
 @Get sleeping potion from the
 town apothecary
+!There's an apothecary
+!up on the east side of
+!town
 @!Return to Morus
 @Find the pirates' ale
 shipment and spike it.
@@ -13070,10 +13241,11 @@ shipment and spike it.
 !with a star
 @Sneak into Fort Crow while
 the pirates are asleep
-@Find Captain Thyme
-@Bring the pirates' chart
-back to Morus to look at.
-    
+!Morus will meet you down
+!at Fort Crow
+@Find Captain Al-Jazari
+@Meet Morus at the port
+to sail to Snapmast Reef
 ]],
 }
 

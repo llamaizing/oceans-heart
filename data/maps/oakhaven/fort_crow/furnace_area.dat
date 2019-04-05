@@ -8661,10 +8661,10 @@ dynamic_tile{
   layer = 0,
   x = 544,
   y = 560,
-  pattern = "36",
+  enabled_at_start = false,
   width = 16,
   height = 96,
-  enabled_at_start = false,
+  pattern = "36",
 }
 
 sensor{
@@ -8886,10 +8886,10 @@ dynamic_tile{
   layer = 0,
   x = 384,
   y = 312,
-  pattern = "377",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "377",
 }
 
 dynamic_tile{
@@ -8897,10 +8897,10 @@ dynamic_tile{
   layer = 0,
   x = 488,
   y = 336,
-  pattern = "356",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "356",
 }
 
 dynamic_tile{
@@ -8908,10 +8908,10 @@ dynamic_tile{
   layer = 0,
   x = 416,
   y = 312,
-  pattern = "356",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "356",
 }
 
 dynamic_tile{
@@ -8919,10 +8919,10 @@ dynamic_tile{
   layer = 0,
   x = 280,
   y = 336,
-  pattern = "356",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "356",
 }
 
 dynamic_tile{
@@ -8930,10 +8930,10 @@ dynamic_tile{
   layer = 0,
   x = 352,
   y = 312,
-  pattern = "356",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "356",
 }
 
 switch{
@@ -10715,10 +10715,10 @@ dynamic_tile{
   layer = 1,
   x = 496,
   y = 304,
-  pattern = "323",
+  enabled_at_start = false,
   width = 16,
   height = 24,
-  enabled_at_start = false,
+  pattern = "323",
 }
 
 dynamic_tile{
@@ -10726,9 +10726,9 @@ dynamic_tile{
   layer = 1,
   x = 288,
   y = 304,
-  pattern = "323",
+  enabled_at_start = false,
   width = 16,
   height = 24,
-  enabled_at_start = false,
+  pattern = "323",
 }
 

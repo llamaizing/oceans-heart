@@ -182,6 +182,7 @@ map{ id = "oakhaven/eastoak", description = "Eastoak" }
 map{ id = "oakhaven/fort_crow/basement", description = "Basement" }
 map{ id = "oakhaven/fort_crow/courtyard", description = "Courtyard" }
 map{ id = "oakhaven/fort_crow/dandelion_charm", description = "Dendelion Charm Area" }
+map{ id = "oakhaven/fort_crow/fort_crow", description = "Fort Crow" }
 map{ id = "oakhaven/fort_crow/furnace_area", description = "Furnace Area" }
 map{ id = "oakhaven/fort_crow/tower", description = "Tower" }
 map{ id = "oakhaven/gull_rock", description = "Gull Rock" }
@@ -238,6 +239,7 @@ map{ id = "testtest", description = "yayayaya" }
 
 tileset{ id = "Full Hyrule", description = "Full Hyrule" }
 tileset{ id = "cave_2", description = "cave-mine" }
+tileset{ id = "fort_crow_walls", description = "Fort Crow Walls" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
 tileset{ id = "indoors_stone", description = "indoors - stone" }
 tileset{ id = "light_world", description = "Light World" }
@@ -264,6 +266,7 @@ sprite{ id = "enemies/bosses/bart_weapon", description = "enemies/bosses/bart_we
 sprite{ id = "enemies/bosses/blackbeard", description = "Blackbeard" }
 sprite{ id = "enemies/bosses/burrow_crab", description = "Burrow Crab" }
 sprite{ id = "enemies/bosses/charging_pirate_1", description = "Charging Pirate 1" }
+sprite{ id = "enemies/bosses/crow_mech", description = "Crow Mech" }
 sprite{ id = "enemies/bosses/fiend_1", description = "Fiend 1" }
 sprite{ id = "enemies/bosses/forest_revenant", description = "Forest Revenant" }
 sprite{ id = "enemies/bosses/jazari", description = "al Jazari" }
@@ -283,16 +286,13 @@ sprite{ id = "enemies/misc/arrow_4", description = "Arrow - 4 directions" }
 sprite{ id = "enemies/misc/barrel_cannon", description = "Barrel Cannon" }
 sprite{ id = "enemies/misc/big_stone", description = "big stone" }
 sprite{ id = "enemies/misc/blue_fire", description = "Blue Fire" }
-sprite{ id = "enemies/misc/crusher_0.5", description = "Crusher 0.5" }
-sprite{ id = "enemies/misc/crusher_1.0", description = "Crusher 1.0" }
-sprite{ id = "enemies/misc/crusher_2.0", description = "Crusher 2.0" }
-sprite{ id = "enemies/misc/crusher_3.0", description = "Crusher 3.0" }
-sprite{ id = "enemies/misc/crusher_4.0", description = "Crusher 4.0" }
+sprite{ id = "enemies/misc/crusher", description = "Crusher" }
 sprite{ id = "enemies/misc/energy_ball", description = "Energy Ball" }
 sprite{ id = "enemies/misc/energy_ball_black", description = "Energy Ball-Black" }
 sprite{ id = "enemies/misc/energy_ball_small", description = "Energy Ball - Small" }
 sprite{ id = "enemies/misc/energy_ball_small_black", description = "Energy Ball Small Black" }
 sprite{ id = "enemies/misc/explosive_barrel", description = "Explosive Barrel" }
+sprite{ id = "enemies/misc/fire_blast", description = "Fire Blast" }
 sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small, red" }
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 sprite{ id = "enemies/misc/octorok_stone", description = "small stone" }
@@ -394,6 +394,7 @@ sprite{ id = "entities/arrow_fire", description = "arrow_fire" }
 sprite{ id = "entities/arrow_silver", description = "arrow_silver" }
 sprite{ id = "entities/arrow_warp", description = "arrow warp" }
 sprite{ id = "entities/bait", description = "bait" }
+sprite{ id = "entities/bell_jar", description = "Bell Jar" }
 sprite{ id = "entities/big_barrel", description = "Big Barrel" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/block_crate", description = "Block (Crate)" }
@@ -480,6 +481,7 @@ sprite{ id = "entities/door_mangrove_tree", description = "door-MangroveTree" }
 sprite{ id = "entities/door_npc_tall", description = "NPC door - tall" }
 sprite{ id = "entities/door_post_stone", description = "Door-Stone Post" }
 sprite{ id = "entities/door_posts", description = "Door - Posts" }
+sprite{ id = "entities/door_posts_pipes", description = "Door-Posts-Pipes" }
 sprite{ id = "entities/door_shutter", description = "door (shutter)" }
 sprite{ id = "entities/door_unmarked_wall", description = "Door - Unmarked Wall" }
 sprite{ id = "entities/door_vines", description = "Door-Vines" }
@@ -488,6 +490,7 @@ sprite{ id = "entities/door_weak_wall", description = "Weak Wall Door" }
 sprite{ id = "entities/elixer", description = "elixer" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
+sprite{ id = "entities/fire_grate", description = "Fire Grate" }
 sprite{ id = "entities/flame_pillar", description = "Flame Pillar" }
 sprite{ id = "entities/floating_sparkle", description = "Floating Sparkle" }
 sprite{ id = "entities/footprints_1", description = "Footprints 1" }
@@ -513,6 +516,7 @@ sprite{ id = "entities/orange_peel", description = "Orange Peel" }
 sprite{ id = "entities/pollution_ash", description = "Pollution Ash" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
 sprite{ id = "entities/ripple", description = "Ripple" }
+sprite{ id = "entities/robot_parts", description = "RobotParts" }
 sprite{ id = "entities/rockpile", description = "Rock Pile" }
 sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
@@ -628,6 +632,7 @@ sprite{ id = "npc/guards/oakhaven_4", description = "Oakhaven 4" }
 sprite{ id = "npc/guards/oakhaven_captain", description = "Oakhaven Captain" }
 sprite{ id = "npc/hazel", description = "Hazel" }
 sprite{ id = "npc/ilex", description = "ilex" }
+sprite{ id = "npc/jazari", description = "Al Jazari" }
 sprite{ id = "npc/juglan", description = "Juglan" }
 sprite{ id = "npc/juglan_fishing", description = "Juglan Fishing" }
 sprite{ id = "npc/kelpton", description = "Kelpton" }
@@ -1180,6 +1185,8 @@ sound{ id = "external_stairs_down", description = "external_stairs_down" }
 sound{ id = "external_stairs_up", description = "external_stairs_up" }
 sound{ id = "fire_burning", description = "fire_burning" }
 sound{ id = "fire_burst_1", description = "Fire Burst 1" }
+sound{ id = "flail_swing", description = "flail_swing" }
+sound{ id = "flail_throw", description = "flail_throw" }
 sound{ id = "gravel", description = "gravel" }
 sound{ id = "gravel2", description = "gravel2" }
 sound{ id = "heart", description = "heart" }
@@ -1323,6 +1330,7 @@ item{ id = "ironwood_charm", description = "Ironwood Charm" }
 item{ id = "key_ballast_council_building", description = "Key - Ballast Council Building" }
 item{ id = "key_basswood_tavern", description = "key- Basswood Tavern" }
 item{ id = "key_dandelion_charm", description = "Key - Dandelion Charm" }
+item{ id = "key_fort_crow", description = "Key-Fort Crow" }
 item{ id = "key_goat_caverns", description = "Key - Goat Caverns" }
 item{ id = "key_goat_tunnels", description = "Key - Goat Tunnels" }
 item{ id = "key_graveyard_of_the_waves", description = "Key-Graveyard of the Waves" }
@@ -1384,6 +1392,7 @@ enemy{ id = "bosses/bart", description = "Bart" }
 enemy{ id = "bosses/blackbeard", description = "Blackbeard" }
 enemy{ id = "bosses/burrow_crab", description = "Burrow Crab" }
 enemy{ id = "bosses/charging_pirate_1", description = "Charging Pirate 1" }
+enemy{ id = "bosses/crow_mech", description = "Crow Mech" }
 enemy{ id = "bosses/fiend_1", description = "Fiend 1" }
 enemy{ id = "bosses/forest_revenant", description = "Forest Revenant" }
 enemy{ id = "bosses/jazari", description = "al Jazari" }
@@ -1400,18 +1409,16 @@ enemy{ id = "misc/big_stone", description = "Big Stone" }
 enemy{ id = "misc/blue_fire", description = "Blue Fire" }
 enemy{ id = "misc/bomb_4_direction", description = "Bomb - 4 direction" }
 enemy{ id = "misc/bomb_any_direction", description = "Bomb-Any Direction" }
-enemy{ id = "misc/crusher_0.5", description = "Crusher 0.5 sec" }
-enemy{ id = "misc/crusher_1.0", description = "Crusher 1.0 sec" }
-enemy{ id = "misc/crusher_2.0", description = "Crusher 2 sec" }
-enemy{ id = "misc/crusher_3.0", description = "Crusher 3 sec" }
-enemy{ id = "misc/crusher_4.0", description = "Crusher 4 sec" }
+enemy{ id = "misc/crusher", description = "Crusher" }
 enemy{ id = "misc/default", description = "default" }
+enemy{ id = "misc/enemy_weapon", description = "Enemy Weapon" }
 enemy{ id = "misc/energy_ball_black", description = "Energy Ball-Black" }
 enemy{ id = "misc/energy_ball_bounce", description = "Energy Ball" }
 enemy{ id = "misc/energy_ball_small", description = "Energy Ball Small" }
 enemy{ id = "misc/energy_ball_small_black", description = "EnergyBallSmallBlack" }
 enemy{ id = "misc/energy_ball_split", description = "Energy Ball Split" }
 enemy{ id = "misc/explosive_barrel", description = "explosive barrel" }
+enemy{ id = "misc/fire_blast", description = "Fire Blast" }
 enemy{ id = "misc/fireball_red_small", description = "Fireball - red, small" }
 enemy{ id = "misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 enemy{ id = "misc/octorok_stone", description = "Small Stone" }
@@ -1503,6 +1510,7 @@ entity{ id = "collapsing_floor", description = "Collapsing Floor" }
 entity{ id = "damaging_sparkle", description = "Damaging Sparkle" }
 entity{ id = "dash_moth", description = "Dash Moth" }
 entity{ id = "ephemeral_effect", description = "Ephereral Effect" }
+entity{ id = "fire_grate", description = "Fire Grate" }
 entity{ id = "flail_obstacle", description = "Flail Obstacle" }
 entity{ id = "leaf_pile", description = "Leaf Pile" }
 entity{ id = "moving_platform", description = "Moving Platform" }

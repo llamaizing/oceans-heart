@@ -197,7 +197,8 @@ main{
 
 main{
 	dialog_id = "quest.main.mangrove_sword",
-	calc_phase = "quest_mangrove_sword"
+	calc_phase = "quest_mangrove_sword",
+	location = "location.oakhaven",
 }
 
 main{

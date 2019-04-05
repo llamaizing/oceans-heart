@@ -42432,6 +42432,42 @@ dynamic_tile{
   tileset = "indoors_stone",
 }
 
+dynamic_tile{
+  name = "dropoff_box_top_18",
+  layer = 1,
+  x = 520,
+  y = 1600,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "590",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "dropoff_box_top_19",
+  layer = 1,
+  x = 496,
+  y = 1616,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "590",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "dropoff_box_top_20",
+  layer = 1,
+  x = 504,
+  y = 1592,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "590",
+  tileset = "indoors_stone",
+}
+
 tile{
   layer = 2,
   x = 776,

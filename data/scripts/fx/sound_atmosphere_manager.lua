@@ -1,3 +1,7 @@
+--Call start_atmosphere(map, "type") to start sound effects on a map
+--Valid types are: "birds", "rain_inside", "ravens"
+
+
 local sound_atmosphere_manager = {}
 
 local bird_sounds = {
@@ -131,6 +135,20 @@ function sound_atmosphere_manager:start_atmosphere(map, type)
       return 3000
     end)
     timer:set_suspended_with_map(false)
+  end
+
+  if type == "ravens" then
+    local timer = sol.timer.start(map, 1, function()
+      local maybe_pause = math.random(1, 10)
+      if maybe_pause == 1 then
+        return math.random(2000, 3200)
+      else
+        sol.audio.play_sound(raven_sounds[math.random(1, #raven_sounds)])
+        return math.random(150, 800)
+      end
+    end)
+    timer:set_suspended_with_map(false)
+
   end
 
 end

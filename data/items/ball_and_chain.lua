@@ -71,6 +71,7 @@ function item:on_using()
     }
     link_movements[i] = sol.movement.create("circle")
     link_movements[i]:set_center(flail_x, flail_y)
+    link_movements[i]:set_ignore_obstacles()
     link_movements[i]:set_radius(MIN_RADIUS)
     link_movements[i]:set_radius_speed(RAIUS_SPEED)
     link_movements[i]:set_max_rotations(MAX_ROTATIONS)
@@ -98,6 +99,7 @@ function item:on_using()
   --create a movement for the flail
   local m = sol.movement.create("circle")
   m:set_center(flail_x, flail_y)
+  m:set_ignore_obstacles()
 --  m:set_angle_from_center(start_angle)
   m:set_radius(MIN_RADIUS)
   m:set_radius_speed(RAIUS_SPEED)
@@ -111,10 +113,16 @@ function item:on_using()
   hero:set_animation("charging")
   sol.timer.start(game, CHARGING_TIME, function()
     --AND GO! ATTACK!
+    local circling = true
+    sol.timer.start(map, 2, function()
+      if circling then
+        sol.audio.play_sound("flail_swing")
+        return 450
+      end
+    end)
     --Start the movements and change the hero's animation
     hero:set_animation("hookshot")
-    sol.audio.play_sound("boomerang")
-    m:start(spike_ball, function() spike_ball:remove() hero:unfreeze() end)
+    m:start(spike_ball, function() spike_ball:remove() hero:unfreeze() circling = false end)
     for i=1, NUM_LINKS do
       link_movements[i]:start(links[i], function() links[i]:remove() end)
       link_movements[i]:set_radius(RADIUS / NUM_LINKS * i)
@@ -126,6 +134,7 @@ function item:on_using()
   --end the movement if it doesn't collide with something
   function m:on_finished()
     hero:unfreeze()
+    circling = false
     spike_ball:remove()
     for i=1, NUM_LINKS do links[i]:remove() end
     item:set_finished()

@@ -10860,7 +10860,7 @@ enemy{
   x = 200,
   y = 621,
   direction = 1,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 enemy{
@@ -10868,7 +10868,7 @@ enemy{
   x = 216,
   y = 621,
   direction = 1,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 enemy{
@@ -10876,7 +10876,7 @@ enemy{
   x = 504,
   y = 837,
   direction = 3,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 enemy{
@@ -10884,7 +10884,7 @@ enemy{
   x = 184,
   y = 621,
   direction = 1,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 stream{
@@ -11247,7 +11247,7 @@ enemy{
   x = 448,
   y = 597,
   direction = 3,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 enemy{
@@ -11332,7 +11332,7 @@ enemy{
   x = 504,
   y = 877,
   direction = 1,
-  breed = "misc/crusher_1.0",
+  breed = "misc/crusher",
 }
 
 wall{
@@ -12004,10 +12004,9 @@ dynamic_tile{
   layer = 0,
   x = 768,
   y = 80,
-  pattern = "336",
   width = 16,
   height = 16,
-  enabled_at_start = true,
+  pattern = "336",
 }
 
 npc{
@@ -12591,10 +12590,10 @@ dynamic_tile{
   layer = 1,
   x = 72,
   y = 848,
-  pattern = "323",
+  enabled_at_start = false,
   width = 16,
   height = 24,
-  enabled_at_start = false,
+  pattern = "323",
 }
 
 dynamic_tile{
@@ -12602,10 +12601,10 @@ dynamic_tile{
   layer = 1,
   x = 56,
   y = 848,
-  pattern = "323",
+  enabled_at_start = false,
   width = 16,
   height = 24,
-  enabled_at_start = false,
+  pattern = "323",
 }
 
 dynamic_tile{
@@ -12613,10 +12612,10 @@ dynamic_tile{
   layer = 1,
   x = 128,
   y = 720,
-  pattern = "323",
+  enabled_at_start = false,
   width = 16,
   height = 24,
-  enabled_at_start = false,
+  pattern = "323",
 }
 
 tile{

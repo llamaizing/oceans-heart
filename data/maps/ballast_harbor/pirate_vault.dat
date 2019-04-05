@@ -23784,7 +23784,7 @@ door{
   y = 256,
   direction = 3,
   sprite = "entities/door_shutter",
-  savegame_variable = "ballast_pirate_vault_d1_door",
+  savegame_variable = "ballast_pirate_vault_d1_item_door",
 }
 
 door{
@@ -23794,7 +23794,7 @@ door{
   y = 208,
   direction = 1,
   sprite = "entities/door_shutter",
-  savegame_variable = "ballast_pirate_vault_d1_door",
+  savegame_variable = "ballast_pirate_vault_d1_item_door",
 }
 
 switch{
