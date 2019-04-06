@@ -10414,6 +10414,46 @@ tile{
   tileset = "oceanheart_outdoors_spring",
 }
 
+tile{
+  layer = 0,
+  x = 1352,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "860",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "1656",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1584,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "861",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "861",
+  tileset = "oceanheart_outdoors_1",
+}
+
 separator{
   layer = 0,
   x = -8,
@@ -11112,6 +11152,15 @@ door{
   y = 448,
   direction = 1,
   sprite = "entities/door_shutter",
+}
+
+enemy{
+  name = "sea_hag",
+  layer = 0,
+  x = 1464,
+  y = 341,
+  direction = 3,
+  breed = "bosses/sea_hag",
 }
 
 tile{

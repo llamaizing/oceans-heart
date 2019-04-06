@@ -4797,6 +4797,14 @@ destructible{
   can_be_cut = true,
 }
 
+enemy{
+  layer = 0,
+  x = 416,
+  y = 373,
+  direction = 0,
+  breed = "bosses/sea_hag",
+}
+
 tile{
   layer = 1,
   x = 192,

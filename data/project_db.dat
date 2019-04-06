@@ -275,6 +275,7 @@ sprite{ id = "enemies/bosses/michael", description = "Michael Mighty Mead Maker"
 sprite{ id = "enemies/bosses/michael_weapon", description = "Michael-Weapon" }
 sprite{ id = "enemies/bosses/pollutant_boss", description = "Pollutant Boss" }
 sprite{ id = "enemies/bosses/rock_spider_big", description = "rock spider - big" }
+sprite{ id = "enemies/bosses/sea_hag", description = "Sea Hag" }
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
 sprite{ id = "enemies/bosses/zephyrine", description = "Zeyphyrine" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
@@ -1401,6 +1402,7 @@ enemy{ id = "bosses/litton", description = "Litton" }
 enemy{ id = "bosses/michael", description = "Michael Mighty Mead Maker" }
 enemy{ id = "bosses/pollutant_boss", description = "Pollutant Boss" }
 enemy{ id = "bosses/rock_spider_big", description = "rock spider - big" }
+enemy{ id = "bosses/sea_hag", description = "Sea Hag" }
 enemy{ id = "bosses/thyme", description = "Captain Thyme" }
 enemy{ id = "bosses/zephyrine", description = "Zephyrine" }
 enemy{ id = "general_enemy_example", description = "General Enemy Example" }
