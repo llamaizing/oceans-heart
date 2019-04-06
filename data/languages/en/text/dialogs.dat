@@ -5805,6 +5805,16 @@ to get done before you left to find your dad.
 }
 
 dialog{
+  id = "_new_limestone_island.observations.trapped_in_stash",
+  text = [[
+TILIA:
+Well huh. I guess I'm glad that didn't
+happen while I was walking across. I guess
+I'll have to find another way out.
+]],
+}
+
+dialog{
   id = "_new_limestone_island.observations.wine",
   text = [[
 A bottle of decent wine, Juglan's favorite

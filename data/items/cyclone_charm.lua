@@ -23,19 +23,15 @@ end
 --
 function item:on_using()
   item:set_finished()
+end
+--]]
+
+function item:on_finished()
   local hero = game:get_hero()
       game:set_ability("sword_knowledge", 1)
+      print(hero:get_state())
       hero:start_attack_loading(0)
       sol.timer.start(game, 10, function()
         game:set_ability("sword_knowledge", 0)
       end)
-end
---]]
-
-
--- Event called when a pickable treasure representing this item
--- is created on the map.
-function item:on_pickable_created(pickable)
-
-  -- You can set a particular movement here if you don't like the default one.
 end

@@ -128,7 +128,7 @@ function game_manager:create(file_name)
     elseif key == "l" then sol.menu.start(game, title_screen)
 
       --DEBUG FUNCTIONS
-    elseif key == "y" and DEBUG_MODE then
+    elseif key == "y" and DEBUG_MODE and game:has_item("sword") then
       game:set_ability("sword_knowledge", 1)
       hero:start_attack_loading(0)
       sol.timer.start(game, 10, function()

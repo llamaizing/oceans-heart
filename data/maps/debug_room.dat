@@ -2972,8 +2972,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/fort_crow/fort_crow",
-  destination = "from_eastoak",
+  destination_map = "new_limestone/stash",
+  destination = "from_outside",
 }
 
 pickable{
@@ -4788,25 +4788,13 @@ pickable{
   treasure_name = "sword_of_the_sea_king",
 }
 
-pickable{
+destructible{
   layer = 0,
-  x = 208,
-  y = 109,
-  treasure_name = "sword_of_the_sea_king",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 109,
-  treasure_name = "cyclone_charm",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 109,
-  treasure_name = "sword",
+  x = -40,
+  y = -3,
+  sprite = "entities/bush_small_tree",
+  weight = -1,
+  can_be_cut = true,
 }
 
 tile{
