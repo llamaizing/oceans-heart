@@ -271,13 +271,13 @@ animation{
 }
 animation{
   name = "spin_attack",
-  src_image = "hero/spin_attack.tunic1.png",
+  src_image = "hero/sword.tunic1-hold-at-end.png",
   frame_delay = 50,
   directions = {
-    { x = 120, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 11 },
-    { x = 120, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 11 },
-    { x = 120, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 11 },
-    { x = 120, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 11 },
+    { x = 72, y = 0, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 43, num_frames = 11 },
+    { x = 0, y = 72, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 43, num_frames = 11 },
+    { x = 0, y = 144, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 43, num_frames = 11 },
+    { x = 0, y = 216, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 43, num_frames = 11 },
   },
 }
 animation{
@@ -288,14 +288,14 @@ animation{
 }
 animation{
   name = "super_spin_attack",
-  src_image = "hero/spin_attack.tunic1.png",
+  src_image = "hero/spin_attack.tunic1_half_size.png",
   frame_delay = 30,
   frame_to_loop_on = 5,
   directions = {
-    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
-    { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
-    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
-    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 22 },
+    { x = 0, y = 0, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 11 },
+    { x = 0, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 11 },
+    { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 11 },
+    { x = 0, y = 72, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 11 },
   },
 }
 animation{

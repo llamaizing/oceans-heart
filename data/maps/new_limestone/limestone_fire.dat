@@ -24111,6 +24111,303 @@ tile{
   pattern = "1076",
 }
 
+tile{
+  layer = 0,
+  x = 1200,
+  y = 312,
+  width = 16,
+  height = 8,
+  pattern = "341",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "340",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "348",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "1032",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "1037",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "1034",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "1035",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "63",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "64",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 320,
+  width = 32,
+  height = 16,
+  pattern = "41",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "1032",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "1037",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "1034",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "1035",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "459",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "462",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "463",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "89",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "92",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "79",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "411",
+}
+
+tile{
+  layer = 0,
+  x = 1256,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "415",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 296,
+  width = 16,
+  height = 8,
+  pattern = "401",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "400",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -25039,6 +25336,24 @@ chest{
   treasure_name = "sword",
   treasure_savegame_variable = "new_limestone_sword_chest",
   sprite = "entities/chest",
+}
+
+jumper{
+  layer = 0,
+  x = 1248,
+  y = 296,
+  width = 16,
+  height = 8,
+  direction = 6,
+  jump_length = 56,
+}
+
+destination{
+  name = "from_tidal_passage",
+  layer = 0,
+  x = 1272,
+  y = 285,
+  direction = 2,
 }
 
 tile{

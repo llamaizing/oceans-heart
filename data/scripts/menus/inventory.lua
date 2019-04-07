@@ -12,7 +12,7 @@ local all_equipment_items = {
     {item = "boomerang", name = "Boomerang", assignable = true,},
     {item = "spear", name = "Bear Warriors' Spear", assignable = true,},
     {item = "ball_and_chain", name = "Flail", assignable = true},
-    {item = "hookshot", name = "Hookshot", assignable = true,},
+    {item = "cyclone_charm", name = "Cyclone Charm", assignable = true,},
     {item = "tornado_dash", name = "Tornado Dash", assignable = true,},
     {item = "gust", name = "Zephyrine's Tempest", assignable = true,},
     {item = "crystal_spark", name = "Ophira's Ember", assignable = true,},

@@ -2972,8 +2972,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/fort_crow/fort_crow",
-  destination = "from_eastoak",
+  destination_map = "new_limestone/stash",
+  destination = "from_outside",
 }
 
 pickable{
@@ -3662,9 +3662,9 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 568,
+  x = 536,
   y = 61,
-  treasure_name = "hookshot",
+  treasure_name = "cyclone_charm",
 }
 
 pickable{
@@ -4758,15 +4758,6 @@ custom_entity{
   model = "ally",
 }
 
-enemy{
-  name = "crow",
-  layer = 0,
-  x = 464,
-  y = 373,
-  direction = 3,
-  breed = "normal_enemies/crow_xxl",
-}
-
 destructible{
   layer = 0,
   x = 96,
@@ -4788,6 +4779,30 @@ pickable{
   x = 464,
   y = 53,
   treasure_name = "bread",
+}
+
+pickable{
+  layer = 0,
+  x = 520,
+  y = 61,
+  treasure_name = "sword_of_the_sea_king",
+}
+
+destructible{
+  layer = 0,
+  x = -40,
+  y = -3,
+  sprite = "entities/bush_small_tree",
+  weight = -1,
+  can_be_cut = true,
+}
+
+enemy{
+  layer = 0,
+  x = 416,
+  y = 373,
+  direction = 0,
+  breed = "bosses/sea_hag",
 }
 
 tile{

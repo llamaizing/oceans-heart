@@ -14,6 +14,7 @@ local hero = map:get_hero()
 
 map:register_event("on_started", function()
   map:set_doors_open("boss_door")
+  if game:get_value("quest_snapmast") then jazari_dummy:set_enabled(false) end
   morus_4:get_sprite():set_animation("unconscious")
   if not game:get_value("fort_crow_miniboss_defeated") then miniboss:set_enabled(true)
   else map:set_doors_open("b3_door")
@@ -220,6 +221,7 @@ function chart_npc:on_interaction()
     m:start(morus_5, function()
       game:start_dialog("_oakhaven.npcs.morus.fort.8", function(answer)
         hero:unfreeze()
+        game:set_value("fort_crow_interior_morus_counter", 6)
         game:set_value("quest_pirate_fort", 7) --quest log, pirate fort complete
         game:set_value("quest_snapmast", 0) --start snapmast quest
         game:set_value("quest_log_b", "b11")

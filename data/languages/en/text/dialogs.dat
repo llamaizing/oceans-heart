@@ -5680,6 +5680,16 @@ maybe? It's still in progress.
 }
 
 dialog{
+  id = "_new_limestone_island.observations.cavern_sea_shrine",
+  text = [[
+TILIA:
+I never realized there was an old shrine to
+the Ocean godess way back here. This has
+probably been here hundreds of years. Neat.
+]],
+}
+
+dialog{
   id = "_new_limestone_island.observations.dad_books",
   text = [[
 You dad has been trying to work out a
@@ -5778,6 +5788,19 @@ easily kill the careless botanist. Take care.
 }
 
 dialog{
+  id = "_new_limestone_island.observations.sea_hag",
+  text = [[
+TILIA:
+Of course, some big monster is lurking
+between me and my way out. Well, I want to
+join the Volunteer Navy, and taking care of
+TILIA:
+these gross things is part of that.
+I can handle this. You can do it, Tilia.
+]],
+}
+
+dialog{
   id = "_new_limestone_island.observations.tavern_notice",
   text = [[
 Chores this week:
@@ -5801,6 +5824,16 @@ dialog{
   text = [[
 It's a to-do list you made, stuff you wanted
 to get done before you left to find your dad.
+]],
+}
+
+dialog{
+  id = "_new_limestone_island.observations.trapped_in_stash",
+  text = [[
+TILIA:
+Well huh. I guess I'm glad that didn't
+happen while I was walking across. I guess
+I'll have to find another way out.
 ]],
 }
 
@@ -10807,6 +10840,15 @@ You received the Ophira's Ember.
 This spell will summon a furious
 firestorm. It will use most of
 your magic power.
+]],
+}
+
+dialog{
+  id = "_treasure.cyclone_charm.1",
+  text = [[
+FILLER TEXT, YO!
+Use this item to do a crazy spin attack
+thing
 ]],
 }
 
