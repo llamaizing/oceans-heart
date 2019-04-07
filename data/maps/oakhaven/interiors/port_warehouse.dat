@@ -1728,7 +1728,7 @@ dynamic_tile{
 
 block{
   layer = 0,
-  x = 96,
+  x = 112,
   y = 413,
   sprite = "entities/block_crate",
   pushable = true,
