@@ -46,12 +46,12 @@ animation{
 animation{
   name = "shooting",
   src_image = "enemies/bosses/sea_hag.png",
-  frame_delay = 500,
+  frame_delay = 70,
   directions = {
-    { x = 352, y = 16, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 352, y = 48, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 352, y = 80, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
-    { x = 352, y = 112, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 192, y = 16, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 5 },
+    { x = 192, y = 48, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 5 },
+    { x = 192, y = 80, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 5 },
+    { x = 192, y = 112, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 5 },
   },
 }
 animation{

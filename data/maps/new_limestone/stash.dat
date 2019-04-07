@@ -7287,7 +7287,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 968,
+  x = 984,
   y = 344,
   width = 8,
   height = 16,
@@ -7325,7 +7325,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 976,
+  x = 992,
   y = 352,
   width = 8,
   height = 8,
@@ -8194,36 +8194,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "39",
-  tileset = "oceanheart_outdoors_spring",
-}
-
-tile{
-  layer = 0,
-  x = 1160,
-  y = 24,
-  width = 16,
-  height = 16,
-  pattern = "1667",
-  tileset = "oceanheart_outdoors_1",
-}
-
-tile{
-  layer = 0,
-  x = 1144,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "1521",
-  tileset = "oceanheart_outdoors_spring",
-}
-
-tile{
-  layer = 0,
-  x = 1176,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "1521",
   tileset = "oceanheart_outdoors_spring",
 }
 
@@ -10454,6 +10424,54 @@ tile{
   tileset = "oceanheart_outdoors_1",
 }
 
+tile{
+  layer = 0,
+  x = 496,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "107",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "1667",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "1521",
+  tileset = "oceanheart_outdoors_spring",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "1521",
+  tileset = "oceanheart_outdoors_spring",
+}
+
 separator{
   layer = 0,
   x = -8,
@@ -10855,27 +10873,11 @@ door{
   savegame_variable = "limestone_stash_b2_door_state",
 }
 
-enemy{
-  layer = 0,
-  x = 616,
-  y = 373,
-  direction = 0,
-  breed = "normal_enemies/triangle_crab_red",
-}
-
-enemy{
-  layer = 0,
-  x = 584,
-  y = 405,
-  direction = 0,
-  breed = "normal_enemies/triangle_crab_red",
-}
-
 switch{
   name = "b2_switch",
   layer = 0,
-  x = 512,
-  y = 304,
+  x = 528,
+  y = 320,
   subtype = "walkable",
   sprite = "entities/switch",
   needs_block = false,
@@ -10884,8 +10886,8 @@ switch{
 
 block{
   layer = 0,
-  x = 536,
-  y = 317,
+  x = 552,
+  y = 333,
   direction = 2,
   sprite = "entities/block_crate",
   pushable = true,
@@ -10896,7 +10898,7 @@ block{
 block{
   layer = 0,
   x = 1000,
-  y = 285,
+  y = 293,
   sprite = "entities/block_statue",
   pushable = true,
   pullable = true,
@@ -11161,6 +11163,264 @@ enemy{
   y = 341,
   direction = 3,
   breed = "bosses/sea_hag",
+}
+
+destructible{
+  layer = 0,
+  x = 1400,
+  y = 45,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1384,
+  y = 45,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1504,
+  y = 189,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1488,
+  y = 189,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1472,
+  y = 189,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+wall{
+  layer = 0,
+  x = 1312,
+  y = 416,
+  width = 32,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 1568,
+  y = 416,
+  width = 32,
+  height = 16,
+  stops_enemies = true,
+}
+
+sensor{
+  name = "boss_sensor",
+  layer = 0,
+  x = 1320,
+  y = 445,
+  width = 32,
+  height = 16,
+}
+
+destructible{
+  layer = 0,
+  x = 1352,
+  y = 381,
+  treasure_name = "berries",
+  sprite = "entities/vase_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1368,
+  y = 381,
+  treasure_name = "berries",
+  sprite = "entities/vase_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1368,
+  y = 397,
+  treasure_name = "berries",
+  sprite = "entities/vase_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1352,
+  y = 397,
+  treasure_name = "berries",
+  sprite = "entities/vase_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1528,
+  y = 349,
+  treasure_name = "berries",
+  sprite = "entities/vase_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1512,
+  y = 349,
+  treasure_name = "berries",
+  sprite = "entities/vase_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1512,
+  y = 365,
+  treasure_name = "berries",
+  sprite = "entities/vase_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1528,
+  y = 365,
+  treasure_name = "berries",
+  sprite = "entities/vase_berries",
+  can_be_cut = true,
+}
+
+block{
+  layer = 0,
+  x = 568,
+  y = 365,
+  direction = 2,
+  sprite = "entities/block_crate",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 632,
+  y = 365,
+  direction = 2,
+  sprite = "entities/block_crate",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 632,
+  y = 413,
+  direction = 2,
+  sprite = "entities/block_crate",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  layer = 0,
+  x = 568,
+  y = 413,
+  direction = 2,
+  sprite = "entities/block_crate",
+  pushable = true,
+  pullable = false,
+  max_moves = 1,
+}
+
+enemy{
+  layer = 0,
+  x = 608,
+  y = 381,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+enemy{
+  layer = 0,
+  x = 584,
+  y = 429,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
+}
+
+block{
+  layer = 0,
+  x = 1000,
+  y = 365,
+  sprite = "entities/block_statue",
+  pushable = true,
+  pullable = true,
+}
+
+block{
+  layer = 0,
+  x = 1000,
+  y = 381,
+  sprite = "entities/block_statue",
+  pushable = true,
+  pullable = true,
+}
+
+npc{
+  layer = 0,
+  x = 1088,
+  y = 405,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_new_limestone_island.observations.cavern_sea_shrine",
+}
+
+npc{
+  layer = 0,
+  x = 1072,
+  y = 381,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_new_limestone_island.observations.cavern_sea_shrine",
+}
+
+npc{
+  layer = 0,
+  x = 1088,
+  y = 381,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_new_limestone_island.observations.cavern_sea_shrine",
+}
+
+npc{
+  layer = 0,
+  x = 1104,
+  y = 381,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_new_limestone_island.observations.cavern_sea_shrine",
 }
 
 tile{
@@ -11822,16 +12082,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1160,
-  y = 0,
-  width = 16,
-  height = 24,
-  pattern = "1668",
-  tileset = "oceanheart_outdoors_1",
-}
-
-tile{
-  layer = 1,
   x = 1136,
   y = 120,
   width = 16,
@@ -12026,6 +12276,25 @@ tile{
   tileset = "cave_2",
 }
 
+tile{
+  layer = 1,
+  x = 496,
+  y = 312,
+  width = 16,
+  height = 8,
+  pattern = "108",
+}
+
+tile{
+  layer = 1,
+  x = 1080,
+  y = 368,
+  width = 16,
+  height = 24,
+  pattern = "1668",
+  tileset = "oceanheart_outdoors_1",
+}
+
 pickable{
   layer = 1,
   x = 72,
@@ -12038,5 +12307,15 @@ destructible{
   x = 88,
   y = 309,
   sprite = "entities/vase",
+}
+
+tile{
+  layer = 2,
+  x = -64,
+  y = 480,
+  width = 480,
+  height = 256,
+  pattern = "2006",
+  tileset = "oceanheart_outdoors_spring",
 }
 

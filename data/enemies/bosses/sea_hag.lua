@@ -1,7 +1,7 @@
 local enemy = ...
 local map = enemy:get_map()
 local particles = {}
-local MAX_PARTICLES = 5
+local MAX_PARTICLES = 3
 local PARTICLE_SPEED = 11
 
 
@@ -32,7 +32,7 @@ local properties = {
   has_ranged_attack = true,
   ranged_attack_distance = 170,
   ranged_attack_cooldown = 5000,
-  ranged_attack_sound = "shoot",
+  ranged_attack_sound = "shoot_magic",
   projectile_breed = "misc/energy_ball_small_black",
   projectile_angle = "any",
   projectile_damage = 1,

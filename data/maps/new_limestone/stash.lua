@@ -15,6 +15,10 @@ map:register_event("on_started", function()
   if game:get_value("quest_whisky_for_juglan") and game:get_value("quest_whisky_for_juglan") < 1 then
     whisky:set_enabled(false)
   end
+  if game:get_value("limestone_island_sea_hag_killed") then
+    sea_hag:set_enabled(false)
+    boss_sensor:set_enabled(false)
+  end
 end)
 
 function whisky:on_interaction()
@@ -23,6 +27,7 @@ function whisky:on_interaction()
     local i = 1
     for bridge in map:get_entities("collapsing_bridge") do
       sol.timer.start(map, i * 100, function()
+        sol.audio.play_sound("wood_breaking_and_falling_into_water")
         bridge:set_enabled(false)
       end)
       i = i + 1
@@ -45,4 +50,17 @@ end
 
 function b2_switch:on_inactivated()
   map:close_doors("b2_door")
+end
+
+
+--sensor----
+function boss_sensor:on_activated()
+  map:close_doors("boss_door")
+  game:start_dialog("_new_limestone_island.observations.sea_hag")
+  boss_sensor:set_enabled(false)
+end
+
+function sea_hag:on_dead()
+  map:open_doors("boss_door")
+  game:set_value("limestone_island_sea_hag_killed", true)
 end
