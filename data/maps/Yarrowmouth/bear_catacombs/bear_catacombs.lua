@@ -14,8 +14,8 @@ local hero = map:get_hero()
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+  if game:get_value("bear_catacombs_miniboss_beat") then miniboss_wall:set_enabled(false) end
+  if game:get_value("bear_catacombs_bear_mouth_door_opened") then bear_mouth_door:set_enabled(false) end
 end)
 
 --Arrow Pressure Switches
@@ -44,4 +44,41 @@ end
 function d7_switch:on_activated()
   sol.audio.play_sound("switch")
   map:open_doors("d7_door")
+end
+
+function b3_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:open_doors("b3_door")
+end
+
+function e4_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:open_doors("e4_door")
+end
+
+function c1_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:open_doors("c1_door")
+end
+
+function bear_mouth_switch:on_activated()
+  map:focus_on(map:get_camera(), bear_mouth_door, function()
+    map:create_poof(bear_mouth_door:get_position())
+    bear_mouth_door:set_enabled(false)
+    game:set_value("bear_catacombs_bear_mouth_door_opened", true)
+  end)
+end
+
+
+-------Miniboss--------
+function miniboss_sensor:on_activated()
+  miniboss_wall:set_enabled(false)
+end
+
+function miniboss:on_dead()
+  for enemy in map:get_entities("mini_turret") do
+    enemy:remove_life(100)
+  end
+  game:set_value("bear_catacombs_miniboss_beat", true)
+  map:open_doors("d4_door")
 end

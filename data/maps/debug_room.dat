@@ -4801,8 +4801,8 @@ enemy{
   layer = 0,
   x = 416,
   y = 373,
-  direction = 0,
-  breed = "bosses/sea_hag",
+  direction = 3,
+  breed = "normal_enemies/skeleton_3",
 }
 
 tile{

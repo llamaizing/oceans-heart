@@ -380,6 +380,8 @@ sprite{ id = "enemies/normal_enemies/shield_beetle", description = "Shield Beetl
 sprite{ id = "enemies/normal_enemies/shield_beetle_vulnerable", description = "ShieldBeetle-Vulnerable" }
 sprite{ id = "enemies/normal_enemies/shooty_fish", description = "Shooty Fish" }
 sprite{ id = "enemies/normal_enemies/skeleton_1", description = "Skeleton 1" }
+sprite{ id = "enemies/normal_enemies/skeleton_2", description = "Skeleton 2" }
+sprite{ id = "enemies/normal_enemies/skeleton_3", description = "Skeleton3-Armor" }
 sprite{ id = "enemies/normal_enemies/skeleton_summoner", description = "Skeleton Summoner" }
 sprite{ id = "enemies/normal_enemies/spitrock_small", description = "Spitrock - Small" }
 sprite{ id = "enemies/normal_enemies/spitstump_small", description = "Spitstump - Small" }
@@ -1499,6 +1501,7 @@ enemy{ id = "normal_enemies/seaweed_golem_1", description = "Seaweed Golem 1" }
 enemy{ id = "normal_enemies/shield_beetle", description = "Shield Beetle" }
 enemy{ id = "normal_enemies/shooty_fish", description = "Shooty Fish" }
 enemy{ id = "normal_enemies/skeleton_1", description = "Skeleton 1" }
+enemy{ id = "normal_enemies/skeleton_3", description = "Skeleton3-Armored" }
 enemy{ id = "normal_enemies/skeleton_summoner", description = "Skeleton Summoner" }
 enemy{ id = "normal_enemies/spitrock_small", description = "Spitrock-small" }
 enemy{ id = "normal_enemies/spitstump_small", description = "Spitstump - Small" }
