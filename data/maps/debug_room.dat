@@ -2972,7 +2972,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "new_limestone/stash",
+  destination_map = "Yarrowmouth/bear_catacombs/bear_catacombs",
   destination = "from_outside",
 }
 

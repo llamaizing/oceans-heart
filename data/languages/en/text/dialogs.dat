@@ -11072,6 +11072,14 @@ Basswood Tavern.
 }
 
 dialog{
+  id = "_treasure.key_bear_catacombs.1",
+  text = [[
+You found a key. It will unlock a door
+in the area.
+]],
+}
+
+dialog{
   id = "_treasure.key_dandelion_charm.1",
   text = [[
 You found a key. It will unlock a door

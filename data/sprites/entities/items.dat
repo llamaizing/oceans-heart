@@ -402,6 +402,13 @@ animation{
   },
 }
 animation{
+  name = "key_bear_catacombs",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 192, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "key_dandelion_charm",
   src_image = "entities/items.png",
   directions = {

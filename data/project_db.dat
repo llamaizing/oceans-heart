@@ -26,6 +26,7 @@ map{ id = "Limestone Island/limestone_village/wally", description = "Wally's Hou
 map{ id = "Limestone Island/sanctuary_ext", description = "Sanctuary Ext" }
 map{ id = "Limestone Island/sometimes_cape", description = "Sometimes Cape" }
 map{ id = "Limestone Island/west_limestone", description = "West Limestone" }
+map{ id = "Yarrowmouth/bear_catacombs/bear_catacombs", description = "Bear Catacombs" }
 map{ id = "Yarrowmouth/caves/beak_cave", description = "Beak Cave" }
 map{ id = "Yarrowmouth/caves/dandelion_charm_cave", description = "Dandelion Charm Cave" }
 map{ id = "Yarrowmouth/caves/docks_cave", description = "Docks Cave" }
@@ -238,6 +239,8 @@ map{ id = "test_island_2", description = "test_island_2" }
 map{ id = "testtest", description = "yayayaya" }
 
 tileset{ id = "Full Hyrule", description = "Full Hyrule" }
+tileset{ id = "bear_catacombs", description = "Bear Catacombs" }
+tileset{ id = "bear_catacombs_cave", description = "BearCatacombs-Cave" }
 tileset{ id = "cave_2", description = "cave-mine" }
 tileset{ id = "fort_crow_walls", description = "Fort Crow Walls" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
@@ -395,6 +398,7 @@ sprite{ id = "entities/arrow_fire", description = "arrow_fire" }
 sprite{ id = "entities/arrow_silver", description = "arrow_silver" }
 sprite{ id = "entities/arrow_warp", description = "arrow warp" }
 sprite{ id = "entities/bait", description = "bait" }
+sprite{ id = "entities/bear_caverns_arrow_slot", description = "Bear Caverns Arrow Slot" }
 sprite{ id = "entities/bell_jar", description = "Bell Jar" }
 sprite{ id = "entities/big_barrel", description = "Big Barrel" }
 sprite{ id = "entities/block", description = "Block" }
@@ -537,6 +541,7 @@ sprite{ id = "entities/stone_white3", description = "stone: white 3" }
 sprite{ id = "entities/stone_white_skull", description = "Stone (white skull)" }
 sprite{ id = "entities/switch", description = "Switch" }
 sprite{ id = "entities/switch_arrow", description = "arrow switch" }
+sprite{ id = "entities/switch_bear_caverns", description = "Switch-Bear Caverns" }
 sprite{ id = "entities/switch_lever_1", description = "Switch - Lever 1" }
 sprite{ id = "entities/switch_solid", description = "Switch - Solid" }
 sprite{ id = "entities/sword", description = "sword (in ground)" }
@@ -1331,6 +1336,7 @@ item{ id = "iron_pinecone", description = "Iron Pinecone" }
 item{ id = "ironwood_charm", description = "Ironwood Charm" }
 item{ id = "key_ballast_council_building", description = "Key - Ballast Council Building" }
 item{ id = "key_basswood_tavern", description = "key- Basswood Tavern" }
+item{ id = "key_bear_catacombs", description = "Key-Bear Catacombs" }
 item{ id = "key_dandelion_charm", description = "Key - Dandelion Charm" }
 item{ id = "key_fort_crow", description = "Key-Fort Crow" }
 item{ id = "key_goat_caverns", description = "Key - Goat Caverns" }
@@ -1506,6 +1512,7 @@ entity{ id = "ally", description = "ally" }
 entity{ id = "arrow", description = "arrow" }
 entity{ id = "arrow_bomb", description = "Bomb Arrow" }
 entity{ id = "arrow_fire", description = "arrow_fire" }
+entity{ id = "arrow_trap", description = "Arrow Trap" }
 entity{ id = "arrow_warp", description = "Arrow- Warp" }
 entity{ id = "chain_link", description = "Chain Link" }
 entity{ id = "cliff", description = "cliff" }
