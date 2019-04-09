@@ -12665,6 +12665,16 @@ What? Is this someone's idea of a trap?
 }
 
 dialog{
+  id = "_yarrowmouth.observations.bear_catacombs_oblisk",
+  text = [[
+There's some faded writing...
+While he yet enslaves the Ocean, the
+Souls slaughtered by the Sea King will
+seek... hmm, can't make out any more.
+]],
+}
+
+dialog{
   id = "_yarrowmouth.observations.broken_bird.1",
   text = [[
 This statue seems to be missing its beak.

@@ -14,6 +14,7 @@ local hero = map:get_hero()
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
   map:set_doors_open("boss_door")
+  map:set_doors_open("d3_door_2")
   if game:get_value("bear_catacombs_miniboss_beat") then miniboss_wall:set_enabled(false) end
   if game:get_value("bear_catacombs_bear_mouth_door_opened") then bear_mouth_door:set_enabled(false) end
   if game:get_value("bear_catacombs_boss_defeated") then
@@ -55,6 +56,11 @@ function b3_switch:on_activated()
   map:open_doors("b3_door")
 end
 
+function d3_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:open_doors("d3_door")
+end
+
 function e4_switch:on_activated()
   sol.audio.play_sound("switch")
   map:open_doors("e4_door")
@@ -63,6 +69,11 @@ end
 function c1_switch:on_activated()
   sol.audio.play_sound("switch")
   map:open_doors("c1_door")
+end
+
+function a3_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:open_doors("a3_door")
 end
 
 function bear_mouth_switch:on_activated()
@@ -80,6 +91,7 @@ end
 -------Miniboss--------
 function miniboss_sensor:on_activated()
   miniboss_wall:set_enabled(false)
+  map:close_doors("d3_door_2")
 end
 
 function miniboss:on_dead()
@@ -87,7 +99,7 @@ function miniboss:on_dead()
     enemy:remove_life(100)
   end
   game:set_value("bear_catacombs_miniboss_beat", true)
-  map:open_doors("d4_door")
+  map:open_doors("bow_chest_door")
 end
 
 

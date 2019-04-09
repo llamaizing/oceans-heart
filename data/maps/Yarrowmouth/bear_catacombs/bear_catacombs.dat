@@ -30,7 +30,7 @@ tile{
 tile{
   layer = 0,
   x = 1728,
-  y = 784,
+  y = 768,
   width = 256,
   height = 192,
   pattern = "67",
@@ -12922,7 +12922,7 @@ tile{
 tile{
   layer = 0,
   x = 1376,
-  y = 528,
+  y = 536,
   width = 16,
   height = 16,
   pattern = "1579",
@@ -13593,7 +13593,7 @@ tile{
 tile{
   layer = 0,
   x = 656,
-  y = 560,
+  y = 552,
   width = 32,
   height = 16,
   pattern = "56",
@@ -13602,7 +13602,7 @@ tile{
 tile{
   layer = 0,
   x = 704,
-  y = 560,
+  y = 552,
   width = 32,
   height = 16,
   pattern = "56",
@@ -13611,7 +13611,7 @@ tile{
 tile{
   layer = 0,
   x = 752,
-  y = 560,
+  y = 552,
   width = 32,
   height = 16,
   pattern = "56",
@@ -13620,7 +13620,7 @@ tile{
 tile{
   layer = 0,
   x = 656,
-  y = 560,
+  y = 552,
   width = 32,
   height = 16,
   pattern = "57",
@@ -13629,7 +13629,7 @@ tile{
 tile{
   layer = 0,
   x = 704,
-  y = 560,
+  y = 552,
   width = 32,
   height = 16,
   pattern = "57",
@@ -13638,7 +13638,7 @@ tile{
 tile{
   layer = 0,
   x = 752,
-  y = 560,
+  y = 552,
   width = 32,
   height = 16,
   pattern = "57",
@@ -20473,6 +20473,118 @@ tile{
   pattern = "104",
 }
 
+tile{
+  layer = 0,
+  x = 192,
+  y = 40,
+  width = 32,
+  height = 8,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 600,
+  width = 32,
+  height = 16,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 600,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 600,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1880,
+  y = 568,
+  width = 16,
+  height = 32,
+  pattern = "99",
+}
+
+tile{
+  layer = 0,
+  x = 1896,
+  y = 568,
+  width = 8,
+  height = 32,
+  pattern = "97",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "77",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 496,
+  width = 8,
+  height = 32,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1368,
+  y = 496,
+  width = 8,
+  height = 32,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 496,
+  width = 16,
+  height = 24,
+  pattern = "48",
+}
+
 separator{
   layer = 0,
   x = 408,
@@ -21805,17 +21917,7 @@ enemy{
 }
 
 door{
-  name = "d4_door",
-  layer = 0,
-  x = 1448,
-  y = 736,
-  direction = 3,
-  sprite = "entities/door_shutter",
-  savegame_variable = "bear_catacombs_d4_door_state",
-}
-
-door{
-  name = "d4_door_2",
+  name = "d3_door",
   layer = 0,
   x = 1448,
   y = 688,
@@ -21834,42 +21936,24 @@ chest{
 }
 
 door{
-  name = "d4_door_3",
+  name = "bow_chest_door",
   layer = 0,
   x = 1432,
   y = 536,
   direction = 1,
   sprite = "entities/door_post_stone",
-  savegame_variable = "bear_catacombs_d4_door_state",
-}
-
-door{
-  name = "d4_door_4",
-  layer = 0,
-  x = 1448,
-  y = 536,
-  direction = 1,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "bear_catacombs_d4_door_state",
-}
-
-door{
-  name = "d4_door_5",
-  layer = 0,
-  x = 1464,
-  y = 536,
-  direction = 1,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "bear_catacombs_d4_door_state",
+  savegame_variable = "bear_catacombs_bow_chest_door_state",
 }
 
 enemy{
   name = "miniboss",
   layer = 0,
-  x = 1464,
-  y = 605,
+  x = 1512,
+  y = 597,
   direction = 3,
   breed = "normal_enemies/arborgeist_bomber",
+  treasure_name = "arrow",
+  treasure_variant = 4,
 }
 
 enemy{
@@ -21911,8 +21995,8 @@ enemy{
 wall{
   name = "miniboss_wall",
   layer = 0,
-  x = 1432,
-  y = 552,
+  x = 1480,
+  y = 544,
   width = 16,
   height = 120,
   stops_hero = true,
@@ -21933,8 +22017,8 @@ sensor{
 
 enemy{
   layer = 0,
-  x = 560,
-  y = 605,
+  x = 672,
+  y = 613,
   direction = 3,
   breed = "normal_enemies/skeleton_summoner",
 }
@@ -22533,26 +22617,8 @@ enemy{
 
 destructible{
   layer = 0,
-  x = 1832,
-  y = 557,
-  treasure_name = "berries",
-  sprite = "entities/vase_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 1848,
   y = 557,
-  treasure_name = "berries",
-  sprite = "entities/vase_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1848,
-  y = 573,
   treasure_name = "berries",
   sprite = "entities/vase_berries",
   can_be_cut = true,
@@ -22569,26 +22635,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 1944,
-  y = 557,
-  treasure_name = "berries",
-  sprite = "entities/vase_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 1928,
   y = 557,
-  treasure_name = "berries",
-  sprite = "entities/vase_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1928,
-  y = 573,
   treasure_name = "berries",
   sprite = "entities/vase_berries",
   can_be_cut = true,
@@ -22883,15 +22931,6 @@ enemy{
   breed = "bosses/skeleton_lord",
 }
 
-sensor{
-  name = "boss_sensor",
-  layer = 0,
-  x = 200,
-  y = 205,
-  width = 32,
-  height = 16,
-}
-
 wall{
   layer = 0,
   x = 224,
@@ -23071,6 +23110,242 @@ sensor{
   y = 189,
   width = 32,
   height = 32,
+}
+
+npc{
+  layer = 0,
+  x = 544,
+  y = 613,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_yarrowmouth.observations.bear_catacombs_oblisk",
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_12",
+  layer = 0,
+  x = 200,
+  y = 205,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "boss_sensor",
+  layer = 0,
+  x = 208,
+  y = 205,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_13",
+  layer = 0,
+  x = 376,
+  y = 125,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_14",
+  layer = 0,
+  x = 1480,
+  y = 1405,
+  width = 32,
+  height = 16,
+}
+
+destructible{
+  layer = 0,
+  x = 1944,
+  y = 557,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1928,
+  y = 573,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1832,
+  y = 557,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1848,
+  y = 573,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1832,
+  y = 589,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1944,
+  y = 589,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 928,
+  y = 797,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 896,
+  y = 797,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1216,
+  y = 797,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1184,
+  y = 797,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1368,
+  y = 61,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1384,
+  y = 61,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1544,
+  y = 61,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1528,
+  y = 61,
+  treasure_name = "arrow",
+  treasure_variant = 2,
+  sprite = "entities/vase_arrows",
+  can_be_cut = true,
+}
+
+switch{
+  name = "d3_switch",
+  layer = 0,
+  x = 1376,
+  y = 512,
+  subtype = "arrow_target",
+  sprite = "entities/switch_arrow",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+door{
+  name = "d3_door_2",
+  layer = 0,
+  x = 1264,
+  y = 584,
+  direction = 0,
+  sprite = "entities/door_shutter",
+  savegame_variable = "bear_catacombs_d4_door_state",
+}
+
+door{
+  name = "d3_door_3",
+  layer = 0,
+  x = 1448,
+  y = 736,
+  direction = 3,
+  sprite = "entities/door_shutter",
+  savegame_variable = "bear_catacombs_d4_door_state",
+}
+
+door{
+  name = "bow_chest_door_2",
+  layer = 0,
+  x = 1448,
+  y = 536,
+  direction = 1,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "bear_catacombs_bow_chest_door_state",
+}
+
+door{
+  name = "bow_chest_door_3",
+  layer = 0,
+  x = 1464,
+  y = 536,
+  direction = 1,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "bear_catacombs_bow_chest_door_state",
 }
 
 tile{
@@ -25475,17 +25750,37 @@ tile{
 
 tile{
   layer = 1,
-  x = 192,
-  y = 40,
+  x = 112,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 528,
+  y = 584,
   width = 32,
-  height = 8,
-  pattern = "102",
+  height = 16,
+  pattern = "51",
 }
 
 tile{
   layer = 1,
-  x = 288,
-  y = 56,
+  x = 512,
+  y = 584,
   width = 16,
   height = 16,
   pattern = "44",
@@ -25494,28 +25789,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 112,
-  y = 56,
-  width = 16,
-  height = 16,
-  pattern = "44",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 1,
-  x = 112,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "44",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 1,
-  x = 288,
-  y = 144,
+  x = 560,
+  y = 584,
   width = 16,
   height = 16,
   pattern = "44",
@@ -25642,5 +25917,284 @@ tile{
   width = 32,
   height = 16,
   pattern = "24",
+}
+
+tile{
+  layer = 2,
+  x = 104,
+  y = 136,
+  width = 32,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 2,
+  x = 280,
+  y = 136,
+  width = 32,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 2,
+  x = 216,
+  y = 280,
+  width = 32,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 2,
+  x = 168,
+  y = 280,
+  width = 32,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 2,
+  x = 168,
+  y = 328,
+  width = 32,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 2,
+  x = 216,
+  y = 328,
+  width = 32,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 2,
+  x = 280,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 2,
+  x = 104,
+  y = 48,
+  width = 32,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 2,
+  x = 600,
+  y = 56,
+  width = 32,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 2,
+  x = 248,
+  y = 168,
+  width = 168,
+  height = 312,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 168,
+  y = 312,
+  width = 80,
+  height = 16,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 280,
+  width = 16,
+  height = 32,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 200,
+  y = 328,
+  width = 16,
+  height = 32,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = -48,
+  y = 360,
+  width = 296,
+  height = 120,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = -16,
+  y = 280,
+  width = 184,
+  height = 80,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 0,
+  y = 168,
+  width = 248,
+  height = 72,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 136,
+  y = 136,
+  width = 144,
+  height = 32,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 104,
+  y = 80,
+  width = 208,
+  height = 56,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 48,
+  width = 136,
+  height = 32,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = -8,
+  y = -8,
+  width = 112,
+  height = 176,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 104,
+  y = -16,
+  width = 728,
+  height = 64,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 712,
+  y = 56,
+  width = 32,
+  height = 32,
+  pattern = "106",
+}
+
+tile{
+  layer = 2,
+  x = 320,
+  y = 48,
+  width = 512,
+  height = 8,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 320,
+  y = 56,
+  width = 280,
+  height = 24,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 312,
+  y = 80,
+  width = 288,
+  height = 16,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 312,
+  y = 96,
+  width = 520,
+  height = 144,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 600,
+  y = 88,
+  width = 32,
+  height = 8,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 632,
+  y = 56,
+  width = 80,
+  height = 40,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 712,
+  y = 88,
+  width = 120,
+  height = 8,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = 744,
+  y = 56,
+  width = 88,
+  height = 32,
+  pattern = "108",
+}
+
+tile{
+  layer = 2,
+  x = -8,
+  y = 240,
+  width = 256,
+  height = 40,
+  pattern = "108",
 }
 

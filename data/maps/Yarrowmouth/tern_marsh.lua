@@ -51,6 +51,11 @@ function secret_keyhole:on_interaction()
   end
 end
 
+function hourglass_bridge_switch:on_activated()
+  map:open_doors("hourglass_door")
+end
+
+
 
 function pirate_guard:on_interaction()
   if game:get_value("going_to_meet_carlov_pirates") == true then

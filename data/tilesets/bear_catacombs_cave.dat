@@ -82,6 +82,27 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "106",
+  ground = "empty",
+  default_layer = 2,
+  x = { 0, 32, 64 },
+  y = { 320, 320, 320 },
+  width = 32,
+  height = 32,
+  frame_delay = 130,
+}
+
+tile_pattern{
+  id = "108",
+  ground = "empty",
+  default_layer = 2,
+  x = 0,
+  y = 352,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "11",
   ground = "wall",
   default_layer = 0,
@@ -547,6 +568,26 @@ tile_pattern{
   width = 16,
   height = 32,
   repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "50",
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 304,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "51",
+  ground = "wall",
+  default_layer = 1,
+  x = 0,
+  y = 288,
+  width = 32,
+  height = 16,
 }
 
 tile_pattern{
