@@ -28,11 +28,12 @@ function secret_keyhole:on_interaction()
   if game:has_item("key_kingsdown") == true and game:get_value("kingsdown_island_unlocked") ~= true then
     game:start_dialog("_yarrowmouth.observations.secret_switch.2", function(answer)
       if answer == 3 then
+        local x, y, l = block_statue_1:get_position()
+        map:create_poof(x + 8, y + 16, l + 1)
         block_statue_1:set_enabled(false)
         block_statue_2:set_enabled(false)
         sol.audio.play_sound("switch")
         sol.audio.play_sound("secret")
-        game:start_dialog("_game.quest_log_update", function()
           game:set_value("kingsdown_island_unlocked", true)
           game:set_value("quest_log_a", "a7")
           game:set_value("quest_log_b", 0)
@@ -40,7 +41,6 @@ function secret_keyhole:on_interaction()
             game:set_value("quest_hourglass_fort", 2) --quest log
           end
           game:set_value("quest_kelpton", 3) -- quest log
-        end)
 
       end
     end) --end of answer function

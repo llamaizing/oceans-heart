@@ -4742,6 +4742,13 @@ pickable{
   treasure_name = "bow",
 }
 
+pickable{
+  layer = 0,
+  x = 288,
+  y = 125,
+  treasure_name = "key_kingsdown",
+}
+
 tile{
   layer = 1,
   x = 192,
