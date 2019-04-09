@@ -279,12 +279,14 @@ sprite{ id = "enemies/bosses/michael_weapon", description = "Michael-Weapon" }
 sprite{ id = "enemies/bosses/pollutant_boss", description = "Pollutant Boss" }
 sprite{ id = "enemies/bosses/rock_spider_big", description = "rock spider - big" }
 sprite{ id = "enemies/bosses/sea_hag", description = "Sea Hag" }
+sprite{ id = "enemies/bosses/skeleton_lord", description = "Skeleton Lord" }
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
 sprite{ id = "enemies/bosses/zephyrine", description = "Zeyphyrine" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/enemy_killed_projectile", description = "Enemy Killed-Projectile" }
 sprite{ id = "enemies/enemy_killed_small", description = "Enemy Killed-Small" }
 sprite{ id = "enemies/ground1", description = "Ground 1 - Grass" }
+sprite{ id = "enemies/misc/air_slash", description = "air_slash" }
 sprite{ id = "enemies/misc/air_wave", description = "Air Wave Attack" }
 sprite{ id = "enemies/misc/arrow_4", description = "Arrow - 4 directions" }
 sprite{ id = "enemies/misc/barrel_cannon", description = "Barrel Cannon" }
@@ -306,6 +308,7 @@ sprite{ id = "enemies/misc/pollutant_blocker", description = "Pollutant Blocker"
 sprite{ id = "enemies/misc/pop", description = "Pop-For Enemy Attacks" }
 sprite{ id = "enemies/misc/root_small", description = "Root - Small" }
 sprite{ id = "enemies/misc/seagull", description = "seagull" }
+sprite{ id = "enemies/misc/skeleton_hand", description = "Skeleton Hand" }
 sprite{ id = "enemies/misc/steam_attack", description = "Steam Attack" }
 sprite{ id = "enemies/misc/stone_dragon_turret", description = "Stone Dragon Turret" }
 sprite{ id = "enemies/misc/stone_projectile", description = "Stone projectile" }
@@ -1411,6 +1414,7 @@ enemy{ id = "bosses/michael", description = "Michael Mighty Mead Maker" }
 enemy{ id = "bosses/pollutant_boss", description = "Pollutant Boss" }
 enemy{ id = "bosses/rock_spider_big", description = "rock spider - big" }
 enemy{ id = "bosses/sea_hag", description = "Sea Hag" }
+enemy{ id = "bosses/skeleton_lord", description = "Skeleton Lord" }
 enemy{ id = "bosses/thyme", description = "Captain Thyme" }
 enemy{ id = "bosses/zephyrine", description = "Zephyrine" }
 enemy{ id = "general_enemy_example", description = "General Enemy Example" }
@@ -1438,6 +1442,7 @@ enemy{ id = "misc/orange", description = "Orange" }
 enemy{ id = "misc/pollutant_blocker", description = "Pollutant Blocker" }
 enemy{ id = "misc/root_small", description = "Root - Small" }
 enemy{ id = "misc/seagull", description = "Seagull" }
+enemy{ id = "misc/skeleton_hand", description = "Skeleton Hand" }
 enemy{ id = "misc/steam_attack", description = "Steam Attack" }
 enemy{ id = "misc/stone_dragon_turret", description = "Stone Dragon Turret" }
 enemy{ id = "misc/stone_projectile", description = "Stone Projectile" }
@@ -1502,6 +1507,7 @@ enemy{ id = "normal_enemies/shield_beetle", description = "Shield Beetle" }
 enemy{ id = "normal_enemies/shooty_fish", description = "Shooty Fish" }
 enemy{ id = "normal_enemies/skeleton_1", description = "Skeleton 1" }
 enemy{ id = "normal_enemies/skeleton_3", description = "Skeleton3-Armored" }
+enemy{ id = "normal_enemies/skeleton_bruiser", description = "Skeleton Bruiser" }
 enemy{ id = "normal_enemies/skeleton_summoner", description = "Skeleton Summoner" }
 enemy{ id = "normal_enemies/spitrock_small", description = "Spitrock-small" }
 enemy{ id = "normal_enemies/spitstump_small", description = "Spitstump - Small" }

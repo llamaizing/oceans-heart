@@ -13,9 +13,13 @@ local hero = map:get_hero()
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
-
+  map:set_doors_open("boss_door")
   if game:get_value("bear_catacombs_miniboss_beat") then miniboss_wall:set_enabled(false) end
   if game:get_value("bear_catacombs_bear_mouth_door_opened") then bear_mouth_door:set_enabled(false) end
+  if game:get_value("bear_catacombs_boss_defeated") then
+    boss_sensor:set_enabled(false)
+    boss:set_enabled(false)
+  end
 end)
 
 --Arrow Pressure Switches
@@ -63,8 +67,11 @@ end
 
 function bear_mouth_switch:on_activated()
   map:focus_on(map:get_camera(), bear_mouth_door, function()
-    map:create_poof(bear_mouth_door:get_position())
+    local x, y, l = bear_mouth_door:get_position()
+    map:create_poof(x + 16, y + 24, l + 1)
     bear_mouth_door:set_enabled(false)
+    sol.audio.play_sound("door_open")
+    sol.audio.play_sound("secret")
     game:set_value("bear_catacombs_bear_mouth_door_opened", true)
   end)
 end
@@ -81,4 +88,19 @@ function miniboss:on_dead()
   end
   game:set_value("bear_catacombs_miniboss_beat", true)
   map:open_doors("d4_door")
+end
+
+
+
+
+---------Boss----------
+function boss_sensor:on_activated()
+  map:close_doors("boss_door")
+  boss_wall:set_enabled(false)
+  boss_sensor:set_enabled(false)
+end
+
+function boss:on_dead()
+  game:set_value("bear_catacombs_boss_defeated", true)
+  map:open_doors("boss_door")
 end
