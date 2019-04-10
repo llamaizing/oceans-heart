@@ -1252,6 +1252,16 @@ Sounds like several doors opened nearby.
 }
 
 dialog{
+  id = "_ballast_harbor.observations.pirate_vault.live_rock1",
+  text = [[
+Warning! The load of ore we stole was mixed
+in with a bunch of rock monsters! They've
+spread out all over the vault and resist
+swords. Be careful.
+]],
+}
+
+dialog{
   id = "_ballast_harbor.signs.charts",
   text = [[
 Kelpton Sea Charts

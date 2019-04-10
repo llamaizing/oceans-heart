@@ -10890,25 +10890,8 @@ door{
   x = 608,
   y = 544,
   direction = 3,
-  sprite = "entities/door_posts",
-}
-
-door{
-  name = "posts_a_2",
-  layer = 0,
-  x = 608,
-  y = 552,
-  direction = 3,
-  sprite = "entities/door_posts",
-}
-
-door{
-  name = "posts_a_3",
-  layer = 0,
-  x = 608,
-  y = 560,
-  direction = 3,
-  sprite = "entities/door_posts",
+  sprite = "entities/door_post_stone",
+  savegame_variable = "oakhaven_sunken_palace_doors_a_state",
 }
 
 destructible{
@@ -11076,7 +11059,8 @@ door{
   x = 808,
   y = 768,
   direction = 3,
-  sprite = "entities/door_posts",
+  sprite = "entities/door_post_stone",
+  savegame_variable = "sunken_palace_oakhaven_post_door_health_upgrade",
 }
 
 door{
@@ -11085,7 +11069,8 @@ door{
   x = 824,
   y = 768,
   direction = 3,
-  sprite = "entities/door_posts",
+  sprite = "entities/door_post_stone",
+  savegame_variable = "sunken_palace_oakhaven_post_door_health_upgrade",
 }
 
 wall{
@@ -11157,6 +11142,66 @@ sensor{
   y = 189,
   width = 32,
   height = 32,
+}
+
+destructible{
+  name = "philodendron_bush_24",
+  layer = 0,
+  x = 152,
+  y = 453,
+  sprite = "entities/bush_philodendron",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  name = "philodendron_bush_25",
+  layer = 0,
+  x = 128,
+  y = 437,
+  sprite = "entities/bush_philodendron",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  name = "philodendron_bush_26",
+  layer = 0,
+  x = 208,
+  y = 541,
+  sprite = "entities/bush_philodendron",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  name = "philodendron_bush_27",
+  layer = 0,
+  x = 128,
+  y = 541,
+  sprite = "entities/bush_philodendron",
+  weight = -1,
+  can_be_cut = true,
+}
+
+door{
+  name = "posts_a_2",
+  layer = 0,
+  x = 608,
+  y = 552,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "oakhaven_sunken_palace_doors_a_state",
+}
+
+door{
+  name = "posts_a_3",
+  layer = 0,
+  x = 608,
+  y = 560,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "oakhaven_sunken_palace_doors_a_state",
 }
 
 tile{
@@ -17091,46 +17136,6 @@ destructible{
   layer = 1,
   x = 24,
   y = 285,
-  sprite = "entities/bush_philodendron",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  name = "philodendron_bush_24",
-  layer = 1,
-  x = 152,
-  y = 453,
-  sprite = "entities/bush_philodendron",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  name = "philodendron_bush_25",
-  layer = 1,
-  x = 128,
-  y = 437,
-  sprite = "entities/bush_philodendron",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  name = "philodendron_bush_26",
-  layer = 1,
-  x = 208,
-  y = 541,
-  sprite = "entities/bush_philodendron",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  name = "philodendron_bush_27",
-  layer = 1,
-  x = 128,
-  y = 541,
   sprite = "entities/bush_philodendron",
   weight = -1,
   can_be_cut = true,
