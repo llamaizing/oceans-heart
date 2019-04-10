@@ -109,6 +109,13 @@ animation{
   },
 }
 animation{
+  name = "bomb_arrow_ticket",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 256, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "bomb_bag",
   src_image = "entities/items.png",
   directions = {
@@ -396,6 +403,13 @@ animation{
 }
 animation{
   name = "key_basswood_tavern",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 192, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "key_bear_catacombs",
   src_image = "entities/items.png",
   directions = {
     { x = 192, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },

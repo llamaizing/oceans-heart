@@ -2972,8 +2972,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "new_limestone/stash",
-  destination = "from_outside",
+  destination_map = "oakhaven/oakhaven",
+  destination = "from_bomb_shop",
 }
 
 pickable{
@@ -3258,7 +3258,7 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 56,
+  x = 64,
   y = 133,
   treasure_name = "attack_upgrade",
 }
@@ -3702,97 +3702,6 @@ pickable{
   treasure_name = "barrier",
 }
 
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "sword",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
 destructible{
   layer = 0,
   x = 120,
@@ -4042,27 +3951,6 @@ dynamic_tile{
   height = 128,
   pattern = "invisible_stairs",
   tileset = "misc",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 208,
-  y = 173,
-  treasure_name = "attack_upgrade",
 }
 
 sensor{
@@ -4801,8 +4689,64 @@ enemy{
   layer = 0,
   x = 416,
   y = 373,
-  direction = 0,
-  breed = "bosses/sea_hag",
+  direction = 3,
+  breed = "bosses/skeleton_lord",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 165,
+  treasure_name = "sword",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 165,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 165,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 165,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 165,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 165,
+  treasure_name = "attack_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 165,
+  treasure_name = "bow",
+}
+
+pickable{
+  layer = 0,
+  x = 288,
+  y = 125,
+  treasure_name = "key_kingsdown",
 }
 
 tile{

@@ -5,6 +5,7 @@ text{ key = "key2.false", value = "I think so" }
 text{ key = "key2.true", value = "really?" }
 text{ key = "location.amalenchier_tomb", value = "Amalenchier's Tomb" }
 text{ key = "location.ballast_harbor", value = "Ballast Harbor" }
+text{ key = "location.bear_catacombs", value = "Bear Warriors' Catacombs" }
 text{ key = "location.council_building", value = "Pirate's Outpost" }
 text{ key = "location.crabhook_village", value = "Crabhook Village" }
 text{ key = "location.drowned_village", value = "The Drowned Village" }

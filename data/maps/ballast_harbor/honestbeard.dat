@@ -998,7 +998,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/pirates/pirate_12.2",
-  behavior = "dialog#_ballast_harbor.npcs.honestbeard.1",
 }
 
 npc{

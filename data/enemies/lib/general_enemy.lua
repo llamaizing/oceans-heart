@@ -269,7 +269,7 @@ function behavior:create(enemy, properties)
 
       sol.audio.play_sound(properties.melee_attack_sound or "sword2")
       enemy:get_sprite():set_animation("attack", function()
-        enemy:set_attack_consequence("sword", 1)
+        enemy:set_attack_consequence("sword", properties.sword_consequence)
         enemy:get_sprite():set_animation("walking")
         going_hero = false
         enemy:go_random()

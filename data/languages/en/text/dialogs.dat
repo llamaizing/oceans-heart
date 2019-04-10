@@ -330,6 +330,21 @@ $?Not today
 }
 
 dialog{
+  id = "_ballast_harbor.npcs.honestbeard.bomb_arrow_quest",
+  text = [[
+HONESTBEARD:
+Captain Honestbeard's the name, and making
+an honest living is my game. How can I
+help you?
+TILIA:
+Oh actually, I found this, uh, receipt
+thing. I'm here to pick something up
+for Captain Thyme.
+HONESTBEARD:
+]],
+}
+
+dialog{
   id = "_ballast_harbor.npcs.honestbeard.coral_ore",
   text = [[
 HONESTBEARD:
@@ -848,6 +863,115 @@ Aye aye, Mr. Beard.
 
 BLACKBEARD:
 It's not$1...$3
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.1",
+  text = [[
+PROMETHEUS JONES:
+Heey! Welcome to my invention shop. So,
+this is gonna sound super weird, but do
+you have a flail? Like, a ball and chain?
+TILIA:
+I'm sorry, no?
+
+
+PROMETHEUS JONES:
+Well that's too bad! See, I have a one
+track mind for inventing. And what I want
+to make, is a flail that just freaking
+PROMETHEUS JONES:
+explodes. Like, everything it hits. Bam!
+It'd be real dangerous. A bad idea! Bam!
+But, well. I don't have one.
+TILIA:
+Sounds like a serious issue. I'll let you
+know if I happen across one.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.2",
+  text = [[
+PROMETHEUS JONES:
+Heey! Welcome to my invention shop. So,
+this is gonna sound super weird, but do
+you have a flail? Like, a ball and chain?
+TILIA:
+Uh, yeah, I do actually.
+
+
+PROMETHEUS JONES:
+No way! See, I have this idea! It's like,
+it's that. But it explodes! Bam! Everything
+it touches, it just causes an explosion.
+TILIA:
+That sounds like a really bad, really
+dangerous idea.
+
+PROMETHEUS JONES:
+Yeah, you'd probably just hurt yourself!
+Want me to do it? I can change it back
+later if you want?
+TILIA:
+$?Sign me up!
+$?No, I want to keep all my fingers??
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.dont_do_it",
+  text = [[
+PROMETHUS JONES:
+Yeah, I understand. I mean, I actually
+don't. Explosions are super cool. But hey,
+you want to not die. Fine. I get it. Ugh.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.downgrade_choice",
+  text = [[
+PROMETHEUS JONES:
+Hey! It's exploding flail lady! How is
+the exploding flail treating you?
+
+TILIA:
+I mean... it's a lot.
+
+
+PROMETHEUS JONES:
+Right! It's probably way worse for anything
+practical than just a normal flail! It's
+suuuuuper cool. Man, just fire everywhere.
+PROMETHEUS JONES:
+Soooo... you don't want me to change it
+back, do you?
+
+TILIA:
+$?Please, it's so bad, change it back.
+$?No way, I'm a demolitions expert!
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.make_explode",
+  text = [[
+PROMETHEUS JONES:
+Yeah yeah yeah! Alright, check it out!
+
+
+(This guy did some weird science stuff
+to your flail)
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.stay_exploding",
+  text = [[
+PROMETHEUS JONES:
+Yeah, yeah, alright, awesome!
 ]],
 }
 
@@ -9708,6 +9832,39 @@ I messed up, I messed up, I messed up...
 }
 
 dialog{
+  id = "_oakhaven.npcs.shipyard.gallery_door1",
+  text = [[
+PERSON BEHIND DOOR:
+Eh, who's there? Nobody but a buncha
+normal villager type people in here.
+Whatcha want?
+TILIA:
+Well if that's all you are, nothing I
+guess.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.shipyard.gallery_door2",
+  text = [[
+PERSON BEHIND DOOR:
+Eh, who's there? Nobody but a buncha
+normal villager type people in here.
+Whatcha want?
+TILIA:
+Are you sure you guys aren't a bunch of
+pirates who stole something from the bomb
+shop?
+PERSON BEHIND DOOR:
+$1...$3Okay, yeah, we are. I'm gonna let
+you in so I can beat you up.
+
+TILIA:
+Not if I beat you up first!
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.shops.bomb_maker.1",
   text = [[
 Ah, a customer! I'm the bomb-maker. If you
@@ -9717,6 +9874,36 @@ of Firethorn berries, and 15 crowns for labor.
 Buy bombs?
 $? Yes
 $? No
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.shops.bomb_maker.quest1",
+  text = [[
+THE BOMB MAKER:
+Why hey! I'm the bomb maker. You bring me
+materials, I will make them into bombs.
+
+TILIA:
+I actually have a uh, receipt thing from
+Captain Thyme. To pick up a special order?
+
+THE BOMB MAKER:
+Oh, OH! That! Yes, that thing. There's
+still a bit of a delay. The item... well,
+I got robbed by pirates. Hey, you
+THE BOMB MAKER:
+wouldn't want to do me a favor and get
+a package back from some pirates? For
+yourself? The package you want to pick
+THE BOMB MAKER:
+up is in the hands of pirates and what I'm
+getting at is if you want it, you gotta go
+get it from them. They're camped out down
+THE BOMB MAKER:
+at the shipyard, in one of the buildings.
+If you want to pick up that package,
+it's up to you now.
 ]],
 }
 
@@ -10640,6 +10827,15 @@ throw it as well.
 }
 
 dialog{
+  id = "_treasure.bomb_arrow_ticket.1",
+  text = [[
+You a slip of paper- it's a receipt from
+a special order that needs to be picked up
+from the bomb shop in Oakhaven.
+]],
+}
+
+dialog{
   id = "_treasure.bombs_counter.1",
   text = [[
 You shouldn't have received this item-
@@ -11068,6 +11264,14 @@ dialog{
 You found a key. It looks suspiciously
 like the key to the stockroom at the
 Basswood Tavern.
+]],
+}
+
+dialog{
+  id = "_treasure.key_bear_catacombs.1",
+  text = [[
+You found a key. It will unlock a door
+in the area.
 ]],
 }
 
@@ -11870,6 +12074,116 @@ me.
 }
 
 dialog{
+  id = "_yarrowmouth.npcs.hourglass_encounter.1",
+  text = [[
+TILIA:
+Captain Thyme. I finally found you. My name
+is Tilia. I'm from Limestone Island.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.hourglass_encounter.2",
+  text = [[
+CAPTAIN THYME:
+Hmm. Sounds right. Nothing but trouble from
+Limestone Island. Was what, six months ago
+Blackbeard sent us to your island, yeah?
+TILIA:
+That's right. Almost burned down my family's
+tavern and kidnapped my friend. Where is
+Hazel?
+CAPTAIN THYME:
+Girl, I'm sorry. Look, I was a member of
+the Pirate Council. Group of captains that
+Blackbeard got together. He'd sent my crew
+CAPTAIN THYME:
+out lootin' old shrines, looking for some
+magic amulet we eventually found in Spruce
+Head. That's why we was in Limestone. It
+CAPTAIN THYME:
+was right soon after I sent that amulet off
+to Blackbeard that another person from
+Limestone Island showed up here... Same
+CAPTAIN THYME:
+nose as you, that your dad? Well, anyway,
+he beat up my whole crew. Gave me a whoppin',
+and rescued the Hazel girl. Me crew left me
+CAPTAIN THYME:
+after that, said they'd had enough, didn't
+want to work for the Pirate Council. And
+honestly, I don't either. I've given up
+CAPTAIN THYME:
+on pirating, I'm just hiding out here,
+hoping Blackbeard won't find me. But I've
+been thinking, and regretting what I did
+CAPTAIN THYME:
+for that man, so I'll tell ya this. Hazel
+and your dad sailed for Oakhaven Island.
+Dunno why, but you might find them there.
+TILIA:
+...So you really regret working for
+Blackbeard? I thought for sure I'd be
+fighting you.
+CAPTAIN THYME:
+I lost so badly to your dad that I don't
+think I have another fight in me. That's
+another reason, if I don't help Blackbeard
+CAPTAIN THYME:
+find the Ocean's Heart, and I have no crew
+to send down to the seabed to fight the
+monsters of the deep in this hunt, then-
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.hourglass_encounter.3",
+  text = [[
+CAPTAIN THYME:
+Oh, Gavrillo. Can't say it's a pleasure.
+I don't suppose Blackbeard sent his assassin
+just to check in on my health.
+GAVRILLO:
+Nope, sure didn't.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.hourglass_encounter.4",
+  text = [[
+GAVRILLO:
+Sorry if you were here to settle a score
+with Thyme also. I'm pretty impressed you
+managed to track him down. If you ever
+GAVRILLO:
+think about putting your skills to work
+for the Pirate Council, come find me.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.hourglass_encounter.5",
+  text = [[
+TILIA:
+Phew, okay. Alright. That was... phew.
+Alright. Get it together, Tilia. You got
+this. You're closer than ever to catching
+TILIA:
+up with Dad and Hazel. And now you know
+Hazel is alright. And you know where they
+went. You're closer than ever. I've just
+TILIA:
+gotta catch a ferry going to Oakhaven,
+and figure it out when I get there...
+and definitely avoid these pirate guys. Or,
+TILIA:
+well, if I want to join the Volunteer Navy
+like Dad, I'd be trying to stop the
+pirates... Well, one step at a time.
+]],
+}
+
+dialog{
   id = "_yarrowmouth.npcs.mera.1",
   text = [[
 MERA:
@@ -12375,13 +12689,17 @@ hideout is.
 
 
 JERAH:
-Those guys. Ugh. I haven't heard from them
-in a while but I brought gin to their hideout
-a bunch of times. So what you have to do
+Those guys. Ugh. Yeah, their hideout is on
+Kingsdown Isle. The bridge is usually locked,
+but I know a secret way in. There's these
 JERAH:
-is head to Kingsdown Isle. There's a bunch
-of rocks there, and the top-right one has
-a secret keyhole. But... you'd need the key.
+old catacombs you can cut through. If you
+had the key, the leftmost pillar near the
+bear statue has a hidden keyhole. But I
+JERAH:
+don't know where the key is. I think
+Olin used to have it, but it got stolen
+by pirates...
 JERAH:
 Anyway, I'm going to head back to the
 Distillery. If you want directions again,
@@ -12395,10 +12713,10 @@ dialog{
 JERAH:
 If you're still looking for the Pirates, their
 hideout is on Kingsdown Isle. There's a 
-bunch of rocks, and the top-right one has
+secret catacomb you can cut through,
 JERAH:
-a secret keyhole. You'll have to find the
-key somehow, but that'll get you in.
+if you found the key. The leftmost pillar
+by the bear statue has a secret keyhole.
 ]],
 }
 
@@ -12410,9 +12728,13 @@ Hey, thanks again from saving me from
 that monster. If you're still looking for the
 pirates, head to Kingsdown Isle. It's south
 JERAH:
-of the Puzzlewood. On the island are a
-bunch of rocks, the top-right one has a
-secret keyhole.
+of the Puzzlewood. On the island is a bear
+statue, and the leftmost pillar nearby has
+a secret keyhole that opens the path
+JERAH:
+to some catacombs you can cut through. But,
+the key was lost a while ago. I think stolen
+by pirates...
 ]],
 }
 
@@ -12653,6 +12975,16 @@ dialog{
   text = [[
 TILIA:
 What? Is this someone's idea of a trap?
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.observations.bear_catacombs_oblisk",
+  text = [[
+There's some faded writing...
+While he yet enslaves the Ocean, the
+Souls slaughtered by the Sea King will
+seek... hmm, can't make out any more.
 ]],
 }
 
@@ -13137,22 +13469,20 @@ dialog{
   id = "quest.main.hourglass_fort",
   title = "The Hourglass Crew",
   text = [[
-Jerah from Briarwood
-Distillery might know where
-the Hourglass Crew is.
+You've almost found the
+Hourglass crew's hideout.
 @Find Jerah
 !He went to the Juniper
 !Grove near the docks
-@Investigate Hourglass Fort
-!It's on Kingsdown Isle-
-!there's a secret keyhole
-!in the northeast pillar
+@Investigate Kingsdown Isle
+!There's a tunnel through
+!some catacombs. A secret
+!keyhole is hidden in the
+!left pillar by a bear statue,
 !but you'll need a key...
-@You've finally found the
-pirate's fort... look for
-clues for where the pirates
-have gone.
-  
+@Cut through the
+catacombs to get to
+Hourglass Fort
 ]],
 }
 
@@ -13370,6 +13700,23 @@ room, I guess?
 ?- Turns out the key went to
 ?Juneberry Inn on Goatshead.
     
+]],
+}
+
+dialog{
+  id = "quest.side.bomb_arrows",
+  title = "Thyme's Receipt",
+  text = [[
+You found a receipt to pick up
+an order from the bomb shop
+@Check the bomb shop
+!in Oakhaven, where it
+!seems the receipt was issued.
+@Track down the pirates
+who stole the package
+!They're hiding out at
+!Oakhaven's shipyard
+@Confront the pirates
 ]],
 }
 

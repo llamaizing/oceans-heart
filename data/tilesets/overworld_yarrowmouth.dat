@@ -12255,6 +12255,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2048",
+  ground = "wall",
+  default_layer = 0,
+  x = 432,
+  y = 760,
+  width = 64,
+  height = 40,
+}
+
+tile_pattern{
+  id = "2049",
+  ground = "wall",
+  default_layer = 1,
+  x = 432,
+  y = 736,
+  width = 64,
+  height = 24,
+}
+
+tile_pattern{
   id = "205",
   ground = "traversable",
   default_layer = 0,
@@ -12262,6 +12282,26 @@ tile_pattern{
   y = 32,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "2050",
+  ground = "wall",
+  default_layer = 0,
+  x = 544,
+  y = 552,
+  width = 64,
+  height = 40,
+}
+
+tile_pattern{
+  id = "2051",
+  ground = "wall",
+  default_layer = 0,
+  x = 544,
+  y = 512,
+  width = 64,
+  height = 40,
 }
 
 tile_pattern{

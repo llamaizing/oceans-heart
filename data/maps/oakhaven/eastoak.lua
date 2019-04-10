@@ -19,7 +19,12 @@ map:register_event("on_started", function()
 
   if game:get_value("quest_pirate_fort") == 4 then morus:set_enabled(true) end
 
-  if game:get_value("barbell_brutes_defeated") == true then vice_captain:set_enabled(true) wine:set_enabled(true) end
+  if game:get_value("barbell_brutes_defeated") == true then vice_captain:set_enabled(true) wine:set_enabled(true)
+  if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") >= 2 then
+    gallery_door:set_enabled(false)
+    gallery_door_npc:set_enabled(false)
+  end
+ end
 
   local m1 = sol.movement.create("path")
   m1:set_path{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,6,6,6,6,6,6,6,6,6,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
@@ -51,5 +56,17 @@ function morus:on_interaction()
     game:set_value("quest_pirate_fort", 5)
     game:set_value("fort_crow_interior_morus_counter", 1)
   end)
+end
+
+function gallery_door_npc:on_interaction()
+  if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 1 then
+    game:start_dialog("_oakhaven.npcs.shipyard.gallery_door2", function()
+      gallery_door:set_enabled(false)
+      gallery_door_npc:set_enabled(false)
+      game:set_value("quest_bomb_arrows", 2)
+    end)
+  else
+    game:start_dialog("_oakhaven.npcs.shipyard.gallery_door1")
+  end
 end
 

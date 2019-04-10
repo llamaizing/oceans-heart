@@ -36305,6 +36305,14 @@ custom_entity{
   model = "ally",
 }
 
+enemy{
+  layer = 0,
+  x = 192,
+  y = 181,
+  direction = 0,
+  breed = "normal_enemies/arborgeist_gust",
+}
+
 tile{
   layer = 1,
   x = 848,
@@ -60137,14 +60145,6 @@ destructible{
   treasure_name = "chamomile",
   sprite = "entities/bush_chamomile",
   can_be_cut = true,
-}
-
-enemy{
-  layer = 1,
-  x = 192,
-  y = 181,
-  direction = 0,
-  breed = "normal_enemies/arborgeist_gust",
 }
 
 destructible{
