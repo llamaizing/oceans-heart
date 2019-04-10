@@ -12689,13 +12689,17 @@ hideout is.
 
 
 JERAH:
-Those guys. Ugh. I haven't heard from them
-in a while but I brought gin to their hideout
-a bunch of times. So what you have to do
+Those guys. Ugh. Yeah, their hideout is on
+Kingsdown Isle. The bridge is usually locked,
+but I know a secret way in. There's these
 JERAH:
-is head to Kingsdown Isle. There's a bunch
-of rocks there, and the top-right one has
-a secret keyhole. But... you'd need the key.
+old catacombs you can cut through. If you
+had the key, the leftmost pillar near the
+bear statue has a hidden keyhole. But I
+JERAH:
+don't know where the key is. I think
+Olin used to have it, but it got stolen
+by pirates...
 JERAH:
 Anyway, I'm going to head back to the
 Distillery. If you want directions again,
@@ -12709,10 +12713,10 @@ dialog{
 JERAH:
 If you're still looking for the Pirates, their
 hideout is on Kingsdown Isle. There's a 
-bunch of rocks, and the top-right one has
+secret catacomb you can cut through,
 JERAH:
-a secret keyhole. You'll have to find the
-key somehow, but that'll get you in.
+if you found the key. The leftmost pillar
+by the bear statue has a secret keyhole.
 ]],
 }
 
@@ -12724,9 +12728,13 @@ Hey, thanks again from saving me from
 that monster. If you're still looking for the
 pirates, head to Kingsdown Isle. It's south
 JERAH:
-of the Puzzlewood. On the island are a
-bunch of rocks, the top-right one has a
-secret keyhole.
+of the Puzzlewood. On the island is a bear
+statue, and the leftmost pillar nearby has
+a secret keyhole that opens the path
+JERAH:
+to some catacombs you can cut through. But,
+the key was lost a while ago. I think stolen
+by pirates...
 ]],
 }
 
@@ -13461,22 +13469,20 @@ dialog{
   id = "quest.main.hourglass_fort",
   title = "The Hourglass Crew",
   text = [[
-Jerah from Briarwood
-Distillery might know where
-the Hourglass Crew is.
+You've almost found the
+Hourglass crew's hideout.
 @Find Jerah
 !He went to the Juniper
 !Grove near the docks
-@Investigate Hourglass Fort
-!It's on Kingsdown Isle-
-!there's a secret keyhole
-!in the northeast pillar
+@Investigate Kingsdown Isle
+!There's a tunnel through
+!some catacombs. A secret
+!keyhole is hidden in the
+!left pillar by a bear statue,
 !but you'll need a key...
-@You've finally found the
-pirate's fort... look for
-clues for where the pirates
-have gone.
-  
+@Cut through the
+catacombs to get to
+Hourglass Fort
 ]],
 }
 
