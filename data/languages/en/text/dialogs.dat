@@ -13442,7 +13442,7 @@ dialog{
   id = "quest.main.hazel",
   title = "The Trail Warms Up",
   text = [[
-Capt'n Thyme ran to Oakhaven
+Hazel and Dad went to Oakhaven
 @Investigate Oakhaven
 @Search town for Hazel
 !You were told to ask a
