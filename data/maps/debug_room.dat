@@ -4744,11 +4744,53 @@ pickable{
 npc{
   name = "shopkeeper",
   layer = 0,
-  x = 128,
-  y = 117,
+  x = 368,
+  y = 133,
   direction = 3,
   subtype = 1,
   sprite = "npc/jazari",
+}
+
+enemy{
+  layer = 0,
+  x = 368,
+  y = 341,
+  direction = 0,
+  breed = "normal_enemies/skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 520,
+  y = 381,
+  direction = 0,
+  breed = "normal_enemies/skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 360,
+  y = 421,
+  direction = 0,
+  breed = "normal_enemies/skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 464,
+  y = 413,
+  direction = 0,
+  breed = "normal_enemies/skeleton_1",
+}
+
+npc{
+  name = "powerupper",
+  layer = 0,
+  x = 480,
+  y = 189,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/trumpet_player_disguise",
 }
 
 tile{

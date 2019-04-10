@@ -24,6 +24,9 @@ function shopkeeper:on_interaction()
   sol.menu.start(map, shop_menu)
 end
 
+function powerupper:on_interaction()
+  game.deal_double_damage = true
+end
 
 function camera_shaker:on_interaction()
   map:get_camera():shake({count = 6, amplitude = 4, speed = 80})
