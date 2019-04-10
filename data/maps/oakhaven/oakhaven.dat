@@ -36578,6 +36578,16 @@ tile{
   tileset = "indoors_stone",
 }
 
+teletransporter{
+  layer = 0,
+  x = 536,
+  y = 1184,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/interiors/aubrey",
+  destination = "from_outside",
+}
+
 wall{
   layer = 0,
   x = 112,
@@ -37223,16 +37233,6 @@ npc{
   y = 1197,
   direction = 3,
   subtype = 1,
-}
-
-teletransporter{
-  layer = 0,
-  x = 536,
-  y = 1184,
-  width = 16,
-  height = 16,
-  destination_map = "oakhaven/interiors/aubrey",
-  destination = "from_outside",
 }
 
 wall{

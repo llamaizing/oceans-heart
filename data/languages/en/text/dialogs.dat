@@ -9832,6 +9832,39 @@ I messed up, I messed up, I messed up...
 }
 
 dialog{
+  id = "_oakhaven.npcs.shipyard.gallery_door1",
+  text = [[
+PERSON BEHIND DOOR:
+Eh, who's there? Nobody but a buncha
+normal villager type people in here.
+Whatcha want?
+TILIA:
+Well if that's all you are, nothing I
+guess.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.shipyard.gallery_door2",
+  text = [[
+PERSON BEHIND DOOR:
+Eh, who's there? Nobody but a buncha
+normal villager type people in here.
+Whatcha want?
+TILIA:
+Are you sure you guys aren't a bunch of
+pirates who stole something from the bomb
+shop?
+PERSON BEHIND DOOR:
+$1...$3Okay, yeah, we are. I'm gonna let
+you in so I can beat you up.
+
+TILIA:
+Not if I beat you up first!
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.shops.bomb_maker.1",
   text = [[
 Ah, a customer! I'm the bomb-maker. If you
@@ -9841,6 +9874,36 @@ of Firethorn berries, and 15 crowns for labor.
 Buy bombs?
 $? Yes
 $? No
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.shops.bomb_maker.quest1",
+  text = [[
+THE BOMB MAKER:
+Why hey! I'm the bomb maker. You bring me
+materials, I will make them into bombs.
+
+TILIA:
+I actually have a uh, receipt thing from
+Captain Thyme. To pick up a special order?
+
+THE BOMB MAKER:
+Oh, OH! That! Yes, that thing. There's
+still a bit of a delay. The item... well,
+I got robbed by pirates. Hey, you
+THE BOMB MAKER:
+wouldn't want to do me a favor and get
+a package back from some pirates? For
+yourself? The package you want to pick
+THE BOMB MAKER:
+up is in the hands of pirates and what I'm
+getting at is if you want it, you gotta go
+get it from them. They're camped out down
+THE BOMB MAKER:
+at the shipyard, in one of the buildings.
+If you want to pick up that package,
+it's up to you now.
 ]],
 }
 
@@ -10767,8 +10830,8 @@ dialog{
   id = "_treasure.bomb_arrow_ticket.1",
   text = [[
 You a slip of paper- it's a receipt from
-an order that needs to be picked up from
-the bomb shop in Oakhaven.
+a special order that needs to be picked up
+from the bomb shop in Oakhaven.
 ]],
 }
 
@@ -13643,6 +13706,11 @@ an order from the bomb shop
 @Check the bomb shop
 !in Oakhaven, where it
 !seems the receipt was issued.
+@Track down the pirates
+who stole the package
+!They're hiding out at
+!Oakhaven's shipyard
+@Confront the pirates
 ]],
 }
 

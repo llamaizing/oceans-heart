@@ -26485,15 +26485,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 792,
-  width = 16,
-  height = 32,
-  pattern = "622",
-}
-
-tile{
-  layer = 0,
   x = 32,
   y = 864,
   width = 16,
@@ -32850,6 +32841,33 @@ tile{
   tileset = "indoors_stone",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 816,
+  width = 16,
+  height = 24,
+  pattern = "635",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 816,
+  width = 8,
+  height = 24,
+  pattern = "634",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 816,
+  width = 8,
+  height = 24,
+  pattern = "633",
+}
+
 teletransporter{
   layer = 0,
   x = -16,
@@ -33719,6 +33737,75 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/morus",
+}
+
+enemy{
+  layer = 0,
+  x = 432,
+  y = 93,
+  direction = 0,
+  breed = "normal_enemies/mandrake",
+}
+
+enemy{
+  layer = 0,
+  x = 568,
+  y = 141,
+  direction = 0,
+  breed = "normal_enemies/mandrake",
+}
+
+enemy{
+  layer = 0,
+  x = 408,
+  y = 189,
+  direction = 0,
+  breed = "normal_enemies/mandrake",
+}
+
+enemy{
+  layer = 0,
+  x = 456,
+  y = 197,
+  direction = 0,
+  breed = "normal_enemies/mandrake",
+}
+
+destination{
+  name = "from_gallery",
+  layer = 0,
+  x = 120,
+  y = 853,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 112,
+  y = 824,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/interiors/shipyard_gallery",
+  destination = "from_outside",
+}
+
+dynamic_tile{
+  name = "gallery_door",
+  layer = 0,
+  x = 112,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "637",
+}
+
+npc{
+  name = "gallery_door_npc",
+  layer = 0,
+  x = 120,
+  y = 837,
+  direction = 3,
+  subtype = 1,
 }
 
 tile{
@@ -35208,15 +35295,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 48,
-  y = 784,
-  width = 64,
-  height = 56,
-  pattern = "1855",
-}
-
-tile{
-  layer = 1,
   x = 0,
   y = 800,
   width = 48,
@@ -35768,5 +35846,23 @@ tile{
   height = 24,
   pattern = "323",
   tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 816,
+  width = 32,
+  height = 8,
+  pattern = "636",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 784,
+  width = 64,
+  height = 56,
+  pattern = "1855",
 }
 

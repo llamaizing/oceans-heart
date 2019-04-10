@@ -18,17 +18,23 @@ function map:on_started()
 end
 
 function bomb_maker:on_interaction()
-  game:start_dialog("_oakhaven.npcs.shops.bomb_maker.1", function(answer)
-    if answer == 2 then
-      if game:get_item("firethorn_berries"):get_amount() >= 2 and game:get_money() >= 15 then
-        game:remove_money(15)
-        game:get_item("firethorn_berries"):remove_amount(2)
-        map:create_pickable({
-          x = 200, y = 136, layer = 0, treasure_name = "bomb", treasure_variant = 3, 
-        })
-      else
-        game:start_dialog("_game.insufficient_items")
+  if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 0 then
+    game:start_dialog("_oakhaven.npcs.shops.bomb_maker.quest1", function()
+      game:set_value("quest_bomb_arrows", 1)
+    end)
+  else
+    game:start_dialog("_oakhaven.npcs.shops.bomb_maker.1", function(answer)
+      if answer == 2 then
+        if game:get_item("firethorn_berries"):get_amount() >= 2 and game:get_money() >= 15 then
+          game:remove_money(15)
+          game:get_item("firethorn_berries"):remove_amount(2)
+          map:create_pickable({
+            x = 200, y = 136, layer = 0, treasure_name = "bomb", treasure_variant = 3, 
+          })
+        else
+          game:start_dialog("_game.insufficient_items")
+        end
       end
-    end
-  end)
+    end)
+  end
 end

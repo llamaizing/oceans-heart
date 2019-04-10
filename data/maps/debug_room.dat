@@ -2972,8 +2972,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/prometheus_jones",
-  destination = "from_outside",
+  destination_map = "oakhaven/oakhaven",
+  destination = "from_bomb_shop",
 }
 
 pickable{

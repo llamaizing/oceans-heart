@@ -211,6 +211,7 @@ map{ id = "oakhaven/interiors/port_warehouse", description = "Port Warehouse" }
 map{ id = "oakhaven/interiors/saloon", description = "Salamander Heartache" }
 map{ id = "oakhaven/interiors/sculptor", description = "sculptor" }
 map{ id = "oakhaven/interiors/shipwright", description = "Shipwright" }
+map{ id = "oakhaven/interiors/shipyard_gallery", description = "Shipyard Gallery" }
 map{ id = "oakhaven/interiors/tailor", description = "Tailor" }
 map{ id = "oakhaven/ivystump", description = "Ivystump Village" }
 map{ id = "oakhaven/ivystump_interiors/lamia", description = "Lamia's House" }
