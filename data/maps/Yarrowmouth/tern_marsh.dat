@@ -34971,6 +34971,119 @@ tile{
   pattern = "620",
 }
 
+tile{
+  layer = 0,
+  x = 1760,
+  y = -32,
+  width = 16,
+  height = 16,
+  pattern = "81",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = -32,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 0,
+  x = 1776,
+  y = -32,
+  width = 16,
+  height = 16,
+  pattern = "82",
+}
+
+tile{
+  layer = 0,
+  x = 1824,
+  y = -32,
+  width = 16,
+  height = 32,
+  pattern = "208",
+}
+
+tile{
+  layer = 0,
+  x = 1776,
+  y = -16,
+  width = 16,
+  height = 16,
+  pattern = "86",
+}
+
+tile{
+  layer = 0,
+  x = 1728,
+  y = -32,
+  width = 16,
+  height = 16,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 1792,
+  y = -32,
+  width = 32,
+  height = 32,
+  pattern = "620",
+}
+
+tile{
+  layer = 0,
+  x = 1680,
+  y = -16,
+  width = 16,
+  height = 16,
+  pattern = "458",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1664,
+  y = -16,
+  width = 16,
+  height = 16,
+  pattern = "457",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1664,
+  y = -32,
+  width = 16,
+  height = 16,
+  pattern = "455",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = -32,
+  width = 16,
+  height = 16,
+  pattern = "454",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1840,
+  y = -16,
+  width = 16,
+  height = 16,
+  pattern = "455",
+  tileset = "overworld_oakhaven",
+}
+
 teletransporter{
   layer = 0,
   x = 312,
@@ -36328,6 +36441,16 @@ door{
   direction = 3,
   sprite = "entities/door_post_stone",
   savegame_variable = "tern_marsh_hourglass_door_state",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1792,
+  y = -16,
+  width = 32,
+  height = 16,
+  destination_map = "Yarrowmouth/hourglass_canyon",
+  destination = "_side",
 }
 
 tile{
@@ -39320,6 +39443,26 @@ tile{
   width = 8,
   height = 8,
   pattern = "269",
+}
+
+tile{
+  layer = 1,
+  x = 1696,
+  y = -16,
+  width = 8,
+  height = 8,
+  pattern = "266",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1720,
+  y = -16,
+  width = 8,
+  height = 8,
+  pattern = "267",
+  tileset = "overworld_oakhaven",
 }
 
 dynamic_tile{

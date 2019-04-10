@@ -100,6 +100,7 @@ function item:on_using()
   local m = sol.movement.create("circle")
   m:set_center(flail_x, flail_y)
   m:set_ignore_obstacles()
+  if item:get_variant() >= 2 then m:set_ignore_obstacles(false) end
 --  m:set_angle_from_center(start_angle)
   m:set_radius(MIN_RADIUS)
   m:set_radius_speed(RAIUS_SPEED)

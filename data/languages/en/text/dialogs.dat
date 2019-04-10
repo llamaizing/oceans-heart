@@ -330,6 +330,21 @@ $?Not today
 }
 
 dialog{
+  id = "_ballast_harbor.npcs.honestbeard.bomb_arrow_quest",
+  text = [[
+HONESTBEARD:
+Captain Honestbeard's the name, and making
+an honest living is my game. How can I
+help you?
+TILIA:
+Oh actually, I found this, uh, receipt
+thing. I'm here to pick something up
+for Captain Thyme.
+HONESTBEARD:
+]],
+}
+
+dialog{
   id = "_ballast_harbor.npcs.honestbeard.coral_ore",
   text = [[
 HONESTBEARD:
@@ -848,6 +863,115 @@ Aye aye, Mr. Beard.
 
 BLACKBEARD:
 It's not$1...$3
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.1",
+  text = [[
+PROMETHEUS JONES:
+Heey! Welcome to my invention shop. So,
+this is gonna sound super weird, but do
+you have a flail? Like, a ball and chain?
+TILIA:
+I'm sorry, no?
+
+
+PROMETHEUS JONES:
+Well that's too bad! See, I have a one
+track mind for inventing. And what I want
+to make, is a flail that just freaking
+PROMETHEUS JONES:
+explodes. Like, everything it hits. Bam!
+It'd be real dangerous. A bad idea! Bam!
+But, well. I don't have one.
+TILIA:
+Sounds like a serious issue. I'll let you
+know if I happen across one.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.2",
+  text = [[
+PROMETHEUS JONES:
+Heey! Welcome to my invention shop. So,
+this is gonna sound super weird, but do
+you have a flail? Like, a ball and chain?
+TILIA:
+Uh, yeah, I do actually.
+
+
+PROMETHEUS JONES:
+No way! See, I have this idea! It's like,
+it's that. But it explodes! Bam! Everything
+it touches, it just causes an explosion.
+TILIA:
+That sounds like a really bad, really
+dangerous idea.
+
+PROMETHEUS JONES:
+Yeah, you'd probably just hurt yourself!
+Want me to do it? I can change it back
+later if you want?
+TILIA:
+$?Sign me up!
+$?No, I want to keep all my fingers??
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.dont_do_it",
+  text = [[
+PROMETHUS JONES:
+Yeah, I understand. I mean, I actually
+don't. Explosions are super cool. But hey,
+you want to not die. Fine. I get it. Ugh.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.downgrade_choice",
+  text = [[
+PROMETHEUS JONES:
+Hey! It's exploding flail lady! How is
+the exploding flail treating you?
+
+TILIA:
+I mean... it's a lot.
+
+
+PROMETHEUS JONES:
+Right! It's probably way worse for anything
+practical than just a normal flail! It's
+suuuuuper cool. Man, just fire everywhere.
+PROMETHEUS JONES:
+Soooo... you don't want me to change it
+back, do you?
+
+TILIA:
+$?Please, it's so bad, change it back.
+$?No way, I'm a demolitions expert!
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.make_explode",
+  text = [[
+PROMETHEUS JONES:
+Yeah yeah yeah! Alright, check it out!
+
+
+(This guy did some weird science stuff
+to your flail)
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.prometheus_jones.stay_exploding",
+  text = [[
+PROMETHEUS JONES:
+Yeah, yeah, alright, awesome!
 ]],
 }
 
@@ -10640,6 +10764,15 @@ throw it as well.
 }
 
 dialog{
+  id = "_treasure.bomb_arrow_ticket.1",
+  text = [[
+You a slip of paper- it's a receipt from
+an order that needs to be picked up from
+the bomb shop in Oakhaven.
+]],
+}
+
+dialog{
   id = "_treasure.bombs_counter.1",
   text = [[
 You shouldn't have received this item-
@@ -11874,6 +12007,116 @@ pirate crew on Carlov's behalf.
 PIRATE:
 Huh. Well... That can work. Alright, follow
 me.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.hourglass_encounter.1",
+  text = [[
+TILIA:
+Captain Thyme. I finally found you. My name
+is Tilia. I'm from Limestone Island.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.hourglass_encounter.2",
+  text = [[
+CAPTAIN THYME:
+Hmm. Sounds right. Nothing but trouble from
+Limestone Island. Was what, six months ago
+Blackbeard sent us to your island, yeah?
+TILIA:
+That's right. Almost burned down my family's
+tavern and kidnapped my friend. Where is
+Hazel?
+CAPTAIN THYME:
+Girl, I'm sorry. Look, I was a member of
+the Pirate Council. Group of captains that
+Blackbeard got together. He'd sent my crew
+CAPTAIN THYME:
+out lootin' old shrines, looking for some
+magic amulet we eventually found in Spruce
+Head. That's why we was in Limestone. It
+CAPTAIN THYME:
+was right soon after I sent that amulet off
+to Blackbeard that another person from
+Limestone Island showed up here... Same
+CAPTAIN THYME:
+nose as you, that your dad? Well, anyway,
+he beat up my whole crew. Gave me a whoppin',
+and rescued the Hazel girl. Me crew left me
+CAPTAIN THYME:
+after that, said they'd had enough, didn't
+want to work for the Pirate Council. And
+honestly, I don't either. I've given up
+CAPTAIN THYME:
+on pirating, I'm just hiding out here,
+hoping Blackbeard won't find me. But I've
+been thinking, and regretting what I did
+CAPTAIN THYME:
+for that man, so I'll tell ya this. Hazel
+and your dad sailed for Oakhaven Island.
+Dunno why, but you might find them there.
+TILIA:
+...So you really regret working for
+Blackbeard? I thought for sure I'd be
+fighting you.
+CAPTAIN THYME:
+I lost so badly to your dad that I don't
+think I have another fight in me. That's
+another reason, if I don't help Blackbeard
+CAPTAIN THYME:
+find the Ocean's Heart, and I have no crew
+to send down to the seabed to fight the
+monsters of the deep in this hunt, then-
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.hourglass_encounter.3",
+  text = [[
+CAPTAIN THYME:
+Oh, Gavrillo. Can't say it's a pleasure.
+I don't suppose Blackbeard sent his assassin
+just to check in on my health.
+GAVRILLO:
+Nope, sure didn't.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.hourglass_encounter.4",
+  text = [[
+GAVRILLO:
+Sorry if you were here to settle a score
+with Thyme also. I'm pretty impressed you
+managed to track him down. If you ever
+GAVRILLO:
+think about putting your skills to work
+for the Pirate Council, come find me.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.hourglass_encounter.5",
+  text = [[
+TILIA:
+Phew, okay. Alright. That was... phew.
+Alright. Get it together, Tilia. You got
+this. You're closer than ever to catching
+TILIA:
+up with Dad and Hazel. And now you know
+Hazel is alright. And you know where they
+went. You're closer than ever. I've just
+TILIA:
+gotta catch a ferry going to Oakhaven,
+and figure it out when I get there...
+and definitely avoid these pirate guys. Or,
+TILIA:
+well, if I want to join the Volunteer Navy
+like Dad, I'd be trying to stop the
+pirates... Well, one step at a time.
 ]],
 }
 
@@ -13388,6 +13631,18 @@ room, I guess?
 ?- Turns out the key went to
 ?Juneberry Inn on Goatshead.
     
+]],
+}
+
+dialog{
+  id = "quest.side.bomb_arrows",
+  title = "Thyme's Receipt",
+  text = [[
+You found a receipt to pick up
+an order from the bomb shop
+@Check the bomb shop
+!in Oakhaven, where it
+!seems the receipt was issued.
 ]],
 }
 

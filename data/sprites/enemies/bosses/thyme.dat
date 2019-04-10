@@ -23,6 +23,16 @@ animation{
   },
 }
 animation{
+  name = "immobilized",
+  src_image = "enemies/bosses/thyme.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
   name = "shooting",
   src_image = "enemies/bosses/thyme.png",
   frame_delay = 200,
@@ -63,5 +73,15 @@ animation{
     { x = 120, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
     { x = 120, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
     { x = 120, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
+  name = "unconscious",
+  src_image = "enemies/bosses/thyme.png",
+  directions = {
+    { x = 192, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 192, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 192, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 192, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
   },
 }

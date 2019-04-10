@@ -20,10 +20,10 @@ function map:on_started()
 
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
 
+
+function honestbeard:on_interaction()
+    game:start_dialog("_ballast_harbor.npcs.honestbeard.1")
 end
 
 
