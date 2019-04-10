@@ -42,13 +42,19 @@ function initial_game:initialize_new_savegame(game)
   game:set_value("elixer_restoration_level", 6) --starts at 6 (3 hearts), then goes to 12, then 18, then 24
 
 --system stuff
-  game:set_value("quest_log_a", 0)
-  game:set_value("quest_log_b", 0)
-  game:set_value("reveal_quest_totals", false)
+  game:set_value("quest_log_a", 0) --deprecated
+  game:set_value("quest_log_b", 0) --deprecated
+  game:set_value("reveal_quest_totals", false) --for quest log menu
 
 --side quests
   game:set_value("lighthouses_quest_num_lit", 0)
 
+--shop item availability
+  game:set_value("available_in_shop_berries", true)
+  game:set_value("available_in_shop_apples", true)
+  game:set_value("available_in_shop_bread", true)
+  game:set_value("available_in_shop_arrows", false)
+  game:set_value("available_in_shop_bombs", false)
 
 end
 

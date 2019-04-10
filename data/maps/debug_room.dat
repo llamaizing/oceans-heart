@@ -2773,7 +2773,7 @@ tile{
   layer = 0,
   x = 304,
   y = 288,
-  width = 224,
+  width = 288,
   height = 16,
   pattern = "34",
   tileset = "misc",
@@ -4616,8 +4616,8 @@ pickable{
 stream{
   name = "current_a_2",
   layer = 0,
-  x = 560,
-  y = 213,
+  x = 640,
+  y = 85,
   direction = 0,
   sprite = "entities/current_shallow",
   speed = 128,
@@ -4685,14 +4685,6 @@ destructible{
   can_be_cut = true,
 }
 
-enemy{
-  layer = 0,
-  x = 416,
-  y = 373,
-  direction = 3,
-  breed = "bosses/skeleton_lord",
-}
-
 pickable{
   layer = 0,
   x = 200,
@@ -4747,6 +4739,16 @@ pickable{
   x = 288,
   y = 125,
   treasure_name = "key_kingsdown",
+}
+
+npc{
+  name = "shopkeeper",
+  layer = 0,
+  x = 128,
+  y = 117,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/jazari",
 }
 
 tile{
@@ -4982,30 +4984,10 @@ tile{
   layer = 1,
   x = 304,
   y = 272,
-  width = 224,
+  width = 288,
   height = 16,
   pattern = "35",
   tileset = "misc",
-}
-
-tile{
-  layer = 1,
-  x = 272,
-  y = 256,
-  width = 320,
-  height = 8,
-  pattern = "271",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 1,
-  x = 240,
-  y = 224,
-  width = 384,
-  height = 8,
-  pattern = "89",
-  tileset = "fort_crow_walls",
 }
 
 dynamic_tile{
