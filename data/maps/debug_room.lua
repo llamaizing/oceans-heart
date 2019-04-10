@@ -10,8 +10,6 @@
 local map = ...
 local game = map:get_game()
 
-local shop_menu = require("scripts/shops/shop_menu")
-
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
   local hero = game:get_hero()
@@ -20,12 +18,9 @@ map:register_event("on_started", function()
 end)
 
 function shopkeeper:on_interaction()
+  local shop_menu = require("scripts/shops/shop_menu")
   shop_menu:initialize(game)
   sol.menu.start(map, shop_menu)
-end
-
-function powerupper:on_interaction()
-  game.deal_double_damage = true
 end
 
 function camera_shaker:on_interaction()

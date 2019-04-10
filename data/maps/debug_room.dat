@@ -2972,8 +2972,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven",
-  destination = "from_bomb_shop",
+  destination_map = "goatshead_island/goatshead_harbor",
 }
 
 pickable{
@@ -4736,16 +4735,16 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 288,
-  y = 125,
+  x = 536,
+  y = 29,
   treasure_name = "key_kingsdown",
 }
 
 npc{
   name = "shopkeeper",
   layer = 0,
-  x = 368,
-  y = 133,
+  x = 584,
+  y = 149,
   direction = 3,
   subtype = 1,
   sprite = "npc/jazari",
@@ -4783,14 +4782,25 @@ enemy{
   breed = "normal_enemies/skeleton_1",
 }
 
-npc{
-  name = "powerupper",
+pickable{
   layer = 0,
-  x = 480,
-  y = 189,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/trumpet_player_disguise",
+  x = 584,
+  y = 93,
+  treasure_name = "potion_burlyblade",
+}
+
+pickable{
+  layer = 0,
+  x = 584,
+  y = 109,
+  treasure_name = "potion_stoneskin",
+}
+
+pickable{
+  layer = 0,
+  x = 584,
+  y = 93,
+  treasure_name = "potion_burlyblade",
 }
 
 tile{

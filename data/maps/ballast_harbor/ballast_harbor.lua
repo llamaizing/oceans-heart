@@ -35,6 +35,16 @@ end)
 
 
 ---NPC INTERACTIONS
+--shop
+function market_shop:on_interaction()
+  game:start_dialog("_ballast_harbor.npcs.market_people.shop", function()
+    local shop_menu = require("scripts/shops/shop_menu")
+    shop_menu:initialize(game)
+    sol.menu.start(map, shop_menu)
+  end)
+end
+
+
 --cargo carrier guys:
 for npc in map:get_entities("dropoff_npc") do
   function npc:on_interaction()
@@ -131,53 +141,6 @@ function guts_buyer:on_interaction()
         game:start_dialog("_ballast_harbor.npcs.guts_buyer.2")
       else
         game:start_dialog("_game.insufficient_items")
-      end
-    end
-  end)
-end
-
-
---buy bombs
-function bomb_sale:on_interaction()
-  game:start_dialog("_goatshead.npcs.alchemist.bombs", function(answer)
-    if answer == 1 then
-      if game:get_money() >= 50 then
-        hero:start_treasure("bomb", 3)
-        game:remove_money(50)
-      else
-        game:start_dialog("_game.insufficient_funds")
-      end
-    end
-  end)
-end
-
---buy arrows
-function arrow_sale:on_interaction()
-  if game:has_item("bow") == true then
-    game:start_dialog("_generic_dialogs.shop.arrows", function(answer)  
-      if answer == 1 then
-        if game:get_money() >= 10 then
-          hero:start_treasure("arrow", 2)
-          game:remove_money(10)
-        else
-          game:start_dialog("_game.insufficient_funds")
-        end
-      end
-    end)
-  else --no bow
-    game:start_dialog("_ballast_harbor.npcs.market_people.arrows_no_bow")
-  end
-end
-
---Apple Salesman
-function apple_salesman:on_interaction()
-  game:start_dialog("_ballast_harbor.npcs.market_people.4", function(answer)
-    if answer == 3 then
-      if game:get_money() >= 8 then
-        game:add_life(4)
-        game:remove_money(8)
-      else
-        game:start_dialog("_game.insufficient_funds")
       end
     end
   end)

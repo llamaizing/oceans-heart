@@ -24631,8 +24631,8 @@ destructible{
 npc{
   name = "geode_buyer",
   layer = 0,
-  x = 704,
-  y = 245,
+  x = 584,
+  y = 277,
   direction = 3,
   subtype = 1,
   sprite = "npc/woman/woman_9.1",
@@ -25931,6 +25931,16 @@ wall{
   width = 80,
   height = 8,
   stops_hero = true,
+}
+
+npc{
+  name = "market_shop",
+  layer = 0,
+  x = 704,
+  y = 245,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/woman/woman_10.2",
 }
 
 tile{

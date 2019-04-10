@@ -678,6 +678,13 @@ nevermind. Come back when you have a bow.
 }
 
 dialog{
+  id = "_ballast_harbor.npcs.market_people.shop",
+  text = [[
+Need to do some shopping, love?
+]],
+}
+
+dialog{
   id = "_ballast_harbor.npcs.michael.1",
   text = [[
 MICHAEL THE MEAD MAKER:
@@ -11629,11 +11636,31 @@ it's clearly been loved.
 }
 
 dialog{
+  id = "_treasure.potion_burlyblade.1",
+  text = [[
+You received a Burlyblade Potion. Drink this
+from the menu, and you'll deal 1.5 times
+the damage for 4 minutes. The effect wears
+off if you die or stop the game.
+]],
+}
+
+dialog{
   id = "_treasure.potion_magic_restoration.1",
   text = [[
-You found a potion of magic restoration!
-Drink this to recover your magic power
-immediately.
+You got a potion of magic restoration!
+Drink this from the menu to recover your
+magic power immediately.
+]],
+}
+
+dialog{
+  id = "_treasure.potion_stoneskin.1",
+  text = [[
+You received a Stoneskin Potion. Drink this
+from the menu, and you will take half
+damage for 4 minutes. The effect wears off
+if you die or stop the game.
 ]],
 }
 
