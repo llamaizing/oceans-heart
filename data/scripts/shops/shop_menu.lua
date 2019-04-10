@@ -186,19 +186,24 @@ function inventory:on_command_pressed(command)
 
     elseif command == "action" then
         --the item here is all_items[cursor_index + 1]
-        game:start_dialog("_shop.purchase_confirm", function(answer)
-          if answer == 2 then
-            local current_item = all_items[cursor_index + 1]
-            if game:get_money() >= current_item.price then
-              game:get_hero():start_treasure(current_item.item, current_item.variant)
-              game:get_hero():freeze()
-              game:remove_money(current_item.price)
+        if game:get_value(all_items[cursor_index + 1].availability_variable) then
+          game:start_dialog("_shop.purchase_confirm", function(answer)
+            if answer == 2 then
+              local current_item = all_items[cursor_index + 1]
+              if game:get_money() >= current_item.price then
+                game:get_hero():start_treasure(current_item.item, current_item.variant)
+                game:get_hero():freeze()
+                game:remove_money(current_item.price)
+              end
+            else
+              print("decided not to buy")
             end
-          else
-            print("decided not to buy")
-          end
-        end)
+          end)
+        end
         handled = true
+
+    elseif command == "pause" then
+      handled = true
 
     elseif command == "attack" then
       game:get_hero():unfreeze()
