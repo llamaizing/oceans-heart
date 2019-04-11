@@ -133,6 +133,14 @@ game:start_dialog("_goatshead.npcs.juglan.ride_back", function(answer)
       end)
 end
 
+function market_shop:on_interaction()
+  game:start_dialog("_ballast_harbor.npcs.market_people.shop", function()
+    local shop_menu = require("scripts/shops/shop_menu")
+    shop_menu:initialize(game)
+    sol.menu.start(map, shop_menu)
+  end)
+end
+
 
 function upset_fisher:on_interaction()
   if game:get_value("two_eye_rock_shroom_defeated") == nil then
@@ -150,17 +158,10 @@ function upset_fisher:on_interaction()
 end
 
 function orange_salesman:on_interaction()
-  game:start_dialog("_goatshead.npcs.market_people.3", function(answer)
-    if answer == 3 then
-      if game:get_money() >= 5 then
-        game:add_life(2)
-        game:remove_money(5)
-      else
-        game:start_dialog("_game.insufficient_funds")
-      end
-    end
-  end)
+
 end
+
+
 
 function postaster_fisher:on_interaction()
   game:start_dialog("_goatshead.npcs.fish_mongers.5", function() game:add_life(4) end)

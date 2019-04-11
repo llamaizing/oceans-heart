@@ -24427,6 +24427,25 @@ tile{
   pattern = "277",
 }
 
+tile{
+  layer = 0,
+  x = 720,
+  y = 232,
+  width = 16,
+  height = 24,
+  pattern = "2128",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "686",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -24631,8 +24650,8 @@ destructible{
 npc{
   name = "geode_buyer",
   layer = 0,
-  x = 704,
-  y = 245,
+  x = 584,
+  y = 277,
   direction = 3,
   subtype = 1,
   sprite = "npc/woman/woman_9.1",
@@ -24651,7 +24670,7 @@ npc{
 npc{
   name = "orange_salesman",
   layer = 0,
-  x = 792,
+  x = 824,
   y = 325,
   direction = 3,
   subtype = 1,
@@ -25931,6 +25950,16 @@ wall{
   width = 80,
   height = 8,
   stops_hero = true,
+}
+
+npc{
+  name = "market_shop",
+  layer = 0,
+  x = 704,
+  y = 245,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/woman/woman_10.2",
 }
 
 tile{
@@ -30631,6 +30660,25 @@ tile{
   width = 16,
   height = 8,
   pattern = "314",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 224,
+  width = 16,
+  height = 8,
+  pattern = "2129",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "687",
 }
 
 enemy{

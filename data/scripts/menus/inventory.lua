@@ -12,8 +12,7 @@ local all_equipment_items = {
     {item = "boomerang", name = "Boomerang", assignable = true,},
     {item = "spear", name = "Bear Warriors' Spear", assignable = true,},
     {item = "ball_and_chain", name = "Flail", assignable = true},
-    {item = "cyclone_charm", name = "Cyclone Charm", assignable = true,},
-    {item = "tornado_dash", name = "Tornado Dash", assignable = true,},
+--    {item = "cyclone_charm", name = "Cyclone Charm", assignable = true,},
     {item = "gust", name = "Zephyrine's Tempest", assignable = true,},
     {item = "crystal_spark", name = "Ophira's Ember", assignable = true,},
     {item = "leaf_tornado", name = "Amalenchier's Wrath", assignable = true,},
@@ -24,6 +23,8 @@ local all_equipment_items = {
     {item = "bow_bombs", name = "Bomb Arrows", assignable = true,},
     {item = "bow_warp", name = "Warpbolt Charm", assignable = true,},
     {item = "potion_magic_restoration", name = "Magic Restoring Potion", assignable = false,},
+    {item = "potion_stoneskin", name = "Stoneskin Potion", assignable = false,},
+    {item = "potion_burlyblade", name = "Burlyblade Potion", assignable = false,},
     {item = "berries", name = "Berries", assignable = false,},
     {item = "apples", name = "Apples", assignable = false,},
     {item = "bread", name = "Burroak Bread", assignable = false,},
@@ -51,7 +52,7 @@ function inventory:set_xy(x, y)
 	assert(x, "Bad argument #2 to 'set_xy' (number expected)")
 	y = tonumber(y)
 	assert(y, "Bad argument #3 to 'set_xy' (number expected)")
-	
+
 	self.x = math.floor(x)
 	self.y = math.floor(y)
 end
@@ -160,7 +161,7 @@ end
 function inventory:on_command_pressed(command)
     local game = sol.main.game
     local handled = false
-    
+
     if command == "right" then
         if self.cursor_column == COLUMNS - 1 then return false end
         sol.audio.play_sound("cursor")
@@ -179,7 +180,7 @@ function inventory:on_command_pressed(command)
         sol.audio.play_sound("cursor")
         self:update_cursor_position(cursor_index + COLUMNS)
         handled = true
-        
+
     elseif command == "item_1" then
         local item = self:get_item_at_current_index()
         if item and item:is_assignable() then

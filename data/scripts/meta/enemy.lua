@@ -25,6 +25,7 @@ function enemy_meta:on_hurt_by_sword(hero, enemy_sprite)
   if hero_state == "sword spin attack" or hero_state == "running" then
     sword_damage = sword_damage * 2.5
   end
+  if game.tilia_damage_multiplier then sword_damage = sword_damage * game.tilia_damage_multiplier end
   self:remove_life(sword_damage)
 
 end

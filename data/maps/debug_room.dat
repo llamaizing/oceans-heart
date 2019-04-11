@@ -2773,7 +2773,7 @@ tile{
   layer = 0,
   x = 304,
   y = 288,
-  width = 224,
+  width = 288,
   height = 16,
   pattern = "34",
   tileset = "misc",
@@ -2972,8 +2972,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven",
-  destination = "from_bomb_shop",
+  destination_map = "Yarrowmouth/yarrowmouth_village",
 }
 
 pickable{
@@ -4616,8 +4615,8 @@ pickable{
 stream{
   name = "current_a_2",
   layer = 0,
-  x = 560,
-  y = 213,
+  x = 640,
+  y = 85,
   direction = 0,
   sprite = "entities/current_shallow",
   speed = 128,
@@ -4685,14 +4684,6 @@ destructible{
   can_be_cut = true,
 }
 
-enemy{
-  layer = 0,
-  x = 416,
-  y = 373,
-  direction = 3,
-  breed = "bosses/skeleton_lord",
-}
-
 pickable{
   layer = 0,
   x = 200,
@@ -4744,9 +4735,72 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 288,
-  y = 125,
+  x = 536,
+  y = 29,
   treasure_name = "key_kingsdown",
+}
+
+npc{
+  name = "shopkeeper",
+  layer = 0,
+  x = 584,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/jazari",
+}
+
+enemy{
+  layer = 0,
+  x = 368,
+  y = 341,
+  direction = 0,
+  breed = "normal_enemies/skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 520,
+  y = 381,
+  direction = 0,
+  breed = "normal_enemies/skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 360,
+  y = 421,
+  direction = 0,
+  breed = "normal_enemies/skeleton_1",
+}
+
+enemy{
+  layer = 0,
+  x = 464,
+  y = 413,
+  direction = 0,
+  breed = "normal_enemies/skeleton_1",
+}
+
+pickable{
+  layer = 0,
+  x = 584,
+  y = 93,
+  treasure_name = "potion_burlyblade",
+}
+
+pickable{
+  layer = 0,
+  x = 584,
+  y = 109,
+  treasure_name = "potion_stoneskin",
+}
+
+pickable{
+  layer = 0,
+  x = 584,
+  y = 93,
+  treasure_name = "potion_burlyblade",
 }
 
 tile{
@@ -4982,30 +5036,10 @@ tile{
   layer = 1,
   x = 304,
   y = 272,
-  width = 224,
+  width = 288,
   height = 16,
   pattern = "35",
   tileset = "misc",
-}
-
-tile{
-  layer = 1,
-  x = 272,
-  y = 256,
-  width = 320,
-  height = 8,
-  pattern = "271",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 1,
-  x = 240,
-  y = 224,
-  width = 384,
-  height = 8,
-  pattern = "89",
-  tileset = "fort_crow_walls",
 }
 
 dynamic_tile{

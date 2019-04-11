@@ -22215,6 +22215,270 @@ tile{
   tileset = "treasure",
 }
 
+tile{
+  layer = 0,
+  x = 1792,
+  y = 1248,
+  width = 32,
+  height = 24,
+  pattern = "56",
+}
+
+tile{
+  layer = 0,
+  x = 1760,
+  y = 1248,
+  width = 32,
+  height = 24,
+  pattern = "54",
+}
+
+tile{
+  layer = 0,
+  x = 1824,
+  y = 1256,
+  width = 32,
+  height = 24,
+  pattern = "54",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = 1248,
+  width = 32,
+  height = 24,
+  pattern = "56",
+}
+
+tile{
+  layer = 0,
+  x = 1784,
+  y = 1344,
+  width = 32,
+  height = 24,
+  pattern = "54",
+}
+
+tile{
+  layer = 0,
+  x = 1872,
+  y = 1344,
+  width = 32,
+  height = 24,
+  pattern = "56",
+}
+
+tile{
+  layer = 0,
+  x = 1816,
+  y = 1272,
+  width = 8,
+  height = 8,
+  pattern = "519",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1808,
+  y = 1280,
+  width = 8,
+  height = 8,
+  pattern = "520",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1872,
+  y = 1272,
+  width = 16,
+  height = 16,
+  pattern = "526",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 1264,
+  width = 8,
+  height = 8,
+  pattern = "521",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1752,
+  y = 1264,
+  width = 8,
+  height = 8,
+  pattern = "515",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1776,
+  y = 1360,
+  width = 8,
+  height = 8,
+  pattern = "515",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1816,
+  y = 1360,
+  width = 8,
+  height = 8,
+  pattern = "519",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1808,
+  y = 1368,
+  width = 8,
+  height = 8,
+  pattern = "520",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1864,
+  y = 1360,
+  width = 8,
+  height = 8,
+  pattern = "521",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = 1272,
+  width = 8,
+  height = 8,
+  pattern = "521",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1896,
+  y = 1248,
+  width = 8,
+  height = 8,
+  pattern = "520",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1904,
+  y = 1344,
+  width = 8,
+  height = 8,
+  pattern = "520",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1896,
+  y = 1360,
+  width = 16,
+  height = 8,
+  pattern = "560",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 1272,
+  width = 16,
+  height = 16,
+  pattern = "2148",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1776,
+  y = 1272,
+  width = 8,
+  height = 8,
+  pattern = "520",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1776,
+  y = 1280,
+  width = 16,
+  height = 8,
+  pattern = "528",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1920,
+  y = 1224,
+  width = 16,
+  height = 16,
+  pattern = "195",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1912,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "626",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1928,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "624",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1912,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "619",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1928,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "622",
+  tileset = "indoors_stone",
+}
+
 separator{
   layer = 0,
   x = 408,
@@ -28864,6 +29128,57 @@ enemy{
   breed = "normal_enemies/gravel_guy",
 }
 
+enemy{
+  layer = 0,
+  x = 1760,
+  y = 1357,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 1904,
+  y = 1301,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 1832,
+  y = 1357,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 1864,
+  y = 1317,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+chest{
+  layer = 0,
+  x = 1768,
+  y = 1277,
+  treasure_name = "rupee",
+  treasure_variant = 3,
+  treasure_savegame_variable = "pirate_vault_rocky_room_optional_treasure",
+  sprite = "entities/chest",
+}
+
+npc{
+  layer = 0,
+  x = 1928,
+  y = 1245,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_ballast_harbor.observations.pirate_vault.live_rock1",
+}
+
 tile{
   layer = 1,
   x = 2392,
@@ -35445,6 +35760,60 @@ tile{
   height = 8,
   pattern = "61",
   tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 1792,
+  y = 1224,
+  width = 32,
+  height = 24,
+  pattern = "57",
+}
+
+tile{
+  layer = 1,
+  x = 1760,
+  y = 1240,
+  width = 32,
+  height = 8,
+  pattern = "55",
+}
+
+tile{
+  layer = 1,
+  x = 1824,
+  y = 1248,
+  width = 32,
+  height = 8,
+  pattern = "55",
+}
+
+tile{
+  layer = 1,
+  x = 1856,
+  y = 1224,
+  width = 32,
+  height = 24,
+  pattern = "57",
+}
+
+tile{
+  layer = 1,
+  x = 1784,
+  y = 1336,
+  width = 32,
+  height = 8,
+  pattern = "55",
+}
+
+tile{
+  layer = 1,
+  x = 1872,
+  y = 1320,
+  width = 32,
+  height = 24,
+  pattern = "57",
 }
 
 crystal{

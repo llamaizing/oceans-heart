@@ -11,7 +11,10 @@ function hero_meta:on_taking_damage(damage)
   local game = self:get_game()
   local defense = game:get_value("defense")
     damage = math.floor(damage*2 / defense)
-    if damage <= 0 then
+    if game.take_half_damage then
+      damage = damage / 2
+    end
+    if damage < 1 then
       damage = 1
     end
   game:remove_life(damage)

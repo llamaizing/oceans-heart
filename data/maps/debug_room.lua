@@ -17,6 +17,11 @@ map:register_event("on_started", function()
   HIDETHESE:set_visible(false)
 end)
 
+function shopkeeper:on_interaction()
+  local shop_menu = require("scripts/shops/shop_menu")
+  shop_menu:initialize(game)
+  sol.menu.start(map, shop_menu)
+end
 
 function camera_shaker:on_interaction()
   map:get_camera():shake({count = 6, amplitude = 4, speed = 80})

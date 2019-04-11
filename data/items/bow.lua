@@ -27,6 +27,7 @@ end
 function item:on_obtained()
   game:set_value("bow_damage", 1)
   self:add_amount(20)
+  game:set_value("available_in_shop_arrows", true)
 end
 
 

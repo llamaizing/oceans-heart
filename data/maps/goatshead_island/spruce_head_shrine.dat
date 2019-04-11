@@ -38050,7 +38050,7 @@ tile{
 tile{
   layer = 1,
   x = 1032,
-  y = 312,
+  y = 320,
   width = 16,
   height = 16,
   pattern = "413",
@@ -38167,7 +38167,7 @@ tile{
 tile{
   layer = 1,
   x = 976,
-  y = 288,
+  y = 296,
   width = 16,
   height = 16,
   pattern = "418",
@@ -38446,7 +38446,7 @@ tile{
 tile{
   layer = 1,
   x = 1024,
-  y = 304,
+  y = 312,
   width = 16,
   height = 16,
   pattern = "416",
@@ -38483,15 +38483,6 @@ tile{
   layer = 1,
   x = 1048,
   y = 360,
-  width = 16,
-  height = 16,
-  pattern = "415",
-}
-
-tile{
-  layer = 1,
-  x = 1048,
-  y = 288,
   width = 16,
   height = 16,
   pattern = "415",
@@ -53106,33 +53097,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1128,
-  y = 368,
-  width = 8,
-  height = 16,
-  pattern = "296",
-}
-
-tile{
-  layer = 1,
-  x = 1104,
-  y = 368,
-  width = 8,
-  height = 16,
-  pattern = "297",
-}
-
-tile{
-  layer = 1,
-  x = 1112,
-  y = 368,
-  width = 16,
-  height = 24,
-  pattern = "293",
-}
-
-tile{
-  layer = 1,
   x = 1104,
   y = 296,
   width = 8,
@@ -53819,33 +53783,6 @@ tile{
   layer = 1,
   x = 1432,
   y = 376,
-  width = 16,
-  height = 24,
-  pattern = "293",
-}
-
-tile{
-  layer = 1,
-  x = 1048,
-  y = 368,
-  width = 8,
-  height = 16,
-  pattern = "296",
-}
-
-tile{
-  layer = 1,
-  x = 1024,
-  y = 368,
-  width = 8,
-  height = 16,
-  pattern = "297",
-}
-
-tile{
-  layer = 1,
-  x = 1032,
-  y = 368,
   width = 16,
   height = 24,
   pattern = "293",
@@ -55302,16 +55239,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 992,
-  y = 288,
-  width = 32,
-  height = 24,
-  pattern = "272",
-}
-
-tile{
-  layer = 1,
-  x = 1024,
+  x = 984,
   y = 280,
   width = 32,
   height = 24,
@@ -55320,17 +55248,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1056,
-  y = 384,
-  width = 32,
-  height = 24,
-  pattern = "272",
-}
-
-tile{
-  layer = 1,
-  x = 1088,
-  y = 400,
+  x = 1016,
+  y = 272,
   width = 32,
   height = 24,
   pattern = "272",
@@ -55491,8 +55410,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1128,
-  y = 304,
+  x = 1120,
+  y = 312,
   width = 32,
   height = 16,
   pattern = "1587",
@@ -55509,17 +55428,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1056,
+  x = 1016,
   y = 288,
-  width = 16,
-  height = 16,
-  pattern = "1579",
-}
-
-tile{
-  layer = 1,
-  x = 1040,
-  y = 296,
   width = 16,
   height = 16,
   pattern = "1588",
@@ -62338,6 +62248,96 @@ tile{
   pattern = "2089",
 }
 
+tile{
+  layer = 1,
+  x = 1000,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "1579",
+}
+
+tile{
+  layer = 1,
+  x = 1096,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "415",
+}
+
+tile{
+  layer = 1,
+  x = 992,
+  y = 360,
+  width = 16,
+  height = 24,
+  pattern = "293",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 360,
+  width = 8,
+  height = 16,
+  pattern = "297",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 360,
+  width = 8,
+  height = 16,
+  pattern = "296",
+}
+
+tile{
+  layer = 1,
+  x = 1064,
+  y = 384,
+  width = 32,
+  height = 24,
+  pattern = "272",
+}
+
+tile{
+  layer = 1,
+  x = 1088,
+  y = 408,
+  width = 32,
+  height = 24,
+  pattern = "272",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 304,
+  width = 32,
+  height = 24,
+  pattern = "272",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 376,
+  width = 32,
+  height = 24,
+  pattern = "272",
+}
+
+tile{
+  layer = 1,
+  x = 976,
+  y = 408,
+  width = 32,
+  height = 24,
+  pattern = "272",
+}
+
 pickable{
   layer = 1,
   x = 168,
@@ -62932,8 +62932,8 @@ wall{
 
 enemy{
   layer = 1,
-  x = 1072,
-  y = 325,
+  x = 1048,
+  y = 437,
   direction = 0,
   breed = "normal_enemies/bat_1",
 }
@@ -62958,16 +62958,16 @@ wall{
 
 enemy{
   layer = 1,
-  x = 1152,
-  y = 357,
+  x = 1080,
+  y = 421,
   direction = 0,
   breed = "normal_enemies/bat_1",
 }
 
 enemy{
   layer = 1,
-  x = 1008,
-  y = 413,
+  x = 1056,
+  y = 349,
   direction = 0,
   breed = "normal_enemies/bat_1",
 }
@@ -63432,6 +63432,15 @@ enemy{
   y = 565,
   direction = 0,
   breed = "normal_enemies/rambleshroom",
+}
+
+chest{
+  layer = 1,
+  x = 1072,
+  y = 301,
+  treasure_name = "barrier",
+  treasure_savegame_variable = "spruce_head_shrine_barrier_charm_chest_state",
+  sprite = "entities/chest_big",
 }
 
 tile{
@@ -64976,33 +64985,6 @@ tile{
 tile{
   layer = 2,
   x = 1096,
-  y = 368,
-  width = 8,
-  height = 16,
-  pattern = "298",
-}
-
-tile{
-  layer = 2,
-  x = 1136,
-  y = 368,
-  width = 8,
-  height = 16,
-  pattern = "299",
-}
-
-tile{
-  layer = 2,
-  x = 1096,
-  y = 328,
-  width = 48,
-  height = 40,
-  pattern = "279",
-}
-
-tile{
-  layer = 2,
-  x = 1096,
   y = 296,
   width = 8,
   height = 16,
@@ -65205,33 +65187,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "1497",
-}
-
-tile{
-  layer = 2,
-  x = 1016,
-  y = 368,
-  width = 8,
-  height = 16,
-  pattern = "298",
-}
-
-tile{
-  layer = 2,
-  x = 1056,
-  y = 368,
-  width = 8,
-  height = 16,
-  pattern = "299",
-}
-
-tile{
-  layer = 2,
-  x = 1016,
-  y = 328,
-  width = 48,
-  height = 40,
-  pattern = "279",
 }
 
 tile{
@@ -65488,16 +65443,7 @@ tile{
 
 tile{
   layer = 2,
-  x = 992,
-  y = 264,
-  width = 32,
-  height = 24,
-  pattern = "273",
-}
-
-tile{
-  layer = 2,
-  x = 1024,
+  x = 984,
   y = 256,
   width = 32,
   height = 24,
@@ -65506,17 +65452,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 1056,
-  y = 360,
-  width = 32,
-  height = 24,
-  pattern = "273",
-}
-
-tile{
-  layer = 2,
-  x = 1088,
-  y = 376,
+  x = 1016,
+  y = 248,
   width = 32,
   height = 24,
   pattern = "273",
@@ -67059,6 +66996,78 @@ tile{
   width = 24,
   height = 8,
   pattern = "691",
+}
+
+tile{
+  layer = 2,
+  x = 976,
+  y = 320,
+  width = 48,
+  height = 40,
+  pattern = "279",
+}
+
+tile{
+  layer = 2,
+  x = 1016,
+  y = 360,
+  width = 8,
+  height = 16,
+  pattern = "299",
+}
+
+tile{
+  layer = 2,
+  x = 976,
+  y = 360,
+  width = 8,
+  height = 16,
+  pattern = "298",
+}
+
+tile{
+  layer = 2,
+  x = 1064,
+  y = 360,
+  width = 32,
+  height = 24,
+  pattern = "273",
+}
+
+tile{
+  layer = 2,
+  x = 1088,
+  y = 384,
+  width = 32,
+  height = 24,
+  pattern = "273",
+}
+
+tile{
+  layer = 2,
+  x = 1152,
+  y = 280,
+  width = 32,
+  height = 24,
+  pattern = "273",
+}
+
+tile{
+  layer = 2,
+  x = 1008,
+  y = 352,
+  width = 32,
+  height = 24,
+  pattern = "273",
+}
+
+tile{
+  layer = 2,
+  x = 976,
+  y = 384,
+  width = 32,
+  height = 24,
+  pattern = "273",
 }
 
 dynamic_tile{
