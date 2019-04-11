@@ -37755,6 +37755,16 @@ wall{
   stops_hero = true,
 }
 
+npc{
+  layer = 0,
+  x = 736,
+  y = 1221,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/max",
+  behavior = "dialog#_generic_dialogs.max.oakhaven",
+}
+
 tile{
   layer = 1,
   x = 984,

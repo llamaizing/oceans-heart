@@ -1501,6 +1501,59 @@ Hey!
 }
 
 dialog{
+  id = "_generic_dialogs.max.isle_of_storms",
+  text = [[
+MAX:
+Well hey there! It's me, Max, the game
+developer. Thanks for getting all the
+way here! This is where the final area of
+MAX:
+the game starts! I haven't built it yet,
+so feel free to catch a ride back with
+Morus and keep looking for sidequests.
+MAX:
+And let me know what you think! What's
+rough, what's boring, what's most engaging?
+Thanks so much for playing!
+]],
+}
+
+dialog{
+  id = "_generic_dialogs.max.oakhaven",
+  text = [[
+MAX:
+Hey, it's me, Max. The game developer.
+Just wanted to let you know that this
+area doesn't have all it's general
+MAX:
+townspeople yet. It's still full of
+sidequests and main characters, but the
+people walking around the market or
+MAX:
+sitting around a tavern aren't yet in
+place. It shouldn't affect the game in
+any way other than atmosphere, or the
+MAX:
+subtle clues they might have given you.
+Anyway, thanks for playing!
+]],
+}
+
+dialog{
+  id = "_generic_dialogs.max.unfinished_area",
+  text = [[
+MAX:
+Hey, it's me, Max. The game developer.
+Just wanted to let you know that this
+aren't is quite finished yet. Anything
+MAX:
+you need for the main quest or any side
+quests you've started elsewhere is here,
+but there's still a little bit of work left.
+]],
+}
+
+dialog{
   id = "_generic_dialogs.out_of_bounds",
   text = [[
 It's a hobby of mine to hang out places

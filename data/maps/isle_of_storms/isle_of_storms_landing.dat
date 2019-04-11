@@ -198,6 +198,35 @@ tile{
   tileset = "oceanheart_outdoors_1",
 }
 
+tile{
+  layer = 0,
+  x = 72,
+  y = 32,
+  width = 144,
+  height = 64,
+  pattern = "411",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 40,
+  width = 48,
+  height = 24,
+  pattern = "1937",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 40,
+  width = 48,
+  height = 24,
+  pattern = "1937",
+  tileset = "overworld_oakhaven",
+}
+
 npc{
   layer = 0,
   x = 128,
@@ -223,5 +252,35 @@ destination{
   x = 136,
   y = 141,
   direction = 1,
+}
+
+npc{
+  layer = 0,
+  x = 144,
+  y = 69,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/max",
+  behavior = "dialog#_generic_dialogs.max.oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = -40,
+  width = 80,
+  height = 80,
+  pattern = "1938",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = -40,
+  width = 80,
+  height = 80,
+  pattern = "1938",
+  tileset = "overworld_oakhaven",
 }
 

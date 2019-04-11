@@ -12,7 +12,6 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
+  require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "birds")
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
 end)

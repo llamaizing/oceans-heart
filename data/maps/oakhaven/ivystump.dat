@@ -18385,6 +18385,16 @@ teletransporter{
   destination = "from_outside",
 }
 
+npc{
+  layer = 0,
+  x = 424,
+  y = 885,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/max",
+  behavior = "dialog#_generic_dialogs.max.unfinished_area",
+}
+
 tile{
   layer = 1,
   x = 216,

@@ -907,6 +907,7 @@ sprite{ id = "npc/man/man_9.7", description = "npc/man/man_9.7" }
 sprite{ id = "npc/man/man_9.8", description = "npc/man/man_9.8" }
 sprite{ id = "npc/man/man_red_herring_1", description = "Man-Red Herring 1" }
 sprite{ id = "npc/man/man_red_herring_2", description = "Man-Red Herring 2" }
+sprite{ id = "npc/max", description = "Max" }
 sprite{ id = "npc/mayor_oakhaven", description = "Mayor of Oakhaven" }
 sprite{ id = "npc/mayor_oakhaven_sad", description = "Mayor of Oakhaven-Sad" }
 sprite{ id = "npc/morus", description = "Morus" }
