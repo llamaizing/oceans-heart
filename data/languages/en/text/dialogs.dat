@@ -3185,6 +3185,14 @@ to sell.
 }
 
 dialog{
+  id = "_goatshead.npcs.market_people.shop",
+  text = [[
+Looking for some supplies? Have a look
+at my stuff.
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.overworld.bomb_rocks_guy_1",
   text = [[
 GERALD:

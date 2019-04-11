@@ -18367,6 +18367,24 @@ sensor{
   height = 32,
 }
 
+destination{
+  name = "from_shop",
+  layer = 0,
+  x = 264,
+  y = 637,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 256,
+  y = 608,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/ivystump_interiors/shop",
+  destination = "from_outside",
+}
+
 tile{
   layer = 1,
   x = 216,
@@ -20273,14 +20291,5 @@ tile{
   width = 16,
   height = 16,
   pattern = "1106",
-}
-
-tile{
-  layer = 2,
-  x = -136,
-  y = -80,
-  width = 880,
-  height = 1232,
-  pattern = "606",
 }
 

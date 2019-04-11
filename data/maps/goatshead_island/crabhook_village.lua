@@ -15,19 +15,8 @@ map:register_event("on_started", function()
 
 end)
 
---Carrot Salesman
-function salesman:on_interaction()
-  game:start_dialog("_goatshead.npcs.crabhook.salesman", function(answer)
-    if answer == 2 then
-      if game:get_money() >= 5 then
-        game:add_life(3)
-        game:remove_money(5)
-      else
-        game:start_dialog("_game.insufficient_funds")
-      end
-    end
-  end)
-end
+----------SHOP---------
+
 
 
 function armor_sale:on_interaction()

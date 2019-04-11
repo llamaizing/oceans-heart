@@ -1099,51 +1099,6 @@ npc{
   behavior = "dialog#_oakhaven.npcs.shops.general_store.1",
 }
 
-npc{
-  name = "bomb_sale",
-  layer = 0,
-  x = 168,
-  y = 77,
-  direction = 3,
-  subtype = 1,
-}
-
-npc{
-  name = "bomb_sale_2",
-  layer = 0,
-  x = 184,
-  y = 77,
-  direction = 3,
-  subtype = 1,
-}
-
-npc{
-  name = "arrow_sale",
-  layer = 0,
-  x = 232,
-  y = 133,
-  direction = 3,
-  subtype = 1,
-}
-
-npc{
-  name = "arrow_sale_2",
-  layer = 0,
-  x = 248,
-  y = 133,
-  direction = 3,
-  subtype = 1,
-}
-
-npc{
-  name = "apple_sale",
-  layer = 0,
-  x = 136,
-  y = 109,
-  direction = 3,
-  subtype = 1,
-}
-
 destructible{
   layer = 0,
   x = 136,

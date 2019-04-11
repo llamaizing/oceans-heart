@@ -936,6 +936,85 @@ tile{
   pattern = "217",
 }
 
+tile{
+  layer = 0,
+  x = 176,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "1585",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "1584",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 72,
+  width = 16,
+  height = 24,
+  pattern = "2126",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "180",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "2138",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "939",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "2137",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "2133",
+  tileset = "overworld_oakhaven",
+}
+
 destination{
   name = "from_outside",
   layer = 0,
@@ -952,24 +1031,6 @@ teletransporter{
   height = 16,
   destination_map = "Yarrowmouth/yarrowmouth_village",
   destination = "from_shop",
-}
-
-npc{
-  name = "bomb_sale",
-  layer = 0,
-  x = 160,
-  y = 69,
-  direction = 3,
-  subtype = 1,
-}
-
-npc{
-  name = "bomb_sale_2",
-  layer = 0,
-  x = 176,
-  y = 69,
-  direction = 3,
-  subtype = 1,
 }
 
 npc{
@@ -1006,25 +1067,6 @@ npc{
   y = 109,
   direction = 3,
   subtype = 1,
-  behavior = "dialog#_yarrowmouth.npcs.town_people.shopkeeper_1",
-}
-
-npc{
-  name = "apple_sale",
-  layer = 0,
-  x = 168,
-  y = 117,
-  direction = 3,
-  subtype = 1,
-}
-
-npc{
-  layer = 0,
-  x = 168,
-  y = 109,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/apple",
 }
 
 tile{
@@ -1162,6 +1204,57 @@ tile{
   pattern = "158",
 }
 
+tile{
+  layer = 1,
+  x = 144,
+  y = 64,
+  width = 16,
+  height = 8,
+  pattern = "2127",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "2134",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "1091",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 248,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "1091",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 40,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1091",
+  tileset = "overworld_oakhaven",
+}
+
 npc{
   layer = 1,
   x = 216,
@@ -1178,50 +1271,5 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "entities/vase_arrows",
-}
-
-npc{
-  layer = 1,
-  x = 160,
-  y = 53,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/bomb",
-}
-
-npc{
-  layer = 1,
-  x = 176,
-  y = 53,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/bomb",
-}
-
-npc{
-  layer = 1,
-  x = 168,
-  y = 61,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/bomb",
-}
-
-npc{
-  layer = 1,
-  x = 160,
-  y = 101,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/apple",
-}
-
-npc{
-  layer = 1,
-  x = 176,
-  y = 101,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/apple",
 }
 

@@ -130,6 +130,7 @@ map{ id = "goatshead_island/interiors/CV_witch", description = "Crabhook - Witch
 map{ id = "goatshead_island/interiors/alchemist", description = "Alchemist" }
 map{ id = "goatshead_island/interiors/armorer", description = "armorer" }
 map{ id = "goatshead_island/interiors/brute_hq", description = "Brute Squad HQ" }
+map{ id = "goatshead_island/interiors/cv_shop", description = "CV Shop" }
 map{ id = "goatshead_island/interiors/flower_shop", description = "Flower Shop" }
 map{ id = "goatshead_island/interiors/inn", description = "Juneberry Inn" }
 map{ id = "goatshead_island/interiors/merchant_hq", description = "Merchant HQ" }
@@ -216,6 +217,7 @@ map{ id = "oakhaven/interiors/tailor", description = "Tailor" }
 map{ id = "oakhaven/ivystump", description = "Ivystump Village" }
 map{ id = "oakhaven/ivystump_interiors/lamia", description = "Lamia's House" }
 map{ id = "oakhaven/ivystump_interiors/sawmill", description = "Sawmill" }
+map{ id = "oakhaven/ivystump_interiors/shop", description = "Shop" }
 map{ id = "oakhaven/marble_summit", description = "Marble Summit" }
 map{ id = "oakhaven/marblecliff", description = "Marblecliff" }
 map{ id = "oakhaven/oakhaven", description = "Oakhaven City" }
