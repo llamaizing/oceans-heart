@@ -13,6 +13,10 @@ local hero = map:get_hero()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
+  if game:get_value("boomerang_fort_boss_killed") then
+    boomerang_boss:set_enabled(false)
+    map:set_doors_open("fort_boss_door")
+  end
   if game:get_value("talked_to_ilex_1") == true then gate:set_enabled(false) end
   bait_monster:set_enabled(false)
 
@@ -36,4 +40,26 @@ function bait_monster:on_dead()
     game:set_value("danley_convo_counter", 2)
     game:set_value("quest_crabhook_shoal_monster", 3) --quest log
   end
+end
+
+
+
+----Fort------
+function fort_switch_1:on_activated()
+  sol.audio.play_sound("switch")
+  map:focus_on(map:get_camera(), fort_door_1, function()
+    map:open_doors("fort_door_1")
+  end)
+end
+
+function fort_switch_2:on_activated()
+  sol.audio.play_sound("switch")
+  map:focus_on(map:get_camera(), fort_door_2, function()
+    map:open_doors("fort_door_2")
+  end)
+end
+
+function boomerang_boss:on_dead()
+  game:set_value("boomerang_fort_boss_killed", true)
+  map:open_doors("fort_boss_door")
 end

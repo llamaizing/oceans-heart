@@ -1,4 +1,5 @@
 local title_screen = {}
+local game_manager = require("scripts/game_manager")
 
 local background_sprite = sol.sprite.create("menus/title_screen/background")
 local sea_sparkle = sol.sprite.create("menus/title_screen/sea_sparkle")
@@ -61,7 +62,7 @@ function title_screen:on_started()
   end)
 
   text_surface:set_text("  Continue")
-  text_surface:draw(selection_surface, 0, 0)  
+  text_surface:draw(selection_surface, 0, 0)
   text_surface2:set_text("  New Game")
   text_surface2:draw(selection_surface, 0, 16)
 
@@ -115,7 +116,7 @@ function title_screen:on_draw(dst_surface)
 end
 
 
-function title_screen:on_command_pressed(command)
+function title_screen:on_key_pressed(command)
   if command == "down" then
       sol.audio.play_sound("cursor")
       cursor_index = cursor_index + 1
@@ -124,6 +125,21 @@ function title_screen:on_command_pressed(command)
       sol.audio.play_sound("cursor")
       cursor_index = cursor_index - 1
       if cursor_index <0 then cursor_index = MAX_CURSOR_INDEX end
+
+  elseif command == "space" then
+    --Continue
+    if cursor_index == 0 then
+      local game = game_manager:create("save1.dat")
+      sol.main:start_savegame(game)
+      sol.menu.stop(self)
+
+    --New Game
+    elseif cursor_index == 1 then
+      local game = game_manager:create("save1.dat", true)
+      sol.main:start_savegame(game)
+      sol.menu.stop(self)
+    end
+
   end
 
 end

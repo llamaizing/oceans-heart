@@ -585,7 +585,7 @@ dialog{
   id = "_ballast_harbor.npcs.kelpton.5",
   text = [[
 KELPTON:
-In the market for some sea charts? I've got 
+In the market for some sea charts? I've got
 great charts for the Isle of Lobb, or maybe...
 hey! Those charts you got, did you get
 KELPTON:
@@ -1057,7 +1057,7 @@ dialog{
 TIPSY PIRATE:
 I can't... what is going on here? *hic*
 This key is useless! It must be shaped
-like a.... different key or somthing, 
+like a.... different key or somthing,
 TIPSY PIRTAE:
 that's no good. How will I sleep? Where
 can I sleep without a bed?
@@ -1465,6 +1465,14 @@ dialog{
 }
 
 dialog{
+  id = "_game.seabird_door",
+  text = [[
+There's a faded lightning bolt carved
+into the stone.
+]],
+}
+
+dialog{
   id = "_game.tests_for_log.1",
   text = [[
 Find clues in Hourglass Fort
@@ -1476,6 +1484,14 @@ dialog{
   text = [[
 $? Continue
 $? New Game
+]],
+}
+
+dialog{
+  id = "_generic_dialogs.buyer_guy.1",
+  text = [[
+SALESMAN:
+Hey there! Looking to sell some items?
 ]],
 }
 
@@ -1497,6 +1513,29 @@ dialog{
   id = "_generic_dialogs.hey",
   text = [[
 Hey!
+]],
+}
+
+dialog{
+  id = "_generic_dialogs.max.beta_test_greeting",
+  text = [[
+MAX:
+Hey! It's me, Max, the developer. Thanks for
+beta testing the game! There's a couple things
+I want to let you know about. First, the
+controls. Besides the normal ones, the "s"
+keyboard key is how you save right now.
+Other than that, all normal functions should
+work with a gamepad. There's a couple keys
+for debugging situations. Should you find
+youself stuck in a wall, try pressing 't',
+it toggles on/off a traverse-through-walls
+mechanic. 'r' sets the walking speed REALLY
+fast. 'h' will heal you, and 'j' hurts you.
+Besides that, just let me know what you
+think! What's rough, what's boring, what
+parts you really liked, definitely if you
+find any bugs. Thanks!
 ]],
 }
 
@@ -2441,7 +2480,7 @@ Hey, got fresh-ish fish here! As fresh as
 can be smuggled into the city. I mean, you
 can pay the stupidly-taxed price for like,
 REAL fresh fish, or you can make do!
-Open your mind to the possibilities! 
+Open your mind to the possibilities!
 ]],
 }
 
@@ -2567,7 +2606,7 @@ a dockworker! Do you even lift crates? Haha,
 just kidding. The ferries are down here if
 GUARD:
 you're trying to get to Yarrowmouth or
-Oakhaven. 
+Oakhaven.
 ]],
 }
 
@@ -2801,6 +2840,90 @@ from Aster)
 GUARD:
 This $1is... Oh! $3Oh dear! Goodness, I need
 to leave! Excuse me!
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.heron_ghost.1",
+  text = [[
+GHOST:
+Who would drink from my well to test
+their worthiness?
+
+TILIA:
+Wait, to do what now?
+
+
+GHOST:
+Because of my ghost powers, I can tell
+you are a good person. You are worthy
+to be my champion.
+TILIA:
+That's a ghost power? Look, thanks for
+the compliment, I guess? But I'm not
+trying to be anyone's champion.
+GHOST:
+I am a hero of the past. My name is Heron.
+My champion, set my regrets at ease. I failed
+to withstand the Sea King in my life. My
+HERON:
+people and those I held closest paid with
+their lives for my failures. And now my
+tomb is overrun with monsters summoned from
+HERON:
+the abyss by the Sea King in his life.
+Please, purify my resting place. Take this
+key, cleanse Thrush Fort to the northeast.
+TILIA:
+Wait, what if I don't want-
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.heron_ghost.2",
+  text = [[
+HERON:
+My champion. Cleanse my resting place.
+Destroy the Sea King's abominations, which
+overrun Thrush Fort. Do you want directions?
+TILIA:
+Like, to Thrush Fort? Sure.
+
+
+HERON:
+Follow the east road through the Poplar
+Forest. North, past Spruce Head, you will
+find Thrush Fort. Farewell.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.heron_ghost.3",
+  text = [[
+HERON:
+You have done well, my champion. My soul is
+at rest knowing there are less of the
+twisted monstrosities the Sea King summoned
+HERON:
+into the world. However, many still remain.
+The gift of the Sea Bird can grow stronger.
+Seek out the Sea Bird's shrines, champion$1...$3
+TILIA:
+Sure thing, ghost.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.heron_ghost.well_choice",
+  text = [[
+There's an ancient well nestled among the
+trees. The water looks clear and cool.
+What will you do?
+
+$?Drop a few coins in
+$?Take a drink
+$?Spit in the well
+$?Nothing
 ]],
 }
 
@@ -3043,7 +3166,7 @@ dialog{
 OTHER KID:
 Hey, did you know there's a giant goat
 west of here? It's supposed to be a
-statue but it's alive! It ate Clyde! 
+statue but it's alive! It ate Clyde!
 ]],
 }
 
@@ -3220,7 +3343,7 @@ dialog{
   text = [[
 So, I'm really into Monster Geodes. You can
 use them to make jewlery, or even to season
-fish. Different types of rocky monsters drop 
+fish. Different types of rocky monsters drop
 them. I'll buy one from you for 5 crowns!
 (Sell her a monster geode?)
 $? Sell her one
@@ -3336,7 +3459,7 @@ dialog{
 ASTER:
 Since Crabhook finally has representation
 in the Merchants' Guild, I've got a lot of work
-to do. 
+to do.
 ]],
 }
 
@@ -3468,7 +3591,7 @@ contract- if I can show it was signed
 ASTER:
 under threat, it's invalid. Eamon must
 be keeping it in his personal office...
- 
+
 TILIA:
 Wait a second... I think I already found
 the contract you're taking about.
@@ -3534,7 +3657,7 @@ dialog{
 ASTER:
 As long as Eamon controls the town guard,
 he's going to get taxes from the people of
-Crabhook. We'll need to earn their alligence 
+Crabhook. We'll need to earn their alligence
 ASTER:
 somehow. It's said they only truely respect
 strength. I think you ought to go fight them
@@ -3775,7 +3898,7 @@ dialog{
 ADVENTURER:
 Some pirates have used these tunnels to
 sneak in and around Goatshead Harbor in
-the past. But we're really interested in who 
+the past. But we're really interested in who
 ADVENTURER:
 used them before that. They date back to
 the days of the Meurian kingdom, before the
@@ -4052,7 +4175,7 @@ hunting something. Am I right?
 TILIA:
 Uh, yeah. There's these pirates that fly a
 white hourglass on their flag. I'm trying to
-find them. 
+find them.
 THIESSON:
 No kidding? You don't seem to be alone. I ain't
 seen the pirates meself, but I was in Ballast
@@ -4243,7 +4366,7 @@ dialog{
   text = [[
 There's a letter here...
 Captain, bad news. We couldn't get into
-Thrust fort. Apparently it was locked from
+Thrush fort. Apparently it was locked from
 the inside hundreds of years ago by a
 guy called Heron, and only his ghost has
 the key. How can ghosts have keys?
@@ -4984,7 +5107,7 @@ myself.
 Nielson:
 Ah... Things just haven't been the same since
 the pirates attacked. Mallow's gone, the
-sanctuary is ruined... 
+sanctuary is ruined...
 Nielson:
 I can't figure out why the Hourglass Pirates
 raided our sanctuary. It's just an old temple.
@@ -5078,7 +5201,7 @@ dialog{
   id = "_limestone_island.npcs.tavern_couple.1.1",
   text = [[
 Man:
-It's been tough work, but everything's just 
+It's been tough work, but everything's just
 about built back up since the pirates
 attacked.
 Woman:
@@ -7139,7 +7262,7 @@ from one of them for me to check out? I'll
 be at the library.
 TILIA:
 No problem, Hazel. If that's what you need.
-  
+
 ]],
 }
 
@@ -8650,7 +8773,7 @@ MELINDA:
 Am I? Oh, you already cleaned them?
 I'm not wearing my glasses. Well, here's
 your tip.
-(You received one crown.) 
+(You received one crown.)
 ]],
 }
 
@@ -8914,7 +9037,7 @@ Helloooo. Welcome to Mare-Sur Tailor.
 And it looks like you've arrived just in time.
 Let's start trying to make that outfit fit you.
 TILIA:
-Excuse me? 
+Excuse me?
 
 
 TYLER:
@@ -11495,6 +11618,14 @@ in the area.
 }
 
 dialog{
+  id = "_treasure.key_thrush_fort.1",
+  text = [[
+You received an old stone key. The ghost
+implies it'll unlock Thrush Fort.
+]],
+}
+
+dialog{
   id = "_treasure.key_to_oakhaven.1",
   text = [[
 You received the key to Oakhaven.
@@ -12062,7 +12193,7 @@ dialog{
   id = "_yarrowmouth.npcs.eudicot.1",
   text = [[
 EUDICOT:
-Oh, eh? I didn't think anyone else would be 
+Oh, eh? I didn't think anyone else would be
 able to get in here. Well, I'll come clean, I'm
 just drinking all their gin.
 TILIA:
@@ -12819,7 +12950,7 @@ dialog{
   text = [[
 JERAH:
 If you're still looking for the Pirates, their
-hideout is on Kingsdown Isle. There's a 
+hideout is on Kingsdown Isle. There's a
 secret catacomb you can cut through,
 JERAH:
 if you found the key. The leftmost pillar
@@ -13568,7 +13699,7 @@ secret archives.
 !Head east from the ruins,
 !over the waterfalls.
 @Meet Hazel back at the inn.
-  
+
 ]],
 }
 
@@ -13604,7 +13735,7 @@ the location of the Isle of Storms
 @Find a way into the Sea King's
 sunken palace
 @Search for the Ocean's Heart
-  
+
 ]],
 }
 
@@ -13641,7 +13772,7 @@ the secret stash
 !side of the island
 @Return the whisky to
 your dad
-  
+
 ]],
 }
 
@@ -13654,7 +13785,7 @@ ride to Goatshead Harbor.
 @Meet Juglan at the pier
 @Investigate the Sodden
 Cormorant Tavern.
-  
+
 ]],
 }
 
@@ -13692,8 +13823,8 @@ sleeping draught.
 !mountain, near dangerous
 !plants
 @Bring the monkshood petals
-to the apothecary 
-    
+to the apothecary
+
 ]],
 }
 
@@ -13738,7 +13869,7 @@ the Pirate Council's hideout
 @Search for the Pirate
 Council's hideout
 @Find information on the
-Isle of Storms   
+Isle of Storms
 ]],
 }
 
@@ -13760,7 +13891,7 @@ center of the shrine
 Distillery
 !The distillery is on
 !Yarrowmouth Island
-    
+
 ]],
 }
 
@@ -13775,7 +13906,7 @@ amulet to catch the pirates.
 @!Look southwest of town
 !Around Gull Rock
 @Return the starfruit to Hazel
-    
+
 ]],
 }
 
@@ -13789,7 +13920,7 @@ you can find hornet honey.
 take their honey
 @Return the honey to
 Benjamin at the meadery
-    
+
 ]],
 }
 
@@ -13806,7 +13937,7 @@ youself into some other
 room, I guess?
 ?- Turns out the key went to
 ?Juneberry Inn on Goatshead.
-    
+
 ]],
 }
 
@@ -13861,7 +13992,7 @@ fisherman from Crabhook
 @Return to Danley to get paid
 !he's probably still at the
 !tavern in Crabhook
-    
+
 ]],
 }
 
@@ -13876,7 +14007,7 @@ some blacksmith tools.
 !Ferris recommends looking
 !in Ballast Harbor
 @Return the tools to Ferris
-    
+
 ]],
 }
 
@@ -13922,7 +14053,7 @@ your immense strength
 !on the north street in town
 @Check in with Aster
 
-    
+
 ]],
 }
 
@@ -13937,7 +14068,7 @@ it goes?
 key you found in the woods.
 ?- It went to an abandoned
 ?shack.
-    
+
 ]],
 }
 
@@ -13954,7 +14085,23 @@ is near the inn.
 @Defeat the big spider
 @Let the adventurers know the
 tunnels have been cleared
-    
+
+]],
+}
+
+dialog{
+  id = "quest.side.heron_well",
+  title = "Heron's Well",
+  text = [[
+The ghost of the hero Heron
+tasked you with cleaning
+Thrush Fort.
+@Unlock Thrust fort
+!It's north of Poplar
+!Forest, past Spruce Head
+@Destroy the monsters inside
+@Explore the tomb
+  
 ]],
 }
 
@@ -13971,7 +14118,7 @@ a lost lover back from sea.
 Naerreturn Bay.
 !It's on Yarrowmouth.
 @Board the ghost ship.
-  
+
 ]],
 }
 
@@ -14077,7 +14224,7 @@ and make sure monsters
 aren't attacking them
 @Beat up that monster!
 @Go see Gunther's show.
-    
+
 ]],
 }
 
@@ -14105,7 +14252,7 @@ been given to Aubrey
 @Be confident knowing
 you made the right
 decision
-    
+
 ]],
 }
 
@@ -14120,7 +14267,7 @@ unlocks a nearby door.
 ? - It was a locked
 ?lighthouse in the
 ?ruins.
-    
+
 ]],
 }
 
@@ -14137,7 +14284,7 @@ iron pinecone.
 the at the Yarrowmoth
 blacksmith and get some
 armor.
-    
+
 ]],
 }
 
@@ -14159,7 +14306,7 @@ Mighty Mead Maker
 !His meadery is just
 north of Ballast Harbor
 @Return to Briarwood
-    
+
 ]],
 }
 
@@ -14185,7 +14332,7 @@ with Yarrowmouth. Or you.
 !can find their hideout.
 @Let Nina know you defeated
 the pirate crew
-    
+
 ]],
 }
 
@@ -14198,7 +14345,7 @@ of stone shaped kind of like
 a bird beak.
 @Figure out where it may
 have come fom
-    
+
 ]],
 }
 

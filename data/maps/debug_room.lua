@@ -14,7 +14,6 @@ local game = map:get_game()
 map:register_event("on_started", function()
   local hero = game:get_hero()
   hero:set_walking_speed(96)
-  HIDETHESE:set_visible(false)
 end)
 
 function shopkeeper:on_interaction()
@@ -23,21 +22,18 @@ function shopkeeper:on_interaction()
   sol.menu.start(map, shop_menu)
 end
 
+function buyer:on_interaction()
+  local shop_menu = require("scripts/shops/sell_menu")
+  shop_menu:initialize(game)
+  sol.menu.start(map, shop_menu)
+end
+
 function camera_shaker:on_interaction()
   map:get_camera():shake({count = 6, amplitude = 4, speed = 80})
 end
 
-function current_switch:on_activated()
-  for e in map:get_entities("current_a") do
-    local new_direction = e:get_direction() + 4
-    if new_direction > 7 then new_direction = new_direction - 8 end
-    e:set_direction(new_direction)
-  end
-end
-function current_switch:on_inactivated()
-  for e in map:get_entities("current_a") do
-    local new_direction = e:get_direction() + 4
-    if new_direction > 7 then new_direction = new_direction - 8 end
-    e:set_direction(new_direction)
-  end
+function max:on_interaction()
+  game:start_dialog("_generic_dialogs.max.beta_test_greeting", function()
+    map:get_hero():teleport("new_limestone/tavern_upstairs", "destination")
+  end)
 end

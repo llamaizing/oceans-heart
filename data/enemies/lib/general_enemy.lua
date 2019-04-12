@@ -31,9 +31,11 @@
       --use_projectile_go_method, if true this will call projectile:go(angle to hero) and allow bouncing, so make sure
       --your projectile has a go(angle) method or else errors.
 --has_radial_attack, radial_attack_distance, radial_attack_cooldown, radial_attack_sound, radial_attack_num_projectiles,
-      --radial_attack_charge_time, radial_attack_shoot_delay, radial_attack_projectile_breed, 
+      --radial_attack_charge_time, radial_attack_shoot_delay, radial_attack_projectile_breed,
 --has_flail_attack, flail_attack_distance, flail_attack_cooldown,
 --optional: flail_wind_up_time, flail_sprite, flail_radius flail_max_rotations, flail_max_distance, flail_speed
+--has_boomerang_attack, boomerang_attack_distance, boomerang_attack_cooldown,
+--optional: boomerang_wind_up_time, boomerang_sprite, boomerang_max_distance, boomerang_speed
 
 --For a custom attack (TODO - debug custom attack, which sometimes results in the enemy stopping the check_hero() loop)
       --properties.has_custom_attack - For this script to check requirements, and if met, start the attack
@@ -62,6 +64,8 @@
   --optional: "orbit_attack_wind_up"
 --For flail attack
 --optional sprite:"flail_wind_up"
+--For boomerang attack:
+--optional sprite: "boomerang_wind_up"
 
 --TODO - allow to set a function as a property that is called for enemy:go_hero()
     --to allow more complex movements, such as circling the hero.
@@ -99,6 +103,7 @@ function behavior:create(enemy, properties)
   local can_orbit_attack = true
   local can_radial_attack = true
   local can_flail_attack = true
+  local can_boomerang_attack = true
   local attacking = false
   local currently_dashing = false
   local currently_teleporting = false
@@ -144,7 +149,7 @@ function behavior:create(enemy, properties)
     if not attacking then
       local near_hero = self:is_near_hero()
       enemy:check_to_break_circle()
-      
+
       if near_hero and not going_hero then
         going_hero = true
         self:go_hero()
@@ -219,11 +224,17 @@ function behavior:create(enemy, properties)
       self:orbit_attack()
       can_orbit_attack = false
       sol.timer.start(map, properties.orbit_attack_cooldown + math.random(1000), function() can_orbit_attack = true end)
-    
+
     elseif properties.has_radial_attack and can_radial_attack and dist_hero <= (properties.radial_attack_distance or 100) then
+      local rounds = properties.radial_attack_rounds or 1
       attacking = true
       going_hero = false
-      self:radial_attack()
+      for i = 1, rounds do
+        local round_delay = (properties.radial_attack_round_delay or 1500)
+        sol.timer.start(map, round_delay * i - round_delay, function()
+          self:radial_attack()
+        end)
+      end
       can_radial_attack = false
       sol.timer.start(map, properties.radial_attack_cooldown + math.random(800), function() can_radial_attack = true end)
 
@@ -233,6 +244,13 @@ function behavior:create(enemy, properties)
       self:flail_attack()
       can_flail_attack = false
       sol.timer.start(map, properties.flail_attack_cooldown + math.random(500), function() can_flail_attack = true end)
+
+    elseif properties.has_boomerang_attack and can_boomerang_attack and dist_hero <= properties.boomerang_attack_distance then
+      attacking = true
+      going_hero = false
+      self:boomerang_attack()
+      can_boomerang_attack = false
+      sol.timer.start(map, properties.boomerang_attack_cooldown + math.random(500), function() can_boomerang_attack = true end)
 
     end
 
@@ -395,7 +413,7 @@ end
       sol.timer.start(map, properties.summon_group_delay, function()
         local herox, heroy, herol = hero:get_position()
         map:create_enemy({
-          name = enemy_summon, layer = herol, x = herox, y = heroy, direction = 0, breed = properties.summon_breed, 
+          name = enemy_summon, layer = herol, x = herox, y = heroy, direction = 0, breed = properties.summon_breed,
         })
         i = i + 1
         if i < properties.summon_group_size then return true end
@@ -572,7 +590,7 @@ function enemy:flail_attack()
   enemy:stop_movement()
   local sprite = enemy:get_sprite()
   sprite:set_animation("wind_up")
-  if sprite:has_animation("flail_wind_up") then sprite:set_animation("flail_wind_up") end  
+  if sprite:has_animation("flail_wind_up") then sprite:set_animation("flail_wind_up") end
   sol.timer.start(map, properties.flail_wind_up_time or 500, function()
     sprite:set_animation("walking")
     if sprite:has_animation("attack") then
@@ -584,7 +602,7 @@ function enemy:flail_attack()
     --Actual Attack part:
     local x, y, layer = enemy:get_position()
     local flail = enemy:create_enemy({
-      x = x, y = y, layer = layer, direction = 0, breed = "misc/enemy_weapon"
+      x = 0, y = 0, layer = layer, direction = 0, breed = "misc/enemy_weapon"
     })
     flail:set_damage(enemy:get_damage())
     flail:create_sprite(properties.flail_sprite or "entities/spike_ball")
@@ -627,6 +645,70 @@ function enemy:flail_attack()
       end)
     end)
     m:set_radius(properties.flail_radius or 48)
+  end)
+end
+
+--Boomerang Attack
+function enemy:boomerang_attack()
+  enemy:stop_movement()
+  local sprite = enemy:get_sprite()
+  sprite:set_animation("wind_up")
+  if sprite:has_animation("boomerang_wind_up") then sprite:set_animation("boomerang_wind_up") end
+  sol.timer.start(map, properties.boomerang_wind_up_time or 500, function()
+    sprite:set_animation("walking")
+    if sprite:has_animation("shooting") then
+      sprite:set_animation("shooting", function() sprite:set_animation("walking") end)
+    end
+    if sprite:has_animation("boomerang_attack") then
+      sprite:set_animation("boomerang_attack", function() sprite:set_animation("walking") end)
+    end
+    --Actual Attack part:
+    local x, y, layer = enemy:get_position()
+    local boomerang = enemy:create_enemy({
+      name = "enemy_thrown_boomerang",
+      x = 0, y = 0, layer = layer, direction = 0, breed = "misc/enemy_weapon"
+    })
+    boomerang:set_damage(enemy:get_damage())
+    boomerang:set_obstacle_behavior("flying")
+    local sprite = boomerang:create_sprite("enemies/misc/boomerang")
+
+    --sound
+    sol.timer.start(enemy, 160, function()
+      if enemy:get_map():has_entities("enemy_thrown_boomerang") then
+        sol.audio.play_sound("boomerang")
+        return true
+      end
+    end)
+
+    local m2 = sol.movement.create("straight")
+    m2:set_angle(enemy:get_angle(hero))
+    m2:set_max_distance(properties.boomerang_max_distance or 128)
+    m2:set_speed(properties.boomerang_speed or 150)
+    m2:set_ignore_obstacles(false)
+    m2:start(boomerang, function()
+      sol.timer.start(map, 200, function()
+        local m3 = sol.movement.create("straight")
+        m3:set_angle(boomerang:get_angle(enemy))
+        m3:set_ignore_obstacles(true)
+        m3:set_speed(properties.boomerang_speed or 150)
+        m3:set_max_distance(properties.boomerang_max_distance or 128)
+        m3:start(boomerang, function()
+          boomerang:remove()
+          enemy:wrap_up_attack()
+          enemy:go_random()
+          enemy:check_hero()
+        end)
+      end)
+    end)
+
+    function m2:on_obstacle_reached()
+      sol.audio.play_sound("thunk1")
+      boomerang:remove()
+      enemy:wrap_up_attack()
+      enemy:go_random()
+      enemy:check_hero()
+    end
+
   end)
 end
 

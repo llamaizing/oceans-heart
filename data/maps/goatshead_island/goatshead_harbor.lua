@@ -141,6 +141,14 @@ function market_shop:on_interaction()
   end)
 end
 
+function buyer_guy:on_interaction()
+  game:start_dialog("_generic_dialogs.buyer_guy.1", function()
+    local sell_menu = require("scripts/shops/sell_menu")
+    sell_menu:initialize(game)
+    sol.menu.start(map, sell_menu)
+  end)
+end
+
 
 function upset_fisher:on_interaction()
   if game:get_value("two_eye_rock_shroom_defeated") == nil then
@@ -167,29 +175,6 @@ function postaster_fisher:on_interaction()
   game:start_dialog("_goatshead.npcs.fish_mongers.5", function() game:add_life(4) end)
 end
 
---GEODE buyer
-function geode_buyer:on_interaction()
-  game:start_dialog("_goatshead.npcs.market_people.geode_buyer.1", function(answer)
-    if answer == 2 then --sell 1
-      if game:get_item("geode"):get_amount() >= 1 then
-        game:get_item("geode"):remove_amount(1)
-        game:add_money(5)
-        game:start_dialog("_goatshead.npcs.market_people.geode_buyer.2")
-      else
-        game:start_dialog("_game.insufficient_items")
-      end
-    end
-    if answer == 3 then --sell 10
-      if game:get_item("geode"):get_amount() >= 10 then
-        game:get_item("geode"):remove_amount(10)
-        game:add_money(50)
-        game:start_dialog("_goatshead.npcs.market_people.geode_buyer.2")
-      else
-        game:start_dialog("_game.insufficient_items")
-      end
-    end
-  end)
-end
 
 --town guards
 function guard_1:on_interaction()

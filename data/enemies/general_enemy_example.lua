@@ -76,10 +76,12 @@ local properties = {
 
 --  has_radial_attack = true,
   radial_attack_projectile_breed = "misc/blue_fire",
-  radial_attack_cooldown = 3500,
+  radial_attack_cooldown = 8000,
   radial_attack_distance = 60,
   radial_attack_sound = "dash",
   radial_attack_num_projectiles = 6,
+  radial_attack_rounds = 1,
+  radial_attack_round_delay = 1000,
   radial_attack_charging_time = 1500,
   radial_attack_shoot_delay = 500,
   radial_attack_stop_while_charging = true,
@@ -92,6 +94,14 @@ local properties = {
   flail_radius = 56,
   flail_max_rotations = 2,
   flail_max_distance = 120, flail_speed = 200,
+
+--  has_boomerang_attack = true,
+  boomerang_attack_distance = 128,
+  boomerang_attack_cooldown = 3000,
+  boomerang_wind_up_time = 500,
+  boomerang_sprite = "entities/boomerang1",
+  boomerang_max_distance = 120,
+  boomerang_speed = 150,
   
 
 }
