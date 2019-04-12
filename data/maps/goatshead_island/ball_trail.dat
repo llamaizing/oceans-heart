@@ -7490,24 +7490,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 376,
-  y = 856,
-  width = 16,
-  height = 16,
-  pattern = "262",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 864,
-  width = 16,
-  height = 16,
-  pattern = "512",
-}
-
-tile{
-  layer = 0,
   x = 368,
   y = 64,
   width = 16,
@@ -12780,6 +12762,24 @@ tile{
   pattern = "1879",
 }
 
+tile{
+  layer = 0,
+  x = 360,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "262",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "512",
+}
+
 destination{
   name = "from_ballast_harbor",
   layer = 0,
@@ -13878,15 +13878,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 376,
-  y = 840,
-  width = 16,
-  height = 16,
-  pattern = "253",
-}
-
-tile{
-  layer = 1,
   x = 736,
   y = 160,
   width = 32,
@@ -14387,5 +14378,14 @@ tile{
   width = 32,
   height = 32,
   pattern = "1880",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "253",
 }
 

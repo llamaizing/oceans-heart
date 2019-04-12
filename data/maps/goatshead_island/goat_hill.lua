@@ -9,9 +9,12 @@
 
 local map = ...
 local game = map:get_game()
+local hero = map:get_hero()
+local music
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+  music = sol.audio.get_music()
   if game:get_value("gtshd_music_headed_toward_town") == false then sol.audio.play_music("goatshead_harbor") end
 
   local random_walk = sol.movement.create("random_path")
@@ -41,11 +44,6 @@ function map:on_started()
 
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
-end
 
 function guard_3:on_interaction()
   if game:get_value("barbell_brutes_defeated") ~= true then
@@ -61,4 +59,95 @@ function guard_4:on_interaction()
   else
     game:start_dialog("_goatshead.npcs.guards.post_defeat.1")
   end
+end
+
+
+local function unsummon_heron()
+    local x, y, l = heron_ghost:get_position()
+    map:create_poof(x, y, l)
+    darkness:set_enabled(false)
+    ghost_smoke:set_enabled(false)
+    heron_ghost:set_enabled(false)
+    sol.audio.play_sound("thunder3")
+    sol.audio.play_sound("sea_spirit")
+    sol.audio.play_sound("summon_in")
+    hero:unfreeze()
+    sol.audio.play_music(music)
+end
+
+
+local function summon_heron()
+    sol.audio.stop_music()
+    heron_ghost:set_enabled(true)
+    ghost_smoke:set_enabled(true)
+    darkness:set_enabled(true)
+    heron_ghost:get_sprite():set_ignore_suspend(true)
+    ghost_smoke:get_sprite():set_ignore_suspend(true)
+    local x, y, l = heron_ghost:get_position()
+    map:create_poof(x, y, l)
+    sol.audio.play_sound("thunder3")
+    sol.audio.play_sound("sea_spirit")
+    sol.audio.play_sound("summon_in")
+    hero:freeze()
+    sol.timer.start(map, 800, function()
+
+      --receive the quest
+      if not game:get_value("quest_heron_well") then
+        game:start_dialog("_goatshead.npcs.heron_ghost.1", function()
+          hero:start_treasure("key_thrush_fort")
+          unsummon_heron()
+        end)
+
+      --if started quest
+      elseif game:get_value("quest_heron_well") == 0 then
+        game:start_dialog("_goatshead.npcs.heron_ghost.2", function()
+          unsummon_heron()
+        end)
+
+      elseif game:get_value("quest_heron_well") > 2 then
+        game:start_dialog("_goatshead.npcs.heron_ghost.3", function()
+
+        end)
+
+      end
+
+
+    end) --end timer
+end
+
+
+function well:on_interaction()
+  game:start_dialog("_goatshead.npcs.heron_ghost.well_choice", function(answer)
+    if answer == 1 then -- drop a few coins
+      game:remove_money(3)
+      sol.audio.play_sound("splash")
+
+    elseif answer == 2 then --take a drink
+      hero:freeze()
+      sol.audio.stop_music()
+      sol.audio.play_sound("swim")
+      sol.audio.play_sound("drink")
+      sol.timer.start(map, 2200, function()
+        hero:unfreeze()
+        summon_heron()
+      end)
+
+    elseif answer == 3 then --spit in the well
+      hero:freeze()
+      sol.audio.play_sound("spit")
+      sol.audio.play_sound("drip")
+      sol.timer.start(map, 1000, function()
+        hero:unfreeze()
+        local x, y, l = hero:get_position()
+        local zap = map:create_enemy({x=x,y=y+8,layer=l,direction=0,breed="enemy_weapon"})
+        zap:create_sprite("entities/lightning_bolt_attack")
+        sol.audio.play_sound("thunder1")
+      end)
+
+    elseif answer ==4 then --nothing
+
+    end
+  end)
+
+  
 end

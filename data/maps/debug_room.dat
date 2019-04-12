@@ -2972,7 +2972,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/yarrowmouth_village",
+  destination_map = "goatshead_island/goat_hill",
+  destination = "destination",
 }
 
 pickable{
@@ -4752,34 +4753,10 @@ npc{
 
 enemy{
   layer = 0,
-  x = 368,
-  y = 341,
-  direction = 0,
-  breed = "normal_enemies/skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 520,
-  y = 381,
-  direction = 0,
-  breed = "normal_enemies/skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 360,
-  y = 421,
-  direction = 0,
-  breed = "normal_enemies/skeleton_1",
-}
-
-enemy{
-  layer = 0,
-  x = 464,
-  y = 413,
-  direction = 0,
-  breed = "normal_enemies/skeleton_1",
+  x = 440,
+  y = 373,
+  direction = 3,
+  breed = "normal_enemies/squid_mage_1",
 }
 
 pickable{

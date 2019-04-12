@@ -1,16 +1,16 @@
 --[[ objectives.dat		23 Nov 2018
-	
+
 	This data file describes quests which are to be shown in the quest log menu. The quest
 	can be either a "main" quest or a "side" quest, where they get listed separately. Each
 	quest must define a dialog_id, which contains both the quest title and its description
 	text. It must also define calc_phase, which determines the progress of the quest (i.e.
 	the current phase value) based on the current state of save game variables (see below).
-	
+
 	The number of phases (subtasks) present in a quest is determined by the content of the
 	dialog_id text, which is equal to the number of lines beginning with the '@' character
 	(excluding whitespace). For more information on the content of the dialog construction
 	and syntax, see scripts/objectives_manager.lua.
-	
+
 	Possible entries main{} and side{} have the same properties that can be defined:
 	* dialog_id (string) - id of dialogs.dat entry that defines the title and description text
 	* calc_phase (string or table) - Specifies save game variable(s) to determine the current phase
@@ -47,43 +47,43 @@
 	* replace_v
 	* show_at_start (boolean, optional) - The player begins a new game with this quest already in their quest log (default: false)
 	]]
-	
+
 	--## Examples of Variable Substitution Values and Strings ##--
 	--[=[
-	
+
 	Take the following description string:
 	[[
 	Collect all the shards ($v1 of 3 found)
-	
+
 	Good luck, $v2
 	]]
-	
+
 	A simple substitution would be as follows:
 	replace_v = {
 		"num_shards_collected", --value is number 0 to 3
 		"player_name", --value is a string
 	}
-	
+
 	There is no callback function specified in this case, so the save game values are used
 	directly for the substitution. $v1 becomes the the number of shards that are collected
 	by the player, and $v2 becomes the player's name. Note that since the player will have
 	chosen their own name, it does not need to be localized. Ensure that the length of the
 	players name won't exceed the line's max character count.
-	
+
 	Here is a more complicated substitution using a custom function:
 	[[
 	Kill 10 monsters ($v1 remaining)
-	
+
 	$v2 of $v3 subtasks complete
 	]]
-	
+
 	The custom function for the substitution would be specified as follows:
 	replace_v = {
 		"monsters_killed", --value is a number
 		callback = function(args)
 			local num_monsters_killed = args[1] --current value of first savegame variable
 			local monsters_remaining = 10 - num_monsters_killed
-			
+
 			return {
 				math.max(monsters_remaining, 0), --ensure number is not negative
 				args.phase, --current phase, equals number of subtasks that are complete
@@ -91,20 +91,20 @@
 			}
 		end
 	}
-	
+
 	So some arithmetic is used to convert the number of monsters killed into the number of
 	monsters remaining. The current phase and the total number of phases are available for
 	the callback function as well.
-	
+
 	And finally, an example of substituting for string values from strings.dat:
 	[[
 	Peter is looking for a new fishing rod.
-	
+
 	$s1
-	
+
 	You $s2 enough coins.
 	]]
-	
+
 	replace_s = {
 		"bought_fishing_rod", --value is true or false
 		"number_of_coins", --value is a number
@@ -115,18 +115,18 @@
 			}
 		end
 	}
-	
+
 	--strings.dat
 	text{key="quest.finding_rod", value="You can buy a fishing rod at the general store."}
 	text{key="quest.finding_peter", value="You can find Peter at the pier"}
 	text{key="quest.have_enough", value="have"}
 	text{key="quest.not enough", value="do not have"}
-	
+
 	Since substituted strings need localization, the callback function returns strings.dat
 	keys this time instead of the direct string to be substituted. $s1 gets substituted by
 	a full line of text depending on whether the player obtained the fishing rod yet. Then
 	depending on whether the player has enough coins, $s2 becomes "do not have" or "have".
-	
+
 	Note that it is possible for a $s substitution to include $v in the substitution text,
 	which would then go through a second substitution. If a $s substitution has another $s
 	in the substituted text, it must only substitute for a higher value of $s than itself.
@@ -326,6 +326,12 @@ side{
 	dialog_id = "quest.side.oakhaven.master_thief",
 	calc_phase = "quest_mayors_dog",
 	location = "location.oakhaven"
+}
+
+side{
+	dialog_id = "quest.side.heron_well",
+	calc_phase = "quest_heron_well",
+	location = "location.goatshead_island"
 }
 
 side{

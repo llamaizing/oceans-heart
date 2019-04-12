@@ -528,6 +528,13 @@ animation{
   },
 }
 animation{
+  name = "key_thrush_fort",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "key_to_oakhaven",
   src_image = "entities/items.png",
   directions = {

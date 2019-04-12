@@ -14,7 +14,7 @@ local properties = {
   wind_up_time = 450,
   attack_sound = "sword2",
   must_be_aligned_to_attack = false,
-  push_hero_on_sword = true,
+  push_hero_on_sword = false,
   must_be_aligned_to_attack = true,
 
   has_melee_attack = true,

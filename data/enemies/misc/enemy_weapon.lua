@@ -18,3 +18,7 @@ end
 function enemy:on_restarted()
 
 end
+
+function enemy:set_sprite(sprite_path)
+  enemy:create_sprite(sprite_path)
+end

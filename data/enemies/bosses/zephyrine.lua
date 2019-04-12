@@ -58,6 +58,8 @@ properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)
 
 enemy:register_event("on_created", function()
+  local smoke_sprite = enemy:create_sprite("entities/ghost_smoke")
+  enemy:bring_sprite_to_back(smoke_sprite)
 --particle effect creation
   local i = 1
   sol.timer.start(map, math.random(100,250), function()
