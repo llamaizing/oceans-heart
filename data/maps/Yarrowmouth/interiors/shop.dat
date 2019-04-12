@@ -1015,6 +1015,26 @@ tile{
   tileset = "overworld_oakhaven",
 }
 
+tile{
+  layer = 0,
+  x = 240,
+  y = 128,
+  width = 32,
+  height = 16,
+  pattern = "345",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 120,
+  width = 32,
+  height = 8,
+  pattern = "346",
+  tileset = "indoors_cabin",
+}
+
 destination{
   name = "from_outside",
   layer = 0,
@@ -1067,6 +1087,16 @@ npc{
   y = 109,
   direction = 3,
   subtype = 1,
+}
+
+npc{
+  name = "buyer_guy",
+  layer = 0,
+  x = 240,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/buyer_guy",
 }
 
 tile{

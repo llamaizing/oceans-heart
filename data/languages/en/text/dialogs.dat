@@ -1488,6 +1488,14 @@ $? New Game
 }
 
 dialog{
+  id = "_generic_dialogs.buyer_guy.1",
+  text = [[
+SALESMAN:
+Hey there! Looking to sell some items?
+]],
+}
+
+dialog{
   id = "_generic_dialogs.eh",
   text = [[
 Eh?

@@ -22256,15 +22256,6 @@ tile{
 tile{
   layer = 0,
   x = 560,
-  y = 256,
-  width = 24,
-  height = 16,
-  pattern = "690",
-}
-
-tile{
-  layer = 0,
-  x = 560,
   y = 272,
   width = 16,
   height = 24,
@@ -24446,6 +24437,26 @@ tile{
   pattern = "686",
 }
 
+tile{
+  layer = 0,
+  x = 560,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "345",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 248,
+  width = 32,
+  height = 8,
+  pattern = "346",
+  tileset = "indoors_cabin",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -24648,16 +24659,6 @@ destructible{
 }
 
 npc{
-  name = "geode_buyer",
-  layer = 0,
-  x = 584,
-  y = 277,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/woman/woman_9.1",
-}
-
-npc{
   layer = 0,
   x = 856,
   y = 325,
@@ -24701,8 +24702,8 @@ npc{
 npc{
   name = "market_wanderer",
   layer = 0,
-  x = 616,
-  y = 301,
+  x = 624,
+  y = 325,
   direction = 3,
   subtype = 1,
   sprite = "npc/man/man_17.7",
@@ -25960,6 +25961,16 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/woman/woman_10.2",
+}
+
+npc{
+  name = "buyer_guy",
+  layer = 0,
+  x = 584,
+  y = 285,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/buyer_guy",
 }
 
 tile{
@@ -30367,15 +30378,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "924",
-}
-
-tile{
-  layer = 1,
-  x = 560,
-  y = 248,
-  width = 24,
-  height = 8,
-  pattern = "691",
 }
 
 tile{

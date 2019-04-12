@@ -632,6 +632,7 @@ sprite{ id = "npc/blacksmith_03", description = "Blacksmith 3" }
 sprite{ id = "npc/blacksmith_04", description = "Blacksmith 4 - stationary" }
 sprite{ id = "npc/bouncer_1", description = "bouncer 1" }
 sprite{ id = "npc/bouncer_2", description = "Bouncer 2" }
+sprite{ id = "npc/buyer_guy", description = "Buyer Guy" }
 sprite{ id = "npc/dockworker_1", description = "dockworker 1" }
 sprite{ id = "npc/dockworker_2", description = "dockworker 2" }
 sprite{ id = "npc/dockworker_3", description = "dockworker 3" }
