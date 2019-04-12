@@ -1509,6 +1509,29 @@ Hey!
 }
 
 dialog{
+  id = "_generic_dialogs.max.beta_test_greeting",
+  text = [[
+MAX:
+Hey! It's me, Max, the developer. Thanks for
+beta testing the game! There's a couple things
+I want to let you know about. First, the
+controls. Besides the normal ones, the "s"
+keyboard key is how you save right now.
+Other than that, all normal functions should
+work with a gamepad. There's a couple keys
+for debugging situations. Should you find
+youself stuck in a wall, try pressing 't',
+it toggles on/off a traverse-through-walls
+mechanic. 'r' sets the walking speed REALLY
+fast. 'h' will heal you, and 'j' hurts you.
+Besides that, just let me know what you
+think! What's rough, what's boring, what
+parts you really liked, definitely if you
+find any bugs. Thanks!
+]],
+}
+
+dialog{
   id = "_generic_dialogs.max.isle_of_storms",
   text = [[
 MAX:

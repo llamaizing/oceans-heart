@@ -128,11 +128,11 @@ function game_manager:create(file_name, overwrite_game)
 
       --DEBUG FUNCTIONS
     elseif key == "y" and DEBUG_MODE and game:has_item("sword") then
-      game:set_ability("sword_knowledge", 1)
-      hero:start_attack_loading(0)
-      sol.timer.start(game, 10, function()
-        game:set_ability("sword_knowledge", 0)
-      end)
+      -- game:set_ability("sword_knowledge", 1)
+      -- hero:start_attack_loading(0)
+      -- sol.timer.start(game, 10, function()
+      --   game:set_ability("sword_knowledge", 0)
+      -- end)
 
     elseif key == "r"  and DEBUG_MODE then
       if hero:get_walking_speed() == 300 then

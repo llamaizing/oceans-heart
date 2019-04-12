@@ -1965,8 +1965,8 @@ tile{
 destination{
   name = "destination",
   layer = 0,
-  x = 184,
-  y = 357,
+  x = 160,
+  y = 349,
   direction = 3,
 }
 
@@ -2043,29 +2043,11 @@ npc{
 
 block{
   layer = 0,
-  x = 152,
-  y = 381,
-  sprite = "entities/chairL",
-  pushable = true,
-  pullable = true,
-}
-
-block{
-  layer = 0,
   x = 208,
   y = 85,
   sprite = "entities/chairL",
   pushable = true,
   pullable = true,
-}
-
-sensor{
-  name = "chair_sensor",
-  layer = 0,
-  x = 168,
-  y = 373,
-  width = 16,
-  height = 48,
 }
 
 tile{
