@@ -36117,6 +36117,24 @@ teletransporter{
   destination = "from_outside",
 }
 
+destination{
+  name = "from_village_cave",
+  layer = 0,
+  x = 944,
+  y = 125,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 936,
+  y = 96,
+  width = 16,
+  height = 16,
+  destination_map = "Yarrowmouth/caves/village_cave",
+  destination = "from_outside",
+}
+
 tile{
   layer = 1,
   x = 456,

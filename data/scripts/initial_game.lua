@@ -58,6 +58,7 @@ function initial_game:initialize_new_savegame(game)
   game:set_value("available_in_shop_magic_restoring_potion", true)
   game:set_value("available_in_shop_stoneskin_potion", true)
   game:set_value("available_in_shop_burlyblade_potion", true)
+  game:set_value("available_in_shop_elixer", true)
 
 end
 
