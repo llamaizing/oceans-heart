@@ -2890,15 +2890,6 @@ pickable{
   treasure_variant = 3,
 }
 
-destination{
-  name = "starting_destination",
-  layer = 0,
-  x = 152,
-  y = 1117,
-  direction = 3,
-  default = true,
-}
-
 teletransporter{
   layer = 0,
   x = 88,
@@ -4618,19 +4609,11 @@ pickable{
 npc{
   name = "shopkeeper",
   layer = 0,
-  x = 584,
+  x = 560,
   y = 149,
   direction = 3,
   subtype = 1,
   sprite = "npc/jazari",
-}
-
-enemy{
-  layer = 0,
-  x = 440,
-  y = 373,
-  direction = 3,
-  breed = "normal_enemies/squid_mage_1",
 }
 
 pickable{
@@ -4711,6 +4694,57 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/max",
+}
+
+destination{
+  name = "starting_destination",
+  layer = 0,
+  x = 152,
+  y = 125,
+  direction = 3,
+  default = true,
+}
+
+npc{
+  name = "buyer",
+  layer = 0,
+  x = 584,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/phantom_squid",
+}
+
+pickable{
+  layer = 0,
+  x = 552,
+  y = 213,
+  treasure_name = "burdock",
+  treasure_variant = 3,
+}
+
+pickable{
+  layer = 0,
+  x = 536,
+  y = 221,
+  treasure_name = "chamomile",
+  treasure_variant = 3,
+}
+
+pickable{
+  layer = 0,
+  x = 520,
+  y = 213,
+  treasure_name = "witch_hazel",
+  treasure_variant = 3,
+}
+
+pickable{
+  layer = 0,
+  x = 504,
+  y = 221,
+  treasure_name = "mandrake",
+  treasure_variant = 3,
 }
 
 tile{

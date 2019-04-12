@@ -22,6 +22,12 @@ function shopkeeper:on_interaction()
   sol.menu.start(map, shop_menu)
 end
 
+function buyer:on_interaction()
+  local shop_menu = require("scripts/shops/sell_menu")
+  shop_menu:initialize(game)
+  sol.menu.start(map, shop_menu)
+end
+
 function camera_shaker:on_interaction()
   map:get_camera():shake({count = 6, amplitude = 4, speed = 80})
 end
