@@ -6,7 +6,7 @@ local FUSE_LENGTH = 2000
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/misc/energy_ball_small")
   enemy:set_life(1)
-  enemy:set_damage(4)
+  enemy:set_damage(3)
   enemy:set_origin(4, 4)
   enemy:set_obstacle_behavior("flying")
   enemy:set_can_hurt_hero_running(true)

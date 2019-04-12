@@ -38,6 +38,7 @@ map{ id = "Yarrowmouth/caves/marsh_cave", description = "Marsh Cave" }
 map{ id = "Yarrowmouth/caves/mushroom_cave", description = "Mushroom Cave" }
 map{ id = "Yarrowmouth/caves/naerreturn_cave", description = "Naerreturn Cave" }
 map{ id = "Yarrowmouth/caves/puzzlewood_cave_1", description = "Puzzlewood Cave 1" }
+map{ id = "Yarrowmouth/caves/seabird_shrine", description = "Seabird Shrine" }
 map{ id = "Yarrowmouth/caves/tern_marsh_ambush", description = "Marsh Ambush Cave" }
 map{ id = "Yarrowmouth/caves/warp_cave", description = "Warp Cave" }
 map{ id = "Yarrowmouth/foothills", description = "Foothills" }
@@ -180,6 +181,7 @@ map{ id = "oakhaven/caves/marblecliff_ruins", description = "Marblecliff Ruins" 
 map{ id = "oakhaven/caves/palace_tunnel", description = "Palace Tunnel" }
 map{ id = "oakhaven/caves/port_bush_hole", description = "Port Bush Hole" }
 map{ id = "oakhaven/caves/port_bush_hole_2", description = "Port Bush Hole 2" }
+map{ id = "oakhaven/caves/seabird_shrine_marblecliff", description = "Seabird Shrine Marblecliff" }
 map{ id = "oakhaven/caves/veilwood_health_upgrade_tunnel", description = "Veilwood Health Upgrade Tunnel" }
 map{ id = "oakhaven/caves/westoak_shrine", description = "Westoak Shrine" }
 map{ id = "oakhaven/caves/westoak_warp_cave", description = "Westoak Warp Cave" }
@@ -397,6 +399,8 @@ sprite{ id = "enemies/normal_enemies/skeleton_summoner", description = "Skeleton
 sprite{ id = "enemies/normal_enemies/spitrock_small", description = "Spitrock - Small" }
 sprite{ id = "enemies/normal_enemies/spitstump_small", description = "Spitstump - Small" }
 sprite{ id = "enemies/normal_enemies/squid_mage_1", description = "Squid Mage 1" }
+sprite{ id = "enemies/normal_enemies/squid_mage_2", description = "Squid Mage 2" }
+sprite{ id = "enemies/normal_enemies/squid_mage_3", description = "Squid Mage 2" }
 sprite{ id = "enemies/normal_enemies/stump_duck", description = "Stump Duck" }
 sprite{ id = "enemies/normal_enemies/sword_soldier_blue", description = "sword soldier blue" }
 sprite{ id = "enemies/normal_enemies/sword_soldier_blue_weapon", description = "sword soldier blue weapon" }

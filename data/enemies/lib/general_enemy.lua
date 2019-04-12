@@ -230,7 +230,6 @@ function behavior:create(enemy, properties)
       attacking = true
       going_hero = false
       for i = 1, rounds do
-        print(i .. " " .. rounds)
         local round_delay = (properties.radial_attack_round_delay or 1500)
         sol.timer.start(map, round_delay * i - round_delay, function()
           self:radial_attack()

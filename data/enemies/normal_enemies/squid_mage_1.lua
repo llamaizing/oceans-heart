@@ -52,7 +52,7 @@ local properties = {
   dash_attack_sound = "cane",
 
   has_radial_attack = true,
-  radial_attack_projectile_breed = "misc/energy_ball_small_black",
+  radial_attack_projectile_breed = "misc/energy_ball_small",
   radial_attack_cooldown = 6000,
   radial_attack_distance = 100,
   radial_attack_sound = "cane",
