@@ -53,10 +53,12 @@ local properties = {
 
   has_radial_attack = true,
   radial_attack_projectile_breed = "misc/energy_ball_black",
-  radial_attack_cooldown = 3000,
+  radial_attack_cooldown = 8000,
   radial_attack_distance = 200,
   radial_attack_sound = "cane",
   radial_attack_num_projectiles = 12,
+  radial_attack_rounds = 2,
+  radial_attack_round_delay = 500,
   radial_attack_charging_time = 1000,
   radial_attack_shoot_delay = 500,
   radial_attack_stop_while_charging = true,

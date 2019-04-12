@@ -9,16 +9,37 @@
 
 local map = ...
 local game = map:get_game()
+local hero = map:get_hero()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+map:register_event("on_started", function()
+  map:set_doors_open("door_1")
+  map:set_doors_open("door_3")
+  if game:has_item("thunder_charm") then
+    map:set_doors_open("door")
+    boss_sensor:set_enabled(false)
+    trap_2_sensor:set_enabled(false)
+    boss:set_enabled(false)
+  end
+end)
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+function boss_sensor:on_activated()
+  map:close_doors("door_1")
+  boss_sensor:set_enabled(false)
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
+function boss:on_dead()
+  map:open_doors("door_2")
+  for enemy in map:get_entities_by_type("enemy") do
+    enemy:remove()
+  end
+end
 
+
+function trap_2_sensor:on_activated()
+  map:close_doors("door_3")
+  trap_2_sensor:set_enabled(false)
+end
+
+function all_door_switch:on_activated()
+  map:open_doors("door")
 end

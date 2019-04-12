@@ -58,6 +58,16 @@ function item:on_using()
           end
       end
       hero:unfreeze()
+
+      local map = game:get_map()
+      if map:has_entities("seabird_tear_door") then
+        for door in map:get_entities("seabird_tear_door") do
+          local x, y, l = door:get_position()
+          map:create_poof(x + 8, y + 16, l + 1)
+          map:open_doors(door:get_name())
+        end
+      end
+
       item:set_finished()
 
     end) --end of warmup timer callback

@@ -49704,17 +49704,6 @@ destructible{
   can_be_cut = true,
 }
 
-door{
-  layer = 0,
-  x = 1304,
-  y = 768,
-  direction = 3,
-  sprite = "entities/door_locked",
-  savegame_variable = "thrush_fort_front_door_state",
-  opening_method = "interaction_if_item",
-  opening_condition = "key_thrush_fort",
-}
-
 npc{
   layer = 0,
   x = 2320,
@@ -50290,6 +50279,35 @@ enemy{
   y = 237,
   direction = 3,
   breed = "normal_enemies/pirate_gunner",
+}
+
+destination{
+  name = "from_thrush_fort",
+  layer = 0,
+  x = 1312,
+  y = 797,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1304,
+  y = 768,
+  width = 16,
+  height = 16,
+  destination_map = "goatshead_island/caves/thrush_fort",
+  destination = "from_outside",
+}
+
+door{
+  layer = 0,
+  x = 1304,
+  y = 768,
+  direction = 3,
+  sprite = "entities/door_locked",
+  savegame_variable = "thrush_fort_front_door_state",
+  opening_method = "interaction_if_item",
+  opening_condition = "key_thrush_fort",
 }
 
 tile{
