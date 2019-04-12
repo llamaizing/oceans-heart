@@ -10,7 +10,6 @@ local quest_update_icon = require"scripts/menus/quest_update_icon"
 local objectives_manager = require"scripts/objectives_manager"
 local dash_manager = require"scripts/action/dash_manager"
 local map_banner = require"scripts/menus/map_banner"
-local title_screen = require"scripts/menus/title_screen"
 
 local game_manager = {}
 
@@ -33,9 +32,9 @@ local QUEST_SOUNDS = {
 
 -- Starts the game from the given savegame file,
 -- initializing it if necessary.
-function game_manager:create(file_name)
-
+function game_manager:create(file_name, overwrite_game)
   local exists = sol.game.exists(file_name)
+  if overwrite_game then exists = false end
   local game = sol.game.load(file_name)
   if not exists then -- Initialize a new savegame.
     initial_game:initialize_new_savegame(game)
@@ -94,11 +93,11 @@ function game_manager:create(file_name)
     sol.timer.start(game, 300, function()
       if not game:is_suspended() then
         game:add_magic(1)
-      end  
+      end
       return true
     end)
   end
-  
+
 
 
   ---------------------------------------------KEYBOARD INPUTS-----------------------------
@@ -157,7 +156,7 @@ function game_manager:create(file_name)
 
     elseif key == "j" and DEBUG_MODE then
       game:remove_life(2)
-        
+
          --end of debug functions
           --]]
 
