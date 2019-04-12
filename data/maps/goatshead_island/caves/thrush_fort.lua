@@ -20,6 +20,10 @@ map:register_event("on_started", function()
     trap_2_sensor:set_enabled(false)
     boss:set_enabled(false)
   end
+  if game:get_value("quest_heron_well") == 0 then
+    game:set_value("quest_heron_well", 1)
+  end
+
 end)
 
 function boss_sensor:on_activated()
@@ -32,6 +36,9 @@ function boss:on_dead()
   map:open_doors("door_2")
   for enemy in map:get_entities_by_type("enemy") do
     enemy:remove()
+  end
+  if game:get_value("quest_heron_well") == 1 then
+    game:set_value("quest_heron_well", 2)
   end
 end
 
@@ -48,5 +55,6 @@ function unsparkle_sensor:on_activated()
 end
 
 function all_door_switch:on_activated()
+  game:set_value("quest_heron_well", 3)
   map:open_doors("door")
 end
