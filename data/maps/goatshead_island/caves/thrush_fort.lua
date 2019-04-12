@@ -23,6 +23,7 @@ map:register_event("on_started", function()
 end)
 
 function boss_sensor:on_activated()
+  boss_wall:set_enabled(false)
   map:close_doors("door_1")
   boss_sensor:set_enabled(false)
 end
@@ -38,6 +39,12 @@ end
 function trap_2_sensor:on_activated()
   map:close_doors("door_3")
   trap_2_sensor:set_enabled(false)
+end
+
+function unsparkle_sensor:on_activated()
+  for sparkle in map:get_entities("sparkle") do
+    sparkle:set_enabled(false)
+  end
 end
 
 function all_door_switch:on_activated()

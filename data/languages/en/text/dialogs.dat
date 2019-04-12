@@ -1465,6 +1465,14 @@ dialog{
 }
 
 dialog{
+  id = "_game.seabird_door",
+  text = [[
+There's a faded lightning bolt carved
+into the stone.
+]],
+}
+
+dialog{
   id = "_game.tests_for_log.1",
   text = [[
 Find clues in Hourglass Fort

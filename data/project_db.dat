@@ -501,6 +501,7 @@ sprite{ id = "entities/door_npc_tall", description = "NPC door - tall" }
 sprite{ id = "entities/door_post_stone", description = "Door-Stone Post" }
 sprite{ id = "entities/door_posts", description = "Door - Posts" }
 sprite{ id = "entities/door_posts_pipes", description = "Door-Posts-Pipes" }
+sprite{ id = "entities/door_seabird", description = "Door-Seabird" }
 sprite{ id = "entities/door_shutter", description = "door (shutter)" }
 sprite{ id = "entities/door_unmarked_wall", description = "Door - Unmarked Wall" }
 sprite{ id = "entities/door_vines", description = "Door-Vines" }

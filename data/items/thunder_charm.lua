@@ -63,7 +63,18 @@ function item:on_using()
       if map:has_entities("seabird_tear_door") then
         for door in map:get_entities("seabird_tear_door") do
           local x, y, l = door:get_position()
-          map:create_poof(x + 8, y + 16, l + 1)
+          local lightning = map:create_custom_entity{
+          name = "lightning_attack",
+          direction = 0,
+          layer = l + 1,
+          x = x + 8,
+          y = y + 8,
+          width = 16,
+          height = 16,
+          sprite = "entities/lightning_bolt_attack",
+          model = "damaging_sparkle"
+          }
+          map:create_poof(x + 8, y + 8, l + 1)
           map:open_doors(door:get_name())
         end
       end

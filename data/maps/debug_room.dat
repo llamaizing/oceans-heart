@@ -4779,6 +4779,16 @@ pickable{
   treasure_name = "potion_burlyblade",
 }
 
+door{
+  name = "seabird_tear_door",
+  layer = 0,
+  x = 352,
+  y = -16,
+  direction = 3,
+  sprite = "entities/door_seabird",
+  cannot_open_dialog = "_game.seabird_door",
+}
+
 tile{
   layer = 1,
   x = 192,
