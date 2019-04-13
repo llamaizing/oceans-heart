@@ -5511,7 +5511,7 @@ dialog{
   text = [[
 There's a reminder you've written yourself:
 D - Menu
-M - Map
+S - Save
 Space - Talk, Open Doors, etc.
 What a cryptic message.
 ]],
