@@ -2560,10 +2560,10 @@ enemy{
 enemy{
   name = "bat_1",
   layer = 0,
-  x = 152,
-  y = 365,
+  x = 144,
+  y = 333,
   direction = 0,
-  breed = "normal_enemies/bat_1",
+  breed = "normal_enemies/bat_2",
 }
 
 enemy{
@@ -2572,34 +2572,25 @@ enemy{
   x = 256,
   y = 341,
   direction = 0,
-  breed = "normal_enemies/bat_1",
+  breed = "normal_enemies/bat_2",
 }
 
 enemy{
   name = "bat_3",
   layer = 0,
-  x = 200,
-  y = 373,
+  x = 112,
+  y = 397,
   direction = 0,
-  breed = "normal_enemies/bat_1",
+  breed = "normal_enemies/bat_2",
 }
 
 enemy{
   name = "bat_4",
   layer = 0,
-  x = 240,
-  y = 381,
+  x = 304,
+  y = 405,
   direction = 0,
-  breed = "normal_enemies/bat_1",
-}
-
-enemy{
-  name = "bat_5",
-  layer = 0,
-  x = 128,
-  y = 333,
-  direction = 0,
-  breed = "normal_enemies/bat_1",
+  breed = "normal_enemies/bat_2",
 }
 
 door{
