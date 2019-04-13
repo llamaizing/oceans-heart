@@ -4696,15 +4696,6 @@ npc{
   sprite = "npc/max",
 }
 
-destination{
-  name = "starting_destination",
-  layer = 0,
-  x = 152,
-  y = 125,
-  direction = 3,
-  default = true,
-}
-
 npc{
   name = "buyer",
   layer = 0,
@@ -4745,6 +4736,15 @@ pickable{
   y = 221,
   treasure_name = "mandrake",
   treasure_variant = 3,
+}
+
+destination{
+  name = "starting_destination",
+  layer = 0,
+  x = 152,
+  y = 1117,
+  direction = 3,
+  default = true,
 }
 
 tile{

@@ -33,8 +33,8 @@ local QUEST_SOUNDS = {
 -- Starts the game from the given savegame file,
 -- initializing it if necessary.
 function game_manager:create(file_name, overwrite_game)
+  if overwrite_game then sol.game.delete(file_name) end
   local exists = sol.game.exists(file_name)
-  if overwrite_game then exists = false end
   local game = sol.game.load(file_name)
   if not exists then -- Initialize a new savegame.
     initial_game:initialize_new_savegame(game)
