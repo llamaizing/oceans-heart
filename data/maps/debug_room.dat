@@ -2906,7 +2906,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/caves/village_cave",
+  destination_map = "Yarrowmouth/foothills",
 }
 
 pickable{
@@ -3828,7 +3828,7 @@ pickable{
 sensor{
   name = "^layer_up_sensor",
   layer = 0,
-  x = 32,
+  x = 40,
   y = 269,
   width = 32,
   height = 16,
@@ -4747,6 +4747,45 @@ destination{
   default = true,
 }
 
+wall{
+  layer = 0,
+  x = 32,
+  y = 240,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 64,
+  y = 240,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 24,
+  y = 240,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 1,
   x = 192,
@@ -5059,7 +5098,7 @@ tile{
 dynamic_tile{
   name = "^invisible_stairs_2",
   layer = 1,
-  x = 24,
+  x = 32,
   y = 240,
   width = 32,
   height = 32,
@@ -5070,7 +5109,7 @@ dynamic_tile{
 sensor{
   name = "^layer_down_sensor_2",
   layer = 1,
-  x = 32,
+  x = 40,
   y = 277,
   width = 32,
   height = 16,
@@ -5078,7 +5117,7 @@ sensor{
 
 wall{
   layer = 1,
-  x = 16,
+  x = 24,
   y = 240,
   width = 8,
   height = 32,
@@ -5091,7 +5130,7 @@ wall{
 
 wall{
   layer = 1,
-  x = 56,
+  x = 64,
   y = 240,
   width = 8,
   height = 32,

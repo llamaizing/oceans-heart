@@ -28161,22 +28161,6 @@ stairs{
   subtype = 4,
 }
 
-stairs{
-  layer = 0,
-  x = 1008,
-  y = 1280,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 992,
-  y = 1280,
-  direction = 1,
-  subtype = 4,
-}
-
 teletransporter{
   layer = 0,
   x = -16,
@@ -28209,22 +28193,6 @@ stairs{
   layer = 0,
   x = 368,
   y = 1520,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 800,
-  y = 1552,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 816,
-  y = 1552,
   direction = 1,
   subtype = 4,
 }
@@ -28847,6 +28815,102 @@ sensor{
   y = 1541,
   width = 32,
   height = 48,
+}
+
+sensor{
+  name = "^layer_up_sensor",
+  layer = 0,
+  x = 1000,
+  y = 1301,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 992,
+  y = 1272,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1024,
+  y = 1272,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 984,
+  y = 1272,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+sensor{
+  name = "^layer_up_sensor_2",
+  layer = 0,
+  x = 808,
+  y = 1573,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 800,
+  y = 1544,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 832,
+  y = 1544,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 792,
+  y = 1544,
+  width = 8,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -56549,6 +56613,98 @@ sensor{
   y = 749,
   width = 32,
   height = 32,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_2",
+  layer = 1,
+  x = 992,
+  y = 1272,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor_2",
+  layer = 1,
+  x = 1000,
+  y = 1309,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 1,
+  x = 984,
+  y = 1272,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 1024,
+  y = 1272,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_3",
+  layer = 1,
+  x = 800,
+  y = 1544,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor_3",
+  layer = 1,
+  x = 808,
+  y = 1581,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 1,
+  x = 792,
+  y = 1544,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 832,
+  y = 1544,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

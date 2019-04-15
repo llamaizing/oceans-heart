@@ -53,6 +53,7 @@ end
 
 
 function title_screen:on_started()
+  sol.audio.play_music("oceans_heart")
   black_fill:fill_color({0,0,0, 255})
   black_fill:fade_out(40)
   cursor_index = 0

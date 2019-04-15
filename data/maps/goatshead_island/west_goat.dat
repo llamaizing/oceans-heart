@@ -10208,22 +10208,6 @@ teletransporter{
   destination = "_side",
 }
 
-stairs{
-  layer = 0,
-  x = 160,
-  y = 352,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 176,
-  y = 352,
-  direction = 1,
-  subtype = 4,
-}
-
 enemy{
   layer = 0,
   x = 384,
@@ -10780,22 +10764,6 @@ stairs{
   subtype = 4,
 }
 
-stairs{
-  layer = 0,
-  x = 408,
-  y = 368,
-  direction = 1,
-  subtype = 4,
-}
-
-stairs{
-  layer = 0,
-  x = 424,
-  y = 368,
-  direction = 1,
-  subtype = 4,
-}
-
 destructible{
   layer = 0,
   x = 600,
@@ -10993,6 +10961,50 @@ npc{
   y = 549,
   direction = 3,
   subtype = 1,
+}
+
+sensor{
+  name = "^layer_up_sensor",
+  layer = 0,
+  x = 168,
+  y = 373,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "^layer_up_sensor_2",
+  layer = 0,
+  x = 416,
+  y = 389,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 408,
+  y = 360,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 160,
+  y = 344,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -15450,6 +15462,98 @@ destructible{
   sprite = "entities/bush_apple_tree",
   weight = -1,
   can_be_cut = true,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_2",
+  layer = 1,
+  x = 160,
+  y = 344,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor_2",
+  layer = 1,
+  x = 168,
+  y = 381,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 1,
+  x = 152,
+  y = 344,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 192,
+  y = 344,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+dynamic_tile{
+  name = "^invisible_stairs_3",
+  layer = 1,
+  x = 408,
+  y = 360,
+  width = 32,
+  height = 32,
+  pattern = "invisible_stairs",
+  tileset = "misc",
+}
+
+sensor{
+  name = "^layer_down_sensor_3",
+  layer = 1,
+  x = 416,
+  y = 397,
+  width = 32,
+  height = 16,
+}
+
+wall{
+  layer = 1,
+  x = 400,
+  y = 360,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 1,
+  x = 440,
+  y = 360,
+  width = 8,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
