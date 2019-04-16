@@ -15,24 +15,16 @@ local hero = game:get_hero()
 map:register_event("on_started", function()
   blackbeard:set_enabled(false)
   morus:set_enabled(false)
-  if game:get_value("quest_hazel") == true then
-    bridge_block_door:set_enabled(false)
-    bridge_block_door_2:set_enabled(false)
-    bridge_block_door_3:set_enabled(false)
-    bridge_block_door_4:set_enabled(false)
-  end
   if game:get_value("morus_at_port") == true then
     morus_boat_steam:set_enabled(true)
     morus:set_enabled(true)
   end
 
-
-  if game:get_value("hourglass_fort_read_letter") == true then
-    block_guy:set_enabled(false)
-    access_block_1:set_enabled(false) access_block_2:set_enabled(false) access_block_3:set_enabled(false)
+  if game:get_value("quest_hazel") then
+    for block in map:get_entities("block_guy") do block:set_enabled(false) end
   end
 
-  if game:get_value("hazel_is_here") == true then
+  if game:get_value("quest_hazel") and game:get_value("quest_hazel") > 0 then
     for block in map:get_entities("block_again") do
       block:set_enabled(false)
     end

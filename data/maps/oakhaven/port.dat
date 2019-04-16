@@ -32629,21 +32629,10 @@ destructible{
 }
 
 block{
-  name = "access_block_1",
+  name = "block_guy_block_1",
   layer = 0,
   x = 680,
-  y = 237,
-  sprite = "entities/block_crate",
-  pushable = false,
-  pullable = false,
-  max_moves = 1,
-}
-
-block{
-  name = "access_block_2",
-  layer = 0,
-  x = 664,
-  y = 213,
+  y = 245,
   sprite = "entities/block_crate",
   pushable = false,
   pullable = false,
@@ -32659,17 +32648,6 @@ npc{
   subtype = 1,
   sprite = "npc/man/man_12.6",
   behavior = "dialog#_oakhaven.npcs.port.block_guy",
-}
-
-block{
-  name = "access_block_3",
-  layer = 0,
-  x = 680,
-  y = 253,
-  sprite = "entities/block_crate",
-  pushable = false,
-  pullable = false,
-  max_moves = 1,
 }
 
 npc{
@@ -33660,6 +33638,28 @@ npc{
   subtype = 1,
   sprite = "npc/man/man_12.6",
   behavior = "dialog#_oakhaven.npcs.port.block_guy",
+}
+
+block{
+  name = "block_guy_block_2",
+  layer = 0,
+  x = 680,
+  y = 221,
+  sprite = "entities/block_crate",
+  pushable = false,
+  pullable = false,
+  max_moves = 1,
+}
+
+block{
+  name = "block_guy_block_3",
+  layer = 0,
+  x = 664,
+  y = 213,
+  sprite = "entities/block_crate",
+  pushable = false,
+  pullable = false,
+  max_moves = 1,
 }
 
 tile{
