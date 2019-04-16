@@ -32632,7 +32632,7 @@ block{
   name = "access_block_1",
   layer = 0,
   x = 680,
-  y = 221,
+  y = 237,
   sprite = "entities/block_crate",
   pushable = false,
   pullable = false,
@@ -32654,7 +32654,7 @@ npc{
   name = "block_guy",
   layer = 0,
   x = 696,
-  y = 221,
+  y = 237,
   direction = 3,
   subtype = 1,
   sprite = "npc/man/man_12.6",
@@ -32665,7 +32665,7 @@ block{
   name = "access_block_3",
   layer = 0,
   x = 680,
-  y = 237,
+  y = 253,
   sprite = "entities/block_crate",
   pushable = false,
   pullable = false,
@@ -33440,22 +33440,11 @@ destructible{
   can_be_cut = true,
 }
 
-npc{
-  name = "block_again_guy",
-  layer = 0,
-  x = 512,
-  y = 157,
-  direction = 0,
-  subtype = 1,
-  sprite = "npc/man/man_12.6",
-  behavior = "dialog#_oakhaven.npcs.port.block_guy",
-}
-
 block{
   name = "block_again_block_1",
   layer = 0,
-  x = 528,
-  y = 141,
+  x = 472,
+  y = 133,
   sprite = "entities/block_crate",
   pushable = false,
   pullable = false,
@@ -33465,7 +33454,7 @@ block{
 block{
   name = "block_again_block_2",
   layer = 0,
-  x = 488,
+  x = 456,
   y = 141,
   sprite = "entities/block_crate",
   pushable = false,
@@ -33476,7 +33465,7 @@ block{
 block{
   name = "block_again_block_3",
   layer = 0,
-  x = 496,
+  x = 440,
   y = 157,
   sprite = "entities/block_crate",
   pushable = false,
@@ -33660,6 +33649,17 @@ custom_entity{
   direction = 3,
   sprite = "npc/hazel",
   model = "ally",
+}
+
+npc{
+  name = "block_again_guy",
+  layer = 0,
+  x = 472,
+  y = 157,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/man/man_12.6",
+  behavior = "dialog#_oakhaven.npcs.port.block_guy",
 }
 
 tile{

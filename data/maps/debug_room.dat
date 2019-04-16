@@ -2906,7 +2906,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/foothills",
+  destination_map = "Yarrowmouth/hourglass_canyon",
+  destination = "from_outside",
 }
 
 pickable{

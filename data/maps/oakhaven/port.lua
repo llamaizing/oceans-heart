@@ -15,7 +15,7 @@ local hero = game:get_hero()
 map:register_event("on_started", function()
   blackbeard:set_enabled(false)
   morus:set_enabled(false)
-  if game:get_value("oakhaven_port_bridge_unblocked") == true then
+  if game:get_value("quest_hazel") == true then
     bridge_block_door:set_enabled(false)
     bridge_block_door_2:set_enabled(false)
     bridge_block_door_3:set_enabled(false)
