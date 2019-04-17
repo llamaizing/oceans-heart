@@ -15,7 +15,9 @@ local hero = map:get_hero()
 map:register_event("on_started", function()
   map:set_doors_open("boss_door")
   map:set_doors_open("d3_door_2")
-  if game:get_value("bear_catacombs_miniboss_beat") then miniboss_wall:set_enabled(false) end
+  if game:get_value("bear_catacombs_miniboss_beat") then
+    miniboss_wall:set_enabled(false)
+  end
   if game:get_value("bear_catacombs_bear_mouth_door_opened") then bear_mouth_door:set_enabled(false) end
   if game:get_value("bear_catacombs_boss_defeated") then
     boss_sensor:set_enabled(false)
