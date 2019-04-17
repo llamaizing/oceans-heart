@@ -34,9 +34,6 @@ end
 -- Using the bow.
 -- This function can also be called by the silver bow.
 function item:on_using()
-
-  -- item is the normal bow, self is the normal or the silver one.
-
   local map = game:get_map()
   local hero = map:get_hero()
 

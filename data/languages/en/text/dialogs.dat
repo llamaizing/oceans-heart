@@ -10956,7 +10956,8 @@ dialog{
   id = "_treasure.berries.1",
   text = [[
 You found a berry. Eat it to restore
-half a heart.
+half a heart. You can use healing
+items from the menu.
 ]],
 }
 

@@ -2740,6 +2740,15 @@ tile{
   tileset = "overworld_oakhaven",
 }
 
+tile{
+  layer = 0,
+  x = 336,
+  y = 160,
+  width = 192,
+  height = 32,
+  pattern = "wall.up.2",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -4753,6 +4762,39 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 488,
+  y = 205,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 552,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 472,
+  y = 269,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
 }
 
 tile{
