@@ -32,9 +32,6 @@ end
 -- Using the bow.
 
 function item:on_using()
-
-  -- item is the normal bow, self can be called by other items.
-
   local map = game:get_map()
   local hero = map:get_hero()
 

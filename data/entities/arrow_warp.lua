@@ -9,6 +9,18 @@ local flying
 
 
 function arrow:on_created()
+  local direction = arrow:get_direction()
+  local horizontal = direction % 2 == 0
+  if horizontal then
+    arrow:set_size(16, 8)
+    arrow:set_origin(8, 4)
+  else
+    arrow:set_size(8, 16)
+    arrow:set_origin(4, 8)
+  end
+
+  local bow = game:get_item("bow")
+  force = bow_damage
 
 end
 
