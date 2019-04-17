@@ -7,6 +7,7 @@ function item:on_started()
 end
 
 function item:on_obtained(variant)
+  if game:has_item(item:get_name()) then item:set_brandish_when_picked(false) end
   local amounts = {1, 3, 5}
   local amount = amounts[variant]
   if amount == nil then

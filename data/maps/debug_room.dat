@@ -4707,38 +4707,6 @@ npc{
   sprite = "npc/phantom_squid",
 }
 
-pickable{
-  layer = 0,
-  x = 552,
-  y = 213,
-  treasure_name = "burdock",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 536,
-  y = 221,
-  treasure_name = "chamomile",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 520,
-  y = 213,
-  treasure_name = "witch_hazel",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 504,
-  y = 221,
-  treasure_name = "mandrake",
-  treasure_variant = 3,
-}
-
 destination{
   name = "starting_destination",
   layer = 0,

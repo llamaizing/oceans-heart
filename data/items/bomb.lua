@@ -4,10 +4,10 @@ local game = item:get_game()
 function item:on_created()
 
   self:set_can_disappear(true)
-  self:set_brandish_when_picked(false)
 end
 
 function item:on_obtaining(variant, savegame_variable)
+  if game:has_item(item:get_name()) then item:set_brandish_when_picked(false) end
   if not game:has_item("bombs_counter_2") then
     game:get_item("bombs_counter_2"):set_variant(1)
   end
