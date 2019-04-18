@@ -9,11 +9,13 @@
 
 local map = ...
 local game = map:get_game()
+local hero = map:get_hero()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
   local hero = game:get_hero()
   hero:set_walking_speed(96)
+
 end)
 
 function shopkeeper:on_interaction()

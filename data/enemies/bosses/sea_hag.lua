@@ -46,6 +46,16 @@ local properties = {
   dash_attack_speed = 120,
   dash_attack_wind_up = 600,  
   dash_attack_sound = "running",
+
+--  has_summon_attack = true,
+  summon_attack_distance = 200,
+  summon_attack_cooldown = 9000,
+  summon_attack_wind_up_time = 1000,
+  summoning_sound = "charge_1",
+  summon_breed = "misc/falling_rock",
+  summon_group_size = 5,
+  summon_group_delay = 1000,
+  protected_while_summoning = true,
   
 
 }

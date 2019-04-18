@@ -11860,14 +11860,14 @@ if you die or stop the game.
 dialog{
   id = "_treasure.rupee.1",
   text = [[
-You found one crown.
+You found 5 crowns.
 ]],
 }
 
 dialog{
   id = "_treasure.rupee.2",
   text = [[
-You found 5 crowns.
+You found 10 crowns.
 ]],
 }
 
@@ -11896,6 +11896,13 @@ dialog{
   id = "_treasure.rupee.6",
   text = [[
 You found 200 crowns!
+]],
+}
+
+dialog{
+  id = "_treasure.rupee.7",
+  text = [[
+You found 500 crowns!
 ]],
 }
 
