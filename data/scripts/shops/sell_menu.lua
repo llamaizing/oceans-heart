@@ -8,20 +8,20 @@ local game --the current game, must be manually updated using pause_menu:set_gam
 
 --All items that you could sell:
 local all_items = {
-    {item = "burdock", name = "Burdock Root", price = 10},
-    {item = "chamomile", name = "Chamomile", price = 10},
+    {item = "burdock", name = "Burdock Root", price = 5},
+    {item = "chamomile", name = "Chamomile", price = 5},
     {item = "firethorn_berries", name = "Firethorn", price = 5},
     {item = "forsythia", name = "Forsythia Petals", price = 5},
     {item = "ghost_orchid", name = "Ghost Orchid", price = 35},
     {item = "kingscrown", name = "Kingscrown", price = 25},
     {item = "lavendar", name = "Lavendar", price = 5},
-    {item = "mandrake", name = "Mandrake Root", price = 20},
+    {item = "mandrake", name = "Mandrake Root", price = 15},
     {item = "mandrake_white", name = "White Mandrake Root", price = 40},
     {item = "geode", name = "Monster Geode", price = 10},
     {item = "witch_hazel", name = "Witch Hazel", price = 10},
     {item = "monster_bones", name = "Undead Bones", price = 10},
-    {item = "monster_guts", name = "Monster Guts", price = 10},
-    {item = "monster_eye", name = "Evil Eye", price = 50},
+    {item = "monster_guts", name = "Monster Guts", price = 5},
+    {item = "monster_eye", name = "Evil Eye", price = 35},
     {item = "monster_horn", name = "Beast Horn", price = 30},
     {item = "monster_heart", name = "Abyssal Heart", price = 100},
 }

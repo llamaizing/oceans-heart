@@ -229,6 +229,7 @@ map{ id = "oakhaven/poison_grove", description = "Poison Grove" }
 map{ id = "oakhaven/port", description = "Oakhaven Port" }
 map{ id = "oakhaven/sunken_palace", description = "Sunken Palace" }
 map{ id = "oakhaven/veilwood", description = "Veilwood" }
+map{ id = "oakhaven/waterfall_canyon", description = "Waterfall Canyon" }
 map{ id = "oakhaven/west_coast", description = "West Coast" }
 map{ id = "respawn_map", description = "blank room - leave empty" }
 map{ id = "snapmast_reef/caves/coral_cave", description = "Coral Cave" }

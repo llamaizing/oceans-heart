@@ -16409,8 +16409,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 992,
-  y = 888,
+  x = 1024,
+  y = 896,
   width = 16,
   height = 16,
   pattern = "453",
@@ -35053,6 +35053,86 @@ tile{
   pattern = "686",
 }
 
+tile{
+  layer = 0,
+  x = 88,
+  y = 1280,
+  width = 32,
+  height = 16,
+  pattern = "345",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 1272,
+  width = 32,
+  height = 8,
+  pattern = "346",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "2135",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "2138",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "2136",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 1272,
+  width = 16,
+  height = 16,
+  pattern = "2137",
+  tileset = "overworld_oakhaven",
+}
+
 destination{
   name = "from_tavern",
   layer = 0,
@@ -35121,26 +35201,6 @@ npc{
   direction = 3,
   subtype = 1,
   behavior = "dialog#_ballast_harbor.observations.outdoor_charts",
-}
-
-npc{
-  name = "bone_buyer",
-  layer = 0,
-  x = 360,
-  y = 1125,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/pirates/pirate_12.1",
-}
-
-npc{
-  name = "guts_buyer",
-  layer = 0,
-  x = 376,
-  y = 1125,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/pirates/pirate_5.2",
 }
 
 npc{
@@ -35692,24 +35752,6 @@ npc{
 
 destructible{
   layer = 0,
-  x = 88,
-  y = 493,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 72,
-  y = 493,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 912,
   y = 93,
   sprite = "entities/bush_forsythia",
@@ -36156,37 +36198,11 @@ wall{
 
 door{
   layer = 0,
-  x = 1056,
-  y = 880,
-  direction = 3,
-  sprite = "entities/door_weak_block",
-  opening_method = "explosion",
-}
-
-door{
-  layer = 0,
-  x = 1024,
-  y = 880,
-  direction = 3,
-  sprite = "entities/door_weak_block",
-  opening_method = "explosion",
-}
-
-door{
-  layer = 0,
-  x = 1008,
-  y = 896,
-  direction = 3,
-  sprite = "entities/door_weak_block",
-  opening_method = "explosion",
-}
-
-door{
-  layer = 0,
   x = 1040,
   y = 888,
   direction = 3,
   sprite = "entities/door_weak_block",
+  savegame_variable = "ballast_harbor_exploding_flail_guy_breakable_rocks_state",
   opening_method = "explosion",
 }
 
@@ -36389,15 +36405,6 @@ door{
   sprite = "entities/door_weak_wall",
   savegame_variable = "ballast_harbor_market_bomb_wall",
   opening_method = "explosion",
-}
-
-destructible{
-  layer = 0,
-  x = 104,
-  y = 493,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
 }
 
 teletransporter{
@@ -36883,6 +36890,66 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/woman/woman_9.5",
+}
+
+door{
+  layer = 0,
+  x = 1056,
+  y = 896,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  savegame_variable = "ballast_harbor_exploding_flail_guy_breakable_rocks_state",
+  opening_method = "explosion",
+}
+
+door{
+  layer = 0,
+  x = 1056,
+  y = 880,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  savegame_variable = "ballast_harbor_exploding_flail_guy_breakable_rocks_state",
+  opening_method = "explosion",
+}
+
+door{
+  layer = 0,
+  x = 1024,
+  y = 872,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  savegame_variable = "ballast_harbor_exploding_flail_guy_breakable_rocks_state",
+  opening_method = "explosion",
+}
+
+door{
+  layer = 0,
+  x = 1008,
+  y = 888,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  savegame_variable = "ballast_harbor_exploding_flail_guy_breakable_rocks_state",
+  opening_method = "explosion",
+}
+
+door{
+  layer = 0,
+  x = 992,
+  y = 896,
+  direction = 3,
+  sprite = "entities/door_weak_block",
+  savegame_variable = "ballast_harbor_exploding_flail_guy_breakable_rocks_state",
+  opening_method = "explosion",
+}
+
+npc{
+  name = "buyer_guy",
+  layer = 0,
+  x = 88,
+  y = 1301,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/buyer_guy",
 }
 
 tile{
@@ -42310,6 +42377,26 @@ tile{
   width = 48,
   height = 24,
   pattern = "914",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 1240,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 1240,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
 }
 
 enemy{

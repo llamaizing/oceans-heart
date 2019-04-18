@@ -758,24 +758,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 120,
-  y = 40,
-  width = 16,
-  height = 16,
-  pattern = "147",
-}
-
-tile{
-  layer = 0,
-  x = 120,
-  y = 56,
-  width = 16,
-  height = 16,
-  pattern = "148",
-}
-
-tile{
-  layer = 0,
   x = 88,
   y = 40,
   width = 16,
@@ -945,6 +927,51 @@ tile{
   pattern = "169",
 }
 
+tile{
+  layer = 0,
+  x = 120,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 32,
+  width = 8,
+  height = 32,
+  pattern = "door.up.left_side",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 32,
+  width = 8,
+  height = 32,
+  pattern = "door.up.right_side",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "door.up.top_low",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
 destination{
   name = "from_outside",
   layer = 0,
@@ -961,6 +988,24 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/oakhaven",
   destination = "from_sculptor",
+}
+
+destination{
+  name = "from_outside_backdoor",
+  layer = 0,
+  x = 128,
+  y = 77,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 120,
+  y = 48,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/oakhaven",
+  destination = "from_sculptor_back_door",
 }
 
 tile{
@@ -1060,5 +1105,14 @@ tile{
   width = 16,
   height = 16,
   pattern = "183",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "door.up.high",
 }
 

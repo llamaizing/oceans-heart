@@ -7726,6 +7726,55 @@ tile{
   pattern = "31",
 }
 
+tile{
+  layer = 0,
+  x = 208,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "shallow_water",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 672,
+  width = 8,
+  height = 32,
+  pattern = "door.down.left_side",
+  tileset = "temple_2",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "2",
+  tileset = "temple_2",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "door.down.top_low",
+  tileset = "temple_2",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 672,
+  width = 8,
+  height = 32,
+  pattern = "door.down.right_side",
+  tileset = "temple_2",
+}
+
 teletransporter{
   layer = 0,
   x = 192,
@@ -8334,6 +8383,33 @@ teletransporter{
   destination = "from_elixer_area",
 }
 
+destination{
+  name = "from_outside_downstairs_wet",
+  layer = 0,
+  x = 216,
+  y = 685,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 208,
+  y = 688,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/marblecliff",
+  destination = "from_ruins_valley",
+}
+
+wall{
+  layer = 0,
+  x = 384,
+  y = 912,
+  width = 16,
+  height = 16,
+  stops_enemies = true,
+}
+
 tile{
   layer = 1,
   x = 296,
@@ -8722,6 +8798,16 @@ tile{
   height = 32,
   pattern = "2118",
   tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 688,
+  width = 32,
+  height = 16,
+  pattern = "door.down.high",
+  tileset = "temple_2",
 }
 
 wall{

@@ -44,6 +44,14 @@ function market_shop:on_interaction()
   end)
 end
 
+function buyer_guy:on_interaction()
+  game:start_dialog("_generic_dialogs.buyer_guy.1", function()
+    local sell_menu = require("scripts/shops/sell_menu")
+    sell_menu:initialize(game)
+    sol.menu.start(map, sell_menu)
+  end)
+end
+
 
 --cargo carrier guys:
 for npc in map:get_entities("dropoff_npc") do
@@ -92,56 +100,4 @@ function hornigold_sensor:on_activated()
       end)
     end) --end of dialog callback
   end) --end of m1 callback
-end
-
-
-
----------THESE GUYS WILL ALL PROBABLY EVENTUALLY BE DELETED:
-
---Bone buyer
-function bone_buyer:on_interaction()
-  game:start_dialog("_ballast_harbor.npcs.bone_buyer.1", function(answer)
-    if answer == 2 then --sell 1
-      if game:get_item("monster_bones"):get_amount() >= 1 then
-        game:get_item("monster_bones"):remove_amount(1)
-        game:add_money(10)
-        game:start_dialog("_ballast_harbor.npcs.bone_buyer.2")
-      else
-        game:start_dialog("_game.insufficient_items")
-      end
-    end
-    if answer == 3 then --sell 10
-      if game:get_item("monster_bones"):get_amount() >= 10 then
-        game:get_item("monster_bones"):remove_amount(10)
-        game:add_money(100)
-        game:start_dialog("_ballast_harbor.npcs.bone_buyer.2")
-      else
-        game:start_dialog("_game.insufficient_items")
-      end
-    end
-  end)
-end
-
---Guts Buyer
-function guts_buyer:on_interaction()
-  game:start_dialog("_ballast_harbor.npcs.guts_buyer.1", function(answer)
-    if answer == 2 then --sell 1
-      if game:get_item("monster_guts"):get_amount() >= 1 then
-        game:get_item("monster_guts"):remove_amount(1)
-        game:add_money(5)
-        game:start_dialog("_ballast_harbor.npcs.guts_buyer.2")
-      else
-        game:start_dialog("_game.insufficient_items")
-      end
-    end
-    if answer == 3 then --sell 10
-      if game:get_item("monster_guts"):get_amount() >= 10 then
-        game:get_item("monster_guts"):remove_amount(10)
-        game:add_money(50)
-        game:start_dialog("_ballast_harbor.npcs.guts_buyer.2")
-      else
-        game:start_dialog("_game.insufficient_items")
-      end
-    end
-  end)
 end

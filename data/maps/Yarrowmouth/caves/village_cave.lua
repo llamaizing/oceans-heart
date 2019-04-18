@@ -20,9 +20,15 @@ function boss_sensor:on_activated()
   map:close_doors("boss_door")
 end
 
-function boss:on_dead()
---  sol.audio.play_sound("secret")
---  map:open_doors("boss_door")
+for boss in map:get_entities("boss_enemy") do
+  function boss:on_dead()
+    if not map:has_entities("boss_enemy") then
+      sol.audio.play_sound("secret")
+      map:focus_on(map:get_camera(), boss_door_4, function()
+        map:open_doors("boss_door")
+      end)
+    end
+  end
 end
 
 function exit_switch:on_activated()

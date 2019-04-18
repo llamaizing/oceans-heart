@@ -3110,15 +3110,6 @@ wall{
   stops_enemies = true,
 }
 
-wall{
-  layer = 0,
-  x = 768,
-  y = 224,
-  width = 8,
-  height = 32,
-  stops_enemies = true,
-}
-
 enemy{
   layer = 0,
   x = 600,
@@ -3162,7 +3153,7 @@ chest{
 }
 
 enemy{
-  name = "boss",
+  name = "boss_enemy_2",
   layer = 0,
   x = 1040,
   y = 293,
@@ -3171,14 +3162,7 @@ enemy{
 }
 
 enemy{
-  layer = 0,
-  x = 1040,
-  y = 189,
-  direction = 3,
-  breed = "normal_enemies/bat_2",
-}
-
-enemy{
+  name = "boss_enemy",
   layer = 0,
   x = 920,
   y = 197,
@@ -3187,22 +3171,7 @@ enemy{
 }
 
 enemy{
-  layer = 0,
-  x = 1048,
-  y = 373,
-  direction = 3,
-  breed = "normal_enemies/bat_2",
-}
-
-enemy{
-  layer = 0,
-  x = 1048,
-  y = 117,
-  direction = 3,
-  breed = "normal_enemies/bat_1",
-}
-
-enemy{
+  name = "boss_enemy_5",
   layer = 0,
   x = 992,
   y = 341,
@@ -3337,6 +3306,42 @@ switch{
   sprite = "entities/switch_solid",
   needs_block = false,
   inactivate_when_leaving = false,
+}
+
+wall{
+  layer = 0,
+  x = 800,
+  y = 224,
+  width = 8,
+  height = 32,
+  stops_enemies = true,
+}
+
+enemy{
+  name = "boss_enemy_3",
+  layer = 0,
+  x = 1040,
+  y = 197,
+  direction = 3,
+  breed = "normal_enemies/bat_2",
+}
+
+enemy{
+  name = "boss_enemy_4",
+  layer = 0,
+  x = 1048,
+  y = 373,
+  direction = 3,
+  breed = "normal_enemies/bat_2",
+}
+
+enemy{
+  name = "boss_enemy_6",
+  layer = 0,
+  x = 1040,
+  y = 149,
+  direction = 3,
+  breed = "normal_enemies/bat_1",
 }
 
 tile{

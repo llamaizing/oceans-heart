@@ -115,7 +115,7 @@ tile_pattern{
   y = { 0, 16, 32 },
   width = 16,
   height = 16,
-  frame_delay = 250,
+  frame_delay = 130,
 }
 
 tile_pattern{
@@ -9626,7 +9626,7 @@ tile_pattern{
   y = { 0, 0, 0 },
   width = 16,
   height = 16,
-  frame_delay = 250,
+  frame_delay = 130,
 }
 
 tile_pattern{
@@ -11101,13 +11101,13 @@ tile_pattern{
 
 tile_pattern{
   id = "1948",
-  ground = "wall",
+  ground = "empty",
   default_layer = 0,
   x = { 480, 496, 512 },
   y = { 168, 168, 168 },
   width = 16,
   height = 24,
-  frame_delay = 250,
+  frame_delay = 130,
   mirror_loop = true,
   repeat_mode = "horizontal",
 }
@@ -14139,6 +14139,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2213",
+  ground = "wall",
+  default_layer = 0,
+  x = 224,
+  y = 256,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "2214",
   ground = "wall",
   default_layer = 0,
@@ -14171,6 +14181,18 @@ tile_pattern{
   width = 32,
   height = 16,
   frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "2217",
+  ground = "empty",
+  default_layer = 0,
+  x = { 480, 496, 512 },
+  y = { 192, 192, 192 },
+  width = 16,
+  height = 24,
+  frame_delay = 130,
   mirror_loop = true,
 }
 
