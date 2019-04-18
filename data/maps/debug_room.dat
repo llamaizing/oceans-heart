@@ -2915,7 +2915,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/crabhook_village",
+  destination_map = "Yarrowmouth/yarrowmouth_village",
+  destination = "from_shop",
 }
 
 pickable{
@@ -4618,8 +4619,8 @@ pickable{
 npc{
   name = "shopkeeper",
   layer = 0,
-  x = 560,
-  y = 149,
+  x = 344,
+  y = 997,
   direction = 3,
   subtype = 1,
   sprite = "npc/jazari",

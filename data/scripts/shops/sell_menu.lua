@@ -115,12 +115,20 @@ end
 
 function inventory:update_cursor_position(new_index)
     local game = sol.main.game
-    if(new_index <= MAX_INDEX and new_index >= 0) then cursor_index = new_index end
+    if(new_index <= MAX_INDEX and new_index >= 0) then cursor_index = new_index
+    elseif new_index > MAX_INDEX then cursor_index = 0
+    elseif new_index < 0 then cursor_index = MAX_INDEX end
     local new_column = (cursor_index % COLUMNS)
-    self.cursor_column = new_column
     local new_row = math.floor(cursor_index / COLUMNS)
-    if new_row < ROWS then self.cursor_row = new_row end
-    game:set_value("inventory_cursor_index", cursor_index)
+
+    if new_column < 0 then self.cursor_column = COLUMNS - 1
+    elseif new_column > COLUMNS then self.cursor_column = 0
+    else self.cursor_column = new_column end
+
+    if new_row < 0 then self.cursor_row = ROWS - 1
+    elseif new_row > ROWS then self.cursor_row = 0
+    else self.cursor_row = new_row end
+    
     self:update_description_panel()
 --    print("column: " .. self.cursor_column .. " row: " .. self.cursor_row)
 end
@@ -154,22 +162,24 @@ function inventory:on_command_pressed(command)
     local handled = false
 
     if command == "right" then
-        if self.cursor_column == COLUMNS - 1 then return false end
         sol.audio.play_sound("cursor")
-        self:update_cursor_position(cursor_index + 1)
+        if self.cursor_column == COLUMNS - 1 then self:update_cursor_position(cursor_index - COLUMNS + 1)
+        else self:update_cursor_position(cursor_index + 1) end
         handled = true
     elseif command == "left" then
-        if self.cursor_column == 0 then return false end
         sol.audio.play_sound("cursor")
-        self:update_cursor_position(cursor_index -1)
+        if self.cursor_column == 0 then self:update_cursor_position(cursor_index + COLUMNS - 1)
+        else self:update_cursor_position(cursor_index - 1) end
         handled = true
     elseif command == "up" then
         sol.audio.play_sound("cursor")
-        self:update_cursor_position(cursor_index - COLUMNS)
+        if self.cursor_row == 0 then self:update_cursor_position(cursor_index + (COLUMNS * (ROWS - 1)))
+        else self:update_cursor_position(cursor_index - COLUMNS) end
         handled = true
     elseif command == "down" then
         sol.audio.play_sound("cursor")
-        self:update_cursor_position(cursor_index + COLUMNS)
+        if self.cursor_row == ROWS -1  then self:update_cursor_position(cursor_index - (COLUMNS * (ROWS - 1)))
+        else self:update_cursor_position(cursor_index + COLUMNS) end
         handled = true
 
     elseif command == "action" then
