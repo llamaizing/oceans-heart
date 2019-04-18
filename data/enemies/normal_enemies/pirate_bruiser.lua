@@ -59,7 +59,7 @@ function enemy:on_dead()
      x = x,
      y = y,
      treasure_name = "rupee",
-     treasure_variant = 2,
+     treasure_variant = 3,
      }
   end
 end

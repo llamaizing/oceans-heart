@@ -15,7 +15,7 @@ local properties = {
 
 behavior:create(enemy, properties)
 
-function enemy:on_dead()
+function enemy:on_dying()
   random = math.random(100)
   if random < 10 then
     local map = enemy:get_map()
@@ -24,7 +24,7 @@ function enemy:on_dead()
      layer = layer,
      x = x,
      y = y,
-     treasure_name = "monster_guts",
+     treasure_name = "monster_eye",
      treasure_variant = 1,
      }
   end

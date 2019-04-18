@@ -1398,7 +1398,10 @@ item{ id = "matches", description = "matches" }
 item{ id = "menu_berry", description = "Menu Berry For Testing Inventory" }
 item{ id = "monkshood", description = "Monkshood" }
 item{ id = "monster_bones", description = "Monster Bones-1,3,5" }
+item{ id = "monster_eye", description = "Evil Eye" }
 item{ id = "monster_guts", description = "Monster Guts-1,3,5" }
+item{ id = "monster_heart", description = "Abyssal Heart" }
+item{ id = "monster_horn", description = "Beast Horn" }
 item{ id = "oak_charm", description = "oak charm" }
 item{ id = "oceansheart_chart", description = "Ocean's Heart Chart" }
 item{ id = "old_stockpot", description = "old stockpot" }

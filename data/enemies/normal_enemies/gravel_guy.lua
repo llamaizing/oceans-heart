@@ -30,3 +30,18 @@ function enemy:on_restarted()
   movement:set_speed(60)
   movement:start(enemy)
 end
+
+function enemy:on_dying()
+  random = math.random(100)
+  if random < 35 then
+    local map = enemy:get_map()
+    local x, y, layer = enemy:get_position()
+    map:create_pickable{
+     layer = layer,
+     x = x,
+     y = y,
+     treasure_name = "geode",
+     treasure_variant = 1,
+     }
+  end
+end

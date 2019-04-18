@@ -18,7 +18,7 @@ behavior:create(enemy, properties)
 
 function enemy:on_dead()
   random = math.random(100)
-  if random < 55 then
+  if random < 25 then
     local map = enemy:get_map()
     local x, y, layer = enemy:get_position()
     map:create_pickable{

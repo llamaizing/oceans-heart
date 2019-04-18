@@ -2740,15 +2740,6 @@ tile{
   tileset = "overworld_oakhaven",
 }
 
-tile{
-  layer = 0,
-  x = 336,
-  y = 160,
-  width = 192,
-  height = 32,
-  pattern = "wall.up.2",
-}
-
 pickable{
   layer = 0,
   x = 72,
@@ -4764,61 +4755,46 @@ wall{
   stops_projectiles = true,
 }
 
-custom_entity{
+pickable{
   layer = 0,
-  x = 488,
+  x = 392,
   y = 205,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/warp_block",
-  model = "warp_block",
+  treasure_name = "monster_heart",
 }
 
-custom_entity{
+pickable{
   layer = 0,
-  x = 552,
-  y = 237,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/warp_block",
-  model = "warp_block",
+  x = 440,
+  y = 205,
+  treasure_name = "monster_eye",
 }
 
-custom_entity{
-  layer = 0,
-  x = 472,
-  y = 269,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/warp_block",
-  model = "warp_block",
-}
-
-enemy{
-  layer = 0,
-  x = 376,
-  y = 397,
-  direction = 0,
-  breed = "normal_enemies/meandershroom_1",
-}
-
-enemy{
-  layer = 0,
-  x = 304,
-  y = 373,
-  direction = 0,
-  breed = "normal_enemies/meandershroom_1",
-}
-
-enemy{
+pickable{
   layer = 0,
   x = 416,
-  y = 397,
-  direction = 0,
-  breed = "normal_enemies/meandershroom_1",
+  y = 197,
+  treasure_name = "monster_horn",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 237,
+  treasure_name = "monster_heart",
+}
+
+pickable{
+  layer = 0,
+  x = 440,
+  y = 237,
+  treasure_name = "monster_eye",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 229,
+  treasure_name = "monster_horn",
 }
 
 tile{

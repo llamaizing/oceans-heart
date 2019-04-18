@@ -11,3 +11,18 @@ local properties = {
 }
 
 behavior:create(enemy, properties)
+
+function enemy:on_dying()
+  random = math.random(100)
+  if random < 10 then
+    local map = enemy:get_map()
+    local x, y, layer = enemy:get_position()
+    map:create_pickable{
+     layer = layer,
+     x = x,
+     y = y,
+     treasure_name = "monster_guts",
+     treasure_variant = 1,
+     }
+  end
+end

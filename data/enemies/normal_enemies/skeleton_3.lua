@@ -48,7 +48,6 @@ local properties = {
       else
         if not being_attacked then
           enemy:hurt(1)
-          print("gotcha, skeleton!")
           being_attacked = true
           sol.timer.start(map, 400, function() being_attacked = false end)
         end
@@ -61,3 +60,17 @@ local properties = {
 properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)
 
+function enemy:on_dying()
+  random = math.random(100)
+  if random < 35 then
+    local map = enemy:get_map()
+    local x, y, layer = enemy:get_position()
+    map:create_pickable{
+     layer = layer,
+     x = x,
+     y = y,
+     treasure_name = "monster_bones",
+     treasure_variant = 2,
+     }
+  end
+end

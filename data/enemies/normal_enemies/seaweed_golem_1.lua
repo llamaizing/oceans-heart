@@ -22,7 +22,7 @@ function enemy:on_dead()
      layer = layer,
      x = x,
      y = y,
-     treasure_name = "geode",
+     treasure_name = "monster_eye",
      treasure_variant = 1,
      }
   end

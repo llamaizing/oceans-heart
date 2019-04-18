@@ -11361,21 +11361,27 @@ You found 10 branches of forsithya flowers!
 dialog{
   id = "_treasure.geode.1",
   text = [[
-You found a monster geode.
+You found a monsterous geode. It's much
+heavier than it looks like it should be,
+and much colder.
 ]],
 }
 
 dialog{
   id = "_treasure.geode.2",
   text = [[
-You found 5 monster geodes.
+You found some monsterous geodes. They're
+much heavier than they look like they should
+be, and much colder.
 ]],
 }
 
 dialog{
   id = "_treasure.geode.3",
   text = [[
-You found 10 monster geodes.
+You found some monsterous geodes. They're
+much heavier than they look like they should
+be, and much colder.
 ]],
 }
 
@@ -11763,21 +11769,39 @@ You collected a stem of monkshood flowers.
 dialog{
   id = "_treasure.monster_bones.1",
   text = [[
-You found some monster bones.
+You found the bones of an undead creature.
+Did these used to just be... dead bones? Alive
+bones? Have they always been undead? These really
+raise a lot of questions.
 ]],
 }
 
 dialog{
   id = "_treasure.monster_bones.2",
   text = [[
-You found some monster bones.
+  You found the bones of an undead creature.
+  Did these used to just be... dead bones? Alive
+  bones? Have they always been undead? These really
+  raise a lot of questions.
 ]],
 }
 
 dialog{
   id = "_treasure.monster_bones.3",
   text = [[
-You found some monster bones.
+  You found the bones of an undead creature.
+  Did these used to just be... dead bones? Alive
+  bones? Have they always been undead? These really
+  raise a lot of questions.
+]],
+}
+
+dialog{
+  id = "_treasure.monster_eye.1",
+  text = [[
+You found the eye of a monstrosity.
+Even unattached to anything, you feel
+like you're being watched.
 ]],
 }
 
@@ -11799,6 +11823,24 @@ dialog{
   id = "_treasure.monster_guts.3",
   text = [[
 You found some monster guts.
+]],
+}
+
+dialog{
+  id = "_treasure.monster_heart.1",
+  text = [[
+You found an Abyssal Heart. It beats at
+odd times. You can almost feel a slight
+tug toward the depths of the sea.
+]],
+}
+
+dialog{
+  id = "_treasure.monster_horn.1",
+  text = [[
+You found the horn of some beast. While
+it's hollow, if you look inside, you can't
+see the end.
 ]],
 }
 
@@ -14109,7 +14151,7 @@ Thrush Fort.
 !Forest, past Spruce Head
 @Destroy the monsters inside
 @Explore the tomb
-  
+
 ]],
 }
 

@@ -634,12 +634,35 @@ animation{
   },
 }
 animation{
+  name = "monster_eye",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 416, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "monster_guts",
   src_image = "entities/items.png",
   directions = {
     { x = 272, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 272, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 272, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "monster_heart",
+  src_image = "entities/items.png",
+  frame_delay = 340,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 416, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "monster_horn",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 416, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{

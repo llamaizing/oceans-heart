@@ -85,3 +85,18 @@ function enemy:on_post_draw()
       map:draw_visual(particles[i], x, y)
     end
 end
+
+function enemy:on_dying()
+  random = math.random(100)
+  if random < 15 then
+    local map = enemy:get_map()
+    local x, y, layer = enemy:get_position()
+    map:create_pickable{
+     layer = layer,
+     x = x,
+     y = y,
+     treasure_name = "mandrake",
+     treasure_variant = 1,
+     }
+  end
+end

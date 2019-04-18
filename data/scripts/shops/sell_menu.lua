@@ -17,11 +17,13 @@ local all_items = {
     {item = "lavendar", name = "Lavendar", price = 5},
     {item = "mandrake", name = "Mandrake Root", price = 20},
     {item = "mandrake_white", name = "White Mandrake Root", price = 40},
-    {item = "violets", name = "Violet Petals", price = 10},
     {item = "geode", name = "Monster Geode", price = 10},
-    {item = "monster_bones", name = "Monster Bones", price = 10},
-    {item = "monster_guts", name = "Monster Guts", price = 10},
     {item = "witch_hazel", name = "Witch Hazel", price = 10},
+    {item = "monster_bones", name = "Undead Bones", price = 10},
+    {item = "monster_guts", name = "Monster Guts", price = 10},
+    {item = "monster_eye", name = "Evil Eye", price = 50},
+    {item = "monster_horn", name = "Beast Horn", price = 30},
+    {item = "monster_heart", name = "Abyssal Heart", price = 100},
 }
 
 --constants:
@@ -30,7 +32,7 @@ local GRID_ORIGIN_Y = 72
 local GRID_ORIGIN_EQUIP_X = GRID_ORIGIN_X
 local GRID_ORIGIN_EQUIP_Y = GRID_ORIGIN_Y
 local ROWS = 2
-local COLUMNS = 7
+local COLUMNS = 8
 local MAX_INDEX = ROWS*COLUMNS --when every slot is full of an item, this should equal #all_items
 
 local cursor_index
@@ -128,7 +130,7 @@ function inventory:update_cursor_position(new_index)
     if new_row < 0 then self.cursor_row = ROWS - 1
     elseif new_row > ROWS then self.cursor_row = 0
     else self.cursor_row = new_row end
-    
+
     self:update_description_panel()
 --    print("column: " .. self.cursor_column .. " row: " .. self.cursor_row)
 end

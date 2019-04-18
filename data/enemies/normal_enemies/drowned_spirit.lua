@@ -33,3 +33,18 @@ enemy:register_event("on_created", function()
   enemy:set_obstacle_behavior("flying")
   enemy:set_layer_independent_collisions(true)
 end)
+
+function enemy:on_dying()
+  random = math.random(100)
+  if random < 4 then
+    local map = enemy:get_map()
+    local x, y, layer = enemy:get_position()
+    map:create_pickable{
+     layer = layer,
+     x = x,
+     y = y,
+     treasure_name = "monster_heart",
+     treasure_variant = 1,
+     }
+  end
+end
