@@ -60,7 +60,7 @@ function enemy_meta:on_hurt(attack)
     game:set_suspended(true)
     sol.timer.start(game, 120, function()
       game:set_suspended(false)
-      map:get_camera():shake({count = 4, amplitude = 4, speed = 80})
+      map:get_camera():shake({count = 4, amplitude = 5, speed = 100})
      end) --end of timer
 
   if attack == "explosion" then

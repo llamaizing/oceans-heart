@@ -1204,6 +1204,7 @@ sound{ id = "dash", description = "dash" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
 sound{ id = "door_unlocked", description = "door_unlocked" }
+sound{ id = "drink", description = "drink" }
 sound{ id = "drip", description = "drip" }
 sound{ id = "elixer_upgrade", description = "Elixer Upgrade" }
 sound{ id = "enemy_awake", description = "enemy_awake" }
@@ -1215,6 +1216,7 @@ sound{ id = "enemy_killed", description = "enemy_killed" }
 sound{ id = "explosion", description = "explosion" }
 sound{ id = "external_stairs_down", description = "external_stairs_down" }
 sound{ id = "external_stairs_up", description = "external_stairs_up" }
+sound{ id = "falling", description = "falling" }
 sound{ id = "fire_burning", description = "fire_burning" }
 sound{ id = "fire_burst_1", description = "Fire Burst 1" }
 sound{ id = "fire_burst_2", description = "fire_burst_2" }
@@ -1268,6 +1270,7 @@ sound{ id = "secret", description = "secret" }
 sound{ id = "shield", description = "shield" }
 sound{ id = "shoot", description = "shoot" }
 sound{ id = "shoot_magic", description = "shoot_magic" }
+sound{ id = "spit", description = "spit" }
 sound{ id = "splash", description = "splash" }
 sound{ id = "stairs_down_end", description = "stairs_down_end" }
 sound{ id = "stairs_down_start", description = "stairs_down_start" }
@@ -1286,7 +1289,9 @@ sound{ id = "sword2", description = "sword2" }
 sound{ id = "sword3", description = "sword3" }
 sound{ id = "sword4", description = "sword4" }
 sound{ id = "sword_spin_attack_load", description = "sword_spin_attack_load" }
+sound{ id = "sword_spin_attack_load_old", description = "sword_spin_attack_load_old" }
 sound{ id = "sword_spin_attack_release", description = "sword_spin_attack_release" }
+sound{ id = "sword_spin_attack_release_old", description = "sword_spin_attack_release_old" }
 sound{ id = "sword_tapping", description = "sword_tapping" }
 sound{ id = "sword_tapping_weak_wall", description = "sword_tapping_weak_wall" }
 sound{ id = "throw", description = "throw" }

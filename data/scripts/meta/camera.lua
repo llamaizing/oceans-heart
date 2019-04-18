@@ -45,7 +45,7 @@ function camera_meta:shake(config, callback)
         shake_step()
       else
         -- Finished.
-        camera:start_tracking(hero)
+        camera:scroll_to_hero()
         if callback ~= nil then
           callback()
         end
@@ -61,6 +61,18 @@ end
 function camera_meta:letterbox()
   self:set_size(320, 240)
   self:set_position_on_screen(48, 0)
+end
+
+
+function camera_meta:scroll_to_hero()
+  local camera = self
+  local map = camera:get_map()
+  local hero = map:get_hero()
+  m = sol.movement.create("target")
+  m:set_ignore_obstacles(true)
+  m:set_target(camera:get_position_to_track(hero))
+  m:set_speed(180)
+  m:start(camera, function() camera:start_tracking(hero) end)
 end
 
 return true

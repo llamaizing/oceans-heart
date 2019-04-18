@@ -4796,6 +4796,30 @@ custom_entity{
   model = "warp_block",
 }
 
+enemy{
+  layer = 0,
+  x = 360,
+  y = 245,
+  direction = 0,
+  breed = "normal_enemies/meandershroom_1",
+}
+
+enemy{
+  layer = 0,
+  x = 304,
+  y = 373,
+  direction = 0,
+  breed = "normal_enemies/meandershroom_1",
+}
+
+enemy{
+  layer = 0,
+  x = 416,
+  y = 397,
+  direction = 0,
+  breed = "normal_enemies/meandershroom_1",
+}
+
 tile{
   layer = 1,
   x = 192,
