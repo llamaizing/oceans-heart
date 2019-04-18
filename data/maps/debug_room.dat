@@ -4798,8 +4798,8 @@ custom_entity{
 
 enemy{
   layer = 0,
-  x = 360,
-  y = 245,
+  x = 376,
+  y = 397,
   direction = 0,
   breed = "normal_enemies/meandershroom_1",
 }
