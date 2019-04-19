@@ -36764,6 +36764,15 @@ tile{
   pattern = "186",
 }
 
+wall{
+  layer = 0,
+  x = 616,
+  y = 648,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
+}
+
 teletransporter{
   layer = 0,
   x = 536,

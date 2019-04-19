@@ -70,3 +70,14 @@ function gallery_door_npc:on_interaction()
   end
 end
 
+function bomb_shop_intern:on_interaction()
+  local quest_value = game:get_value("quest_bomb_shop")
+  if quest_value == nil then
+    game:start_dialog("_oakhaven.npcs.bomb_shop.intern.1", function() game:set_value("quest_bomb_shop", 0) end)
+
+  elseif quest_value  == 0 then
+    game:start_dialog("_oakhaven.npcs.bomb_shop.intern.1")
+
+  end
+end
+

@@ -6530,6 +6530,92 @@ All done! You look much safer!
 }
 
 dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.1",
+  text = [[
+VISIBLY SHAKING MAN:
+O-ooh, oh, hey. I'm sorry. I've been, uh,
+you can't go in there. This cave is private
+property. I'm an intern at the shop. The
+INTERN:
+Oakhaven Bomb Shop, and this cave is private
+but uh. Well. There's a monster in there
+anyway, so. Maybe you better leave.
+TILIA:
+Do you want me to go take care of the
+monster for you? I can do that.
+
+INTERN:
+O-oh! Yes! I mean, well. Uh, I'm just an
+intern. I can't tell you you're allowed
+to do that. Maybe go check the bomb shop?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.owner.1",
+  text = [[
+THE BOMB MAKER:
+Welcome, welcome! This is the Oakhaven
+Bomb Shop, specializing in bombs! One thing,
+we don't have any bombs. There's a thing,
+THE BOMB MAKER:
+at the saltpeter mine. One of those, we
+dug too deep and unleashed a monster, one
+of those. You aren't predisposed to go
+THE BOMB MAKER:
+down into mines to destroy monsters, are
+you? I've been asking everyone. I'll pay,
+of course. In bombs maybe.
+TILIA:
+It seems like that's the kind of work I've
+been taking on recently. Really seems like
+it's your own fault, but I can look into it.
+THE BOMB MAKER:
+Ah! Yes, fantastic! You will destory the
+monster I've unleashed on myself! Please,
+the saltpeter mine is souteast of town.
+THE BOMB MAKER:
+Go out the south gate, then head east.
+My intern is stationed at the entrance,
+tell him I sent you, he'll let you in.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.owner.2",
+  text = [[
+THE BOMB MAKER:
+Ah! You. Yes! You agreed to destroy the
+monster I brought upon myself by digging
+too deep into the saltpeter mines. Yes.
+THE BOMB MAKER:
+Once you take care of that issue, I'll be
+able to sell bombs again. And ship them
+out. All over. Everyone will sell my bombs!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.owner.3",
+  text = [[
+THE BOMB MAKER:
+Ah! You're back. You have destoryed the
+monster that lurked in the depts of the
+saltpeter mine, yes?
+TILIA:
+I did. You said you've pay me?
+
+
+THE BOMB MAKER:
+Huzzah! Now, yes, now I can sell my bombs.
+Every shop in the world will want to stock
+my bombs! So many explosions! But yes,
+THE BOMB MAKER:
+I will pay you, ahahahaha!
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.carpenter.1",
   text = [[
 I take a lot of pride in my drawers. I've been
@@ -14183,6 +14269,24 @@ Naerreturn Bay.
 !It's on Yarrowmouth.
 @Board the ghost ship.
 
+]],
+}
+
+dialog{
+  id = "quest.side.oakhaven.bomb_shop",
+  title = "Saltpeter Cave",
+  text = [[
+The Oakhaven Bomb Shop is
+having monster-realted supply
+chain issues.
+@!Check in with the shop in
+!Oakhaven city
+@Enter the saltpeter cave
+near Fort Crow
+!Out the city's south gate,
+!head east.
+@Find and destroy the monster
+@Return to the bomb shop
 ]],
 }
 

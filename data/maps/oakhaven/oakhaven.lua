@@ -263,8 +263,6 @@ end
 --intro cutscene
 function remember_sensor:on_activated()
   if game:get_value("hazel_is_here") ~= true then
-  --this is the only thing that makes bombs available in the shop? Seems like a bad way to do it, but...
-    game:set_value("available_in_shop_bombs", true)
     game:start_dialog("_generic_dialogs.hey")
     hero:freeze()
     local m = sol.movement.create("path")

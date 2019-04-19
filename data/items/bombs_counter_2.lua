@@ -8,7 +8,7 @@ function item:on_created()
   item:set_amount_savegame_variable("amount_bomb_counter")
   item:set_assignable(true)
   item:set_amount_savegame_variable("amount_bomb_counter")
-  item:set_max_amount(99)
+  item:set_max_amount(999)
   bomb_max_amount = self:get_max_amount()
 end
 

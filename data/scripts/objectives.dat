@@ -335,6 +335,12 @@ side{
 }
 
 side{
+	dialog_id = "quest.side.oakhaven.bomb_shop",
+	calc_phase = "quest_bomb_shop",
+	location = "location.oakhaven"
+}
+
+side{
 	dialog_id = "quest.side.lighthouses",
 	calc_phase = "quest_lighthouses",
 	replace_v = {
