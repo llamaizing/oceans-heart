@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "vault_walls",
-  music = "same",
+  music = "ballast_harbor",
 }
 
 tile{
@@ -36081,4 +36081,3 @@ dynamic_tile{
   pattern = "35",
   tileset = "cave_2",
 }
-
