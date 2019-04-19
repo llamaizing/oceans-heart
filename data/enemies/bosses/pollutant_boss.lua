@@ -59,6 +59,7 @@ enemy:register_event("on_created", function()
     particles[i]:set_xy(math.random(-20, 20), math.random(-24, 0))
     local m = sol.movement.create("random")
     m:set_speed(PARTICLE_SPEED)
+    m:set_ignore_suspend(false)
     m:start(particles[i])
     i = i + 1
     if i > MAX_PARTICLES then i = 0 end
@@ -72,4 +73,19 @@ function enemy:on_post_draw()
     for i=1, #particles do
       map:draw_visual(particles[i], x, y)
     end
+end
+
+function enemy:on_dying()
+  random = math.random(100)
+  if random < 8 then
+    local map = enemy:get_map()
+    local x, y, layer = enemy:get_position()
+    map:create_pickable{
+     layer = layer,
+     x = x,
+     y = y,
+     treasure_name = "monster_heart",
+     treasure_variant = 1,
+     }
+  end
 end

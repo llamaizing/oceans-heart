@@ -25,6 +25,7 @@ function enemy:on_created()
     particles[i]:set_xy(math.random(-16, 16), math.random(-16, 0))
     local m = sol.movement.create("random")
     m:set_speed(PARTICLE_SPEED)
+    m:set_ignore_suspend(false)
     m:start(particles[i])
     i = i + 1
     if i > MAX_PARTICLES then i = 0 end
