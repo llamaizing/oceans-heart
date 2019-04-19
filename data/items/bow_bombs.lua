@@ -18,7 +18,7 @@ function item:on_created()
   item:set_assignable(true)
 end
 function item:on_started()
-  item:set_max_amount(100)
+  item:set_max_amount(999)
 end
 
 
