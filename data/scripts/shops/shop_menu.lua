@@ -40,12 +40,18 @@ local all_items = {
     description = "Elixer - Recover Health, or revive you when you fall"},
     {item = "apples", name = "Apples", price = 10, variant = 1,
       availability_variable = "available_in_shop_apples"},
-    {item = "arrow", name = "Arrows", price = 20, variant = 3,
+    {item = "arrow", name = "Arrows", price = 10, variant = 3,
       availability_variable = "available_in_shop_arrows",
       description = "Arrows (qty: 5)"},
+      {item = "arrow", name = "Arrows", price = 40, variant = 5,
+        availability_variable = "available_in_shop_arrows",
+        description = "Arrows (qty: 20)"},
     {item = "bomb", name = "Bombs", price = 30, variant = 3,
       availability_variable = "available_in_shop_bombs",
       description = "Bombs (qty: 5)"},
+    {item = "bomb", name = "Bombs", price = 60, variant = 4,
+      availability_variable = "available_in_shop_bombs",
+      description = "Bombs (qty: 10)"},
 }
 
 --constants:
