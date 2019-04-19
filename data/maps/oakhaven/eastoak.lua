@@ -78,6 +78,11 @@ function bomb_shop_intern:on_interaction()
   elseif quest_value  == 0 then
     game:start_dialog("_oakhaven.npcs.bomb_shop.intern.1")
 
+  elseif quest_value == 1 then
+    game:start_dialog("_oakhaven.npcs.bomb_shop.intern.2", function()
+
+    end)
+
   end
 end
 

@@ -6552,6 +6552,28 @@ to do that. Maybe go check the bomb shop?
 }
 
 dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.2",
+  text = [[
+INTERN:
+O-oh, hi. I'm an intern at the Oakhaven
+Bomb Shop. I can't, you see, it's my job...
+well, I'm not paid. But it's my task to
+INTERN:
+keep people away. For their own safety,
+from this mine, which is full of a monster.
+
+TILIA:
+Hey, don't worry man. The guy at the bomb
+shop sent me down here to take care of it.
+
+INTERN:
+Oh, oh, oh good. Golly, good. Yes, please,
+go inside. Help yourself to the monster.
+I mean, to destroying it. Uh.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.bomb_shop.owner.1",
   text = [[
 THE BOMB MAKER:
