@@ -10,7 +10,6 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
   guard_2:set_enabled(false)
   if game:get_value("spiked_crow_ale") then guard_1:set_enabled(false) guard_2:set_enabled(true) end
@@ -19,16 +18,22 @@ map:register_event("on_started", function()
 
   if game:get_value("quest_pirate_fort") == 4 then morus:set_enabled(true) end
 
-  if game:get_value("barbell_brutes_defeated") == true then vice_captain:set_enabled(true) wine:set_enabled(true)
+  if game:get_value("barbell_brutes_defeated") == true then
+    vice_captain:set_enabled(true) wine:set_enabled(true)
+  end
+
+  if game:get_value("quest_bomb_shop") ~= nil and game:get_value("quest_bomb_shop") > 1 then
+    bomb_shop_intern:set_enabled(false)
+  end
+
   if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") >= 2 then
     gallery_door:set_enabled(false)
     gallery_door_npc:set_enabled(false)
   end
- end
 
   local m1 = sol.movement.create("path")
-  m1:set_path{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,6,6,6,6,6,6,6,6,6,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
-    2,2,2,2,2,2,2,2,2,2,2}
+  m1:set_path{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,6,6,6,6,6,6,6,6,6,
+  4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2}
   m1:set_speed(40)
   m1:set_ignore_obstacles(true)
   m1:start(circulate_guy)
@@ -80,8 +85,14 @@ function bomb_shop_intern:on_interaction()
 
   elseif quest_value == 1 then
     game:start_dialog("_oakhaven.npcs.bomb_shop.intern.2", function()
-
+      game:set_value("quest_bomb_shop", 2)
+      local m = sol.movement.create("path")
+      m:set_path{4,4}
+      m:start(bomb_shop_intern)
     end)
+
+  elseif quest_value == 2 then
+    game:start_dialog("_oakhaven.npcs.bomb_shop.intern.2")
 
   end
 end
