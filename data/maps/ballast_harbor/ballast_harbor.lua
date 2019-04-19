@@ -44,6 +44,7 @@ function market_shop:on_interaction()
   end)
 end
 
+--buyer
 function buyer_guy:on_interaction()
   game:start_dialog("_generic_dialogs.buyer_guy.1", function()
     local sell_menu = require("scripts/shops/sell_menu")
@@ -52,6 +53,11 @@ function buyer_guy:on_interaction()
   end)
 end
 
+--blacksmith
+local smith_shop = require("scripts/shops/blacksmith")
+function blacksmith:on_interaction()
+  smith_shop:open_shop(game)
+end --blacksmith interaction end
 
 --cargo carrier guys:
 for npc in map:get_entities("dropoff_npc") do

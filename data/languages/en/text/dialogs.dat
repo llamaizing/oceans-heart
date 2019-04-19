@@ -668,6 +668,16 @@ one the hard way.
 }
 
 dialog{
+  id = "_ballast_harbor.npcs.market_people.6",
+  text = [[
+Tryin' to ward off scurvy? I've got apples
+here, right from the mayor's personal
+orchard in Oakhaven. Don't ask how we got
+'em, it was a difficult process.
+]],
+}
+
+dialog{
   id = "_ballast_harbor.npcs.market_people.arrows_no_bow",
   text = [[
 I'm selling arrows. It doesn't look like you
@@ -9832,7 +9842,11 @@ bird statue in the middle. Just east of that,
 SHIFTY:
 there's three trees growing on rocks, and
 it's the middle on that has a secret tunnel
-that Hazel wanted to know about.
+that Hazel wanted to know about. That's
+SHIFTY:
+how we get to the palace, to burgle, take
+some apples from his orchard, you know.
+Usual stuff.
 ]],
 }
 
