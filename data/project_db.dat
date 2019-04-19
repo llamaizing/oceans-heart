@@ -306,6 +306,7 @@ sprite{ id = "enemies/misc/boomerang", description = "Boomerang" }
 sprite{ id = "enemies/misc/crusher", description = "Crusher" }
 sprite{ id = "enemies/misc/energy_ball", description = "Energy Ball" }
 sprite{ id = "enemies/misc/energy_ball_black", description = "Energy Ball-Black" }
+sprite{ id = "enemies/misc/energy_ball_black_2", description = "EnergyBallBlack2" }
 sprite{ id = "enemies/misc/energy_ball_small", description = "Energy Ball - Small" }
 sprite{ id = "enemies/misc/energy_ball_small_black", description = "Energy Ball Small Black" }
 sprite{ id = "enemies/misc/explosive_barrel", description = "Explosive Barrel" }
@@ -1463,6 +1464,7 @@ enemy{ id = "misc/crusher", description = "Crusher" }
 enemy{ id = "misc/default", description = "default" }
 enemy{ id = "misc/enemy_weapon", description = "Enemy Weapon" }
 enemy{ id = "misc/energy_ball_black", description = "Energy Ball-Black" }
+enemy{ id = "misc/energy_ball_black_2", description = "EnergyBallBlack2" }
 enemy{ id = "misc/energy_ball_bounce", description = "Energy Ball" }
 enemy{ id = "misc/energy_ball_small", description = "Energy Ball Small" }
 enemy{ id = "misc/energy_ball_small_black", description = "EnergyBallSmallBlack" }

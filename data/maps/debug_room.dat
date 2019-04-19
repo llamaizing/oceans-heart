@@ -4796,6 +4796,14 @@ pickable{
   treasure_name = "monster_horn",
 }
 
+enemy{
+  layer = 0,
+  x = 456,
+  y = 373,
+  direction = 0,
+  breed = "bosses/sea_hag",
+}
+
 tile{
   layer = 1,
   x = 192,
