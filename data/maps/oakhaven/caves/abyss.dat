@@ -11,31 +11,11 @@ properties{
 
 tile{
   layer = 0,
-  x = 0,
-  y = 0,
-  width = 416,
-  height = 240,
+  x = 88,
+  y = 32,
+  width = 160,
+  height = 112,
   pattern = "ground1.1",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 112,
-  width = 160,
-  height = 64,
-  pattern = "224",
-  tileset = "cave_2",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 176,
-  width = 160,
-  height = 48,
-  pattern = "225",
-  tileset = "cave_2",
 }
 
 destination{
