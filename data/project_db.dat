@@ -579,7 +579,6 @@ sprite{ id = "entities/torch_tall_top_lit", description = "tall torchtop - alway
 sprite{ id = "entities/vase", description = "Vase" }
 sprite{ id = "entities/vase_arrows", description = "Vase - Arrows" }
 sprite{ id = "entities/vase_berries", description = "Vase-Berries" }
-sprite{ id = "entities/vase_skull", description = "Vase (skull)" }
 sprite{ id = "entities/warp_block", description = "Warp Block" }
 sprite{ id = "entities/weak_tree", description = "weak tree" }
 sprite{ id = "entities/whisky", description = "whisky" }
