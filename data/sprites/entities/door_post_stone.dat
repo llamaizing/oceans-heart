@@ -13,10 +13,10 @@ animation{
   src_image = "entities/door_npcs.png",
   frame_delay = 120,
   directions = {
-    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
-    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
-    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
-    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 3 },
+    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 3 },
+    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 3 },
+    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 3 },
+    { x = 112, y = 48, frame_width = 16, frame_height = 16, origin_x = 0, origin_y = 0, num_frames = 3 },
   },
 }
 animation{

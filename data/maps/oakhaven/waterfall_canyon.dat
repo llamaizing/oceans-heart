@@ -1640,15 +1640,6 @@ tile{
 
 tile{
   layer = 2,
-  x = 160,
-  y = 640,
-  width = 16,
-  height = 16,
-  pattern = "79",
-}
-
-tile{
-  layer = 2,
   x = 208,
   y = 704,
   width = 16,
@@ -1748,26 +1739,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 96,
-  y = 656,
-  width = 16,
-  height = 16,
-  pattern = "91",
-}
-
-tile{
-  layer = 2,
-  x = 128,
-  y = 656,
-  width = 16,
-  height = 16,
-  pattern = "86",
-}
-
-tile{
-  layer = 2,
   x = 112,
-  y = 640,
+  y = 624,
   width = 16,
   height = 16,
   pattern = "80",
@@ -1776,7 +1749,7 @@ tile{
 tile{
   layer = 2,
   x = 96,
-  y = 640,
+  y = 624,
   width = 16,
   height = 16,
   pattern = "79",
@@ -1785,19 +1758,10 @@ tile{
 tile{
   layer = 2,
   x = 128,
-  y = 640,
+  y = 624,
   width = 16,
   height = 16,
   pattern = "82",
-}
-
-tile{
-  layer = 2,
-  x = 112,
-  y = 656,
-  width = 16,
-  height = 16,
-  pattern = "189",
 }
 
 tile{
@@ -2968,24 +2932,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "90",
-}
-
-tile{
-  layer = 2,
-  x = 160,
-  y = 656,
-  width = 16,
-  height = 16,
-  pattern = "1",
-}
-
-tile{
-  layer = 2,
-  x = 144,
-  y = 656,
-  width = 16,
-  height = 16,
-  pattern = "81",
 }
 
 tile{
@@ -5071,7 +5017,7 @@ tile{
 tile{
   layer = 2,
   x = 144,
-  y = 672,
+  y = 656,
   width = 16,
   height = 16,
   pattern = "96",
@@ -5187,8 +5133,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 168,
-  y = 672,
+  x = 160,
+  y = 664,
   width = 16,
   height = 16,
   pattern = "99",
@@ -5609,6 +5555,249 @@ tile{
   pattern = "510",
 }
 
+tile{
+  layer = 2,
+  x = 128,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "895",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "898",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "897",
+}
+
+tile{
+  layer = 2,
+  x = 128,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "896",
+}
+
+tile{
+  layer = 2,
+  x = 160,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "903",
+}
+
+tile{
+  layer = 2,
+  x = 160,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "904",
+}
+
+tile{
+  layer = 2,
+  x = 128,
+  y = 576,
+  width = 48,
+  height = 8,
+  pattern = "1828",
+}
+
+tile{
+  layer = 2,
+  x = 128,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "877",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "885",
+}
+
+tile{
+  layer = 2,
+  x = 160,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "880",
+}
+
+tile{
+  layer = 2,
+  x = 112,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1817",
+}
+
+tile{
+  layer = 2,
+  x = 112,
+  y = 552,
+  width = 16,
+  height = 32,
+  pattern = "1007",
+}
+
+tile{
+  layer = 2,
+  x = 112,
+  y = 568,
+  width = 16,
+  height = 24,
+  pattern = "2217",
+}
+
+tile{
+  layer = 2,
+  x = 176,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1817",
+}
+
+tile{
+  layer = 2,
+  x = 176,
+  y = 552,
+  width = 16,
+  height = 32,
+  pattern = "1007",
+}
+
+tile{
+  layer = 2,
+  x = 176,
+  y = 568,
+  width = 16,
+  height = 24,
+  pattern = "2217",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 2,
+  x = 136,
+  y = 552,
+  width = 8,
+  height = 32,
+  pattern = "2202",
+}
+
+tile{
+  layer = 2,
+  x = 160,
+  y = 552,
+  width = 8,
+  height = 32,
+  pattern = "2203",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 552,
+  width = 16,
+  height = 32,
+  pattern = "2204",
+}
+
+tile{
+  layer = 2,
+  x = 136,
+  y = 552,
+  width = 32,
+  height = 16,
+  pattern = "2205",
+}
+
+tile{
+  layer = 2,
+  x = 160,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "80",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "81",
+}
+
+tile{
+  layer = 2,
+  x = 96,
+  y = 640,
+  width = 16,
+  height = 32,
+  pattern = "208",
+}
+
+tile{
+  layer = 2,
+  x = 128,
+  y = 640,
+  width = 16,
+  height = 32,
+  pattern = "209",
+}
+
+tile{
+  layer = 2,
+  x = 112,
+  y = 640,
+  width = 16,
+  height = 32,
+  pattern = "193",
+}
+
+tile{
+  layer = 2,
+  x = 112,
+  y = 648,
+  width = 16,
+  height = 16,
+  pattern = "189",
+}
+
 jumper{
   layer = 2,
   x = 144,
@@ -5901,6 +6090,44 @@ destructible{
   y = 557,
   sprite = "entities/bush_flowers_white",
   can_be_cut = true,
+}
+
+jumper{
+  layer = 2,
+  x = 112,
+  y = 536,
+  width = 16,
+  height = 8,
+  direction = 6,
+  jump_length = 72,
+}
+
+jumper{
+  layer = 2,
+  x = 176,
+  y = 536,
+  width = 16,
+  height = 8,
+  direction = 6,
+  jump_length = 72,
+}
+
+destination{
+  name = "from_elixer_upgrade",
+  layer = 2,
+  x = 152,
+  y = 597,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 2,
+  x = 144,
+  y = 568,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/marblecliff_ruins",
+  destination = "from_waterfall_canyon",
 }
 
 tile{
