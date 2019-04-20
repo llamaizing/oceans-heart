@@ -1,0 +1,58 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "cave_2",
+  music = "oak_hornpipe",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 112,
+  width = 160,
+  height = 64,
+  pattern = "224",
+  tileset = "cave_2",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 176,
+  width = 160,
+  height = 48,
+  pattern = "225",
+  tileset = "cave_2",
+}
+
+destination{
+  name = "from_oakhaven",
+  layer = 0,
+  x = 24,
+  y = 61,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 16,
+  y = 64,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/oakhaven",
+  destination = "from_abyss",
+}
+

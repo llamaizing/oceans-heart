@@ -171,6 +171,7 @@ map{ id = "new_limestone/tavern_up_present", description = "Tavern Present-Upsta
 map{ id = "new_limestone/tavern_upstairs", description = "Tavern Upstairs" }
 map{ id = "new_limestone/tim", description = "Tim" }
 map{ id = "new_limestone/transition", description = "transition" }
+map{ id = "oakhaven/caves/abyss", description = "Abyss" }
 map{ id = "oakhaven/caves/amalenchier_tomb", description = "Amalenchier's Tomb" }
 map{ id = "oakhaven/caves/eastoak_coral_ore_cave", description = "Eastoak Coral Ore Cave" }
 map{ id = "oakhaven/caves/eastoak_health_shrine", description = "Eastoak Health Shrine" }

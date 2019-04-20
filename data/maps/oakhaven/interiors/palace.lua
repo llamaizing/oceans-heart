@@ -38,6 +38,8 @@ function map:on_started()
     attic_painting:set_enabled(false)
     downstairs_dog_painting:set_enabled(true)
   end
+  if game:get_value("oakhaven_palace_rune_activated") then glowing_rune:set_enabled(true) end
+
 end
 
 
@@ -292,4 +294,27 @@ function hazel_sensor:on_activated()
     end) --end of first dialog function
     end) --end of Tilia movement
   end --end of if you haven't found Hazel branch
+end
+
+
+
+
+---------------MISC------------------
+function runic_stone:on_interaction()
+  game:start_dialog("_oakhaven.observations.palace.secret_experiment_room.1", function(answer)
+    if answer == 3 then
+      glowing_rune:set_enabled(true)
+      sol.audio.play_sound"charge_1"
+      sol.audio.play_sound"sea_spirit"
+      game:set_value("oakhaven_palace_rune_activated", true)
+    end
+  end)
+end
+
+function im_in_palace_sensor:on_activated()
+  if not game:get_value("found_path_from_abyss_to_oakhaven_palace") then
+    game:start_dialog("_oakhaven.observations.palace.secret_experiment_room.2")
+    game:set_value("found_path_from_abyss_to_oakhaven_palace", true)
+  end
+  im_in_palace_sensor:set_enabled(false)
 end

@@ -10543,6 +10543,40 @@ It seems to depict the city before the flood.
 }
 
 dialog{
+  id = "_oakhaven.observations.palace.secret_experiment_room.1",
+  text = [[
+There's a bunch of runes and symbols carved
+into the stone. You can't read them, but as
+you look them over... do you want to prick
+your finger and drop blood on the stone?
+You can't read the runes, but still,
+inexplicably, you feel like doing that.
+$?Prick your finger
+$?Bodily fluids stay inside, that's the rule.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.palace.secret_experiment_room.2",
+  text = [[
+TILIA:
+Oh, wait, this is Oakhaven Palace, isn't
+it... The palace is connected to that
+cave system?
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.palace.secret_experiment_room.3",
+  text = [[
+There's a bunch of really, really old papers
+on the wall. It looks like crazy person
+scribbles. There's runes and drawings of
+waves and monsters.
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.palace_break_in.cookbook",
   text = [[
 There's a cook book here. Looks like some

@@ -1482,6 +1482,47 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "222",
+  ground = "empty",
+  default_layer = 0,
+  x = { 544, 544 },
+  y = { 0, 96 },
+  width = 96,
+  height = 96,
+  frame_delay = 450,
+}
+
+tile_pattern{
+  id = "223",
+  ground = "empty",
+  default_layer = 0,
+  x = 544,
+  y = 192,
+  width = 96,
+  height = 96,
+}
+
+tile_pattern{
+  id = "224",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 240,
+  width = 32,
+  height = 64,
+}
+
+tile_pattern{
+  id = "225",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 240,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "23",
   ground = "empty",
   default_layer = 0,
