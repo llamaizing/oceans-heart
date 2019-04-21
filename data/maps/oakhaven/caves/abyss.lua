@@ -9,12 +9,30 @@
 
 local map = ...
 local game = map:get_game()
+local particles = {}
+local MAX_PARTICLES = 50
+local PARTICLE_SPEED = 11
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
   if game:get_value("oakhaven_palace_rune_activated") then
     glowing_rune:set_enabled(true)
+    rune_sensor:set_enabled(true)
   end
+
+--particle effect creation
+  local i = 1
+  sol.timer.start(map, math.random(100,250), function()
+    particles[i] = sol.sprite.create("entities/pollution_ash")
+    particles[i]:set_xy(math.random(-350, 300), math.random(-800, 200))
+    local m = sol.movement.create("random")
+    m:set_speed(PARTICLE_SPEED)
+--    m:set_ignore_suspend(false)
+    m:start(particles[i])
+    i = i + 1
+    if i > MAX_PARTICLES then i = 0 end
+    return true
+  end)
 
 end)
 
@@ -24,5 +42,15 @@ function coral_boss:on_dead()
 end
 
 function rune_sensor:on_activated()
+print("hi maxx")
+  game:start_dialog("_oakhaven.observations.abyss.draw_in")
+end
 
+
+--particle effect draw
+function map:on_draw()
+    local x, y, layer = glowing_rune:get_position()
+    for i=1, #particles do
+      map:draw_visual(particles[i], x, y)
+    end
 end

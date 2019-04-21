@@ -2945,14 +2945,14 @@ destructible{
   can_be_cut = true,
 }
 
-npc{
+teletransporter{
   layer = 0,
-  x = 184,
-  y = 253,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/max",
-  behavior = "dialog#_generic_dialogs.max.unfinished_area",
+  x = 176,
+  y = 192,
+  width = 16,
+  height = 16,
+  destination_map = "snapmast_reef/caves/smoldering_rock",
+  destination = "from_outside",
 }
 
 tile{

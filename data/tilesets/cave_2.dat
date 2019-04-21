@@ -1489,7 +1489,7 @@ tile_pattern{
   y = { 0, 96, 192 },
   width = 96,
   height = 96,
-  frame_delay = 600,
+  frame_delay = 300,
   mirror_loop = true,
 }
 
@@ -1635,6 +1635,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "236",
+  ground = "traversable",
+  default_layer = 0,
+  x = 80,
+  y = 272,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "237",
   ground = "wall_top_left",
   default_layer = 0,
@@ -1642,6 +1652,17 @@ tile_pattern{
   y = 392,
   width = 24,
   height = 24,
+}
+
+tile_pattern{
+  id = "238",
+  ground = "empty",
+  default_layer = 0,
+  x = { 96, 112, 128 },
+  y = { 256, 256, 256 },
+  width = 16,
+  height = 32,
+  frame_delay = 250,
 }
 
 tile_pattern{

@@ -238,6 +238,7 @@ map{ id = "snapmast_reef/caves/coral_cave", description = "Coral Cave" }
 map{ id = "snapmast_reef/caves/elixer_upgrade_tower", description = "Elixer Upgrade Tower" }
 map{ id = "snapmast_reef/caves/health_ship", description = "Health Ship" }
 map{ id = "snapmast_reef/caves/lighthouse", description = "Lighthouse" }
+map{ id = "snapmast_reef/caves/smoldering_rock", description = "Smoldering Rock" }
 map{ id = "snapmast_reef/cemetery_of_the_waves/blackbeard_cabin", description = "Blackbeard Cabin" }
 map{ id = "snapmast_reef/cemetery_of_the_waves/shipwreck_chain", description = "shipwreck-chain:Main Dungeon" }
 map{ id = "snapmast_reef/cemetery_of_the_waves/test", description = "test" }
@@ -522,6 +523,7 @@ sprite{ id = "entities/elixer", description = "elixer" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/fire_grate", description = "Fire Grate" }
+sprite{ id = "entities/fire_hole", description = "Fire Hole" }
 sprite{ id = "entities/flame_pillar", description = "Flame Pillar" }
 sprite{ id = "entities/floating_sparkle", description = "Floating Sparkle" }
 sprite{ id = "entities/footprints_1", description = "Footprints 1" }

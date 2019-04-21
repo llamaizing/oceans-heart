@@ -794,8 +794,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 272,
+  x = 48,
+  y = 304,
   width = 32,
   height = 32,
   pattern = "35",
@@ -803,8 +803,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 272,
+  x = 48,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "23",
@@ -812,8 +812,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
-  y = 272,
+  x = 72,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "24",
@@ -821,8 +821,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
-  y = 296,
+  x = 72,
+  y = 328,
   width = 8,
   height = 8,
   pattern = "26",
@@ -830,8 +830,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 296,
+  x = 48,
+  y = 328,
   width = 8,
   height = 8,
   pattern = "25",
@@ -839,8 +839,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 200,
-  y = 280,
+  x = 72,
+  y = 312,
   width = 8,
   height = 16,
   pattern = "30",
@@ -848,8 +848,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 184,
-  y = 296,
+  x = 56,
+  y = 328,
   width = 16,
   height = 8,
   pattern = "29",
@@ -857,8 +857,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 280,
+  x = 48,
+  y = 312,
   width = 8,
   height = 16,
   pattern = "28",
@@ -866,8 +866,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 184,
-  y = 272,
+  x = 56,
+  y = 304,
   width = 16,
   height = 8,
   pattern = "27",
@@ -2417,8 +2417,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 248,
+  x = 0,
+  y = 304,
   width = 16,
   height = 16,
   pattern = "35",
@@ -2426,8 +2426,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 248,
+  x = 0,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "23",
@@ -2435,8 +2435,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 256,
+  x = 0,
+  y = 312,
   width = 8,
   height = 8,
   pattern = "25",
@@ -2444,8 +2444,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 184,
-  y = 248,
+  x = 8,
+  y = 304,
   width = 8,
   height = 8,
   pattern = "24",
@@ -2453,8 +2453,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 184,
-  y = 256,
+  x = 8,
+  y = 312,
   width = 8,
   height = 8,
   pattern = "26",
@@ -2483,8 +2483,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
-  y = 400,
+  x = 16,
+  y = 608,
   enabled_at_start = false,
   width = 48,
   height = 48,
@@ -2494,8 +2494,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 160,
-  y = 416,
+  x = 32,
+  y = 624,
   width = 16,
   height = 16,
   pattern = "41",
@@ -2946,8 +2946,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven",
-  destination = "from_abyss",
+  destination_map = "snapmast_reef/smoldering_rock",
+  destination = "from_drowned_village",
 }
 
 pickable{
@@ -4194,168 +4194,168 @@ sensor{
 sensor{
   name = "^save_solid_ground_sensor_3",
   layer = 0,
-  x = 136,
-  y = 397,
+  x = 8,
+  y = 605,
   width = 80,
   height = 80,
 }
 
 stream{
   layer = 0,
-  x = 184,
-  y = 413,
+  x = 56,
+  y = 621,
   direction = 5,
   speed = 48,
 }
 
 stream{
   layer = 0,
-  x = 168,
-  y = 413,
+  x = 40,
+  y = 621,
   direction = 6,
   speed = 48,
 }
 
 stream{
   layer = 0,
-  x = 152,
-  y = 413,
+  x = 24,
+  y = 621,
   direction = 7,
   speed = 48,
 }
 
 stream{
   layer = 0,
-  x = 152,
-  y = 429,
+  x = 24,
+  y = 637,
   direction = 0,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 152,
-  y = 445,
+  x = 24,
+  y = 653,
   direction = 1,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 168,
-  y = 445,
+  x = 40,
+  y = 653,
   direction = 2,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 184,
-  y = 445,
+  x = 56,
+  y = 653,
   direction = 3,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 184,
-  y = 429,
+  x = 56,
+  y = 637,
   direction = 4,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 192,
-  y = 453,
+  x = 64,
+  y = 661,
   direction = 3,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 192,
-  y = 437,
+  x = 64,
+  y = 645,
   direction = 4,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 192,
-  y = 421,
+  x = 64,
+  y = 629,
   direction = 4,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 192,
-  y = 405,
+  x = 64,
+  y = 613,
   direction = 5,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 176,
-  y = 405,
+  x = 48,
+  y = 613,
   direction = 6,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 160,
-  y = 405,
+  x = 32,
+  y = 613,
   direction = 6,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 144,
-  y = 405,
+  x = 16,
+  y = 613,
   direction = 7,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 144,
-  y = 421,
+  x = 16,
+  y = 629,
   direction = 0,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 144,
-  y = 437,
+  x = 16,
+  y = 645,
   direction = 0,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 144,
-  y = 453,
+  x = 16,
+  y = 661,
   direction = 1,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 160,
-  y = 453,
+  x = 32,
+  y = 661,
   direction = 2,
   speed = 32,
 }
 
 stream{
   layer = 0,
-  x = 176,
-  y = 453,
+  x = 48,
+  y = 661,
   direction = 2,
   speed = 32,
 }
@@ -4453,18 +4453,9 @@ custom_entity{
   model = "collapsing_floor",
 }
 
-block{
-  layer = 0,
-  x = 200,
-  y = 381,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-}
-
 custom_entity{
   layer = 0,
-  x = 144,
+  x = 112,
   y = 269,
   width = 32,
   height = 32,
@@ -4793,72 +4784,6 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
-}
-
-pickable{
-  layer = 0,
-  x = 392,
-  y = 205,
-  treasure_name = "monster_heart",
-}
-
-pickable{
-  layer = 0,
-  x = 440,
-  y = 205,
-  treasure_name = "monster_eye",
-}
-
-pickable{
-  layer = 0,
-  x = 416,
-  y = 197,
-  treasure_name = "monster_horn",
-}
-
-pickable{
-  layer = 0,
-  x = 392,
-  y = 237,
-  treasure_name = "monster_heart",
-}
-
-pickable{
-  layer = 0,
-  x = 440,
-  y = 237,
-  treasure_name = "monster_eye",
-}
-
-pickable{
-  layer = 0,
-  x = 416,
-  y = 229,
-  treasure_name = "monster_horn",
-}
-
-destructible{
-  layer = 0,
-  x = 304,
-  y = 125,
-  sprite = "entities/vase",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 320,
-  y = 125,
-  sprite = "entities/vase",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 336,
-  y = 125,
-  sprite = "entities/vase",
-  can_be_cut = true,
 }
 
 tile{
