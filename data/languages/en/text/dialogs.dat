@@ -10073,6 +10073,64 @@ knows where she is.
 }
 
 dialog{
+  id = "_oakhaven.npcs.port.office.benny1",
+  text = [[
+BENNY:
+Oh hey, welcome to Oakhaven. I'm the welcome
+guy here at the Port Office. We mostly like,
+do customs on cargo and stuff, but I have
+BENNY:
+a tourism brochure here, want to check
+it out?
+
+(Look at the tourism brochure?)
+$?Give it a read
+$?Just follow your heart
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.office.benny2",
+  text = [[
+The brochure is written in an overenthusiastic
+tone: Oakhaven City! Wander the market in the
+south, or visit the Governor's Palace in
+the north. A cool stream runs around the
+ancient library, through the city, and
+eventually empties out into the sea at
+the port, where you'll find many ferries
+and cargo ships. West is the Veilwood, a
+shady forest that leads to the sleepy
+town of Ivystump. East is Fort Crow, once
+an ancient ruin, now converted into a
+factory or something? The tourism board
+could not investigate as it is controlled
+by pirates and we recommend staying away.
+Perhaps, instead, venture Northwest of town
+to Marblecliff Mountain! A picturesque
+monastery sits perched on top.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.office.charts",
+  text = [[
+There's several charts showing the depth
+of the harbor and marking lanes for
+various ships to take in and out.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.office.papers",
+  text = [[
+There's many different papers scattered
+across the tables. Lots of charts and
+forms about imports and exports.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.port.warhouse_blocker_guy.1",
   text = [[
 STRIPED SHIRT GUY:

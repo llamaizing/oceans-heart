@@ -33662,6 +33662,16 @@ block{
   max_moves = 1,
 }
 
+teletransporter{
+  layer = 0,
+  x = 136,
+  y = 640,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/interiors/port_office",
+  destination = "from_outside",
+}
+
 tile{
   layer = 1,
   x = 80,

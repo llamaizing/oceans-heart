@@ -214,6 +214,7 @@ map{ id = "oakhaven/interiors/library2", description = "library" }
 map{ id = "oakhaven/interiors/melinda", description = "Melinda" }
 map{ id = "oakhaven/interiors/monastery", description = "Monastery" }
 map{ id = "oakhaven/interiors/palace", description = "Palace" }
+map{ id = "oakhaven/interiors/port_office", description = "Port Office" }
 map{ id = "oakhaven/interiors/port_warehouse", description = "Port Warehouse" }
 map{ id = "oakhaven/interiors/saloon", description = "Salamander Heartache" }
 map{ id = "oakhaven/interiors/sculptor", description = "sculptor" }
