@@ -5735,33 +5735,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 536,
-  y = 424,
-  width = 8,
-  height = 24,
-  pattern = "634",
-}
-
-tile{
-  layer = 0,
-  x = 520,
-  y = 424,
-  width = 16,
-  height = 24,
-  pattern = "635",
-}
-
-tile{
-  layer = 0,
-  x = 512,
-  y = 424,
-  width = 8,
-  height = 24,
-  pattern = "633",
-}
-
-tile{
-  layer = 0,
   x = 816,
   y = 416,
   width = 16,
@@ -8822,8 +8795,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
-  y = 400,
+  x = 504,
+  y = 424,
   width = 16,
   height = 16,
   pattern = "1445",
@@ -8832,7 +8805,7 @@ tile{
 tile{
   layer = 0,
   x = 544,
-  y = 400,
+  y = 424,
   width = 16,
   height = 16,
   pattern = "1445",
@@ -16481,7 +16454,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 544,
+  x = 560,
   y = 448,
   width = 16,
   height = 16,
@@ -17741,7 +17714,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 496,
+  x = 544,
   y = 448,
   width = 16,
   height = 16,
@@ -22210,8 +22183,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 560,
-  y = 456,
+  x = 472,
+  y = 448,
   width = 16,
   height = 16,
   pattern = "930",
@@ -22219,8 +22192,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 576,
-  y = 456,
+  x = 488,
+  y = 448,
   width = 16,
   height = 16,
   pattern = "931",
@@ -22228,8 +22201,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 592,
-  y = 456,
+  x = 504,
+  y = 448,
   width = 16,
   height = 16,
   pattern = "923",
@@ -24482,6 +24455,15 @@ tile{
   pattern = "592",
 }
 
+tile{
+  layer = 0,
+  x = 528,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "592",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -24533,7 +24515,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 552,
+  x = 568,
   y = 453,
   sprite = "entities/bush_monkshood",
 }
@@ -24678,7 +24660,7 @@ npc{
 
 destructible{
   layer = 0,
-  x = 504,
+  x = 552,
   y = 453,
   sprite = "entities/bush_monkshood",
 }
@@ -24881,14 +24863,6 @@ npc{
   subtype = 1,
   sprite = "npc/man/man_4.5",
   behavior = "dialog#_goatshead.npcs.market_people.8",
-}
-
-destination{
-  name = "from_flower_shop",
-  layer = 0,
-  x = 528,
-  y = 461,
-  direction = 3,
 }
 
 npc{
@@ -25604,16 +25578,6 @@ teletransporter{
   destination = "from_ouside",
 }
 
-teletransporter{
-  layer = 0,
-  x = 520,
-  y = 432,
-  width = 16,
-  height = 16,
-  destination_map = "goatshead_island/interiors/flower_shop",
-  destination = "from_outside",
-}
-
 destructible{
   layer = 0,
   x = 1544,
@@ -26018,6 +25982,13 @@ destructible{
   sprite = "entities/bush_flowers_yellow",
 }
 
+destructible{
+  layer = 0,
+  x = 536,
+  y = 453,
+  sprite = "entities/bush_monkshood",
+}
+
 tile{
   layer = 1,
   x = 1432,
@@ -26259,15 +26230,6 @@ tile{
   width = 16,
   height = 32,
   pattern = "1403",
-}
-
-tile{
-  layer = 1,
-  x = 512,
-  y = 424,
-  width = 32,
-  height = 8,
-  pattern = "636",
 }
 
 tile{
@@ -30160,15 +30122,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 520,
-  y = 408,
-  width = 16,
-  height = 16,
-  pattern = "2086",
-}
-
-tile{
-  layer = 1,
   x = 1024,
   y = 576,
   width = 16,
@@ -30362,8 +30315,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 560,
-  y = 448,
+  x = 472,
+  y = 440,
   width = 16,
   height = 8,
   pattern = "937",
@@ -30371,8 +30324,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 576,
-  y = 448,
+  x = 488,
+  y = 440,
   width = 16,
   height = 8,
   pattern = "936",
@@ -30380,8 +30333,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 592,
-  y = 448,
+  x = 504,
+  y = 440,
   width = 16,
   height = 8,
   pattern = "924",

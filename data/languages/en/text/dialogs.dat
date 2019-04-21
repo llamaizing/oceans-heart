@@ -4552,7 +4552,8 @@ Huh. Looks like the lighthouse is lit now.
 dialog{
   id = "_goatshead.observations.rilesdorf.1",
   text = [[
-There's a very fancy looking hat for sale.
+There's some fancy way of burning fancy
+candles.
 ]],
 }
 
@@ -4568,16 +4569,18 @@ Zeyphr Empire.
 dialog{
   id = "_goatshead.observations.rilesdorf.3",
   text = [[
-This seems like just a regular pot, but
-the price would suggest otherwise.
+This pot looks so fragile it would shatter
+if you put a leaf in it.
 ]],
 }
 
 dialog{
   id = "_goatshead.observations.rilesdorf.4",
   text = [[
-This is labeled as "Ancient Night Light".
-You don't think they really know what it is.
+There's a statue for sale that looks like
+someone sculpted it specifically for a
+charicature of a greedy person to keep in
+their home.
 ]],
 }
 
@@ -4599,6 +4602,15 @@ Blemar, -1200
 Carlov, 800...
 It continues on like this and doesn't
 get any less boring.
+]],
+}
+
+dialog{
+  id = "_goatshead.observations.rilesdorf.7",
+  text = [[
+There are several vases that look meant to
+look very old. You aren't sure what you
+would put in them.
 ]],
 }
 

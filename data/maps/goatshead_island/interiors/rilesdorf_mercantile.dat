@@ -857,33 +857,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
-  y = 40,
-  width = 16,
-  height = 16,
-  pattern = "278",
-}
-
-tile{
-  layer = 0,
-  x = 152,
-  y = 40,
-  width = 16,
-  height = 16,
-  pattern = "278",
-}
-
-tile{
-  layer = 0,
-  x = 104,
-  y = 48,
-  width = 32,
-  height = 16,
-  pattern = "280",
-}
-
-tile{
-  layer = 0,
   x = 256,
   y = 112,
   width = 16,
@@ -903,163 +876,10 @@ tile{
 tile{
   layer = 0,
   x = 256,
-  y = 112,
+  y = 128,
   width = 16,
   height = 32,
   pattern = "244",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "246",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 80,
-  width = 16,
-  height = 8,
-  pattern = "60",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 144,
-  width = 80,
-  height = 16,
-  pattern = "221",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 160,
-  width = 80,
-  height = 16,
-  pattern = "196",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 128,
-  width = 80,
-  height = 16,
-  pattern = "113",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "220",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 144,
-  width = 16,
-  height = 16,
-  pattern = "140",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 128,
-  width = 16,
-  height = 16,
-  pattern = "96",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "178",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "197",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 128,
-  width = 16,
-  height = 16,
-  pattern = "137",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 136,
-  width = 8,
-  height = 24,
-  pattern = "218",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 136,
-  width = 8,
-  height = 24,
-  pattern = "217",
-}
-
-tile{
-  layer = 0,
-  x = 144,
-  y = 136,
-  width = 16,
-  height = 24,
-  pattern = "219",
-}
-
-tile{
-  layer = 0,
-  x = 96,
-  y = 136,
-  width = 8,
-  height = 24,
-  pattern = "218",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 136,
-  width = 8,
-  height = 24,
-  pattern = "217",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 136,
-  width = 16,
-  height = 24,
-  pattern = "219",
 }
 
 tile{
@@ -1908,6 +1728,300 @@ tile{
   pattern = "169",
 }
 
+tile{
+  layer = 0,
+  x = 152,
+  y = 40,
+  width = 32,
+  height = 24,
+  pattern = "81",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "69",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "69",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "69",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "619",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "626",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 176,
+  width = 96,
+  height = 16,
+  pattern = "625",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 128,
+  width = 96,
+  height = 16,
+  pattern = "621",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 144,
+  width = 16,
+  height = 32,
+  pattern = "623",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "624",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 144,
+  width = 16,
+  height = 32,
+  pattern = "627",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 144,
+  width = 96,
+  height = 32,
+  pattern = "628",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "622",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 136,
+  width = 8,
+  height = 24,
+  pattern = "218",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 136,
+  width = 8,
+  height = 24,
+  pattern = "217",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 136,
+  width = 16,
+  height = 24,
+  pattern = "219",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 136,
+  width = 8,
+  height = 24,
+  pattern = "218",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 136,
+  width = 8,
+  height = 24,
+  pattern = "217",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 136,
+  width = 16,
+  height = 24,
+  pattern = "219",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "69",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "69",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "69",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "69",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "80",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "29",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 96,
+  width = 112,
+  height = 8,
+  pattern = "133",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "21",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "27",
+  tileset = "treasure",
+}
+
 npc{
   name = "rilesdorf",
   layer = 0,
@@ -1942,24 +2056,6 @@ teletransporter{
   height = 16,
   destination_map = "goatshead_island/goatshead_harbor",
   destination = "from_shop",
-}
-
-npc{
-  layer = 0,
-  x = 88,
-  y = 149,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/vase",
-}
-
-npc{
-  layer = 0,
-  x = 152,
-  y = 149,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/crystal",
 }
 
 separator{
@@ -2079,7 +2175,7 @@ npc{
   y = 157,
   direction = 3,
   subtype = 1,
-  behavior = "dialog#_goatshead.observations.rilesdorf.1",
+  behavior = "dialog#_goatshead.observations.rilesdorf.2",
 }
 
 npc{
@@ -2093,52 +2189,7 @@ npc{
 
 npc{
   layer = 0,
-  x = 264,
-  y = 125,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_goatshead.observations.rilesdorf.2",
-}
-
-npc{
-  layer = 0,
-  x = 88,
-  y = 157,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_goatshead.observations.rilesdorf.3",
-}
-
-npc{
-  layer = 0,
-  x = 88,
-  y = 149,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_goatshead.observations.rilesdorf.3",
-}
-
-npc{
-  layer = 0,
-  x = 152,
-  y = 157,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_goatshead.observations.rilesdorf.4",
-}
-
-npc{
-  layer = 0,
-  x = 152,
-  y = 149,
-  direction = 3,
-  subtype = 1,
-  behavior = "dialog#_goatshead.observations.rilesdorf.4",
-}
-
-npc{
-  layer = 0,
-  x = 80,
+  x = 72,
   y = 117,
   direction = 3,
   subtype = 1,
@@ -2147,7 +2198,7 @@ npc{
 
 npc{
   layer = 0,
-  x = 72,
+  x = 64,
   y = 117,
   direction = 3,
   subtype = 1,
@@ -2230,6 +2281,78 @@ block{
   pullable = true,
 }
 
+npc{
+  layer = 0,
+  x = 88,
+  y = 157,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_goatshead.observations.rilesdorf.3",
+}
+
+npc{
+  layer = 0,
+  x = 88,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_goatshead.observations.rilesdorf.3",
+}
+
+npc{
+  layer = 0,
+  x = 152,
+  y = 157,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_goatshead.observations.rilesdorf.4",
+}
+
+npc{
+  layer = 0,
+  x = 152,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_goatshead.observations.rilesdorf.4",
+}
+
+npc{
+  layer = 0,
+  x = 264,
+  y = 125,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_goatshead.observations.rilesdorf.1",
+}
+
+npc{
+  layer = 0,
+  x = 128,
+  y = 117,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_goatshead.observations.rilesdorf.7",
+}
+
+npc{
+  layer = 0,
+  x = 152,
+  y = 117,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_goatshead.observations.rilesdorf.7",
+}
+
+npc{
+  layer = 0,
+  x = 104,
+  y = 117,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_goatshead.observations.rilesdorf.7",
+}
+
 tile{
   layer = 1,
   x = 184,
@@ -2246,15 +2369,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "door.up.high",
-}
-
-tile{
-  layer = 1,
-  x = 64,
-  y = 96,
-  width = 112,
-  height = 8,
-  pattern = "133",
 }
 
 tile{
@@ -2313,25 +2427,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 256,
-  y = 104,
-  width = 16,
-  height = 8,
-  pattern = "139",
-}
-
-tile{
-  layer = 1,
-  x = 192,
-  y = 48,
-  width = 16,
-  height = 32,
-  pattern = "61",
-}
-
-tile{
-  layer = 1,
-  x = 72,
+  x = 64,
   y = 96,
   width = 16,
   height = 16,
@@ -2340,7 +2436,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 64,
+  x = 56,
   y = 96,
   width = 16,
   height = 16,
@@ -2420,7 +2516,106 @@ tile{
 }
 
 tile{
-  layer = 2,
+  layer = 1,
+  x = 96,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "68",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "68",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "68",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 128,
+  width = 16,
+  height = 8,
+  pattern = "16",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "40",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "139",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "30",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "22",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "26",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "28",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
   x = 168,
   y = 80,
   width = 16,
