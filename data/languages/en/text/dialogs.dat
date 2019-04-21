@@ -3237,6 +3237,38 @@ shop in business.
 }
 
 dialog{
+  id = "_goatshead.npcs.market_people.13",
+  text = [[
+WEARY SALESMAN:
+Look, I know this isn't in my best interest,
+but... if you just explore around the world,
+you'll probably find some berries or apples.
+WEARY SALESMAN:
+You can collect those, and eat them later
+when you aren't feeling well, and they'll
+help a little. Of course, if you know that
+WEARY SALESMAN:
+you're going into a tough battle, maybe
+just buy some bread or potions, those are
+a lot more effective and don't grow on trees.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.market_people.14",
+  text = [[
+VENDOR:
+Hey, you look like the adventuring type.
+My sister runs the shop behind me, if you
+want supplies to keep your health up, or
+VENDOR:
+potions to make you stronger, take a look
+inside. Sometimes she sells ammunitions like
+arrows too.
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.market_people.2",
   text = [[
 I just don't understand. If you're selling
@@ -3262,15 +3294,16 @@ dialog{
   id = "_goatshead.npcs.market_people.4",
   text = [[
 SHADY POT SALESMAN:
-Well, well, well. You look like a girl who's
-interested in fiiiiiine, fiiiiiine crockery. Am
-I wrong?
+Interested in some crockery? Perhaps a
+stockpot or ramekin? I even have tureens.
+
 TILIA:
-You're... yes.
-
-
+Oh, maybe like an empty bottle? I could
+see that being useful if I wanted to carry
+some water with me, maybe put a bug into.
 SHADY POT SALESMAN:
-Well. Well, well, $2well, well... $1well..... uh.$3
+What? Why, a bottle would have to be
+magic to use it like that! 
 ]],
 }
 
@@ -4615,7 +4648,7 @@ from someone's journal.
 dialog{
   id = "_goatshead.signs.alchemist",
   text = [[
-Alchemist
+Goatshead Grocery and Pharmacy
 ]],
 }
 

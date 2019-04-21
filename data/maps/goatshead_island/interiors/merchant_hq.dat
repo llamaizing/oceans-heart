@@ -6243,7 +6243,7 @@ npc{
   name = "thomas",
   layer = 0,
   x = 360,
-  y = 605,
+  y = 597,
   direction = 0,
   subtype = 1,
   sprite = "npc/guards/goatshead_4",

@@ -3197,42 +3197,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
-  y = 528,
-  width = 24,
-  height = 16,
-  pattern = "163",
-}
-
-tile{
-  layer = 0,
-  x = 456,
-  y = 544,
-  width = 32,
-  height = 16,
-  pattern = "155",
-}
-
-tile{
-  layer = 0,
-  x = 488,
-  y = 528,
-  width = 32,
-  height = 16,
-  pattern = "155",
-}
-
-tile{
-  layer = 0,
-  x = 520,
-  y = 528,
-  width = 16,
-  height = 16,
-  pattern = "157",
-}
-
-tile{
-  layer = 0,
   x = 112,
   y = 576,
   width = 128,
@@ -5373,6 +5337,62 @@ tile{
   pattern = "195",
 }
 
+tile{
+  layer = 0,
+  x = 456,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "157",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 536,
+  width = 16,
+  height = 8,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 536,
+  width = 16,
+  height = 8,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 536,
+  width = 16,
+  height = 8,
+  pattern = "275",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 528,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "929",
+  tileset = "overworld_oakhaven",
+}
+
 separator{
   layer = 0,
   x = 0,
@@ -5411,30 +5431,6 @@ destination{
   x = 168,
   y = 917,
   direction = 1,
-}
-
-destructible{
-  layer = 0,
-  x = 432,
-  y = 781,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-}
-
-destructible{
-  layer = 0,
-  x = 448,
-  y = 797,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
-}
-
-destructible{
-  layer = 0,
-  x = 464,
-  y = 781,
-  sprite = "entities/block_stone_lv1",
-  weight = 1,
 }
 
 npc{
@@ -5488,8 +5484,8 @@ teletransporter{
 enemy{
   name = "guard_enemy_2",
   layer = 0,
-  x = 88,
-  y = 645,
+  x = 504,
+  y = 837,
   direction = 3,
   breed = "normal_enemies/guard_goatshead_1",
 }
@@ -5688,14 +5684,6 @@ npc{
 
 destructible{
   layer = 0,
-  x = 72,
-  y = 541,
-  sprite = "entities/vase",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 448,
   y = 557,
   sprite = "entities/vase",
@@ -5707,15 +5695,6 @@ destructible{
   x = 552,
   y = 429,
   sprite = "entities/vase",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 280,
-  y = 541,
-  treasure_name = "berries",
-  sprite = "entities/vase_berries",
   can_be_cut = true,
 }
 
@@ -5791,40 +5770,6 @@ destructible{
 destructible{
   layer = 0,
   x = 416,
-  y = 557,
-  sprite = "entities/vase",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 280,
-  y = 557,
-  treasure_name = "berries",
-  sprite = "entities/vase_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 264,
-  y = 541,
-  treasure_name = "berries",
-  sprite = "entities/vase_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 88,
-  y = 541,
-  sprite = "entities/vase",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 72,
   y = 557,
   sprite = "entities/vase",
   can_be_cut = true,
@@ -6145,42 +6090,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 464,
-  y = 520,
-  width = 24,
-  height = 8,
-  pattern = "164",
-}
-
-tile{
-  layer = 1,
-  x = 456,
-  y = 536,
-  width = 32,
-  height = 8,
-  pattern = "156",
-}
-
-tile{
-  layer = 1,
-  x = 488,
-  y = 520,
-  width = 32,
-  height = 8,
-  pattern = "156",
-}
-
-tile{
-  layer = 1,
-  x = 520,
-  y = 520,
-  width = 16,
-  height = 8,
-  pattern = "158",
-}
-
-tile{
-  layer = 1,
   x = 256,
   y = 592,
   width = 32,
@@ -6359,6 +6268,71 @@ tile{
   pattern = "182",
 }
 
+tile{
+  layer = 1,
+  x = 456,
+  y = 536,
+  width = 16,
+  height = 8,
+  pattern = "158",
+}
+
+tile{
+  layer = 1,
+  x = 456,
+  y = 520,
+  width = 32,
+  height = 16,
+  pattern = "276",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 520,
+  width = 32,
+  height = 16,
+  pattern = "276",
+}
+
+tile{
+  layer = 1,
+  x = 504,
+  y = 520,
+  width = 32,
+  height = 16,
+  pattern = "276",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 520,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 520,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 520,
+  width = 16,
+  height = 8,
+  pattern = "938",
+  tileset = "overworld_oakhaven",
+}
+
 destructible{
   layer = 1,
   x = 224,
@@ -6407,5 +6381,14 @@ tile{
   width = 16,
   height = 8,
   pattern = "160",
+}
+
+tile{
+  layer = 2,
+  x = 416,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "272",
 }
 
