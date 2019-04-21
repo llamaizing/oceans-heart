@@ -291,6 +291,7 @@ sprite{ id = "enemies/bosses/michael", description = "Michael Mighty Mead Maker"
 sprite{ id = "enemies/bosses/michael_weapon", description = "Michael-Weapon" }
 sprite{ id = "enemies/bosses/pollutant_boss", description = "Pollutant Boss" }
 sprite{ id = "enemies/bosses/rock_spider_big", description = "rock spider - big" }
+sprite{ id = "enemies/bosses/rock_spider_fire", description = "Rock Spider-Fire" }
 sprite{ id = "enemies/bosses/sea_hag", description = "Sea Hag" }
 sprite{ id = "enemies/bosses/skeleton_lord", description = "Skeleton Lord" }
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
@@ -314,6 +315,7 @@ sprite{ id = "enemies/misc/energy_ball_small", description = "Energy Ball - Smal
 sprite{ id = "enemies/misc/energy_ball_small_black", description = "Energy Ball Small Black" }
 sprite{ id = "enemies/misc/explosive_barrel", description = "Explosive Barrel" }
 sprite{ id = "enemies/misc/falling_rock", description = "Falling Rock" }
+sprite{ id = "enemies/misc/fire", description = "fire" }
 sprite{ id = "enemies/misc/fire_blast", description = "Fire Blast" }
 sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small, red" }
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
@@ -1453,6 +1455,7 @@ enemy{ id = "bosses/litton", description = "Litton" }
 enemy{ id = "bosses/michael", description = "Michael Mighty Mead Maker" }
 enemy{ id = "bosses/pollutant_boss", description = "Pollutant Boss" }
 enemy{ id = "bosses/rock_spider_big", description = "rock spider - big" }
+enemy{ id = "bosses/rock_spider_fire", description = "Rock Spider-Fire" }
 enemy{ id = "bosses/sea_hag", description = "Sea Hag" }
 enemy{ id = "bosses/skeleton_lord", description = "Skeleton Lord" }
 enemy{ id = "bosses/thyme", description = "Captain Thyme" }
@@ -1475,6 +1478,7 @@ enemy{ id = "misc/energy_ball_small_black", description = "EnergyBallSmallBlack"
 enemy{ id = "misc/energy_ball_split", description = "Energy Ball Split" }
 enemy{ id = "misc/explosive_barrel", description = "explosive barrel" }
 enemy{ id = "misc/falling_rock", description = "Falling Rock" }
+enemy{ id = "misc/fire", description = "Fire" }
 enemy{ id = "misc/fire_blast", description = "Fire Blast" }
 enemy{ id = "misc/fireball_red_small", description = "Fireball - red, small" }
 enemy{ id = "misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }

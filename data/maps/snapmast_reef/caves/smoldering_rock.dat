@@ -6334,7 +6334,7 @@ enemy{
   x = 632,
   y = 365,
   direction = 3,
-  breed = "bosses/skeleton_lord",
+  breed = "bosses/rock_spider_fire",
 }
 
 door{
