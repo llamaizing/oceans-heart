@@ -6,6 +6,7 @@ local direction = hero:get_direction()
 local sprite_id
 local sprite
 local flying
+local enemies_touched = {}
 
 
 function arrow:on_created()
@@ -46,7 +47,7 @@ arrow.apply_cliffs = true
 local function warp_hero(entity)
     enemy_x, enemy_y, enemy_layer = entity:get_position()
     if entity:get_type() == "enemy" then entity:stop_movement() end
-    sol.audio.play_sound("warp")
+    sol.audio.play_sound("charge_1")
     hero:freeze()
     hero:set_animation("arrow_warping", function()
       local camera = map:get_camera()
@@ -100,9 +101,11 @@ end
 
 
 
--- Hurt enemies.
+-- Hurt enemies and Warp
 arrow:add_collision_test("sprite", function(arrow, entity)
   if entity:get_type() == "custom_entity" and entity:get_model() == "warp_block" then
+    sol.audio.play_sound"drip"
+    sol.audio.play_sound"hookshot"
     warp_hero(entity)
     arrow:remove()
   end
