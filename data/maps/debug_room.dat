@@ -2740,6 +2740,46 @@ tile{
   tileset = "overworld_oakhaven",
 }
 
+tile{
+  layer = 0,
+  x = 512,
+  y = 800,
+  width = 400,
+  height = 320,
+  pattern = "ground1.3",
+  tileset = "cave_2",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 976,
+  width = 96,
+  height = 96,
+  pattern = "222",
+  tileset = "cave_2",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 976,
+  width = 128,
+  height = 112,
+  pattern = "242",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 984,
+  width = 96,
+  height = 96,
+  pattern = "223",
+  tileset = "cave_2",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -2906,7 +2946,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/interiors/palace",
+  destination_map = "oakhaven/oakhaven",
   destination = "from_abyss",
 }
 
@@ -4795,14 +4835,6 @@ pickable{
   x = 416,
   y = 229,
   treasure_name = "monster_horn",
-}
-
-enemy{
-  layer = 0,
-  x = 456,
-  y = 373,
-  direction = 0,
-  breed = "bosses/sea_hag",
 }
 
 destructible{

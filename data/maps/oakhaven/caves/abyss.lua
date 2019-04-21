@@ -11,14 +11,18 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+map:register_event("on_started", function()
+  if game:get_value("oakhaven_palace_rune_activated") then
+    glowing_rune:set_enabled(true)
+  end
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+end)
+
+
+function coral_boss:on_dead()
+  map:open_doors("coral_ore_door")
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
+function rune_sensor:on_activated()
 
 end

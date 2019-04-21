@@ -16315,7 +16315,7 @@ npc{
 dynamic_tile{
   layer = 0,
   x = 496,
-  y = 128,
+  y = 120,
   width = 16,
   height = 16,
   pattern = "58",
@@ -16335,7 +16335,7 @@ dynamic_tile{
 dynamic_tile{
   layer = 0,
   x = 448,
-  y = 80,
+  y = 72,
   width = 16,
   height = 16,
   pattern = "58",
@@ -16349,6 +16349,16 @@ dynamic_tile{
   width = 16,
   height = 8,
   pattern = "60",
+}
+
+teletransporter{
+  layer = 0,
+  x = 56,
+  y = 192,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/abyss",
+  destination = "from_palace",
 }
 
 tile{

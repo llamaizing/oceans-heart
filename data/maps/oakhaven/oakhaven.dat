@@ -37210,6 +37210,7 @@ door{
   y = 464,
   direction = 3,
   sprite = "entities/door_weak_wall",
+  savegame_variable = "oakhaven_city_bombable_wall_to_preabyssal_cave",
   opening_method = "explosion",
 }
 

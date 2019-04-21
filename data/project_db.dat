@@ -393,6 +393,7 @@ sprite{ id = "enemies/normal_enemies/pollutant_blob", description = "Pollutant B
 sprite{ id = "enemies/normal_enemies/rambleshroom", description = "Rambleshroom" }
 sprite{ id = "enemies/normal_enemies/rock_spider_brown", description = "rock spider - brown" }
 sprite{ id = "enemies/normal_enemies/rock_spider_red", description = "enemies/normal_enemies/rock_spider_red" }
+sprite{ id = "enemies/normal_enemies/sea_hag_enemy", description = "SeaHag-Enemy" }
 sprite{ id = "enemies/normal_enemies/seaweed_blob", description = "Seaweed Blob" }
 sprite{ id = "enemies/normal_enemies/seaweed_golem_1", description = "Seaweed Golem 1" }
 sprite{ id = "enemies/normal_enemies/shield_beetle", description = "Shield Beetle" }
@@ -1541,6 +1542,7 @@ enemy{ id = "normal_enemies/pollutant_blob", description = "Pollutant Blob" }
 enemy{ id = "normal_enemies/rambleshroom", description = "Rambleshroom" }
 enemy{ id = "normal_enemies/rock_spider_brown", description = "rock spider - brown" }
 enemy{ id = "normal_enemies/rock_spider_red", description = "rock spider - red" }
+enemy{ id = "normal_enemies/sea_hag_enemy", description = "SeaHag-enemy" }
 enemy{ id = "normal_enemies/seaweed_blob", description = "Seaweed Blob" }
 enemy{ id = "normal_enemies/seaweed_golem_1", description = "Seaweed Golem 1" }
 enemy{ id = "normal_enemies/shield_beetle", description = "Shield Beetle" }
