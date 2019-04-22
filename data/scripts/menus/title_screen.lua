@@ -23,6 +23,7 @@ local leaf_surface = sol.surface.create()
 local leaves = {}
 local clouds = {}
 
+local confirming = false
 local cursor_index
 local MAX_CURSOR_INDEX = 1
 
@@ -103,14 +104,17 @@ function title_screen:on_draw(dst_surface)
   sea_sparkle:draw(dst_surface)
   seagull:draw(dst_surface, 340, 42)
   selection_surface:draw(dst_surface, 344, 190)
+--  selection_surface:draw(dst_surface, 300, 190)
   leaf_surface:draw(dst_surface)
   for i=1 , #leaves do
     leaves[i]:draw(dst_surface)
   end
   if cursor_index == 0 then
     cursor_sprite:draw(dst_surface, 347, 194)
+--    cursor_sprite:draw(dst_surface, 300, 194)
   elseif cursor_index == 1 then
     cursor_sprite:draw(dst_surface, 347, 210)
+--    cursor_sprite:draw(dst_surface, 300, 210)
   end
 
   black_fill:draw(dst_surface)
@@ -129,17 +133,36 @@ function title_screen:on_key_pressed(command)
 
   elseif command == "space" then
     --Continue
-    if cursor_index == 0 then
+    if cursor_index == 0 and not confirming then
       local game = game_manager:create("save1.dat")
       sol.main:start_savegame(game)
       sol.menu.stop(self)
 
-    --New Game
-    elseif cursor_index == 1 then
+    --New Game?
+    elseif cursor_index == 1 and not confirming then
+      confirming = true
+      selection_surface:clear()
+      text_surface:set_text("  Confirm")
+      text_surface:draw(selection_surface, 0, 0)
+      text_surface2:set_text("  Cancel")
+      text_surface2:draw(selection_surface, 0, 16)
+
+    --New Game, yes delete old
+    elseif cursor_index == 0 and confirming then
       local game = game_manager:create("save1.dat", true)
       sol.main:start_savegame(game)
       sol.menu.stop(self)
-    end
+
+    --New Game, nope don't delete
+    elseif cursor_index == 1 and confirming then
+      confirming = false
+      selection_surface:clear()
+      text_surface:set_text("  Continue")
+      text_surface:draw(selection_surface, 0, 0)
+      text_surface2:set_text("  New Game")
+      text_surface2:draw(selection_surface, 0, 16)
+
+    end --end cursor index cases
 
   end
 
