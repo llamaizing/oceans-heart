@@ -672,6 +672,7 @@ sprite{ id = "npc/guards/oakhaven_captain", description = "Oakhaven Captain" }
 sprite{ id = "npc/hazel", description = "Hazel" }
 sprite{ id = "npc/heron_ghost", description = "Heron's Ghost" }
 sprite{ id = "npc/ilex", description = "ilex" }
+sprite{ id = "npc/ilex-2", description = "Ilex 2" }
 sprite{ id = "npc/jazari", description = "Al Jazari" }
 sprite{ id = "npc/juglan", description = "Juglan" }
 sprite{ id = "npc/juglan_fishing", description = "Juglan Fishing" }
@@ -934,6 +935,7 @@ sprite{ id = "npc/man/man_red_herring_2", description = "Man-Red Herring 2" }
 sprite{ id = "npc/max", description = "Max" }
 sprite{ id = "npc/mayor_oakhaven", description = "Mayor of Oakhaven" }
 sprite{ id = "npc/mayor_oakhaven_sad", description = "Mayor of Oakhaven-Sad" }
+sprite{ id = "npc/monk_1", description = "Monk 1" }
 sprite{ id = "npc/morus", description = "Morus" }
 sprite{ id = "npc/musician_2", description = "Musician 2" }
 sprite{ id = "npc/musician_3", description = "Musician 3" }
