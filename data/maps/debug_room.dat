@@ -2946,8 +2946,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "snapmast_reef/smoldering_rock",
-  destination = "from_drowned_village",
+  destination_map = "oakhaven/oakhaven",
 }
 
 pickable{

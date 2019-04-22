@@ -7186,6 +7186,16 @@ you want to talk to.
 }
 
 dialog{
+  id = "_oakhaven.npcs.guards.jail",
+  text = [[
+GUARD:
+Hey! Welcome to jail! This is where we
+keep the miscreants, ne'er-do-wells, and
+unctious rabble. Have a look around!
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.guards.palace.archives.1",
   text = [[
 GUARD:

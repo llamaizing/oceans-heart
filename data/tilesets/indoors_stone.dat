@@ -6259,6 +6259,94 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "642",
+  ground = "wall",
+  default_layer = 0,
+  x = 512,
+  y = 296,
+  width = 8,
+  height = 40,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "643",
+  ground = "wall",
+  default_layer = 0,
+  x = 512,
+  y = 288,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "644",
+  ground = "wall",
+  default_layer = 0,
+  x = 512,
+  y = 280,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "645",
+  ground = "wall",
+  default_layer = 0,
+  x = 536,
+  y = 280,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "646",
+  ground = "wall",
+  default_layer = 0,
+  x = 536,
+  y = 288,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "647",
+  ground = "wall",
+  default_layer = 0,
+  x = 536,
+  y = 296,
+  width = 8,
+  height = 40,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "648",
+  ground = "wall",
+  default_layer = 0,
+  x = 520,
+  y = 328,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "649",
+  ground = "wall",
+  default_layer = 1,
+  x = 520,
+  y = 296,
+  width = 16,
+  height = 32,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
   id = "65",
   ground = "wall",
   default_layer = 0,
@@ -6268,6 +6356,28 @@ tile_pattern{
   height = 16,
   frame_delay = 250,
   mirror_loop = true,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "650",
+  ground = "wall",
+  default_layer = 0,
+  x = 544,
+  y = 328,
+  width = 16,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "651",
+  ground = "wall",
+  default_layer = 1,
+  x = 544,
+  y = 296,
+  width = 16,
+  height = 32,
   repeat_mode = "none",
 }
 

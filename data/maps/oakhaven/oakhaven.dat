@@ -61939,6 +61939,24 @@ sensor{
   height = 32,
 }
 
+destination{
+  name = "from_guard_jail_shack",
+  layer = 1,
+  x = 160,
+  y = 1341,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 1,
+  x = 152,
+  y = 1312,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/interiors/wall_jail",
+  destination = "from_outside",
+}
+
 tile{
   layer = 2,
   x = 272,
