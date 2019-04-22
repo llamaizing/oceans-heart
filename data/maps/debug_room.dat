@@ -2946,7 +2946,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven",
+  destination_map = "oakhaven/marble_summit",
 }
 
 pickable{
@@ -4783,14 +4783,6 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
-}
-
-enemy{
-  layer = 0,
-  x = 448,
-  y = 365,
-  direction = 3,
-  breed = "bosses/rock_spider_fire",
 }
 
 tile{

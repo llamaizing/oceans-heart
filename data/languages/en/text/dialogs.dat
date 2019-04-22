@@ -8069,9 +8069,25 @@ this book is the first where I've seen any
 verse from the Isle of Lobb. It's the tragedy
 of a heroine named Ophira, and how she
 fought against a tyrant she once respected.
-While he'd lost his way and become
-dangerous, she died wondering if his humble
-self was entirely gone. Fascinating poem.
+While he'd lost his way and become dangerous,
+she died wondering if his humble self was
+entirely gone... it doesn't rhyme though.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.2",
+  text = [[
+I don't understand the organization system
+in this library, but lots of ancient
+history books are around here. There's a
+rumor, though, that when the great flood
+happened, some librarians at the time
+took some books and hid them at the
+monastery on top of marblecliff to keep
+them safe. The rumor I heard says that
+the books were hidden 'between the King
+and the Seabird', whatever that means.
 ]],
 }
 
@@ -10620,6 +10636,71 @@ dialog{
 TILIA:
 Hey! There really is a monster tearing down
 the band's posters! Get back here!
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.monastery.hidden_book1",
+  text = [[
+The pages are dust covered and look ancient.
+$?Read it
+$?Don't bother
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.monastery.hidden_book2",
+  text = [[
+...though I pray the King remains ignorant
+of my records, I must write the truth about
+the Sea King. His love for his people has
+grown into hatred for any who hold something
+he doesn't. The tribes of Smoldering Rock
+did not pose the threat he claims. And yet
+his fearsome storm has completely destoryed
+their home. I have seen their village,
+or what remains of it after the storm. And
+I fear the Bear Warriors who resist his
+rule will meet a similar fate. His advisor,
+Heron, is close with the chief the king
+imposed on the warriors. I hope he disuades
+the king.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.monastery.hidden_book3",
+  text = [[
+November 12th,
+The Bear Warrior's Chief is dead. The
+matron of Lobb is dead. The tribe of
+Smoldering Rock has been washed away.
+Yet this war continues. The Sea King has
+gone to the Isle of Storms and sits in
+his palace, and storms across the North
+Seas intensify. The waters are rising.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.monastery.hidden_book_kings_conquest",
+  text = [[
+...After subduing the traitorous Bear Warriors
+and the usurper from the Isle of Lobb, the
+Sea King sailed to Yarrowmouth, finding Heron
+there. Even faithful Heron had turned on him,
+and prevented the King from destroying the
+remaining traitors. Their remaining leader,
+Zephyrine, escaped and sailed her army out
+of the North Seas.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.monastery.old_books",
+  text = [[
+There's some piles of very old looking
+scrolls and books, covered in dust.
 ]],
 }
 

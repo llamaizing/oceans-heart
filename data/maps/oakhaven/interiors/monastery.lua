@@ -11,15 +11,40 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  if game:get_value("marblecliff_monastery_monster_defeated") then
+    map:set_doors_open("boss_door")
+  end
+end)
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+
+
+function hidden_book:on_interaction()
+  game:start_dialog("_oakhaven.observations.monastery.hidden_book1", function(answer)
+    if answer == 2 then
+      game:start_dialog("_oakhaven.observations.monastery.hidden_book2")
+    end
+  end)
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
+function hidden_book_2:on_interaction()
+  game:start_dialog("_oakhaven.observations.monastery.hidden_book1", function(answer)
+    if answer == 2 then
+      game:start_dialog("_oakhaven.observations.monastery.hidden_book3")
+    end
+  end)
+end
 
+
+function boss_sensor:on_activated()
+  if not game:get_value("marblecliff_monastery_monster_defeated") then
+    boss:set_enabled(true)
+    sol.audio.play_sound("monster_scream")
+    boss_sensor:set_enabled(false)
+  end
+end
+
+function boss:on_dead()
+  game:set_value("marblecliff_monastery_monster_defeated", true)
+  map:open_doors("boss_door")
 end
