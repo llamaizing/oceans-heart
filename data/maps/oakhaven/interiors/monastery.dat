@@ -20,16 +20,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1792,
-  y = 320,
-  width = 160,
-  height = 96,
-  pattern = "38",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
   x = 152,
   y = 176,
   width = 32,
@@ -4618,26 +4608,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1776,
-  y = 528,
-  width = 32,
-  height = 128,
-  pattern = "45",
-  tileset = "bear_catacombs",
-}
-
-tile{
-  layer = 0,
-  x = 1936,
-  y = 528,
-  width = 32,
-  height = 128,
-  pattern = "43",
-  tileset = "bear_catacombs",
-}
-
-tile{
-  layer = 0,
   x = 1808,
   y = 16,
   width = 32,
@@ -5730,56 +5700,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1832,
-  y = 368,
-  width = 80,
-  height = 16,
-  pattern = "236",
-  tileset = "temple_2",
-}
-
-tile{
-  layer = 0,
-  x = 1816,
-  y = 352,
-  width = 112,
-  height = 16,
-  pattern = "234",
-  tileset = "temple_2",
-}
-
-tile{
-  layer = 0,
-  x = 1832,
-  y = 384,
-  width = 80,
-  height = 8,
-  pattern = "238",
-  tileset = "temple_2",
-}
-
-tile{
-  layer = 0,
-  x = 1912,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "237",
-  tileset = "temple_2",
-}
-
-tile{
-  layer = 0,
-  x = 1816,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "235",
-  tileset = "temple_2",
-}
-
-tile{
-  layer = 0,
   x = 1840,
   y = 416,
   width = 64,
@@ -5790,136 +5710,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1776,
-  y = 624,
-  width = 32,
-  height = 32,
-  pattern = "15",
-  tileset = "bear_catacombs",
-}
-
-tile{
-  layer = 0,
-  x = 1936,
-  y = 624,
-  width = 32,
-  height = 32,
-  pattern = "16",
-  tileset = "bear_catacombs",
-}
-
-tile{
-  layer = 0,
-  x = 1968,
-  y = 624,
-  width = 128,
-  height = 32,
-  pattern = "42",
-  tileset = "bear_catacombs",
-}
-
-tile{
-  layer = 0,
-  x = 1680,
-  y = 624,
-  width = 96,
-  height = 32,
-  pattern = "42",
-  tileset = "bear_catacombs",
-}
-
-tile{
-  layer = 0,
-  x = 1664,
-  y = 624,
-  width = 16,
-  height = 32,
-  pattern = "6",
-  tileset = "bear_catacombs",
-}
-
-tile{
-  layer = 0,
-  x = 1664,
-  y = 656,
-  width = 416,
-  height = 32,
-  pattern = "42",
-  tileset = "bear_catacombs",
-}
-
-tile{
-  layer = 0,
-  x = 1664,
-  y = 688,
-  width = 416,
-  height = 32,
-  pattern = "42",
-  tileset = "bear_catacombs",
-}
-
-tile{
-  layer = 0,
-  x = 1840,
-  y = 656,
-  width = 64,
-  height = 16,
-  pattern = "1817",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1840,
-  y = 672,
-  width = 64,
-  height = 48,
-  pattern = "1007",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1864,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "1007",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1792,
-  y = 312,
-  width = 160,
-  height = 8,
-  pattern = "281",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1784,
-  y = 320,
-  width = 8,
-  height = 96,
-  pattern = "284",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1832,
-  y = 416,
-  width = 8,
-  height = 16,
-  pattern = "284",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
   x = 1832,
   y = 528,
   width = 8,
@@ -5936,136 +5726,6 @@ tile{
   height = 128,
   pattern = "283",
   tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1904,
-  y = 416,
-  width = 8,
-  height = 16,
-  pattern = "283",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1952,
-  y = 320,
-  width = 8,
-  height = 96,
-  pattern = "283",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1792,
-  y = 416,
-  width = 48,
-  height = 8,
-  pattern = "282",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1904,
-  y = 416,
-  width = 48,
-  height = 8,
-  pattern = "282",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1864,
-  y = 376,
-  width = 16,
-  height = 16,
-  pattern = "1817",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1864,
-  y = 360,
-  width = 16,
-  height = 16,
-  pattern = "206",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1840,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "1817",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1864,
-  y = 384,
-  width = 16,
-  height = 24,
-  pattern = "2217",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1840,
-  y = 376,
-  width = 16,
-  height = 24,
-  pattern = "2217",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1888,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "1817",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1888,
-  y = 376,
-  width = 16,
-  height = 24,
-  pattern = "2217",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1832,
-  y = 360,
-  width = 80,
-  height = 16,
-  pattern = "242",
-  tileset = "temple_2",
-}
-
-tile{
-  layer = 0,
-  x = 1864,
-  y = 352,
-  width = 16,
-  height = 16,
-  pattern = "1643",
-  tileset = "overworld_oakhaven",
 }
 
 tile{
@@ -6126,6 +5786,850 @@ tile{
   height = 8,
   pattern = "281",
   tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 656,
+  width = 32,
+  height = 32,
+  pattern = "74",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 656,
+  width = 32,
+  height = 32,
+  pattern = "74",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 496,
+  width = 32,
+  height = 32,
+  pattern = "72",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 496,
+  width = 32,
+  height = 32,
+  pattern = "72",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 304,
+  width = 256,
+  height = 128,
+  pattern = "38",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = 360,
+  width = 16,
+  height = 16,
+  pattern = "1643",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1992,
+  y = 304,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "82",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1752,
+  y = 304,
+  enabled_at_start = false,
+  width = 240,
+  height = 8,
+  pattern = "81",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 304,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "76",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 424,
+  enabled_at_start = false,
+  width = 96,
+  height = 8,
+  pattern = "86",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 312,
+  enabled_at_start = false,
+  width = 8,
+  height = 112,
+  pattern = "84",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1992,
+  y = 312,
+  enabled_at_start = false,
+  width = 8,
+  height = 112,
+  pattern = "83",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1984,
+  y = 312,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "82",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1760,
+  y = 312,
+  enabled_at_start = false,
+  width = 224,
+  height = 8,
+  pattern = "81",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1984,
+  y = 416,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "87",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1752,
+  y = 416,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "85",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1752,
+  y = 312,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "76",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1760,
+  y = 416,
+  enabled_at_start = false,
+  width = 96,
+  height = 8,
+  pattern = "86",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1752,
+  y = 320,
+  enabled_at_start = false,
+  width = 8,
+  height = 96,
+  pattern = "84",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1984,
+  y = 320,
+  enabled_at_start = false,
+  width = 8,
+  height = 96,
+  pattern = "83",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1744,
+  y = 424,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "85",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1904,
+  y = 424,
+  enabled_at_start = false,
+  width = 96,
+  height = 8,
+  pattern = "86",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 416,
+  enabled_at_start = false,
+  width = 96,
+  height = 8,
+  pattern = "86",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1992,
+  y = 424,
+  enabled_at_start = false,
+  width = 8,
+  height = 8,
+  pattern = "87",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1840,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "89",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1848,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "89",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1896,
+  y = 424,
+  width = 8,
+  height = 8,
+  pattern = "88",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 416,
+  width = 8,
+  height = 8,
+  pattern = "88",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1848,
+  y = 424,
+  width = 8,
+  height = 112,
+  pattern = "84",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1840,
+  y = 432,
+  width = 8,
+  height = 96,
+  pattern = "84",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1896,
+  y = 432,
+  width = 8,
+  height = 96,
+  pattern = "83",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 424,
+  width = 8,
+  height = 112,
+  pattern = "83",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1896,
+  y = 528,
+  width = 8,
+  height = 8,
+  pattern = "90",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1904,
+  y = 528,
+  width = 32,
+  height = 8,
+  pattern = "81",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1840,
+  y = 528,
+  width = 8,
+  height = 8,
+  pattern = "91",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1808,
+  y = 528,
+  width = 32,
+  height = 8,
+  pattern = "81",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1848,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "91",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 536,
+  width = 16,
+  height = 8,
+  pattern = "81",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 544,
+  width = 8,
+  height = 112,
+  pattern = "84",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "76",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "90",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1896,
+  y = 536,
+  width = 16,
+  height = 8,
+  pattern = "81",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1904,
+  y = 544,
+  width = 8,
+  height = 112,
+  pattern = "83",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1904,
+  y = 536,
+  width = 8,
+  height = 8,
+  pattern = "82",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1904,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "90",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1912,
+  y = 648,
+  width = 32,
+  height = 8,
+  pattern = "81",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 648,
+  width = 8,
+  height = 8,
+  pattern = "91",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1800,
+  y = 648,
+  width = 32,
+  height = 8,
+  pattern = "81",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1872,
+  y = 360,
+  width = 16,
+  height = 16,
+  pattern = "1643",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1864,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "1643",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1760,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "1007",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1760,
+  y = 304,
+  width = 16,
+  height = 24,
+  pattern = "2217",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1968,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "1007",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1968,
+  y = 304,
+  width = 16,
+  height = 24,
+  pattern = "2217",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1760,
+  y = 272,
+  width = 16,
+  height = 32,
+  pattern = "19",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1760,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "1817",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1968,
+  y = 272,
+  width = 16,
+  height = 32,
+  pattern = "19",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1968,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "1817",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1776,
+  y = 528,
+  width = 32,
+  height = 192,
+  pattern = "45",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1936,
+  y = 528,
+  width = 32,
+  height = 192,
+  pattern = "43",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1808,
+  y = 656,
+  width = 128,
+  height = 32,
+  pattern = "38",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1808,
+  y = 688,
+  width = 128,
+  height = 32,
+  pattern = "206",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1808,
+  y = 688,
+  width = 128,
+  height = 16,
+  pattern = "83",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1816,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "1027",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1816,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "1028",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "1026",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "1025",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1896,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "1027",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1896,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "1028",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1912,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "1026",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1912,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "1025",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "1027",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "1028",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1872,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "1026",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1872,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "1025",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1832,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "880",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1816,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "877",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1872,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "880",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "877",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1912,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "880",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1896,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "877",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 360,
+  width = 16,
+  height = 16,
+  pattern = "1665",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 360,
+  width = 16,
+  height = 16,
+  pattern = "1671",
+  tileset = "overworld_oakhaven",
 }
 
 sensor{
@@ -6391,11 +6895,11 @@ door{
 enemy{
   name = "boss",
   layer = 0,
-  x = 1872,
-  y = 309,
+  x = 1936,
+  y = 333,
   enabled_at_start = false,
   direction = 3,
-  breed = "normal_enemies/squid_mage_3",
+  breed = "normal_enemies/grim_1",
 }
 
 wall{
@@ -6405,6 +6909,15 @@ wall{
   width = 64,
   height = 32,
   stops_enemies = true,
+}
+
+door{
+  name = "gate",
+  layer = 0,
+  x = 680,
+  y = 256,
+  direction = 3,
+  sprite = "entities/door_shutter",
 }
 
 tile{
@@ -7148,21 +7661,31 @@ tile{
 
 tile{
   layer = 1,
-  x = 1824,
-  y = 336,
-  width = 96,
-  height = 16,
-  pattern = "239",
-  tileset = "temple_2",
-}
-
-tile{
-  layer = 1,
   x = 1864,
   y = 576,
   width = 16,
   height = 24,
   pattern = "1668",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1392,
+  y = 336,
+  width = 16,
+  height = 24,
+  pattern = "1666",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1504,
+  y = 328,
+  width = 16,
+  height = 32,
+  pattern = "1672",
   tileset = "overworld_oakhaven",
 }
 

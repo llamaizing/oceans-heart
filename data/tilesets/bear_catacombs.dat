@@ -772,6 +772,17 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "76",
+  ground = "ladder",
+  default_layer = 0,
+  x = 128,
+  y = 288,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "77",
   ground = "traversable",
   default_layer = 0,
@@ -823,6 +834,105 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "81",
+  ground = "ladder",
+  default_layer = 0,
+  x = 136,
+  y = 288,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "82",
+  ground = "ladder",
+  default_layer = 0,
+  x = 152,
+  y = 288,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "83",
+  ground = "ladder",
+  default_layer = 0,
+  x = 152,
+  y = 296,
+  width = 8,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "84",
+  ground = "ladder",
+  default_layer = 0,
+  x = 128,
+  y = 296,
+  width = 8,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "85",
+  ground = "ladder",
+  default_layer = 0,
+  x = 128,
+  y = 312,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "86",
+  ground = "ladder",
+  default_layer = 0,
+  x = 136,
+  y = 312,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "87",
+  ground = "ladder",
+  default_layer = 0,
+  x = 152,
+  y = 312,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "88",
+  ground = "ladder",
+  default_layer = 0,
+  x = 136,
+  y = 296,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "89",
+  ground = "ladder",
+  default_layer = 0,
+  x = 144,
+  y = 296,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "9",
   ground = "wall",
   default_layer = 0,
@@ -831,6 +941,28 @@ tile_pattern{
   width = 32,
   height = 16,
   repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "90",
+  ground = "ladder",
+  default_layer = 0,
+  x = 136,
+  y = 304,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "91",
+  ground = "ladder",
+  default_layer = 0,
+  x = 144,
+  y = 304,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
 }
 
 border_set{

@@ -9325,6 +9325,72 @@ $? I'll keep my money
 }
 
 dialog{
+  id = "_oakhaven.npcs.monastery.monk.1",
+  text = [[
+MONK:
+Ah, a pilgrim. No doubt you've come to bathe
+in the great spring. The waters that flow
+through Oakhaven are all born here. And yet,
+MONK:
+even in this sacred place, the darkness that
+the great flood spread lurks in the shadows.
+
+TILIA:
+What are you getting at? Is there a monster
+is your basement? Do you need me to fight
+a monster in your basement?
+MONK:
+You're sharper than the Sword of the Sea
+King. Yes, my monastery is plagued by a
+beast born of the abyss. I will open the
+MONK:
+gate that goes down to the spring. Search
+the monastery, and find the beast.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.monastery.monk.2",
+  text = [[
+MONK:
+A beast born of the abyss lurks in this
+sacred place. Please, cleanse my
+monastery.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.monastery.monk.3",
+  text = [[
+MONK:
+You seem triumphant. Also I heard some weird
+monster screams. Have you dispatched the
+creature?
+TILIA:
+Yep. You're all clear down there.
+
+
+MONK:
+Thank you, brave pilgrim. I don't have much,
+but please, take this.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.monastery.monk.4",
+  text = [[
+MONK:
+With your help, the spring remains pure.
+The water it gives is what has allowed
+Oakhaven to flourish for thousands of years,
+MONK:
+although, since the great flood and the end
+of the line of kings, cursed creatures do
+occasionally arrive and threaten the spring.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.morus.1",
   text = [[
 MORUS:
@@ -14550,6 +14616,18 @@ near Fort Crow
 !head east.
 @Find and destroy the monster
 @Return to the bomb shop
+]],
+}
+
+dialog{
+  id = "quest.side.oakhaven.haunted_monastery",
+  title = "Haunted Monastery",
+  text = [[
+The monk on Marblecliff Summit
+says a beast lurks in the spring
+at the base of the monastery.
+@Find the creature and destroy it
+@Let the monk know you've succeeded
 ]],
 }
 
