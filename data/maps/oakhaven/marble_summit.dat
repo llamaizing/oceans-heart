@@ -10020,6 +10020,168 @@ tile{
   pattern = "226",
 }
 
+tile{
+  layer = 0,
+  x = 720,
+  y = 544,
+  width = 64,
+  height = 16,
+  pattern = "451",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 560,
+  width = 48,
+  height = 32,
+  pattern = "451",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "451",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 608,
+  width = 16,
+  height = 8,
+  pattern = "1707",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 592,
+  width = 32,
+  height = 8,
+  pattern = "1707",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 560,
+  width = 16,
+  height = 8,
+  pattern = "1707",
+}
+
+tile{
+  layer = 0,
+  x = 784,
+  y = 544,
+  width = 8,
+  height = 16,
+  pattern = "1713",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 560,
+  width = 8,
+  height = 32,
+  pattern = "1713",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 592,
+  width = 8,
+  height = 16,
+  pattern = "1713",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 592,
+  width = 8,
+  height = 8,
+  pattern = "1710",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 560,
+  width = 8,
+  height = 8,
+  pattern = "1710",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "457",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "458",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "455",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "455",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "453",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 544,
+  width = 32,
+  height = 16,
+  pattern = "1883",
+}
+
+tile{
+  layer = 0,
+  x = 712,
+  y = 560,
+  width = 32,
+  height = 24,
+  pattern = "1881",
+}
+
 destination{
   name = "from_marblecliff",
   layer = 0,
@@ -10298,6 +10460,22 @@ door{
   sprite = "entities/door_seabird",
   savegame_variable = "marble_summit_seabird_door_state",
   cannot_open_dialog = "_game.seabird_door",
+}
+
+destructible{
+  layer = 0,
+  x = 752,
+  y = 573,
+  sprite = "entities/bush_monkshood",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 776,
+  y = 549,
+  sprite = "entities/bush_monkshood",
+  can_be_cut = true,
 }
 
 tile{
@@ -10710,6 +10888,24 @@ tile{
   width = 16,
   height = 24,
   pattern = "1670",
+}
+
+tile{
+  layer = 1,
+  x = 728,
+  y = 480,
+  width = 48,
+  height = 64,
+  pattern = "1884",
+}
+
+tile{
+  layer = 1,
+  x = 712,
+  y = 504,
+  width = 32,
+  height = 56,
+  pattern = "1882",
 }
 
 dynamic_tile{

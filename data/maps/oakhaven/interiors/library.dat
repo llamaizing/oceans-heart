@@ -6302,7 +6302,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 744,
+  x = 736,
   y = 56,
   width = 16,
   height = 16,
@@ -6311,7 +6311,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 744,
+  x = 736,
   y = 48,
   width = 16,
   height = 16,
@@ -6588,6 +6588,15 @@ tile{
   pattern = "190",
 }
 
+tile{
+  layer = 0,
+  x = 752,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "192",
+}
+
 separator{
   layer = 0,
   x = 632,
@@ -6835,6 +6844,25 @@ separator{
   y = 232,
   width = 320,
   height = 16,
+}
+
+npc{
+  layer = 0,
+  x = 760,
+  y = 77,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.observations.monastery.hidden_book_kings_conquest",
+}
+
+npc{
+  layer = 0,
+  x = 744,
+  y = 109,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_2.6",
+  behavior = "dialog#_oakhaven.npcs.library.misc.2",
 }
 
 tile{

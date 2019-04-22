@@ -347,3 +347,9 @@ side{
 		"lighthouses_quest_num_lit"
 	}
 }
+
+side{
+	dialog_id = "quest.side.oakhaven.haunted_monastery",
+	calc_phase = "quest_haunted_monastery",
+	location = "location.oakhaven"
+}
