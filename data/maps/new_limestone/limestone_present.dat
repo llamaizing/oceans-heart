@@ -25234,9 +25234,9 @@ teletransporter{
 destination{
   name = "from_coral_ore_cave",
   layer = 0,
-  x = 1128,
-  y = 789,
-  direction = 1,
+  x = 1136,
+  y = 829,
+  direction = 3,
 }
 
 teletransporter{
@@ -25245,7 +25245,7 @@ teletransporter{
   y = 800,
   width = 16,
   height = 16,
-  destination_map = "new_limestone/cave_1",
+  destination_map = "new_limestone/caves/pit",
   destination = "from_outside",
 }
 

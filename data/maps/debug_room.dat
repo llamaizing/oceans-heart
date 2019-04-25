@@ -2946,7 +2946,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/marble_summit",
+  destination_map = "new_limestone/caves/pit",
 }
 
 pickable{

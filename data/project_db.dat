@@ -159,6 +159,7 @@ map{ id = "isle_of_storms/isle_of_storms_landing", description = "Landing Area" 
 map{ id = "mysterious_wood", description = "Mysterious Wood" }
 map{ id = "new_limestone/basswood_tavern", description = "Basswood Tavern" }
 map{ id = "new_limestone/cave_1", description = "Cave 1" }
+map{ id = "new_limestone/caves/pit", description = "pit" }
 map{ id = "new_limestone/hazel", description = "Hazel" }
 map{ id = "new_limestone/juglan", description = "Juglan" }
 map{ id = "new_limestone/limestone_fire", description = "FIRE!" }
