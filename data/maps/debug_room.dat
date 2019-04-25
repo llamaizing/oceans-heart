@@ -3862,7 +3862,7 @@ pickable{
   x = 512,
   y = 125,
   treasure_name = "thunder_charm",
-  treasure_variant = 5,
+  treasure_variant = 3,
 }
 
 sensor{

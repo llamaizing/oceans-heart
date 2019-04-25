@@ -10128,8 +10128,8 @@ Hey, you look familiar. I swear I've seen you
 before. It's kind of bugging me.
 
 TILIA:
-I don't know, that sounds like a personal
-problem.
+I don't know, that sounds like a something
+you'll have to solve yourself.
 
 CERVIO:
 I remember! You work in the tavern on
@@ -10161,6 +10161,16 @@ CERVIO:
 Did you find your friend, Hazel? I met her
 buying fish in the market, maybe the vendor
 knows where she is.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.1",
+  text = [[
+You know, up those stairs and past the Port
+Office, I've seen some shady characters up
+to no good. They don't have a boat, so they're
+not pirates, but... burglars maybe?
 ]],
 }
 

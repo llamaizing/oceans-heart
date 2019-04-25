@@ -32075,6 +32075,24 @@ tile{
   pattern = "3",
 }
 
+tile{
+  layer = 0,
+  x = 192,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "923",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "686",
+}
+
 sensor{
   name = "meet_hazel_sensor",
   layer = 0,
@@ -33670,6 +33688,16 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/interiors/port_office",
   destination = "from_outside",
+}
+
+npc{
+  layer = 0,
+  x = 224,
+  y = 877,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_11.6",
+  behavior = "dialog#_oakhaven.npcs.port.misc.1",
 }
 
 tile{
@@ -36550,6 +36578,24 @@ tile{
   width = 80,
   height = 80,
   pattern = "1938",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 848,
+  width = 16,
+  height = 8,
+  pattern = "924",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 840,
+  width = 16,
+  height = 8,
+  pattern = "687",
 }
 
 tile{
