@@ -11075,6 +11075,14 @@ really couldn't.
 }
 
 dialog{
+  id = "_shop.no_room",
+  text = [[
+You don't have room to carry any more
+of these!
+]],
+}
+
+dialog{
   id = "_shop.purchase_confirm",
   text = [[
 Sure you want to buy this item?

@@ -9,7 +9,7 @@ end
 function item:on_started()
   item:set_savegame_variable("possession_apples")       --variable
   item:set_amount_savegame_variable("amount_apples")    --amount variable
-  item:set_max_amount(999)
+  item:set_max_amount(game:get_value("max_apple_capacity") or 50)
   item:set_assignable(false)
   item:set_brandish_when_picked(not game:has_item(item:get_name()))
 end

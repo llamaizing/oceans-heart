@@ -3,13 +3,12 @@ local game = item:get_game()
 
 function item:on_created()
   self:set_can_disappear(true)
-  item:set_brandish_when_picked(not game:has_item(item:get_name()))
 end
 
 function item:on_started()
   item:set_savegame_variable("possession_bread")       --variable
   item:set_amount_savegame_variable("amount_bread")    --amount variable
-  item:set_max_amount(999)
+  item:set_max_amount(game:get_value("max_bread_capacity") or 50)
   item:set_assignable(false)
   item:set_brandish_when_picked(not game:has_item(item:get_name()))
 end

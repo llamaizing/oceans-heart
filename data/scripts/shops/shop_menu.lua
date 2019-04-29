@@ -208,13 +208,16 @@ function inventory:on_command_pressed(command)
           game:start_dialog("_shop.purchase_confirm", function(answer)
             if answer == 2 then
               local current_item = all_items[cursor_index + 1]
-              if game:get_money() >= current_item.price then
+              if game:get_item(current_item.item):get_amount() == game:get_item(current_item.item):get_max_amount() then
+                --you don't have room for more
+                game:start_dialog("_shop.no_room")
+              elseif game:get_money() >= current_item.price then
                 game:get_hero():start_treasure(current_item.item, current_item.variant)
                 game:get_hero():freeze()
                 game:remove_money(current_item.price)
               end
             else
-              print("decided not to buy")
+              --decided not to buy
             end
           end)
         end

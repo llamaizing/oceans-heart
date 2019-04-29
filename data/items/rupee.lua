@@ -17,13 +17,3 @@ function item:on_obtaining(variant, savegame_variable)
   end
   self:get_game():add_money(amount)
 end
-
---[[
-1 = 1
-2 = 10
-3 = 20
-4 = 50
-5 = 100
-6 = 200
-7 = 500
---]]

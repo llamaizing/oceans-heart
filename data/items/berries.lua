@@ -8,7 +8,7 @@ end
 function item:on_started()
   item:set_savegame_variable("possession_berries")
   item:set_amount_savegame_variable("amount_berries")
-  item:set_max_amount(50)
+  item:set_max_amount(game:get_value("max_berry_capacity") or 50)
   item:set_assignable(false)
   item:set_brandish_when_picked(not game:has_item(item:get_name()))
 end
