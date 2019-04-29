@@ -2946,7 +2946,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/yarrowmouth_village",
+  destination_map = "oakhaven/ivystump",
 }
 
 pickable{
@@ -4640,7 +4640,7 @@ pickable{
 npc{
   name = "shopkeeper",
   layer = 0,
-  x = 568,
+  x = 544,
   y = 149,
   direction = 3,
   subtype = 1,
@@ -4730,7 +4730,7 @@ npc{
 npc{
   name = "buyer",
   layer = 0,
-  x = 584,
+  x = 560,
   y = 149,
   direction = 3,
   subtype = 1,
@@ -4785,68 +4785,22 @@ wall{
   stops_projectiles = true,
 }
 
-pickable{
+npc{
+  name = "blacksmith",
   layer = 0,
-  x = 520,
-  y = 165,
-  treasure_name = "berries",
-  treasure_variant = 4,
+  x = 584,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/blacksmith_01",
 }
 
-pickable{
+enemy{
   layer = 0,
-  x = 528,
-  y = 165,
-  treasure_name = "berries",
-  treasure_variant = 4,
-}
-
-pickable{
-  layer = 0,
-  x = 528,
-  y = 157,
-  treasure_name = "berries",
-  treasure_variant = 4,
-}
-
-pickable{
-  layer = 0,
-  x = 520,
-  y = 157,
-  treasure_name = "berries",
-  treasure_variant = 4,
-}
-
-pickable{
-  layer = 0,
-  x = 520,
-  y = 157,
-  treasure_name = "berries",
-  treasure_variant = 4,
-}
-
-pickable{
-  layer = 0,
-  x = 512,
-  y = 157,
-  treasure_name = "berries",
-  treasure_variant = 4,
-}
-
-pickable{
-  layer = 0,
-  x = 512,
-  y = 157,
-  treasure_name = "berries",
-  treasure_variant = 4,
-}
-
-pickable{
-  layer = 0,
-  x = 528,
-  y = 157,
-  treasure_name = "berries",
-  treasure_variant = 4,
+  x = 416,
+  y = 389,
+  direction = 0,
+  breed = "normal_enemies/squid_mage_3",
 }
 
 tile{

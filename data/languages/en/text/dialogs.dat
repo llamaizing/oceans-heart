@@ -1365,6 +1365,16 @@ $? Neither
 }
 
 dialog{
+  id = "_blacksmith.maxed_out",
+  text = [[
+BLACKSMITH:
+Actually, looking closer, I don't think
+anyone could make this any stronger. This
+is a very fine weapon you have.
+]],
+}
+
+dialog{
   id = "_ferries.goatshead",
   text = [[
 This is the ferry to Goatshead Harbor.

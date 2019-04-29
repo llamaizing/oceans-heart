@@ -170,7 +170,7 @@ function behavior:create(enemy, properties)
 		sol.audio.play_sound("stone")
     --create projectile
     local projectile = enemy:create_enemy({
-      x = x, y = y, layer = layer, direction = direction,
+      x = 0, y = 0, layer = layer, direction = direction,
       breed = properties.projectile_breed
     })
 

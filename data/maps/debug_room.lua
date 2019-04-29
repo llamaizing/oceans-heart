@@ -30,6 +30,11 @@ function buyer:on_interaction()
   sol.menu.start(map, shop_menu)
 end
 
+function blacksmith:on_interaction()
+  local shop_menu = require("scripts/shops/blacksmith")
+  shop_menu:open_shop(game)
+end
+
 function camera_shaker:on_interaction()
   map:get_camera():shake({count = 6, amplitude = 4, speed = 80})
 end
