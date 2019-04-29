@@ -8062,6 +8062,44 @@ around in the dirt, please destory them.
 }
 
 dialog{
+  id = "_oakhaven.npcs.ivystump.picker_peter.1",
+  text = [[
+PICKER PETER:
+Ivystump is renound for its apple orchard.
+I've no idea how old the trees are, but
+my grandfather was also a picker. Apple picker.
+PICKER PETER:
+But now something's amiss in the orchard.
+Something... stirs beneath the earth. Like,
+monsters, probably. We can't pick the apples
+PICKER PETER:
+now. I mean, we could, if we wanted to get
+eaten by monsters. But then the other choice
+is having no apples, and starving to death.
+PICKER PETER:
+There's an old saying in the apple orchard,
+'how do you like them apples?'. It doesn't
+really mean anything, but I think it applies.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.picker_peter.2",
+  text = [[
+PICKER PETER:
+Hey! While you were off fighting the monsters
+in the orchard, another one burrowed out of
+the ground and snatched Paul! It went back
+PICKER PETER:
+down that hole! Can you rescue him? I mean,
+I certainly can't. Guess you could leave him
+to die, that's your perogative.
+TILIA:
+Stop it, I'll go get him.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.library.festus.1",
   text = [[
 FESTUS:
@@ -14718,6 +14756,21 @@ at the base of the monastery.
 }
 
 dialog{
+  id = "quest.side.oakhaven.ivy_orchard",
+  title = "Ivystump Orchard",
+  text = [[
+Monsters have overrun the
+orchard in Ivystump.
+@Clear the orchard
+!There are 3 monsters
+!lurking in the orchard
+@!Return to Paul
+@Save Paul!
+
+]],
+}
+
+dialog{
   id = "quest.side.oakhaven.manna_oaks",
   title = "The Oak Blight",
   text = [[
@@ -14957,17 +15010,3 @@ destroy the monsters
 ]],
 }
 
-dialog{
-  id = "quest.side.oakhaven.ivy_orchard",
-  title = "Ivystump Orchard",
-  text = [[
-Monsters have overrun the
-orchard in Ivystump.
-@Clear the orchard
-!There are 3 monsters
-!lurking in the orchard
-@!Return to Paul
-@Save Paul!
-
-]]
-}

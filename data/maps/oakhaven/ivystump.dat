@@ -118,8 +118,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 56,
-  y = 800,
+  x = 104,
+  y = 808,
   width = 16,
   height = 16,
   pattern = "192",
@@ -561,15 +561,6 @@ tile{
   layer = 0,
   x = 0,
   y = 640,
-  width = 16,
-  height = 16,
-  pattern = "189",
-}
-
-tile{
-  layer = 0,
-  x = 72,
-  y = 744,
   width = 16,
   height = 16,
   pattern = "189",
@@ -10982,7 +10973,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 776,
+  y = 768,
   width = 16,
   height = 16,
   pattern = "1094",
@@ -17915,6 +17906,33 @@ tile{
   pattern = "519",
 }
 
+tile{
+  layer = 0,
+  x = 56,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "202",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "189",
+}
+
+sensor{
+  name = "paul_is_gone_sensor",
+  layer = 0,
+  x = 80,
+  y = 773,
+  width = 64,
+  height = 64,
+}
+
 wall{
   layer = 0,
   x = 224,
@@ -18574,7 +18592,7 @@ npc{
   name = "picker_paul",
   layer = 0,
   x = 72,
-  y = 789,
+  y = 781,
   direction = 3,
   subtype = 1,
   sprite = "npc/sitting_5",
@@ -18588,6 +18606,34 @@ npc{
   direction = 2,
   subtype = 1,
   sprite = "npc/sitting_4",
+}
+
+destination{
+  name = "from_crab_cave",
+  layer = 0,
+  x = 64,
+  y = 797,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 56,
+  y = 800,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/ivystump_interiors/crab_cave",
+  destination = "from_outside",
+}
+
+dynamic_tile{
+  name = "hole_hider",
+  layer = 0,
+  x = 56,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "190",
 }
 
 tile{
