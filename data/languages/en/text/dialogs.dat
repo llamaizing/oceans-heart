@@ -3313,7 +3313,7 @@ see that being useful if I wanted to carry
 some water with me, maybe put a bug into.
 SHADY POT SALESMAN:
 What? Why, a bottle would have to be
-magic to use it like that! 
+magic to use it like that!
 ]],
 }
 
@@ -8000,6 +8000,64 @@ thousands of years. They've survived the
 flood and will outlive our great grandchildren
 LAMIA:
 if people like you continue to protect them.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.picker_paul.1",
+  text = [[
+PICKER PAUL:
+Ah, haven't seen you 'round these parts
+before. I hope you haven't come to partake
+in the apple pickin' festival. It's canceled.
+TILIA:
+Good news, I sure didn't. You guys have an
+apple picking festival?
+
+PICKER PAUL:
+It's a town tradition. It's honestly less
+of a festival and more of a way to get
+ourselves excited about working in the
+PICKER PAUL:
+orchard. I've been the chief picker three
+years runnin', but this year the orchard
+is infested with some monsters. Dunno what
+PICKER PAUL:
+they are, but they pop outta the ground and
+getcha! You wouldn't perhaps be interested in
+takin' on some work riddin' our orchard of
+PICKER PAUL:
+these vermin for say, 80 crowns, would ya?
+$?Sure
+$?No way, Jose
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.picker_paul.2",
+  text = [[
+TILIA:
+That seems like something I can take care
+of. Sure.
+
+PICKER PAUL:
+Well how do you like them apples. Excellent.
+Get yourself on up to the north end of
+town, that's where the orchard is. There
+PICKER PAUL:
+are 3 monsters, least that's the best count
+I could take. Come on back when you're done
+and I'll pay ya.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.picker_paul.3",
+  text = [[
+PICKER PAUL:
+So, go to the north end of town and you'll
+see the orchard. There's 3 monsters rummaging
+around in the dirt, please destory them.
 ]],
 }
 
@@ -14899,3 +14957,17 @@ destroy the monsters
 ]],
 }
 
+dialog{
+  id = "quest.side.oakhaven.ivy_orchard",
+  title = "Ivystump Orchard",
+  text = [[
+Monsters have overrun the
+orchard in Ivystump.
+@Clear the orchard
+!There are 3 monsters
+!lurking in the orchard
+@!Return to Paul
+@Save Paul!
+
+]]
+}

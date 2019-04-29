@@ -353,3 +353,9 @@ side{
 	calc_phase = "quest_haunted_monastery",
 	location = "location.oakhaven"
 }
+
+side{
+dialog_id = "quest.side.oakhaven.ivy_orchard",
+calc_phase = "quest_ivy_orchard",
+location = "location.ivystump"
+}
