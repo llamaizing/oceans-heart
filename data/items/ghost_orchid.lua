@@ -4,6 +4,7 @@ local game = item:get_game()
 function item:on_started()
   item:set_savegame_variable("possession_ghost_orchid")
   item:set_amount_savegame_variable("amount_ghost_orchid")
+  item:set_brandish_when_picked(not game:has_item(item:get_name()))
 end
 
 function item:on_obtained(variant)

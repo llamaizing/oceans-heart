@@ -3,7 +3,7 @@ local game = item:get_game()
 
 function item:on_created()
   self:set_can_disappear(true)
-  self:set_brandish_when_picked(true)
+  item:set_brandish_when_picked(not game:has_item(item:get_name()))
 end
 
 function item:on_started()
@@ -11,11 +11,12 @@ function item:on_started()
   item:set_amount_savegame_variable("amount_bread")    --amount variable
   item:set_max_amount(999)
   item:set_assignable(false)
+  item:set_brandish_when_picked(not game:has_item(item:get_name()))
 end
 
 --obtained
 function item:on_obtaining(variant, savegame_variable)
-  if game:has_item(item:get_name()) then item:set_brandish_when_picked(false) end
+  item:set_brandish_when_picked(false)
   local amounts = {1, 5, 10}
   local amount = amounts[variant]
   if amount == nil then

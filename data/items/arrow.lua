@@ -10,10 +10,6 @@ end
 
 function item:on_started()
 
-  -- Disable pickable arrows if the player has no bow.
-  -- We cannot do this from on_created() because we don't know if the bow
-  -- is already created there.
-  -- item:set_obtainable(game:has_item("bow"))
 end
 
 

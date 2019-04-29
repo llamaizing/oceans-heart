@@ -2946,7 +2946,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "new_limestone/caves/pit",
+  destination_map = "Yarrowmouth/yarrowmouth_village",
 }
 
 pickable{
