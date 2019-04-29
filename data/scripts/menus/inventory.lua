@@ -100,11 +100,13 @@ function inventory:initialize(game)
                 --if the item has an amount, make a counter in the counters table
                 if item:has_amount() then
                     local amount = item:get_amount()
+                    local font = "white_digits"
+                    if amount >= item:get_max_amount() then font = "green_digits" end
                     self.counters[i] = sol.text_surface.create{
                         horizontal_alignment = "center",
                         vertical_alignment = "top",
                         text = item:get_amount(),
-                        font = "white_digits"
+                        font = font
                     }
                 end
             end
