@@ -12,13 +12,25 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+  if game:get_value("quest_ivy_orchard") >= 3 then
+    boss:set_enabled(false)
+    map:set_doors_open("boss_door")
+    for box in map:get_entities("apple_box") do box:set_enabled(true) end
+  end
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
 
+function boss:on_dead()
+  map:open_doors("boss_door")
+end
+
+function paul:on_interaction()
+  if game:get_value("quest_ivy_orchard") < 3 then
+    game:start_dialog("_oakhaven.npcs.ivystump.picker_paul.4", function()
+      game:set_value("quest_ivy_orchard", 3)
+      game:add_money(120)
+    end)
+  else
+    game:start_dialog("_oakhaven.npcs.ivystump.picker_paul.5")
+  end
 end

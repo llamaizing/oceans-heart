@@ -8062,6 +8062,36 @@ around in the dirt, please destory them.
 }
 
 dialog{
+  id = "_oakhaven.npcs.ivystump.picker_paul.4",
+  text = [[
+PICKER PAUL:
+Phew, looks like it wasn't just the three
+monsters in the orchard. But ya know what?
+I kinda like it down here. It's nice and
+PICKER PAUL:
+cool- might start usin' this place to store
+apples after we pick 'em. This could really
+be useful. Anyhow, here's what I said I'd
+PICKER PAUL:
+pay ya, plus a little more since ya kinda
+saved my life down here. And found an apple
+cellar!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.picker_paul.5",
+  text = [[
+PICKER PAUL:
+Yes, yes, this'll make a fine place to keep
+apples cool and crisp over the winter. Ya
+really gotta hand it to those monsters,
+PICKER PAUL:
+they know how to dig a useful hole.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.ivystump.picker_peter.1",
   text = [[
 PICKER PETER:

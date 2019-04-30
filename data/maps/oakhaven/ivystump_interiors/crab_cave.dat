@@ -100,9 +100,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
+  x = 48,
   y = 160,
-  width = 32,
+  width = 48,
   height = 96,
   pattern = "ground1.1",
 }
@@ -121,7 +121,7 @@ tile{
   x = 16,
   y = 48,
   width = 32,
-  height = 160,
+  height = 224,
   pattern = "193",
   tileset = "cave_2",
 }
@@ -348,26 +348,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 16,
-  y = 192,
-  width = 32,
-  height = 32,
-  pattern = "corner.in.3",
-  tileset = "cave_2",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 192,
-  width = 32,
-  height = 32,
-  pattern = "corner.out.1",
-  tileset = "cave_2",
-}
-
-tile{
-  layer = 0,
   x = 96,
   y = 192,
   width = 32,
@@ -383,26 +363,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "corner.in.2",
-  tileset = "cave_2",
-}
-
-tile{
-  layer = 0,
-  x = 16,
-  y = 224,
-  width = 32,
-  height = 32,
-  pattern = "corner.in.4",
-  tileset = "cave_2",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 224,
-  width = 32,
-  height = 32,
-  pattern = "corner.out.2",
   tileset = "cave_2",
 }
 
@@ -863,6 +823,1078 @@ tile{
   tileset = "cave_2",
 }
 
+tile{
+  layer = 0,
+  x = 208,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 24,
+  width = 32,
+  height = 8,
+  pattern = "133",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "218",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "217",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "107",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "107",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 672,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 624,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 640,
+  width = 32,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 544,
+  width = 16,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 496,
+  width = 32,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 400,
+  width = 16,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 336,
+  width = 48,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 320,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 288,
+  width = 16,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 192,
+  width = 32,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 144,
+  width = 32,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 112,
+  width = 48,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 144,
+  width = 64,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 128,
+  width = 16,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 80,
+  width = 48,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 96,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 96,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 112,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "ground1.3",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 112,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 128,
+  width = 16,
+  height = 32,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 176,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 176,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 160,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 128,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 320,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 320,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 496,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 560,
+  width = 16,
+  height = 32,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 592,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 640,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 640,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 656,
+  width = 32,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "ground1.2",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "229",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "217",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "228",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "232",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "233",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "218",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "219",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 176,
+  width = 32,
+  height = 16,
+  pattern = "230",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 176,
+  width = 32,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 200,
+  width = 32,
+  height = 16,
+  pattern = "230",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "212",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 264,
+  width = 32,
+  height = 16,
+  pattern = "228",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 624,
+  width = 32,
+  height = 16,
+  pattern = "229",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "226",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 632,
+  width = 16,
+  height = 16,
+  pattern = "112",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 616,
+  width = 16,
+  height = 16,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "113",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 648,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "111",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 488,
+  width = 32,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 496,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "226",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "112",
+}
+
 destination{
   name = "from_outside",
   layer = 0,
@@ -899,7 +1931,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 344,
+  x = 336,
   y = 333,
   direction = 3,
   breed = "normal_enemies/triangle_crab_red",
@@ -923,7 +1955,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 152,
+  x = 144,
   y = 269,
   direction = 3,
   breed = "normal_enemies/triangle_crab_red",
@@ -940,17 +1972,17 @@ enemy{
 enemy{
   name = "boss",
   layer = 0,
-  x = 184,
-  y = 93,
+  x = 192,
+  y = 109,
   direction = 3,
-  breed = "bosses/burrow_crab",
+  breed = "bosses/burrow_crab_2",
 }
 
 door{
   name = "boss_door",
   layer = 0,
   x = 208,
-  y = 48,
+  y = 64,
   direction = 3,
   sprite = "entities/door_post_stone",
 }
@@ -986,7 +2018,7 @@ door{
   name = "boss_door_5",
   layer = 0,
   x = 272,
-  y = 48,
+  y = 64,
   direction = 3,
   sprite = "entities/door_post_stone",
 }
@@ -1001,6 +2033,303 @@ npc{
   sprite = "npc/sitting_5",
 }
 
+chest{
+  layer = 0,
+  x = 264,
+  y = 37,
+  treasure_name = "armor_upgrade_1",
+  treasure_savegame_variable = "ivystump_crab_caves_armor",
+  sprite = "entities/chest",
+}
+
+dynamic_tile{
+  name = "apple_box_2",
+  layer = 0,
+  x = 304,
+  y = 64,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_13",
+  layer = 0,
+  x = 328,
+  y = 96,
+  enabled_at_start = false,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_3",
+  layer = 0,
+  x = 288,
+  y = 72,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_5",
+  layer = 0,
+  x = 312,
+  y = 80,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_7",
+  layer = 0,
+  x = 96,
+  y = 64,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_9",
+  layer = 0,
+  x = 112,
+  y = 64,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_11",
+  layer = 0,
+  x = 128,
+  y = 64,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_15",
+  layer = 0,
+  x = 144,
+  y = 64,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_17",
+  layer = 0,
+  x = 160,
+  y = 64,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_19",
+  layer = 0,
+  x = 104,
+  y = 96,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_21",
+  layer = 0,
+  x = 88,
+  y = 96,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_23",
+  layer = 0,
+  x = 120,
+  y = 96,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_25",
+  layer = 0,
+  x = 136,
+  y = 96,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_27",
+  layer = 0,
+  x = 96,
+  y = 128,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_29",
+  layer = 0,
+  x = 112,
+  y = 128,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_31",
+  layer = 0,
+  x = 128,
+  y = 128,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_33",
+  layer = 0,
+  x = 144,
+  y = 128,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_35",
+  layer = 0,
+  x = 160,
+  y = 128,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_37",
+  layer = 0,
+  x = 176,
+  y = 128,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_39",
+  layer = 0,
+  x = 248,
+  y = 120,
+  enabled_at_start = false,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_41",
+  layer = 0,
+  x = 272,
+  y = 120,
+  enabled_at_start = false,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_43",
+  layer = 0,
+  x = 264,
+  y = 136,
+  enabled_at_start = false,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_45",
+  layer = 0,
+  x = 240,
+  y = 136,
+  enabled_at_start = false,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_47",
+  layer = 0,
+  x = 272,
+  y = 152,
+  enabled_at_start = false,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
 tile{
   layer = 1,
   x = 64,
@@ -1008,5 +2337,410 @@ tile{
   width = 32,
   height = 8,
   pattern = "59",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "219",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "108",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 40,
+  width = 16,
+  height = 8,
+  pattern = "108",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 160,
+  width = 32,
+  height = 16,
+  pattern = "231",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 160,
+  width = 32,
+  height = 16,
+  pattern = "137",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 184,
+  width = 32,
+  height = 16,
+  pattern = "231",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "213",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 248,
+  width = 32,
+  height = 16,
+  pattern = "233",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 608,
+  width = 32,
+  height = 16,
+  pattern = "232",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 632,
+  width = 16,
+  height = 16,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 480,
+  width = 32,
+  height = 8,
+  pattern = "133",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+dynamic_tile{
+  name = "apple_box",
+  layer = 1,
+  x = 304,
+  y = 56,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_14",
+  layer = 1,
+  x = 328,
+  y = 88,
+  enabled_at_start = false,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_4",
+  layer = 1,
+  x = 288,
+  y = 64,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_6",
+  layer = 1,
+  x = 312,
+  y = 72,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_8",
+  layer = 1,
+  x = 96,
+  y = 56,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_10",
+  layer = 1,
+  x = 112,
+  y = 56,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_12",
+  layer = 1,
+  x = 128,
+  y = 56,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_16",
+  layer = 1,
+  x = 144,
+  y = 56,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_18",
+  layer = 1,
+  x = 160,
+  y = 56,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_20",
+  layer = 1,
+  x = 104,
+  y = 88,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_22",
+  layer = 1,
+  x = 88,
+  y = 88,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_24",
+  layer = 1,
+  x = 120,
+  y = 88,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_26",
+  layer = 1,
+  x = 136,
+  y = 88,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_28",
+  layer = 1,
+  x = 96,
+  y = 120,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_30",
+  layer = 1,
+  x = 112,
+  y = 120,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_32",
+  layer = 1,
+  x = 128,
+  y = 120,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_34",
+  layer = 1,
+  x = 144,
+  y = 120,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_36",
+  layer = 1,
+  x = 160,
+  y = 120,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_38",
+  layer = 1,
+  x = 176,
+  y = 120,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_40",
+  layer = 1,
+  x = 248,
+  y = 112,
+  enabled_at_start = false,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_42",
+  layer = 1,
+  x = 272,
+  y = 112,
+  enabled_at_start = false,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_44",
+  layer = 1,
+  x = 264,
+  y = 128,
+  enabled_at_start = false,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_46",
+  layer = 1,
+  x = 240,
+  y = 128,
+  enabled_at_start = false,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_48",
+  layer = 1,
+  x = 272,
+  y = 144,
+  enabled_at_start = false,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+  tileset = "overworld_oakhaven",
 }
 

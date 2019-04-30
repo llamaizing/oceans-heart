@@ -285,6 +285,7 @@ sprite{ id = "enemies/bosses/bart", description = "enemies/bosses/bart" }
 sprite{ id = "enemies/bosses/bart_weapon", description = "enemies/bosses/bart_weapon" }
 sprite{ id = "enemies/bosses/blackbeard", description = "Blackbeard" }
 sprite{ id = "enemies/bosses/burrow_crab", description = "Burrow Crab" }
+sprite{ id = "enemies/bosses/burrow_crab_2", description = "Burrow Crab 2" }
 sprite{ id = "enemies/bosses/charging_pirate_1", description = "Charging Pirate 1" }
 sprite{ id = "enemies/bosses/crow_mech", description = "Crow Mech" }
 sprite{ id = "enemies/bosses/fiend_1", description = "Fiend 1" }
@@ -1453,6 +1454,7 @@ enemy{ id = "bosses/avalanche_golem", description = "Avalanche Golem" }
 enemy{ id = "bosses/bart", description = "Bart" }
 enemy{ id = "bosses/blackbeard", description = "Blackbeard" }
 enemy{ id = "bosses/burrow_crab", description = "Burrow Crab" }
+enemy{ id = "bosses/burrow_crab_2", description = "Burrow Crab 2" }
 enemy{ id = "bosses/charging_pirate_1", description = "Charging Pirate 1" }
 enemy{ id = "bosses/crow_mech", description = "Crow Mech" }
 enemy{ id = "bosses/fiend_1", description = "Fiend 1" }
