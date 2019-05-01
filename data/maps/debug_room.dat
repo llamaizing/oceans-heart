@@ -4800,7 +4800,7 @@ enemy{
   x = 416,
   y = 389,
   direction = 0,
-  breed = "normal_enemies/squid_mage_3",
+  breed = "bosses/burrow_crab_2",
 }
 
 tile{

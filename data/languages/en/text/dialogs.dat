@@ -8130,6 +8130,16 @@ Stop it, I'll go get him.
 }
 
 dialog{
+  id = "_oakhaven.npcs.ivystump.picker_peter.3",
+  text = [[
+PICKER PETER:
+Hey, you've helped us find an exceptional
+apple hole. This is a game changer. We've
+named the pit after you.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.library.festus.1",
   text = [[
 FESTUS:

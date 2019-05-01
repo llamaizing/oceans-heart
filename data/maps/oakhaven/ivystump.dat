@@ -10973,7 +10973,7 @@ tile{
 tile{
   layer = 0,
   x = 64,
-  y = 768,
+  y = 760,
   width = 16,
   height = 16,
   pattern = "1094",
@@ -18592,7 +18592,7 @@ npc{
   name = "picker_paul",
   layer = 0,
   x = 72,
-  y = 781,
+  y = 773,
   direction = 3,
   subtype = 1,
   sprite = "npc/sitting_5",

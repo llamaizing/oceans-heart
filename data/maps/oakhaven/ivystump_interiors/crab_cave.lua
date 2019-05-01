@@ -13,7 +13,7 @@ local game = map:get_game()
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
   if game:get_value("quest_ivy_orchard") >= 3 then
-    boss:set_enabled(false)
+    for enemy in map:get_entities_by_type("enemy") do enemy:set_enabled(false) end
     map:set_doors_open("boss_door")
     for box in map:get_entities("apple_box") do box:set_enabled(true) end
   end

@@ -1915,8 +1915,8 @@ teletransporter{
 
 enemy{
   layer = 0,
-  x = 248,
-  y = 661,
+  x = 272,
+  y = 637,
   direction = 3,
   breed = "normal_enemies/triangle_crab_red",
 }
@@ -1932,7 +1932,7 @@ enemy{
 enemy{
   layer = 0,
   x = 336,
-  y = 333,
+  y = 357,
   direction = 3,
   breed = "normal_enemies/triangle_crab_red",
 }
@@ -1955,8 +1955,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 144,
-  y = 269,
+  x = 152,
+  y = 301,
   direction = 3,
   breed = "normal_enemies/triangle_crab_red",
 }
@@ -2327,6 +2327,186 @@ dynamic_tile{
   width = 24,
   height = 16,
   pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_49",
+  layer = 0,
+  x = 224,
+  y = 592,
+  enabled_at_start = false,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_51",
+  layer = 0,
+  x = 248,
+  y = 592,
+  enabled_at_start = false,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_53",
+  layer = 0,
+  x = 232,
+  y = 608,
+  enabled_at_start = false,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_55",
+  layer = 0,
+  x = 368,
+  y = 344,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_57",
+  layer = 0,
+  x = 352,
+  y = 344,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_59",
+  layer = 0,
+  x = 368,
+  y = 360,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_61",
+  layer = 0,
+  x = 336,
+  y = 320,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_63",
+  layer = 0,
+  x = 320,
+  y = 320,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_65",
+  layer = 0,
+  x = 304,
+  y = 320,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_67",
+  layer = 0,
+  x = 288,
+  y = 320,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_69",
+  layer = 0,
+  x = 256,
+  y = 656,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_71",
+  layer = 0,
+  x = 240,
+  y = 656,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_73",
+  layer = 0,
+  x = 224,
+  y = 656,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_75",
+  layer = 0,
+  x = 144,
+  y = 256,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_77",
+  layer = 0,
+  x = 128,
+  y = 256,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "2085",
   tileset = "overworld_oakhaven",
 }
 
@@ -2741,6 +2921,186 @@ dynamic_tile{
   width = 24,
   height = 8,
   pattern = "1581",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_50",
+  layer = 1,
+  x = 224,
+  y = 584,
+  enabled_at_start = false,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_52",
+  layer = 1,
+  x = 248,
+  y = 584,
+  enabled_at_start = false,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_54",
+  layer = 1,
+  x = 232,
+  y = 600,
+  enabled_at_start = false,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_56",
+  layer = 1,
+  x = 368,
+  y = 336,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_58",
+  layer = 1,
+  x = 352,
+  y = 336,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_60",
+  layer = 1,
+  x = 368,
+  y = 352,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_62",
+  layer = 1,
+  x = 336,
+  y = 312,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_64",
+  layer = 1,
+  x = 320,
+  y = 312,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_66",
+  layer = 1,
+  x = 304,
+  y = 312,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_68",
+  layer = 1,
+  x = 288,
+  y = 312,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_70",
+  layer = 1,
+  x = 256,
+  y = 648,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_72",
+  layer = 1,
+  x = 240,
+  y = 648,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_74",
+  layer = 1,
+  x = 224,
+  y = 648,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_76",
+  layer = 1,
+  x = 144,
+  y = 248,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
+  tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "apple_box_78",
+  layer = 1,
+  x = 128,
+  y = 248,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "2086",
   tileset = "overworld_oakhaven",
 }
 

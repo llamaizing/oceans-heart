@@ -36,7 +36,7 @@ local properties = {
   summoning_sound = "charge_1",
   summon_breed = "misc/root_small",
   summon_group_size = 6,
-  summon_group_delay = 400,
+  summon_group_delay = 200,
   protected_while_summoning = false,
 
   has_orbit_attack = true,

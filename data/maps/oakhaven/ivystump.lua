@@ -17,7 +17,7 @@ map:register_event("on_started", function()
   --ivy orchard quest
   if game:get_value("quest_ivy_orchard") and game:get_value("quest_ivy_orchard") >= 1 then
     hole_hider:set_enabled(false)
-    picker_paul:set_enabeld(false)
+    picker_paul:set_enabled(false)
     for boss in map:get_entities("apple_boss") do boss:set_enabled(false) end
   end
 
@@ -51,17 +51,21 @@ function picker_peter:on_interaction()
     game:start_dialog("_oakhaven.npcs.ivystump.picker_peter.1")
   elseif game:get_value("quest_ivy_orchard") == 1 then
     game:start_dialog("_oakhaven.npcs.ivystump.picker_peter.2")
+  elseif game:get_value("quest_ivy_orchard") == 2 then
+    game:start_dialog("_oakhaven.npcs.ivystump.picker_peter.2")
+  elseif game:get_value("quest_ivy_orchard") == 2 then
+
   end
 end
 
 
 for boss in map:get_entities("apple_boss") do
-boss:on_dead()
+function boss:on_dead()
   if not map:has_entities("apple_boss") then
     sol.audio.play_sound("secret")
     game:set_value("quest_ivy_orchard", 1)
     hole_hider:set_enabled(false)
-    picker_paul:set_enabeld(false)
+    picker_paul:set_enabled(false)
   end
 end
 end
