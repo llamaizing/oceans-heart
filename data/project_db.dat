@@ -268,6 +268,7 @@ tileset{ id = "oceanheart_outdoors_1", description = "Overworld" }
 tileset{ id = "oceanheart_outdoors_spring", description = "Overworld-Spring" }
 tileset{ id = "overworld_oakhaven", description = "Overworld-Oakhaven" }
 tileset{ id = "overworld_yarrowmouth", description = "Overworld-Yarrowmouth" }
+tileset{ id = "palace_of_storms", description = "Palace of Storms" }
 tileset{ id = "pirate_overworld_test", description = "pirate_test1" }
 tileset{ id = "sky_scroll", description = "Sky Scroll" }
 tileset{ id = "temple", description = "temple" }
