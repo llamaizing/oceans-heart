@@ -137,6 +137,14 @@ function sound_atmosphere_manager:start_atmosphere(map, type)
     timer:set_suspended_with_map(false)
   end
 
+  if type == "rain" then
+    local timer = sol.timer.start(map, 1, function()
+      sol.audio.play_sound(rain_sounds[math.random(1, #rain_sounds)])
+      return 3000
+    end)
+    timer:set_suspended_with_map(false)
+  end
+
   if type == "ravens" then
     local timer = sol.timer.start(map, 1, function()
       local maybe_pause = math.random(1, 10)

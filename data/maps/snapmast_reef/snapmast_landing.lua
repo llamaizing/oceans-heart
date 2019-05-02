@@ -12,9 +12,15 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
+  require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain")
   local world = map:get_world()
   game:set_world_rain_mode(world, "storm")
   if game:get_value("quest_snapmast") == 0 then game:set_value("quest_snapmast", 1) end
+
+  local rain_manager = require("scripts/weather/rain_manager")
+  rain_manager:set_storm_speed(180)
+  rain_manager:set_lightning_delay(6000, 18000)
+  rain_manager:set_darkness(60, 120)
 
 end)
 

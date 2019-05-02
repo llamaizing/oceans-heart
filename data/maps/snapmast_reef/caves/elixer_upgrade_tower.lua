@@ -10,6 +10,9 @@
 local map = ...
 local game = map:get_game()
 
+map:register_event("on_started", function()
+  require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain_inside")
+end)
 
 
 function elixer_spirit:on_interaction()

@@ -9,11 +9,29 @@
 
 local map = ...
 local game = map:get_game()
+local white_surface = sol.surface.create()
+  white_surface:fill_color({255,255,255})
+  white_surface:set_opacity(0)
+local camera_surface = map:get_camera():get_surface()
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
+  require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain")
+  local world = map:get_world()
+  game:set_world_rain_mode(world, "storm")
+  local rain_manager = require("scripts/weather/rain_manager")
+  rain_manager:set_storm_speed(300)
+  rain_manager:set_lightning_delay(2000, 7500)
+  rain_manager:set_darkness(120, 190)
+
+--  sea_fog:get_sprite():set_blend_mode("add")
+--  sea_fog:get_sprite():set_opacity(25)
 
 end)
+
+function map:on_draw()
+  white_surface:draw(camera_surface)
+end
 
 function morus:on_interaction()
   game:start_dialog("_oakhaven.npcs.morus.ferry_2", function(answer)
@@ -24,5 +42,17 @@ function morus:on_interaction()
     elseif answer == 3 then
       game:start_dialog("_oakhaven.npcs.morus.ferry_already")
     end
+  end)
+end
+
+
+---Teleport Down
+function rune_sensor:on_activated()
+  sol.audio.play_sound("sea_spirit")
+  sol.audio.play_sound("charge_1")
+  sol.audio.play_sound("warp")
+  rune:set_enabled(true)
+  white_surface:fade_in(50, function()
+
   end)
 end

@@ -44,6 +44,16 @@ local color_darkness = {150, 150, 140} -- Used for full darkness.
 local max_num_drops_rain, max_num_drops_storm = 100, 250
 local sx, sy = 0, 0 -- Scrolling shifts for drop positions.
 
+
+--Alter settings
+function rain_manager:set_storm_speed(speed) storm_speed = speed end
+function rain_manager:set_lightning_delay(min, max) min_lightning_delay, max_lightning_delay = min, max end
+function rain_manager:set_darkness(min, max) min_darkness, max_darkness = min, max end
+
+
+
+
+
 -- Main variables.
 local rain_surface, flash_surface, dark_surface, draw_flash_surface
 local drop_list, splash_list, timers, num_drops, num_splashes

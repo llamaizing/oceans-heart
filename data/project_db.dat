@@ -275,6 +275,7 @@ tileset{ id = "temple", description = "temple" }
 tileset{ id = "temple_2", description = "Ancient Temple" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 tileset{ id = "treasure", description = "Treasure" }
+tileset{ id = "underwater_plants", description = "Underwater Plants" }
 tileset{ id = "vault_walls", description = "Vault Walls" }
 
 sprite{ id = "console/cursor", description = "cursor" }
@@ -562,6 +563,7 @@ sprite{ id = "entities/ripple", description = "Ripple" }
 sprite{ id = "entities/robot_parts", description = "RobotParts" }
 sprite{ id = "entities/rockpile", description = "Rock Pile" }
 sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
+sprite{ id = "entities/sea_reflection_fog", description = "Sea Reflection Fog" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/smashable_gate", description = "Smashable Gate" }
