@@ -21,7 +21,7 @@ local properties = {
   radial_attack_projectile_breed = "misc/jelly_needle",
   radial_attack_cooldown = 3500,
   radial_attack_distance = 70,
-  radial_attack_num_projectiles = 5,
+  radial_attack_num_projectiles = 8,
   radial_attack_stop_while_charging = true,
   radial_attack_projectiles_go_through_walls = true,
 

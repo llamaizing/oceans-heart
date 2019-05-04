@@ -7,12 +7,11 @@ local FUSE_LENGTH = 3000
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(1)
-  enemy:set_damage(3)
+  enemy:set_damage(8)
   enemy:set_origin(4, 4)
   enemy:set_obstacle_behavior("flying")
   enemy:set_can_hurt_hero_running(true)
   enemy:set_dying_sprite_id("enemies/enemy_killed_projectile")
-  enemy:set_attack_consequence("sword", "custom")
   enemy:set_attack_consequence("arrow", "ignored")
   bounces = 0
 end

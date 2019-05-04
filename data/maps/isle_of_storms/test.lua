@@ -10,6 +10,13 @@
 local map = ...
 local game = map:get_game()
 
+
+local white_surface = sol.surface.create()
+  white_surface:fill_color({255,255,255})
+  white_surface:set_opacity(255)
+local camera_surface = map:get_camera():get_surface()
+
+
 local fog = sol.surface.create("fog/big_water_light.png")
 fog:set_blend_mode("blend")
 fog:set_opacity(25)
@@ -34,7 +41,8 @@ move_fog(fog2, .3, 350)
 move_fog(fog3, -2.2, 300)
 
 
-function map:on_draw()
+function map:on_draw(dst_surface)
+  white_surface:draw(dst_surface)
   fog:draw(map:get_camera():get_surface())
   fog2:draw(map:get_camera():get_surface())
   fog3:draw(map:get_camera():get_surface())
@@ -47,6 +55,7 @@ end
 
 -- Event called after the opening transition effect of the map,
 -- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
-end
+map:register_event("on_opening_transition_finished", function()
+  white_surface:fade_out(100)
+  fog2:fade_in(100)
+end)

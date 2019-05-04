@@ -4666,6 +4666,18 @@ tile{
   tileset = "palace_of_storms",
 }
 
+dynamic_tile{
+  name = "rune",
+  layer = 0,
+  x = 160,
+  y = 64,
+  enabled_at_start = false,
+  width = 96,
+  height = 96,
+  pattern = "222",
+  tileset = "cave_2",
+}
+
 npc{
   layer = 0,
   x = 208,
@@ -4715,21 +4727,9 @@ sensor{
   name = "rune_sensor",
   layer = 0,
   x = 200,
-  y = 101,
+  y = 85,
   width = 32,
   height = 32,
-}
-
-dynamic_tile{
-  name = "rune",
-  layer = 0,
-  x = 160,
-  y = 64,
-  enabled_at_start = false,
-  width = 96,
-  height = 96,
-  pattern = "222",
-  tileset = "cave_2",
 }
 
 tile{
