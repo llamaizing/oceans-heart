@@ -54,7 +54,7 @@ end
 
 
 function title_screen:on_started()
-  sol.audio.play_music("oceans_heart")
+  sol.audio.play_music("title_screen_piano_only")
   black_fill:fill_color({0,0,0, 255})
   black_fill:fade_out(40)
   cursor_index = 0
@@ -134,6 +134,7 @@ function title_screen:on_key_pressed(command)
   elseif command == "space" then
     --Continue
     if cursor_index == 0 and not confirming then
+      sol.audio.play_sound("elixer_upgrade")
       local game = game_manager:create("save1.dat")
       sol.main:start_savegame(game)
       sol.menu.stop(self)
@@ -149,12 +150,14 @@ function title_screen:on_key_pressed(command)
 
     --New Game, yes delete old
     elseif cursor_index == 0 and confirming then
+      sol.audio.play_sound("elixer_upgrade")
       local game = game_manager:create("save1.dat", true)
       sol.main:start_savegame(game)
       sol.menu.stop(self)
 
     --New Game, nope don't delete
     elseif cursor_index == 1 and confirming then
+      sol.audio.play_sound("no")
       confirming = false
       selection_surface:clear()
       text_surface:set_text("  Continue")

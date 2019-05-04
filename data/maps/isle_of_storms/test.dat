@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "palace_of_storms",
-  music = "oceans_heart",
+  music = "seafloor_1",
 }
 
 tile{
@@ -788,15 +788,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
-  y = 8,
-  width = 16,
-  height = 40,
-  pattern = "162",
-}
-
-tile{
-  layer = 0,
   x = 240,
   y = 32,
   width = 32,
@@ -1224,16 +1215,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
-  y = 48,
-  width = 16,
-  height = 16,
-  pattern = "101",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
   x = 320,
   y = 112,
   width = 16,
@@ -1535,6 +1516,110 @@ tile{
   height = 16,
   pattern = "41",
   tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "47",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "192",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "197",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "192",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "196",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "115",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "101",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "156",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 8,
+  width = 16,
+  height = 40,
+  pattern = "162",
 }
 
 dynamic_tile{

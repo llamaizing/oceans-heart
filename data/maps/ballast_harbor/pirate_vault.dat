@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "vault_walls",
-  music = "ballast_harbor",
+  music = "seedy_underbelly",
 }
 
 tile{
@@ -17743,276 +17743,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1040,
-  y = 1328,
-  width = 64,
-  height = 32,
-  pattern = "35",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1096,
-  y = 1328,
-  width = 8,
-  height = 8,
-  pattern = "24",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1096,
-  y = 1352,
-  width = 8,
-  height = 8,
-  pattern = "26",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 1328,
-  width = 48,
-  height = 8,
-  pattern = "27",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1096,
-  y = 1336,
-  width = 8,
-  height = 16,
-  pattern = "30",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1048,
-  y = 1352,
-  width = 48,
-  height = 8,
-  pattern = "29",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1040,
-  y = 1328,
-  width = 8,
-  height = 8,
-  pattern = "23",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1040,
-  y = 1352,
-  width = 8,
-  height = 8,
-  pattern = "25",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1040,
-  y = 1336,
-  width = 8,
-  height = 16,
-  pattern = "28",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1008,
-  y = 1360,
-  width = 32,
-  height = 48,
-  pattern = "35",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 1360,
-  width = 8,
-  height = 8,
-  pattern = "24",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 1400,
-  width = 8,
-  height = 8,
-  pattern = "26",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1016,
-  y = 1360,
-  width = 16,
-  height = 8,
-  pattern = "27",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1032,
-  y = 1368,
-  width = 8,
-  height = 32,
-  pattern = "30",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1016,
-  y = 1400,
-  width = 16,
-  height = 8,
-  pattern = "29",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1008,
-  y = 1360,
-  width = 8,
-  height = 8,
-  pattern = "23",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1008,
-  y = 1400,
-  width = 8,
-  height = 8,
-  pattern = "25",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1008,
-  y = 1368,
-  width = 8,
-  height = 32,
-  pattern = "28",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1104,
-  y = 1376,
-  width = 32,
-  height = 32,
-  pattern = "35",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1128,
-  y = 1376,
-  width = 8,
-  height = 8,
-  pattern = "24",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1128,
-  y = 1400,
-  width = 8,
-  height = 8,
-  pattern = "26",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1112,
-  y = 1376,
-  width = 16,
-  height = 8,
-  pattern = "27",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1128,
-  y = 1384,
-  width = 8,
-  height = 16,
-  pattern = "30",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1112,
-  y = 1400,
-  width = 16,
-  height = 8,
-  pattern = "29",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1104,
-  y = 1376,
-  width = 8,
-  height = 8,
-  pattern = "23",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1104,
-  y = 1400,
-  width = 8,
-  height = 8,
-  pattern = "25",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 1104,
-  y = 1384,
-  width = 8,
-  height = 16,
-  pattern = "28",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
   x = 2232,
   y = 496,
   width = 8,
@@ -22476,6 +22206,366 @@ tile{
   width = 16,
   height = 16,
   pattern = "622",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 1344,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 1336,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 1352,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 1384,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1144,
+  y = 1384,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1160,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 1344,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 1360,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 1360,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 984,
+  y = 1376,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 1376,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1000,
+  y = 1392,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 968,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 1392,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 1368,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 1384,
+  width = 16,
+  height = 16,
+  pattern = "157",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 1248,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 904,
+  y = 1248,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 1032,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 1048,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 1064,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 1080,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 1104,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 1128,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 1128,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 1144,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 1152,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 1136,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 1152,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 1144,
+  width = 24,
+  height = 16,
+  pattern = "161",
   tileset = "indoors_stone",
 }
 
@@ -27900,28 +27990,8 @@ enemy{
   enabled_at_start = false,
   direction = 3,
   breed = "bosses/charging_pirate_1",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1616,
-  y = 1253,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/iron_ball",
-  model = "toss_ball",
-}
-
-custom_entity{
-  layer = 0,
-  x = 1296,
-  y = 1253,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/iron_ball",
-  model = "toss_ball",
+  treasure_name = "health_upgrade",
+  treasure_savegame_variable = "ballast_harbor_boss_health_upgrade",
 }
 
 npc{
@@ -29177,6 +29247,24 @@ npc{
   direction = 3,
   subtype = 1,
   behavior = "dialog#_ballast_harbor.observations.pirate_vault.live_rock1",
+}
+
+wall{
+  layer = 0,
+  x = 2160,
+  y = 992,
+  width = 48,
+  height = 40,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 2368,
+  y = 992,
+  width = 48,
+  height = 40,
+  stops_enemies = true,
 }
 
 tile{
@@ -35816,6 +35904,366 @@ tile{
   pattern = "57",
 }
 
+tile{
+  layer = 1,
+  x = 1040,
+  y = 1328,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1080,
+  y = 1328,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1080,
+  y = 1344,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 1376,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1128,
+  y = 1368,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1128,
+  y = 1384,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1144,
+  y = 1376,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1160,
+  y = 1384,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 1336,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 992,
+  y = 1352,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 968,
+  y = 1352,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 1368,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 1368,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1000,
+  y = 1384,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 952,
+  y = 1352,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 968,
+  y = 1368,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 944,
+  y = 1368,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 976,
+  y = 1384,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 960,
+  y = 1384,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 944,
+  y = 1384,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 920,
+  y = 1360,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 928,
+  y = 1376,
+  width = 16,
+  height = 8,
+  pattern = "158",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 864,
+  y = 1232,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 904,
+  y = 1232,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 880,
+  y = 1016,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 912,
+  y = 1032,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 880,
+  y = 1048,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 896,
+  y = 1064,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 880,
+  y = 1088,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1176,
+  y = 1120,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 1120,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1168,
+  y = 1136,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1152,
+  y = 1144,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1128,
+  y = 1128,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1128,
+  y = 1144,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 1136,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
 crystal{
   layer = 1,
   x = 2440,
@@ -36081,3 +36529,4 @@ dynamic_tile{
   pattern = "35",
   tileset = "cave_2",
 }
+

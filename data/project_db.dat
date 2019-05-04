@@ -1196,6 +1196,11 @@ music{ id = "rain1", description = "Rain 1" }
 music{ id = "rain2", description = "Rain 2" }
 music{ id = "ruins_1", description = "Ruins 1" }
 music{ id = "safe_haven", description = "Safe Haven" }
+music{ id = "seafloor_1", description = "Seafloor 1" }
+music{ id = "seedy_underbelly", description = "Seedy Underbelly" }
+music{ id = "title_screen", description = "TitleScreen" }
+music{ id = "title_screen_2", description = "TitleScreen2" }
+music{ id = "title_screen_piano_only", description = "Title Screen-Piano" }
 music{ id = "triumph_theme", description = "Triumph Theme" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
@@ -1266,6 +1271,7 @@ sound{ id = "message_end", description = "message_end" }
 sound{ id = "message_letter", description = "message_letter" }
 sound{ id = "monster_hurt", description = "monster_hurt" }
 sound{ id = "monster_roar_1", description = "Monster Roar 1" }
+sound{ id = "monster_scream", description = "Monster Scream" }
 sound{ id = "no", description = "no" }
 sound{ id = "ok", description = "ok" }
 sound{ id = "pause_closed", description = "pause_closed" }
