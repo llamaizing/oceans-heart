@@ -156,6 +156,7 @@ map{ id = "grass_template_yellow", description = "Grass Template 2" }
 map{ id = "indoor_house_template", description = "Indoor House Template" }
 map{ id = "indoor_template", description = "Temple/Cave Template" }
 map{ id = "isle_of_storms/isle_of_storms_landing", description = "Landing Area" }
+map{ id = "isle_of_storms/test", description = "Test" }
 map{ id = "mysterious_wood", description = "Mysterious Wood" }
 map{ id = "new_limestone/basswood_tavern", description = "Basswood Tavern" }
 map{ id = "new_limestone/cave_1", description = "Cave 1" }
@@ -325,6 +326,7 @@ sprite{ id = "enemies/misc/falling_rock", description = "Falling Rock" }
 sprite{ id = "enemies/misc/fire", description = "fire" }
 sprite{ id = "enemies/misc/fire_blast", description = "Fire Blast" }
 sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small, red" }
+sprite{ id = "enemies/misc/jelly_needle", description = "Jelly Needle" }
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 sprite{ id = "enemies/misc/octorok_stone", description = "small stone" }
 sprite{ id = "enemies/misc/octorok_stone_2", description = "Stone 2" }
@@ -1493,6 +1495,7 @@ enemy{ id = "misc/falling_rock", description = "Falling Rock" }
 enemy{ id = "misc/fire", description = "Fire" }
 enemy{ id = "misc/fire_blast", description = "Fire Blast" }
 enemy{ id = "misc/fireball_red_small", description = "Fireball - red, small" }
+enemy{ id = "misc/jelly_needle", description = "Jelly Needle" }
 enemy{ id = "misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 enemy{ id = "misc/octorok_stone", description = "Small Stone" }
 enemy{ id = "misc/octorok_stone_2", description = "Stone 2" }

@@ -555,6 +555,7 @@ end
         m:set_center(enemy)
         m:set_radius(properties.radial_attack_radius or 32)
         m:set_angular_speed(2 * math.pi / CHARGE_TIME * 1000)
+        m:set_ignore_obstacles(true)
         m:start(projectiles[i])
         if i == NUM_PROJECTILES then sprite:set_animation("walking") end
       end)
@@ -571,6 +572,7 @@ end
           m:set_angle(enemy:get_angle(projectiles[i]))
           m:set_speed(160)
           m:set_smooth(false)
+          if properties.radial_attack_projectiles_go_through_walls then m:set_ignore_obstacles() end
           projectiles[i]:stop_movement()
           m:start(projectiles[i], function() projectiles[i]:remove() end)
           function m:on_obstacle_reached() projectiles[i]:remove() end

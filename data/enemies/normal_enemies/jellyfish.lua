@@ -18,11 +18,12 @@ local properties = {
 
   --Attacks--
   has_radial_attack = true,
-  radial_attack_projectile_breed = "misc/energy_ball_small",
+  radial_attack_projectile_breed = "misc/jelly_needle",
   radial_attack_cooldown = 3500,
   radial_attack_distance = 70,
   radial_attack_num_projectiles = 5,
   radial_attack_stop_while_charging = true,
+  radial_attack_projectiles_go_through_walls = true,
 
 }
 
