@@ -1202,6 +1202,8 @@ music{ id = "title_screen", description = "TitleScreen" }
 music{ id = "title_screen_2", description = "TitleScreen2" }
 music{ id = "title_screen_piano_only", description = "Title Screen-Piano" }
 music{ id = "triumph_theme", description = "Triumph Theme" }
+music{ id = "wavesick", description = "Wavesick" }
+music{ id = "wavesick-the-wavening", description = "Cemetery of the Waves" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "bird_flying_away", description = "bird_flying_away" }
