@@ -1192,6 +1192,8 @@ music{ id = "goatshead_overworld_2", description = "Goatshead Overworld 2" }
 music{ id = "hourglass_fort", description = "Hourglass Fort" }
 music{ id = "new_limestone_island", description = "New Limestone" }
 music{ id = "new_limestone_island_slow", description = "New Limestone Slow" }
+music{ id = "newfashioned_port_burg", description = "newfashioned port burg" }
+music{ id = "no_pit_of_scoundrels", description = "No Pit of Scoundrels" }
 music{ id = "oak_hornpipe", description = "oak_hornpipe" }
 music{ id = "oakhaven_overworld", description = "Oakhaven Overworld" }
 music{ id = "oceans_heart", description = "Ocean's Heart" }

@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "indoors_cabin",
-  music = "goatshead_harbor",
+  music = "newfashioned_port_burg",
 }
 
 tile{
@@ -1049,10 +1049,9 @@ dynamic_tile{
   layer = 0,
   x = 152,
   y = 256,
-  pattern = "wall.up.2",
   width = 32,
   height = 32,
-  enabled_at_start = true,
+  pattern = "wall.up.2",
 }
 
 destination{
