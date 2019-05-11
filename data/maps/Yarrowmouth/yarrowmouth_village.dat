@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "overworld_yarrowmouth",
-  music = "crabhook",
+  music = "twisty_forest",
 }
 
 tile{
@@ -35164,96 +35164,6 @@ npc{
 
 destructible{
   layer = 0,
-  x = 1224,
-  y = 853,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1176,
-  y = 877,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1208,
-  y = 877,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1192,
-  y = 853,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1208,
-  y = 853,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1224,
-  y = 877,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1192,
-  y = 877,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1160,
-  y = 877,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1176,
-  y = 853,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1160,
-  y = 853,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 424,
   y = 1149,
   sprite = "entities/bush_forest",
@@ -36143,6 +36053,78 @@ teletransporter{
   height = 16,
   destination_map = "Yarrowmouth/caves/warp_cave",
   destination = "from_outside",
+}
+
+destructible{
+  layer = 0,
+  x = 1160,
+  y = 861,
+  sprite = "entities/bush_monkshood",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1176,
+  y = 861,
+  sprite = "entities/bush_monkshood",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1192,
+  y = 861,
+  sprite = "entities/bush_monkshood",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1176,
+  y = 877,
+  sprite = "entities/bush_field",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1192,
+  y = 877,
+  sprite = "entities/bush_field",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1208,
+  y = 877,
+  sprite = "entities/bush_dandelion",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1224,
+  y = 877,
+  sprite = "entities/bush_dandelion",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1208,
+  y = 861,
+  sprite = "entities/bush_violet",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1224,
+  y = 861,
+  sprite = "entities/bush_violet",
+  can_be_cut = true,
 }
 
 tile{

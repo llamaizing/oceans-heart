@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "indoors_stone",
-  music = "crabhook",
+  music = "twisty_forest",
 }
 
 tile{

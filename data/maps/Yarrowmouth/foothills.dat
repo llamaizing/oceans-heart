@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 3,
   tileset = "overworld_yarrowmouth",
-  music = "crabhook",
+  music = "driftwood-2",
 }
 
 tile{

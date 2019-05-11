@@ -1179,8 +1179,12 @@ sprite{ id = "weather/rain", description = "Rain" }
 sprite{ id = "weather/snow", description = "Snow" }
 
 music{ id = "ballast_harbor", description = "Ballast Harbor" }
+music{ id = "brackish_melancholy", description = "Brackish Melancholy" }
 music{ id = "crabhook", description = "crabhook" }
+music{ id = "driftwood-2", description = "Driftwood 2" }
 music{ id = "fire_burning", description = "fire_burning" }
+music{ id = "forest_of_bops", description = "Forest of Bops" }
+music{ id = "forest_town", description = "Forest Town" }
 music{ id = "fort_crow", description = "Fort Crow" }
 music{ id = "goatshead_harbor", description = "Goatshead Harbor" }
 music{ id = "goatshead_harbor_old", description = "OLD goatshead Harbor" }
@@ -1191,6 +1195,8 @@ music{ id = "new_limestone_island_slow", description = "New Limestone Slow" }
 music{ id = "oak_hornpipe", description = "oak_hornpipe" }
 music{ id = "oakhaven_overworld", description = "Oakhaven Overworld" }
 music{ id = "oceans_heart", description = "Ocean's Heart" }
+music{ id = "opining_cavern", description = "Opining Cave" }
+music{ id = "opressive_cavern", description = "Opressive Cavern" }
 music{ id = "overworld_01", description = "Overworld 01" }
 music{ id = "rain1", description = "Rain 1" }
 music{ id = "rain2", description = "Rain 2" }
@@ -1198,10 +1204,11 @@ music{ id = "ruins_1", description = "Ruins 1" }
 music{ id = "safe_haven", description = "Safe Haven" }
 music{ id = "seafloor_1", description = "Seafloor 1" }
 music{ id = "seedy_underbelly", description = "Seedy Underbelly" }
-music{ id = "title_screen", description = "TitleScreen" }
+music{ id = "title_screen", description = "Dramatic Plot Area" }
 music{ id = "title_screen_2", description = "TitleScreen2" }
 music{ id = "title_screen_piano_only", description = "Title Screen-Piano" }
 music{ id = "triumph_theme", description = "Triumph Theme" }
+music{ id = "twisty_forest", description = "Twisty Forest" }
 music{ id = "wavesick", description = "Wavesick" }
 music{ id = "wavesick-the-wavening", description = "Cemetery of the Waves" }
 

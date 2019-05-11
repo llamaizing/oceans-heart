@@ -7,7 +7,7 @@ properties{
   max_layer = 2,
   world = "brickabranch_island",
   tileset = "oceanheart_outdoors_1",
-  music = "ruins_1",
+  music = "opressive_cavern",
 }
 
 tile{
