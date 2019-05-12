@@ -28333,6 +28333,7 @@ destructible{
   y = 421,
   treasure_name = "rupee",
   treasure_variant = 2,
+  treasure_savegame_variable = "puzzlewood_random_boulder_that_has_money_underneath_001",
   sprite = "entities/block_stone_lv1",
   weight = 1,
   damage_on_enemies = 2,

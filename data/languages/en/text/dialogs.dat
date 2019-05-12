@@ -13844,10 +13844,9 @@ dialog{
   id = "_yarrowmouth.npcs.town_people.1",
   text = [[
 Have you explored the Puzzlewood east of
-town? There's suposedly some spirit deep
-in the woods that can teach people to run
-really quickly. Makes me wonder, why is
-that your thing, forest spirit? Running?
+town? There's an old structure built by the
+Bear Warriors. They say one of their relics
+is hidden inside.
 ]],
 }
 
