@@ -15,6 +15,10 @@ map:register_event("on_started", function()
   require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "birds")
 
   --ivy orchard quest
+  if game:get_value("quest_ivy_orchard") and game:get_value("quest_ivy_orchard") == 0 then
+    for boss in map:get_entities("apple_boss") do boss:set_enabled(true) end
+  end
+
   if game:get_value("quest_ivy_orchard") and game:get_value("quest_ivy_orchard") >= 1 then
     hole_hider:set_enabled(false)
     picker_paul:set_enabled(false)
