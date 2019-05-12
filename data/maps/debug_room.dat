@@ -2991,8 +2991,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/tern_marsh",
-  destination = "from_bear_catacombs",
+  destination_map = "goatshead_island/west_goat",
 }
 
 pickable{
