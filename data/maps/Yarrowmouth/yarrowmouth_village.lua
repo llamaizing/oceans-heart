@@ -32,7 +32,7 @@ function goatshead_ferry:on_interaction()
     if answer == 3 then
       if game:get_money() >9 then
         game:remove_money(10)
-        goatshead_teletransport:set_enabled(true)
+        hero:teleport("goatshead_island/goatshead_harbor", "ferry_landing")
       else
         game:start_dialog("_game.insufficient_funds")
       end
@@ -45,7 +45,7 @@ function oakhaven_ferry:on_interaction()
     if answer == 3 then
       if game:get_money() >9 then
         game:remove_money(10)
-        oakhaven_teletransport:set_enabled(true)
+        hero:teleport("oakhaven/port", "from_ferry")
       else
         game:start_dialog("_game.insufficient_funds")
       end

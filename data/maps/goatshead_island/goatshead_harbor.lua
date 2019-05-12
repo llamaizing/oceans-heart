@@ -10,6 +10,7 @@
 local map = ...
 require("scripts/multi_events")
 local game = map:get_game()
+local hero = game:get_hero()
 local step_up = sol.movement.create("path")
        step_up:set_path{2,2,2,}
        step_up:set_speed(20)
@@ -207,7 +208,7 @@ function yarrowmouth_ferry:on_interaction()
     if answer == 3 then
       if game:get_money() >9 then
         game:remove_money(10)
-        yarrowmouth_teletransport:set_enabled(true)
+        hero:teleport("Yarrowmouth/yarrowmouth_village", "ferry_landing")
       else
         game:start_dialog("_game.insufficient_funds")
       end
@@ -220,7 +221,7 @@ function oakhaven_ferry:on_interaction()
     if answer == 3 then
       if game:get_money() >9 then
         game:remove_money(10)
-        oakhaven_teletransport:set_enabled(true)
+        hero:teleport("oakhaven/port", "from_ferry")
       else
         game:start_dialog("_game.insufficient_funds")
       end
