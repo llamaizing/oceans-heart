@@ -219,9 +219,13 @@ end
 
 function inventory:get_item_at_current_index()
     local game = sol.main.game
-    local item = game:get_item(all_equipment_items[cursor_index + 1].item)
-    if item:get_variant() > 0 then
-        return item
+    local item_entry = all_equipment_items[cursor_index + 1]
+    if item_entry then
+        local item = game:get_item(item_entry.item)
+        if item:get_variant() > 0 then
+            return item
+        else return nil
+        end
     else return nil
     end
 end
