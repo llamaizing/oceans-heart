@@ -154,7 +154,13 @@ main{
 main{
     dialog_id = "quest.main.spruce_head",
     calc_phase = "quest_spruce_head",
-    location = "location.goatshead_island",
+		location = {
+		    "location.goatshead_island",
+		    "location.goatshead_island",
+		    "location.goatshead_island",
+		    "location.yarrowmouth",
+		    "location.yarrowmouth",
+		},
     replace_v = {
         "spruce_head_shirine_num_fountains_activated"
     }

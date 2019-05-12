@@ -28977,6 +28977,30 @@ wall{
   stops_projectiles = true,
 }
 
+destructible{
+  layer = 0,
+  x = 936,
+  y = 853,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 936,
+  y = 869,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 920,
+  y = 869,
+  sprite = "entities/bush_forest",
+  can_be_cut = true,
+}
+
 tile{
   layer = 1,
   x = 480,
@@ -56448,30 +56472,6 @@ destructible{
   layer = 1,
   x = 904,
   y = 1109,
-  sprite = "entities/bush_forest",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 936,
-  y = 853,
-  sprite = "entities/bush_forest",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 936,
-  y = 869,
-  sprite = "entities/bush_forest",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 920,
-  y = 869,
   sprite = "entities/bush_forest",
   can_be_cut = true,
 }

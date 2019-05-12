@@ -47477,6 +47477,15 @@ tile{
 }
 
 sensor{
+  name = "^save_solid_ground_sensor_66",
+  layer = 0,
+  x = 40,
+  y = 365,
+  width = 80,
+  height = 48,
+}
+
+sensor{
   name = "^save_solid_ground_sensor_58",
   layer = 0,
   x = 600,
@@ -52077,8 +52086,8 @@ sensor{
 sensor{
   name = "^save_solid_ground_sensor_51",
   layer = 0,
-  x = 168,
-  y = 237,
+  x = 160,
+  y = 205,
   width = 32,
   height = 16,
 }
@@ -52917,6 +52926,33 @@ wall{
   width = 8,
   height = 32,
   stops_enemies = true,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_65",
+  layer = 0,
+  x = 160,
+  y = 285,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_67",
+  layer = 0,
+  x = 328,
+  y = 437,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_68",
+  layer = 0,
+  x = 312,
+  y = 437,
+  width = 16,
+  height = 32,
 }
 
 tile{

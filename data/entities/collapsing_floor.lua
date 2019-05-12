@@ -11,6 +11,7 @@
 local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
+local hero = map:get_hero()
 local sprite = entity:get_sprite()
 local sinking
 
@@ -22,6 +23,7 @@ function entity:on_created()
   entity:can_traverse_ground("shallow_water")
   entity:add_collision_test("overlapping", function(entity, other_entity)
     if other_entity:get_type() == "hero" and sinking == false then
+      if hero:get_state() == "back to solid ground" then return end
       sinking = true
       sprite:set_animation("destroy", function() entity:destroy() end)
     end

@@ -11459,6 +11459,14 @@ block{
   max_moves = 1,
 }
 
+destination{
+  name = "found_whisky",
+  layer = 0,
+  x = 296,
+  y = 85,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 104,

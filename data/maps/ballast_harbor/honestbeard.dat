@@ -882,22 +882,74 @@ tile{
   pattern = "218",
 }
 
-npc{
-  name = "bomb_sale",
+tile{
   layer = 0,
-  x = 96,
-  y = 109,
-  direction = 3,
-  subtype = 1,
+  x = 88,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "29",
+  tileset = "treasure",
 }
 
-npc{
-  name = "bomb_sale_2",
+tile{
   layer = 0,
-  x = 112,
-  y = 109,
-  direction = 3,
-  subtype = 1,
+  x = 104,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "49",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "54",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "51",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "47",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "43",
+  tileset = "treasure",
 }
 
 npc{
@@ -907,42 +959,6 @@ npc{
   y = 69,
   direction = 3,
   subtype = 1,
-}
-
-npc{
-  layer = 0,
-  x = 192,
-  y = 69,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/vase_arrows",
-}
-
-npc{
-  layer = 0,
-  x = 184,
-  y = 77,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/vase_arrows",
-}
-
-npc{
-  layer = 0,
-  x = 192,
-  y = 85,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/vase_arrows",
-}
-
-npc{
-  layer = 0,
-  x = 176,
-  y = 85,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/vase_arrows",
 }
 
 destination{
@@ -1001,24 +1017,6 @@ npc{
 }
 
 npc{
-  name = "arrow_sale",
-  layer = 0,
-  x = 176,
-  y = 85,
-  direction = 3,
-  subtype = 1,
-}
-
-npc{
-  name = "arrow_sale_2",
-  layer = 0,
-  x = 192,
-  y = 85,
-  direction = 3,
-  subtype = 1,
-}
-
-npc{
   layer = 0,
   x = 232,
   y = 157,
@@ -1053,6 +1051,42 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "entities/armor_tools",
+}
+
+npc{
+  layer = 0,
+  x = 112,
+  y = 109,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_ballast_harbor.npcs.honestbeard.statues",
+}
+
+npc{
+  layer = 0,
+  x = 96,
+  y = 109,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_ballast_harbor.npcs.honestbeard.candelabra",
+}
+
+npc{
+  layer = 0,
+  x = 176,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_ballast_harbor.npcs.honestbeard.weapons",
+}
+
+npc{
+  layer = 0,
+  x = 192,
+  y = 61,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_ballast_harbor.npcs.honestbeard.weapons",
 }
 
 tile{
@@ -1190,31 +1224,74 @@ tile{
   pattern = "189",
 }
 
-npc{
+tile{
   layer = 1,
-  x = 96,
-  y = 93,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/bomb",
+  x = 88,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "30",
+  tileset = "treasure",
 }
 
-npc{
-  layer = 1,
-  x = 112,
-  y = 93,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/bomb",
-}
-
-npc{
+tile{
   layer = 1,
   x = 104,
-  y = 101,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/bomb",
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "34",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 184,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "52",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "50",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "53",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "48",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "44",
+  tileset = "treasure",
 }
 
 npc{

@@ -21946,17 +21946,6 @@ door{
 }
 
 enemy{
-  name = "miniboss",
-  layer = 0,
-  x = 1512,
-  y = 597,
-  direction = 3,
-  breed = "normal_enemies/arborgeist_bomber",
-  treasure_name = "arrow",
-  treasure_variant = 4,
-}
-
-enemy{
   name = "mini_turret_4",
   layer = 0,
   x = 1336,
@@ -21995,10 +21984,10 @@ enemy{
 wall{
   name = "miniboss_wall",
   layer = 0,
-  x = 1480,
-  y = 544,
-  width = 16,
-  height = 120,
+  x = 1536,
+  y = 560,
+  width = 8,
+  height = 80,
   stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
@@ -22010,9 +21999,9 @@ sensor{
   name = "miniboss_sensor",
   layer = 0,
   x = 1288,
-  y = 597,
+  y = 589,
   width = 16,
-  height = 16,
+  height = 32,
 }
 
 enemy{
@@ -23346,6 +23335,17 @@ door{
   direction = 1,
   sprite = "entities/door_post_stone",
   savegame_variable = "bear_catacombs_bow_chest_door_state",
+}
+
+enemy{
+  name = "miniboss",
+  layer = 0,
+  x = 1552,
+  y = 589,
+  direction = 3,
+  breed = "normal_enemies/arborgeist_bomber",
+  treasure_name = "arrow",
+  treasure_variant = 4,
 }
 
 tile{

@@ -12,7 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
-
+  if game:get_value("crabhook_armor_purchased") then armor_upgrade:set_enabled(false) end
 end)
 
 ----------SHOP---------
@@ -23,9 +23,14 @@ function armor_sale:on_interaction()
   if game:get_value("crabhook_armor_purchased") == nil then
     game:start_dialog("_goatshead.npcs.crabhook.armor_saleslady.1", function(answer)
       if answer == 1 then
+        if game:get_money() < 150 then
+          game:start_dialog("_game.insufficient_funds")
+          return
+        end
         map:get_hero():start_treasure("armor_upgrade_1")
         game:set_value("crabhook_armor_purchased", true)
         game:remove_money(150)
+        armor_upgrade:set_enabled(false)
       end
     end)
   else

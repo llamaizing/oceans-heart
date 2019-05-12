@@ -13,7 +13,7 @@ local faster_speed = 30
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(3)
+  enemy:set_life(1)
   enemy:set_damage(3)
   enemy:set_consequence_for_all_attacks("protected")
   enemy:set_attack_consequence("thrown_item", 0)
@@ -66,7 +66,8 @@ end
 
 --Here's where the enemy breaks into smaller enemies
 function enemy:hit_by_toss_ball()
-  enemy:remove_life(1)
+  enemy:remove_life(5)
+  enemy:hurt(1)
 end
 
 function enemy:on_dead()

@@ -37,6 +37,8 @@ end
 
 
 function whisky:on_interaction()
+    game:set_starting_location("new_limestone/stash", "found_whisky")
+
     game:set_value("quest_whisky_for_juglan_phase", 1) --quest log
     whisky:set_enabled(false)
     hero:freeze()

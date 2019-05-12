@@ -345,6 +345,18 @@ HONESTBEARD:
 }
 
 dialog{
+  id = "_ballast_harbor.npcs.honestbeard.candelabra",
+  text = [[
+HONESTBEARD:
+That's a candella... candleahbr...
+candle holder. You have any candles?
+
+TILIA:
+Nope. Probably gonna pass on this one then.
+]],
+}
+
+dialog{
   id = "_ballast_harbor.npcs.honestbeard.coral_ore",
   text = [[
 HONESTBEARD:
@@ -404,6 +416,34 @@ them on?
 
 HONESTBEARD:
 I, uh... huh. Dunno.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.honestbeard.statues",
+  text = [[
+HONESTBEARD:
+That's some weird statue I found, seen a
+few of them around, think they depict some
+diety from the Zephyr empire. Creeps me out.
+TILIA:
+Me too, actually.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.honestbeard.weapons",
+  text = [[
+HONESTBEARD:
+Oh, those weapons aren't actually for
+sale. Just use them in case ruffians run
+up on me to shoplift.
+TILIA:
+You use all three of these weapons in that
+in that situation?
+
+HONESTBEARD:
+All three.
 ]],
 }
 
@@ -684,6 +724,19 @@ I'm selling arrows. It doesn't look like you
 have a bow, so maybe you could use them
 as like, shish kebab... you know what,
 nevermind. Come back when you have a bow.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.market_people.blacksmith_hammering",
+  text = [[
+BLACKSMITH:
+I'm just the muscle of this operation. If you
+want some weapon work, talk to my partner.
+He's also the muscle, but he's slacking off
+BLACKSMITH:
+so I'm gonna say he has to do the customer
+service stuff.
 ]],
 }
 
@@ -1682,9 +1735,9 @@ $? No
 dialog{
   id = "_goatshead.npcs.alchemist.bombs",
   text = [[
-Want to buy some bombs? You can set them
-with V, extraordinarily useful for blowing
-things up. 5 bombs is 50 crowns. Want to buy?
+Want to buy some bombs? They're extraordinarily
+useful for blowing things up!... Not much else.
+5 bombs is 50 crowns. Want to buy?
 
 $? Yes
 $? No

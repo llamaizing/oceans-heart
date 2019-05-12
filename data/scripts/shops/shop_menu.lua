@@ -38,8 +38,6 @@ local all_items = {
     {item = "elixer", name = "Elixer Vitae", price = 70, variant = 1,
     availability_variable = "available_in_shop_elixer",
     description = "Elixer - Recover Health, or revive you when you fall"},
-    {item = "apples", name = "Apples", price = 10, variant = 1,
-      availability_variable = "available_in_shop_apples"},
     {item = "arrow", name = "Arrows", price = 10, variant = 3,
       availability_variable = "available_in_shop_arrows",
       description = "Arrows (qty: 5)"},

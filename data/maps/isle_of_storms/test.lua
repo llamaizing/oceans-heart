@@ -27,7 +27,7 @@ fog2:set_xy(-500,-200)
 local fog3 = sol.surface.create("fog/water_squiggles.png")
 fog3:set_blend_mode("blend")
 fog3:set_opacity(30)
-fog3:set_xy(-400,-200)
+fog3:set_xy(-400,-240)
 
   function move_fog(fog, angle, distance)
     local m = sol.movement.create("straight")
@@ -38,7 +38,7 @@ fog3:set_xy(-400,-200)
   end
 move_fog(fog, 3, 200)
 move_fog(fog2, .3, 350)
-move_fog(fog3, -2.2, 300)
+move_fog(fog3, -2.2, 250)
 
 
 function map:on_draw(dst_surface)

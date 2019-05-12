@@ -37110,6 +37110,15 @@ npc{
   sprite = "npc/big_guy_1",
 }
 
+npc{
+  layer = 0,
+  x = 336,
+  y = 1141,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_ballast_harbor.npcs.market_people.blacksmith_hammering",
+}
+
 tile{
   layer = 1,
   x = 624,

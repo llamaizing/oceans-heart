@@ -10507,8 +10507,9 @@ chest{
   layer = 0,
   x = 680,
   y = 805,
-  treasure_name = "rupee",
-  treasure_variant = 3,
+  treasure_name = "bread",
+  treasure_variant = 2,
+  treasure_savegame_variable = "west_goat_south_of_head_island_chest_state",
   sprite = "entities/chest",
 }
 
@@ -10828,6 +10829,7 @@ door{
   y = 408,
   direction = 3,
   sprite = "entities/door_weak_block",
+  savegame_variable = "west_goat_bottom_of_starirs_rocks_state",
   opening_method = "explosion",
 }
 
@@ -10837,6 +10839,7 @@ door{
   y = 408,
   direction = 3,
   sprite = "entities/door_weak_block",
+  savegame_variable = "west_goat_bottom_of_starirs_rocks_state_2",
   opening_method = "explosion",
 }
 
@@ -10949,6 +10952,8 @@ destructible{
   layer = 0,
   x = 456,
   y = 141,
+  treasure_name = "geode",
+  treasure_savegame_variable = "west_goat_geode_rock",
   sprite = "entities/block_stone_lv1",
   weight = 1,
   damage_on_enemies = 2,

@@ -15815,7 +15815,7 @@ tile{
   x = 720,
   y = 1472,
   width = 48,
-  height = 256,
+  height = 112,
   pattern = "33",
 }
 
@@ -15925,7 +15925,7 @@ tile{
   x = 768,
   y = 1472,
   width = 32,
-  height = 224,
+  height = 128,
   pattern = "43",
   tileset = "vault_walls",
 }
@@ -15952,19 +15952,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 688,
-  y = 1600,
-  width = 32,
-  height = 96,
-  pattern = "45",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
   x = 512,
   y = 1616,
-  width = 160,
+  width = 64,
   height = 32,
   pattern = "44",
   tileset = "vault_walls",
@@ -16014,7 +16004,7 @@ tile{
   layer = 0,
   x = 544,
   y = 1696,
-  width = 160,
+  width = 32,
   height = 32,
   pattern = "42",
   tileset = "vault_walls",
@@ -16022,9 +16012,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 800,
+  x = 608,
   y = 1696,
-  width = 256,
+  width = 448,
   height = 32,
   pattern = "42",
   tileset = "vault_walls",
@@ -16202,31 +16192,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 688,
-  y = 1584,
-  width = 32,
-  height = 32,
-  pattern = "13",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
   x = 480,
   y = 1616,
   width = 32,
   height = 32,
   pattern = "4",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 1616,
-  width = 32,
-  height = 32,
-  pattern = "3",
   tileset = "vault_walls",
 }
 
@@ -16277,26 +16247,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "1",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
-  x = 688,
-  y = 1696,
-  width = 32,
-  height = 32,
-  pattern = "15",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
-  x = 768,
-  y = 1696,
-  width = 32,
-  height = 32,
-  pattern = "16",
   tileset = "vault_walls",
 }
 
@@ -16485,7 +16435,7 @@ tile{
   x = 760,
   y = 1480,
   width = 8,
-  height = 256,
+  height = 112,
   pattern = "36",
   tileset = "vault_walls",
 }
@@ -16534,7 +16484,7 @@ tile{
   layer = 0,
   x = 656,
   y = 1576,
-  width = 64,
+  width = 112,
   height = 8,
   pattern = "38",
   tileset = "vault_walls",
@@ -16547,16 +16497,6 @@ tile{
   width = 8,
   height = 32,
   pattern = "36",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
-  x = 720,
-  y = 1584,
-  width = 8,
-  height = 144,
-  pattern = "40",
   tileset = "vault_walls",
 }
 
@@ -16622,9 +16562,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 760,
+  x = 696,
   y = 1728,
-  width = 304,
+  width = 368,
   height = 8,
   pattern = "34",
   tileset = "vault_walls",
@@ -16872,7 +16812,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 720,
+  x = 760,
   y = 1576,
   width = 8,
   height = 8,
@@ -21009,16 +20949,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 568,
-  y = 1728,
-  width = 24,
-  height = 16,
-  pattern = "72",
-  tileset = "treasure",
-}
-
-tile{
-  layer = 0,
   x = 552,
   y = 1744,
   width = 24,
@@ -22567,6 +22497,116 @@ tile{
   height = 16,
   pattern = "161",
   tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 1584,
+  width = 96,
+  height = 32,
+  pattern = "44",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 1584,
+  width = 32,
+  height = 32,
+  pattern = "3",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1616,
+  width = 64,
+  height = 32,
+  pattern = "44",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 1616,
+  width = 32,
+  height = 32,
+  pattern = "3",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1696,
+  width = 32,
+  height = 32,
+  pattern = "15",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1696,
+  width = 32,
+  height = 32,
+  pattern = "16",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1632,
+  width = 32,
+  height = 64,
+  pattern = "45",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1632,
+  width = 32,
+  height = 64,
+  pattern = "43",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 1616,
+  width = 32,
+  height = 32,
+  pattern = "14",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 1616,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 1600,
+  width = 32,
+  height = 144,
+  pattern = "33",
+  tileset = "vault_walls",
 }
 
 separator{
@@ -28529,14 +28569,6 @@ chest{
 
 enemy{
   layer = 0,
-  x = 1032,
-  y = 1557,
-  direction = 3,
-  breed = "normal_enemies/boulder_bro",
-}
-
-enemy{
-  layer = 0,
   x = 1120,
   y = 1581,
   direction = 3,
@@ -29112,7 +29144,7 @@ enemy{
 wall{
   layer = 0,
   x = 1056,
-  y = 1640,
+  y = 1616,
   width = 32,
   height = 8,
   stops_enemies = true,
@@ -29200,14 +29232,6 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1760,
-  y = 1357,
-  direction = 0,
-  breed = "normal_enemies/gravel_guy",
-}
-
-enemy{
-  layer = 0,
   x = 1904,
   y = 1301,
   direction = 0,
@@ -29218,14 +29242,6 @@ enemy{
   layer = 0,
   x = 1832,
   y = 1357,
-  direction = 0,
-  breed = "normal_enemies/gravel_guy",
-}
-
-enemy{
-  layer = 0,
-  x = 1864,
-  y = 1317,
   direction = 0,
   breed = "normal_enemies/gravel_guy",
 }
@@ -29265,6 +29281,116 @@ wall{
   width = 48,
   height = 40,
   stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 72,
+  y = 272,
+  width = 8,
+  height = 352,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 64,
+  y = 608,
+  width = 96,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 256,
+  y = 608,
+  width = 80,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 64,
+  y = 280,
+  width = 272,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 320,
+  y = 264,
+  width = 8,
+  height = 72,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 320,
+  y = 384,
+  width = 8,
+  height = 240,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+enemy{
+  layer = 0,
+  x = 1792,
+  y = 1317,
+  direction = 3,
+  breed = "normal_enemies/boulder_bro",
+}
+
+enemy{
+  layer = 0,
+  x = 1000,
+  y = 1541,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 1048,
+  y = 1565,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  layer = 0,
+  x = 1144,
+  y = 1541,
+  direction = 3,
+  breed = "normal_enemies/gravel_guy",
 }
 
 tile{
@@ -31743,7 +31869,7 @@ tile{
 tile{
   layer = 1,
   x = 2624,
-  y = 1512,
+  y = 1488,
   width = 24,
   height = 16,
   pattern = "161",
@@ -31752,8 +31878,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 2600,
-  y = 1512,
+  x = 2624,
+  y = 1504,
   width = 24,
   height = 16,
   pattern = "161",
@@ -34762,16 +34888,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 568,
-  y = 1720,
-  width = 24,
-  height = 8,
-  pattern = "73",
-  tileset = "treasure",
-}
-
-tile{
-  layer = 1,
   x = 552,
   y = 1736,
   width = 24,
@@ -36264,6 +36380,26 @@ tile{
   tileset = "indoors_stone",
 }
 
+tile{
+  layer = 1,
+  x = 2600,
+  y = 1512,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 2576,
+  y = 1512,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
 crystal{
   layer = 1,
   x = 2440,
@@ -36272,8 +36408,8 @@ crystal{
 
 npc{
   layer = 1,
-  x = 2632,
-  y = 1485,
+  x = 2616,
+  y = 1493,
   direction = 3,
   subtype = 1,
   sprite = "entities/inviting_barrel",
@@ -36282,8 +36418,8 @@ npc{
 destination{
   name = "from_smuggled_in",
   layer = 1,
-  x = 2632,
-  y = 1501,
+  x = 2616,
+  y = 1509,
   direction = 3,
 }
 
@@ -36422,7 +36558,7 @@ tile{
 tile{
   layer = 2,
   x = 2624,
-  y = 1504,
+  y = 1480,
   width = 24,
   height = 8,
   pattern = "162",
@@ -36431,8 +36567,8 @@ tile{
 
 tile{
   layer = 2,
-  x = 2600,
-  y = 1504,
+  x = 2624,
+  y = 1496,
   width = 24,
   height = 8,
   pattern = "162",
@@ -36517,6 +36653,26 @@ tile{
   height = 8,
   pattern = "73",
   tileset = "treasure",
+}
+
+tile{
+  layer = 2,
+  x = 2600,
+  y = 1504,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 2,
+  x = 2576,
+  y = 1504,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
 }
 
 dynamic_tile{

@@ -40,9 +40,10 @@ end
 function first_mate:on_interaction()
   if game:get_value("quest_snapmast") ~= 3 then
     game:start_dialog("_snapmast.cemetery_of_the_waves.first_mate.1", function()
-      hero:start_treasure("oceansheart_chart", 1, "shouldntthisbeoptional", function()
+      hero:start_treasure("oceansheart_chart", 1, nil, function()
         game:set_value("quest_snapmast", 3)
         game:set_value("quest_isle_of_storms", 0)
+        hero:teleport("snapmast_reef/drowned_village", "from_shipwreck")
       end)
     end)
   else
