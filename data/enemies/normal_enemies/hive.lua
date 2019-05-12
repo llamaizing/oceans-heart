@@ -14,7 +14,7 @@ function enemy:on_created()
   enemy:set_damage(3)
   enemy:set_pushed_back_when_hurt(false)
   sol.timer.start(map, math.random(2500, 4500), function()
-      if self:exists() then
+      if self:exists() and self:is_enabled() then
         if self:get_distance(hero) <= SPAWN_RANGE then self:launch_bees() end
         return true
       end
@@ -25,7 +25,7 @@ end
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
 function enemy:on_restarted()
-  self:launch_bees()
+--  self:launch_bees()
 end
 
 function enemy:launch_bees()

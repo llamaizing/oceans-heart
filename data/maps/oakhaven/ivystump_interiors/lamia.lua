@@ -12,7 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-  if game:get_value("quest_manna_oaks") > 5 and game:get_value("quest_manna_oaks") <9 then
+  if game:get_value("quest_manna_oaks") and game:get_value("quest_manna_oaks") > 5 and game:get_value("quest_manna_oaks") <9 then
     lamia:set_enabled(false)
   end
 end
