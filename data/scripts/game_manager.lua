@@ -157,6 +157,11 @@ function game_manager:create(file_name, overwrite_game)
     elseif key == "j" and DEBUG_MODE then
       game:remove_life(2)
 
+    elseif key == "m" and DEBUG_MODE then
+      print("You are on map: " .. game:get_map():get_id())
+      local x, y, l = hero:get_position()
+      print("at coordinates: " .. x .. ", " .. y .. ", " .. l)
+
          --end of debug functions
           --]]
 

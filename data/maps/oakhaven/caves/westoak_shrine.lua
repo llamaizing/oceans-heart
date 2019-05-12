@@ -22,6 +22,7 @@ end
 
 function enemy_a:on_dead()
   map:open_doors("boss_door")
+  entered_boss_room_sensor:set_enabled(false)
 end
 
 for enemy in map:get_entities("bat") do

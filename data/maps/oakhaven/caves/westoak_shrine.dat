@@ -2455,7 +2455,7 @@ sensor{
   name = "entered_boss_room_sensor",
   layer = 0,
   x = 552,
-  y = 205,
+  y = 221,
   width = 32,
   height = 16,
 }
@@ -2497,15 +2497,7 @@ enemy{
   layer = 0,
   x = 472,
   y = 333,
-  direction = 0,
-  breed = "normal_enemies/blade_trap",
-}
-
-enemy{
-  layer = 0,
-  x = 472,
-  y = 413,
-  direction = 0,
+  direction = 3,
   breed = "normal_enemies/blade_trap",
 }
 
@@ -2513,15 +2505,7 @@ enemy{
   layer = 0,
   x = 504,
   y = 413,
-  direction = 0,
-  breed = "normal_enemies/blade_trap",
-}
-
-enemy{
-  layer = 0,
-  x = 504,
-  y = 333,
-  direction = 0,
+  direction = 1,
   breed = "normal_enemies/blade_trap",
 }
 
@@ -2529,7 +2513,7 @@ door{
   name = "boss_door_b_1",
   layer = 0,
   x = 544,
-  y = 208,
+  y = 224,
   direction = 3,
   sprite = "entities/door_post_stone",
 }
@@ -2538,7 +2522,7 @@ door{
   name = "boss_door_b_2",
   layer = 0,
   x = 560,
-  y = 208,
+  y = 224,
   direction = 3,
   sprite = "entities/door_post_stone",
 }
@@ -2600,6 +2584,31 @@ door{
   y = 360,
   direction = 2,
   sprite = "entities/door_shutter",
+}
+
+enemy{
+  layer = 0,
+  x = 472,
+  y = 413,
+  direction = 1,
+  breed = "normal_enemies/blade_trap",
+}
+
+enemy{
+  layer = 0,
+  x = 504,
+  y = 333,
+  direction = 3,
+  breed = "normal_enemies/blade_trap",
+}
+
+wall{
+  layer = 0,
+  x = 544,
+  y = 192,
+  width = 32,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{
