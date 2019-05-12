@@ -48,17 +48,17 @@ function inventory:set_game(current_game) game = current_game end
 --// Gets/sets the x,y position of the menu in pixels
 function inventory:get_xy() return self.x, self.y end
 function inventory:set_xy(x, y)
-	x = tonumber(x)
-	assert(x, "Bad argument #2 to 'set_xy' (number expected)")
-	y = tonumber(y)
-	assert(y, "Bad argument #3 to 'set_xy' (number expected)")
+    x = tonumber(x)
+    assert(x, "Bad argument #2 to 'set_xy' (number expected)")
+    y = tonumber(y)
+    assert(y, "Bad argument #3 to 'set_xy' (number expected)")
 
-	self.x = math.floor(x)
-	self.y = math.floor(y)
+    self.x = math.floor(x)
+    self.y = math.floor(y)
 end
 
 function inventory:on_started()
-	assert(game, "The current game must be set using 'inventory:set_game(game)'")
+    assert(game, "The current game must be set using 'inventory:set_game(game)'")
 end
 
 
@@ -88,14 +88,16 @@ function inventory:initialize(game)
 
     --create the item sprites:
     for i=1, #all_equipment_items do
-        if all_equipment_items[i].item ~= "" then
-            local item = game:get_item(all_equipment_items[i].item)
+        local item_name = all_equipment_items[i].item
+        if item_name ~= "" then
+            local item = game:get_item(item_name)
             local variant = item:get_variant()
             if variant > 0 then
                 --initialize the sprite
-                self.equipment_sprites[i] = sol.sprite.create("entities/items")
-                self.equipment_sprites[i]:set_animation(all_equipment_items[i].item)
-                self.equipment_sprites[i]:set_direction(variant - 1)
+                local equipment_sprite = sol.sprite.create("entities/items")
+                equipment_sprite:set_animation(item_name)
+                equipment_sprite:set_direction(variant - 1)
+                self.equipment_sprites[i] = equipment_sprite
 
                 --if the item has an amount, make a counter in the counters table
                 if item:has_amount() then
@@ -120,14 +122,16 @@ end
 --get sprites for assigned items
 function inventory:initialize_assigned_item_sprites(game)
     if game:get_item_assigned(1) then
-        self.assigned_item_sprite_1 = sol.sprite.create("entities/items")
-        self.assigned_item_sprite_1:set_animation(game:get_item_assigned(1):get_name())
-        self.assigned_item_sprite_1:set_direction(game:get_item_assigned(1):get_variant()-1)
+        local assigned_sprite = sol.sprite.create("entities/items")
+        assigned_sprite:set_animation(game:get_item_assigned(1):get_name())
+        assigned_sprite:set_direction(game:get_item_assigned(1):get_variant()-1)
+        self.assigned_item_sprite_1 = assigned_sprite
     end
     if game:get_item_assigned(2) then
-        self.assigned_item_sprite_2 = sol.sprite.create("entities/items")
-        self.assigned_item_sprite_2:set_animation(game:get_item_assigned(2):get_name())
-        self.assigned_item_sprite_2:set_direction(game:get_item_assigned(2):get_variant()-1)
+        local assigned_sprite = sol.sprite.create("entities/items")
+        assigned_sprite:set_animation(game:get_item_assigned(2):get_name())
+        assigned_sprite:set_direction(game:get_item_assigned(2):get_variant()-1)
+        self.assigned_item_sprite_2 = assigned_sprite
     end
 end
 
@@ -137,10 +141,10 @@ function inventory:on_started()
 end
 
 
-
+--new_index is 0 based
 function inventory:update_cursor_position(new_index)
     local game = sol.main.game
-    if(new_index <= MAX_INDEX and new_index >= 0) then cursor_index = new_index end
+    if(new_index < MAX_INDEX and new_index >= 0) then cursor_index = new_index end
     local new_column = (cursor_index % COLUMNS)
     self.cursor_column = new_column
     local new_row = math.floor(cursor_index / COLUMNS)
@@ -215,9 +219,13 @@ end
 
 function inventory:get_item_at_current_index()
     local game = sol.main.game
-    local item = game:get_item(all_equipment_items[cursor_index + 1].item)
-    if item:get_variant() > 0 then
-        return item
+    local item_entry = all_equipment_items[cursor_index + 1]
+    if item_entry then
+        local item = game:get_item(item_entry.item)
+        if item:get_variant() > 0 then
+            return item
+        else return nil
+        end
     else return nil
     end
 end
