@@ -1,6 +1,6 @@
 --[[ map_banner.lua
-	version 0.1a1
-	2 Feb 2019
+	version 0.1
+	12 May 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -38,6 +38,7 @@ local BANNER_COLOR = {60, 50, 0, 100} --yellowish
 --variables
 local text_x, text_y
 local banner_x, banner_Y
+local delay_timer, swipe_timer, fade_timer
 
 local banner_surface
 local text_surface = sol.text_surface.create{
@@ -57,6 +58,16 @@ function menu:on_started()
 		return
 	end
 	
+	--reset previous
+	text_surface:set_shader(nil) --remove shader
+	text_surface:fade_out(0)
+	banner_surface = nil
+	
+	--stop any previously active timers
+	if delay_timer then delay_timer:stop() end
+	if swipe_timer then swipe_timer:stop() end
+	if fade_timer then fade_timer:stop() end
+	
 	local hero = map:get_hero()
 	local camera = map:get_camera()
 	local map_id = map:get_id()
@@ -70,7 +81,6 @@ function menu:on_started()
 		sol.menu.stop(self)
 		return
 	else text_surface:set_text(map_name) end
-	
 	
 	--determine position on screen
 	local _, hero_y = hero:get_position()
@@ -132,11 +142,11 @@ function menu:on_started()
 	
 	--callback function for closing animation
 	local function fade_out_cb()
-		sol.timer.start(map, 2000, function() --duration to wait before beginning fade-out
-			swipe_fade:start_effect(text_surface, map, 1200)
+		delay_timer = sol.timer.start(map, 2000, function() --duration to wait before beginning fade-out
+			swipe_timer = swipe_fade:start_effect(text_surface, map, 1200)
 			
 			--add short delay before beginning banner fade-out
-			sol.timer.start(map, 500, function()
+			fade_timer = sol.timer.start(map, 500, function()
 				banner_surface:fade_out(40, function() --1240ms total
 					sol.menu.stop(self)
 				end)
