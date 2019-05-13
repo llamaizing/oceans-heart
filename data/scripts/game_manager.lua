@@ -183,9 +183,13 @@ function game_manager:create(file_name, overwrite_game)
     if action == "action" then
       local effect = game:get_command_effect("action")
       local hero_state = hero:get_state()
+      local dx = {[0] = 8, [1] = 0, [2] = -8, [3] = 0}
+      local dy = {[0] = 0, [1] = -8, [2] = 0, [3] = 8}
+      local direction = hero:get_direction()
+      local has_space = not hero:test_obstacles(dx[direction], dy[direction])
 
       if  effect == nil and hero_state == "free" and hero:get_controlling_stream() == nil
-      and not game:is_suspended() and can_dash then
+      and not game:is_suspended() and can_dash and has_space then
         dash_manager:dash(game)
         can_dash = false
         sol.timer.start(game, 500, function() can_dash = true end)

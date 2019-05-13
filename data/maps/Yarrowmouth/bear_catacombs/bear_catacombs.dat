@@ -21774,10 +21774,10 @@ enemy{
 wall{
   name = "miniboss_wall",
   layer = 0,
-  x = 1536,
-  y = 560,
+  x = 1528,
+  y = 528,
   width = 8,
-  height = 80,
+  height = 136,
   stops_enemies = true,
 }
 

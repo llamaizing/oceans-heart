@@ -49,7 +49,6 @@ end
 for hive in map:get_entities("briar_hive") do
   function hive:on_dead()
     if map:has_entities("briar_hive") == false then
-print("hornets dead")
       game:set_value("briarwood_hornet_quest", 1)
       sol.audio.play_sound("secret")
     end
