@@ -502,6 +502,7 @@ end
         m:set_center(enemy)
         m:set_radius(properties.orbit_attack_radius or 32)
         m:set_angular_speed(8)
+        m:set_ignore_obstacles(true)
         m:start(projectiles[i])
         if i == NUM_PROJECTILES then sprite:set_animation("walking") end
       end)

@@ -4800,7 +4800,7 @@ enemy{
   x = 480,
   y = 389,
   direction = 0,
-  breed = "bosses/skeleton_lord",
+  breed = "normal_enemies/arborgeist_gust",
 }
 
 tile{
