@@ -11731,7 +11731,9 @@ dialog{
   id = "_treasure.bow.1",
   text = [[
 You found a bow. It's been carved from
-a yew tree. Equip it to shoot arrows.
+a yew tree. Equip it to shoot arrows. If
+you've run out of arrows, you can use all
+of your magic power to fire a single shot.
 ]],
 }
 
