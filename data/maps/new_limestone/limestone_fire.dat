@@ -24408,6 +24408,15 @@ tile{
   pattern = "400",
 }
 
+tile{
+  layer = 0,
+  x = 1096,
+  y = 800,
+  width = 16,
+  height = 8,
+  pattern = "528",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -29953,15 +29962,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "246",
-}
-
-tile{
-  layer = 1,
-  x = 1096,
-  y = 800,
-  width = 16,
-  height = 8,
-  pattern = "528",
 }
 
 tile{
