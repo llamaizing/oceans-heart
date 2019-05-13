@@ -4792,7 +4792,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/caves/dandelion_charm_cave",
+  destination_map = "oakhaven/eastoak",
 }
 
 enemy{
