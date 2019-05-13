@@ -3641,6 +3641,10 @@ enemy{
       key = "damage",
       value = "1",
     },
+    {
+      key = "speed",
+      value = "4",
+    },
   },
   direction = 0,
   breed = "normal_enemies/blade_trap_circle",
