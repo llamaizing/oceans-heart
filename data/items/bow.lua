@@ -34,41 +34,68 @@ end
 -- Using the bow.
 -- This function can also be called by the silver bow.
 function item:on_using()
+
+  if self:get_amount() == 0 then
+    if game:get_magic() == game:get_max_magic() then
+      self:shoot(true)
+      sol.audio.play_sound("sea_spirit")
+      game:remove_magic(game:get_magic())
+    else
+      sol.audio.play_sound("no")
+      self:set_finished()
+    end
+
+  else
+    self:remove_amount(1)
+    self:shoot()
+  end
+end
+
+
+function item:shoot(magic)
   local map = game:get_map()
   local hero = map:get_hero()
 
-  if self:get_amount() == 0 then
-    sol.audio.play_sound("no")
+  hero:set_animation("bow")
+
+  sol.timer.start(map, 290, function()
+  sol.audio.play_sound("bow")
     self:set_finished()
-  else
-    hero:set_animation("bow")
-
-    sol.timer.start(map, 290, function()
-    sol.audio.play_sound("bow")
-      self:remove_amount(1)
-      self:set_finished()
 
 
-       local x, y = hero:get_center_position()
-       local _, _, layer = hero:get_position()
-       local arrow = map:create_custom_entity({
-         x = x,
-         y = y,
-         layer = layer,
-         width = 16,
-         height = 16,
-         direction = hero:get_direction(),
-         model = "arrow",
-       })
+     local x, y = hero:get_center_position()
+     local _, _, layer = hero:get_position()
+     local arrow = map:create_custom_entity({
+       x = x,
+       y = y,
+       layer = layer,
+       width = 16,
+       height = 16,
+       direction = hero:get_direction(),
+       model = "arrow",
+       sprite = "entities/arrow"
+     })
+    if magic then
+      arrow:get_sprite():set_animation("flying_magic")
+      local i = 0
+      sol.timer.start(map, 100, function()
+        local x, y, l = arrow:get_position()
+        map:create_custom_entity({
+          direction = 0, x = x, y = y, layer = l, height = 8, width = 8,
+          model = "ephemeral_effect", sprite = "entities/star"
+        })
+      i = i + 1
+      if i < 9 then return true end
+      end)
+    end
 
+    arrow:set_force(self:get_force())
+    arrow:set_sprite_id(self:get_arrow_sprite_id())
+    arrow:go()
 
-      arrow:set_force(self:get_force())
-      arrow:set_sprite_id(self:get_arrow_sprite_id())
-      arrow:go()
-
-    end)
-  end
+  end)
 end
+
 
 
 function item:get_force()
