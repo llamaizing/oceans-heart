@@ -3,6 +3,9 @@ animation{
   src_image = "enemies/normal_enemies/mandrake.png",
   directions = {
     { x = 128, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 128, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 128, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 128, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
   },
 }
 animation{
@@ -44,6 +47,9 @@ animation{
   name = "immobilized",
   src_image = "enemies/normal_enemies/mandrake.png",
   directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
     { x = 0, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
   },
 }
