@@ -29,7 +29,7 @@ local hud_config = {
   -- Rupee counter.
   {
     menu_script = "scripts/hud/rupees",
-    x = 360,
+    x = 386,
     y = 220,
   },
 -- ]]
