@@ -191,7 +191,7 @@ function inventory:on_command_pressed(command)
         local item = self:get_item_at_current_index()
         if item and item:is_assignable() then
             game:set_item_assigned(1, item)
-            sol.audio.play_sound("ok")
+            sol.audio.play_sound("ok_l")
         else sol.audio.play_sound("no")
         end
         self:initialize_assigned_item_sprites(game)
@@ -200,7 +200,7 @@ function inventory:on_command_pressed(command)
         local item = self:get_item_at_current_index()
         if item and item:is_assignable() then
             game:set_item_assigned(2, item)
-            sol.audio.play_sound("ok")
+            sol.audio.play_sound("ok_r")
         else sol.audio.play_sound("no")
         end
         self:initialize_assigned_item_sprites(game)
