@@ -19,10 +19,10 @@ function dash_manager:dash(game)
     local m = sol.movement.create("straight")
     m:set_angle(dir)
     if enough_magic then
-        m:set_speed(250)
+        m:set_speed(300)
         m:set_max_distance(96)
     else
-        m:set_speed(200)
+        m:set_speed(250)
         m:set_max_distance(64)
     end
     m:set_smooth(true)
@@ -66,8 +66,9 @@ end
 
 function dash_manager:generate_moths(game)
     local map = game:get_map()
+    local hero = game:get_hero()
     local n = 0
-    local x, y, layer = game:get_hero():get_position()
+    local x, y, layer = hero:get_position()
     local burst = map:create_custom_entity{
         name = "dandelion_burst",
         direction = hero:get_direction(),

@@ -2,6 +2,16 @@ animation{
   name = "drifting",
   src_image = "entities/dandelion_seed.png",
   directions = {
+    { x = 8, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 8, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 8, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 8, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}
+animation{
+  name = "drifting_old",
+  src_image = "entities/dandelion_seed.png",
+  directions = {
     { x = 0, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
     { x = 0, y = 8, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
     { x = 0, y = 16, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
