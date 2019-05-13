@@ -1,6 +1,6 @@
 --[[ find_prickles.lua
-	version 0.1
-	12 May 2019
+	version 0.1.1
+	13 May 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -99,6 +99,8 @@ local function load_map(map_id)
 		local height = tonumber(properties.height)
 		assert(height, "tile height must be a number")
 		
+		local tileset = properties.tileset --when using a different tileset than the map default
+		
 		table.insert(map.tiles, {
 			pattern = pattern,
 			layer = layer,
@@ -106,6 +108,7 @@ local function load_map(map_id)
 			y = y,
 			width = width,
 			height = height,
+			tileset = tileset,
 		})
 	end
 	
@@ -133,13 +136,30 @@ local function print_info(map_id)
 		
 		--load tileset for this map if not already loaded
 		local tileset_id = map_data.tileset
-		local tileset = tilesets[tileset_id] or load_tileset(tileset_id) --read tileset data
+		local tileset = tilesets[tileset_id]
+		if not tileset then --tileset not loaded yet
+			tileset = load_tileset(tileset_id) --read tileset data
+			tilesets[tileset_id] = tileset
+		end
 		
 		--save relevant tile info
 		local tiles = {}
 		for _,tile in ipairs(map_data.tiles) do
 			local pattern = tile.pattern
-			if tileset[pattern] then
+			
+			local tile_tileset_id = tile.tileset --nil if tile uses map's default tileset
+			if tile_tileset_id then
+				--load tileset for this tile if not already loaded
+				local tile_tileset = tilesets[tile_tileset_id]
+				if not tile_tileset then --tileset not loaded yet
+					tile_tileset = load_tileset(tile_tileset_id) --read tileset data
+					tilesets[tile_tileset_id] = tile_tileset
+				end
+				
+				if tile_tileset[pattern] then
+					table.insert(tiles, "# "..tostring(tile.x)..", "..tostring(tile.y))
+				end
+			elseif tileset[pattern] then
 				table.insert(tiles, "# "..tostring(tile.x)..", "..tostring(tile.y))
 			end
 		end
