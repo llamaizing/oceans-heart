@@ -5,7 +5,7 @@ local game_restart = require("scripts/game_restart")
 local initial_game = require("scripts/initial_game")
 local pause_menu = require"scripts/menus/pause_menu"
 --local quest_log = require"scripts/menus/quest_log"
---local inventory = require"scripts/menus/inventory"
+--local pause_inventory = require"scripts/menus/inventory"
 local quest_update_icon = require"scripts/menus/quest_update_icon"
 local objectives_manager = require"scripts/objectives_manager"
 local dash_manager = require"scripts/action/dash_manager"
@@ -52,6 +52,7 @@ function game_manager:create(file_name, overwrite_game)
   game:register_event("on_started", function()
     game:start_magic_regen_timer()
   end)
+
 
   function game:on_paused()
     sol.menu.start(game, pause_menu)
@@ -124,7 +125,10 @@ function game_manager:create(file_name, overwrite_game)
         end
       end)
 
-    elseif key == "l" then sol.menu.start(game, title_screen)
+    elseif key == "f" and sol.menu.is_started(pause_menu) then
+      pause_menu:next_submenu"left"
+    elseif key == "g" and sol.menu.is_started(pause_menu) then
+      pause_menu:next_submenu"right"
 
       --DEBUG FUNCTIONS
     elseif key == "y" and DEBUG_MODE and game:has_item("sword") then
