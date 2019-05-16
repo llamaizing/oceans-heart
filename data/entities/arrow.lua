@@ -189,7 +189,7 @@ end
 
 function arrow:go()
 
-  local sprite_id = arrow:get_sprite_id()
+  local sprite_id = "entities/arrow"
   sprite = arrow:create_sprite(sprite_id)
   sprite:set_animation("flying")
   sprite:set_direction(direction)

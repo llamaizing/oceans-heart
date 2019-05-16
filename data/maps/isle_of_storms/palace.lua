@@ -48,6 +48,61 @@ function switch_d6:on_activated()
   map:focus_on(camera, switch_door_d6_5, function() map:open_doors("switch_door_d6") end)
 end
 
+local b4_timers = {}
+
+function b4_switch_a:on_activated()
+  for platform in map:get_entities("b4_platform_a") do
+    platform:set_enabled(true)
+    local x, y, l = platform:get_position()
+    map:create_poof(x+16, y+16, l)
+    local timer = sol.timer.start(map, 5000, function()
+      platform:set_enabled(false)
+      b4_switch_a:set_activated(false)
+      map:create_poof(x+16, y+16, l)
+    end)
+    timer:set_with_sound(true)
+    table.insert(b4_timers, timer)
+  end
+end
+
+function b4_switch_b:on_activated()
+  for platform in map:get_entities("b4_platform_b") do
+    platform:set_enabled(true)
+    local x, y, l = platform:get_position()
+    map:create_poof(x+16, y+16, l)
+    local timer = sol.timer.start(map, 5000, function()
+      platform:set_enabled(false)
+      b4_switch_b:set_activated(false)
+      map:create_poof(x+16, y+16, l)
+    end)
+    timer:set_with_sound(true)
+    table.insert(b4_timers, timer)
+  end
+end
+
+function b4_switch_c:on_activated()
+  for platform in map:get_entities("b4_platform_c") do
+    platform:set_enabled(true)
+    local x, y, l = platform:get_position()
+    map:create_poof(x+16, y+16, l)
+    local timer = sol.timer.start(map, 5000, function()
+      platform:set_enabled(false)
+      b4_switch_c:set_activated(false)
+      map:create_poof(x+16, y+16, l)
+    end)
+    timer:set_with_sound(true)
+    table.insert(b4_timers, timer)
+  end
+end
+
+function b4_switch_d:on_activated()
+  for platform in map:get_entities("b4_platform") do
+    platform:set_enabled(true)
+    local x, y, l = platform:get_position()
+    map:create_poof(x+16, y+16, l)
+  end
+  for i = 1, #b4_timers do b4_timers[i]:stop() end
+end
 
 
 
