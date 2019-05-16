@@ -2780,6 +2780,141 @@ tile{
   tileset = "cave_2",
 }
 
+tile{
+  layer = 0,
+  x = 448,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "ground1.1",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 160,
+  width = 8,
+  height = 80,
+  pattern = "73",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -4792,7 +4927,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/eastoak",
+  destination_map = "isle_of_storms/palace",
+  destination = "portal_to_surface",
 }
 
 enemy{
@@ -4801,6 +4937,30 @@ enemy{
   y = 389,
   direction = 0,
   breed = "normal_enemies/arborgeist_gust",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 213,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/iron_ball",
+  model = "toss_ball",
+}
+
+custom_entity{
+  name = "rock_pile_4",
+  layer = 0,
+  x = 520,
+  y = 189,
+  width = 32,
+  height = 16,
+  origin_y = -3,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "flail_obstacle",
 }
 
 tile{
