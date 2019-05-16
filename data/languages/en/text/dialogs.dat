@@ -11246,6 +11246,16 @@ North - Marblecliff Mountain
 }
 
 dialog{
+  id = "_palace_of_storms.observations.1",
+  text = [[
+There's a message inscribed on the stone.
+He who would visit the Spring Memorial must
+prove both marksmanship and faith. The
+arches will accept your offering.
+]],
+}
+
+dialog{
   id = "_pause.save_question",
   text = [[
 Would you really like to quit?

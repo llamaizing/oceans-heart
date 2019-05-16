@@ -3357,7 +3357,7 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 64,
+  x = 56,
   y = 133,
   treasure_name = "attack_upgrade",
 }
@@ -4709,55 +4709,6 @@ destructible{
 
 pickable{
   layer = 0,
-  x = 200,
-  y = 165,
-  treasure_name = "sword",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 165,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 165,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 165,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 165,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 165,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 165,
-  treasure_name = "bow",
-}
-
-pickable{
-  layer = 0,
   x = 536,
   y = 29,
   treasure_name = "key_kingsdown",
@@ -4936,7 +4887,7 @@ enemy{
   x = 480,
   y = 389,
   direction = 0,
-  breed = "normal_enemies/arborgeist_gust",
+  breed = "misc/stone_dragon_turret",
 }
 
 custom_entity{
@@ -4961,6 +4912,189 @@ custom_entity{
   direction = 0,
   sprite = "entities/rockpile",
   model = "flail_obstacle",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "sword",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "health_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "bow",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "bow_warp",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "oak_charm",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "boomerang",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "ball_and_chain",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "attack_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "attack_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "attack_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "attack_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "attack_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "attack_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "attack_upgrade",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "attack_upgrade",
+}
+
+enemy{
+  layer = 0,
+  x = 304,
+  y = 373,
+  direction = 0,
+  breed = "misc/stone_dragon_turret",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 173,
+  treasure_name = "barrier",
 }
 
 tile{

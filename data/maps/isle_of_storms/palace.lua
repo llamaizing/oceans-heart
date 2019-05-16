@@ -104,6 +104,20 @@ function b4_switch_d:on_activated()
   for i = 1, #b4_timers do b4_timers[i]:stop() end
 end
 
+for switch in map:get_entities("b1_switch") do
+  function switch:on_activated()
+    local all_switches = true
+    for s in map:get_entities("b1_switch") do
+      if not s:is_activated() then all_switches = false end
+    end
+    if all_switches then
+      for bridge in map:get_entities("b1_bridge") do bridge:set_enabled(true) end
+      map:create_poof(680, 256, 0)
+      map:get_camera():shake()
+    end
+  end
+end
+
 
 
 
