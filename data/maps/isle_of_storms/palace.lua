@@ -118,6 +118,37 @@ for switch in map:get_entities("b1_switch") do
   end
 end
 
+function entry_hub_center_switch:on_activated()
+  map:focus_on(map:get_camera(), entry_room_central_door, function()
+    map:open_doors("entry_room_central_door")
+  end)
+end
+
+function switch_e_13:on_activated()
+  map:open_doors("door_e_13")
+end
+
+function switch_e_12:on_activated()
+  map:open_doors("door_e_12")
+end
+
+
+
+
+
+
+--------------ENEMIES-------------------------
+function b_15_enemy:on_dead()
+  map:open_doors("b15_door")
+end
+
+function d_15_enemy:on_dead()
+  map:open_doors("d15_door")
+end
+
+
+
+
 
 
 

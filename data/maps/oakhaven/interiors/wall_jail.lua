@@ -20,7 +20,7 @@ function map:on_started()
     trumpet_player:set_enabled(true)
   end
 
-  if game:get_value("quest_briarwood_mushrooms") and game:get_value("quest_meadery") >= 3 then
+  if game:get_value("quest_briarwood_mushrooms") and game:get_value("quest_briarwood_mushrooms") >= 3 then
     michael:set_enabled(true)
   end
 

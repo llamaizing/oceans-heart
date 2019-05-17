@@ -1700,9 +1700,29 @@ tile_pattern{
   ground = "wall",
   default_layer = 0,
   x = 0,
-  y = 656,
+  y = 672,
   width = 32,
   height = 16,
+}
+
+tile_pattern{
+  id = "245",
+  ground = "wall",
+  default_layer = 0,
+  x = 48,
+  y = 696,
+  width = 48,
+  height = 72,
+}
+
+tile_pattern{
+  id = "246",
+  ground = "empty",
+  default_layer = 0,
+  x = 48,
+  y = 768,
+  width = 48,
+  height = 64,
 }
 
 tile_pattern{
