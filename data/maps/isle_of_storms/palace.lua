@@ -132,6 +132,10 @@ function switch_e_12:on_activated()
   map:open_doors("door_e_12")
 end
 
+function a6_switch:on_activated()
+  map:open_doors("door_a6")
+end
+
 
 
 

@@ -107,6 +107,7 @@ tile_pattern{
   height = 8,
   frame_delay = 250,
   mirror_loop = true,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -119,6 +120,7 @@ tile_pattern{
   height = 8,
   frame_delay = 250,
   mirror_loop = true,
+  repeat_mode = "none",
 }
 
 tile_pattern{
