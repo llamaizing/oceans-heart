@@ -1,6 +1,6 @@
 --[[ quest_log.lua
 	version 1.0a1
-	6 Jan 2019
+	17 May 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -461,6 +461,31 @@ function quest_log:set_description(objective, phase)
 		if phase then phase = math.floor(phase) end
 		
 		local description = objective:get_description(phase)
+		local max_line = quest_data.desc_text.subcomponent.count --convenience
+		
+		--insert filler lines as needed
+		local filler_count = 0 --assume 0 until proven otherwise
+		local filler_line = description.filler
+		if filler_line and max_line > #description then
+			filler_count = max_line - #description
+			local prev = description[filler_line - 1]
+			local blank_line = {
+				line = "",
+				text = "",
+				rank = prev and prev.rank or 0,
+			}
+			
+			--insert blank filler lines
+			for i=1,filler_count do
+				table.insert(description, filler_line, blank_line)
+			end
+			
+			--adjust line numbers of items if necessary
+			for index,item_data in pairs(description.items) do
+				local line = item_data.line
+				if line >= filler_line then item_data.line = line + filler_count end
+			end
+		end
 		
 		if self.desc_title then self.desc_title:set_text(objective:get_title()) end
 		if self.desc_location then self.desc_location:set_text(objective:get_location(phase)) end
@@ -491,9 +516,9 @@ function quest_log:set_description(objective, phase)
 			if entry.check_position then
 				--calculate x position of checkmark
 				local text_component = self.desc_text:get_subcomponent(i)
-				--local x = text_component:test_text_size(entry.check_position) --non-hack implementation
-				local xtra_x = text_component:test_text_size(entry.check_position.."a") --HAX
-				local xtra = text_component:test_text_size("a") --HAX
+				--local x = text_component:get_predicted_size(entry.check_position) --non-hack implementation
+				local xtra_x = text_component:get_predicted_size(entry.check_position.."a") --HAX
+				local xtra = text_component:get_predicted_size("a") --HAX
 				local x = xtra_x - xtra --HAX --TODO workaround for Solarus issue #1025
 				
 				subcomponent:set_xy(x, 0)
@@ -502,7 +527,6 @@ function quest_log:set_description(objective, phase)
 		
 		
 		local items = description.items --convenience
-		local max_line = quest_data.desc_text.subcomponent.count
 		local line_height = quest_data.desc_text.subcomponent.height --convenience
 		local gap_height = quest_data.desc_text.gap --convenience
 		local line_spacing = line_height + gap_height
@@ -540,9 +564,9 @@ function quest_log:set_description(objective, phase)
 							
 							--calculate horizontal position
 							local text_component = self.desc_text:get_subcomponent(item_line)
-							--local x = text_component:test_text_size(item_text) --non-hack implementation
-							local xtra_x = text_component:test_text_size(item_text.."a") --HAX
-							local xtra = text_component:test_text_size"a" --HAX
+							--local x = text_component:get_predicted_size(item_text) --non-hack implementation
+							local xtra_x = text_component:get_predicted_size(item_text.."a") --HAX
+							local xtra = text_component:get_predicted_size"a" --HAX
 							local x = xtra_x - xtra --HAX --TODO workaround for Solarus issue #1025
 							
 							--calculate vertical position
@@ -577,9 +601,9 @@ function quest_log:set_description(objective, phase)
 				
 				--calculate horizontal position
 				local text_component = self.desc_text:get_subcomponent(item_line)
-				--local x = text_component:test_text_size(item_text) --non-hack implementation
-				local xtra_x = text_component:test_text_size(item_text.."a") --HAX
-				local xtra = text_component:test_text_size"a" --HAX
+				--local x = text_component:get_predicted_size(item_text) --non-hack implementation
+				local xtra_x = text_component:get_predicted_size(item_text.."a") --HAX
+				local xtra = text_component:get_predicted_size"a" --HAX
 				local x = xtra_x - xtra --HAX --TODO workaround for Solarus issue #1025
 				
 				--calculate vertical position
