@@ -52955,6 +52955,28 @@ sensor{
   height = 32,
 }
 
+custom_entity{
+  layer = 0,
+  x = 824,
+  y = 245,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 744,
+  y = 381,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
 tile{
   layer = 1,
   x = 960,
