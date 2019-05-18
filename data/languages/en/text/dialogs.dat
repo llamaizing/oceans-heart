@@ -7137,6 +7137,14 @@ to the east, you can't miss it.
 }
 
 dialog{
+  id = "_oakhaven.npcs.guards.generic.carry_on",
+  text = [[
+GUARD:
+Carry on, civilian.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.guards.hq.captain.1_ask",
   text = [[
 GUARD CAPTAIN:

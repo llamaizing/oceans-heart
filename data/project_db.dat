@@ -328,6 +328,7 @@ sprite{ id = "enemies/misc/fire", description = "fire" }
 sprite{ id = "enemies/misc/fire_blast", description = "Fire Blast" }
 sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small, red" }
 sprite{ id = "enemies/misc/jelly_needle", description = "Jelly Needle" }
+sprite{ id = "enemies/misc/lionhead" }
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 sprite{ id = "enemies/misc/octorok_stone", description = "small stone" }
 sprite{ id = "enemies/misc/octorok_stone_2", description = "Stone 2" }
@@ -1517,6 +1518,7 @@ enemy{ id = "misc/fire", description = "Fire" }
 enemy{ id = "misc/fire_blast", description = "Fire Blast" }
 enemy{ id = "misc/fireball_red_small", description = "Fireball - red, small" }
 enemy{ id = "misc/jelly_needle", description = "Jelly Needle" }
+enemy{ id = "misc/lionhead", description = "Lionhead" }
 enemy{ id = "misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 enemy{ id = "misc/octorok_stone", description = "Small Stone" }
 enemy{ id = "misc/octorok_stone_2", description = "Stone 2" }

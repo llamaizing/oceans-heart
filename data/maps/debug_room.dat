@@ -2915,6 +2915,15 @@ tile{
   pattern = "73",
 }
 
+tile{
+  layer = 0,
+  x = 400,
+  y = 352,
+  width = 48,
+  height = 48,
+  pattern = "ground1.1",
+}
+
 pickable{
   layer = 0,
   x = 72,
@@ -4878,16 +4887,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "isle_of_storms/palace",
-  destination = "portal_to_surface",
-}
-
-enemy{
-  layer = 0,
-  x = 480,
-  y = 389,
-  direction = 0,
-  breed = "misc/stone_dragon_turret",
+  destination_map = "snapmast_reef/drowned_village",
 }
 
 custom_entity{
@@ -5082,19 +5082,29 @@ pickable{
   treasure_name = "attack_upgrade",
 }
 
-enemy{
-  layer = 0,
-  x = 304,
-  y = 373,
-  direction = 0,
-  breed = "misc/stone_dragon_turret",
-}
-
 pickable{
   layer = 0,
   x = 200,
   y = 173,
   treasure_name = "barrier",
+}
+
+sensor{
+  name = "freeze_sensor",
+  layer = 0,
+  x = 408,
+  y = 365,
+  width = 48,
+  height = 48,
+}
+
+block{
+  layer = 0,
+  x = 376,
+  y = 381,
+  sprite = "entities/block_statue",
+  pushable = true,
+  pullable = true,
 }
 
 tile{

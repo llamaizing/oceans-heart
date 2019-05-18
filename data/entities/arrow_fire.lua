@@ -183,47 +183,6 @@ end)
 
 
 
---NOTE TO SELF: The acceptable sprites for switchs are hard coded in. If you make a new switch sprite, make sure you add it
---to the list of acceptable sprites for switches to have.
-
-arrow:add_collision_test("overlapping", function(arrow, entity)
-
-  local entity_type = entity:get_type() --this should be a string
-
-  if entity_type == "crystal" then
-    --activate the crystal
-    if flying then
-      sol.audio.play_sound("switch")
-      map:change_crystal_state()
-      attach_to_entity(entity)
-    end --end of if flying
-
-  elseif entity_type == "switch" and not entity:is_walkable() then
-    --activate the switch you hit if it's solid or arrow-type
-    local switch = entity
-    local sprite = switch:get_sprite()
-    --check if the switch's sprite is the right type for activating
-    if flying and sprite ~= nil and
-    (sprite:get_animation_set() == "entities/switch_solid" or "entities/switch_lever_1" or "entities/switch_arrow") then
- 
-      --if it's off, turn it on. Or vice-versa.
-      if not switch:is_activated() then
-        sol.audio.play_sound("switch")
-        switch:set_activated(true)
-      else
-        sol.audio.play_sound("switch")
-        switch:set_activated(false)
-      end
-      attach_to_entity(entity)
-
-    end --end of if flying and if the switch's sprite is an accepted type for activation
-
-  end  --end of what type of entity you hit
-
-end) --end of collision test callback function
-
-
-
 
 function arrow:get_sprite_id()
   return sprite_id

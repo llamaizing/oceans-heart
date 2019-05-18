@@ -9148,30 +9148,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1040,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "shallow_water",
-}
-
-tile{
-  layer = 0,
   x = 1056,
   y = 192,
   width = 8,
   height = 32,
   pattern = "door.down.left_side",
-  tileset = "temple_2",
-}
-
-tile{
-  layer = 0,
-  x = 1040,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "2",
   tileset = "temple_2",
 }
 
@@ -9393,6 +9374,25 @@ tile{
   pattern = "329",
 }
 
+tile{
+  layer = 0,
+  x = 1040,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "brick_floor",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 192,
+  width = 16,
+  height = 16,
+  pattern = "2",
+  tileset = "temple_2",
+}
+
 teletransporter{
   layer = 0,
   x = 192,
@@ -9449,6 +9449,7 @@ destination{
   x = 200,
   y = 605,
   direction = 3,
+  starting_location_mode = "yes",
 }
 
 destination{

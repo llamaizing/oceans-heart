@@ -4901,6 +4901,7 @@ door{
   y = 112,
   direction = 0,
   sprite = "entities/door_weak_wall",
+  savegame_variable = "salamander_heartache_saloon_bombable_door_state",
   opening_method = "explosion",
 }
 

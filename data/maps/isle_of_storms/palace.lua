@@ -4,7 +4,7 @@ local camera = map:get_camera()
 
 local map_width, map_height = map:get_size()
 local particles = {}
-local MAX_PARTICLES = 100
+local MAX_PARTICLES = 125
 local PARTICLE_SPEED = 11
 
 local white_surface
@@ -136,7 +136,19 @@ function a6_switch:on_activated()
   map:open_doors("door_a6")
 end
 
+function f6_switch:on_activated()
+  map:focus_on(map:get_camera(), f6_door, function() map:open_doors("f6_door") end)
+end
 
+for switch in map:get_entities("f5_switch") do
+  function switch:on_activated()
+    local all_on = true
+    for s in map:get_entities("f5_switch") do
+      if not s:is_activated() then all_on = false end
+    end
+    if all_on then map:open_doors("f5_door") end
+  end
+end
 
 
 

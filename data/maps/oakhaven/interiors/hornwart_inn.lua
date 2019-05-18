@@ -41,7 +41,6 @@ end
 
 for book in map:get_entities("hazel_room_book") do
   function book:on_interaction()
-print("TALKING TO BOOK")
     game:start_dialog(book:get_property("dialog"))
     if game:get_value("hornwart_checkout_books_first_time") ~= true then
       game:set_value("visited_hazel_room", true)
