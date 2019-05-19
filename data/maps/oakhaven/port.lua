@@ -48,8 +48,7 @@ map:register_event("on_started", function()
 
   --put Hazel Ally on the map
   if game:get_value("hazel_is_currently_following_you") then
-    hazel:set_enabled(true)
-    hazel_wall:set_enabled(true)
+    hazel_dummy:set_enabled(true)
   end
 
 end)
@@ -105,7 +104,8 @@ function meet_hazel_sensor:on_activated()
     game:set_value("spoken_to_hazel_south_gate", true)
   end
   meet_hazel_sensor:set_enabled(false)
-  hazel_wall:set_enabled(false)
+  hazel_dummy:set_enabled(false)
+  hazel:set_enabled(true)
 end
 
 for guard in map:get_entities("guard") do

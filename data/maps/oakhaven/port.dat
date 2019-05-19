@@ -33638,7 +33638,7 @@ custom_entity{
   name = "hazel",
   layer = 0,
   x = 672,
-  y = 93,
+  y = 85,
   enabled_at_start = false,
   width = 16,
   height = 16,
@@ -33700,18 +33700,15 @@ npc{
   behavior = "dialog#_oakhaven.npcs.port.misc.1",
 }
 
-wall{
-  name = "hazel_wall",
+npc{
+  name = "hazel_dummy",
   layer = 0,
-  x = 664,
-  y = 80,
-  width = 16,
-  height = 16,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
+  x = 672,
+  y = 85,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/hazel",
 }
 
 tile{
