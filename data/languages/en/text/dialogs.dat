@@ -12259,6 +12259,14 @@ honey?
 }
 
 dialog{
+  id = "_treasure.key_palace_of_storms.1",
+  text = [[
+You found a key. It will unlock a door
+in the area.
+]],
+}
+
+dialog{
   id = "_treasure.key_poplar_shack.1",
   text = [[
 You found an old key. Probably goes to

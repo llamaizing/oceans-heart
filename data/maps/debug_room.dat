@@ -4924,7 +4924,28 @@ pickable{
 pickable{
   layer = 0,
   x = 200,
-  y = 173,
+  y = 157,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 157,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 157,
+  treasure_name = "armor_upgrade_2",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 157,
   treasure_name = "armor_upgrade_2",
 }
 
@@ -4932,160 +4953,55 @@ pickable{
   layer = 0,
   x = 200,
   y = 173,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "armor_upgrade_2",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
+  properties = {
+    {
+      key = "add_this_much_life",
+      value = "16",
+    },
+  },
   treasure_name = "health_upgrade",
 }
 
 pickable{
   layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "health_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
+  x = 224,
+  y = 157,
   treasure_name = "bow",
 }
 
 pickable{
   layer = 0,
-  x = 200,
-  y = 173,
+  x = 224,
+  y = 157,
   treasure_name = "bow_warp",
 }
 
 pickable{
   layer = 0,
-  x = 200,
-  y = 173,
+  x = 224,
+  y = 157,
   treasure_name = "oak_charm",
 }
 
 pickable{
   layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "boomerang",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
+  x = 224,
+  y = 157,
   treasure_name = "ball_and_chain",
 }
 
 pickable{
   layer = 0,
-  x = 200,
-  y = 173,
+  x = 208,
+  y = 141,
   treasure_name = "attack_upgrade",
+  treasure_variant = 8,
 }
 
 pickable{
   layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
-  treasure_name = "attack_upgrade",
-}
-
-pickable{
-  layer = 0,
-  x = 200,
-  y = 173,
+  x = 224,
+  y = 157,
   treasure_name = "barrier",
 }
 

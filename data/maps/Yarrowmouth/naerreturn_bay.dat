@@ -8984,6 +8984,16 @@ tile{
 
 teletransporter{
   layer = 0,
+  x = 496,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "Yarrowmouth/caves/naerreturn_cave",
+  destination = "from_outside",
+}
+
+teletransporter{
+  layer = 0,
   x = -16,
   y = 560,
   width = 16,
@@ -9525,6 +9535,7 @@ door{
   y = 32,
   direction = 3,
   sprite = "entities/door_weak_wall",
+  savegame_variable = "nearreturn_bay_bombable_wall_right_near_lighthouse_state",
   opening_method = "explosion",
 }
 
@@ -9534,16 +9545,6 @@ destination{
   x = 504,
   y = 61,
   direction = 3,
-}
-
-teletransporter{
-  layer = 0,
-  x = 496,
-  y = 32,
-  width = 16,
-  height = 16,
-  destination_map = "Yarrowmouth/caves/naerreturn_cave",
-  destination = "from_outside",
 }
 
 npc{
