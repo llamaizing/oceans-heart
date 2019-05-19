@@ -64,6 +64,12 @@ function hazel:on_interaction()
 
   --finished sword quest
   elseif game:get_value("quest_mangrove_sword") == 4 then
-
+      --manna oaks quest
+      if not game:get_value("quest_manna_oaks") then
+        game:start_dialog("_oakhaven.npcs.hazel.inn.4gochecktrees")
+        game:set_value("quest_manna_oaks", 0)
+      elseif game:get_value("quest_manna_oaks") == 0 then
+        game:start_dialog("_oakhaven.npcs.hazel.inn.5gogettwigs")
+      end
   end
 end

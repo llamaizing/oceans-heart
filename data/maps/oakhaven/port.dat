@@ -33700,6 +33700,20 @@ npc{
   behavior = "dialog#_oakhaven.npcs.port.misc.1",
 }
 
+wall{
+  name = "hazel_wall",
+  layer = 0,
+  x = 664,
+  y = 80,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 1,
   x = 80,
