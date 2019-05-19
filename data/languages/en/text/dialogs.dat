@@ -7137,6 +7137,14 @@ to the east, you can't miss it.
 }
 
 dialog{
+  id = "_oakhaven.npcs.guards.generic.carry_on",
+  text = [[
+GUARD:
+Carry on, civilian.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.guards.hq.captain.1_ask",
   text = [[
 GUARD CAPTAIN:
@@ -11246,6 +11254,16 @@ North - Marblecliff Mountain
 }
 
 dialog{
+  id = "_palace_of_storms.observations.1",
+  text = [[
+There's a message inscribed on the stone.
+He who would visit the Spring Memorial must
+prove both marksmanship and faith. The
+arches will accept your offering.
+]],
+}
+
+dialog{
   id = "_pause.save_question",
   text = [[
 Would you really like to quit?
@@ -12237,6 +12255,14 @@ dialog{
   text = [[
 You found a key. It's... sticky. Smells like
 honey?
+]],
+}
+
+dialog{
+  id = "_treasure.key_palace_of_storms.1",
+  text = [[
+You found a key. It will unlock a door
+in the area.
 ]],
 }
 
@@ -14739,10 +14765,7 @@ Merchants' Guild building
 !try showing it to someone
 !who seems spineless.
 @Give Aster the contract
-@!Find a way to match the
-!Barbell Brute's strength-
-!There's a treasure west of
-!town that might help
+@!UNUSED PHASE
 @Show the Barbell Brutes
 your immense strength
 !to convince them to stop

@@ -6,7 +6,7 @@ local behavior = require("enemies/lib/general_enemy")
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),
   hurt_style = "monster",
-  life = 35,
+  life = 28,
   damage = 20,
   normal_speed = 20,
   faster_speed = 30,
@@ -19,11 +19,11 @@ local properties = {
   --Attacks--
   has_radial_attack = true,
   radial_attack_projectile_breed = "misc/jelly_needle",
-  radial_attack_cooldown = 3500,
+  radial_attack_cooldown = 4500,
   radial_attack_distance = 70,
   radial_attack_num_projectiles = 8,
   radial_attack_stop_while_charging = true,
-  radial_attack_projectiles_go_through_walls = true,
+--  radial_attack_projectiles_go_through_walls = true,
 
 }
 
@@ -32,4 +32,5 @@ behavior:create(enemy, properties)
 
 enemy:register_event("on_created", function()
   enemy:set_obstacle_behavior("flying")
+  enemy:set_layer_independent_collisions(true)
 end)

@@ -17,7 +17,7 @@ function map:on_started()
     for entity in map:get_entities("block_book") do entity:set_enabled(false) end
   end
 
-  if game:get_value("quest_manna_oaks") >= 1 then hazel:set_enabled(true) end
+  if game:get_value("quest_manna_oaks") and game:get_value("quest_manna_oaks") >= 1 then hazel:set_enabled(true) end
 
 end
 

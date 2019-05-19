@@ -26,8 +26,8 @@ map:register_event("on_started", function()
 
   --Alternating Steam Timer
   for steam in map:get_entities("alternating_steam_b") do steam:set_enabled(false) end
+  sol.timer.start(map, 4000, function() sol.audio.play_sound("click_low") end)
   sol.timer.start(map, 4000, function()
-    sol.audio.play_sound("click_low")
     for steam in map:get_entities("alternating_steam") do
       if steam:is_enabled() then steam:set_enabled(false)
       else steam:set_enabled(true) end

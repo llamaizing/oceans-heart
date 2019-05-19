@@ -47,7 +47,7 @@ function item:on_using()
 
   else
     self:remove_amount(1)
-    self:shoot()
+    self:shoot(false)
   end
 end
 
@@ -73,8 +73,11 @@ function item:shoot(magic)
        height = 16,
        direction = hero:get_direction(),
        model = "arrow",
-       sprite = "entities/arrow"
+--       sprite = "entities/arrow"
      })
+    arrow:set_force(self:get_force())
+    arrow:go()
+
     if magic then
       arrow:get_sprite():set_animation("flying_magic")
       local i = 0
@@ -88,10 +91,6 @@ function item:shoot(magic)
       if i < 9 then return true end
       end)
     end
-
-    arrow:set_force(self:get_force())
-    arrow:set_sprite_id(self:get_arrow_sprite_id())
-    arrow:go()
 
   end)
 end

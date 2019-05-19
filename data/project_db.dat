@@ -156,6 +156,7 @@ map{ id = "grass_template_yellow", description = "Grass Template 2" }
 map{ id = "indoor_house_template", description = "Indoor House Template" }
 map{ id = "indoor_template", description = "Temple/Cave Template" }
 map{ id = "isle_of_storms/isle_of_storms_landing", description = "Landing Area" }
+map{ id = "isle_of_storms/palace", description = "Palace" }
 map{ id = "isle_of_storms/test", description = "Test" }
 map{ id = "mysterious_wood", description = "Mysterious Wood" }
 map{ id = "new_limestone/basswood_tavern", description = "Basswood Tavern" }
@@ -327,6 +328,7 @@ sprite{ id = "enemies/misc/fire", description = "fire" }
 sprite{ id = "enemies/misc/fire_blast", description = "Fire Blast" }
 sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small, red" }
 sprite{ id = "enemies/misc/jelly_needle", description = "Jelly Needle" }
+sprite{ id = "enemies/misc/lionhead" }
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 sprite{ id = "enemies/misc/octorok_stone", description = "small stone" }
 sprite{ id = "enemies/misc/octorok_stone_2", description = "Stone 2" }
@@ -520,6 +522,7 @@ sprite{ id = "entities/door_grass_green", description = "Door-Green Grass" }
 sprite{ id = "entities/door_grass_yellow", description = "Door-Yellow Grass" }
 sprite{ id = "entities/door_int_1", description = "door - interior 1" }
 sprite{ id = "entities/door_locked", description = "Door - Locked" }
+sprite{ id = "entities/door_locked_stone", description = "Door-Locked-Stone" }
 sprite{ id = "entities/door_mangrove_tree", description = "door-MangroveTree" }
 sprite{ id = "entities/door_npc_tall", description = "NPC door - tall" }
 sprite{ id = "entities/door_post_stone", description = "Door-Stone Post" }
@@ -527,6 +530,7 @@ sprite{ id = "entities/door_posts", description = "Door - Posts" }
 sprite{ id = "entities/door_posts_pipes", description = "Door-Posts-Pipes" }
 sprite{ id = "entities/door_seabird", description = "Door-Seabird" }
 sprite{ id = "entities/door_shutter", description = "door (shutter)" }
+sprite{ id = "entities/door_shutter_stone", description = "Door-Shutter-Stone" }
 sprite{ id = "entities/door_unmarked_wall", description = "Door - Unmarked Wall" }
 sprite{ id = "entities/door_vines", description = "Door-Vines" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
@@ -1420,6 +1424,7 @@ item{ id = "key_juniper_grove_2", description = "Key - Juniper Grove 2" }
 item{ id = "key_kingsdown", description = "Key - Kingsdown" }
 item{ id = "key_limestone_sanctuary", description = "Key - Limestone Sanctuary" }
 item{ id = "key_mead_safehouse", description = "Key - Mead Safehouse" }
+item{ id = "key_palace_of_storms", description = "Key-Palace of Storms" }
 item{ id = "key_poplar_shack", description = "Key - Poplar Shack" }
 item{ id = "key_sinking_lighthouse", description = "Key - Sinking Lighthouse" }
 item{ id = "key_sometimes_cape_ruins", description = "Key - Sometimes Cape Ruins" }
@@ -1513,6 +1518,7 @@ enemy{ id = "misc/fire", description = "Fire" }
 enemy{ id = "misc/fire_blast", description = "Fire Blast" }
 enemy{ id = "misc/fireball_red_small", description = "Fireball - red, small" }
 enemy{ id = "misc/jelly_needle", description = "Jelly Needle" }
+enemy{ id = "misc/lionhead", description = "Lionhead" }
 enemy{ id = "misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 enemy{ id = "misc/octorok_stone", description = "Small Stone" }
 enemy{ id = "misc/octorok_stone_2", description = "Stone 2" }

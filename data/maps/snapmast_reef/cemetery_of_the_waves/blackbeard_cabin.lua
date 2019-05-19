@@ -15,7 +15,11 @@ local hero = map:get_hero()
 map:register_event("on_started", function()
   require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain_inside")
   map:set_doors_open("boss_doors")
-  if not game:get_value("assassinbeard_killed") then assassinbeard:set_enabled(true) end
+  if game:get_value("assassinbeard_killed") then
+    boss_sensor:set_enabled(false)
+  else
+    assassinbeard:set_enabled(true)
+  end
 end)
 
 
@@ -24,6 +28,7 @@ function boss_sensor:on_activated()
   boss_wall:set_enabled(false)
   map:close_doors("boss_doors")
   --insert dialog here
+  boss_sensor:set_enabled(false)
 end
 
 function assassinbeard:on_dead()

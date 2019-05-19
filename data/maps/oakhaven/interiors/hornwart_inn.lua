@@ -41,7 +41,6 @@ end
 
 for book in map:get_entities("hazel_room_book") do
   function book:on_interaction()
-print("TALKING TO BOOK")
     game:start_dialog(book:get_property("dialog"))
     if game:get_value("hornwart_checkout_books_first_time") ~= true then
       game:set_value("visited_hazel_room", true)
@@ -60,13 +59,6 @@ function hazel:on_interaction()
     game:start_dialog("_oakhaven.npcs.hazel.inn.1", function()
       game:set_value("quest_mangrove_sword", 0) --start sword quest
       game:set_value("quest_hazel", 7) --end hazel quest log
-      local x, y, layer = hazel:get_position()
-      local direction = hazel:get_sprite():get_direction()
-      map:create_custom_entity({
-        model = "ally", sprite = "npc/hazel",
-        x = x, y = y, layer = layer, direction = direction,
-        width = 16, height = 16,
-      })
       game:set_value("hazel_is_currently_following_you", true)
       end)
 

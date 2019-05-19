@@ -5,7 +5,7 @@ local game = map:get_game()
 
 map:register_event("on_started", function()
   require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain_inside")
-  if game:get_value("sinking_palace_lighthouse_lit") then
+  if game:get_value("snapmast_lighthouse_lit") then
     for fire in map:get_entities("lighthouse_flame") do
       fire:set_enabled(true)
     end

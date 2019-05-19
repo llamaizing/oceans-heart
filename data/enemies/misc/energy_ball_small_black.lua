@@ -51,7 +51,7 @@ end
 function enemy:on_custom_attack_received(attack, sprite)
   if attack == "sword" then
     sol.audio.play_sound("enemy_hurt")
-    enemy:go(enemy:get_angle(hero) + math.pi)
+    enemy:go(enemy:get_angle(enemy:get_map():get_hero()) + math.pi)
   end
 end
 

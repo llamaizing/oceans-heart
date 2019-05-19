@@ -15729,6 +15729,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/guards/oakhaven_3",
+  behavior = "dialog#_oakhaven.npcs.guards.generic.carry_on",
 }
 
 npc{
@@ -15898,6 +15899,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/guards/oakhaven_1",
+  behavior = "dialog#_oakhaven.npcs.guards.generic.carry_on",
 }
 
 teletransporter{

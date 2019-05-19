@@ -141,6 +141,7 @@ arrow:add_collision_test("overlapping", function(arrow, entity)
     if flying then
       sol.audio.play_sound("switch")
       map:change_crystal_state()
+      arrow:clear_collision_tests()
       attach_to_entity(entity)
     end --end of if flying
 
@@ -160,8 +161,9 @@ arrow:add_collision_test("overlapping", function(arrow, entity)
       else
         sol.audio.play_sound("switch")
         switch:set_activated(false)
-        switch:on_inactivated()
+        if switch.on_inactivated then switch:on_inactivated() end
       end
+      arrow:clear_collision_tests()
       attach_to_entity(entity)
 
     end --end of if flying and if the switch's sprite is an accepted type for activation
@@ -189,7 +191,7 @@ end
 
 function arrow:go()
 
-  local sprite_id = arrow:get_sprite_id()
+  local sprite_id = "entities/arrow"
   sprite = arrow:create_sprite(sprite_id)
   sprite:set_animation("flying")
   sprite:set_direction(direction)

@@ -25,7 +25,7 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  sol.audio.play_sound("fire_burst_2")
+  if enemy:get_distance(hero) < 400 and enemy:is_in_same_region(hero) then sol.audio.play_sound("fire_burst_2") end
   sprite:set_animation("charging", function()
     enemy:set_can_attack(true)
     sprite:set_animation("burning", function()

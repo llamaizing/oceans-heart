@@ -79,7 +79,9 @@ function game_manager:create(file_name, overwrite_game)
     if sound_name then sol.audio.play_sound(sound_name) end
 
     quest_update_icon:refresh_opacity()
-    sol.menu.start(game, quest_update_icon)
+    if not sol.menu.is_started(quest_update_icon) then
+      sol.menu.start(game, quest_update_icon)
+    end
     sol.timer.start(game, 100, function()
       if quest_update_icon:get_opacity() < 11 then
         sol.menu.stop(quest_update_icon)

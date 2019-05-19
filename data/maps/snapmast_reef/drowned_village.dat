@@ -22167,7 +22167,7 @@ block{
 
 block{
   layer = 0,
-  x = 104,
+  x = 88,
   y = 285,
   sprite = "entities/block_statue",
   pushable = true,
@@ -22176,7 +22176,7 @@ block{
 
 block{
   layer = 0,
-  x = 88,
+  x = 72,
   y = 269,
   sprite = "entities/block_statue",
   pushable = true,

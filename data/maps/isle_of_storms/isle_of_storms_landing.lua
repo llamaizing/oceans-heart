@@ -56,6 +56,6 @@ function rune_sensor:on_activated()
   sol.audio.play_sound("warp")
   rune:set_enabled(true)
   white_surface:fade_in(150, function()
-    hero:teleport("isle_of_storms/test")
+    hero:teleport("isle_of_storms/palace", "portal_to_surface")
   end)
 end
