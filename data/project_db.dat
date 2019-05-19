@@ -361,6 +361,8 @@ sprite{ id = "enemies/normal_enemies/blade_trap_circle", description = "Blade Tr
 sprite{ id = "enemies/normal_enemies/blade_trap_linear", description = "Blade Trap-Linear" }
 sprite{ id = "enemies/normal_enemies/boulder_bro", description = "Boulder Bro" }
 sprite{ id = "enemies/normal_enemies/burrow_like", description = "Burrow Like" }
+sprite{ id = "enemies/normal_enemies/centipede", description = "Centipede" }
+sprite{ id = "enemies/normal_enemies/centipede_legs", description = "Centipede Legs" }
 sprite{ id = "enemies/normal_enemies/chest_mimic", description = "Chest Mimic" }
 sprite{ id = "enemies/normal_enemies/clayman_mother3", description = "Clayman (Mother 3)" }
 sprite{ id = "enemies/normal_enemies/crow", description = "Crow" }
@@ -1548,6 +1550,7 @@ enemy{ id = "normal_enemies/blade_trap_circle", description = "Blade Trap - Circ
 enemy{ id = "normal_enemies/blade_trap_linear", description = "Blade Trap - Linear" }
 enemy{ id = "normal_enemies/boulder_bro", description = "Boulder Bro" }
 enemy{ id = "normal_enemies/burrow_like", description = "Burrow Like" }
+enemy{ id = "normal_enemies/centipede", description = "Centipede" }
 enemy{ id = "normal_enemies/chest_mimic", description = "Chest Mimic" }
 enemy{ id = "normal_enemies/crow", description = "Crow" }
 enemy{ id = "normal_enemies/crow_xxl", description = "Crow Knight XXL" }
