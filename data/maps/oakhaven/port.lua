@@ -47,7 +47,7 @@ map:register_event("on_started", function()
   dw1:start(dockworker_1)
 
   --put Hazel Ally on the map
-  if game:get_value("hazel_is_currently_following_you") then
+  if game:get_value("hazel_is_currently_following_you") and not game:get_value("spoken_to_hazel_south_gate") then
     hazel_dummy:set_enabled(true)
   end
 
@@ -102,10 +102,10 @@ function meet_hazel_sensor:on_activated()
   if game:get_value("hazel_is_currently_following_you") and not game:get_value("spoken_to_hazel_south_gate") then
     game:start_dialog("_oakhaven.npcs.hazel.thicket.1")
     game:set_value("spoken_to_hazel_south_gate", true)
+    hazel:set_enabled(true)
   end
   meet_hazel_sensor:set_enabled(false)
   hazel_dummy:set_enabled(false)
-  hazel:set_enabled(true)
 end
 
 for guard in map:get_entities("guard") do
