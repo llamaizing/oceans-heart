@@ -4888,7 +4888,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/interiors/shipyard_gallery",
+  destination_map = "isle_of_storms/palace",
+  destination = "portal_to_surface",
 }
 
 custom_entity{
@@ -4953,7 +4954,7 @@ pickable{
 pickable{
   layer = 0,
   x = 200,
-  y = 173,
+  y = 189,
   properties = {
     {
       key = "add_this_much_life",
@@ -4961,6 +4962,7 @@ pickable{
     },
   },
   treasure_name = "health_upgrade",
+  treasure_variant = 17,
 }
 
 pickable{
