@@ -302,12 +302,14 @@ sprite{ id = "enemies/bosses/pollutant_boss", description = "Pollutant Boss" }
 sprite{ id = "enemies/bosses/rock_spider_big", description = "rock spider - big" }
 sprite{ id = "enemies/bosses/rock_spider_fire", description = "Rock Spider-Fire" }
 sprite{ id = "enemies/bosses/sea_hag", description = "Sea Hag" }
+sprite{ id = "enemies/bosses/sea_king", description = "Sea King" }
 sprite{ id = "enemies/bosses/skeleton_lord", description = "Skeleton Lord" }
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
 sprite{ id = "enemies/bosses/zephyrine", description = "Zeyphyrine" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/enemy_killed_projectile", description = "Enemy Killed-Projectile" }
 sprite{ id = "enemies/enemy_killed_small", description = "Enemy Killed-Small" }
+sprite{ id = "enemies/ghost_smoke_large", description = "GhostSmokeBig" }
 sprite{ id = "enemies/ground1", description = "Ground 1 - Grass" }
 sprite{ id = "enemies/misc/air_slash", description = "air_slash" }
 sprite{ id = "enemies/misc/air_wave", description = "Air Wave Attack" }
@@ -1551,6 +1553,7 @@ enemy{ id = "normal_enemies/blade_trap_linear", description = "Blade Trap - Line
 enemy{ id = "normal_enemies/boulder_bro", description = "Boulder Bro" }
 enemy{ id = "normal_enemies/burrow_like", description = "Burrow Like" }
 enemy{ id = "normal_enemies/centipede", description = "Centipede" }
+enemy{ id = "normal_enemies/centipede_legs", description = "Centipede Leg" }
 enemy{ id = "normal_enemies/chest_mimic", description = "Chest Mimic" }
 enemy{ id = "normal_enemies/crow", description = "Crow" }
 enemy{ id = "normal_enemies/crow_xxl", description = "Crow Knight XXL" }

@@ -185,6 +185,12 @@ main{
 }
 
 main{
+	dialog_id = "quest.main.mangrove_sword",
+	calc_phase = "quest_mangrove_sword",
+	location = "location.oakhaven",
+}
+
+main{
     dialog_id = "quest.main.pirate_fort",
     calc_phase = "quest_pirate_fort",
     location = "location.oakhaven"
@@ -199,12 +205,6 @@ main{
 main{
 	dialog_id = "quest.main.isle_of_storms",
 	calc_phase = "quest_isle_of_storms"
-}
-
-main{
-	dialog_id = "quest.main.mangrove_sword",
-	calc_phase = "quest_mangrove_sword",
-	location = "location.oakhaven",
 }
 
 main{

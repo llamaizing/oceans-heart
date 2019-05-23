@@ -47373,6 +47373,38 @@ wall{
   stops_enemies = true,
 }
 
+enemy{
+  layer = 0,
+  x = 520,
+  y = 1485,
+  direction = 3,
+  breed = "normal_enemies/centipede",
+}
+
+enemy{
+  layer = 0,
+  x = 600,
+  y = 1541,
+  direction = 1,
+  breed = "normal_enemies/centipede",
+}
+
+enemy{
+  layer = 0,
+  x = 56,
+  y = 1549,
+  direction = 3,
+  breed = "normal_enemies/centipede",
+}
+
+enemy{
+  layer = 0,
+  x = 352,
+  y = 1557,
+  direction = 3,
+  breed = "normal_enemies/centipede",
+}
+
 tile{
   layer = 1,
   x = 2224,

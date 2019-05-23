@@ -18,9 +18,8 @@ map:register_event("on_started", function()
 
 end)
 
-function freeze_sensor:on_activated()
-  hero:freeze()
-end
+local s = seaking:create_sprite("enemies/ghost_smoke_large")
+seaking:bring_sprite_to_back(s)
 
 function shopkeeper:on_interaction()
   local shop_menu = require("scripts/shops/shop_menu")
