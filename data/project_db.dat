@@ -1486,6 +1486,7 @@ enemy{ id = "bosses/bart", description = "Bart" }
 enemy{ id = "bosses/blackbeard", description = "Blackbeard" }
 enemy{ id = "bosses/burrow_crab", description = "Burrow Crab" }
 enemy{ id = "bosses/burrow_crab_2", description = "Burrow Crab 2" }
+enemy{ id = "bosses/centipede_boss", description = "Centipede Boss" }
 enemy{ id = "bosses/charging_pirate_1", description = "Charging Pirate 1" }
 enemy{ id = "bosses/crow_mech", description = "Crow Mech" }
 enemy{ id = "bosses/fiend_1", description = "Fiend 1" }

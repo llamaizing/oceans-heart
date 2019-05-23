@@ -47405,6 +47405,14 @@ enemy{
   breed = "normal_enemies/centipede",
 }
 
+enemy{
+  layer = 0,
+  x = 1872,
+  y = 2333,
+  direction = 0,
+  breed = "bosses/centipede_boss",
+}
+
 tile{
   layer = 1,
   x = 2224,

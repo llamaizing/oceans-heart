@@ -7,16 +7,18 @@ local segments = {}
 local position_buffer = {}
 --local buffer_size = 1
 
-local NUM_SEGMENTS = 4 --this includes the head
+local NUM_SEGMENTS = 8 --this includes the head
 local SPACING = 12
 local MAX_BUFFER_SIZE = NUM_SEGMENTS * SPACING
-local SPEED = 80
+local SPEED = 75
 
 
 function enemy:on_created()
-  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+--  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  sprite = enemy:create_sprite("enemies/normal_enemies/centipede")
   enemy:set_life(20)
   enemy:set_damage(1)
+  enemy:set_consequence_for_all_attacks("protected")
   --the head is segment 1
   segments[1] = enemy
   --create legs
@@ -25,12 +27,17 @@ function enemy:on_created()
       name = "leg "..i,
       breed = "normal_enemies/centipede_legs"
     }
+    segments[i]:set_consequence_for_all_attacks("protected")
   end
   --in case legs are destroyed before head
   for i=2, NUM_SEGMENTS do
     local leg = segments[i]
     function leg:on_dead()
       table.remove(segments, i)
+      enemy:on_restarted()
+    end
+    function leg:on_restarted()
+      if leg.vulnerable == true then leg:get_sprite():set_animation("vulnerable") end
     end
   end
 end
@@ -43,6 +50,11 @@ end
 
 
 function enemy:on_restarted()
+  --set last segment as vulnerable
+  segments[#segments]:set_default_attack_consequences()
+  segments[#segments].vulnerable = true
+  segments[#segments]:get_sprite():set_animation("vulnerable")
+
   --move head
   local direction = (math.random(1, 4))*math.pi/2
   local movement = sol.movement.create("straight")
@@ -56,7 +68,7 @@ function enemy:on_restarted()
     movement:start(enemy)
   end
 
-  sol.timer.start(enemy, 5000, function()
+  sol.timer.start(enemy, math.random(1500, 5000), function()
     movement:set_angle(math.random(1, 4) * math.pi / 2)
     movement:start(enemy)
   end)
