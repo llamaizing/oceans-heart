@@ -46125,13 +46125,6 @@ separator{
   height = 16,
 }
 
-pickable{
-  layer = 0,
-  x = 1872,
-  y = 2261,
-  treasure_name = "key_palace_of_storms",
-}
-
 door{
   name = "door_e_13",
   layer = 0,
@@ -47406,11 +47399,15 @@ enemy{
 }
 
 enemy{
+  name = "centipede_miniboss",
   layer = 0,
   x = 1872,
   y = 2333,
-  direction = 0,
-  breed = "bosses/centipede_boss",
+  direction = 3,
+  breed = "bosses/centipede_king",
+  savegame_variable = "storm_palace_centipede_miniboss_state",
+  treasure_name = "key_palace_of_storms",
+  treasure_savegame_variable = "storm_palace_miniboss_key_state",
 }
 
 tile{

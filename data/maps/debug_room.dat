@@ -5137,7 +5137,7 @@ enemy{
   x = 520,
   y = 381,
   direction = 0,
-  breed = "bosses/centipede_boss",
+  breed = "bosses/centipede_king",
 }
 
 tile{

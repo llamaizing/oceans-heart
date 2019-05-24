@@ -8,14 +8,13 @@ local position_buffer = {}
 --local buffer_size = 1
 
 local NUM_SEGMENTS = 8 --this includes the head
-local SPACING = 12
+local SPACING = 18
 local MAX_BUFFER_SIZE = NUM_SEGMENTS * SPACING
-local SPEED = 75
+local SPEED = 65
 
 
 function enemy:on_created()
---  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  sprite = enemy:create_sprite("enemies/normal_enemies/centipede")
+  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(20)
   enemy:set_damage(1)
   enemy:set_consequence_for_all_attacks("protected")
@@ -25,7 +24,7 @@ function enemy:on_created()
   for i=2, NUM_SEGMENTS do
     segments[i] = enemy:create_enemy{
       name = "leg "..i,
-      breed = "normal_enemies/centipede_legs"
+      breed = "bosses/centipede_king_legs"
     }
     segments[i]:set_consequence_for_all_attacks("protected")
   end
@@ -34,6 +33,7 @@ function enemy:on_created()
     local leg = segments[i]
     function leg:on_dead()
       table.remove(segments, i)
+      SPEED = SPEED + 5
       enemy:on_restarted()
     end
     function leg:on_restarted()
@@ -68,9 +68,11 @@ function enemy:on_restarted()
     movement:start(enemy)
   end
 
-  sol.timer.start(enemy, math.random(1500, 5000), function()
+  --random juke
+  sol.timer.start(enemy, math.random(800, 3000), function()
     movement:set_angle(math.random(1, 4) * math.pi / 2)
     movement:start(enemy)
+    return math.random(1500, 5000)
   end)
 
 end

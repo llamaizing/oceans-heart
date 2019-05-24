@@ -8,7 +8,7 @@ local position_buffer = {}
 --local buffer_size = 1
 
 local NUM_SEGMENTS = 4 --this includes the head
-local SPACING = 12
+local SPACING = 10
 local MAX_BUFFER_SIZE = NUM_SEGMENTS * SPACING
 local SPEED = 80
 
