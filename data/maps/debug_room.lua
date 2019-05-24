@@ -18,10 +18,6 @@ map:register_event("on_started", function()
 
 end)
 
-function freeze_sensor:on_activated()
-  hero:freeze()
-end
-
 function shopkeeper:on_interaction()
   local shop_menu = require("scripts/shops/shop_menu")
   shop_menu:initialize(game)

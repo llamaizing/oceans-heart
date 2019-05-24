@@ -61205,6 +61205,25 @@ tile{
   pattern = "1688",
 }
 
+tile{
+  layer = 1,
+  x = 640,
+  y = 160,
+  width = 16,
+  height = 96,
+  pattern = "209",
+}
+
+tile{
+  layer = 1,
+  x = 944,
+  y = 160,
+  enabled_at_start = false,
+  width = 16,
+  height = 96,
+  pattern = "208",
+}
+
 destructible{
   layer = 1,
   x = 736,

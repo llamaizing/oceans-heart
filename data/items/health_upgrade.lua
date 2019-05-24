@@ -15,15 +15,7 @@ function item:on_obtaining(variant, savegame_variable)
   sol.audio.set_music_volume(game:get_value("music_volume") - 40)
   sol.timer.start(100, function() sol.audio.set_music_volume(game:get_value("music_volume")) end)
   game:add_max_life(2)
-  game:add_max_life(amount_of_health)
+  game:add_max_life(variant-1)
   game:set_life(game:get_max_life())
 
-end
-
-
-
-function item:on_pickable_created(pickable)
-  if pickable:get_property("add_this_much_life") then
-    amount_of_health = (pickable:get_property("add_this_much_life"))
-  end
 end

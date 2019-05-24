@@ -1668,15 +1668,6 @@ tile{
 tile{
   layer = 0,
   x = 736,
-  y = 160,
-  width = 32,
-  height = 32,
-  pattern = "565",
-}
-
-tile{
-  layer = 0,
-  x = 736,
   y = 240,
   width = 32,
   height = 32,
@@ -1687,15 +1678,6 @@ tile{
   layer = 0,
   x = 736,
   y = 320,
-  width = 32,
-  height = 32,
-  pattern = "565",
-}
-
-tile{
-  layer = 0,
-  x = 816,
-  y = 160,
   width = 32,
   height = 32,
   pattern = "565",
@@ -1717,15 +1699,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "565",
-}
-
-tile{
-  layer = 0,
-  x = 904,
-  y = 160,
-  width = 32,
-  height = 32,
-  pattern = "568",
 }
 
 tile{
@@ -2360,26 +2333,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 992,
-  y = 184,
-  width = 16,
-  height = 16,
-  pattern = "1749",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
-  x = 1008,
-  y = 184,
-  width = 16,
-  height = 16,
-  pattern = "1751",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
   x = 984,
   y = 232,
   width = 16,
@@ -2523,9 +2476,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 584,
+  x = 632,
   y = 368,
-  width = 128,
+  width = 80,
   height = 16,
   pattern = "ground1.1",
 }
@@ -2752,31 +2705,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 536,
-  y = 976,
+  x = 640,
+  y = 968,
   width = 96,
   height = 96,
   pattern = "222",
-  tileset = "cave_2",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 976,
-  width = 128,
-  height = 112,
-  pattern = "242",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 672,
-  y = 984,
-  width = 96,
-  height = 96,
-  pattern = "223",
   tileset = "cave_2",
 }
 
@@ -2917,11 +2850,120 @@ tile{
 
 tile{
   layer = 0,
-  x = 400,
-  y = 352,
-  width = 48,
-  height = 48,
-  pattern = "ground1.1",
+  x = 304,
+  y = 312,
+  width = 240,
+  height = 128,
+  pattern = "33",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "38",
 }
 
 pickable{
@@ -4665,18 +4707,6 @@ custom_entity{
   model = "toss_ball",
 }
 
-custom_entity{
-  name = "hazel",
-  layer = 0,
-  x = 904,
-  y = 285,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "npc/hazel",
-  model = "ally",
-}
-
 destructible{
   layer = 0,
   x = 96,
@@ -4887,7 +4917,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/interiors/shipyard_gallery",
+  destination_map = "isle_of_storms/palace",
+  destination = "portal_to_surface",
 }
 
 custom_entity{
@@ -4960,6 +4991,7 @@ pickable{
     },
   },
   treasure_name = "health_upgrade",
+  treasure_variant = 17,
 }
 
 pickable{
@@ -5005,22 +5037,39 @@ pickable{
   treasure_name = "barrier",
 }
 
-sensor{
-  name = "freeze_sensor",
+enemy{
   layer = 0,
-  x = 408,
-  y = 365,
-  width = 48,
-  height = 48,
+  x = 520,
+  y = 381,
+  direction = 0,
+  breed = "bosses/centipede_king",
 }
 
-block{
+enemy{
+  name = "sea_king",
   layer = 0,
-  x = 376,
-  y = 381,
-  sprite = "entities/block_statue",
-  pushable = true,
-  pullable = true,
+  x = 704,
+  y = 893,
+  direction = 3,
+  breed = "bosses/sea_king",
+}
+
+wall{
+  layer = 0,
+  x = 512,
+  y = 800,
+  width = 8,
+  height = 96,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 808,
+  y = 800,
+  width = 8,
+  height = 96,
+  stops_enemies = true,
 }
 
 tile{
@@ -5062,15 +5111,6 @@ tile{
 tile{
   layer = 1,
   x = 736,
-  y = 128,
-  width = 32,
-  height = 32,
-  pattern = "566",
-}
-
-tile{
-  layer = 1,
-  x = 736,
   y = 208,
   width = 32,
   height = 32,
@@ -5081,15 +5121,6 @@ tile{
   layer = 1,
   x = 736,
   y = 288,
-  width = 32,
-  height = 32,
-  pattern = "566",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 128,
   width = 32,
   height = 32,
   pattern = "566",
@@ -5111,15 +5142,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "566",
-}
-
-tile{
-  layer = 1,
-  x = 904,
-  y = 112,
-  width = 32,
-  height = 48,
-  pattern = "570",
 }
 
 tile{
@@ -5176,16 +5198,6 @@ tile{
   layer = 1,
   x = 1048,
   y = 232,
-  width = 32,
-  height = 32,
-  pattern = "1753",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 1,
-  x = 992,
-  y = 152,
   width = 32,
   height = 32,
   pattern = "1753",

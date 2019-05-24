@@ -290,6 +290,8 @@ sprite{ id = "enemies/bosses/bart_weapon", description = "enemies/bosses/bart_we
 sprite{ id = "enemies/bosses/blackbeard", description = "Blackbeard" }
 sprite{ id = "enemies/bosses/burrow_crab", description = "Burrow Crab" }
 sprite{ id = "enemies/bosses/burrow_crab_2", description = "Burrow Crab 2" }
+sprite{ id = "enemies/bosses/centipede_king", description = "Centipede King" }
+sprite{ id = "enemies/bosses/centipede_king_legs", description = "CentiKing Legs" }
 sprite{ id = "enemies/bosses/charging_pirate_1", description = "Charging Pirate 1" }
 sprite{ id = "enemies/bosses/crow_mech", description = "Crow Mech" }
 sprite{ id = "enemies/bosses/fiend_1", description = "Fiend 1" }
@@ -302,12 +304,14 @@ sprite{ id = "enemies/bosses/pollutant_boss", description = "Pollutant Boss" }
 sprite{ id = "enemies/bosses/rock_spider_big", description = "rock spider - big" }
 sprite{ id = "enemies/bosses/rock_spider_fire", description = "Rock Spider-Fire" }
 sprite{ id = "enemies/bosses/sea_hag", description = "Sea Hag" }
+sprite{ id = "enemies/bosses/sea_king", description = "Sea King" }
 sprite{ id = "enemies/bosses/skeleton_lord", description = "Skeleton Lord" }
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
 sprite{ id = "enemies/bosses/zephyrine", description = "Zeyphyrine" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/enemy_killed_projectile", description = "Enemy Killed-Projectile" }
 sprite{ id = "enemies/enemy_killed_small", description = "Enemy Killed-Small" }
+sprite{ id = "enemies/ghost_smoke_large", description = "GhostSmokeBig" }
 sprite{ id = "enemies/ground1", description = "Ground 1 - Grass" }
 sprite{ id = "enemies/misc/air_slash", description = "air_slash" }
 sprite{ id = "enemies/misc/air_wave", description = "Air Wave Attack" }
@@ -338,6 +342,7 @@ sprite{ id = "enemies/misc/pop", description = "Pop-For Enemy Attacks" }
 sprite{ id = "enemies/misc/root_small", description = "Root - Small" }
 sprite{ id = "enemies/misc/seagull", description = "seagull" }
 sprite{ id = "enemies/misc/skeleton_hand", description = "Skeleton Hand" }
+sprite{ id = "enemies/misc/spirit_sword", description = "Spirit Sword" }
 sprite{ id = "enemies/misc/steam_attack", description = "Steam Attack" }
 sprite{ id = "enemies/misc/stone_dragon_turret", description = "Stone Dragon Turret" }
 sprite{ id = "enemies/misc/stone_projectile", description = "Stone projectile" }
@@ -361,6 +366,8 @@ sprite{ id = "enemies/normal_enemies/blade_trap_circle", description = "Blade Tr
 sprite{ id = "enemies/normal_enemies/blade_trap_linear", description = "Blade Trap-Linear" }
 sprite{ id = "enemies/normal_enemies/boulder_bro", description = "Boulder Bro" }
 sprite{ id = "enemies/normal_enemies/burrow_like", description = "Burrow Like" }
+sprite{ id = "enemies/normal_enemies/centipede", description = "Centipede" }
+sprite{ id = "enemies/normal_enemies/centipede_legs", description = "Centipede Legs" }
 sprite{ id = "enemies/normal_enemies/chest_mimic", description = "Chest Mimic" }
 sprite{ id = "enemies/normal_enemies/clayman_mother3", description = "Clayman (Mother 3)" }
 sprite{ id = "enemies/normal_enemies/crow", description = "Crow" }
@@ -1358,6 +1365,7 @@ sound{ id = "water_fill", description = "water_fill" }
 sound{ id = "water_fill_begin", description = "water_fill_begin" }
 sound{ id = "water_flowing_in", description = "water_flowing_in" }
 sound{ id = "water_flowing_in_2", description = "water_flowing_in_2" }
+sound{ id = "wood_breaking_and_falling_into_water", description = "wood_breaking_and_falling_into_water" }
 sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
@@ -1482,6 +1490,8 @@ enemy{ id = "bosses/bart", description = "Bart" }
 enemy{ id = "bosses/blackbeard", description = "Blackbeard" }
 enemy{ id = "bosses/burrow_crab", description = "Burrow Crab" }
 enemy{ id = "bosses/burrow_crab_2", description = "Burrow Crab 2" }
+enemy{ id = "bosses/centipede_king", description = "Centipede Boss" }
+enemy{ id = "bosses/centipede_king_legs", description = "CentipedeKingLegs" }
 enemy{ id = "bosses/charging_pirate_1", description = "Charging Pirate 1" }
 enemy{ id = "bosses/crow_mech", description = "Crow Mech" }
 enemy{ id = "bosses/fiend_1", description = "Fiend 1" }
@@ -1493,6 +1503,7 @@ enemy{ id = "bosses/pollutant_boss", description = "Pollutant Boss" }
 enemy{ id = "bosses/rock_spider_big", description = "rock spider - big" }
 enemy{ id = "bosses/rock_spider_fire", description = "Rock Spider-Fire" }
 enemy{ id = "bosses/sea_hag", description = "Sea Hag" }
+enemy{ id = "bosses/sea_king", description = "Sea King" }
 enemy{ id = "bosses/skeleton_lord", description = "Skeleton Lord" }
 enemy{ id = "bosses/thyme", description = "Captain Thyme" }
 enemy{ id = "bosses/zephyrine", description = "Zephyrine" }
@@ -1548,6 +1559,8 @@ enemy{ id = "normal_enemies/blade_trap_circle", description = "Blade Trap - Circ
 enemy{ id = "normal_enemies/blade_trap_linear", description = "Blade Trap - Linear" }
 enemy{ id = "normal_enemies/boulder_bro", description = "Boulder Bro" }
 enemy{ id = "normal_enemies/burrow_like", description = "Burrow Like" }
+enemy{ id = "normal_enemies/centipede", description = "Centipede" }
+enemy{ id = "normal_enemies/centipede_legs", description = "Centipede Leg" }
 enemy{ id = "normal_enemies/chest_mimic", description = "Chest Mimic" }
 enemy{ id = "normal_enemies/crow", description = "Crow" }
 enemy{ id = "normal_enemies/crow_xxl", description = "Crow Knight XXL" }
