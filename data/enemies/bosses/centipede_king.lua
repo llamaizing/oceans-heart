@@ -15,7 +15,7 @@ local SPEED = 65
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(20)
+  enemy:set_life(1)
   enemy:set_damage(1)
   enemy:set_consequence_for_all_attacks("protected")
   --the head is segment 1
@@ -33,7 +33,7 @@ function enemy:on_created()
     local leg = segments[i]
     function leg:on_dead()
       table.remove(segments, i)
-      SPEED = SPEED + 5
+      SPEED = SPEED + 8
       enemy:on_restarted()
     end
     function leg:on_restarted()

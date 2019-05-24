@@ -7,7 +7,7 @@ local movement
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(20)
+  enemy:set_life(16)
   enemy:set_damage(1)
 end
 
