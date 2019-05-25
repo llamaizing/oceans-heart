@@ -5116,8 +5116,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "isle_of_storms/palace",
-  destination = "portal_to_surface",
+  destination_map = "snapmast_reef/cemetery_of_the_waves/shipwreck_chain",
+  destination = "special_switchtesting_place",
 }
 
 custom_entity{
@@ -5290,6 +5290,13 @@ dynamic_tile{
   height = 16,
   pattern = "100",
   tileset = "palace_of_storms",
+}
+
+pickable{
+  layer = 0,
+  x = 152,
+  y = 309,
+  treasure_name = "sword",
 }
 
 tile{

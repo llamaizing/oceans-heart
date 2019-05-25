@@ -88,10 +88,8 @@ function map_meta:focus_on(camera, target_entity, callback)
   m:set_speed(speed)
   m:set_ignore_obstacles(true)
   m:start(camera, function()
---    game:set_suspended(false) --moved
     callback()
-    sol.timer.start(camera:get_map(), 500, function()
---      hero:unfreeze() --moved
+    sol.timer.start(game, 500, function()
       m2 = sol.movement.create("target")
       m2:set_ignore_obstacles(true)
       m2:set_target(camera:get_position_to_track(hero))
@@ -101,6 +99,7 @@ function map_meta:focus_on(camera, target_entity, callback)
         game:set_suspended(false)
         hero:unfreeze()
       end)
+      function m2:on_obstacle_reached() hero:unfreeze() end
     end)
   end)
 end

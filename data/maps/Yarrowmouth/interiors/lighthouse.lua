@@ -11,12 +11,14 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
+  if game:get_value("yarrowmouth_lighthouse_activated") then
+    for torch in map:get_entities("torch") do
+      torch:set_enabled()
+    end
+  end
+end)
 
 -- Event called after the opening transition effect of the map,
 -- that is, when the player takes control of the hero.
