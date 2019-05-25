@@ -13,7 +13,6 @@ local game = map:get_game()
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
   local x, y, l = emblem:get_position()
-  game:set_life(game:get_max_life())
   local zapper = game:get_item("thunder_charm")
   if not game:get_value("smoldering_rock_seabird_charm_pickable_variable") then
     map:create_pickable({

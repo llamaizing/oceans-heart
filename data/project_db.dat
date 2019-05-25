@@ -340,6 +340,9 @@ sprite{ id = "enemies/misc/orange", description = "Orange" }
 sprite{ id = "enemies/misc/pollutant_blocker", description = "Pollutant Blocker" }
 sprite{ id = "enemies/misc/pop", description = "Pop-For Enemy Attacks" }
 sprite{ id = "enemies/misc/root_small", description = "Root - Small" }
+sprite{ id = "enemies/misc/sea_beam", description = "Sea Beam" }
+sprite{ id = "enemies/misc/sea_blast", description = "Sea Blast" }
+sprite{ id = "enemies/misc/sea_king_sword_slash", description = "SeaKing Sword Slash" }
 sprite{ id = "enemies/misc/seagull", description = "seagull" }
 sprite{ id = "enemies/misc/skeleton_hand", description = "Skeleton Hand" }
 sprite{ id = "enemies/misc/spirit_sword", description = "Spirit Sword" }
@@ -1536,6 +1539,7 @@ enemy{ id = "misc/octorok_stone_2", description = "Stone 2" }
 enemy{ id = "misc/orange", description = "Orange" }
 enemy{ id = "misc/pollutant_blocker", description = "Pollutant Blocker" }
 enemy{ id = "misc/root_small", description = "Root - Small" }
+enemy{ id = "misc/sea_blast", description = "SeaBlast" }
 enemy{ id = "misc/seagull", description = "Seagull" }
 enemy{ id = "misc/skeleton_hand", description = "Skeleton Hand" }
 enemy{ id = "misc/steam_attack", description = "Steam Attack" }

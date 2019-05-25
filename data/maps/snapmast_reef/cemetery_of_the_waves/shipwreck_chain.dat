@@ -52977,6 +52977,14 @@ custom_entity{
   model = "warp_block",
 }
 
+destination{
+  name = "special_switchtesting_place",
+  layer = 0,
+  x = 264,
+  y = 1573,
+  direction = 1,
+}
+
 tile{
   layer = 1,
   x = 960,
