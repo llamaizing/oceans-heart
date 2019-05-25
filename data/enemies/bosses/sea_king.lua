@@ -3,6 +3,7 @@ local game = enemy:get_game()
 local map = enemy:get_map()
 local hero = map:get_hero()
 local sprite
+local smoke_sprite
 local beam_sprite
 local angle = 0
 
@@ -23,11 +24,11 @@ local sweeping
 -- Event called when the enemy is initialized.
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  local smoke_sprite = enemy:create_sprite("enemies/ghost_smoke_large")
+  smoke_sprite = enemy:create_sprite("enemies/ghost_smoke_large")
   enemy:bring_sprite_to_back(smoke_sprite)
   enemy:set_invincible_sprite(smoke_sprite)
 
-  enemy:set_life(120)
+  enemy:set_life(300)
   enemy:set_damage(25)
   enemy:set_pushed_back_when_hurt(false)
   enemy:set_hurt_style("boss")
@@ -53,7 +54,8 @@ end
 function enemy:on_restarted()
   enemy:go_back_and_forth()
   if sweeping then
-    sweeping = false enemy:finish_attacking()
+    sweeping = false
+    enemy:finish_attacking()
   end
   if enemy:get_sprite("sea_beam") then enemy:remove_sprite(enemy:get_sprite("sea_beam")) end
   sol.timer.start(enemy, 100, function()
@@ -64,8 +66,10 @@ end
 
 
 function enemy:finish_attacking()
-  attacking = false
-  enemy:on_restarted()
+  sol.timer.start(map, 900, function()
+    attacking = false
+    enemy:on_restarted()
+  end)
 end
 
 
@@ -140,7 +144,7 @@ function enemy:throw_sword()
     sprite:set_animation("attack", function()
       sprite:set_animation("walking")
     end)
-        local x, y, layer = enemy:get_position()
+    local x, y, layer = enemy:get_position()
     local boomerang = enemy:create_enemy({
       name = "enemy_thrown_boomerang",
       x = 0, y = 0, layer = layer, direction = 0, breed = "misc/enemy_weapon"
@@ -170,7 +174,6 @@ function enemy:throw_sword()
         m3:set_speed(SPEED)
         m3:start(boomerang, function()
           boomerang:remove()
-          enemy:finish_attacking()
         end)
       end)
     end)
@@ -178,7 +181,6 @@ function enemy:throw_sword()
     function m2:on_obstacle_reached()
       sol.audio.play_sound("thunk1")
       boomerang:remove()
-      enemy:finish_attacking()
     end
 
     enemy:finish_attacking()
@@ -196,37 +198,38 @@ function enemy:surround_attack()
   local ZOOM_SPEED = 120
 
   sprite:set_animation("wind_up")
-  sol.timer.start(map, 800, function()
-      sol.timer.start(enemy, 1000, function() sprite:set_animation("walking") end)
-
-  for i=1, NUM_PROJECTILES do
-    fires[i] = enemy:create_enemy{breed = "misc/blue_fire"}
-    local m = sol.movement.create("circle")
-    m:set_center(hero)
-    m:set_radius(RADIUS)
-    m:set_angle_from_center(math.pi * 2 / NUM_PROJECTILES * i)
-    m:set_angular_speed(2)
-    m:set_ignore_obstacles()
-    m:start(fires[i])
-  end
-
-  sol.timer.start(map, DELAY, function()
+  sol.timer.start(map, 1000, function()
+    sol.timer.start(enemy, 1000, function() sprite:set_animation("walking") end)
+    sol.audio.play_sound("fire_burst_1")
     for i=1, NUM_PROJECTILES do
-      if fires[i] then
-        local m = sol.movement.create("straight")
-        m:set_speed(ZOOM_SPEED)
-        m:set_angle(fires[i]:get_angle(hero))
-        m:set_max_distance(fires[i]:get_distance(hero))
-        m:set_ignore_obstacles()
-        m:start(fires[i])
-        function m:on_finished()
-          fires[i]:remove()
+      fires[i] = enemy:create_enemy{breed = "misc/blue_fire"}
+      local m = sol.movement.create("circle")
+      m:set_center(hero)
+      m:set_radius(RADIUS)
+      m:set_angle_from_center(math.pi * 2 / NUM_PROJECTILES * i)
+      m:set_angular_speed(2)
+      m:set_ignore_obstacles()
+      m:start(fires[i])
+    end
+
+    sol.timer.start(map, DELAY, function()
+      sol.audio.play_sound("shoot_magic_2")
+      for i=1, NUM_PROJECTILES do
+        if fires[i] then
+          local m = sol.movement.create("straight")
+          m:set_speed(ZOOM_SPEED)
+          m:set_angle(fires[i]:get_angle(hero))
+          m:set_max_distance(fires[i]:get_distance(hero))
+          m:set_ignore_obstacles()
+          m:start(fires[i])
+          function m:on_finished()
+            fires[i]:remove()
+          end
         end
       end
-    end
-  end)
+    end)
 
-  enemy:finish_attacking()
+    enemy:finish_attacking()
 
   end)
 end
@@ -234,11 +237,11 @@ end
 
 --Sweeping projectile attack
 function enemy:tide_attack()
-  sprite:set_animation("wind_up")
-  sol.timer.start(map, 1000, function()
     sweeping = true
     map:create_poof(enemy:get_position())
+    sol.audio.play_sound("fire_burst_3")
     sprite:set_animation("invisible")
+    smoke_sprite:set_animation("invisible")
     local x, y = enemy:get_position()
     local xref, yref = map:get_entity("boss_teleport_ref"):get_position()
     enemy:set_position(x, yref)
@@ -249,11 +252,13 @@ function enemy:tide_attack()
     m:start(enemy)
     function m:on_obstacle_reached()
       map:create_poof(enemy:get_position())
+      sol.audio.play_sound("fire_burst_3")
       sprite:set_animation("wind_up_summon")
+      smoke_sprite:set_animation("walking")
       m:set_angle(angle + math.pi)
       m:start(enemy)
       local breathing_fire = true
-      sol.timer.start(enemy, 200, function()
+      sol.timer.start(enemy, 150, function()
         local fire = enemy:create_enemy{breed="misc/blue_fire"}
         local mf = sol.movement.create("straight")
         mf:set_angle(3*math.pi/2)
@@ -261,6 +266,7 @@ function enemy:tide_attack()
         mf:set_max_distance(250)
         mf:set_ignore_obstacles()
         mf:start(fire)
+        sol.audio.play_sound("shoot_magic")
         function mf:on_obstacle_reached() fire:remove() end
         function mf:on_finished() fire:remove() end
         sol.timer.start(map, 3000, function() fire:remove() end)
@@ -270,16 +276,17 @@ function enemy:tide_attack()
       function m:on_obstacle_reached()
         enemy:set_default_attack_consequences()
         breathing_fire = false
+        sweeping = false
         enemy:finish_attacking()
       end
       function m:on_finished()
         enemy:set_default_attack_consequences()
         breathing_fire = false
+        sweeping = false
         enemy:finish_attacking()
       end
 
     end
-  end)
 end
 
 
@@ -289,9 +296,11 @@ function enemy:pattern_attack()
   local xref, yref, lref = map:get_entity("boss_teleport_ref"):get_position()
   map:create_poof(enemy:get_position())
   map:create_poof(xref, yref, lref)
+  sol.audio.play_sound("fire_burst_3")
   sprite:set_animation("invisible")
   enemy:set_position(xref, yref, lref)
   sprite:set_animation("wind_up_summon")
+  sol.audio.play_sound("charge_1")
   sol.timer.start(map, 1000, function()
     sol.timer.start(enemy, 1000, function() sprite:set_animation("walking") end)
 
@@ -309,7 +318,7 @@ function enemy:pattern_attack()
     for i=1, 3 do
       create_row(i*64 - 56)
     end
-    sol.audio.play_sound("fire_burst_2")
+    sol.audio.play_sound("fire_burst_1")
     sol.timer.start(map, 1000, function() enemy:finish_attacking() end)
   end)
 end
@@ -325,11 +334,13 @@ function enemy:projectile_a()
   sprite:set_animation("wind_up")
 
   local function shoot()
+    sol.audio.play_sound("shoot")
     local ball = enemy:create_enemy{breed="misc/energy_ball_black"}
     ball:go(enemy:get_angle(hero))
   end
 
   sol.timer.start(map, 1200, function()
+    sol.timer.start(map, 2200, function() enemy:finish_attacking() end)
     sprite:set_animation("attack", function()
       shoot()
       sprite:set_animation("attack", function()
@@ -337,12 +348,10 @@ function enemy:projectile_a()
         sprite:set_animation("attack", function()
           shoot()
           sprite:set_animation("walking")
-          enemy:finish_attacking()
         end)
       end)
     end)
   end)
-  sol.timer.start(enemy, 2000, function() enemy:finish_attacking() end)
 end
 
 
@@ -357,7 +366,9 @@ end
 function enemy:beam_attack()
     sweeping = true
     map:create_poof(enemy:get_position())
+    sol.audio.play_sound("fire_burst_3")
     sprite:set_animation("invisible")
+    smoke_sprite:set_animation("invisible")
     local x, y = enemy:get_position()
     local xref, yref = map:get_entity("boss_teleport_ref"):get_position()
     enemy:set_position(x, yref)
@@ -368,21 +379,33 @@ function enemy:beam_attack()
     m:start(enemy)
     function m:on_obstacle_reached()
       map:create_poof(enemy:get_position())
+      sol.audio.play_sound("fire_burst_3")
       sprite:set_animation("wind_up_summon")
+      smoke_sprite:set_animation("walking")
       m:set_angle(angle + math.pi)
       m:set_speed(120)
       m:start(enemy)
-      beam_sprite = enemy:create_sprite("enemies/misc/sea_beam", "sea_beam")
+      beam_sprite = enemy:create_sprite("enemies/misc/sea_beam", "beam_sprite")
+      enemy:set_invincible_sprite(beam_sprite)
+      --sound
+      sol.audio.play_sound("sword_spin_attack_release")
+      sol.timer.start(map, 1, function()
+        sol.audio.play_sound("beam")
+        if enemy:get_sprite("beam_sprite") then return 800 end
+      end)
+
       function m:on_obstacle_reached()
         enemy:set_default_attack_consequences()
+        sweeping = false
         enemy:finish_attacking()
         if enemy:get_sprite("beam_sprite") then enemy:remove_sprite(beam_sprite) end
       end
-      function m:on_finished()
-        enemy:set_default_attack_consequences()
-        enemy:finish_attacking()
+
+      --failsafe
+      sol.timer.start(map, 3000, function()
+        if sweeping then sweeping = false enemy:finish_attacking() end
         if enemy:get_sprite("beam_sprite") then enemy:remove_sprite(beam_sprite) end
-      end
+      end)
 
     end
 end
@@ -392,8 +415,9 @@ function enemy:melee_attack()
   sprite:set_animation("wind_up")
   sol.timer.start(map, 800, function()
     sprite:set_animation("attack", function() sprite:set_animation("walking") end)
-    enemy:create_sprite("enemies/misc/sea_king_sword_slash")
-    sol.audio.play_sound("sword3")
+    local sword_sprite = enemy:create_sprite("enemies/misc/sea_king_sword_slash")
+    enemy:set_invincible_sprite(sword_sprite)
+    sol.audio.play_sound("sword_spin_attack_release")
     enemy:finish_attacking()
   end)
 end

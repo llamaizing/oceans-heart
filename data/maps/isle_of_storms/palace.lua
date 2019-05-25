@@ -26,6 +26,8 @@ map:register_event("on_started", function()
     return true
   end)
 
+  map:set_doors_open("boss_door")
+
 end)
 
 
@@ -149,6 +151,31 @@ for switch in map:get_entities("f5_switch") do
     if all_on then map:open_doors("f5_door") end
   end
 end
+
+
+
+
+--------------SENSORS---------------------------
+function boss_sensor:on_activated()
+  boss_sensor:set_enabled(false)
+  if true then --replace with defeat seaking savegame variable later
+    map:close_doors("boss_door")
+    sol.audio.stop_music()
+    sol.timer.start(map, 1500, function()
+      sea_king_boss:set_enabled(true)
+      map:create_poof(sea_king_boss:get_position())
+      sol.audio.play_sound("fire_burst_3")
+      sol.audio.play_sound("monster_scream")
+      sol.audio.play_music("oceans_heart")
+    end)
+  end
+end
+
+function sea_king_boss:on_dying()
+  sol.timer.stop_all(map)
+end
+
+
 
 
 
