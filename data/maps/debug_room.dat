@@ -3174,8 +3174,8 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 56,
-  y = 77,
+  x = 120,
+  y = 125,
   treasure_name = "bow_fire",
 }
 
@@ -5296,6 +5296,30 @@ pickable{
   x = 152,
   y = 309,
   treasure_name = "sword",
+}
+
+enemy{
+  layer = 0,
+  x = 320,
+  y = 325,
+  direction = 0,
+  breed = "normal_enemies/arborgeist_stump",
+}
+
+enemy{
+  layer = 0,
+  x = 368,
+  y = 325,
+  direction = 0,
+  breed = "normal_enemies/arborgeist_stump",
+}
+
+enemy{
+  layer = 0,
+  x = 416,
+  y = 325,
+  direction = 0,
+  breed = "normal_enemies/arborgeist_stump",
 }
 
 tile{

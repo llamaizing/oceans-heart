@@ -90,7 +90,7 @@ function enemy:check_to_attack()
       enemy:pattern_attack()
       sol.timer.start(map, 15000, function() can_pattern_attack = true end)
 
-    elseif can_surround_attack then
+    elseif can_surround_attack and enemy:get_distance(hero) < 300 then
       attacking = true
       can_surround_attack = false
       enemy:surround_attack()
@@ -389,7 +389,7 @@ end
 
 
 function enemy:melee_attack()
-  sprite:set_animation("wind_up_sword")
+  sprite:set_animation("wind_up")
   sol.timer.start(map, 800, function()
     sprite:set_animation("attack", function() sprite:set_animation("walking") end)
     enemy:create_sprite("enemies/misc/sea_king_sword_slash")
