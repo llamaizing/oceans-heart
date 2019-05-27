@@ -1697,42 +1697,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 736,
-  y = 240,
-  width = 32,
-  height = 32,
-  pattern = "565",
-}
-
-tile{
-  layer = 0,
-  x = 736,
-  y = 320,
-  width = 32,
-  height = 32,
-  pattern = "565",
-}
-
-tile{
-  layer = 0,
-  x = 816,
-  y = 240,
-  width = 32,
-  height = 32,
-  pattern = "565",
-}
-
-tile{
-  layer = 0,
-  x = 816,
-  y = 320,
-  width = 32,
-  height = 32,
-  pattern = "565",
-}
-
-tile{
-  layer = 0,
   x = 992,
   y = 176,
   width = 80,
@@ -2860,124 +2824,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 304,
-  y = 312,
-  width = 240,
-  height = 128,
-  pattern = "33",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
-  x = 488,
-  y = 304,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 576,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 488,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 320,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 272,
-  y = 376,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 320,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 464,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 368,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 384,
-  width = 16,
-  height = 16,
-  pattern = "38",
-}
-
-tile{
-  layer = 0,
   x = 464,
   y = 800,
   width = 96,
@@ -3162,6 +3008,166 @@ tile{
   width = 16,
   height = 96,
   pattern = "116",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 336,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 336,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 336,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 272,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 272,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 272,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 144,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 144,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 864,
+  y = 144,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 336,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 272,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "64",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 144,
+  width = 32,
+  height = 32,
+  pattern = "64",
   tileset = "palace_of_storms",
 }
 
@@ -5116,8 +5122,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "snapmast_reef/cemetery_of_the_waves/shipwreck_chain",
-  destination = "special_switchtesting_place",
+  destination_map = "goatshead_island/goatshead_harbor",
 }
 
 custom_entity{
@@ -5238,8 +5243,8 @@ pickable{
 
 enemy{
   layer = 0,
-  x = 520,
-  y = 381,
+  x = 904,
+  y = 277,
   direction = 0,
   breed = "bosses/centipede_king",
 }
@@ -5299,6 +5304,19 @@ pickable{
   treasure_name = "sword",
 }
 
+wall{
+  layer = 0,
+  x = 992,
+  y = 128,
+  width = 8,
+  height = 256,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 1,
   x = 192,
@@ -5333,42 +5351,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "112",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 208,
-  width = 32,
-  height = 32,
-  pattern = "566",
-}
-
-tile{
-  layer = 1,
-  x = 736,
-  y = 288,
-  width = 32,
-  height = 32,
-  pattern = "566",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 208,
-  width = 32,
-  height = 32,
-  pattern = "566",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 288,
-  width = 32,
-  height = 32,
-  pattern = "566",
 }
 
 tile{
