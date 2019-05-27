@@ -171,10 +171,6 @@ function boss_sensor:on_activated()
   end
 end
 
-function sea_king_boss:on_dying()
-  sol.timer.stop_all(map)
-end
-
 
 
 
@@ -195,6 +191,64 @@ end
 
 
 
+
+
+
+--------------BOSS---------------------------
+function sea_king_boss:on_hurt()
+--  if sea_king_boss:get_life() <= 2 then
+    sol.timer.stop_all(sea_king_boss)
+    sol.timer.stop_all(map)
+    sea_king_boss:hurt(500)
+--  end
+end
+
+function sea_king_boss:on_dead()
+  map:open_doors("boss_door")
+--start falling rocks
+  map:building_collapse()
+end
+
+
+function map:building_collapse()
+  local i = 1
+
+  --targeted rocks
+  sol.timer.start(map, 1000, function()
+      local x, y, l = hero:get_position()
+      map:create_falling_rock(x, y, l)
+      if i < math.random(3, 6) then
+        i = i + 1
+        return math.random(1000, 2500)
+      else
+        i = 1
+        return math.random(4000, 5000)
+      end
+  end)
+  --general rocks
+  sol.timer.start(map, 200, function()
+    local x, y, l = hero:get_position()
+    x = x + math.random(-200, 200)
+    y = y + math.random(-100, 100)
+    map:create_falling_rock(x, y, l)
+    return math.random(200, 1000)
+  end)
+
+end
+
+function map:create_falling_rock(x, y, l)
+  map:create_enemy{
+    direction = 0, layer = l, x = x + math.random(-16, 16), y = y + math.random(-16, 16),
+    breed = "misc/falling_rock"
+  }
+end
+
+
+
+
+
+
+
 ---------------FOG--------------
 white_surface = sol.surface.create()
   white_surface:fill_color({255,255,255})
@@ -207,7 +261,7 @@ fog:set_opacity(25)
 local fog2 = sol.surface.create("fog/big_water_dark.png")
 fog2:set_blend_mode("multiply")
 fog2:set_opacity(25)
-fog2:set_xy(-500,-200)
+fog2:set_xy(-500,-150)
 local fog3 = sol.surface.create("fog/water_squiggles.png")
 fog3:set_blend_mode("blend")
 fog3:set_opacity(30)

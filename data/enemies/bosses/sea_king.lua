@@ -82,13 +82,13 @@ function enemy:check_to_attack()
       enemy:throw_sword()
       sol.timer.start(map, 10000, function() can_throw_sword = true end)
 
-    elseif can_tide_attack then
+    elseif can_tide_attack and enemy:get_life() > game:get_value("sword_damage") then
       attacking = true
       can_tide_attack = false
       enemy:tide_attack()
       sol.timer.start(map, 15000, function() can_tide_attack = true end)
 
-    elseif can_pattern_attack then
+    elseif can_pattern_attack and enemy:get_life() > game:get_value("sword_damage") then
       attacking = true
       can_pattern_attack = false
       enemy:pattern_attack()
@@ -112,7 +112,7 @@ function enemy:check_to_attack()
       enemy:summon_helpers()
       sol.timer.start(map, 10000, function() can_summon_helpers = true end)
 
-    elseif can_beam_attack then
+    elseif can_beam_attack and enemy:get_life() > game:get_value("sword_damage") then
       attacking = true
       can_beam_attack = false
       enemy:beam_attack()
