@@ -248,6 +248,17 @@ local data = {
 		width = 228, height = 168, --UPDATED
 		x = 180, y = 52, --UPDATED
 	},
+	{ --custom item sprite to be added to desc text
+		id = "misc_items",
+		layer = "array.vertical", --array has less overhead than group and is fine if only one entry
+		subcomponent = {
+			layer = "sprite.item_icon",
+			--height/width determined by sprite
+			count = 1,
+		},
+		width = 228, height = 168,
+		x = 180, y = 52,
+	},
 	
 	
 	--// other settings
@@ -282,9 +293,9 @@ local data = {
 	},
 	desc_item = { --each icon in desc_items (10 instances for $i0 to $i9)
 		{
-			sub_id = "item_icon",
-			layer = "image.item_icon",
-			width = 16, height = 16,
+			sub_id = "item_sprite",
+			layer = "sprite.item_icon",
+			--height/width determined by sprite
 			x = 3, y = 3,
 		},
 		{

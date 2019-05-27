@@ -1,6 +1,6 @@
 --[[ objectives_manager.lua
 	version 1.0a2
-	15 Dec 2018
+	17 May 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -78,6 +78,7 @@
 local objectives_manager = {}
 
 local STATUS_LIST = {
+	"alternate_swap",
 	"side_advanced_again",
 	"main_advanced_again",
 	"obtained_quest_item",
@@ -121,7 +122,7 @@ function objectives_manager.create(game)
 		active_npcs = {}
 		for _,sub_list in pairs(objectives_list) do
 			for _,objective in ipairs(sub_list) do
-				if not objective:is_done() then
+				if objective:is_active_alt()~=false and not objective:is_done() then
 					local npc = objective:get_active_npc()
 					if npc then active_npcs[npc] = true end
 				end
@@ -259,7 +260,8 @@ function objectives_manager.create(game)
 		local replace_s = properties.replace_s --(table, combo or nil) list of save val keys and callback function to perform string substitution on desc string, if nil then no substitutions
 		local replace_v = properties.replace_v --(table, combo or nil) list of save val keys and callback function to perform value substitution on desc string, if nil then no substitutions
 		local checkmarks = properties.checkmarks --(table, combo or nil) list of save val keys and callback function to determine state of dynamic checkmarks, if nil then no dynamic checkmarks
-		local item_info = {} --(table, array) list of entries (table, key/value) corresponding to each quest item associated with this quest
+		local item_info = {} --(table, array) list of item ids corresponding to each quest item associated with this quest
+			--TODO remove comments below:
 			--id: (string) equipment item id for this entry
 			--name_key: (string) strings.dat key whose value is used to get the localized display name of the item
 			--item: (sol.item) instance of the equipment item
@@ -294,6 +296,7 @@ function objectives_manager.create(game)
 		--| interacting with the npc will either add the quest to the player's log or advance it to the next phase
 		local active_item_index --(number, positive integer) index of objectives.dat item with highest rank that is currently in player inventory
 		local active_items = {} --(table, key,value) status of first 9 quest items, keys are the number of the quest item, values are true if that item is currently in the player's inventory
+		local is_all_items --(boolean or nil) true if player has all quest items
 		local latest_status = nil --(string or false or nil) string describing the latest update status for this quest, or false if it hasn't been updated
 		--| value is nil prior to initial loading and becomes false when loading is done
 		
@@ -418,30 +421,28 @@ function objectives_manager.create(game)
 		local items = properties.items --convenience, list of quest items (table, array or nil), entries with higher index take precedence
 		if items then --is table
 			assert(type(items)=="table", "Bad property items to 'add_objective' (table or nil expected)")
-			for i,info in ipairs(items) do
-				assert(type(info)=="table", "Bad property items["..i.."] (table expected)")
+			for i,item_str in ipairs(items) do
+				assert(type(item_str)=="string", "Bad property items["..i.."] to 'add_objective' (string expected)")
 				
-				local item_id = info.id --convenience
-				assert(type(item_id)=="string", "Bad property items["..i.."].id to 'add_objective' (string expected)")
+				local item_id, variant = item_str:match"^([_%w]+)%.(%d+)$"
+				variant = tonumber(variant)
+				assert(item_id and variant, "Bad property items["..i.."] to 'add_objective', item identifier must be 'item_id.variant' where variant is a number")
+				--TODO verify variant is valid number
+				
 				local item = game:get_item(item_id)
-				assert(item, "Bad property items["..i.."].id to 'add_objective', item not found: "..item_id)
+				assert(item, "Bad property items["..i.."] to 'add_objective', item not found: "..item_id)
 				
-				local item_key = info.name_key --convenience
-				assert(type(item_key)=="string", "Bad property items["..i.."].name_key to 'add_objective' (string or nil expected)")
-				
-				local icon_index = tonumber(info.icon_index)
-				assert(icon_index, "Bad property items["..i.."].icon_index to 'add_objective' (string or nil expected)")
-				icon_index = math.floor(icon_index)
-				
+				local item_key = "item."..item_str
 				local save_val = item:get_savegame_variable()
+				
 				if save_val then
 					add_custom_input(save_val)
 					table.insert(item_info, {
 						id = item_id,
-						name_key = item_key,
-						item = item,
-						save_val = save_val,
-						icon_index = icon_index,
+						variant = variant,
+						name_key = item_key, --strings.dat entry giving name of item
+						item = item, --sol.item object
+						save_val = save_val, --name of savegame variable for item
 					})
 				end
 			end
@@ -506,33 +507,40 @@ function objectives_manager.create(game)
 					values.npc_id = active_npc --npc from prev phase
 					values.item_id = active_item_index and item_info[active_item_index].id --item from prev phase
 					
-					
 					current_phase = tonumber(calc_phase.callback(values) or false) --TODO should allow implicit return of nil?
 				end
 				
-				--do not start quest if an alternate quest is already active
-				if alternate_key and current_phase and not prev_phase then --is alternate quest that was just started
-					local alternate_objective = alternates_list[alternate_key].active
-					if alternate_objective and alternate_objective ~= self --already an active alternate quest
-					and alternate_objective:get_current_phase() then --alternate quest is active
-						current_phase = nil --do not start this quest because alternate quest already active
-						return false --status is not worth noting
+				--determine if alternate quest that became active or became in-active
+				if alternate_key then
+					if current_phase and not prev_phase then --is alternate quest that was just started
+						--do not start quest if an alternate quest is already active
+						local alternate_objective = alternates_list[alternate_key].active
+						if alternate_objective and alternate_objective ~= self --already an active alternate quest
+						and alternate_objective:get_current_phase() then --alternate quest is active
+							current_phase = nil --do not start this quest because alternate quest already active
+							return false --status is not worth noting
+						end
+						
+						--this quest becomes the active alternate quest
+						game:set_value(alternate_key, index)
+						alternates_list[alternate_key].active = self
+					elseif prev_phase and not current_phase then --is alternate quest that went from active to in-active
+						--the quest is no longer the active alternate quest
+						game:set_value(alternate_key, nil)
+						alternates_list[alternate_key].active = nil
 					end
-					
-					--this quest becomes the active alternate quest
-					game:set_value(alternate_key, index)
-					alternates_list[alternate_key].active = self
 				end
 				
 				--determine if player has quest item in inventory
 				active_item_index = nil --start fresh
+				is_all_items = #item_info>0 --assume true until proven false, quest must have at least one quest item
 				active_items = {}
 				for i=#item_info,1,-1 do --iterate backwards to find highest index of item in player's inventory
 					local item_save_val = item_info[i].save_val
 					if game:get_value(item_save_val) then
 						if not active_item_index then active_item_index = i end --only save first entry
 						if i<=9 then active_items[i] = true end
-					end
+					else is_all_items = false end
 				end
 				
 				--determine the active npc, if any
@@ -714,18 +722,35 @@ function objectives_manager.create(game)
 			--returns (number, positive integer or nil) - item index, or nil if the player doesn't gave any quest items
 		function new_objective:get_active_item_index() return active_item_index end
 		
-		--// Returns the icon index corresponding to the highest ranked quest item in the player's inventory
-			--returns (number, positive integer or nil) - icon index, or nil if the player doesn't have any quest items
-		function new_objective:get_active_item_icon()
-			return active_item_index and item_info[active_item_index].icon_index
+		--TODO WIKI add new function to wiki
+		function new_objective:get_item_id(index)
+			if index then
+				index = tonumber(index)
+				assert(index, "Bad argument #2 to 'get_item_sprite_info' (number or nil expected)")
+			elseif active_item_index then
+				index = active_item_index
+			else return nil, nil end
+			
+			local info = item_info[index]
+			if not info then return nil, nil end
+			
+			return info.id, info.variant
 		end
 		
+		--TODO WIKI remove wiki entry
+		--// Returns the icon index corresponding to the highest ranked quest item in the player's inventory
+			--returns (number, positive integer or nil) - icon index, or nil if the player doesn't have any quest items
+		--function new_objective:get_active_item_icon()
+		--	return active_item_index and item_info[active_item_index].icon_index
+		--end
+		
+		--TODO WIKI remove wiki entry
 		--// Returns the icon index of the item at the specified index
 			--index (number, positive integer) - specified which item to return the icon of
 			--returns (number, positive integer or nil) - the icon index for the item, or nil if not defined in objectives.dat
-		function new_objective:get_item_icon(index)
-			return item_info[index] and item_info[index].icon_index
-		end
+		--function new_objective:get_item_icon(index)
+		--	return item_info[index] and item_info[index].icon_index
+		--end
 		
 		function new_objective:get_item_save_val(index)
 			return item_info[index] and item_info[index].save_val
@@ -766,12 +791,6 @@ function objectives_manager.create(game)
 			['?'] = function(rank, phase) return phase > rank end,
 			['#!'] = function(rank, phase) return phase <= rank end,
 			['?!'] = function(rank, phase) return false end, --never visible
-			['%?'] = function(rank, phase) return phase >= rank and active_item_index end,
-			['%!'] = function(rank, phase) return phase >= rank and not active_item_index end,
-			['#%?'] = function(rank, phase) return active_item_index end,
-			['#%!'] = function(rank, phase) return not active_item_index end,
-			['%%'] = function(rank, phase, digit) return phase >= rank and active_items[digit] end, --%0 thru %9
-			['#%%'] = function(rank, phase, digit) return active_items[digit] end, --#%0 thru #%9
 		} --do not include % escape char
 		SPECIAL_CHAR_VISIBILITY['##'] = SPECIAL_CHAR_VISIBILITY['#'] --visibility behavior is the same (coloring is not)
 		SPECIAL_CHAR_VISIBILITY['!?'] = SPECIAL_CHAR_VISIBILITY['?!'] --allow reverse order
@@ -831,6 +850,7 @@ function objectives_manager.create(game)
 			
 			local item_positions = {} --index of first line containing $i
 			local phase_breaks = {} --list of line indicies where phase break occurs
+			local first_filler_line --line where first "visible" filler occurs (add extra blank lines here)
 			local look_for_next_break = false --while true, finding a ; or beginning with @ will cause a phase break
 			local first_line_break --line where first blank line after line beginning with @ occurs
 				--need to remember this retroactively in case no beginning ; found between lines with @
@@ -877,19 +897,23 @@ function objectives_manager.create(game)
 				
 				--// strip out special characters and comments
 				
+				entry.is_filler = not not line:match"^%s*#?::" --line begins with ::
+				if entry.is_filler then line = line:gsub("::", "", 1) end --remove first instance of ::
+				
+				--strip %0 thru %9 characters (max of 1 per line)
+				local char = line:match"^%s*#?%%(.)"
+				local digit = tonumber(char)
+				if char=="=" or char=="~" or char=="&" then digit = char end
+				if digit then --contains instance of %0 thru %9 or %= or %~ or %&
+					line = line:gsub("%%.", "", 1) --remove first instance of %0-%9 or %= or %~ or %&
+					entry.item_marker = digit
+				end
+				
 				--create string for current line stripped of comments and leading special characters
 				local stripped_text = line:match"^(.-)%-%-//" --remove comments
 				if stripped_text then
 					if stripped_text:match"^%s*$" then entry.is_comment = true end --line contains exclusively whitespace and comments
 				else stripped_text = line end --line is already stripped of comments
-				
-				--strip %0 thru %9 characters (max of 1 per line)
-				local digit = tonumber(stripped_text:match"^%s*#?%%(%d)")
-				if digit then --contains instance of %0 thru %9
-					stripped_text = stripped_text:gsub("%%%d", "", 1) --remove first instance of $0 thru %9
-					entry.item_index = digit
-					line = line:gsub("%%%d", "%%%%", 1) --replace digit with second %
-				end
 				
 				--strip leading special characters
 				local search_pattern = "^%s*["..SPECIAL_CHARSET.."]["..SPECIAL_CHARSET
@@ -897,15 +921,36 @@ function objectives_manager.create(game)
 				stripped_text = stripped_text:match(search_pattern) or stripped_text --special chars now removed from body text
 				entry.line = line --line preserves beginning special characters
 				
-				--check for first instance of item image marker $i, additional instances ignored
+				--// determine where to place item icons then strip out special characters
+				
 				item_positions[#lines] = {}
+				
+				--look for and save misc_item icon placeholder text, make substitution later
+				local misc_item_text --text for misc_item icon placeholder, may be nil if not present
+				local item_id, variant = stripped_text:match"%$ITEM{([_%w]+)%.(%d+)}"
+				if item_id then misc_item_text = "%$ITEM{"..item_id.."%."..variant.."}" end
+				
+				--check for first instance of item image marker $i, additional instances ignored
 				local pre_text, icon_num = stripped_text:match"^(.-)%$i(%d)" --text preceding $i
 				while pre_text do
 					if not item_positions[#lines][icon_num] then
+						if misc_item_text then
+							pre_text = pre_text:gsub(misc_item_text, "")
+						end
+						
 						item_positions[#lines][icon_num] = pre_text
 					end
 					stripped_text = stripped_text:gsub("%$i"..icon_num, "") --remove matching $i instances, no longer needed
 					pre_text, icon_num = stripped_text:match"^(.-)%$i(%d)" --text preceding $i for next loop
+				end
+				
+				--substitute for misc_item icon
+				if misc_item_text then
+					pre_text = stripped_text:match("^(.-)"..misc_item_text)
+					item_positions[#lines]['11'] = pre_text --TODO allow more than one misc_item icon?
+					item_positions.item_id = item_id
+					item_positions.variant = variant
+					stripped_text = stripped_text:gsub(misc_item_text, "")
 				end
 				
 				entry.text = stripped_text
@@ -914,8 +959,10 @@ function objectives_manager.create(game)
 				entry.is_check = not not line:match"^%s*@" --line begins with @ (has checkmark)
 				entry.is_persistent = not not line:match"^%s*[@;]?#" --line beginning with # (always active/visible)
 				entry.do_not_grey = not not (line:match"^%s*[;]?##" or line:match"^%s*#%%") --line must begin with ## or #% in order to not be greyed out
-				local is_empty = line:match"^%s*$" --non-nil if line contains entirely whitespace (no special chars or comments either)
-				local is_phase_break = line:match"^%s*;" --line begins with ;
+				local is_empty = line:match"^%s*$" and not entry.is_filler and not digit --non-nil if line contains entirely whitespace (no special chars or comments either)
+				local is_phase_break = line:match"^%s*;" --non-nil if line begins with ;
+				entry.is_hard_break = not not line:match"^%s*;;" --line begins with ;; (also counts as phase break)
+				if entry.is_hard_break or entry.is_filler then entry.is_comment = true end
 				
 				--determine where phase breaks occur
 				if look_for_next_break then --search for first ; or first empty line or @
@@ -938,10 +985,11 @@ function objectives_manager.create(game)
 			end
 			
 			local visible_lines = {items={}} --(table, combo) list of lines to be visible in quest desc box, plus additional settings
-				--items (table, array) - entries at indices 1 thru 9 for the first instance of corresponding $i1 thru $i9 among visible liens, nil if not present
+				--items (table, array) - entries at indices 1 thru 9 for the first instance of corresponding $i1 thru $i9 among visible lines, nil if not present
 					--(table, key/value) - contains the line number it is present on and preceding text to be able to calculate horz position of where it occurs
 						--line (number, positive integer) - line number where the "%i"..n instance occurs counting visible lines only. First visible line is 1, etc.
 						--text (string) - all the text on the line (special characters stripped out) before the "%i"..n instance, needed to calc horz position, may be empty string
+				--filler (number, positive integer or nil) line to insert filler lines
 				--(table, key/value) - indices contain table of properties for each visible line
 					--line (string) - raw text of the current line (includes beginning special characters but comments removed)
 					--text (string) - text of the current line with all special characters and comments removed
@@ -956,7 +1004,8 @@ function objectives_manager.create(game)
 					--is_grey (boolean) - true if the text on this line should be greyed out because its associated phase is completed
 					--do_not_grey (boolean) - true if the text on this line does not grey out until the quest is complete (line begins with "##" or "#%" ignoring leading whitespace)
 					--is_comment (true or nil) - true if the line contains a comment with nothing else besides whitespace, in which case the line will not be shown at all, otherwise nil
-					--item_index (number, non-negative integer or nil) - The number (0-9) following the % character at the beginning of a line, otherwise nil
+					--item_marker (number, non-negative integer or string ("=" or "~" or "&") or nil) - The value following the % character at the beginning of a line, otherwise nil
+					--is_hard_break (boolean) - true if all text on this line and below should be ignored
 			
 			--second pass: determine visibility of each line based on its rank and the current phase
 			local rank = 0
@@ -969,8 +1018,33 @@ function objectives_manager.create(game)
 				local special_chars = entry.line:match("^["..IGNORE_CHARSET.."]*(["..SPECIAL_VISIBLE.."]*)")
 				if special_chars then special_chars:sub(1,3) end --only care about the first (up to) 3 special chars
 				local visibility = SPECIAL_CHAR_VISIBILITY[special_chars] or SPECIAL_CHAR_VISIBILITY.default --lookup function to use
-				entry.is_visible = visibility(rank, phase, entry.item_index)
-				if entry.is_visible and not entry.is_comment then --don't bother with the rest if not visible
+				local is_visible = visibility(rank, phase)
+				
+				--additional visibility checks for item marker, may hide line
+				local item_marker = entry.item_marker --convenience
+				if item_marker and is_visible then --additional checks if line contained %0-%9,%= or %~
+					if type(item_marker)=="number" then
+						if not active_items[item_marker] then is_visible = false end --note %0 has no effect
+					elseif item_marker=="=" then
+						if not active_item_index then is_visible = false end
+					elseif item_marker=="~" then
+						if active_item_index then is_visible = false end
+					elseif item_marker=="&" then
+						if not is_all_items then is_visible = false end
+					end
+				end
+				entry.is_visible = is_visible
+				
+				if entry.is_filler and is_visible and not visible_lines.filler then --look for first visible filler line
+					visible_lines.filler = #visible_lines + 1
+				end
+				
+				if entry.is_hard_break
+				and current_phase + (phase_breaks[i] and 1 or 0) == rank then
+					break --remaining lines are not visible
+				end
+				
+				if is_visible and not entry.is_comment then --don't bother with the rest if not visible
 					local primary_is_grey = not entry.do_not_grey and (phase>rank) --persistent lines never grey
 					local dynamic_is_grey = subs_check[entry.check_index] or false
 					
@@ -999,6 +1073,10 @@ function objectives_manager.create(game)
 									line = #visible_lines, --line number is when counting visible lines only
 									text = text,
 								}
+								if num_index==11 then --is misc_item
+									visible_lines.items[num_index].item_id = item_positions.item_id
+									visible_lines.items[num_index].variant = tonumber(item_positions.variant)
+								end
 							end
 						end
 					end
@@ -1037,6 +1115,20 @@ function objectives_manager.create(game)
 		
 		--// Returns the alternate_key (string or nil) for this quest, nil if not an alternate quest
 		function new_objective:get_alternate_key() return alternate_key end
+		
+		--// Returns whether this objective is the one in the quest log among its alternates
+			--possible return values:
+				--true - this objective is present in the quest log (may or may not be done, may or may not have any alternates)
+				--false - a different alternate objective is present in the quest log
+				--nil - this objective is not present in the quest log and neither are any of the alternates (if any)
+		function new_objective:is_active_alt()
+			local alt_list = alternates_list[alternate_key]
+			if alt_list then
+				if alt_list.active then
+					return self == alt_list.active
+				else return nil end --there isn't an alternate in the quest log
+			else return current_phase and true or nil end --has no alternate, return true if present in quest log, otherwise nil
+		end
 		
 		--// Removes objective from quest log, internal use only
 		function new_objective:deactivate()
@@ -1214,10 +1306,11 @@ function objectives_manager.create(game)
 		
 		--check if a different alternate quest is currently active
 		local old_alt = alt_info.active
-		if not old_alt or not old_alt:is_done() then
+		if not old_alt or not old_alt:is_done() then --there is not an active alternate, or if there is it is not done
+			--deactivate current alternate if there is one
 			if old_alt then
 				alt_info.active = nil
-				old_alt:deactivate() --remove old quest from quest log menu
+				old_alt:deactivate() --removes from quest log menu
 			end
 			
 			game:set_value(alt_key, quest_index)
@@ -1231,6 +1324,12 @@ function objectives_manager.create(game)
 						if alt_info.active then break end --quest activated, don't need to refresh any more
 					end
 				end
+			end
+			
+			if old_alt ~= alt_info.active then --the active alternate changed
+				refresh_npcs() --update list of active npcs
+				local status_dialog_id = alt_info.active and alt_info.active:get_dialog_id() --dialog id of newly active alternate if there is one
+				if self.on_new_task then self:on_new_task("alternate_swap", status_dialog_id) end --call event if it exists
 			end
 		end
 	end
@@ -1269,7 +1368,7 @@ end
 
 return objectives_manager
 
---[[ Copyright 2018 Llamazing
+--[[ Copyright 2018-2019 Llamazing
   [[ 
   [[ This program is free software: you can redistribute it and/or modify it under the
   [[ terms of the GNU General Public License as published by the Free Software Foundation,
