@@ -152,6 +152,23 @@ for switch in map:get_entities("f5_switch") do
   end
 end
 
+function d3_switch_1:on_activated()
+  map:focus_on(map:get_camera(), d3_door_1, function()
+    map:open_doors("d3_door_1")
+  end)
+end
+
+function d3_switch_2:on_activated()
+  map:focus_on(map:get_camera(), d3_door_2, function()
+    map:open_doors("d3_door_2")
+  end)
+end
+
+function d3_switch_3:on_activated()
+  map:focus_on(map:get_camera(), d3_door_3, function()
+    map:open_doors("d3_door_3")
+  end)
+end
 
 
 
