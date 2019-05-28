@@ -1,6 +1,6 @@
 --[[ text.lua
 	version 1.0a1
-	15 Dec 2018
+	17 May 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -176,16 +176,11 @@ function control.create(properties, width, height)
 		else return function() end end
 	end})
 	
-	--// Returns size of given text string; does not change content of text_surface
-		--new_text (string) - text to get the size of
+	--// Returns size of a given text string
+		--txt (string) - text to get the size of
 		--returns width and height of text in pixels (number, non-negative integer)
-	function new_control:test_text_size(new_text)
-		local orig_text = text_surface:get_text()
-		text_surface:set_text(new_text)
-		local text_width,text_height = text_surface:get_size()
-		text_surface:set_text(orig_text)
-		
-		return text_width,text_height
+	function new_control:get_predicted_size(txt)
+		return sol.text_surface.get_predicted_size(font, font_size, txt)
 	end
 	
 	--// Returns the width and height (number) of the text region in pixels
@@ -341,7 +336,7 @@ end
 
 return control
 
---[[ Copyright 2016-2018 Llamazing
+--[[ Copyright 2016-2019 Llamazing
   [[ 
   [[ This program is free software: you can redistribute it and/or modify it under the
   [[ terms of the GNU General Public License as published by the Free Software Foundation,
