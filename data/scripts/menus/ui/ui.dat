@@ -145,12 +145,6 @@ image{
 	id = "image.complete",
 	image = "menus/complete.png",
 }
-image{
-	id = "image.item_icon",
-	image = "hud/items.png",
-	region_width = 16, region_height = 16,
-	--region_x & region_y set dynamically
-}
 
 sprite{
 	id = "sprite.checkmark",
@@ -177,9 +171,9 @@ sprite{
 	animation = "arrow_right",
 }
 sprite{
-	id = "sprite.ruby",
+	id = "sprite.item_icon",
 	sprite = "entities/items",
-	animation = "ruby",
+	--animation & direction set dynamically
 }
 
 array{ --generic vertical array
