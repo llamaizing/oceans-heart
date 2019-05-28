@@ -17,7 +17,6 @@ function enemy:on_created()
     enemy:set_push_hero_on_sword(false)
     self:set_size(32, 24)
     self:set_origin(16, 21)
-
 end
 
 -- Event called when the enemy should start or restart its movements.

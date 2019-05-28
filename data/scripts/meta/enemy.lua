@@ -73,7 +73,8 @@ function enemy_meta:on_hurt(attack)
 
   if attack == "fire" then
     local game = self:get_game()
-    local fire_damage = game:get_value("fire_damage")
+    local fire_damage = game:get_value("sword_damage")
+    if self.weak_to_fire then fire_damage = fire_damage * 2 end
     self:remove_life(fire_damage)
     self:react_to_fire()
   end

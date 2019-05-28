@@ -1,6 +1,5 @@
 local enemy = ...
 
-
 local behavior = require("enemies/lib/toward_hero_octorok")
 
 local properties = {
@@ -18,7 +17,7 @@ behavior:create(enemy, properties)
 
 function enemy:on_dying()
   random = math.random(100)
-  if random < 15 then
+  if random < 8 then
     local map = enemy:get_map()
     local x, y, layer = enemy:get_position()
     map:create_pickable{

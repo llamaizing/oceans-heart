@@ -33,7 +33,7 @@ end
 
 function enemy:on_dying()
   random = math.random(100)
-  if random < 35 then
+  if random < 9 then
     local map = enemy:get_map()
     local x, y, layer = enemy:get_position()
     map:create_pickable{

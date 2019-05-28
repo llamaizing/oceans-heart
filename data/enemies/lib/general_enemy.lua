@@ -493,17 +493,19 @@ end
     if sprite:has_animation("orbit_attack_wind_up") then sprite:set_animation("orbit_attack_wind_up") end
     for i=1, NUM_PROJECTILES do
       sol.timer.start(map, CHARGE_TIME/NUM_PROJECTILES * i, function()
-        sol.audio.play_sound(properties.orbit_attack_summon_sound or "summon_in")
-        projectiles[i] = map:create_enemy({
-          x = x, y = y, layer = layer, direction = direction,
-          breed = properties.orbit_attack_projectile_breed
-        })
-        local m = sol.movement.create("circle")
-        m:set_center(enemy)
-        m:set_radius(properties.orbit_attack_radius or 32)
-        m:set_angular_speed(8)
-        m:set_ignore_obstacles(true)
-        m:start(projectiles[i])
+        if enemy:get_life() >= 1 then
+          sol.audio.play_sound(properties.orbit_attack_summon_sound or "summon_in")
+          projectiles[i] = map:create_enemy({
+            x = x, y = y, layer = layer, direction = direction,
+            breed = properties.orbit_attack_projectile_breed
+          })
+          local m = sol.movement.create("circle")
+          m:set_center(enemy)
+          m:set_radius(properties.orbit_attack_radius or 32)
+          m:set_angular_speed(8)
+          m:set_ignore_obstacles(true)
+          m:start(projectiles[i])
+        end
         if i == NUM_PROJECTILES then sprite:set_animation("walking") end
       end)
     end
@@ -512,19 +514,23 @@ end
       enemy:wrap_up_attack()
       local DELAY = properties.orbit_attack_projectile_delay or 300
       for i=1, #projectiles do
-        if projectiles[i]:exists() and projectiles[i]:get_life() > 0 then
+        if projectiles[i] and projectiles[i]:get_life() > 0 then
           sol.timer.start(map, (DELAY * i), function()
-            local m = sol.movement.create("straight")
-            m:set_angle(enemy:get_angle(hero))
-            m:set_speed(160)
-            m:set_smooth(false)
-            projectiles[i]:stop_movement()
-            sol.audio.play_sound(properties.orbit_attack_launch_sound or "shoot_magic")
-            m:start(projectiles[i], function() projectiles[i]:remove() end)
-            function m:on_obstacle_reached() projectiles[i]:remove() end
-            if properties.use_projectile_go_method then
+            if enemy:get_life() >= 1 then
+              local m = sol.movement.create("straight")
+              m:set_angle(enemy:get_angle(hero))
+              m:set_speed(160)
+              m:set_smooth(false)
               projectiles[i]:stop_movement()
-              projectiles[i]:go(enemy:get_angle(hero))
+              sol.audio.play_sound(properties.orbit_attack_launch_sound or "shoot_magic")
+              m:start(projectiles[i], function() projectiles[i]:remove() end)
+              function m:on_obstacle_reached() projectiles[i]:remove() end
+              if properties.use_projectile_go_method then
+                projectiles[i]:stop_movement()
+                projectiles[i]:go(enemy:get_angle(hero))
+              end
+            else
+              projectiles[i]:remove_life(100)
             end
           end)
         end
@@ -547,18 +553,20 @@ end
     if sprite:has_animation("radial_attack_wind_up") then sprite:set_animation("radial_attack_wind_up") end
     for i=1, NUM_PROJECTILES do
       sol.timer.start(map, CHARGE_TIME / NUM_PROJECTILES * i, function()
-        sol.audio.play_sound(properties.radial_attack_summon_sound or "summon_in")
-        projectiles[i] = map:create_enemy({
-          x = x, y = y, layer = layer, direction = direction,
-          breed = properties.radial_attack_projectile_breed
-        })
-        local m = sol.movement.create("circle")
-        m:set_center(enemy)
-        m:set_radius(properties.radial_attack_radius or 32)
-        m:set_angular_speed(2 * math.pi / CHARGE_TIME * 1000)
-        m:set_ignore_obstacles(true)
-        m:start(projectiles[i])
-        if i == NUM_PROJECTILES then sprite:set_animation("walking") end
+        if enemy:get_life() >= 1 then
+          sol.audio.play_sound(properties.radial_attack_summon_sound or "summon_in")
+          projectiles[i] = map:create_enemy({
+            x = x, y = y, layer = layer, direction = direction,
+            breed = properties.radial_attack_projectile_breed
+          })
+          local m = sol.movement.create("circle")
+          m:set_center(enemy)
+          m:set_radius(properties.radial_attack_radius or 32)
+          m:set_angular_speed(2 * math.pi / CHARGE_TIME * 1000)
+          m:set_ignore_obstacles(true)
+          m:start(projectiles[i])
+          if i == NUM_PROJECTILES then sprite:set_animation("walking") end
+        end --end if life >= 1
       end)
     end
 
@@ -568,7 +576,7 @@ end
       sol.audio.play_sound("sword2")
       sol.audio.play_sound(properties.radial_attack_launch_sound or "shoot_magic")
       for i=1, NUM_PROJECTILES do
-        if projectiles[i]:exists() and projectiles[i]:get_life() > 0 then
+        if projectiles[i] and projectiles[i]:get_life() > 0 then
           local m = sol.movement.create("straight")
           m:set_angle(enemy:get_angle(projectiles[i]))
           m:set_speed(160)
