@@ -47194,6 +47194,213 @@ tile{
   tileset = "palace_of_storms",
 }
 
+tile{
+  layer = 0,
+  x = 1312,
+  y = 544,
+  width = 288,
+  height = 16,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 560,
+  width = 16,
+  height = 32,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 576,
+  width = 96,
+  height = 16,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 592,
+  width = 32,
+  height = 32,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 608,
+  width = 80,
+  height = 16,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 624,
+  width = 16,
+  height = 48,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 656,
+  width = 128,
+  height = 16,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 608,
+  width = 16,
+  height = 48,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 576,
+  width = 96,
+  height = 16,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 592,
+  width = 16,
+  height = 48,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 624,
+  width = 32,
+  height = 16,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1568,
+  y = 560,
+  width = 32,
+  height = 112,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 592,
+  width = 16,
+  height = 64,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1552,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1584,
+  y = 832,
+  width = 32,
+  height = 32,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1584,
+  y = 672,
+  width = 16,
+  height = 160,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1488,
+  y = 784,
+  width = 96,
+  height = 16,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 704,
+  width = 16,
+  height = 80,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1488,
+  y = 688,
+  width = 96,
+  height = 16,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1488,
+  y = 704,
+  width = 16,
+  height = 32,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 720,
+  width = 160,
+  height = 16,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 688,
+  width = 16,
+  height = 32,
+  pattern = "236",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 688,
+  width = 112,
+  height = 16,
+  pattern = "236",
+}
+
 separator{
   layer = 0,
   x = 408,
@@ -50323,6 +50530,81 @@ door{
   direction = 1,
   sprite = "entities/door_shutter_stone",
   savegame_variable = "storm_palace_door_e_13",
+}
+
+switch{
+  name = "d3_switch_1",
+  layer = 0,
+  x = 1408,
+  y = 576,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+door{
+  name = "d3_door_1",
+  layer = 0,
+  x = 1536,
+  y = 576,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "storm_palace_door_d3_1",
+}
+
+switch{
+  name = "d3_switch_2",
+  layer = 0,
+  x = 1424,
+  y = 624,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+chest{
+  layer = 0,
+  x = 1512,
+  y = 621,
+  treasure_name = "potion_stoneskin",
+  treasure_savegame_variable = "storm_palace_d3_optional_treasure",
+  sprite = "entities/chest",
+}
+
+door{
+  name = "d3_door_2",
+  layer = 0,
+  x = 1584,
+  y = 800,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "storm_palace_door_d3_2",
+}
+
+switch{
+  name = "d3_switch_3",
+  layer = 0,
+  x = 1440,
+  y = 688,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+door{
+  name = "d3_door_3",
+  layer = 0,
+  x = 1584,
+  y = 672,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "storm_palace_door_d3_3",
 }
 
 tile{
