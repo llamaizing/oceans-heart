@@ -224,7 +224,9 @@ end
 
 function inventory:get_item_at_current_index()
     local game = sol.main.get_game()
-    local item = game:get_item(all_items[cursor_index + 1].item)
+    local item_entry = all_items[cursor_index + 1]
+    local item
+    if item_entry then item = game:get_item(item_entry.item) end
     return item
 end
 
