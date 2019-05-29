@@ -44,7 +44,6 @@ function game_manager:create(file_name, overwrite_game)
   game.map_banner = map_banner
 
   objectives_manager.create(game)
-  pause_menu:set_game(game)
 
   -- function game:on_started()
   --   game:start_magic_regen_timer()

@@ -3,13 +3,8 @@ local multi_events = require"scripts/multi_events"
 map_screen = {x=0, y=0}
 multi_events:enable(map_screen)
 
-local game
-
 local map_id
 local map_img = sol.surface.create()
-
---// Call whenever starting new game
-function map_screen:set_game(current_game) game = current_game end
 
 --// Gets/sets the x,y position of the menu in pixels
 function map_screen:get_xy() return self.x, self.y end
@@ -24,7 +19,8 @@ function map_screen:set_xy(x, y)
 end
 
 function map_screen:on_started()
-  assert(game, "The current game must be set using 'inventory:set_game(game)'")
+  local game = sol.main.get_game()
+  assert(game, "Error: cannot start map menu because no game is currently running")
   map_id = game:get_map():get_id()
   if string.find(map_id, "new_limestone/") then
     map_id = "limestone"
