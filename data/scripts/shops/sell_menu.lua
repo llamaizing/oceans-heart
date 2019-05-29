@@ -3,9 +3,6 @@ local multi_events = require"scripts/multi_events"
 local inventory = {x=0, y=0}
 multi_events:enable(inventory)
 
-local game --the current game, must be manually updated using pause_menu:set_game()
-
-
 --All items that you could sell:
 local all_items = {
     {item = "burdock", name = "Burdock Root", price = 5},
@@ -37,9 +34,6 @@ local MAX_INDEX = ROWS*COLUMNS --when every slot is full of an item, this should
 
 local cursor_index
 
---// Call whenever starting new game
-function inventory:set_game(current_game) game = current_game end
-
 --// Gets/sets the x,y position of the menu in pixels
 function inventory:get_xy() return self.x, self.y end
 function inventory:set_xy(x, y)
@@ -50,10 +44,6 @@ function inventory:set_xy(x, y)
 
 	self.x = math.floor(x)
 	self.y = math.floor(y)
-end
-
-function inventory:on_started()
-	assert(game, "The current game must be set using 'inventory:set_game(game)'")
 end
 
 
@@ -110,13 +100,14 @@ end
 
 
 function inventory:on_started()
+    assert(sol.main.get_game(), "Error: cannot start sell menu because no game is currently running")
     self:update_description_panel()
 end
 
 
 
 function inventory:update_cursor_position(new_index)
-    local game = sol.main.game
+    local game = sol.main.get_game()
     if(new_index <= MAX_INDEX and new_index >= 0) then cursor_index = new_index
     elseif new_index > MAX_INDEX then cursor_index = 0
     elseif new_index < 0 then cursor_index = MAX_INDEX end
@@ -137,7 +128,7 @@ end
 
 function inventory:update_description_panel()
     --update description panel
-    local game = sol.main.game
+    local game = sol.main.get_game()
     if self:get_item_at_current_index() and self.description_panel
     and game:has_item(all_items[cursor_index+1].item) then
         self.description_panel:set_text(all_items[cursor_index + 1].name)
@@ -149,7 +140,7 @@ function inventory:update_description_panel()
 end
 
 function inventory:update_amounts()
-  local game = sol.main.game
+  local game = sol.main.get_game()
   for i = 1, #all_items do
     local new_amount = game:get_item(all_items[i].item):get_amount()
     if self.amounts[i] then
@@ -160,7 +151,7 @@ end
 
 
 function inventory:on_command_pressed(command)
-    local game = sol.main.game
+    local game = sol.main.get_game()
     local handled = false
 
     if command == "right" then
@@ -205,7 +196,7 @@ function inventory:on_command_pressed(command)
 end
 
 function inventory:get_item_at_current_index()
-    local game = sol.main.game
+    local game = sol.main.get_game()
     local item = game:get_item(all_items[cursor_index + 1].item)
     return item
 end

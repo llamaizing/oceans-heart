@@ -51,10 +51,6 @@ function inventory:set_xy(x, y)
     self.y = math.floor(y)
 end
 
-function inventory:on_started()
-    local game = sol.main.get_game()
-    assert(game, "Error: cannot start inventory menu because no game is currently running")
-end
 
 function inventory:initialize(game)
     --set the cursor index, or which item the cursor is over
@@ -131,6 +127,7 @@ end
 
 
 function inventory:on_started()
+    assert(sol.main.get_game(), "Error: cannot start inventory menu because no game is currently running")
     self:update_description_panel()
 end
 
