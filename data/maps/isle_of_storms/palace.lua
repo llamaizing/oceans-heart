@@ -203,7 +203,15 @@ function d_15_enemy:on_dead()
 end
 
 
-
+for enemy in map:get_entities("f12_enemy") do
+function enemy:on_dead()
+  if not map:has_entities("f12_enemy") then
+    map:focus_on(map:get_camera(), f12_door, function()
+      map:open_doors("f12_door")
+    end)
+  end
+end
+end
 
 
 
@@ -212,19 +220,11 @@ end
 
 
 --------------BOSS---------------------------
-function sea_king_boss:on_hurt()
---  if sea_king_boss:get_life() <= 2 then
-    sol.timer.stop_all(sea_king_boss)
-    sol.timer.stop_all(map)
-    sea_king_boss:hurt(500)
---  end
-end
-
-function sea_king_boss:on_dead()
+sea_king_boss:register_event("on_dead", function()
   map:open_doors("boss_door")
 --start falling rocks
   map:building_collapse()
-end
+end)
 
 
 function map:building_collapse()
@@ -282,7 +282,7 @@ fog2:set_xy(-500,-150)
 local fog3 = sol.surface.create("fog/water_squiggles.png")
 fog3:set_blend_mode("blend")
 fog3:set_opacity(30)
-fog3:set_xy(-400,-340)
+fog3:set_xy(-400,-270)
   function move_fog(fog, angle, distance)
     local m = sol.movement.create("straight")
     m:set_angle(angle)

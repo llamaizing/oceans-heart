@@ -5318,6 +5318,86 @@ wall{
   stops_projectiles = true,
 }
 
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
 tile{
   layer = 1,
   x = 192,
