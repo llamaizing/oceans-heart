@@ -51284,6 +51284,15 @@ tile{
   pattern = "96",
 }
 
+sensor{
+  name = "squid_mage_unblocker_2",
+  layer = 0,
+  x = 2136,
+  y = 2989,
+  width = 320,
+  height = 16,
+}
+
 separator{
   layer = 0,
   x = 408,
@@ -54392,7 +54401,6 @@ door{
   y = 2896,
   direction = 3,
   sprite = "entities/door_shutter_stone",
-  savegame_variable = "storm_palace_door_e_12",
 }
 
 door{
@@ -54402,7 +54410,6 @@ door{
   y = 2848,
   direction = 1,
   sprite = "entities/door_shutter_stone",
-  savegame_variable = "storm_palace_door_e_12",
 }
 
 door{
@@ -54639,33 +54646,6 @@ enemy{
 }
 
 enemy{
-  name = "f12_enemy_1",
-  layer = 0,
-  x = 2328,
-  y = 2749,
-  direction = 3,
-  breed = "normal_enemies/squid_mage_2",
-}
-
-enemy{
-  name = "f12_enemy_2",
-  layer = 0,
-  x = 2320,
-  y = 3053,
-  direction = 3,
-  breed = "normal_enemies/squid_mage_2",
-}
-
-enemy{
-  name = "f12_enemy_3",
-  layer = 0,
-  x = 2200,
-  y = 2893,
-  direction = 3,
-  breed = "normal_enemies/squid_mage_3",
-}
-
-enemy{
   name = "f12_enemy_4",
   layer = 0,
   x = 2456,
@@ -54685,10 +54665,10 @@ enemy{
 
 wall{
   layer = 0,
-  x = 2352,
-  y = 3080,
-  width = 16,
-  height = 24,
+  x = 2344,
+  y = 3072,
+  width = 32,
+  height = 40,
   stops_enemies = true,
   stops_blocks = true,
 }
@@ -54937,6 +54917,93 @@ sensor{
   x = 1920,
   y = 2845,
   width = 16,
+  height = 16,
+}
+
+wall{
+  name = "unlock_squid_mage_1",
+  layer = 0,
+  x = 2272,
+  y = 2968,
+  width = 32,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+enemy{
+  name = "f12_enemy_2",
+  layer = 0,
+  x = 2288,
+  y = 2997,
+  direction = 3,
+  breed = "normal_enemies/squid_mage_2",
+}
+
+wall{
+  name = "unlock_squid_mage_2",
+  layer = 0,
+  x = 2272,
+  y = 2832,
+  width = 32,
+  height = 32,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+enemy{
+  name = "f12_enemy_3",
+  layer = 0,
+  x = 2288,
+  y = 2861,
+  direction = 3,
+  breed = "normal_enemies/squid_mage_3",
+}
+
+wall{
+  name = "unlock_squid_mage_3",
+  layer = 0,
+  x = 2272,
+  y = 2688,
+  width = 32,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+enemy{
+  name = "f12_enemy_1",
+  layer = 0,
+  x = 2288,
+  y = 2709,
+  direction = 3,
+  breed = "normal_enemies/squid_mage_2",
+}
+
+sensor{
+  name = "squid_mage_unblocker_1",
+  layer = 0,
+  x = 2360,
+  y = 3101,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "squid_mage_unblocker_3",
+  layer = 0,
+  x = 2136,
+  y = 2845,
+  width = 320,
   height = 16,
 }
 

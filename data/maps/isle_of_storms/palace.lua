@@ -188,6 +188,17 @@ function boss_sensor:on_activated()
   end
 end
 
+function squid_mage_unblocker_1:on_activated()
+  unlock_squid_mage_1:set_enabled(false)
+end
+
+function squid_mage_unblocker_2:on_activated()
+  unlock_squid_mage_2:set_enabled(false)
+end
+
+function squid_mage_unblocker_3:on_activated()
+  unlock_squid_mage_3:set_enabled(false)
+end
 
 
 

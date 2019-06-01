@@ -16,12 +16,6 @@ function enemy:on_created()
   enemy:set_attack_consequence("arrow", "ignored")
   bounces = 0
   enemy:set_dying_sprite_id("enemies/enemy_killed_small")
-
-  --hack to make go through walls
-  sol.timer.start(enemy, 300, function()
-      local m = enemy:get_movemet()
-      m:set_ignore_obstacles(true)
-  end)
 end
 
 function enemy:set_max_bounces(amount)
