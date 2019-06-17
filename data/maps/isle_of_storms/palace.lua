@@ -28,10 +28,41 @@ map:register_event("on_started", function()
 
   map:set_doors_open("boss_door")
 
+--disable entities once they've moved on
+  if game:get_value("storm_palace_sea_king_tease_1") then
+    sea_tease_1:set_enabled(false)
+    teaser_king_1:set_enabled(false)
+    dying_pirate_a_1:set_enabled(false)
+    dying_pirate_a_2:set_enabled(false)
+  end
+  if game:get_value("storm_palace_sea_king_tease_2") then
+    teaser_king_2:set_enabled(false)
+    sea_tease_2:set_enabled(false)
+    for enemy in map:get_entities("dying_pirate_b") do
+      enemy:set_enabled(false)
+    end
+  end
+  if game:get_value("storm_palace_mallow_cutscene") then
+    mallow:set_enabled(false)
+    blackbeard_mallow:set_enabled(false)
+    see_mallow_sensor:set_enabled(false)
+  end
+  if game:get_value("sea_king_defeated") then
+    sea_king_boss:set_enabled(false)
+    boss_sensor:set_enabled(false)
+    for entity in map:get_entity("palace_collapse_tile") do
+      entity:set_enabled(true)
+    end
+    require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain")
+    local world = map:get_world()
+    game:set_world_rain_mode(world, "rain")
+  end
+
 end)
 
 
 map:register_event("on_opening_transition_finished", function()
+  if game:get_value("sea_king_defeated") then sol.audio.play_music("oceans_heart") end
 --  white_surface:fade_out(100)
 --  fog2:fade_in(100)
 end)
@@ -173,9 +204,20 @@ end
 
 
 --------------SENSORS---------------------------
+function teleport_to_surface_sensor:on_activated()
+  hero:freeze()
+  hero:set_direction(3)
+  sol.audio.play_sound("sea_spirit")
+  sol.audio.play_sound("charge_1")
+  sol.audio.play_sound("warp")
+  white_surface:fade_in(150, function()
+    hero:teleport("isle_of_storms/isle_of_storms_landing", "from_palace_teleport")
+  end)
+end
+
 function boss_sensor:on_activated()
   boss_sensor:set_enabled(false)
-  if true then --replace with defeat seaking savegame variable later
+  if not game:get_value("sea_king_defeated") then --replace with defeat seaking savegame variable later
     map:close_doors("boss_door")
     sol.audio.stop_music()
     sol.timer.start(map, 1500, function()
@@ -200,6 +242,106 @@ function squid_mage_unblocker_3:on_activated()
   unlock_squid_mage_3:set_enabled(false)
 end
 
+--sea king teaser 1
+function sea_tease_1:on_activated()
+  hero:freeze()
+  teaser_king_1:create_sprite("enemies/misc/sea_beam")
+  sol.audio.play_sound("beam")
+  local m = sol.movement.create("straight")
+  m:set_max_distance(128)
+  m:set_speed(90)
+  m:set_angle(0)
+  m:start(teaser_king_1)
+  function m:on_finished()
+    map:create_poof(teaser_king_1:get_position())
+    teaser_king_1:set_enabled(false)
+  end
+  sol.timer.start(map, 100, function()
+    dying_pirate_a_1:create_sprite("enemies/enemy_killed")
+    sol.timer.start(map, 100, function() dying_pirate_a_1:remove() sol.audio.play_sound("enemy_killed") end)
+    hero:unfreeze()
+  end)
+  sol.timer.start(map, 100, function()
+    dying_pirate_a_2:create_sprite("enemies/enemy_killed")
+    sol.timer.start(map, 400, function() dying_pirate_a_2:remove() sol.audio.play_sound("enemy_killed") end)
+  end)
+  game:set_value("storm_palace_sea_king_tease_1", true)
+  sea_tease_1:set_enabled(false)
+end
+
+--sea king teaser 2
+function sea_tease_2:on_activated()
+  sea_tease_2:set_enabled(false)
+  sol.audio.play_sound("fire_burst_2")
+  for enemy in map:get_entities("dying_pirate_b") do
+    local x, y, layer = enemy:get_position()
+    map:create_enemy{x=x,y=y+6,layer=layer+1,direction=0,breed="misc/sea_blast"}
+    enemy:create_sprite("enemies/enemy_killed")
+    sol.timer.start(map, 500, function() enemy:set_enabled(false) sol.audio.play_sound("enemy_killed") end)
+  end
+  sol.timer.start(map, 1000, function()
+    map:create_poof(teaser_king_2:get_position())
+    teaser_king_2:set_enabled(false)
+    game:set_value("storm_palace_sea_king_tease_2", true)
+  end)
+end
+
+
+--mallow_cutscene
+function see_mallow_sensor:on_activated()
+  see_mallow_sensor:set_enabled(false)
+  hero:freeze()
+  hero:walk("00000000000000000000")
+  sol.timer.start(map, 1200, function()
+    hero:freeze()
+    game:start_dialog("_palace_of_storms.cutscenes.mallow.1", function()
+      hero:freeze()
+      local m=sol.movement.create("path") m:set_speed(60) m:set_path{4,4,4,4}
+      m:start(mallow, function()
+        game:start_dialog("_palace_of_storms.cutscenes.mallow.2", function()
+          blackbeard_mallow:set_enabled(true)
+          local m = sol.movement.create("path") m:set_path{4,4,4,4} m:set_ignore_obstacles() m:set_speed(80)
+          m:start(blackbeard_mallow, function()
+            game:start_dialog("_palace_of_storms.cutscenes.mallow.3", function()
+              local bs = blackbeard_mallow:get_sprite()
+              sol.audio.play_sound("sword2")
+              bs:set_animation("attack", function() bs:set_animation("stopped") end)
+              local ms = mallow:get_sprite()
+              ms:set_animation("attacked")
+              sol.timer.start(map, 200, function()
+                local m2=sol.movement.create("jump")
+                m2:set_direction8(4) m2:set_speed(100) m2:set_distance(16)
+                m2:start(mallow, function()
+                  sol.timer.start(map, 10, function() ms:set_animation("attacked") end)
+                  local m3 = sol.movement.create("path") m:set_speed(90)
+                  m3:set_path{0,0,0,0,0,0,0,0,0,0}
+                  m3:start(blackbeard_mallow, function() blackbeard_mallow:set_enabled(false) end)
+                  ms:set_animation("attacked")
+                  sol.timer.start(map, 1800, function() map:mallow_scene_continued() end)
+                end)
+              end)
+            end)
+          end)
+        end)
+      end)
+    end)
+  end)
+end
+
+function map:mallow_scene_continued()
+  game:start_dialog("_palace_of_storms.cutscenes.mallow.4", function()
+    local ms = mallow:get_sprite()
+    ms:set_direction(0)
+    ms:set_animation("stopped")
+    local m=sol.movement.create("path") m:set_speed(55)
+    m:set_path{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+    m:set_ignore_obstacles()
+    m:start(mallow, function()
+      hero:unfreeze()
+      game:set_value("storm_palace_mallow_cutscene", true)
+    end)
+  end)
+end
 
 
 
@@ -232,15 +374,40 @@ end
 
 --------------BOSS---------------------------
 sea_king_boss:register_event("on_dead", function()
+  sol.audio.stop_music()
   map:open_doors("boss_door")
---start falling rocks
-  map:building_collapse()
+  game:set_starting_location("isle_of_storms/palace", "boss_arena_center")
+  hero:freeze()
+  local m = sol.movement.create("target")
+  m:set_target(boss_arena_center)
+  m:start(hero, function()
+    white_surface:fade_in(100, function()
+      game:start_dialog("_palace_of_storms.cutscenes.sea_king.1", function()
+        sol.timer.start(map, 100, function() game:start_dialog("_palace_of_storms.cutscenes.sea_king.2") end)
+        sneaky_blackbeard:set_enabled(true) 
+        sneaky_blackbeard:get_sprite():set_animation("holding_oceans_heart")
+        white_surface:fade_out(100, function()
+          hero:unfreeze()
+          map:building_collapse()
+          sol.audio.play_music("oceans_heart")
+          game:set_value("sea_king_defeated", true)
+          game:set_value("quest_isle_of_storms", 3)
+        end)
+      end)
+    end)
+  end)
 end)
 
 
 function map:building_collapse()
-  local i = 1
+  for entity in map:get_entities("palace_collapse_tile") do
+    entity:set_enabled(true)
+  end
+  require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain")
+  local world = map:get_world()
+  game:set_world_rain_mode(world, "rain")
 
+  local i = 1
   --targeted rocks
   sol.timer.start(map, 1000, function()
       local x, y, l = hero:get_position()
@@ -265,10 +432,11 @@ function map:building_collapse()
 end
 
 function map:create_falling_rock(x, y, l)
-  map:create_enemy{
+  local rock = map:create_enemy{
     direction = 0, layer = l, x = x + math.random(-16, 16), y = y + math.random(-16, 16),
     breed = "misc/falling_rock"
   }
+  rock:set_shake_props(2,2,100)
 end
 
 

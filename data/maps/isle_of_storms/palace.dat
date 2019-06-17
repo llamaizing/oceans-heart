@@ -5,6 +5,7 @@ properties{
   height = 3600,
   min_layer = 0,
   max_layer = 2,
+  world = "sea_kings_palace",
   tileset = "palace_of_storms",
   music = "seafloor_1",
 }
@@ -46279,8 +46280,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1544,
-  y = 3184,
+  x = 1560,
+  y = 3192,
   width = 16,
   height = 16,
   pattern = "97",
@@ -46362,18 +46363,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 1608,
-  y = 3160,
-  width = 32,
-  height = 24,
-  pattern = "55",
-  tileset = "underwater_plants",
-}
-
-tile{
-  layer = 0,
   x = 1624,
   y = 3184,
+  enabled_at_start = false,
   width = 16,
   height = 16,
   pattern = "44",
@@ -46382,18 +46374,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1624,
-  y = 3168,
-  width = 16,
-  height = 16,
-  pattern = "47",
-  tileset = "underwater_plants",
-}
-
-tile{
-  layer = 0,
   x = 1592,
-  y = 3168,
+  y = 3160,
   width = 16,
   height = 16,
   pattern = "42",
@@ -51284,6 +51266,134 @@ tile{
   pattern = "96",
 }
 
+tile{
+  layer = 0,
+  x = 1568,
+  y = 3184,
+  width = 32,
+  height = 32,
+  pattern = "55",
+}
+
+tile{
+  layer = 0,
+  x = 1608,
+  y = 3160,
+  width = 32,
+  height = 24,
+  pattern = "55",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 1624,
+  y = 3168,
+  width = 16,
+  height = 16,
+  pattern = "47",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 1544,
+  y = 3176,
+  width = 16,
+  height = 16,
+  pattern = "95",
+}
+
+tile{
+  layer = 0,
+  x = 1800,
+  y = 3328,
+  width = 16,
+  height = 16,
+  pattern = "146",
+}
+
+tile{
+  layer = 0,
+  x = 1672,
+  y = 3336,
+  width = 16,
+  height = 16,
+  pattern = "146",
+}
+
+tile{
+  layer = 0,
+  x = 1640,
+  y = 3328,
+  width = 16,
+  height = 16,
+  pattern = "146",
+}
+
+tile{
+  layer = 0,
+  x = 1472,
+  y = 3328,
+  width = 16,
+  height = 16,
+  pattern = "146",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 3312,
+  width = 16,
+  height = 16,
+  pattern = "146",
+}
+
+tile{
+  layer = 0,
+  x = 1480,
+  y = 3184,
+  width = 16,
+  height = 16,
+  pattern = "146",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 3128,
+  width = 16,
+  height = 16,
+  pattern = "146",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 3120,
+  width = 16,
+  height = 16,
+  pattern = "146",
+}
+
+tile{
+  layer = 0,
+  x = 1640,
+  y = 3136,
+  width = 16,
+  height = 16,
+  pattern = "146",
+}
+
+tile{
+  layer = 0,
+  x = 1672,
+  y = 3152,
+  width = 16,
+  height = 16,
+  pattern = "146",
+}
+
 sensor{
   name = "squid_mage_unblocker_2",
   layer = 0,
@@ -51393,7 +51503,7 @@ destination{
   name = "portal_to_surface",
   layer = 0,
   x = 1248,
-  y = 1789,
+  y = 1773,
   direction = 3,
 }
 
@@ -54278,14 +54388,6 @@ wall{
   stops_enemies = true,
 }
 
-destination{
-  name = "boss",
-  layer = 0,
-  x = 1040,
-  y = 2621,
-  direction = 1,
-}
-
 dynamic_tile{
   name = "boss_teleport_ref",
   layer = 0,
@@ -55005,6 +55107,566 @@ sensor{
   y = 2845,
   width = 320,
   height = 16,
+}
+
+sensor{
+  name = "see_mallow_sensor",
+  layer = 0,
+  x = 1288,
+  y = 3229,
+  width = 16,
+  height = 32,
+}
+
+npc{
+  name = "mallow",
+  layer = 0,
+  x = 1592,
+  y = 3229,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/mallow",
+}
+
+sensor{
+  name = "sea_tease_1",
+  layer = 0,
+  x = 200,
+  y = 413,
+  width = 32,
+  height = 32,
+}
+
+npc{
+  name = "dying_pirate_a_1",
+  layer = 0,
+  x = 264,
+  y = 277,
+  direction = 1,
+  subtype = 1,
+  sprite = "enemies/normal_enemies/pirate_bruiser",
+}
+
+npc{
+  name = "dying_pirate_a_2",
+  layer = 0,
+  x = 160,
+  y = 293,
+  direction = 1,
+  subtype = 1,
+  sprite = "enemies/normal_enemies/pirate_bruiser",
+}
+
+sensor{
+  name = "sea_tease_2",
+  layer = 0,
+  x = 408,
+  y = 3245,
+  width = 16,
+  height = 32,
+}
+
+npc{
+  name = "dying_pirate_b_1",
+  layer = 0,
+  x = 176,
+  y = 3229,
+  direction = 0,
+  subtype = 1,
+  sprite = "enemies/normal_enemies/pirate_bruiser",
+}
+
+npc{
+  name = "dying_pirate_b_2",
+  layer = 0,
+  x = 312,
+  y = 3221,
+  direction = 2,
+  subtype = 1,
+  sprite = "enemies/normal_enemies/pirate_bruiser",
+}
+
+npc{
+  name = "dying_pirate_b_3",
+  layer = 0,
+  x = 304,
+  y = 3293,
+  direction = 1,
+  subtype = 1,
+  sprite = "enemies/normal_enemies/pirate_bruiser",
+}
+
+npc{
+  name = "dying_pirate_b_4",
+  layer = 0,
+  x = 224,
+  y = 3309,
+  direction = 1,
+  subtype = 1,
+  sprite = "enemies/normal_enemies/pirate_bruiser",
+}
+
+npc{
+  name = "dying_pirate_b_5",
+  layer = 0,
+  x = 168,
+  y = 3277,
+  direction = 0,
+  subtype = 1,
+  sprite = "enemies/normal_enemies/pirate_bruiser",
+}
+
+npc{
+  name = "teaser_king_2",
+  layer = 0,
+  x = 240,
+  y = 3245,
+  direction = 3,
+  subtype = 1,
+  sprite = "enemies/bosses/sea_king",
+}
+
+npc{
+  name = "blackbeard_mallow",
+  layer = 0,
+  x = 1640,
+  y = 3229,
+  enabled_at_start = false,
+  direction = 2,
+  subtype = 1,
+  sprite = "enemies/bosses/blackbeard",
+}
+
+destination{
+  name = "boss",
+  layer = 0,
+  x = 1040,
+  y = 2717,
+  direction = 1,
+}
+
+destination{
+  name = "boss_arena_center",
+  layer = 0,
+  x = 1040,
+  y = 2517,
+  direction = 3,
+}
+
+npc{
+  name = "sneaky_blackbeard",
+  layer = 0,
+  x = 1040,
+  y = 2461,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "enemies/bosses/blackbeard",
+}
+
+sensor{
+  name = "teleport_to_surface_sensor",
+  layer = 0,
+  x = 1232,
+  y = 1789,
+  width = 48,
+  height = 32,
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile",
+  layer = 0,
+  x = 1144,
+  y = 3216,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_2",
+  layer = 0,
+  x = 1152,
+  y = 3224,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "262",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_3",
+  layer = 0,
+  x = 1136,
+  y = 3232,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "261",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_4",
+  layer = 0,
+  x = 928,
+  y = 3280,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "262",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_5",
+  layer = 0,
+  x = 936,
+  y = 3296,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "259",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_6",
+  layer = 0,
+  x = 992,
+  y = 3392,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "261",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_7",
+  layer = 0,
+  x = 1104,
+  y = 3448,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "261",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_8",
+  layer = 0,
+  x = 1112,
+  y = 3456,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_9",
+  layer = 0,
+  x = 992,
+  y = 3184,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "262",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_10",
+  layer = 0,
+  x = 1048,
+  y = 3304,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "261",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_11",
+  layer = 0,
+  x = 1032,
+  y = 3304,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "263",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_12",
+  layer = 0,
+  x = 928,
+  y = 3440,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "263",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_13",
+  layer = 0,
+  x = 936,
+  y = 3448,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "261",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_14",
+  layer = 0,
+  x = 1056,
+  y = 3504,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "262",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_15",
+  layer = 0,
+  x = 1000,
+  y = 2840,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "263",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_16",
+  layer = 0,
+  x = 1064,
+  y = 2872,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_17",
+  layer = 0,
+  x = 1048,
+  y = 2880,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "260",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_25",
+  layer = 0,
+  x = 1120,
+  y = 1328,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_26",
+  layer = 0,
+  x = 1120,
+  y = 1344,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "263",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_27",
+  layer = 0,
+  x = 1344,
+  y = 1336,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_28",
+  layer = 0,
+  x = 1360,
+  y = 1336,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "261",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_29",
+  layer = 0,
+  x = 1352,
+  y = 1352,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "259",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_30",
+  layer = 0,
+  x = 1128,
+  y = 1480,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_31",
+  layer = 0,
+  x = 1136,
+  y = 1488,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_32",
+  layer = 0,
+  x = 1144,
+  y = 1472,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "263",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_33",
+  layer = 0,
+  x = 1344,
+  y = 1472,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_34",
+  layer = 0,
+  x = 1344,
+  y = 1488,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "260",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_35",
+  layer = 0,
+  x = 1344,
+  y = 1512,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "263",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_36",
+  layer = 0,
+  x = 1200,
+  y = 1704,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_37",
+  layer = 0,
+  x = 1176,
+  y = 1704,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "261",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_38",
+  layer = 0,
+  x = 1184,
+  y = 1720,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "260",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_39",
+  layer = 0,
+  x = 1296,
+  y = 1832,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_40",
+  layer = 0,
+  x = 1272,
+  y = 1840,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "262",
+  tileset = "palace_of_storms",
 }
 
 tile{
@@ -60191,6 +60853,15 @@ tile{
   pattern = "172",
 }
 
+tile{
+  layer = 1,
+  x = 1568,
+  y = 3152,
+  width = 32,
+  height = 32,
+  pattern = "54",
+}
+
 wall{
   layer = 1,
   x = 1312,
@@ -61137,6 +61808,100 @@ enemy{
   y = 3229,
   direction = 3,
   breed = "normal_enemies/jellyfish",
+}
+
+npc{
+  name = "teaser_king_1",
+  layer = 1,
+  x = 152,
+  y = 221,
+  direction = 3,
+  subtype = 1,
+  sprite = "enemies/bosses/sea_king",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_18",
+  layer = 1,
+  x = 1400,
+  y = 1232,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_19",
+  layer = 1,
+  x = 1392,
+  y = 1248,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "262",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_20",
+  layer = 1,
+  x = 1376,
+  y = 1240,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "260",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_21",
+  layer = 1,
+  x = 1072,
+  y = 1240,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "258",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_22",
+  layer = 1,
+  x = 1088,
+  y = 1240,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "262",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_23",
+  layer = 1,
+  x = 1104,
+  y = 1248,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "263",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "palace_collapse_tile_24",
+  layer = 1,
+  x = 1104,
+  y = 1232,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "259",
+  tileset = "palace_of_storms",
 }
 
 tile{

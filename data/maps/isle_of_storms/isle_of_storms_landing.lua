@@ -25,8 +25,17 @@ map:register_event("on_started", function()
   rain_manager:set_lightning_delay(2000, 7500)
   rain_manager:set_darkness(120, 190)
 
---  sea_fog:get_sprite():set_blend_mode("add")
---  sea_fog:get_sprite():set_opacity(25)
+  if game:get_value("quest_isle_of_storms") and game:get_value("quest_isle_of_storms") < 1 then
+    game:set_value("quest_isle_of_storms", 1)
+  end
+  if game:get_value("sea_king_defeated") then
+    rune_sensor:set_enabled(false)
+  end
+  brutus:get_sprite():set_animation("stopped")
+  if game:get_value("quest_isle_of_storms") and game:get_value("quest_isle_of_storms") >= 2 then
+    brutus:set_enabled(false)
+    brutus_sensor:set_enabled(false)
+  end
 
 end)
 
@@ -46,6 +55,58 @@ function morus:on_interaction()
   end)
 end
 
+
+----------------Sensors--------------------------------------
+function brutus_sensor:on_activated()
+  if game:get_value("quest_isle_of_storms") and game:get_value("quest_isle_of_storms") < 2 then
+    hero:freeze()
+    local m=sol.movement.create("path")
+    m:set_path{6,6,6,6,6,6}
+    m:start(brutus, function()
+      game:start_dialog("_palace_of_storms.cutscenes.brutus.1")
+      game:set_value("quest_isle_of_storms", 2)
+      hero:unfreeze()
+    end)
+  end
+end
+
+function blackbeard_sensor:on_activated()
+  if game:get_value("quest_isle_of_storms") and game:get_value("quest_isle_of_storms") == 3 then
+    hero:freeze()
+    map:focus_on(map:get_camera(), blackbeard_npc, function() hero:freeze() end)
+    blackbeard_npc:set_enabled(true)
+    blackbeard_npc:get_sprite():set_animation("holding_oceans_heart")
+    map:create_poof(blackbeard_npc:get_position())
+    sol.timer.start(map, 1200, function()
+      hero:freeze()
+      blackbeard_npc:get_sprite():set_animation("stopped")
+      game:start_dialog("_palace_of_storms.cutscenes.blackbeard.1", function()
+        mallow:set_enabled(true)
+        local m = sol.movement.create("path")
+        m:set_path{2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2}
+        m:set_speed(80)
+        m:start(mallow, function()
+          game:start_dialog("_palace_of_storms.cutscenes.blackbeard.2", function()
+            sol.timer.start(map, 500, function()
+              map:create_poof(blackbeard_npc:get_position())
+              blackbeard_npc:set_enabled(false)
+              sol.timer.start(500, function()
+                mallow:get_sprite():set_animation("collapsed")
+                hero:walk("666666666666")
+                sol.timer.start(map, 1000, function()
+                  game:start_dialog("_palace_of_storms.cutscenes.mallow.5", function()
+                    game:set_value("quest_isle_of_storms", 4)
+                    hero:unfreeze()
+                  end)
+                end)
+              end)
+            end)
+          end)
+        end)
+      end)
+    end)
+  end
+end
 
 ---Teleport Down
 function rune_sensor:on_activated()
