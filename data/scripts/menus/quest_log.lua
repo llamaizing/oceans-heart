@@ -1,6 +1,6 @@
 --[[ quest_log.lua
 	version 1.0a1
-	17 May 2019
+	25 May 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -27,8 +27,6 @@ local quest_data = require"scripts/menus/quest_log.dat"
 
 local quest_log = {x=0, y=0}
 multi_events:enable(quest_log)
-
-local game --the current game, must be manually updated using quest_log:set_game()
 
 --tab names and their corresponding index
 local LIST_TYPES = {
@@ -200,12 +198,10 @@ do
 	end
 end
 
---// Call whenever starting new game
-function quest_log:set_game(current_game) game = current_game end
-
 --// Restores position of list from last time viewing menu
 	--will call quest_log:set_selected()
 function quest_log:recall_saved_position(tab)
+	local game = sol.main.get_game()
 	local tab_index,tab_name
 	
 	if tab then --use the tab specified
@@ -282,6 +278,8 @@ end
 
 --// Save currently viewed list entry as savegame variable to recall next time menu is opened
 function quest_log:save_position()
+	local game = sol.main.get_game()
+	
 	local active_tab_name = LIST_TYPES[active_tab_index]
 	local current_objective = active_list[list_index] --may be nil
 	local master_index = current_objective and current_objective:get_index() --may be nil
@@ -298,6 +296,8 @@ function quest_log:set_tab(index)
 	index = math.floor(index)
 	assert(index>0, "Bad argument #2 to 'set_tab' (number must be positive)")
 	assert(index<=#LIST_TYPES, "Bad argument #2 to 'set_tab' (maximum value: "..#LIST_TYPES)
+	
+	local game = sol.main.get_game()
 	
 	--configuration of components depends on the index value
 	local components = {
@@ -447,6 +447,8 @@ end
 		--(nil) - Display text that quest log is empty
 	--phase (number, index, optional) - manually force the phase to be shown (for debugging)
 function quest_log:set_description(objective, phase)
+	local game = sol.main.get_game()
+	
 	if objective then
 		if type(objective)~="table" then
 			assert(type(objective)=="number", "Bad argument #2 to 'set_description' (table or number or nil expected)")
@@ -736,8 +738,8 @@ function quest_log:set_xy(x, y)
 end
 
 function quest_log:on_started()
-	assert(game, "The current game must be set using 'quest_log:set_game(game)'")
-	--TODO v1.6 get game using sol.main.get_game() instead
+	local game = sol.main.get_game()
+	assert(game, "Error: cannot start quest log menu because no game is currently running")
 	
 	--generate ui components
 	load_quest_data() --only loads on first call of function
@@ -824,15 +826,15 @@ end
 return quest_log
 
 --[[ Copyright 2018-2019 Llamazing
-  [[ 
-  [[ This program is free software: you can redistribute it and/or modify it under the
-  [[ terms of the GNU General Public License as published by the Free Software Foundation,
-  [[ either version 3 of the License, or (at your option) any later version.
-  [[ 
-  [[ It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
-  [[ without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-  [[ PURPOSE.  See the GNU General Public License for more details.
-  [[ 
-  [[ You should have received a copy of the GNU General Public License along with this
-  [[ program.  If not, see <http://www.gnu.org/licenses/>.
+  [] 
+  [] This program is free software: you can redistribute it and/or modify it under the
+  [] terms of the GNU General Public License as published by the Free Software Foundation,
+  [] either version 3 of the License, or (at your option) any later version.
+  [] 
+  [] It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  [] without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+  [] PURPOSE.  See the GNU General Public License for more details.
+  [] 
+  [] You should have received a copy of the GNU General Public License along with this
+  [] program.  If not, see <http://www.gnu.org/licenses/>.
   ]]

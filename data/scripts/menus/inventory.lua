@@ -3,9 +3,6 @@ local multi_events = require"scripts/multi_events"
 local inventory = {x=0, y=0}
 multi_events:enable(inventory)
 
-local game --the current game, must be manually updated using pause_menu:set_game()
-
-
 --All items that could ever show up in the inventory:
 local all_equipment_items = {
     {item = "barrier", name = "Barrier Charm", assignable = true,},
@@ -42,9 +39,6 @@ local MAX_INDEX = ROWS*COLUMNS --when every slot is full of an item, this should
 
 local cursor_index
 
---// Call whenever starting new game
-function inventory:set_game(current_game) game = current_game end
-
 --// Gets/sets the x,y position of the menu in pixels
 function inventory:get_xy() return self.x, self.y end
 function inventory:set_xy(x, y)
@@ -55,10 +49,6 @@ function inventory:set_xy(x, y)
 
     self.x = math.floor(x)
     self.y = math.floor(y)
-end
-
-function inventory:on_started()
-    assert(game, "The current game must be set using 'inventory:set_game(game)'")
 end
 
 
@@ -137,13 +127,14 @@ end
 
 
 function inventory:on_started()
+    assert(sol.main.get_game(), "Error: cannot start inventory menu because no game is currently running")
     self:update_description_panel()
 end
 
 
 --new_index is 0 based
 function inventory:update_cursor_position(new_index)
-    local game = sol.main.game
+    local game = sol.main.get_game()
     if(new_index < MAX_INDEX and new_index >= 0) then cursor_index = new_index end
     local new_column = (cursor_index % COLUMNS)
     self.cursor_column = new_column
@@ -165,7 +156,7 @@ end
 
 
 function inventory:on_command_pressed(command)
-    local game = sol.main.game
+    local game = sol.main.get_game()
     local handled = false
 
     if command == "right" then
@@ -218,7 +209,7 @@ function inventory:on_command_pressed(command)
 end
 
 function inventory:get_item_at_current_index()
-    local game = sol.main.game
+    local game = sol.main.get_game()
     local item_entry = all_equipment_items[cursor_index + 1]
     if item_entry then
         local item = game:get_item(item_entry.item)
