@@ -5122,8 +5122,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "isle_of_storms/palace",
-  destination = "boss",
+  destination_map = "isle_of_storms/isle_of_storms_landing",
 }
 
 custom_entity{
@@ -5255,6 +5254,7 @@ enemy{
   layer = 0,
   x = 664,
   y = 845,
+  enabled_at_start = false,
   direction = 3,
   breed = "bosses/sea_king",
 }
@@ -5316,6 +5316,102 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 53,
+  treasure_name = "arrow",
+  treasure_variant = 4,
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 141,
+  treasure_name = "attack_upgrade",
+  treasure_variant = 8,
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 133,
+  treasure_name = "attack_upgrade",
+  treasure_variant = 8,
 }
 
 tile{

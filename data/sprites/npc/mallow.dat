@@ -9,6 +9,26 @@ animation{
   },
 }
 animation{
+  name = "attacked",
+  src_image = "npc/mallow.png",
+  directions = {
+    { x = 64, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 64, y = 0, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 64, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 64, y = 64, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
+  name = "collapsed",
+  src_image = "npc/mallow.png",
+  directions = {
+    { x = 64, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 64, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 64, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+    { x = 64, y = 96, frame_width = 16, frame_height = 32, origin_x = 8, origin_y = 29 },
+  },
+}
+animation{
   name = "walking",
   src_image = "npc/mallow.png",
   frame_delay = 120,

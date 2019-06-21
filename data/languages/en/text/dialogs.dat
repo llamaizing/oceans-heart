@@ -11254,6 +11254,170 @@ North - Marblecliff Mountain
 }
 
 dialog{
+  id = "_palace_of_storms.cutscenes.blackbeard.1",
+  text = [[
+BLACKBEARD:
+Hmph. Looks like not only did you manage to
+get out, but my crews have abandoned me as
+well. Doesn't matter. I have the Ocean's Heart.
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.blackbeard.2",
+  text = [[
+MALLOW:
+Sure, but do you have your boat? Or do your
+sea-powers include pulling ships up after I've
+shot them full of cannonballs?
+BLACKBEARD:
+You what!?
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.brutus.1",
+  text = [[
+BRUTUS:
+Oh, you again. Look, you don't need to worry
+about looking for a fight. Standwithnotting
+you beatin' me up so good last time, I don't
+BRUTUS:
+even want to fight for Mr. Beard anymore
+anyhow.
+
+TILIA:
+That's a change of heart. What happened?
+
+
+BRUTUS:
+We used this amulet thing to open a glowy
+circle on the ground back there. Soon as it
+shows up, great big monsters start pourin' out.
+BRUTUS:
+Mr. Beard, he orders the pirate crews to go on
+through anyway. Don't reckon lots of them are
+still fightin' on the other side left.
+TILIA:
+I'm going through too. Blackbeard wants the
+Ocean's Heart, and I think you're seeing how
+cruel he'd be if he gets it.
+BRUTUS:
+Oh yeah, I don't need conceiving. The other
+guy, Mallow? Yeah, I let him through too.
+
+TILIA:
+He's here too!? Okay. How do I follow them?
+
+
+BRUTUS:
+Just walk into that glowy circle back there.
+Then you'll disappear. Dunno after that.
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.mallow.1",
+  text = [[
+TILIA:
+...Dad!? Dad!
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.mallow.2",
+  text = [[
+MALLOW:
+Tilia? I... Tilia! Wow Little Gull, you look so
+strong. Wait... you must have beat up a lot of
+pirates to get here, didn't you? Tilia, that-
+TILIA:
+Hey! No, you listen! Linden and I figued you
+were dead for months! I get it, you're fighting
+pirates and stuff, but you didn't send any
+TILIA:
+letters? Stop chasing pirates for a week to come
+let us know what was going on? 
+
+MALLOW:
+When would I have done that? While Hazel was a
+hostage in Hourglass Fort? When the Council was
+burning down towns to find this place? While
+MALLOW:
+Blackbeard was claiming the power of the Ocean
+for himself? Tilia, I want to help people. You
+have to make some sacrifices if you want that.
+TILIA:
+That might be what you need to be doing. But
+you aren't doing it how I need to you be
+doing it.
+MALLOW:
+$1...$3
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.mallow.3",
+  text = [[
+BLACKBEARD:
+Mallow, of course you're here too. You're an
+awfully frustrating shadow.
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.mallow.4",
+  text = [[
+MALLOW:
+$1Ooooooh.$3 Ouch. Tilia, you'll be fine, I'm sure
+you know what you want to do. I've gotta stop
+this knucklehead.
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.mallow.5",
+  text = [[
+MALLOW:
+Tilia, Blackbeard's run off to where his ship
+was. I'm uh, actually pretty hurt. I'll be fine,
+but I'm gonna need you to run across the
+MALLOW:
+bridges to the east to finish Blackbeard off.
+
+
+TILIA:
+Okay, Dad. I'll be back before you realize it.
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.sea_king.1",
+  text = [[
+$2
+          ...
+
+
+
+          Would you seek my curse?
+
+
+
+          ...hmm, you might yet be
+        worthy of the Ocean's blessing...
+$3
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.sea_king.2",
+  text = [[
+BLACKBEARD:
+You're a bit too slow, girl.
+]],
+}
+
+dialog{
   id = "_palace_of_storms.observations.1",
   text = [[
 There's a message inscribed on the stone.
@@ -11549,6 +11713,13 @@ dialog{
   text = [[
 Your sword and bow damage outputs
 were each increased by 1.
+]],
+}
+
+dialog{
+  id = "_treasure.attack_upgrade.8",
+  text = [[
+debug attack upgrade (8)
 ]],
 }
 
@@ -12086,6 +12257,13 @@ dialog{
   id = "_treasure.health_upgrade.1",
   text = [[
 Your health is increased by one.
+]],
+}
+
+dialog{
+  id = "_treasure.health_upgrade.17",
+  text = [[
+Debug health upgrade
 ]],
 }
 
@@ -14458,7 +14636,8 @@ the location of the Isle of Storms
 @Find a way into the Sea King's
 sunken palace
 @Search for the Ocean's Heart
-
+@!Escape from the collapsing palace!
+@Fight Blackbeard
 ]],
 }
 

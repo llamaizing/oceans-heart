@@ -186,7 +186,8 @@ function behavior:create(enemy, properties)
   end
 
   function enemy:fly_away()
-
+    enemy:set_invincible()
+    enemy:set_layer(enemy:get_layer() + 1)
     local m = sol.movement.create("straight")
     local lr = math.random(2)
     local angle

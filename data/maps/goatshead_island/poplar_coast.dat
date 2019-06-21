@@ -36218,7 +36218,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1200,
+  x = 1192,
   y = 1224,
   width = 8,
   height = 8,

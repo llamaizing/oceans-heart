@@ -18,12 +18,6 @@ map:register_event("on_started", function()
 end)
 
 
-function sea_king:on_dying()
-  sol.timer.stop_all(map)
-  sea_king:stop_movement()
-  sea_king:get_sprite():set_animation("walking")
-end
-
 
 function shopkeeper:on_interaction()
   local shop_menu = require("scripts/shops/shop_menu")

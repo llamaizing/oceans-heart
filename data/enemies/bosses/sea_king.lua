@@ -25,6 +25,7 @@ local sweeping
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   smoke_sprite = enemy:create_sprite("enemies/ghost_smoke_large")
+  smoke_sprite:set_blend_mode("blend")
   enemy:bring_sprite_to_back(smoke_sprite)
   enemy:set_invincible_sprite(smoke_sprite)
 
@@ -59,7 +60,9 @@ function enemy:on_restarted()
   end
   if enemy:get_sprite("sea_beam") then enemy:remove_sprite(enemy:get_sprite("sea_beam")) end
   sol.timer.start(enemy, 100, function()
-    enemy:check_to_attack()
+    if enemy:get_life() > 1 then
+      enemy:check_to_attack()
+    end
     return true
   end)
 end
@@ -69,6 +72,7 @@ function enemy:finish_attacking()
   sol.timer.start(map, 900, function()
     attacking = false
     enemy:on_restarted()
+--print("finished attack")
   end)
 end
 
@@ -80,48 +84,56 @@ function enemy:check_to_attack()
       attacking = true
       can_throw_sword = false
       enemy:throw_sword()
+--print("throw sword")
       sol.timer.start(map, 10000, function() can_throw_sword = true end)
 
     elseif can_tide_attack and enemy:get_life() > game:get_value("sword_damage") then
       attacking = true
       can_tide_attack = false
       enemy:tide_attack()
+--print("tide attack")
       sol.timer.start(map, 15000, function() can_tide_attack = true end)
 
     elseif can_pattern_attack and enemy:get_life() > game:get_value("sword_damage") then
       attacking = true
       can_pattern_attack = false
       enemy:pattern_attack()
+--print("pattern attack")
       sol.timer.start(map, 15000, function() can_pattern_attack = true end)
 
     elseif can_surround_attack and enemy:get_distance(hero) < 300 then
       attacking = true
       can_surround_attack = false
       enemy:surround_attack()
+--print("surround attack")
       sol.timer.start(map, 21000, function() can_surround_attack = true end)
 
     elseif can_projectile_a then
       attacking = true
       can_projectile_a = false
       enemy:projectile_a()
+--print("projectiles")
       sol.timer.start(map, 10000, function() can_projectile_a = true end)
 
     elseif can_summon_helpers then
       attacking = true
       can_summon_helpers = false
       enemy:summon_helpers()
+--print("summon allies")
       sol.timer.start(map, 10000, function() can_summon_helpers = true end)
 
     elseif can_beam_attack and enemy:get_life() > game:get_value("sword_damage") then
       attacking = true
       can_beam_attack = false
       enemy:beam_attack()
+--print("beam attack")
       sol.timer.start(map, 16000, function() can_beam_attack = true end)
 
     elseif can_melee_attack then
       attacking = true
       can_melee_attack = false
       enemy:melee_attack()
+--print("melee attack")
       sol.timer.start(map, 8000, function() can_melee_attack = true end)
 
     end
@@ -140,7 +152,7 @@ function enemy:throw_sword()
   m:set_speed(150)
   m:set_max_distance(120)
   m:start(enemy)
-  sol.timer.start(map, 500, function()
+  sol.timer.start(map, 800, function()
     sprite:set_animation("attack", function()
       sprite:set_animation("walking")
     end)
@@ -302,7 +314,10 @@ function enemy:pattern_attack()
   sprite:set_animation("wind_up_summon")
   sol.audio.play_sound("charge_1")
   sol.timer.start(map, 1000, function()
-    sol.timer.start(enemy, 1000, function() sprite:set_animation("walking") end)
+    sol.timer.start(enemy, 1000, function()
+      sprite:set_animation("walking")
+      smoke_sprite:set_animation("walking")
+    end)
 
     local NUM_IN_ROW = 6
     local X_SPACING = 48
@@ -340,7 +355,7 @@ function enemy:projectile_a()
   end
 
   sol.timer.start(map, 1200, function()
-    sol.timer.start(map, 2200, function() enemy:finish_attacking() end)
+    sol.timer.start(map, 2500, function() enemy:finish_attacking() end)
     sprite:set_animation("attack", function()
       shoot()
       sprite:set_animation("attack", function()
@@ -417,6 +432,9 @@ function enemy:melee_attack()
     sprite:set_animation("attack", function() sprite:set_animation("walking") end)
     local sword_sprite = enemy:create_sprite("enemies/misc/sea_king_sword_slash")
     enemy:set_invincible_sprite(sword_sprite)
+    function sword_sprite:on_animation_finished()
+      enemy:remove_sprite(sword_sprite)
+    end
     sol.audio.play_sound("sword_spin_attack_release")
     enemy:finish_attacking()
   end)

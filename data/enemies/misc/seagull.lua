@@ -9,10 +9,10 @@ local properties = {
   ignore_obstacles = true,
   obstacle_behavior = "flying",
   waking_distance = 50,
-  life = 1,
+  life = 100,
   damage = 0,
   normal_speed = 75,
-  faster_speed = 165,
+  faster_speed = 185,
 
 }
 

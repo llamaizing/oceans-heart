@@ -20493,29 +20493,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 648,
-  y = 712,
-  width = 16,
-  height = 16,
-  pattern = "2210",
-}
-
-tile{
-  layer = 0,
   x = 664,
   y = 712,
   width = 16,
   height = 16,
   pattern = "2031",
-}
-
-tile{
-  layer = 0,
-  x = 656,
-  y = 704,
-  width = 16,
-  height = 16,
-  pattern = "2213",
 }
 
 tile{
@@ -20579,15 +20561,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "2217",
-}
-
-tile{
-  layer = 0,
-  x = 640,
-  y = 720,
-  width = 16,
-  height = 16,
-  pattern = "2216",
 }
 
 tile{
@@ -21818,6 +21791,60 @@ tile{
   width = 16,
   height = 16,
   pattern = "1521",
+}
+
+tile{
+  layer = 0,
+  x = 664,
+  y = 752,
+  width = 16,
+  height = 32,
+  pattern = "591",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 688,
+  width = 80,
+  height = 40,
+  pattern = "2154_2",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 712,
+  width = 16,
+  height = 16,
+  pattern = "2210",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "2213",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "2216",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 656,
+  width = 16,
+  height = 32,
+  pattern = "591",
 }
 
 sensor{
@@ -24288,6 +24315,24 @@ tile{
   width = 16,
   height = 8,
   pattern = "314",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 624,
+  width = 16,
+  height = 80,
+  pattern = "2171",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 624,
+  width = 80,
+  height = 64,
+  pattern = "2179",
 }
 
 enemy{
