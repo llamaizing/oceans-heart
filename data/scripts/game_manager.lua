@@ -16,18 +16,18 @@ local game_manager = {}
 
 --Quest Log Menu: name of sound to play for different new task status keywords
 local QUEST_SOUNDS = {
-  main_all_completed = false, --TODO need sound
-  side_all_completed = false, --TODO need sound
-  main_completed = "quest_complete",
-  side_completed = "quest_complete",
-  main_started = "quest_started",
-  side_started = "quest_started",
-  main_advanced = "quest_advance",
-  side_advanced = "quest_advance",
-  new_checkmark = "quest_subtask",
-  obtained_quest_item = "quest_subtask",
-  main_advanced_again = false, --don't play sound
-  side_advanced_again = false, --don't play sound
+    main_all_completed = "quest_complete",
+    side_all_completed = "quest_complete",
+    main_completed = "quest_complete",
+    side_completed = "quest_complete",
+    main_started = "quest_started",
+    side_started = "quest_started",
+    main_advanced = "quest_advance",
+    side_advanced = "quest_advance",
+    new_checkmark = "quest_subtask",
+    progressed_quest_item = "quest_subtask",
+    main_advanced_again = false, --don't play sound
+    side_advanced_again = false, --don't play sound
 }
 
 -- Starts the game from the given savegame file,
@@ -57,23 +57,8 @@ function game_manager:create(file_name, overwrite_game)
     sol.menu.start(game, pause_menu)
   end
 
-  local QUEST_SOUNDS = {
-    main_all_completed = "quest_complete",
-    side_all_completed = "quest_complete",
-    main_completed = "quest_complete",
-    side_completed = "quest_complete",
-    main_started = "quest_started",
-    side_started = "quest_started",
-    main_advanced = "quest_advance",
-    side_advanced = "quest_advance",
-    new_checkmark = "quest_subtask",
-    obtained_quest_item = "quest_subtask",
-    main_advanced_again = false, --don't play sound
-    side_advanced_again = false, --don't play sound
-  }
 
-
-  function game.objectives:on_new_task(status, dialog_id)
+  function game.objectives:on_quest_updated(status, dialog_id)
     local sound_name = QUEST_SOUNDS[status]
     if sound_name then sol.audio.play_sound(sound_name) end
 
@@ -109,6 +94,7 @@ function game_manager:create(file_name, overwrite_game)
   local can_dash = true
 
   local DEBUG_MODE = true                       --HERE IS THE DEBUG MODE SWITCH, MAX!
+  pause_menu.quest_log:set_debug_mode(DEBUG_MODE)
 
 
   function game:on_key_pressed(key, modifiers)

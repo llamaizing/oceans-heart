@@ -17,7 +17,7 @@ text{
 	id = "text.location",
 	font = "proggy/ProggyTinySZ",
 	font_size = 16,
-	font_color = {214, 198, 57},--light tan
+	font_color = {255, 255, 0}, --yellow
 	font_color_disabled = {166, 166, 166}, --grey
 	--shadow_color = "brown",
 	horizontal_alignment = "right",
@@ -145,6 +145,7 @@ image{
 	id = "image.complete",
 	image = "menus/complete.png",
 }
+
 
 sprite{
 	id = "sprite.checkmark",

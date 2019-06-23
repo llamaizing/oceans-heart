@@ -1,6 +1,6 @@
 --[[ pause_menu.lua
-	version 1.0a1
-	27 May 2019
+	version 1.0
+	22 Jun 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -21,7 +21,13 @@ local quest_log = require"scripts/menus/quest_log"
 local inventory = require"scripts/menus/inventory"
 local map_screen = require"scripts/menus/map"
 
-local pause_menu = {x=0, y=0}
+local pause_menu = {
+	x=0, y=0,
+	--provide access to submenus
+	inventory = inventory,
+	quest_log = quest_log,
+	map_screen = map_screen,
+}
 multi_events:enable(pause_menu)
 
 local active_movements = {}
@@ -37,6 +43,7 @@ local SUBMENU_LIST = { --order matters
 	quest_log,
 	map_screen,
 }
+for i,menu in ipairs(SUBMENU_LIST) do pause_menu[i] = menu end
 
 pause_menu.quick_keys = {}
 for i,submenu in ipairs(SUBMENU_LIST) do
