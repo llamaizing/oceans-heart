@@ -12,7 +12,7 @@ local can_throw_sword = true
 local can_summon_hands = true
 local can_surround_attack = true
 local can_tide_attack = true
-local can_pattern_attack = true
+local can_pattern_attack = false
 local can_projectile_a = true
 local can_quake = true
 local can_summon_helpers = true
@@ -69,7 +69,7 @@ end
 
 
 function enemy:finish_attacking()
-  sol.timer.start(map, 900, function()
+  sol.timer.start(map, 500, function()
     attacking = false
     enemy:on_restarted()
 --print("finished attack")
@@ -80,7 +80,14 @@ end
 --Select an Attack:
 function enemy:check_to_attack()
   if not attacking then
-    if can_throw_sword and enemy:get_distance(hero) < 136 then
+    if can_pattern_attack and enemy:get_life() > game:get_value("sword_damage") then
+      attacking = true
+      can_pattern_attack = false
+      enemy:pattern_attack()
+--print("pattern attack")
+      sol.timer.start(map, 21000, function() can_pattern_attack = true end)
+
+    elseif can_throw_sword and enemy:get_distance(hero) < 136 then
       attacking = true
       can_throw_sword = false
       enemy:throw_sword()
@@ -94,26 +101,26 @@ function enemy:check_to_attack()
 --print("tide attack")
       sol.timer.start(map, 15000, function() can_tide_attack = true end)
 
-    elseif can_pattern_attack and enemy:get_life() > game:get_value("sword_damage") then
+    elseif can_melee_attack and enemy:get_distance(hero) < 96 then
       attacking = true
-      can_pattern_attack = false
-      enemy:pattern_attack()
---print("pattern attack")
-      sol.timer.start(map, 15000, function() can_pattern_attack = true end)
+      can_melee_attack = false
+      enemy:melee_attack()
+--print("melee attack")
+      sol.timer.start(map, 4000, function() can_melee_attack = true end)
 
     elseif can_surround_attack and enemy:get_distance(hero) < 300 then
       attacking = true
       can_surround_attack = false
       enemy:surround_attack()
 --print("surround attack")
-      sol.timer.start(map, 21000, function() can_surround_attack = true end)
+      sol.timer.start(map, 18000, function() can_surround_attack = true end)
 
     elseif can_projectile_a then
       attacking = true
       can_projectile_a = false
       enemy:projectile_a()
 --print("projectiles")
-      sol.timer.start(map, 10000, function() can_projectile_a = true end)
+      sol.timer.start(map, 11000, function() can_projectile_a = true end)
 
     elseif can_summon_helpers then
       attacking = true
@@ -127,14 +134,7 @@ function enemy:check_to_attack()
       can_beam_attack = false
       enemy:beam_attack()
 --print("beam attack")
-      sol.timer.start(map, 16000, function() can_beam_attack = true end)
-
-    elseif can_melee_attack then
-      attacking = true
-      can_melee_attack = false
-      enemy:melee_attack()
---print("melee attack")
-      sol.timer.start(map, 8000, function() can_melee_attack = true end)
+      sol.timer.start(map, 17000, function() can_beam_attack = true end)
 
     end
 
@@ -195,7 +195,7 @@ function enemy:throw_sword()
       boomerang:remove()
     end
 
-    enemy:finish_attacking()
+    sol.timer.start(map, 1000, function() enemy:finish_attacking() end)
 
   end)
 end
@@ -241,8 +241,22 @@ function enemy:surround_attack()
       end
     end)
 
-    enemy:finish_attacking()
+    sol.timer.start(map, 2000, function() enemy:finish_attacking() end)
 
+  end)
+end
+
+function enemy:melee_attack()
+  sprite:set_animation("wind_up")
+  sol.timer.start(map, 800, function()
+    sprite:set_animation("attack", function() sprite:set_animation("walking") end)
+    local sword_sprite = enemy:create_sprite("enemies/misc/sea_king_sword_slash")
+    enemy:set_invincible_sprite(sword_sprite)
+    function sword_sprite:on_animation_finished()
+      enemy:remove_sprite(sword_sprite)
+    end
+    sol.audio.play_sound("sword_spin_attack_release")
+    enemy:finish_attacking()
   end)
 end
 
@@ -289,54 +303,20 @@ function enemy:tide_attack()
         enemy:set_default_attack_consequences()
         breathing_fire = false
         sweeping = false
-        enemy:finish_attacking()
+        sol.timer.start(map, 30, function() enemy:finish_attacking() end)
       end
       function m:on_finished()
         enemy:set_default_attack_consequences()
         breathing_fire = false
         sweeping = false
-        enemy:finish_attacking()
+        sol.timer.start(map, 30, function() enemy:finish_attacking() end)
       end
 
     end
 end
 
 
---Summon blasts in a pattern on the floor
-function enemy:pattern_attack()
-  enemy:stop_movement()
-  local xref, yref, lref = map:get_entity("boss_teleport_ref"):get_position()
-  map:create_poof(enemy:get_position())
-  map:create_poof(xref, yref, lref)
-  sol.audio.play_sound("fire_burst_3")
-  sprite:set_animation("invisible")
-  enemy:set_position(xref, yref, lref)
-  sprite:set_animation("wind_up_summon")
-  sol.audio.play_sound("charge_1")
-  sol.timer.start(map, 1000, function()
-    sol.timer.start(enemy, 1000, function()
-      sprite:set_animation("walking")
-      smoke_sprite:set_animation("walking")
-    end)
 
-    local NUM_IN_ROW = 6
-    local X_SPACING = 48
-    local function create_row(y)
-      for i=1, NUM_IN_ROW do
-        enemy:create_enemy{
-          x = -NUM_IN_ROW * X_SPACING + (i-1) * X_SPACING + (NUM_IN_ROW / 2 * X_SPACING + X_SPACING - 8),
-          y = y, breed = "misc/sea_blast"
-        }
-      end
-    end
-
-    for i=1, 3 do
-      create_row(i*64 - 56)
-    end
-    sol.audio.play_sound("fire_burst_1")
-    sol.timer.start(map, 1000, function() enemy:finish_attacking() end)
-  end)
-end
 
 
 --Projectile A (I think there'll be more)
@@ -426,17 +406,45 @@ function enemy:beam_attack()
 end
 
 
-function enemy:melee_attack()
-  sprite:set_animation("wind_up")
-  sol.timer.start(map, 800, function()
-    sprite:set_animation("attack", function() sprite:set_animation("walking") end)
-    local sword_sprite = enemy:create_sprite("enemies/misc/sea_king_sword_slash")
-    enemy:set_invincible_sprite(sword_sprite)
-    function sword_sprite:on_animation_finished()
-      enemy:remove_sprite(sword_sprite)
+
+function enemy:unlock_pattern_attack()
+  can_projectile_attack = true
+end
+
+
+--Summon blasts in a pattern on the floor
+function enemy:pattern_attack()
+  enemy:stop_movement()
+  local xref, yref, lref = map:get_entity("boss_teleport_ref"):get_position()
+  map:create_poof(enemy:get_position())
+  map:create_poof(xref, yref, lref)
+  sol.audio.play_sound("fire_burst_3")
+  sprite:set_animation("invisible")
+  enemy:set_position(xref, yref, lref)
+  sprite:set_animation("wind_up_summon")
+  sol.audio.play_sound("charge_1")
+  sol.timer.start(map, 1000, function()
+    sol.timer.start(enemy, 1000, function()
+      sprite:set_animation("walking")
+      smoke_sprite:set_animation("walking")
+    end)
+
+    local NUM_IN_ROW = 6
+    local X_SPACING = 48
+    local function create_row(y)
+      for i=1, NUM_IN_ROW do
+        enemy:create_enemy{
+          x = -NUM_IN_ROW * X_SPACING + (i-1) * X_SPACING + (NUM_IN_ROW / 2 * X_SPACING + X_SPACING - 8),
+          y = y, breed = "misc/sea_blast"
+        }
+      end
     end
-    sol.audio.play_sound("sword_spin_attack_release")
-    enemy:finish_attacking()
+
+    for i=1, 3 do
+      create_row(i*64 - 56)
+    end
+    sol.audio.play_sound("fire_burst_1")
+    sol.timer.start(map, 5000, function() enemy:finish_attacking() end)
   end)
 end
 

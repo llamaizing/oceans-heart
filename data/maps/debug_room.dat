@@ -5122,7 +5122,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "isle_of_storms/isle_of_storms_landing",
+  destination_map = "isle_of_storms/palace",
+  destination = "boss",
 }
 
 custom_entity{

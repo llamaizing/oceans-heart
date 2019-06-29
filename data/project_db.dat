@@ -318,6 +318,7 @@ sprite{ id = "enemies/misc/air_wave", description = "Air Wave Attack" }
 sprite{ id = "enemies/misc/arrow_4", description = "Arrow - 4 directions" }
 sprite{ id = "enemies/misc/barrel_cannon", description = "Barrel Cannon" }
 sprite{ id = "enemies/misc/big_stone", description = "big stone" }
+sprite{ id = "enemies/misc/black_blast", description = "Black Blast" }
 sprite{ id = "enemies/misc/blue_fire", description = "Blue Fire" }
 sprite{ id = "enemies/misc/boomerang", description = "Boomerang" }
 sprite{ id = "enemies/misc/crusher", description = "Crusher" }
@@ -338,6 +339,7 @@ sprite{ id = "enemies/misc/octorok_stone", description = "small stone" }
 sprite{ id = "enemies/misc/octorok_stone_2", description = "Stone 2" }
 sprite{ id = "enemies/misc/orange", description = "Orange" }
 sprite{ id = "enemies/misc/pollutant_blocker", description = "Pollutant Blocker" }
+sprite{ id = "enemies/misc/pollution_puddle", description = "Pollution Puddle" }
 sprite{ id = "enemies/misc/pop", description = "Pop-For Enemy Attacks" }
 sprite{ id = "enemies/misc/root_small", description = "Root - Small" }
 sprite{ id = "enemies/misc/sea_beam", description = "Sea Beam" }

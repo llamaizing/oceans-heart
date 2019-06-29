@@ -226,6 +226,7 @@ function boss_sensor:on_activated()
       sol.audio.play_sound("fire_burst_3")
       sol.audio.play_sound("monster_scream")
       sol.audio.play_music("oceans_heart")
+      sol.timer.start(map, 10000, function() sea_king_boss:unlock_pattern_attack() end)
     end)
   end
 end
