@@ -6412,6 +6412,60 @@ enemy{
   breed = "misc/barrel_cannon",
 }
 
+enemy{
+  name = "blackbeard_ship_cannon_3",
+  layer = 0,
+  x = 1192,
+  y = 853,
+  direction = 2,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "blackbeard_ship_cannon_4",
+  layer = 0,
+  x = 1192,
+  y = 869,
+  direction = 2,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "blackbeard_ship_cannon_5",
+  layer = 0,
+  x = 1192,
+  y = 885,
+  direction = 2,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "blackbeard_ship_cannon_6",
+  layer = 0,
+  x = 1192,
+  y = 901,
+  direction = 2,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "blackbeard_ship_cannon_7",
+  layer = 0,
+  x = 1192,
+  y = 917,
+  direction = 2,
+  breed = "misc/barrel_cannon",
+}
+
+enemy{
+  name = "blackbeard_ship_cannon_8",
+  layer = 0,
+  x = 1192,
+  y = 933,
+  direction = 2,
+  breed = "misc/barrel_cannon",
+}
+
 tile{
   layer = 1,
   x = 192,
@@ -6646,16 +6700,6 @@ tile{
   height = 32,
   pattern = "1075",
   tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 1,
-  x = 1184,
-  y = 960,
-  width = 16,
-  height = 80,
-  pattern = "2181",
-  tileset = "oceanheart_outdoors_1",
 }
 
 dynamic_tile{

@@ -14384,7 +14384,6 @@ dialog{
   id = "_yarrowmouth.signs.kingsdown_1",
   text = [[
 North - The Puzzlewood
-South - Yarrow Lighthouse
 East - Kingsdown Isle, Tern Marsh
 ]],
 }
@@ -14442,8 +14441,7 @@ Yarrowmouth Volunteer Navy Outpost
 dialog{
   id = "_yarrowmouth.signs.puzzlewood_1",
   text = [[
-Left - Road to Yarrow Lighthouse and
-Kingsdown Isle
+Left - Road to Kingsdown Isle
 Right - Mushroom Pickin' Spot
 North - it's confusing. Just explore.
 ]],
@@ -14474,8 +14472,8 @@ dialog{
   id = "_yarrowmouth.signs.village_1",
   text = [[
 East - The Puzzlewood
-(Roads to Yarrow Lighthouse, Kingsdown Isle,
-Naerreturn Bay are all through Puzzlewood)
+(Roads to Kingsdown Isle, Naerreturn Bay
+and Tern Marsh are all through Puzzlewood)
 ]],
 }
 

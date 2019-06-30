@@ -62,27 +62,34 @@ end
 local can_shoot_bombs = true
 local can_pollute_blast = true
 local can_fire_ship_cannons = true
+local can_sword = true
 
 --Select an Attack:
 function enemy:check_to_attack()
   if not attacking then
-    if can_shoot_bombs then
+    if can_sword then
+      attacking = true
+      can_sword = false
+      enemy:sword()
+      sol.timer.start(map, 5000, function() can_sword = true end)
+
+    elseif can_shoot_bombs then
       attacking = true
       can_shoot_bombs = false
       enemy:shoot_bombs()
-      sol.timer.start(map, 6500, function() can_pattern_attack = true end)
+      sol.timer.start(map, 800, function() can_pattern_attack = true end)
 
     elseif can_pollute_blast then
-      attacking = false
+      attacking = true
       can_pollute_blast = false
       enemy:pollute_blast()
-      sol.timer.start(map, 11000, function() can_pollute_blast = true end)
+      sol.timer.start(map, 13000, function() can_pollute_blast = true end)
 
     elseif can_fire_ship_cannons then
-      attacking = false
+      attacking = true
       can_fire_ship_cannons = false
       enemy:fire_ship_cannons()
-      sol.timer.start(map, 15000, function() can_fire_ship_cannons = true end)
+      sol.timer.start(map, 12000, function() can_fire_ship_cannons = true end)
 
     end
 
@@ -146,14 +153,32 @@ end
 
 
 --Ship Cannons
-function fire_ship_cannons()
+function enemy:fire_ship_cannons()
+  enemy:stop_movement()
   sprite:set_animation("hands_raised_wind_up")
   sol.timer.start(map, 900, function()
     sprite:set_animation("flap_arms", function() sprite:set_animation("walking") end)
     for cannon in map:get_entities("blackbeard_ship_cannon") do
-
+      cannon:shoot()
     end
-  end
+    enemy:finish_attacking()
+  end)
+end
+
+--Sword Slash
+function enemy:sword()
+  enemy:stop_movement()
+  sprite:set_animation("wind_up")
+  sol.timer.start(map, 800, function()
+    sprite:set_animation("attack", function() sprite:set_animation("walking") end)
+    local sword_sprite = enemy:create_sprite("enemies/misc/sea_king_sword_slash")
+    enemy:set_invincible_sprite(sword_sprite)
+    function sword_sprite:on_animation_finished()
+      enemy:remove_sprite(sword_sprite)
+    end
+    sol.audio.play_sound("sword_spin_attack_release")
+    enemy:finish_attacking()
+  end)
 end
 
 

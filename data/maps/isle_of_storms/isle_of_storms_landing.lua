@@ -25,11 +25,17 @@ map:register_event("on_started", function()
   rain_manager:set_lightning_delay(2000, 7500)
   rain_manager:set_darkness(120, 190)
 
+  for cannon in map:get_entities("blackbeard_ship_cannon") do
+    cannon.shooting_disabled = true
+    cannon.projectile_breed = "misc/bomb_4_direction"
+  end
+
   if game:get_value("quest_isle_of_storms") and game:get_value("quest_isle_of_storms") < 1 then
     game:set_value("quest_isle_of_storms", 1)
   end
   if game:get_value("sea_king_defeated") then
     rune_sensor:set_enabled(false)
+    for e in map:get_entities("broken_ship") do e:set_enabled(true) end
   end
   brutus:get_sprite():set_animation("stopped")
   if game:get_value("quest_isle_of_storms") and game:get_value("quest_isle_of_storms") >= 2 then

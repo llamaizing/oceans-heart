@@ -36,17 +36,16 @@ local function hero_nearby()
 end
 
 function enemy:on_restarted()
-  sol.timer.start(enemy, 100, function()
-    if can_shoot and hero_nearby() then
-      can_shoot = false
+  sol.timer.start(enemy, math.random(SHOOT_FREQUENCY - 500, SHOOT_FREQUENCY + 500), function()
+    if hero_nearby() then
       enemy:shoot()
-      sol.timer.start(enemy, math.random(SHOOT_FREQUENCY - 500, SHOOT_FREQUENCY + 500), function()
-        can_shoot = true
-      end)
     end
-    return true
+    return math.random(SHOOT_FREQUENCY - 500, SHOOT_FREQUENCY + 500)
   end)
 end
+
+
+
 
 function enemy:shoot()
   sol.audio.play_sound("shoot_magic")

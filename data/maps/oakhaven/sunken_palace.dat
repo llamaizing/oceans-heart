@@ -16932,7 +16932,7 @@ door{
   x = 104,
   y = 152,
   direction = 3,
-  sprite = "entities/door_ext_1",
+  sprite = "entities/door_locked_stone",
   savegame_variable = "exterior_door_sinking_lighthouse_state",
   opening_method = "interaction_if_item",
   opening_condition = "key_sinking_lighthouse",

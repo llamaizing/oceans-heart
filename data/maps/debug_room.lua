@@ -17,6 +17,10 @@ map:register_event("on_started", function()
   hero:set_walking_speed(96)
 end)
 
+  for cannon in map:get_entities("blackbeard_ship_cannon") do
+    cannon.shooting_disabled = true
+    cannon.projectile_breed = "misc/bomb_4_direction"
+  end
 
 
 function shopkeeper:on_interaction()
