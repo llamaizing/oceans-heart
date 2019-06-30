@@ -1521,6 +1521,7 @@ enemy{ id = "general_enemy_example", description = "General Enemy Example" }
 enemy{ id = "misc/arrow_4", description = "Arrow - 4 directions" }
 enemy{ id = "misc/barrel_cannon", description = "Barrel Cannon" }
 enemy{ id = "misc/big_stone", description = "Big Stone" }
+enemy{ id = "misc/black_blast", description = "Black Blast" }
 enemy{ id = "misc/blue_fire", description = "Blue Fire" }
 enemy{ id = "misc/bomb_4_direction", description = "Bomb - 4 direction" }
 enemy{ id = "misc/bomb_any_direction", description = "Bomb-Any Direction" }
@@ -1545,6 +1546,7 @@ enemy{ id = "misc/octorok_stone", description = "Small Stone" }
 enemy{ id = "misc/octorok_stone_2", description = "Stone 2" }
 enemy{ id = "misc/orange", description = "Orange" }
 enemy{ id = "misc/pollutant_blocker", description = "Pollutant Blocker" }
+enemy{ id = "misc/pollution_puddle", description = "Pollution Puddle" }
 enemy{ id = "misc/root_small", description = "Root - Small" }
 enemy{ id = "misc/sea_blast", description = "SeaBlast" }
 enemy{ id = "misc/seagull", description = "Seagull" }

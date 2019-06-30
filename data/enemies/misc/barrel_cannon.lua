@@ -15,13 +15,15 @@ function enemy:on_created()
   delay = 0
   if enemy:get_property("frequency") then frequency = enemy:get_property("frequency") end
   if enemy:get_property("delay") then delay = enemy:get_property("delay") end
+  enemy.shooting_disabled = false
+  enemy.projectile_breed = "misc/arrow_4"
 end
 
 
 function enemy:on_restarted()
   sol.timer.start(enemy, delay, function()
     sol.timer.start(enemy, frequency, function()
-      enemy:shoot()
+      if not enemy.shooting_disabled then enemy:shoot() end
       return true
     end)
   end)
@@ -36,7 +38,7 @@ function enemy:shoot()
     x = dx[direction],
     y = dy[direction],
     direction = direction,
-    breed = "misc/arrow_4"
+    breed = enemy.projectile_breed
   })
   arrow:go(direction)
 end

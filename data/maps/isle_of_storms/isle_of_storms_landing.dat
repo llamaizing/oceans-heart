@@ -7439,66 +7439,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1216,
-  y = 304,
-  width = 16,
-  height = 32,
-  pattern = "130",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "135",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
-  x = 1232,
-  y = 288,
-  width = 16,
-  height = 16,
-  pattern = "133",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
-  x = 1232,
-  y = 304,
-  width = 16,
-  height = 32,
-  pattern = "132",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
-  x = 1232,
-  y = 336,
-  width = 16,
-  height = 16,
-  pattern = "112",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 336,
-  width = 16,
-  height = 16,
-  pattern = "111",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
   x = 856,
   y = 208,
   width = 16,
@@ -8540,36 +8480,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1208,
-  y = 304,
-  width = 24,
-  height = 32,
-  pattern = "166",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
-  x = 1224,
-  y = 328,
-  width = 16,
-  height = 16,
-  pattern = "168",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
-  x = 1224,
-  y = 320,
-  width = 16,
-  height = 16,
-  pattern = "172",
-  tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
   x = 968,
   y = 416,
   width = 16,
@@ -8928,16 +8838,6 @@ tile{
   height = 16,
   pattern = "172",
   tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 0,
-  x = 1184,
-  y = 392,
-  width = 80,
-  height = 40,
-  pattern = "2154",
-  tileset = "oceanheart_outdoors_1",
 }
 
 tile{
@@ -11542,6 +11442,466 @@ tile{
   tileset = "palace_of_storms",
 }
 
+tile{
+  layer = 0,
+  x = 1272,
+  y = 432,
+  width = 16,
+  height = 32,
+  pattern = "130",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 1272,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "135",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 1288,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "133",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 1288,
+  y = 432,
+  width = 16,
+  height = 32,
+  pattern = "132",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 1288,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "112",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 1272,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "111",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 432,
+  width = 24,
+  height = 32,
+  pattern = "166",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "168",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "172",
+  tileset = "palace_of_storms",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "2065",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "2063",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "2054",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "2059",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "2056",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "2064",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "2061",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "2066",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "2057",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 336,
+  width = 8,
+  height = 16,
+  pattern = "2060",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "2055",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 336,
+  width = 8,
+  height = 16,
+  pattern = "2062",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 360,
+  width = 32,
+  height = 16,
+  pattern = "2175",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "2017",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "2021",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "2029",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "2018",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "2005",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "2030",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "2027",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "2023",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "2025",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "2032",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "2024",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "2026",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "2019",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "2034",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "2040",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "2038",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "2017",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "2029",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "2005",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "2030",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "2027",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "2025",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "2032",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "2026",
+  tileset = "oceanheart_outdoors_1",
+}
+
 dynamic_tile{
   name = "rune",
   layer = 0,
@@ -12639,26 +12999,6 @@ tile{
   height = 16,
   pattern = "172",
   tileset = "palace_of_storms",
-}
-
-tile{
-  layer = 1,
-  x = 1168,
-  y = 328,
-  width = 16,
-  height = 80,
-  pattern = "2181",
-  tileset = "oceanheart_outdoors_1",
-}
-
-tile{
-  layer = 1,
-  x = 1184,
-  y = 328,
-  width = 80,
-  height = 64,
-  pattern = "2197",
-  tileset = "oceanheart_outdoors_1",
 }
 
 tile{

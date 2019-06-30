@@ -22,6 +22,29 @@ animation{
   },
 }
 animation{
+  name = "flap_arms",
+  src_image = "enemies/bosses/blackbeard.png",
+  frame_delay = 90,
+  directions = {
+    { x = 672, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 5 },
+    { x = 672, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 5 },
+    { x = 672, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 5 },
+    { x = 672, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 5 },
+  },
+}
+animation{
+  name = "hands_raised_wind_up",
+  src_image = "enemies/bosses/blackbeard.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 576, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
+    { x = 576, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
+    { x = 576, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
+    { x = 576, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
+  },
+}
+animation{
   name = "holding_oceans_heart",
   src_image = "enemies/bosses/blackbeard.png",
   frame_delay = 100,
@@ -54,6 +77,27 @@ animation{
     { x = 0, y = 48, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
     { x = 0, y = 96, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
     { x = 0, y = 144, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
+  },
+}
+animation{
+  name = "shoot",
+  src_image = "enemies/bosses/blackbeard.png",
+  frame_delay = 100,
+  directions = {
+    { x = 984, y = 200, frame_width = 48, frame_height = 40, origin_x = 20, origin_y = 37, num_frames = 3 },
+    { x = 992, y = 248, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37, num_frames = 3 },
+    { x = 984, y = 296, frame_width = 48, frame_height = 40, origin_x = 32, origin_y = 37, num_frames = 3 },
+    { x = 992, y = 344, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37, num_frames = 3 },
+  },
+}
+animation{
+  name = "shoot_wind_up",
+  src_image = "enemies/bosses/blackbeard.png",
+  directions = {
+    { x = 984, y = 200, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37 },
+    { x = 992, y = 248, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },
+    { x = 992, y = 296, frame_width = 40, frame_height = 40, origin_x = 20, origin_y = 37 },
+    { x = 992, y = 344, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },
   },
 }
 animation{
