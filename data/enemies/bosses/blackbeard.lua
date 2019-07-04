@@ -8,6 +8,7 @@ local beam_sprite
 local angle = 0
 
 local attacking = false
+local puddling = false
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()
@@ -41,6 +42,10 @@ function enemy:on_restarted()
     sweeping = false
     enemy:finish_attacking()
   end
+  if puddling then
+    puddling = false
+    enemy:finish_attacking()
+  end
   sol.timer.start(enemy, 100, function()
     if enemy:get_life() > 1 then
       enemy:check_to_attack()
@@ -51,6 +56,7 @@ end
 
 
 function enemy:finish_attacking()
+  if puddling then puddling = false end
   sol.timer.start(map, 500, function()
     attacking = false
     enemy:on_restarted()
@@ -58,38 +64,88 @@ function enemy:finish_attacking()
   end)
 end
 
+function enemy:teleport_to(x,y,l)
+  local a,b,c = enemy:get_position()
+  map:create_poof(a,b+5,c)
+  enemy:set_position(x,y,l)
+  a,b,c = enemy:get_position()
+  map:create_poof(a,b+5,c)
+end
+
 
 local can_shoot_bombs = true
-local can_pollute_blast = true
+local can_pollute_blast = false
 local can_fire_ship_cannons = true
 local can_sword = true
+local can_rune_barrage = true
+local can_gross_dash = true
+local can_teleport_shot = true
+local can_summon_crystals = true
+--local can_pattern_attack = true
+--local can_tide_attack = true
 
 --Select an Attack:
 function enemy:check_to_attack()
   if not attacking then
-    if can_sword then
+    if can_pattern_attack then
+      attacking = true
+      can_pattern_attack = false
+      enemy:pattern_attack()
+      sol.timer.start(map, 13000, function() can_pattern_attack = true end)
+
+    elseif can_tide_attack then
+      attacking = true
+      can_tide_attack = false
+      enemy:tide_attack()
+      sol.timer.start(map, 13000, function() can_tide_attack = true end)
+
+    elseif can_sword and enemy:get_distance(hero) < 80 then
       attacking = true
       can_sword = false
       enemy:sword()
-      sol.timer.start(map, 5000, function() can_sword = true end)
+      sol.timer.start(map, 8000, function() can_sword = true end)
 
     elseif can_shoot_bombs then
       attacking = true
       can_shoot_bombs = false
       enemy:shoot_bombs()
-      sol.timer.start(map, 800, function() can_pattern_attack = true end)
+      sol.timer.start(map, 11000, function() can_shoot_bombs = true end)
 
-    elseif can_pollute_blast then
+    elseif can_pollute_blast and can_rune_barrage==false then
       attacking = true
       can_pollute_blast = false
       enemy:pollute_blast()
-      sol.timer.start(map, 13000, function() can_pollute_blast = true end)
+      sol.timer.start(map, 14000, function() can_pollute_blast = true end)
 
     elseif can_fire_ship_cannons then
       attacking = true
       can_fire_ship_cannons = false
       enemy:fire_ship_cannons()
-      sol.timer.start(map, 12000, function() can_fire_ship_cannons = true end)
+      sol.timer.start(map, 14000, function() can_fire_ship_cannons = true end)
+
+    elseif can_teleport_shot then
+      attacking = true
+      can_teleport_shot = false
+      enemy:teleport_shot()
+      sol.timer.start(map, 9000, function() can_teleport_shot = true end)
+
+    elseif can_gross_dash then
+      attacking = true
+      can_gross_dash = false
+      enemy:gross_dash()
+      sol.timer.start(map, 8000, function() can_gross_dash = true end)
+
+    elseif can_rune_barrage then
+      attacking = true
+      can_rune_barrage = false
+      enemy:rune_barrage()
+      sol.timer.start(map, 16000, function() can_rune_barrage = true end)
+
+    elseif can_summon_crystals then
+      attacking = true
+      can_summon_crystals = false
+      enemy:summon_crystals()
+      sol.timer.start(map, 10000, function() can_summon_crystals = true end)
 
     end
 
@@ -104,8 +160,14 @@ end
 
 --Shoot Bombs
 function enemy:shoot_bombs()
+  local m = sol.movement.create("straight")
+  m:set_angle(hero:get_angle(enemy))
+  m:set_max_distance(80)
+  m:set_speed(190)
+  m:start(enemy, function() sprite:set_direction(enemy:get_direction4_to(hero)) end)
+  function m:on_obstacle_reached() sprite:set_direction(enemy:get_direction4_to(hero)) end
   sprite:set_animation("shoot_wind_up")
-  sol.timer.start(enemy, 400, function()
+  sol.timer.start(enemy, 1200, function()
     sprite:set_animation("shoot", function()
       enemy:make_bomb_go()
       sprite:set_animation("shoot", function()
@@ -116,12 +178,12 @@ function enemy:shoot_bombs()
         end)
       end)
     end)
-    sol.timer.start(map, 900, function() enemy:finish_attacking() end)
   end)
+  sol.timer.start(map, 2100, function() enemy:finish_attacking() end)
 end
   function enemy:make_bomb_go()
     local bomb = enemy:create_enemy{breed="misc/bomb_any_direction"}
-    sol.audio.play_sound"shoot"
+    sol.audio.play_sound"hand_cannon"
     bomb:go(enemy:get_angle(hero))
   end
 
@@ -130,24 +192,29 @@ end
 function enemy:pollute_blast()
   enemy:stop_movement()
   sprite:set_animation("hands_raised_wind_up")
+  sol.audio.play_sound"charge_1"
   sol.timer.start(map, 900, function()
     sprite:set_animation("flap_arms", function() sprite:set_animation("walking") end)
-    enemy:create_enemy{breed="misc/black_blast"}
     local offset_x = {[0]=32,[1]=0,[2]=-32,[3]=0,[4]=0}
     local offset_y = {[0]=0,[1]=32,[2]=0,[3]=-32,[4]=0}
+    for i=0,4 do
+      enemy:create_enemy{breed="misc/black_blast",
+      x=offset_x[i], y=offset_y[i]}
+    end
     for i=0, 4 do
       sol.timer.start(map, math.random(200,800), function()
         local x=offset_x[i] + math.random(-16,16)
         local y=offset_y[i] + math.random(-16,16)
-        if not enemy:test_obstacles(x,y) then 
+        if not enemy:test_obstacles(x,y) then
+          sol.audio.play_sound"pollution_puddle"
           enemy:create_enemy{
             breed="misc/pollution_puddle",
             x=x,y=y
           }
         end
       end)
-    enemy:finish_attacking()
     end
+    sol.timer.start(map, 900, function() enemy:finish_attacking() end)
   end)
 end
 
@@ -155,32 +222,136 @@ end
 --Ship Cannons
 function enemy:fire_ship_cannons()
   enemy:stop_movement()
-  sprite:set_animation("hands_raised_wind_up")
+  sprite:set_animation("hold_sword_up")
   sol.timer.start(map, 900, function()
-    sprite:set_animation("flap_arms", function() sprite:set_animation("walking") end)
+    sprite:set_animation("sword_shine", function() sprite:set_animation("walking") end)
+    sol.audio.play_sound"cannon_fire"
     for cannon in map:get_entities("blackbeard_ship_cannon") do
       cannon:shoot()
     end
-    enemy:finish_attacking()
+    sol.timer.start(map, 1000, function() enemy:finish_attacking() end)
   end)
 end
 
 --Sword Slash
 function enemy:sword()
   enemy:stop_movement()
+  sol.audio.play_sound"charge_sword"
   sprite:set_animation("wind_up")
   sol.timer.start(map, 800, function()
     sprite:set_animation("attack", function() sprite:set_animation("walking") end)
-    local sword_sprite = enemy:create_sprite("enemies/misc/sea_king_sword_slash")
+    local sword_sprite = enemy:create_sprite("enemies/bosses/blackbeard_sword_slash")
+    sword_sprite:set_direction(sprite:get_direction())
     enemy:set_invincible_sprite(sword_sprite)
     function sword_sprite:on_animation_finished()
       enemy:remove_sprite(sword_sprite)
     end
     sol.audio.play_sound("sword_spin_attack_release")
-    enemy:finish_attacking()
+    sol.timer.start(map, 800, function() enemy:finish_attacking() end)
   end)
 end
 
+
+--Rune Barrage
+function enemy:rune_barrage()
+  enemy:stop_movement()
+  enemy:teleport_to(map:get_entity("boss_teleport_ref"):get_position())
+  enemy:stop_movement()
+  sprite:set_animation("holding_oceans_heart")
+  sol.audio.play_sound"charge_2"
+  sol.timer.start(map, 1000, function()
+    enemy:stop_movement()
+    for i=1, math.random(12, 16) do
+      local x, y = 0,0
+      y = y + math.random(-80, 120)
+      x = x + math.random(-140, 140)
+      if not enemy:test_obstacles(x,y) then
+        sol.timer.start(map, 250*i, function()
+          sol.audio.play_sound("fire_burst_1")
+          local e = enemy:create_enemy{breed="misc/sea_blast",x=x,y=y}
+        end)
+      end
+    end
+    sol.timer.start(map, 3000, function()
+      sprite:set_animation"walking"
+      enemy:finish_attacking()
+    end)
+  end)
+end
+
+
+--Gross Dash
+function enemy:gross_dash()
+  enemy:stop_movement()
+  sprite:set_animation"crouching"
+  sol.timer.start(map, 400, function()
+    local m = sol.movement.create("straight")
+    m:set_speed(180)
+    m:set_max_distance(500)
+    m:set_angle(enemy:get_angle(hero))
+    sprite:set_animation"walking"
+    sol.audio.play_sound"dash_big"
+    puddling = true
+    m:start(enemy, function() enemy:finish_attacking() end)
+    function m:on_obstacle_reached()
+      enemy:finish_attacking()
+    end
+    sol.timer.start(map, 200, function()
+      if puddling then
+        sol.audio.play_sound"pollution_puddle"
+        enemy:create_enemy{breed="misc/pollution_puddle"}
+        return true
+      end
+    end)
+  end)
+end
+
+--Teleport then do projectiles
+function enemy:teleport_shot()
+  enemy:stop_movement()
+  enemy:teleport_to(map:get_entity("boss_teleport_ref"):get_position())
+  sprite:set_animation("hands_raised_wind_up")
+  sol.timer.start(map, 1000, function()
+    local NUM_PROJECTILES = 8
+    for i=1, NUM_PROJECTILES do
+      local projectile = enemy:create_enemy{breed="misc/energy_ball_black_2"}
+      projectile:go(math.pi*2/NUM_PROJECTILES*i)
+    end
+    sol.audio.play_sound("shoot_magic_2")
+    sprite:set_animation("flap_arms", "walking")
+    sol.timer.start(map, 1000, function() enemy:finish_attacking() end)
+  end)
+end
+
+
+--Summon obstacles
+function enemy:summon_crystals()
+  enemy:stop_movement()
+  sprite:set_animation("holding_oceans_heart")
+  sol.audio.play_sound"charge_2_monster"
+  sol.timer.start(map, 1500, function()
+    local offset_x = {[0]=32,[1]=0,[2]=-32,[3]=0,[4]=0}
+    local offset_y = {[0]=0,[1]=32,[2]=0,[3]=-32,[4]=0}
+    for i=0,4 do
+      local x=offset_x[i] + math.random(-16,16)
+      local y=offset_y[i] + math.random(-16,16)
+      if not enemy:test_obstacles(x,y) then
+        sol.timer.start(map, math.random(1000), function()
+          local obstacle = enemy:create_enemy{breed="misc/pollutant_blocker",x=x,y=y}
+          sol.timer.start(map, 6000, function() obstacle:hurt(100) end)
+        end)
+      end
+    end
+    sprite:set_animation"walking"
+    enemy:finish_attacking()
+  end)
+
+end
+
+
+
+
+---------------Sea King Attacks------------
 
 --Throw Sword
 function enemy:throw_sword()
@@ -307,7 +478,6 @@ function enemy:tide_attack()
     map:create_poof(enemy:get_position())
     sol.audio.play_sound("fire_burst_3")
     sprite:set_animation("invisible")
-    smoke_sprite:set_animation("invisible")
     local x, y = enemy:get_position()
     local xref, yref = map:get_entity("boss_teleport_ref"):get_position()
     enemy:set_position(x, yref)
@@ -319,8 +489,7 @@ function enemy:tide_attack()
     function m:on_obstacle_reached()
       map:create_poof(enemy:get_position())
       sol.audio.play_sound("fire_burst_3")
-      sprite:set_animation("wind_up_summon")
-      smoke_sprite:set_animation("walking")
+      sprite:set_animation("wind_up")
       m:set_angle(angle + math.pi)
       m:start(enemy)
       local breathing_fire = true
@@ -403,7 +572,6 @@ function enemy:beam_attack()
     map:create_poof(enemy:get_position())
     sol.audio.play_sound("fire_burst_3")
     sprite:set_animation("invisible")
-    smoke_sprite:set_animation("invisible")
     local x, y = enemy:get_position()
     local xref, yref = map:get_entity("boss_teleport_ref"):get_position()
     enemy:set_position(x, yref)
@@ -416,7 +584,6 @@ function enemy:beam_attack()
       map:create_poof(enemy:get_position())
       sol.audio.play_sound("fire_burst_3")
       sprite:set_animation("wind_up_summon")
-      smoke_sprite:set_animation("walking")
       m:set_angle(angle + math.pi)
       m:set_speed(120)
       m:start(enemy)
@@ -461,12 +628,11 @@ function enemy:pattern_attack()
   sol.audio.play_sound("fire_burst_3")
   sprite:set_animation("invisible")
   enemy:set_position(xref, yref, lref)
-  sprite:set_animation("wind_up_summon")
+  sprite:set_animation("wind_up")
   sol.audio.play_sound("charge_1")
   sol.timer.start(map, 1000, function()
     sol.timer.start(enemy, 1000, function()
       sprite:set_animation("walking")
-      smoke_sprite:set_animation("walking")
     end)
 
     local NUM_IN_ROW = 6

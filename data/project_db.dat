@@ -288,6 +288,7 @@ sprite{ id = "enemies/bosses/avalanche_golem", description = "Avalanche Golem" }
 sprite{ id = "enemies/bosses/bart", description = "enemies/bosses/bart" }
 sprite{ id = "enemies/bosses/bart_weapon", description = "enemies/bosses/bart_weapon" }
 sprite{ id = "enemies/bosses/blackbeard", description = "Blackbeard" }
+sprite{ id = "enemies/bosses/blackbeard_sword_slash", description = "BlackbeardSwordSlash" }
 sprite{ id = "enemies/bosses/burrow_crab", description = "Burrow Crab" }
 sprite{ id = "enemies/bosses/burrow_crab_2", description = "Burrow Crab 2" }
 sprite{ id = "enemies/bosses/centipede_king", description = "Centipede King" }
@@ -1248,13 +1249,18 @@ sound{ id = "burrow2", description = "Burrow 2" }
 sound{ id = "bush", description = "bush" }
 sound{ id = "bush_default", description = "bush_default" }
 sound{ id = "cane", description = "cane" }
+sound{ id = "cannon_fire", description = "cannon_fire" }
 sound{ id = "charge_1", description = "charge_1" }
+sound{ id = "charge_2", description = "charge_2" }
+sound{ id = "charge_2_monster", description = "charge_2_monster" }
+sound{ id = "charge_sword", description = "charge_sword" }
 sound{ id = "chest_open", description = "chest_open" }
 sound{ id = "click_low", description = "click_low" }
 sound{ id = "cursor", description = "cursor" }
 sound{ id = "cursor_2", description = "cursor_2" }
 sound{ id = "danger", description = "danger" }
 sound{ id = "dash", description = "dash" }
+sound{ id = "dash_big", description = "dash_big" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
 sound{ id = "door_unlocked", description = "door_unlocked" }
@@ -1279,6 +1285,7 @@ sound{ id = "flail_swing", description = "flail_swing" }
 sound{ id = "flail_throw", description = "flail_throw" }
 sound{ id = "gravel", description = "gravel" }
 sound{ id = "gravel2", description = "gravel2" }
+sound{ id = "hand_cannon", description = "hand_cannon" }
 sound{ id = "heart", description = "heart" }
 sound{ id = "hero_dying", description = "hero_dying" }
 sound{ id = "hero_falls", description = "hero_falls" }
@@ -1311,6 +1318,7 @@ sound{ id = "picked_item", description = "picked_item" }
 sound{ id = "picked_rupee", description = "picked_rupee" }
 sound{ id = "picked_small_key", description = "picked_small_key" }
 sound{ id = "piece_of_heart", description = "piece_of_heart" }
+sound{ id = "pollution_puddle", description = "pollution_puddle" }
 sound{ id = "quest_advance", description = "quest_advance" }
 sound{ id = "quest_complete", description = "quest_complete" }
 sound{ id = "quest_log", description = "Quest Log" }

@@ -6191,8 +6191,8 @@ wall{
 dynamic_tile{
   name = "boss_teleport_ref",
   layer = 0,
-  x = 656,
-  y = 816,
+  x = 1048,
+  y = 864,
   width = 16,
   height = 16,
   pattern = "100",
@@ -6201,8 +6201,8 @@ dynamic_tile{
 
 pickable{
   layer = 0,
-  x = 152,
-  y = 309,
+  x = 816,
+  y = 1101,
   treasure_name = "sword",
 }
 

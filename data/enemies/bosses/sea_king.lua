@@ -248,6 +248,7 @@ end
 
 function enemy:melee_attack()
   sprite:set_animation("wind_up")
+  sol.audio.play_sound("charge_sword")
   sol.timer.start(map, 800, function()
     sprite:set_animation("attack", function() sprite:set_animation("walking") end)
     local sword_sprite = enemy:create_sprite("enemies/misc/sea_king_sword_slash")
@@ -375,6 +376,7 @@ function enemy:beam_attack()
     function m:on_obstacle_reached()
       map:create_poof(enemy:get_position())
       sol.audio.play_sound("fire_burst_3")
+      sol.audio.play_sound("charge_2_monster")
       sprite:set_animation("wind_up_summon")
       smoke_sprite:set_animation("walking")
       m:set_angle(angle + math.pi)
@@ -426,6 +428,7 @@ function enemy:pattern_attack()
   sol.timer.start(map, 1000, function()
     sol.timer.start(enemy, 1000, function()
       sprite:set_animation("walking")
+      sol.audio.play_sound"charge_2_monster"
       smoke_sprite:set_animation("walking")
     end)
 

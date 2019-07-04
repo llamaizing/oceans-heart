@@ -21,7 +21,7 @@ local properties = {
   has_ranged_attack = true,
   ranged_attack_distance = 190,
   ranged_attack_cooldown = 3000,
-  ranged_attack_sound = "shoot",
+  ranged_attack_sound = "hand_cannon",
   projectile_breed = "misc/bomb_4_direction",
   projectile_angle = "straight",
 

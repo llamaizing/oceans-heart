@@ -11796,6 +11796,17 @@ enemy{
   breed = "misc/barrel_cannon",
 }
 
+dynamic_tile{
+  name = "boss_teleport_ref",
+  layer = 0,
+  x = 1032,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "101",
+  tileset = "palace_of_storms",
+}
+
 tile{
   layer = 1,
   x = 576,

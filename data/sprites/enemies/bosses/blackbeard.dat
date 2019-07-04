@@ -22,6 +22,16 @@ animation{
   },
 }
 animation{
+  name = "crouching",
+  src_image = "enemies/bosses/blackbeard.png",
+  directions = {
+    { x = 144, y = 216, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },
+    { x = 144, y = 216, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },
+    { x = 144, y = 216, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },
+    { x = 144, y = 216, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },
+  },
+}
+animation{
   name = "flap_arms",
   src_image = "enemies/bosses/blackbeard.png",
   frame_delay = 90,
@@ -42,6 +52,16 @@ animation{
     { x = 576, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
     { x = 576, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
     { x = 576, y = 264, frame_width = 48, frame_height = 40, origin_x = 24, origin_y = 37, num_frames = 2 },
+  },
+}
+animation{
+  name = "hold_sword_up",
+  src_image = "enemies/bosses/blackbeard.png",
+  directions = {
+    { x = 688, y = 200, frame_width = 32, frame_height = 56, origin_x = 16, origin_y = 53 },
+    { x = 688, y = 200, frame_width = 32, frame_height = 56, origin_x = 16, origin_y = 53 },
+    { x = 688, y = 200, frame_width = 32, frame_height = 56, origin_x = 16, origin_y = 53 },
+    { x = 688, y = 200, frame_width = 32, frame_height = 56, origin_x = 16, origin_y = 53 },
   },
 }
 animation{
@@ -80,6 +100,16 @@ animation{
   },
 }
 animation{
+  name = "invisible",
+  src_image = "enemies/bosses/blackbeard.png",
+  directions = {
+    { x = 48, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 48, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 48, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 48, y = 24, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}
+animation{
   name = "shoot",
   src_image = "enemies/bosses/blackbeard.png",
   frame_delay = 100,
@@ -113,9 +143,21 @@ animation{
   },
 }
 animation{
+  name = "sword_shine",
+  src_image = "enemies/bosses/blackbeard.png",
+  frame_delay = 90,
+  directions = {
+    { x = 720, y = 200, frame_width = 32, frame_height = 56, origin_x = 16, origin_y = 53, num_frames = 4 },
+    { x = 720, y = 200, frame_width = 32, frame_height = 56, origin_x = 16, origin_y = 53, num_frames = 4 },
+    { x = 720, y = 200, frame_width = 32, frame_height = 56, origin_x = 16, origin_y = 53, num_frames = 4 },
+    { x = 720, y = 200, frame_width = 32, frame_height = 56, origin_x = 16, origin_y = 53, num_frames = 4 },
+  },
+}
+animation{
   name = "wind_up",
   src_image = "enemies/bosses/blackbeard.png",
   frame_delay = 200,
+  frame_to_loop_on = 0,
   directions = {
     { x = 192, y = 0, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
     { x = 192, y = 208, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45 },
