@@ -48,4 +48,16 @@ function enemy:on_hurt()
   })
   enemy:remove()
 end
+
+function enemy:on_attacking_hero(hero, enemy_sprite)
+  hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
+  sol.audio.play_sound("explosion")
+  local bombx, bomby, bomblayer = enemy:get_position()
+  map:create_explosion({
+    layer = bomblayer,
+    x = bombx,
+    y = bomby,
+  })
+  enemy:remove()
+end
 --]]

@@ -21,9 +21,9 @@ tile{
 tile{
   layer = 0,
   x = 464,
-  y = 752,
+  y = 608,
   width = 416,
-  height = 144,
+  height = 288,
   pattern = "deep_water",
   tileset = "temple_2",
 }
@@ -2835,9 +2835,9 @@ tile{
 tile{
   layer = 0,
   x = 784,
-  y = 880,
-  width = 96,
-  height = 160,
+  y = 608,
+  width = 416,
+  height = 480,
   pattern = "deep_water",
   tileset = "temple_2",
 }
@@ -6319,7 +6319,7 @@ enemy{
   name = "blackbeard",
   layer = 0,
   x = 1056,
-  y = 869,
+  y = 861,
   enabled_at_start = false,
   direction = 3,
   breed = "bosses/blackbeard",
@@ -6464,6 +6464,50 @@ enemy{
   y = 933,
   direction = 2,
   breed = "misc/barrel_cannon",
+}
+
+dynamic_tile{
+  name = "boss_teleport_ref_2",
+  layer = 0,
+  x = 936,
+  y = 808,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "boss_teleport_ref_3",
+  layer = 0,
+  x = 1160,
+  y = 808,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "boss_teleport_ref_4",
+  layer = 0,
+  x = 1152,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "boss_teleport_ref_5",
+  layer = 0,
+  x = 944,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "palace_of_storms",
 }
 
 tile{

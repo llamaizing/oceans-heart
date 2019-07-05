@@ -297,6 +297,7 @@ sprite{ id = "enemies/bosses/charging_pirate_1", description = "Charging Pirate 
 sprite{ id = "enemies/bosses/crow_mech", description = "Crow Mech" }
 sprite{ id = "enemies/bosses/fiend_1", description = "Fiend 1" }
 sprite{ id = "enemies/bosses/forest_revenant", description = "Forest Revenant" }
+sprite{ id = "enemies/bosses/ghostbeard", description = "Ghostbeard" }
 sprite{ id = "enemies/bosses/jazari", description = "al Jazari" }
 sprite{ id = "enemies/bosses/litton", description = "Litton" }
 sprite{ id = "enemies/bosses/michael", description = "Michael Mighty Mead Maker" }

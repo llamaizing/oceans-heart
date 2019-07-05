@@ -6,6 +6,7 @@ local sprite
 local smoke_sprite
 local beam_sprite
 local angle = 0
+local FULL_HEALTH = 300
 
 local attacking = false
 local puddling = false
@@ -77,10 +78,11 @@ local can_shoot_bombs = true
 local can_pollute_blast = false
 local can_fire_ship_cannons = true
 local can_sword = true
-local can_rune_barrage = true
-local can_gross_dash = true
+local can_gross_dash = false
 local can_teleport_shot = true
-local can_summon_crystals = true
+local can_radial_attack = true
+local can_rune_barrage = true
+--local can_summon_crystals = true
 --local can_pattern_attack = true
 --local can_tide_attack = true
 
@@ -99,13 +101,25 @@ function enemy:check_to_attack()
       enemy:tide_attack()
       sol.timer.start(map, 13000, function() can_tide_attack = true end)
 
+    elseif can_rune_barrage and enemy:get_life() < FULL_HEALTH/2 then
+      attacking = true
+      can_rune_barrage = false
+      enemy:rune_barrage()
+      sol.timer.start(map, 20000, function() can_rune_barrage = true end)
+
     elseif can_sword and enemy:get_distance(hero) < 80 then
       attacking = true
       can_sword = false
       enemy:sword()
       sol.timer.start(map, 8000, function() can_sword = true end)
 
-    elseif can_shoot_bombs then
+    elseif can_radial_attack then
+      attacking = true
+      can_radial_attack = false
+      enemy:radial_attack()
+      sol.timer.start(map, 11000, function() can_radial_attack = true end)
+
+    elseif can_shoot_bombs and enemy:get_life() > FULL_HEALTH/2 then
       attacking = true
       can_shoot_bombs = false
       enemy:shoot_bombs()
@@ -117,29 +131,24 @@ function enemy:check_to_attack()
       enemy:pollute_blast()
       sol.timer.start(map, 14000, function() can_pollute_blast = true end)
 
+    elseif can_teleport_shot then
+      attacking = true
+      can_teleport_shot = false
+      if enemy:get_life() > FULL_HEALTH/2 then enemy:teleport_shot()
+      else enemy:teleport_dash() end
+      sol.timer.start(map, 9000, function() can_teleport_shot = true end)
+
     elseif can_fire_ship_cannons then
       attacking = true
       can_fire_ship_cannons = false
       enemy:fire_ship_cannons()
       sol.timer.start(map, 14000, function() can_fire_ship_cannons = true end)
 
-    elseif can_teleport_shot then
-      attacking = true
-      can_teleport_shot = false
-      enemy:teleport_shot()
-      sol.timer.start(map, 9000, function() can_teleport_shot = true end)
-
     elseif can_gross_dash then
       attacking = true
       can_gross_dash = false
       enemy:gross_dash()
       sol.timer.start(map, 8000, function() can_gross_dash = true end)
-
-    elseif can_rune_barrage then
-      attacking = true
-      can_rune_barrage = false
-      enemy:rune_barrage()
-      sol.timer.start(map, 16000, function() can_rune_barrage = true end)
 
     elseif can_summon_crystals then
       attacking = true
@@ -254,31 +263,29 @@ end
 
 --Rune Barrage
 function enemy:rune_barrage()
+  local MAX_RUNES = math.random(12,16)
   enemy:stop_movement()
   enemy:teleport_to(map:get_entity("boss_teleport_ref"):get_position())
-  enemy:stop_movement()
-  sprite:set_animation("holding_oceans_heart")
   sol.audio.play_sound"charge_2"
+  sprite:set_animation"holding_oceans_heart"
   sol.timer.start(map, 1000, function()
-    enemy:stop_movement()
-    for i=1, math.random(12, 16) do
-      local x, y = 0,0
-      y = y + math.random(-80, 120)
-      x = x + math.random(-140, 140)
+    local i = 1
+    sol.timer.start(map, 250, function()
+      local y = math.random(-80, 120)
+      local x = math.random(-140, 140)
       if not enemy:test_obstacles(x,y) then
-        sol.timer.start(map, 250*i, function()
-          sol.audio.play_sound("fire_burst_1")
-          local e = enemy:create_enemy{breed="misc/sea_blast",x=x,y=y}
-        end)
+        sol.audio.play_sound("fire_burst_1")
+        local e = enemy:create_enemy{breed="misc/sea_blast",x=x,y=y}
       end
-    end
-    sol.timer.start(map, 3000, function()
-      sprite:set_animation"walking"
-      enemy:finish_attacking()
+      i = i + 1
+      if i <= MAX_RUNES then
+        return true
+      else
+        enemy:finish_attacking()
+      end
     end)
-  end)
+  end) --end of 1k timer after teleporting
 end
-
 
 --Gross Dash
 function enemy:gross_dash()
@@ -306,8 +313,84 @@ function enemy:gross_dash()
   end)
 end
 
---Teleport then do projectiles
+
+--Teleport Shot
+local teleport_shot_counter = 0
+local previous_teleport_spot = 5
 function enemy:teleport_shot()
+  enemy:stop_movement()
+  local NUM_SHOTS = 3
+  teleport_shot_counter = teleport_shot_counter + 1
+  if teleport_shot_counter <= NUM_SHOTS then
+    local new_teleport_spot = math.random(2,5)
+    while previous_teleport_spot == new_teleport_spot do
+      new_teleport_spot = math.random(2,5)
+    end
+    previous_teleport_spot = new_teleport_spot
+    enemy:teleport_to(map:get_entity("boss_teleport_ref_" .. new_teleport_spot):get_position())
+    sprite:set_animation("shoot", "walking")
+    sprite:set_direction(enemy:get_direction4_to(hero))
+    sol.timer.start(map, 600, function()
+      enemy:make_bomb_go()
+      enemy:teleport_shot()
+    end)
+  else
+    teleport_shot_counter = 0
+    enemy:finish_attacking()
+  end  
+end
+
+--Teleport Dash
+local teleport_dash_counter = 0
+function enemy:teleport_dash()
+  enemy:stop_movement()
+  local NUM_SHOTS = 3
+  teleport_dash_counter = teleport_dash_counter + 1
+  if teleport_dash_counter <= NUM_SHOTS then
+    local new_teleport_spot = math.random(2,5)
+    while previous_teleport_spot == new_teleport_spot do
+      new_teleport_spot = math.random(2,5)
+    end
+    previous_teleport_spot = new_teleport_spot
+    enemy:teleport_to(map:get_entity("boss_teleport_ref_" .. new_teleport_spot):get_position())
+    sprite:set_animation("crouching")
+    sprite:set_direction(enemy:get_direction4_to(hero))
+    sol.timer.start(map, 400, function()
+      local m = sol.movement.create("straight")
+      m:set_angle(enemy:get_angle(hero))
+      m:set_speed(250)
+      m:set_max_distance(300)
+      sprite:set_animation"invisible"
+      --create ghosts
+      local how_many_ghosts = 1
+      sol.timer.start(map, 50, function()
+        local e = enemy:create_enemy{breed="misc/enemy_weapon"}
+        e:set_damage(20)
+        e:set_sprite("enemies/bosses/ghostbeard")
+        e:get_sprite():set_animation("evaporating", function() e:remove() end)
+        how_many_ghosts = how_many_ghosts + 1
+        if how_many_ghosts <= 20 then return true end
+      end)
+      --actually start dash
+      m:start(enemy, function()
+        sprite:set_animation"crouching"
+        enemy:teleport_dash()
+      end)
+      function m:on_obstacle_reached()
+        sprite:set_animation"crouching"
+        enemy:teleport_dash()
+      end
+    end)
+  else
+    teleport_dash_counter = 0
+    sprite:set_animation"walking"
+    enemy:finish_attacking()
+  end  
+end
+
+
+--Radial Attack
+function enemy:radial_attack()
   enemy:stop_movement()
   enemy:teleport_to(map:get_entity("boss_teleport_ref"):get_position())
   sprite:set_animation("hands_raised_wind_up")
