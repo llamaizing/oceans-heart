@@ -187,7 +187,9 @@ function behavior:create(enemy, properties)
 
   function enemy:fly_away()
     enemy:set_invincible()
-    enemy:set_layer(enemy:get_layer() + 1)
+    if enemy:get_layer() < map:get_max_layer() then
+      enemy:set_layer(enemy:get_layer() + 1)
+    end
     local m = sol.movement.create("straight")
     local lr = math.random(2)
     local angle

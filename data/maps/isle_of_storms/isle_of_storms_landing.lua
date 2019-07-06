@@ -25,6 +25,7 @@ map:register_event("on_started", function()
   rain_manager:set_lightning_delay(2000, 7500)
   rain_manager:set_darkness(120, 190)
 
+  map:set_doors_open("boss_door")
   for cannon in map:get_entities("blackbeard_ship_cannon") do
     cannon.shooting_disabled = true
     cannon.projectile_breed = "misc/bomb_4_direction"
@@ -41,6 +42,9 @@ map:register_event("on_started", function()
   if game:get_value("quest_isle_of_storms") and game:get_value("quest_isle_of_storms") >= 2 then
     brutus:set_enabled(false)
     brutus_sensor:set_enabled(false)
+  end
+  if game:get_value("quest_isle_of_storms") and game:get_value("quest_isle_of_storms") >= 4 then
+    map:set_doors_open("preboss_door")
   end
 
 end)
@@ -102,6 +106,7 @@ function blackbeard_sensor:on_activated()
                 sol.timer.start(map, 1000, function()
                   game:start_dialog("_palace_of_storms.cutscenes.mallow.5", function()
                     game:set_value("quest_isle_of_storms", 4)
+                    map:open_doors("preboss_door")
                     hero:unfreeze()
                   end)
                 end)
@@ -125,4 +130,24 @@ function rune_sensor:on_activated()
   white_surface:fade_in(150, function()
     hero:teleport("isle_of_storms/palace", "portal_to_surface")
   end)
+end
+
+
+--------BOSS------------
+function boss_sensor:on_activated()
+  map:close_doors("boss_door")
+  hero:freeze()
+  hero:set_animation"walking"
+  local m=sol.movement.create"path" m:set_path{2,2,2,2,2,2,2,2,2,2} m:set_speed(80)
+  m:start(hero, function()
+    game:start_dialog("_palace_of_storms.cutscenes.blackbeard.3", function()
+      hero:unfreeze()
+      dummybeard:set_enabled(false)
+      blackbeard_boss:set_enabled(true)
+    end)
+  end)
+end
+
+function blackbeard_boss:on_dead()
+
 end

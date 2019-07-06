@@ -6022,8 +6022,8 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "isle_of_storms/palace",
-  destination = "boss",
+  destination_map = "isle_of_storms/isle_of_storms_landing",
+  destination = "ferry_landing",
 }
 
 custom_entity{
@@ -6129,7 +6129,7 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 208,
+  x = 200,
   y = 141,
   treasure_name = "attack_upgrade",
   treasure_variant = 8,
@@ -6301,16 +6301,16 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 200,
-  y = 141,
+  x = 216,
+  y = 125,
   treasure_name = "attack_upgrade",
   treasure_variant = 8,
 }
 
 pickable{
   layer = 0,
-  x = 200,
-  y = 133,
+  x = 208,
+  y = 125,
   treasure_name = "attack_upgrade",
   treasure_variant = 8,
 }

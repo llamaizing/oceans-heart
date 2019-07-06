@@ -11276,6 +11276,19 @@ You what!?
 }
 
 dialog{
+  id = "_palace_of_storms.cutscenes.blackbeard.3",
+  text = [[
+BLACKBEARD:
+This is fine. It's fine. I don't need a ship.
+I'll figure out how to use the power of the
+Ocean's Heart to bear me across the waves by
+BLACKBEARD:
+my own willpower. As soon as I've used its
+power to crush you, kid.
+]],
+}
+
+dialog{
   id = "_palace_of_storms.cutscenes.brutus.1",
   text = [[
 BRUTUS:

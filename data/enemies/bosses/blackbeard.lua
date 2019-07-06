@@ -6,7 +6,7 @@ local sprite
 local smoke_sprite
 local beam_sprite
 local angle = 0
-local FULL_HEALTH = 300
+local FULL_HEALTH = 400
 
 local attacking = false
 local puddling = false
@@ -75,7 +75,7 @@ end
 
 
 local can_shoot_bombs = true
-local can_pollute_blast = false
+local can_pollute_blast = true
 local can_fire_ship_cannons = true
 local can_sword = true
 local can_gross_dash = false
@@ -107,7 +107,7 @@ function enemy:check_to_attack()
       enemy:rune_barrage()
       sol.timer.start(map, 20000, function() can_rune_barrage = true end)
 
-    elseif can_sword and enemy:get_distance(hero) < 80 then
+    elseif can_sword and enemy:get_distance(hero) < 80 and enemy:get_life() > FULL_HEALTH/2 then
       attacking = true
       can_sword = false
       enemy:sword()
@@ -117,6 +117,7 @@ function enemy:check_to_attack()
       attacking = true
       can_radial_attack = false
       enemy:radial_attack()
+      if enemy:get_life() < FULL_HEALTH/2 then enemy:spoke_sparks() end
       sol.timer.start(map, 11000, function() can_radial_attack = true end)
 
     elseif can_shoot_bombs and enemy:get_life() > FULL_HEALTH/2 then
@@ -125,7 +126,7 @@ function enemy:check_to_attack()
       enemy:shoot_bombs()
       sol.timer.start(map, 11000, function() can_shoot_bombs = true end)
 
-    elseif can_pollute_blast and can_rune_barrage==false then
+    elseif can_pollute_blast and enemy:get_life() > FULL_HEALTH*2/3 then
       attacking = true
       can_pollute_blast = false
       enemy:pollute_blast()
@@ -141,7 +142,8 @@ function enemy:check_to_attack()
     elseif can_fire_ship_cannons then
       attacking = true
       can_fire_ship_cannons = false
-      enemy:fire_ship_cannons()
+      if enemy:get_life() > FULL_HEALTH/2 then enemy:fire_ship_cannons()
+      else enemy:skeleton_hands() enemy:shoot_bombs("misc/energy_ball_black_2") end
       sol.timer.start(map, 14000, function() can_fire_ship_cannons = true end)
 
     elseif can_gross_dash then
@@ -168,7 +170,7 @@ end
 -----------------------------------Attacks---------------------------------------------
 
 --Shoot Bombs
-function enemy:shoot_bombs()
+function enemy:shoot_bombs(type)
   local m = sol.movement.create("straight")
   m:set_angle(hero:get_angle(enemy))
   m:set_max_distance(80)
@@ -178,20 +180,21 @@ function enemy:shoot_bombs()
   sprite:set_animation("shoot_wind_up")
   sol.timer.start(enemy, 1200, function()
     sprite:set_animation("shoot", function()
-      enemy:make_bomb_go()
+      enemy:make_bomb_go(type)
       sprite:set_animation("shoot", function()
-        enemy:make_bomb_go()
+        enemy:make_bomb_go(type)
         sprite:set_animation("shoot", function()
           sprite:set_animation("walking")
-          enemy:make_bomb_go()
+          enemy:make_bomb_go(type)
         end)
       end)
     end)
   end)
   sol.timer.start(map, 2100, function() enemy:finish_attacking() end)
 end
-  function enemy:make_bomb_go()
-    local bomb = enemy:create_enemy{breed="misc/bomb_any_direction"}
+  function enemy:make_bomb_go(type)
+    local breed = type or "misc/bomb_any_direction"
+    local bomb = enemy:create_enemy{breed=breed}
     sol.audio.play_sound"hand_cannon"
     bomb:go(enemy:get_angle(hero))
   end
@@ -353,7 +356,7 @@ function enemy:teleport_dash()
     end
     previous_teleport_spot = new_teleport_spot
     enemy:teleport_to(map:get_entity("boss_teleport_ref_" .. new_teleport_spot):get_position())
-    sprite:set_animation("crouching")
+    sprite:set_animation("invisible")
     sprite:set_direction(enemy:get_direction4_to(hero))
     sol.timer.start(map, 400, function()
       local m = sol.movement.create("straight")
@@ -398,7 +401,7 @@ function enemy:radial_attack()
     local NUM_PROJECTILES = 8
     for i=1, NUM_PROJECTILES do
       local projectile = enemy:create_enemy{breed="misc/energy_ball_black_2"}
-      projectile:go(math.pi*2/NUM_PROJECTILES*i)
+      projectile:go(math.pi*2/NUM_PROJECTILES*i + math.pi*2/(NUM_PROJECTILES*2))
     end
     sol.audio.play_sound("shoot_magic_2")
     sprite:set_animation("flap_arms", "walking")
@@ -428,7 +431,52 @@ function enemy:summon_crystals()
     sprite:set_animation"walking"
     enemy:finish_attacking()
   end)
+end
 
+
+--Skeleton Hands
+function enemy:skeleton_hands()
+  local NUM_HANDS = 13
+  local i = 1
+  sol.timer.start(map, 250, function()
+    if i <= NUM_HANDS and enemy:get_life() > 0 then
+      local x,y,l = hero:get_position()
+      map:create_enemy{breed="misc/skeleton_hand",x=x,y=y,layer=l,direction=0}
+      i = i + 1
+      return true
+    end
+  end)
+end
+
+--Line of Blasts
+function enemy:line_of_blasts(sx,sy,sl,angle,dist)
+  local leader = map:create_custom_entity{x=sx,y=sy,layer=sl,direction=0,width=16,height=16}
+  local m = sol.movement.create("straight")
+  m:set_max_distance(dist)
+  m:set_angle(angle)
+  m:set_speed(200)
+  m:start(leader, function() leader:remove() end)
+  function m:on_obstacle_reached() leader:remove() end
+  local NUM_BLASTS = 10
+  local i = 0
+  sol.timer.start(map, 150, function()
+    local x,y,l = leader:get_position()
+    map:create_enemy{breed="misc/sea_blast",x=x,y=y,layer=l,direction=0}
+    i = i + 1
+    if i <= NUM_BLASTS then return true end
+  end)
+end
+
+
+--Spoke Sparks
+function enemy:spoke_sparks()
+  local NUM_SPOKES = 8
+  local sx,sy,sl = enemy:get_position()
+  for i=1,NUM_SPOKES do
+    local dist = 150
+    local angle = math.pi * 2 / NUM_SPOKES * i
+    enemy:line_of_blasts(sx,sy,sl,angle,dist)
+  end
 end
 
 
