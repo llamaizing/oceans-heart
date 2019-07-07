@@ -110,7 +110,7 @@ function map_meta:create_poof(x, y, layer)
   local map = self
   map:create_custom_entity({
     model = "ephemeral_effect",
-    x = x, y = y, layer = layer, direction = 0, height = 16, width = 16,
+    x = x, y = y+3, layer = layer, direction = 0, height = 16, width = 16,
     sprite = "entities/poof"
   })
 end

@@ -67,6 +67,7 @@ end
 
 function enemy:teleport_to(x,y,l)
   local a,b,c = enemy:get_position()
+  sol.audio.play_sound"charge_warp"
   map:create_poof(a,b+5,c)
   enemy:set_position(x,y,l)
   a,b,c = enemy:get_position()
@@ -375,6 +376,7 @@ function enemy:teleport_dash()
         if how_many_ghosts <= 20 then return true end
       end)
       --actually start dash
+      sol.audio.play_sound"delay_charge"
       m:start(enemy, function()
         sprite:set_animation"crouching"
         enemy:teleport_dash()
@@ -397,6 +399,7 @@ function enemy:radial_attack()
   enemy:stop_movement()
   enemy:teleport_to(map:get_entity("boss_teleport_ref"):get_position())
   sprite:set_animation("hands_raised_wind_up")
+  sol.audio.play_sound"charge_3"
   sol.timer.start(map, 1000, function()
     local NUM_PROJECTILES = 8
     for i=1, NUM_PROJECTILES do
@@ -436,7 +439,7 @@ end
 
 --Skeleton Hands
 function enemy:skeleton_hands()
-  local NUM_HANDS = 13
+  local NUM_HANDS = 7
   local i = 1
   sol.timer.start(map, 250, function()
     if i <= NUM_HANDS and enemy:get_life() > 0 then
@@ -457,7 +460,7 @@ function enemy:line_of_blasts(sx,sy,sl,angle,dist)
   m:set_speed(200)
   m:start(leader, function() leader:remove() end)
   function m:on_obstacle_reached() leader:remove() end
-  local NUM_BLASTS = 10
+  local NUM_BLASTS = 8
   local i = 0
   sol.timer.start(map, 150, function()
     local x,y,l = leader:get_position()
@@ -470,6 +473,7 @@ end
 
 --Spoke Sparks
 function enemy:spoke_sparks()
+  sol.audio.play_sound"charge_2_monster"
   local NUM_SPOKES = 8
   local sx,sy,sl = enemy:get_position()
   for i=1,NUM_SPOKES do

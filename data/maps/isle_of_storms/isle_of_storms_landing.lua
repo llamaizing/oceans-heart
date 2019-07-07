@@ -10,6 +10,7 @@
 local map = ...
 local game = map:get_game()
 local hero = game:get_hero()
+local sound_atmosphere_manager = require("scripts/fx/sound_atmosphere_manager")
 
 local white_surface = sol.surface.create()
   white_surface:fill_color({255,255,255})
@@ -17,7 +18,7 @@ local white_surface = sol.surface.create()
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
-  require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain")
+  sound_atmosphere_manager:start_atmosphere(map, "rain")
   local world = map:get_world()
   game:set_world_rain_mode(world, "storm")
   local rain_manager = require("scripts/weather/rain_manager")
@@ -83,34 +84,25 @@ end
 function blackbeard_sensor:on_activated()
   if game:get_value("quest_isle_of_storms") and game:get_value("quest_isle_of_storms") == 3 then
     hero:freeze()
-    map:focus_on(map:get_camera(), blackbeard_npc, function() hero:freeze() end)
-    blackbeard_npc:set_enabled(true)
-    blackbeard_npc:get_sprite():set_animation("holding_oceans_heart")
-    map:create_poof(blackbeard_npc:get_position())
-    sol.timer.start(map, 1200, function()
-      hero:freeze()
-      blackbeard_npc:get_sprite():set_animation("stopped")
-      game:start_dialog("_palace_of_storms.cutscenes.blackbeard.1", function()
-        mallow:set_enabled(true)
-        local m = sol.movement.create("path")
-        m:set_path{2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2}
-        m:set_speed(80)
-        m:start(mallow, function()
-          game:start_dialog("_palace_of_storms.cutscenes.blackbeard.2", function()
-            sol.timer.start(map, 500, function()
-              map:create_poof(blackbeard_npc:get_position())
-              blackbeard_npc:set_enabled(false)
-              sol.timer.start(500, function()
-                mallow:get_sprite():set_animation("collapsed")
-                hero:walk("666666666666")
-                sol.timer.start(map, 1000, function()
-                  game:start_dialog("_palace_of_storms.cutscenes.mallow.5", function()
-                    game:set_value("quest_isle_of_storms", 4)
-                    map:open_doors("preboss_door")
-                    hero:unfreeze()
-                  end)
-                end)
-              end)
+    local m = sol.movement.create"path"
+    m:set_path{6,6,6,6,6,6,6,6,6,6,6,6,6,6}
+    m:set_speed(90)
+    hero:set_animation"walking"
+    m:start(hero, function()
+      hero:set_animation"stopped"
+      sol.timer.start(map, 1000, function()
+        blackbeard_npc:set_enabled(true)
+        sol.audio.play_sound"warp"
+        map:create_poof(blackbeard_npc:get_position())
+        sol.timer.start(map, 800, function()
+          game:start_dialog("_palace_of_storms.cutscenes.blackbeard.1", function()
+            hero:set_direction(1)
+            mallow:set_enabled(true)
+            local m2 = sol.movement.create"path"
+            m2:set_path{2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4,2,2}
+            m2:set_speed(80)
+            m2:start(mallow, function()
+              map:blackbeard_return_scene_2()
             end)
           end)
         end)
@@ -118,8 +110,24 @@ function blackbeard_sensor:on_activated()
     end)
   end
 end
+function map:blackbeard_return_scene_2()
+  game:start_dialog("_palace_of_storms.cutscenes.blackbeard.2", function()
+    map:create_poof(blackbeard_npc:get_position())
+    blackbeard_npc:set_enabled(false)
+    sol.audio.play_sound"warp"
+    sol.timer.start(map, 1000, function()
+      mallow:get_sprite():set_animation("collapsed")
+      game:start_dialog("_palace_of_storms.cutscenes.mallow.5", function()
+        game:set_value("quest_isle_of_storms", 4)
+        map:open_doors("preboss_door")
+        hero:unfreeze()
+      end)
+    end)
+  end)
+end
 
----Teleport Down
+
+---Teleport Down to Ruins
 function rune_sensor:on_activated()
   hero:freeze()
   hero:set_direction(3)
@@ -135,6 +143,7 @@ end
 
 --------BOSS------------
 function boss_sensor:on_activated()
+  boss_sensor:set_enabled(false)
   map:close_doors("boss_door")
   hero:freeze()
   hero:set_animation"walking"
@@ -149,5 +158,54 @@ function boss_sensor:on_activated()
 end
 
 function blackbeard_boss:on_dead()
+  hero:freeze()
+  sol.audio.stop_music()
+  hero:set_animation("walking")
+  local m = sol.movement.create("target") m:set_target(boss_teleport_ref)
+  m:start(hero, function()
+    hero:set_direction(3)
+    hero:set_animation"stopped"
+    local x,y,l=hero:get_position()
+    local oceans_heart = map:create_custom_entity{
+      x=x,y=y-200,layer=l+2,direction=0,width=16,height=16,sprite="entities/oceans_heart"
+    }
+    local m2=sol.movement.create"straight"
+    m2:set_max_distance(216) m2:set_angle(math.pi*3/2)
+    m2:start(oceans_heart, function()
+      sol.timer.start(map, 2000, function()
+        hero:unfreeze()
+        hero:start_attack()
+        sol.timer.start(map, 500, function() hero:freeze() end)
+        sol.audio.play_sound"breaking_glass"
+        game:set_world_rain_mode(map:get_world(), nil)
+        sound_atmosphere_manager:stop_sounds()
+        oceans_heart:get_sprite():set_animation("shatter", function() oceans_heart:remove() end)
+        game:set_value("quest_isle_of_storms", 5)
+        endgame_mallow:set_enabled(true)
+        sol.timer.start(map, 2000, function()
+          map:open_doors("boss_door")
+          hero:unfreeze()
+        end)
+      end)
+    end)
+  end)
+  sol.timer.start(map, 10, function() hero:set_direction(m:get_direction4()) end)
+end
 
+
+
+---------Endgame-------------
+function endgame_sensor:on_activated()
+  if game:get_value("quest_isle_of_storms") == 5 then
+    hero:freeze()
+    hero:set_animation"walking"
+    local m = sol.movement.create"path"
+    m:set_path{4,4,4,4,4,4,4,4,4}
+    m:start(hero, function()
+      hero:set_animation"stopped"
+      game:start_dialog("_palace_of_storms.cutscenes.mallow.6", function()
+        
+      end)
+    end)
+  end
 end

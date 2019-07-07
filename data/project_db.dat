@@ -578,6 +578,7 @@ sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/moving_platform", description = "Moving Platform" }
 sprite{ id = "entities/moving_platform_wood", description = "Moving platform-Wood" }
 sprite{ id = "entities/nitrodendron", description = "Nitrodendron" }
+sprite{ id = "entities/oceans_heart", description = "Ocean's Heart" }
 sprite{ id = "entities/orange_peel", description = "Orange Peel" }
 sprite{ id = "entities/pollution_ash", description = "Pollution Ash" }
 sprite{ id = "entities/poof", description = "Poof Smoke Cloud" }
@@ -1256,7 +1257,9 @@ sound{ id = "cannon_fire", description = "cannon_fire" }
 sound{ id = "charge_1", description = "charge_1" }
 sound{ id = "charge_2", description = "charge_2" }
 sound{ id = "charge_2_monster", description = "charge_2_monster" }
+sound{ id = "charge_3", description = "charge_3" }
 sound{ id = "charge_sword", description = "charge_sword" }
+sound{ id = "charge_warp", description = "charge_warp" }
 sound{ id = "chest_open", description = "chest_open" }
 sound{ id = "click_low", description = "click_low" }
 sound{ id = "cursor", description = "cursor" }
@@ -1264,6 +1267,7 @@ sound{ id = "cursor_2", description = "cursor_2" }
 sound{ id = "danger", description = "danger" }
 sound{ id = "dash", description = "dash" }
 sound{ id = "dash_big", description = "dash_big" }
+sound{ id = "delay_charge", description = "delay_charge" }
 sound{ id = "door_closed", description = "door_closed" }
 sound{ id = "door_open", description = "door_open" }
 sound{ id = "door_unlocked", description = "door_unlocked" }

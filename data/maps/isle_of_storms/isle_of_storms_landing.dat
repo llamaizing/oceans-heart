@@ -11597,7 +11597,7 @@ dynamic_tile{
 npc{
   layer = 0,
   x = 624,
-  y = 525,
+  y = 573,
   direction = 3,
   subtype = 1,
   sprite = "npc/max",
@@ -11721,6 +11721,7 @@ npc{
   direction = 1,
   subtype = 1,
   sprite = "npc/mallow",
+  behavior = "dialog#_palace_of_storms.cutscenes.mallow.7",
 }
 
 separator{
@@ -11934,6 +11935,34 @@ door{
   y = 496,
   direction = 3,
   sprite = "entities/door_post_stone",
+}
+
+sensor{
+  name = "endgame_sensor",
+  layer = 0,
+  x = 648,
+  y = 749,
+  width = 16,
+  height = 32,
+}
+
+npc{
+  name = "endgame_mallow",
+  layer = 0,
+  x = 520,
+  y = 757,
+  enabled_at_start = false,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/mallow",
+}
+
+destination{
+  name = "boss",
+  layer = 0,
+  x = 1040,
+  y = 557,
+  direction = 1,
 }
 
 tile{

@@ -3,6 +3,7 @@
 
 
 local sound_atmosphere_manager = {}
+sound_atmosphere_manager.all_timers = {}
 
 local bird_sounds = {
   "bird/bird_01",
@@ -127,6 +128,8 @@ function sound_atmosphere_manager:start_atmosphere(map, type)
       sol.audio.play_sound(bird_sounds[math.random(1, #bird_sounds)])
     end)
     timer2:set_suspended_with_map(false)
+    table.insert(sound_atmosphere_manager.all_timers, timer)
+    table.insert(sound_atmosphere_manager.all_timers, timer2)
   end
 
   if type == "rain_inside" then
@@ -135,6 +138,7 @@ function sound_atmosphere_manager:start_atmosphere(map, type)
       return 3000
     end)
     timer:set_suspended_with_map(false)
+    table.insert(sound_atmosphere_manager.all_timers, timer)
   end
 
   if type == "rain" then
@@ -143,6 +147,7 @@ function sound_atmosphere_manager:start_atmosphere(map, type)
       return 3000
     end)
     timer:set_suspended_with_map(false)
+    table.insert(sound_atmosphere_manager.all_timers, timer)
   end
 
   if type == "ravens" then
@@ -156,9 +161,17 @@ function sound_atmosphere_manager:start_atmosphere(map, type)
       end
     end)
     timer:set_suspended_with_map(false)
-
+    table.insert(sound_atmosphere_manager.all_timers, timer)
   end
 
 end
+
+
+function sound_atmosphere_manager:stop_sounds()
+  for k,v in pairs(sound_atmosphere_manager.all_timers) do
+    v:stop()
+  end
+end
+
 
 return sound_atmosphere_manager

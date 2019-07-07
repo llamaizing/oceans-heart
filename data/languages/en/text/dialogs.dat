@@ -11405,6 +11405,36 @@ Okay, Dad. I'll be back before you realize it.
 }
 
 dialog{
+  id = "_palace_of_storms.cutscenes.mallow.6",
+  text = [[
+MALLOW:
+Hey, I patched some of these wounds up. Not
+fast enough to help you take care of
+Blackbeard though, am I?
+TILIA:
+Yeah, I managed by myself. I think... nobody
+will be able to use that kind of magic again.
+
+MALLOW:
+I'm proud of you, Tilia. Why don't we go home?
+
+
+TILIA:
+It's about time you went home.
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.mallow.7",
+  text = [[
+MALLOW:
+I'm fine. Well not like, fine fine, but I'll
+make it. Go over those bridges to the east
+of here. Fight Blackbeard.
+]],
+}
+
+dialog{
   id = "_palace_of_storms.cutscenes.sea_king.1",
   text = [[
 $2

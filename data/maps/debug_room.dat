@@ -6023,7 +6023,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "isle_of_storms/isle_of_storms_landing",
-  destination = "ferry_landing",
+  destination = "boss",
 }
 
 custom_entity{
