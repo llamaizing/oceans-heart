@@ -111,6 +111,7 @@ map{ id = "demo_1/sw_lift_cave_interior", description = "Lift cave interior" }
 map{ id = "demo_1/test_town", description = "test town" }
 map{ id = "demo_1/test_town_2", description = "test town 2-limestone" }
 map{ id = "demo_1/testing_room", description = "testing room" }
+map{ id = "dummy_cutscene/basswood", description = "Basswood" }
 map{ id = "goat_hill_new_test", description = "new goat hill test" }
 map{ id = "goatshead_island/ball_trail", description = "Ballast Trail" }
 map{ id = "goatshead_island/brickabranch_island", description = "Brickabranch Island" }

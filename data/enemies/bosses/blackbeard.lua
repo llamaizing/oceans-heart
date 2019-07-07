@@ -121,10 +121,13 @@ function enemy:check_to_attack()
       if enemy:get_life() < FULL_HEALTH/2 then enemy:spoke_sparks() end
       sol.timer.start(map, 11000, function() can_radial_attack = true end)
 
-    elseif can_shoot_bombs and enemy:get_life() > FULL_HEALTH/2 then
+    elseif can_shoot_bombs then
       attacking = true
       can_shoot_bombs = false
-      enemy:shoot_bombs()
+      local type
+      if enemy:get_life() >= FULL_HEALTH/2 then type = nil
+      else type = "misc/energy_ball_black_2" end
+      enemy:shoot_bombs(type)
       sol.timer.start(map, 11000, function() can_shoot_bombs = true end)
 
     elseif can_pollute_blast and enemy:get_life() > FULL_HEALTH*2/3 then
@@ -144,7 +147,7 @@ function enemy:check_to_attack()
       attacking = true
       can_fire_ship_cannons = false
       if enemy:get_life() > FULL_HEALTH/2 then enemy:fire_ship_cannons()
-      else enemy:skeleton_hands() enemy:shoot_bombs("misc/energy_ball_black_2") end
+      else enemy:skeleton_hands() enemy:pollute_blast() end
       sol.timer.start(map, 14000, function() can_fire_ship_cannons = true end)
 
     elseif can_gross_dash then

@@ -15,6 +15,9 @@ local sound_atmosphere_manager = require("scripts/fx/sound_atmosphere_manager")
 local white_surface = sol.surface.create()
   white_surface:fill_color({255,255,255})
   white_surface:set_opacity(0)
+local black = sol.surface.create()
+black:fill_color{0,0,0}
+black:set_opacity(0)
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
@@ -52,6 +55,7 @@ end)
 
 function map:on_draw(dst)
   white_surface:draw(dst)
+  black:draw(dst)
 end
 
 function morus:on_interaction()
@@ -204,7 +208,7 @@ function endgame_sensor:on_activated()
     m:start(hero, function()
       hero:set_animation"stopped"
       game:start_dialog("_palace_of_storms.cutscenes.mallow.6", function()
-        
+        black:fade_in(150, function() hero:teleport("dummy_cutscene/basswood") end)
       end)
     end)
   end

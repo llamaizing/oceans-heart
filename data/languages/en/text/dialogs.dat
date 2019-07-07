@@ -1428,6 +1428,14 @@ is a very fine weapon you have.
 }
 
 dialog{
+  id = "_endgame.basswood_1",
+  text = [[
+LINDEN:
+Dad!?
+]],
+}
+
+dialog{
   id = "_ferries.goatshead",
   text = [[
 This is the ferry to Goatshead Harbor.
@@ -11416,11 +11424,11 @@ Yeah, I managed by myself. I think... nobody
 will be able to use that kind of magic again.
 
 MALLOW:
-I'm proud of you, Tilia. Why don't we go home?
-
-
+I'm proud of you, Tilia. I certainly don't have
+anything left to teach you. Why don't we go
+home?
 TILIA:
-It's about time you went home.
+Yeah.
 ]],
 }
 

@@ -1,5 +1,5 @@
 --Call start_atmosphere(map, "type") to start sound effects on a map
---Valid types are: "birds", "rain_inside", "ravens"
+--Valid types are: "birds", "rain", "rain_inside", "ravens"
 
 
 local sound_atmosphere_manager = {}
