@@ -11397,6 +11397,14 @@ this knucklehead.
 }
 
 dialog{
+  id = "_palace_of_storms.cutscenes.mallow.4-2",
+  text = [[
+MALLOW:
+Oof. Get back here, ya ruffian.
+]],
+}
+
+dialog{
   id = "_palace_of_storms.cutscenes.mallow.4-5",
   text = [[
 MALLOW:
@@ -11506,6 +11514,14 @@ There's a message inscribed on the stone.
 He who would visit the Spring Memorial must
 prove both marksmanship and faith. The
 arches will accept your offering.
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.observations.smash_heart",
+  text = [[
+TILIA:
+...
 ]],
 }
 

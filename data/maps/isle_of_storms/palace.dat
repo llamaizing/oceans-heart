@@ -55669,6 +55669,14 @@ dynamic_tile{
   tileset = "palace_of_storms",
 }
 
+destination{
+  name = "mallow_scene",
+  layer = 0,
+  x = 1192,
+  y = 3237,
+  direction = 1,
+}
+
 tile{
   layer = 1,
   x = 2224,
