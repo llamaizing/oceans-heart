@@ -29,6 +29,16 @@ animation{
   },
 }
 animation{
+  name = "grinning",
+  src_image = "npc/mallow.png",
+  directions = {
+    { x = 96, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 96, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 96, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+    { x = 96, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+  },
+}
+animation{
   name = "hug_closed",
   src_image = "npc/mallow.png",
   directions = {
@@ -43,6 +53,18 @@ animation{
     { x = 96, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
     { x = 96, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
     { x = 96, y = 64, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29 },
+  },
+}
+animation{
+  name = "teetering",
+  src_image = "npc/mallow.png",
+  frame_delay = 180,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 128, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 128, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 128, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
+    { x = 128, y = 96, frame_width = 32, frame_height = 32, origin_x = 16, origin_y = 29, num_frames = 4 },
   },
 }
 animation{

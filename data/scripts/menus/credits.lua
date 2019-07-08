@@ -17,7 +17,7 @@ local names = {
 {"Created By", "Max Mraz"},
 {"Additional Programming", "Llamazing"},
 {"Special Thanks to", "Alex Gleason"},
-{"Thank you for playing",""}
+{"The End",""}
 }
 
 function credits:on_started()

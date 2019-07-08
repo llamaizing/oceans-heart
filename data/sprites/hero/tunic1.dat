@@ -211,6 +211,16 @@ animation{
   },
 }
 animation{
+  name = "laying_down",
+  src_image = "hero/waking_up.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
+  },
+}
+animation{
   name = "lifting",
   src_image = "hero/lifting.png",
   frame_delay = 100,

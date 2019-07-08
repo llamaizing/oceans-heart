@@ -11397,6 +11397,14 @@ this knucklehead.
 }
 
 dialog{
+  id = "_palace_of_storms.cutscenes.mallow.4-5",
+  text = [[
+MALLOW:
+Haha, deal with that you bilge-toed maroon.
+]],
+}
+
+dialog{
   id = "_palace_of_storms.cutscenes.mallow.5",
   text = [[
 MALLOW:
@@ -11449,13 +11457,17 @@ $2
           ...
 
 
-
           Would you seek my curse?
-
+       You've weakened me to the point
+       where I can hide it no longer...
 
 
           ...hmm, you might yet be
-        worthy of the Ocean's blessing...
+        worthy of the Ocean's blessing.
+               Unlike myself.
+
+   ...And unlike the other that approaches.
+
 $3
 ]],
 }
@@ -11464,7 +11476,26 @@ dialog{
   id = "_palace_of_storms.cutscenes.sea_king.2",
   text = [[
 BLACKBEARD:
-You're a bit too slow, girl.
+Heh heh, you're definitely making my job
+easier, girl.
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.cutscenes.sea_king.3",
+  text = [[
+BLACKBEARD:
+That wraith destroyed half my crews, I wasn't
+sure if I'd be able to separate it from this
+treasure. But here you are just sleeping,
+BLACKBEARD:
+leaving the Ocean's Heart out for anybody to
+grab. Communing with a demigod wear you out?
+Anyway, let's see what the Ocean's Heart can
+BLACKBEARD:
+bestow on a mortal. Let the sea fully cover the
+old king's ruins and wash away his ghost! I am
+the new king of the sea!
 ]],
 }
 
