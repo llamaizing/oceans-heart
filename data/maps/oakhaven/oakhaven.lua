@@ -90,7 +90,7 @@ end
 --PALACE GUARD
 function palace_guard:on_interaction()
   local _, hero_x, _ = hero:get_position()
-  if hero_x < 376 then
+  if hero:get_direction() == 0 then
     game:start_dialog("_oakhaven.npcs.guards.town.palace_displacement")
     palace_guard:get_sprite():set_direction(0)
     hero:teleport("oakhaven/oakhaven", "palace_ejection")
