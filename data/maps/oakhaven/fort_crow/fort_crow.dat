@@ -5197,46 +5197,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1888,
-  y = 1504,
-  width = 32,
-  height = 32,
-  pattern = "15",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 1856,
-  y = 1504,
-  width = 32,
-  height = 32,
-  pattern = "16",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 1888,
-  y = 1600,
-  width = 32,
-  height = 32,
-  pattern = "13",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 1856,
-  y = 1600,
-  width = 32,
-  height = 32,
-  pattern = "14",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
   x = 1936,
   y = 1632,
   width = 32,
@@ -5277,46 +5237,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1968,
-  y = 1504,
-  width = 32,
-  height = 32,
-  pattern = "15",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 1936,
-  y = 1504,
-  width = 32,
-  height = 32,
-  pattern = "16",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 1968,
-  y = 1600,
-  width = 32,
-  height = 32,
-  pattern = "13",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 1936,
-  y = 1600,
-  width = 32,
-  height = 32,
-  pattern = "14",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
   x = 2016,
   y = 1632,
   width = 32,
@@ -5352,46 +5272,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "1",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 2048,
-  y = 1504,
-  width = 32,
-  height = 32,
-  pattern = "15",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 2016,
-  y = 1504,
-  width = 32,
-  height = 32,
-  pattern = "16",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 2048,
-  y = 1600,
-  width = 32,
-  height = 32,
-  pattern = "13",
-  tileset = "fort_crow_walls",
-}
-
-tile{
-  layer = 0,
-  x = 2016,
-  y = 1600,
-  width = 32,
-  height = 32,
-  pattern = "14",
   tileset = "fort_crow_walls",
 }
 
@@ -24823,6 +24703,246 @@ tile{
   tileset = "indoors_stone",
 }
 
+tile{
+  layer = 0,
+  x = 1856,
+  y = 1504,
+  width = 32,
+  height = 16,
+  pattern = "7",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 1504,
+  width = 32,
+  height = 16,
+  pattern = "9",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1936,
+  y = 1504,
+  width = 32,
+  height = 16,
+  pattern = "7",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1968,
+  y = 1504,
+  width = 32,
+  height = 16,
+  pattern = "9",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2016,
+  y = 1504,
+  width = 32,
+  height = 16,
+  pattern = "7",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2048,
+  y = 1504,
+  width = 32,
+  height = 16,
+  pattern = "9",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2016,
+  y = 1616,
+  width = 32,
+  height = 16,
+  pattern = "7",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2048,
+  y = 1616,
+  width = 32,
+  height = 16,
+  pattern = "9",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1936,
+  y = 1616,
+  width = 32,
+  height = 16,
+  pattern = "7",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1968,
+  y = 1616,
+  width = 32,
+  height = 16,
+  pattern = "9",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = 1616,
+  width = 32,
+  height = 16,
+  pattern = "7",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 1616,
+  width = 32,
+  height = 16,
+  pattern = "9",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 1512,
+  width = 32,
+  height = 32,
+  pattern = "15",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = 1512,
+  width = 32,
+  height = 32,
+  pattern = "16",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 1592,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1856,
+  y = 1592,
+  width = 32,
+  height = 32,
+  pattern = "14",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1968,
+  y = 1512,
+  width = 32,
+  height = 32,
+  pattern = "15",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1936,
+  y = 1512,
+  width = 32,
+  height = 32,
+  pattern = "16",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1968,
+  y = 1592,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 1936,
+  y = 1592,
+  width = 32,
+  height = 32,
+  pattern = "14",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2048,
+  y = 1512,
+  width = 32,
+  height = 32,
+  pattern = "15",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2016,
+  y = 1512,
+  width = 32,
+  height = 32,
+  pattern = "16",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2048,
+  y = 1592,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "fort_crow_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2016,
+  y = 1592,
+  width = 32,
+  height = 32,
+  pattern = "14",
+  tileset = "fort_crow_walls",
+}
+
 dynamic_tile{
   name = "robot_part_spawner_2",
   layer = 0,
@@ -25304,7 +25424,7 @@ stream{
 enemy{
   layer = 0,
   x = 1888,
-  y = 1541,
+  y = 1549,
   direction = 3,
   breed = "misc/crusher",
 }
@@ -25312,7 +25432,7 @@ enemy{
 enemy{
   layer = 0,
   x = 1888,
-  y = 1605,
+  y = 1597,
   direction = 1,
   breed = "misc/crusher",
 }
@@ -25320,7 +25440,7 @@ enemy{
 enemy{
   layer = 0,
   x = 1968,
-  y = 1541,
+  y = 1549,
   properties = {
     {
       key = "delay",
@@ -25334,7 +25454,7 @@ enemy{
 enemy{
   layer = 0,
   x = 1968,
-  y = 1605,
+  y = 1597,
   properties = {
     {
       key = "delay",
@@ -25348,7 +25468,7 @@ enemy{
 enemy{
   layer = 0,
   x = 2048,
-  y = 1541,
+  y = 1549,
   properties = {
     {
       key = "frequency",
@@ -25362,7 +25482,7 @@ enemy{
 enemy{
   layer = 0,
   x = 2048,
-  y = 1605,
+  y = 1597,
   properties = {
     {
       key = "frequency",
