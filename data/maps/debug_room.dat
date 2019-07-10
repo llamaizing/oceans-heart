@@ -6022,7 +6022,7 @@ teletransporter{
   y = 176,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/ivystump",
+  destination_map = "snapmast_reef/smoldering_rock",
 }
 
 custom_entity{
