@@ -5,7 +5,7 @@ local behavior = require("enemies/lib/general_enemy")
 
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),
-  hurt_style = "normal",
+  hurt_style = "monster",
   life = 40,
   damage = 8,
   normal_speed = 20,

@@ -197,7 +197,16 @@ function inventory:on_command_pressed(command)
           game:start_dialog("_shop.purchase_confirm", function(answer)
             if answer == 2 then
               local current_item = all_items[cursor_index + 1]
-              if game:get_item(current_item.item):get_amount() == game:get_item(current_item.item):get_max_amount() then
+              local current_amount
+              local max_amount
+              if current_item.name == "Arrows" then
+                current_amount = game:get_item("bow"):get_amount()
+                max_amount = game:get_item("bow"):get_max_amount()
+              else
+                current_amount = game:get_item(current_item.item):get_amount()
+                max_amount = game:get_item(current_item.item):get_max_amount()
+              end
+              if current_amount == max_amount then
                 --you don't have room for more
                 game:start_dialog("_shop.no_room")
               elseif game:get_money() >= current_item.price then
