@@ -57,7 +57,7 @@ function picker_peter:on_interaction()
     game:start_dialog("_oakhaven.npcs.ivystump.picker_peter.2")
   elseif game:get_value("quest_ivy_orchard") == 2 then
     game:start_dialog("_oakhaven.npcs.ivystump.picker_peter.2")
-  elseif game:get_value("quest_ivy_orchard") == 2 then
+  elseif game:get_value("quest_ivy_orchard") >= 3 then
 
   end
 end

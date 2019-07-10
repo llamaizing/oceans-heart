@@ -30,7 +30,7 @@ function map:on_opening_transition_finished()
       game:start_dialog("_endgame.basswood_1", function()
         mallow:get_sprite():set_animation"hug_open"
         m:set_path{6,6,6,6,6}
-        m:set_speed(80)
+        m:set_speed(50)
         m:start(linden,function() mallow:get_sprite():set_animation"hug_closed" end)
         sol.timer.start(map, 500, function()
           black:fade_in(150, function()
