@@ -18,6 +18,7 @@ end)
 
 function boss_sensor:on_activated()
   map:close_doors("boss_door")
+  boss_sensor:set_enabled(false)
 end
 
 for boss in map:get_entities("boss_enemy") do

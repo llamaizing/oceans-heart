@@ -41053,294 +41053,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 368,
-  y = 528,
-  width = 16,
-  height = 8,
-  pattern = "2196",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 536,
-  width = 8,
-  height = 8,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 360,
-  y = 536,
-  width = 40,
-  height = 8,
-  pattern = "2194",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 552,
-  width = 8,
-  height = 8,
-  pattern = "2190",
-}
-
-tile{
-  layer = 0,
-  x = 360,
-  y = 544,
-  width = 8,
-  height = 8,
-  pattern = "2192",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 544,
-  width = 40,
-  height = 8,
-  pattern = "2191",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 552,
-  width = 16,
-  height = 8,
-  pattern = "2189",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 528,
-  width = 8,
-  height = 8,
-  pattern = "2195",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 544,
-  width = 16,
-  height = 8,
-  pattern = "2196",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 552,
-  width = 8,
-  height = 8,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 552,
-  width = 40,
-  height = 8,
-  pattern = "2194",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 568,
-  width = 8,
-  height = 8,
-  pattern = "2190",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 560,
-  width = 8,
-  height = 8,
-  pattern = "2192",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 560,
-  width = 40,
-  height = 8,
-  pattern = "2191",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 568,
-  width = 16,
-  height = 8,
-  pattern = "2189",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 544,
-  width = 8,
-  height = 8,
-  pattern = "2195",
-}
-
-tile{
-  layer = 0,
-  x = 360,
-  y = 536,
-  width = 16,
-  height = 8,
-  pattern = "2196",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 544,
-  width = 8,
-  height = 8,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 544,
-  width = 40,
-  height = 8,
-  pattern = "2194",
-}
-
-tile{
-  layer = 0,
-  x = 368,
-  y = 560,
-  width = 8,
-  height = 8,
-  pattern = "2190",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 552,
-  width = 8,
-  height = 8,
-  pattern = "2192",
-}
-
-tile{
-  layer = 0,
-  x = 360,
-  y = 552,
-  width = 40,
-  height = 8,
-  pattern = "2191",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 560,
-  width = 16,
-  height = 8,
-  pattern = "2189",
-}
-
-tile{
-  layer = 0,
-  x = 376,
-  y = 536,
-  width = 8,
-  height = 8,
-  pattern = "2195",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 552,
-  width = 16,
-  height = 8,
-  pattern = "2196",
-}
-
-tile{
-  layer = 0,
-  x = 424,
-  y = 560,
-  width = 8,
-  height = 8,
-  pattern = "2193",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 560,
-  width = 40,
-  height = 8,
-  pattern = "2194",
-}
-
-tile{
-  layer = 0,
-  x = 400,
-  y = 576,
-  width = 8,
-  height = 8,
-  pattern = "2190",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 568,
-  width = 8,
-  height = 8,
-  pattern = "2192",
-}
-
-tile{
-  layer = 0,
-  x = 392,
-  y = 568,
-  width = 40,
-  height = 8,
-  pattern = "2191",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 576,
-  width = 16,
-  height = 8,
-  pattern = "2189",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 552,
-  width = 8,
-  height = 8,
-  pattern = "2195",
-}
-
-tile{
-  layer = 0,
   x = 272,
   y = 480,
   width = 16,
@@ -47474,6 +47186,78 @@ tile{
   width = 16,
   height = 24,
   pattern = "2178",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 552,
+  width = 32,
+  height = 16,
+  pattern = "2362",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "2360",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "2361",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 568,
+  width = 32,
+  height = 16,
+  pattern = "2364",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 536,
+  width = 32,
+  height = 16,
+  pattern = "2362",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "2360",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "2361",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 552,
+  width = 32,
+  height = 16,
+  pattern = "2364",
 }
 
 sensor{

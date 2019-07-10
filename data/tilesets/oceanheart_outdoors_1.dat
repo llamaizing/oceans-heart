@@ -15856,12 +15856,92 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2356",
+  ground = "wall_top_left",
+  default_layer = 0,
+  x = 416,
+  y = 496,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2357",
+  ground = "wall_bottom_right",
+  default_layer = 0,
+  x = 448,
+  y = 512,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2358",
+  ground = "traversable",
+  default_layer = 0,
+  x = 432,
+  y = 496,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2359",
+  ground = "traversable",
+  default_layer = 0,
+  x = 416,
+  y = 512,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
   id = "236",
   ground = "traversable",
   default_layer = 1,
   x = 80,
   y = 400,
   width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2360",
+  ground = "wall_top_right",
+  default_layer = 0,
+  x = 400,
+  y = 496,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2361",
+  ground = "wall_bottom_left",
+  default_layer = 0,
+  x = 368,
+  y = 512,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2362",
+  ground = "traversable",
+  default_layer = 0,
+  x = 368,
+  y = 496,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2364",
+  ground = "traversable",
+  default_layer = 0,
+  x = 384,
+  y = 512,
+  width = 32,
   height = 16,
 }
 

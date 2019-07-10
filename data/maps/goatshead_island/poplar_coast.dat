@@ -49714,24 +49714,6 @@ teletransporter{
   destination = "from_outside",
 }
 
-destructible{
-  layer = 0,
-  x = 2408,
-  y = 1197,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 2392,
-  y = 1197,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
 jumper{
   layer = 0,
   x = 2368,
