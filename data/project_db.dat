@@ -151,6 +151,7 @@ map{ id = "goatshead_island/merchant_hq_ext", description = "Merchant HQ Ext." }
 map{ id = "goatshead_island/poplar_coast", description = "Poplar Coast" }
 map{ id = "goatshead_island/poplar_forest", description = "Poplar Forest" }
 map{ id = "goatshead_island/spruce_head_shrine", description = "Spruce Head Shrine" }
+map{ id = "goatshead_island/spruce_head_shrine/spruce_head_shrine", description = "Spruce Head Shrine" }
 map{ id = "goatshead_island/west_goat", description = "West Goat" }
 map{ id = "grass_template_blue", description = "Blue Grass Template" }
 map{ id = "grass_template_green", description = "grass template" }
@@ -276,6 +277,7 @@ tileset{ id = "overworld_yarrowmouth", description = "Overworld-Yarrowmouth" }
 tileset{ id = "palace_of_storms", description = "Palace of Storms" }
 tileset{ id = "pirate_overworld_test", description = "pirate_test1" }
 tileset{ id = "sky_scroll", description = "Sky Scroll" }
+tileset{ id = "spruce_head", description = "Spruce Head" }
 tileset{ id = "temple", description = "temple" }
 tileset{ id = "temple_2", description = "Ancient Temple" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
@@ -535,6 +537,7 @@ sprite{ id = "entities/door_boarded", description = "Door-Boarded" }
 sprite{ id = "entities/door_cracked_wall", description = "Door-Cracked Wall" }
 sprite{ id = "entities/door_ext_1", description = "door - exterior 1" }
 sprite{ id = "entities/door_gate_small", description = "Door- Small Gate" }
+sprite{ id = "entities/door_gate_spruce", description = "Dood-Gate-Spruce Head" }
 sprite{ id = "entities/door_grass_green", description = "Door-Green Grass" }
 sprite{ id = "entities/door_grass_yellow", description = "Door-Yellow Grass" }
 sprite{ id = "entities/door_int_1", description = "door - interior 1" }
