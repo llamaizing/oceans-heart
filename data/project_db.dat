@@ -375,6 +375,7 @@ sprite{ id = "enemies/normal_enemies/bat_2", description = "Dash Bat" }
 sprite{ id = "enemies/normal_enemies/birdfox_1", description = "Birdfox 1" }
 sprite{ id = "enemies/normal_enemies/blade_trap", description = "Blade Trap" }
 sprite{ id = "enemies/normal_enemies/blade_trap_circle", description = "Blade Trap-Circle" }
+sprite{ id = "enemies/normal_enemies/blade_trap_collision", description = "Blade Trap Collision" }
 sprite{ id = "enemies/normal_enemies/blade_trap_linear", description = "Blade Trap-Linear" }
 sprite{ id = "enemies/normal_enemies/boulder_bro", description = "Boulder Bro" }
 sprite{ id = "enemies/normal_enemies/burrow_like", description = "Burrow Like" }
@@ -1265,6 +1266,7 @@ sound{ id = "charge_3", description = "charge_3" }
 sound{ id = "charge_sword", description = "charge_sword" }
 sound{ id = "charge_warp", description = "charge_warp" }
 sound{ id = "chest_open", description = "chest_open" }
+sound{ id = "clank", description = "clank" }
 sound{ id = "click_low", description = "click_low" }
 sound{ id = "cursor", description = "cursor" }
 sound{ id = "cursor_2", description = "cursor_2" }
@@ -1588,6 +1590,7 @@ enemy{ id = "normal_enemies/bat_2", description = "Dash Bat" }
 enemy{ id = "normal_enemies/birdfox_1", description = "Birdfox Burrower" }
 enemy{ id = "normal_enemies/blade_trap", description = "Blade Trap" }
 enemy{ id = "normal_enemies/blade_trap_circle", description = "Blade Trap - Circle" }
+enemy{ id = "normal_enemies/blade_trap_collision", description = "Blade Trap Collision" }
 enemy{ id = "normal_enemies/blade_trap_linear", description = "Blade Trap - Linear" }
 enemy{ id = "normal_enemies/boulder_bro", description = "Boulder Bro" }
 enemy{ id = "normal_enemies/burrow_like", description = "Burrow Like" }

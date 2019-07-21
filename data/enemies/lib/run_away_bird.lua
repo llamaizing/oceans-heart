@@ -187,7 +187,7 @@ function behavior:create(enemy, properties)
 
   function enemy:fly_away()
     enemy:set_invincible()
-    if enemy:get_layer() < map:get_max_layer() then
+    if enemy:get_layer() < enemy:get_map():get_max_layer() then
       enemy:set_layer(enemy:get_layer() + 1)
     end
     local m = sol.movement.create("straight")
@@ -197,7 +197,7 @@ function behavior:create(enemy, properties)
     m:set_angle(angle)
     m:set_max_distance(700)
     m:set_speed(properties.faster_speed)
-    m:set_ignore_obstacles(properties.ignore_obstacles)
+    m:set_ignore_obstacles(true)
     m:start(self)
     sol.audio.play_sound("bird_flying_away")
     flying_away = true
