@@ -25,6 +25,20 @@ function b6_switch:on_activated()
   map:open_doors"door_b6_posts"
 end
 
+for switch in map:get_entities"b1_switch" do
+  function switch:on_activated()
+    map:open_doors"b1_door"
+    sol.timer.start(map, 200, function()
+      for other_switch in map:get_entities"b1_switch" do
+        if not other_switch:is_activated() then
+          switch:set_activated(false)
+          map:close_doors"b1_door"
+        end
+      end
+    end)
+  end
+end
+
 
 
 --Sensors--------------------------------------------------
@@ -50,6 +64,11 @@ for enemy in map:get_entities("c6_enemy") do
       sol.audio.play_sound"secret"
     end
   end
+end
+
+function a4_gargoyle:on_dead()
+  sol.audio.play_sound"secret"
+  map:open_doors("a4_door")
 end
 
   --Miniboss--

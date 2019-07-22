@@ -48,6 +48,7 @@ end
 -- Change the direction of the movement when hit with the sword.
 function enemy:on_custom_attack_received(attack, sprite)
   if attack == "sword" then
+    enemy.reflected = true
     enemy:go(enemy:get_movement():get_angle()+math.pi)
     sol.audio.play_sound("enemy_hurt")
   end
@@ -72,4 +73,11 @@ end
 function enemy:get_collision_wall_orientation()
   if enemy:test_obstacles(8, 0) or enemy:test_obstacles(-8, 0) then return "vertical"
   else return "horizontal" end
+end
+
+--damage other enemy on reflection
+function enemy:on_collision_enemy(other_enemy, other_sprite, my_sprite)
+  if enemy.reflected and other_enemy.get_hurt_by_reflected_attack then
+      other_enemy:get_hurt_by_reflected_attack()
+  end
 end
