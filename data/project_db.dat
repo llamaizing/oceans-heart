@@ -342,6 +342,7 @@ sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small,
 sprite{ id = "enemies/misc/gargoyle_cat", description = "Gargoyle Cat" }
 sprite{ id = "enemies/misc/jelly_needle", description = "Jelly Needle" }
 sprite{ id = "enemies/misc/lionhead" }
+sprite{ id = "enemies/misc/moss_bop_grass", description = "Moss Bop Grass" }
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 sprite{ id = "enemies/misc/octorok_stone", description = "small stone" }
 sprite{ id = "enemies/misc/octorok_stone_2", description = "Stone 2" }
@@ -406,6 +407,7 @@ sprite{ id = "enemies/normal_enemies/kappa", description = "Kappa" }
 sprite{ id = "enemies/normal_enemies/mandrake", description = "mandrake" }
 sprite{ id = "enemies/normal_enemies/mandrake_white", description = "white mandrake" }
 sprite{ id = "enemies/normal_enemies/meandershroom_1", description = "Meandershroom 1" }
+sprite{ id = "enemies/normal_enemies/moss_bop", description = "Moss Bop" }
 sprite{ id = "enemies/normal_enemies/mud_golem_1", description = "Mud Golem 1" }
 sprite{ id = "enemies/normal_enemies/octorok", description = "octorok (alttp)" }
 sprite{ id = "enemies/normal_enemies/ogre_1", description = "Ogre 1" }
@@ -1619,6 +1621,7 @@ enemy{ id = "normal_enemies/kappa", description = "Kappa" }
 enemy{ id = "normal_enemies/mandrake", description = "mandrake" }
 enemy{ id = "normal_enemies/mandrake_white", description = "White Mandrake" }
 enemy{ id = "normal_enemies/meandershroom_1", description = "Meandershroom 1" }
+enemy{ id = "normal_enemies/moss_bop", description = "Moss Bop" }
 enemy{ id = "normal_enemies/mud_golem_1", description = "Mud Golem 1" }
 enemy{ id = "normal_enemies/octorok", description = "octorok" }
 enemy{ id = "normal_enemies/ogre_1", description = "Ogre 1" }

@@ -40894,6 +40894,36 @@ tile{
   pattern = "92",
 }
 
+tile{
+  layer = 0,
+  x = 160,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "2149",
+  tileset = "oceanheart_outdoors_1",
+}
+
+door{
+  name = "a4_door_6",
+  layer = 0,
+  x = 176,
+  y = 760,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_c4_door",
+}
+
+door{
+  name = "a4_door_7",
+  layer = 0,
+  x = 192,
+  y = 760,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_c4_door",
+}
+
 wall{
   layer = 0,
   x = 992,
@@ -41854,38 +41884,6 @@ chest{
   sprite = "entities/chest",
 }
 
-enemy{
-  layer = 0,
-  x = 496,
-  y = 1005,
-  direction = 3,
-  breed = "normal_enemies/shooty_fish",
-}
-
-enemy{
-  layer = 0,
-  x = 648,
-  y = 973,
-  direction = 3,
-  breed = "normal_enemies/shooty_fish",
-}
-
-enemy{
-  layer = 0,
-  x = 744,
-  y = 1061,
-  direction = 3,
-  breed = "normal_enemies/shooty_fish",
-}
-
-enemy{
-  layer = 0,
-  x = 520,
-  y = 1125,
-  direction = 3,
-  breed = "normal_enemies/shooty_fish",
-}
-
 wall{
   layer = 0,
   x = 608,
@@ -41988,56 +41986,6 @@ chest{
   treasure_name = "barrier",
   treasure_savegame_variable = "ssh_barrier_charm_chest",
   sprite = "entities/chest_big",
-}
-
-door{
-  name = "a4_door",
-  layer = 0,
-  x = 200,
-  y = 808,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_c4_door",
-}
-
-door{
-  name = "a4_door_2",
-  layer = 0,
-  x = 216,
-  y = 808,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_c4_door",
-}
-
-door{
-  name = "a4_door_3",
-  layer = 0,
-  x = 232,
-  y = 808,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_c4_door",
-}
-
-door{
-  name = "a4_door_4",
-  layer = 0,
-  x = 208,
-  y = 816,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_c4_door",
-}
-
-door{
-  name = "a4_door_5",
-  layer = 0,
-  x = 224,
-  y = 816,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_c4_door",
 }
 
 enemy{
@@ -42161,7 +42109,133 @@ door{
   y = 88,
   direction = 3,
   sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_b1_door",
+}
+
+enemy{
+  name = "a4_gargoyle_2",
+  layer = 0,
+  x = 576,
+  y = 781,
+  direction = 0,
+  breed = "misc/gargoyle_cat",
+}
+
+enemy{
+  name = "a4_gargoyle_3",
+  layer = 0,
+  x = 672,
+  y = 781,
+  direction = 0,
+  breed = "misc/gargoyle_cat",
+}
+
+door{
+  name = "a4_door_8",
+  layer = 0,
+  x = 208,
+  y = 760,
+  direction = 3,
+  sprite = "entities/door_post_stone",
   savegame_variable = "ssh_c4_door",
+}
+
+door{
+  name = "a4_door_9",
+  layer = 0,
+  x = 224,
+  y = 760,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_c4_door",
+}
+
+door{
+  name = "a4_door_10",
+  layer = 0,
+  x = 240,
+  y = 760,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_c4_door",
+}
+
+door{
+  name = "a4_door_11",
+  layer = 0,
+  x = 256,
+  y = 760,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_c4_door",
+}
+
+enemy{
+  name = "a4_gargoyle_4",
+  layer = 0,
+  x = 920,
+  y = 781,
+  direction = 0,
+  breed = "misc/gargoyle_cat",
+}
+
+enemy{
+  name = "a4_gargoyle_5",
+  layer = 0,
+  x = 1160,
+  y = 781,
+  direction = 0,
+  breed = "misc/gargoyle_cat",
+}
+
+enemy{
+  name = "a4_gargoyle_6",
+  layer = 0,
+  x = 872,
+  y = 917,
+  direction = 0,
+  breed = "misc/gargoyle_cat",
+}
+
+enemy{
+  name = "a4_gargoyle_7",
+  layer = 0,
+  x = 1208,
+  y = 917,
+  direction = 0,
+  breed = "misc/gargoyle_cat",
+}
+
+enemy{
+  layer = 0,
+  x = 536,
+  y = 1005,
+  direction = 0,
+  breed = "normal_enemies/moss_bop",
+}
+
+enemy{
+  layer = 0,
+  x = 728,
+  y = 1061,
+  direction = 0,
+  breed = "normal_enemies/moss_bop",
+}
+
+enemy{
+  layer = 0,
+  x = 568,
+  y = 1133,
+  direction = 0,
+  breed = "normal_enemies/moss_bop",
+}
+
+enemy{
+  layer = 0,
+  x = 632,
+  y = 981,
+  direction = 0,
+  breed = "normal_enemies/moss_bop",
 }
 
 door{
@@ -42171,7 +42245,7 @@ door{
   y = 96,
   direction = 3,
   sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_c4_door",
+  savegame_variable = "ssh_b1_door",
 }
 
 door{
@@ -42181,7 +42255,7 @@ door{
   y = 104,
   direction = 3,
   sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_c4_door",
+  savegame_variable = "ssh_b1_door",
 }
 
 door{
@@ -42191,7 +42265,7 @@ door{
   y = 112,
   direction = 3,
   sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_c4_door",
+  savegame_variable = "ssh_b1_door",
 }
 
 door{
@@ -42201,7 +42275,7 @@ door{
   y = 120,
   direction = 3,
   sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_c4_door",
+  savegame_variable = "ssh_b1_door",
 }
 
 door{
@@ -42211,7 +42285,7 @@ door{
   y = 128,
   direction = 3,
   sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_c4_door",
+  savegame_variable = "ssh_b1_door",
 }
 
 tile{

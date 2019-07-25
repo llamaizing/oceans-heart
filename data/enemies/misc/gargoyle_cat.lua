@@ -36,6 +36,8 @@ function enemy:shoot()
     local projectile = enemy:create_enemy{
       breed="misc/energy_ball_bounce"
     }
+    projectile:set_max_bounces(1)
+    projectile:set_damage(1)
     projectile:go(enemy:get_angle(hero))
   end)
   sol.timer.start(enemy, 3500, function()
