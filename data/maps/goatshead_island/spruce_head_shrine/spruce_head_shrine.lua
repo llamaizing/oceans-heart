@@ -14,6 +14,13 @@ local game = map:get_game()
 map:register_event("on_started", function()
 
   map:set_doors_open("d4_door")
+  map:set_doors_open"boss_door"
+
+  if game:get_value("ssh_boss_defeated") then
+    for w in map:get_entities"boss_wall" do
+      w:set_enabled(false)
+    end
+  end
 
 end)
 
@@ -52,6 +59,13 @@ function miniboss_sensor:on_activated()
   end
 end
 
+function boss_sensor:on_activated()
+  boss_sensor:set_enabled(false)
+  map:close_doors"boss_door"
+  for w in map:get_entities"boss_wall" do
+    w:set_enabled(false)
+  end
+end
 
 
 
@@ -79,3 +93,16 @@ function miniboss:on_dead()
   map:create_poof(d4_chest:get_position())
   sol.audio.play_sound"secret"
 end
+
+  --Boss--
+function boss:on_dead()
+  game:set_value("ssh_boss_defeated", true)
+  map:open_doors"boss_door"
+  if map:has_entities"minion_boss" then
+    for e in map:get_entities"minion_boss" do
+      e:hurt(20)
+    end
+  end
+end
+
+

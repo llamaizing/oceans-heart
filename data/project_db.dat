@@ -307,6 +307,7 @@ sprite{ id = "enemies/bosses/jazari", description = "al Jazari" }
 sprite{ id = "enemies/bosses/litton", description = "Litton" }
 sprite{ id = "enemies/bosses/michael", description = "Michael Mighty Mead Maker" }
 sprite{ id = "enemies/bosses/michael_weapon", description = "Michael-Weapon" }
+sprite{ id = "enemies/bosses/moss_boss", description = "Moss Boss" }
 sprite{ id = "enemies/bosses/pollutant_boss", description = "Pollutant Boss" }
 sprite{ id = "enemies/bosses/rock_spider_big", description = "rock spider - big" }
 sprite{ id = "enemies/bosses/rock_spider_fire", description = "Rock Spider-Fire" }
@@ -1533,6 +1534,7 @@ enemy{ id = "bosses/forest_revenant", description = "Forest Revenant" }
 enemy{ id = "bosses/jazari", description = "al Jazari" }
 enemy{ id = "bosses/litton", description = "Litton" }
 enemy{ id = "bosses/michael", description = "Michael Mighty Mead Maker" }
+enemy{ id = "bosses/moss_boss", description = "Moss Boss" }
 enemy{ id = "bosses/pollutant_boss", description = "Pollutant Boss" }
 enemy{ id = "bosses/rock_spider_big", description = "rock spider - big" }
 enemy{ id = "bosses/rock_spider_fire", description = "Rock Spider-Fire" }

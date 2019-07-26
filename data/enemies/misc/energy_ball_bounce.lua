@@ -29,7 +29,7 @@ function enemy:go(direction)
   movement:start(enemy)
 
   function movement:on_obstacle_reached()
-    if bounces <= MAX_BOUNCES then
+    if bounces < MAX_BOUNCES then
       bounces = bounces + 1
       enemy:go(enemy:get_new_direction())
     else
