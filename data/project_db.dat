@@ -471,6 +471,7 @@ sprite{ id = "entities/block_statue", description = "Block - Statue" }
 sprite{ id = "entities/block_stone_lv1", description = "Block Stone lv1" }
 sprite{ id = "entities/boat_01", description = "Boat 01" }
 sprite{ id = "entities/boat_02", description = "Boat 02" }
+sprite{ id = "entities/boat_03_pirate", description = "entities/boat_03_pirate" }
 sprite{ id = "entities/boat_fishing", description = "Boat - Fishing" }
 sprite{ id = "entities/boat_ghost", description = "Boat - Ghost" }
 sprite{ id = "entities/boat_goatshead_ferry", description = "Goatshead Ferry" }

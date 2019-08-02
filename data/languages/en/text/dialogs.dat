@@ -557,7 +557,8 @@ No problem. I can get your charts back.
 
 
 KELPTON:
-Don't get killed.
+I hear the pirates are sailing in with a
+haul of loot. Maybe check around there.
 ]],
 }
 
@@ -571,6 +572,11 @@ charts out of my green trunk?
 TILIA:
 No, they're still in the Pirate Council's
 vault. But I'm figuring it out.
+
+KELPTON:
+I hear the pirates are sailing into port
+with a haul of loot. Might be worth lookin'
+into.
 ]],
 }
 

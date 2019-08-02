@@ -28570,7 +28570,7 @@ tile{
   layer = 0,
   x = 448,
   y = 1512,
-  width = 128,
+  width = 96,
   height = 32,
   pattern = "46",
 }
@@ -28586,7 +28586,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 552,
+  x = 520,
   y = 1528,
   width = 16,
   height = 8,
@@ -28703,45 +28703,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 544,
-  y = 1504,
-  width = 16,
-  height = 16,
-  pattern = "1032",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 1504,
-  width = 16,
-  height = 16,
-  pattern = "1037",
-}
-
-tile{
-  layer = 0,
-  x = 544,
-  y = 1520,
-  width = 16,
-  height = 16,
-  pattern = "1034",
-}
-
-tile{
-  layer = 0,
-  x = 560,
-  y = 1520,
-  width = 16,
-  height = 16,
-  pattern = "1035",
-}
-
-tile{
-  layer = 0,
   x = 448,
   y = 1544,
-  width = 128,
+  width = 96,
   height = 8,
   pattern = "230",
 }
@@ -28757,7 +28721,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 552,
+  x = 520,
   y = 1536,
   width = 16,
   height = 16,
@@ -35291,6 +35255,24 @@ tile{
   tileset = "misc",
 }
 
+tile{
+  layer = 0,
+  x = 536,
+  y = 1432,
+  width = 16,
+  height = 16,
+  pattern = "686",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 1432,
+  width = 40,
+  height = 16,
+  pattern = "694",
+}
+
 destination{
   name = "from_tavern",
   layer = 0,
@@ -36606,7 +36588,7 @@ wall{
   layer = 0,
   x = 448,
   y = 1536,
-  width = 128,
+  width = 96,
   height = 8,
   stops_hero = true,
 }
@@ -36736,17 +36718,6 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "dropoff_barrel_bottom_16",
-  layer = 0,
-  x = 552,
-  y = 1504,
-  enabled_at_start = false,
-  width = 24,
-  height = 16,
-  pattern = "690",
-}
-
-dynamic_tile{
   name = "dropoff_barrel_bottom_17",
   layer = 0,
   x = 400,
@@ -36813,39 +36784,6 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "dropoff_box_bottom_12",
-  layer = 0,
-  x = 560,
-  y = 1520,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  pattern = "686",
-}
-
-dynamic_tile{
-  name = "dropoff_box_bottom_13",
-  layer = 0,
-  x = 544,
-  y = 1520,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  pattern = "686",
-}
-
-dynamic_tile{
-  name = "dropoff_box_bottom_14",
-  layer = 0,
-  x = 536,
-  y = 1504,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  pattern = "686",
-}
-
-dynamic_tile{
   name = "dropoff_box_bottom_15",
   layer = 0,
   x = 520,
@@ -36865,17 +36803,6 @@ dynamic_tile{
   width = 16,
   height = 16,
   pattern = "686",
-}
-
-npc{
-  name = "dropoff_ship",
-  layer = 0,
-  x = 560,
-  y = 1597,
-  enabled_at_start = false,
-  direction = 2,
-  subtype = 1,
-  sprite = "entities/boat_02",
 }
 
 dynamic_tile{
@@ -37117,6 +37044,61 @@ npc{
   direction = 3,
   subtype = 1,
   behavior = "dialog#_ballast_harbor.npcs.market_people.blacksmith_hammering",
+}
+
+npc{
+  name = "dropoff_ship",
+  layer = 0,
+  x = 568,
+  y = 1597,
+  enabled_at_start = false,
+  direction = 2,
+  subtype = 1,
+  sprite = "entities/boat_03_pirate",
+}
+
+dynamic_tile{
+  name = "dropoff_box_bottom_18",
+  layer = 0,
+  x = 568,
+  y = 1432,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "686",
+}
+
+dynamic_tile{
+  name = "dropoff_box_bottom_19",
+  layer = 0,
+  x = 552,
+  y = 1440,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "686",
+}
+
+dynamic_tile{
+  name = "dropoff_box_bottom_20",
+  layer = 0,
+  x = 520,
+  y = 1440,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "686",
+}
+
+dynamic_tile{
+  name = "dropoff_box_bottom_21",
+  layer = 0,
+  x = 504,
+  y = 1440,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "686",
 }
 
 tile{
@@ -42644,6 +42626,24 @@ tile{
   pattern = "1535",
 }
 
+tile{
+  layer = 1,
+  x = 536,
+  y = 1424,
+  width = 16,
+  height = 8,
+  pattern = "687",
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 1416,
+  width = 40,
+  height = 16,
+  pattern = "695",
+}
+
 enemy{
   name = "seagull_3",
   layer = 1,
@@ -42787,17 +42787,6 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "dropoff_barrel_top_16",
-  layer = 1,
-  x = 552,
-  y = 1496,
-  enabled_at_start = false,
-  width = 24,
-  height = 8,
-  pattern = "691",
-}
-
-dynamic_tile{
   name = "dropoff_barrel_top_17",
   layer = 1,
   x = 400,
@@ -42873,39 +42862,6 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "dropoff_box_top_12",
-  layer = 1,
-  x = 560,
-  y = 1512,
-  enabled_at_start = false,
-  width = 16,
-  height = 8,
-  pattern = "687",
-}
-
-dynamic_tile{
-  name = "dropoff_box_top_13",
-  layer = 1,
-  x = 544,
-  y = 1512,
-  enabled_at_start = false,
-  width = 16,
-  height = 8,
-  pattern = "687",
-}
-
-dynamic_tile{
-  name = "dropoff_box_top_14",
-  layer = 1,
-  x = 536,
-  y = 1496,
-  enabled_at_start = false,
-  width = 16,
-  height = 8,
-  pattern = "687",
-}
-
-dynamic_tile{
   name = "dropoff_box_top_15",
   layer = 1,
   x = 520,
@@ -42973,6 +42929,61 @@ dynamic_tile{
   height = 8,
   pattern = "590",
   tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "dropoff_box_top_21",
+  layer = 1,
+  x = 568,
+  y = 1424,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "687",
+}
+
+dynamic_tile{
+  name = "dropoff_box_top_22",
+  layer = 1,
+  x = 552,
+  y = 1432,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "687",
+}
+
+dynamic_tile{
+  name = "dropoff_box_top_23",
+  layer = 1,
+  x = 520,
+  y = 1432,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "687",
+}
+
+dynamic_tile{
+  name = "dropoff_box_top_24",
+  layer = 1,
+  x = 504,
+  y = 1432,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "687",
+}
+
+dynamic_tile{
+  name = "dropoff_box_bottom_22",
+  layer = 1,
+  x = 512,
+  y = 1432,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "686",
 }
 
 tile{
@@ -43054,5 +43065,16 @@ tile{
   width = 16,
   height = 32,
   pattern = "1540",
+}
+
+dynamic_tile{
+  name = "dropoff_box_top_25",
+  layer = 2,
+  x = 512,
+  y = 1424,
+  enabled_at_start = false,
+  width = 16,
+  height = 8,
+  pattern = "687",
 }
 
