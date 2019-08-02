@@ -3180,6 +3180,120 @@ Thanks Ilex.
 }
 
 dialog{
+  id = "_goatshead.npcs.ilex_new.0",
+  text = [[
+ILEX:
+Oh, a traveler to Spruce Head shrine?
+What brings you here?
+
+TILIA:
+Well, I guess just wandering around. It's
+the beginning of a pretty long quest for
+me. I'm supposed to go to some bar. It's
+TILIA:
+in my quest log, I'm just going on a long
+walk before I get to that I guess.
+
+ILEX:
+Hmm, the world is large and full of both
+dangers and treasures. But I cannot let
+you enter Spruce Head Shrine without
+ILEX:
+reason! My forefathers have been guarding
+this shrine for ages.
+
+TILIA:
+Makes sense, I can't think why I would
+need to go in. Unless something about my
+quest brings me here later.
+ILEX:
+I'll think about it then. For now, explore
+the world at your own pace, young lady.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.ilex_new.1",
+  text = [[
+ILEX:
+Oh, a traveler? Didn't think anyone cared
+for the old shrines anymore. Pirates freely
+pillaging them. Or are you just some
+ILEX:
+young upstart monster-fighter trying to
+prove your worth?
+
+TILIA:
+Oh, no, I uh, I totally care about ancient
+shrines. What did they used to do here,
+am I right?
+ILEX:
+Hmmph. Spruce Head Shrine once sent out
+saplings grown from the Devana Tree. And
+here lay the King's Amulet, given to
+ILEX:
+Heron to allow him passage through the
+storms to the palace. After the monks
+died in the great flood, my forefathers
+ILEX:
+continued to guard the King's Amulet, even
+as the Shrine decays and returns to the
+forest. Well, until those pirates showed
+ILEX:
+up and sacked the place. Stole the King's
+Amulet. I'm still hanging out here, but
+I'm honestly not sure why anymore.
+TILIA:
+That sounds rough, buddy. Look, so I'm
+actually here about the pirates. Were they
+flying an hourglass flag?
+ILEX:
+Yeah, it was the Hourglass Crew. One of
+their ships hit a rock in the bay as they
+were leaving. If you head deeper into the
+ILEX:
+shrine, you can get to the shipwreck.
+Watch out for the monsters, though. This
+place is getting dangerous.
+TILIA:
+Thank you. I'm gonna go check on that
+shipwreck, see if I can find a clue about
+where the pirates went.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.ilex_new.2",
+  text = [[
+ILEX:
+The Hourglass pirates came and stole the
+King's Amulet. They wrecked one of their
+ships as they left, it's still in the bay.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.ilex_new.3",
+  text = [[
+ILEX:
+Did you find the shipwreck in the shrine's
+bay?
+
+TILIA:
+I did. Wasn't much in there, but it looks
+like the pirates have more Briarwood Gin
+in their bodies than blood.
+ILEX:
+Ah, the distillery on Yarrowmouth. The
+isle of thorns. It's said in ages past, a
+great tragedy took place there.
+TILIA:
+I'm just hoping they kept the pirate's
+receipts. Thanks.
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.inn.1",
   text = [[
 JUDE:
@@ -4716,6 +4830,42 @@ dialog{
   text = [[
 Looks like something important should
 be sitting here.
+]],
+}
+
+dialog{
+  id = "_goatshead.observations.spruce_captain_log.1",
+  text = [[
+Looks like the ship's logbook.
+...September 15th, finally found that
+amulet Blackbeard sent us after! We can
+finally return to the hideout! But not
+before we stop by Briarwood Distillery
+and put in a new order to celebrate.
+Only the finest drink Yarrowmouth can give
+for the crew that found that amulet!
+...
+
+
+
+TILIA:
+Looks like the Hourglass Crew sailed on
+to Yarrowmouth. Maybe the people at the
+distillery know where their hideout is.
+]],
+}
+
+dialog{
+  id = "_goatshead.observations.spruce_captain_log.2",
+  text = [[
+Looks like the ship's logbook.
+...September 15th, finally found that
+amulet Blackbeard sent us after! We can
+finally return to the hideout! But not
+before we stop by Briarwood Distillery
+and put in a new order to celebrate.
+Only the finest drink Yarrowmouth can give
+for the crew that found that amulet!
 ]],
 }
 
@@ -14879,17 +15029,12 @@ The Hourglass Pirates
 were seen looting
 Spruce Head.
 @!Investigate Spruce Head
-@Investigate Spruce Head
-!Meet Ilex at the Spruce Head
-!shrine
-@Find your way into the
-center of the shrine
-!  $v1 of 4 torches lit
+@Find your way to the
+shipwreck in the harbor
 @Check with Briarwood
 Distillery
 !The distillery is on
 !Yarrowmouth Island
-
 ]],
 }
 

@@ -15,15 +15,43 @@ map:register_event("on_started", function()
 
   map:set_doors_open("d4_door")
   map:set_doors_open"boss_door"
-
+  if game:get_value"quest_spruce_head" then
+    map:set_doors_open"entry_door"
+  end
   if game:get_value("ssh_boss_defeated") then
     for w in map:get_entities"boss_wall" do
       w:set_enabled(false)
     end
   end
+  if game:get_value"ssh_boss_defeated" then
+    boss:set_enabled(false)
+  end
 
 end)
 
+
+--NPCs and Stuff------------------------------------------
+
+function ilex:on_interaction()
+  if not game:get_value("quest_spruce_head") then
+    game:start_dialog"_goatshead.npcs.ilex_new.0"
+  elseif game:get_value"quest_spruce_head" == 1 then
+    game:start_dialog"_goatshead.npcs.ilex_new.2"
+  elseif game:get_value"quest_spruce_head" == 2 then
+    game:start_dialog"_goatshead.npcs.ilex_new.3"
+  end
+end
+
+function captain_log:on_interaction()
+  if game:get_value"quest_spruce_head" == 1 then
+    game:start_dialog("_goatshead.observations.spruce_captain_log.1", function()
+      game:set_value("quest_spruce_head", 2)
+      hero:teleport("goatshead_island/poplar_coast", "from_shrine")
+    end)
+  else
+    game:start_dialog("_goatshead.observations.spruce_captain_log.2")
+  end
+end
 
 
 --Switches-------------------------------------------------
@@ -49,6 +77,21 @@ end
 
 
 --Sensors--------------------------------------------------
+function ilex_sensor:on_activated()
+  if game:get_value"quest_spruce_head" and not game:get_value"shh_talked_to_ilex" then
+    hero:freeze()
+    hero:walk("2224422")
+    sol.timer.start(map, 600, function()
+      hero:freeze()
+      game:start_dialog("_goatshead.npcs.ilex_new.1", function()
+        game:set_value("shh_talked_to_ilex", true)
+        game:set_value("quest_spruce_head", 1)
+        hero:unfreeze()
+      end)
+    end)
+  end
+end
+
 function miniboss_sensor:on_activated()
   if not game:get_value("ssh_miniboss_defeated") then
     map:close_doors("d4_door")
@@ -60,10 +103,12 @@ function miniboss_sensor:on_activated()
 end
 
 function boss_sensor:on_activated()
-  boss_sensor:set_enabled(false)
-  map:close_doors"boss_door"
-  for w in map:get_entities"boss_wall" do
-    w:set_enabled(false)
+  if not game:get_value"ssh_boss_defeated" then
+    boss_sensor:set_enabled(false)
+    map:close_doors"boss_door"
+    for w in map:get_entities"boss_wall" do
+      w:set_enabled(false)
+    end
   end
 end
 

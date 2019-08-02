@@ -17,7 +17,6 @@ map:register_event("on_started", function()
     boomerang_boss:set_enabled(false)
     map:set_doors_open("fort_boss_door")
   end
-  if game:get_value("talked_to_ilex_1") == true then gate:set_enabled(false) end
   bait_monster:set_enabled(false)
 
 end)

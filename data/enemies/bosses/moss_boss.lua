@@ -60,7 +60,7 @@ function enemy:choose_attack()
     attacking = true
     can_throw = false
     enemy:throw()
-    sol.timer.start(map, 6000, function() can_throw = true end)
+    sol.timer.start(map, 5000, function() can_throw = true end)
 
   elseif can_surround then
     attacking = true
@@ -80,6 +80,7 @@ function enemy:throw()
     ball:set_damage(1)
     ball:set_max_bounces(0)
     ball:go(enemy:get_angle(hero))
+    sol.audio.play_sound("shoot_magic_2")
     enemy:finish_attacking()
   end)
 end

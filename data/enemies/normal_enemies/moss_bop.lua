@@ -53,9 +53,9 @@ function enemy:arise()
     effect:get_sprite():set_animation("burst", function() effect:remove() end)
     if close_to_hero() then sol.audio.play_sound"bush" end
     sprite:set_animation"walking"
-    enemy:shoot()
+    sol.timer.start(enemy, 200, function() enemy:shoot() end)
     enemy:move()
-    sol.timer.start(enemy, 1800, function()
+    sol.timer.start(enemy, 2200, function()
       enemy:burrow()
     end)
   end)

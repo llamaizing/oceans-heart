@@ -30,7 +30,7 @@ function enemy:go(direction)
   m:set_angle(direction)
   m:start(enemy)
   function m:on_obstacle_reached()
-    if enemy:get_distance(map:get_hero()) <= 200 and enemy:is_in_same_region(map:get_hero()) then
+    if enemy:get_distance(map:get_hero()) <= 400 and enemy:is_in_same_region(map:get_hero()) then
       sol.audio.play_sound"clank"
       sol.audio.play_sound"thunk1"
     end
