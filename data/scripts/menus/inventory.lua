@@ -30,26 +30,30 @@ local all_equipment_items = {
 
 --All collectable items
 local all_collectables = {
+  "coral_ore",
+  "unattainable_collectable",
+  "unattainable_collectable",
+  "unattainable_collectable",
   "burdock",
   "chamomile",
-  "coral_ore",
 --  "dandelion_seeds",
   "firethorn_berries",
 --  "forsythia",
-  "geode",
   "ghost_orchid",
   "kingscrown",
   "lavendar",
+--  "violets",
+  "witch_hazel",
+  "unattainable_collectable",
   "mandrake_white",
   "mandrake",
 --  "monkshood",
+  "geode",
   "monster_bones",
   "monster_eye",
   "monster_guts",
   "monster_heart",
 --  "monster_horn",
---  "violets",
-  "witch_hazel",
 }
 
 --constants:
@@ -296,10 +300,10 @@ function inventory:on_draw(dst_surface)
     end
 
 local COLLECT_COLUMNS = 4
-local COLLECT_ROWS = 4
+local COLLECT_ROWS = 5
 local COL_SQR_SIZE = 24
 local GRID_ORIGIN_COLLECT_X = 260
-local GRID_ORIGIN_COLLECT_Y = 66
+local GRID_ORIGIN_COLLECT_Y = 48
     --draw collectable items
     for i=1, #all_collectables do
       if self.collectable_sprites[i] then

@@ -1514,6 +1514,7 @@ item{ id = "tacklebox", description = "Tacklebox" }
 item{ id = "thunder_charm", description = "Thunder Charm" }
 item{ id = "tidal_starfruit", description = "Tidy Starnut" }
 item{ id = "tornado_dash", description = "Tornado Dash" }
+item{ id = "unattainable_collectable", description = "placeholder for menu design" }
 item{ id = "violets", description = "violets-1,5,10" }
 item{ id = "watering_can", description = "watering can" }
 item{ id = "whisky_for_juglan", description = "Whisky for Juglan" }
