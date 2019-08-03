@@ -21,6 +21,7 @@ local quest_log = require"scripts/menus/quest_log"
 local inventory = require"scripts/menus/inventory"
 local map_screen = require"scripts/menus/map"
 local save_menu = require"scripts/menus/save"
+local save_hud = require"scripts/menus/ui/save_hud"
 
 local pause_menu = {x=0, y=0}
 multi_events:enable(pause_menu)
@@ -290,6 +291,7 @@ function pause_menu:close(callback)
 	
 	--callback function for when all movements are done
 	local function on_finished()
+    sol.menu.stop(save_hud)
 		sol.menu.stop(self)
 		if callback then callback() end
 	end
@@ -323,6 +325,8 @@ function pause_menu:on_started()
 	for _,submenu in ipairs(SUBMENU_LIST) do
 		if submenu.initialize then submenu:initialize(game) end
 	end
+  --little HUD text to say press attack button to save
+  sol.menu.start(game, save_hud, true)
 	
 	--clean-up any residual active movements
 	for movement,data in pairs(active_movements) do

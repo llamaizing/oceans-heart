@@ -18,7 +18,7 @@
 	There are two completely different lists of quests that are displayed: main quests and
 	side quests. Functionally they behave the same and get displayed on separate tabs that
 	the player can switch between using the left/right keys.
-]]
+--]]
 
 local multi_events = require"scripts/multi_events"
 local ui = require"scripts/menus/ui/ui"
