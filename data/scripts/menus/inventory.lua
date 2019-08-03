@@ -28,6 +28,30 @@ local all_equipment_items = {
     {item = "elixer", name = "Elixer Vitae", assignable = false,},
 }
 
+--All collectable items
+local all_collectables = {
+  "burdock",
+  "chamomile",
+  "coral_ore",
+--  "dandelion_seeds",
+  "firethorn_berries",
+--  "forsythia",
+  "geode",
+  "ghost_orchid",
+  "kingscrown",
+  "lavendar",
+  "mandrake_white",
+  "mandrake",
+--  "monkshood",
+  "monster_bones",
+  "monster_eye",
+  "monster_guts",
+  "monster_heart",
+--  "monster_horn",
+--  "violets",
+  "witch_hazel",
+}
+
 --constants:
 local GRID_ORIGIN_X = 10
 local GRID_ORIGIN_Y = 72
@@ -75,6 +99,8 @@ function inventory:initialize(game)
     --make some tables to store the item sprites and their numbers for amounts
     self.equipment_sprites = {}
     self.counters = {}
+    self.collectable_sprites = {}
+    self.collectable_counters = {}
 
     --create the item sprites:
     for i=1, #all_equipment_items do
@@ -104,6 +130,31 @@ function inventory:initialize(game)
             end
         end
     end
+
+    --create collectable item sprites
+    for i=1, #all_collectables do
+      if all_collectables[i] then
+        local collectable_string = all_collectables[i]
+        local item = game:get_item(collectable_string)
+        local variant = item:get_variant()
+        if variant > 0 then
+          local sprite = sol.sprite.create("entities/items")
+          sprite:set_animation(collectable_string)
+          sprite:set_direction(0)
+          self.collectable_sprites[i] = sprite
+          local amount = item:get_amount()
+          local font = "white_digits"
+          if amount >= item:get_max_amount() then font = "green_digits" end
+          self.collectable_counters[i] = sol.text_surface.create{
+              horizontal_alignment = "center",
+              vertical_alignment = "top",
+              text = item:get_amount(),
+              font = font
+          }
+        end
+      end
+    end
+
     --get assigned item sprites
     self:initialize_assigned_item_sprites(game)
 
@@ -242,6 +293,21 @@ function inventory:on_draw(dst_surface)
                 self.counters[i]:draw(dst_surface, x+8 + self.x, y+4 + self.y )
             end
         end
+    end
+
+local COLLECT_COLUMNS = 4
+local COLLECT_ROWS = 4
+local COL_SQR_SIZE = 24
+local GRID_ORIGIN_COLLECT_X = 260
+local GRID_ORIGIN_COLLECT_Y = 66
+    --draw collectable items
+    for i=1, #all_collectables do
+      if self.collectable_sprites[i] then
+        local x = ((i-1)%COLLECT_COLUMNS) * COL_SQR_SIZE + GRID_ORIGIN_COLLECT_X + COL_SQR_SIZE
+        local y = math.floor((i-1) / COLLECT_COLUMNS) * COL_SQR_SIZE + GRID_ORIGIN_COLLECT_Y + COL_SQR_SIZE
+        self.collectable_sprites[i]:draw(dst_surface, x+self.x, y+self.y)
+        self.collectable_counters[i]:draw(dst_surface, x+8 +self.x, y+2 + self.y)
+      end
     end
 end
 
