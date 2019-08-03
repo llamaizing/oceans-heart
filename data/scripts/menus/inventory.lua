@@ -197,7 +197,8 @@ function inventory:on_command_pressed(command)
         self:initialize_assigned_item_sprites(game)
         handled = true
     elseif command == "action" then
-        if all_equipment_items[cursor_index + 1].assignable == false then
+        if all_equipment_items[cursor_index + 1] ~= nil
+        and all_equipment_items[cursor_index + 1].assignable == false then
             local item = self:get_item_at_current_index()
             item:on_using()
             inventory:initialize(game)
