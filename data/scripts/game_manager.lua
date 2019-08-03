@@ -113,20 +113,8 @@ function game_manager:create(file_name, overwrite_game)
 
   function game:on_key_pressed(key, modifiers)
     local hero = game:get_hero()
-    if key == "s" then
-      game:start_dialog("_game.pause", function(answer)
-        if answer == 1 then
-          game:set_paused(false)
-        elseif answer == 2 then
-          game:save()
-          sol.audio.play_sound("elixer_upgrade")
-          game:set_paused(false)
-        elseif answer == 3 then
-          sol.main.exit()
-        end
-      end)
 
-    elseif key == "f" and sol.menu.is_started(pause_menu) then
+    if key == "f" and sol.menu.is_started(pause_menu) then
       pause_menu:next_submenu"left"
     elseif key == "g" and sol.menu.is_started(pause_menu) then
       pause_menu:next_submenu"right"

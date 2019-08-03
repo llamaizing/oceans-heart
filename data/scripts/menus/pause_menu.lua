@@ -12,7 +12,7 @@
 	This menu script uses left/right sliding transitions to switch the active submenu from
 	among a defined list. It also recalls the last submenu viewed when opened and includes
 	a sliding transition from/to the top of the screen when the menu is opened/closed.
-]]
+--]]
 
 local multi_events = require"scripts/multi_events"
 
@@ -20,6 +20,7 @@ local multi_events = require"scripts/multi_events"
 local quest_log = require"scripts/menus/quest_log"
 local inventory = require"scripts/menus/inventory"
 local map_screen = require"scripts/menus/map"
+local save_menu = require"scripts/menus/save"
 
 local pause_menu = {x=0, y=0}
 multi_events:enable(pause_menu)
@@ -366,6 +367,9 @@ function pause_menu:on_command_pressed(command)
 		else reopen_active_submenu() end
 		
 		return true
+  elseif command == "attack" then
+    sol.menu.start(sol.main.get_game(), save_menu)
+    return true
 	elseif not is_changing_menus then --must wait for transition to finish before changing submenus again
 		if command=="left" or command=="right" then
 			self:next_submenu(command)
