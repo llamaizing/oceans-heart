@@ -18,6 +18,11 @@ local text_surface2 = sol.text_surface.create({
         vertical_alignment = "top",
         horizontal_alignment = "left",
 })
+local text_surface3 = sol.text_surface.create({
+        font = "oceansfont",
+        vertical_alignment = "top",
+        horizontal_alignment = "left",
+})
 local leaf_surface = sol.surface.create()
 
 local leaves = {}
@@ -25,7 +30,7 @@ local clouds = {}
 
 local confirming = false
 local cursor_index
-local MAX_CURSOR_INDEX = 1
+local MAX_CURSOR_INDEX = 2
 
 
 local function create_cloud()
@@ -67,6 +72,8 @@ function title_screen:on_started()
   text_surface:draw(selection_surface, 0, 0)
   text_surface2:set_text("  New Game")
   text_surface2:draw(selection_surface, 0, 16)
+  text_surface3:set_text("  Quit")
+  text_surface3:draw(selection_surface, 0, 32)
 
 
   sol.timer.start(title_screen, math.random(1000, 2000), function()
@@ -109,13 +116,8 @@ function title_screen:on_draw(dst_surface)
   for i=1 , #leaves do
     leaves[i]:draw(dst_surface)
   end
-  if cursor_index == 0 then
-    cursor_sprite:draw(dst_surface, 347, 194)
---    cursor_sprite:draw(dst_surface, 300, 194)
-  elseif cursor_index == 1 then
-    cursor_sprite:draw(dst_surface, 347, 210)
---    cursor_sprite:draw(dst_surface, 300, 210)
-  end
+    cursor_sprite:draw(dst_surface, 347, 194 + cursor_index * 16)
+
 
   black_fill:draw(dst_surface)
 end
@@ -141,6 +143,7 @@ function title_screen:on_key_pressed(command)
 
     --New Game?
     elseif cursor_index == 1 and not confirming then
+      sol.audio.play_sound("danger")
       confirming = true
       selection_surface:clear()
       text_surface:set_text("  Confirm")
@@ -148,14 +151,14 @@ function title_screen:on_key_pressed(command)
       text_surface2:set_text("  Cancel")
       text_surface2:draw(selection_surface, 0, 16)
 
-    --New Game, yes delete old
+    --New Game state, confirm new game
     elseif cursor_index == 0 and confirming then
       sol.audio.play_sound("elixer_upgrade")
       local game = game_manager:create("save1.dat", true)
       sol.main:start_savegame(game)
       sol.menu.stop(self)
 
-    --New Game, nope don't delete
+    --New Game state, cancel new game
     elseif cursor_index == 1 and confirming then
       sol.audio.play_sound("no")
       confirming = false
@@ -164,6 +167,11 @@ function title_screen:on_key_pressed(command)
       text_surface:draw(selection_surface, 0, 0)
       text_surface2:set_text("  New Game")
       text_surface2:draw(selection_surface, 0, 16)
+      text_surface3:set_text("  Quit")
+      text_surface3:draw(selection_surface, 0, 32)
+
+    elseif  cursor_index == 2 then
+      sol.main.exit()
 
     end --end cursor index cases
 
