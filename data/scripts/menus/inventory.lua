@@ -34,7 +34,7 @@ local GRID_ORIGIN_Y = 72
 local GRID_ORIGIN_EQUIP_X = GRID_ORIGIN_X
 local GRID_ORIGIN_EQUIP_Y = GRID_ORIGIN_Y
 local ROWS = 4
-local COLUMNS = 5
+local COLUMNS = 7
 local MAX_INDEX = ROWS*COLUMNS --when every slot is full of an item, this should equal #all_equipment_items
 
 local cursor_index

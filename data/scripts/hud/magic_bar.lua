@@ -74,6 +74,15 @@ function magic_bar_builder:new(game, config)
     magic_bar:check()
   end
 
+  function magic_bar:on_paused()
+    magic_bar.magic_bar_img:fade_out()
+    magic_bar.magic_bar_background:fade_out()
+  end
+  function magic_bar:on_unpaused()
+    magic_bar.magic_bar_img:fade_in()
+    magic_bar.magic_bar_background:fade_in()
+  end
+
   return magic_bar
 end
 

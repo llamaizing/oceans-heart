@@ -79,6 +79,15 @@ function rupees_builder:new(game, config)
   check()
   sol.timer.start(game, 40, check)
 
+  function rupees:on_paused()
+    rupee_icon_img:fade_out()
+    digits_text:fade_out()
+  end
+  function rupees:on_unpaused()
+    rupee_icon_img:fade_in()
+    digits_text:fade_in()
+  end
+
   return rupees
 end
 

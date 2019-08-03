@@ -152,6 +152,14 @@ function hearts_builder:new(game, config)
     hearts:rebuild_surface()
   end
 
+  function hearts:on_paused()
+    hearts.surface:fade_out()
+  end
+  function hearts:on_unpaused()
+    hearts:rebuild_surface()
+    hearts.surface:fade_in()
+  end
+
   return hearts
 end
 
