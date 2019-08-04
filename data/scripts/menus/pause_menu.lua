@@ -20,8 +20,7 @@ local multi_events = require"scripts/multi_events"
 local quest_log = require"scripts/menus/quest_log"
 local inventory = require"scripts/menus/inventory"
 local map_screen = require"scripts/menus/map"
-local save_menu = require"scripts/menus/save"
-local save_hud = require"scripts/menus/ui/save_hud"
+local status_screen = require"scripts/menus/status"
 
 local pause_menu = {x=0, y=0}
 multi_events:enable(pause_menu)
@@ -38,6 +37,7 @@ local SUBMENU_LIST = { --order matters
 	inventory,
 	quest_log,
 	map_screen,
+  status_screen
 }
 
 pause_menu.quick_keys = {}
@@ -291,7 +291,6 @@ function pause_menu:close(callback)
 	
 	--callback function for when all movements are done
 	local function on_finished()
-    sol.menu.stop(save_hud)
 		sol.menu.stop(self)
 		if callback then callback() end
 	end
@@ -325,8 +324,6 @@ function pause_menu:on_started()
 	for _,submenu in ipairs(SUBMENU_LIST) do
 		if submenu.initialize then submenu:initialize(game) end
 	end
-  --little HUD text to say press attack button to save
-  sol.menu.start(game, save_hud, true)
 	
 	--clean-up any residual active movements
 	for movement,data in pairs(active_movements) do
@@ -371,9 +368,6 @@ function pause_menu:on_command_pressed(command)
 		else reopen_active_submenu() end
 		
 		return true
-  elseif command == "attack" then
-    sol.menu.start(sol.main.get_game(), save_menu)
-    return true
 	elseif not is_changing_menus then --must wait for transition to finish before changing submenus again
 		if command=="left" or command=="right" then
 			self:next_submenu(command)

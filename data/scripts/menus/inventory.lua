@@ -57,7 +57,7 @@ local all_collectables = {
 }
 
 --constants:
-local GRID_ORIGIN_X = 10
+local GRID_ORIGIN_X = 26
 local GRID_ORIGIN_Y = 72
 local GRID_ORIGIN_EQUIP_X = GRID_ORIGIN_X
 local GRID_ORIGIN_EQUIP_Y = GRID_ORIGIN_Y

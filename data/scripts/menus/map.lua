@@ -5,6 +5,7 @@ multi_events:enable(map_screen)
 
 local map_id
 local map_img = sol.surface.create()
+local map_bg = sol.surface.create("menus/maps/background.png")
 
 --// Gets/sets the x,y position of the menu in pixels
 function map_screen:get_xy() return self.x, self.y end
@@ -40,7 +41,8 @@ function map_screen:on_started()
 end
 
 function map_screen:on_draw(dst_surface)
-  map_img:draw(dst_surface, self.x, self.y)
+  map_bg:draw(dst_surface, self.x, self.y)
+  map_img:draw(dst_surface, self.x, self.y)  
 end
 
 return map_screen
