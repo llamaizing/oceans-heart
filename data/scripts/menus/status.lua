@@ -97,11 +97,15 @@ function status_screen:on_command_pressed(command)
     status_screen:process_selection()
     handled = true
   elseif command == "left" then
-    status_screen:process_direction("left")
-    handled = true
+    if cursor_index >= 2 then
+      status_screen:process_direction("left")
+      handled = true
+    end
   elseif command == "right" then
-    status_screen:process_direction("right")
-    handled = true
+    if cursor_index >= 2 then
+      status_screen:process_direction("right")
+      handled = true
+    end
   end
   return handled
 end

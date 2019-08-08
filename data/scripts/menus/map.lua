@@ -6,6 +6,14 @@ multi_events:enable(map_screen)
 local map_id
 local map_img = sol.surface.create()
 local map_bg = sol.surface.create("menus/maps/background.png")
+local MAP_LIST = {
+  new_limestone = "limestone",
+  goatshead_island = "goatshead",
+  Yarrowmouth = "yarrowmouth",
+  ballast_harbor = "yarrowmouth",
+  oakhaven = "oakhaven",
+  error = "test"
+}
 
 --// Gets/sets the x,y position of the menu in pixels
 function map_screen:get_xy() return self.x, self.y end
@@ -23,21 +31,12 @@ function map_screen:on_started()
   local game = sol.main.get_game()
   assert(game, "Error: cannot start map menu because no game is currently running")
   map_id = game:get_map():get_id()
-  if string.find(map_id, "new_limestone/") then
-    map_id = "limestone"
-  elseif string.find(map_id, "goatshead_island/") then
-    map_id = "goatshead"
-  elseif string.find(map_id, "Yarrowmouth/") then
-    map_id = "yarrowmouth"
-  elseif string.find(map_id, "ballast_harbor/") then
-    map_id = "yarrowmouth"
-  elseif string.find(map_id, "oakhaven/") then
-    map_id = "oakhaven"
-  else
-    print("error - unmapped island. Check scripts/menus/map.lua")
-    map_id = "test"
-  end
-  map_img = sol.surface.create("menus/maps/"..map_id..".png")
+
+  local map_prefix = map_id:match"^([^/]+)/"
+--  if map_prefix == nil then map_prefix = "error" end --this is a nice catch, but won't print any errors : /
+  local map_menu_name = MAP_LIST[map_prefix]
+  assert(map_menu_name or map_menu_name == "test", "Error: unmapped island ("..map_prefix..")")
+  map_img = sol.surface.create("menus/maps/"..map_menu_name..".png")
 end
 
 function map_screen:on_draw(dst_surface)
