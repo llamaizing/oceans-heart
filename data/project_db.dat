@@ -663,6 +663,7 @@ sprite{ id = "menus/hero_head", description = "Menu: hero head" }
 sprite{ id = "menus/inventory/inventory_background", description = "Inventory Background" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
+sprite{ id = "menus/slider", description = "slider" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/title_screen/background", description = "Background" }
 sprite{ id = "menus/title_screen/cloud_1", description = "Cloud 1" }

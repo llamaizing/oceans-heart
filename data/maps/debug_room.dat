@@ -6023,7 +6023,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "goatshead_island/poplar_coast",
-  destination = "from_shrine",
+  destination = "from_thrush_fort",
 }
 
 custom_entity{

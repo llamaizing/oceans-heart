@@ -31,7 +31,7 @@ local is_changing_menus = false --true while switching between submenus to block
 local is_exiting = false --true or false - determines whether the pause command opens or closes the menu
 
 --constants
-local MOVEMENT_SPEED = 500
+local MOVEMENT_SPEED = 700
 
 local SUBMENU_LIST = { --order matters
 	inventory,
@@ -53,6 +53,13 @@ local ANGLES = { --converts direction 0-3 to angle in radians
 	[2] = math.pi,
 	[3] = math.pi*3/2,
 }
+
+--Create a transparent background behind the menus to lower distaction from game map
+local transparent_background = sol.surface.create()
+transparent_background:set_opacity(100)
+transparent_background:fill_color({0,0,0})
+
+
 --Begins a sliding transition for the specified submenu
 local function do_slide_transition(submenu_index, direction, is_start_offscreen, callback)
 	local screen_width,screen_height = sol.video.get_quest_size()
@@ -375,6 +382,10 @@ function pause_menu:on_command_pressed(command)
 			return true
 		end
 	end
+end
+
+function pause_menu:on_draw(dst)
+  transparent_background:draw(dst)
 end
 
 return pause_menu
