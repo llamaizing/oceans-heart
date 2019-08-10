@@ -724,42 +724,6 @@ tile{
   tileset = "indoors_stone",
 }
 
-tile{
-  layer = 0,
-  x = 64,
-  y = 80,
-  width = 16,
-  height = 128,
-  pattern = "45",
-}
-
-tile{
-  layer = 0,
-  x = 80,
-  y = 192,
-  width = 112,
-  height = 16,
-  pattern = "45",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 192,
-  width = 128,
-  height = 16,
-  pattern = "45",
-}
-
-tile{
-  layer = 0,
-  x = 336,
-  y = 80,
-  width = 16,
-  height = 112,
-  pattern = "45",
-}
-
 dynamic_tile{
   name = "emblem",
   layer = 0,
@@ -795,6 +759,54 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/marble_summit",
   destination = "from_seabird_shrine",
+}
+
+custom_entity{
+  layer = 0,
+  x = 72,
+  y = 93,
+  width = 16,
+  height = 128,
+  direction = 0,
+  sprite = "entities/spikes",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 344,
+  y = 93,
+  width = 16,
+  height = 128,
+  direction = 0,
+  sprite = "entities/spikes",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 88,
+  y = 205,
+  width = 112,
+  height = 16,
+  direction = 0,
+  sprite = "entities/spikes",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 205,
+  width = 112,
+  height = 16,
+  direction = 0,
+  sprite = "entities/spikes",
+  tiled = true,
+  model = "prickles_blocking",
 }
 
 tile{

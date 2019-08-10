@@ -150,8 +150,8 @@ map{ id = "goatshead_island/lighthouse_cape", description = "Lighthouse Cape" }
 map{ id = "goatshead_island/merchant_hq_ext", description = "Merchant HQ Ext." }
 map{ id = "goatshead_island/poplar_coast", description = "Poplar Coast" }
 map{ id = "goatshead_island/poplar_forest", description = "Poplar Forest" }
-map{ id = "goatshead_island/spruce_head_shrine", description = "Spruce Head Shrine" }
 map{ id = "goatshead_island/spruce_head_shrine/spruce_head_shrine", description = "Spruce Head Shrine" }
+map{ id = "goatshead_island/spruce_head_shrine_old", description = "Spruce Head Shrine" }
 map{ id = "goatshead_island/west_goat", description = "West Goat" }
 map{ id = "grass_template_blue", description = "Blue Grass Template" }
 map{ id = "grass_template_green", description = "grass template" }
@@ -603,6 +603,7 @@ sprite{ id = "entities/smashable_gate", description = "Smashable Gate" }
 sprite{ id = "entities/smashable_wall", description = "Smashable Wall" }
 sprite{ id = "entities/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/spike_ball", description = "Spike Ball" }
+sprite{ id = "entities/spikes", description = "Spikes" }
 sprite{ id = "entities/spirit_1", description = "Spirit 01" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
@@ -619,6 +620,7 @@ sprite{ id = "entities/switch_lever_1", description = "Switch - Lever 1" }
 sprite{ id = "entities/switch_solid", description = "Switch - Solid" }
 sprite{ id = "entities/sword", description = "sword (in ground)" }
 sprite{ id = "entities/teletransporter", description = "Teletransporter" }
+sprite{ id = "entities/thorns", description = "Thorns" }
 sprite{ id = "entities/torch_short", description = "Torch (short)" }
 sprite{ id = "entities/torch_tall_solid_bottom", description = "Torch (tall solid bottom)" }
 sprite{ id = "entities/torch_tall_top", description = "Torch top" }
@@ -1680,6 +1682,7 @@ entity{ id = "fire_grate", description = "Fire Grate" }
 entity{ id = "flail_obstacle", description = "Flail Obstacle" }
 entity{ id = "leaf_pile", description = "Leaf Pile" }
 entity{ id = "moving_platform", description = "Moving Platform" }
+entity{ id = "prickles_blocking", description = "Prickles-Blocking" }
 entity{ id = "rockpile", description = "Rock Pile" }
 entity{ id = "rockpile_3", description = "rockpile 3" }
 entity{ id = "torch", description = "torch" }
