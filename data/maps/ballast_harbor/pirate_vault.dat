@@ -36675,14 +36675,3 @@ tile{
   tileset = "indoors_stone",
 }
 
-dynamic_tile{
-  name = "black_screen",
-  layer = 2,
-  x = 2496,
-  y = 1440,
-  width = 416,
-  height = 240,
-  pattern = "35",
-  tileset = "cave_2",
-}
-

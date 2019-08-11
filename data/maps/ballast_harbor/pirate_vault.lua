@@ -10,6 +10,8 @@
 local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
+local black_screen = sol.surface.create()
+black_screen:fill_color({0,0,0})
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
@@ -19,7 +21,7 @@ map:register_event("on_started", function()
   if game:has_item("charts") then dummy_boss:set_enabled(false) end
 
   if game:get_value("seen_pirate_vault_cutscene") then
-    black_screen:set_enabled(false)
+    black_screen:set_opacity(0)
     gavrillo:set_enabled(false)
     blackbeard:set_enabled(false)
     brutus:set_enabled(false)
@@ -37,7 +39,7 @@ function map:intro_cutscene_1()
   game:set_value("seen_pirate_vault_cutscene", true)
   game:start_dialog("_ballast_harbor.npcs.pirate_vault.intro.1", function()
     hero:freeze()
-    black_screen:set_enabled(false)
+    black_screen:fade_out(20)
     game:start_dialog("_ballast_harbor.npcs.pirate_vault.intro.2", function()
       map:intro_cutscene_2()
     end)
@@ -222,4 +224,6 @@ function warp_to_start_sensor:on_activated()
   end
 end
 
-
+function map:on_draw(dst)
+  black_screen:draw(dst)
+end
