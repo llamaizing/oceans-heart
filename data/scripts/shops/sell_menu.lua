@@ -24,8 +24,8 @@ local all_items = {
 }
 
 --constants:
-local GRID_ORIGIN_X = 10
-local GRID_ORIGIN_Y = 72
+local GRID_ORIGIN_X = 48
+local GRID_ORIGIN_Y = 121
 local GRID_ORIGIN_EQUIP_X = GRID_ORIGIN_X
 local GRID_ORIGIN_EQUIP_Y = GRID_ORIGIN_Y
 local ROWS = 2
@@ -61,6 +61,7 @@ function inventory:initialize(game)
     --update cursor's row and column
     self:update_cursor_position(cursor_index)
     --initialize background (basically just the frame)
+    self.menu_dark_overlay = sol.surface.create("menus/dark_overlay.png")
     self.menu_background = sol.surface.create("menus/shop_background.png")
     --initialize the cursor
     self.cursor_sprite = sol.sprite.create("menus/inventory/selector")
@@ -102,6 +103,8 @@ end
 function inventory:on_started()
     assert(sol.main.get_game(), "Error: cannot start sell menu because no game is currently running")
     self:update_description_panel()
+    self.menu_background:fade_in(5)
+    self.menu_dark_overlay:fade_in(5)
 end
 
 
@@ -205,10 +208,11 @@ end
 
 function inventory:on_draw(dst_surface)
     --draw the elements
+    self.menu_dark_overlay:draw(dst_surface)
     self.menu_background:draw(dst_surface, self.x, self.y)
     self.cursor_sprite:draw(dst_surface, (self.cursor_column * 32 + GRID_ORIGIN_X + 48) + self.x,  (self.cursor_row * 32 + GRID_ORIGIN_Y) + self.y)
-    self.description_panel:draw(dst_surface, (GRID_ORIGIN_X) + 16 + self.x, (ROWS *32 + GRID_ORIGIN_Y - 8)+self.y)
-    self.price_panel:draw(dst_surface, (GRID_ORIGIN_X) + 16 + self.x, (ROWS *32 + GRID_ORIGIN_Y + 8)+self.y)
+    self.description_panel:draw(dst_surface, (GRID_ORIGIN_X) + 8 + self.x, (ROWS *32 + GRID_ORIGIN_Y - 8)+self.y)
+    self.price_panel:draw(dst_surface, (GRID_ORIGIN_X) + 8 + self.x, (ROWS *32 + GRID_ORIGIN_Y + 8)+self.y)
 
     --draw inventory items
     for i=1, #all_items do
