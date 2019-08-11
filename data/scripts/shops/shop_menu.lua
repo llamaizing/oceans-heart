@@ -73,9 +73,11 @@ function inventory:set_xy(x, y)
 end
 
 
-function inventory:initialize(game)
+function inventory:initialize(game, item_array)
     --first, we don't need the hero walking around with the menu open, so
     game:get_hero():freeze()
+    --if you provide an array of items, use that instead of that standard one
+    if item_array then all_items = item_array end
     --set the cursor index, or which item the cursor is over
     --remember, the cursor index is 0 based but the all_items table starts at 1
     --since the cursor index is zero based, so are rows and columns.
