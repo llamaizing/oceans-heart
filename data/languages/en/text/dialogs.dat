@@ -1713,6 +1713,14 @@ one, but... well no. You really couldn't.
 }
 
 dialog{
+  id = "_generic_dialogs.shop.inn_sleep_on_floor",
+  text = [[
+Uh, you must have been really tired. Maybe
+take better care of yourself, kid.
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.abberforth.1",
   text = [[
 ABBERFORTH:
@@ -8103,6 +8111,16 @@ if I thought they'd do anything about it.
 }
 
 dialog{
+  id = "_oakhaven.npcs.inn.beaufort.staying_question",
+  text = [[
+BEAUFORT:
+Welcome, would you like a room?
+$? Yes
+$? I'm here to talk
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.inn.hazel_door",
   text = [[
 The door isn't locked, but it seems rude
@@ -11706,6 +11724,16 @@ dialog{
 Arrows. You could try using your bow
 without these, but... Well, actually you
 really couldn't.
+]],
+}
+
+dialog{
+  id = "_shop.inn",
+  text = [[
+Would you like to sleep here and recover all
+your health for $v crowns?
+$? Yes
+$? No
 ]],
 }
 

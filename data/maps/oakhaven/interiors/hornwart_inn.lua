@@ -10,8 +10,9 @@
 local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
+local inn_script = require"scripts/shops/inn"
 
--- Event called at initialization time, as soon as this map becomes is loaded.
+
 function map:on_started()
   self:get_camera():letterbox()
   if game:get_value("hornwart_know_hazel") ~= nil then map:open_doors("hazel_door") end
@@ -28,15 +29,20 @@ end
 
 
 function beaufort:on_interaction()
-  if game:get_value("hornwart_know_hazel") == true then
-    game:start_dialog("_oakhaven.npcs.inn.beaufort.3")
-  elseif game:get_value("grover_counter") ~= nil and game:get_value("grover_counter") >= 1 then
-    game:start_dialog("_oakhaven.npcs.inn.beaufort.2")
-    game:set_value("hornwart_know_hazel", true)
-  elseif game:get_value("grover_counter") == nil then
-    game:start_dialog("_oakhaven.npcs.inn.beaufort.1")
-  end
-
+  game:start_dialog("_oakhaven.npcs.inn.beaufort.staying_question", function(answer)
+    if answer == 3 then --staying
+      inn_script:start()
+    elseif answer == 4 then --asking questions
+      if game:get_value("hornwart_know_hazel") == true then
+        game:start_dialog("_oakhaven.npcs.inn.beaufort.3")
+      elseif game:get_value("grover_counter") ~= nil and game:get_value("grover_counter") >= 1 then
+        game:start_dialog("_oakhaven.npcs.inn.beaufort.2")
+        game:set_value("hornwart_know_hazel", true)
+      elseif game:get_value("grover_counter") == nil then
+        game:start_dialog("_oakhaven.npcs.inn.beaufort.1")
+      end
+    end
+  end)
 end
 
 for book in map:get_entities("hazel_room_book") do

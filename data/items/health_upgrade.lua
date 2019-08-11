@@ -11,9 +11,9 @@ function item:on_created()
 end
 
 function item:on_obtaining(variant, savegame_variable)
-
-  sol.audio.set_music_volume(game:get_value("music_volume") - 40)
-  sol.timer.start(100, function() sol.audio.set_music_volume(game:get_value("music_volume")) end)
+  local volume = sol.audio.get_music_volume()
+  sol.audio.set_music_volume(volume - 40)
+  sol.timer.start(game, 100, function() sol.audio.set_music_volume(volume) end)
   game:add_max_life(2)
   game:add_max_life(variant-1)
   game:set_life(game:get_max_life())
