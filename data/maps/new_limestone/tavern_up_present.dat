@@ -1847,20 +1847,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
+  x = 136,
   y = 192,
   width = 32,
   height = 16,
   pattern = "155",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 192,
-  width = 16,
-  height = 16,
-  pattern = "157",
 }
 
 tile{
@@ -1892,11 +1883,20 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
-  y = 328,
+  x = 168,
+  y = 168,
   width = 16,
   height = 16,
   pattern = "195",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 312,
+  width = 32,
+  height = 8,
+  pattern = "200",
 }
 
 destination{
@@ -1989,11 +1989,55 @@ npc{
 
 npc{
   layer = 0,
+  x = 176,
+  y = 189,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_limestone_island.observations.control_scheme",
+}
+
+destination{
+  name = "sleep_spot",
+  layer = 0,
+  x = 160,
+  y = 341,
+  direction = 3,
+}
+
+npc{
+  name = "bed",
+  layer = 0,
+  x = 152,
+  y = 357,
+  direction = 3,
+  subtype = 1,
+}
+
+npc{
+  name = "bed_2",
+  layer = 0,
+  x = 168,
+  y = 357,
+  direction = 3,
+  subtype = 1,
+}
+
+npc{
+  name = "bed_3",
+  layer = 0,
   x = 152,
   y = 341,
   direction = 3,
   subtype = 1,
-  behavior = "dialog#_limestone_island.observations.control_scheme",
+}
+
+npc{
+  name = "bed_4",
+  layer = 0,
+  x = 168,
+  y = 341,
+  direction = 3,
+  subtype = 1,
 }
 
 tile{
@@ -2039,15 +2083,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "door.up.high",
-}
-
-tile{
-  layer = 1,
-  x = 144,
-  y = 312,
-  width = 32,
-  height = 8,
-  pattern = "200",
 }
 
 tile{
@@ -2205,7 +2240,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 152,
+  x = 136,
   y = 184,
   width = 32,
   height = 8,
@@ -2214,20 +2249,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 152,
+  x = 136,
   y = 176,
   width = 16,
   height = 16,
   pattern = "159",
-}
-
-tile{
-  layer = 1,
-  x = 136,
-  y = 184,
-  width = 16,
-  height = 8,
-  pattern = "158",
 }
 
 tile{
@@ -2255,7 +2281,7 @@ destructible{
 
 tile{
   layer = 2,
-  x = 152,
+  x = 136,
   y = 168,
   width = 16,
   height = 8,

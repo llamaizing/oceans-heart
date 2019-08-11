@@ -8,7 +8,7 @@ function inn:start(cost)
   black:set_opacity(0)
   local hero = map:get_hero()
   local sprite = hero:get_sprite()
-  local price = cost or 30 + math.floor(game:get_life() %6 * 5)
+  local price = cost or 30
   game:start_dialog("_shop.inn", price, function(answer)
     if answer == 3 and game:get_money() < price then
       game:start_dialog("_game.insufficient_funds")

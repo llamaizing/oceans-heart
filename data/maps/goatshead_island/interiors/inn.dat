@@ -2808,6 +2808,24 @@ tile{
   pattern = "218",
 }
 
+tile{
+  layer = 0,
+  x = 432,
+  y = 56,
+  width = 32,
+  height = 8,
+  pattern = "198",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 264,
+  width = 32,
+  height = 8,
+  pattern = "200",
+}
+
 separator{
   layer = 0,
   x = 312,
@@ -2871,17 +2889,6 @@ npc{
   subtype = 1,
 }
 
-teletransporter{
-  name = "go_to_bed",
-  layer = 0,
-  x = 80,
-  y = 120,
-  width = 48,
-  height = 16,
-  destination_map = "goatshead_island/interiors/inn",
-  destination = "wake_up",
-}
-
 destination{
   name = "wake_up",
   layer = 0,
@@ -2942,6 +2949,14 @@ sensor{
   y = 189,
   width = 16,
   height = 16,
+}
+
+destination{
+  name = "sleep_spot",
+  layer = 0,
+  x = 448,
+  y = 301,
+  direction = 3,
 }
 
 tile{
@@ -3081,15 +3096,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 432,
-  y = 264,
-  width = 32,
-  height = 8,
-  pattern = "200",
-}
-
-tile{
-  layer = 1,
   x = 496,
   y = 264,
   width = 16,
@@ -3140,15 +3146,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "234",
-}
-
-tile{
-  layer = 1,
-  x = 432,
-  y = 56,
-  width = 32,
-  height = 8,
-  pattern = "198",
 }
 
 tile{

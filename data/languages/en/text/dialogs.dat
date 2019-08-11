@@ -1102,7 +1102,10 @@ dialog{
 You get a nice cross-section of unsavory
 sorts here. It can really make you appreciate
 how decent your friends are, even if they're
-dishonest bilge-lizards.
+dishonest bilge-lizards... Oh, but yeah, this
+is an inn also. The rooms aren't much, but
+they'll bring your health back up if you're
+hurt.
 ]],
 }
 
@@ -1715,8 +1718,10 @@ one, but... well no. You really couldn't.
 dialog{
   id = "_generic_dialogs.shop.inn_sleep_on_floor",
   text = [[
-Uh, you must have been really tired. Maybe
-take better care of yourself, kid.
+Hey, uh... You must have been really tired.
+When I asked if you wanted to sleep here, I
+meant here as in, the inn, not RIGHT HERE...
+Make sure you get enough rest, kid.
 ]],
 }
 
@@ -3317,14 +3322,7 @@ at the moment, at the end of the hall. The
 JUDE:
 other room isn't open. It's locked. The last
 guest accidentially took the key with them,
-and uh... well, anyway, would you like to
-JUDE:
-stay a night? Rooms are 30 crowns a night,
-and it will restore all your health.
-
-TILIA:
-$? I'll stay a night
-$? No thanks
+and uh... well, anyway, want to stay?
 ]],
 }
 
@@ -8066,9 +8064,12 @@ dialog{
   id = "_oakhaven.npcs.inn.beaufort.1",
   text = [[
 BEAUFORT:
-This is the Hornwart Inn. I'm afraid all our
-rooms are booked at the moment, quite
-sorry about that.
+This is the Hornwart Inn. Oakhaven is a busy
+city, so we're usually pretty packed. Also
+the rooms are really small. And I can't say
+BEAUFORT:
+they smell the best. Or have much natural
+light. But where else will you stay?
 ]],
 }
 
@@ -8076,8 +8077,8 @@ dialog{
   id = "_oakhaven.npcs.inn.beaufort.2",
   text = [[
 BEAUFORT:
-Welcome to the Hornwart Inn. I'm afraid all
-our rooms are booked at the moment.
+This is the Hornwart Inn. What can I do
+for you?
 
 TILIA:
 That's fine, I'm looking for a person, not a
@@ -8097,6 +8098,15 @@ Please do not break into our guests' rooms.
 
 TILIA:
 I'm going to.
+
+
+BEAUFORT:
+$1sigh...$3 Her room is in the southwest
+corner upstairs. I never have had the guts to
+stand up to a burglar.
+TILIA:
+It's not a burglarly, I'm her friend, I just...
+ugh, whatever. Thanks.
 ]],
 }
 
@@ -8104,9 +8114,9 @@ dialog{
   id = "_oakhaven.npcs.inn.beaufort.3",
   text = [[
 BEAUFORT:
-I don't approve of your tendency toward
-burglary. I've a mind to call the city guard
-if I thought they'd do anything about it.
+Oh, you're that burglar. Back for more, eh?
+Well, what can I do about it? I don't run a
+people bank where I protect them in vaults.
 ]],
 }
 

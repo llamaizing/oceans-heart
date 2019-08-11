@@ -1962,6 +1962,24 @@ tile{
   pattern = "248",
 }
 
+tile{
+  layer = 0,
+  x = 192,
+  y = 312,
+  width = 32,
+  height = 8,
+  pattern = "200",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 312,
+  width = 32,
+  height = 8,
+  pattern = "201",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -2093,24 +2111,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "door.up.high",
-}
-
-tile{
-  layer = 1,
-  x = 192,
-  y = 312,
-  width = 32,
-  height = 8,
-  pattern = "200",
-}
-
-tile{
-  layer = 1,
-  x = 144,
-  y = 312,
-  width = 32,
-  height = 8,
-  pattern = "201",
 }
 
 tile{
