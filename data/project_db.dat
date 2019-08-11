@@ -1682,6 +1682,7 @@ entity{ id = "fire_grate", description = "Fire Grate" }
 entity{ id = "flail_obstacle", description = "Flail Obstacle" }
 entity{ id = "leaf_pile", description = "Leaf Pile" }
 entity{ id = "moving_platform", description = "Moving Platform" }
+entity{ id = "moving_platform_OLD", description = "OLDmoving Platform" }
 entity{ id = "prickles_blocking", description = "Prickles-Blocking" }
 entity{ id = "rockpile", description = "Rock Pile" }
 entity{ id = "rockpile_3", description = "rockpile 3" }

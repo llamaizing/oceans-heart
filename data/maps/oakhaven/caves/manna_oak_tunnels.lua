@@ -44,6 +44,8 @@ end
 --Bosses
 for boss in map:get_entities("boss_pollutant") do
   function boss:on_dead()
+    map:get_camera():shake({count = 6, amplitude = 5, speed = 70})
+    sol.audio.play_sound"gravel2"
     game:set_value("manna_oaks_investigated", game:get_value("manna_oaks_investigated") +1)
     if game:get_value("manna_oaks_investigated") >= 3 then
       if hazel:is_enabled() then hazel:set_enabled(false) end

@@ -43,9 +43,7 @@ function entity:on_obstacle_reached(movement)
   movement:set_path{direction4 * 2}
   movement:set_speed(speed)
   movement:set_loop(true)
-  sol.timer.start(self, time_stopped, function()
-    movement:start(self)
-  end)
+  sol.timer.start(self, time_stopped, function() movement:start(self) end)
 end
 
 function entity:on_position_changed()
@@ -71,13 +69,12 @@ end
 function entity:is_on_platform(other_entity)
   --Returns true if other_entity is on the platform. 
   local ox, oy, ol = other_entity:get_position()
-  local ex, ey, el = self:get_center_position()
+  local ex, ey, el = self:get_position()
   if ol ~= el then return false end
   local sx, sy = self:get_size()
-  local fudge_x = 3
-  local fudge_y = 6
-  sx = sx + fudge_x
-  sy = sy + fudge_y
-  if math.abs(ox - ex) < sx/2 and math.abs(oy - ey) < sy/2 then return true end
+  local fudge = 9
+  sx = sx + fudge
+  sy = sy + fudge
+  if math.abs(ox - ex) < sx/2 -1 and math.abs(oy - ey) < sy/2 -1 then return true end
   return false
 end
