@@ -18,7 +18,7 @@ function item:on_using()
     self:remove_amount(1)
     sol.audio.play_sound("uncorking_and_drinking_1")
     game:get_hero():set_walking_speed(150)
-    sol.timer.start(game, 240000, function() --240000 is 4 minutes, 300000 is 5
+    sol.timer.start(game, 30000, function() --240000 is 4 minutes, 300000 is 5
       game:get_hero():set_walking_speed(98)
     end)
   end

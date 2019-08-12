@@ -13120,9 +13120,9 @@ dialog{
   id = "_treasure.potion_fleetseed.1",
   text = [[
 You received a Fleetseed Potion. Drink this
-from the menu, and you'll run much more
-quickly! The effect wears off if you die or
-stop the game.
+from the menu, and you'll run more quickly for
+two minutes. The effect wears off if you die
+or stop the game.
 ]],
 }
 
