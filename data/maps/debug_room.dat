@@ -5063,138 +5063,6 @@ pickable{
   treasure_name = "witch_hazel",
 }
 
-pickable{
-  layer = 0,
-  x = 344,
-  y = 445,
-  treasure_name = "burdock",
-  treasure_variant = 2,
-}
-
-pickable{
-  layer = 0,
-  x = 368,
-  y = 421,
-  treasure_name = "chamomile",
-  treasure_variant = 2,
-}
-
-pickable{
-  layer = 0,
-  x = 320,
-  y = 445,
-  treasure_name = "coral_ore",
-}
-
-pickable{
-  layer = 0,
-  x = 344,
-  y = 445,
-  treasure_name = "firethorn_berries",
-  treasure_variant = 2,
-}
-
-pickable{
-  layer = 0,
-  x = 368,
-  y = 421,
-  treasure_name = "geode",
-  treasure_variant = 2,
-}
-
-pickable{
-  layer = 0,
-  x = 328,
-  y = 381,
-  treasure_name = "ghost_orchid",
-}
-
-pickable{
-  layer = 0,
-  x = 320,
-  y = 445,
-  treasure_name = "kingscrown",
-}
-
-pickable{
-  layer = 0,
-  x = 360,
-  y = 397,
-  treasure_name = "lavendar",
-}
-
-pickable{
-  layer = 0,
-  x = 352,
-  y = 389,
-  treasure_name = "mandrake",
-}
-
-pickable{
-  layer = 0,
-  x = 360,
-  y = 397,
-  treasure_name = "mandrake_white",
-  treasure_variant = 2,
-}
-
-pickable{
-  layer = 0,
-  x = 352,
-  y = 397,
-  treasure_name = "monster_bones",
-  treasure_variant = 2,
-}
-
-pickable{
-  layer = 0,
-  x = 312,
-  y = 445,
-  treasure_name = "monster_eye",
-}
-
-pickable{
-  layer = 0,
-  x = 296,
-  y = 405,
-  treasure_name = "monster_guts",
-}
-
-pickable{
-  layer = 0,
-  x = 344,
-  y = 445,
-  treasure_name = "monster_heart",
-}
-
-pickable{
-  layer = 0,
-  x = 368,
-  y = 421,
-  treasure_name = "monster_horn",
-}
-
-pickable{
-  layer = 0,
-  x = 368,
-  y = 421,
-  treasure_name = "monkshood",
-}
-
-pickable{
-  layer = 0,
-  x = 320,
-  y = 445,
-  treasure_name = "violets",
-}
-
-pickable{
-  layer = 0,
-  x = 344,
-  y = 445,
-  treasure_name = "witch_hazel",
-}
-
 custom_entity{
   layer = 0,
   x = -24,
@@ -5337,14 +5205,6 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 408,
-  y = 157,
-  treasure_name = "ether_bombs_pickable",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
   x = 400,
   y = 157,
   treasure_name = "ether_bombs_pickable",
@@ -5377,6 +5237,38 @@ pickable{
 pickable{
   layer = 0,
   x = 440,
+  y = 149,
+  treasure_name = "iron_candle_pickable",
+  treasure_variant = 3,
+}
+
+pickable{
+  layer = 0,
+  x = 432,
+  y = 149,
+  treasure_name = "iron_candle_pickable",
+  treasure_variant = 3,
+}
+
+pickable{
+  layer = 0,
+  x = 432,
+  y = 157,
+  treasure_name = "iron_candle_pickable",
+  treasure_variant = 3,
+}
+
+pickable{
+  layer = 0,
+  x = 448,
+  y = 149,
+  treasure_name = "iron_candle_pickable",
+  treasure_variant = 3,
+}
+
+pickable{
+  layer = 0,
+  x = 448,
   y = 157,
   treasure_name = "iron_candle_pickable",
   treasure_variant = 3,
@@ -5385,22 +5277,6 @@ pickable{
 pickable{
   layer = 0,
   x = 440,
-  y = 149,
-  treasure_name = "iron_candle_pickable",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 432,
-  y = 149,
-  treasure_name = "iron_candle_pickable",
-  treasure_variant = 3,
-}
-
-pickable{
-  layer = 0,
-  x = 432,
   y = 157,
   treasure_name = "iron_candle_pickable",
   treasure_variant = 3,
@@ -5408,18 +5284,17 @@ pickable{
 
 pickable{
   layer = 0,
-  x = 448,
-  y = 149,
-  treasure_name = "iron_candle_pickable",
+  x = 408,
+  y = 157,
+  treasure_name = "ether_bombs_pickable",
   treasure_variant = 3,
 }
 
 pickable{
   layer = 0,
-  x = 448,
-  y = 157,
-  treasure_name = "iron_candle_pickable",
-  treasure_variant = 3,
+  x = 568,
+  y = 85,
+  treasure_name = "potion_fleetseed",
 }
 
 tile{

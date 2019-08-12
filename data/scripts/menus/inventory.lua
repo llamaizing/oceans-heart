@@ -18,14 +18,17 @@ local all_equipment_items = {
     {item = "crystal_spark", name = "Ophira's Ember", assignable = true,},
     {item = "leaf_tornado", name = "Amalenchier's Wrath", assignable = true,},
     {item = "thunder_charm", name = "Seabird's Tear", assignable = true,},
-    {item = "unattainable_collectable", name = "", assignable = false},
-    {item = "unattainable_collectable", name = "", assignable = false},
+--    {item = "unattainable_collectable", name = "", assignable = false},
+--    {item = "unattainable_collectable", name = "", assignable = false},
     {item = "bombs_counter_2", name = "Bombs", assignable = true,},
     {item = "ether_bombs", name = "Ether Bombs", assignable = true},
     {item = "iron_candle", name = "Salt Candles", assignable = true},
-    {item = "potion_magic_restoration", name = "Magic Restoring Potion", assignable = false,},
     {item = "potion_stoneskin", name = "Stoneskin Potion", assignable = false,},
     {item = "potion_burlyblade", name = "Burlyblade Potion", assignable = false,},
+--    {item = "unattainable_collectable", name = "", assignable = false},
+--    {item = "unattainable_collectable", name = "", assignable = false},
+    {item = "potion_fleetseed", name = "Fleetseed Potion", assignable = false,},
+    {item = "potion_magic_restoration", name = "Magic Restoring Potion", assignable = false,},
     {item = "elixer", name = "Elixer Vitae", assignable = false,},
     {item = "berries", name = "Berries", assignable = false,},
     {item = "apples", name = "Apples", assignable = false,},
@@ -66,7 +69,7 @@ local GRID_ORIGIN_Y = 72
 local GRID_ORIGIN_EQUIP_X = GRID_ORIGIN_X
 local GRID_ORIGIN_EQUIP_Y = GRID_ORIGIN_Y
 local ROWS = 4
-local COLUMNS = 7
+local COLUMNS = 6
 local MAX_INDEX = ROWS*COLUMNS --when every slot is full of an item, this should equal #all_equipment_items
 
 local cursor_index

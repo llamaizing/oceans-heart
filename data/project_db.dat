@@ -1504,6 +1504,7 @@ item{ id = "oak_charm", description = "oak charm" }
 item{ id = "oceansheart_chart", description = "Ocean's Heart Chart" }
 item{ id = "old_stockpot", description = "old stockpot" }
 item{ id = "potion_burlyblade", description = "Burlyblade Potion" }
+item{ id = "potion_fleetseed", description = "Fleetseed Potion" }
 item{ id = "potion_magic_restoration", description = "Potion-Magic Restoration" }
 item{ id = "potion_stoneskin", description = "Stoneskin Potion" }
 item{ id = "random_drop_berries", description = "Random Drop-Berries" }

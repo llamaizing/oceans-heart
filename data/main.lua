@@ -4,6 +4,7 @@
 
 require("scripts/features")
 local title_screen = require"scripts/menus/title_screen"
+local reload_resets = require"scripts/reload_resets"
 
 local game_manager = require("scripts/game_manager")
 
@@ -19,9 +20,6 @@ function sol.main:on_started()
 
   --Title Screen:
   sol.menu.start(self, title_screen)
-
---  local game = game_manager:create"save1.dat"
---  sol.main:start_savegame(game)
 
 end
 
@@ -66,4 +64,5 @@ function sol.main:start_savegame(game)
 
   sol.main.game = game
   game:start()
+  reload_resets:load_resets(game)
 end

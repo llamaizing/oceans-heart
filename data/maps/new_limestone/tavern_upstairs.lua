@@ -14,7 +14,7 @@ local sprite = hero:get_sprite()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
-  hero:set_walking_speed(98) --can't do this in initial game because
+  hero:set_walking_speed(98) --can't do this in initial game because there is no hero
 
   if not game:get_value("waking_up_beginning_of_game_cutscene") then
     hero:freeze()
