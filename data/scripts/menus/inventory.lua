@@ -26,7 +26,8 @@ local all_equipment_items = {
     {item = "apples", name = "Apples", assignable = false,},
     {item = "bread", name = "Burroak Bread", assignable = false,},
     {item = "elixer", name = "Elixer Vitae", assignable = false,},
-    {item = "ether_bombs", name = "Ether Bombs", assignable = true}
+    {item = "ether_bombs", name = "Ether Bombs", assignable = true},
+    {item = "iron_candle", name = "Salt Candles", assignable = true},
 }
 
 --All collectable items

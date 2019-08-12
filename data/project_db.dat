@@ -564,6 +564,7 @@ sprite{ id = "entities/door_weak_wall", description = "Weak Wall Door" }
 sprite{ id = "entities/elixer", description = "elixer" }
 sprite{ id = "entities/ether_bomb", description = "Ether Bomb" }
 sprite{ id = "entities/explosion", description = "Explosion" }
+sprite{ id = "entities/explosion_3", description = "Explosion 3" }
 sprite{ id = "entities/explosion_blue", description = "Explosion-Blue" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/fire_grate", description = "Fire Grate" }
@@ -581,6 +582,7 @@ sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ink_splash", description = "Ink Splash" }
 sprite{ id = "entities/inviting_barrel", description = "Inviting Barrel" }
 sprite{ id = "entities/iron_ball", description = "Iron Ball" }
+sprite{ id = "entities/iron_candle", description = "Iron Candle" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/leaf_blowing", description = "Leaf - Blowing" }
 sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
@@ -1458,6 +1460,7 @@ item{ id = "health_upgrade", description = "health upgrade" }
 item{ id = "hideout_chart", description = "Hideout Chart" }
 item{ id = "honeycomb", description = "Honeycomb" }
 item{ id = "hookshot", description = "Hookshot" }
+item{ id = "iron_candle", description = "Iron Candle" }
 item{ id = "iron_pinecone", description = "Iron Pinecone" }
 item{ id = "ironwood_charm", description = "Ironwood Charm" }
 item{ id = "key_ballast_council_building", description = "Key - Ballast Council Building" }

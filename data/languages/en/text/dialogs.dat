@@ -12620,6 +12620,15 @@ just eat it straight.
 }
 
 dialog{
+  id = "_treasure.iron_candle.1",
+  text = [[
+You got salt candles. Throw these down and
+as they slowly burn down, they'll pop several
+times, damagin enemies.
+]],
+}
+
+dialog{
   id = "_treasure.iron_pinecone.1",
   text = [[
 You found a rare Iron Pinecone. It's

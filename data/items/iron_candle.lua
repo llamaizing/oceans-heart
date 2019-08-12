@@ -3,10 +3,11 @@ local game = item:get_game()
 local map
 local hero
 local sprite
+local NUM_EXPLOSIONS = 4
 
 function item:on_created()
-  item:set_savegame_variable("possession_ether_bombs")
-  item:set_amount_savegame_variable("amount_ether_bombs")
+  item:set_savegame_variable("possession_iron_candle")
+  item:set_amount_savegame_variable("amount_iron_candle")
   item:set_assignable(true)
 end
 
@@ -30,8 +31,7 @@ function item:on_using()
     local x,y,l = hero:get_position()
     local bomb = map:create_custom_entity({
       direction = 0, x = x, y = y, layer = l, width = 16, height = 16,
-      sprite = "entities/ether_bomb"
-      --model = "ether_bomb"
+      sprite = "entities/iron_candle"
     })
     local m = sol.movement.create("jump")
     m:set_direction8(sprite:get_direction()*2)
@@ -39,9 +39,8 @@ function item:on_using()
     m:set_speed(100)
     m:start(bomb)
     sol.timer.start(map, 200, function() bomb:get_sprite():set_animation("sparking") end)
-    sol.timer.start(map, 1000, function()
-      item:explode_bomb(bomb)
-    end)
+    sol.audio.play_sound"ether_bomb"
+    item:explode_bomb(bomb)
     item:set_finished()
   else
     sol.audio.play_sound"no"
@@ -50,24 +49,21 @@ function item:on_using()
 end
 
 function item:explode_bomb(bomb)
-  local x,y,l = bomb:get_position()
-  local dist = 24
-  local dx = {0,dist,0,(dist * -1),0}
-  local dy = {0,0,dist,0,(dist * -1)}
-  sol.audio.play_sound"explosion_ice"
-  for i=1, 5 do
+  local i = 0
+  sol.timer.start(map, 2000, function()
+    local x,y,l = bomb:get_position()
+    sol.audio.play_sound"hand_cannon"
     local explosion = map:create_custom_entity({
-      direction=0, x = x + dx[i], y = y + dy[i], layer = l, width = 64, height = 64,
-      sprite = "entities/explosion_blue"
+      direction=0, x = x, y = y, layer = l, width = 64, height = 64,
+      sprite = "entities/explosion_3", model = "damaging_sparkle"
     })
     explosion:get_sprite():set_animation("explosion", function() explosion:remove() end)
-    explosion:add_collision_test("sprite", function(explosion, other_entity)
-      if other_entity:get_type() == "enemy" then
-        if not other_entity.immobilize_immunity then
-          other_entity:immobilize()
-        end
-      end
-    end)
-  end
-  bomb:remove()
+    i = i + 1
+    if i < 4 then
+      sol.audio.play_sound"ether_bomb"
+      return true
+    else bomb:remove()
+    end
+  end) --end of timer
+ 
 end
