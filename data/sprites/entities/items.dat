@@ -308,6 +308,24 @@ animation{
   },
 }
 animation{
+  name = "ether_bombs",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 272, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "ether_bombs_pickable",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 272, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 272, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 272, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 272, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 272, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "feather",
   src_image = "entities/items.png",
   directions = {

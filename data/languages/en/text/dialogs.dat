@@ -12439,6 +12439,47 @@ can be increased somehow.
 }
 
 dialog{
+  id = "_treasure.ether_bombs.1",
+  text = [[
+You got some Ether Bombs. Once thrown, these
+will explode and temporarily immobilize
+enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.ether_bombs_pickable.1",
+  text = [[
+You got some Ether Bombs. Once thrown, these
+will explode and temporarily freeze enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.ether_bombs_pickable.2",
+  text = [[
+You got some Ether Bombs. Once thrown, these
+will explode and temporarily freeze enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.ether_bombs_pickable.3",
+  text = [[
+You got some Ether Bombs. Once thrown, these
+will explode and temporarily freeze enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.ether_bombs_pickable.4",
+  text = [[
+You got some Ether Bombs. Once thrown, these
+will explode and temporarily freeze enemies.
+]],
+}
+
+dialog{
   id = "_treasure.feather.1",
   text = [[
 Maybe you can jump now.

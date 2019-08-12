@@ -562,7 +562,9 @@ sprite{ id = "entities/door_vines", description = "Door-Vines" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/door_weak_wall", description = "Weak Wall Door" }
 sprite{ id = "entities/elixer", description = "elixer" }
+sprite{ id = "entities/ether_bomb", description = "Ether Bomb" }
 sprite{ id = "entities/explosion", description = "Explosion" }
+sprite{ id = "entities/explosion_blue", description = "Explosion-Blue" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/fire_grate", description = "Fire Grate" }
 sprite{ id = "entities/fire_hole", description = "Fire Hole" }
@@ -1444,6 +1446,8 @@ item{ id = "dash", description = "dash" }
 item{ id = "defense_upgrade", description = "defense upgrade" }
 item{ id = "elixer", description = "Elixer Vitae" }
 item{ id = "empty", description = "test" }
+item{ id = "ether_bombs", description = "Ether Bombs" }
+item{ id = "ether_bombs_pickable", description = "EtherBombsPickable" }
 item{ id = "firethorn_berries", description = "Firethorn Berries-1,5,10" }
 item{ id = "flippers", description = "flippers" }
 item{ id = "forsythia", description = "Forsythia-1,5,10" }
