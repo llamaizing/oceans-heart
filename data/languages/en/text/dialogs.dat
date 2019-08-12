@@ -12073,7 +12073,7 @@ pretty dangerous! Be careful!
 dialog{
   id = "_treasure.barrier.1",
   text = [[
-You received the barrier spell. Use this
+You received Devana's Barrier. Use this
 spell to deflect incoming projectiles.
 It will use a small amount of your magic.
 ]],
@@ -12623,8 +12623,50 @@ dialog{
   id = "_treasure.iron_candle.1",
   text = [[
 You got salt candles. Throw these down and
-as they slowly burn down, they'll pop several
-times, damagin enemies.
+as they slowly burn, they'll pop several
+times, damaging enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.iron_candle_pickable.1",
+  text = [[
+You got salt candles. Throw these down and
+as they slowly burn, they'll pop several
+times, damaging enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.iron_candle_pickable.2",
+  text = [[
+You got salt candles. Throw these down and
+as they slowly burn, they'll pop several
+times, damaging enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.iron_candle_pickable.3",
+  text = [[
+You got salt candles. Throw these down and
+as they slowly burn, they'll pop several
+times, damaging enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.iron_candle_pickable.4",
+  text = [[
+]],
+}
+
+dialog{
+  id = "_treasure.iron_candle_pickable.5",
+  text = [[
+You got salt candles. Throw these down and
+as they slowly burn, they'll pop several
+times, damaging enemies.
 ]],
 }
 
