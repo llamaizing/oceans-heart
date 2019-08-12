@@ -3,6 +3,7 @@ local map = enemy:get_map()
 local particles = {}
 local MAX_PARTICLES = 3
 local PARTICLE_SPEED = 11
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
   local map = enemy:get_map()

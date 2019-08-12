@@ -2,6 +2,7 @@ local enemy = ...
 local game = enemy:get_game()
 local map = enemy:get_map()
 local hero = map:get_hero()
+enemy.immobilize_immunity = true
 local sprite
 local smoke_sprite
 local beam_sprite

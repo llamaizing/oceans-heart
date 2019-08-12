@@ -7,6 +7,7 @@ local movement
 local going_hero
 local angle
 local playing_sound
+enemy.immobilize_immunity = true
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()

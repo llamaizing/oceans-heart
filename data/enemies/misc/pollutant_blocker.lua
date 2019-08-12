@@ -7,6 +7,7 @@ local particles = {}
 local particle = sol.sprite.create("entities/pollution_ash")
 local MAX_PARTICLES = 2
 local PARTICLE_SPEED = 15
+enemy.immobilize_immunity = true
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()

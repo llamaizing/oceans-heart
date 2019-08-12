@@ -4,6 +4,7 @@
 --Zora fire is the exact same, but more powerful. This one is intended for enemies in Yarrowmouth/Ballast Harbor, or weak fireballs in Oakhaven. Zora fire should be standard for decent attacks Oakhaven and later.
 
 local enemy = ...
+enemy.immobilize_immunity = true
 
 local sprites = {}
 

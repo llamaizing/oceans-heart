@@ -7,6 +7,7 @@ local movement
 local count
 local amp
 local speed
+enemy.immobilize_immunity = true
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()

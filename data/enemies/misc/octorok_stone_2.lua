@@ -1,6 +1,7 @@
 -- Stone shot by Octorok.
 
 local enemy = ...
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
 

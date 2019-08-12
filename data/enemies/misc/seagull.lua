@@ -1,6 +1,7 @@
 local enemy = ...
 
 local behavior = require("enemies/lib/run_away_bird")
+enemy.immobilize_immunity = true
 
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),

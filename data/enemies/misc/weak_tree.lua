@@ -17,6 +17,7 @@ local movement
 local barrel_x
 local barrel_y
 local barrel_layer
+enemy.immobilize_immunity = true
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()

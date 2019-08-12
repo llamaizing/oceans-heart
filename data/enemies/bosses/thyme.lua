@@ -108,6 +108,7 @@ local enemy = ...
 
 
 local behavior = require("enemies/lib/archer_teleport")
+enemy.immobilize_immunity = true
 
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),

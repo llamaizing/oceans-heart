@@ -2,6 +2,7 @@
 
 local enemy = ...
 local map = enemy:get_map()
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
 

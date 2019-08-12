@@ -1,6 +1,7 @@
 --stone shot by big rock spiders
 
 local enemy = ...
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
 

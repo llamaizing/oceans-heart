@@ -2,6 +2,7 @@ local enemy = ...
 local game = enemy:get_game()
 local map = enemy:get_map()
 local sprite
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())

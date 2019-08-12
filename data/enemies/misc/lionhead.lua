@@ -5,6 +5,7 @@ local hero = map:get_hero()
 local sprite
 local delay
 local frequency
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())

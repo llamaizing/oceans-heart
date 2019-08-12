@@ -2,6 +2,7 @@ local enemy = ...
 local bounces = 0
 local FUSE_LENGTH = 1500
 local NUM_CHILDREN
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/misc/energy_ball")

@@ -10,6 +10,7 @@ local FULL_HEALTH = 400
 
 local attacking = false
 local puddling = false
+enemy.immobilize_immunity = true
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()

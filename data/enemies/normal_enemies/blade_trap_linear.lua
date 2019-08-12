@@ -3,6 +3,7 @@ local game = enemy:get_game()
 local map = enemy:get_map()
 local direction
 local direction_set
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
   direction_set = false

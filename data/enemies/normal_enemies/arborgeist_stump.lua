@@ -6,6 +6,7 @@ local sprite
 local movement
 local detection_distance = 120
 local can_attack = false
+enemy.immobilize_immunity = true
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()

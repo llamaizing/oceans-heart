@@ -1,6 +1,7 @@
 -- 3 fireballs shot by enemies like Zora and that go toward the hero.
 -- They can be hit with the sword, this changes their direction.
 local enemy = ...
+enemy.immobilize_immunity = true
 
 local sprites = {}
 

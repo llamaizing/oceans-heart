@@ -1,6 +1,7 @@
 -- Arrow Projectile. 6 hearts (ignoring armor) damage, intended for Oakhaven or later enemies.
 
 local enemy = ...
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
 

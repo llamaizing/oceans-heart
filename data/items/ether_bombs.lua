@@ -57,7 +57,9 @@ function item:explode_bomb(bomb)
     explosion:get_sprite():set_animation("explosion", function() explosion:remove() end)
     explosion:add_collision_test("sprite", function(explosion, other_entity)
       if other_entity:get_type() == "enemy" then
-        other_entity:immobilize()
+        if not other_entity.immobilize_immunity then
+          other_entity:immobilize()
+        end
       end
     end)
   end

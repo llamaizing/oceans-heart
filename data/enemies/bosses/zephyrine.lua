@@ -3,7 +3,7 @@ local map = enemy:get_map()
 local particles = {}
 local MAX_PARTICLES = 5
 local PARTICLE_SPEED = 11
-
+enemy.immobilize_immunity = true
 
 local properties_setter = require("enemies/lib/properties_setter")
 local behavior = require("enemies/lib/general_enemy")

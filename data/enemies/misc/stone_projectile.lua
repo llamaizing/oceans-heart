@@ -1,4 +1,5 @@
 local enemy = ...
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())

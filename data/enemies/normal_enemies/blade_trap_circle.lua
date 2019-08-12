@@ -2,6 +2,7 @@ local enemy = ...
 local game = enemy:get_game()
 local map = enemy:get_map()
 local startx, starty, startl
+enemy.immobilize_immunity = true
 
 function enemy:on_created()
 

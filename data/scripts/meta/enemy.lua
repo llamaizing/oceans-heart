@@ -40,7 +40,9 @@ function enemy_meta:receive_attack_consequence(attack, reaction)
   if type(reaction) == "number" then
     self:hurt(reaction)
   elseif reaction == "immobilized" then
-    self:immobilize()
+    if not self.immobilize_immunity then
+      self:immobilize()
+    end
   elseif reaction == "protected" then
     sol.audio.play_sound("sword_tapping")
   elseif reaction == "custom" then

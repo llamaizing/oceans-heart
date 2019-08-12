@@ -1,4 +1,5 @@
 local enemy = ...
+enemy.immobilize_immunity = true
 
 local behavior = require("enemies/lib/blade_trap")
 local game = enemy:get_game()
