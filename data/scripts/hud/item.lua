@@ -95,8 +95,15 @@ function item_icon_builder:new(game, config)
 
   -- Periodically check.
   check()
-  sol.timer.start(game, 50, check)
+  sol.timer.start(game, 100, check)
   item_icon:rebuild_surface()
+
+  function item_icon:on_paused()
+    item_icon.surface:fade_out()
+  end
+  function item_icon:on_unpaused()
+    item_icon.surface:fade_in()
+  end
 
   return item_icon
 end

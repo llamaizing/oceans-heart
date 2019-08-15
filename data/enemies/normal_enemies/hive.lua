@@ -33,7 +33,7 @@ function enemy:launch_bees()
   local x, y, layer = self:get_position()
   map:create_enemy{
     name = "hive_hornet",
-    x = x, y=y-16, layer=layer,
+    x = x, y=y, layer=layer,
     direction = 0,
     breed = "normal_enemies/hornet",
   }

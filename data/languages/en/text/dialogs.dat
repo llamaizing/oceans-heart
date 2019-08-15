@@ -12611,6 +12611,60 @@ would.
 }
 
 dialog{
+  id = "_treasure.homing_eye.1",
+  text = [[
+You got Seeker Eyes. When you throw these,
+they'll take off toward an enemy, then bounce
+around unpredictably.
+]],
+}
+
+dialog{
+  id = "_treasure.homing_eye_pickable.1",
+  text = [[
+You got Seeker Eyes. When you throw these,
+they'll take off toward an enemy, then bounce
+around unpredictably.
+]],
+}
+
+dialog{
+  id = "_treasure.homing_eye_pickable.2",
+  text = [[
+You got Seeker Eyes. When you throw these,
+they'll take off toward an enemy, then bounce
+around unpredictably.
+]],
+}
+
+dialog{
+  id = "_treasure.homing_eye_pickable.3",
+  text = [[
+You got Seeker Eyes. When you throw these,
+they'll take off toward an enemy, then bounce
+around unpredictably.
+]],
+}
+
+dialog{
+  id = "_treasure.homing_eye_pickable.4",
+  text = [[
+You got Seeker Eyes. When you throw these,
+they'll take off toward an enemy, then bounce
+around unpredictably.
+]],
+}
+
+dialog{
+  id = "_treasure.homing_eye_pickable.5",
+  text = [[
+You got Seeker Eyes. When you throw these,
+they'll take off toward an enemy, then bounce
+around unpredictably.
+]],
+}
+
+dialog{
   id = "_treasure.honeycomb.1",
   text = [[
 You found a hornet honeycomb. Hornets make

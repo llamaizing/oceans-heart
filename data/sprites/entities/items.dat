@@ -409,6 +409,29 @@ animation{
   },
 }
 animation{
+  name = "homing_eye",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "homing_eye_pickable",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 304, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "honeycomb",
   src_image = "entities/items.png",
   directions = {

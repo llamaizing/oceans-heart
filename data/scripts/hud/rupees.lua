@@ -77,7 +77,7 @@ function rupees_builder:new(game, config)
 
   -- Periodically check.
   check()
-  sol.timer.start(game, 40, check)
+  sol.timer.start(game, 30, check)
 
   function rupees:on_paused()
     rupee_icon_img:fade_out()

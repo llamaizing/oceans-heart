@@ -578,6 +578,7 @@ sprite{ id = "entities/ghost_smoke", description = "Ghost Smoke" }
 sprite{ id = "entities/goat_01", description = "Goat 01" }
 sprite{ id = "entities/goat_02", description = "Goat 02" }
 sprite{ id = "entities/goat_03", description = "Goat 03" }
+sprite{ id = "entities/homing_eye", description = "Homing Eye" }
 sprite{ id = "entities/hookshot", description = "Hookshot" }
 sprite{ id = "entities/ink_splash", description = "Ink Splash" }
 sprite{ id = "entities/inviting_barrel", description = "Inviting Barrel" }
@@ -1458,6 +1459,8 @@ item{ id = "ghost_orchid", description = "Ghost Orchid-1,3,5" }
 item{ id = "gust", description = "Gust" }
 item{ id = "health_upgrade", description = "health upgrade" }
 item{ id = "hideout_chart", description = "Hideout Chart" }
+item{ id = "homing_eye", description = "Homing Eye" }
+item{ id = "homing_eye_pickable", description = "HomingEye-Pickable" }
 item{ id = "honeycomb", description = "Honeycomb" }
 item{ id = "hookshot", description = "Hookshot" }
 item{ id = "iron_candle", description = "Iron Candle" }
