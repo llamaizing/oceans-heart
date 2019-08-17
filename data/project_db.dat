@@ -265,6 +265,7 @@ tileset{ id = "abysphere_ruins", description = "Abysphere Ruins" }
 tileset{ id = "bear_catacombs", description = "Bear Catacombs" }
 tileset{ id = "bear_catacombs_cave", description = "BearCatacombs-Cave" }
 tileset{ id = "cave_2", description = "cave-mine" }
+tileset{ id = "cemetery_of_waves", description = "CemeteryOfTheWaves" }
 tileset{ id = "fort_crow_walls", description = "Fort Crow Walls" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
 tileset{ id = "indoors_stone", description = "indoors - stone" }
@@ -358,6 +359,7 @@ sprite{ id = "enemies/misc/sea_king_sword_slash", description = "SeaKing Sword S
 sprite{ id = "enemies/misc/seagull", description = "seagull" }
 sprite{ id = "enemies/misc/skeleton_hand", description = "Skeleton Hand" }
 sprite{ id = "enemies/misc/spirit_sword", description = "Spirit Sword" }
+sprite{ id = "enemies/misc/splash", description = "Splash" }
 sprite{ id = "enemies/misc/steam_attack", description = "Steam Attack" }
 sprite{ id = "enemies/misc/stone_dragon_turret", description = "Stone Dragon Turret" }
 sprite{ id = "enemies/misc/stone_projectile", description = "Stone projectile" }
@@ -1450,7 +1452,7 @@ item{ id = "defense_upgrade", description = "defense upgrade" }
 item{ id = "elixer", description = "Elixer Vitae" }
 item{ id = "empty", description = "test" }
 item{ id = "ether_bombs", description = "Ether Bombs" }
-item{ id = "ether_bombs_pickable", description = "EtherBombsPickable" }
+item{ id = "ether_bombs_pickable", description = "EtherBombsPickable-1.3.5.10" }
 item{ id = "firethorn_berries", description = "Firethorn Berries-1,5,10" }
 item{ id = "flippers", description = "flippers" }
 item{ id = "forsythia", description = "Forsythia-1,5,10" }
@@ -1460,11 +1462,11 @@ item{ id = "gust", description = "Gust" }
 item{ id = "health_upgrade", description = "health upgrade" }
 item{ id = "hideout_chart", description = "Hideout Chart" }
 item{ id = "homing_eye", description = "Homing Eye" }
-item{ id = "homing_eye_pickable", description = "HomingEye-Pickable" }
+item{ id = "homing_eye_pickable", description = "HomingEye-Pickable-1.3.5.10" }
 item{ id = "honeycomb", description = "Honeycomb" }
 item{ id = "hookshot", description = "Hookshot" }
 item{ id = "iron_candle", description = "Iron Candle" }
-item{ id = "iron_candle_pickable", description = "Iron Candle Pickable" }
+item{ id = "iron_candle_pickable", description = "Iron Candle Pickable-1,3,5,10" }
 item{ id = "iron_pinecone", description = "Iron Pinecone" }
 item{ id = "ironwood_charm", description = "Ironwood Charm" }
 item{ id = "key_ballast_council_building", description = "Key - Ballast Council Building" }

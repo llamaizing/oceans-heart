@@ -13,7 +13,7 @@ local game = map:get_game()
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
   require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain_inside")
-  map:get_camera():letterbox()
+--  map:get_camera():letterbox()
 
   if game:get_value("quest_snapmast") == 1 then game:set_value("quest_snapmast", 2) end
 
