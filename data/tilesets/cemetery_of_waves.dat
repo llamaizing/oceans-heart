@@ -385,6 +385,60 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "131",
+  ground = "wall",
+  default_layer = 0,
+  x = { 272, 272, 272 },
+  y = { 608, 640, 672 },
+  width = 64,
+  height = 32,
+  frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "132",
+  ground = "wall",
+  default_layer = 0,
+  x = { 336, 336, 336 },
+  y = { 608, 640, 672 },
+  width = 64,
+  height = 32,
+  frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "133",
+  ground = "traversable",
+  default_layer = 0,
+  x = 64,
+  y = 128,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "134",
+  ground = "traversable",
+  default_layer = 0,
+  x = 64,
+  y = 144,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "135",
+  ground = "traversable",
+  default_layer = 0,
+  x = 80,
+  y = 128,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
   id = "14",
   ground = "wall",
   default_layer = 0,

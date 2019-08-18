@@ -19,6 +19,8 @@ map:register_event("on_started", function()
 
 end)
 
+
+-------switches
 function b7_switch:on_activated()
   sol.audio.play_sound("switch")
   map:focus_on(map:get_camera(), b7_door, function() map:open_doors("b7_door") end)
@@ -39,6 +41,19 @@ function door_a1_switch:on_activated()
   map:open_doors("door_a1")
 end
 
+
+--------enemies
+for enemy in map:get_entities("a5_door_enemy") do
+function enemy:on_dead()
+  if not map:has_entities("a5_door_enemy") then
+    map:open_doors("door_a5")
+  end
+end
+end
+
+function miniboss:on_dead()
+    map:open_doors("miniboss_door")
+end
 
 
 
