@@ -55,6 +55,12 @@ function hourglass_bridge_switch:on_activated()
   map:open_doors("hourglass_door")
 end
 
+function door_item_sensor:on_activated()
+  if not game:has_item("heron_door_marble_summit") then
+    game:get_item("heron_door_marble_summit"):set_variant(1)
+  end
+end
+
 
 
 function pirate_guard:on_interaction()

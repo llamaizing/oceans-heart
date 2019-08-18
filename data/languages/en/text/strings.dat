@@ -3,6 +3,7 @@ text{ key = "key1.false", value = "sub 1 is bad" }
 text{ key = "key1.true", value = "sub 1 is good" }
 text{ key = "key2.false", value = "I think so" }
 text{ key = "key2.true", value = "really?" }
+text{ key = "location.abyss", value = "The Abyss" }
 text{ key = "location.amalenchier_tomb", value = "Amalenchier's Tomb" }
 text{ key = "location.ballast_harbor", value = "Ballast Harbor" }
 text{ key = "location.bear_catacombs", value = "Bear Warriors' Catacombs" }
@@ -27,25 +28,25 @@ text{ key = "location.oakhaven", value = "Oakhaven" }
 text{ key = "location.poplar_coast", value = "Spruce Head" }
 text{ key = "location.poplar_forest", value = "Poplar Forest" }
 text{ key = "location.port", value = "Oakhaven Port" }
+text{ key = "location.shipwreck_chain", value = "Cemetery of the Waves" }
 text{ key = "location.silent_glade", value = "Silent Glade" }
 text{ key = "location.silent_glade_health", value = "Last Chieftan's Tomb" }
+text{ key = "location.smoldering_rock", value = "Smoldering Rock" }
 text{ key = "location.snapmast", value = "Snapmast Reef" }
 text{ key = "location.snapmast_landing", value = "Snapmast Reef" }
 text{ key = "location.spruce_head", value = "Spruce Head" }
 text{ key = "location.spruce_head_shrine", value = "Spruce Head Shrine" }
 text{ key = "location.sunken_palace", value = "The Old Summer Court" }
-text{ key = "location.smoldering_rock", value = "Smoldering Rock" }
 text{ key = "location.tern_marsh", value = "Tern Marsh" }
 text{ key = "location.veilwood", value = "The Veilwood" }
 text{ key = "location.west_coast", value = "West Oak" }
-text{ key = "location.shipwreck_chain", value = "Cemetery of the Waves"}
 text{ key = "location.yarrowmouth", value = "Yarrowmouth" }
 text{ key = "location.yarrowmouth_village", value = "Yarrowmouth" }
-text{ key = "menu.quest_log.main_quests_tab", value = "Main\nQuests" }
+text{ key = "menu.quest_log.main_quests_tab", value = "Main Quests" }
 text{ key = "menu.quest_log.no_main_quests", value = "You have no main quests" }
 text{ key = "menu.quest_log.no_side_quests", value = "You have no side quests" }
 text{ key = "menu.quest_log.quest_log_update", value = "Quest Log Updated!" }
 text{ key = "menu.quest_log.quests_count", value = "$v1 of $v2 complete" }
-text{ key = "menu.quest_log.side_quests_tab", value = "Side\nQuests" }
+text{ key = "menu.quest_log.side_quests_tab", value = "Side Quests" }
 text{ key = "menu.quest_log.title", value = "Quest Log" }
 text{ key = "player_name", value = "Tilia" }

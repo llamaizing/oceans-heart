@@ -37220,6 +37220,15 @@ door{
   cannot_open_dialog = "_game.seabird_door",
 }
 
+sensor{
+  name = "door_item_sensor",
+  layer = 0,
+  x = 1632,
+  y = 597,
+  width = 80,
+  height = 48,
+}
+
 tile{
   layer = 1,
   x = 64,

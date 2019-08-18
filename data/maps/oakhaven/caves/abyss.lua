@@ -41,8 +41,13 @@ function coral_boss:on_dead()
   map:open_doors("coral_ore_door")
 end
 
+--map banner
+function map_banner_activator:on_activated()
+  map:get_entity("^map_banner_sensor_2"):set_enabled(true)
+  map_banner_activator:set_enabled(false)
+end
+
 function rune_sensor:on_activated()
-print("hi maxx")
   game:start_dialog("_oakhaven.observations.abyss.draw_in")
 end
 

@@ -300,6 +300,39 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "37",
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 64,
+  width = 8,
+  height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "38",
+  ground = "wall",
+  default_layer = 0,
+  x = 40,
+  y = 64,
+  width = 8,
+  height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "39",
+  ground = "wall",
+  default_layer = 0,
+  x = 8,
+  y = 64,
+  width = 32,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
   id = "4",
   ground = "wall",
   default_layer = 0,
@@ -307,6 +340,41 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "40",
+  ground = "ladder",
+  default_layer = 0,
+  x = 8,
+  y = 72,
+  width = 32,
+  height = 24,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "41",
+  ground = "traversable",
+  default_layer = 0,
+  x = { 0, 0, 0 },
+  y = { 96, 112, 128 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "42",
+  ground = "traversable",
+  default_layer = 0,
+  x = { 16, 16, 16 },
+  y = { 96, 112, 128 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
 }
 
 tile_pattern{

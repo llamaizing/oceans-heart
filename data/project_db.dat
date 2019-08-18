@@ -1240,6 +1240,7 @@ music{ id = "oakhaven_overworld", description = "Oakhaven Overworld" }
 music{ id = "oceans_heart", description = "Ocean's Heart" }
 music{ id = "opining_cavern", description = "Opining Cave" }
 music{ id = "opressive_cavern", description = "Opressive Cavern" }
+music{ id = "opresssss_cavern", description = "opresssss_cavern" }
 music{ id = "overworld_01", description = "Overworld 01" }
 music{ id = "rain1", description = "Rain 1" }
 music{ id = "rain2", description = "Rain 2" }
@@ -1460,6 +1461,9 @@ item{ id = "geode", description = "Geode-1,5,10" }
 item{ id = "ghost_orchid", description = "Ghost Orchid-1,3,5" }
 item{ id = "gust", description = "Gust" }
 item{ id = "health_upgrade", description = "health upgrade" }
+item{ id = "heron_door_marble_summit", description = "heron_door_marble_summit" }
+item{ id = "heron_door_snapmast", description = "heron_door_snapmast" }
+item{ id = "heron_door_tern_marsh", description = "heron_door_tern_marsh" }
 item{ id = "hideout_chart", description = "Hideout Chart" }
 item{ id = "homing_eye", description = "Homing Eye" }
 item{ id = "homing_eye_pickable", description = "HomingEye-Pickable-1.3.5.10" }

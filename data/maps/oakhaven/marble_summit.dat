@@ -10478,6 +10478,15 @@ destructible{
   can_be_cut = true,
 }
 
+sensor{
+  name = "door_item_sensor",
+  layer = 0,
+  x = 696,
+  y = 445,
+  width = 80,
+  height = 48,
+}
+
 tile{
   layer = 1,
   x = 216,
