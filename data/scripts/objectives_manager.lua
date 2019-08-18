@@ -1,6 +1,6 @@
 --[[ objectives_manager.lua
-	version 1.0a2
-	17 May 2019
+	version 1.0
+	22 Jun 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -81,7 +81,7 @@ local STATUS_LIST = {
 	"alternate_swap",
 	"side_advanced_again",
 	"main_advanced_again",
-	"obtained_quest_item",
+	"progressed_quest_item",
 	"new_checkmark",
 	"side_advanced",
 	"main_advanced",
@@ -131,15 +131,15 @@ function objectives_manager.create(game)
 	end
 	
 	--// Refreshes all objectives, starting with active alternate quests
-	--does not trigger the game.objectives:on_new_task() event
+	--does not trigger the game.objectives:on_quest_updated() event
 	local function initial_refresh()	
 		local refreshed = {} --keep track of objectives that have been refreshed
 		
 		--first refresh active alternate quests
-		for alt_key,info in pairs(alternates_list) do
-			local alt_index = tonumber(game:get_value(alt_key))
-			if alt_index then
-				local objective = objectives_list[info.objective_type][alt_index]
+		for alt_key,_ in pairs(alternates_list) do
+			local alt_id = game:get_value(alt_key)
+			if alt_id then
+				local objective = ids[alt_id]
 				if objective and objective:get_alternate_key()==alt_key then
 					objective:refresh()
 					refreshed[objective] = true
@@ -228,45 +228,19 @@ function objectives_manager.create(game)
 		--properties (table): key/value table describing objective characteristics (see scripts/objectives.dat)
 		--objective_type (string): keyword for which objective list to add it to ("main" or "side")
 		--returns newly created objective object (table)
-	--// List of local variables accessible by new objective object:
-		--objective_type (string) - keyword for which objective list it belongs to ("main" or "side")
-		--save_vals (table) - key/value table of all savegame variable names (string) that affect this objective
-		--dialog_id (string) - id of the dialogs.dat dialog tu use for the title and description text
-		--calc_phase (string or table)
-			--(table) - contains list of savgame variable names and a callback function to receive their current values
-			--(string) - name of savegame variable to use as the value of the current phase
-		--location (string or table)
-		--npc_ids (table)
-		--replace_s (table or nil)
-		--replace_v (table or nil)
-		--checkmarks (table or nil)
-		--num_phases (number) - number of phases (lines beginning with @ in desc text) for this objective
-		--index (number) the master index of this objective
-	--Refreshed whenever savegame variables updated:
-		--is_done (boolean) - true when all quest subtasks are complete
-		--current_phase (number or nil/false) - current phase of the quest
-		--s_keys (table) - table of strings.dat keys for variable substitution of $s1-$s9
-		--v_values (table) - table of values for variable substitution of $v1-$v9
-		--checkmark_states (table) - table of state values for dynamic checkmarks $@1-$@9
 	function objectives:add_objective(properties, objective_type)
 		local new_objective = {} --(table, key/value) contains objective data for single quest
 		
 		--settings defined by data file property values and their default values
 		local dialog_id = properties.dialog_id --(string) dialogs.dat key for title and description of this objective
 		local alternate_key = properties.alternate_key --(string or nil) unique id for the set of alternate quests this quest belongs to, if any. If nil then is not an alternate quest
-		local calc_phase = properties.calc_phase --(string) save value key or (table): contains save value keys and callback function (see scripts/objectives.dat)
+		local calc_phase = properties.calc_phase --(string) save value key or (table) contains save value keys and callback function (see scripts/objectives.dat)
 		local location = properties.location or {} --(string or table, array) strings.dat key(s) giving the location text to display for the current quest phase (see scripts/objectives.dat)
 		local npc_ids = properties.npc or {} --(table, array) list of NPC entity ids (string) that need to be interacted with in a given phase, or false if no NPC for that phase
 		local replace_s = properties.replace_s --(table, combo or nil) list of save val keys and callback function to perform string substitution on desc string, if nil then no substitutions
 		local replace_v = properties.replace_v --(table, combo or nil) list of save val keys and callback function to perform value substitution on desc string, if nil then no substitutions
 		local checkmarks = properties.checkmarks --(table, combo or nil) list of save val keys and callback function to determine state of dynamic checkmarks, if nil then no dynamic checkmarks
 		local item_info = {} --(table, array) list of item ids corresponding to each quest item associated with this quest
-			--TODO remove comments below:
-			--id: (string) equipment item id for this entry
-			--name_key: (string) strings.dat key whose value is used to get the localized display name of the item
-			--item: (sol.item) instance of the equipment item
-			--save_val: (string) savegame variable name associated with possession of the equipement item
-			--icon_index: (number, positive integer) index of the image icon to use for this equipment item from the item sprite sheet (located at sprites/entities/items)
 		
 		--additional settings
 		local save_vals = {} --(table, key/value) set with keys of savegame variable names (string) that affect this objective, values are true
@@ -359,11 +333,6 @@ function objectives_manager.create(game)
 			end
 		else add_custom_input(calc_phase) end
 		
-		--location (table or string, optional): indexed table containing strings.dat values for the location name at each phase, or all phases if string (see scripts/objectives.dat)
-		--[[		--table index with value of true repeats the location of the previous phase (true not allowed for index 1)
-				--to omit the location, use an empty string for the value --TODO probably better to use false instead
-			--(string, optional): passing a string value uses that location name for all phases
-			--if omitted then location is not displayed in quest log during all phases]] --TODO Move to objectives.dat
 		--validate location
 		assert(type(location)=="table" or type(location)=="string",
 			"Bad property location to 'add_objective' (table or string or nil expected)"
@@ -483,7 +452,7 @@ function objectives_manager.create(game)
 				--"main_started" or "side_started" - quest was added to player's log
 				--"main_advanced" or "side_advanced" - quest phase increased
 				--"new_checkmark" - at least one dynamic checkmark previously unchecked became checked
-				--"obtained_quest_item" - the player obtained a quest item ranked higher than any quest items previously in possession
+				--"progressed_quest_item" - the player obtained a quest item ranked higher than any quest items previously in possession
 				--false - nothing changed worth noting
 				--nil - quest was already complete, did not check status
 		function new_objective:refresh()
@@ -522,7 +491,8 @@ function objectives_manager.create(game)
 						end
 						
 						--this quest becomes the active alternate quest
-						game:set_value(alternate_key, index)
+						local dialog_id = self:get_dialog_id()
+						game:set_value(alternate_key, dialog_id) --TODO alternate id
 						alternates_list[alternate_key].active = self
 					elseif prev_phase and not current_phase then --is alternate quest that went from active to in-active
 						--the quest is no longer the active alternate quest
@@ -633,7 +603,7 @@ function objectives_manager.create(game)
 					if is_new_checkmark then --dynamic checkmark became checked
 						status = "new_checkmark"
 					elseif (active_item_index or 0) > prev_item_index then
-						status = "obtained_quest_item"
+						status = "progressed_quest_item"
 					end --else status is false (nothing updated worth noting)
 				end
 			end
@@ -722,7 +692,8 @@ function objectives_manager.create(game)
 			--returns (number, positive integer or nil) - item index, or nil if the player doesn't gave any quest items
 		function new_objective:get_active_item_index() return active_item_index end
 		
-		--TODO WIKI add new function to wiki
+		--// Returns the item id and variant of the quest item with the given index
+			--index (number, positive integer, optional) - quest item index (first quest item is 1)
 		function new_objective:get_item_id(index)
 			if index then
 				index = tonumber(index)
@@ -737,21 +708,9 @@ function objectives_manager.create(game)
 			return info.id, info.variant
 		end
 		
-		--TODO WIKI remove wiki entry
-		--// Returns the icon index corresponding to the highest ranked quest item in the player's inventory
-			--returns (number, positive integer or nil) - icon index, or nil if the player doesn't have any quest items
-		--function new_objective:get_active_item_icon()
-		--	return active_item_index and item_info[active_item_index].icon_index
-		--end
-		
-		--TODO WIKI remove wiki entry
-		--// Returns the icon index of the item at the specified index
-			--index (number, positive integer) - specified which item to return the icon of
-			--returns (number, positive integer or nil) - the icon index for the item, or nil if not defined in objectives.dat
-		--function new_objective:get_item_icon(index)
-		--	return item_info[index] and item_info[index].icon_index
-		--end
-		
+		--// Returns the savegame variable for the quest item with the specified index
+			--index (number, positive integer, optional) - quest item index (first quest item is 1)
+			--returns (string or nil)
 		function new_objective:get_item_save_val(index)
 			return item_info[index] and item_info[index].save_val
 		end
@@ -1193,15 +1152,29 @@ function objectives_manager.create(game)
 			local status_name = STATUS_LIST[status]
 			
 			--change status if ALL quests are now complete
+			local is_all_done --set to true if all main AND side quests are now done
 			if status_name=="main_completed" then
 				local completed_count,total_count = self:get_counts"main"
-				if completed_count>=total_count then status_name = "main_all_completed" end
+				if completed_count>=total_count then
+					status_name = "main_all_completed"
+					
+					--do additional check to see if now ALL quests are done
+					completed_count,total_count = self:get_counts"side"
+					if completed_count>=total_count then is_all_done = true end
+				end
 			elseif status_name=="side_completed" then
 				local completed_count,total_count = self:get_counts"side"
-				if completed_count>=total_count then status_name = "side_all_completed" end
+				if completed_count>=total_count then
+					status_name = "side_all_completed"
+					
+					--do additional check to see if not ALL quests are done
+					completed_count,total_count = self:get_counts"main"
+					if completed_count>=total_count then is_all_done = true end
+				end
 			end
 			
-			if self.on_new_task then self:on_new_task(status_name, status_dialog_id) end --call event if it exists
+			if self.on_quest_updated then self:on_quest_updated(status_name, status_dialog_id) end --call event if it exists
+			if is_all_done and self.on_all_quests_done then self:on_all_quests_done() end --call event if it exists
 		end
 	end
 	
@@ -1215,7 +1188,7 @@ function objectives_manager.create(game)
 	
 	--// Returns indexed table of active objectives followed by completed objectives.
 	--// The order of the returned list matches the order defined in objectives.dat
-		--objective_type (string) keyword corresponding to the objective list to use
+		--objective_type (string) keyword corresponding to the objective list to use ("main" or "side")
 	function objectives:get_objectives_list(objective_type)
 		assert(type(objective_type)=="string", "Bad argument #2 to 'get_objectives_list' (string expected)")
 		local full_list = objectives_list[objective_type] --convenience
@@ -1269,7 +1242,8 @@ function objectives_manager.create(game)
 	end
 	
 	--// objective_type (string): keyword for which objective list to use ("main" or "side") 
-	--// Returns 2 numbers: number of completed quests and total quests from the list corresponding to objective_type
+		--returns (number, non-negative integer) - number of completed quests
+		--returns (number, non-negative integer) - total quests from the list corresponding to objective_type
 	function objectives:get_counts(objective_type)
 		assert(type(objective_type)=="string", "Bad argument #2 to 'get_counts' (string expected)")
 		local full_list = objectives_list[objective_type] --convenience
@@ -1290,19 +1264,29 @@ function objectives_manager.create(game)
 	end
 	
 	--// Call this function to switch the active quest
-	function objectives:set_alternate(alt_key, quest_index)
+		--alt_key (string) - unique identifier string of the group of alternate quests
+		--quest_id (string or number) - specify which quest to make active by giving the dialog id or an index
+			--(string) - The dialog id of the alternate quest to make active
+			--(number, positive integer) - index of the quest to make active, corresponds to order defined in objectives.dat
+	function objectives:set_alternate(alt_key, quest_id)
 		assert(type(alt_key)=="string", "Bad argument #2 to 'set_alternate' (string expected)")
 		local alt_info = alternates_list[alt_key] --convenience
 		local alt_type = alt_info and alt_info.objective_type
 		assert(alt_type, "Bad argument #2 to 'set_alternate', alternate quest key not found: "..alt_key)
 		
-		quest_index = tonumber(quest_index)
-		assert(quest_index, "Bad argument #3 to 'set_alternate' (number expected)")
-		
-		local list = objectives_list[alt_type]
-		local new_alt = list[quest_index]
-		assert(new_alt, "Bad argument #3 to 'set_alternate', quest index not found: "..quest_index)
-		assert(new_alt:get_alternate_key()==alt_key, "Bad argument #3 to 'set_alternate', quest index "..quest_index.." does not belong to alternate key: "..alt_key)
+		local new_alt --objective (table) to set as the active alternate quest
+		local quest_index = tonumber(quest_id)
+		if quest_index then
+			local list = objectives_list[alt_type]
+			new_alt = list[quest_index]
+			assert(new_alt, "Bad argument #3 to 'set_alternate', quest index not found: "..quest_index)
+			assert(new_alt:get_alternate_key()==alt_key, "Bad argument #3 to 'set_alternate', quest index "..quest_index.." does not belong to alternate key: "..alt_key)
+		else
+			assert(type(quest_id)=="string", "Bad argument #3 to 'set_alternate' (string or number expected)")
+			new_alt = ids[quest_id]
+			assert(new_alt, "Bad argument #3 to 'set_alternate', invalid quest id: "..quest_id)
+		end
+		local alt_id = new_alt:get_dialog_id() --dialog id (string) associated with the newly set alternate quest
 		
 		--check if a different alternate quest is currently active
 		local old_alt = alt_info.active
@@ -1313,7 +1297,7 @@ function objectives_manager.create(game)
 				old_alt:deactivate() --removes from quest log menu
 			end
 			
-			game:set_value(alt_key, quest_index)
+			game:set_value(alt_key, alt_id)
 			new_alt:refresh() --updates new alternate quest, will only be added to quest log menu if phase calculation is non-nil
 			
 			--if fails to add new quest then need to refresh all other alternate quests to see if they activate
@@ -1329,20 +1313,17 @@ function objectives_manager.create(game)
 			if old_alt ~= alt_info.active then --the active alternate changed
 				refresh_npcs() --update list of active npcs
 				local status_dialog_id = alt_info.active and alt_info.active:get_dialog_id() --dialog id of newly active alternate if there is one
-				if self.on_new_task then self:on_new_task("alternate_swap", status_dialog_id) end --call event if it exists
+				if self.on_quest_updated then self:on_quest_updated("alternate_swap", status_dialog_id) end --call event if it exists
 			end
 		end
 	end
 	
+	--// Returns true if there have been any updates to the quest log menu since the last time the player opened it, else false
 	function objectives:is_new_task() return is_new_task end
+	
+	--// Resets the status of game.objectives:is_new_task() to false. Called automatically whenever the quest log menu is opened
 	function objectives:clear_new_tasks()
 		is_new_task = false
-		--for _,sub_list in pairs(objectives_list) do
-		--	for _,objective in ipairs(sub_list) do
-		--		objective:clear_status()
-		--	end
-		--end
-		
 		if self.on_tasks_cleared then self:on_tasks_cleared() end --call event if it exists
 	end
 	
@@ -1369,15 +1350,15 @@ end
 return objectives_manager
 
 --[[ Copyright 2018-2019 Llamazing
-  [[ 
-  [[ This program is free software: you can redistribute it and/or modify it under the
-  [[ terms of the GNU General Public License as published by the Free Software Foundation,
-  [[ either version 3 of the License, or (at your option) any later version.
-  [[ 
-  [[ It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
-  [[ without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-  [[ PURPOSE.  See the GNU General Public License for more details.
-  [[ 
-  [[ You should have received a copy of the GNU General Public License along with this
-  [[ program.  If not, see <http://www.gnu.org/licenses/>.
+  [] 
+  [] This program is free software: you can redistribute it and/or modify it under the
+  [] terms of the GNU General Public License as published by the Free Software Foundation,
+  [] either version 3 of the License, or (at your option) any later version.
+  [] 
+  [] It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+  [] without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+  [] PURPOSE.  See the GNU General Public License for more details.
+  [] 
+  [] You should have received a copy of the GNU General Public License along with this
+  [] program.  If not, see <http://www.gnu.org/licenses/>.
   ]]
