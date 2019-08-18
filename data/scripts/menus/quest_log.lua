@@ -1,6 +1,6 @@
 --[[ quest_log.lua
-	version 1.0a1
-	25 May 2019
+	version 1.0
+	22 Jun 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -55,6 +55,7 @@ local sel_index = 1 --(number, positive integer) position of highlight box, 1 to
 local list_index = 1 --(number, positive integer) selected index of current list
 local top_index = 1 --(number, positive integer) list index appearing at top of visibile objectives in sidebar
 local is_highlight = true --(boolean) if true then highlight box is visible (hidden when no quests in log)
+local is_debug_mode = false --(boolean) if true then debug functions are enabled
 
 --// Parses quest_log.dat and creates the corresponding ui components
 local load_quest_data --(function) only runs once, does nothing if called a second time
@@ -169,7 +170,10 @@ do
 				group:set_subcomponents(group_list)
 			end
 			
-			if quest_log.back_prompt then quest_log.back_prompt:set_text"D Back" end --TODO set text dynamically
+			if quest_log.back_prompt then
+				local prompt_text = sol.language.get_string"menu.quest_log.back_prompt" or ""
+				quest_log.back_prompt:set_text(prompt_text)
+			end
 			
 			--// verify remaining data is valid
 			
@@ -198,8 +202,8 @@ do
 	end
 end
 
---// Restores position of list from last time viewing menu
-	--will call quest_log:set_selected()
+--// Restores position of list from last time viewing menu; will call quest_log:set_selected()
+	--tab (number, non-negative integer, optional) - 1 for main tab, 2 for side tab, default: active tab when menu was last closed
 function quest_log:recall_saved_position(tab)
 	local game = sol.main.get_game()
 	local tab_index,tab_name
@@ -289,7 +293,7 @@ function quest_log:save_position()
 end
 
 --// Sets which tab is visible in the sidebar
-	--index (number) - tab index to make active: 1 = main quests, 2 = side quests
+	--index (number, positive integer) - tab index to make active: 1 = main quests, 2 = side quests
 function quest_log:set_tab(index)
 	local index = tonumber(index)
 	assert(type(index)=="number", "Bad argument #2 to 'set_tab' (number expected)")
@@ -737,6 +741,16 @@ function quest_log:set_xy(x, y)
 	self.y = math.floor(y)
 end
 
+--// Enable/disable debug mode of the quest log menu
+	--enabled (boolean, optional) - if true then debug mode is enabled, else false, default: disabled
+	--Note: Debug mode allows changing the displayed phase for the currently selected quest in the quest log by using the number keys
+function quest_log:set_debug_mode(enabled)
+	enabled = enabled or false
+	assert(type(enabled)=="boolean", "Bad argument #2 to 'set_debug_mode' (boolean or nil expected)")
+	is_debug_mode = enabled
+	print("Quest Log: Debug mode "..(is_debug_mode and "enabled" or "disabled")) --DEBUG
+end
+
 function quest_log:on_started()
 	local game = sol.main.get_game()
 	assert(game, "Error: cannot start quest log menu because no game is currently running")
@@ -777,6 +791,7 @@ function quest_log:on_command_pressed(command)
 end
 
 local PHASE_KEYS = {} for i=0,9 do PHASE_KEYS[tostring(i)]=true end --keys correspond to numeric keys
+local MODIFIER_KEYS = {['left shift']=true, ['right shift']=true} --holding any of these keys down acts like a modifier
 local pressed_phase_keys = {} --stores sequence of key presses while shift is held down, to be executed when shift is released
 
 --// Called when the user presses a keyboard key while the menu is active
@@ -787,25 +802,27 @@ local pressed_phase_keys = {} --stores sequence of key presses while shift is he
 	--returns (boolean) - if true then the event won't be propagated to other objects (e.g. menus or game commands)
 function quest_log:on_key_pressed(key, modifiers)
 	--manually force the current phase for the displayed description text (for debugging)
-	if PHASE_KEYS[key] then --key pressed is 0 to 9
-		if not modifiers.shift then
-			local current_objective = active_list[list_index]
-			self:set_description(current_objective, key) --DEBUG update the description pane to match the phase corresponding to the single pressed key
-			print("DEBUG: Displaying description for phase "..key) --DEBUG
-			
-			pressed_phase_keys = {} --reset for next key press
-			
+	if is_debug_mode then
+		if PHASE_KEYS[key] then --key pressed is 0 to 9
+			if not modifiers.shift then
+				local current_objective = active_list[list_index]
+				self:set_description(current_objective, key) --DEBUG update the description pane to match the phase corresponding to the single pressed key
+				print("DEBUG: Displaying description for phase "..key) --DEBUG
+				
+				pressed_phase_keys = {} --reset for next key press
+				
+				return true
+			else table.insert(pressed_phase_keys, key) end --if shift is held down then capture sequence of key presses
+		elseif MODIFIER_KEYS[key] then
+			pressed_phase_keys = {} --reset sequence when modifier key is pressed down
 			return true
-		else table.insert(pressed_phase_keys, key) end --if shift is held down then capture sequence of key presses
-	elseif key=="left shift" or key=="right_shift" then
-		pressed_phase_keys = {}
-		return true
+		end
 	end
 end
 
 function quest_log:on_key_released(key)
 	--when shift is released, concatenate the list of key presses while it had been held down, convert to number and execute
-	if (key=="left shift" or key=="right shift") and #pressed_phase_keys>0 then
+	if is_debug_mode and MODIFIER_KEYS[key] and #pressed_phase_keys>0 then
 		local pressed_num = tonumber(table.concat(pressed_phase_keys, ""))
 		if pressed_num then --if sequence of key presses is a valid number
 			local current_objective = active_list[list_index]

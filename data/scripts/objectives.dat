@@ -1,5 +1,5 @@
---[[ objectives.dat		23 Nov 2018
-
+--[[ objectives.dat		22 Jun 2019
+	
 	This data file describes quests which are to be shown in the quest log menu. The quest
 	can be either a "main" quest or a "side" quest, where they get listed separately. Each
 	quest must define a dialog_id, which contains both the quest title and its description
@@ -30,7 +30,7 @@
 			It has the following arguments:
 				args (table) - contains as indicies values for the save game variables listed above
 				It also has the following special keys that can be accessed:
-					num_phases (number) - the total number of phases for this quest --TODO not yet implemented
+					num_phases (number) - the total number of phases for this quest
 			It has the following return values:
 				(number or nil/false) - what phase this quest should be set to (0 and up)
 					value of false means the player has not started the quest yet
@@ -43,9 +43,34 @@
 			when the player starts the quest until beginning phase 1. When the quest is
 			complete, the location from the last phase will continue to be shown.
 		default: location text will not be shown for any phase
-	* replace_s
-	* replace_v
-	* show_at_start (boolean, optional) - The player begins a new game with this quest already in their quest log (default: false)
+	* replace_s (table, combo, optional) - Specifies save game variable(s) to determine string substitution values
+		* [indicies] (string) - Savegame variable names to pass to the callback function
+		* callback (function) - receives table containing values for savegame variables
+			Returns table containing up to 9 strings.dat key to be used for the substitution of $s1 thru $s9
+	* replace_v (table, combo, optional) - Specifies save game variable(s) to determine value substitution values
+		* [indicies] (string) - Savegame variable names to pass to the callback function
+		* callback (function, optional) - receives table containing values for savegame variables
+			Returns table containing up to 9 strings to be used for the substitution of $v1 thru $v9 (usually a number value)
+			If a callback function isn't specified then the values of up to 9 savegame variables are substituted directly (for $v1 thru $v9)
+	* checkmarks (table, combo, optional) - Specifies save game variable(s) to determine dynamic checkmark states
+		* [indicies] (string) - Savegame variable names to pass to the callback function
+		* callback (function) - receives table containing values for savegame variables
+			Returns table containing up to 9 values to be used for the dynamic checkmarks $@1 thru $@9
+				nil - dynamic checkmark not visible
+				false - dynamic checkmark shown as bullet
+				true - dynamic checkmark shown as checkmark
+	* npc (table, combo, optional) - List of NPC entity ids specifying an active NPC during each phase
+		* [indicies] (string) - entity id that should be active (display icon over head) for the specified phase
+			e.g. key of 1 corresponds to the NPC that should be active while player is attempting objectives for the first phase (i.e. during phase 0)
+			Values of false or nil indicate there is not an active NPC for that phase
+			The special key "start" can be used to indicate the NPC that's active before the player starts the quest (e.g. the NPC giving the quest)
+			if the table isn't provided then no NPCs will be considered active
+	* items (table, array, optional) - list of quest items for this quest
+		* [indices] (string) - Specify items as "ITEM_ID.VARIANT", e.g. "letter_from_king.1"
+			If the table is not specified then there won't be any quest items associated with the quest
+	* alternate_key (string, optional) - name of a savegame variable to keep track of the active alternate quest in this group
+		All quests that share the same alternate_key are considered in the same group of alternate quests
+		If no key is specified then the quest does not have any alternate quests
 	]]
 
 	--## Examples of Variable Substitution Values and Strings ##--
