@@ -11542,7 +11542,7 @@ were dead for months! I get it, you're fighting
 pirates and stuff, but you didn't send any
 TILIA:
 letters? Stop chasing pirates for a week to come
-let us know what was going on? 
+let us know what was going on?
 
 MALLOW:
 When would I have done that? While Hazel was a
@@ -15254,6 +15254,43 @@ amulet to catch the pirates.
 }
 
 dialog{
+    id = "quest.mysterious_doors",
+    title = "Mysterious Doors",
+    ------------max line width------------
+    text = [[
+@!? --// don't display checkmark for this phase
+    You found a mysterious door at the
+    following locations:
+%1    $@1 Tern Marsh
+%2    $@2 Marble Summit
+%3    $@3 Snapmast
+--//Note: the one in Goatshead is excluded because it is behind a regular locked door
+
+    Keep exploring to find them all.
+]]}
+
+dialog{
+    id = "quest.heron_doors",
+    title = "Heron Doors",
+    ------------max line width------------
+    text = [[
+@?    Explore all of the heron doors
+!    Explore the remaining shrines to
+!    obtain the rest of the thunder charms.
+
+%~    You haven't found any more heron doors
+%=!    Locations to explore: --// The player must find at least one door for these lines to be visible
+?    Heron doors explored: --// This line visible instead once quest is complete
+%1    $@1 Tern Marsh
+%2    $@2 Marble Summit
+%3    $@3 Snapmast
+%=!
+%=!    Keep exploring to find them all.
+
+    Thunder charms found: %v of 5 --// this value will always be at least 1 while this alt quest is active
+]]}
+
+dialog{
   id = "quest.side.ballast_harbor.hornet_honey",
   title = "Hornet Honey",
   text = [[
@@ -15746,4 +15783,3 @@ destroy the monsters
 @ Return to the fisherman
 ]],
 }
-
