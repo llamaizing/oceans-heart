@@ -32,7 +32,7 @@ function heron_door_sensor:on_activated()
   if not game:has_item("heron_door_snapmast") then
     game:get_item("heron_door_snapmast"):set_variant(1)
     game:set_value("found_heron_door_snapmast", 1) --TODO quest log issue #76
-    game.objectives:force_update()
+    game.objectives:force_update() --TODO quest log issue #76
   end
 end
 
