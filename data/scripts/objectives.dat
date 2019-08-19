@@ -430,7 +430,7 @@ side{
 side{
     dialog_id = "quest.heron_doors",
     alternate_key = "heron_doors_alt",
-    calc_phase = "heron_doors",
+    calc_phase = "quest_heron_doors",
     replace_v = {
         "possession_thunder_charm",
         callback = function(args)

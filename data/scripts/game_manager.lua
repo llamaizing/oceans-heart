@@ -26,6 +26,7 @@ local QUEST_SOUNDS = {
     side_advanced = "quest_advance",
     new_checkmark = "quest_subtask",
     progressed_quest_item = "quest_subtask",
+    alternate_swap = "quest_subtask",
     main_advanced_again = false, --don't play sound
     side_advanced_again = false, --don't play sound
 }
