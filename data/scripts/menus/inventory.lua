@@ -292,9 +292,13 @@ function inventory:on_draw(dst_surface)
     self.menu_background:draw(dst_surface, self.x, self.y)
     self.cursor_sprite:draw(dst_surface, (self.cursor_column * 32 + GRID_ORIGIN_X + 32) + self.x,  (self.cursor_row * 32 + GRID_ORIGIN_Y) + self.y)
     self.description_panel:draw(dst_surface, ((COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16) + self.x, (ROWS *32 + GRID_ORIGIN_Y - 8)+self.y)
-    --draw assigned items: (or, if you can see what items you have assigned elsewhere, maybe don't!)
---    self.assigned_item_sprite_1:draw(dst_surface, self.x + 310, self.y + 35)
---    self.assigned_item_sprite_2:draw(dst_surface, self.x + 340, self.y + 35)
+    --draw assigned items:
+      if self.assigned_item_sprite_1 then
+        self.assigned_item_sprite_1:draw(dst_surface, self.x + 310, self.y + 35)
+      end
+      if self.assigned_item_sprite_2 then
+        self.assigned_item_sprite_2:draw(dst_surface, self.x + 340, self.y + 35)
+      end
 
     --draw inventory items
     for i=1, #all_equipment_items do
