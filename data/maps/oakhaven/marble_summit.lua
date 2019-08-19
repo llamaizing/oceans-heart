@@ -22,5 +22,7 @@ end)
 function door_item_sensor:on_activated()
   if not game:has_item("heron_door_marble_summit") then
     game:get_item("heron_door_marble_summit"):set_variant(1)
+    game:set_value("found_heron_door_marble_summit", 1)
+    game.objectives:force_update()
   end
 end

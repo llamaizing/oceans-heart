@@ -6755,6 +6755,15 @@ wall{
   stops_enemies = true,
 }
 
+sensor{
+  name = "heron_door_sensor",
+  layer = 0,
+  x = 1000,
+  y = 541,
+  width = 48,
+  height = 48,
+}
+
 tile{
   layer = 1,
   x = 608,

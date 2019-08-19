@@ -1,13 +1,13 @@
 --[[ quest_log.dat		3 Mar 2019
-	
+
 	This data file describes the properties of the quest log menu.
-	
+
 	Sized for widescreen 416x240 resolution.
 ]]
 
 local data = {
 	--// bg content
-	
+
 	{ --black bar along bottom
 		--static content doesn't need id
 		layer = "fill.black",
@@ -35,10 +35,10 @@ local data = {
 		x = 0, y = 1,
 		text_key = "menu.quest_log.title",
 	},
-	
-	
+
+
 	--// sidebar frame & tabs
-	
+
 	{ --frame comprising sidebar dialog box
 		--static content doesn't need id
 		layer = "frame.dialog_box",
@@ -121,10 +121,10 @@ local data = {
 		--width = 8, height = 12, --height/width determined by sprite
 		x = 127, y = 28, --UPDATED
 	},
-	
-	
+
+
 	--// sidebar content
-	
+
 	{ --content of each item in sidebar list
 		id = "list_entries",
 		layer = "array.vertical",
@@ -157,10 +157,10 @@ local data = {
 		--width = 12, height = 8, --height/width determined by image
 		x = 76, y = 209, --UPDATED
 	},
-	
-	
+
+
 	--// desc pane
-	
+
 	{ --frame comprising desc dialog box
 		--static content doesn't need id
 		layer = "frame.dialog_box",
@@ -210,7 +210,7 @@ local data = {
 		width = 228, height = 168, --UPDATED
 		x = 180, y = 52, --UPDATED
 		gap = 2,
-		--max chars per line: 28
+		--max chars per line: 38
 	},
 	{ --array of checkmark icons to display to mark each subtask of desc text once complete
 		id = "desc_checkmarks",
@@ -259,10 +259,10 @@ local data = {
 		width = 228, height = 168,
 		x = 180, y = 52,
 	},
-	
-	
+
+
 	--// other settings
-	
+
 	tab_offset_x = 60, --x offset for each tab in pixels --UPDATED
 	tab_offset_y = 0, --y offset for each tab in pixels
 	highlight_scroll_time = 0.23, --time for highlight box to scroll to next entry in seconds, if nil then moves instantly

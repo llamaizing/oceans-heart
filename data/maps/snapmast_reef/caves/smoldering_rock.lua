@@ -28,6 +28,13 @@ map:register_event("on_started", function()
 
 end)
 
+function heron_door_sensor:on_activated()
+  if not game:has_item("heron_door_snapmast") then
+    game:get_item("heron_door_snapmast"):set_variant(1)
+    game:set_value("found_heron_door_snapmast", 1)
+    game.objectives:force_update()
+  end
+end
 
 function ring_switch_a:on_activated()
   map:open_doors("ring_a_door")
