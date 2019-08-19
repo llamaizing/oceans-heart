@@ -46,6 +46,36 @@ tile{
   pattern = "21",
 }
 
+tile{
+  layer = 0,
+  x = 224,
+  y = 56,
+  width = 32,
+  height = 16,
+  pattern = "1883",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "2038",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 376,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "2038",
+  tileset = "overworld_yarrowmouth",
+}
+
 door{
   name = "seabird_tear_door_2",
   layer = 0,
@@ -119,5 +149,55 @@ destination{
   x = 200,
   y = 189,
   direction = 1,
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 24,
+  width = 16,
+  height = 48,
+  pattern = "2205",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "2199",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = -8,
+  width = 48,
+  height = 64,
+  pattern = "1884",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 360,
+  y = 32,
+  width = 16,
+  height = 24,
+  pattern = "2040",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 1,
+  x = 376,
+  y = 56,
+  width = 16,
+  height = 24,
+  pattern = "2040",
+  tileset = "overworld_yarrowmouth",
 }
 
