@@ -415,7 +415,7 @@ side{
         --TODO add savegame variable for TBD 5th door
         callback = function(args) --always returns false for all dynamic checkmarks (not possible to check any until alt quest started)
             local doors = {}
-            for i=1,#args do doors[i] = false end --always unchecked in this quest
+            for i=1,3 do doors[i] = false end --always unchecked in this quest
             return doors
         end,
     },
@@ -445,7 +445,7 @@ side{
         --TODO add savegame variable for TBD 5th door
         callback = function(args)
             local doors = {}
-            for i=1,#args do doors[i] = args[i] and args[i] > 1 end
+            for i=1,3 do doors[i] = args[i] and args[i] > 1 end
             return doors
         end,
     },

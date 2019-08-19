@@ -15287,7 +15287,7 @@ dialog{
 %=!
 %=!    Keep exploring to find them all.
 
-    Thunder charms found: $v1 of 5 --// this value will always be at least 1 while this alt quest is active
+    Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
 ]]}
 
 dialog{
