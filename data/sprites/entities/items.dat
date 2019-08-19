@@ -308,6 +308,25 @@ animation{
   },
 }
 animation{
+  name = "empty",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+  },
+}
+animation{
   name = "ether_bombs",
   src_image = "entities/items.png",
   directions = {
@@ -951,6 +970,27 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 336, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "unattainable_collectable",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
+    { x = 112, y = 0, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 5 },
   },
 }
 animation{

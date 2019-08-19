@@ -176,14 +176,16 @@ end
 function inventory:initialize_assigned_item_sprites(game)
     if game:get_item_assigned(1) then
         local assigned_sprite = sol.sprite.create("entities/items")
-        assigned_sprite:set_animation(game:get_item_assigned(1):get_name())
-        assigned_sprite:set_direction(game:get_item_assigned(1):get_variant()-1)
+        local ass_item = game:get_item_assigned(1) or game:get_item("unattainable_collectable")
+        assigned_sprite:set_animation(ass_item:get_name())
+        assigned_sprite:set_direction(ass_item:get_variant()-1)
         self.assigned_item_sprite_1 = assigned_sprite
     end
     if game:get_item_assigned(2) then
         local assigned_sprite = sol.sprite.create("entities/items")
-        assigned_sprite:set_animation(game:get_item_assigned(2):get_name())
-        assigned_sprite:set_direction(game:get_item_assigned(2):get_variant()-1)
+        local ass_item = game:get_item_assigned(2) or game:get_item("unattainable_collectable")
+        assigned_sprite:set_animation(ass_item:get_name() or "empty")
+        assigned_sprite:set_direction(ass_item:get_variant()-1)
         self.assigned_item_sprite_2 = assigned_sprite
     end
 end
@@ -291,8 +293,8 @@ function inventory:on_draw(dst_surface)
     self.cursor_sprite:draw(dst_surface, (self.cursor_column * 32 + GRID_ORIGIN_X + 32) + self.x,  (self.cursor_row * 32 + GRID_ORIGIN_Y) + self.y)
     self.description_panel:draw(dst_surface, ((COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16) + self.x, (ROWS *32 + GRID_ORIGIN_Y - 8)+self.y)
     --draw assigned items: (or, if you can see what items you have assigned elsewhere, maybe don't!)
-    self.assigned_item_sprite_1:draw(dst_surface, self.x + 310, self.y + 35)
-    self.assigned_item_sprite_2:draw(dst_surface, self.x + 340, self.y + 35)
+--    self.assigned_item_sprite_1:draw(dst_surface, self.x + 310, self.y + 35)
+--    self.assigned_item_sprite_2:draw(dst_surface, self.x + 340, self.y + 35)
 
     --draw inventory items
     for i=1, #all_equipment_items do

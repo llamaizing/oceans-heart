@@ -156,6 +156,7 @@ map{ id = "goatshead_island/west_goat", description = "West Goat" }
 map{ id = "grass_template_blue", description = "Blue Grass Template" }
 map{ id = "grass_template_green", description = "grass template" }
 map{ id = "grass_template_yellow", description = "Grass Template 2" }
+map{ id = "heron_door_test_room", description = "Heron Door Test Room" }
 map{ id = "indoor_house_template", description = "Indoor House Template" }
 map{ id = "indoor_template", description = "Temple/Cave Template" }
 map{ id = "isle_of_storms/isle_of_storms_landing", description = "Landing Area" }

@@ -5043,7 +5043,7 @@ destination{
   name = "starting_destination",
   layer = 0,
   x = 152,
-  y = 1117,
+  y = 1109,
   direction = 3,
   default = true,
 }
@@ -5796,6 +5796,24 @@ enemy{
   y = 373,
   direction = 0,
   breed = "normal_enemies/skeleton_1",
+}
+
+sensor{
+  name = "give_quest_sensor",
+  layer = 0,
+  x = 632,
+  y = 413,
+  width = 48,
+  height = 16,
+}
+
+teletransporter{
+  layer = 0,
+  x = 128,
+  y = 1112,
+  width = 48,
+  height = 32,
+  destination_map = "heron_door_test_room",
 }
 
 tile{

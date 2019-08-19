@@ -17,6 +17,12 @@ map:register_event("on_started", function()
 --  hero:set_walking_speed(96)
 end)
 
+-----------------___TEMP---------------
+
+
+
+---------------------------------------
+
 
 function shopkeeper:on_interaction()
   local shop_menu = require("scripts/shops/shop_menu")
