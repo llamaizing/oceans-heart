@@ -1,5 +1,5 @@
 --[[ objectives.dat		22 Jun 2019
-	
+
 	This data file describes quests which are to be shown in the quest log menu. The quest
 	can be either a "main" quest or a "side" quest, where they get listed separately. Each
 	quest must define a dialog_id, which contains both the quest title and its description
@@ -401,11 +401,11 @@ side{
         "found_heron_door_snapmast", --savegame variable for item "heron_door_snapmast"
         --TODO add savegame variable for TBD 5th door
         callback = function(args) --if at least 1 heron door found then add to quest log, this quest cannot be completed and must be switched to alternate quest
-            for door_state in ipairs(args) do --door_state - nil or 0: door not found, 1: door found
+            for door_state in ipairs(args or {}) do --door_state - nil or 0: door not found, 1: door found
                 door_state = door_state or 0 --replace nil with 0
                 if door_state >=1 then return 0 end
             end
-            return false
+            return falses
         end,
     },
     checkmarks = {
