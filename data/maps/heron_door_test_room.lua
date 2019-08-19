@@ -40,6 +40,7 @@ function monk:on_interaction()
   game:get_item("thunder_charm"):set_variant(1)
   game:set_value("possession_thunder_charm", 1)
 print("I gave you the charm")
-  game:set_value("quest_heron_doors", 1)
+--  game:set_value("quest_heron_doors", 0)
+  game:set_value("heron_doors", 0)
   game.objectives:set_alternate("heron_doors_alt", "quest.heron_doors")
 end

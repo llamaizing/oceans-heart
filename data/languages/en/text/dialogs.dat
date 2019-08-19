@@ -15274,20 +15274,20 @@ dialog{
     title = "Heron Doors",
     ------------max line width------------
     text = [[
-@?    Explore all of the heron doors
-!    Explore the remaining shrines to
-!    obtain the rest of the thunder charms.
+@?Explore all of the heron doors
+!Explore the remaining shrines to
+!obtain the rest of the thunder charms.
 
-%~    You haven't found any more heron doors
-%=!    Locations to explore: --// The player must find at least one door for these lines to be visible
-?    Heron doors explored: --// This line visible instead once quest is complete
+%~You haven't found any more heron doors
+%=!Locations to explore: --// The player must find at least one door for these lines to be visible
+?Heron doors explored: --// This line visible instead once quest is complete
 %1$@1   Tern Marsh
 %2$@2   Marble Summit
 %3$@3   Snapmast
 %=!
 %=!    Keep exploring to find them all.
 
-    Thunder charms found: %v of 5 --// this value will always be at least 1 while this alt quest is active
+    Thunder charms found: $v1 of 5 --// this value will always be at least 1 while this alt quest is active
 ]]}
 
 dialog{
