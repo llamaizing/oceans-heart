@@ -5810,7 +5810,7 @@ sensor{
 teletransporter{
   layer = 0,
   x = 128,
-  y = 1112,
+  y = 1136,
   width = 48,
   height = 32,
   destination_map = "heron_door_test_room",
