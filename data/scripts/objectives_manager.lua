@@ -1,6 +1,6 @@
 --[[ objectives_manager.lua
-	version 1.0
-	22 Jun 2019
+	version 1.0.1a1
+	20 Aug 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -171,8 +171,9 @@ function objectives_manager.create(game)
 				--"$MAP_WORLD" - value returned is the word name (string) of the current map, or nil if it is not defined or if the game is not running
 				--"$MAP_FLOOR" - value returned is the floor number (number, integer), or nil if is not defined or if the game is not running
 		--returns (table, array) table with the same number of entries as data argument, each corresponding to its associated value
+			--the returned table contains key "n" which is equal to the number of entries in the data argument, which is useful if some values are nil
 	local function get_values(data)
-		local values = {n=#data}
+		local values = {n=#data} --store number of data entries since #values is unreliable if some values are nil
 		local data = data
 		local map = game:get_map()
 
@@ -190,7 +191,7 @@ function objectives_manager.create(game)
 						--TODO when maps can be assigned properties
 						--values[i] = map:get_property(map_property)
 					end
-				else values[i] = game:get_value(entry) end--may be nil
+				else values[i] = game:get_value(entry) end --may be nil
 			end
 		end
 
@@ -822,27 +823,6 @@ function objectives_manager.create(game)
 				local entry = {}
 				table.insert(lines, entry)
 
-				--// parse dynamic checkmarks: $@1 to $@9 and $1 to $9
-
-				local check_index --which dynamic checkmark index the line is associated with (e.g. $@5 is index of 5, as is $5)
-
-				local check_position = line:find"%$@%d"
-				if check_position then --has dynamic checkmark on this line
-					check_index = tonumber(line:match"%$@(%d)")
-					check_position = line:sub(1,check_position-1) --save text preceding checkmark
-				else check_index = tonumber(line:match"%$(%d)") end --only look of $1-$9 instances if no dynamic checkmark on the line
-
-				--ignore index values of zero
-				if check_index==0 then
-					check_index = nil
-					check_position = nil
-				end
-				entry.check_index = check_index
-				entry.check_position = check_position
-
-				--strip out dynamic checkmark characters now that info is saved
-				for i=1,9 do line = line:gsub("%$@"..i, " "):gsub("%$"..i, "") end
-
 				--// parse $ITEM_NAME and replace with name of active quest item
 
 				local item_name_key = active_item_index and item_info[active_item_index].name_key
@@ -893,9 +873,11 @@ function objectives_manager.create(game)
 				local pre_text, icon_num = stripped_text:match"^(.-)%$i(%d)" --text preceding $i
 				while pre_text do
 					if not item_positions[#lines][icon_num] then
-						if misc_item_text then
+						if misc_item_text then --remove any misc item markers so doesn't affect position
 							pre_text = pre_text:gsub(misc_item_text, "")
 						end
+
+						pre_text = pre_text:gsub("%$@%d", " "):gsub("%$%d", "") --remove dynamic checkmarks so doesn't affect position
 
 						item_positions[#lines][icon_num] = pre_text
 					end
@@ -911,6 +893,31 @@ function objectives_manager.create(game)
 					item_positions.variant = variant
 					stripped_text = stripped_text:gsub(misc_item_text, "")
 				end
+
+				--// parse dynamic checkmarks: $@1 to $@9 and $1 to $9
+
+				local check_index --which dynamic checkmark index the line is associated with (e.g. $@5 is index of 5, as is $5)
+
+				local check_position = stripped_text:find"%$@%d"
+				if check_position then --has dynamic checkmark on this line
+					check_index = tonumber(stripped_text:match"%$@(%d)")
+					check_position = stripped_text:sub(1,check_position-1) --save text preceding checkmark
+				else check_index = tonumber(stripped_text:match"%$(%d)") end --only look for $1-$9 instances if no dynamic checkmark on the line
+
+				--ignore index values of zero
+				if check_index==0 then
+					check_index = nil
+					check_position = nil
+				end
+				entry.check_index = check_index
+				entry.check_position = check_position
+
+				--strip out dynamic checkmark characters now that info is saved
+				for i=1,9 do
+					stripped_text = stripped_text:gsub("%$@"..i, " "):gsub("%$"..i, "")
+				end
+
+				--// handle special characters at beginning of line
 
 				entry.text = stripped_text
 
@@ -1327,9 +1334,10 @@ function objectives_manager.create(game)
 		if self.on_tasks_cleared then self:on_tasks_cleared() end --call event if it exists
 	end
 
-	--NEW objectives_manager
+	--// Manually force quest alerts to be triggered by calling objectives:on_quest_updated() event
+		--it does not cause a refresh nor updates quest description text
 	function objectives:force_update()
-			if self.on_quest_updated then self:on_quest_updated("forced_update") end --call event if it exists
+		if self.on_quest_updated then self:on_quest_updated"forced_update" end --call event if it exists
 	end
 
 	--// Hook API game:set_value function to be notified whenever savegame variables are updated
