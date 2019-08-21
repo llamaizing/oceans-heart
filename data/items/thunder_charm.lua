@@ -10,6 +10,10 @@ function item:on_started()
   item:set_assignable(true)
 end
 
+function item:on_obtained(variant, savegame_variable)
+  if variant == 4 then game:set_value("quest_heron_doors", 1) end --quest complete
+end
+
 function item:on_using()
   MAGIC_COST = 40 + item:get_variant() * 5
   if game:get_magic() < MAGIC_COST then sol.audio.play_sound("no") item:set_finished()

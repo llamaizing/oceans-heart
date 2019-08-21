@@ -30,7 +30,9 @@ for enemy in map:get_entities("boss") do
         treasure_name = "thunder_charm", treasure_variant = zapper:get_variant() + 1
       })
       game:set_value("tern_marsh_seabird_upgrade_received", true)
-
+      game:get_item("heron_door_tern_marsh"):set_variant(2)
+      game:set_value("found_heron_door_tern_marsh", 2) --TODO quest log issue #76
+      game.objectives:force_update() --TODO quest log issue #70
     end
   end
 end

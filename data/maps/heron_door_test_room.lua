@@ -9,13 +9,17 @@
 
 local map = ...
 local game = map:get_game()
+local hero = game:get_hero()
 
 local function upgrade_thunder_charm()
-  local thunder_charm = game:get_item("thunder_charm")
-  local variant = thunder_charm:get_variant() + 1
-  thunder_charm:set_variant(variant)
-  game:set_value("possession_thunder_charm", variant)
-  if variant == 4 then game:set_value("quest_heron_doors", 1) end --quest complete
+  local zapper = game:get_item("thunder_charm")
+  local hero_x, hero_y, hero_layer = hero:get_position()
+  map:create_pickable({
+    x = hero_x, y = hero_y, layer = hero_layer,
+    treasure_name = "thunder_charm", treasure_variant = zapper:get_variant() + 1
+  })
+  --game:set_value("possession_thunder_charm", variant)
+  --if variant == 4 then game:set_value("quest_heron_doors", 1) end --quest complete
 end
 
 function door_item_sensor:on_activated()
