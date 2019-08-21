@@ -10,11 +10,19 @@
 local map = ...
 local game = map:get_game()
 
+local function upgrade_thunder_charm()
+  local thunder_charm = game:get_item("thunder_charm")
+  local variant = thunder_charm:get_variant() + 1
+  thunder_charm:set_variant(variant)
+  game:set_value("possession_thunder_charm", variant)
+  if variant == 4 then game:set_value("quest_heron_doors", 1) end --quest complete
+end
+
 function door_item_sensor:on_activated()
   if not game:has_item("heron_door_snapmast") then
     game:get_item("heron_door_snapmast"):set_variant(1)
     game:set_value("found_heron_door_snapmast", 1) --TODO quest log issue #76
-    game.objectives:force_update()
+    game.objectives:force_update() --TODO quest log issue #70
 print("you got an item snapmast")
   end
 end
@@ -23,7 +31,7 @@ function door_item_sensor_2:on_activated()
   if not game:has_item("heron_door_marble_summit") then
     game:get_item("heron_door_marble_summit"):set_variant(1)
     game:set_value("found_heron_door_marble_summit", 1) --TODO quest log issue #76
-    game.objectives:force_update()
+    game.objectives:force_update() --TODO quest log issue #70
 print("you got an item marblecliff")
   end
 end
@@ -32,18 +40,42 @@ function door_item_sensor_3:on_activated()
   if not game:has_item("heron_door_tern_marsh") then
     game:get_item("heron_door_tern_marsh"):set_variant(1)
     game:set_value("found_heron_door_tern_marsh", 1) --TODO quest log issue #76
-    game.objectives:force_update()
+    game.objectives:force_update() --TODO quest log issue #70
 print("you got an item tern marsh")
   end
 end
 
+function door_switch:on_activated()
+  print"obtained charm at snapmast"
+  game:get_item("heron_door_snapmast"):set_variant(2)
+  game:set_value("found_heron_door_snapmast", 2) --TODO quest log issue #76
+  game.objectives:force_update() --TODO quest log issue #70
+  upgrade_thunder_charm()
+end
 
+function door_switch_2:on_activated()
+  print"obtained charm at marble summit"
+  game:get_item("heron_door_marble_summit"):set_variant(2)
+  game:set_value("found_heron_door_marble_summit", 2) --TODO quest log issue #76
+  game.objectives:force_update() --TODO quest log issue #70
+  upgrade_thunder_charm()
+end
+
+function door_switch_3:on_activated()
+  print"obtained charm at tern marsh"
+  game:get_item("heron_door_tern_marsh"):set_variant(2)
+  game:set_value("found_heron_door_tern_marsh", 2) --TODO quest log issue #76
+  game.objectives:force_update() --TODO quest log issue #70
+  upgrade_thunder_charm()
+end
 
 function monk:on_interaction()
-  game:get_item("thunder_charm"):set_variant(1)
---  game:set_value("possession_thunder_charm", 1)
-print("I gave you the charm")
-  game:set_value("quest_heron_doors", 0)
---  game:set_value("heron_doors", 0)
-  game.objectives:set_alternate("heron_doors_alt", "quest.heron_doors")
+  local variant = game:get_item("thunder_charm"):get_variant() or 0
+  if variant < 1 then
+    game:get_item("thunder_charm"):set_variant(1)
+    --game:set_value("possession_thunder_charm", 1)
+  print("I gave you the charm")
+    game:set_value("quest_heron_doors", 0)
+    game.objectives:set_alternate("heron_doors_alt", "quest.heron_doors")
+  end
 end

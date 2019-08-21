@@ -172,7 +172,7 @@ function objectives_manager.create(game)
 				--"$MAP_FLOOR" - value returned is the floor number (number, integer), or nil if is not defined or if the game is not running
 		--returns (table, array) table with the same number of entries as data argument, each corresponding to its associated value
 	local function get_values(data)
-		local values = {}
+		local values = {n=#data}
 		local data = data
 		local map = game:get_map()
 

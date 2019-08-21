@@ -10,6 +10,42 @@ properties{
 
 tile{
   layer = 0,
+  x = 240,
+  y = 8,
+  width = 32,
+  height = 24,
+  pattern = "115",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "96",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 8,
+  width = 32,
+  height = 24,
+  pattern = "116",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
   x = 32,
   y = 32,
   width = 352,
@@ -74,6 +110,141 @@ tile{
   height = 16,
   pattern = "2038",
   tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 16,
+  width = 16,
+  height = 48,
+  pattern = "117",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 16,
+  width = 16,
+  height = 48,
+  pattern = "117",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 16,
+  width = 16,
+  height = 48,
+  pattern = "117",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "133",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "131",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "96",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "96",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "96",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 8,
+  width = 32,
+  height = 24,
+  pattern = "116",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 8,
+  width = 32,
+  height = 24,
+  pattern = "115",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 8,
+  width = 32,
+  height = 24,
+  pattern = "115",
 }
 
 door{
@@ -149,6 +320,42 @@ destination{
   x = 200,
   y = 189,
   direction = 1,
+}
+
+switch{
+  name = "door_switch",
+  layer = 0,
+  x = 80,
+  y = 16,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "door_switch_2",
+  layer = 0,
+  x = 192,
+  y = 16,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+switch{
+  name = "door_switch_3",
+  layer = 0,
+  x = 320,
+  y = 16,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  sound = "switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
 }
 
 tile{
