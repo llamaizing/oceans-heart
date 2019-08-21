@@ -439,13 +439,13 @@ side{
         end,
     },
     checkmarks = {
-        "found_heron_door_tern_marsh", --savegame variable for item "heron_door_tern_marsh"
-        "found_heron_door_marble_summit", --savegame variable for item "heron_door_marble_summit"
-        "found_heron_door_snapmast", --savegame variable for item "heron_door_snapmast"
+        "tern_marsh_seabird_upgrade_received",
+        "marblecliff_seabird_upgrade_received",
+        "smoldering_rock_seabird_upgrade_received",
         --TODO add savegame variable for TBD 5th door
         callback = function(args)
             local doors = {}
-            for i=1,args.n do doors[i] = args[i] and args[i] > 1 end
+            for i=1,args.n do doors[i] = args[i] or false end
             return doors
         end,
     },
