@@ -15254,7 +15254,7 @@ amulet to catch the pirates.
 }
 
 dialog{
-    id = "quest.mysterious_doors",
+    id = "quest.side.mysterious_doors",
     title = "Mysterious Doors",
     ------------max line width------------
     text = [[
@@ -15270,7 +15270,7 @@ Keep exploring to find them all.
 ]]}
 
 dialog{
-    id = "quest.heron_doors",
+    id = "quest.side.heron_doors",
     title = "Heron Doors",
     ------------max line width------------
     text = [[

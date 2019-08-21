@@ -76,6 +76,6 @@ function monk:on_interaction()
     --game:set_value("possession_thunder_charm", 1)
   print("I gave you the charm")
     game:set_value("quest_heron_doors", 0)
-    game.objectives:set_alternate("heron_doors_alt", "quest.heron_doors")
+    game.objectives:set_alternate("heron_doors_alt", "quest.side.heron_doors")
   end
 end

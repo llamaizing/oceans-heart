@@ -393,7 +393,7 @@ location = "location.ivystump"
 
 side{
     --This alt quest is active until the player unlocks the first heron door in Goatshead
-    dialog_id = "quest.mysterious_doors",
+    dialog_id = "quest.side.mysterious_doors",
     alternate_key = "heron_doors_alt",
     calc_phase = {
         "found_heron_door_tern_marsh", --savegame variable for item "heron_door_tern_marsh"
@@ -428,7 +428,7 @@ side{
 }
 
 side{
-    dialog_id = "quest.heron_doors",
+    dialog_id = "quest.side.heron_doors",
     alternate_key = "heron_doors_alt",
     calc_phase = "quest_heron_doors",
     replace_v = {
