@@ -15112,15 +15112,16 @@ dialog{
   id = "quest.main.limestone.get_whisky",
   title = "Whisky for Juglan",
   text = [[
-Your dad's friend Juglan
-has had a rough week.
-@Find a bottle of whisky in
-the secret stash
-!The stash is on the east
-!side of the island
-@Return the whisky to
-your dad
-
+Your dad's friend Juglan has had a
+rough week.
+@Find a bottle of whisky in the secret
+stash
+!The stash is on the east side of the
+!island
+@Return the whisky to your dad
+#::
+#%1$i1    QUEST ITEM:
+#%1    $ITEM_NAME
 ]],
 }
 
@@ -15772,14 +15773,18 @@ have come fom
 }
 
 dialog{
-  id = "quest.test13",
+  id = "quest.side.carrot_cache",
   title = "The Carrot Cache",
   text = [[
-An upset fisherman's spot's
-been overrun with monsters
-@ Find the fishin' spot and
-destroy the monsters
-
+An upset fisherman's spot's been
+overrun with monsters
+@Find the fishin' spot and destroy
+the monsters
+!
+!The fishing spot is just south of
+!Poplar Forest
 @ Return to the fisherman
+#::
+#REWARD: $ITEM{rupee.1}   80
 ]],
 }

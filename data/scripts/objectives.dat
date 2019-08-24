@@ -162,6 +162,7 @@ main{
 	dialog_id = "quest.main.limestone.get_whisky",
 	calc_phase = "quest_whisky_for_juglan_phase",
 	location = "location.limestone_island",
+	items = {"whisky_for_juglan.1"},
 }
 
 main{
@@ -241,7 +242,7 @@ main{
 
 
 side{
-	dialog_id = "quest.test13",
+	dialog_id = "quest.side.carrot_cache",
 	calc_phase = "quest_test13",
 	location = "location.goatshead_island"
 }
