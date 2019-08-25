@@ -36,6 +36,11 @@ function c5_door_switch:on_activated()
   map:focus_on(map:get_camera(), c5_door, function() map:open_doors("c5_door") end)
 end
 
+function d5_door_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:focus_on(map:get_camera(), d5_door, function() map:open_doors("d5_door") end)
+end
+
 function door_a1_switch:on_activated()
   sol.audio.play_sound("switch")
   map:open_doors("door_a1")
