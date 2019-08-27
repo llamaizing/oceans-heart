@@ -12955,14 +12955,14 @@ You found 5 Kingscrown Blooms!
 dialog{
   id = "_treasure.lavendar.1",
   text = [[
-You found a lavendar stem.
+You found a lavender stem.
 ]],
 }
 
 dialog{
   id = "_treasure.lavendar.2",
   text = [[
-You found 5 stems of lavendar flowers!
+You found 5 stems of lavender flowers!
 ]],
 }
 
@@ -15024,6 +15024,27 @@ Fast travel?
 }
 
 dialog{
+  id = "quest.heron_doors",
+  title = "Heron Doors",
+  text = [[
+@?Explore all of the heron doors
+!Explore the remaining shrines to
+!obtain the rest of the thunder charms.
+
+%~You haven't found any more heron doors
+%=!Locations to explore: --// The player must find at least one door for these lines to be visible
+?Heron doors explored: --// This line visible instead once quest is complete
+%1$@1   Tern Marsh
+%2$@2   Marble Summit
+%3$@3   Snapmast
+%=!
+%=!    Keep exploring to find them all.
+
+    Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+]],
+}
+
+dialog{
   id = "quest.main.hazel",
   title = "The Trail Warms Up",
   text = [[
@@ -15254,10 +15275,9 @@ amulet to catch the pirates.
 }
 
 dialog{
-    id = "quest.mysterious_doors",
-    title = "Mysterious Doors",
-    ------------max line width------------
-    text = [[
+  id = "quest.mysterious_doors",
+  title = "Mysterious Doors",
+  text = [[
 @!? --// don't display checkmark for this phase
 You found a mysterious door at the
 following locations:
@@ -15267,28 +15287,8 @@ following locations:
 --//Note: the one in Goatshead is excluded because it is behind a regular locked door
 
 Keep exploring to find them all.
-]]}
-
-dialog{
-    id = "quest.heron_doors",
-    title = "Heron Doors",
-    ------------max line width------------
-    text = [[
-@?Explore all of the heron doors
-!Explore the remaining shrines to
-!obtain the rest of the thunder charms.
-
-%~You haven't found any more heron doors
-%=!Locations to explore: --// The player must find at least one door for these lines to be visible
-?Heron doors explored: --// This line visible instead once quest is complete
-%1$@1   Tern Marsh
-%2$@2   Marble Summit
-%3$@3   Snapmast
-%=!
-%=!    Keep exploring to find them all.
-
-    Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
-]]}
+]],
+}
 
 dialog{
   id = "quest.side.ballast_harbor.hornet_honey",
@@ -15783,3 +15783,4 @@ destroy the monsters
 @ Return to the fisherman
 ]],
 }
+
