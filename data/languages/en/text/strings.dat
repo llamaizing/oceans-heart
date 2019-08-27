@@ -43,6 +43,7 @@ text{ key = "location.west_coast", value = "West Oak" }
 text{ key = "location.yarrowmouth", value = "Yarrowmouth" }
 text{ key = "location.yarrowmouth_village", value = "Yarrowmouth" }
 text{ key = "item.whisky_for_juglan.1", value = "Whisky" }
+text{ key = "item.iron_pinecone.1", value = "Iron Pinecone" }
 text{ key = "menu.quest_log.back_prompt", value = "D Back" }
 text{ key = "menu.quest_log.main_quests_tab", value = "Main\nQuests" }
 text{ key = "menu.quest_log.no_main_quests", value = "You have no main quests" }

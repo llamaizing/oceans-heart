@@ -307,7 +307,8 @@ side{
 side{
     dialog_id = "quest.side.yarrowmouth.iron_pinecone",
     calc_phase = "quest_iron_pine_cone",
-    location = "location.yarrowmouth"
+    location = "location.yarrowmouth",
+    items = {"iron_pinecone.1"},
 }
 
 side{

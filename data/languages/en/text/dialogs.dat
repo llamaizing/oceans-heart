@@ -15116,12 +15116,13 @@ Your dad's friend Juglan has had a
 rough week.
 @Find a bottle of whisky in the secret
 stash
+!
 !The stash is on the east side of the
 !island
 @Return the whisky to your dad
 #::
-#%1$i1    QUEST ITEM:
-#%1    $ITEM_NAME
+#%=$i0    QUEST ITEM:
+#%0    $ITEM_NAME
 ]],
 }
 
@@ -15697,17 +15698,22 @@ unlocks a nearby door.
 dialog{
   id = "quest.side.yarrowmouth.iron_pinecone",
   title = "An Iron Pinecone",
+-------------------------------------
   text = [[
-An artisinal armorer will
-make you some armor if you
-bring her an iron pinecone.
-@Search Yarrowmouth for an
-iron pinecone.
-@Bring the pinecone to Mera
-the at the Yarrowmoth
-blacksmith and get some
-armor.
-
+An artisinal armorer will make you
+some armor if you bring her an iron
+pinecone.
+@Search Yarrowmouth for an iron
+pinecone
+!
+!It is said to be found in Puzzlewood
+@Bring the pinecone to Mera at the
+Yarrowmoth Smithy and get some armor
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+#%=
+#REWARD: $ITEM{armor_upgrade_2.1}    Defense + 2
 ]],
 }
 
@@ -15729,7 +15735,6 @@ Mighty Mead Maker
 !His meadery is just
 north of Ballast Harbor
 @Return to Briarwood
-
 ]],
 }
 
@@ -15755,7 +15760,6 @@ with Yarrowmouth. Or you.
 !can find their hideout.
 @Let Nina know you defeated
 the pirate crew
-
 ]],
 }
 
@@ -15768,7 +15772,6 @@ of stone shaped kind of like
 a bird beak.
 @Figure out where it may
 have come fom
-
 ]],
 }
 
