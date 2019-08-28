@@ -315,12 +315,14 @@ side{
     dialog_id = "quest.side.yarrowmouth.meadery",
     calc_phase = "quest_briarwood_mushrooms",
     location = "location.yarrowmouth"
+    --TODO quest items (mushroom picking spot key)
 }
 
 side{
     dialog_id = "quest.side.oakhaven.orange_thief",
     calc_phase = "quest_tic_tac_toe",
     location = "location.oakhaven"
+    --TODO quest items (oranges shipment and prize money)
 }
 
 side{

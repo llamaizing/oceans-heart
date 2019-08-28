@@ -15258,7 +15258,6 @@ amulet to catch the pirates.
 dialog{
     id = "quest.side.mysterious_doors",
     title = "Mysterious Doors",
-    ------------max line width------------
     text = [[
 @!? --// don't display checkmark for this phase
 You found a mysterious door at the
@@ -15274,7 +15273,6 @@ Keep exploring to find them all.
 dialog{
     id = "quest.side.heron_doors",
     title = "Heron Doors",
-    ------------max line width------------
     text = [[
 @?Explore all of the heron doors
 !Explore the remaining shrines to
@@ -15359,22 +15357,24 @@ dialog{
   id = "quest.side.crabhook.monster",
   title = "The Shoal Beast",
   text = [[
-A monster has been attacking
-fisherman from Crabhook
-@!Speak to fishermen to find
-!out where the monster is.
-@!Arni was attacked recently,
-!ask him where.
+A monster has been attacking fisherman
+from Crabhook.
+@!Speak to fishermen to find out where
+!the monster is
+@!Arni was attacked recently, ask him
+!where
 @Search Badger Shoal
-!The monster was last seen
-!near some rocks, by a cliff
-!with two spruce trees when
-!Arni was fishing with
-!monster bait
+!
+!The monster was last seen near some
+!rocks by a cliff with two spruce trees
+!when Arni was fishing with monster
+!bait.
 @Return to Danley to get paid
-!he's probably still at the
-!tavern in Crabhook
-
+!
+!He's probably still at the tavern in
+!Crabhook.
+#::
+#REWARD: $ITEM{rupee.1}   80
 ]],
 }
 
@@ -15535,14 +15535,17 @@ dialog{
   id = "quest.side.oakhaven.ivy_orchard",
   title = "Ivystump Orchard",
   text = [[
-Monsters have overrun the
-orchard in Ivystump.
+Monsters have overrun the orchard in
+Ivystump.
 @Clear the orchard
-!There are 3 monsters
-!lurking in the orchard
+!
+!There are 3 monsters lurking in the
+!orchard
 @!Return to Paul
 @Save Paul!
-
+#::
+#!REWARD: $ITEM{rupee.1}   80 --// visible all phases but hidden once quest is complete
+?REWARD: $ITEM{rupee.1}   120 --// visible only after quest is complete
 ]],
 }
 
@@ -15587,48 +15590,46 @@ dialog{
   id = "quest.side.oakhaven.master_thief",
   title = "The Dog's Birthday",
   text = [[
-The guard captains wants you
-to find a thief at the mayor's
-dog's birthday party.
+The guard captains wants you to find a
+thief at the mayor's dog's birthday
+party.
 @Head to the palace
 !and present your invitation
-@!Speak to party guests
-!and ask about susicious
-!characters.
-@!Speak to party guests
-!Clues:
-!Someone in a red shirt
-!has a painting-size sack.
+@!Speak to party guests and ask about
+!suspicious characters.
 @!Speak to party guests
 !Clues:
-!The thief is in red.
-!The thief arrived soon
-!after the party started.
+!$@1 Someone in a red shirt has a --// Dynamic checkmarks in this quest are only
+!$1  painting-size sack           --// used as bullets and never become checked
 @!Speak to party guests
 !Clues:
-!The thief is in red.
-!The thief arrived early.
-!The guests who arrived
-!earlier are in the library
-!Ha! Look for someone
-!in a red shirt in the
-!library!
-@!A troll somehow got
-!into the attic!
+!$@1 The thief is in red
+!$@2 The thief arrived soon after the
+!$2  party started
+@!Speak to party guests
+!Clues:
+!$@1 The thief is in red
+!$@2 The thief arrived early
+!$@3 The guests who arrived earlier are
+!$3  in the library
+!Ha! Look for someone in a red shirt in
+!the library!
+@!A troll somehow got into the attic!
 !Defend the party guests!
 @Confront your suspect!
-!Hopefully the man in
-!the red shirt is still
-!in the library.
-@Run to the port and
-try to catch the thief!
-@!Ask around about the
-!man in the red shirt.
-@!Check the warehouse
-!up the stairs.
+!
+!Hopefully the man in the red shirt is
+!still in the library.
+@Run to the port and try to catch the
+thief!
+@!Ask around about the man in the red
+!shirt
+@!Check the warehouse up the stairs
 @!Save the mayor's dog!
-@Report to the Captain
-!of the Guard back in town.
+@Report to the Captain of the Guard
+!back in town
+#::
+#REWARD: $ITEM{rupee.1}   200
 ]],
 }
 
@@ -15656,27 +15657,31 @@ dialog{
   id = "quest.side.oakhaven.orange_thief",
   title = "The Tic Tac Champ",
   text = [[
-You somehow joined Oakhaven's
-tic tac toe championship,
-but the prize was stolen!
+You somehow joined Oakhaven's tic tac
+toe championship, but the prize was
+stolen!
 @Investigate the scene
 @!Talk to the emcee
 @!Search for clues
-@Find someone who would
-remember selling enough
-oranges to generate that
-many peels.
-@Take the oranges you've
-been given to Aubrey
-!She lives across the
-!river from the market.
+@Find someone capable of selling enough
+oranges to generate that many peels
+!
+!Ask if they recall such a sale.
+@Take the shipment of oranges to Aubrey
+!
+!She lives across the river from the
+!market.
 @!Go on in
-@!Take the money back to
-!the tic tac toe guy.
-@Be confident knowing
-you made the right
+@!Take the money back to the tic tac toe
+!guy
+@Be confident knowing you made the right
 decision
-
+#::
+#%=$i0    QUEST ITEM: --// phase 4: orange shipment, phase 6: prize money
+#%0    $ITEM_NAME
+#%0
+#!REWARD: Cut of the 200$ITEM{rupee.1}   prize money
+?REWARD: $ITEM{rupee.1}   100
 ]],
 }
 
@@ -15698,7 +15703,6 @@ unlocks a nearby door.
 dialog{
   id = "quest.side.yarrowmouth.iron_pinecone",
   title = "An Iron Pinecone",
--------------------------------------
   text = [[
 An artisinal armorer will make you
 some armor if you bring her an iron
@@ -15721,20 +15725,29 @@ dialog{
   id = "quest.side.yarrowmouth.meadery",
   title = "Briarwood Mushrooms",
   text = [[
-Briarwood Distillery's
-mushroom spot was overrun.
-@Defeat the monsters at
-the mushroom picking spot
-!The spot is east of
-!the Puzzlewood
-@Wait, who set that trap?
-@See if anyone at the
-distillery knows Michael
-@Confront Michael the
-Mighty Mead Maker
-!His meadery is just
-north of Ballast Harbor
+Briarwood Distillery's mushroom spot
+was overrun.
+@Defeat the monsters at the mushroom
+picking spot
+!
+!The spot is east of the Puzzlewood
+@?Found a letter identifying Michael as
+?the culprit behind the monsters
+!
+!Wait, who set that trap?
+@See if anyone at the distillery knows
+Michael
+@Confront Michael the Mighty Mead Maker
+!
+!His meadery is just north of Ballast
+!Harbor.
 @Return to Briarwood
+#::
+#%=$i0    QUEST ITEM: --// phase 1: mushroom spot key
+#%0    $ITEM_NAME
+#%0
+#!REWARD: $ITEM{rupee.1}   65 --// visible all phases but hidden once quest is complete
+?REWARD: $ITEM{rupee.1}   110 --// visible only after quest is complete
 ]],
 }
 
@@ -15742,24 +15755,31 @@ dialog{
   id = "quest.side.yarrowmouth.parley",
   title = "A Quick Errand",
   text = [[
-Nina of Yarrowmouth asked if
-you could meet with some
-pirates of behalf of a man
-named Carlov.
+Nina of Yarrowmouth asked if you could
+meet with some pirates of behalf of a
+man named Carlov.
 @Tell the pirates to piss off
-!They'll meet you at Seaweed
-!Rock, west of Tern Marsh
-@!What!? It's a trap!?
+!
+!They'll meet you at Seaweed Rock,
+!west of Tern Marsh
+@!?
+!
+!What!? It's a trap!?
 @!Report back to Nina
-@Find the pirates hideout
-and teach them not to mess
-with Yarrowmouth. Or you.
-!If you go southeast of
-!Tern Marsh and east after
-!you pass the meadery, you
+#::!
+#!REWARD: $ITEM{rupee.1}   80 --// visible all previous phases up until this one is complete
+;;
+@Find the pirates hideout and teach
+them not to mess with Yarrowmouth.
+Or you.
+!
+!If you go southeast of Tern Marsh and
+!east after you pass the meadery, you
 !can find their hideout.
-@Let Nina know you defeated
-the pirate crew
+@Let Nina know you defeated the pirate
+crew
+#::
+#REWARD: $ITEM{rupee.1}   120 --// visible from beginning of phase 3 and after
 ]],
 }
 
