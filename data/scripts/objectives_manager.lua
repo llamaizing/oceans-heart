@@ -839,6 +839,9 @@ function objectives_manager.create(game)
 				entry.is_filler = not not line:match"^%s*#?::" --line begins with ::
 				if entry.is_filler then line = line:gsub("::", "", 1) end --remove first instance of ::
 
+				entry.is_hard_break = not not line:match"^%s*#?;;" --line begins with ;; (also counts as phase break)
+				if entry.is_hard_break then line = line:gsub(";;", ";", 1) end --remove first instance of ;;
+
 				--strip %0 thru %9 characters (max of 1 per line)
 				local char = line:match"^%s*#?%%(.)"
 				local digit = tonumber(char)
@@ -927,7 +930,6 @@ function objectives_manager.create(game)
 				entry.do_not_grey = not not (line:match"^%s*[;]?##" or line:match"^%s*#%%") --line must begin with ## or #% in order to not be greyed out
 				local is_empty = line:match"^%s*$" and not entry.is_filler and not digit --non-nil if line contains entirely whitespace (no special chars or comments either)
 				local is_phase_break = line:match"^%s*;" --non-nil if line begins with ;
-				entry.is_hard_break = not not line:match"^%s*;;" --line begins with ;; (also counts as phase break)
 				if entry.is_hard_break or entry.is_filler then entry.is_comment = true end
 
 				--determine where phase breaks occur
@@ -1005,9 +1007,13 @@ function objectives_manager.create(game)
 					visible_lines.filler = #visible_lines + 1
 				end
 
-				if entry.is_hard_break
-				and current_phase + (phase_breaks[i] and 1 or 0) == rank then
-					break --remaining lines are not visible
+				if entry.is_hard_break then
+					local break_phase = phase + (phase_breaks[i] and 1 or 0) --if also a phase break then need to add 1 since it makes this line part of the next rank
+					if break_phase == rank then
+						break --remaining lines are not visible
+					elseif entry.is_persistent and break_phase < rank then
+						break --remaining lines are not visible
+					end
 				end
 
 				if is_visible and not entry.is_comment then --don't bother with the rest if not visible

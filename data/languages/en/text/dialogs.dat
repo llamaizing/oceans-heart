@@ -15768,7 +15768,7 @@ man named Carlov.
 @!Report back to Nina
 #::!
 #!REWARD: $ITEM{rupee.1}   80 --// visible all previous phases up until this one is complete
-;;
+#;;
 @Find the pirates hideout and teach
 them not to mess with Yarrowmouth.
 Or you.
