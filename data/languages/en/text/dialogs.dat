@@ -15122,7 +15122,7 @@ stash
 @Return the whisky to your dad
 #::
 #%=$i0    QUEST ITEM:
-#%0    $ITEM_NAME
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15681,8 +15681,8 @@ oranges to generate that many peels
 decision
 #::
 #%=$i0    QUEST ITEM: --// phase 4: orange shipment, phase 6: prize money
-#%0    $ITEM_NAME
-#%0
+#%=    $ITEM_NAME
+#%=
 #!REWARD: Cut of the 200$ITEM{rupee.1}   prize money
 ?REWARD: $ITEM{rupee.1}   100
 ]],
@@ -15747,8 +15747,8 @@ Michael
 @Return to Briarwood
 #::
 #%=$i0    QUEST ITEM: --// phase 1: mushroom spot key
-#%0    $ITEM_NAME
-#%0
+#%=    $ITEM_NAME
+#%=
 #!REWARD: $ITEM{rupee.1}   65 --// visible all phases but hidden once quest is complete
 ?REWARD: $ITEM{rupee.1}   110 --// visible only after quest is complete
 ]],

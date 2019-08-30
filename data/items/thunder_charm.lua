@@ -1,3 +1,5 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
@@ -5,12 +7,12 @@ local RANGE = 120
 local MAGIC_COST = 40
 --The variant will determine the number of lightning bolts called
 
-function item:on_started()
+item:register_event("on_started", function(self)
   item:set_savegame_variable("possession_thunder_charm")
   item:set_assignable(true)
-end
+end)
 
-function item:on_obtained(variant, savegame_variable)
+item:register_event("on_obtained", function(self, variant, savegame_variable)
   if variant == 4 then
     game:set_value("quest_heron_doors", 1) --quest complete
   else --manually force refresh of quest --TODO quest log issue #76
@@ -19,11 +21,10 @@ function item:on_obtained(variant, savegame_variable)
     if status and game.objectives.on_quest_updated then
       game.objectives:on_quest_updated(status, quest_id) --call event if it exists
     end
-    if variant == 1 then game.objectives:refresh(self:get_savegame_variable()) end
   end
-end
+end)
 
-function item:on_using()
+item:register_event("on_using", function(self)
   MAGIC_COST = 40 + item:get_variant() * 5
   if game:get_magic() < MAGIC_COST then sol.audio.play_sound("no") item:set_finished()
   else
@@ -96,4 +97,4 @@ function item:on_using()
 
     end) --end of warmup timer callback
   end --end of if has enough magic
-end
+end)

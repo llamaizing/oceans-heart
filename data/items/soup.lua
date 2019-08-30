@@ -1,28 +1,30 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
   self:set_can_disappear(true)
   self:set_brandish_when_picked(true)
-end
+end)
 
-function item:on_started()
+item:register_event("on_started", function(self)
   item:set_savegame_variable("possession_soup")       --variable
   item:set_amount_savegame_variable("amount_soup")    --amount variable
   item:set_max_amount(999)
   item:set_assignable(true)
-end
+end)
 
 --obtained
-function item:on_obtaining(variant, savegame_variable)
+item:register_event("on_obtaining", function(self, variant, savegame_variable)
   self:add_amount(1)
-end
+end)
 
 --used
-function item:on_using()
+item:register_event("on_using", function(self)
   if self:get_amount() > 0 then
     game:add_life(10)              --health amount!
     self:remove_amount(1)
   end
   item:set_finished()
-end
+end)

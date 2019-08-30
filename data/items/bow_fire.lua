@@ -8,32 +8,35 @@
 -- The only similarity is that the arrow pickups on the map refil all bow types.
 
 
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
 
   item:set_savegame_variable("possession_bow_fire")
   item:set_amount_savegame_variable("amount_bow")
   item:set_assignable(true)
-end
-function item:on_started()
+end)
+
+item:register_event("on_started", function(self)
   item:set_max_amount(999)
-end
+end)
 
 
 -- set to item slot 1
-function item:on_obtained()
+item:register_event("on_obtained", function(self)
 --increase bow damage
   bow_damage = game:get_value("bow_damage")
   bow_damage = bow_damage + 2
   game:set_value("bow_damage", bow_damage)
-end
+end)
 
 
 -- Using the bow.
 
-function item:on_using()
+item:register_event("on_using", function(self)
 
   local map = game:get_map()
   local hero = map:get_hero()
@@ -68,7 +71,7 @@ function item:on_using()
 
     end)
   end
-end
+end)
 
 
 function item:get_force()
@@ -83,5 +86,3 @@ function item:get_arrow_sprite_id()
      return "entities/arrow_fire"
 
 end
-
-

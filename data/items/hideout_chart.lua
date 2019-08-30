@@ -1,12 +1,14 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
   item:set_savegame_variable("possession_hideout_chart")
 
-end
+end)
 
 
-function item:on_pickable_created(pickable)
+item:register_event("on_pickable_created", function(self, pickable)
 
-end
+end)

@@ -1,3 +1,5 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 local map
@@ -5,18 +7,17 @@ local hero
 local sprite
 local NUM_EXPLOSIONS = 4
 
-function item:on_created()
+item:register_event("on_created", function(self)
   item:set_savegame_variable("possession_iron_candle")
   item:set_amount_savegame_variable("amount_iron_candle")
   item:set_assignable(true)
-end
+end)
 
-function item:on_obtaining(variant)
+item:register_event("on_obtaining", function(self, variant)
   item:add_amount(10)
-end
+end)
 
-
-function item:on_using()
+item:register_event("on_using", function(self)
   if item:get_amount() > 0 then
     item:remove_amount(1)
     map = game:get_map()
@@ -46,9 +47,9 @@ function item:on_using()
     sol.audio.play_sound"no"
     item:set_finished()
   end
-end
+end)
 
-function item:explode_bomb(bomb)
+item:register_event("explode_bomb", function(self, bomb)
   local i = 0
   sol.timer.start(map, 2000, function()
     local x,y,l = bomb:get_position()
@@ -66,4 +67,4 @@ function item:explode_bomb(bomb)
     end
   end) --end of timer
  
-end
+end)

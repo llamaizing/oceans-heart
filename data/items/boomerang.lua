@@ -1,14 +1,16 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
   item.can_throw = true
   self:set_savegame_variable("found_boomerang")
   self:set_assignable(true)
-end
+end)
 
 
-function item:on_using()
+item:register_event("on_using", function(self)
 
   local hero = self:get_map():get_entity("hero")
   if self:get_variant() == 1 and item.can_throw then
@@ -20,7 +22,7 @@ function item:on_using()
     item.can_throw = false
   end
   self:set_finished()
-end
+end)
 
 function item:do_boomerang(distance, speed, hero_animation, boom_sprite)
   local hero = game:get_hero()

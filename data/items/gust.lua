@@ -1,18 +1,20 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
 local MAGIC_COST = 90
 
-function item:on_started()
+item:register_event("on_started", function(self)
   item:set_savegame_variable("possession_gust")
   item:set_assignable(true)
-end
+end)
 
-function item:on_obtaining()
+item:register_event("on_obtaining", function(self)
   game:set_ability("sword", 1)
-end
+end)
 
-function item:on_using()
+item:register_event("on_using", function(self)
   if game:get_magic() < MAGIC_COST then sol.audio.play_sound("no") item:set_finished()
   else
     game:remove_magic(MAGIC_COST)
@@ -118,7 +120,7 @@ function item:on_using()
       item:set_finished()
     end)
   end
-end
+end)
 
 
 --  hero:set_sword_sprite_id("hero/sword2")

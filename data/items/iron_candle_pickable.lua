@@ -1,12 +1,14 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
   self:set_can_disappear(true)
   item:set_brandish_when_picked(true)
-end
+end)
 
-function item:on_obtained(variant, savegame_variable)
+item:register_event("on_obtained", function(self, variant, savegame_variable)
   if not game:has_item("iron_candle") then
     game:get_item("iron_candle"):set_variant(1)
   end
@@ -18,4 +20,4 @@ function item:on_obtained(variant, savegame_variable)
   end
   self:get_game():get_item("iron_candle"):add_amount(amount)
 
-end
+end)
