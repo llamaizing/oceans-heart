@@ -15274,9 +15274,9 @@ dialog{
     id = "quest.side.heron_doors",
     title = "Heron Doors",
     text = [[
-@?Explore all of the heron doors
 !Explore the remaining shrines to
 !obtain the rest of the thunder charms.
+@?Explore all of the heron doors
 
 %~You haven't found any more heron doors
 %=!Locations to explore: --// The player must find at least one door for these lines to be visible
@@ -15286,8 +15286,8 @@ dialog{
 %3$@3 Snapmast
 %=!
 %=!  Keep exploring to find them all.
-
-  Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+::
+$ITEM{thunder_charm.1}   Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
 ]]}
 
 dialog{
@@ -15472,15 +15472,18 @@ dialog{
   id = "quest.side.heron_well",
   title = "Heron's Well",
   text = [[
-The ghost of the hero Heron
-tasked you with cleaning
-Thrush Fort.
+##The ghost of the hero Heron tasked you
+##with cleaning Thrush Fort.
 @Unlock Thrust fort
-!It's north of Poplar
-!Forest, past Spruce Head
+!
+!It's north of Poplar Forest, past
+!Spruce Head
 @Destroy the monsters inside
 @Explore the tomb
-
+#::
+#%1$i0    QUEST ITEM:
+#%1    Thrush Fort Key --// Removed once door is opened
+%2ITEM FOUND: $ITEM{thunder_charm.1}   Thunder Charm
 ]],
 }
 

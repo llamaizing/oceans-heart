@@ -366,7 +366,11 @@ side{
 side{
 	dialog_id = "quest.side.heron_well",
 	calc_phase = "quest_heron_well",
-	location = "location.goatshead_island"
+	location = "location.goatshead_island",
+	items = {
+		"key_thrush_fort.1",
+		"thunder_charm.1",
+	},
 }
 
 side{

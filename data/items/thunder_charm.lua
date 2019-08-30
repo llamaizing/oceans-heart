@@ -19,6 +19,7 @@ function item:on_obtained(variant, savegame_variable)
     if status and game.objectives.on_quest_updated then
       game.objectives:on_quest_updated(status, quest_id) --call event if it exists
     end
+    if variant == 1 then game.objectives:refresh(self:get_savegame_variable()) end
   end
 end
 
