@@ -12969,7 +12969,7 @@ You found 5 stems of lavender flowers!
 dialog{
   id = "_treasure.lavendar.3",
   text = [[
-You found 10 stems of lavendar flowers!
+You found 10 stems of lavender flowers!
 ]],
 }
 

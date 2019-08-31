@@ -59,6 +59,15 @@ function initial_game:initialize_new_savegame(game)
   game:set_value("available_in_shop_stoneskin_potion", true)
   game:set_value("available_in_shop_burlyblade_potion", true)
   game:set_value("available_in_shop_elixer", true)
+--craftable item availability
+  game:set_value("is_craftable_elixer", true)
+  game:set_value("is_craftable_potion_magic_restoration", true)
+  game:set_value("is_craftable_potion_stoneskin", true)
+  game:set_value("is_craftable_potion_burlyblade", true)
+  game:set_value("is_craftable_potion_fleetseed", true)
+  game:set_value("is_craftable_ether_bombs", true)
+  game:set_value("is_craftable_salt_candles", true)
+  game:set_value("is_craftable_seeker_eyes", true)
 
 end
 
