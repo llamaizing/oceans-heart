@@ -78,8 +78,8 @@ function mera:on_interaction()
       game:start_dialog("_yarrowmouth.npcs.mera.3", function(answer)
 
         if answer == 2 then
-          if game:get_money() >79 then
-            game:remove_money(80)
+          if game:get_money() >49 then
+            game:remove_money(50)
             game:start_dialog("_yarrowmouth.npcs.mera.4", function() game:set_value("quest_iron_pine_cone", 3) end) --ql
             game:set_value("defense", game:get_value("defense") +2)
             game:set_value("yarrow_mera_armor_obtained", true)

@@ -45,6 +45,14 @@ text{ key = "location.yarrowmouth_village", value = "Yarrowmouth" }
 text{ key = "item.whisky_for_juglan.1", value = "Whisky" }
 text{ key = "item.iron_pinecone.1", value = "Iron Pinecone" }
 text{ key = "item.key_thrush_fort.1", value = "Thrush Fort Key" }
+text{ key = "item.charts.1", value = "Klepton's Charts" }
+text{ key = "item.key_kingsdown.1", value = "Mallow's Key" }
+text{ key = "item.key_juniper_grove.1", value = "Juniper Grove Entrance Key" }
+text{ key = "item.key_juniper_grove_2.1", value = "Juniper Grove Inner Gate Key" }
+text{ key = "item.key_mushroom_spot.1", value = "Key to Mushroom Picking Spot" }
+text{ key = "item.key_mead_safehouse.1", value = "Sticky Honey Key" }
+text{ key = "item.key_juneberry_inn.1", value = "Key to Another Inn?" }
+text{ key = "item.stone_beak.1", value = "A Beak-shaped Stone?" }
 text{ key = "menu.quest_log.back_prompt", value = "D Back" }
 text{ key = "menu.quest_log.main_quests_tab", value = "Main\nQuests" }
 text{ key = "menu.quest_log.no_main_quests", value = "You have no main quests" }

@@ -18,6 +18,7 @@ function olin:on_interaction()
     if game:get_value("seen_spruce_sanctuary") == true then
       game:start_dialog("_yarrowmouth.npcs.tavern.Olin.2", function()
         game:set_value("have_juniper_key", true)
+        game:set_value("possession_key_juniper_grove", 1)
         game:set_value("quest_spruce_head", 4) --quest log
         game:set_value("quest_hourglass_fort", 0) --quest log
       end)
@@ -44,6 +45,7 @@ function rohit:on_interaction()
         game:start_dialog("_yarrowmouth.npcs.tavern.rohit.2", function()
           game:set_value("quest_briarwood_mushrooms", 0)
           game:set_value("you_got_mushroom_spot_key", true)
+          game:set_value("possession_key_mushroom_spot", 1)
           game:set_value("rohit_dialog_counter", 1)
         end)
       end

@@ -13781,7 +13781,7 @@ figure I out to run an artisan armory. So I make
 MERA:
 fine, handcrafted armor, persuing my artistic
 inclinations.  Would you like to purchase some
-for 80 crowns?
+for 50 crowns?
 TILIA:
 $? I'd love some crafty armor
 $? You can keep your threads to yourself
@@ -13811,7 +13811,7 @@ So I only make armor as my artistic
 inclinations inspire. And right now I'm inspired
 MERA:
 to make armor out of an iron pinecone. They're
-so light and strong. If you have one and 80
+so light and strong. If you have one and 50
 crowns, I'll improve your armor.
 TILIA:
 $? I'd love some
@@ -15054,20 +15054,26 @@ dialog{
   id = "quest.main.hourglass_fort",
   title = "The Hourglass Crew",
   text = [[
-You've almost found the
-Hourglass crew's hideout.
+##You've almost found the Hourglass
+##crew's hideout.
 @Find Jerah
-!He went to the Juniper
-!Grove near the docks
+!
+!He went to the Juniper Grove near the
+!docks.
+%2!
+%2!Maybe this key you found in Juniper
+%2!Grove will be useful.
 @Investigate Kingsdown Isle
-!There's a tunnel through
-!some catacombs. A secret
-!keyhole is hidden in the
-!left pillar by a bear statue,
+!
+!There's a tunnel through some
+!catacombs. A secret keyhole is hidden
+!in the left pillar by a bear statue,
 !but you'll need a key...
-@Cut through the
-catacombs to get to
+@Cut through the catacombs to get to
 Hourglass Fort
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15091,20 +15097,21 @@ dialog{
   id = "quest.main.kelpton",
   title = "The Chart Salesman",
   text = [[
-Someone saw Mallow in
-Ballast Harbor.
-@Talk to the Chart Salesman
-he was speaking with
-@Find a way into the
-Pirate Council's vault.
-@Return Kelpton's stolen
-sea charts
-@You received a key Mallow
-left with Kelpton.
-!It might have something to
-!do with the Hourglass crew,
-!but you might have to follow
-!other leads for now.
+##Someone saw Mallow in Ballast Harbor.
+@Talk to the Chart Salesman he was
+speaking with
+@Find a way into the Pirate Council's
+vault
+@Return Kelpton's stolen sea charts
+@You received a key Mallow left with
+Kelpton
+!
+!It might have something to do with the
+!Hourglass crew, but you might have to
+!follow other leads for now.
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15112,8 +15119,8 @@ dialog{
   id = "quest.main.limestone.get_whisky",
   title = "Whisky for Juglan",
   text = [[
-Your dad's friend Juglan has had a
-rough week.
+##Your dad's friend Juglan has had a
+##rough week.
 @Find a bottle of whisky in the secret
 stash
 !
@@ -15227,16 +15234,15 @@ dialog{
   id = "quest.main.spruce_head",
   title = "Spruce Head",
   text = [[
-The Hourglass Pirates
-were seen looting
-Spruce Head.
+##The Hourglass Pirates were seen
+##looting Spruce Head.
 @!Investigate Spruce Head
-@Find your way to the
-shipwreck in the harbor
-@Check with Briarwood
-Distillery
-!The distillery is on
-!Yarrowmouth Island
+@Find your way to the shipwreck in the
+harbor
+@Check with Briarwood Distillery
+!
+!The distillery is on Yarrowmouth
+!Island.
 ]],
 }
 
@@ -15308,16 +15314,17 @@ dialog{
   id = "quest.side.ballast_harbor.lost_key",
   title = "The Wrong Key",
   text = [[
-A drunk man dropped a key
-in the Ballast Harbor inn,
-which seems to go to a
-completely different inn.
-@Take the key and let
-youself into some other
-room, I guess?
-?- Turns out the key went to
-?Juneberry Inn on Goatshead.
-
+##A drunk man dropped a key in the
+##Ballast Harbor inn, which seems to go
+##to a completely different inn.
+@Take the key and let youself into some
+other room, I guess?
+?
+?Turns out the key went to Juneberry
+?Inn on Goatshead Island.
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15357,8 +15364,8 @@ dialog{
   id = "quest.side.crabhook.monster",
   title = "The Shoal Beast",
   text = [[
-A monster has been attacking fisherman
-from Crabhook.
+##A monster has been attacking fisherman
+##from Crabhook.
 @!Speak to fishermen to find out where
 !the monster is
 @!Arni was attacked recently, ask him
@@ -15538,8 +15545,8 @@ dialog{
   id = "quest.side.oakhaven.ivy_orchard",
   title = "Ivystump Orchard",
   text = [[
-Monsters have overrun the orchard in
-Ivystump.
+##Monsters have overrun the orchard in
+##Ivystump.
 @Clear the orchard
 !
 !There are 3 monsters lurking in the
@@ -15593,9 +15600,9 @@ dialog{
   id = "quest.side.oakhaven.master_thief",
   title = "The Dog's Birthday",
   text = [[
-The guard captains wants you to find a
-thief at the mayor's dog's birthday
-party.
+##The guard captains wants you to find a
+##thief at the mayor's dog's birthday
+##party.
 @Head to the palace
 !and present your invitation
 @!Speak to party guests and ask about
@@ -15640,19 +15647,19 @@ dialog{
   id = "quest.side.oakhaven.musicians",
   title = "Battle of the Band",
   text = [[
-You agreed to help some
-struggling musicians.
-@Let the bartender know
-they're willing to play
-!He'll be behind the bar
-!at the Salamander Heartache
-!Saloon
-@Check the band's posters
-and make sure monsters
-aren't attacking them
+##You agreed to help some struggling
+##musicians.
+@Let the bartender know they're willing
+to play
+!
+!He'll be behind the bar at the
+!Salamander Heartache Saloon
+@Check the band's posters and make sure
+monsters aren't attacking them
 @Beat up that monster!
 @Go see Gunther's show.
-
+?::
+?REWARD: $ITEM{coral_ore.1}   Coral Ore --// only revealed after quest is over
 ]],
 }
 
@@ -15660,9 +15667,9 @@ dialog{
   id = "quest.side.oakhaven.orange_thief",
   title = "The Tic Tac Champ",
   text = [[
-You somehow joined Oakhaven's tic tac
-toe championship, but the prize was
-stolen!
+##You somehow joined Oakhaven's tic tac
+##toe championship, but the prize was
+##stolen!
 @Investigate the scene
 @!Talk to the emcee
 @!Search for clues
@@ -15718,7 +15725,7 @@ pinecone
 !Yarrowmoth Smithy and get some armor
 @Bring the pinecone to Mera at the --// optional phase shown only if player had insufficient funds
 Yarrowmoth Smithy and get some armor
-!(Requires 80 Crowns)
+!(Requires 50 Crowns)
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
@@ -15731,8 +15738,8 @@ dialog{
   id = "quest.side.yarrowmouth.meadery",
   title = "Briarwood Mushrooms",
   text = [[
-Briarwood Distillery's mushroom spot
-was overrun.
+##Briarwood Distillery's mushroom spot
+##was overrun.
 @Defeat the monsters at the mushroom
 picking spot
 !
@@ -15741,6 +15748,10 @@ picking spot
 ?the culprit behind the monsters
 !
 !Wait, who set that trap?
+#::!
+#%=!$i0    QUEST ITEM: --// phase 0 & 1 only: mushroom spot key or mead safehouse key
+#%=!    $ITEM_NAME
+#%=!
 @See if anyone at the distillery knows
 Michael
 @Confront Michael the Mighty Mead Maker
@@ -15749,9 +15760,6 @@ Michael
 !Harbor.
 @Return to Briarwood
 #::
-#%=$i0    QUEST ITEM: --// phase 1: mushroom spot key
-#%=    $ITEM_NAME
-#%=
 #!REWARD: $ITEM{rupee.1}   65 --// visible all phases but hidden once quest is complete
 ?REWARD: $ITEM{rupee.1}   110 --// visible only after quest is complete
 ]],
@@ -15761,9 +15769,9 @@ dialog{
   id = "quest.side.yarrowmouth.parley",
   title = "A Quick Errand",
   text = [[
-Nina of Yarrowmouth asked if you could
-meet with some pirates of behalf of a
-man named Carlov.
+##Nina of Yarrowmouth asked if you could
+##meet with some pirates of behalf of a
+##man named Carlov.
 @Tell the pirates to piss off
 !
 !They'll meet you at Seaweed Rock,
@@ -15793,11 +15801,12 @@ dialog{
   id = "quest.side.yarrowmouth.stone_beak",
   title = "A Stone...Beak?",
   text = [[
-You happened across a piece
-of stone shaped kind of like
-a bird beak.
-@Figure out where it may
-have come fom
+##You happened across a piece of stone
+##shaped kind of like a bird beak.
+@Figure out where it may have come from
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15805,8 +15814,8 @@ dialog{
   id = "quest.side.carrot_cache",
   title = "The Carrot Cache",
   text = [[
-An upset fisherman's spot's been
-overrun with monsters
+##An upset fisherman's spot's been
+##overrun with monsters
 @Find the fishin' spot and destroy
 the monsters
 !

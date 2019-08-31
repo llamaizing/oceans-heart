@@ -175,27 +175,30 @@ main{
 	dialog_id = "quest.main.kelpton",
 	location = "location.ballast_harbor",
 	calc_phase = "quest_kelpton",
+	items = {
+		"charts.1",
+		"key_kingsdown.1",
+	},
 }
 
 main{
     dialog_id = "quest.main.spruce_head",
     calc_phase = "quest_spruce_head",
-		location = {
-		    "location.goatshead_island",
-		    "location.goatshead_island",
-		    "location.goatshead_island",
-		    "location.yarrowmouth",
-		    "location.yarrowmouth",
-		},
-    replace_v = {
-        "spruce_head_shirine_num_fountains_activated"
-    }
+	location = {
+		"location.goatshead_island",
+		"location.goatshead_island",
+		"location.yarrowmouth",
+	},
 }
 
 main{
 	dialog_id = "quest.main.hourglass_fort",
 	calc_phase = "quest_hourglass_fort",
-	location = "location.yarrowmouth"
+	location = "location.yarrowmouth",
+	items = {
+		"key_juniper_grove.1",
+		"key_juniper_grove_2.1",
+	},
 }
 
 main{
@@ -284,7 +287,8 @@ side{
 
 side{
     dialog_id = "quest.side.ballast_harbor.lost_key",
-    calc_phase = "quest_ballast_harbor_lost_inn_key"
+    calc_phase = "quest_ballast_harbor_lost_inn_key",
+    items = {"key_juneberry_inn.1"},
 }
 
 side{
@@ -301,7 +305,8 @@ side{
 side{
     dialog_id = "quest.side.yarrowmouth.stone_beak",
     calc_phase = "quest_stone_beak",
-    location = "location.yarrowmouth"
+    location = "location.yarrowmouth",
+    items = {"stone_beak.1"},
 }
 
 side{
@@ -314,8 +319,11 @@ side{
 side{
     dialog_id = "quest.side.yarrowmouth.meadery",
     calc_phase = "quest_briarwood_mushrooms",
-    location = "location.yarrowmouth"
-    --TODO quest items (mushroom picking spot key)
+    location = "location.yarrowmouth",
+    items = {
+		"key_mushroom_spot.1",
+		"key_mead_safehouse.1",
+    },
 }
 
 side{

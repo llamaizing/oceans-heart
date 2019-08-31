@@ -1489,6 +1489,7 @@ item{ id = "key_juniper_grove_2", description = "Key - Juniper Grove 2" }
 item{ id = "key_kingsdown", description = "Key - Kingsdown" }
 item{ id = "key_limestone_sanctuary", description = "Key - Limestone Sanctuary" }
 item{ id = "key_mead_safehouse", description = "Key - Mead Safehouse" }
+item{ id = "key_mushroom_spot", description = "Key - Mushroom Spot" }
 item{ id = "key_palace_of_storms", description = "Key-Palace of Storms" }
 item{ id = "key_poplar_shack", description = "Key - Poplar Shack" }
 item{ id = "key_sinking_lighthouse", description = "Key - Sinking Lighthouse" }

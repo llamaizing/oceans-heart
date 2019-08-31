@@ -34834,8 +34834,9 @@ door{
   direction = 3,
   sprite = "entities/door_gate_small",
   savegame_variable = "juniper_grove_gate",
-  opening_method = "interaction_if_savegame_variable",
-  opening_condition = "have_juniper_key",
+  opening_method = "interaction_if_item",
+  opening_condition = "key_juniper_grove",
+  opening_condition_consumed = true,
   cannot_open_dialog = "_game.locked_gate",
 }
 
