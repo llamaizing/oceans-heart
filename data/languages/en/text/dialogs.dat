@@ -15707,15 +15707,18 @@ dialog{
   id = "quest.side.yarrowmouth.iron_pinecone",
   title = "An Iron Pinecone",
   text = [[
-An artisinal armorer will make you
-some armor if you bring her an iron
-pinecone.
+##An artisinal armorer will make you
+##some armor if you bring her an iron
+##pinecone.
 @Search Yarrowmouth for an iron
 pinecone
 !
 !It is said to be found in Puzzlewood
-@Bring the pinecone to Mera at the
+@!Bring the pinecone to Mera at the
+!Yarrowmoth Smithy and get some armor
+@Bring the pinecone to Mera at the --// optional phase shown only if player had insufficient funds
 Yarrowmoth Smithy and get some armor
+!(Requires 80 Crowns)
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
