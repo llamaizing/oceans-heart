@@ -902,7 +902,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 120,
+  x = 128,
   y = 144,
   width = 16,
   height = 16,
@@ -911,7 +911,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
+  x = 160,
   y = 144,
   width = 16,
   height = 16,
@@ -920,7 +920,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 136,
+  x = 144,
   y = 144,
   width = 16,
   height = 16,
@@ -983,7 +983,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
+  x = 80,
   y = 144,
   width = 32,
   height = 16,
@@ -993,7 +993,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 48,
+  x = 80,
   y = 136,
   width = 32,
   height = 8,
@@ -1113,9 +1113,19 @@ tile{
   pattern = "245",
 }
 
+tile{
+  layer = 0,
+  x = 48,
+  y = 136,
+  width = 32,
+  height = 32,
+  pattern = "57",
+  tileset = "misc",
+}
+
 npc{
   layer = 0,
-  x = 144,
+  x = 152,
   y = 117,
   direction = 3,
   subtype = 1,
@@ -1125,7 +1135,7 @@ npc{
 npc{
   name = "market_shop",
   layer = 0,
-  x = 144,
+  x = 152,
   y = 141,
   direction = 3,
   subtype = 1,
@@ -1152,11 +1162,29 @@ teletransporter{
 npc{
   name = "buyer_guy",
   layer = 0,
-  x = 88,
+  x = 120,
   y = 157,
   direction = 3,
   subtype = 1,
   sprite = "npc/buyer_guy",
+}
+
+npc{
+  name = "^crafting_table",
+  layer = 0,
+  x = 56,
+  y = 165,
+  direction = 3,
+  subtype = 1,
+}
+
+npc{
+  name = "^crafting_table_2",
+  layer = 0,
+  x = 72,
+  y = 165,
+  direction = 3,
+  subtype = 1,
 }
 
 tile{

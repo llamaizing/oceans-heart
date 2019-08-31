@@ -20,13 +20,11 @@ map_meta:register_event("on_started", function(self)
     sol.timer.start(map, 1000, function() sensor:set_enabled(false) end)
   end
 
---  for sensor in map:get_entities("^map_banner_reenabler_sensor") do
---    function sensor:on_activated()
---      for sensor in map:get_entities("^map_banner_sensor") do
---        sensor:set_enabled(true)
---      end
---    end
---  end
+  for table in map:get_entities("^crafting_table") do
+    function table:on_interaction()
+      sol.menu.start(game, require("scripts/shops/crafting"))
+    end
+  end
 
   --make invisible stairs invisible
   for stairs in map:get_entities("^invisible_stairs") do

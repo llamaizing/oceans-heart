@@ -17925,6 +17925,15 @@ tile{
   pattern = "189",
 }
 
+tile{
+  layer = 0,
+  x = 768,
+  y = 712,
+  width = 16,
+  height = 16,
+  pattern = "1214",
+}
+
 sensor{
   name = "paul_is_gone_sensor",
   layer = 0,
@@ -18635,6 +18644,16 @@ dynamic_tile{
   width = 16,
   height = 16,
   pattern = "190",
+}
+
+teletransporter{
+  layer = 0,
+  x = 504,
+  y = 640,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/ivystump_interiors/inn",
+  destination = "from_outside",
 }
 
 tile{
@@ -20633,6 +20652,87 @@ tile{
   width = 32,
   height = 32,
   pattern = "2108",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 672,
+  width = 32,
+  height = 8,
+  pattern = "1294",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 680,
+  width = 32,
+  height = 8,
+  pattern = "1302",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "1293",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 688,
+  width = 32,
+  height = 24,
+  pattern = "1316",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 688,
+  width = 16,
+  height = 24,
+  pattern = "1315",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 712,
+  width = 32,
+  height = 16,
+  pattern = "1210",
+}
+
+tile{
+  layer = 1,
+  x = 720,
+  y = 712,
+  width = 16,
+  height = 16,
+  pattern = "1209",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "1298",
+}
+
+tile{
+  layer = 1,
+  x = 768,
+  y = 688,
+  width = 16,
+  height = 24,
+  pattern = "1320",
 }
 
 tile{

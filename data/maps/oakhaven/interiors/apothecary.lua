@@ -12,10 +12,10 @@ local game = map:get_game()
 local hero = map:get_hero()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("talked_to_aramis") == true then apothecary:set_enabled(false) else apothecary_2:set_enabled(false) end
 
-end
+end)
 
 function apothecary:on_interaction()
   --if you're not looking for the sleeping potion
@@ -75,16 +75,5 @@ end
 
 
 function elixer_seller:on_interaction()
-  game:start_dialog("_goatshead.npcs.crabhook.witch_pot", function(answer)
-    if answer == 3 then
-      if game:has_item("kingscrown") == true
-      and game:has_item("ghost_orchid") == true and game:has_item("mandrake_white") == true and game:get_money() >= 25 then
-        --map:create_pickable({ layer = 0, x = 136, y = 136, treasure_name = "elixer", })
-        hero:start_treasure("elixer", 1)
-        game:remove_money(25)
-      else
-        game:start_dialog("_game.insufficient_items")
-      end
-    end
-  end)
+
 end

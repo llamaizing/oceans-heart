@@ -231,6 +231,7 @@ map{ id = "oakhaven/interiors/tailor", description = "Tailor" }
 map{ id = "oakhaven/interiors/wall_jail", description = "Wall Jail" }
 map{ id = "oakhaven/ivystump", description = "Ivystump Village" }
 map{ id = "oakhaven/ivystump_interiors/crab_cave", description = "Crab Cave" }
+map{ id = "oakhaven/ivystump_interiors/inn", description = "Inn" }
 map{ id = "oakhaven/ivystump_interiors/lamia", description = "Lamia's House" }
 map{ id = "oakhaven/ivystump_interiors/sawmill", description = "Sawmill" }
 map{ id = "oakhaven/ivystump_interiors/shop", description = "Shop" }

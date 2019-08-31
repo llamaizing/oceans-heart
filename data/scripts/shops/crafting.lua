@@ -78,6 +78,8 @@ function crafting_menu:on_started()
   crafting_menu:initialize()
   crafting_menu:update_recipes()
   crafting_menu:update_ingredients()
+  self.menu_surface:fade_in(5)
+  self.ingredients_surface:fade_in(5)
 end
 
 function crafting_menu:on_finished()
@@ -116,9 +118,9 @@ function crafting_menu:update_ingredients()
   self.ingredients_surface:clear()
   --where to draw the ingredients
   local locations = {
-    {x=96, y=82},
-    {x=144, y=114},
-    {x=96, y=146},
+    {x=96, y=114},
+    {x=144, y=146},
+    {x=96, y=178},
   }
   for i=1, #ingredients do
     local sprite = sol.sprite.create("entities/items")
@@ -129,7 +131,7 @@ function crafting_menu:update_ingredients()
       font="white_digits",
       text = game:get_item(ingredients[i][1]):get_amount() .. "/" .. ingredients[i][2]
     }
-    qty_surface:draw(self.ingredients_surface, locations[i].x - 4, locations[i].y + 18)
+    qty_surface:draw(self.ingredients_surface, locations[i].x - 4, locations[i].y + 6)
   end
 end
 
@@ -202,7 +204,9 @@ function crafting_menu:on_command_pressed(command)
 
   elseif command == "attack" then
     handled = true
-    sol.menu.stop(self)
+    self.menu_surface:fade_out(5)
+    self.ingredients_surface:fade_out(5)
+    sol.timer.start(game, 200, function() sol.menu.stop(self) end)
   end
 
   return handled
