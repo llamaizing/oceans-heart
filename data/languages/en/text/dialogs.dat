@@ -1475,6 +1475,13 @@ $? No
 }
 
 dialog{
+  id = "_game.crafted_item",
+  text = [[
+Item crafted!
+]],
+}
+
+dialog{
   id = "_game.environment.bait_rock",
   text = [[
 It's a flat rock, perfect for holding

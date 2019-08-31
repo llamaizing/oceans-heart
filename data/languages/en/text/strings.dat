@@ -4,9 +4,9 @@ text{ key = "item.potion_magic_restoration", value = "Potion of Magic Restoratio
 text{ key = "item.potion_stoneskin", value = "Stoneskin Potion"}
 text{ key = "item.potion_burlyblade", value = "Burlyblade Potion"}
 text{ key = "item.potion_fleetseed", value = "Fleetseed Potion"}
-text{ key = "item.ether_bombs_pickable", value = "Ether Bombs"}
-text{ key = "item.iron_candle_pickable", value = "Salt Candles"}
-text{ key = "item.homing_eye_pickable", value = "Seeker Eyes"}
+text{ key = "item.ether_bombs", value = "Ether Bombs"}
+text{ key = "item.iron_candle", value = "Salt Candles"}
+text{ key = "item.homing_eye", value = "Seeker Eyes"}
 text{ key = "key1.false", value = "sub 1 is bad" }
 text{ key = "key1.true", value = "sub 1 is good" }
 text{ key = "key2.false", value = "I think so" }

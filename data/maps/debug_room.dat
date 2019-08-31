@@ -5816,6 +5816,1062 @@ teletransporter{
   destination_map = "heron_door_test_room",
 }
 
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "burdock",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 357,
+  treasure_name = "chamomile",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "coral_ore",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 357,
+  treasure_name = "firethorn_berries",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 357,
+  treasure_name = "geode",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "ghost_orchid",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 357,
+  treasure_name = "kingscrown",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "lavendar",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 357,
+  treasure_name = "mandrake",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "mandrake_white",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 357,
+  treasure_name = "monster_bones",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "monster_eye",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 357,
+  treasure_name = "monster_guts",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "monster_heart",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 357,
+  treasure_name = "monster_horn",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "monkshood",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 357,
+  treasure_name = "violets",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "witch_hazel",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "burdock",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 365,
+  treasure_name = "chamomile",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "coral_ore",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 365,
+  treasure_name = "firethorn_berries",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 365,
+  treasure_name = "geode",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "ghost_orchid",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 365,
+  treasure_name = "kingscrown",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "lavendar",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 365,
+  treasure_name = "mandrake",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "mandrake_white",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 365,
+  treasure_name = "monster_bones",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "monster_eye",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 365,
+  treasure_name = "monster_guts",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "monster_heart",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 365,
+  treasure_name = "monster_horn",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "monkshood",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 365,
+  treasure_name = "violets",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "witch_hazel",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "burdock",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "chamomile",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "coral_ore",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "firethorn_berries",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "geode",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "ghost_orchid",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "kingscrown",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "lavendar",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "mandrake",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "mandrake_white",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "monster_bones",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "monster_eye",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "monster_guts",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "monster_heart",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "monster_horn",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "monkshood",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 357,
+  treasure_name = "violets",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "witch_hazel",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "burdock",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "chamomile",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "coral_ore",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "firethorn_berries",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "geode",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "ghost_orchid",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "kingscrown",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "lavendar",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "mandrake",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "mandrake_white",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "monster_bones",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "monster_eye",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "monster_guts",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "monster_heart",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "monster_horn",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "monkshood",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 365,
+  treasure_name = "violets",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "witch_hazel",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "burdock",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "chamomile",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "coral_ore",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "firethorn_berries",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "geode",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "ghost_orchid",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "kingscrown",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "lavendar",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "mandrake",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "mandrake_white",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "monster_bones",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "monster_eye",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "monster_guts",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "monster_heart",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "monster_horn",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "monkshood",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 357,
+  treasure_name = "violets",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "witch_hazel",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "burdock",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "chamomile",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "coral_ore",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "firethorn_berries",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "geode",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "ghost_orchid",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "kingscrown",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "lavendar",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "mandrake",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "mandrake_white",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "monster_bones",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "monster_eye",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "monster_guts",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "monster_heart",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "monster_horn",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "monkshood",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 365,
+  treasure_name = "violets",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "witch_hazel",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 357,
+  treasure_name = "burdock",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "chamomile",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 357,
+  treasure_name = "coral_ore",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "firethorn_berries",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "geode",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 357,
+  treasure_name = "ghost_orchid",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "kingscrown",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 357,
+  treasure_name = "lavendar",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "mandrake",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 357,
+  treasure_name = "mandrake_white",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "monster_bones",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 357,
+  treasure_name = "monster_eye",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "monster_guts",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 357,
+  treasure_name = "monster_heart",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "monster_horn",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 357,
+  treasure_name = "monkshood",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 357,
+  treasure_name = "violets",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 357,
+  treasure_name = "witch_hazel",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 365,
+  treasure_name = "burdock",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "chamomile",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 365,
+  treasure_name = "coral_ore",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "firethorn_berries",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "geode",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 365,
+  treasure_name = "ghost_orchid",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "kingscrown",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 365,
+  treasure_name = "lavendar",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "mandrake",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 365,
+  treasure_name = "mandrake_white",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "monster_bones",
+  treasure_variant = 2,
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 365,
+  treasure_name = "monster_eye",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "monster_guts",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 365,
+  treasure_name = "monster_heart",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "monster_horn",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 365,
+  treasure_name = "monkshood",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 365,
+  treasure_name = "violets",
+}
+
+pickable{
+  layer = 0,
+  x = 424,
+  y = 365,
+  treasure_name = "witch_hazel",
+}
+
 tile{
   layer = 1,
   x = 192,
