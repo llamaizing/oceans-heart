@@ -3162,51 +3162,6 @@ tile{
   tileset = "misc",
 }
 
-tile{
-  layer = 0,
-  x = 344,
-  y = 704,
-  width = 384,
-  height = 32,
-  pattern = "wall.up.1",
-}
-
-tile{
-  layer = 0,
-  x = 408,
-  y = 904,
-  width = 320,
-  height = 32,
-  pattern = "wall.up.1",
-}
-
-tile{
-  layer = 0,
-  x = 696,
-  y = 728,
-  width = 32,
-  height = 176,
-  pattern = "wall.right.2",
-}
-
-tile{
-  layer = 0,
-  x = 312,
-  y = 704,
-  width = 32,
-  height = 208,
-  pattern = "wall.right.2",
-}
-
-tile{
-  layer = 0,
-  x = 312,
-  y = 904,
-  width = 96,
-  height = 32,
-  pattern = "deep_water",
-}
-
 pickable{
   layer = 0,
   x = 72,
@@ -5871,72 +5826,6 @@ npc{
   y = 421,
   direction = 3,
   subtype = 1,
-}
-
-custom_entity{
-  layer = 0,
-  x = 656,
-  y = 877,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/iron_ball",
-  model = "toss_ball",
-}
-
-custom_entity{
-  name = "ball_1",
-  layer = 0,
-  x = 504,
-  y = 893,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/iron_ball",
-  model = "toss_ball",
-}
-
-custom_entity{
-  name = "ball_2",
-  layer = 0,
-  x = 544,
-  y = 893,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/iron_ball",
-  model = "toss_ball",
-}
-
-custom_entity{
-  layer = 0,
-  x = 584,
-  y = 885,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/iron_ball",
-  model = "toss_ball",
-}
-
-custom_entity{
-  layer = 0,
-  x = 624,
-  y = 893,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/iron_ball",
-  model = "toss_ball",
-}
-
-enemy{
-  name = "yikes",
-  layer = 0,
-  x = 440,
-  y = 781,
-  direction = 0,
-  breed = "bosses/charging_pirate_1",
 }
 
 tile{
