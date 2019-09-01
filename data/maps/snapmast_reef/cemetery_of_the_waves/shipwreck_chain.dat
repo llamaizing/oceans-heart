@@ -34,7 +34,7 @@ tile{
   layer = 0,
   x = 1344,
   y = 480,
-  width = 1664,
+  width = 1248,
   height = 240,
   pattern = "58",
   tileset = "cemetery_of_waves",
@@ -47425,7 +47425,7 @@ tile{
 tile{
   layer = 0,
   x = 2216,
-  y = 1264,
+  y = 1280,
   width = 16,
   height = 16,
   pattern = "61",
@@ -47445,7 +47445,7 @@ tile{
 tile{
   layer = 0,
   x = 2232,
-  y = 1376,
+  y = 1368,
   width = 16,
   height = 16,
   pattern = "61",
@@ -56849,7 +56849,7 @@ tile{
   layer = 0,
   x = 2608,
   y = 1024,
-  width = 176,
+  width = 128,
   height = 16,
   pattern = "184",
   tileset = "cemetery_of_waves",
@@ -60050,31 +60050,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 2608,
+  x = 2592,
   y = 976,
   enabled_at_start = false,
-  width = 16,
-  height = 16,
-  pattern = "160",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2688,
-  y = 976,
-  width = 16,
-  height = 16,
-  pattern = "161",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2624,
-  y = 976,
-  enabled_at_start = false,
-  width = 64,
+  width = 96,
   height = 16,
   pattern = "167",
   tileset = "cemetery_of_waves",
@@ -60082,7 +60061,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2608,
+  x = 2576,
   y = 992,
   width = 16,
   height = 8,
@@ -60092,9 +60071,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 2624,
+  x = 2592,
   y = 992,
-  width = 64,
+  width = 96,
   height = 8,
   pattern = "99",
   tileset = "cemetery_of_waves",
@@ -60107,16 +60086,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "100",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2688,
-  y = 960,
-  width = 16,
-  height = 16,
-  pattern = "54",
   tileset = "cemetery_of_waves",
 }
 
@@ -60264,212 +60233,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 2584,
-  y = 752,
-  width = 16,
-  height = 16,
-  pattern = "163",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2488,
-  y = 752,
-  enabled_at_start = false,
-  width = 96,
-  height = 16,
-  pattern = "169",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2472,
-  y = 752,
-  width = 16,
-  height = 16,
-  pattern = "158",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2472,
-  y = 768,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  pattern = "160",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2488,
-  y = 768,
-  enabled_at_start = false,
-  width = 112,
-  height = 16,
-  pattern = "167",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2696,
-  y = 768,
-  width = 16,
-  height = 16,
-  pattern = "163",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2600,
-  y = 768,
-  enabled_at_start = false,
-  width = 96,
-  height = 16,
-  pattern = "169",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2584,
-  y = 784,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  pattern = "160",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2696,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "161",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2600,
-  y = 784,
-  enabled_at_start = false,
-  width = 96,
-  height = 16,
-  pattern = "167",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2488,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "171",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2472,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "170",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2504,
-  y = 784,
-  width = 64,
-  height = 16,
-  pattern = "172",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2568,
-  y = 784,
-  width = 16,
-  height = 16,
-  pattern = "171",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2600,
-  y = 800,
-  width = 16,
-  height = 16,
-  pattern = "171",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2696,
-  y = 800,
-  width = 16,
-  height = 16,
-  pattern = "173",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2584,
-  y = 800,
-  width = 16,
-  height = 16,
-  pattern = "170",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2616,
-  y = 800,
-  width = 32,
-  height = 16,
-  pattern = "172",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2648,
-  y = 800,
-  width = 16,
-  height = 16,
-  pattern = "171",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2664,
-  y = 800,
-  width = 32,
-  height = 16,
-  pattern = "172",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
   x = 2392,
   y = 816,
   width = 16,
@@ -60550,8 +60313,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 2568,
-  y = 960,
+  x = 2560,
+  y = 952,
   width = 16,
   height = 16,
   pattern = "61",
@@ -60581,7 +60344,7 @@ tile{
 tile{
   layer = 0,
   x = 2584,
-  y = 1120,
+  y = 1112,
   width = 16,
   height = 16,
   pattern = "61",
@@ -60620,31 +60383,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 2680,
-  y = 1160,
+  x = 2696,
+  y = 1176,
   width = 16,
   height = 16,
   pattern = "61",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2744,
-  y = 1016,
-  width = 16,
-  height = 16,
-  pattern = "34",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2616,
-  y = 1016,
-  width = 128,
-  height = 16,
-  pattern = "33",
   tileset = "cemetery_of_waves",
 }
 
@@ -61657,26 +61400,6 @@ tile{
 tile{
   layer = 0,
   x = 2464,
-  y = 768,
-  width = 16,
-  height = 16,
-  pattern = "53",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2464,
-  y = 752,
-  width = 16,
-  height = 16,
-  pattern = "52",
-  tileset = "cemetery_of_waves",
-}
-
-tile{
-  layer = 0,
-  x = 2456,
   y = 784,
   width = 16,
   height = 16,
@@ -62022,15 +61745,6 @@ tile{
   width = 32,
   height = 16,
   pattern = "2146",
-}
-
-tile{
-  layer = 0,
-  x = 2736,
-  y = 936,
-  width = 32,
-  height = 16,
-  pattern = "256",
 }
 
 tile{
@@ -67160,9 +66874,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 1760,
+  x = 1768,
   y = 0,
-  width = 1248,
+  width = 832,
   height = 480,
   pattern = "58",
   tileset = "cemetery_of_waves",
@@ -68215,7 +67929,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2472,
+  x = 2464,
   y = 528,
   width = 48,
   height = 32,
@@ -68224,8 +67938,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 2472,
-  y = 544,
+  x = 2464,
+  y = 552,
   width = 48,
   height = 16,
   pattern = "2147",
@@ -68233,7 +67947,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 2504,
+  x = 2496,
   y = 560,
   width = 32,
   height = 24,
@@ -68242,11 +67956,9724 @@ tile{
 
 tile{
   layer = 0,
-  x = 2504,
+  x = 2496,
   y = 568,
   width = 32,
   height = 16,
   pattern = "2145",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 1376,
+  width = 32,
+  height = 16,
+  pattern = "92",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "90",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1392,
+  width = 32,
+  height = 16,
+  pattern = "96",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "95",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "93",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1376,
+  width = 32,
+  height = 16,
+  pattern = "91",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "89",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 1392,
+  width = 32,
+  height = 16,
+  pattern = "97",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1384,
+  width = 32,
+  height = 16,
+  pattern = "106",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1352,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1320,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1336,
+  width = 16,
+  height = 16,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1336,
+  width = 16,
+  height = 16,
+  pattern = "162",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1320,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1352,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1336,
+  width = 32,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1352,
+  width = 32,
+  height = 16,
+  pattern = "166",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1320,
+  width = 32,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1304,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1272,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1288,
+  width = 16,
+  height = 16,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1288,
+  width = 16,
+  height = 16,
+  pattern = "162",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1272,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1304,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1288,
+  width = 32,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1304,
+  width = 32,
+  height = 16,
+  pattern = "166",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1272,
+  width = 32,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "173",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "170",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1376,
+  width = 32,
+  height = 16,
+  pattern = "172",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1344,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1344,
+  width = 32,
+  height = 32,
+  pattern = "177",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1344,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1312,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1328,
+  width = 16,
+  height = 16,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1328,
+  width = 16,
+  height = 16,
+  pattern = "162",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1312,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1328,
+  width = 32,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1344,
+  width = 32,
+  height = 16,
+  pattern = "166",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1312,
+  width = 32,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1296,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1280,
+  width = 16,
+  height = 16,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1280,
+  width = 16,
+  height = 16,
+  pattern = "162",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1296,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1280,
+  width = 32,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1296,
+  width = 32,
+  height = 16,
+  pattern = "166",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 1240,
+  width = 32,
+  height = 16,
+  pattern = "94",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "90",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1240,
+  width = 32,
+  height = 16,
+  pattern = "88",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "95",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "93",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "89",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1264,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1264,
+  width = 32,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 1224,
+  width = 16,
+  height = 16,
+  pattern = "50",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 1240,
+  width = 16,
+  height = 16,
+  pattern = "51",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1240,
+  width = 16,
+  height = 16,
+  pattern = "48",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 1224,
+  width = 16,
+  height = 16,
+  pattern = "49",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "48",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1240,
+  width = 16,
+  height = 16,
+  pattern = "49",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1240,
+  width = 16,
+  height = 16,
+  pattern = "50",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "51",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 1248,
+  width = 8,
+  height = 16,
+  pattern = "44",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1248,
+  width = 8,
+  height = 16,
+  pattern = "43",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1296,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 1280,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 1264,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 1312,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 1296,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 1328,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 1344,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 1344,
+  width = 8,
+  height = 16,
+  pattern = "62",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1312,
+  width = 8,
+  height = 16,
+  pattern = "41",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 1264,
+  width = 8,
+  height = 16,
+  pattern = "41",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1224,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1240,
+  width = 16,
+  height = 16,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1240,
+  width = 16,
+  height = 16,
+  pattern = "162",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1224,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1256,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1240,
+  width = 32,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1256,
+  width = 32,
+  height = 16,
+  pattern = "166",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1224,
+  width = 32,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2824,
+  y = 1304,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1304,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "35",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1232,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1248,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1264,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1280,
+  width = 8,
+  height = 16,
+  pattern = "41",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1216,
+  width = 8,
+  height = 16,
+  pattern = "63",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 720,
+  width = 128,
+  height = 96,
+  pattern = "177",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 784,
+  width = 128,
+  height = 32,
+  pattern = "187",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 720,
+  width = 16,
+  height = 96,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2960,
+  y = 720,
+  width = 16,
+  height = 96,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "170",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2960,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "173",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 784,
+  width = 32,
+  height = 32,
+  pattern = "24",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 816,
+  width = 32,
+  height = 32,
+  pattern = "26",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 784,
+  width = 32,
+  height = 32,
+  pattern = "25",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 816,
+  width = 32,
+  height = 32,
+  pattern = "27",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 816,
+  width = 64,
+  height = 32,
+  pattern = "187",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 784,
+  width = 64,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 800,
+  width = 64,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2840,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "50",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "51",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "50",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "51",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "48",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "48",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "49",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2912,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 776,
+  width = 8,
+  height = 16,
+  pattern = "45",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "49",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 776,
+  width = 8,
+  height = 16,
+  pattern = "46",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 728,
+  width = 48,
+  height = 48,
+  pattern = "136",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 720,
+  width = 16,
+  height = 64,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "170",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 720,
+  width = 16,
+  height = 64,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "173",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2960,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "154",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2960,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "153",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 728,
+  width = 48,
+  height = 48,
+  pattern = "136",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "154",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "152",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 816,
+  width = 32,
+  height = 24,
+  pattern = "64",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1064,
+  width = 48,
+  height = 32,
+  pattern = "2112",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 1080,
+  width = 48,
+  height = 16,
+  pattern = "2144",
+}
+
+tile{
+  layer = 0,
+  x = 2840,
+  y = 872,
+  width = 32,
+  height = 24,
+  pattern = "2138",
+}
+
+tile{
+  layer = 0,
+  x = 2840,
+  y = 880,
+  width = 32,
+  height = 16,
+  pattern = "2145",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 976,
+  width = 32,
+  height = 24,
+  pattern = "2140",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 984,
+  width = 32,
+  height = 16,
+  pattern = "2146",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 872,
+  width = 48,
+  height = 32,
+  pattern = "2142",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 888,
+  width = 48,
+  height = 16,
+  pattern = "2147",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 904,
+  width = 32,
+  height = 24,
+  pattern = "2140",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 912,
+  width = 32,
+  height = 16,
+  pattern = "2146",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 928,
+  width = 32,
+  height = 24,
+  pattern = "2138",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 936,
+  width = 32,
+  height = 16,
+  pattern = "2145",
+}
+
+tile{
+  layer = 0,
+  x = 2792,
+  y = 960,
+  width = 80,
+  height = 40,
+  pattern = "115",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 1104,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "173",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 944,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 1016,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 1016,
+  width = 16,
+  height = 8,
+  pattern = "100",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 944,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 1000,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 1032,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 1032,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 1032,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 1048,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 1048,
+  width = 16,
+  height = 8,
+  pattern = "99",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 1048,
+  width = 16,
+  height = 8,
+  pattern = "100",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 968,
+  width = 72,
+  height = 16,
+  pattern = "69",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2688,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 960,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 1000,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 960,
+  width = 32,
+  height = 16,
+  pattern = "135",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2728,
+  y = 960,
+  width = 32,
+  height = 16,
+  pattern = "135",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2688,
+  y = 976,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 1144,
+  width = 64,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2656,
+  y = 1128,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 1128,
+  enabled_at_start = false,
+  width = 64,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 1128,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 1160,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2656,
+  y = 1160,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 1160,
+  enabled_at_start = false,
+  width = 64,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 1176,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 1176,
+  width = 64,
+  height = 8,
+  pattern = "99",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2656,
+  y = 1176,
+  width = 16,
+  height = 8,
+  pattern = "100",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2656,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2656,
+  y = 1088,
+  width = 48,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2704,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2640,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2616,
+  y = 1016,
+  width = 112,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 968,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 968,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 984,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 984,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 1168,
+  width = 128,
+  height = 32,
+  pattern = "187",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 1168,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "170",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 1168,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "173",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 1136,
+  width = 96,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 1152,
+  width = 96,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2768,
+  y = 1136,
+  width = 16,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2768,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "168",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 1136,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 1136,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 1136,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 1128,
+  width = 8,
+  height = 8,
+  pattern = "42",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 1152,
+  width = 32,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2808,
+  y = 1152,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2768,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "134",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2768,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "133",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "134",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "133",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "134",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "133",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2728,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2728,
+  y = 1016,
+  width = 8,
+  height = 16,
+  pattern = "63",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2744,
+  y = 1032,
+  width = 8,
+  height = 16,
+  pattern = "62",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 1032,
+  width = 32,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 1032,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 704,
+  width = 16,
+  height = 80,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2904,
+  y = 752,
+  width = 8,
+  height = 32,
+  pattern = "door.up.right_side",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "door.up.top_low",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 752,
+  width = 8,
+  height = 32,
+  pattern = "door.up.left_side",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "19",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 496,
+  width = 16,
+  height = 48,
+  pattern = "18",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 480,
+  width = 16,
+  height = 32,
+  pattern = "2",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 576,
+  width = 16,
+  height = 32,
+  pattern = "6",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 544,
+  width = 64,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "117",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "130",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 496,
+  width = 16,
+  height = 48,
+  pattern = "16",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 512,
+  width = 16,
+  height = 32,
+  pattern = "18",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 560,
+  width = 16,
+  height = 144,
+  pattern = "16",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 512,
+  width = 16,
+  height = 32,
+  pattern = "3",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 504,
+  width = 16,
+  height = 40,
+  pattern = "70",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "19",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "3",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "168",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "168",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "171",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 608,
+  width = 32,
+  height = 16,
+  pattern = "172",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "170",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 576,
+  width = 16,
+  height = 32,
+  pattern = "178",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 480,
+  width = 384,
+  height = 16,
+  pattern = "20",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 496,
+  width = 384,
+  height = 32,
+  pattern = "7",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 496,
+  width = 16,
+  height = 32,
+  pattern = "1",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "4",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 512,
+  width = 16,
+  height = 32,
+  pattern = "66",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 704,
+  width = 272,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2872,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 560,
+  width = 16,
+  height = 144,
+  pattern = "4",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "12",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2912,
+  y = 704,
+  width = 80,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2904,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 496,
+  width = 16,
+  height = 208,
+  pattern = "18",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "9",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 496,
+  width = 16,
+  height = 32,
+  pattern = "2",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 528,
+  width = 16,
+  height = 176,
+  pattern = "3",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 528,
+  width = 320,
+  height = 160,
+  pattern = "8",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 528,
+  width = 32,
+  height = 160,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 688,
+  width = 352,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 720,
+  width = 16,
+  height = 24,
+  pattern = "87",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2960,
+  y = 784,
+  width = 16,
+  height = 32,
+  pattern = "151",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2912,
+  y = 720,
+  width = 16,
+  height = 24,
+  pattern = "87",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 2808,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2808,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 856,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 2768,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2792,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2680,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2720,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2904,
+  y = 1096,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1032,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2824,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 1144,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2984,
+  y = 1160,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 656,
+  width = 64,
+  height = 48,
+  pattern = "58",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 624,
+  width = 64,
+  height = 32,
+  pattern = "58",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 592,
+  width = 64,
+  height = 32,
+  pattern = "58",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 576,
+  width = 32,
+  height = 16,
+  pattern = "58",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2768,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2768,
+  y = 592,
+  width = 16,
+  height = 8,
+  pattern = "56",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2792,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "170",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 624,
+  width = 16,
+  height = 8,
+  pattern = "56",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2744,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "173",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 656,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2744,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "173",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 592,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2720,
+  y = 528,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2680,
+  y = 528,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2704,
+  y = 544,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2728,
+  y = 584,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 616,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2824,
+  y = 616,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2808,
+  y = 632,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2640,
+  y = 520,
+  width = 8,
+  height = 16,
+  pattern = "47",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2648,
+  y = 520,
+  width = 24,
+  height = 16,
+  pattern = "45",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2672,
+  y = 520,
+  width = 8,
+  height = 16,
+  pattern = "43",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2656,
+  y = 520,
+  width = 8,
+  height = 16,
+  pattern = "51",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2664,
+  y = 520,
+  width = 8,
+  height = 16,
+  pattern = "54",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2648,
+  y = 520,
+  width = 8,
+  height = 16,
+  pattern = "49",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 584,
+  width = 64,
+  height = 80,
+  pattern = "628",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "619",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 584,
+  width = 16,
+  height = 80,
+  pattern = "627",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 568,
+  width = 16,
+  height = 16,
+  pattern = "622",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 664,
+  width = 64,
+  height = 16,
+  pattern = "625",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 584,
+  width = 16,
+  height = 80,
+  pattern = "623",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "626",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 568,
+  width = 64,
+  height = 16,
+  pattern = "621",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "624",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2448,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2416,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2416,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 608,
+  width = 16,
+  height = 8,
+  pattern = "56",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2416,
+  y = 608,
+  width = 16,
+  height = 8,
+  pattern = "56",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 608,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "168",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2552,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2448,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2448,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2448,
+  y = 608,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 448,
+  width = 16,
+  height = 80,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "21",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "19",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 496,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 496,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 464,
+  width = 176,
+  height = 16,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 448,
+  width = 176,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 464,
+  width = 128,
+  height = 16,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "18",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 448,
+  width = 128,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 416,
+  width = 16,
+  height = 32,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 416,
+  width = 16,
+  height = 32,
+  pattern = "16",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "16",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 144,
+  width = 16,
+  height = 208,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 144,
+  width = 16,
+  height = 208,
+  pattern = "16",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "178",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "178",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "21",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "20",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "21",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "20",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 16,
+  width = 352,
+  height = 16,
+  pattern = "20",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 0,
+  width = 352,
+  height = 16,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 32,
+  width = 16,
+  height = 416,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 32,
+  width = 16,
+  height = 416,
+  pattern = "18",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 448,
+  width = 32,
+  height = 32,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 448,
+  width = 32,
+  height = 32,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 0,
+  width = 32,
+  height = 32,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 0,
+  width = 32,
+  height = 32,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 32,
+  width = 352,
+  height = 32,
+  pattern = "7",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 64,
+  width = 352,
+  height = 384,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 240,
+  width = 80,
+  height = 64,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 256,
+  width = 48,
+  height = 48,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 256,
+  width = 32,
+  height = 32,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 2800,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 256,
+  width = 144,
+  height = 8,
+  pattern = "69",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2912,
+  y = 240,
+  width = 64,
+  height = 8,
+  pattern = "69",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 272,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2912,
+  y = 240,
+  width = 64,
+  height = 8,
+  pattern = "137",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 256,
+  width = 144,
+  height = 8,
+  pattern = "137",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "210",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 256,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 288,
+  width = 32,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 288,
+  width = 32,
+  height = 32,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 64,
+  width = 320,
+  height = 160,
+  pattern = "8",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2656,
+  y = 320,
+  width = 320,
+  height = 128,
+  pattern = "8",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 64,
+  width = 32,
+  height = 160,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 320,
+  width = 32,
+  height = 128,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2640,
+  y = 224,
+  width = 160,
+  height = 96,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2808,
+  y = 224,
+  width = 96,
+  height = 32,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 384,
+  width = 64,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 112,
+  width = 64,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2792,
+  y = 1008,
+  width = 72,
+  height = 16,
+  pattern = "69",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 1000,
+  width = 32,
+  height = 16,
+  pattern = "135",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 1000,
+  width = 32,
+  height = 16,
+  pattern = "135",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 1000,
+  width = 32,
+  height = 16,
+  pattern = "135",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 1000,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2728,
+  y = 128,
+  width = 160,
+  height = 16,
+  pattern = "182",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "180",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2712,
+  y = 48,
+  width = 144,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2712,
+  y = 80,
+  width = 144,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2728,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2712,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "168",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 64,
+  width = 16,
+  height = 48,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2728,
+  y = 80,
+  width = 64,
+  height = 16,
+  pattern = "166",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2728,
+  y = 48,
+  width = 160,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 64,
+  enabled_at_start = false,
+  width = 16,
+  height = 48,
+  pattern = "162",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "183",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2712,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "181",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 104,
+  width = 32,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 104,
+  width = 32,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 96,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 96,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 128,
+  width = 48,
+  height = 16,
+  pattern = "64",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2696,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "42",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "42",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 80,
+  width = 128,
+  height = 32,
+  pattern = "628",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2720,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "619",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2720,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "627",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "622",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 112,
+  width = 128,
+  height = 16,
+  pattern = "625",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "623",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2720,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "626",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 64,
+  width = 128,
+  height = 16,
+  pattern = "621",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "624",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2824,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2840,
+  y = 112,
+  width = 48,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2712,
+  y = 112,
+  width = 48,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = -48,
+  width = 8,
+  height = 16,
+  pattern = "580",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = -48,
+  width = 8,
+  height = 16,
+  pattern = "572",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2768,
+  y = -48,
+  width = 80,
+  height = 16,
+  pattern = "579",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = -32,
+  width = 8,
+  height = 16,
+  pattern = "576",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2768,
+  y = -32,
+  width = 80,
+  height = 16,
+  pattern = "575",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = -32,
+  width = 8,
+  height = 16,
+  pattern = "574",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 72,
+  width = 8,
+  height = 24,
+  pattern = "218",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2744,
+  y = 72,
+  width = 8,
+  height = 24,
+  pattern = "217",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 72,
+  width = 96,
+  height = 24,
+  pattern = "219",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2856,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "95",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2728,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "95",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "95",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "95",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "95",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2824,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "95",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2744,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "637",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "637",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "636",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2824,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "638",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2768,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "638",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "336",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2704,
+  y = 48,
+  width = 24,
+  height = 16,
+  pattern = "332",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2784,
+  y = 32,
+  width = 32,
+  height = 16,
+  pattern = "280",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2680,
+  y = 32,
+  width = 16,
+  height = 24,
+  pattern = "87",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2904,
+  y = 32,
+  width = 16,
+  height = 24,
+  pattern = "87",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 32,
+  width = 16,
+  height = 24,
+  pattern = "87",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2632,
+  y = 32,
+  width = 16,
+  height = 24,
+  pattern = "87",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 112,
+  width = 32,
+  height = 32,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "20",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "19",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 112,
+  width = 64,
+  height = 32,
+  pattern = "52",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 176,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 176,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "20",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "19",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 320,
+  width = 32,
+  height = 32,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 288,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 288,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "20",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "19",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 320,
+  width = 64,
+  height = 32,
+  pattern = "52",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 416,
+  width = 32,
+  height = 32,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 384,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "20",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "19",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 416,
+  width = 64,
+  height = 32,
+  pattern = "52",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "133",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "134",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "134",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 136,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2680,
+  y = 144,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2704,
+  y = 144,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "624",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "622",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2688,
+  y = 296,
+  width = 16,
+  height = 128,
+  pattern = "627",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2704,
+  y = 424,
+  width = 32,
+  height = 16,
+  pattern = "625",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2704,
+  y = 296,
+  width = 32,
+  height = 128,
+  pattern = "628",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2688,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "626",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 296,
+  width = 16,
+  height = 128,
+  pattern = "623",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2704,
+  y = 280,
+  width = 32,
+  height = 16,
+  pattern = "621",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2688,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "619",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "43",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2912,
+  y = 64,
+  width = 8,
+  height = 16,
+  pattern = "47",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 200,
+  width = 8,
+  height = 16,
+  pattern = "43",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 200,
+  width = 8,
+  height = 16,
+  pattern = "47",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 200,
+  width = 24,
+  height = 16,
+  pattern = "45",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 200,
+  width = 8,
+  height = 16,
+  pattern = "49",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2960,
+  y = 200,
+  width = 8,
+  height = 16,
+  pattern = "54",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2952,
+  y = 200,
+  width = 8,
+  height = 16,
+  pattern = "51",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 208,
+  width = 64,
+  height = 32,
+  pattern = "52",
+  tileset = "vault_walls",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "51",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 144,
+  width = 32,
+  height = 24,
+  pattern = "219",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 144,
+  width = 8,
+  height = 24,
+  pattern = "218",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 144,
+  width = 8,
+  height = 24,
+  pattern = "217",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "195",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "193",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2904,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "194",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 144,
+  width = 8,
+  height = 16,
+  pattern = "183",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "180",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 400,
+  width = 64,
+  height = 16,
+  pattern = "182",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "181",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "183",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "162",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "162",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "35",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 368,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 352,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 336,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 320,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "42",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2864,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2848,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2896,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2912,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 368,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 352,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 336,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2936,
+  y = 304,
+  width = 8,
+  height = 32,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2928,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2920,
+  y = 296,
+  width = 8,
+  height = 16,
+  pattern = "62",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "64",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 256,
+  enabled_at_start = false,
+  width = 192,
+  height = 16,
+  pattern = "182",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "183",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2832,
+  y = 240,
+  width = 160,
+  height = 16,
+  pattern = "182",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2976,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2880,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "133",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2704,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "64",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2688,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 240,
+  width = 64,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2736,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2752,
+  y = 240,
+  width = 64,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2816,
+  y = 240,
+  width = 8,
+  height = 16,
+  pattern = "63",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "178",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "19",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 144,
+  width = 16,
+  height = 192,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 144,
+  width = 16,
+  height = 192,
+  pattern = "18",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "20",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "178",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "19",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 0,
+  width = 16,
+  height = 64,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 0,
+  width = 16,
+  height = 64,
+  pattern = "18",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "20",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2576,
+  y = 416,
+  width = 16,
+  height = 64,
+  pattern = "17",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2560,
+  y = 416,
+  width = 16,
+  height = 64,
+  pattern = "18",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 0,
+  width = 384,
+  height = 32,
+  pattern = "7",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 32,
+  width = 384,
+  height = 32,
+  pattern = "187",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "26",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "24",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 32,
+  width = 96,
+  height = 64,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2240,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "27",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2240,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "25",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2208,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "187",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2208,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2264,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "31",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "30",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 32,
+  width = 16,
+  height = 64,
+  pattern = "162",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 32,
+  width = 16,
+  height = 64,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2264,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "45",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2248,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "48",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2248,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "49",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2240,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "62",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 88,
+  width = 8,
+  height = 16,
+  pattern = "46",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2184,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "51",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2184,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "50",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2200,
+  y = 104,
+  width = 8,
+  height = 16,
+  pattern = "63",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2264,
+  y = 56,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2264,
+  y = 72,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2264,
+  y = 24,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2264,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 56,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 72,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 24,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2216,
+  y = 128,
+  width = 16,
+  height = 24,
+  pattern = "64",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "26",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "24",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "30",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2344,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "51",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2464,
+  y = 96,
+  width = 32,
+  height = 32,
+  pattern = "27",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2464,
+  y = 64,
+  width = 32,
+  height = 32,
+  pattern = "25",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2488,
+  y = 80,
+  width = 8,
+  height = 16,
+  pattern = "31",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2472,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "48",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2368,
+  y = 96,
+  width = 96,
+  height = 32,
+  pattern = "187",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 32,
+  width = 160,
+  height = 32,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 56,
+  width = 8,
+  height = 16,
+  pattern = "46",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2344,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "50",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2488,
+  y = 56,
+  width = 8,
+  height = 16,
+  pattern = "45",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2472,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "49",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2368,
+  y = 64,
+  width = 96,
+  height = 32,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2464,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "48",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2464,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "49",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2352,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "51",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2352,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "50",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2368,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2448,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 24,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2488,
+  y = 24,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2488,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2400,
+  y = 136,
+  width = 32,
+  height = 48,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2400,
+  y = 120,
+  enabled_at_start = false,
+  width = 32,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2384,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2384,
+  y = 184,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2400,
+  y = 184,
+  enabled_at_start = false,
+  width = 32,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2384,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2400,
+  y = 200,
+  width = 32,
+  height = 8,
+  pattern = "99",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "100",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2384,
+  y = 136,
+  width = 16,
+  height = 48,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2512,
+  y = 112,
+  width = 48,
+  height = 32,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2512,
+  y = 96,
+  enabled_at_start = false,
+  width = 48,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 144,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2512,
+  y = 144,
+  enabled_at_start = false,
+  width = 48,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 160,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2512,
+  y = 160,
+  width = 48,
+  height = 8,
+  pattern = "99",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 112,
+  width = 16,
+  height = 32,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2440,
+  y = 144,
+  width = 56,
+  height = 16,
+  pattern = "69",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 136,
+  width = 16,
+  height = 48,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2440,
+  y = 136,
+  width = 32,
+  height = 16,
+  pattern = "135",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2472,
+  y = 136,
+  width = 32,
+  height = 16,
+  pattern = "135",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2400,
+  y = 96,
+  width = 32,
+  height = 24,
+  pattern = "64",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2384,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "35",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 96,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2432,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "41",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 96,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 112,
+  width = 8,
+  height = 16,
+  pattern = "41",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2216,
+  y = 168,
+  width = 16,
+  height = 64,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2232,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2216,
+  y = 152,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2200,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2200,
+  y = 232,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2232,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2216,
+  y = 232,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2200,
+  y = 248,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2216,
+  y = 248,
+  width = 16,
+  height = 8,
+  pattern = "99",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2232,
+  y = 248,
+  width = 16,
+  height = 8,
+  pattern = "100",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2232,
+  y = 200,
+  width = 16,
+  height = 32,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2200,
+  y = 168,
+  width = 16,
+  height = 32,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 328,
+  width = 64,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2456,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 312,
+  enabled_at_start = false,
+  width = 64,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2376,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2376,
+  y = 344,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2456,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 344,
+  enabled_at_start = false,
+  width = 64,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2376,
+  y = 360,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 360,
+  width = 64,
+  height = 8,
+  pattern = "99",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2456,
+  y = 360,
+  width = 16,
+  height = 8,
+  pattern = "100",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2456,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2376,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2232,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2232,
+  y = 184,
+  width = 16,
+  height = 8,
+  pattern = "57",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2224,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2200,
+  y = 200,
+  width = 16,
+  height = 8,
+  pattern = "56",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2208,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "53",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2200,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2344,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2360,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2344,
+  y = 256,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2328,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2328,
+  y = 288,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2360,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2344,
+  y = 288,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2328,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2344,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "99",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2360,
+  y = 304,
+  width = 16,
+  height = 8,
+  pattern = "100",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2360,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2328,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 224,
+  width = 48,
+  height = 32,
+  pattern = "2112",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 240,
+  width = 48,
+  height = 16,
+  pattern = "2144",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 160,
+  width = 32,
+  height = 24,
+  pattern = "2140",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 168,
+  width = 32,
+  height = 16,
+  pattern = "2146",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 368,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 400,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 400,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 416,
+  width = 16,
+  height = 8,
+  pattern = "99",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2376,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "35",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 304,
+  width = 64,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2456,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2376,
+  y = 320,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2376,
+  y = 336,
+  width = 8,
+  height = 16,
+  pattern = "41",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 440,
+  width = 112,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2408,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 424,
+  enabled_at_start = false,
+  width = 112,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 424,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 456,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2408,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 456,
+  enabled_at_start = false,
+  width = 112,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 472,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 472,
+  width = 112,
+  height = 8,
+  pattern = "99",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2408,
+  y = 472,
+  width = 16,
+  height = 8,
+  pattern = "100",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2408,
+  y = 440,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 440,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2408,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "34",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 456,
+  width = 112,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "32",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2344,
+  y = 424,
+  width = 64,
+  height = 32,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 320,
+  width = 32,
+  height = 32,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2424,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2352,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "168",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2352,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2400,
+  y = 128,
+  width = 32,
+  height = 64,
+  pattern = "47",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2312,
+  y = 392,
+  width = 32,
+  height = 16,
+  pattern = "92",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "90",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 408,
+  width = 32,
+  height = 16,
+  pattern = "96",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2312,
+  y = 408,
+  width = 32,
+  height = 16,
+  pattern = "97",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2328,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "95",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2312,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "93",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 392,
+  width = 32,
+  height = 16,
+  pattern = "91",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "89",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 400,
+  width = 32,
+  height = 16,
+  pattern = "106",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "159",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2328,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2328,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "162",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 352,
+  width = 32,
+  height = 16,
+  pattern = "165",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "164",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 368,
+  width = 32,
+  height = 16,
+  pattern = "166",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "35",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2328,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 328,
+  width = 32,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 344,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 360,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 344,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 360,
+  width = 8,
+  height = 16,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 368,
+  width = 8,
+  height = 16,
+  pattern = "41",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 368,
+  width = 8,
+  height = 16,
+  pattern = "41",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 288,
+  width = 16,
+  height = 8,
+  pattern = "127",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2208,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2224,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "163",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2208,
+  y = 272,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "169",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2192,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "158",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2192,
+  y = 304,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2224,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2208,
+  y = 304,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "167",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2192,
+  y = 320,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2208,
+  y = 320,
+  width = 16,
+  height = 8,
+  pattern = "99",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2224,
+  y = 320,
+  width = 16,
+  height = 8,
+  pattern = "100",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2224,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "54",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2192,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "52",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2224,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2192,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "35",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2208,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2232,
+  y = 280,
+  width = 8,
+  height = 16,
+  pattern = "39",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2192,
+  y = 280,
+  width = 8,
+  height = 32,
+  pattern = "40",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2232,
+  y = 288,
+  width = 8,
+  height = 16,
+  pattern = "41",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2192,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2208,
+  y = 304,
+  width = 8,
+  height = 16,
+  pattern = "63",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 424,
+  width = 64,
+  height = 32,
+  pattern = "8",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2456,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2520,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2456,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2472,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2488,
+  y = 232,
+  width = 48,
+  height = 32,
+  pattern = "2142",
+}
+
+tile{
+  layer = 0,
+  x = 2488,
+  y = 256,
+  width = 48,
+  height = 16,
+  pattern = "2147",
+}
+
+tile{
+  layer = 0,
+  x = 2520,
+  y = 264,
+  width = 32,
+  height = 24,
+  pattern = "2138",
+}
+
+tile{
+  layer = 0,
+  x = 2520,
+  y = 272,
+  width = 32,
+  height = 16,
+  pattern = "2145",
+}
+
+tile{
+  layer = 0,
+  x = 2288,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2536,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2200,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2232,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2200,
+  y = 456,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2184,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 32,
+  width = 64,
+  height = 16,
+  pattern = "41",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 48,
+  width = 64,
+  height = 16,
+  pattern = "42",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2272,
+  y = 32,
+  width = 64,
+  height = 16,
+  pattern = "41",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2272,
+  y = 48,
+  width = 64,
+  height = 16,
+  pattern = "42",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2320,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "135",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2304,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "136",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2288,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "135",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2272,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "136",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2272,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "135",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2320,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "136",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2304,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "135",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2288,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "136",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2512,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "135",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "136",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "135",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "136",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2528,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "135",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2512,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "136",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "135",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2544,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "136",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2480,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2264,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "42",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2176,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "42",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2488,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "42",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 24,
+  width = 8,
+  height = 8,
+  pattern = "42",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2408,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "76",
+}
+
+tile{
+  layer = 0,
+  x = 2408,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "77",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "179",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2424,
+  y = 0,
+  width = 16,
+  height = 32,
+  pattern = "176",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2408,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "184",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2344,
+  y = 8,
+  width = 64,
+  height = 32,
+  pattern = "wall.pillar.up",
+  tileset = "cave_2",
+}
+
+tile{
+  layer = 0,
+  x = 2376,
+  y = 16,
+  width = 16,
+  height = 24,
+  pattern = "2178",
+}
+
+tile{
+  layer = 0,
+  x = 2424,
+  y = 8,
+  width = 64,
+  height = 32,
+  pattern = "wall.pillar.up",
+  tileset = "cave_2",
+}
+
+tile{
+  layer = 0,
+  x = 2440,
+  y = 16,
+  width = 16,
+  height = 24,
+  pattern = "2178",
+}
+
+tile{
+  layer = 0,
+  x = 2464,
+  y = 16,
+  width = 16,
+  height = 24,
+  pattern = "2178",
+}
+
+tile{
+  layer = 0,
+  x = 2344,
+  y = 16,
+  width = 16,
+  height = 24,
+  pattern = "2178",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = -24,
+  width = 64,
+  height = 72,
+  pattern = "138",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2504,
+  y = -16,
+  width = 48,
+  height = 48,
+  pattern = "136",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2368,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "154",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2368,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "151",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2368,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "153",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2248,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "154",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2248,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "152",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2440,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "154",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2440,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "150",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2216,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "112",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2504,
+  y = 56,
+  width = 24,
+  height = 16,
+  pattern = "349_2",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2504,
+  y = 64,
+  width = 24,
+  height = 16,
+  pattern = "349_2",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 88,
+  width = 32,
+  height = 32,
+  pattern = "2156",
+}
+
+tile{
+  layer = 0,
+  x = 2464,
+  y = 264,
+  width = 32,
+  height = 24,
+  pattern = "358",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2344,
+  y = 352,
+  width = 32,
+  height = 24,
+  pattern = "358_2",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2360,
+  y = 376,
+  width = 24,
+  height = 16,
+  pattern = "349_2",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 120,
+  width = 24,
+  height = 16,
+  pattern = "349",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2280,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "353",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2216,
+  y = 1400,
+  width = 32,
+  height = 16,
+  pattern = "355",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 1384,
+  width = 16,
+  height = 16,
+  pattern = "353",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2224,
+  y = 1256,
+  width = 32,
+  height = 24,
+  pattern = "358_2",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2776,
+  y = 1240,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2744,
+  y = 1288,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2760,
+  y = 1312,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2944,
+  y = 1416,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 3000,
+  y = 1328,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2984,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2872,
+  y = 1336,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2608,
+  y = 1248,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2744,
+  y = 1416,
+  width = 16,
+  height = 16,
+  pattern = "61",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2992,
+  y = 1376,
+  width = 16,
+  height = 16,
+  pattern = "353",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2968,
+  y = 1400,
+  width = 32,
+  height = 16,
+  pattern = "355",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2888,
+  y = 1200,
+  width = 32,
+  height = 24,
+  pattern = "358",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2904,
+  y = 1224,
+  width = 24,
+  height = 16,
+  pattern = "349",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2656,
+  y = 1232,
+  width = 32,
+  height = 24,
+  pattern = "358",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2640,
+  y = 1208,
+  width = 24,
+  height = 16,
+  pattern = "349",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 1216,
+  width = 24,
+  height = 16,
+  pattern = "349",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2664,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "353",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2592,
+  y = 1232,
+  width = 16,
+  height = 16,
+  pattern = "353",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2656,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "57",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2672,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "58",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2640,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "56",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2624,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "55",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2672,
+  y = 80,
+  width = 24,
+  height = 16,
+  pattern = "64",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 0,
+  x = 2272,
+  y = 1416,
+  width = 24,
+  height = 16,
+  pattern = "349_2",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 0,
+  x = 2256,
+  y = 1424,
+  width = 48,
+  height = 16,
+  pattern = "14",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2496,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "15",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2304,
+  y = 1184,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "cemetery_of_waves",
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_128",
+  layer = 0,
+  x = 2208,
+  y = 229,
+  width = 48,
+  height = 32,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_112",
+  layer = 0,
+  x = 2632,
+  y = 1325,
+  width = 112,
+  height = 64,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_113",
+  layer = 0,
+  x = 2808,
+  y = 1333,
+  width = 64,
+  height = 48,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_114",
+  layer = 0,
+  x = 2808,
+  y = 1253,
+  width = 64,
+  height = 48,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_115",
+  layer = 0,
+  x = 2936,
+  y = 1285,
+  width = 48,
+  height = 80,
 }
 
 sensor{
@@ -72181,8 +81608,8 @@ sensor{
 custom_entity{
   name = "leaf_pile_53",
   layer = 0,
-  x = 1184,
-  y = 309,
+  x = 2416,
+  y = 285,
   properties = {
     {
       key = "can_respawn",
@@ -72332,8 +81759,8 @@ enemy{
 custom_entity{
   name = "leaf_pile_55",
   layer = 0,
-  x = 1104,
-  y = 413,
+  x = 2512,
+  y = 405,
   properties = {
     {
       key = "can_respawn",
@@ -72352,7 +81779,7 @@ custom_entity{
 custom_entity{
   name = "leaf_pile_56",
   layer = 0,
-  x = 1072,
+  x = 2448,
   y = 413,
   properties = {
     {
@@ -72372,8 +81799,8 @@ custom_entity{
 custom_entity{
   name = "leaf_pile_57",
   layer = 0,
-  x = 1040,
-  y = 413,
+  x = 2080,
+  y = 405,
   properties = {
     {
       key = "can_respawn",
@@ -72414,8 +81841,8 @@ custom_entity{
 custom_entity{
   name = "leaf_pile_58",
   layer = 0,
-  x = 1184,
-  y = 341,
+  x = 2312,
+  y = 253,
   properties = {
     {
       key = "can_respawn",
@@ -72434,8 +81861,8 @@ custom_entity{
 custom_entity{
   name = "leaf_pile_59",
   layer = 0,
-  x = 1232,
-  y = 381,
+  x = 2480,
+  y = 421,
   properties = {
     {
       key = "can_respawn",
@@ -72454,8 +81881,8 @@ custom_entity{
 custom_entity{
   name = "leaf_pile_60",
   layer = 0,
-  x = 1232,
-  y = 349,
+  x = 2312,
+  y = 285,
   properties = {
     {
       key = "can_respawn",
@@ -72495,8 +81922,8 @@ custom_entity{
 
 door{
   layer = 0,
-  x = 1072,
-  y = 256,
+  x = 2888,
+  y = 768,
   direction = 3,
   sprite = "entities/door_locked",
   savegame_variable = "graveyard_of_the_waves_locked_door_d2",
@@ -72547,8 +81974,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 496,
-  y = 413,
+  x = 2232,
+  y = 453,
   width = 32,
   height = 32,
   origin_x = 16,
@@ -72560,8 +81987,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 496,
-  y = 349,
+  x = 2232,
+  y = 389,
   width = 32,
   height = 32,
   origin_x = 16,
@@ -72573,8 +82000,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 496,
-  y = 285,
+  x = 2088,
+  y = 373,
   width = 32,
   height = 32,
   origin_x = 16,
@@ -72586,8 +82013,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 496,
-  y = 317,
+  x = 2232,
+  y = 357,
   width = 32,
   height = 32,
   origin_x = 16,
@@ -72599,8 +82026,8 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 496,
-  y = 381,
+  x = 2232,
+  y = 421,
   width = 32,
   height = 32,
   origin_x = 16,
@@ -73173,8 +82600,8 @@ sensor{
 enemy{
   name = "chest_mimic",
   layer = 0,
-  x = 1192,
-  y = 53,
+  x = 2224,
+  y = 61,
   direction = 0,
   breed = "normal_enemies/chest_mimic",
 }
@@ -73424,8 +82851,8 @@ destructible{
 custom_entity{
   name = "leaf_pile_68",
   layer = 0,
-  x = 1192,
-  y = 173,
+  x = 2416,
+  y = 253,
   properties = {
     {
       key = "can_respawn",
@@ -73444,8 +82871,8 @@ custom_entity{
 chest{
   name = "coral_ore_chest",
   layer = 0,
-  x = 1192,
-  y = 37,
+  x = 2224,
+  y = 45,
   enabled_at_start = false,
   treasure_name = "coral_ore",
   treasure_savegame_variable = "cemetery_of_the_waves_chest_d1_state",
@@ -73455,14 +82882,14 @@ chest{
 destination{
   name = "from_blackbeard_cabin",
   layer = 0,
-  x = 576,
+  x = 2416,
   y = 29,
   direction = 3,
 }
 
 teletransporter{
   layer = 0,
-  x = 568,
+  x = 2408,
   y = 0,
   width = 16,
   height = 16,
@@ -73601,9 +83028,9 @@ separator{
 separator{
   layer = 0,
   x = 2584,
-  y = 480,
+  y = 0,
   width = 16,
-  height = 240,
+  height = 720,
 }
 
 separator{
@@ -76349,30 +85776,6 @@ destructible{
   can_be_cut = true,
 }
 
-enemy{
-  layer = 0,
-  x = 2496,
-  y = 1061,
-  direction = 0,
-  breed = "normal_enemies/rock_spider_red",
-}
-
-enemy{
-  layer = 0,
-  x = 2296,
-  y = 925,
-  direction = 0,
-  breed = "normal_enemies/rock_spider_red",
-}
-
-enemy{
-  layer = 0,
-  x = 2672,
-  y = 1085,
-  direction = 0,
-  breed = "normal_enemies/rock_spider_red",
-}
-
 destructible{
   layer = 0,
   x = 2256,
@@ -76412,8 +85815,8 @@ destructible{
 custom_entity{
   name = "leaf_pile_79",
   layer = 0,
-  x = 2752,
-  y = 893,
+  x = 2896,
+  y = 965,
   properties = {
     {
       key = "can_respawn",
@@ -76432,8 +85835,8 @@ custom_entity{
 custom_entity{
   name = "leaf_pile_80",
   layer = 0,
-  x = 2784,
-  y = 893,
+  x = 2904,
+  y = 933,
   properties = {
     {
       key = "can_respawn",
@@ -76452,8 +85855,8 @@ custom_entity{
 custom_entity{
   name = "leaf_pile_81",
   layer = 0,
-  x = 2784,
-  y = 861,
+  x = 2912,
+  y = 901,
   properties = {
     {
       key = "can_respawn",
@@ -76472,8 +85875,8 @@ custom_entity{
 custom_entity{
   name = "leaf_pile_82",
   layer = 0,
-  x = 2752,
-  y = 861,
+  x = 2896,
+  y = 869,
   properties = {
     {
       key = "can_respawn",
@@ -76487,17 +85890,6 @@ custom_entity{
   direction = 0,
   sprite = "entities/collapsing_platform_floating",
   model = "collapsing_floor",
-}
-
-custom_entity{
-  layer = 0,
-  x = 2688,
-  y = 981,
-  width = 16,
-  height = 16,
-  direction = 0,
-  sprite = "entities/warp_block",
-  model = "warp_block",
 }
 
 switch{
@@ -76545,6 +85937,7 @@ door{
   y = 1040,
   direction = 3,
   sprite = "entities/door_posts",
+  savegame_variable = "cemetery_of_waves_c5_door",
 }
 
 custom_entity{
@@ -77410,10 +86803,529 @@ door{
 
 enemy{
   layer = 0,
-  x = 2392,
-  y = 589,
+  x = 2368,
+  y = 565,
   direction = 0,
   breed = "normal_enemies/drowned_spirit",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2952,
+  y = 1341,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2840,
+  y = 1357,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2696,
+  y = 1341,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2824,
+  y = 1293,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+custom_entity{
+  name = "leaf_pile_84",
+  layer = 0,
+  x = 2904,
+  y = 997,
+  properties = {
+    {
+      key = "can_respawn",
+      value = "true",
+    },
+  },
+  width = 32,
+  height = 32,
+  origin_x = 16,
+  origin_y = 29,
+  direction = 0,
+  sprite = "entities/collapsing_platform_floating",
+  model = "collapsing_floor",
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_116",
+  layer = 0,
+  x = 2840,
+  y = 1197,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_117",
+  layer = 0,
+  x = 2840,
+  y = 1213,
+  width = 16,
+  height = 16,
+}
+
+custom_entity{
+  layer = 0,
+  x = 2592,
+  y = 1157,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+custom_entity{
+  layer = 0,
+  x = 2584,
+  y = 989,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+chest{
+  layer = 0,
+  x = 2648,
+  y = 1133,
+  treasure_name = "iron_candle_pickable",
+  treasure_variant = 3,
+  treasure_savegame_variable = "graveyard_of_the_waves_optional_treasure_d5",
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 2688,
+  y = 653,
+  direction = 3,
+  breed = "normal_enemies/pirate_bruiser",
+}
+
+enemy{
+  layer = 0,
+  x = 2960,
+  y = 573,
+  direction = 3,
+  breed = "normal_enemies/pirate_bruiser",
+}
+
+wall{
+  layer = 0,
+  x = 2872,
+  y = 688,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  layer = 0,
+  x = 2624,
+  y = 536,
+  width = 16,
+  height = 24,
+  stops_enemies = true,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_118",
+  layer = 0,
+  x = 2888,
+  y = 797,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_119",
+  layer = 0,
+  x = 2896,
+  y = 717,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_120",
+  layer = 0,
+  x = 2632,
+  y = 549,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_121",
+  layer = 0,
+  x = 2552,
+  y = 549,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_122",
+  layer = 0,
+  x = 2824,
+  y = 525,
+  width = 16,
+  height = 16,
+}
+
+custom_entity{
+  layer = 0,
+  x = 2440,
+  y = 597,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+switch{
+  name = "d5_door_switch",
+  layer = 0,
+  x = 2704,
+  y = 1032,
+  subtype = "solid",
+  sprite = "entities/switch_lever_1",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+door{
+  name = "d5_door",
+  layer = 0,
+  x = 2760,
+  y = 968,
+  direction = 3,
+  sprite = "entities/door_posts",
+  savegame_variable = "cemetery_of_waves_d5_door",
+}
+
+door{
+  name = "d5_door_2",
+  layer = 0,
+  x = 2776,
+  y = 968,
+  direction = 3,
+  sprite = "entities/door_posts",
+  savegame_variable = "cemetery_of_waves_d5_door",
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_123",
+  layer = 0,
+  x = 2824,
+  y = 461,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_124",
+  layer = 0,
+  x = 2616,
+  y = 397,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_125",
+  layer = 0,
+  x = 2616,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 2800,
+  y = 189,
+  direction = 3,
+  breed = "normal_enemies/pirate_bruiser",
+}
+
+enemy{
+  layer = 0,
+  x = 2656,
+  y = 221,
+  direction = 3,
+  breed = "normal_enemies/pirate_bruiser",
+}
+
+enemy{
+  layer = 0,
+  x = 2776,
+  y = 357,
+  direction = 3,
+  breed = "normal_enemies/pirate_bruiser",
+}
+
+enemy{
+  layer = 0,
+  x = 2664,
+  y = 341,
+  direction = 3,
+  breed = "normal_enemies/pirate_bruiser",
+}
+
+enemy{
+  layer = 0,
+  x = 2744,
+  y = 213,
+  direction = 3,
+  breed = "normal_enemies/pirate_bruiser",
+}
+
+enemy{
+  layer = 0,
+  x = 2288,
+  y = 933,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+enemy{
+  layer = 0,
+  x = 2448,
+  y = 1069,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+enemy{
+  layer = 0,
+  x = 2736,
+  y = 1093,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+enemy{
+  layer = 0,
+  x = 2776,
+  y = 325,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+enemy{
+  layer = 0,
+  x = 2672,
+  y = 413,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+enemy{
+  layer = 0,
+  x = 2888,
+  y = 349,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+enemy{
+  layer = 0,
+  x = 2816,
+  y = 221,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+enemy{
+  layer = 0,
+  x = 2664,
+  y = 173,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+jumper{
+  layer = 0,
+  x = 2608,
+  y = 1104,
+  width = 32,
+  height = 8,
+  direction = 6,
+  jump_length = 40,
+}
+
+custom_entity{
+  layer = 0,
+  x = 2224,
+  y = 237,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/warp_block",
+  model = "warp_block",
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_126",
+  layer = 0,
+  x = 2568,
+  y = 397,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_127",
+  layer = 0,
+  x = 2568,
+  y = 125,
+  width = 16,
+  height = 16,
+}
+
+enemy{
+  layer = 0,
+  x = 2544,
+  y = 309,
+  direction = 0,
+  breed = "normal_enemies/shooty_fish",
+}
+
+enemy{
+  layer = 0,
+  x = 2360,
+  y = 413,
+  direction = 0,
+  breed = "normal_enemies/shooty_fish",
+}
+
+enemy{
+  layer = 0,
+  x = 2264,
+  y = 325,
+  direction = 0,
+  breed = "normal_enemies/shooty_fish",
+}
+
+enemy{
+  layer = 0,
+  x = 2320,
+  y = 157,
+  direction = 0,
+  breed = "normal_enemies/shooty_fish",
+}
+
+enemy{
+  layer = 0,
+  x = 2416,
+  y = 173,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+enemy{
+  layer = 0,
+  x = 2432,
+  y = 341,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+enemy{
+  layer = 0,
+  x = 2336,
+  y = 453,
+  direction = 0,
+  breed = "normal_enemies/gel_big",
+}
+
+switch{
+  name = "b1_door_switch",
+  layer = 0,
+  x = 2208,
+  y = 272,
+  subtype = "solid",
+  sprite = "entities/switch_lever_1",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+door{
+  name = "b1_door",
+  layer = 0,
+  x = 2400,
+  y = 72,
+  direction = 3,
+  sprite = "entities/door_posts",
+  savegame_variable = "cemetery_of_waves_d5_door",
+}
+
+door{
+  name = "b1_door_2",
+  layer = 0,
+  x = 2416,
+  y = 72,
+  direction = 3,
+  sprite = "entities/door_posts",
+  savegame_variable = "cemetery_of_waves_d5_door",
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_129",
+  layer = 0,
+  x = 2416,
+  y = 45,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_130",
+  layer = 0,
+  x = 2808,
+  y = 1677,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_131",
+  layer = 0,
+  x = 2808,
+  y = 1693,
+  width = 48,
+  height = 16,
 }
 
 tile{
@@ -81439,15 +91351,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 2736,
-  y = 920,
-  width = 32,
-  height = 16,
-  pattern = "214",
-}
-
-tile{
-  layer = 1,
   x = 1824,
   y = 1184,
   width = 16,
@@ -81967,7 +91870,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 2472,
+  x = 2464,
   y = 480,
   width = 48,
   height = 48,
@@ -81976,11 +91879,633 @@ tile{
 
 tile{
   layer = 1,
-  x = 2504,
+  x = 2496,
   y = 520,
   width = 32,
   height = 40,
   pattern = "2139",
+}
+
+tile{
+  layer = 1,
+  x = 2824,
+  y = 1288,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2800,
+  y = 1296,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2800,
+  y = 1024,
+  width = 48,
+  height = 40,
+  pattern = "2137",
+}
+
+tile{
+  layer = 1,
+  x = 2840,
+  y = 832,
+  width = 32,
+  height = 40,
+  pattern = "2139",
+}
+
+tile{
+  layer = 1,
+  x = 2944,
+  y = 936,
+  width = 32,
+  height = 40,
+  pattern = "2141",
+}
+
+tile{
+  layer = 1,
+  x = 2928,
+  y = 824,
+  width = 48,
+  height = 48,
+  pattern = "2143",
+}
+
+tile{
+  layer = 1,
+  x = 2816,
+  y = 864,
+  width = 32,
+  height = 40,
+  pattern = "2141",
+}
+
+tile{
+  layer = 1,
+  x = 2928,
+  y = 888,
+  width = 32,
+  height = 40,
+  pattern = "2139",
+}
+
+tile{
+  layer = 1,
+  x = 2800,
+  y = 896,
+  width = 72,
+  height = 64,
+  pattern = "120",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2872,
+  y = 896,
+  width = 16,
+  height = 80,
+  pattern = "118",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2880,
+  y = 752,
+  width = 32,
+  height = 16,
+  pattern = "door.up.high",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2880,
+  y = 720,
+  width = 32,
+  height = 32,
+  pattern = "7",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2608,
+  y = 504,
+  enabled_at_start = false,
+  width = 16,
+  height = 56,
+  pattern = "67",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2560,
+  y = 504,
+  enabled_at_start = false,
+  width = 16,
+  height = 56,
+  pattern = "71",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2576,
+  y = 512,
+  width = 16,
+  height = 48,
+  pattern = "18",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2592,
+  y = 512,
+  width = 16,
+  height = 48,
+  pattern = "16",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2720,
+  y = 512,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2680,
+  y = 512,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2704,
+  y = 536,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2728,
+  y = 576,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2800,
+  y = 608,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2824,
+  y = 608,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2808,
+  y = 624,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2672,
+  y = 512,
+  width = 8,
+  height = 8,
+  pattern = "44",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2640,
+  y = 512,
+  width = 8,
+  height = 8,
+  pattern = "48",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2648,
+  y = 512,
+  width = 24,
+  height = 8,
+  pattern = "46",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2664,
+  y = 504,
+  width = 8,
+  height = 16,
+  pattern = "53",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2656,
+  y = 504,
+  width = 8,
+  height = 16,
+  pattern = "52",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2648,
+  y = 504,
+  width = 8,
+  height = 16,
+  pattern = "50",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2704,
+  y = 32,
+  width = 24,
+  height = 16,
+  pattern = "333",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 2624,
+  y = 120,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2680,
+  y = 136,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2704,
+  y = 136,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2912,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "48",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2952,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "44",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2936,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "48",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2944,
+  y = 192,
+  width = 24,
+  height = 8,
+  pattern = "46",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2968,
+  y = 192,
+  width = 8,
+  height = 8,
+  pattern = "44",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2960,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "53",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2952,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "52",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2944,
+  y = 184,
+  width = 8,
+  height = 16,
+  pattern = "50",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2920,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "52",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2336,
+  y = 184,
+  width = 48,
+  height = 40,
+  pattern = "2137",
+}
+
+tile{
+  layer = 1,
+  x = 2256,
+  y = 120,
+  width = 32,
+  height = 40,
+  pattern = "2141",
+}
+
+tile{
+  layer = 1,
+  x = 2256,
+  y = 232,
+  width = 16,
+  height = 56,
+  pattern = "124",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2248,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "122",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2272,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "85",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2488,
+  y = 184,
+  width = 48,
+  height = 48,
+  pattern = "2143",
+}
+
+tile{
+  layer = 1,
+  x = 2520,
+  y = 224,
+  width = 32,
+  height = 40,
+  pattern = "2139",
+}
+
+tile{
+  layer = 1,
+  x = 2216,
+  y = -8,
+  width = 16,
+  height = 32,
+  pattern = "113",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2200,
+  y = 0,
+  width = 48,
+  height = 24,
+  pattern = "129",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 1,
+  x = 2280,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "354",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2216,
+  y = 1384,
+  width = 32,
+  height = 16,
+  pattern = "356",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2256,
+  y = 1368,
+  width = 16,
+  height = 16,
+  pattern = "354",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2992,
+  y = 1360,
+  width = 16,
+  height = 16,
+  pattern = "354",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2968,
+  y = 1384,
+  width = 32,
+  height = 16,
+  pattern = "356",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2664,
+  y = 1200,
+  width = 16,
+  height = 16,
+  pattern = "354",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2592,
+  y = 1216,
+  width = 16,
+  height = 16,
+  pattern = "354",
+  tileset = "indoors_cabin",
+}
+
+tile{
+  layer = 1,
+  x = 2640,
+  y = 56,
+  width = 16,
+  height = 8,
+  pattern = "61",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2672,
+  y = 56,
+  width = 16,
+  height = 8,
+  pattern = "63",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2624,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "59",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2656,
+  y = 56,
+  width = 16,
+  height = 8,
+  pattern = "62",
+  tileset = "treasure",
+}
+
+tile{
+  layer = 1,
+  x = 2672,
+  y = 72,
+  width = 24,
+  height = 8,
+  pattern = "65",
+  tileset = "treasure",
 }
 
 enemy{

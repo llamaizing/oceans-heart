@@ -1,4 +1,4 @@
--- Lua script of map goatshead_island/interiors/CV_witch.
+-- Lua script of map oakhaven/ivystump_interiors/inn.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
@@ -10,6 +10,8 @@
 local map = ...
 local game = map:get_game()
 
-function witch:on_interaction()
-  game:start_dialog("_goatshead.npcs.crabhook.witch")
+function innkeeper:on_interaction()
+  game:start_dialog("_oakhaven.npcs.ivystump.inn.innkeeper", function()
+    require("scripts/shops/inn"):start()
+  end)
 end

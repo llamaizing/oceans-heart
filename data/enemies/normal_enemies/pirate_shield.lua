@@ -38,7 +38,7 @@ local properties = {
 
 properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)
-
+enemy:set_dying_sprite_id("enemies/enemy_killed_ko")
 
 function enemy:hit_by_toss_ball()
   enemy.shield_down = true

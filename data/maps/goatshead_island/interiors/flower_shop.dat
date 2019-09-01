@@ -740,8 +740,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 152,
-  y = 96,
+  x = 160,
+  y = 80,
   width = 8,
   height = 24,
   pattern = "218",
@@ -749,8 +749,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 120,
-  y = 96,
+  x = 128,
+  y = 80,
   width = 32,
   height = 24,
   pattern = "219",
@@ -758,8 +758,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 96,
+  x = 120,
+  y = 80,
   width = 8,
   height = 24,
   pattern = "217",
@@ -866,8 +866,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
-  y = 112,
+  x = 88,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "38",
@@ -875,8 +875,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 80,
-  y = 112,
+  x = 104,
+  y = 96,
   width = 16,
   height = 16,
   pattern = "38",
@@ -972,6 +972,16 @@ tile{
   pattern = "132",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 104,
+  width = 32,
+  height = 32,
+  pattern = "57",
+  tileset = "misc",
+}
+
 destination{
   name = "from_outside",
   layer = 0,
@@ -1022,16 +1032,16 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 72,
-  y = 117,
+  x = 96,
+  y = 101,
   sprite = "entities/bush_arrowwood",
   weight = -1,
 }
 
 destructible{
   layer = 0,
-  x = 88,
-  y = 117,
+  x = 112,
+  y = 101,
   sprite = "entities/bush_arrowwood",
   weight = -1,
 }
@@ -1062,8 +1072,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 144,
-  y = 109,
+  x = 152,
+  y = 93,
   sprite = "entities/bush_flowers_blue",
   weight = -1,
 }
@@ -1086,6 +1096,24 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/man/man_10.5",
+}
+
+npc{
+  name = "^crafting_table",
+  layer = 0,
+  x = 120,
+  y = 133,
+  direction = 3,
+  subtype = 1,
+}
+
+npc{
+  name = "^crafting_table_2",
+  layer = 0,
+  x = 136,
+  y = 133,
+  direction = 3,
+  subtype = 1,
 }
 
 tile{
@@ -1315,8 +1343,8 @@ tile{
 
 pickable{
   layer = 1,
-  x = 128,
-  y = 109,
+  x = 136,
+  y = 93,
   treasure_name = "violets",
 }
 

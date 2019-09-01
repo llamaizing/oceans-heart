@@ -183,6 +183,7 @@ map{ id = "oakhaven/caves/amalenchier_tomb", description = "Amalenchier's Tomb" 
 map{ id = "oakhaven/caves/eastoak_coral_ore_cave", description = "Eastoak Coral Ore Cave" }
 map{ id = "oakhaven/caves/eastoak_health_shrine", description = "Eastoak Health Shrine" }
 map{ id = "oakhaven/caves/lighthouse", description = "Lighthouse - Sinking" }
+map{ id = "oakhaven/caves/llama_grove", description = "Llama Grove" }
 map{ id = "oakhaven/caves/mangrove_tree", description = "Mangrove Tree" }
 map{ id = "oakhaven/caves/manna_oak_tunnels", description = "Manna Oak Tunnels" }
 map{ id = "oakhaven/caves/marblecliff_NE_cave", description = "Marblecliff NE Cave" }
@@ -231,6 +232,7 @@ map{ id = "oakhaven/interiors/tailor", description = "Tailor" }
 map{ id = "oakhaven/interiors/wall_jail", description = "Wall Jail" }
 map{ id = "oakhaven/ivystump", description = "Ivystump Village" }
 map{ id = "oakhaven/ivystump_interiors/crab_cave", description = "Crab Cave" }
+map{ id = "oakhaven/ivystump_interiors/inn", description = "Inn" }
 map{ id = "oakhaven/ivystump_interiors/lamia", description = "Lamia's House" }
 map{ id = "oakhaven/ivystump_interiors/sawmill", description = "Sawmill" }
 map{ id = "oakhaven/ivystump_interiors/shop", description = "Shop" }
@@ -319,6 +321,7 @@ sprite{ id = "enemies/bosses/skeleton_lord", description = "Skeleton Lord" }
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
 sprite{ id = "enemies/bosses/zephyrine", description = "Zeyphyrine" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
+sprite{ id = "enemies/enemy_killed_ko", description = "EnemyKilled-KO" }
 sprite{ id = "enemies/enemy_killed_projectile", description = "Enemy Killed-Projectile" }
 sprite{ id = "enemies/enemy_killed_small", description = "Enemy Killed-Small" }
 sprite{ id = "enemies/ghost_smoke_large", description = "GhostSmokeBig" }
@@ -396,6 +399,7 @@ sprite{ id = "enemies/normal_enemies/cyclops_1", description = "Cyclops 01" }
 sprite{ id = "enemies/normal_enemies/dasher", description = "Dasher" }
 sprite{ id = "enemies/normal_enemies/drowned_spirit", description = "Drowned Spirit" }
 sprite{ id = "enemies/normal_enemies/frog" }
+sprite{ id = "enemies/normal_enemies/gel_big", description = "Gel-Big" }
 sprite{ id = "enemies/normal_enemies/gel_black", description = "Black Gel" }
 sprite{ id = "enemies/normal_enemies/ghost_1", description = "Ghost 1" }
 sprite{ id = "enemies/normal_enemies/ghost_2", description = "Ghost 2" }
@@ -1634,6 +1638,7 @@ enemy{ id = "normal_enemies/cyclops_1", description = "Cyclops Bomber" }
 enemy{ id = "normal_enemies/dasher", description = "Dasher" }
 enemy{ id = "normal_enemies/drowned_spirit", description = "Drowned Spirit" }
 enemy{ id = "normal_enemies/frog", description = "Frog" }
+enemy{ id = "normal_enemies/gel_big", description = "Gel-Big" }
 enemy{ id = "normal_enemies/gel_black", description = "Black Gel" }
 enemy{ id = "normal_enemies/ghost_1", description = "Ghost 1" }
 enemy{ id = "normal_enemies/ghost_2", description = "Ghost 2" }

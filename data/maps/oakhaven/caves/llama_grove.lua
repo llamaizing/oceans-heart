@@ -1,4 +1,4 @@
--- Lua script of map goatshead_island/interiors/flower_shop.
+-- Lua script of map oakhaven/caves/llama_grove.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
@@ -10,7 +10,7 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
+-- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
 
   -- You can initialize the movement and sprites of various
@@ -21,8 +21,4 @@ end
 -- that is, when the player takes control of the hero.
 function map:on_opening_transition_finished()
 
-end
-
-function atem:on_interaction()
-  game:start_dialog("_goatshead.npcs.flower_shop.1")
 end
