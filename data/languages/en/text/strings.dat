@@ -42,6 +42,7 @@ text{ key = "location.veilwood", value = "The Veilwood" }
 text{ key = "location.west_coast", value = "West Oak" }
 text{ key = "location.yarrowmouth", value = "Yarrowmouth" }
 text{ key = "location.yarrowmouth_village", value = "Yarrowmouth" }
+text{ key = "location.isle_of_storms", value = "Isle of Storms" }
 text{ key = "item.whisky_for_juglan.1", value = "Whisky" }
 text{ key = "item.iron_pinecone.1", value = "Iron Pinecone" }
 text{ key = "item.key_thrush_fort.1", value = "Thrush Fort Key" }
@@ -52,7 +53,17 @@ text{ key = "item.key_juniper_grove_2.1", value = "Juniper Grove Inner Gate Key"
 text{ key = "item.key_mushroom_spot.1", value = "Key to Mushroom Picking Spot" }
 text{ key = "item.key_mead_safehouse.1", value = "Sticky Honey Key" }
 text{ key = "item.key_juneberry_inn.1", value = "Key to Another Inn?" }
+text{ key = "item.key_poplar_shack.1", value = "Mossy Poplar Forest Key" }
 text{ key = "item.stone_beak.1", value = "A Beak-shaped Stone?" }
+text{ key = "item.sleeping_draught.1", value = "Sleeping Draught" }
+text{ key = "item.hideout_chart.1", value = "Pirate Council Hideout Chart" }
+text{ key = "item.monkshood.1", value = "Monkshood Petals" }
+text{ key = "item.bomb_arrow_ticket.1", value = "Bomb Shop Ticket" }
+text{ key = "item.bow_bombs.1", value = "Bomb Arrows" }
+text{ key = "item.gust.1", value = "Zephyrine's Tempest" }
+text{ key = "item.armor_tools.1", value = "Armorer's Tool Set" }
+text{ key = "item.sword_of_the_sea_king.1", value = "Sword of the Sea King" }
+text{ key = "item.oceansheart_chart.1", value = "Isle of Storms Chart" }
 text{ key = "menu.quest_log.back_prompt", value = "D Back" }
 text{ key = "menu.quest_log.main_quests_tab", value = "Main\nQuests" }
 text{ key = "menu.quest_log.no_main_quests", value = "You have no main quests" }

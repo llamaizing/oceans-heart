@@ -54,6 +54,7 @@ function bomb_maker:on_interaction()
   elseif game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 0 then
     game:start_dialog("_oakhaven.npcs.shops.bomb_maker.quest1", function()
       game:set_value("quest_bomb_arrows", 1)
+      game:set_value("possession_bomb_arrow_ticket", nil)
     end)
 
 

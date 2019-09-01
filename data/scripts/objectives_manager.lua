@@ -911,6 +911,9 @@ function objectives_manager.create(game)
 					check_index = tonumber(stripped_text:match"%$@(%d)")
 					pre_text = stripped_text:sub(1,check_position-1) --save text preceding checkmark
 					pre_text = pre_text:gsub("%$[%!%?]", "")
+
+					entry.check_index = check_index
+					entry.check_position = pre_text
 				else check_index = tonumber(stripped_text:match"%$(%d)") end --only look for $1-$9 instances if no dynamic checkmark on the line
 
 				--ignore index values of zero
@@ -918,8 +921,6 @@ function objectives_manager.create(game)
 					check_index = nil
 					check_position = nil
 				end
-				entry.check_index = check_index
-				entry.check_position = pre_text
 
 				--strip out dynamic checkmark characters now that info is saved
 				for i=1,9 do

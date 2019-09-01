@@ -217,12 +217,17 @@ main{
 	dialog_id = "quest.main.mangrove_sword",
 	calc_phase = "quest_mangrove_sword",
 	location = "location.oakhaven",
+	items = {"sword_of_the_sea_king.1"},
 }
 
 main{
     dialog_id = "quest.main.pirate_fort",
     calc_phase = "quest_pirate_fort",
-    location = "location.oakhaven"
+    location = "location.oakhaven",
+    items = {
+		"sleeping_draught.1",
+		"hideout_chart.1",
+    },
 }
 
 main{
@@ -233,13 +238,19 @@ main{
 
 main{
 	dialog_id = "quest.main.isle_of_storms",
-	calc_phase = "quest_isle_of_storms"
+	calc_phase = "quest_isle_of_storms",
+	location = "location.isle_of_storms",
+	items = {"oceansheart_chart.1"},
 }
 
 main{
     dialog_id = "quest.main.monkshood",
     calc_phase = "quest_monkshood",
-    location = "location.oakhaven"
+    location = "location.oakhaven",
+    replace_v = {"amount_monkshood"},
+    items = {
+		"monkshood.1",
+    },
 }
 
 
@@ -271,6 +282,7 @@ side{
 side{
 	dialog_id = "quest.side.bomb_arrows",
 	calc_phase = "quest_bomb_arrows",
+	items = {"bomb_arrow_ticket.1"},
 }
 
 side{
@@ -341,13 +353,19 @@ side{
 
 side{
     dialog_id = "quest.side.ferris_tools",
-    calc_phase = "quest_ferris_tools"
+    calc_phase = "quest_ferris_tools",
+    location = {
+		"location.ballast_harbor",
+		"location.oakhaven",
+	},
+    items = {"armor_tools.1"},
 }
 
 side{
     dialog_id = "quest.side.goatshead.poplar_shack_key",
     calc_phase = "quest_poplar_shack_lost_key",
-    location = "location.goatshead_island"
+    location = "location.goatshead_island",
+    items = {"key_poplar_shack.1"},
 }
 
 side{
@@ -392,7 +410,8 @@ side{
 	calc_phase = "quest_lighthouses",
 	replace_v = {
 		"lighthouses_quest_num_lit"
-	}
+	},
+	items = {"gust.1"},
 }
 
 side{

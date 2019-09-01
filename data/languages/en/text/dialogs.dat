@@ -15081,12 +15081,15 @@ dialog{
   id = "quest.main.isle_of_storms",
   title = "The Isle of Storms",
   text = [[
-Blackbeard's worried first
-mate gave you a chart showing
-the location of the Isle of Storms
+##Blackbeard's worried first mate gave
+##you a chart showing the location of
+##the Isle of Storms.
 @Ask Morus to sail you to the Isle
-@Find a way into the Sea King's
-sunken palace
+::!
+!%=$i0    QUEST ITEM:
+!%=    $ITEM_NAME
+@Find a way into the Sea King's sunken
+palace
 @Search for the Ocean's Heart
 @!Escape from the collapsing palace!
 @Fight Blackbeard
@@ -15150,20 +15153,22 @@ dialog{
   id = "quest.main.mangrove_sword",
   title = "The Mangrove Sword",
   text = [[
-Hazel thinks the Sword of the
-Sea King can destroy the
-Ocean's Heart.
+##Hazel thinks the Sword of the Sea King
+##can destroy the Ocean's Heart.
 @Locate an ancient mangrove thicket
-!The fish seller in the market
-!also sells mangrove leaves,
-!he might know where one is
-@Meet Hazel at the south gate
-!and take her to Gull Rock,
-!southwest of the city.
-@Find the oldest mangrove
-tree in the thicket
-@Retrieve the Sword of the
-Sea King
+!
+!The fish seller in the market also
+!sells mangrove leaves, he might know
+!where one is.
+@Meet Hazel at the south gate $!and take
+!her to Gull Rock, southwest of the
+!city
+@Find the oldest mangrove tree in the
+thicket
+@Retrieve the Sword of the Sea King
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15171,17 +15176,20 @@ dialog{
   id = "quest.main.monkshood",
   title = "Tiresome Herbs",
   text = [[
-To sneak into Fort Crow,
-you'll need to make some
-sleeping draught.
+##To sneak into Fort Crow, you'll need
+##to make some sleeping draught.
 @Gather monkshood petals
-!-Look in the northwest
-!part of Marblecliff
-!mountain, near dangerous
-!plants
-@Bring the monkshood petals
-to the apothecary
-
+!
+!Look in the northwest part of
+!Marblecliff mountain, near dangerous
+!plants.
+@Bring the monkshood petals to the
+apothecary
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME ($v1) --// $v1 is the number of monkshood petals the player has in inventory
+#%=
+#REWARD: $ITEM{sleeping_draught.1}   Sleeping Draught
 ]],
 }
 
@@ -15189,30 +15197,33 @@ dialog{
   id = "quest.main.pirate_fort",
   title = "The Pirate Fort",
   text = [[
-You need to find out if the
-Pirate Council knows where
-the Isle of Storms is yet.
+##You need to find out if the Pirate
+##Council knows where the Isle of Storms
+##is yet.
 @Speak with Morus
-!He's a volunteer navyman
-!who's usually at the
-!Salamander Heartache saloon
-@Get sleeping potion from the
-town apothecary
-!There's an apothecary
-!up on the east side of
-!town
+!
+!He's a volunteer navyman who's usually
+!at the Salamander Heartache saloon.
+@Get sleeping potion $!from the town
+!apothecary
+!
+!There's an apothecary up on the east
+!side of town.
 @!Return to Morus
-@Find the pirates' ale
-shipment and spike it.
-!Look for a barrel marked
-!with a star
-@Sneak into Fort Crow while
-the pirates are asleep
-!Morus will meet you down
-!at Fort Crow
+@Find the pirates' ale shipment and
+spike it
+!
+!Look for a barrel marked with a star.
+@Sneak into Fort Crow $!while the pirates
+!are asleep
+!
+!Morus will meet you down at Fort Crow.
 @Find Captain Al-Jazari
-@Meet Morus at the port
-to sail to Snapmast Reef
+@Meet Morus at the port to sail to
+Snapmast Reef
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15220,13 +15231,12 @@ dialog{
   id = "quest.main.snapmast",
   title = "The Hideout",
   text = [[
-You've found the location of
-the Pirate Council's hideout
+You've found the location of the
+Pirate Council's hideout.
 @Meet Morus at Oakhaven Port
-@Search for the Pirate
-Council's hideout
-@Find information on the
-Isle of Storms
+@Search for the Pirate Council's
+hideout
+@Find information on the Isle of Storms
 ]],
 }
 
@@ -15332,16 +15342,22 @@ dialog{
   id = "quest.side.bomb_arrows",
   title = "Thyme's Receipt",
   text = [[
-You found a receipt to pick up
-an order from the bomb shop
-@Check the bomb shop
-!in Oakhaven, where it
-!seems the receipt was issued.
-@Track down the pirates
-who stole the package
-!They're hiding out at
-!Oakhaven's shipyard
+##You found a receipt to pick up an
+##order from the bomb shop.
+@Check the bomb shop $!in Oakhaven, where
+!it seems the receipt was issued
+@Track down the pirates who stole the
+package
+!
+!They're hiding out at Oakhaven's
+!shipyard.
 @Confront the pirates
+@Look around for the package
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+%=?
+?REWARD: $ITEM{bow_bombs.1}   Bomb Arrows
 ]],
 }
 
@@ -15389,14 +15405,18 @@ dialog{
   id = "quest.side.ferris_tools",
   title = "Black Market Tools",
   text = [[
-Ferris could make you more
-armor if you could find her
-some blacksmith tools.
-@Find some tools somewhere
-!Ferris recommends looking
-!in Ballast Harbor
+##Ferris could make you more armor if
+##you find her some blacksmith tools.
+@Find some tools $!somewhere
+!
+!Ferris recommends looking in Ballast
+!Harbor.
 @Return the tools to Ferris
-
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+#%=
+#REWARD: $ITEM{armor_upgrade_2.1}   Defense +2
 ]],
 }
 
@@ -15447,14 +15467,15 @@ dialog{
   id = "quest.side.goatshead.poplar_shack_key",
   title = "Mossy Key",
   text = [[
-You found a key laying in
-Poplar Forest. Wonder where
-it goes?
-@Find a locked door for the
-key you found in the woods.
-?- It went to an abandoned
-?shack.
-
+##You found a key laying in Poplar
+##Forest. Wonder where it goes?
+@Find a locked door for the key you
+found in the woods
+::
+%1!$i0    QUEST ITEM:
+%1!    $ITEM_NAME
+?
+?It went to an abandoned shack.
 ]],
 }
 
@@ -15498,16 +15519,17 @@ dialog{
   id = "quest.side.lighthouses",
   title = "Old Lighthouses",
   text = [[
-You hear about four ancient
-lighthouses built to guide
-a lost lover back from sea.
-@Light all four lighthouses.
+##You hear about four ancient
+##lighthouses built to guide a lost
+##lover back from sea.
+@Light all four lighthouses$!:
 ! $v1 lighthouses are burning.
-@You feel drawn back to
-Naerreturn Bay.
-!It's on Yarrowmouth.
-@Board the ghost ship.
-
+@You feel drawn back to Naerreturn Bay
+!
+!It's on Yarrowmouth Island.
+@Board the ghost ship
+#::
+#%=ITEM FOUND: $ITEM{gust.1}   $ITEM_NAME
 ]],
 }
 
@@ -15533,11 +15555,13 @@ dialog{
   id = "quest.side.oakhaven.haunted_monastery",
   title = "Haunted Monastery",
   text = [[
-The monk on Marblecliff Summit
-says a beast lurks in the spring
-at the base of the monastery.
+##The monk on Marblecliff Summit says a
+##beast lurks in the spring at the base
+##of the monastery.
 @Find the creature and destroy it
 @Let the monk know you've succeeded
+::?
+?REWARD: $ITEM{bread.2}   Burroak Bread
 ]],
 }
 
@@ -15730,7 +15754,7 @@ Yarrowmoth Smithy and get some armor
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
 #%=
-#REWARD: $ITEM{armor_upgrade_2.1}    Defense + 2
+#REWARD: $ITEM{armor_upgrade_2.1}    Defense +2
 ]],
 }
 
