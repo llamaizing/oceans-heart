@@ -15027,26 +15027,25 @@ dialog{
   id = "quest.main.hazel",
   title = "The Trail Warms Up",
   text = [[
-Hazel and Dad went to Oakhaven
+#Hazel and Dad went to Oakhaven.
 @Investigate Oakhaven
 @Search town for Hazel
-!You were told to ask a
-!man selling mangrove
-!leaves.
-@!Try the Hornwart inn
-!It's in the northwest
-!corner of town
+!
+!You were told to ask a man selling
+!mangrove leaves.
+@!Try the Hornwart Inn
+!
+!It's in the northwest corner of town.
 @!Search the library
-@!Hazel was going to meet
-!pirates at the port
-@Hazel's in the governor's
-secret archives.
-!There's a secret tunnel
-!on Marblecliff Mountain.
-!Head east from the ruins,
+@!Hazel was going to meet pirates at
+!the port
+@Hazel's in the governor's secret
+archives
+!
+!There's a secret tunnel on Marblecliff
+!Mountain. Head east from the ruins,
 !over the waterfalls.
-@Meet Hazel back at the inn.
-
+@Meet Hazel back at the inn
 ]],
 }
 
@@ -15140,12 +15139,11 @@ dialog{
   id = "quest.main.limestone.meet_juglan_at_pier",
   title = "Hitching A Ride",
   text = [[
-Jugland will give you a
-ride to Goatshead Harbor.
+##Jugland will give you a ride to
+##Goatshead Harbor.
 @Meet Juglan at the pier
-@Investigate the Sodden
-Cormorant Tavern.
-
+@Investigate the Sodden Cormorant
+Tavern
 ]],
 }
 
@@ -15231,8 +15229,8 @@ dialog{
   id = "quest.main.snapmast",
   title = "The Hideout",
   text = [[
-You've found the location of the
-Pirate Council's hideout.
+##You've found the location of the
+##Pirate Council's hideout.
 @Meet Morus at Oakhaven Port
 @Search for the Pirate Council's
 hideout
@@ -15260,14 +15258,13 @@ dialog{
   id = "quest.main.tidal_starfruit",
   title = "A Tidy Starnut?",
   text = [[
-Hazel needs a tiny Starfood
-or something to make an
-amulet to catch the pirates.
+##Hazel needs a tiny Starfood or
+##something to make an amulet to catch
+##the pirates.
 @Find a mangrove thicket
-@!Look southwest of town
-!Around Gull Rock
+@!Look southwest of town around Gull
+!Rock
 @Return the starfruit to Hazel
-
 ]],
 }
 
@@ -15310,13 +15307,12 @@ dialog{
   id = "quest.side.ballast_harbor.hornet_honey",
   title = "Hornet Honey",
   text = [[
-Somewhere in Tern Marsh
-you can find hornet honey.
-@Locate the hornets and
-take their honey
-@Return the honey to
-Benjamin at the meadery
-
+##Somewhere in Tern Marsh you can find
+##hornet honey.
+@Locate the hornets and take their
+honey
+@Return the honey to Benjamin at the
+meadery
 ]],
 }
 
@@ -15424,17 +15420,18 @@ dialog{
   id = "quest.side.goatshead.phantom_squid",
   title = "Phantom Squid Hunt",
   text = [[
-The Phantom Squid is manacing
-merchants' records and causing
-economic chaos.
+##The Phantom Squid is manacing
+##merchants' records and causing
+##economic chaos.
 @Set a trap with Rilesdorf
-!Rilesdorf's shop is by the
-!pier and blacksmith.
+!
+!Rilesdorf's shop is by the pier and
+!blacksmith.
 @Track the Phantom Squid!
-@!Return to Eamon, back
-!at the Marchant's Guild
-?You resolved the situation
-?one way or another.
+@!Return to Eamon back at the Marchants'
+!Guild
+?You resolved the situation one way or
+?another.
 ]],
 }
 
@@ -15442,24 +15439,21 @@ dialog{
   id = "quest.side.goatshead.phantom_squid_part_2",
   title = "A Broken Contract",
   text = [[
-The people of Crabhook are
-trapped in an exploitative
-contract.
-@Find the contract in the
-Merchants' Guild building
-!Aster gave you a note-
-!try showing it to someone
-!who seems spineless.
+##The people of Crabhook are trapped in
+##an exploitative contract.
+@Find the contract in the Merchants'
+Guild building
+!
+!Aster gave you a note–try showing it
+!to someone who seems spineless.
 @Give Aster the contract
-@!UNUSED PHASE
-@Show the Barbell Brutes
-your immense strength
-!to convince them to stop
-!helping Eamon. They live
-!on the north street in town
+@!?UNUSED PHASE
+@Show the Barbell Brutes your immense
+strength $!to convince them to stop
+!helping Eamon
+!
+!They live on the north street in town.
 @Check in with Aster
-
-
 ]],
 }
 
@@ -15483,16 +15477,16 @@ dialog{
   id = "quest.side.goatshead.secret_tunnels",
   title = "Abandoned Tunnels",
   text = [[
-Some adventurers who know their
-limits want help clearing
-monsters out of some old tunnels.
+##Some adventurers who know their limits
+##want help clearing monsters out of
+##some old tunnels.
 @Meet the adventurers
-!-the entrance to the tunnels
-is near the inn.
+!
+!The entrance to the tunnels is near
+!the inn.
 @Defeat the big spider
-@Let the adventurers know the
-tunnels have been cleared
-
+@Let the adventurers know the tunnels
+have been cleared
 ]],
 }
 
@@ -15537,15 +15531,14 @@ dialog{
   id = "quest.side.oakhaven.bomb_shop",
   title = "Saltpeter Cave",
   text = [[
-The Oakhaven Bomb Shop is
-having monster-realted supply
-chain issues.
-@!Check in with the shop in
-!Oakhaven city
-@Enter the saltpeter cave
-near Fort Crow
-!Out the city's south gate,
-!head east.
+##The Oakhaven Bomb Shop is having
+##monster-realted supply chain issues.
+@!Check in with the shop in Oakhaven
+!City
+@Enter the saltpeter cave near Fort
+Crow
+!
+!Out the city's south gate, head east.
 @Find and destroy the monster
 @Return to the bomb shop
 ]],
@@ -15587,36 +15580,39 @@ dialog{
   id = "quest.side.oakhaven.manna_oaks",
   title = "The Oak Blight",
   text = [[
-Hazel asked you to check out
-Oakhaven's trees, which are
-getting sick.
-@Collect a twig from one of
-the other two giant oaks.
-!There are giant trees in
-!Veilwood forest and on top
-!of Marblecliff Mountain.
+##Hazel asked you to check out
+##Oakhaven's trees, which are getting
+##sick.
+@Collect a twig from one of the other
+two giant oaks
+!
+!There are giant trees in Veilwood
+!Forest and on top of Marblecliff
+!Mountain.
 @!Take the twig back to Hazel
+!
 !She's at Oakhaven's library.
 @!Defend Hazel!
-@Visit Ivystump and ask if
-anyone knows about the Oaks.
-!Ivystump is on the western
-!edge of Oakhaven, past the
-!Veilwood forest
-@!An old botanist, Lamia,
-!lives in the southeast part
-!of town. She might know
+@Visit Ivystump and ask if anyone knows
+about the Oaks
+!
+!Ivystump is on the western edge of
+!Oakhaven, past the Veilwood Forest.
+@!?
+!
+!An old botanist, Lamia, lives in the
+!southeast part of town. She might know
 !about the Manna Oaks.
-@Check Amalenchier's grave.
-!It's in a grove of fir trees
-!in the west of the Veilwood.
-@Return to the tomb entrance.
-@Investigate the 3 Manna Oaks.
-!You've looked at $v1 so far.
-@Investigate further down
-the tunnels.
-@Let Hazel know there were
-monsters infesting the roots.
+@Check Amalenchier's grave
+!
+!It's in a grove of fir trees in the
+!west of the Veilwood.
+@Return to the tomb entrance
+@Investigate the 3 Manna Oaks$!:
+! You've looked at $v1 so far.
+@Investigate further down the tunnels
+@Let Hazel know there were monsters
+infesting the roots
 ]],
 }
 
@@ -15681,7 +15677,7 @@ to play
 @Check the band's posters and make sure
 monsters aren't attacking them
 @Beat up that monster!
-@Go see Gunther's show.
+@Go see Gunther's show
 ?::
 ?REWARD: $ITEM{coral_ore.1}   Coral Ore --// only revealed after quest is over
 ]],
@@ -15723,14 +15719,12 @@ dialog{
   id = "quest.side.oakhaven.sinking_lighthouse",
   title = "Seaglint Ruins Key",
   text = [[
-You found a key in a
-sinking ruins. It likely
-unlocks a nearby door.
-@Find the locked door.
-? - It was a locked
-?lighthouse in the
+##You found a key in a sinking ruins. It
+##likely unlocks a nearby door.
+@Find the locked door
+?
+?It was a locked lighthouse in the
 ?ruins.
-
 ]],
 }
 
@@ -15744,7 +15738,7 @@ dialog{
 @Search Yarrowmouth for an iron
 pinecone
 !
-!It is said to be found in Puzzlewood
+!It is said to be found in Puzzlewood.
 @!Bring the pinecone to Mera at the
 !Yarrowmoth Smithy and get some armor
 @Bring the pinecone to Mera at the --// optional phase shown only if player had insufficient funds
