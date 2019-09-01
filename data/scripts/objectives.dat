@@ -159,60 +159,60 @@
 ]=]
 
 main{
-	dialog_id = "quest.main.limestone.get_whisky",
-	calc_phase = "quest_whisky_for_juglan_phase",
-	location = "location.limestone_island",
-	items = {"whisky_for_juglan.1"},
+    dialog_id = "quest.main.limestone.get_whisky",
+    calc_phase = "quest_whisky_for_juglan_phase",
+    location = "location.limestone_island",
+    items = {"whisky_for_juglan.1"},
 }
 
 main{
-	dialog_id = "quest.main.limestone.meet_juglan_at_pier",
-	location = {
-		"location.limestone_island",
-		"location.goatshead_island",
-	},
-	calc_phase = "quest_meet_juglan_at_pier"
+    dialog_id = "quest.main.limestone.meet_juglan_at_pier",
+    location = {
+        "location.limestone_island",
+        "location.goatshead_island",
+    },
+    calc_phase = "quest_meet_juglan_at_pier"
 }
 
 main{
-	dialog_id = "quest.main.kelpton",
-	location = {
-		"location.ballast_harbor",
-		"location.ballast_harbor",
-		"location.ballast_harbor",
-		false,
-	},
-	calc_phase = "quest_kelpton",
-	items = {
-		"charts.1",
-		"key_kingsdown.1",
-	},
+    dialog_id = "quest.main.kelpton",
+    location = {
+        "location.ballast_harbor",
+        "location.ballast_harbor",
+        "location.ballast_harbor",
+        false,
+    },
+    calc_phase = "quest_kelpton",
+    items = {
+        "charts.1",
+        "key_kingsdown.1",
+    },
 }
 
 main{
     dialog_id = "quest.main.spruce_head",
     calc_phase = "quest_spruce_head",
-	location = {
-		"location.goatshead_island",
-		"location.goatshead_island",
-		"location.yarrowmouth",
-	},
+    location = {
+        "location.goatshead_island",
+        "location.goatshead_island",
+        "location.yarrowmouth",
+    },
 }
 
 main{
-	dialog_id = "quest.main.hourglass_fort",
-	calc_phase = "quest_hourglass_fort",
-	location = "location.yarrowmouth",
-	items = {
-		"key_juniper_grove.1",
-		"key_juniper_grove_2.1",
-	},
+    dialog_id = "quest.main.hourglass_fort",
+    calc_phase = "quest_hourglass_fort",
+    location = "location.yarrowmouth",
+    items = {
+        "key_juniper_grove.1",
+        "key_juniper_grove_2.1",
+    },
 }
 
 main{
-	dialog_id = "quest.main.hazel",
-	calc_phase = "quest_hazel",
-	location = "location.oakhaven"
+    dialog_id = "quest.main.hazel",
+    calc_phase = "quest_hazel",
+    location = "location.oakhaven"
 }
 
 main{
@@ -222,10 +222,10 @@ main{
 }
 
 main{
-	dialog_id = "quest.main.mangrove_sword",
-	calc_phase = "quest_mangrove_sword",
-	location = "location.oakhaven",
-	items = {"sword_of_the_sea_king.1"},
+    dialog_id = "quest.main.mangrove_sword",
+    calc_phase = "quest_mangrove_sword",
+    location = "location.oakhaven",
+    items = {"sword_of_the_sea_king.1"},
 }
 
 main{
@@ -233,8 +233,8 @@ main{
     calc_phase = "quest_pirate_fort",
     location = "location.oakhaven",
     items = {
-		"sleeping_draught.1",
-		"hideout_chart.1",
+        "sleeping_draught.1",
+        "hideout_chart.1",
     },
 }
 
@@ -245,10 +245,10 @@ main{
 }
 
 main{
-	dialog_id = "quest.main.isle_of_storms",
-	calc_phase = "quest_isle_of_storms",
-	location = "location.isle_of_storms",
-	items = {"oceansheart_chart.1"},
+    dialog_id = "quest.main.isle_of_storms",
+    calc_phase = "quest_isle_of_storms",
+    location = "location.isle_of_storms",
+    items = {"oceansheart_chart.1"},
 }
 
 main{
@@ -257,16 +257,16 @@ main{
     location = "location.oakhaven",
     replace_v = {"amount_monkshood"},
     items = {
-		"monkshood.1",
+        "monkshood.1",
     },
 }
 
 
 
 side{
-	dialog_id = "quest.side.carrot_cache",
-	calc_phase = "quest_test13", --TODO give this savegame variable a better name
-	location = "location.goatshead_island"
+    dialog_id = "quest.side.carrot_cache",
+    calc_phase = "quest_test13", --TODO give this savegame variable a better name
+    location = "location.goatshead_island"
 }
 
 side{
@@ -300,9 +300,9 @@ side{
 }
 
 side{
-	dialog_id = "quest.side.bomb_arrows",
-	calc_phase = "quest_bomb_arrows",
-	items = {"bomb_arrow_ticket.1"},
+    dialog_id = "quest.side.bomb_arrows",
+    calc_phase = "quest_bomb_arrows",
+    items = {"bomb_arrow_ticket.1"},
 }
 
 side{
@@ -312,9 +312,9 @@ side{
 }
 
 side{
-	dialog_id = "quest.side.crabhook.dusit",
-	calc_phase = "quest_dusit",
-	location = "location.crabhook_village"
+    dialog_id = "quest.side.crabhook.dusit",
+    calc_phase = "quest_dusit",
+    location = "location.crabhook_village"
 }
 
 side{
@@ -327,16 +327,16 @@ side{
     dialog_id = "quest.side.ballast_harbor.hornet_honey",
     calc_phase = "quest_ballast_harbor_hornet_honey",
     replace_v = {
-		"michael_defeated",
-		callback = function(args)
-			local is_defeated = args[1]
-			return {is_defeated and 60 or 45} --number of crowns for reward
-		end
-	},
+        "michael_defeated",
+        callback = function(args)
+            local is_defeated = args[1]
+            return {is_defeated and 60 or 45} --number of crowns for reward
+        end
+    },
     location = {
-		"location.tern_marsh",
-		"location.ballast_harbor",
-	},
+        "location.tern_marsh",
+        "location.ballast_harbor",
+    },
     items = {"honeycomb.1"},
 }
 
@@ -377,8 +377,8 @@ side{
         "location.yarrowmouth",
     },
     items = {
-		"key_mushroom_spot.1",
-		"key_mead_safehouse.1",
+        "key_mushroom_spot.1",
+        "key_mead_safehouse.1",
     },
 }
 
@@ -410,9 +410,9 @@ side{
     dialog_id = "quest.side.ferris_tools",
     calc_phase = "quest_ferris_tools",
     location = {
-		"location.ballast_harbor",
-		"location.oakhaven",
-	},
+        "location.ballast_harbor",
+        "location.oakhaven",
+    },
     items = {"armor_tools.1"},
 }
 
@@ -431,54 +431,54 @@ side{
 }
 
 side{
-	dialog_id = "quest.side.oakhaven.manna_oaks",
-	calc_phase = "quest_manna_oaks",
-	location = "location.oakhaven",
+    dialog_id = "quest.side.oakhaven.manna_oaks",
+    calc_phase = "quest_manna_oaks",
+    location = "location.oakhaven",
     replace_v = {
-		"manna_oaks_investigated"
+        "manna_oaks_investigated"
     }
 }
 
 side{
-	dialog_id = "quest.side.oakhaven.master_thief",
-	calc_phase = "quest_mayors_dog",
-	location = "location.oakhaven"
+    dialog_id = "quest.side.oakhaven.master_thief",
+    calc_phase = "quest_mayors_dog",
+    location = "location.oakhaven"
 }
 
 side{
-	dialog_id = "quest.side.heron_well",
-	calc_phase = "quest_heron_well",
-	location = "location.goatshead_island",
-	items = {
-		"key_thrush_fort.1",
-		"thunder_charm.1",
-	},
+    dialog_id = "quest.side.heron_well",
+    calc_phase = "quest_heron_well",
+    location = "location.goatshead_island",
+    items = {
+        "key_thrush_fort.1",
+        "thunder_charm.1",
+    },
 }
 
 side{
-	dialog_id = "quest.side.oakhaven.bomb_shop",
-	calc_phase = "quest_bomb_shop",
-	location = "location.oakhaven"
+    dialog_id = "quest.side.oakhaven.bomb_shop",
+    calc_phase = "quest_bomb_shop",
+    location = "location.oakhaven"
 }
 
 side{
-	dialog_id = "quest.side.lighthouses",
-	calc_phase = "quest_lighthouses",
-	replace_v = {
-		"lighthouses_quest_num_lit"
-	},
-	location = {
-		false,
-		"location.yarrowmouth",
-		"location.yarrowmouth",
-	},
-	items = {"gust.1"},
+    dialog_id = "quest.side.lighthouses",
+    calc_phase = "quest_lighthouses",
+    replace_v = {
+        "lighthouses_quest_num_lit"
+    },
+    location = {
+        false,
+        "location.yarrowmouth",
+        "location.yarrowmouth",
+    },
+    items = {"gust.1"},
 }
 
 side{
-	dialog_id = "quest.side.oakhaven.haunted_monastery",
-	calc_phase = "quest_haunted_monastery",
-	location = "location.oakhaven"
+    dialog_id = "quest.side.oakhaven.haunted_monastery",
+    calc_phase = "quest_haunted_monastery",
+    location = "location.oakhaven"
 }
 
 side{
@@ -496,7 +496,7 @@ side{
         "found_heron_door_marble_summit", --savegame variable for item "heron_door_marble_summit"
         "found_heron_door_snapmast", --savegame variable for item "heron_door_snapmast"
         --TODO add savegame variable for TBD 5th door
-		callback = function(args) --if at least 1 heron door found then add to quest log, this quest cannot be completed and must be switched to alternate quest
+        callback = function(args) --if at least 1 heron door found then add to quest log, this quest cannot be completed and must be switched to alternate quest
             for i=1,args.n do --door_state - nil or 0: door not found, 1: door found
                 local door_state = args[i] or 0 --replace nil with 0
                 if door_state >=1 then return 0 end
