@@ -15302,43 +15302,6 @@ amulet to catch the pirates.
 }
 
 dialog{
-    id = "quest.side.mysterious_doors",
-    title = "Mysterious Doors",
-    ------------max line width------------
-    text = [[
-@!? --// don't display checkmark for this phase
-You found a mysterious door at the
-following locations:
-%1$@1 Tern Marsh
-%2$@2 Marble Summit
-%3$@3 Snapmast
---//Note: the one in Goatshead is excluded because it is behind a regular locked door
-
-Keep exploring to find them all.
-]]}
-
-dialog{
-    id = "quest.side.heron_doors",
-    title = "Heron Doors",
-    ------------max line width------------
-    text = [[
-@?Explore all of the heron doors
-!Explore the remaining shrines to
-!obtain the rest of the thunder charms.
-
-%~You haven't found any more heron doors
-%=!Locations to explore: --// The player must find at least one door for these lines to be visible
-?Heron doors explored: --// This line visible instead once quest is complete
-%1$@1 Tern Marsh
-%2$@2 Marble Summit
-%3$@3 Snapmast
-%=!
-%=!  Keep exploring to find them all.
-
-  Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
-]]}
-
-dialog{
   id = "quest.side.ballast_harbor.hornet_honey",
   title = "Hornet Honey",
   text = [[
@@ -15515,6 +15478,27 @@ tunnels have been cleared
 }
 
 dialog{
+  id = "quest.side.heron_doors",
+  title = "Heron Doors",
+  text = [[
+@?Explore all of the heron doors
+!Explore the remaining shrines to
+!obtain the rest of the thunder charms.
+
+%~You haven't found any more heron doors
+%=!Locations to explore: --// The player must find at least one door for these lines to be visible
+?Heron doors explored: --// This line visible instead once quest is complete
+%1$@1 Tern Marsh
+%2$@2 Marble Summit
+%3$@3 Snapmast
+%=!
+%=!  Keep exploring to find them all.
+
+  Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+]],
+}
+
+dialog{
   id = "quest.side.heron_well",
   title = "Heron's Well",
   text = [[
@@ -15544,6 +15528,22 @@ Naerreturn Bay.
 !It's on Yarrowmouth.
 @Board the ghost ship.
 
+]],
+}
+
+dialog{
+  id = "quest.side.mysterious_doors",
+  title = "Mysterious Doors",
+  text = [[
+@!? --// don't display checkmark for this phase
+You found a mysterious door at the
+following locations:
+%1$@1 Tern Marsh
+%2$@2 Marble Summit
+%3$@3 Snapmast
+--//Note: the one in Goatshead is excluded because it is behind a regular locked door
+
+Keep exploring to find them all.
 ]],
 }
 

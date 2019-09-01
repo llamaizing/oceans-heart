@@ -15,6 +15,8 @@ function entity:on_created()
     entity:set_weight(entity:get_property("weight"))
   end
   entity:set_size(16, 16)
+  --clear collision tests after a few miliseconds so stopped balls don't damage enemies.
+  sol.timer.start(entity, 100, function() entity:clear_collision_tests() end)
 end
 
 --Bash into enemies
@@ -22,11 +24,12 @@ local enemies_touched = {}
 entity:add_collision_test("sprite", function(entity, other)
   if other:get_type() == "enemy" then
     local enemy = other
-    if not enemies_touched[enemy] and enemy:hit_by_toss_ball() then
+    if not enemies_touched[enemy] and enemy.hit_by_toss_ball then
+print("got one")
       enemy:hit_by_toss_ball()
     end
     enemies_touched[enemy] = enemy
---    sol.timer.start(map, 2000, function() enemies_touched[enemy] = false end)
+    sol.timer.start(map, 500, function() enemies_touched[enemy] = nil end)
   end
 end)
 
