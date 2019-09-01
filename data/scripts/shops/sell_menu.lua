@@ -101,10 +101,18 @@ end
 
 
 function inventory:on_started()
-    assert(sol.main.get_game(), "Error: cannot start sell menu because no game is currently running")
-    self:update_description_panel()
-    self.menu_background:fade_in(5)
-    self.menu_dark_overlay:fade_in(5)
+  assert(sol.main.get_game(), "Error: cannot start shop menu because no game is currently running")
+  sol.main.get_game():set_suspended(true)
+  self:update_description_panel()
+  self.menu_background:fade_in(5)
+  self.menu_dark_overlay:fade_in(5)
+end
+
+function inventory:on_finished()
+  sol.main.get_game():set_suspended(false)
+  sol.main.get_game():get_hero():unfreeze()
+  self.menu_background:fade_out(5)
+  self.menu_dark_overlay:fade_out(5)
 end
 
 
@@ -192,6 +200,7 @@ function inventory:on_command_pressed(command)
       handled = true
 
     elseif command == "attack" then
+      handled = true
       game:get_hero():unfreeze()
       sol.menu.stop(self)
     end

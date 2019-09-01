@@ -32,6 +32,7 @@ local properties = {
 
 properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)
+enemy:set_dying_sprite_id("enemies/enemy_killed_ko")
 
 function enemy:on_dead()
   random = math.random(100)

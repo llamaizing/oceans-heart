@@ -1475,6 +1475,13 @@ $? No
 }
 
 dialog{
+  id = "_game.crafted_item",
+  text = [[
+Item crafted!
+]],
+}
+
+dialog{
   id = "_game.environment.bait_rock",
   text = [[
 It's a flat rock, perfect for holding
@@ -2372,17 +2379,10 @@ lying. Take this.
 dialog{
   id = "_goatshead.npcs.crabhook.witch",
   text = [[
-Come on in, dearie. I've got Elixer Vitae
-for sale, 100 crowns and when your health
-runs out, it'll be be replenished
-automatically. Care for a flask? Of if you
-have the ingredients, you can make some
-in that pot over there.
-
-
-TILIA:
-$? No thanks
-$? Please
+Come on in, dearie, I'm the village's
+herbalist. If you'd like to use that table
+over there to put together potions or
+anything, feel free.
 ]],
 }
 
@@ -2641,15 +2641,11 @@ Sorry, I don't think I need any right now...
 ATEM:
 That's the... it's okay! There aren't a lot of
 people who are the flower buying type of
-people around here. Uh... Well, actually,
+people around here. If you want to use any
 ATEM:
-do you have any Mandrake Roots? I'm
-studying, er, I'm looking at using them to grow
-plants better. I'll pay 15 crowns a piece.
-(Sell him mandrake roots?)
-$? Sell him one
-$? Sell him five
-$? Don't sell him any
+flowers you already have to make potions or
+tools, feel free to use the crafting table
+over there.
 ]],
 }
 
@@ -6720,6 +6716,16 @@ right away$1...
 }
 
 dialog{
+  id = "_oakhaven.npcs.apothecary.husband",
+  text = [[
+I know it looks like I'm creeping around
+back here. I'm just watering the flowers.
+Feel free to look around. The flowers
+aren't for sale, but they're pretty.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.blacksmith.ferris.1",
   text = [[
 FERRIS:
@@ -8135,6 +8141,19 @@ dialog{
   text = [[
 The door isn't locked, but it seems rude
 to just wander into someone's room.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.inn.innkeeper",
+  text = [[
+INNKEEPER:
+Hello dear, welcome to the Ivystump bed
+and breakfast. We don't get a lot of
+travelers coming all the way through the
+INNKEEPER:
+Veilwood, so it's only the one bed, but
+you're welcome to stay.
 ]],
 }
 
@@ -11098,6 +11117,14 @@ the city guard captain know.
 }
 
 dialog{
+  id = "_oakhaven.observations.misc.llama",
+  text = [[
+It's a statue of a llama. You can tell someone
+really appreciates this llama.
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.misc.poster",
   text = [[
 (There's a poster advertising Gunther's
@@ -12955,21 +12982,21 @@ You found 5 Kingscrown Blooms!
 dialog{
   id = "_treasure.lavendar.1",
   text = [[
-You found a lavendar stem.
+You found a lavender stem.
 ]],
 }
 
 dialog{
   id = "_treasure.lavendar.2",
   text = [[
-You found 5 stems of lavendar flowers!
+You found 5 stems of lavender flowers!
 ]],
 }
 
 dialog{
   id = "_treasure.lavendar.3",
   text = [[
-You found 10 stems of lavendar flowers!
+You found 10 stems of lavender flowers!
 ]],
 }
 
@@ -15024,6 +15051,27 @@ Fast travel?
 }
 
 dialog{
+  id = "quest.heron_doors",
+  title = "Heron Doors",
+  text = [[
+@?Explore all of the heron doors
+!Explore the remaining shrines to
+!obtain the rest of the thunder charms.
+
+%~You haven't found any more heron doors
+%=!Locations to explore: --// The player must find at least one door for these lines to be visible
+?Heron doors explored: --// This line visible instead once quest is complete
+%1$@1   Tern Marsh
+%2$@2   Marble Summit
+%3$@3   Snapmast
+%=!
+%=!    Keep exploring to find them all.
+
+    Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+]],
+}
+
+dialog{
   id = "quest.main.hazel",
   title = "The Trail Warms Up",
   text = [[
@@ -15909,3 +15957,4 @@ the monsters
 #REWARD: $ITEM{rupee.1}   80
 ]],
 }
+

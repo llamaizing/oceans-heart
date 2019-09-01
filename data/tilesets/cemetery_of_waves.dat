@@ -439,6 +439,47 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "136",
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 656,
+  width = 48,
+  height = 48,
+}
+
+tile_pattern{
+  id = "137",
+  ground = "empty",
+  default_layer = 0,
+  x = 112,
+  y = 88,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "138",
+  ground = "wall",
+  default_layer = 0,
+  x = 144,
+  y = 728,
+  width = 64,
+  height = 72,
+}
+
+tile_pattern{
+  id = "139",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 688,
+  width = 64,
+  height = 80,
+}
+
+tile_pattern{
   id = "14",
   ground = "wall",
   default_layer = 0,

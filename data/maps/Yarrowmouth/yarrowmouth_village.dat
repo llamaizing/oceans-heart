@@ -13340,15 +13340,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 896,
-  y = 352,
-  width = 16,
-  height = 16,
-  pattern = "1404",
-}
-
-tile{
-  layer = 0,
   x = 800,
   y = 352,
   width = 16,
@@ -21359,8 +21350,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 872,
-  y = 368,
+  x = 880,
+  y = 352,
   width = 24,
   height = 16,
   pattern = "690",
@@ -21368,8 +21359,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 888,
-  y = 384,
+  x = 872,
+  y = 368,
   width = 24,
   height = 16,
   pattern = "690",
@@ -32565,16 +32556,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 880,
-  y = 336,
-  width = 16,
-  height = 16,
-  pattern = "2",
-  tileset = "misc",
-}
-
-tile{
-  layer = 0,
   x = 536,
   y = 136,
   width = 32,
@@ -34083,6 +34064,44 @@ tile{
   width = 16,
   height = 16,
   pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 344,
+  width = 24,
+  height = 8,
+  pattern = "691",
+}
+
+tile{
+  layer = 0,
+  x = 880,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "2",
+  tileset = "misc",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "1404",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 384,
+  width = 32,
+  height = 32,
+  pattern = "57",
+  tileset = "misc",
 }
 
 door{
@@ -35975,6 +35994,24 @@ destructible{
   can_be_cut = true,
 }
 
+npc{
+  name = "^crafting_table",
+  layer = 0,
+  x = 880,
+  y = 413,
+  direction = 3,
+  subtype = 1,
+}
+
+npc{
+  name = "^crafting_table_2",
+  layer = 0,
+  x = 896,
+  y = 413,
+  direction = 3,
+  subtype = 1,
+}
+
 tile{
   layer = 1,
   x = 456,
@@ -36486,15 +36523,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "844",
-}
-
-tile{
-  layer = 1,
-  x = 896,
-  y = 320,
-  width = 16,
-  height = 32,
-  pattern = "838",
 }
 
 tile{
@@ -38229,15 +38257,6 @@ tile{
   layer = 1,
   x = 872,
   y = 360,
-  width = 24,
-  height = 8,
-  pattern = "691",
-}
-
-tile{
-  layer = 1,
-  x = 888,
-  y = 376,
   width = 24,
   height = 8,
   pattern = "691",
@@ -41779,6 +41798,15 @@ tile{
   width = 16,
   height = 16,
   pattern = "349",
+}
+
+tile{
+  layer = 1,
+  x = 896,
+  y = 320,
+  width = 16,
+  height = 32,
+  pattern = "838",
 }
 
 npc{

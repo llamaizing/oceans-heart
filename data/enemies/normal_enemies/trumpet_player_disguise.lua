@@ -17,6 +17,7 @@ function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(30)
   enemy:set_damage(1)
+enemy:set_dying_sprite_id("enemies/enemy_killed_ko")
 end
 
 function enemy:on_movement_changed(movement)
