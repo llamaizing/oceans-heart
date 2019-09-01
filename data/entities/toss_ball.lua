@@ -25,7 +25,6 @@ entity:add_collision_test("sprite", function(entity, other)
   if other:get_type() == "enemy" then
     local enemy = other
     if not enemies_touched[enemy] and enemy.hit_by_toss_ball then
-print("got one")
       enemy:hit_by_toss_ball()
     end
     enemies_touched[enemy] = enemy
