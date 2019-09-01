@@ -27,10 +27,9 @@ for enemy in map:get_entities("boss") do
       local zapper = game:get_item("thunder_charm")
       map:create_pickable({
         x = x + 8, y = y + 8, layer = l,
-        treasure_name = "thunder_charm", treasure_variant = zapper:get_variant() + 1
+        treasure_name = "thunder_charm", treasure_variant = zapper:get_variant() + 1,
+        treasure_savegame_variable = "tern_marsh_seabird_upgrade_received",
       })
-      game:set_value("tern_marsh_seabird_upgrade_received", true)
-
     end
   end
 end

@@ -10,6 +10,18 @@ function item:on_started()
   item:set_assignable(true)
 end
 
+function item:on_obtained(variant, savegame_variable)
+  if variant == 4 then
+    game:set_value("quest_heron_doors", 1) --quest complete
+  else --manually force refresh of quest --TODO quest log issue #76
+    local quest_id = "quest.side.heron_doors"
+    local status = game.objectives:get_objective(quest_id):refresh()
+    if status and game.objectives.on_quest_updated then
+      game.objectives:on_quest_updated(status, quest_id) --call event if it exists
+    end
+  end
+end
+
 function item:on_using()
   MAGIC_COST = 40 + item:get_variant() * 5
   if game:get_magic() < MAGIC_COST then sol.audio.play_sound("no") item:set_finished()

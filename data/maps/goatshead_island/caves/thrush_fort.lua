@@ -57,6 +57,6 @@ end
 function all_door_switch:on_activated()
   game:set_value("quest_heron_well", 3)
   game:set_value("quest_heron_doors", 0)
-  game.objectives:set_alternate("heron_doors_alt", "quest.heron_doors")
+  game.objectives:set_alternate("heron_doors_alt", "quest.side.heron_doors")
   map:open_doors("door")
 end
