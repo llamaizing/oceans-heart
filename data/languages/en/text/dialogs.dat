@@ -11117,6 +11117,14 @@ the city guard captain know.
 }
 
 dialog{
+  id = "_oakhaven.observations.misc.llama",
+  text = [[
+It's a statue of a llama. You can tell someone
+really appreciates this llama.
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.misc.poster",
   text = [[
 (There's a poster advertising Gunther's

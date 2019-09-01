@@ -183,6 +183,7 @@ map{ id = "oakhaven/caves/amalenchier_tomb", description = "Amalenchier's Tomb" 
 map{ id = "oakhaven/caves/eastoak_coral_ore_cave", description = "Eastoak Coral Ore Cave" }
 map{ id = "oakhaven/caves/eastoak_health_shrine", description = "Eastoak Health Shrine" }
 map{ id = "oakhaven/caves/lighthouse", description = "Lighthouse - Sinking" }
+map{ id = "oakhaven/caves/llama_grove", description = "Llama Grove" }
 map{ id = "oakhaven/caves/mangrove_tree", description = "Mangrove Tree" }
 map{ id = "oakhaven/caves/manna_oak_tunnels", description = "Manna Oak Tunnels" }
 map{ id = "oakhaven/caves/marblecliff_NE_cave", description = "Marblecliff NE Cave" }
