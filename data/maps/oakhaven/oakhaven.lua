@@ -136,6 +136,7 @@ function fruit_importer:on_interaction()
     game:start_dialog("_oakhaven.npcs.market.fruit_importer.2", function()
       game:set_value("quest_tic_tac_toe", 4) --quest log
       game:set_value("oakhaven_have_oranges_box", true)
+      game:set_value("possession_oranges_shipment", 1)
       game:set_value("oakhaven_fruit_importer_counter", 2)
     end)
 

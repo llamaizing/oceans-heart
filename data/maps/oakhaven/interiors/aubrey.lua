@@ -39,10 +39,13 @@ end
 
 function aubrey_first_conversation()
   game:start_dialog("_oakhaven.npcs.ana_orange.3", function(answer)
+    game:set_value("possession_oranges_shipment", nil)
+
     --hand over the money!
     if answer == 2 then
     game:start_dialog("_oakhaven.npcs.ana_orange.take_money", function()
       game:add_money(200)
+      game:set_value("possession_prize_money", 1)
       game:set_value("tic_tac_referee_counter", 3)
       game:set_value("quest_tic_tac_toe", 6) --quest log
       game:set_value("tic_tac_prize_money_status", "return")
@@ -51,6 +54,7 @@ function aubrey_first_conversation()
     --keep it
     elseif answer == 3 then
     game:start_dialog("_oakhaven.npcs.ana_orange.keep_money", function()
+      game.objectives:set_alternate("orange_thief", "quest.side.oakhaven.orange_thief_aubrey")
       game:set_value("quest_tic_tac_toe", 8) --quest log
       game:set_value("tic_tac_prize_money_status", "keep")
     end)

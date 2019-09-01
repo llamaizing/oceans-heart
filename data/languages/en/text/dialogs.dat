@@ -6903,7 +6903,7 @@ Ah! You're back. You have destoryed the
 monster that lurked in the depts of the
 saltpeter mine, yes?
 TILIA:
-I did. You said you've pay me?
+I did. You said you'll pay me?
 
 
 THE BOMB MAKER:
@@ -15313,6 +15313,11 @@ dialog{
 honey
 @Return the honey to Benjamin at the
 meadery
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+#%=
+#REWARD: $ITEM{rupee.1}   $v1 --// $v1 is the number of crowns for the reward (more if Michael is dead)
 ]],
 }
 
@@ -15428,10 +15433,31 @@ dialog{
 !Rilesdorf's shop is by the pier and
 !blacksmith.
 @Track the Phantom Squid!
-@!Return to Eamon back at the Marchants'
-!Guild
-?You resolved the situation one way or
-?another.
+@Return to Eamon back at the Marchants'
+Guild
+?
+?Eamon only paid 60 Crowns because ink
+?was left on Rilesdorf's carpet.
+#::
+#!REWARD: $ITEM{rupee.1}   70
+?REWARD: $ITEM{rupee.1}   60
+]],
+}
+
+dialog{
+  id = "quest.side.goatshead.phantom_squid_aster",
+  title = "Phantom Squid Hunt",
+  text = [[
+##The Phantom Squid is manacing
+##merchants' records and causing
+##economic chaos.
+@Set a trap with Rilesdorf
+@Track the Phantom Squid!
+?
+?You decided instead to side with Aster
+?and help free the people of Crabhook
+?Village from their exploitative
+?contract with Eamon.
 ]],
 }
 
@@ -15444,9 +15470,14 @@ dialog{
 @Find the contract in the Merchants'
 Guild building
 !
-!Aster gave you a note–try showing it
-!to someone who seems spineless.
+%=!Aster gave you a note-try showing it --// while the player has the note
+%=!to someone who seems spineless.
+%~!You showed Aster's note to the guard --// while the player no longer has the note
+%~!and he ran off.
 @Give Aster the contract
+#::!
+#%=!$i0    QUEST ITEM:
+#%=!    $ITEM_NAME
 @!?UNUSED PHASE
 @Show the Barbell Brutes your immense
 strength $!to convince them to stop
@@ -15454,6 +15485,8 @@ strength $!to convince them to stop
 !
 !They live on the north street in town.
 @Check in with Aster
+::?
+?REWARD: $ITEM{rupee.1}   200
 ]],
 }
 
@@ -15541,6 +15574,8 @@ Crow
 !Out the city's south gate, head east.
 @Find and destroy the monster
 @Return to the bomb shop
+::?
+?REWARD: $ITEM{bomb.1}   70
 ]],
 }
 
@@ -15593,8 +15628,8 @@ two giant oaks
 !
 !She's at Oakhaven's library.
 @!Defend Hazel!
-@Visit Ivystump and ask if anyone knows
-about the Oaks
+@Visit Ivystump $!and ask if anyone knows
+!about the Oaks
 !
 !Ivystump is on the western edge of
 !Oakhaven, past the Veilwood Forest.
@@ -15613,6 +15648,8 @@ about the Oaks
 @Investigate further down the tunnels
 @Let Hazel know there were monsters
 infesting the roots
+::?
+?REWARD: $ITEM{elixer.1}   Elixer
 ]],
 }
 
@@ -15702,16 +15739,41 @@ oranges to generate that many peels
 !She lives across the river from the
 !market.
 @!Go on in
-@!Take the money back to the tic tac toe
-!guy
-@Be confident knowing you made the right
-decision
+@Take the money back to the tic tac toe
+guy
+?
+?You were allowed to keep half of the
+?prize money.
 #::
 #%=$i0    QUEST ITEM: --// phase 4: orange shipment, phase 6: prize money
 #%=    $ITEM_NAME
 #%=
-#!REWARD: Cut of the 200$ITEM{rupee.1}   prize money
-?REWARD: $ITEM{rupee.1}   100
+#!REWARD: Cut of the 200$ITEM{rupee.6}   prize money
+?REWARD: $ITEM{rupee.5}   100
+]],
+}
+
+dialog{
+  id = "quest.side.oakhaven.orange_thief_aubrey",
+  title = "The Tic Tac Champ",
+  text = [[
+##You somehow joined Oakhaven's tic tac
+##toe championship, but the prize was
+##stolen!
+@Investigate the scene
+@!Talk to the emcee
+@!Search for clues
+@Find someone capable of selling enough
+oranges to generate that many peels
+@Take the shipment of oranges to Aubrey
+@!Go on in
+@!?
+
+You let Aubrey keep the prize money.
+?
+?Aubrey told you to visit her orange
+?orchard on the road to the Isle of
+?Lobb.
 ]],
 }
 
@@ -15725,6 +15787,9 @@ dialog{
 ?
 ?It was a locked lighthouse in the
 ?ruins.
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 

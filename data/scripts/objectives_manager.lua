@@ -341,7 +341,7 @@ function objectives_manager.create(game)
 		if type(location)=="table" then --verify table entries and substitute values for true
 			for _,loc in ipairs(location) do
 				assert(not loc or type(loc)=="string", "Bad property location to 'add_objective' (table values must be a string or nil/false)")
-				assert(sol.language.get_string(loc), "Bad property location to 'add_objective', invalid string.dat key: "..loc)
+				assert(not loc or sol.language.get_string(loc), "Bad property location to 'add_objective', invalid string.dat key: "..tostring(loc))
 			end
 		end
 

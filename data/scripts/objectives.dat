@@ -167,13 +167,21 @@ main{
 
 main{
 	dialog_id = "quest.main.limestone.meet_juglan_at_pier",
-	location = "location.limestone_island",
+	location = {
+		"location.limestone_island",
+		"location.goatshead_island",
+	},
 	calc_phase = "quest_meet_juglan_at_pier"
 }
 
 main{
 	dialog_id = "quest.main.kelpton",
-	location = "location.ballast_harbor",
+	location = {
+		"location.ballast_harbor",
+		"location.ballast_harbor",
+		"location.ballast_harbor",
+		false,
+	},
 	calc_phase = "quest_kelpton",
 	items = {
 		"charts.1",
@@ -257,7 +265,7 @@ main{
 
 side{
 	dialog_id = "quest.side.carrot_cache",
-	calc_phase = "quest_test13",
+	calc_phase = "quest_test13", --TODO give this savegame variable a better name
 	location = "location.goatshead_island"
 }
 
@@ -269,14 +277,26 @@ side{
 
 side{
     dialog_id = "quest.side.goatshead.phantom_squid",
+    alternate_key = "phantom_squid",
     calc_phase = "quest_phantom_squid",
-    location = "location.goatshead_harbor"
+    location = "location.goatshead_harbor",
+}
+
+side{
+    dialog_id = "quest.side.goatshead.phantom_squid_aster",
+    alternate_key = "phantom_squid",
+    calc_phase = "quest_phantom_squid",
+    location = "location.goatshead_harbor",
 }
 
 side{
     dialog_id = "quest.side.goatshead.phantom_squid_part_2",
     calc_phase = "quest_phantom_squid_contracts",
-    location = "location.goatshead_harbor"
+    location = "location.goatshead_harbor",
+    items = {
+        "aster_note.1",
+        "contract.1",
+    },
 }
 
 side{
@@ -306,12 +326,30 @@ side{
 side{
     dialog_id = "quest.side.ballast_harbor.hornet_honey",
     calc_phase = "quest_ballast_harbor_hornet_honey",
-    location = "location.tern_marsh"
+    replace_v = {
+		"michael_defeated",
+		callback = function(args)
+			local is_defeated = args[1]
+			return {is_defeated and 60 or 45} --number of crowns for reward
+		end
+	},
+    location = {
+		"location.tern_marsh",
+		"location.ballast_harbor",
+	},
+    items = {"honeycomb.1"},
 }
 
 side{
     dialog_id = "quest.side.yarrowmouth.parley",
-    calc_phase = "quest_yarrow_parley"
+    calc_phase = "quest_yarrow_parley",
+    location = {
+        "location.yarrowmouth",
+        "location.yarrowmouth",
+        "location.yarrowmouth",
+        "location.ballast_harbor",
+        "location.yarrowmouth",
+    },
 }
 
 side{
@@ -331,7 +369,13 @@ side{
 side{
     dialog_id = "quest.side.yarrowmouth.meadery",
     calc_phase = "quest_briarwood_mushrooms",
-    location = "location.yarrowmouth",
+    location = {
+        "location.yarrowmouth",
+        "location.yarrowmouth",
+        "location.yarrowmouth",
+        "location.ballast_harbor",
+        "location.yarrowmouth",
+    },
     items = {
 		"key_mushroom_spot.1",
 		"key_mead_safehouse.1",
@@ -340,9 +384,20 @@ side{
 
 side{
     dialog_id = "quest.side.oakhaven.orange_thief",
+    alternate_key = "orange_thief",
     calc_phase = "quest_tic_tac_toe",
-    location = "location.oakhaven"
-    --TODO quest items (oranges shipment and prize money)
+    location = "location.oakhaven",
+    items = {
+        "oranges_shipment.1",
+        "prize_money.1",
+    },
+}
+
+side{
+    dialog_id = "quest.side.oakhaven.orange_thief_aubrey",
+    alternate_key = "orange_thief",
+    calc_phase = "quest_tic_tac_toe",
+    location = "location.oakhaven",
 }
 
 side{
@@ -371,7 +426,8 @@ side{
 side{
     dialog_id = "quest.side.oakhaven.sinking_lighthouse",
     calc_phase = "quest_seaglint_ruins_lighthouse",
-    location = "location.oakhaven"
+    location = "location.oakhaven",
+    items = {"key_sinking_lighthouse.1"},
 }
 
 side{
@@ -410,6 +466,11 @@ side{
 	calc_phase = "quest_lighthouses",
 	replace_v = {
 		"lighthouses_quest_num_lit"
+	},
+	location = {
+		false,
+		"location.yarrowmouth",
+		"location.yarrowmouth",
 	},
 	items = {"gust.1"},
 }
