@@ -13427,7 +13427,7 @@ sensor{
   name = "trap_sensor",
   layer = 1,
   x = 56,
-  y = 301,
+  y = 285,
   width = 48,
   height = 16,
 }
@@ -13478,11 +13478,10 @@ wall{
   name = "trap_you_in_ambush_wall",
   layer = 1,
   x = 48,
-  y = 288,
+  y = 280,
   enabled_at_start = false,
   width = 48,
   height = 8,
-  stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
 }
