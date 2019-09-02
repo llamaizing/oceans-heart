@@ -75,5 +75,5 @@ end
 
 
 function elixer_seller:on_interaction()
-
+  game:start_dialog"_oakhaven.npcs.apothecary.husband"
 end
