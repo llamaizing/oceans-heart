@@ -42,7 +42,7 @@ map{ id = "Yarrowmouth/caves/seabird_shrine", description = "Seabird Shrine" }
 map{ id = "Yarrowmouth/caves/tern_marsh_ambush", description = "Marsh Ambush Cave" }
 map{ id = "Yarrowmouth/caves/village_cave", description = "Village Cave" }
 map{ id = "Yarrowmouth/caves/warp_cave", description = "Warp Cave" }
-map{ id = "Yarrowmouth/foothills", description = "Foothills" }
+map{ id = "Yarrowmouth/foothills", description = "Puzzlewood" }
 map{ id = "Yarrowmouth/hourglass_canyon", description = "Hourglass Fort" }
 map{ id = "Yarrowmouth/hourglass_fort/basement", description = "Basement" }
 map{ id = "Yarrowmouth/hourglass_fort/hourglass_fort", description = "Hourglass Fort - Outside" }
