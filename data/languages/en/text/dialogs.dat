@@ -1502,6 +1502,13 @@ Game Over
 }
 
 dialog{
+  id = "_game.game_saved",
+  text = [[
+Game saved.
+]],
+}
+
+dialog{
   id = "_game.insufficient_funds",
   text = [[
 You don't have enough money!
@@ -8454,8 +8461,8 @@ about when those pirates moved into Fort
 Crow out east. Anyway! I haven't seen Hazel
 FESTUS:
 in a couple days. I let her leave her research
-notes spread out in a room upstairs. Go up
-the staircase, turn right, and all the way down
+notes spread out in a room around the corner. Up
+this staircase, turn right, and all the way down
 FESTUS:
 the hall. You're welcome to look over her
 research.
@@ -8471,7 +8478,7 @@ dialog{
   text = [[
 FESTUS:
 Still looking for Hazel? You're welcome to
-look through her research upstairs, it's the
+look through her research, it's the
 last room on the right. Maybe you'll learn
 FESTUS:
 a bit of history while you're at it! Ha, that
@@ -15572,6 +15579,27 @@ have been cleared
 }
 
 dialog{
+  id = "quest.side.heron_doors",
+  title = "Heron Doors",
+  text = [[
+@?Explore all of the heron doors
+!Explore the remaining shrines to
+!obtain the rest of the thunder charms.
+
+%~You haven't found any more heron doors
+%=!Locations to explore: --// The player must find at least one door for these lines to be visible
+?Heron doors explored: --// This line visible instead once quest is complete
+%1$@1 Tern Marsh
+%2$@2 Marble Summit
+%3$@3 Snapmast
+%=!
+%=!  Keep exploring to find them all.
+
+  Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+]],
+}
+
+dialog{
   id = "quest.side.heron_well",
   title = "Heron's Well",
   text = [[
@@ -15605,6 +15633,22 @@ dialog{
 @Board the ghost ship
 #::
 #%=ITEM FOUND: $ITEM{gust.1}   $ITEM_NAME
+]],
+}
+
+dialog{
+  id = "quest.side.mysterious_doors",
+  title = "Mysterious Doors",
+  text = [[
+@!? --// don't display checkmark for this phase
+You found a mysterious door at the
+following locations:
+%1$@1 Tern Marsh
+%2$@2 Marble Summit
+%3$@3 Snapmast
+--//Note: the one in Goatshead is excluded because it is behind a regular locked door
+
+Keep exploring to find them all.
 ]],
 }
 

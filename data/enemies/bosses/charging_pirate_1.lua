@@ -29,7 +29,7 @@ end
 function enemy:on_restarted()
   enemy:get_sprite():set_animation("walking")
   sol.timer.start(enemy, 150, function() enemy:go_hero() end)
-
+  enemy:check_for_being_trapped()
 end
 
 function enemy:go_hero()
@@ -65,7 +65,11 @@ function enemy:stunned(length)
   going_hero = false
   enemy:stop_movement()
   enemy:get_sprite():set_animation("stunned")
-  sol.timer.start(enemy, length, function() playing_sound = false enemy:go_hero() end)
+  sol.timer.start(enemy, length, function()
+    playing_sound = false
+    enemy:check_for_being_trapped()
+    enemy:go_hero()
+  end)
 end
 
 --function enemy:on_hurt(attack)
@@ -81,4 +85,40 @@ end
 
 function enemy:hit_by_toss_ball()
   enemy:stunned(1499)
+end
+
+function enemy:check_for_being_trapped()
+  for entity in map:get_entities_by_type("custom_entity") do
+    if entity:get_model() == "toss_ball" and   enemy:overlaps(entity, "sprite") then
+      enemy:throw_blocker_ball(entity)
+    end
+  end
+end
+
+function enemy:throw_blocker_ball(ball)
+  local direction = enemy:get_sprite():get_direction()
+  local dx = {[0]=24,[1]=0,[2]=-24,[3]=0}
+  local dy = {[0]=0,[1]=-24,[2]=0,[3]=24}  
+  for i=0, 3 do
+    if not enemy:test_obstacles(dx[direction], dy[direction]) then
+      enemy:really_throw_ball(ball, direction)
+    else
+      direction = direction + 1 % 4
+    end
+  end
+end
+
+function enemy:really_throw_ball(ball, direction)
+  local m = sol.movement.create("jump")
+  m:set_direction8(direction * math.pi / 2)
+  m:set_distance(32)
+  m:set_speed(150)
+  m:start(ball, function()
+    local m2 = sol.movement.create("straight")
+    m2:set_angle(direction * math.pi / 2)
+    m2:set_max_distance(32)
+    m2:set_speed(150)
+    m2:start(ball)
+  end)
+  sol.audio.play_sound"running_obstacle"
 end

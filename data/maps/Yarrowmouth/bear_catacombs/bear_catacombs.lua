@@ -93,7 +93,7 @@ end
 
 -------Miniboss--------
 function miniboss_sensor:on_activated()
-  miniboss_wall:set_enabled(false)
+  for wall in map:get_entities("miniboss_wall") do wall:set_enabled(false) end
   map:close_doors("d3_door_2")
   miniboss_sensor:set_enabled(false)
 end

@@ -45,6 +45,7 @@ end
 function captain_log:on_interaction()
   if game:get_value"quest_spruce_head" == 1 then
     game:start_dialog("_goatshead.observations.spruce_captain_log.1", function()
+--      game:set_value("seen_spruce_sanctuary", true)
       game:set_value("quest_spruce_head", 2)
       hero:teleport("goatshead_island/poplar_coast", "from_shrine")
     end)
