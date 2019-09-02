@@ -5828,6 +5828,14 @@ npc{
   subtype = 1,
 }
 
+destructible{
+  layer = 0,
+  x = -56,
+  y = 77,
+  sprite = "entities/bush_heather_purple",
+  can_be_cut = true,
+}
+
 tile{
   layer = 1,
   x = 192,

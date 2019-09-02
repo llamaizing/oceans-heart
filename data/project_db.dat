@@ -273,6 +273,7 @@ tileset{ id = "fort_crow_walls", description = "Fort Crow Walls" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
 tileset{ id = "indoors_stone", description = "indoors - stone" }
 tileset{ id = "light_world", description = "Light World" }
+tileset{ id = "limestone", description = "Limestone" }
 tileset{ id = "misc", description = "misc tiles" }
 tileset{ id = "oceanheart_outdoors_1", description = "Overworld" }
 tileset{ id = "oceanheart_outdoors_spring", description = "Overworld-Spring" }
@@ -511,6 +512,7 @@ sprite{ id = "entities/bush_forest", description = "Bush (forest)" }
 sprite{ id = "entities/bush_forsythia", description = "Forsythia" }
 sprite{ id = "entities/bush_ghost_orchid", description = "Ghost Orchid" }
 sprite{ id = "entities/bush_green", description = "Bush (oracle)" }
+sprite{ id = "entities/bush_heather_purple", description = "Heather-Purple" }
 sprite{ id = "entities/bush_kingscrown", description = "Kingscrown" }
 sprite{ id = "entities/bush_lavendar", description = "Lavendar" }
 sprite{ id = "entities/bush_marigold", description = "Marigold" }
