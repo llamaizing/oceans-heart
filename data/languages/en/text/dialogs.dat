@@ -1502,6 +1502,13 @@ Game Over
 }
 
 dialog{
+  id = "_game.game_saved",
+  text = [[
+Game saved.
+]],
+}
+
+dialog{
   id = "_game.insufficient_funds",
   text = [[
 You don't have enough money!

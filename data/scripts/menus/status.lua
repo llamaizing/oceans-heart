@@ -116,6 +116,7 @@ function status_screen:process_selection()
   if cursor_index == 0 then --save
     game:save()
     sol.audio.play_sound("elixer_upgrade")
+    game:start_dialog("_game.game_saved")
 
   elseif cursor_index == 1 then --quit
     sol.main.reset()
