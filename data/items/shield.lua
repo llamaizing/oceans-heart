@@ -1,13 +1,14 @@
+require("scripts/multi_events")
+
 local item = ...
 
-function item:on_created()
+item:register_event("on_created", function(self)
 
   self:set_savegame_variable("possession_shield")
   self:set_sound_when_picked(nil)
-end
+end)
 
-function item:on_variant_changed(variant)
+item:register_event("on_variant_changed", function(self, variant)
   -- The possession state of the shield determines the built-in ability "shield".
   self:get_game():set_ability("shield", variant)
-end
-
+end)

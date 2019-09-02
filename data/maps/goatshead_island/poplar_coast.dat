@@ -51450,6 +51450,7 @@ door{
   savegame_variable = "thrush_fort_front_door_state",
   opening_method = "interaction_if_item",
   opening_condition = "key_thrush_fort",
+  opening_condition_consumed = true,
 }
 
 npc{

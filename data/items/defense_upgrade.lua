@@ -1,13 +1,15 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
 
   self:set_can_disappear(false)
   self:set_brandish_when_picked(true)
-end
+end)
 
-function item:on_obtaining(variant, savegame_variable)
+item:register_event("on_obtaining", function(self, variant, savegame_variable)
 
 
 local  defense = game:get_value("defense")
@@ -20,4 +22,4 @@ local tunic = game:get_ability("tunic")
   print(game:get_ability("tunic"))
 --]]
 
-end
+end)

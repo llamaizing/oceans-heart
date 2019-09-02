@@ -6916,7 +6916,7 @@ Ah! You're back. You have destoryed the
 monster that lurked in the depts of the
 saltpeter mine, yes?
 TILIA:
-I did. You said you've pay me?
+I did. You said you'll pay me?
 
 
 THE BOMB MAKER:
@@ -13815,7 +13815,7 @@ figure I out to run an artisan armory. So I make
 MERA:
 fine, handcrafted armor, persuing my artistic
 inclinations.  Would you like to purchase some
-for 80 crowns?
+for 50 crowns?
 TILIA:
 $? I'd love some crafty armor
 $? You can keep your threads to yourself
@@ -13845,7 +13845,7 @@ So I only make armor as my artistic
 inclinations inspire. And right now I'm inspired
 MERA:
 to make armor out of an iron pinecone. They're
-so light and strong. If you have one and 80
+so light and strong. If you have one and 50
 crowns, I'll improve your armor.
 TILIA:
 $? I'd love some
@@ -15082,26 +15082,25 @@ dialog{
   id = "quest.main.hazel",
   title = "The Trail Warms Up",
   text = [[
-Hazel and Dad went to Oakhaven
+#Hazel and Dad went to Oakhaven.
 @Investigate Oakhaven
 @Search town for Hazel
-!You were told to ask a
-!man selling mangrove
-!leaves.
-@!Try the Hornwart inn
-!It's in the northwest
-!corner of town
+!
+!You were told to ask a man selling
+!mangrove leaves.
+@!Try the Hornwart Inn
+!
+!It's in the northwest corner of town.
 @!Search the library
-@!Hazel was going to meet
-!pirates at the port
-@Hazel's in the governor's
-secret archives.
-!There's a secret tunnel
-!on Marblecliff Mountain.
-!Head east from the ruins,
+@!Hazel was going to meet pirates at
+!the port
+@Hazel's in the governor's secret
+archives
+!
+!There's a secret tunnel on Marblecliff
+!Mountain. Head east from the ruins,
 !over the waterfalls.
-@Meet Hazel back at the inn.
-
+@Meet Hazel back at the inn
 ]],
 }
 
@@ -15109,20 +15108,26 @@ dialog{
   id = "quest.main.hourglass_fort",
   title = "The Hourglass Crew",
   text = [[
-You've almost found the
-Hourglass crew's hideout.
+##You've almost found the Hourglass
+##crew's hideout.
 @Find Jerah
-!He went to the Juniper
-!Grove near the docks
+!
+!He went to the Juniper Grove near the
+!docks.
+%2!
+%2!Maybe this key you found in Juniper
+%2!Grove will be useful.
 @Investigate Kingsdown Isle
-!There's a tunnel through
-!some catacombs. A secret
-!keyhole is hidden in the
-!left pillar by a bear statue,
+!
+!There's a tunnel through some
+!catacombs. A secret keyhole is hidden
+!in the left pillar by a bear statue,
 !but you'll need a key...
-@Cut through the
-catacombs to get to
+@Cut through the catacombs to get to
 Hourglass Fort
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15130,12 +15135,15 @@ dialog{
   id = "quest.main.isle_of_storms",
   title = "The Isle of Storms",
   text = [[
-Blackbeard's worried first
-mate gave you a chart showing
-the location of the Isle of Storms
+##Blackbeard's worried first mate gave
+##you a chart showing the location of
+##the Isle of Storms.
 @Ask Morus to sail you to the Isle
-@Find a way into the Sea King's
-sunken palace
+::!
+%=!$i0    QUEST ITEM:
+%=!    $ITEM_NAME
+@Find a way into the Sea King's sunken
+palace
 @Search for the Ocean's Heart
 @!Escape from the collapsing palace!
 @Fight Blackbeard
@@ -15146,20 +15154,21 @@ dialog{
   id = "quest.main.kelpton",
   title = "The Chart Salesman",
   text = [[
-Someone saw Mallow in
-Ballast Harbor.
-@Talk to the Chart Salesman
-he was speaking with
-@Find a way into the
-Pirate Council's vault.
-@Return Kelpton's stolen
-sea charts
-@You received a key Mallow
-left with Kelpton.
-!It might have something to
-!do with the Hourglass crew,
-!but you might have to follow
-!other leads for now.
+##Someone saw Mallow in Ballast Harbor.
+@Talk to the Chart Salesman he was
+speaking with
+@Find a way into the Pirate Council's
+vault
+@Return Kelpton's stolen sea charts
+@You received a key Mallow left with
+Kelpton
+!
+!It might have something to do with the
+!Hourglass crew, but you might have to
+!follow other leads for now.
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15167,15 +15176,17 @@ dialog{
   id = "quest.main.limestone.get_whisky",
   title = "Whisky for Juglan",
   text = [[
-Your dad's friend Juglan
-has had a rough week.
-@Find a bottle of whisky in
-the secret stash
-!The stash is on the east
-!side of the island
-@Return the whisky to
-your dad
-
+##Your dad's friend Juglan has had a
+##rough week.
+@Find a bottle of whisky in the secret
+stash
+!
+!The stash is on the east side of the
+!island
+@Return the whisky to your dad
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15183,12 +15194,11 @@ dialog{
   id = "quest.main.limestone.meet_juglan_at_pier",
   title = "Hitching A Ride",
   text = [[
-Jugland will give you a
-ride to Goatshead Harbor.
+##Jugland will give you a ride to
+##Goatshead Harbor.
 @Meet Juglan at the pier
-@Investigate the Sodden
-Cormorant Tavern.
-
+@Investigate the Sodden Cormorant
+Tavern
 ]],
 }
 
@@ -15196,20 +15206,22 @@ dialog{
   id = "quest.main.mangrove_sword",
   title = "The Mangrove Sword",
   text = [[
-Hazel thinks the Sword of the
-Sea King can destroy the
-Ocean's Heart.
+##Hazel thinks the Sword of the Sea King
+##can destroy the Ocean's Heart.
 @Locate an ancient mangrove thicket
-!The fish seller in the market
-!also sells mangrove leaves,
-!he might know where one is
-@Meet Hazel at the south gate
-!and take her to Gull Rock,
-!southwest of the city.
-@Find the oldest mangrove
-tree in the thicket
-@Retrieve the Sword of the
-Sea King
+!
+!The fish seller in the market also
+!sells mangrove leaves, he might know
+!where one is.
+@Meet Hazel at the south gate $!and take
+!her to Gull Rock, southwest of the
+!city
+@Find the oldest mangrove tree in the
+thicket
+@Retrieve the Sword of the Sea King
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15217,17 +15229,20 @@ dialog{
   id = "quest.main.monkshood",
   title = "Tiresome Herbs",
   text = [[
-To sneak into Fort Crow,
-you'll need to make some
-sleeping draught.
+##To sneak into Fort Crow, you'll need
+##to make some sleeping draught.
 @Gather monkshood petals
-!-Look in the northwest
-!part of Marblecliff
-!mountain, near dangerous
-!plants
-@Bring the monkshood petals
-to the apothecary
-
+!
+!Look in the northwest part of
+!Marblecliff mountain, near dangerous
+!plants.
+@Bring the monkshood petals to the
+apothecary
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME ($v1) --// $v1 is the number of monkshood petals the player has in inventory
+#%=
+#REWARD: $ITEM{sleeping_draught.1}   Sleeping Draught
 ]],
 }
 
@@ -15235,30 +15250,33 @@ dialog{
   id = "quest.main.pirate_fort",
   title = "The Pirate Fort",
   text = [[
-You need to find out if the
-Pirate Council knows where
-the Isle of Storms is yet.
+##You need to find out if the Pirate
+##Council knows where the Isle of Storms
+##is yet.
 @Speak with Morus
-!He's a volunteer navyman
-!who's usually at the
-!Salamander Heartache saloon
-@Get sleeping potion from the
-town apothecary
-!There's an apothecary
-!up on the east side of
-!town
+!
+!He's a volunteer navyman who's usually
+!at the Salamander Heartache saloon.
+@Get sleeping potion $!from the town
+!apothecary
+!
+!There's an apothecary up on the east
+!side of town.
 @!Return to Morus
-@Find the pirates' ale
-shipment and spike it.
-!Look for a barrel marked
-!with a star
-@Sneak into Fort Crow while
-the pirates are asleep
-!Morus will meet you down
-!at Fort Crow
+@Find the pirates' ale shipment and
+spike it
+!
+!Look for a barrel marked with a star.
+@Sneak into Fort Crow $!while the pirates
+!are asleep
+!
+!Morus will meet you down at Fort Crow.
 @Find Captain Al-Jazari
-@Meet Morus at the port
-to sail to Snapmast Reef
+@Meet Morus at the port to sail to
+Snapmast Reef
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15266,13 +15284,12 @@ dialog{
   id = "quest.main.snapmast",
   title = "The Hideout",
   text = [[
-You've found the location of
-the Pirate Council's hideout
+##You've found the location of the
+##Pirate Council's hideout.
 @Meet Morus at Oakhaven Port
-@Search for the Pirate
-Council's hideout
-@Find information on the
-Isle of Storms
+@Search for the Pirate Council's
+hideout
+@Find information on the Isle of Storms
 ]],
 }
 
@@ -15280,16 +15297,15 @@ dialog{
   id = "quest.main.spruce_head",
   title = "Spruce Head",
   text = [[
-The Hourglass Pirates
-were seen looting
-Spruce Head.
+##The Hourglass Pirates were seen
+##looting Spruce Head.
 @!Investigate Spruce Head
-@Find your way to the
-shipwreck in the harbor
-@Check with Briarwood
-Distillery
-!The distillery is on
-!Yarrowmouth Island
+@Find your way to the shipwreck in the
+harbor
+@Check with Briarwood Distillery
+!
+!The distillery is on Yarrowmouth
+!Island.
 ]],
 }
 
@@ -15297,28 +15313,66 @@ dialog{
   id = "quest.main.tidal_starfruit",
   title = "A Tidy Starnut?",
   text = [[
-Hazel needs a tiny Starfood
-or something to make an
-amulet to catch the pirates.
+##Hazel needs a tiny Starfood or
+##something to make an amulet to catch
+##the pirates.
 @Find a mangrove thicket
-@!Look southwest of town
-!Around Gull Rock
+@!Look southwest of town around Gull
+!Rock
 @Return the starfruit to Hazel
-
 ]],
 }
+
+dialog{
+    id = "quest.side.mysterious_doors",
+    title = "Mysterious Doors",
+    text = [[
+@!? --// don't display checkmark for this phase
+You found a mysterious door at the
+following locations:
+%1$@1 Tern Marsh
+%2$@2 Marble Summit
+%3$@3 Snapmast
+--//Note: the one in Goatshead is excluded because it is behind a regular locked door
+
+Keep exploring to find them all.
+]]}
+
+dialog{
+    id = "quest.side.heron_doors",
+    title = "Heron Doors",
+    text = [[
+!Explore the remaining shrines to
+!obtain the rest of the thunder charms.
+@?Explore all of the heron doors
+
+%~You haven't found any more heron doors
+%=!Locations to explore: --// The player must find at least one door for these lines to be visible
+?Heron doors explored: --// This line visible instead once quest is complete
+%1$@1 Tern Marsh
+%2$@2 Marble Summit
+%3$@3 Snapmast
+%=!
+%=!  Keep exploring to find them all.
+::
+$ITEM{thunder_charm.1}   Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+]]}
 
 dialog{
   id = "quest.side.ballast_harbor.hornet_honey",
   title = "Hornet Honey",
   text = [[
-Somewhere in Tern Marsh
-you can find hornet honey.
-@Locate the hornets and
-take their honey
-@Return the honey to
-Benjamin at the meadery
-
+##Somewhere in Tern Marsh you can find
+##hornet honey.
+@Locate the hornets and take their
+honey
+@Return the honey to Benjamin at the
+meadery
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+#%=
+#REWARD: $ITEM{rupee.1}   $v1 --// $v1 is the number of crowns for the reward (more if Michael is dead)
 ]],
 }
 
@@ -15326,16 +15380,17 @@ dialog{
   id = "quest.side.ballast_harbor.lost_key",
   title = "The Wrong Key",
   text = [[
-A drunk man dropped a key
-in the Ballast Harbor inn,
-which seems to go to a
-completely different inn.
-@Take the key and let
-youself into some other
-room, I guess?
-?- Turns out the key went to
-?Juneberry Inn on Goatshead.
-
+##A drunk man dropped a key in the
+##Ballast Harbor inn, which seems to go
+##to a completely different inn.
+@Take the key and let youself into some
+other room, I guess?
+?
+?Turns out the key went to Juneberry
+?Inn on Goatshead Island.
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15343,16 +15398,22 @@ dialog{
   id = "quest.side.bomb_arrows",
   title = "Thyme's Receipt",
   text = [[
-You found a receipt to pick up
-an order from the bomb shop
-@Check the bomb shop
-!in Oakhaven, where it
-!seems the receipt was issued.
-@Track down the pirates
-who stole the package
-!They're hiding out at
-!Oakhaven's shipyard
+##You found a receipt to pick up an
+##order from the bomb shop.
+@Check the bomb shop $!in Oakhaven, where
+!it seems the receipt was issued
+@Track down the pirates who stole the
+package
+!
+!They're hiding out at Oakhaven's
+!shipyard.
 @Confront the pirates
+@Look around for the package
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+%=?
+?REWARD: $ITEM{bow_bombs.1}   Bomb Arrows
 ]],
 }
 
@@ -15375,22 +15436,24 @@ dialog{
   id = "quest.side.crabhook.monster",
   title = "The Shoal Beast",
   text = [[
-A monster has been attacking
-fisherman from Crabhook
-@!Speak to fishermen to find
-!out where the monster is.
-@!Arni was attacked recently,
-!ask him where.
+##A monster has been attacking fisherman
+##from Crabhook.
+@!Speak to fishermen to find out where
+!the monster is
+@!Arni was attacked recently, ask him
+!where
 @Search Badger Shoal
-!The monster was last seen
-!near some rocks, by a cliff
-!with two spruce trees when
-!Arni was fishing with
-!monster bait
+!
+!The monster was last seen near some
+!rocks by a cliff with two spruce trees
+!when Arni was fishing with monster
+!bait.
 @Return to Danley to get paid
-!he's probably still at the
-!tavern in Crabhook
-
+!
+!He's probably still at the tavern in
+!Crabhook.
+#::
+#REWARD: $ITEM{rupee.1}   80
 ]],
 }
 
@@ -15398,14 +15461,18 @@ dialog{
   id = "quest.side.ferris_tools",
   title = "Black Market Tools",
   text = [[
-Ferris could make you more
-armor if you could find her
-some blacksmith tools.
-@Find some tools somewhere
-!Ferris recommends looking
-!in Ballast Harbor
+##Ferris could make you more armor if
+##you find her some blacksmith tools.
+@Find some tools $!somewhere
+!
+!Ferris recommends looking in Ballast
+!Harbor.
 @Return the tools to Ferris
-
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+#%=
+#REWARD: $ITEM{armor_upgrade_2.1}   Defense +2
 ]],
 }
 
@@ -15413,17 +15480,39 @@ dialog{
   id = "quest.side.goatshead.phantom_squid",
   title = "Phantom Squid Hunt",
   text = [[
-The Phantom Squid is manacing
-merchants' records and causing
-economic chaos.
+##The Phantom Squid is manacing
+##merchants' records and causing
+##economic chaos.
 @Set a trap with Rilesdorf
-!Rilesdorf's shop is by the
-!pier and blacksmith.
+!
+!Rilesdorf's shop is by the pier and
+!blacksmith.
 @Track the Phantom Squid!
-@!Return to Eamon, back
-!at the Marchant's Guild
-?You resolved the situation
-?one way or another.
+@Return to Eamon back at the Marchants'
+Guild
+?
+?Eamon only paid 60 Crowns because ink
+?was left on Rilesdorf's carpet.
+#::
+#!REWARD: $ITEM{rupee.1}   70
+?REWARD: $ITEM{rupee.1}   60
+]],
+}
+
+dialog{
+  id = "quest.side.goatshead.phantom_squid_aster",
+  title = "Phantom Squid Hunt",
+  text = [[
+##The Phantom Squid is manacing
+##merchants' records and causing
+##economic chaos.
+@Set a trap with Rilesdorf
+@Track the Phantom Squid!
+?
+?You decided instead to side with Aster
+?and help free the people of Crabhook
+?Village from their exploitative
+?contract with Eamon.
 ]],
 }
 
@@ -15431,24 +15520,28 @@ dialog{
   id = "quest.side.goatshead.phantom_squid_part_2",
   title = "A Broken Contract",
   text = [[
-The people of Crabhook are
-trapped in an exploitative
-contract.
-@Find the contract in the
-Merchants' Guild building
-!Aster gave you a note-
-!try showing it to someone
-!who seems spineless.
+##The people of Crabhook are trapped in
+##an exploitative contract.
+@Find the contract in the Merchants'
+Guild building
+!
+%=!Aster gave you a note-try showing it --// while the player has the note
+%=!to someone who seems spineless.
+%~!You showed Aster's note to the guard --// while the player no longer has the note
+%~!and he ran off.
 @Give Aster the contract
-@!UNUSED PHASE
-@Show the Barbell Brutes
-your immense strength
-!to convince them to stop
-!helping Eamon. They live
-!on the north street in town
+#::!
+#%=!$i0    QUEST ITEM:
+#%=!    $ITEM_NAME
+@!?UNUSED PHASE
+@Show the Barbell Brutes your immense
+strength $!to convince them to stop
+!helping Eamon
+!
+!They live on the north street in town.
 @Check in with Aster
-
-
+::?
+?REWARD: $ITEM{rupee.1}   200
 ]],
 }
 
@@ -15456,14 +15549,15 @@ dialog{
   id = "quest.side.goatshead.poplar_shack_key",
   title = "Mossy Key",
   text = [[
-You found a key laying in
-Poplar Forest. Wonder where
-it goes?
-@Find a locked door for the
-key you found in the woods.
-?- It went to an abandoned
-?shack.
-
+##You found a key laying in Poplar
+##Forest. Wonder where it goes?
+@Find a locked door for the key you
+found in the woods
+::
+%1!$i0    QUEST ITEM:
+%1!    $ITEM_NAME
+?
+?It went to an abandoned shack.
 ]],
 }
 
@@ -15471,16 +15565,16 @@ dialog{
   id = "quest.side.goatshead.secret_tunnels",
   title = "Abandoned Tunnels",
   text = [[
-Some adventurers who know their
-limits want help clearing
-monsters out of some old tunnels.
+##Some adventurers who know their limits
+##want help clearing monsters out of
+##some old tunnels.
 @Meet the adventurers
-!-the entrance to the tunnels
-is near the inn.
+!
+!The entrance to the tunnels is near
+!the inn.
 @Defeat the big spider
-@Let the adventurers know the
-tunnels have been cleared
-
+@Let the adventurers know the tunnels
+have been cleared
 ]],
 }
 
@@ -15509,15 +15603,18 @@ dialog{
   id = "quest.side.heron_well",
   title = "Heron's Well",
   text = [[
-The ghost of the hero Heron
-tasked you with cleaning
-Thrush Fort.
+##The ghost of the hero Heron tasked you
+##with cleaning Thrush Fort.
 @Unlock Thrust fort
-!It's north of Poplar
-!Forest, past Spruce Head
+!
+!It's north of Poplar Forest, past
+!Spruce Head
 @Destroy the monsters inside
 @Explore the tomb
-
+#::
+#%1$i0    QUEST ITEM:
+#%1    Thrush Fort Key --// Removed once door is opened
+%2ITEM FOUND: $ITEM{thunder_charm.1}   Thunder Charm
 ]],
 }
 
@@ -15525,16 +15622,17 @@ dialog{
   id = "quest.side.lighthouses",
   title = "Old Lighthouses",
   text = [[
-You hear about four ancient
-lighthouses built to guide
-a lost lover back from sea.
-@Light all four lighthouses.
+##You hear about four ancient
+##lighthouses built to guide a lost
+##lover back from sea.
+@Light all four lighthouses$!:
 ! $v1 lighthouses are burning.
-@You feel drawn back to
-Naerreturn Bay.
-!It's on Yarrowmouth.
-@Board the ghost ship.
-
+@You feel drawn back to Naerreturn Bay
+!
+!It's on Yarrowmouth Island.
+@Board the ghost ship
+#::
+#%=ITEM FOUND: $ITEM{gust.1}   $ITEM_NAME
 ]],
 }
 
@@ -15558,17 +15656,18 @@ dialog{
   id = "quest.side.oakhaven.bomb_shop",
   title = "Saltpeter Cave",
   text = [[
-The Oakhaven Bomb Shop is
-having monster-realted supply
-chain issues.
-@!Check in with the shop in
-!Oakhaven city
-@Enter the saltpeter cave
-near Fort Crow
-!Out the city's south gate,
-!head east.
+##The Oakhaven Bomb Shop is having
+##monster-realted supply chain issues.
+@!Check in with the shop in Oakhaven
+!City
+@Enter the saltpeter cave near Fort
+Crow
+!
+!Out the city's south gate, head east.
 @Find and destroy the monster
 @Return to the bomb shop
+::?
+?REWARD: $ITEM{bomb.1}   70
 ]],
 }
 
@@ -15576,11 +15675,13 @@ dialog{
   id = "quest.side.oakhaven.haunted_monastery",
   title = "Haunted Monastery",
   text = [[
-The monk on Marblecliff Summit
-says a beast lurks in the spring
-at the base of the monastery.
+##The monk on Marblecliff Summit says a
+##beast lurks in the spring at the base
+##of the monastery.
 @Find the creature and destroy it
 @Let the monk know you've succeeded
+::?
+?REWARD: $ITEM{bread.2}   Burroak Bread
 ]],
 }
 
@@ -15588,14 +15689,17 @@ dialog{
   id = "quest.side.oakhaven.ivy_orchard",
   title = "Ivystump Orchard",
   text = [[
-Monsters have overrun the
-orchard in Ivystump.
+##Monsters have overrun the orchard in
+##Ivystump.
 @Clear the orchard
-!There are 3 monsters
-!lurking in the orchard
+!
+!There are 3 monsters lurking in the
+!orchard
 @!Return to Paul
 @Save Paul!
-
+#::
+#!REWARD: $ITEM{rupee.1}   80 --// visible all phases but hidden once quest is complete
+?REWARD: $ITEM{rupee.1}   120 --// visible only after quest is complete
 ]],
 }
 
@@ -15603,36 +15707,44 @@ dialog{
   id = "quest.side.oakhaven.manna_oaks",
   title = "The Oak Blight",
   text = [[
-Hazel asked you to check out
-Oakhaven's trees, which are
-getting sick.
-@Collect a twig from one of
-the other two giant oaks.
-!There are giant trees in
-!Veilwood forest and on top
-!of Marblecliff Mountain.
+##Hazel asked you to check out
+##Oakhaven's trees, which are getting
+##sick.
+@Collect a twig from one of the other
+two giant oaks
+!
+!There are giant trees in Veilwood
+!Forest and on top of Marblecliff
+!Mountain.
 @!Take the twig back to Hazel
+!
 !She's at Oakhaven's library.
 @!Defend Hazel!
-@Visit Ivystump and ask if
-anyone knows about the Oaks.
-!Ivystump is on the western
-!edge of Oakhaven, past the
-!Veilwood forest
-@!An old botanist, Lamia,
-!lives in the southeast part
-!of town. She might know
+@Visit Ivystump $!and ask if anyone knows
+!about the Oaks
+!
+!Ivystump is on the western edge of
+!Oakhaven, past the Veilwood Forest.
+@!?
+!
+!An old botanist, Lamia, lives in the
+!southeast part of town. She might know
 !about the Manna Oaks.
-@Check Amalenchier's grave.
-!It's in a grove of fir trees
-!in the west of the Veilwood.
-@Return to the tomb entrance.
-@Investigate the 3 Manna Oaks.
-!You've looked at $v1 so far.
-@Investigate further down
-the tunnels.
-@Let Hazel know there were
-monsters infesting the roots.
+@Check Amalenchier's grave
+!
+!It's in a grove of fir trees in the
+!west of the Veilwood.
+@Return to the tomb entrance
+@Investigate the 3 Manna Oaks$!:
+! You've looked at $v1 so far.
+@Investigate further down the tunnels
+@Let Hazel know there were monsters
+infesting the roots
+#::
+#%=!$i0    QUEST ITEM:
+#%=!    $ITEM_NAME
+%=?
+?REWARD: $ITEM{elixer.1}   Elixer
 ]],
 }
 
@@ -15640,48 +15752,46 @@ dialog{
   id = "quest.side.oakhaven.master_thief",
   title = "The Dog's Birthday",
   text = [[
-The guard captains wants you
-to find a thief at the mayor's
-dog's birthday party.
+##The guard captains wants you to find a
+##thief at the mayor's dog's birthday
+##party.
 @Head to the palace
 !and present your invitation
-@!Speak to party guests
-!and ask about susicious
-!characters.
-@!Speak to party guests
-!Clues:
-!Someone in a red shirt
-!has a painting-size sack.
+@!Speak to party guests and ask about
+!suspicious characters.
 @!Speak to party guests
 !Clues:
-!The thief is in red.
-!The thief arrived soon
-!after the party started.
+!$@1 Someone in a red shirt has a --// Dynamic checkmarks in this quest are only
+!$1  painting-size sack           --// used as bullets and never become checked
 @!Speak to party guests
 !Clues:
-!The thief is in red.
-!The thief arrived early.
-!The guests who arrived
-!earlier are in the library
-!Ha! Look for someone
-!in a red shirt in the
-!library!
-@!A troll somehow got
-!into the attic!
+!$@1 The thief is in red
+!$@2 The thief arrived soon after the
+!$2  party started
+@!Speak to party guests
+!Clues:
+!$@1 The thief is in red
+!$@2 The thief arrived early
+!$@3 The guests who arrived earlier are
+!$3  in the library
+!Ha! Look for someone in a red shirt in
+!the library!
+@!A troll somehow got into the attic!
 !Defend the party guests!
 @Confront your suspect!
-!Hopefully the man in
-!the red shirt is still
-!in the library.
-@Run to the port and
-try to catch the thief!
-@!Ask around about the
-!man in the red shirt.
-@!Check the warehouse
-!up the stairs.
+!
+!Hopefully the man in the red shirt is
+!still in the library.
+@Run to the port and try to catch the
+thief!
+@!Ask around about the man in the red
+!shirt
+@!Check the warehouse up the stairs
 @!Save the mayor's dog!
-@Report to the Captain
-!of the Guard back in town.
+@Report to the Captain of the Guard
+!back in town
+#::
+#REWARD: $ITEM{rupee.1}   200
 ]],
 }
 
@@ -15689,19 +15799,19 @@ dialog{
   id = "quest.side.oakhaven.musicians",
   title = "Battle of the Band",
   text = [[
-You agreed to help some
-struggling musicians.
-@Let the bartender know
-they're willing to play
-!He'll be behind the bar
-!at the Salamander Heartache
-!Saloon
-@Check the band's posters
-and make sure monsters
-aren't attacking them
+##You agreed to help some struggling
+##musicians.
+@Let the bartender know they're willing
+to play
+!
+!He'll be behind the bar at the
+!Salamander Heartache Saloon
+@Check the band's posters and make sure
+monsters aren't attacking them
 @Beat up that monster!
-@Go see Gunther's show.
-
+@Go see Gunther's show
+?::
+?REWARD: $ITEM{coral_ore.1}   Coral Ore --// only revealed after quest is over
 ]],
 }
 
@@ -15709,27 +15819,56 @@ dialog{
   id = "quest.side.oakhaven.orange_thief",
   title = "The Tic Tac Champ",
   text = [[
-You somehow joined Oakhaven's
-tic tac toe championship,
-but the prize was stolen!
+##You somehow joined Oakhaven's tic tac
+##toe championship, but the prize was
+##stolen!
 @Investigate the scene
 @!Talk to the emcee
 @!Search for clues
-@Find someone who would
-remember selling enough
-oranges to generate that
-many peels.
-@Take the oranges you've
-been given to Aubrey
-!She lives across the
-!river from the market.
+@Find someone capable of selling enough
+oranges to generate that many peels
+!
+!Ask if they recall such a sale.
+@Take the shipment of oranges to Aubrey
+!
+!She lives across the river from the
+!market.
 @!Go on in
-@!Take the money back to
-!the tic tac toe guy.
-@Be confident knowing
-you made the right
-decision
+@Take the money back to the tic tac toe
+guy
+?
+?You were allowed to keep half of the
+?prize money.
+#::
+#%=$i0    QUEST ITEM: --// phase 4: orange shipment, phase 6: prize money
+#%=    $ITEM_NAME
+#%=
+#!REWARD: Cut of the 200$ITEM{rupee.6}   prize money
+?REWARD: $ITEM{rupee.5}   100
+]],
+}
 
+dialog{
+  id = "quest.side.oakhaven.orange_thief_aubrey",
+  title = "The Tic Tac Champ",
+  text = [[
+##You somehow joined Oakhaven's tic tac
+##toe championship, but the prize was
+##stolen!
+@Investigate the scene
+@!Talk to the emcee
+@!Search for clues
+@Find someone capable of selling enough
+oranges to generate that many peels
+@Take the shipment of oranges to Aubrey
+@!Go on in
+@!?
+
+You let Aubrey keep the prize money.
+?
+?Aubrey told you to visit her orange
+?orchard on the road to the Isle of
+?Lobb.
 ]],
 }
 
@@ -15737,14 +15876,15 @@ dialog{
   id = "quest.side.oakhaven.sinking_lighthouse",
   title = "Seaglint Ruins Key",
   text = [[
-You found a key in a
-sinking ruins. It likely
-unlocks a nearby door.
-@Find the locked door.
-? - It was a locked
-?lighthouse in the
+##You found a key in a sinking ruins. It
+##likely unlocks a nearby door.
+@Find the locked door
+?
+?It was a locked lighthouse in the
 ?ruins.
-
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -15752,16 +15892,23 @@ dialog{
   id = "quest.side.yarrowmouth.iron_pinecone",
   title = "An Iron Pinecone",
   text = [[
-An artisinal armorer will
-make you some armor if you
-bring her an iron pinecone.
-@Search Yarrowmouth for an
-iron pinecone.
-@Bring the pinecone to Mera
-the at the Yarrowmoth
-blacksmith and get some
-armor.
-
+##An artisinal armorer will make you
+##some armor if you bring her an iron
+##pinecone.
+@Search Yarrowmouth for an iron
+pinecone
+!
+!It is said to be found in Puzzlewood.
+@!Bring the pinecone to Mera at the
+!Yarrowmoth Smithy and get some armor
+@Bring the pinecone to Mera at the --// optional phase shown only if player had insufficient funds
+Yarrowmoth Smithy and get some armor
+!(Requires 50 Crowns)
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+#%=
+#REWARD: $ITEM{armor_upgrade_2.1}    Defense +2
 ]],
 }
 
@@ -15769,21 +15916,30 @@ dialog{
   id = "quest.side.yarrowmouth.meadery",
   title = "Briarwood Mushrooms",
   text = [[
-Briarwood Distillery's
-mushroom spot was overrun.
-@Defeat the monsters at
-the mushroom picking spot
-!The spot is east of
-!the Puzzlewood
-@Wait, who set that trap?
-@See if anyone at the
-distillery knows Michael
-@Confront Michael the
-Mighty Mead Maker
-!His meadery is just
-north of Ballast Harbor
+##Briarwood Distillery's mushroom spot
+##was overrun.
+@Defeat the monsters at the mushroom
+picking spot
+!
+!The spot is east of the Puzzlewood
+@?Found a letter identifying Michael as
+?the culprit behind the monsters
+!
+!Wait, who set that trap?
+#::!
+#%=!$i0    QUEST ITEM: --// phase 0 & 1 only: mushroom spot key or mead safehouse key
+#%=!    $ITEM_NAME
+#%=!
+@See if anyone at the distillery knows
+Michael
+@Confront Michael the Mighty Mead Maker
+!
+!His meadery is just north of Ballast
+!Harbor.
 @Return to Briarwood
-
+#::
+#!REWARD: $ITEM{rupee.1}   65 --// visible all phases but hidden once quest is complete
+?REWARD: $ITEM{rupee.1}   110 --// visible only after quest is complete
 ]],
 }
 
@@ -15791,25 +15947,31 @@ dialog{
   id = "quest.side.yarrowmouth.parley",
   title = "A Quick Errand",
   text = [[
-Nina of Yarrowmouth asked if
-you could meet with some
-pirates of behalf of a man
-named Carlov.
+##Nina of Yarrowmouth asked if you could
+##meet with some pirates of behalf of a
+##man named Carlov.
 @Tell the pirates to piss off
-!They'll meet you at Seaweed
-!Rock, west of Tern Marsh
-@!What!? It's a trap!?
+!
+!They'll meet you at Seaweed Rock,
+!west of Tern Marsh
+@!?
+!
+!What!? It's a trap!?
 @!Report back to Nina
-@Find the pirates hideout
-and teach them not to mess
-with Yarrowmouth. Or you.
-!If you go southeast of
-!Tern Marsh and east after
-!you pass the meadery, you
+#::!
+#!REWARD: $ITEM{rupee.1}   80 --// visible all previous phases up until this one is complete
+#;;
+@Find the pirates hideout and teach
+them not to mess with Yarrowmouth.
+Or you.
+!
+!If you go southeast of Tern Marsh and
+!east after you pass the meadery, you
 !can find their hideout.
-@Let Nina know you defeated
-the pirate crew
-
+@Let Nina know you defeated the pirate
+crew
+#::
+#REWARD: $ITEM{rupee.1}   120 --// visible from beginning of phase 3 and after
 ]],
 }
 
@@ -15817,25 +15979,29 @@ dialog{
   id = "quest.side.yarrowmouth.stone_beak",
   title = "A Stone...Beak?",
   text = [[
-You happened across a piece
-of stone shaped kind of like
-a bird beak.
-@Figure out where it may
-have come fom
-
+##You happened across a piece of stone
+##shaped kind of like a bird beak.
+@Figure out where it may have come from
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
 dialog{
-  id = "quest.test13",
+  id = "quest.side.carrot_cache",
   title = "The Carrot Cache",
   text = [[
-An upset fisherman's spot's
-been overrun with monsters
-@ Find the fishin' spot and
-destroy the monsters
-
+##An upset fisherman's spot's been
+##overrun with monsters
+@Find the fishin' spot and destroy
+the monsters
+!
+!The fishing spot is just south of
+!Poplar Forest
 @ Return to the fisherman
+#::
+#REWARD: $ITEM{rupee.1}   80
 ]],
 }
 

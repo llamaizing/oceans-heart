@@ -13,5 +13,6 @@ require("scripts/meta/destructable")
 require("scripts/meta/camera")
 --require("scripts/meta/sensor")
 require("scripts/meta/map")
+require("scripts/meta/item")
 
 return true

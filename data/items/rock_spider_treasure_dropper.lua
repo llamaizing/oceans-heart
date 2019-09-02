@@ -1,3 +1,5 @@
+require("scripts/multi_events")
+
 local item = ...
 
 -- When it is created, this item creates another item randomly chosen
@@ -5,7 +7,7 @@ local item = ...
 
 local probability = 50 -- chance out of 100 that this item show up
 
-function item:on_pickable_created(pickable)
+item:register_event("on_pickable_created", function(self, pickable)
 
  random = math.random(100)
  if random < probability then
@@ -20,4 +22,4 @@ function item:on_pickable_created(pickable)
     }
   end
   pickable:remove()
- end
+end)

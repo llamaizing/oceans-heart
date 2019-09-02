@@ -1,20 +1,22 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
 
   item:set_savegame_variable("possession_oak_charm")
   item:set_sound_when_brandished(nil)
   item:set_sound_when_picked(nil)
   item:set_shadow(nil)
-end
+end)
 
-function item:on_variant_changed(variant)
+item:register_event("on_variant_changed", function(self, variant)
   -- The possession state of the charm determines the built-in ability "lift".
   game:set_ability("lift", 1)
-end
+end)
 
-function item:on_obtaining(variant)
+item:register_event("on_obtaining", function(self, variant)
 
   sol.audio.play_sound("treasure")
-end
+end)

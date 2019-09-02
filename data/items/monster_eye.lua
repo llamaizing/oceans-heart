@@ -1,19 +1,19 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_started()
+item:register_event("on_started", function(self)
   item:set_savegame_variable("possession_monster_eye")
   item:set_amount_savegame_variable("amount_monster_eye")
   item:set_brandish_when_picked(not game:has_item(item:get_name()))
-end
+end)
 
-function item:on_obtaining(variant, savegame_variable)
+item:register_event("on_obtaining", function(self, variant, savegame_variable)
   if game:has_item(item:get_name()) then item:set_brandish_when_picked(false) end
   self:add_amount(1)
-end
+end)
 
+item:register_event("on_pickable_created", function(self, pickable)
 
-function item:on_pickable_created(pickable)
-
-
-end
+end)

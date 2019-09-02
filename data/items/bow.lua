@@ -10,30 +10,33 @@
 -- bow_damage will allow the arrows to become more powerful independently.
 
 
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
 
   item:set_savegame_variable("possession_bow")
   item:set_amount_savegame_variable("amount_bow")
   item:set_assignable(true)
-end
-function item:on_started()
+end)
+
+item:register_event("on_started", function(self)
   item:set_max_amount(999)
-end
+end)
 
 -- set to item slot 1
-function item:on_obtained()
+item:register_event("on_obtained", function(self)
   game:set_value("bow_damage", 1)
   self:add_amount(20)
   game:set_value("available_in_shop_arrows", true)
-end
+end)
 
 
 -- Using the bow.
 -- This function can also be called by the silver bow.
-function item:on_using()
+item:register_event("on_using", function(self)
 
   if self:get_amount() == 0 then
     if game:get_magic() == game:get_max_magic() then
@@ -49,7 +52,7 @@ function item:on_using()
     self:remove_amount(1)
     self:shoot(false)
   end
-end
+end)
 
 
 function item:shoot(magic)

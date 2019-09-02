@@ -1,19 +1,20 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_started()
+item:register_event("on_started", function(self)
   item:set_savegame_variable("possession_potion_magic_restoration")
   item:set_amount_savegame_variable("amount_potion_magic_restoration")
   item:set_max_amount(99)
   item:set_assignable(false)
-end
+end)
 
-function item:on_obtained()
+item:register_event("on_obtained", function(self)
   self:add_amount(1)
-end
+end)
 
-
-function item:on_using()
+item:register_event("on_using", function(self)
   if self:get_amount() > 0 and game:get_magic() < game:get_max_magic() then
     game:set_magic(game:get_max_magic())
     self:remove_amount(1)
@@ -22,4 +23,4 @@ function item:on_using()
   else sol.audio.play_sound("no")
   end
   item:set_finished()
-end
+end)

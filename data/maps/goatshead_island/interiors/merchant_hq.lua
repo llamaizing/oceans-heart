@@ -88,6 +88,8 @@ function thomas:on_interaction()
     game:start_dialog("_goatshead.npcs.guards.thomas.1")
   else
     game:start_dialog("_goatshead.npcs.guards.thomas.2", function()
+      game:set_value("possession_aster_note", nil)
+      game.objectives:force_update() --TODO quest log issue #70
       guard_run:start(thomas, function() thomas:set_enabled(false) end)
       game:set_value("mhq_thomas_left", true)
     end)

@@ -1,20 +1,22 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
   self:set_can_disappear(true)
-end
+end)
 
-function item:on_started()
+item:register_event("on_started", function(self)
   item:set_savegame_variable("possession_berries")
   item:set_amount_savegame_variable("amount_berries")
   item:set_max_amount(game:get_value("max_berry_capacity") or 50)
   item:set_assignable(false)
   item:set_brandish_when_picked(not game:has_item(item:get_name()))
-end
+end)
 
 --obtained
-function item:on_obtaining(variant, savegame_variable)
+item:register_event("on_obtaining", function(self, variant, savegame_variable)
   item:set_brandish_when_picked(false)
   local amounts = {1, 3, 5, 20}
   local amount = amounts[variant]
@@ -23,10 +25,10 @@ function item:on_obtaining(variant, savegame_variable)
   end
 
   self:add_amount(amount)
-end
+end)
 
 --used
-function item:on_using()
+item:register_event("on_using", function(self)
   if self:get_amount() > 0 and game:get_life() < game:get_max_life() then
     game:add_life(1)
     self:remove_amount(1)
@@ -34,4 +36,4 @@ function item:on_using()
   else sol.audio.play_sound("no")
   end
   item:set_finished()
-end
+end)

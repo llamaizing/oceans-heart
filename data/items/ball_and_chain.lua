@@ -1,3 +1,5 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
@@ -11,13 +13,13 @@ local CHARGING_TIME = 500
 
 
 -- Event called when the game is initialized.
-function item:on_started()
+item:register_event("on_started", function(self)
   item:set_savegame_variable("possession_ball_and_chain")
   item:set_assignable(true)
-end
+end)
 
 -- Event called when the hero is using this item.
-function item:on_using()
+item:register_event("on_using", function(self)
   local map = item:get_map()
   local hero = map:get_hero()
   local hero_dir = hero:get_direction()
@@ -156,4 +158,4 @@ function item:on_using()
       map:create_explosion{layer = spike_layer, x = spike_x, y = spike_y}
     end
   end
-end
+end)

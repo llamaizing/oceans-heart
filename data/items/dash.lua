@@ -1,18 +1,20 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
 -- Event called when the game is initialized.
-function item:on_created()
+item:register_event("on_created", function(self)
   item:set_savegame_variable("possession_dash")
   item:set_assignable(true)
-end
+end)
 
-function item:on_obtained()
+item:register_event("on_obtained", function(self)
   game:set_item_assigned(2, self)
-end
+end)
 
 -- Event called when the hero is using this item.
-function item:on_using()
+item:register_event("on_using", function(self)
   local hero = game:get_hero()
   local dir = hero:get_direction()
   if dir == 1 then dir = (math.pi/2) elseif dir == 2 then dir = math.pi elseif dir == 3 then dir = (3*math.pi/2) end
@@ -33,11 +35,11 @@ function item:on_using()
   end
 
   item:set_finished()
-end
+end)
 
 -- Event called when a pickable treasure representing this item
 -- is created on the map.
-function item:on_pickable_created(pickable)
+item:register_event("on_pickable_created", function(self, pickable)
 
   -- You can set a particular movement here if you don't like the default one.
-end
+end)

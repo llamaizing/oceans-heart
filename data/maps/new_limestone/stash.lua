@@ -40,6 +40,8 @@ function whisky:on_interaction()
     game:set_starting_location("new_limestone/stash", "found_whisky")
 
     game:set_value("quest_whisky_for_juglan_phase", 1) --quest log
+    game:set_value("possession_whisky_for_juglan", 1) --add item to inventory
+
     whisky:set_enabled(false)
     hero:freeze()
     local i = 1
