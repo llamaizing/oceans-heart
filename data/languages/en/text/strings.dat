@@ -77,6 +77,8 @@ text{ key = "item.bomb_arrow_ticket.1", value = "Bomb Shop Ticket" }
 text{ key = "item.bow_bombs.1", value = "Bomb Arrows" }
 text{ key = "item.gust.1", value = "Zephyrine's Tempest" }
 text{ key = "item.armor_tools.1", value = "Armorer's Tool Set" }
+text{ key = "item.manna_oak_twig.1", value = "Manna Oak Twig" }
+text{ key = "item.manna_oak_letter.1", value = "Manna Oak Letter" }
 text{ key = "item.sword_of_the_sea_king.1", value = "Sword of the Sea King" }
 text{ key = "item.oceansheart_chart.1", value = "Isle of Storms Chart" }
 text{ key = "menu.quest_log.back_prompt", value = "D Back" }

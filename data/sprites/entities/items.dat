@@ -732,6 +732,13 @@ animation{
   },
 }
 animation{
+  name = "manna_oak_letter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 256, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "manna_oak_twig",
   src_image = "entities/items.png",
   directions = {

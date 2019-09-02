@@ -436,7 +436,11 @@ side{
     location = "location.oakhaven",
     replace_v = {
         "manna_oaks_investigated"
-    }
+    },
+    items = {
+        "manna_oak_twig.1",
+        "manna_oak_letter.1",
+    },
 }
 
 side{

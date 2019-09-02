@@ -57,6 +57,8 @@ function hazel:on_interaction()
     game:start_dialog("_oakhaven.npcs.hazel.library.1", function()
       pollutant_battle_wall:set_enabled(true)
       pollutant_enemy:set_enabled(true)
+      game:set_value("possession_manna_oak_twig", nil)
+      game:set_value("possession_manna_oak_letter", 1)
       game:set_value("quest_manna_oaks", 2)
     end)
   elseif game:get_value("quest_manna_oaks") == 3 then

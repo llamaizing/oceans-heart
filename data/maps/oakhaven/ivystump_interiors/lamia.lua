@@ -25,6 +25,7 @@ function lamia:on_interaction()
   --if Hazel has just sent you to talk to Lamia
   elseif game:get_value("quest_manna_oaks") == 3 or game:get_value("quest_manna_oaks") == 4 then
     game:start_dialog("_oakhaven.npcs.ivystump.lamia.2", function()
+      game:set_value("possession_manna_oak_letter", nil)
       game:set_value("quest_manna_oaks", 5) --now go to Amalenchier's tomb
     end)
 

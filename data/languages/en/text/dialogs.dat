@@ -15133,8 +15133,8 @@ dialog{
 ##the Isle of Storms.
 @Ask Morus to sail you to the Isle
 ::!
-!%=$i0    QUEST ITEM:
-!%=    $ITEM_NAME
+%=!$i0    QUEST ITEM:
+%=!    $ITEM_NAME
 @Find a way into the Sea King's sunken
 palace
 @Search for the Ocean's Heart
@@ -15696,7 +15696,10 @@ two giant oaks
 @Investigate further down the tunnels
 @Let Hazel know there were monsters
 infesting the roots
-::?
+#::
+#%=!$i0    QUEST ITEM:
+#%=!    $ITEM_NAME
+%=?
 ?REWARD: $ITEM{elixer.1}   Elixer
 ]],
 }
