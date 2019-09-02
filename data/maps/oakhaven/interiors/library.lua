@@ -59,6 +59,11 @@ function hazel:on_interaction()
       pollutant_enemy:set_enabled(true)
       game:set_value("quest_manna_oaks", 2)
     end)
+  elseif game:get_value("quest_manna_oaks") == 2 and not pollutant_enemy:is_enabled() then
+    game:start_dialog("_oakhaven.npcs.hazel.library.1", function()
+      pollutant_battle_wall:set_enabled(true)
+      pollutant_enemy:set_enabled(true)
+    end)
   elseif game:get_value("quest_manna_oaks") == 3 then
     game:start_dialog("_oakhaven.npcs.hazel.library.3")
   end
