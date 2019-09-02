@@ -23090,7 +23090,7 @@ door{
   y = 584,
   direction = 0,
   sprite = "entities/door_shutter",
-  savegame_variable = "bear_catacombs_d3_door_state",
+  savegame_variable = "bear_catacombs_d3_left_door_state",
 }
 
 door{
