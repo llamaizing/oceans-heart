@@ -341,7 +341,7 @@ function objectives_manager.create(game)
 		if type(location)=="table" then --verify table entries and substitute values for true
 			for _,loc in ipairs(location) do
 				assert(not loc or type(loc)=="string", "Bad property location to 'add_objective' (table values must be a string or nil/false)")
-				assert(sol.language.get_string(loc), "Bad property location to 'add_objective', invalid string.dat key: "..loc)
+				assert(not loc or sol.language.get_string(loc), "Bad property location to 'add_objective', invalid string.dat key: "..tostring(loc))
 			end
 		end
 
@@ -839,6 +839,9 @@ function objectives_manager.create(game)
 				entry.is_filler = not not line:match"^%s*#?::" --line begins with ::
 				if entry.is_filler then line = line:gsub("::", "", 1) end --remove first instance of ::
 
+				entry.is_hard_break = not not line:match"^%s*#?;;" --line begins with ;; (also counts as phase break)
+				if entry.is_hard_break then line = line:gsub(";;", ";", 1) end --remove first instance of ;;
+
 				--strip %0 thru %9 characters (max of 1 per line)
 				local char = line:match"^%s*#?%%(.)"
 				local digit = tonumber(char)
@@ -878,6 +881,7 @@ function objectives_manager.create(game)
 						end
 
 						pre_text = pre_text:gsub("%$@%d", " "):gsub("%$%d", "") --remove dynamic checkmarks so doesn't affect position
+						pre_text = pre_text:gsub("%$%!", ""):gsub("%$%?", "")
 
 						item_positions[#lines][icon_num] = pre_text
 					end
@@ -888,6 +892,10 @@ function objectives_manager.create(game)
 				--substitute for misc_item icon
 				if misc_item_text then
 					pre_text = stripped_text:match("^(.-)"..misc_item_text)
+
+					pre_text = pre_text:gsub("%$@%d", " "):gsub("%$%d", "") --remove dynamic checkmarks so doesn't affect position
+					pre_text = pre_text:gsub("%$[%!%?]", "")
+
 					item_positions[#lines]['11'] = pre_text --TODO allow more than one misc_item icon?
 					item_positions.item_id = item_id
 					item_positions.variant = variant
@@ -901,7 +909,11 @@ function objectives_manager.create(game)
 				local check_position = stripped_text:find"%$@%d"
 				if check_position then --has dynamic checkmark on this line
 					check_index = tonumber(stripped_text:match"%$@(%d)")
-					check_position = stripped_text:sub(1,check_position-1) --save text preceding checkmark
+					pre_text = stripped_text:sub(1,check_position-1) --save text preceding checkmark
+					pre_text = pre_text:gsub("%$[%!%?]", "")
+
+					entry.check_index = check_index
+					entry.check_position = pre_text
 				else check_index = tonumber(stripped_text:match"%$(%d)") end --only look for $1-$9 instances if no dynamic checkmark on the line
 
 				--ignore index values of zero
@@ -909,13 +921,20 @@ function objectives_manager.create(game)
 					check_index = nil
 					check_position = nil
 				end
-				entry.check_index = check_index
-				entry.check_position = check_position
 
 				--strip out dynamic checkmark characters now that info is saved
 				for i=1,9 do
 					stripped_text = stripped_text:gsub("%$@"..i, " "):gsub("%$"..i, "")
 				end
+
+				--// parse split line special characters: $! & $?
+
+				local start,_,char = stripped_text:find"%$([%!%?])"
+				if start then
+					entry.split_length = start - 1
+					entry.split_type = char
+				end
+				stripped_text = stripped_text:gsub("%$[%!%?]", "")
 
 				--// handle special characters at beginning of line
 
@@ -927,7 +946,6 @@ function objectives_manager.create(game)
 				entry.do_not_grey = not not (line:match"^%s*[;]?##" or line:match"^%s*#%%") --line must begin with ## or #% in order to not be greyed out
 				local is_empty = line:match"^%s*$" and not entry.is_filler and not digit --non-nil if line contains entirely whitespace (no special chars or comments either)
 				local is_phase_break = line:match"^%s*;" --non-nil if line begins with ;
-				entry.is_hard_break = not not line:match"^%s*;;" --line begins with ;; (also counts as phase break)
 				if entry.is_hard_break or entry.is_filler then entry.is_comment = true end
 
 				--determine where phase breaks occur
@@ -1005,12 +1023,38 @@ function objectives_manager.create(game)
 					visible_lines.filler = #visible_lines + 1
 				end
 
-				if entry.is_hard_break
-				and current_phase + (phase_breaks[i] and 1 or 0) == rank then
-					break --remaining lines are not visible
+				if entry.is_hard_break then
+					local break_phase = phase + (phase_breaks[i] and 1 or 0) --if also a phase break then need to add 1 since it makes this line part of the next rank
+					if break_phase == rank then
+						break --remaining lines are not visible
+					elseif entry.is_persistent and break_phase < rank then
+						break --remaining lines are not visible
+					end
 				end
 
 				if is_visible and not entry.is_comment then --don't bother with the rest if not visible
+					if entry.split_type then
+						local is_split_visible = SPECIAL_CHAR_VISIBILITY[entry.split_type](rank, phase)
+						if not is_split_visible then --otherwise don't need to do anything special
+							local max_length = entry.split_length --convenience
+							entry.text = entry.text:sub(1, max_length) --truncate line text
+
+							local line_items = item_positions[i] or {}
+							for index,pre_text in pairs(line_items) do
+								if pre_text:len() > max_length then
+									line_items[index] = nil --hide item icon
+								end
+							end
+							if line_items['11'] and line_items['11'] > max_length then
+								line_items['11'] = nil --hide item icon
+							end
+							if entry.check_position and entry.check_position > max_length then
+								entry.check_position = nil --hide dynamic checkmark
+								entry.check_index = nil
+							end
+						end
+					end
+
 					local primary_is_grey = not entry.do_not_grey and (phase>rank) --persistent lines never grey
 					local dynamic_is_grey = subs_check[entry.check_index] or false
 

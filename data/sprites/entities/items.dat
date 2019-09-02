@@ -48,6 +48,13 @@ animation{
   },
 }
 animation{
+  name = "aster_note",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 256, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "attack_upgrade",
   src_image = "entities/items.png",
   frame_delay = 80,
@@ -618,6 +625,13 @@ animation{
   },
 }
 animation{
+  name = "key_mushroom_spot",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 192, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "key_palace_of_storms",
   src_image = "entities/items.png",
   directions = {
@@ -718,6 +732,13 @@ animation{
   },
 }
 animation{
+  name = "manna_oak_letter",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 256, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "manna_oak_twig",
   src_image = "entities/items.png",
   directions = {
@@ -808,6 +829,13 @@ animation{
   },
 }
 animation{
+  name = "oranges_shipment",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 272, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "potion_burlyblade",
   src_image = "entities/items.png",
   directions = {
@@ -833,6 +861,15 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 368, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "prize_money",
+  src_image = "entities/items.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 112, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 7 },
   },
 }
 animation{

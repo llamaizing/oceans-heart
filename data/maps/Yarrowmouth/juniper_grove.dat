@@ -5997,6 +5997,7 @@ door{
   savegame_variable = "juniper_grove_gate_2",
   opening_method = "interaction_if_item",
   opening_condition = "key_juniper_grove_2",
+  opening_condition_consumed = true,
   cannot_open_dialog = "_game.locked_gate",
 }
 

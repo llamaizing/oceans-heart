@@ -1,10 +1,12 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
   item:set_savegame_variable("possession_key_to_oakhaven")
-end
+end)
 
-function item:on_obtained()
+item:register_event("on_obtained", function(self)
 
-end
+end)

@@ -160,6 +160,7 @@ function star_barrel_2:on_interaction()
           game:set_value("quest_log_b", "b9")
           game:set_value("morus_counter", 4)
           game:set_value("spiked_crow_ale", true)
+          game:set_value("possession_sleeping_draught", nil)
         end)--end of dialog 2 function end--end of if answer is 1
       end --end of if answer is
     end)--end of dialog 1 function

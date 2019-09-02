@@ -1,20 +1,22 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
 
   self:set_shadow("small")
   self:set_can_disappear(true)
   self:set_brandish_when_picked(false)
 
-end
+end)
 
-function item:on_started()
+item:register_event("on_started", function(self)
 
-end
+end)
 
 
-function item:on_obtaining(variant, savegame_variable)
+item:register_event("on_obtaining", function(self, variant, savegame_variable)
   -- Obtaining arrows increases the counter of the bow.
   local amounts = { 1, 3, 5, 10, 20 }
   local amount = amounts[variant]
@@ -24,5 +26,4 @@ function item:on_obtaining(variant, savegame_variable)
 
   game:get_item("bow"):add_amount(amount)
 
-end
-
+end)

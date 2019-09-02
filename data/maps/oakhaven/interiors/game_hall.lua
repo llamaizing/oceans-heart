@@ -68,6 +68,7 @@ function referee:on_interaction()
   elseif game:get_value("tic_tac_referee_counter") == 3 then
     game:start_dialog("_oakhaven.npcs.game_hall.officiant.6", function()
       game:remove_money(100)
+      game:set_value("possession_prize_money", nil)
       game:set_value("tic_tac_referee_counter", 4)
       game:set_value("quest_tic_tac_toe", 8) --quest log
     end)

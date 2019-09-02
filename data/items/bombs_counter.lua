@@ -1,3 +1,5 @@
+require("scripts/multi_events")
+
 local item = ...
 local game = item:get_game()
 
@@ -5,7 +7,7 @@ local sound_timer
 
 --we don't use this one!
 
-function item:on_created()
+item:register_event("on_created", function(self)
 
   item:set_savegame_variable("possession_bomb_counter")
   item:set_amount_savegame_variable("amount_bomb_counter")
@@ -13,13 +15,13 @@ function item:on_created()
   item:set_amount_savegame_variable("amount_bomb_counter")
   item:set_max_amount(99)
   bomb_max_amount = self:get_max_amount()
-end
+end)
 
 -- set item to slot 2
-function item:on_obtaining()
+item:register_event("on_obtaining", function(self)
   game:set_item_assigned(2, self)
   item:set_amount(10)
-end
+end)
 
 --WE DON'T USE THIS ONE. THIS TRIES TO CREATE THE BOMB AS A CUSTOM ENTITY
 -- the problem we get from this is that if you explode the bomb early, there will still be an explosion where the bomb was.
@@ -31,7 +33,7 @@ end
 
 
 -- Called when the player uses the bombs of his inventory by pressing the corresponding item key.
-function item:on_using()
+item:register_event("on_using", function(self)
   if item:get_amount() == 0 then
     if sound_timer == nil then
       sol.audio.play_sound("wrong")
@@ -45,9 +47,9 @@ function item:on_using()
     sol.audio.play_sound("bomb")
   end
   item:set_finished()
-end
+end)
 
-function item:create_bomb()
+item:register_event("create_bomb", function(self)
 
   local map = item:get_map()
   local hero = map:get_entity("hero")
@@ -110,9 +112,9 @@ local bomb = map:create_destructible({
 --    bomb_sprite:set_animation("stopped_explosion_soon")
     sol.timer.start(bomb, 2000, explode)
   end)
-end
+end)
 
-function item:remove_bombs_on_map()
+item:register_event("remove_bombs_on_map", function(self)
 
   local map = item:get_map()
   if map.current_bombs == nil then
@@ -123,7 +125,7 @@ function item:remove_bombs_on_map()
   end
   map.current_bombs = {}
 --]]
-end
+end)
 
 
 --[[

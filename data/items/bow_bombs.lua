@@ -7,33 +7,36 @@
 -- Max addendum: no. Different bow/arrow items are different items. They shoot different arrow entities.
 -- The only similarity is that the arrow pickups on the map refil all bow types.
 
+require("scripts/multi_events")
 
 local item = ...
 local game = item:get_game()
 
-function item:on_created()
+item:register_event("on_created", function(self)
 
   item:set_savegame_variable("possession_bow_bombs")
   item:set_amount_savegame_variable("amount_bow")
   item:set_assignable(true)
-end
-function item:on_started()
+end)
+
+item:register_event("on_started", function(self)
   item:set_max_amount(999)
-end
+end)
 
 
 -- set to item slot 1
-function item:on_obtained()
+item:register_event("on_obtained", function(self)
 --increase bow damage
   bow_damage = game:get_value("bow_damage")
   bow_damage = bow_damage + 1
   game:set_value("bow_damage", bow_damage)
-end
+  game:set_value("quest_bomb_arrows", 4) --quest log
+end)
 
 
 -- Using the bow.
 
-function item:on_using()
+item:register_event("on_using", function(self)
 
   -- item is the normal bow, self can be called by other items.
 
@@ -73,7 +76,7 @@ function item:on_using()
 
     end)
   end
-end
+end)
 
 
 function item:get_force()
@@ -88,5 +91,3 @@ function item:get_arrow_sprite_id()
      return "entities/arrow_fire"
 
 end
-
-

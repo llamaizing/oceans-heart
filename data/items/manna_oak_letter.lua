@@ -5,11 +5,9 @@ local game = item:get_game()
 
 -- Event called when the game is initialized.
 item:register_event("on_created", function(self)
-  item:set_savegame_variable("possession_stockpot")
-  -- Initialize the properties of your item here,
-  -- like whether it can be saved, whether it has an amount
-  -- and whether it can be assigned.
+  item:set_savegame_variable("possession_manna_oak_letter")
 end)
+
 
 -- Event called when a pickable treasure representing this item
 -- is created on the map.

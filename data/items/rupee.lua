@@ -1,14 +1,16 @@
+require("scripts/multi_events")
+
 local item = ...
 
-function item:on_created()
+item:register_event("on_created", function(self)
 
   self:set_shadow("small")
   self:set_can_disappear(true)
   self:set_brandish_when_picked(false)
   self:set_sound_when_picked("picked_rupee")
-end
+end)
 
-function item:on_obtaining(variant, savegame_variable)
+item:register_event("on_obtaining", function(self, variant, savegame_variable)
 
   local amounts = {5, 10, 20, 50, 100, 200, 500, 1000}
   local amount = amounts[variant]
@@ -16,4 +18,4 @@ function item:on_obtaining(variant, savegame_variable)
     error("Invalid variant '" .. variant .. "' for item 'rupee'")
   end
   self:get_game():add_money(amount)
-end
+end)
