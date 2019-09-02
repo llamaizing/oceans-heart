@@ -15,7 +15,7 @@ local inn_script = require"scripts/shops/inn"
 
 function map:on_started()
   self:get_camera():letterbox()
-  if game:get_value("hornwart_know_hazel") ~= nil then map:open_doors("hazel_door") end
+  if game:get_value("quest_hazel") >= 2 then map:set_doors_open("hazel_door") end
   if game:get_value("quest_manna_oaks") then hazel:set_enabled(false) end
   if game:get_value("found_hazel") ~= true then
     hazel:set_enabled(false)

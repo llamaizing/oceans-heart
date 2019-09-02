@@ -4289,6 +4289,16 @@ tile{
   pattern = "198",
 }
 
+tile{
+  layer = 1,
+  x = 440,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "63",
+  tileset = "misc",
+}
+
 destructible{
   layer = 1,
   x = 488,

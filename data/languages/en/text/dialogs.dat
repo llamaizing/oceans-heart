@@ -8454,8 +8454,8 @@ about when those pirates moved into Fort
 Crow out east. Anyway! I haven't seen Hazel
 FESTUS:
 in a couple days. I let her leave her research
-notes spread out in a room upstairs. Go up
-the staircase, turn right, and all the way down
+notes spread out in a room around the corner. Up
+this staircase, turn right, and all the way down
 FESTUS:
 the hall. You're welcome to look over her
 research.
@@ -8471,7 +8471,7 @@ dialog{
   text = [[
 FESTUS:
 Still looking for Hazel? You're welcome to
-look through her research upstairs, it's the
+look through her research, it's the
 last room on the right. Maybe you'll learn
 FESTUS:
 a bit of history while you're at it! Ha, that
