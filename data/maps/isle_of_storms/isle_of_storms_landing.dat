@@ -11596,16 +11596,6 @@ dynamic_tile{
 
 npc{
   layer = 0,
-  x = 624,
-  y = 573,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/max",
-  behavior = "dialog#_generic_dialogs.max.isle_of_storms",
-}
-
-npc{
-  layer = 0,
   x = 240,
   y = 525,
   direction = 0,
