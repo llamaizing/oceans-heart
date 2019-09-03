@@ -181,6 +181,66 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "114",
+  ground = "wall",
+  default_layer = 0,
+  x = 96,
+  y = 80,
+  width = 16,
+  height = 40,
+}
+
+tile_pattern{
+  id = "115",
+  ground = "traversable",
+  default_layer = 0,
+  x = 144,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "116",
+  ground = "traversable",
+  default_layer = 0,
+  x = 128,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "117",
+  ground = "traversable",
+  default_layer = 0,
+  x = 128,
+  y = 80,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "118",
+  ground = "traversable",
+  default_layer = 0,
+  x = 144,
+  y = 80,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "119",
+  ground = "traversable",
+  default_layer = 0,
+  x = 120,
+  y = 48,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "12",
   ground = "low_wall",
   default_layer = 0,
@@ -670,7 +730,7 @@ tile_pattern{
 tile_pattern{
   id = "56",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 128,
   y = 232,
   width = 32,
@@ -1160,6 +1220,23 @@ border_set{
   pattern_9 = "106",
   pattern_10 = "104",
   pattern_11 = "103",
+}
+
+border_set{
+  id = "grass-light-inner",
+  inner = true,
+  pattern_0 = "90",
+  pattern_1 = "93",
+  pattern_2 = "86",
+  pattern_3 = "88",
+  pattern_4 = "81",
+  pattern_5 = "82",
+  pattern_6 = "83",
+  pattern_7 = "84",
+  pattern_8 = "92",
+  pattern_9 = "85",
+  pattern_10 = "87",
+  pattern_11 = "89",
 }
 
 border_set{
