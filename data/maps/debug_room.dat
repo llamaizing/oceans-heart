@@ -4090,6 +4090,7 @@ destructible{
   y = -3,
   treasure_name = "witch_hazel",
   sprite = "entities/bush_witch_hazel",
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -5826,6 +5827,22 @@ npc{
   y = 421,
   direction = 3,
   subtype = 1,
+}
+
+destructible{
+  layer = 0,
+  x = -56,
+  y = 61,
+  sprite = "entities/bush_heather_white",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = -56,
+  y = 77,
+  sprite = "entities/bush_heather_purple",
+  can_be_cut = true,
 }
 
 tile{

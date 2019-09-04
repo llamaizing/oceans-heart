@@ -44,21 +44,31 @@ function whisky:on_interaction()
 
     whisky:set_enabled(false)
     hero:freeze()
-    local i = 1
-    local x1, y1, l1 = collapsing_bridge_2:get_position()
-    local x2, y2, l2 = collapsing_bridge_5:get_position()
-    map:create_falling_rock(x1, y1, l1)
-    map:create_falling_rock(x2, y2, l2)
-    for bridge in map:get_entities("collapsing_bridge") do
-      sol.timer.start(map, i * 100 + 1000, function()
-        sol.audio.play_sound("wood_breaking_and_falling_into_water")
-        bridge:set_enabled(false)
+    sol.audio.play_sound"explosion"
+    sol.timer.start(map, 500, function() sol.audio.play_sound"explosion" end)
+    sol.timer.start(map, 900, function() sol.audio.play_sound"explosion" end)
+    map:get_camera():shake({count=40})
+    sol.timer.start(map, 1200, function()
+
+      local i = 1
+      local x1, y1, l1 = collapsing_bridge_2:get_position()
+      local x2, y2, l2 = collapsing_bridge_5:get_position()
+      map:create_falling_rock(x1, y1, l1)
+      map:create_falling_rock(x2, y2, l2)
+      map:create_falling_rock(216, 184, l2)
+      map:create_falling_rock(112, 160, l2)
+      for bridge in map:get_entities("collapsing_bridge") do
+        sol.timer.start(map, i * 100 + 1000, function()
+          sol.audio.play_sound("wood_breaking_and_falling_into_water")
+          bridge:set_enabled(false)
+        end)
+        i = i + 1
+      end
+      sol.timer.start(map, 3000, function()
+          game:start_dialog("_new_limestone_island.observations.trapped_in_stash")
+          hero:unfreeze()
       end)
-      i = i + 1
-    end
-    sol.timer.start(map, 2000, function()
-        game:start_dialog("_new_limestone_island.observations.trapped_in_stash")
-        hero:unfreeze()
+
     end)
 end
 

@@ -588,6 +588,17 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "1046_2",
+  ground = "grass",
+  default_layer = 0,
+  x = 568,
+  y = 1256,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
   id = "1047",
   ground = "grass",
   default_layer = 0,
@@ -598,11 +609,32 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "1047_2",
+  ground = "grass",
+  default_layer = 0,
+  x = 568,
+  y = 1240,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "1048",
   ground = "grass",
   default_layer = 0,
   x = 88,
   y = 96,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "1048_2",
+  ground = "grass",
+  default_layer = 0,
+  x = 568,
+  y = 1232,
   width = 16,
   height = 8,
   repeat_mode = "horizontal",
@@ -9722,6 +9754,17 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "1825_2",
+  ground = "empty",
+  default_layer = 0,
+  x = 584,
+  y = 1240,
+  width = 8,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
   id = "1826",
   ground = "wall",
   default_layer = 0,
@@ -9737,6 +9780,17 @@ tile_pattern{
   default_layer = 0,
   x = 80,
   y = 104,
+  width = 8,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "1827_2",
+  ground = "empty",
+  default_layer = 0,
+  x = 560,
+  y = 1240,
   width = 8,
   height = 16,
   repeat_mode = "vertical",

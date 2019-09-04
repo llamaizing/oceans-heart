@@ -3,10 +3,29 @@ properties{
   y = 0,
   width = 1664,
   height = 720,
-  min_layer = 0,
+  min_layer = -1,
   max_layer = 2,
   tileset = "cave_2",
-  music = "new_limestone_island",
+  music = "opining_cavern",
+}
+
+tile{
+  layer = -1,
+  x = 1168,
+  y = 32,
+  width = 80,
+  height = 48,
+  pattern = "35",
+}
+
+teletransporter{
+  layer = -1,
+  x = 1168,
+  y = 32,
+  width = 80,
+  height = 48,
+  destination_map = "new_limestone/stash",
+  destination = "from_outside_bottom",
 }
 
 tile{
@@ -1174,7 +1193,7 @@ tile{
   layer = 0,
   x = 1152,
   y = 32,
-  width = 96,
+  width = 16,
   height = 48,
   pattern = "ground1.1",
 }
@@ -1857,78 +1876,6 @@ tile{
   height = 32,
   pattern = "corner.out.4",
   tileset = "cave_2",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 0,
-  width = 32,
-  height = 32,
-  pattern = "corner.in.1",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 80,
-  width = 32,
-  height = 32,
-  pattern = "corner.in.2",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 64,
-  width = 32,
-  height = 16,
-  pattern = "wall.right.1",
-}
-
-tile{
-  layer = 0,
-  x = 1192,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "ground1.1",
-}
-
-tile{
-  layer = 0,
-  x = 1192,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "door.down.top_low",
-}
-
-tile{
-  layer = 0,
-  x = 1192,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 1184,
-  y = 80,
-  width = 8,
-  height = 32,
-  pattern = "door.down.right_side",
-}
-
-tile{
-  layer = 0,
-  x = 1208,
-  y = 80,
-  width = 8,
-  height = 32,
-  pattern = "door.down.left_side",
 }
 
 tile{
@@ -5328,15 +5275,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1216,
-  y = 32,
-  width = 32,
-  height = 32,
-  pattern = "192",
-}
-
-tile{
-  layer = 0,
   x = 976,
   y = 0,
   width = 96,
@@ -7773,15 +7711,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1168,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "ground1.3",
-}
-
-tile{
-  layer = 0,
   x = 1088,
   y = 48,
   width = 16,
@@ -8622,56 +8551,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1320,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "ground1.3",
-}
-
-tile{
-  layer = 0,
   x = 1576,
   y = 448,
   width = 16,
   height = 16,
   pattern = "ground1.3",
-}
-
-tile{
-  layer = 0,
-  x = 1320,
-  y = 464,
-  width = 16,
-  height = 16,
-  pattern = "door.down.top_low",
-}
-
-tile{
-  layer = 0,
-  x = 1320,
-  y = 448,
-  width = 16,
-  height = 16,
-  pattern = "2",
-}
-
-tile{
-  layer = 0,
-  x = 1312,
-  y = 448,
-  width = 8,
-  height = 32,
-  pattern = "door.down.right_side",
-}
-
-tile{
-  layer = 0,
-  x = 1336,
-  y = 448,
-  width = 8,
-  height = 32,
-  pattern = "door.down.left_side",
 }
 
 tile{
@@ -10472,6 +10356,188 @@ tile{
   tileset = "oceanheart_outdoors_spring",
 }
 
+tile{
+  layer = 0,
+  x = 1168,
+  y = 32,
+  width = 8,
+  height = 8,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 32,
+  width = 8,
+  height = 8,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 40,
+  width = 8,
+  height = 32,
+  pattern = "30",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 72,
+  width = 64,
+  height = 8,
+  pattern = "29",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 40,
+  width = 8,
+  height = 32,
+  pattern = "28",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 32,
+  width = 64,
+  height = 8,
+  pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
 separator{
   layer = 0,
   x = -8,
@@ -10614,24 +10680,6 @@ destination{
   x = 1336,
   y = 45,
   direction = 3,
-}
-
-destination{
-  name = "from_outside_top",
-  layer = 0,
-  x = 1200,
-  y = 93,
-  direction = 1,
-}
-
-teletransporter{
-  layer = 0,
-  x = 1192,
-  y = 96,
-  width = 16,
-  height = 16,
-  destination_map = "new_limestone/stash",
-  destination = "from_cave_top",
 }
 
 teletransporter{
@@ -10924,7 +10972,7 @@ destination{
   name = "from_outside_bottom",
   layer = 0,
   x = 1328,
-  y = 461,
+  y = 437,
   direction = 1,
 }
 
@@ -10934,26 +10982,6 @@ destination{
   x = 1432,
   y = 189,
   direction = 3,
-}
-
-teletransporter{
-  layer = 0,
-  x = 1424,
-  y = 160,
-  width = 16,
-  height = 16,
-  destination_map = "new_limestone/stash",
-  destination = "from_outside_bottom",
-}
-
-teletransporter{
-  layer = 0,
-  x = 1320,
-  y = 464,
-  width = 16,
-  height = 16,
-  destination_map = "new_limestone/stash",
-  destination = "from_inside_bottom",
 }
 
 destination{
@@ -11126,17 +11154,8 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "new_limestone/stash",
-  destination = "from_boss_cave",
-}
-
-door{
-  name = "boss_door",
-  layer = 0,
-  x = 1320,
-  y = 448,
-  direction = 1,
-  sprite = "entities/door_shutter",
+  destination_map = "new_limestone/limestone_fire",
+  destination = "from_tidal_passage",
 }
 
 door{
@@ -11205,7 +11224,7 @@ destructible{
 wall{
   layer = 0,
   x = 1312,
-  y = 416,
+  y = 400,
   width = 32,
   height = 16,
   stops_enemies = true,
@@ -11224,7 +11243,7 @@ sensor{
   name = "boss_sensor",
   layer = 0,
   x = 1320,
-  y = 445,
+  y = 413,
   width = 32,
   height = 16,
 }
@@ -11339,17 +11358,8 @@ enemy{
 
 block{
   layer = 0,
-  x = 1000,
-  y = 365,
-  sprite = "entities/block_statue",
-  pushable = true,
-  pullable = true,
-}
-
-block{
-  layer = 0,
-  x = 1000,
-  y = 381,
+  x = 952,
+  y = 397,
   sprite = "entities/block_statue",
   pushable = true,
   pullable = true,
@@ -11467,6 +11477,195 @@ destination{
   direction = 3,
 }
 
+block{
+  layer = 0,
+  x = 960,
+  y = 413,
+  sprite = "entities/block_statue",
+  pushable = true,
+  pullable = true,
+}
+
+custom_entity{
+  name = "collapsing_floor",
+  layer = 0,
+  x = 1176,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_2",
+  layer = 0,
+  x = 1176,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_3",
+  layer = 0,
+  x = 1192,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_4",
+  layer = 0,
+  x = 1192,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_5",
+  layer = 0,
+  x = 1208,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_6",
+  layer = 0,
+  x = 1208,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_7",
+  layer = 0,
+  x = 1208,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_8",
+  layer = 0,
+  x = 1192,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_9",
+  layer = 0,
+  x = 1176,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_10",
+  layer = 0,
+  x = 1224,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_11",
+  layer = 0,
+  x = 1224,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_12",
+  layer = 0,
+  x = 1240,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_13",
+  layer = 0,
+  x = 1240,
+  y = 61,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_14",
+  layer = 0,
+  x = 1240,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
+custom_entity{
+  name = "collapsing_floor_15",
+  layer = 0,
+  x = 1224,
+  y = 77,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/collapsing_floor_cave",
+  model = "collapsing_floor",
+}
+
 tile{
   layer = 1,
   x = 104,
@@ -11582,15 +11781,6 @@ tile{
   width = 24,
   height = 8,
   pattern = "110",
-}
-
-tile{
-  layer = 1,
-  x = 1184,
-  y = 96,
-  width = 32,
-  height = 16,
-  pattern = "door.down.high",
 }
 
 tile{
@@ -12155,15 +12345,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1312,
-  y = 464,
-  width = 32,
-  height = 16,
-  pattern = "door.down.high",
-}
-
-tile{
-  layer = 1,
   x = 1568,
   y = 464,
   width = 32,
@@ -12336,6 +12517,116 @@ tile{
   width = 16,
   height = 24,
   pattern = "1668",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 648,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 680,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 744,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 752,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
   tileset = "oceanheart_outdoors_1",
 }
 

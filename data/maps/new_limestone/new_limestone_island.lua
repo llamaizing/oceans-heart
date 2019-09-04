@@ -1,18 +1,15 @@
--- Lua script of map new_limestone/new_limestone_island.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
+local hero = game:get_hero()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+function hazel:on_interaction()
+  if not game:has_ability("sword") then
+    game:start_dialog("_new_limestone_island.npcs.hazel.1", function()
+      hero:start_treasure("sword", 1, "limestone_hazel_gave_you_sword", function()
+        game:start_dialog("_new_limestone_island.npcs.hazel.2")
+      end)
+    end)
+  else
+    game:start_dialog("_new_limestone_island.npcs.hazel.3")
+  end
 end

@@ -12,9 +12,7 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
-  if game:has_item("sword") == true then sword_chest:set_enabled(false) end
   to_goatshead:set_enabled(false)
-
 end)
 
 

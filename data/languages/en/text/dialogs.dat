@@ -5801,10 +5801,9 @@ dialog{
   id = "_limestone_island.observations.control_scheme",
   text = [[
 There's a reminder you've written yourself:
-D - Menu
-S - Save
-Space - Talk, Open Doors, etc.
-What a cryptic message.
+Remember to open the menu and save the
+game from time to time!
+...what did you mean by that?
 ]],
 }
 
@@ -5913,8 +5912,23 @@ Eh Tilia, I was chopping down some timber
 up by the ruin and noticed that the rocks
 blocking the way in look really weak. I bet
 BER:
-if you could cause an explosion somehow,
-you'd be able to get in.
+if someone could cause an explosion somehow,
+they'd be able to get in.
+
+TILIA:
+All it'd take is an explosion? Just a little
+old explosion?
+
+BER:
+Eh, I guess when you put it like that it
+does sound unlikely that you'd have the
+means to cause a controlled explosion here
+BER:
+on the island. Oh, Hazel was looking for
+you earlier, she's up on the hill.
+
+TILIA:
+Thanks, Ber.
 ]],
 }
 
@@ -5923,8 +5937,15 @@ dialog{
   text = [[
 BER:
 Eh, Tilia? I hear you're going looking for
-Mallow. Your Dad was a tough one, but...
-I mean, be cafeful. You come back.
+Mallow and Hazel. I mean, they're both
+tough, but it's been... well, good luck.
+TILIA:
+Hey. If you're gonna be passive agressive
+like that, get out of my tavern and go
+drink seawater. I'm going to find them.
+BER:
+$1Oh, uh... $3sorry Tilia... Thanks for being
+the one to go look for them.
 ]],
 }
 
@@ -5932,19 +5953,68 @@ dialog{
   id = "_new_limestone_island.npcs.hazel.1",
   text = [[
 HAZEL:
-Hi, Tilia. How are the herbs I gave you
-to plant?
+Tilia! I came by the tavern hours ago, did
+you just wake up? Anyway, I have something
+for you.
+]],
+}
+
+dialog{
+  id = "_new_limestone_island.npcs.hazel.2",
+  text = [[
+HAZEL:
+You left it at my house last night. Is
+your dad teaching you any Volunteer Navy
+stuff today? How to skin a monster?
+TILIA:
+Nah, I'm just running an errand for him.
+Getting some whisky out of the secret
+storage cave.
+HAZEL:
+Oh, well it's a good thing I gave you your
+sword, there's a big witch-hazel bush in
+the way of the cave. If you cut it down,
+HAZEL:
+be sure to collect its flowers, they can
+be used to make potions and stuff. Maybe
+you can make one that'll wake you up in
+HAZEL:
+the mornings, Tilia.
+
 
 TILIA:
-They$1're...$3 I haven't planted them yet. I was
-going to move the barrels from the side of the
-tavern, but I was busy. Sorry, Hazel.
+Or I could brew a potion that puts you to
+sleep earlier instead of keeping me up all
+night trying to help you find moon mushrooms.
 HAZEL:
-That's alright. Just make sure they get a lot
-of water to help them root once they're in
-the dirt.
+You can't find them during the day! Anyway,
+go get that whisky. But when you're done
+with your errands, let's take your dad's
+HAZEL:
+boat over to Bracken Beach.
+
+
 TILIA:
-I will, Hazel. Thanks.
+Sure! I'll go get that whisky and we'll
+leave right after.
+]],
+}
+
+dialog{
+  id = "_new_limestone_island.npcs.hazel.3",
+  text = [[
+HAZEL:
+Hey, remember that plant I found last time
+we were at Bracken Beach, and I thought you
+could eat the root? I was reading about it,
+HAZEL:
+and you can actually make tea that's
+supposed to be really good.
+
+TILIA:
+Okay, once I'm done running this errand
+we'll sail over to Bracken Beach and we
+can make some then.
 ]],
 }
 
@@ -5953,11 +6023,11 @@ dialog{
   text = [[
 JUGLAN:
 Ahoy, Tilia. Yer Dad giving you any more
-training for your sword today?
+training with your sword today?
 
 TILIA:
-Probably not. He's been busy running the
-tavern.
+Probably not. He's been busy doing the
+tavern budget.
 
 JUGLAN:
 Well, don't fret none. He's a fine volunteer
@@ -6027,25 +6097,36 @@ dialog{
   id = "_new_limestone_island.npcs.linden.1",
   text = [[
 LINDEN:
-Hey little sister. Think you could clean out the
-side yard? I want to plant those herbs Hazel
-gave us. We could use them for brewing.
+Hey, it's my little sister. I thought you
+died in your sleep, you've been in bed
+so long.
 TILIA:
-$2Ooooh...$3 Nope. Dad needs me to go grab
-Juglan a bottle of whisky from the secret stash.
+Hey, it's my older sister. I thought$1...
+...you...$3 were busy being responsible and
+figuring out how to run our tavern better?
+LINDEN:
+Haha, yes, I have. Hey, the new stout you
+started brewing is doing really well, you're
+doing your part around here too.
+TILIA:
+I mean, Hazel helped a lot with the brewing.
+I'm better at fighting off the monsters that
+attacked us when we were gathering herbs...
+LINDEN:
+Maybe you're better with a sword than a
+stout, but I'm glad the three of us are
+making this work. Can you do the dishes?
+TILIA:
+Oh, uh nope! Dad needs me to go out to the
+secret storage cave to get something!
 
 LINDEN:
-And that's going to take all day?
+Will that take all day?
 
 
 TILIA:
-You never know. Some monsters have been
-showing up over there, I've got to be careful.
-
-LINDEN:
-Haha! Aren't you supposed to be training to
-protect the rest of us from monsters and
-pirates? Well, be careful, oh brave hero.
+Who knows? I definitely won't have time to
+do dishes though.
 ]],
 }
 
@@ -6065,7 +6146,7 @@ Tilia, I'm so glad you're safe! I tried to
 block off the tavern with barrels, but they
 were throwing bombs... I don't know what they
 LINDEN:
-came for but dad ran off to fight them. I
+came for, but dad ran off to fight them. I
 guess it's his duty as a volunteer navyman.
 He's down at the pier.
 ]],
@@ -6080,8 +6161,8 @@ So Tilia. Today's really the day?
 
 TILIA:
 I've been talking myself up for a couple months
-now. If Dad's still out there... either way
-I need to know.
+now. If Hazel and Dad aren't back yet, then...
+well I'll bring them back somehow.
 LINDEN:
 It's not just because I make you do the
 dishes every night is it?
@@ -6097,7 +6178,6 @@ look for leads, huh?
 TILIA:
 I know the pirates flew a white hourglass on
 their flag. Seems like enough to get started.
-
 ]],
 }
 
@@ -6152,11 +6232,11 @@ Good morning, Dad.
 MALLOW:
 I'm not mourning them at all. They were a
 nuisance. Hey, if you have some time today,
-could you run to the east end of the island
+could you run up the hill and get a bottle
 MALLOW:
-and get a bottle of whisky out of the
-secret stash? Juglan's had a poor month with
-fishing, and I want to give him something.
+of whisky out of the secret storage cave?
+Juglan's had a poor month with the fishing,
+and I want to give him something.
 TILIA:
 No problem, dad.
 
@@ -6182,7 +6262,7 @@ Not yet.
 
 
 MALLOW:
-It's in the secret stash on the east side
+It's in the secret stash on the north end
 of the island. I know you know I keep the
 nice stuff there because I know you've
 MALLOW:
@@ -6227,8 +6307,8 @@ navyman. It's my duty to take care of this
 island. Yours too if you want to join someday.
 TILIA:
 But... you're not leaving, though. You have
-to run the tavern. And take care of me and
-Linden!
+to teach me how to fight monsters and
+pirates! And run the tavern!
 MALLOW:
 I'm sorry, Little Gull. You'll be fine. They've
 just sailed away. It shouldn't take me more
@@ -6265,8 +6345,8 @@ dialog{
   text = [[
 TIM:
 Those pirates started tossing explosives
-everywhere! I have a lumber mill! That's
-the worst thing to have in this situation!
+everywhere! Our roofs are literally made
+of grass! This is the worst material!
 TIM:
 Why would pirates attack us? To raid the
 ol' ruin on the mountain? I don't get it!
@@ -6279,11 +6359,7 @@ dialog{
 TIM:
 Ay, so you're going off to find old Mallow,
 eh? I'm sure he's fine and has good reason
-for being' away so long. Hey, if you happen
-TIM:
-across someone on your trip who's looking to
-buy woodcarvings, let them know about me. I've
-been working on my carving technique.
+for being' away so long.
 ]],
 }
 
@@ -6447,9 +6523,12 @@ dialog{
   id = "_new_limestone_island.observations.trapped_in_stash",
   text = [[
 TILIA:
-Well huh. I guess I'm glad that didn't
-happen while I was walking across. I guess
-I'll have to find another way out.
+Was that an earthquake? Explosion? I'm glad
+it didn't happen while I was walking across,
+but it sounded like some kind of cave in
+TILIA:
+back by the entrance... Well I think
+there's another way out deeper in.
 ]],
 }
 
@@ -6483,7 +6562,7 @@ dialog{
 dialog{
   id = "_new_limestone_island.signs.stash",
   text = [[
-Mallow's Secret Stash, this way
+Mallow's Secret Storage Cave, this way
 (Don't tell anyone)
 ]],
 }
@@ -13338,10 +13417,10 @@ looks like at least.
 dialog{
   id = "_treasure.sword.1",
   text = [[
-You found an old sword. It's a little beat
-up, but perhaps with the right materials a
-blacksmith could make a fine weapon of it.
-Press C to swing it.
+You got your sword! Your dad gave this to
+you a long time ago, when you said you
+wanted to defend your island like him.
+Press the attack button to use it.
 ]],
 }
 
@@ -15324,26 +15403,6 @@ dialog{
 }
 
 dialog{
-    id = "quest.side.heron_doors",
-    title = "Heron Doors",
-    text = [[
-!Explore the remaining shrines to
-!obtain the rest of the thunder charms.
-@?Explore all of the heron doors
-
-%~You haven't found any more heron doors
-%=!Locations to explore: --// The player must find at least one door for these lines to be visible
-?Heron doors explored: --// This line visible instead once quest is complete
-%1$@1 Tern Marsh
-%2$@2 Marble Summit
-%3$@3 Snapmast
-%=!
-%=!  Keep exploring to find them all.
-::
-$ITEM{thunder_charm.1}   Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
-]]}
-
-dialog{
   id = "quest.side.ballast_harbor.hornet_honey",
   title = "Hornet Honey",
   text = [[
@@ -15399,6 +15458,23 @@ package
 #%=    $ITEM_NAME
 %=?
 ?REWARD: $ITEM{bow_bombs.1}   Bomb Arrows
+]],
+}
+
+dialog{
+  id = "quest.side.carrot_cache",
+  title = "The Carrot Cache",
+  text = [[
+##An upset fisherman's spot's been
+##overrun with monsters
+@Find the fishin' spot and destroy
+the monsters
+!
+!The fishing spot is just south of
+!Poplar Forest
+@ Return to the fisherman
+#::
+#REWARD: $ITEM{rupee.1}   80
 ]],
 }
 
@@ -15560,6 +15636,27 @@ dialog{
 @Defeat the big spider
 @Let the adventurers know the tunnels
 have been cleared
+]],
+}
+
+dialog{
+  id = "quest.side.heron_doors",
+  title = "Heron Doors",
+  text = [[
+!Explore the remaining shrines to
+!obtain the rest of the thunder charms.
+@?Explore all of the heron doors
+
+%~You haven't found any more heron doors
+%=!Locations to explore: --// The player must find at least one door for these lines to be visible
+?Heron doors explored: --// This line visible instead once quest is complete
+%1$@1 Tern Marsh
+%2$@2 Marble Summit
+%3$@3 Snapmast
+%=!
+%=!  Keep exploring to find them all.
+::
+$ITEM{thunder_charm.1}   Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
 ]],
 }
 
@@ -15952,19 +16049,3 @@ dialog{
 ]],
 }
 
-dialog{
-  id = "quest.side.carrot_cache",
-  title = "The Carrot Cache",
-  text = [[
-##An upset fisherman's spot's been
-##overrun with monsters
-@Find the fishin' spot and destroy
-the monsters
-!
-!The fishing spot is just south of
-!Poplar Forest
-@ Return to the fisherman
-#::
-#REWARD: $ITEM{rupee.1}   80
-]],
-}

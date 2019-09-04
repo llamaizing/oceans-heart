@@ -22863,10 +22863,10 @@ dynamic_tile{
   layer = 1,
   x = 584,
   y = 112,
-  pattern = "776",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "776",
 }
 
 tile{

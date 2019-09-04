@@ -2564,6 +2564,15 @@ enemy{
   breed = "misc/explosive_barrel",
 }
 
+sensor{
+  name = "ob_sensor",
+  layer = 0,
+  x = 152,
+  y = 653,
+  width = 32,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 184,
