@@ -31,13 +31,11 @@ function map:on_started()
 end
 
 function explosion_sensor:on_activated()
+  local x,y,l = trigger_barrel:get_position()
   map:create_explosion({
-  name = nil,
-  layer = 0,
-  x = 672,
-  y = 768,
-  })
-
+  layer = l, x = x, y = y,})
+  explosion_sensor:remove()
+print("ahhhhh!")
 end
 
 function mallow:on_interaction()

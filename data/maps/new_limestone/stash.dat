@@ -3,10 +3,29 @@ properties{
   y = 0,
   width = 1664,
   height = 720,
-  min_layer = 0,
+  min_layer = -1,
   max_layer = 2,
   tileset = "cave_2",
-  music = "new_limestone_island",
+  music = "opining_cavern",
+}
+
+tile{
+  layer = -1,
+  x = 1168,
+  y = 32,
+  width = 80,
+  height = 48,
+  pattern = "35",
+}
+
+teletransporter{
+  layer = -1,
+  x = 1168,
+  y = 32,
+  width = 80,
+  height = 48,
+  destination_map = "new_limestone/stash",
+  destination = "from_outside_bottom",
 }
 
 tile{
@@ -1174,7 +1193,7 @@ tile{
   layer = 0,
   x = 1152,
   y = 32,
-  width = 96,
+  width = 16,
   height = 48,
   pattern = "ground1.1",
 }
@@ -7692,15 +7711,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1168,
-  y = 64,
-  width = 16,
-  height = 16,
-  pattern = "ground1.3",
-}
-
-tile{
-  layer = 0,
   x = 1088,
   y = 48,
   width = 16,
@@ -10350,15 +10360,6 @@ tile{
   layer = 0,
   x = 1168,
   y = 32,
-  width = 80,
-  height = 48,
-  pattern = "35",
-}
-
-tile{
-  layer = 0,
-  x = 1168,
-  y = 32,
   width = 8,
   height = 8,
   pattern = "23",
@@ -10425,6 +10426,116 @@ tile{
   width = 64,
   height = 8,
   pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 168,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 688,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 680,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 672,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 752,
+  y = 136,
+  width = 8,
+  height = 8,
+  pattern = "494",
+  tileset = "oceanheart_outdoors_1",
 }
 
 separator{
@@ -10873,16 +10984,6 @@ destination{
   direction = 3,
 }
 
-teletransporter{
-  layer = 0,
-  x = 1168,
-  y = 32,
-  width = 80,
-  height = 48,
-  destination_map = "new_limestone/stash",
-  destination = "from_outside_bottom",
-}
-
 destination{
   name = "from_tidal_passage",
   layer = 0,
@@ -11053,8 +11154,8 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "new_limestone/stash",
-  destination = "from_boss_cave",
+  destination_map = "new_limestone/limestone_fire",
+  destination = "from_tidal_passage",
 }
 
 door{
@@ -12416,6 +12517,116 @@ tile{
   width = 16,
   height = 24,
   pattern = "1668",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 648,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 160,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 688,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 680,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 672,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 112,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 120,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 744,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 752,
+  y = 128,
+  width = 8,
+  height = 8,
+  pattern = "498",
   tileset = "oceanheart_outdoors_1",
 }
 

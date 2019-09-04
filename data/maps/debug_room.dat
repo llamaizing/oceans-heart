@@ -5832,6 +5832,14 @@ npc{
 destructible{
   layer = 0,
   x = -56,
+  y = 61,
+  sprite = "entities/bush_heather_white",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = -56,
   y = 77,
   sprite = "entities/bush_heather_purple",
   can_be_cut = true,

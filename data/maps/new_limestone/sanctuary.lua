@@ -10,9 +10,10 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+function ob_sensor:on_activated()
+  if not game:get_value("limestone_seen_sanctuary_state") then
+    game:start_dialog("_limestone_island.observations.sanctuary")
+    game:set_value("limestone_seen_sanctuary_state", true)
+    ob_sensor:remove()
+  end
 end
