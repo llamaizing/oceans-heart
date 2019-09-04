@@ -4090,6 +4090,7 @@ destructible{
   y = -3,
   treasure_name = "witch_hazel",
   sprite = "entities/bush_witch_hazel",
+  weight = -1,
   can_be_cut = true,
 }
 

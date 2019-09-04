@@ -7,6 +7,7 @@ tile_pattern{
   y = 96,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -17,6 +18,7 @@ tile_pattern{
   y = 64,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -252,6 +254,70 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "120",
+  ground = "empty",
+  default_layer = 0,
+  x = 104,
+  y = 256,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "121",
+  ground = "empty",
+  default_layer = 0,
+  x = 120,
+  y = 264,
+  width = 8,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "122",
+  ground = "empty",
+  default_layer = 0,
+  x = 96,
+  y = 264,
+  width = 8,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "123",
+  ground = "grass",
+  default_layer = 0,
+  x = 104,
+  y = 264,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "124",
+  ground = "grass",
+  default_layer = 0,
+  x = 104,
+  y = 280,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "125",
+  ground = "wall",
+  default_layer = 0,
+  x = 96,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "13",
   ground = "low_wall",
   default_layer = 0,
@@ -379,6 +445,7 @@ tile_pattern{
   height = 32,
   frame_delay = 250,
   mirror_loop = true,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -404,6 +471,7 @@ tile_pattern{
   height = 32,
   frame_delay = 250,
   mirror_loop = true,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -565,6 +633,7 @@ tile_pattern{
   y = 96,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -675,6 +744,7 @@ tile_pattern{
   y = 80,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -898,6 +968,7 @@ tile_pattern{
   y = 80,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1008,6 +1079,7 @@ tile_pattern{
   y = 64,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
