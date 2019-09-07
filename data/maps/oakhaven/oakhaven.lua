@@ -10,15 +10,20 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
-
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
+--intro cutscene
+function remember_sensor:on_activated()
+  if game:get_value("hazel_is_here") ~= true then
+    game:start_dialog("_generic_dialogs.hey")
+    hero:freeze()
+    hero:walk("2222210")
+    sol.timer.start(map, 800, function()
+      hero:unfreeze()
+      game:start_dialog("_oakhaven.npcs.port.cervio.1", function()
+        game:set_value("quest_hazel", 1) --quest log
+        game:set_value("quest_log_a", "a9")
+        game:set_value("hazel_is_here", true)
+      end)
+    end)
+  end
 end

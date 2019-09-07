@@ -37235,7 +37235,7 @@ sensor{
   name = "remember_sensor",
   layer = 0,
   x = 784,
-  y = 1309,
+  y = 1293,
   width = 48,
   height = 32,
 }
@@ -37934,7 +37934,7 @@ sensor{
   name = "^map_banner_sensor",
   layer = 0,
   x = 792,
-  y = 1341,
+  y = 1325,
   width = 32,
   height = 16,
 }

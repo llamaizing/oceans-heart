@@ -520,6 +520,7 @@ sprite{ id = "entities/bush_lavendar", description = "Lavendar" }
 sprite{ id = "entities/bush_marigold", description = "Marigold" }
 sprite{ id = "entities/bush_monkshood", description = "Monkshood" }
 sprite{ id = "entities/bush_oak_forest", description = "Bush-Oak Forest" }
+sprite{ id = "entities/bush_oakgrass", description = "Oakgrass" }
 sprite{ id = "entities/bush_philodendron", description = "Philodendron Bush" }
 sprite{ id = "entities/bush_seagrass", description = "Seagrass" }
 sprite{ id = "entities/bush_small_tree", description = "small tree" }
