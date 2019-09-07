@@ -5830,7 +5830,7 @@ teletransporter{
   y = 720,
   width = 32,
   height = 16,
-  destination_map = "oakhaven/oakhaven",
+  destination_map = "oakhaven/oakhaven_old",
   destination = "_side",
 }
 

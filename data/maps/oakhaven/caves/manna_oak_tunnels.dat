@@ -12433,7 +12433,7 @@ teletransporter{
   y = 240,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven",
+  destination_map = "oakhaven/oakhaven_old",
   destination = "from_manna_oak_tunnels",
 }
 
