@@ -16860,6 +16860,46 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2422",
+  ground = "empty",
+  default_layer = 1,
+  x = 688,
+  y = 952,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "2423",
+  ground = "empty",
+  default_layer = 1,
+  x = 704,
+  y = 952,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "2424",
+  ground = "empty",
+  default_layer = 1,
+  x = 688,
+  y = 928,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "2425",
+  ground = "empty",
+  default_layer = 1,
+  x = 704,
+  y = 928,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
   id = "243",
   ground = "wall",
   default_layer = 0,
