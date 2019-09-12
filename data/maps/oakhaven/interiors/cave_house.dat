@@ -2999,7 +2999,7 @@ teletransporter{
   y = 432,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven_old",
+  destination_map = "oakhaven/oakhaven",
   destination = "from_lake_house",
 }
 

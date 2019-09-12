@@ -3718,7 +3718,7 @@ teletransporter{
   y = 192,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven_old",
+  destination_map = "oakhaven/oakhaven",
   destination = "from_hornwart_inn",
 }
 

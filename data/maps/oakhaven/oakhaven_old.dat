@@ -37606,8 +37606,8 @@ wall{
 sensor{
   name = "poster_monster_sensor",
   layer = 0,
-  x = 920,
-  y = 669,
+  x = 976,
+  y = 693,
   width = 16,
   height = 32,
 }

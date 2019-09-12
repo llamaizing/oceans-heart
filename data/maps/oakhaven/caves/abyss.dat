@@ -11,6 +11,15 @@ properties{
 
 tile{
   layer = 0,
+  x = 560,
+  y = 848,
+  width = 80,
+  height = 64,
+  pattern = "shallow_water",
+}
+
+tile{
+  layer = 0,
   x = 1520,
   y = 656,
   width = 48,
@@ -9286,21 +9295,252 @@ tile{
   tileset = "abysphere_ruins",
 }
 
+tile{
+  layer = 0,
+  x = 544,
+  y = 784,
+  enabled_at_start = false,
+  width = 16,
+  height = 96,
+  pattern = "257",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 784,
+  enabled_at_start = false,
+  width = 16,
+  height = 96,
+  pattern = "265",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "258",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 848,
+  width = 48,
+  height = 16,
+  pattern = "261",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 784,
+  enabled_at_start = false,
+  width = 16,
+  height = 80,
+  pattern = "259",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 784,
+  enabled_at_start = false,
+  width = 48,
+  height = 64,
+  pattern = "262",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 784,
+  enabled_at_start = false,
+  width = 16,
+  height = 80,
+  pattern = "264",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "263",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 840,
+  enabled_at_start = false,
+  width = 80,
+  height = 40,
+  pattern = "240",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "267",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "268",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "273",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "272",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "271",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "270",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "269",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 880,
+  width = 16,
+  height = 32,
+  pattern = "266",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 880,
+  width = 16,
+  height = 32,
+  pattern = "266",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 720,
+  width = 120,
+  height = 240,
+  pattern = "266",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 720,
+  width = 176,
+  height = 240,
+  pattern = "266",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 720,
+  width = 120,
+  height = 64,
+  pattern = "266",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 912,
+  width = 120,
+  height = 48,
+  pattern = "266",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 824,
+  width = 8,
+  height = 32,
+  pattern = "274",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 824,
+  width = 16,
+  height = 32,
+  pattern = "276",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 824,
+  width = 8,
+  height = 32,
+  pattern = "275",
+}
+
 destination{
   name = "from_oakhaven",
   layer = 0,
-  x = 136,
-  y = 941,
+  x = 608,
+  y = 893,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
-  x = 128,
-  y = 944,
+  x = 576,
+  y = 888,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven_old",
+  destination_map = "oakhaven/oakhaven",
   destination = "from_abyss",
 }
 
@@ -9856,6 +10096,42 @@ sensor{
   y = 517,
   width = 32,
   height = 16,
+}
+
+destination{
+  name = "from_tunnel",
+  layer = 0,
+  x = 600,
+  y = 869,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 592,
+  y = 840,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/abyss",
+  destination = "from_well",
+}
+
+destination{
+  name = "from_well",
+  layer = 0,
+  x = 136,
+  y = 941,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 128,
+  y = 944,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/abyss",
+  destination = "from_tunnel",
 }
 
 tile{
@@ -10704,5 +10980,59 @@ tile{
   height = 16,
   pattern = "3",
   tileset = "abysphere_ruins",
+}
+
+tile{
+  layer = 1,
+  x = 568,
+  y = 856,
+  width = 32,
+  height = 8,
+  pattern = "ladder.top",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 864,
+  width = 16,
+  height = 48,
+  pattern = "ladder.center",
+}
+
+tile{
+  layer = 1,
+  x = 568,
+  y = 864,
+  width = 8,
+  height = 48,
+  pattern = "ladder.left",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 864,
+  width = 8,
+  height = 48,
+  pattern = "ladder.right",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 800,
+  width = 16,
+  height = 32,
+  pattern = "279",
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 824,
+  width = 32,
+  height = 16,
+  pattern = "277",
 }
 

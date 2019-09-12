@@ -1139,8 +1139,8 @@ teletransporter{
   y = 208,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven_old",
-  destination = "from_guard_jail_shack",
+  destination_map = "oakhaven/interiors/guard_hq",
+  destination = "from_jail",
 }
 
 destination{
