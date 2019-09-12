@@ -37127,7 +37127,7 @@ destination{
   name = "from_saloon",
   layer = 0,
   x = 384,
-  y = 805,
+  y = 797,
   direction = 3,
 }
 
