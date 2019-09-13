@@ -10744,8 +10744,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 88,
-  y = 1288,
+  x = -1248,
+  y = 1320,
   width = 32,
   height = 16,
   pattern = "120",
@@ -35914,6 +35914,62 @@ tile{
   pattern = "99",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "89",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "85",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "87",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "86",
+}
+
+wall{
+  name = "poster_monster_wall",
+  layer = 0,
+  x = 472,
+  y = 1152,
+  width = 24,
+  height = 24,
+  stops_enemies = true,
+  stops_projectiles = true,
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -37273,6 +37329,17 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/musician_3",
+}
+
+npc{
+  name = "brian",
+  layer = 0,
+  x = 8,
+  y = 29,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/trumpet_player_disguise",
+  behavior = "dialog#_oakhaven.npcs.musicians.brian.caught2",
 }
 
 tile{

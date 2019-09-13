@@ -219,7 +219,7 @@ end
 
 ---Shops:
 function blacksmith:on_interaction()
-  blacksmith_funcs:open_shop(game)
+  require("scripts/shops/blacksmith"):open_shop(game)
 end
 
 

@@ -6699,9 +6699,16 @@ dialog{
   id = "_oakhaven.npcs.apothecary.1",
   text = [[
 ARAMIS:
-Welcome to Metheglyn Apothecary. If you're
-looking to mix up some Elixer Vitae, please
-talk to my husband.
+Welcome to Metheglyn Apothecary. In the
+market for any tonics, panaceas, or draughts?
+Grow your hair longer, clear up warts?
+TILIA:
+I'm more in the market for practical
+potions. Heal you, hurt monsters. That
+kind of thing.
+ARAMIS:
+Oh! Well if you'd like to use the crafing
+table, feel free.
 ]],
 }
 
@@ -6709,8 +6716,8 @@ dialog{
   id = "_oakhaven.npcs.apothecary.2",
   text = [[
 ARAMIS:
-Hello, if you'd like to mix up some Elixer,
-please talk to my husband.
+Hello, welcome to our humble apothecary.
+Need something for your skin? Love potion?
 
 TILIA:
 I'm actually looking to make some else. I'm
@@ -6738,8 +6745,8 @@ dialog{
   id = "_oakhaven.npcs.apothecary.2_already_have_monkshood",
   text = [[
 ARAMIS:
-Hello, if you'd like to mix up some Elixer,
-please talk to my husband.
+Hello, welcome to our apothecary. Looking'
+for some slug juice? Great for digestion.
 
 TILIA:
 I'm actually looking to make some else. I'm
@@ -8634,9 +8641,9 @@ find her.
 FRUIT IMPORTER:
 Goodness! Well, I must do my civic duty.
 Here, take this box of oranges and
-impersonate me. Go just across the bridge
+impersonate me. Her house is just
 FRUIT IMPORTER:
-west of here, first house on the right.
+south of here, that green roof, by the arch.
 She should open up for oranges.
 
 (You received a box of oranges.)
