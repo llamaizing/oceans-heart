@@ -216,6 +216,12 @@ function hazel:on_interaction()
   end
 end
 
+--Barty, weather guy
+function barty:on_interaction()
+  local i = math.random(1,3)
+  game:start_dialog("_oakhaven.npcs.general_town.barty." .. i)
+end
+
 
 ---Shops:
 function blacksmith:on_interaction()

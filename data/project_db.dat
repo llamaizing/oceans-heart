@@ -337,6 +337,7 @@ sprite{ id = "enemies/misc/black_blast", description = "Black Blast" }
 sprite{ id = "enemies/misc/blue_fire", description = "Blue Fire" }
 sprite{ id = "enemies/misc/boomerang", description = "Boomerang" }
 sprite{ id = "enemies/misc/crusher", description = "Crusher" }
+sprite{ id = "enemies/misc/dove", description = "Dove" }
 sprite{ id = "enemies/misc/energy_ball", description = "Energy Ball" }
 sprite{ id = "enemies/misc/energy_ball_black", description = "Energy Ball-Black" }
 sprite{ id = "enemies/misc/energy_ball_black_2", description = "EnergyBallBlack2" }
@@ -1066,6 +1067,12 @@ sprite{ id = "npc/sleeping_pirate_left", description = "Sleeping Pirate-Left" }
 sprite{ id = "npc/sleeping_pirate_right", description = "Sleeping Pirate - Right" }
 sprite{ id = "npc/trumpet_player_1", description = "Trumpet Player 1" }
 sprite{ id = "npc/trumpet_player_disguise", description = "trumpet player disguise" }
+sprite{ id = "npc/woman/sitting_1", description = "SittingWoman1" }
+sprite{ id = "npc/woman/sitting_1_reading", description = "Sitting1Reading" }
+sprite{ id = "npc/woman/sitting_2", description = "SittingWoman2" }
+sprite{ id = "npc/woman/sitting_3", description = "SittingWoman3" }
+sprite{ id = "npc/woman/sitting_4", description = "SittingWoman4" }
+sprite{ id = "npc/woman/sitting_4_reading", description = "Sirring4-Reading" }
 sprite{ id = "npc/woman/sweeping_lady_1", description = "Sweeping Lady 1" }
 sprite{ id = "npc/woman/sweeping_lady_2", description = "Sweeping Lady 2" }
 sprite{ id = "npc/woman/sweeping_lady_3", description = "Sweeping Lady 3" }
@@ -1591,6 +1598,7 @@ enemy{ id = "misc/bomb_4_direction", description = "Bomb - 4 direction" }
 enemy{ id = "misc/bomb_any_direction", description = "Bomb-Any Direction" }
 enemy{ id = "misc/crusher", description = "Crusher" }
 enemy{ id = "misc/default", description = "default" }
+enemy{ id = "misc/dove", description = "Dove" }
 enemy{ id = "misc/enemy_weapon", description = "Enemy Weapon" }
 enemy{ id = "misc/energy_ball_black", description = "Energy Ball-Black" }
 enemy{ id = "misc/energy_ball_black_2", description = "EnergyBallBlack2" }

@@ -16950,6 +16950,28 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2430",
+  ground = "wall",
+  default_layer = 0,
+  x = 608,
+  y = 1696,
+  width = 32,
+  height = 48,
+}
+
+tile_pattern{
+  id = "2431",
+  ground = "empty",
+  default_layer = 0,
+  x = { 640, 656, 672 },
+  y = { 1712, 1712, 1712 },
+  width = 16,
+  height = 24,
+  frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
   id = "244",
   ground = "wall",
   default_layer = 0,
