@@ -9,7 +9,11 @@ local THRESHOLD = 50
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()
-  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  if enemy:get_property("type") then
+    sprite = enemy:create_sprite("enemies/misc/" .. enemy:get_property("type"))
+  else
+    sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
+  end
   enemy:set_life(1)
   enemy:set_damage(1)
   enemy:set_invincible()
@@ -62,11 +66,11 @@ end
 
 function enemy:choose_animation()
   --animations: standing (default), bobbing, hopping, pecking
-  local animations = {"standing", "bobbing", "hopping", "pecking"}  
+  local animations = {"bobbing", "hopping", "pecking"}  
   local rand = math.random(1, #animations)
   sprite:set_animation(animations[rand], function()
     sprite:set_animation"standing"
-    sol.timer.start(enemy, math.random(200, 2000), function()
+    sol.timer.start(enemy, math.random(700, 2400), function()
       if not flying then enemy:choose_animation() end
     end)
   end)

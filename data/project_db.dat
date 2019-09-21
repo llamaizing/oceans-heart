@@ -334,6 +334,7 @@ sprite{ id = "enemies/misc/arrow_4", description = "Arrow - 4 directions" }
 sprite{ id = "enemies/misc/barrel_cannon", description = "Barrel Cannon" }
 sprite{ id = "enemies/misc/big_stone", description = "big stone" }
 sprite{ id = "enemies/misc/black_blast", description = "Black Blast" }
+sprite{ id = "enemies/misc/blackbird", description = "Blackbird" }
 sprite{ id = "enemies/misc/blue_fire", description = "Blue Fire" }
 sprite{ id = "enemies/misc/boomerang", description = "Boomerang" }
 sprite{ id = "enemies/misc/crusher", description = "Crusher" }
@@ -365,6 +366,7 @@ sprite{ id = "enemies/misc/sea_blast", description = "Sea Blast" }
 sprite{ id = "enemies/misc/sea_king_sword_slash", description = "SeaKing Sword Slash" }
 sprite{ id = "enemies/misc/seagull", description = "seagull" }
 sprite{ id = "enemies/misc/skeleton_hand", description = "Skeleton Hand" }
+sprite{ id = "enemies/misc/sparrow", description = "Sparrow" }
 sprite{ id = "enemies/misc/spirit_sword", description = "Spirit Sword" }
 sprite{ id = "enemies/misc/splash", description = "Splash" }
 sprite{ id = "enemies/misc/steam_attack", description = "Steam Attack" }

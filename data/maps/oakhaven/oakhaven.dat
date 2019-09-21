@@ -36565,6 +36565,15 @@ tile{
   pattern = "2254",
 }
 
+tile{
+  layer = 0,
+  x = 760,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "2136",
+}
+
 wall{
   name = "poster_monster_wall",
   layer = 0,
@@ -38222,8 +38231,96 @@ npc{
 
 enemy{
   layer = 0,
-  x = 744,
-  y = 1093,
+  x = 56,
+  y = 1253,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 48,
+  y = 1261,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 104,
+  y = 1269,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 184,
+  y = 557,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 168,
+  y = 565,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 176,
+  y = 573,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 208,
+  y = 565,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 1016,
+  y = 1181,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 1024,
+  y = 1173,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 1192,
+  y = 701,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 1216,
+  y = 717,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 1208,
+  y = 725,
   direction = 0,
   breed = "misc/dove",
 }
@@ -38231,7 +38328,7 @@ enemy{
 enemy{
   layer = 0,
   x = 760,
-  y = 1101,
+  y = 797,
   direction = 0,
   breed = "misc/dove",
 }
@@ -38239,25 +38336,43 @@ enemy{
 enemy{
   layer = 0,
   x = 752,
-  y = 1109,
+  y = 805,
   direction = 0,
   breed = "misc/dove",
 }
 
 enemy{
   layer = 0,
-  x = 728,
-  y = 1101,
+  x = 776,
+  y = 813,
   direction = 0,
   breed = "misc/dove",
 }
 
 enemy{
   layer = 0,
-  x = 736,
-  y = 1117,
+  x = 680,
+  y = 781,
   direction = 0,
   breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 704,
+  y = 821,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+npc{
+  layer = 0,
+  x = 776,
+  y = 757,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_27.8",
+  behavior = "dialog#_oakhaven.npcs.general_town.12",
 }
 
 tile{
@@ -45672,6 +45787,46 @@ dynamic_tile{
   width = 112,
   height = 96,
   pattern = "2046",
+}
+
+enemy{
+  layer = 1,
+  x = 88,
+  y = 1277,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 1,
+  x = 72,
+  y = 1277,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 1,
+  x = 1072,
+  y = 1181,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 1,
+  x = 1216,
+  y = 773,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 1,
+  x = 1224,
+  y = 789,
+  direction = 0,
+  breed = "misc/dove",
 }
 
 tile{
