@@ -1501,6 +1501,7 @@ item{ id = "key_fort_crow", description = "Key-Fort Crow" }
 item{ id = "key_goat_caverns", description = "Key - Goat Caverns" }
 item{ id = "key_goat_tunnels", description = "Key - Goat Tunnels" }
 item{ id = "key_graveyard_of_the_waves", description = "Key-Graveyard of the Waves" }
+item{ id = "key_haunted_house", description = "Key-Haunted House" }
 item{ id = "key_hourglass_fort", description = "Key - Hourglass Fort" }
 item{ id = "key_juneberry_inn", description = "Key - Juneberry Inn" }
 item{ id = "key_juniper_grove", description = "Key - Juniper Grove" }

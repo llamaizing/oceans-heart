@@ -14,6 +14,8 @@ local hero = map:get_hero()
 local trumpet_player
 
 map:register_event("on_started", function()
+  map:initialize_npc_movements()
+
   if game:get_value("hazel_is_here") == true then cervio:set_enabled(false) end
   if game:get_value("salamander_heartache_storehouse_door_open") ~= nil then bar_storehouse_door:set_enabled(false) end
   if game:get_value("oakhaven_aubrey_unlocked") == true then
@@ -304,4 +306,30 @@ function palace_entry_sensor:on_activated()
       end)
     end
   end
+end
+
+
+
+
+------------------------WALKING AROUND NPCS--------------------------------------
+function map:initialize_npc_movements()
+  for npc in map:get_entities("random_walk") do
+    local m = sol.movement.create("random_path")
+    if npc:get_property("speed") then m:set_speed(npc:get_property("speed")) end
+    m:start(npc)
+  end
+
+  for npc in map:get_entities("looping_walker") do
+    map:advance_waypoints(npc, npc:get_property("starting_waypoint"))
+  end
+end --end initialize NPC movements
+
+
+local NUM_WAYPOINTS = 18
+function map:advance_waypoints(npc, waypoint_no)
+print("seeking waypoint " .. waypoint_no)
+  local m = sol.movement.create("path_finding")
+  m:set_target(map:get_entity("loop_waypoint_" .. waypoint_no))
+  local next_waypoint = waypoint_no + 1 % NUM_WAYPOINTS
+  m:start(npc, function() map:advance_waypoints(npc, next_waypoint) end)
 end
