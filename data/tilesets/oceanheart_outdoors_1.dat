@@ -12871,8 +12871,8 @@ tile_pattern{
   id = "2097",
   ground = "wall",
   default_layer = 1,
-  x = 0,
-  y = 2032,
+  x = 176,
+  y = 1872,
   width = 48,
   height = 32,
 }
@@ -12881,8 +12881,8 @@ tile_pattern{
   id = "2098",
   ground = "wall",
   default_layer = 1,
-  x = 0,
-  y = 2008,
+  x = 176,
+  y = 1848,
   width = 48,
   height = 24,
 }
@@ -15348,8 +15348,8 @@ tile_pattern{
   id = "2308",
   ground = "wall",
   default_layer = 0,
-  x = 544,
-  y = 2032,
+  x = 304,
+  y = 2000,
   width = 64,
   height = 32,
 }
@@ -15358,8 +15358,8 @@ tile_pattern{
   id = "2309",
   ground = "wall",
   default_layer = 1,
-  x = 544,
-  y = 1984,
+  x = 304,
+  y = 1952,
   width = 64,
   height = 48,
 }

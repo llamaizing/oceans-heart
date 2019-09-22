@@ -320,7 +320,14 @@ function map:initialize_npc_movements()
   end
 
   for npc in map:get_entities("looping_walker") do
-    map:advance_waypoints(npc, npc:get_property("starting_waypoint"))
+--    map:advance_waypoints(npc, npc:get_property("starting_waypoint"))
+              print("I'm going!")
+              npc:set_origin(8,13)
+              loop_waypoint_10:set_origin(8, 13)
+              local m = sol.movement.create("path_finding")
+              m:set_target(map:get_entity("loop_waypoint_10"))
+              m:start(npc, function() print("MADE IT") end)
+              function m:on_finished() print("end of movement") end
   end
 end --end initialize NPC movements
 

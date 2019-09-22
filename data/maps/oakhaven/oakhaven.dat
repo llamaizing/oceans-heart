@@ -36848,10 +36848,10 @@ teletransporter{
 sensor{
   name = "remember_sensor",
   layer = 0,
-  x = 776,
-  y = 1373,
-  width = 32,
-  height = 32,
+  x = 728,
+  y = 1389,
+  width = 128,
+  height = 16,
 }
 
 sensor{
@@ -38592,93 +38592,12 @@ npc{
 }
 
 sensor{
-  name = "loop_waypoint_1",
-  layer = 0,
-  x = 1064,
-  y = 1341,
-  width = 48,
-  height = 32,
-}
-
-sensor{
-  name = "loop_waypoint_2",
-  layer = 0,
-  x = 888,
-  y = 1349,
-  width = 48,
-  height = 32,
-}
-
-sensor{
-  name = "loop_waypoint_3",
-  layer = 0,
-  x = 664,
-  y = 1357,
-  width = 48,
-  height = 32,
-}
-
-sensor{
-  name = "loop_waypoint_4",
-  layer = 0,
-  x = 488,
-  y = 1357,
-  width = 48,
-  height = 32,
-}
-
-sensor{
-  name = "loop_waypoint_5",
-  layer = 0,
-  x = 272,
-  y = 1357,
-  width = 48,
-  height = 32,
-}
-
-sensor{
-  name = "loop_waypoint_6",
-  layer = 0,
-  x = 272,
-  y = 1205,
-  width = 48,
-  height = 32,
-}
-
-sensor{
-  name = "loop_waypoint_7",
-  layer = 0,
-  x = 568,
-  y = 1181,
-  width = 48,
-  height = 32,
-}
-
-sensor{
-  name = "loop_waypoint_8",
-  layer = 0,
-  x = 768,
-  y = 1181,
-  width = 48,
-  height = 32,
-}
-
-sensor{
-  name = "loop_waypoint_9",
-  layer = 0,
-  x = 776,
-  y = 1325,
-  width = 48,
-  height = 32,
-}
-
-sensor{
   name = "loop_waypoint_10",
   layer = 0,
-  x = 1000,
+  x = 1008,
   y = 1349,
-  width = 48,
-  height = 32,
+  width = 16,
+  height = 16,
 }
 
 tile{
