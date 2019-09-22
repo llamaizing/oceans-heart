@@ -11,11 +11,11 @@ properties{
 
 tile{
   layer = -1,
-  x = -192,
-  y = -248,
+  x = 0,
+  y = 0,
   enabled_at_start = false,
-  width = 1344,
-  height = 1232,
+  width = 1008,
+  height = 784,
   pattern = "2149",
 }
 
@@ -10263,6 +10263,15 @@ tile{
   pattern = "521",
 }
 
+tile{
+  layer = 0,
+  x = 144,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "2089",
+}
+
 destination{
   name = "from_marblecliff",
   layer = 0,
@@ -11023,6 +11032,15 @@ tile{
   width = 48,
   height = 32,
   pattern = "2219",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 424,
+  width = 16,
+  height = 8,
+  pattern = "2090",
 }
 
 dynamic_tile{

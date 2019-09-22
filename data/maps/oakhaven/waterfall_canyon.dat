@@ -235,6 +235,16 @@ tile{
 }
 
 tile{
+  layer = 0,
+  x = 144,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "1594",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
   layer = 1,
   x = 416,
   y = 752,
@@ -407,29 +417,11 @@ tile{
 
 tile{
   layer = 2,
-  x = 176,
-  y = 720,
-  width = 16,
-  height = 16,
-  pattern = "145",
-}
-
-tile{
-  layer = 2,
   x = 208,
   y = 736,
   width = 16,
   height = 16,
   pattern = "142",
-}
-
-tile{
-  layer = 2,
-  x = 192,
-  y = 720,
-  width = 16,
-  height = 16,
-  pattern = "146",
 }
 
 tile{
@@ -619,15 +611,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "1856",
-}
-
-tile{
-  layer = 2,
-  x = 176,
-  y = 720,
-  width = 16,
-  height = 16,
-  pattern = "13",
 }
 
 tile{
@@ -1645,15 +1628,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "88",
-}
-
-tile{
-  layer = 2,
-  x = 192,
-  y = 704,
-  width = 16,
-  height = 16,
-  pattern = "89",
 }
 
 tile{
@@ -2923,24 +2897,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "81",
-}
-
-tile{
-  layer = 2,
-  x = 176,
-  y = 704,
-  width = 16,
-  height = 16,
-  pattern = "90",
-}
-
-tile{
-  layer = 2,
-  x = 176,
-  y = 704,
-  width = 16,
-  height = 16,
-  pattern = "6",
 }
 
 tile{
@@ -5798,6 +5754,44 @@ tile{
   pattern = "189",
 }
 
+tile{
+  layer = 2,
+  x = 192,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "13",
+}
+
+tile{
+  layer = 2,
+  x = 192,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 2,
+  x = 176,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "1594",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 2,
+  x = 144,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "1594",
+  tileset = "overworld_oakhaven",
+}
+
 jumper{
   layer = 2,
   x = 144,
@@ -5826,12 +5820,12 @@ destructible{
 
 teletransporter{
   layer = 2,
-  x = 144,
-  y = 720,
-  width = 32,
+  x = 160,
+  y = 704,
+  width = 16,
   height = 16,
-  destination_map = "oakhaven/oakhaven",
-  destination = "_side",
+  destination_map = "oakhaven/interiors/library",
+  destination = "from_waterfal_canyon",
 }
 
 destination{
@@ -6579,5 +6573,43 @@ tile{
   width = 32,
   height = 32,
   pattern = "1880",
+}
+
+tile{
+  layer = 3,
+  x = 176,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "1595",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 3,
+  x = 144,
+  y = 688,
+  width = 16,
+  height = 16,
+  pattern = "1595",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 3,
+  x = 176,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "1602",
+}
+
+tile{
+  layer = 3,
+  x = 144,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "1598",
 }
 

@@ -32563,7 +32563,7 @@ teletransporter{
   y = 0,
   width = 32,
   height = 16,
-  destination_map = "oakhaven/oakhaven",
+  destination_map = "oakhaven/oakhaven_old",
   destination = "from_port",
 }
 

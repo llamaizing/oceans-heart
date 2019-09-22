@@ -13,9 +13,8 @@ local hero = map:get_hero()
 
 local trumpet_player
 
-map:register_event("on_started", function()
-  map:initialize_npc_movements()
 
+map:register_event("on_started", function()
   if game:get_value("hazel_is_here") == true then cervio:set_enabled(false) end
   if game:get_value("salamander_heartache_storehouse_door_open") ~= nil then bar_storehouse_door:set_enabled(false) end
   if game:get_value("oakhaven_aubrey_unlocked") == true then
@@ -62,25 +61,9 @@ map:register_event("on_started", function()
 
 end) --end of on_started
 
---intro cutscene
-function remember_sensor:on_activated()
-  if game:get_value("hazel_is_here") ~= true then
-    game:start_dialog("_generic_dialogs.hey")
-    hero:freeze()
-    hero:walk("2222210")
-    sol.timer.start(map, 800, function()
-      hero:unfreeze()
-      game:start_dialog("_oakhaven.npcs.port.cervio.1", function()
-        game:set_value("quest_hazel", 1) --quest log
-        game:set_value("quest_log_a", "a9")
-        game:set_value("hazel_is_here", true)
-      end)
-    end)
-  end
-end
 
+--NPCS---------------------
 
--------------------------NPCS----------------------------
 --GROVER
 function grover:on_interaction()
   --looking for Hazel advice
@@ -103,6 +86,20 @@ function grover:on_interaction()
     game:start_dialog("_oakhaven.npcs.market.grover.4")
   end
 end
+
+--PALACE GUARD
+function palace_guard:on_interaction()
+  local _, hero_x, _ = hero:get_position()
+  if hero:get_direction() == 0 then
+    game:start_dialog("_oakhaven.npcs.guards.town.palace_displacement")
+    palace_guard:get_sprite():set_direction(0)
+    hero:teleport("oakhaven/oakhaven", "palace_ejection")
+
+  else
+    game:start_dialog("_oakhaven.npcs.guards.town.palace")
+  end
+end
+
 
 --WISHING WELL
 function wishing_well:on_interaction()
@@ -168,6 +165,10 @@ function aubrey_door_npc:on_interaction()
 end
 
 
+--Trumpet Player: Caught
+function brian:on_interaction()
+
+end
 
 
 --Gunther
@@ -218,64 +219,10 @@ function hazel:on_interaction()
   end
 end
 
---Barty, weather guy
-function barty:on_interaction()
-  local i = math.random(1,3)
-  game:start_dialog("_oakhaven.npcs.general_town.barty." .. i)
-end
-
-
----Shops:
-function blacksmith:on_interaction()
-  require("scripts/shops/blacksmith"):open_shop(game)
-end
-
-
-function ferris:on_interaction()
-  --if you haven't increased armor yet
-  if game:get_value("ferris_armor_counter") == nil then
-
-    game:start_dialog("_oakhaven.npcs.blacksmith.ferris.1", function(answer)
-      if answer == 2 then
-        if game:get_money() >= 100 then
-          game:remove_money(100)
-          game:start_dialog("_oakhaven.npcs.blacksmith.ferris.upgrade_armor")
-          game:set_value("defense", game:get_value("defense") + 1)
-          game:set_value("ferris_armor_counter", 1)
-        else
-          game:start_dialog("_game.insufficient_funds")
-        end
-      end
-    end) --end of dialog callback
-
-  --if you've done one increase
-  elseif game:get_value("ferris_armor_counter") == 1 then
-    
-    --if you do not have tools
-    print(game:has_item("armor_tools"))
-    if not game:has_item("armor_tools") then
-      game:start_dialog("_oakhaven.npcs.blacksmith.ferris.2", function()
-        game:set_value("quest_ferris_tools", 0) --quest log
-      end)
-    --if you HAVE the tools
-    else
-      game:start_dialog("_oakhaven.npcs.blacksmith.ferris.3", function(answer)
-        game:set_value("quest_ferris_tools", 2) --quest log
-        if answer == 2 then
-          game:start_dialog("_oakhaven.npcs.blacksmith.ferris.upgrade_armor_2")
-          game:set_value("defense", game:get_value("defense") + 2)
-          game:set_value("ferris_armor_counter", 2)
-        end
-      end) --end of dialoge callback
-    end
-  elseif game:get_value("ferris_armor_counter") == 2 then
-    game:start_dialog("_oakhaven.npcs.blacksmith.ferris.4")
-  end --end of ferris_armor_counter
-end
+---------------------------
 
 
 
-----------------------------SENSORS---------------------
 --poster monster sensor
 local monster_sensor_tripped = false
 for sensor in map:get_entities("poster_monster_sensor") do
@@ -311,32 +258,27 @@ end
 
 
 
-------------------------WALKING AROUND NPCS--------------------------------------
-function map:initialize_npc_movements()
-  for npc in map:get_entities("random_walk") do
-    local m = sol.movement.create("random_path")
-    if npc:get_property("speed") then m:set_speed(npc:get_property("speed")) end
-    m:start(npc)
+----------------------------
+
+
+--intro cutscene
+function remember_sensor:on_activated()
+  if game:get_value("hazel_is_here") ~= true then
+    game:start_dialog("_generic_dialogs.hey")
+    hero:freeze()
+    local m = sol.movement.create("path")
+    m:set_path{0}
+    m:start(hero)
+    hero:set_direction(0)
+    function m:on_finished()
+      hero:unfreeze()
+      game:start_dialog("_oakhaven.npcs.port.cervio.1", function()
+--        sol.audio.play_sound("quest_log")
+        
+        game:set_value("quest_hazel", 1) --quest log
+      end)
+      game:set_value("quest_log_a", "a9")
+      game:set_value("hazel_is_here", true)
+    end
   end
-
-  for npc in map:get_entities("looping_walker") do
---    map:advance_waypoints(npc, npc:get_property("starting_waypoint"))
-              print("I'm going!")
-              npc:set_origin(8,13)
-              loop_waypoint_10:set_origin(8, 13)
-              local m = sol.movement.create("path_finding")
-              m:set_target(map:get_entity("loop_waypoint_10"))
-              m:start(npc, function() print("MADE IT") end)
-              function m:on_finished() print("end of movement") end
-  end
-end --end initialize NPC movements
-
-
-local NUM_WAYPOINTS = 18
-function map:advance_waypoints(npc, waypoint_no)
-print("seeking waypoint " .. waypoint_no)
-  local m = sol.movement.create("path_finding")
-  m:set_target(map:get_entity("loop_waypoint_" .. waypoint_no))
-  local next_waypoint = waypoint_no + 1 % NUM_WAYPOINTS
-  m:start(npc, function() map:advance_waypoints(npc, next_waypoint) end)
 end

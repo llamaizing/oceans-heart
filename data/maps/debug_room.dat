@@ -5845,6 +5845,42 @@ destructible{
   can_be_cut = true,
 }
 
+enemy{
+  layer = 0,
+  x = 392,
+  y = -19,
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 408,
+  y = -19,
+  properties = {
+    {
+      key = "type",
+      value = "sparrow",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  layer = 0,
+  x = 424,
+  y = -19,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
 tile{
   layer = 1,
   x = 192,

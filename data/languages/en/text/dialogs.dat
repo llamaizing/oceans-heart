@@ -6699,9 +6699,16 @@ dialog{
   id = "_oakhaven.npcs.apothecary.1",
   text = [[
 ARAMIS:
-Welcome to Metheglyn Apothecary. If you're
-looking to mix up some Elixer Vitae, please
-talk to my husband.
+Welcome to Metheglyn Apothecary. In the
+market for any tonics, panaceas, or draughts?
+Grow your hair longer, clear up warts?
+TILIA:
+I'm more in the market for practical
+potions. Heal you, hurt monsters. That
+kind of thing.
+ARAMIS:
+Oh! Well if you'd like to use the crafing
+table, feel free.
 ]],
 }
 
@@ -6709,8 +6716,8 @@ dialog{
   id = "_oakhaven.npcs.apothecary.2",
   text = [[
 ARAMIS:
-Hello, if you'd like to mix up some Elixer,
-please talk to my husband.
+Hello, welcome to our humble apothecary.
+Need something for your skin? Love potion?
 
 TILIA:
 I'm actually looking to make some else. I'm
@@ -6738,8 +6745,8 @@ dialog{
   id = "_oakhaven.npcs.apothecary.2_already_have_monkshood",
   text = [[
 ARAMIS:
-Hello, if you'd like to mix up some Elixer,
-please talk to my husband.
+Hello, welcome to our apothecary. Looking'
+for some slug juice? Great for digestion.
 
 TILIA:
 I'm actually looking to make some else. I'm
@@ -7390,11 +7397,263 @@ oranges.
 }
 
 dialog{
+  id = "_oakhaven.npcs.general_town.1",
+  text = [[
+I've been reading collected poetry about the
+ancient lighthouses scattered across the
+islands. They were built to call back a
+lover lost at sea. The way they're darkened,
+dead, reminds me of this tree. Except I
+guess probably don't try to light this tree
+on fire. You definitely could light all
+four lighthouses back up.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.10",
+  text = [[
+Did you hear the governor's dog is having
+a birthday party? Or, they're having a
+party for the governor's dog. Or is he the
+mayor? The person, I mean, not the dog.
+Or is the dog the mayor? I mean, I don't
+have a strong grasp of politics.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.11",
+  text = [[
+Hey this might seem like a weird warning,
+but we careful around the fountains in
+Oakhaven. My little sister fell down a
+well last week. She said it was pretty
+creepy down there too. She got the feeling
+she could hear something whispering to
+her from deeper down the tunnel. Also she
+broke her arm!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.12",
+  text = [[
+I come down to the statue of the Ocean
+Godess every morning to feed the doves.
+Some people say the Ocean is a myth, but
+like... it's the ocean. I've seen it.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.13",
+  text = [[
+The well's been getting pretty dry the
+past few months. I suppose on the plus
+side, if you fell down the well, you
+wouldn't drown.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.14",
+  text = [[
+Yo, have you heard about the haunted horse?
+By big brother said there's a haunted
+horse and there's a ghost inside and that's
+why they keep it locked!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.14-rebuttal",
+  text = [[
+Wait, how do they lock a horse? Are you
+sure you understood this rumor properly?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.15",
+  text = [[
+KID:
+Hey you know what I heard? Nobody knows
+how many secret passages there are in this
+town!
+TILIA:
+Does that mean there might not be any?
+What was trying to be conveyed to you
+when you heard this?
+KID:
+I mean, if nobody knows, there could be
+more than six, right? That's all I'm saying.
+Seems worth checking in corners for is all.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.2",
+  text = [[
+Up at the top of the city is the mayor's
+palace. It used to be where the Sea King
+and his forebearers lived before the king
+moved his palace to the Isle of Storms.
+Which makes you wonder, if the palace is
+that old, must be a pain to heat it. Not
+an efficient use of tax dollars!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.3",
+  text = [[
+Oakhaven's annual tic-tac-toe championship
+is today. It's held in the southwest
+neighborhood. I was thinking of going, but
+after seeing my favorite player
+disqualified last year after being involved
+in that leg-breaking conspiracy... I dunno,
+tic-tac-toe isn't the sport it used to be.
+So many scandals these days.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.4",
+  text = [[
+I'm just visiting Oakhaven, so I'm reading
+a travel guide. I guess there's a mountain
+to the west with pretty extensive ruins.
+Also extensive monsters. Hmm...
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.5",
+  text = [[
+If you sit really still while people watching,
+everybody starts to forget about you. You
+see people as their true selves. Impatiently
+waiting to meet friends, getting excited
+about cooking the produce they buy... also
+picking their noses a lot. If you were
+invisible, you'd see so many people picking
+their noses.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.6",
+  text = [[
+Little known secret about the tailor's
+shop near the south gate. The tailor loves
+sequins, absolutely adores them. So much,
+he won't sell them. Keep them to himself.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.7",
+  text = [[
+It's not this one, but one of the fountains
+in town is a wishing well. That or someone
+accidentally hooked the bank up to the
+water system, because there's just tons of
+coins at the bottom. It might be worth
+tossing some money in if you were the type
+with plenty of money to throw away.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.8",
+  text = [[
+Go up those stairs to the northwest, and
+you'll find what's probably the oldest
+tree in the city. Definitely the biggest.
+Wonder what it looked like back in the day.
+Probably a lot smaller.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.9",
+  text = [[
+Used to be a sailor, ya know, till I got
+shipwrecked out on Snapmast Reef. Gave it
+up, became a fisherman instead. Wouldn't
+ya know, I put all my chips into fishin'
+down at Gull Rock. Of course, it's full of
+monsters down there! Had to give that up
+too. Now what do I do? I'm a real estate
+speculator.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.barty.1",
+  text = [[
+Hmm, looks like a big 'ol storm today,
+sonny. Low pressure in the nibulo-fog banks.
+Feel it in my bones. Always means snow's
+coming.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.barty.2",
+  text = [[
+You feel how humid it is today? Not at all!
+Red sky in the morning too. Looks like we're
+in for a hard winter, sonny. I used to
+climb Marblecliff Mountain to measure the
+clouds when I was a boy. They used to be
+tall! Not this year. That's how you can
+tell we're in for a mild winter.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.barty.3",
+  text = [[
+Hey sonny, see that high-pressure counter
+backwards cloud system swirling out toward
+Yarrowmouth? Sure sign of an early frost.
+I've got weather in my bones, sonny.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.general_town.library_hint",
   text = [[
 Have you been to Oakhaven's library? It's
 massive. Just go down those stairs and
-to the east, you can't miss it.
+through the archway, you can't miss it.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.library_hint_2",
+  text = [[
+There's a courtyard on the north side of
+the library. I've a particularly tall friend
+who could see over the waterfall there
+a bit and swears there's an old ruins.
+Suppose you'd need to be somehow coming
+downstream from the mountain to get there
+though, as you can't swim up waterfalls.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.sculptor_sibling_outside",
+  text = [[
+Oh, you're wearing Volunteer Navy colors!
+My sibling inside is a sculptor and needs
+someone to help collect clay from golems.
+It's the best for sculpting I guess? If
+you want, go inside and have a chat.
 ]],
 }
 
@@ -7403,6 +7662,48 @@ dialog{
   text = [[
 GUARD:
 Carry on, civilian.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.generic.guardhouse",
+  text = [[
+GUARD:
+Good day, citizen. This is the guardhouse.
+The house where we guards do business. It's
+not our collective house. We have houses too.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.generic.library_entrance",
+  text = [[
+GUARD:
+Through this arch is the Oakhaven Library.
+It's one of the city's oldest buildings.
+If you check something out, you'd better
+GUARD:
+be sure to return it on time! I can arrest
+you for overdue fees!
+
+TILIA:
+Is that true?
+
+
+GUARD:
+No, but I like to keep borrowers on their
+toes. I think it improves the city's moral
+fabric.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.generic.palace_entrace",
+  text = [[
+GUARD:
+This is the entrance to the palace. The
+town's mayor lives here now, even though
+it's really old.
 ]],
 }
 
@@ -8596,6 +8897,79 @@ and the Seabird', whatever that means.
 }
 
 dialog{
+  id = "_oakhaven.npcs.market.1",
+  text = [[
+I've got raw acorns, fresh from the
+Veilwood! Not like last week's shipment,
+which was those acorn monsters! Arborgeists.
+Yeah, won't make that mistake again.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.2",
+  text = [[
+Pickled veggies here! If you think you'd
+want to eat it, I've got it pickled.
+Sometimes the veggies turn weird colors.
+Have I tried them all? No. Do I know which
+parts of plants are poisonous? Also no, but
+I do know which parts pickle well. My
+products are for adventurous eaters.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.3",
+  text = [[
+I came to the market to buy fish, but then
+I saw the armor and I'm like, "wait, is
+that what I want?"
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.4",
+  text = [[
+There's another guy up on the terrace that
+also sells produce. I think the apples
+here are fresh from Ivystump Village, but
+the oranges he has up there are good too...
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.5",
+  text = [[
+Tell you what, I'm selling tea like nobody's
+business these days. The governor is having
+a birthday party for his dog, and everybody
+wants to drink whatever the dog is drinking.
+Honestly, I'd love to get into that party.
+Wonder if the guards need to hire any
+extra waiters or anything.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.6",
+  text = [[
+I've got some secondhand books from the
+library here, good deals. No overdue fees
+or anything, they're clean.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.7",
+  text = [[
+This here is the carpenter's shop. And
+this stool I'm sitting on... this is the
+display model.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.market.fruit_importer.1",
   text = [[
 FRUIT IMPORTER:
@@ -8634,9 +9008,9 @@ find her.
 FRUIT IMPORTER:
 Goodness! Well, I must do my civic duty.
 Here, take this box of oranges and
-impersonate me. Go just across the bridge
+impersonate me. Her house is just
 FRUIT IMPORTER:
-west of here, first house on the right.
+south of here, that green roof, by the arch.
 She should open up for oranges.
 
 (You received a box of oranges.)
