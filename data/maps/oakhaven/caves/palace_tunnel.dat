@@ -1452,7 +1452,7 @@ teletransporter{
   y = 96,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/marblecliff",
+  destination_map = "oakhaven/marblecliff_OLD",
   destination = "from_secret_tunnel",
 }
 

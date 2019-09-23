@@ -11877,6 +11877,14 @@ West - Gull Rock, path to Marblecliff Moutain
 }
 
 dialog{
+  id = "_oakhaven.signs.poison_grove",
+  text = [[
+Poison Grove
+(Watch out for dangerous plants!)
+]],
+}
+
+dialog{
   id = "_oakhaven.signs.port_1",
   text = [[
 North - Oakhaven

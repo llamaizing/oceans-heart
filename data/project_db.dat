@@ -238,6 +238,7 @@ map{ id = "oakhaven/ivystump_interiors/sawmill", description = "Sawmill" }
 map{ id = "oakhaven/ivystump_interiors/shop", description = "Shop" }
 map{ id = "oakhaven/marble_summit", description = "Marble Summit" }
 map{ id = "oakhaven/marblecliff", description = "Marblecliff" }
+map{ id = "oakhaven/marblecliff_OLD", description = "OLDMarblecliff" }
 map{ id = "oakhaven/oakhaven", description = "OakhavenCity" }
 map{ id = "oakhaven/oakhaven_old", description = "OLDhaven" }
 map{ id = "oakhaven/poison_grove", description = "Poison Grove" }
