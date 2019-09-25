@@ -50,7 +50,8 @@ function hud_submenu:new(game, properties)
 		--TODO vertical slide translation of panels
 	end]]
 	
-	local function remove_panel(name)
+	local remove_panel
+	remove_panel = function(name)
 		--remove the panel corresponding to this timer
 		for i,panel_i in ipairs(panels) do --find the index corresponding the the panel to remove
 			if name == panel_i.name then
@@ -68,6 +69,8 @@ function hud_submenu:new(game, properties)
 				queue[new_name] = nil
 				table.insert(panels, new_panel)
 				panels[new_name] = new_panel
+				
+				new_panel.timer = sol.timer.start(menu, duration, function() remove_panel(new_name) end)
 			end
 		end
 	end

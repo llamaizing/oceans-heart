@@ -46,7 +46,6 @@ item_meta:register_event("on_obtained", function(self, variant)
 
   --display hud panel for consumables when obtained
   local name = self:get_name()
-  print(name, variant)
   if ITEM_LIST[name] and self:has_amount() then
     local game = self:get_game()
     local hud = game:get_hud() or {}
