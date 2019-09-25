@@ -18,27 +18,9 @@ require("scripts/multi_events")
 
 local hud_submenu = {}
 
-local MAX_COUNT = 5
-local Y_OFFSET = 28
+local MAX_COUNT = 5 --max number of panels to show at one time
+local Y_OFFSET = 28 --vertical offset for each panel in pixels
 local IMG_ID = "menus/panel.png"
-local ITEM_LIST = {
-	--collectables
-	coral_ore = true,
-	burdock = true,
-	chamomile = true,
-	firethorn_berries = true,
-	ghost_orchid = true,
-	kingscrown = true,
-	lavendar = true,
-	witch_hazel = true,
-	mandrake_white = true,
-	mandrake = true,
-	geode = true,
-	monster_bones = true,
-	monster_eye = true,
-	monster_guts = true,
-	monster_heart = true,
-}
 
 	--properties (table, key/value)
 		--x
@@ -46,10 +28,8 @@ local ITEM_LIST = {
 		--duration
 function hud_submenu:new(game, properties)
 	local menu = {}
-	local panels = {} --circular buffer
-	local panel_index = 1
-	local panel_count = 0
 	
+	local panels = {} --circular buffer
 	local queue = {} --additional panels exceeding max, show when new slots free up
 	local img = sol.surface.create(IMG_ID)
 	
@@ -59,7 +39,7 @@ function hud_submenu:new(game, properties)
 	local duration = properties.duration
 	local is_enabled = true
 	
-	local function remove_panel()
+	--[[local function remove_panel()
 		local new_panel = table.remove(queue)
 		panels[panel_index] = new_panel --may be nil
 		if not new_panel then panel_count = panel_count - 1 end
@@ -68,6 +48,28 @@ function hud_submenu:new(game, properties)
 		if panel_index > MAX_COUNT then panel_index = panel_index - MAX_COUNT end
 		
 		--TODO vertical slide translation of panels
+	end]]
+	
+	local function remove_panel(name)
+		--remove the panel corresponding to this timer
+		for i,panel_i in ipairs(panels) do --find the index corresponding the the panel to remove
+			if name == panel_i.name then
+				table.remove(panels, i)
+				panels[name] = nil
+				break
+			end
+		end
+		
+		--move a panel from queue to active list if new slot is available
+		if #panels < MAX_COUNT then
+			local new_panel = table.remove(queue)
+			if new_panel then
+				local new_name = new_panel.name
+				queue[new_name] = nil
+				table.insert(panels, new_panel)
+				panels[new_name] = new_panel
+			end
+		end
 	end
 	
 	function menu:get_dst() return dst_x, dst_y end
@@ -94,7 +96,6 @@ function hud_submenu:new(game, properties)
 		local name = item:get_name()
 		local amount = item:get_amount()
 		local max_amount = item:get_max_amount()
-		print("add:", name, amount, variant)
 		
 		--create item icon sprite
 		local sprite = sol.sprite.create"entities/items"
@@ -122,24 +123,45 @@ function hud_submenu:new(game, properties)
 			x=0, y=0,
 		}
 		
-		if panel_count < MAX_COUNT then
-			--add new panel
-			local new_index = panel_index + panel_count
-			if new_index > MAX_COUNT then new_index = new_index - MAX_COUNT end
-			panels[new_index] = panel
-			panel_count = panel_count + 1
+		if panels[name] then --already is a panel for this item, extend its timer instead
+			--abort existing timer
+			local timer = panels[name].timer
+			if timer then timer:stop() end
+			
+			--update panel info
+			for i,panel_i in ipairs(panels) do
+				if panels[name] == panel_i then
+					panels[i] = panel
+					panels[name] = panel
+				end
+			end
+			
+			panel.timer = sol.timer.start(self, duration, function() remove_panel(name) end)
+		elseif queue[name] then	--already is a panel for this item in queue
+			--update panel info
+			for i,panel_i in ipairs(queue) do
+				if queue[name] == panel_i then
+					queue[i] = panel
+					queue[name] = panel
+					break
+				end
+			end
+		elseif #panels < MAX_COUNT then --display new panel if not full
+			table.insert(panels, panel) --add new panel
+			panels[name] = panel
 			
 			--TODO horizontal slide translation of newly added panel
 			
 			--create timer to remove panel
-			sol.timer.start(self, duration, remove_panel)
-		else table.insert(queue, panel) end --add panel to queue
+			panel.timer = sol.timer.start(self, duration, function() remove_panel(name) end)
+		else --add panel to queue to be displayed later
+			table.insert(queue, panel)
+			queue[name] = panel
+		end
 	end
 	
 	function menu:on_started()
 		panels = {}
-		panel_index = 1
-		panel_count = 0
 		queue = {}
 	end
 	
@@ -154,12 +176,7 @@ function hud_submenu:new(game, properties)
 		local y = dst_y + (dst_y < 0 and height or 0)
 		
 		local offset = 0
-		for n=1,panel_count do
-			local i = n + panel_index - 1
-			if i < 1 then i = i + MAX_COUNT end
-			local panel = panels[i]
-			if not panel then break end
-			
+		for _,panel in ipairs(panels) do
 			img:draw(dst_surface, x+panel.x, y+offset+panel.y)
 			local origin_x, origin_y = panel.sprite:get_origin()
 			panel.sprite:draw(dst_surface, x+4+panel.x+origin_x, y+offset+4+panel.y+origin_y)
