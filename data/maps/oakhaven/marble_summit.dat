@@ -10259,7 +10259,7 @@ teletransporter{
   y = 704,
   width = 32,
   height = 16,
-  destination_map = "oakhaven/marblecliff_OLD",
+  destination_map = "oakhaven/marblecliff",
   destination = "from_summit",
 }
 

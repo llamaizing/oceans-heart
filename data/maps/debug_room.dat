@@ -5846,6 +5846,7 @@ destructible{
 }
 
 enemy{
+  name = "dove_1",
   layer = 0,
   x = 392,
   y = -19,
@@ -5854,6 +5855,7 @@ enemy{
 }
 
 enemy{
+  name = "sparrow_1",
   layer = 0,
   x = 408,
   y = -19,
@@ -5868,6 +5870,7 @@ enemy{
 }
 
 enemy{
+  name = "blackbird_1",
   layer = 0,
   x = 424,
   y = -19,

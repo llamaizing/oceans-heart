@@ -1856,15 +1856,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 160,
-  y = 144,
-  width = 32,
-  height = 24,
-  pattern = "1881",
-}
-
-tile{
-  layer = 0,
   x = 136,
   y = 168,
   width = 8,
@@ -2601,6 +2592,15 @@ tile{
   pattern = "1879",
 }
 
+tile{
+  layer = 0,
+  x = 160,
+  y = 184,
+  width = 32,
+  height = 24,
+  pattern = "1881",
+}
+
 wall{
   layer = 0,
   x = 136,
@@ -2630,14 +2630,14 @@ destination{
   name = "from_marblecliff",
   layer = 0,
   x = 120,
-  y = 309,
+  y = 301,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
   x = 112,
-  y = 312,
+  y = 304,
   width = 16,
   height = 16,
   destination_map = "oakhaven/marblecliff",
@@ -2771,15 +2771,6 @@ tile{
   width = 32,
   height = 8,
   pattern = "247",
-}
-
-tile{
-  layer = 1,
-  x = 160,
-  y = 88,
-  width = 32,
-  height = 56,
-  pattern = "1882",
 }
 
 tile{
@@ -2969,5 +2960,14 @@ tile{
   width = 32,
   height = 32,
   pattern = "1880",
+}
+
+tile{
+  layer = 1,
+  x = 160,
+  y = 128,
+  width = 32,
+  height = 56,
+  pattern = "1882",
 }
 
