@@ -1,6 +1,6 @@
 --[[consumables.lua
 	version 0.1a1
-	24 Sep 2019
+	25 Sep 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -20,18 +20,19 @@ local hud_submenu = {}
 
 local MAX_COUNT = 5 --max number of panels to show at one time
 local Y_OFFSET = 28 --vertical offset for each panel in pixels
-local IMG_ID = "menus/panel.png"
+local PANEL_IMG_ID = "menus/panel.png"
 
 	--properties (table, key/value)
-		--x
-		--y
-		--duration
+		--x (number, integer) - x coordinate of hud submenu in pixels
+		--y (number, integer) - y coordinate of hud submenu in pixels
+		--duration (number, positive integer) - duration to display each panel in ms
 function hud_submenu:new(game, properties)
 	local menu = {}
 	
 	local panels = {} --circular buffer
 	local queue = {} --additional panels exceeding max, show when new slots free up
-	local img = sol.surface.create(IMG_ID)
+	local panel_img = sol.surface.create(PANEL_IMG_ID)
+	local panel_width, panel_height = panel_img:get_size()
 	
 	--TODO validation
 	local dst_x = properties.x
@@ -39,18 +40,28 @@ function hud_submenu:new(game, properties)
 	local duration = properties.duration
 	local is_enabled = true
 	
-	--[[local function remove_panel()
-		local new_panel = table.remove(queue)
-		panels[panel_index] = new_panel --may be nil
-		if not new_panel then panel_count = panel_count - 1 end
-		
-		panel_index = panel_index + 1
-		if panel_index > MAX_COUNT then panel_index = panel_index - MAX_COUNT end
-		
-		--TODO vertical slide translation of panels
-	end]]
-	
+	 --define these functions later
+	local create_panel
 	local remove_panel
+	
+	--must verify panel for the item doesn't already exist first
+	create_panel = function(panel)
+		local name = panel.name
+		table.insert(panels, panel) --add new panel
+		panels[name] = panel
+		
+		--add horizontal slide translation to newly added panel
+		panel.x = (dst_x>0 and -panel_width or 0) - dst_x --set position off-screen initially
+		local movement = sol.movement.create"straight"
+		movement:set_speed(256)
+		movement:set_angle(dst_x>0 and 0 or math.pi)
+		movement:set_max_distance(dst_x>0 and panel_width+dst_x or -dst_x)
+		movement:start(panel)
+		
+		--create timer to remove panel
+		panel.timer = sol.timer.start(menu, duration, function() remove_panel(name) end)
+	end
+	
 	remove_panel = function(name)
 		--remove the panel corresponding to this timer
 		for i,panel_i in ipairs(panels) do --find the index corresponding the the panel to remove
@@ -67,12 +78,30 @@ function hud_submenu:new(game, properties)
 			if new_panel then
 				local new_name = new_panel.name
 				queue[new_name] = nil
-				table.insert(panels, new_panel)
-				panels[new_name] = new_panel
 				
-				new_panel.timer = sol.timer.start(menu, duration, function() remove_panel(new_name) end)
+				create_panel(new_panel)
 			end
 		end
+	end
+	
+	local function update_panel(new_panel, list)
+		local new_name = new_panel.name
+		local old_panel
+		
+		--find existing panel with matching name
+		for i,panel_i in ipairs(list) do
+			if list[new_name] == panel_i then --found the correct panel
+				old_panel = panel_i
+				old_panel.variant = new_panel.variant
+				old_panel.amount = new_panel.amount
+				old_panel.max_amount = new_panel.max_amount
+				old_panel.sprite = new_panel.sprite --TODO may have sprite frame discontinuity if same sprite
+				old_panel.text_surface = new_panel.text_surface
+				break
+			end
+		end
+		
+		return old_panel --nil if could not find corresponding panel
 	end
 	
 	function menu:get_dst() return dst_x, dst_y end
@@ -132,31 +161,13 @@ function hud_submenu:new(game, properties)
 			if timer then timer:stop() end
 			
 			--update panel info
-			for i,panel_i in ipairs(panels) do
-				if panels[name] == panel_i then
-					panels[i] = panel
-					panels[name] = panel
-				end
-			end
-			
+			panel = update_panel(panel, panels)
 			panel.timer = sol.timer.start(self, duration, function() remove_panel(name) end)
 		elseif queue[name] then	--already is a panel for this item in queue
 			--update panel info
-			for i,panel_i in ipairs(queue) do
-				if queue[name] == panel_i then
-					queue[i] = panel
-					queue[name] = panel
-					break
-				end
-			end
+			update_panel(panel, queue)
 		elseif #panels < MAX_COUNT then --display new panel if not full
-			table.insert(panels, panel) --add new panel
-			panels[name] = panel
-			
-			--TODO horizontal slide translation of newly added panel
-			
-			--create timer to remove panel
-			panel.timer = sol.timer.start(self, duration, function() remove_panel(name) end)
+			create_panel(panel)
 		else --add panel to queue to be displayed later
 			table.insert(queue, panel)
 			queue[name] = panel
@@ -180,7 +191,7 @@ function hud_submenu:new(game, properties)
 		
 		local offset = 0
 		for _,panel in ipairs(panels) do
-			img:draw(dst_surface, x+panel.x, y+offset+panel.y)
+			panel_img:draw(dst_surface, x+panel.x, y+offset+panel.y)
 			local origin_x, origin_y = panel.sprite:get_origin()
 			panel.sprite:draw(dst_surface, x+4+panel.x+origin_x, y+offset+4+panel.y+origin_y)
 			panel.text_surface:draw(dst_surface, x+44+panel.x, y+offset+8+panel.y)
