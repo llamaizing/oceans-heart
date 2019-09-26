@@ -64,23 +64,50 @@ function hud_submenu:new(game, properties)
 	
 	remove_panel = function(name)
 		--remove the panel corresponding to this timer
-		for i,panel_i in ipairs(panels) do --find the index corresponding the the panel to remove
-			if name == panel_i.name then
+		local index
+		for i,panel in ipairs(panels) do --find the index corresponding the the panel to remove
+			if name == panel.name then
 				table.remove(panels, i)
 				panels[name] = nil
+				index = i --panels here and up need vertical movement to fill gap
 				break
 			end
 		end
 		
 		--move a panel from queue to active list if new slot is available
 		if #panels < MAX_COUNT then
-			local new_panel = table.remove(queue)
+			local new_panel = table.remove(queue, 1)
 			if new_panel then
 				local new_name = new_panel.name
 				queue[new_name] = nil
 				
 				create_panel(new_panel)
 			end
+		end
+		
+		--add vertical slide translations to fill the gap
+		local target = {x=0, y=0} --target of movement (applies to multiple panels)
+		local movement = sol.movement.create"straight"
+		movement:set_speed(128)
+		movement:set_angle(math.pi/2)
+		movement:set_max_distance(Y_OFFSET)
+		movement:start(target, function()
+			--remove target from visible panels once movement is complete
+			for i,panel in ipairs(panels) do
+				local movements = panel.movements
+				if movements and movements[target] then
+					movements[target] = nil
+					panel.offset = panel.offset - 1
+				end
+			end
+		end)
+		
+		--apply movement to applicable panels
+		for i=index,#panels do --for all panels above the one removed
+			local panel = panels[i]
+			panel.offset = (panel.offset or 0) + 1 --instantly move to old location
+			panel.movements = panel.movements or {}
+			panel.movements[target] = target
 		end
 	end
 	
@@ -89,9 +116,9 @@ function hud_submenu:new(game, properties)
 		local old_panel
 		
 		--find existing panel with matching name
-		for i,panel_i in ipairs(list) do
-			if list[new_name] == panel_i then --found the correct panel
-				old_panel = panel_i
+		for i,panel in ipairs(list) do
+			if list[new_name] == panel then --found the correct panel
+				old_panel = panel
 				old_panel.variant = new_panel.variant
 				old_panel.amount = new_panel.amount
 				old_panel.max_amount = new_panel.max_amount
@@ -189,12 +216,19 @@ function hud_submenu:new(game, properties)
 		local x = dst_x + (dst_x < 0 and width or 0)
 		local y = dst_y + (dst_y < 0 and height or 0)
 		
+		
+		
 		local offset = 0
 		for _,panel in ipairs(panels) do
-			panel_img:draw(dst_surface, x+panel.x, y+offset+panel.y)
+			local slide_y = (panel.offset or 0)*Y_OFFSET --distance to move from all movements
+			for target in pairs(panel.movements or {}) do
+				slide_y = slide_y + target.y
+			end
+			
+			panel_img:draw(dst_surface, x+panel.x, y+offset+panel.y+slide_y)
 			local origin_x, origin_y = panel.sprite:get_origin()
-			panel.sprite:draw(dst_surface, x+4+panel.x+origin_x, y+offset+4+panel.y+origin_y)
-			panel.text_surface:draw(dst_surface, x+44+panel.x, y+offset+8+panel.y)
+			panel.sprite:draw(dst_surface, x+4+panel.x+origin_x, y+offset+4+panel.y+origin_y+slide_y)
+			panel.text_surface:draw(dst_surface, x+44+panel.x, y+offset+8+panel.y+slide_y)
 			offset = offset + Y_OFFSET
 		end
 	end
