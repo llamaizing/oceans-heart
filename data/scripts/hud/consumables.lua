@@ -1,5 +1,5 @@
 --[[consumables.lua
-	version 0.1a1
+	version 1.0
 	25 Sep 2019
 	GNU General Public License Version 3
 	author: Llamazing
@@ -14,18 +14,23 @@
 	multiple items in quick succession.
 ]]
 
-require("scripts/multi_events")
+require"scripts/multi_events"
 
 local hud_submenu = {}
 
 local MAX_COUNT = 5 --max number of panels to show at one time
 local Y_OFFSET = 28 --vertical offset for each panel in pixels
-local PANEL_IMG_ID = "menus/panel.png"
+local PANEL_IMG_ID = "menus/panel.png" --image to use for panel
 
+--// Creates and returns new instance for hud
+	--game (sol.game) - the current game
 	--properties (table, key/value)
 		--x (number, integer) - x coordinate of hud submenu in pixels
+			--if x is negative then specifies position from right edge of screen
 		--y (number, integer) - y coordinate of hud submenu in pixels
+			--if y is negative then specifies position from bottom edge of screen
 		--duration (number, positive integer) - duration to display each panel in ms
+	--returns sol.menu to be displayed on hud
 function hud_submenu:new(game, properties)
 	local menu = {}
 	
@@ -34,10 +39,16 @@ function hud_submenu:new(game, properties)
 	local panel_img = sol.surface.create(PANEL_IMG_ID)
 	local panel_width, panel_height = panel_img:get_size()
 	
-	--TODO validation
-	local dst_x = properties.x
-	local dst_y = properties.y
-	local duration = properties.duration
+	local dst_x = tonumber(properties.x)
+	local dst_y = tonumber(properties.y)
+	assert(dst_x, "Bad property x to 'new' (number expected)")
+	assert(dst_y, "Bad property y to 'new' (number expected)")
+	dst_x = math.floor(dst_x)
+	dst_y = math.floor(dst_y)
+	local duration = tonumber(properties.duration)
+	assert(duration, "Bad property duration to 'new' (number expected)")
+	duration = math.floor(duration)
+	assert(duration >= 0, "Bad property duration to 'new' (number must be non-negative)")
 	local is_enabled = true
 	
 	 --define these functions later
@@ -62,9 +73,9 @@ function hud_submenu:new(game, properties)
 		panel.timer = sol.timer.start(menu, duration, function() remove_panel(name) end)
 	end
 	
+	--// remove the panel corresponding to this name (string)
 	remove_panel = function(name)
-		--remove the panel corresponding to this timer
-		local index
+		local index --index of panel removed
 		for i,panel in ipairs(panels) do --find the index corresponding the the panel to remove
 			if name == panel.name then
 				table.remove(panels, i)
@@ -111,6 +122,11 @@ function hud_submenu:new(game, properties)
 		end
 	end
 	
+	--// Replace info of existing panel with same name as the newly specified panel info
+		--new_panel (table, key/value) - new panel info to use
+			--info from existing panel matching new_panel.name will be replaced
+		--list (table) - which list it is to be applied to (panels or queue tables)
+		--returns the panel table that was updated, or nil if not found
 	local function update_panel(new_panel, list)
 		local new_name = new_panel.name
 		local old_panel
@@ -131,6 +147,11 @@ function hud_submenu:new(game, properties)
 		return old_panel --nil if could not find corresponding panel
 	end
 	
+	--// Get/set the position of the hud element on the screen
+		--x (number, integer) - x coordinate of where to draw the hud submenu in pixels
+			--if x is negative then specifies position from right edge of screen
+		--y (number, integer) - y coordinate of where to draw the hud submenu in pixels
+			--if y is negative then specifies position from the bottom edge of screen
 	function menu:get_dst() return dst_x, dst_y end
 	function menu:set_dst(x,y)
 		x = tonumber(x)
@@ -144,13 +165,18 @@ function hud_submenu:new(game, properties)
 		dst_y = y
 	end
 	
+	--// Get/set visibility of the hud submenu
+		--enabled (boolean) - true makes visible, false hides
 	function menu:get_enabled() return is_enabled end
 	function menu:set_enabled(enabled)
 		assert(type(enabled)=="boolean", "Bad argument #2 to 'set_enabled' (boolean expected)")
 		is_enabled = enabled
 	end
 	
-	--// Create a new surface to be displayed for the given item and variant
+	--// Create a new panel to be displayed for the given item and variant
+		--item (sol.item) - item to display a panel with sprite and amount on hud
+		--variant (number, positive integer, optional) - variant of the item (determines sprite displayed)
+			--default: variant 1
 	function menu:add_item(item, variant)
 		local name = item:get_name()
 		local amount = item:get_amount()
@@ -201,30 +227,31 @@ function hud_submenu:new(game, properties)
 		end
 	end
 	
+	--// When the hud submenu is started
 	function menu:on_started()
-		panels = {}
+		panels = {} --clear any existing data
 		queue = {}
 	end
 	
+	--hide hud submenu when paused
 	function menu:on_paused() is_enabled = false end
 	function menu:on_unpaused() is_enabled = true end
 	
 	function menu:on_draw(dst_surface)
-		if not is_enabled then return end
+		if not is_enabled then return end --don't draw if not enabled
 		
 		local width, height = dst_surface:get_size()
 		local x = dst_x + (dst_x < 0 and width or 0)
 		local y = dst_y + (dst_y < 0 and height or 0)
 		
-		
-		
-		local offset = 0
+		local offset = 0 --increment vertical offset each panel
 		for _,panel in ipairs(panels) do
-			local slide_y = (panel.offset or 0)*Y_OFFSET --distance to move from all movements
+			local slide_y = (panel.offset or 0)*Y_OFFSET --distance to move from all movements combined
 			for target in pairs(panel.movements or {}) do
-				slide_y = slide_y + target.y
+				slide_y = slide_y + target.y --add up individual movements
 			end
 			
+			--draw panel bg, item sprite and amount text
 			panel_img:draw(dst_surface, x+panel.x, y+offset+panel.y+slide_y)
 			local origin_x, origin_y = panel.sprite:get_origin()
 			panel.sprite:draw(dst_surface, x+4+panel.x+origin_x, y+offset+4+panel.y+origin_y+slide_y)
