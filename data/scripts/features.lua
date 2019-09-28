@@ -14,5 +14,6 @@ require("scripts/meta/camera")
 --require("scripts/meta/sensor")
 require("scripts/meta/map")
 require("scripts/meta/item")
+require"scripts/meta/sprite"
 
 return true

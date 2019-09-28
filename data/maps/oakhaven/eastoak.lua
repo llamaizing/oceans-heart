@@ -22,6 +22,7 @@ map:register_event("on_started", function()
     vice_captain:set_enabled(true) wine:set_enabled(true)
   end
 
+--moved to westoak in new map
   if game:get_value("quest_bomb_shop") ~= nil and game:get_value("quest_bomb_shop") > 1 then
     bomb_shop_intern:set_enabled(false)
   end

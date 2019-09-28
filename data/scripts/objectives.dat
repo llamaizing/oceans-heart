@@ -492,6 +492,12 @@ location = "location.ivystump"
 }
 
 side{
+dialog_id = "quest.side.ancient_groves",
+calc_phase = "quest_ancient_groves",
+replace_v = {"ancient_groves_activated"}
+}
+
+side{
     --This alt quest is active until the player unlocks the first heron door in Goatshead
     dialog_id = "quest.side.mysterious_doors",
     alternate_key = "heron_doors_alt",

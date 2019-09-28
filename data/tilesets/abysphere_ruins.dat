@@ -589,6 +589,66 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "62",
+  ground = "wall",
+  default_layer = 1,
+  x = 144,
+  y = 208,
+  width = 48,
+  height = 16,
+}
+
+tile_pattern{
+  id = "63",
+  ground = "wall",
+  default_layer = 0,
+  x = 160,
+  y = 136,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "65",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 136,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "67",
+  ground = "wall",
+  default_layer = 1,
+  x = 160,
+  y = 112,
+  width = 32,
+  height = 24,
+}
+
+tile_pattern{
+  id = "68",
+  ground = "wall",
+  default_layer = 1,
+  x = 128,
+  y = 112,
+  width = 32,
+  height = 24,
+}
+
+tile_pattern{
+  id = "69",
+  ground = "wall",
+  default_layer = 0,
+  x = 112,
+  y = 120,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "7",
   ground = "wall",
   default_layer = 1,
@@ -596,6 +656,16 @@ tile_pattern{
   y = 0,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "70",
+  ground = "wall",
+  default_layer = 1,
+  x = 112,
+  y = 112,
+  width = 16,
+  height = 8,
 }
 
 tile_pattern{

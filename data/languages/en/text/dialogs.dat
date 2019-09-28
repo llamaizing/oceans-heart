@@ -11567,6 +11567,12 @@ upstairs! Alright, buddy.
 }
 
 dialog{
+  id = "_oakhaven.observations.misc.ancient_grove_stone",
+  text = [[
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.misc.dog_went_back",
   text = [[
 TILIA:
@@ -11926,7 +11932,7 @@ dialog{
   text = [[
 East - Oakhaven
 North - Marblecliff Mountain
-West - Veilwood Forest, Ivystump Village
+South - Saltpeter Mine
 ]],
 }
 
@@ -15781,6 +15787,23 @@ dialog{
 @!Look southwest of town around Gull
 !Rock
 @Return the starfruit to Hazel
+]],
+}
+
+dialog{
+  id = "quest.side.ancient_groves",
+  title = "The Ancient Groves",
+  text = [[
+##After defeating a monster in an
+##ancient grove, the rune stone at
+##its center started  glowing
+@You've found $v1 rune stones
+@!Something definitely happened
+!after you found those 3. Is
+!there another grove like these?
+@Proceed through the ruins in the
+Grove of Mosses.
+  
 ]],
 }
 

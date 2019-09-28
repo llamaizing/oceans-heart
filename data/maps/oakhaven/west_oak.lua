@@ -1,0 +1,34 @@
+local map = ...
+local game = map:get_game()
+
+
+map:register_event("on_started", function()
+  if game:get_value("quest_bomb_shop") ~= nil and game:get_value("quest_bomb_shop") > 1 then
+    bomb_shop_intern:set_enabled(false)
+  end
+
+end)
+
+
+
+function bomb_shop_intern:on_interaction()
+  local quest_value = game:get_value("quest_bomb_shop")
+  if quest_value == nil then
+    game:start_dialog("_oakhaven.npcs.bomb_shop.intern.1", function() game:set_value("quest_bomb_shop", 0) end)
+
+  elseif quest_value  == 0 then
+    game:start_dialog("_oakhaven.npcs.bomb_shop.intern.1")
+
+  elseif quest_value == 1 then
+    game:start_dialog("_oakhaven.npcs.bomb_shop.intern.2", function()
+      game:set_value("quest_bomb_shop", 2)
+      local m = sol.movement.create("path")
+      m:set_path{4,4}
+      m:start(bomb_shop_intern)
+    end)
+
+  elseif quest_value == 2 then
+    game:start_dialog("_oakhaven.npcs.bomb_shop.intern.2")
+
+  end
+end

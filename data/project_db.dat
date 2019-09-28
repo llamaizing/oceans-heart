@@ -243,11 +243,13 @@ map{ id = "oakhaven/marblecliff_OLD", description = "OLDMarblecliff" }
 map{ id = "oakhaven/oakhaven", description = "OakhavenCity" }
 map{ id = "oakhaven/oakhaven_old", description = "OLDhaven" }
 map{ id = "oakhaven/poison_grove", description = "Poison Grove" }
-map{ id = "oakhaven/port", description = "Oakhaven Port" }
+map{ id = "oakhaven/port", description = "Port" }
+map{ id = "oakhaven/port_OLD", description = "OLDPort" }
 map{ id = "oakhaven/sunken_palace", description = "Sunken Palace" }
 map{ id = "oakhaven/veilwood", description = "Veilwood" }
 map{ id = "oakhaven/waterfall_canyon", description = "Waterfall Canyon" }
 map{ id = "oakhaven/west_coast", description = "West Coast" }
+map{ id = "oakhaven/west_oak", description = "Westoak" }
 map{ id = "respawn_map", description = "blank room - leave empty" }
 map{ id = "snapmast_reef/caves/coral_cave", description = "Coral Cave" }
 map{ id = "snapmast_reef/caves/elixer_upgrade_tower", description = "Elixer Upgrade Tower" }
@@ -292,6 +294,7 @@ tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 tileset{ id = "treasure", description = "Treasure" }
 tileset{ id = "underwater_plants", description = "Underwater Plants" }
 tileset{ id = "vault_walls", description = "Vault Walls" }
+tileset{ id = "waves", description = "Waves" }
 
 sprite{ id = "console/cursor", description = "cursor" }
 sprite{ id = "console/icons", description = "icons" }
@@ -467,6 +470,8 @@ sprite{ id = "enemies/normal_enemies/triangle_crab_red", description = "Triangle
 sprite{ id = "enemies/normal_enemies/trumpet_player_disguise", description = "trumpet player disguise" }
 sprite{ id = "enemies/normal_enemies/zora", description = "Zora" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
+sprite{ id = "entities/abysphere_egg", description = "Abysphere" }
+sprite{ id = "entities/abysphere_egg_moss", description = "Abysphere Egg-Moss" }
 sprite{ id = "entities/apple", description = "apple" }
 sprite{ id = "entities/armor", description = "Armor" }
 sprite{ id = "entities/armor_tools", description = "Armor Tools" }

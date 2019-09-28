@@ -24,9 +24,6 @@ animation{
   src_image = "enemies/misc/falling_rock.png",
   frame_delay = 40,
   directions = {
-    { x = 0, y = 32, frame_width = 16, frame_height = 64, origin_x = 8, origin_y = 61, num_frames = 16 },
-    { x = 0, y = 32, frame_width = 16, frame_height = 64, origin_x = 8, origin_y = 61, num_frames = 16 },
-    { x = 0, y = 32, frame_width = 16, frame_height = 64, origin_x = 8, origin_y = 61, num_frames = 16 },
-    { x = 0, y = 32, frame_width = 16, frame_height = 64, origin_x = 8, origin_y = 61, num_frames = 16 },
+    { x = 0, y = 32, frame_width = 16, frame_height = 96, origin_x = 8, origin_y = 93, num_frames = 16 },
   },
 }

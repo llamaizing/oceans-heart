@@ -104,6 +104,7 @@ function behavior:create(enemy, properties)
   local can_radial_attack = true
   local can_flail_attack = true
   local can_boomerang_attack = true
+  local can_airstrike_attack = true
   local attacking = false
   local currently_dashing = false
   local currently_teleporting = false
@@ -210,6 +211,13 @@ function behavior:create(enemy, properties)
       self:summon()
       can_summon = false
       sol.timer.start(map, properties.summon_attack_cooldown + math.random(1000), function() can_summon = true end)
+
+    elseif properties.has_airstrike_attack and can_airstrike_attack and dist_hero <= properties.airstrike_attack_distance then
+      attacking = true
+      going_hero = false
+      self:airstrike()
+      can_airstrike_attack = false
+      sol.timer.start(map, properties.airstrike_attack_cooldown + math.random(1000), function() can_airstrike_attack = true end)
 
     elseif properties.has_ranged_attack and aligned and can_shoot and dist_hero <= properties.ranged_attack_distance then
       attacking = true
@@ -720,6 +728,26 @@ function enemy:boomerang_attack()
       enemy:check_hero()
     end
 
+  end)
+end
+
+--Airstrike Attack
+function enemy:airstrike()
+  enemy:stop_movement()
+  local sprite = enemy:get_sprite()
+  sol.audio.play_sound(properties.airstrike_sound)
+  sprite:set_animation("airstrike", function()
+    sol.timer.start(map, properties.airstrike_lag, function()
+      local map = enemy:get_map()
+      local x,y,l = map:get_hero():get_position()
+      map:create_enemy{
+        x=x,y=y,layer=l,direction=0,
+        breed=properties.airstrike_breed or "misc/falling_rock"
+      }
+    end)
+    enemy:wrap_up_attack()
+    enemy:go_random()
+    enemy:check_hero()
   end)
 end
 

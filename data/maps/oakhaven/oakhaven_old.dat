@@ -36898,7 +36898,7 @@ teletransporter{
   y = 1344,
   width = 32,
   height = 16,
-  destination_map = "oakhaven/port",
+  destination_map = "oakhaven/port_OLD",
   destination = "from_city",
 }
 
