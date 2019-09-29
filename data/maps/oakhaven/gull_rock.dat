@@ -7870,7 +7870,7 @@ teletransporter{
   y = 0,
   width = 32,
   height = 16,
-  destination_map = "oakhaven/west_coast",
+  destination_map = "oakhaven/west_oak",
   destination = "from_gull_rock",
 }
 

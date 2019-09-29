@@ -21621,11 +21621,11 @@ enemy{
 teletransporter{
   layer = 0,
   x = 328,
-  y = 1440,
+  y = 1424,
   width = 32,
   height = 16,
-  destination_map = "oakhaven/west_coast",
-  destination = "from_gull_rock",
+  destination_map = "oakhaven/gull_rock",
+  destination = "from_westoak",
 }
 
 custom_entity{
@@ -22208,6 +22208,54 @@ enemy{
   y = 333,
   direction = 3,
   breed = "normal_enemies/mud_golem_1",
+}
+
+destination{
+  name = "from_gull_rock",
+  layer = 0,
+  x = 344,
+  y = 1421,
+  direction = 1,
+}
+
+sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 584,
+  y = 1277,
+  width = 32,
+  height = 32,
+}
+
+custom_entity{
+  name = "hazel",
+  layer = 0,
+  x = 592,
+  y = 1269,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "npc/hazel",
+  model = "ally",
+}
+
+destination{
+  name = "from_port",
+  layer = 0,
+  x = 600,
+  y = 1293,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 608,
+  y = 1248,
+  width = 16,
+  height = 64,
+  destination_map = "oakhaven/port",
+  destination = "from_gull_rock",
 }
 
 tile{
