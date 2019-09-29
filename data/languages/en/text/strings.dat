@@ -7,6 +7,38 @@ text{ key = "item.potion_fleetseed.1", value = "Fleetseed Potion"}
 text{ key = "item.ether_bombs.1", value = "Ether Bombs"}
 text{ key = "item.iron_candle.1", value = "Salt Candles"}
 text{ key = "item.homing_eye.1", value = "Seeker Eyes"}
+text{ key = "item.bow.1", value = "Bow" }
+text{ key = "item.bombs_counter_2.1", value = "Bombs" }
+text{ key = "item.barrier.1", value = "Devana's Barrier" }
+text{ key = "item.ball_and_chain.1", value = "Flail" }
+text{ key = "item.boomerang.1", value = "Boomerang" }
+text{ key = "item.spear.1", value = "Bear Warriors' Spear" }
+text{ key = "item.bow_warp.1", value = "Warpbolt Charm" }
+text{ key = "item.bow_bombs.1", value = "Bomb Arrows" }
+text{ key = "item.bow_fire.1", value = "Flame Arrows" }
+text{ key = "item.berries.1", value = "Berries" }
+text{ key = "item.apples.1", value = "Apples" }
+text{ key = "item.bread.1", value = "Burroak Bread" }
+text{ key = "item.thunder_charm.1", value = "Seabird's Tear" }
+text{ key = "item.leaf_tornado.1", value = "Amalenchier's Wrath" }
+text{ key = "item.gust.1", value = "Zephyrine's Tempest" }
+text{ key = "item.crystal_spark.1", value = "Ophira's Ember" }
+text{ key = "item.cyclone_charm.1", value = "Cyclone Charm" }
+text{ key = "item.coral_ore.1", value = "Coral Ore" }
+text{ key = "item.burdock.1", value = "Burdock Roots" }
+text{ key = "item.chamomile.1", value = "Chamomile Flowers" }
+text{ key = "item.firethorn_berries.1", value = "Firethorn Berries" }
+text{ key = "item.ghost_orchid.1", value = "Ghost Orchids" }
+text{ key = "item.kingscrown.1", value = "Kingscrown Blooms" }
+text{ key = "item.lavendar.1", value = "Lavendar Flowers" }
+text{ key = "item.witch_hazel.1", value = "Witch Hazel Flowers" }
+text{ key = "item.mandrake_white.1", value = "White Mandrake Roots" }
+text{ key = "item.mandrake.1", value = "Mandrake Root" }
+text{ key = "item.geode.1", value = "Monsterous Geodes" }
+text{ key = "item.monster_bones.1", value = "Monster Bones" }
+text{ key = "item.monster_eye.1", value = "Monster Eye" }
+text{ key = "item.monster_guts.1", value = "Eyes of Monstrosity" }
+text{ key = "item.monster_heart.1", value = "Abyssal Hearts" }
 text{ key = "item.whisky_for_juglan.1", value = "Whisky" }
 text{ key = "item.iron_pinecone.1", value = "Iron Pinecone" }
 text{ key = "item.aster_note.1", value = "Threatening Note" }

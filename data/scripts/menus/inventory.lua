@@ -5,35 +5,35 @@ multi_events:enable(inventory)
 
 --All items that could ever show up in the inventory:
 local all_equipment_items = {
-    {item = "bow", name = "Bow", assignable = true,},
-    {item = "bombs_counter_2", name = "Bombs", assignable = true,},
-    {item = "barrier", name = "Devana's Barrier", assignable = true,},
-    {item = "ball_and_chain", name = "Flail", assignable = true},
-    {item = "boomerang", name = "Boomerang", assignable = true,},
-    {item = "spear", name = "Bear Warriors' Spear", assignable = true,},
-    {item = "bow_warp", name = "Warpbolt Charm", assignable = true,},
-    {item = "bow_bombs", name = "Bomb Arrows", assignable = true,},
-    {item = "bow_fire", name = "Flame Arrows", assignable = true,},
-    {item = "iron_candle", name = "Salt Candles", assignable = true},
-    {item = "ether_bombs", name = "Ether Bombs", assignable = true},
-    {item = "homing_eye", name = "Seeker Eyes", assignable = true},
-    {item = "berries", name = "Berries", assignable = false,},
-    {item = "apples", name = "Apples", assignable = false,},
-    {item = "bread", name = "Burroak Bread", assignable = false,},
-    {item = "elixer", name = "Elixer Vitae", assignable = false,},
-    {item = "thunder_charm", name = "Seabird's Tear", assignable = true,},
-    {item = "leaf_tornado", name = "Amalenchier's Wrath", assignable = true,},
-    {item = "potion_magic_restoration", name = "Magic Restoring Potion", assignable = false,},
-    {item = "potion_stoneskin", name = "Stoneskin Potion", assignable = false,},
-    {item = "potion_burlyblade", name = "Burlyblade Potion", assignable = false,},
-    {item = "potion_fleetseed", name = "Fleetseed Potion", assignable = false,},
-    {item = "gust", name = "Zephyrine's Tempest", assignable = true,},
-    {item = "crystal_spark", name = "Ophira's Ember", assignable = true,},
---    {item = "cyclone_charm", name = "Cyclone Charm", assignable = true,},
---    {item = "unattainable_collectable", name = "", assignable = false},
---    {item = "unattainable_collectable", name = "", assignable = false},
---    {item = "unattainable_collectable", name = "", assignable = false},
---    {item = "unattainable_collectable", name = "", assignable = false},
+    {item = "bow", assignable = true,},
+    {item = "bombs_counter_2", assignable = true,},
+    {item = "barrier", assignable = true,},
+    {item = "ball_and_chain", assignable = true},
+    {item = "boomerang", assignable = true,},
+    {item = "spear", assignable = true,},
+    {item = "bow_warp", assignable = true,},
+    {item = "bow_bombs", assignable = true,},
+    {item = "bow_fire", assignable = true,},
+    {item = "iron_candle", assignable = true},
+    {item = "ether_bombs", assignable = true},
+    {item = "homing_eye", assignable = true},
+    {item = "berries", assignable = false,},
+    {item = "apples", assignable = false,},
+    {item = "bread", assignable = false,},
+    {item = "elixer", assignable = false,},
+    {item = "thunder_charm", assignable = true,},
+    {item = "leaf_tornado", assignable = true,},
+    {item = "potion_magic_restoration", assignable = false,},
+    {item = "potion_stoneskin", assignable = false,},
+    {item = "potion_burlyblade", assignable = false,},
+    {item = "potion_fleetseed", assignable = false,},
+    {item = "gust", assignable = true,},
+    {item = "crystal_spark", assignable = true,},
+--    {item = "cyclone_charm", assignable = true,},
+--    {item = "unattainable_collectable", assignable = false},
+--    {item = "unattainable_collectable", assignable = false},
+--    {item = "unattainable_collectable", assignable = false},
+--    {item = "unattainable_collectable", assignable = false},
 }
 
 --All collectable items
@@ -212,10 +212,13 @@ end
 
 function inventory:update_description_panel()
     --update description panel
-    if self:get_item_at_current_index() and self.description_panel then
-        self.description_panel:set_text(all_equipment_items[cursor_index + 1].name)
-    elseif self.description_panel then
-        self.description_panel:set_text("")
+    if self.description_panel then
+        local item = self:get_item_at_current_index()
+        if item then
+          local item_desc = sol.language.get_string("item."..item:get_name()..".1") or ""
+          self.description_panel:set_text(item_desc)
+        else self.description_panel:set_text("")
+        end
     end
 end
 
