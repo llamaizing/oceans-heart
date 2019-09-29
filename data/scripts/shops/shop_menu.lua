@@ -156,7 +156,7 @@ end
 function inventory:update_description_panel()
     --update description panel
     local game = sol.main.get_game()
-    local item_info = all_items[cursor_index+1]
+    local item_info = all_items[cursor_index + 1]
     if self:get_item_at_current_index() and self.description_panel
     and game:get_value(item_info.availability_variable) then
         local desc_key = "item_desc.%s.%d" --key to lookup in strings.dat for item description
