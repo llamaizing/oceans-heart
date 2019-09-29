@@ -120,4 +120,5 @@ text{ key = "menu.quest_log.quest_log_update", value = "Quest Log Updated!" }
 text{ key = "menu.quest_log.quests_count", value = "$v1 of $v2 complete" }
 text{ key = "menu.quest_log.side_quests_tab", value = "Side\nQuests" }
 text{ key = "menu.quest_log.title", value = "Quest Log" }
+text{ key = "menu.quest_update.quest_updated", value = "Quest Log Updated!" }
 text{ key = "player_name", value = "Tilia" }
