@@ -1,78 +1,86 @@
 text{ key = "action.back", value = "Back" }
-text{ key = "menu.title.continue", value = "Continue" }
-text{ key = "menu.title.new_game", value = "New Game" }
-text{ key = "menu.title.quit", value = "Quit" }
-text{ key = "menu.title.confirm", value = "Confirm" }
-text{ key = "menu.title.cancel", value = "Cancel" }
-text{ key = "item.elixer.1", value = "Elixer Vitae" }
-text{ key = "item.potion_magic_restoration.1", value = "Potion of Magic Restoration"}
-text{ key = "item.potion_stoneskin.1", value = "Stoneskin Potion"}
-text{ key = "item.potion_burlyblade.1", value = "Burlyblade Potion"}
-text{ key = "item.potion_fleetseed.1", value = "Fleetseed Potion"}
-text{ key = "item.ether_bombs.1", value = "Ether Bombs"}
-text{ key = "item.iron_candle.1", value = "Salt Candles"}
-text{ key = "item.homing_eye.1", value = "Seeker Eyes"}
-text{ key = "item.bow.1", value = "Bow" }
-text{ key = "item.bombs_counter_2.1", value = "Bombs" }
-text{ key = "item.barrier.1", value = "Devana's Barrier" }
+text{ key = "item.apples.1", value = "Apples" }
+text{ key = "item.armor_tools.1", value = "Armorer's Tool Set" }
+text{ key = "item.aster_note.1", value = "Threatening Note" }
 text{ key = "item.ball_and_chain.1", value = "Flail" }
+text{ key = "item.barrier.1", value = "Devana's Barrier" }
+text{ key = "item.berries.1", value = "Berries" }
+text{ key = "item.bomb_arrow_ticket.1", value = "Bomb Shop Ticket" }
+text{ key = "item.bombs_counter_2.1", value = "Bombs" }
 text{ key = "item.boomerang.1", value = "Boomerang" }
-text{ key = "item.spear.1", value = "Bear Warriors' Spear" }
-text{ key = "item.bow_warp.1", value = "Warpbolt Charm" }
+text{ key = "item.bow.1", value = "Bow" }
 text{ key = "item.bow_bombs.1", value = "Bomb Arrows" }
 text{ key = "item.bow_fire.1", value = "Flame Arrows" }
-text{ key = "item.berries.1", value = "Berries" }
-text{ key = "item.apples.1", value = "Apples" }
+text{ key = "item.bow_warp.1", value = "Warpbolt Charm" }
 text{ key = "item.bread.1", value = "Burroak Bread" }
-text{ key = "item.thunder_charm.1", value = "Seabird's Tear" }
-text{ key = "item.leaf_tornado.1", value = "Amalenchier's Wrath" }
-text{ key = "item.gust.1", value = "Zephyrine's Tempest" }
-text{ key = "item.crystal_spark.1", value = "Ophira's Ember" }
-text{ key = "item.cyclone_charm.1", value = "Cyclone Charm" }
-text{ key = "item.coral_ore.1", value = "Coral Ore" }
 text{ key = "item.burdock.1", value = "Burdock Roots" }
 text{ key = "item.chamomile.1", value = "Chamomile Flowers" }
+text{ key = "item.charts.1", value = "Klepton's Charts" }
+text{ key = "item.contract.1", value = "Exploitative Contract" }
+text{ key = "item.coral_ore.1", value = "Coral Ore" }
+text{ key = "item.crystal_spark.1", value = "Ophira's Ember" }
+text{ key = "item.cyclone_charm.1", value = "Cyclone Charm" }
+text{ key = "item.elixer.1", value = "Elixer Vitae" }
+text{ key = "item.ether_bombs.1", value = "Ether Bombs" }
 text{ key = "item.firethorn_berries.1", value = "Firethorn Berries" }
+text{ key = "item.geode.1", value = "Monsterous Geodes" }
 text{ key = "item.ghost_orchid.1", value = "Ghost Orchids" }
+text{ key = "item.gust.1", value = "Zephyrine's Tempest" }
+text{ key = "item.hideout_chart.1", value = "Pirate Council Hideout Chart" }
+text{ key = "item.homing_eye.1", value = "Seeker Eyes" }
+text{ key = "item.honeycomb.1", value = "Hornet Honeycomb" }
+text{ key = "item.iron_candle.1", value = "Salt Candles" }
+text{ key = "item.iron_pinecone.1", value = "Iron Pinecone" }
+text{ key = "item.key_juneberry_inn.1", value = "Key to Another Inn?" }
+text{ key = "item.key_juniper_grove.1", value = "Juniper Grove Entrance Key" }
+text{ key = "item.key_juniper_grove_2.1", value = "Juniper Grove Inner Gate Key" }
+text{ key = "item.key_kingsdown.1", value = "Mallow's Key" }
+text{ key = "item.key_mead_safehouse.1", value = "Sticky Honey Key" }
+text{ key = "item.key_mushroom_spot.1", value = "Key to Mushroom Picking Spot" }
+text{ key = "item.key_poplar_shack.1", value = "Mossy Poplar Forest Key" }
+text{ key = "item.key_sinking_lighthouse.1", value = "Seaglint Ruins Key" }
+text{ key = "item.key_thrush_fort.1", value = "Thrush Fort Key" }
 text{ key = "item.kingscrown.1", value = "Kingscrown Blooms" }
 text{ key = "item.lavendar.1", value = "Lavendar Flowers" }
-text{ key = "item.witch_hazel.1", value = "Witch Hazel Flowers" }
-text{ key = "item.mandrake_white.1", value = "White Mandrake Roots" }
+text{ key = "item.leaf_tornado.1", value = "Amalenchier's Wrath" }
 text{ key = "item.mandrake.1", value = "Mandrake Root" }
-text{ key = "item.geode.1", value = "Monsterous Geodes" }
+text{ key = "item.mandrake_white.1", value = "White Mandrake Roots" }
+text{ key = "item.manna_oak_letter.1", value = "Manna Oak Letter" }
+text{ key = "item.manna_oak_twig.1", value = "Manna Oak Twig" }
+text{ key = "item.monkshood.1", value = "Monkshood Petals" }
 text{ key = "item.monster_bones.1", value = "Monster Bones" }
 text{ key = "item.monster_eye.1", value = "Monster Eye" }
 text{ key = "item.monster_guts.1", value = "Eyes of Monstrosity" }
 text{ key = "item.monster_heart.1", value = "Abyssal Hearts" }
-text{ key = "item.whisky_for_juglan.1", value = "Whisky" }
-text{ key = "item.iron_pinecone.1", value = "Iron Pinecone" }
-text{ key = "item.aster_note.1", value = "Threatening Note" }
-text{ key = "item.contract.1", value = "Exploitative Contract" }
-text{ key = "item.oranges_shipment.1", value = "Box of Oranges" }
-text{ key = "item.prize_money.1", value = "Prize Money (200 Crowns)" }
-text{ key = "item.key_thrush_fort.1", value = "Thrush Fort Key" }
-text{ key = "item.charts.1", value = "Klepton's Charts" }
-text{ key = "item.key_kingsdown.1", value = "Mallow's Key" }
-text{ key = "item.key_juniper_grove.1", value = "Juniper Grove Entrance Key" }
-text{ key = "item.key_juniper_grove_2.1", value = "Juniper Grove Inner Gate Key" }
-text{ key = "item.key_mushroom_spot.1", value = "Key to Mushroom Picking Spot" }
-text{ key = "item.key_mead_safehouse.1", value = "Sticky Honey Key" }
-text{ key = "item.key_juneberry_inn.1", value = "Key to Another Inn?" }
-text{ key = "item.key_poplar_shack.1", value = "Mossy Poplar Forest Key" }
-text{ key = "item.key_sinking_lighthouse.1", value = "Seaglint Ruins Key" }
-text{ key = "item.stone_beak.1", value = "A Beak-shaped Stone?" }
-text{ key = "item.sleeping_draught.1", value = "Sleeping Draught" }
-text{ key = "item.hideout_chart.1", value = "Pirate Council Hideout Chart" }
-text{ key = "item.monkshood.1", value = "Monkshood Petals" }
-text{ key = "item.honeycomb.1", value = "Hornet Honeycomb" }
-text{ key = "item.bomb_arrow_ticket.1", value = "Bomb Shop Ticket" }
-text{ key = "item.bow_bombs.1", value = "Bomb Arrows" }
-text{ key = "item.gust.1", value = "Zephyrine's Tempest" }
-text{ key = "item.armor_tools.1", value = "Armorer's Tool Set" }
-text{ key = "item.manna_oak_twig.1", value = "Manna Oak Twig" }
-text{ key = "item.manna_oak_letter.1", value = "Manna Oak Letter" }
-text{ key = "item.sword_of_the_sea_king.1", value = "Sword of the Sea King" }
 text{ key = "item.oceansheart_chart.1", value = "Isle of Storms Chart" }
+text{ key = "item.oranges_shipment.1", value = "Box of Oranges" }
+text{ key = "item.potion_burlyblade.1", value = "Burlyblade Potion" }
+text{ key = "item.potion_fleetseed.1", value = "Fleetseed Potion" }
+text{ key = "item.potion_magic_restoration.1", value = "Potion of Magic Restoration" }
+text{ key = "item.potion_stoneskin.1", value = "Stoneskin Potion" }
+text{ key = "item.prize_money.1", value = "Prize Money (200 Crowns)" }
+text{ key = "item.sleeping_draught.1", value = "Sleeping Draught" }
+text{ key = "item.spear.1", value = "Bear Warriors' Spear" }
+text{ key = "item.stone_beak.1", value = "A Beak-shaped Stone?" }
+text{ key = "item.sword_of_the_sea_king.1", value = "Sword of the Sea King" }
+text{ key = "item.thunder_charm.1", value = "Seabird's Tear" }
+text{ key = "item.whisky_for_juglan.1", value = "Whisky" }
+text{ key = "item.witch_hazel.1", value = "Witch Hazel Flowers" }
+text{ key = "item_desc.apples.2", value = "Apples (set of 3) - each heals two hearts" }
+text{ key = "item_desc.apples.4", value = "Apples (set of 10) - each heals two hearts" }
+text{ key = "item_desc.arrow.3", value = "Arrows (qty: 5)" }
+text{ key = "item_desc.arrow.5", value = "Arrows (qty: 20)" }
+text{ key = "item_desc.berries.3", value = "Berries (5 pack) - each heals half a heart" }
+text{ key = "item_desc.berries.4", value = "Berries (20 pack) - each heals half a heart" }
+text{ key = "item_desc.bomb.3", value = "Bombs (qty: 5)" }
+text{ key = "item_desc.bomb.4", value = "Bombs (qty: 10)" }
+text{ key = "item_desc.bread.2", value = "Burroak Bread (5 loaves)- each heals five hearts" }
+text{ key = "item_desc.bread.3", value = "Burroak Bread (10 loaves)- each heals five hearts" }
+text{ key = "item_desc.elixer.1", value = "Elixer - Recover all health, or revive you after KO" }
+text{ key = "item_desc.potion_burlyblade.1", value = "Burlyblade Potion - deal 1.5 damage for 4 minutes" }
+text{ key = "item_desc.potion_magic_restoration.1", value = "Magic Potion - Restores your magic power" }
+text{ key = "item_desc.potion_stoneskin.1", value = "Stoneskin Potion - Take half damage for 4 minutes" }
+text{ key = "item_desc.unattainable_collectable.1", value = "" }
 text{ key = "key1.false", value = "sub 1 is bad" }
 text{ key = "key1.true", value = "sub 1 is good" }
 text{ key = "key2.false", value = "I think so" }
@@ -91,6 +99,7 @@ text{ key = "location.goatshead_harbor", value = "Goatshead Harbor" }
 text{ key = "location.goatshead_island", value = "Goatshead Island" }
 text{ key = "location.gull_rock", value = "Gull Rock" }
 text{ key = "location.hourglass_fort", value = "Hourglass Fort" }
+text{ key = "location.isle_of_storms", value = "Isle of Storms" }
 text{ key = "location.ivystump", value = "Ivystump Village" }
 text{ key = "location.kingsdown_isle", value = "Kingsdown Isle" }
 text{ key = "location.lighthouse", value = "Crumbling Lighthouse" }
@@ -116,7 +125,6 @@ text{ key = "location.veilwood", value = "The Veilwood" }
 text{ key = "location.west_coast", value = "West Oak" }
 text{ key = "location.yarrowmouth", value = "Yarrowmouth" }
 text{ key = "location.yarrowmouth_village", value = "Yarrowmouth" }
-text{ key = "location.isle_of_storms", value = "Isle of Storms" }
 text{ key = "menu.quest_log.back_prompt", value = "D Back" }
 text{ key = "menu.quest_log.main_quests_tab", value = "Main\nQuests" }
 text{ key = "menu.quest_log.no_main_quests", value = "You have no main quests" }
@@ -126,4 +134,10 @@ text{ key = "menu.quest_log.quests_count", value = "$v1 of $v2 complete" }
 text{ key = "menu.quest_log.side_quests_tab", value = "Side\nQuests" }
 text{ key = "menu.quest_log.title", value = "Quest Log" }
 text{ key = "menu.quest_update.quest_updated", value = "Quest Log Updated!" }
+text{ key = "menu.shop.item_price", value = "Price: %2d crowns" }
+text{ key = "menu.title.cancel", value = "Cancel" }
+text{ key = "menu.title.confirm", value = "Confirm" }
+text{ key = "menu.title.continue", value = "Continue" }
+text{ key = "menu.title.new_game", value = "New Game" }
+text{ key = "menu.title.quit", value = "Quit" }
 text{ key = "player_name", value = "Tilia" }

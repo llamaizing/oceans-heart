@@ -5,50 +5,36 @@ multi_events:enable(inventory)
 
 --All items that could ever show up in the shop:
 local all_items = {
-    {item = "berries", name = "Berries", price = 5, variant = 3,
-      availability_variable = "available_in_shop_berries",
-      description = "Berries (5 pack) - each heals half a heart"},
-    {item = "apples", name = "Apples", price = 12, variant = 2,
-      availability_variable = "available_in_shop_apples",
-      description = "Apples (set of 3) - each heals two hearts"},
-    {item = "bread", name = "Burroak Bread", price = 45, variant = 2,
-      availability_variable = "available_in_shop_bread",
-      description = "Burroak Bread (5 loaves)- each heals five hearts"},
-    {item = "elixer", name = "Elixer Vitae", price = 70, variant = 1,
-      availability_variable = "available_in_shop_elixer",
-      description = "Elixer - Recover all health, or revive you after KO"},
-    {item = "potion_magic_restoration", name = "Magic Restoring Portion", price = 50, variant = 1,
-      availability_variable = "available_in_shop_magic_restoring_potion",
-      description = "Magic Potion - Restores your magic power"},
-    {item = "unattainable_collectable", name="",price=0,variant=1,availability_variable="nil",description=""},
-    {item = "arrow", name = "Arrows", price = 10, variant = 3,
-      availability_variable = "available_in_shop_arrows",
-      description = "Arrows (qty: 5)"},
-    {item = "bomb", name = "Bombs", price = 30, variant = 3,
-      availability_variable = "available_in_shop_bombs",
-      description = "Bombs (qty: 5)"},
-    {item = "berries", name = "Berries", price = 20, variant = 4,
-      availability_variable = "available_in_shop_berries",
-      description = "Berries (20 pack) - each heals half a heart"},
-    {item = "apples", name = "Apples", price = 40, variant = 4,
-      availability_variable = "available_in_shop_apples",
-      description = "Apples (set of 10) - each heals two hearts"},
-    {item = "bread", name = "Burroak Bread", price = 90, variant = 3,
-      availability_variable = "available_in_shop_bread",
-      description = "Burroak Bread (10 loaves)- each heals five hearts"},
-    {item = "potion_stoneskin", name = "Stoneskin Potion", price = 80, variant = 1,
-      availability_variable = "available_in_shop_stoneskin_potion",
-      description = "Stoneskin Potion - Take half damage for 4 minutes",},
-    {item = "potion_burlyblade", name = "Burlyblade Potion", price = 80, variant = 1,
-      availability_variable = "available_in_shop_burlyblade_potion",
-      description = "Burlyblade Potion - deal 1.5 damage for 4 minutes",},
-    {item = "unattainable_collectable", name="",price=0,variant=1,availability_variable="nil",description=""},
-    {item = "arrow", name = "Arrows", price = 40, variant = 5,
-      availability_variable = "available_in_shop_arrows",
-      description = "Arrows (qty: 20)"},
-    {item = "bomb", name = "Bombs", price = 60, variant = 4,
-      availability_variable = "available_in_shop_bombs",
-      description = "Bombs (qty: 10)"},
+    {item = "berries", price = 5, variant = 3,
+      availability_variable = "available_in_shop_berries"},
+    {item = "apples", price = 12, variant = 2,
+      availability_variable = "available_in_shop_apples"},
+    {item = "bread", price = 45, variant = 2,
+      availability_variable = "available_in_shop_bread"},
+    {item = "elixer", price = 70, variant = 1,
+      availability_variable = "available_in_shop_elixer"},
+    {item = "potion_magic_restoration", price = 50, variant = 1,
+      availability_variable = "available_in_shop_magic_restoring_potion"},
+    {item = "unattainable_collectable",price=0,variant=1,availability_variable="nil"},
+    {item = "arrow", price = 10, variant = 3,
+      availability_variable = "available_in_shop_arrows"},
+    {item = "bomb", price = 30, variant = 3,
+      availability_variable = "available_in_shop_bombs"},
+    {item = "berries", price = 20, variant = 4,
+      availability_variable = "available_in_shop_berries"},
+    {item = "apples", price = 40, variant = 4,
+      availability_variable = "available_in_shop_apples"},
+    {item = "bread", price = 90, variant = 3,
+      availability_variable = "available_in_shop_bread"},
+    {item = "potion_stoneskin", price = 80, variant = 1,
+      availability_variable = "available_in_shop_stoneskin_potion"},
+    {item = "potion_burlyblade", price = 80, variant = 1,
+      availability_variable = "available_in_shop_burlyblade_potion"},
+    {item = "unattainable_collectable",price=0,variant=1,availability_variable="nil"},
+    {item = "arrow", price = 40, variant = 5,
+      availability_variable = "available_in_shop_arrows"},
+    {item = "bomb", price = 60, variant = 4,
+      availability_variable = "available_in_shop_bombs"},
 }
 
 --constants:
@@ -65,13 +51,13 @@ local cursor_index
 --// Gets/sets the x,y position of the menu in pixels
 function inventory:get_xy() return self.x, self.y end
 function inventory:set_xy(x, y)
-	x = tonumber(x)
-	assert(x, "Bad argument #2 to 'set_xy' (number expected)")
-	y = tonumber(y)
-	assert(y, "Bad argument #3 to 'set_xy' (number expected)")
+    x = tonumber(x)
+    assert(x, "Bad argument #2 to 'set_xy' (number expected)")
+    y = tonumber(y)
+    assert(y, "Bad argument #3 to 'set_xy' (number expected)")
 
-	self.x = math.floor(x)
-	self.y = math.floor(y)
+    self.x = math.floor(x)
+    self.y = math.floor(y)
 end
 
 
@@ -170,10 +156,14 @@ end
 function inventory:update_description_panel()
     --update description panel
     local game = sol.main.get_game()
+    local item_info = all_items[cursor_index+1]
     if self:get_item_at_current_index() and self.description_panel
-    and game:get_value(all_items[cursor_index+1].availability_variable) then
-        self.description_panel:set_text(all_items[cursor_index + 1].description)
-        self.price_panel:set_text("Price: " .. all_items[cursor_index + 1].price .. " crowns")
+    and game:get_value(item_info.availability_variable) then
+        local desc_key = "item_desc.%s.%d" --key to lookup in strings.dat for item description
+        self.description_panel:set_text_key(desc_key:format(item_info.item, item_info.variant))
+        local price_string = sol.language.get_string("menu.shop.item_price")
+        assert(price_string, "Error: strings.dat entry 'menu.shop.item_price' not found")
+        self.price_panel:set_text(price_string:format(item_info.price))
     elseif self.description_panel then
         self.description_panel:set_text("")
         self.price_panel:set_text(" ")
@@ -214,7 +204,7 @@ function inventory:on_command_pressed(command)
               local current_item = all_items[cursor_index + 1]
               local current_amount
               local max_amount
-              if current_item.name == "Arrows" then
+              if current_item.item == "arrow" then
                 current_amount = game:get_item("bow"):get_amount()
                 max_amount = game:get_item("bow"):get_max_amount()
               else
