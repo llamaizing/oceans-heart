@@ -1,4 +1,9 @@
 text{ key = "action.back", value = "Back" }
+text{ key = "menu.title.continue", value = "Continue" }
+text{ key = "menu.title.new_game", value = "New Game" }
+text{ key = "menu.title.quit", value = "Quit" }
+text{ key = "menu.title.confirm", value = "Confirm" }
+text{ key = "menu.title.cancel", value = "Cancel" }
 text{ key = "item.elixer.1", value = "Elixer Vitae" }
 text{ key = "item.potion_magic_restoration.1", value = "Potion of Magic Restoration"}
 text{ key = "item.potion_stoneskin.1", value = "Stoneskin Potion"}
