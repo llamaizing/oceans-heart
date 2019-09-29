@@ -15434,6 +15434,16 @@ Blacksmith and Armorer
 }
 
 dialog{
+  id = "credits",
+  text = [[
+Created By:Max Mraz
+Additional Programming:Llamazing
+Special Thanks to:Alex Gleason
+The End
+]],
+}
+
+dialog{
   id = "demo_1.npcs.arrow_guy.1",
   text = [[
 Look, I'll help you out this time but if you
