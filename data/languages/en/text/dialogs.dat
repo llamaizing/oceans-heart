@@ -11045,8 +11045,8 @@ knows where she is.
 dialog{
   id = "_oakhaven.npcs.port.misc.1",
   text = [[
-You know, up those stairs and past the Port
-Office, I've seen some shady characters up
+You know, up those stairs and past the statue
+of Ove, I've seen some shady characters up
 to no good. They don't have a boat, so they're
 not pirates, but... burglars maybe?
 ]],
