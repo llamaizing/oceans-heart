@@ -38600,6 +38600,16 @@ sensor{
   height = 16,
 }
 
+teletransporter{
+  layer = 0,
+  x = 768,
+  y = 1408,
+  width = 32,
+  height = 16,
+  destination_map = "oakhaven/port",
+  destination = "from_oakhaven_city",
+}
+
 tile{
   layer = 1,
   x = 72,

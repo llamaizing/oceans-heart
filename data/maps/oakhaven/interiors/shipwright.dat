@@ -1619,8 +1619,8 @@ teletransporter{
   y = 200,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/eastoak",
-  destination = "from_warehouse",
+  destination_map = "oakhaven/port",
+  destination = "from_shipwright",
 }
 
 dynamic_tile{

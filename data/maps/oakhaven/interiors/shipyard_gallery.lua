@@ -12,8 +12,11 @@ local game = map:get_game()
 
 
 function map:on_started()
-
-
+  if game:get_value"quest_bomb_arrows" >= 3 then
+    for enemy in map:get_entities_by_type"enemy" do
+      enemy:set_enabled(false)
+    end
+  end
 end
 
 for enemy in map:get_entities("bomb_pirate") do

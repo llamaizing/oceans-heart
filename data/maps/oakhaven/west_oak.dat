@@ -22241,7 +22241,7 @@ custom_entity{
 }
 
 destination{
-  name = "from_port",
+  name = "from_port_south",
   layer = 0,
   x = 600,
   y = 1293,
@@ -22256,6 +22256,24 @@ teletransporter{
   height = 64,
   destination_map = "oakhaven/port",
   destination = "from_gull_rock",
+}
+
+destination{
+  name = "from_port_north",
+  layer = 0,
+  x = 600,
+  y = 693,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 608,
+  y = 672,
+  width = 16,
+  height = 32,
+  destination_map = "oakhaven/port",
+  destination = "from_westoak",
 }
 
 tile{

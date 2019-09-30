@@ -34025,24 +34025,6 @@ npc{
   sprite = "npc/guards/big_npc_guard_goatshead",
 }
 
-destination{
-  name = "from_warehouse",
-  layer = 0,
-  x = 456,
-  y = 861,
-  direction = 3,
-}
-
-teletransporter{
-  layer = 0,
-  x = 448,
-  y = 832,
-  width = 16,
-  height = 16,
-  destination_map = "oakhaven/interiors/shipwright",
-  destination = "from_outside",
-}
-
 destructible{
   layer = 0,
   x = 1544,

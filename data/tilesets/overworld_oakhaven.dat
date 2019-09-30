@@ -16960,6 +16960,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2431",
+  ground = "ladder",
+  default_layer = 0,
+  x = 480,
+  y = 8,
+  width = 32,
+  height = 8,
+}
+
+tile_pattern{
+  id = "2431_2",
+  ground = "ladder",
+  default_layer = 0,
+  x = 480,
+  y = 0,
+  width = 32,
+  height = 8,
+}
+
+tile_pattern{
   id = "2432",
   ground = "wall_top_left",
   default_layer = 0,
@@ -17784,6 +17804,50 @@ tile_pattern{
   y = 1216,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "2504",
+  ground = "ladder",
+  default_layer = 0,
+  x = 608,
+  y = 1512,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "2505",
+  ground = "ladder",
+  default_layer = 0,
+  x = 608,
+  y = 1528,
+  width = 16,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2506",
+  ground = "empty",
+  default_layer = 0,
+  x = 608,
+  y = 1504,
+  width = 16,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2507",
+  ground = "ladder",
+  default_layer = 0,
+  x = 592,
+  y = 1504,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{

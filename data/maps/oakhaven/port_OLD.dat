@@ -31961,7 +31961,7 @@ tile{
 tile{
   layer = 0,
   x = 160,
-  y = 640,
+  y = 656,
   width = 16,
   height = 16,
   pattern = "1571",
@@ -33492,7 +33492,7 @@ sensor{
 npc{
   layer = 0,
   x = 168,
-  y = 653,
+  y = 669,
   direction = 3,
   subtype = 1,
   behavior = "dialog#_oakhaven.signs.port_office",

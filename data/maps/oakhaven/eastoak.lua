@@ -22,11 +22,11 @@ map:register_event("on_started", function()
     vice_captain:set_enabled(true) wine:set_enabled(true)
   end
 
---moved to westoak in new map
+--moved to westoak in new overworld
   if game:get_value("quest_bomb_shop") ~= nil and game:get_value("quest_bomb_shop") > 1 then
     bomb_shop_intern:set_enabled(false)
   end
-
+--moved to port in new overworld
   if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") >= 2 then
     gallery_door:set_enabled(false)
     gallery_door_npc:set_enabled(false)
@@ -65,6 +65,7 @@ function morus:on_interaction()
   end)
 end
 
+--moved to port
 function gallery_door_npc:on_interaction()
   if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 1 then
     game:start_dialog("_oakhaven.npcs.shipyard.gallery_door2", function()
@@ -77,6 +78,7 @@ function gallery_door_npc:on_interaction()
   end
 end
 
+--moved to westoak
 function bomb_shop_intern:on_interaction()
   local quest_value = game:get_value("quest_bomb_shop")
   if quest_value == nil then
