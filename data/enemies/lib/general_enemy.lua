@@ -736,7 +736,11 @@ function enemy:airstrike()
   enemy:stop_movement()
   local sprite = enemy:get_sprite()
   if properties.airstrike_sound then sol.audio.play_sound(properties.airstrike_sound) end
-  sprite:set_animation("airstrike", function()
+  sprite:set_animation("airstrike")
+  local frames = sprite:get_num_frames()
+  local delay = sprite:get_frame_delay()
+  local animation_time = frames * delay
+  sol.timer.start(map, animation_time, function()
     sol.timer.start(map, properties.airstrike_lag, function()
       local map = enemy:get_map()
       local x,y,l = map:get_hero():get_position()
