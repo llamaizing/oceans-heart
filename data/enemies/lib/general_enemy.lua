@@ -735,15 +735,16 @@ end
 function enemy:airstrike()
   enemy:stop_movement()
   local sprite = enemy:get_sprite()
-  sol.audio.play_sound(properties.airstrike_sound)
+  if properties.airstrike_sound then sol.audio.play_sound(properties.airstrike_sound) end
   sprite:set_animation("airstrike", function()
     sol.timer.start(map, properties.airstrike_lag, function()
       local map = enemy:get_map()
       local x,y,l = map:get_hero():get_position()
-      map:create_enemy{
+      local strike_enemy = map:create_enemy{
         x=x,y=y,layer=l,direction=0,
         breed=properties.airstrike_breed or "misc/falling_rock"
       }
+      if properties.airstrike_damage then strike_enemy:set_damage(properties.airstrike_damage) end
     end)
     enemy:wrap_up_attack()
     enemy:go_random()

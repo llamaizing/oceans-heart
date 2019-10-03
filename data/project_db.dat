@@ -356,6 +356,7 @@ sprite{ id = "enemies/misc/fire_blast", description = "Fire Blast" }
 sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small, red" }
 sprite{ id = "enemies/misc/gargoyle_cat", description = "Gargoyle Cat" }
 sprite{ id = "enemies/misc/jelly_needle", description = "Jelly Needle" }
+sprite{ id = "enemies/misc/lightning_strike", description = "Lightning Strike" }
 sprite{ id = "enemies/misc/lionhead" }
 sprite{ id = "enemies/misc/moss_bop_grass", description = "Moss Bop Grass" }
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
@@ -610,6 +611,7 @@ sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/leaf_blowing", description = "Leaf - Blowing" }
 sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
 sprite{ id = "entities/leaf_whirl_green", description = "Leaf Whirl- Green" }
+sprite{ id = "entities/lightning_2", description = "Lightning-2" }
 sprite{ id = "entities/lightning_bolt_attack", description = "Lightning Bolt Attack" }
 sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/moving_platform", description = "Moving Platform" }
@@ -1623,6 +1625,7 @@ enemy{ id = "misc/fire_blast", description = "Fire Blast" }
 enemy{ id = "misc/fireball_red_small", description = "Fireball - red, small" }
 enemy{ id = "misc/gargoyle_cat", description = "Gargoyle Cat" }
 enemy{ id = "misc/jelly_needle", description = "Jelly Needle" }
+enemy{ id = "misc/lightning_strike" }
 enemy{ id = "misc/lionhead", description = "Lionhead" }
 enemy{ id = "misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 enemy{ id = "misc/octorok_stone", description = "Small Stone" }

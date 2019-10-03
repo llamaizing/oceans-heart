@@ -17,6 +17,13 @@ local properties = {
   wind_up_time = 1000,
 
   --Attacks--
+  has_airstrike_attack = true,
+  airstrike_breed = "misc/lightning_strike",
+  airstrike_lag = 300,
+  airstrike_attack_cooldown = 2000,
+  airstrike_attack_distance = 139,
+  airstrike_damage = 30,
+--[[
   has_radial_attack = true,
   radial_attack_projectile_breed = "misc/jelly_needle",
   radial_attack_cooldown = 4500,
@@ -24,6 +31,7 @@ local properties = {
   radial_attack_num_projectiles = 8,
   radial_attack_stop_while_charging = true,
 --  radial_attack_projectiles_go_through_walls = true,
+--]]
 
 }
 
