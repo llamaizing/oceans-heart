@@ -7880,9 +7880,45 @@ carring a sack with a dog in it?
 TOWN GUARD:
 Now that you mention it, that guy was kind
 of suspicious. Yeah, he ran into the
-warehouse up those stairs.
+warehouse around the corner.
 TILIA:
 Thanks. Keep up the good work.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.port.3",
+  text = [[
+TOWN GUARD:
+Good day. Welcome to Oakhaven, ancient
+city of moss and knowledge. That's not
+what anybody calls it, I make those up
+TOWN GUARD:
+for anybody who stops to talk to me on
+their way in. Anyway, have a safe trip
+through the city.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.port.4",
+  text = [[
+TOWN GUARD:
+Good day. Headed to the port?
+
+
+TILIA:
+That guy who just ran past, he's a big
+wanted criminal. Looked like he was
+headed toward the port?
+TOWN GUARD:
+Oh! You know he did look like he had a
+sack with a living creature in it, but
+you know, sometimes that's just commerce.
+TOWN GUARD:
+Yeah, he looked to be headed to the port.
+Check with the guard by the archway down
+there!
 ]],
 }
 
@@ -11053,6 +11089,16 @@ not pirates, but... burglars maybe?
 }
 
 dialog{
+  id = "_oakhaven.npcs.port.misc.2",
+  text = [[
+There's always more fish in the sea. But
+what, you wanna go to the trouble of gettin'
+them out? No way! Buy my fish, pre-removed 
+rom the sea for your eating convenience.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.port.office.benny1",
   text = [[
 BENNY:
@@ -11318,6 +11364,14 @@ dialog{
   text = [[
 Good day, hun. Have a look around, check
 out anything that catches your eye.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.shops.general_store.2",
+  text = [[
+Welcome to Oakhaven Portside Shop. You want
+to buy some portside groceries, maybe?
 ]],
 }
 

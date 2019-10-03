@@ -1150,7 +1150,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "oakhaven/port",
-  destination = "from_port_shop",
+  destination = "from_port_office",
 }
 
 npc{

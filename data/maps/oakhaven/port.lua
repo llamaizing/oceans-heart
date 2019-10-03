@@ -122,6 +122,23 @@ function see_litton_sensor:on_activated()
   end
 end
 
+--Guard who tells you about Litton
+function guard_1:on_interaction()
+  if game:get_value("quest_mayors_dog") == 7 then
+    game:start_dialog"_oakhaven.npcs.guards.port.2"
+  else
+    game:start_dialog"_oakhaven.npcs.guards.port.1"
+  end
+end
+
+function guard_3:on_interaction()
+  if game:get_value("quest_mayors_dog") == 7 then
+    game:start_dialog"_oakhaven.npcs.guards.port.4"
+  else
+    game:start_dialog"_oakhaven.npcs.guards.port.3"
+  end
+end
+
 
 --Gallery for Bomb Arrows Quest
 function gallery_door_npc:on_interaction()
@@ -134,4 +151,13 @@ function gallery_door_npc:on_interaction()
   else
     game:start_dialog("_oakhaven.npcs.shipyard.gallery_door1")
   end
+end
+
+--Buyer Guy
+function buyer_guy:on_interaction()
+  game:start_dialog("_generic_dialogs.buyer_guy.1", function()
+    local sell_menu = require("scripts/shops/sell_menu")
+    sell_menu:initialize(game)
+    sol.menu.start(map, sell_menu)
+  end)
 end

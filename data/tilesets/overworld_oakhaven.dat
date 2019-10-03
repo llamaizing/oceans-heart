@@ -16809,7 +16809,7 @@ tile_pattern{
 tile_pattern{
   id = "2418",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 528,
   y = 1056,
   width = 24,
@@ -16820,7 +16820,7 @@ tile_pattern{
 tile_pattern{
   id = "2419",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 552,
   y = 1056,
   width = 24,
@@ -17848,6 +17848,16 @@ tile_pattern{
   width = 16,
   height = 16,
   repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "2508",
+  ground = "wall",
+  default_layer = 1,
+  x = 560,
+  y = 992,
+  width = 16,
+  height = 8,
 }
 
 tile_pattern{

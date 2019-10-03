@@ -730,7 +730,8 @@ chest{
   layer = 0,
   x = 184,
   y = 141,
-  treasure_name = "coral_ore",
+  treasure_name = "iron_candle_pickable",
+  treasure_variant = 3,
   treasure_savegame_variable = "oakhaven_port_bush_hole_2_treasure_chest",
   sprite = "entities/chest",
 }
@@ -741,7 +742,7 @@ teletransporter{
   y = 40,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/port_OLD",
+  destination_map = "oakhaven/port",
   destination = "from_port_bush_hole_2",
 }
 

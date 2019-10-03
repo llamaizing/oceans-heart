@@ -36649,6 +36649,42 @@ tile{
   pattern = "917",
 }
 
+tile{
+  layer = 0,
+  x = 360,
+  y = 1472,
+  width = 8,
+  height = 16,
+  pattern = "1460",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 1472,
+  width = 8,
+  height = 16,
+  pattern = "1460",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 1472,
+  width = 8,
+  height = 16,
+  pattern = "913",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 1472,
+  width = 8,
+  height = 16,
+  pattern = "912",
+}
+
 teletransporter{
   layer = 0,
   x = 896,
@@ -38122,7 +38158,7 @@ npc{
   y = 333,
   direction = 3,
   subtype = 1,
-  sprite = "npc/guards/oakhaven_2",
+  sprite = "npc/guards/oakhaven_1",
   behavior = "dialog#_oakhaven.npcs.guards.generic.palace_entrace",
 }
 
@@ -38522,7 +38558,7 @@ npc{
   y = 757,
   direction = 3,
   subtype = 1,
-  sprite = "npc/guards/oakhaven_1",
+  sprite = "npc/guards/oakhaven_4",
   behavior = "dialog#_oakhaven.npcs.guards.generic.library_entrance",
 }
 
@@ -45922,6 +45958,24 @@ tile{
   width = 24,
   height = 16,
   pattern = "918",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 1448,
+  width = 48,
+  height = 24,
+  pattern = "914",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 1472,
+  width = 32,
+  height = 16,
+  pattern = "1460",
 }
 
 npc{
