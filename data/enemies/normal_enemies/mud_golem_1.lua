@@ -10,7 +10,7 @@ local properties = {
   damage = 10,
   normal_speed = 20,
   faster_speed = 35,
-  detection_distance = 96,
+  detection_distance = 126,
   must_be_aligned_to_attack = false,
   push_hero_on_sword = false,
   pushed_when_hurt = false,
@@ -22,7 +22,7 @@ local properties = {
   airstrike_lag = 1,
   airstrike_sound="jump",
   airstrike_attack_cooldown = 2000,
-  airstrike_attack_distance = 80,
+  airstrike_attack_distance = 125,
 
 }
 
