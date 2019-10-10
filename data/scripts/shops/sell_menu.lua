@@ -5,22 +5,22 @@ multi_events:enable(inventory)
 
 --All items that you could sell:
 local all_items = {
-    {item = "burdock", name = "Burdock Root", price = 5},
-    {item = "chamomile", name = "Chamomile", price = 5},
-    {item = "firethorn_berries", name = "Firethorn", price = 5},
-    {item = "forsythia", name = "Forsythia Petals", price = 5},
-    {item = "ghost_orchid", name = "Ghost Orchid", price = 35},
-    {item = "kingscrown", name = "Kingscrown", price = 25},
-    {item = "lavendar", name = "Lavendar", price = 5},
-    {item = "witch_hazel", name = "Witch Hazel", price = 10},
-    {item = "mandrake", name = "Mandrake Root", price = 15},
-    {item = "mandrake_white", name = "White Mandrake Root", price = 40},
-    {item = "geode", name = "Monster Geode", price = 10},
-    {item = "monster_bones", name = "Undead Bones", price = 10},
-    {item = "monster_guts", name = "Monster Guts", price = 5},
-    {item = "monster_eye", name = "Evil Eye", price = 35},
-    {item = "monster_horn", name = "Beast Horn", price = 30},
-    {item = "monster_heart", name = "Abyssal Heart", price = 100},
+    {item = "burdock", price = 5},
+    {item = "chamomile", price = 5},
+    {item = "firethorn_berries", price = 5},
+    {item = "forsythia", price = 5},
+    {item = "ghost_orchid", price = 35},
+    {item = "kingscrown", price = 25},
+    {item = "lavendar", price = 5},
+    {item = "witch_hazel", price = 10},
+    {item = "mandrake", price = 15},
+    {item = "mandrake_white", price = 40},
+    {item = "geode", price = 10},
+    {item = "monster_bones", price = 10},
+    {item = "monster_guts", price = 5},
+    {item = "monster_eye", price = 35},
+    {item = "monster_horn", price = 30},
+    {item = "monster_heart", price = 100},
 }
 
 --constants:
@@ -37,13 +37,13 @@ local cursor_index
 --// Gets/sets the x,y position of the menu in pixels
 function inventory:get_xy() return self.x, self.y end
 function inventory:set_xy(x, y)
-	x = tonumber(x)
-	assert(x, "Bad argument #2 to 'set_xy' (number expected)")
-	y = tonumber(y)
-	assert(y, "Bad argument #3 to 'set_xy' (number expected)")
+    x = tonumber(x)
+    assert(x, "Bad argument #2 to 'set_xy' (number expected)")
+    y = tonumber(y)
+    assert(y, "Bad argument #3 to 'set_xy' (number expected)")
 
-	self.x = math.floor(x)
-	self.y = math.floor(y)
+    self.x = math.floor(x)
+    self.y = math.floor(y)
 end
 
 
@@ -140,10 +140,13 @@ end
 function inventory:update_description_panel()
     --update description panel
     local game = sol.main.get_game()
+    local item_info = all_items[cursor_index + 1]
     if self:get_item_at_current_index() and self.description_panel
-    and game:has_item(all_items[cursor_index+1].item) then
-        self.description_panel:set_text(all_items[cursor_index + 1].name)
-        self.price_panel:set_text(all_items[cursor_index + 1].price .. " crowns")
+    and game:has_item(item_info.item) then
+        self.description_panel:set_text_key("item."..item_info.item..".1")
+        local price_string = sol.language.get_string("menu.sell.item_price")
+        assert(price_string, "Error: strings.dat entry 'menu.sell.item_price' not found")
+        self.price_panel:set_text(price_string:format(item_info.price))
     elseif self.description_panel then
         self.description_panel:set_text("")
         self.price_panel:set_text(" ")
