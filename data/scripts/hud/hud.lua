@@ -24,6 +24,7 @@ local function initialize_hud_features(game)
       element:set_dst_position(element_config.x, element_config.y)
     end
     hud.elements[#hud.elements + 1] = element
+    if element_config.id then hud.elements[element_config.id] = element end
   end
 
   -- Destroys the HUD.
@@ -67,6 +68,9 @@ local function initialize_hud_features(game)
   function game:set_hud_enabled(enable)
     return hud:set_enabled(enable)
   end
+
+  -- Returns the HUD
+  function game:get_hud() return hud end
 
   -- Call this function to notify the HUD that the current map has changed.
   local function hud_on_map_changed(game, map)
