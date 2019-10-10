@@ -3,23 +3,19 @@
 -- See the Lua API! http://www.solarus-games.org/doc/latest
 
 require("scripts/features")
-local title_screen = require"scripts/menus/title_screen"
-
+local initial_menus = require"scripts/menus/initial_menus"
 local game_manager = require("scripts/game_manager")
 
 -- This function is called when Solarus starts.
 function sol.main:on_started()
   --preload the sounds for faster access
   sol.audio.preload_sounds()
-  --set the language
-  sol.language.set_language("en")
 
   --Set the window title.
   sol.video.set_window_title("Ocean's Heart")
 
-  --Title Screen:
-  sol.menu.start(self, title_screen)
-
+  --Start initial menus:
+  initial_menus.start()
 end
 
 

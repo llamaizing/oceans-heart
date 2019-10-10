@@ -69,6 +69,16 @@ local hud_config = {
     slot = 2,  -- Item slot (1 or 2).
   },
 
+
+
+ -- Consumables picked-up.
+  {
+    menu_script = "scripts/hud/consumables",
+    id = "consumables",
+    x = -52,
+    y = 48,
+    duration = 2500,
+  },
 }
 
 return hud_config
