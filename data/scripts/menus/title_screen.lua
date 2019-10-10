@@ -68,12 +68,12 @@ function title_screen:on_started()
     return math.random(8000, 9000)
   end)
 
-  text_surface:set_text("  Continue")
-  text_surface:draw(selection_surface, 0, 0)
-  text_surface2:set_text("  New Game")
-  text_surface2:draw(selection_surface, 0, 16)
-  text_surface3:set_text("  Quit")
-  text_surface3:draw(selection_surface, 0, 32)
+  text_surface:set_text_key("menu.title.continue")
+  text_surface:draw(selection_surface, 12, 0)
+  text_surface2:set_text_key("menu.title.new_game")
+  text_surface2:draw(selection_surface, 12, 16)
+  text_surface3:set_text_key("menu.title.quit")
+  text_surface3:draw(selection_surface, 12, 32)
 
 
   sol.timer.start(title_screen, math.random(1000, 2000), function()
@@ -146,10 +146,10 @@ function title_screen:on_key_pressed(command)
       sol.audio.play_sound("danger")
       confirming = true
       selection_surface:clear()
-      text_surface:set_text("  Confirm")
-      text_surface:draw(selection_surface, 0, 0)
-      text_surface2:set_text("  Cancel")
-      text_surface2:draw(selection_surface, 0, 16)
+      text_surface:set_text_key("menu.title.confirm")
+      text_surface:draw(selection_surface, 12, 0)
+      text_surface2:set_text_key("menu.title.cancel")
+      text_surface2:draw(selection_surface, 12, 16)
 
     --New Game state, confirm new game
     elseif cursor_index == 0 and confirming then
@@ -163,12 +163,12 @@ function title_screen:on_key_pressed(command)
       sol.audio.play_sound("no")
       confirming = false
       selection_surface:clear()
-      text_surface:set_text("  Continue")
-      text_surface:draw(selection_surface, 0, 0)
-      text_surface2:set_text("  New Game")
-      text_surface2:draw(selection_surface, 0, 16)
-      text_surface3:set_text("  Quit")
-      text_surface3:draw(selection_surface, 0, 32)
+      text_surface:set_text_key("menu.title.continue")
+      text_surface:draw(selection_surface, 12, 0)
+      text_surface2:set_text_key("menu.title.new_game")
+      text_surface2:draw(selection_surface, 12, 16)
+      text_surface3:set_text_key("menu.title.quit")
+      text_surface3:draw(selection_surface, 12, 32)
 
     elseif  cursor_index == 2 then
       sol.main.exit()

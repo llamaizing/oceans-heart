@@ -101,7 +101,7 @@ function crafting_menu:update_recipes()
     local recipe_surface = sol.text_surface.create{
       vertical_alignment="top",
       font="oceansfont",
-      text_key="item."..unlocked_recipes[i].item_name
+      text_key="item."..unlocked_recipes[i].item_name..".1" --all crafting ingredients are variant 1
     }
     if not crafting_menu:can_make_recipe(unlocked_recipes[i]) then
       recipe_surface:set_color_modulation{150,150,150,200}
