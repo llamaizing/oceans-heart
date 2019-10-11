@@ -251,6 +251,7 @@ map{ id = "oakhaven/veilwood", description = "Veilwood" }
 map{ id = "oakhaven/waterfall_canyon", description = "Waterfall Canyon" }
 map{ id = "oakhaven/west_coast", description = "West Coast" }
 map{ id = "oakhaven/west_oak", description = "Westoak" }
+map{ id = "redpine_test", description = "Redpine Test" }
 map{ id = "respawn_map", description = "blank room - leave empty" }
 map{ id = "snapmast_reef/caves/coral_cave", description = "Coral Cave" }
 map{ id = "snapmast_reef/caves/elixer_upgrade_tower", description = "Elixer Upgrade Tower" }
@@ -287,6 +288,7 @@ tileset{ id = "overworld_oakhaven", description = "Overworld-Oakhaven" }
 tileset{ id = "overworld_yarrowmouth", description = "Overworld-Yarrowmouth" }
 tileset{ id = "palace_of_storms", description = "Palace of Storms" }
 tileset{ id = "pirate_overworld_test", description = "pirate_test1" }
+tileset{ id = "redpine_forest", description = "Redpine Forest" }
 tileset{ id = "sky_scroll", description = "Sky Scroll" }
 tileset{ id = "spruce_head", description = "Spruce Head" }
 tileset{ id = "temple", description = "temple" }
