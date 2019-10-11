@@ -12,7 +12,7 @@
 	This hud script displays a brief popup displaying an item icon and amount whenever the
 	player obtains a consumable item. Multiple popups will be stacked when the player gets
 	multiple items in quick succession.
-]]
+--]]
 
 require"scripts/multi_events"
 
@@ -70,8 +70,24 @@ function hud_submenu:new(game, properties)
 		movement:start(panel)
 		
 		--create timer to remove panel
+    panel.slideaway_timer = sol.timer.start(menu, duration - 100, function() slide_panel_away(name) end)
 		panel.timer = sol.timer.start(menu, duration, function() remove_panel(name) end)
 	end
+
+  --// slide the panel corresponding to this name off the screen
+  function slide_panel_away(name)
+		for i,panel in ipairs(panels) do --find the index corresponding the the panel to remove
+			if name == panel.name then
+      		local movement = sol.movement.create"straight"
+      		movement:set_speed(256)
+      		movement:set_angle(0)
+      		movement:set_max_distance(dst_x>0 and panel_width+dst_x or -dst_x)
+      		movement:start(panel)
+        break
+			end
+		end
+
+  end
 	
 	--// remove the panel corresponding to this name (string)
 	remove_panel = function(name)
