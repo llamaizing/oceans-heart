@@ -506,6 +506,7 @@ sprite{ id = "entities/boat_yarrowmouth_ferry", description = "Yarrowmouth Ferry
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/boomerang1", description = "Boomerang 1" }
 sprite{ id = "entities/boomerang2", description = "Boomerang 2" }
+sprite{ id = "entities/brass_door", description = "BrassDoor-DOOR" }
 sprite{ id = "entities/broken_fence_1", description = "Broken Fence" }
 sprite{ id = "entities/broken_fence_2", description = "Broken Fence 2" }
 sprite{ id = "entities/broken_fence_3", description = "Broken Fence 3" }

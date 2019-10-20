@@ -16359,7 +16359,7 @@ teletransporter{
   y = 192,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/caves/abyss",
+  destination_map = "oakhaven/caves/umber_lake",
   destination = "from_palace",
 }
 

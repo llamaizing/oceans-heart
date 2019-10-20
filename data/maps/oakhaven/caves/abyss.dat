@@ -9791,8 +9791,8 @@ teletransporter{
   y = 32,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/caves/abyss",
-  destination = "from_bottom_floor",
+  destination_map = "oakhaven/caves/umber_lake",
+  destination = "from_abyss",
 }
 
 teletransporter{
@@ -9901,6 +9901,14 @@ sensor{
   y = 517,
   width = 32,
   height = 16,
+}
+
+destination{
+  name = "from_lake_umber",
+  layer = 0,
+  x = 928,
+  y = 61,
+  direction = 3,
 }
 
 tile{

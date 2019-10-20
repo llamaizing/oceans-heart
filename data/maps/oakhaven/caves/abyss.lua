@@ -37,9 +37,7 @@ map:register_event("on_started", function()
 end)
 
 
-function coral_boss:on_dead()
-  map:open_doors("coral_ore_door")
-end
+
 
 --map banner
 function map_banner_activator:on_activated()

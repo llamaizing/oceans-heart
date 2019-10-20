@@ -1114,8 +1114,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
-  y = 112,
+  x = 112,
+  y = 104,
   width = 16,
   height = 16,
   pattern = "134",
@@ -1123,8 +1123,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 112,
+  x = 192,
+  y = 104,
   width = 16,
   height = 16,
   pattern = "114",
@@ -2372,19 +2372,20 @@ tile{
   tileset = "indoors_stone",
 }
 
-separator{
+tile{
   layer = 0,
-  x = 0,
-  y = 232,
-  width = 640,
+  x = 128,
+  y = 104,
+  width = 16,
   height = 16,
+  pattern = "217",
 }
 
 separator{
   layer = 0,
   x = 0,
-  y = -8,
-  width = 320,
+  y = 232,
+  width = 640,
   height = 16,
 }
 
@@ -2485,8 +2486,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 192,
-  y = 96,
+  x = 112,
+  y = 88,
   width = 16,
   height = 16,
   pattern = "135",
