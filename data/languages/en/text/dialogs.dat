@@ -13366,6 +13366,16 @@ in the area.
 }
 
 dialog{
+  id = "_treasure.key_brass.1",
+  text = [[
+You found an ancient brass key. Strange
+symbols and runes are etched around its
+teeth. It doesn't look like any of the
+locks around here...
+]],
+}
+
+dialog{
   id = "_treasure.key_dandelion_charm.1",
   text = [[
 You found a key. It will unlock a door
@@ -13403,6 +13413,14 @@ dialog{
   text = [[
 You found a key! It probably unlocks
 a door in this area.
+]],
+}
+
+dialog{
+  id = "_treasure.key_haunted_house.1",
+  text = [[
+You found a dusty old key with some
+oak leaves etched into the handle.
 ]],
 }
 

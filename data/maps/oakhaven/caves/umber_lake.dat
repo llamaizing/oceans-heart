@@ -13880,7 +13880,9 @@ door{
   y = 48,
   direction = 3,
   sprite = "entities/brass_door",
-  opening_method = "interaction",
+  opening_method = "interaction_if_item",
+  opening_condition = "key_brass",
+  opening_condition_consumed = true,
 }
 
 destination{

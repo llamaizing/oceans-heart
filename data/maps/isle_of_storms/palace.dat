@@ -53263,7 +53263,7 @@ chest{
   layer = 0,
   x = 1472,
   y = 2517,
-  treasure_name = "elixer",
+  treasure_name = "key_brass",
   treasure_savegame_variable = "storm_palace_d11_treasure_chest",
   sprite = "entities/chest",
 }
