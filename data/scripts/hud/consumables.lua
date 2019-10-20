@@ -1,6 +1,6 @@
 --[[consumables.lua
-	version 1.0
-	25 Sep 2019
+	version 1.0.1
+	18 Oct 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -12,7 +12,10 @@
 	This hud script displays a brief popup displaying an item icon and amount whenever the
 	player obtains a consumable item. Multiple popups will be stacked when the player gets
 	multiple items in quick succession.
---]]
+	
+	Usage:
+	Add an entry to hud_config.lua for this script along with the desired properties
+]]
 
 require"scripts/multi_events"
 
@@ -34,8 +37,12 @@ local PANEL_IMG_ID = "menus/panel.png" --image to use for panel
 function hud_submenu:new(game, properties)
 	local menu = {}
 	
-	local panels = {} --circular buffer
-	local queue = {} --additional panels exceeding max, show when new slots free up
+	local panels = {} --(table, combo) panels currently visible on screen
+		--indices (up to MAX_COUNT) have a panel instance (table) for its value
+		--each panel can also be accessed using its item id (string) as the key
+	local queue = {} --(table, combo) additional panels exceeding max, show when new slots free up
+		--indices (unlimited) have a panel instance (table) for its value
+		--each panel in the queue can be accessed using its item id (string) as the key
 	local panel_img = sol.surface.create(PANEL_IMG_ID)
 	local panel_width, panel_height = panel_img:get_size()
 	
@@ -51,11 +58,26 @@ function hud_submenu:new(game, properties)
 	assert(duration >= 0, "Bad property duration to 'new' (number must be non-negative)")
 	local is_enabled = true
 	
+	--// Creates a movement to slide a panel horizontally on or off screen
+		--is_exit (boolean, optional) true means slide off screen, false or nil slides on screen (default)
+	local function new_horz_movement(is_exit)
+		local is_left = dst_x < 0
+		if is_exit then is_left = not is_left end
+		
+		local movement = sol.movement.create"straight"
+		movement:set_speed(256)
+		movement:set_angle(is_left and math.pi or 0)
+		movement:set_max_distance(dst_x>=0 and panel_width+dst_x or -dst_x)
+		
+		return movement
+	end
+	
 	 --define these functions later
 	local create_panel
 	local remove_panel
 	
-	--must verify panel for the item doesn't already exist first
+	--// adds the panel (table) to the visible list
+		--must externally verify panel for the item doesn't already exist (and doesn't exceed max count)
 	create_panel = function(panel)
 		local name = panel.name
 		table.insert(panels, panel) --add new panel
@@ -63,78 +85,75 @@ function hud_submenu:new(game, properties)
 		
 		--add horizontal slide translation to newly added panel
 		panel.x = (dst_x>0 and -panel_width or 0) - dst_x --set position off-screen initially
-		local movement = sol.movement.create"straight"
-		movement:set_speed(256)
-		movement:set_angle(dst_x>0 and 0 or math.pi)
-		movement:set_max_distance(dst_x>0 and panel_width+dst_x or -dst_x)
+		local movement = new_horz_movement(false)
 		movement:start(panel)
 		
 		--create timer to remove panel
-    panel.slideaway_timer = sol.timer.start(menu, duration - 100, function() slide_panel_away(name) end)
 		panel.timer = sol.timer.start(menu, duration, function() remove_panel(name) end)
 	end
-
-  --// slide the panel corresponding to this name off the screen
-  function slide_panel_away(name)
-		for i,panel in ipairs(panels) do --find the index corresponding the the panel to remove
-			if name == panel.name then
-      		local movement = sol.movement.create"straight"
-      		movement:set_speed(256)
-      		movement:set_angle(0)
-      		movement:set_max_distance(dst_x>0 and panel_width+dst_x or -dst_x)
-      		movement:start(panel)
-        break
-			end
-		end
-
-  end
 	
 	--// remove the panel corresponding to this name (string)
+		--creates a movement to slide the panel offscreen and the panel is removed once movement is done
 	remove_panel = function(name)
-		local index --index of panel removed
 		for i,panel in ipairs(panels) do --find the index corresponding the the panel to remove
 			if name == panel.name then
-				table.remove(panels, i)
+				local movement = new_horz_movement(true) --create movement to slide offscreen
+				
+				--keep track of this panel by its movement now rather than by name
+				--note: picking up the same item while this panel is moving creates a new panel
+				panel.movement = movement
+				panel.name = nil
 				panels[name] = nil
-				index = i --panels here and up need vertical movement to fill gap
+				
+				--wait until movement is complete to remove panel from list
+				movement:start(panel, function()
+					local index --index of panel removed
+					for i,panel in ipairs(panels) do --find the index corresponding the the panel to remove
+						if movement == panel.movement then
+							table.remove(panels, i)
+							index = i  --panels here and up need vertical movement to fill gap
+							break
+						end
+					end
+					
+					--move a panel from queue to active list if new slot is available
+					if #panels < MAX_COUNT then
+						local new_panel = table.remove(queue, 1)
+						if new_panel then
+							local new_name = new_panel.name
+							queue[new_name] = nil
+							create_panel(new_panel)
+						end
+					end
+					
+					--add vertical slide translations to fill the gap
+					local target = {x=0, y=0} --target of movement (applies to multiple panels)
+					local movement = sol.movement.create"straight"
+					movement:set_speed(128)
+					movement:set_angle(math.pi/2) --up
+					movement:set_max_distance(Y_OFFSET)
+					movement:start(target, function()
+						--remove target from visible panels once movement is complete
+						for i,panel in ipairs(panels) do
+							local movements = panel.movements
+							if movements and movements[target] then
+								movements[target] = nil
+								panel.offset = panel.offset - 1
+							end
+						end
+					end)
+					
+					--apply movement to applicable panels
+					for i=index,#panels do --for all panels above the one removed
+						local panel = panels[i]
+						panel.offset = (panel.offset or 0) + 1 --instantly move to old location
+						panel.movements = panel.movements or {}
+						panel.movements[target] = target
+					end
+				end)
+				
 				break
 			end
-		end
-		
-		--move a panel from queue to active list if new slot is available
-		if #panels < MAX_COUNT then
-			local new_panel = table.remove(queue, 1)
-			if new_panel then
-				local new_name = new_panel.name
-				queue[new_name] = nil
-				
-				create_panel(new_panel)
-			end
-		end
-		
-		--add vertical slide translations to fill the gap
-		local target = {x=0, y=0} --target of movement (applies to multiple panels)
-		local movement = sol.movement.create"straight"
-		movement:set_speed(128)
-		movement:set_angle(math.pi/2)
-		movement:set_max_distance(Y_OFFSET)
-		movement:start(target, function()
-			--remove target from visible panels once movement is complete
-			for i,panel in ipairs(panels) do
-				local movements = panel.movements
-				if movements and movements[target] then
-					movements[target] = nil
-					panel.offset = panel.offset - 1
-				end
-			end
-		end)
-		
-		--apply movement to applicable panels
-		for i=index,#panels do --for all panels above the one removed
-			local panel = panels[i]
-			panel.offset = (panel.offset or 0) + 1 --instantly move to old location
-			panel.movements = panel.movements or {}
-			panel.movements[target] = target
 		end
 	end
 	
@@ -245,7 +264,8 @@ function hud_submenu:new(game, properties)
 	
 	--// When the hud submenu is started
 	function menu:on_started()
-		panels = {} --clear any existing data
+		--clear any existing data
+		panels = {}
 		queue = {}
 	end
 	
