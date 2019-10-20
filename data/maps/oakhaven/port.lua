@@ -161,3 +161,16 @@ function buyer_guy:on_interaction()
     sol.menu.start(map, sell_menu)
   end)
 end
+
+--Jose hagfish seller
+function jose_hagfish:on_interaction()
+  game:start_dialog("_oakhaven.npcs.port.misc.3", function(answer)
+    if answer == 1 then
+      game:start_dialog("_oakhaven.npcs.port.misc.3-2", function()
+        game:remove_life(1)
+        sol.audio.play_sound"hero_hurt"
+        hero:set_blinking(true, 5)
+      end)
+    end
+  end)
+end

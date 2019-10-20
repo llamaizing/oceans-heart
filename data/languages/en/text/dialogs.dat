@@ -11099,6 +11099,25 @@ rom the sea for your eating convenience.
 }
 
 dialog{
+  id = "_oakhaven.npcs.port.misc.3",
+  text = [[
+JOSE:
+Fish, crustaceans, invertebrates, gastropods,
+whatever sea creature you wanna eat, I got
+it here! You wanna sample of the hagfish?
+$? Yes
+$? No way, Jose
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.3-2",
+  text = [[
+(It's really, really bad)
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.port.office.benny1",
   text = [[
 BENNY:
@@ -11633,6 +11652,23 @@ TILIA:
 Huh. I guess that dog probably wanted to
 get back to his birthday party. Better go let
 the city guard captain know.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.lakehouse_switch1",
+  text = [[
+Oh, there's a hidden switch in the bookcase!
+Press it?
+$? Obviously!
+$? Could be some kinda trap.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.lakehouse_switch2",
+  text = [[
+You remain completely safe.
 ]],
 }
 

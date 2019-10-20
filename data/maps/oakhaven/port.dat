@@ -47829,6 +47829,249 @@ tile{
   pattern = "1",
 }
 
+tile{
+  layer = 0,
+  x = 1416,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "1538",
+}
+
+tile{
+  layer = 0,
+  x = 1432,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "1541",
+}
+
+tile{
+  layer = 0,
+  x = 1448,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "1539",
+}
+
+tile{
+  layer = 0,
+  x = 1416,
+  y = 912,
+  width = 48,
+  height = 16,
+  pattern = "1556",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 920,
+  width = 8,
+  height = 16,
+  pattern = "1460",
+}
+
+tile{
+  layer = 0,
+  x = 1592,
+  y = 920,
+  width = 8,
+  height = 16,
+  pattern = "1460",
+}
+
+tile{
+  layer = 0,
+  x = 1632,
+  y = 920,
+  width = 8,
+  height = 16,
+  pattern = "913",
+}
+
+tile{
+  layer = 0,
+  x = 1592,
+  y = 920,
+  width = 8,
+  height = 16,
+  pattern = "912",
+}
+
+tile{
+  layer = 0,
+  x = 1584,
+  y = 920,
+  width = 8,
+  height = 16,
+  pattern = "1460",
+}
+
+tile{
+  layer = 0,
+  x = 1544,
+  y = 920,
+  width = 8,
+  height = 16,
+  pattern = "1460",
+}
+
+tile{
+  layer = 0,
+  x = 1584,
+  y = 920,
+  width = 8,
+  height = 16,
+  pattern = "913",
+}
+
+tile{
+  layer = 0,
+  x = 1544,
+  y = 920,
+  width = 8,
+  height = 16,
+  pattern = "912",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 848,
+  width = 24,
+  height = 16,
+  pattern = "690",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 864,
+  width = 24,
+  height = 16,
+  pattern = "690",
+}
+
+tile{
+  layer = 0,
+  x = 1336,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "686",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "686",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 880,
+  width = 16,
+  height = 16,
+  pattern = "686",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 912,
+  width = 16,
+  height = 24,
+  pattern = "2130",
+}
+
+tile{
+  layer = 0,
+  x = 1600,
+  y = 920,
+  width = 16,
+  height = 16,
+  pattern = "931",
+}
+
+tile{
+  layer = 0,
+  x = 1600,
+  y = 912,
+  width = 16,
+  height = 8,
+  pattern = "936",
+}
+
+tile{
+  layer = 0,
+  x = 1568,
+  y = 920,
+  width = 16,
+  height = 16,
+  pattern = "930",
+}
+
+tile{
+  layer = 0,
+  x = 1568,
+  y = 912,
+  width = 16,
+  height = 8,
+  pattern = "937",
+}
+
+tile{
+  layer = 0,
+  x = 1552,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "1702",
+}
+
+tile{
+  layer = 0,
+  x = 1552,
+  y = 920,
+  width = 16,
+  height = 8,
+  pattern = "1703",
+}
+
+tile{
+  layer = 0,
+  x = 1616,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "1702",
+}
+
+tile{
+  layer = 0,
+  x = 1616,
+  y = 920,
+  width = 16,
+  height = 8,
+  pattern = "1703",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 936,
+  width = 16,
+  height = 16,
+  pattern = "1702",
+}
+
 sensor{
   name = "meet_hazel_sensor",
   layer = 0,
@@ -49332,6 +49575,34 @@ destructible{
   y = 1093,
   sprite = "entities/vase",
   can_be_cut = true,
+}
+
+npc{
+  name = "jose_hagfish",
+  layer = 0,
+  x = 1592,
+  y = 941,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/pirates/pirate_5.2",
+}
+
+tile{
+  layer = 1,
+  x = 1600,
+  y = 912,
+  width = 32,
+  height = 24,
+  pattern = "1460",
+}
+
+tile{
+  layer = 1,
+  x = 1552,
+  y = 912,
+  width = 32,
+  height = 24,
+  pattern = "1460",
 }
 
 tile{
@@ -53229,6 +53500,123 @@ tile{
   width = 48,
   height = 16,
   pattern = "2290",
+}
+
+tile{
+  layer = 1,
+  x = 1416,
+  y = 904,
+  width = 48,
+  height = 8,
+  pattern = "1557",
+}
+
+tile{
+  layer = 1,
+  x = 1424,
+  y = 896,
+  width = 32,
+  height = 8,
+  pattern = "2235",
+}
+
+tile{
+  layer = 1,
+  x = 1424,
+  y = 904,
+  width = 32,
+  height = 24,
+  pattern = "2234",
+}
+
+tile{
+  layer = 1,
+  x = 1432,
+  y = 888,
+  width = 16,
+  height = 16,
+  pattern = "1643",
+}
+
+tile{
+  layer = 1,
+  x = 1592,
+  y = 896,
+  width = 48,
+  height = 24,
+  pattern = "914",
+}
+
+tile{
+  layer = 1,
+  x = 1544,
+  y = 896,
+  width = 48,
+  height = 24,
+  pattern = "914",
+}
+
+tile{
+  layer = 1,
+  x = 1312,
+  y = 840,
+  width = 24,
+  height = 8,
+  pattern = "691",
+}
+
+tile{
+  layer = 1,
+  x = 1312,
+  y = 856,
+  width = 24,
+  height = 8,
+  pattern = "691",
+}
+
+tile{
+  layer = 1,
+  x = 1336,
+  y = 856,
+  width = 16,
+  height = 8,
+  pattern = "687",
+}
+
+tile{
+  layer = 1,
+  x = 1312,
+  y = 872,
+  width = 16,
+  height = 8,
+  pattern = "687",
+}
+
+tile{
+  layer = 1,
+  x = 1328,
+  y = 872,
+  width = 16,
+  height = 8,
+  pattern = "687",
+}
+
+tile{
+  layer = 1,
+  x = 1528,
+  y = 904,
+  width = 16,
+  height = 8,
+  pattern = "2131",
+}
+
+tile{
+  layer = 1,
+  x = 1536,
+  y = 928,
+  width = 16,
+  height = 8,
+  pattern = "1703",
 }
 
 destructible{

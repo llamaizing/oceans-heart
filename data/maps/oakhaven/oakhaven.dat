@@ -37581,6 +37581,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "oakhaven/interiors/cave_house",
+  destination = "from_outside",
 }
 
 destination{
@@ -37716,8 +37717,8 @@ teletransporter{
   y = 880,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/caves/abyss",
-  destination = "from_oakhaven",
+  destination_map = "oakhaven/caves/umber_lake",
+  destination = "fall_from_well",
 }
 
 destination{

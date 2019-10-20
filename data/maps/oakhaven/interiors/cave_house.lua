@@ -10,16 +10,41 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  if game:get_value("oakhaven_lakehouse_secret_switch_pulled") then
+    local m=sol.movement.create"straight"
+    m:set_max_distance(24)
+    m:set_angle(0)
+    m:set_speed(200)
+    m:start(bed1)
+    local m2=sol.movement.create"straight"
+    m2:set_max_distance(24)
+    m2:set_speed(200)
+    m2:set_angle(0)
+    m2:start(bed2)
+  end
+end)
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
+function secret_switch:on_interaction()
+  if not game:get_value("oakhaven_lakehouse_secret_switch_pulled") then
+    game:start_dialog("_oakhaven.observations.misc.lakehouse_switch1", function(answer)
+      if answer == 3 then
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
+          sol.audio.play_sound"switch_3"
+          local m=sol.movement.create"straight"
+          m:set_max_distance(24)
+          m:set_angle(0)
+          m:start(bed1)
+          local m2=sol.movement.create"straight"
+          m2:set_max_distance(24)
+          m2:set_angle(0)
+          m2:start(bed2)
+          sol.audio.play_sound"hero_pushes"
+          game:set_value("oakhaven_lakehouse_secret_switch_pulled", true)
 
+      elseif answer == 4 then
+        game:start_dialog("_oakhaven.observations.misc.lakehouse_switch2")
+      end
+    end)
+  end
 end

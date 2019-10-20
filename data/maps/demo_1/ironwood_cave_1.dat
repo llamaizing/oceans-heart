@@ -1172,10 +1172,9 @@ dynamic_tile{
   layer = 0,
   x = 128,
   y = 128,
-  pattern = "37",
   width = 64,
   height = 16,
-  enabled_at_start = true,
+  pattern = "37",
 }
 
 enemy{

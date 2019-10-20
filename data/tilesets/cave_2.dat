@@ -4506,10 +4506,12 @@ tile_pattern{
   id = "water_edge.down",
   ground = "deep_water",
   default_layer = 0,
-  x = 0,
-  y = 384,
-  width = 48,
+  x = { 0, 16, 32 },
+  y = { 384, 384, 384 },
+  width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 

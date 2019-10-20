@@ -162,7 +162,6 @@ map{ id = "indoor_template", description = "Temple/Cave Template" }
 map{ id = "isle_of_storms/isle_of_storms_landing", description = "Landing Area" }
 map{ id = "isle_of_storms/palace", description = "Palace" }
 map{ id = "isle_of_storms/test", description = "Test" }
-map{ id = "mysterious_wood", description = "Mysterious Wood" }
 map{ id = "new_limestone/basswood_tavern", description = "Basswood Tavern" }
 map{ id = "new_limestone/cave_1", description = "Cave 1" }
 map{ id = "new_limestone/caves/pit", description = "pit" }
@@ -194,6 +193,7 @@ map{ id = "oakhaven/caves/port_bush_hole", description = "Port Bush Hole" }
 map{ id = "oakhaven/caves/port_bush_hole_2", description = "Port Bush Hole 2" }
 map{ id = "oakhaven/caves/saltpeter_mines", description = "Saltpeter Mine" }
 map{ id = "oakhaven/caves/seabird_shrine_marblecliff", description = "Seabird Shrine Marblecliff" }
+map{ id = "oakhaven/caves/umber_lake", description = "Lake Umber" }
 map{ id = "oakhaven/caves/veilwood_health_upgrade_tunnel", description = "Veilwood Health Upgrade Tunnel" }
 map{ id = "oakhaven/caves/westoak_shrine", description = "Westoak Shrine" }
 map{ id = "oakhaven/caves/westoak_warp_cave", description = "Westoak Warp Cave" }
@@ -268,7 +268,6 @@ map{ id = "snapmast_reef/snapmast_lighthouse", description = "Snapmast Lighthous
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }
-map{ id = "testtest", description = "yayayaya" }
 
 tileset{ id = "Full Hyrule", description = "Full Hyrule" }
 tileset{ id = "abysphere_ruins", description = "Abysphere Ruins" }
