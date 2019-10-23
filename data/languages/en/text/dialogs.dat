@@ -11093,7 +11093,7 @@ dialog{
   text = [[
 There's always more fish in the sea. But
 what, you wanna go to the trouble of gettin'
-them out? No way! Buy my fish, pre-removed 
+them out? No way! Buy my fish, pre-removed
 rom the sea for your eating convenience.
 ]],
 }
@@ -15921,7 +15921,7 @@ dialog{
 !there another grove like these?
 @Proceed through the ruins in the
 Grove of Mosses.
-  
+
 ]],
 }
 
@@ -15955,6 +15955,24 @@ other room, I guess?
 ?
 ?Turns out the key went to Juneberry
 ?Inn on Goatshead Island.
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+]],
+}
+
+dialog{
+  id = "quest.side.oakhaven.haunted_key",
+  title = "Key from a Cave",
+  text = [[
+##In some sort of treasure cache
+##hidden underground, you found an
+##old key.
+@Find an old lock, probably also
+in Oakhaven somewhere.
+?
+?The key unlocked an abandoned house
+?in east Oakhaven.
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
@@ -16571,4 +16589,3 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
-

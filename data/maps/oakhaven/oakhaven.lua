@@ -308,6 +308,12 @@ function palace_entry_sensor:on_activated()
   end
 end
 
+------------------------OTHER ENTITIES--------------------------------------------
+
+--haunted house door
+function haunted_house_door:on_opened()
+  game:set_value("quest_oakhaven_haunted_key", 1)
+end
 
 
 

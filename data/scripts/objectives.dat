@@ -324,6 +324,13 @@ side{
 }
 
 side{
+    dialog_id = "quest.side.oakhaven.haunted_key",
+    calc_phase = "quest_oakhaven_haunted_key",
+    items = {"key_haunted_house.1"},
+		location = "location.oakhaven"
+}
+
+side{
     dialog_id = "quest.side.ballast_harbor.hornet_honey",
     calc_phase = "quest_ballast_harbor_hornet_honey",
     replace_v = {
