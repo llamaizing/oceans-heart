@@ -11,4 +11,5 @@ end)
 
 item:register_event("on_obtained", function(self)
   self:add_amount(1)
+  game:set_value("quest_abyss", 0)
 end)

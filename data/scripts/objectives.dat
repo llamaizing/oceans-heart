@@ -331,6 +331,12 @@ side{
 }
 
 side{
+    dialog_id = "quest.side.abyss",
+    calc_phase = "quest_abyss",
+    items = {"key_brass.1"}
+}
+
+side{
     dialog_id = "quest.side.ballast_harbor.hornet_honey",
     calc_phase = "quest_ballast_harbor_hornet_honey",
     replace_v = {

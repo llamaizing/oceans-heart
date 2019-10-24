@@ -47,6 +47,8 @@ end
 
 function rune_sensor:on_activated()
   game:start_dialog("_oakhaven.observations.abyss.draw_in")
+  --after beating the boss:
+  game:set_value("quest_abyss", 3)
 end
 
 

@@ -13,3 +13,21 @@ local game = map:get_game()
 function coral_boss:on_dead()
   map:open_doors("coral_ore_door")
 end
+
+function brass_door:on_opened()
+  if game:get_value("quest_abyss") == 0 then
+    game:set_value("quest_abyss", 1)
+  end
+end
+
+--map banner
+for activator in map:get_entities("map_banner_activator") do
+function activator:on_activated()
+  for sensor in map:get_entities("^map_banner_sensor") do
+    sensor:set_enabled(true)
+    sol.timer.start(map, 2000, function() sensor:set_enabled(false) end)
+  end
+  map_banner_activator:set_enabled(false)
+end
+end
+

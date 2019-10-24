@@ -15980,6 +15980,26 @@ in Oakhaven somewhere.
 }
 
 dialog{
+  id = "quest.side.abyss",
+  title = "The Brass Key",
+  text = [[
+##You found an ancient brass key
+##in the Sea King's sunken palace.
+@There's probably some kind of
+matching brass lock, but where?
+@Explore the locked passage.
+@You activated... or awakened?
+Something?
+?All you know for sure is you
+?fought a big monster. What
+?was it? Was it even real?
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+]],
+}
+
+dialog{
   id = "quest.side.bomb_arrows",
   title = "Thyme's Receipt",
   text = [[
