@@ -10022,7 +10022,7 @@ teletransporter{
   y = 224,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/eastoak",
+  destination_map = "oakhaven/eastoak_OLD",
   destination = "from_fort_crow_side_door",
 }
 
@@ -10448,7 +10448,7 @@ teletransporter{
   y = 224,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/eastoak",
+  destination_map = "oakhaven/eastoak_OLD",
   destination = "from_fort_crow_front_door",
 }
 

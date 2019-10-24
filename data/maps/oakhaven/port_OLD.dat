@@ -32928,7 +32928,7 @@ teletransporter{
   width = 16,
   height = 736,
   transition = "scrolling",
-  destination_map = "oakhaven/eastoak",
+  destination_map = "oakhaven/eastoak_OLD",
   destination = "_side",
 }
 

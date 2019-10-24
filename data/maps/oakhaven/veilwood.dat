@@ -36964,7 +36964,7 @@ npc{
 }
 
 destination{
-  name = "from_westoak",
+  name = "from_eastoak_east",
   layer = 0,
   x = 1144,
   y = 1421,
@@ -36977,8 +36977,8 @@ teletransporter{
   y = 1424,
   width = 32,
   height = 16,
-  destination_map = "oakhaven/west_coast",
-  destination = "from_veilwood",
+  destination_map = "oakhaven/eastoak",
+  destination = "from_veilwood_east",
 }
 
 destructible{
@@ -38576,7 +38576,7 @@ sensor{
   name = "^map_banner_sensor",
   layer = 0,
   x = 1136,
-  y = 1405,
+  y = 1397,
   width = 32,
   height = 32,
 }
@@ -38949,6 +38949,24 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/port",
   destination = "from_veilwood",
+}
+
+destination{
+  name = "from_eastoak_west",
+  layer = 0,
+  x = 184,
+  y = 1421,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 176,
+  y = 1424,
+  width = 32,
+  height = 16,
+  destination_map = "oakhaven/eastoak",
+  destination = "from_veilwood_west",
 }
 
 tile{
