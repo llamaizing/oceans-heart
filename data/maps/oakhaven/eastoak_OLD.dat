@@ -30698,8 +30698,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1584,
-  y = 528,
+  x = 1656,
+  y = 536,
   width = 16,
   height = 16,
   pattern = "350",
@@ -30707,8 +30707,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1584,
-  y = 544,
+  x = 1656,
+  y = 552,
   width = 16,
   height = 16,
   pattern = "351",
@@ -34066,15 +34066,15 @@ dynamic_tile{
 destination{
   name = "eastoak_coral_ore_cave",
   layer = 0,
-  x = 1592,
-  y = 573,
+  x = 1664,
+  y = 581,
   direction = 3,
 }
 
 teletransporter{
   layer = 0,
-  x = 1584,
-  y = 544,
+  x = 1656,
+  y = 552,
   width = 16,
   height = 16,
   destination_map = "oakhaven/caves/eastoak_coral_ore_cave",
@@ -34083,8 +34083,8 @@ teletransporter{
 
 door{
   layer = 0,
-  x = 1584,
-  y = 544,
+  x = 1656,
+  y = 552,
   direction = 3,
   sprite = "entities/door_weak_wall",
   savegame_variable = "eastoak_coral_ore_cavern_bombable_wall",
@@ -36119,8 +36119,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 1592,
-  y = 544,
+  x = 1544,
+  y = 552,
   width = 32,
   height = 32,
   pattern = "1880",

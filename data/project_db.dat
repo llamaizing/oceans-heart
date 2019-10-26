@@ -565,6 +565,7 @@ sprite{ id = "entities/destination", description = "Destination" }
 sprite{ id = "entities/dog_mayors", description = "Dog - Mayor's" }
 sprite{ id = "entities/door_archway_locked", description = "Door - Archway, locked" }
 sprite{ id = "entities/door_archway_shutter", description = "Door- Archway, Shutter" }
+sprite{ id = "entities/door_barrowstone", description = "Door-Barrowstone" }
 sprite{ id = "entities/door_bearwalls_unmarked", description = "Door-Bearwalls Unmarked" }
 sprite{ id = "entities/door_boarded", description = "Door-Boarded" }
 sprite{ id = "entities/door_cracked_wall", description = "Door-Cracked Wall" }

@@ -74,7 +74,7 @@ end
 
 
 -----Map Focus-----
-function map_meta:focus_on(camera, target_entity, callback)
+function map_meta:focus_on(camera, target_entity, callback, return_delay)
   local game = sol.main.get_game()
   local hero = game:get_hero()
   hero:freeze()
@@ -87,7 +87,7 @@ function map_meta:focus_on(camera, target_entity, callback)
   m:set_ignore_obstacles(true)
   m:start(camera, function()
     callback()
-    sol.timer.start(game, 500, function()
+    sol.timer.start(game, return_delay or 500, function()
       m2 = sol.movement.create("target")
       m2:set_ignore_obstacles(true)
       m2:set_target(camera:get_position_to_track(hero))

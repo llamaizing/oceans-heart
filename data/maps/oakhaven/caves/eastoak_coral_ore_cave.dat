@@ -1250,7 +1250,7 @@ teletransporter{
   y = 208,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/eastoak_OLD",
+  destination_map = "oakhaven/eastoak",
   destination = "eastoak_coral_ore_cave",
 }
 

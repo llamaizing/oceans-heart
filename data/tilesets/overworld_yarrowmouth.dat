@@ -599,7 +599,7 @@ tile_pattern{
 
 tile_pattern{
   id = "1048",
-  ground = "grass",
+  ground = "empty",
   default_layer = 0,
   x = 88,
   y = 96,

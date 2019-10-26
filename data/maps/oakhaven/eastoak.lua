@@ -10,15 +10,31 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+map:register_event("on_started", function()
+  if game:get_value("eastoak_barrow_door_state") then barrow_door_wall:set_enabled(false) end
+end)
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+local barrow_primed = false
+for opener in map:get_entities("barrow_opener") do
+function opener:on_interaction()
+  if not barrow_primed then
+    sol.audio.play_sound"switch"
+    map:get_camera():shake()
+    barrow_primed = true
+    opener:remove()
+  else
+    map:focus_on(map:get_camera(), barrow_door, function()
+  --    map:get_camera():shake()
+      map:open_doors("barrow_door")
+      barrow_door_wall:set_enabled(false)
+      sol.audio.play_sound"secret"
+    end, 1200)
+  end
+end
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
 
+function trapdoor_rune:on_interaction()
+  sol.audio.play_sound"switch"
+  grass_trap_door:set_enabled(false)
 end

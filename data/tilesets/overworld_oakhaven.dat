@@ -599,7 +599,7 @@ tile_pattern{
 
 tile_pattern{
   id = "1048",
-  ground = "grass",
+  ground = "empty",
   default_layer = 0,
   x = 88,
   y = 96,
@@ -18178,6 +18178,26 @@ tile_pattern{
   y = 1760,
   width = 32,
   height = 32,
+}
+
+tile_pattern{
+  id = "2533",
+  ground = "wall",
+  default_layer = 0,
+  x = 192,
+  y = 1792,
+  width = 16,
+  height = 32,
+}
+
+tile_pattern{
+  id = "2534",
+  ground = "wall",
+  default_layer = 0,
+  x = 208,
+  y = 1808,
+  width = 32,
+  height = 40,
 }
 
 tile_pattern{
