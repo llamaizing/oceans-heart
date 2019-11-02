@@ -19816,7 +19816,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1256,
+  x = 1264,
   y = 0,
   width = 16,
   height = 16,
@@ -22088,6 +22088,24 @@ npc{
   y = 853,
   direction = 3,
   subtype = 1,
+}
+
+destination{
+  name = "from_stonefell",
+  layer = 0,
+  x = 1256,
+  y = 517,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1264,
+  y = 496,
+  width = 16,
+  height = 32,
+  destination_map = "stonefell_crossroads/stonefell_crossroads",
+  destination = "from_eastoak",
 }
 
 tile{

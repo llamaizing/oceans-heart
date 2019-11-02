@@ -239,6 +239,7 @@ map{ id = "oakhaven/ivystump_interiors/inn", description = "Inn" }
 map{ id = "oakhaven/ivystump_interiors/lamia", description = "Lamia's House" }
 map{ id = "oakhaven/ivystump_interiors/sawmill", description = "Sawmill" }
 map{ id = "oakhaven/ivystump_interiors/shop", description = "Shop" }
+map{ id = "oakhaven/lobb_trail", description = "Lobb Trail" }
 map{ id = "oakhaven/marble_summit", description = "Marble Summit" }
 map{ id = "oakhaven/marblecliff", description = "Marblecliff" }
 map{ id = "oakhaven/marblecliff_OLD", description = "OLDMarblecliff" }
@@ -266,6 +267,7 @@ map{ id = "snapmast_reef/drowned_village", description = "Drowned Village" }
 map{ id = "snapmast_reef/smoldering_rock", description = "Smoldering Rock" }
 map{ id = "snapmast_reef/snapmast_landing", description = "Landing Area" }
 map{ id = "snapmast_reef/snapmast_lighthouse", description = "Snapmast Lighthouse" }
+map{ id = "stonefell_crossroads/stonefell_crossroads", description = "Sonefell Crossroads" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }
@@ -274,6 +276,7 @@ tileset{ id = "Full Hyrule", description = "Full Hyrule" }
 tileset{ id = "abysphere_ruins", description = "Abysphere Ruins" }
 tileset{ id = "bear_catacombs", description = "Bear Catacombs" }
 tileset{ id = "bear_catacombs_cave", description = "BearCatacombs-Cave" }
+tileset{ id = "boulderfield", description = "Boulderfield" }
 tileset{ id = "cave_2", description = "cave-mine" }
 tileset{ id = "cemetery_of_waves", description = "CemeteryOfTheWaves" }
 tileset{ id = "fort_crow_walls", description = "Fort Crow Walls" }
