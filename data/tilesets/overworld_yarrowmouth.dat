@@ -21801,3 +21801,20 @@ tile_pattern{
   repeat_mode = "none",
 }
 
+border_set{
+  id = "yellow_grass_in",
+  inner = true,
+  pattern_0 = "1714",
+  pattern_1 = "1707",
+  pattern_2 = "1713",
+  pattern_3 = "1708",
+  pattern_4 = "1709",
+  pattern_5 = "1710",
+  pattern_6 = "1711",
+  pattern_7 = "1712",
+  pattern_8 = "1716",
+  pattern_9 = "1715",
+  pattern_10 = "1718",
+  pattern_11 = "1717",
+}
+
