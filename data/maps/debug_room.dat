@@ -5329,15 +5329,6 @@ pickable{
   treasure_variant = 8,
 }
 
-teletransporter{
-  layer = 0,
-  x = 240,
-  y = 480,
-  width = 16,
-  height = 16,
-  destination_map = "goat_hill_new_test",
-}
-
 pickable{
   layer = 0,
   x = 568,

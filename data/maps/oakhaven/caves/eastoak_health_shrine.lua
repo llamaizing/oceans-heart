@@ -40,3 +40,19 @@ for enemy in map:get_entities("enemy_c") do
     end
   end
 end
+
+for enemy in map:get_entities("enemy_d") do
+  function enemy:on_dead()
+    if not map:has_entities("enemy_d") then
+      map:open_doors("door_d")
+    end
+  end
+end
+
+for enemy in map:get_entities("enemy_e") do
+  function enemy:on_dead()
+    if not map:has_entities("enemy_e") then
+      map:open_doors("door_e")
+    end
+  end
+end

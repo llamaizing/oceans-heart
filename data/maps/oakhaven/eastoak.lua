@@ -38,4 +38,5 @@ function trapdoor_rune:on_interaction()
   sol.audio.play_sound"switch"
   sol.audio.play_sound"bush"
   grass_trap_door:set_enabled(false)
+  holefall_tele:set_enabled(true)
 end

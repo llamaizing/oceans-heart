@@ -214,6 +214,7 @@ map{ id = "oakhaven/interiors/bomb_shop", description = "Bomb Shop" }
 map{ id = "oakhaven/interiors/burglar_hideout", description = "Burglar Hideout" }
 map{ id = "oakhaven/interiors/carpenter", description = "Carpenter" }
 map{ id = "oakhaven/interiors/cave_house", description = "Cave house" }
+map{ id = "oakhaven/interiors/eastoak_farm", description = "Eastoak Farm" }
 map{ id = "oakhaven/interiors/game_hall", description = "Game Hall" }
 map{ id = "oakhaven/interiors/general_store", description = "General Store" }
 map{ id = "oakhaven/interiors/guard_hq", description = "Guard HQ" }
@@ -267,6 +268,7 @@ map{ id = "snapmast_reef/drowned_village", description = "Drowned Village" }
 map{ id = "snapmast_reef/smoldering_rock", description = "Smoldering Rock" }
 map{ id = "snapmast_reef/snapmast_landing", description = "Landing Area" }
 map{ id = "snapmast_reef/snapmast_lighthouse", description = "Snapmast Lighthouse" }
+map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }
 map{ id = "stonefell_crossroads/stonefell_crossroads", description = "Sonefell Crossroads" }
 map{ id = "stonefell_crossroads/sycamore_ferry", description = "Sycamore Ferry" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
@@ -357,6 +359,7 @@ sprite{ id = "enemies/misc/energy_ball_black_2", description = "EnergyBallBlack2
 sprite{ id = "enemies/misc/energy_ball_small", description = "Energy Ball - Small" }
 sprite{ id = "enemies/misc/energy_ball_small_black", description = "Energy Ball Small Black" }
 sprite{ id = "enemies/misc/explosive_barrel", description = "Explosive Barrel" }
+sprite{ id = "enemies/misc/falling_egg", description = "Falling Egg" }
 sprite{ id = "enemies/misc/falling_rock", description = "Falling Rock" }
 sprite{ id = "enemies/misc/fire", description = "fire" }
 sprite{ id = "enemies/misc/fire_blast", description = "Fire Blast" }
@@ -454,6 +457,7 @@ sprite{ id = "enemies/normal_enemies/pirate_sword_brown_3", description = "pirat
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_3_weapon", description = "weapon - pirate sword brown 3" }
 sprite{ id = "enemies/normal_enemies/pollutant_blob", description = "Pollutant Blob" }
 sprite{ id = "enemies/normal_enemies/rambleshroom", description = "Rambleshroom" }
+sprite{ id = "enemies/normal_enemies/roc_bomber", description = "Roc Bomber" }
 sprite{ id = "enemies/normal_enemies/rock_spider_brown", description = "rock spider - brown" }
 sprite{ id = "enemies/normal_enemies/rock_spider_red", description = "enemies/normal_enemies/rock_spider_red" }
 sprite{ id = "enemies/normal_enemies/sea_hag_enemy", description = "SeaHag-Enemy" }
@@ -1633,6 +1637,7 @@ enemy{ id = "misc/energy_ball_small", description = "Energy Ball Small" }
 enemy{ id = "misc/energy_ball_small_black", description = "EnergyBallSmallBlack" }
 enemy{ id = "misc/energy_ball_split", description = "Energy Ball Split" }
 enemy{ id = "misc/explosive_barrel", description = "explosive barrel" }
+enemy{ id = "misc/falling_egg", description = "Falling Egg" }
 enemy{ id = "misc/falling_rock", description = "Falling Rock" }
 enemy{ id = "misc/fire", description = "Fire" }
 enemy{ id = "misc/fire_blast", description = "Fire Blast" }
@@ -1713,6 +1718,7 @@ enemy{ id = "normal_enemies/pirate_sword_brown_2", description = "Pirate lv2" }
 enemy{ id = "normal_enemies/pirate_sword_brown_3", description = "Pirate lv3" }
 enemy{ id = "normal_enemies/pollutant_blob", description = "Pollutant Blob" }
 enemy{ id = "normal_enemies/rambleshroom", description = "Rambleshroom" }
+enemy{ id = "normal_enemies/roc_bomber", description = "Roc Bomber" }
 enemy{ id = "normal_enemies/rock_spider_brown", description = "rock spider - brown" }
 enemy{ id = "normal_enemies/rock_spider_red", description = "rock spider - red" }
 enemy{ id = "normal_enemies/sea_hag_enemy", description = "SeaHag-enemy" }

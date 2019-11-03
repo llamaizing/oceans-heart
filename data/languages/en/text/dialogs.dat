@@ -7035,6 +7035,42 @@ boxes and barrels.
 }
 
 dialog{
+  id = "_oakhaven.npcs.eastoak.boyle.1",
+  text = [[
+BOYLE:
+So my fool brother dug up that cursed stone
+and won't put it back. It's bad luck though,
+to disturb the standing stones. Or the
+BOYLE:
+barrow in the fields. Probably the whole
+unit, just in general. Probably dumb that
+we farm here, but the soil is good.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.eastoak.brince.1",
+  text = [[
+BRINCE:
+You seen the standing stones all around the
+fields? Best not to disturb them, nobody
+knows who put 'em up or why, was so long
+BRINCE:
+ago. But I was diggin' around 'em, and I
+found a stone tablet, so I brought it home,
+as a decoration... but here's the thing.
+BRINCE:
+Ever since, I've been scared to go near
+the barrow in the middle of the fields.
+Can't explain why! Something about the
+BRINCE:
+stone tablet? But I'm keeping it as a
+decoration though. Makes me look well
+traveled.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.fort_crow.jazari.01",
   text = [[
 ]],
@@ -11936,6 +11972,23 @@ Bomb Shop
 }
 
 dialog{
+  id = "_oakhaven.signs.eastoak1",
+  text = [[
+West - Oakhaven
+North - The Veilwood
+East - Stonefell Crossroads
+]],
+}
+
+dialog{
+  id = "_oakhaven.signs.eastoak2",
+  text = [[
+North - Oakhaven
+East - Stonefell Crossroads, The Veilwood
+]],
+}
+
+dialog{
   id = "_oakhaven.signs.fort_crow_deliveries",
   text = [[
 All deliveries use side door
@@ -12488,6 +12541,53 @@ or something like that.
 
 TILIA:
 I hope I can too. Thanks, man.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.ferryboy.1",
+  text = [[
+TERRYWEATHER:
+If you want to take the ferry, just climb
+aboard and I'll open the gate. You been
+through Stonefell Crossroads recently?
+TERRYWEATHER:
+Seems like 
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.ferryman.0",
+  text = [[
+MERRYWEATHER:
+Yeh lookin' to take the Sycamore Ferry
+across to Oakhaven or Yarrowmouth? No toll
+or fare, this one's a public service.
+TILIA:
+Yeah, sure.
+
+
+MERRYWEATHER:
+Alright, hop on the ferry and I'll let the
+gate down. Don't fall off or you'll have
+to wait for it to come back! Also watch
+MERRYWEATHER:
+your step when you're gettin' off, it
+just starts goin' back and forth once the
+gate is open. Weird currents, ya know.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.ferryman.1",
+  text = [[
+MERRYWEATHER:
+Just hop on the ferry and I'll let the
+gate down. On the other side of the channel
+is Stonefell Crossroads. You can get to
+MERRYWEATHER:
+Oakhaven to the West, or Yarrowmouth to
+the East.
 ]],
 }
 
@@ -15909,6 +16009,26 @@ dialog{
 }
 
 dialog{
+  id = "quest.side.abyss",
+  title = "The Brass Key",
+  text = [[
+##You found an ancient brass key
+##in the Sea King's sunken palace.
+@There's probably some kind of
+matching brass lock, but where?
+@Explore the locked passage.
+@You activated... or awakened?
+Something?
+?All you know for sure is you
+?fought a big monster. What
+?was it? Was it even real?
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+]],
+}
+
+dialog{
   id = "quest.side.ancient_groves",
   title = "The Ancient Groves",
   text = [[
@@ -15955,44 +16075,6 @@ other room, I guess?
 ?
 ?Turns out the key went to Juneberry
 ?Inn on Goatshead Island.
-#::
-#%=$i0    QUEST ITEM:
-#%=    $ITEM_NAME
-]],
-}
-
-dialog{
-  id = "quest.side.oakhaven.haunted_key",
-  title = "Key from a Cave",
-  text = [[
-##In some sort of treasure cache
-##hidden underground, you found an
-##old key.
-@Find an old lock, probably also
-in Oakhaven somewhere.
-?
-?The key unlocked an abandoned house
-?in east Oakhaven.
-#::
-#%=$i0    QUEST ITEM:
-#%=    $ITEM_NAME
-]],
-}
-
-dialog{
-  id = "quest.side.abyss",
-  title = "The Brass Key",
-  text = [[
-##You found an ancient brass key
-##in the Sea King's sunken palace.
-@There's probably some kind of
-matching brass lock, but where?
-@Explore the locked passage.
-@You activated... or awakened?
-Something?
-?All you know for sure is you
-?fought a big monster. What
-?was it? Was it even real?
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
@@ -16290,6 +16372,24 @@ Crow
 @Return to the bomb shop
 ::?
 ?REWARD: $ITEM{bomb.1}   70
+]],
+}
+
+dialog{
+  id = "quest.side.oakhaven.haunted_key",
+  title = "Key from a Cave",
+  text = [[
+##In some sort of treasure cache
+##hidden underground, you found an
+##old key.
+@Find an old lock, probably also
+in Oakhaven somewhere.
+?
+?The key unlocked an abandoned house
+?in east Oakhaven.
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -16609,3 +16709,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+

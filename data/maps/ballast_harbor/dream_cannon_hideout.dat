@@ -1436,7 +1436,7 @@ teletransporter{
   y = 432,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor",
+  destination_map = "stonefell_crossroads/stonefell_crossroads",
   destination = "from_dream_cannons",
 }
 

@@ -1089,7 +1089,7 @@ tile_pattern{
 
 tile_pattern{
   id = "87",
-  ground = "empty",
+  ground = "traversable",
   default_layer = 0,
   x = 128,
   y = 24,
@@ -1099,7 +1099,7 @@ tile_pattern{
 
 tile_pattern{
   id = "88",
-  ground = "empty",
+  ground = "traversable",
   default_layer = 0,
   x = 136,
   y = 8,
