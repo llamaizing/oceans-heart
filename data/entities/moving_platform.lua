@@ -8,7 +8,9 @@ local speed = 50
 local time_stopped = 1000
 
 function entity:on_created()
-  self:set_size(32, 32)
+  local size_x, size_y = self:get_size()
+--  self:set_size(32, 32)
+
 --  self:set_origin(16, 16)
   self:set_can_traverse("jumper", true)
   self:set_can_traverse_ground("hole", true)

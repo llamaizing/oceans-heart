@@ -268,6 +268,7 @@ map{ id = "snapmast_reef/smoldering_rock", description = "Smoldering Rock" }
 map{ id = "snapmast_reef/snapmast_landing", description = "Landing Area" }
 map{ id = "snapmast_reef/snapmast_lighthouse", description = "Snapmast Lighthouse" }
 map{ id = "stonefell_crossroads/stonefell_crossroads", description = "Sonefell Crossroads" }
+map{ id = "stonefell_crossroads/sycamore_ferry", description = "Sycamore Ferry" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }
@@ -465,6 +466,7 @@ sprite{ id = "enemies/normal_enemies/skeleton_1", description = "Skeleton 1" }
 sprite{ id = "enemies/normal_enemies/skeleton_2", description = "Skeleton 2" }
 sprite{ id = "enemies/normal_enemies/skeleton_3", description = "Skeleton3-Armor" }
 sprite{ id = "enemies/normal_enemies/skeleton_summoner", description = "Skeleton Summoner" }
+sprite{ id = "enemies/normal_enemies/snail", description = "snail" }
 sprite{ id = "enemies/normal_enemies/spitrock_small", description = "Spitrock - Small" }
 sprite{ id = "enemies/normal_enemies/spitstump_small", description = "Spitstump - Small" }
 sprite{ id = "enemies/normal_enemies/squid_mage_1", description = "Squid Mage 1" }
@@ -541,6 +543,7 @@ sprite{ id = "entities/bush_oak_forest", description = "Bush-Oak Forest" }
 sprite{ id = "entities/bush_oakgrass", description = "Oakgrass" }
 sprite{ id = "entities/bush_philodendron", description = "Philodendron Bush" }
 sprite{ id = "entities/bush_seagrass", description = "Seagrass" }
+sprite{ id = "entities/bush_seaoak_grass", description = "Seaoak Grass" }
 sprite{ id = "entities/bush_small_tree", description = "small tree" }
 sprite{ id = "entities/bush_violet", description = "Violet" }
 sprite{ id = "entities/bush_witch_hazel", description = "Witch Hazel" }
@@ -583,6 +586,7 @@ sprite{ id = "entities/door_locked_stone", description = "Door-Locked-Stone" }
 sprite{ id = "entities/door_mangrove_tree", description = "door-MangroveTree" }
 sprite{ id = "entities/door_npc_tall", description = "NPC door - tall" }
 sprite{ id = "entities/door_post_stone", description = "Door-Stone Post" }
+sprite{ id = "entities/door_post_water", description = "Posts-Water" }
 sprite{ id = "entities/door_posts", description = "Door - Posts" }
 sprite{ id = "entities/door_posts_pipes", description = "Door-Posts-Pipes" }
 sprite{ id = "entities/door_seabird", description = "Door-Seabird" }
@@ -597,6 +601,7 @@ sprite{ id = "entities/ether_bomb", description = "Ether Bomb" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/explosion_3", description = "Explosion 3" }
 sprite{ id = "entities/explosion_blue", description = "Explosion-Blue" }
+sprite{ id = "entities/ferry_raft", description = "Ferry-Raft" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/fire_grate", description = "Fire Grate" }
 sprite{ id = "entities/fire_hole", description = "Fire Hole" }

@@ -50145,6 +50145,15 @@ destructible{
   can_be_cut = true,
 }
 
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 1912,
+  y = 477,
+  width = 16,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 1600,
