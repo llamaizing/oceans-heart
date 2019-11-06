@@ -163,6 +163,7 @@ map{ id = "isle_of_storms/isle_of_storms_landing", description = "Landing Area" 
 map{ id = "isle_of_storms/palace", description = "Palace" }
 map{ id = "isle_of_storms/test", description = "Test" }
 map{ id = "new_limestone/basswood_tavern", description = "Basswood Tavern" }
+map{ id = "new_limestone/bracken_beach", description = "Bracken Beach" }
 map{ id = "new_limestone/cave_1", description = "Cave 1" }
 map{ id = "new_limestone/caves/pit", description = "pit" }
 map{ id = "new_limestone/hazel", description = "Hazel" }

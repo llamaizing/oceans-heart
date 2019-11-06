@@ -23390,16 +23390,8 @@ enemy{
 
 enemy{
   layer = 2,
-  x = 992,
+  x = 648,
   y = 565,
-  direction = 0,
-  breed = "normal_enemies/roc_bomber",
-}
-
-enemy{
-  layer = 2,
-  x = 464,
-  y = 445,
   direction = 0,
   breed = "normal_enemies/roc_bomber",
 }

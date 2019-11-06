@@ -30816,6 +30816,24 @@ tile{
   tileset = "oceanheart_outdoors_1",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "26",
+}
+
 destination{
   name = "from_coral_ore_cave",
   layer = 0,
