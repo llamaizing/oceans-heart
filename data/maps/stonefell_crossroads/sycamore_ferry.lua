@@ -40,3 +40,8 @@ function ferry_north_sensor:on_activated()
   end)
 end
 
+function right_knee:on_interaction()
+  statue_door:set_enabled(false)
+  sol.audio.play_sound"switch_2"
+end
+

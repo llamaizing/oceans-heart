@@ -359,6 +359,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "126",
+  ground = "traversable",
+  default_layer = 0,
+  x = 24,
+  y = 400,
+  width = 16,
+  height = 32,
+}
+
+tile_pattern{
   id = "127",
   ground = "wall",
   default_layer = 0,
@@ -735,10 +745,10 @@ tile_pattern{
   id = "155",
   ground = "wall",
   default_layer = 0,
-  x = 0,
-  y = 384,
-  width = 64,
-  height = 48,
+  x = 40,
+  y = 400,
+  width = 24,
+  height = 32,
 }
 
 tile_pattern{
@@ -769,6 +779,16 @@ tile_pattern{
   y = 432,
   width = 32,
   height = 24,
+}
+
+tile_pattern{
+  id = "159",
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 400,
+  width = 24,
+  height = 32,
 }
 
 tile_pattern{
@@ -829,6 +849,16 @@ tile_pattern{
   y = 400,
   width = 16,
   height = 24,
+}
+
+tile_pattern{
+  id = "165",
+  ground = "wall",
+  default_layer = 0,
+  x = 0,
+  y = 384,
+  width = 64,
+  height = 16,
 }
 
 tile_pattern{

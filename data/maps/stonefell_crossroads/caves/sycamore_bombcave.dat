@@ -649,6 +649,24 @@ tile{
   tileset = "cave_2",
 }
 
+tile{
+  layer = 0,
+  x = 192,
+  y = 104,
+  width = 144,
+  height = 8,
+  pattern = "143",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "139",
+}
+
 enemy{
   layer = 0,
   x = 304,
@@ -659,8 +677,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 280,
-  y = 149,
+  x = 272,
+  y = 133,
   direction = 0,
   breed = "normal_enemies/bat_1",
 }
@@ -683,8 +701,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 184,
-  y = 85,
+  x = 176,
+  y = 77,
   direction = 0,
   breed = "normal_enemies/bat_1",
 }
@@ -741,24 +759,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "vines1.top",
-}
-
-tile{
-  layer = 1,
-  x = 192,
-  y = 104,
-  width = 144,
-  height = 8,
-  pattern = "143",
-}
-
-tile{
-  layer = 1,
-  x = 192,
-  y = 96,
-  width = 16,
-  height = 16,
-  pattern = "139",
 }
 
 tile{
