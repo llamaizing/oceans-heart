@@ -5543,10 +5543,22 @@ tile_pattern{
 
 tile_pattern{
   id = "1459",
-  ground = "wall",
+  ground = "empty",
   default_layer = 1,
   x = { 112, 120, 128 },
   y = { 1296, 1296, 1296 },
+  width = 8,
+  height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "1459_2",
+  ground = "empty",
+  default_layer = 1,
+  x = { 104, 112, 120 },
+  y = { 1344, 1344, 1344 },
   width = 8,
   height = 16,
   frame_delay = 250,
@@ -16608,6 +16620,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2413",
+  ground = "empty",
+  default_layer = 0,
+  x = 96,
+  y = 1328,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2413_2",
+  ground = "empty",
+  default_layer = 0,
+  x = 112,
+  y = 1328,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "2414",
   ground = "wall",
   default_layer = 0,
@@ -16713,6 +16745,83 @@ tile_pattern{
   width = 16,
   height = 16,
   repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2423",
+  ground = "wall",
+  default_layer = 0,
+  x = { 608, 608, 608 },
+  y = { 344, 376, 408 },
+  width = 56,
+  height = 32,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "2423_2",
+  ground = "wall",
+  default_layer = 0,
+  x = { 664, 664, 664 },
+  y = { 344, 376, 408 },
+  width = 56,
+  height = 32,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "2425",
+  ground = "wall",
+  default_layer = 0,
+  x = 160,
+  y = 1320,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2426",
+  ground = "wall",
+  default_layer = 0,
+  x = 184,
+  y = 1320,
+  width = 8,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2427",
+  ground = "wall",
+  default_layer = 1,
+  x = 184,
+  y = 1312,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2428",
+  ground = "wall",
+  default_layer = 1,
+  x = 160,
+  y = 1312,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2429",
+  ground = "wall",
+  default_layer = 1,
+  x = 168,
+  y = 1312,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{

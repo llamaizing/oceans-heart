@@ -2026,8 +2026,8 @@ dialog{
   id = "_goatshead.npcs.crabhook.dusit.2",
   text = [[
 DUSIT:
-Excellent! Alright, head down to the
-docks and take my boat and this map.
+Excellent! Alright, head down to my
+dock and take my boat and this map.
 It'll get you to Brickenbranch Island.
 DUSIT:
 As you can see from this treasure map,
@@ -2038,9 +2038,13 @@ or whatever is there, bring it back,
 and we'll split it.
 
 TILIA:
-I'm not sure what pirates you got this
-from that convinced you that is exactly
-how this will go, but alright man.
+I'm not sure how the pirates convinced
+you that is exactly how this will go,
+but alright man.
+DUSIT:
+Why would pirates try to trick me?
+My boat is tied up just outside,
+climb down the ladder and skedaddle.
 ]],
 }
 
@@ -2048,8 +2052,8 @@ dialog{
   id = "_goatshead.npcs.crabhook.dusit.3",
   text = [[
 DUSIT:
-Yeah, so just take my boat- it's down
-at the docks. Sail to Brickenbranch
+Yeah, so just take my boat- it's tied
+up just outside. Sail to Brickenbranch
 Island, which is totally haunted, and
 DUSIT:
 find the treasure that this map says
@@ -2138,6 +2142,48 @@ FISHERMAN:
 I hear that monster that was attacking people
 down on the soal is gone. Suppose that was
 you, wasn't it. Thanks, then.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.market_people.11",
+  text = [[
+FISHERMAN:
+It's been a few months, but we're almost
+done with the cleanup after the attack?
+
+TILIA:
+What happened? Pirates?
+
+
+FISHERMAN:
+Yep. Caught a bunch of the town on fire.
+'Course fact that we're on stilts doesn't
+help in a fire. Luckily some Volunteer Navy
+FISHERMAN:
+guy was followin' the pirates, helped us
+put it out. Looked a bit like you, come
+to think of it.
+TILIA:
+That might have been my dad! He's been
+tracking some pirates.
+
+FISHERMAN:
+He helped up out of a right spot! Give him
+another thank you from me if you see him.
+
+TILIA:
+I hope I do.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.market_people.12",
+  text = [[
+There was a pirate attack a while ago, burned
+down a bunch of the town's bridges. Everything
+still smells like smoke, which honestly? Is
+great. Means it doesn't smell like fish.
 ]],
 }
 

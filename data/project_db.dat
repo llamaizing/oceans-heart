@@ -273,6 +273,7 @@ map{ id = "stonefell_crossroads/caves/ancient_grove", description = "Ancient Gro
 map{ id = "stonefell_crossroads/caves/ancient_shrine", description = "AncientGroveShrine" }
 map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }
 map{ id = "stonefell_crossroads/caves/sycamore_bombcave", description = "Sycamore Bombcave" }
+map{ id = "stonefell_crossroads/lotus_shoal", description = "Lotus Shoal" }
 map{ id = "stonefell_crossroads/stonefell_crossroads", description = "Sonefell Crossroads" }
 map{ id = "stonefell_crossroads/sycamore_ferry", description = "Sycamore Ferry" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
@@ -751,6 +752,10 @@ sprite{ id = "npc/eamon", description = "Eamon" }
 sprite{ id = "npc/first_mate", description = "First Mate" }
 sprite{ id = "npc/fishing_2_left", description = "Fishing 2 - left" }
 sprite{ id = "npc/fishing_2_right", description = "Fishing 2 - Right" }
+sprite{ id = "npc/fishing_in_boats_1", description = "Fisher-Boat-1" }
+sprite{ id = "npc/fishing_in_boats_2", description = "Fisher-Boat" }
+sprite{ id = "npc/fishing_in_boats_3", description = "Fisher-Boat3" }
+sprite{ id = "npc/fishing_in_boats_4", description = "Fisher-Boat-4" }
 sprite{ id = "npc/fishing_left", description = "npc/fishing_left" }
 sprite{ id = "npc/fishing_right", description = "fishing-right" }
 sprite{ id = "npc/guards/big_npc_guard_goatshead", description = "Big Guard - Goatshead" }

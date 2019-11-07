@@ -40672,6 +40672,24 @@ teletransporter{
   destination = "from_sycamore",
 }
 
+destination{
+  name = "from_crabhook",
+  layer = 0,
+  x = 24,
+  y = 741,
+  direction = 0,
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 720,
+  width = 16,
+  height = 32,
+  destination_map = "goatshead_island/crabhook_village",
+  destination = "from_sycamore",
+}
+
 tile{
   layer = 1,
   x = 160,

@@ -1,0 +1,20 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 1872,
+  height = 960,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "oceanheart_outdoors_1",
+  music = "goatshead_overworld_2",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 1872,
+  height = 960,
+  pattern = "206",
+}
+
