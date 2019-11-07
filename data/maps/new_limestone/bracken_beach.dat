@@ -7405,16 +7405,6 @@ tile{
   y = 464,
   width = 560,
   height = 32,
-  pattern = "1_2",
-  tileset = "waves",
-}
-
-tile{
-  layer = 0,
-  x = 384,
-  y = 472,
-  width = 560,
-  height = 32,
   pattern = "1",
   tileset = "waves",
 }
@@ -10768,6 +10758,16 @@ tile{
   height = 8,
   pattern = "521",
   tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 464,
+  width = 560,
+  height = 32,
+  pattern = "1_2",
+  tileset = "waves",
 }
 
 enemy{
