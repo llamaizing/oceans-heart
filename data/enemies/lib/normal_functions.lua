@@ -23,6 +23,15 @@ function normal_functions:initialize(enemy, properties)
     local direction4 = movement:get_direction4()
     local sprite = self:get_sprite()
     sprite:set_direction(direction4)
+
+    local ground = self:get_ground_below()
+    if self.grass_sprite == nil and ground == "grass" then
+      self.grass_sprite = self:create_sprite("hero/ground1")
+    elseif self.grass_sprite and ground ~= "grass" then
+      self:remove_sprite(self.grass_sprite)
+      self.grass_sprite = nil
+    end
+
   end
 
   --determine if enemy is near hero

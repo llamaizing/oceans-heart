@@ -4068,8 +4068,8 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 8,
-  y = 61,
+  x = -56,
+  y = -3,
   treasure_name = "berries",
   sprite = "entities/bush_berries",
   can_be_cut = true,
@@ -5880,6 +5880,14 @@ destructible{
   x = -40,
   y = 61,
   sprite = "entities/bush_seaoak_grass",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = -24,
+  y = 61,
+  sprite = "entities/bush_summergrass",
   can_be_cut = true,
 }
 

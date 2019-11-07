@@ -124,6 +124,7 @@ text{ key = "location.spruce_head_shrine", value = "Spruce Head Shrine" }
 text{ key = "location.stonefell_crossroads", value = "Stonefell Crossroads" }
 text{ key = "location.sunken_palace", value = "Sunkan Palace" }
 text{ key = "location.tern_marsh", value = "Tern Marsh" }
+text{ key = "location.thrush_fort", value = "Heron's Tomb" }
 text{ key = "location.umber_lake", value = "Lake Umber"}
 text{ key = "location.veilwood", value = "The Veilwood" }
 text{ key = "location.west_coast", value = "West Oak" }

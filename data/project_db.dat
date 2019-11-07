@@ -269,7 +269,10 @@ map{ id = "snapmast_reef/drowned_village", description = "Drowned Village" }
 map{ id = "snapmast_reef/smoldering_rock", description = "Smoldering Rock" }
 map{ id = "snapmast_reef/snapmast_landing", description = "Landing Area" }
 map{ id = "snapmast_reef/snapmast_lighthouse", description = "Snapmast Lighthouse" }
+map{ id = "stonefell_crossroads/caves/ancient_grove", description = "Ancient Grove" }
+map{ id = "stonefell_crossroads/caves/ancient_shrine", description = "AncientGroveShrine" }
 map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }
+map{ id = "stonefell_crossroads/caves/sycamore_bombcave", description = "Sycamore Bombcave" }
 map{ id = "stonefell_crossroads/stonefell_crossroads", description = "Sonefell Crossroads" }
 map{ id = "stonefell_crossroads/sycamore_ferry", description = "Sycamore Ferry" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
@@ -550,6 +553,7 @@ sprite{ id = "entities/bush_philodendron", description = "Philodendron Bush" }
 sprite{ id = "entities/bush_seagrass", description = "Seagrass" }
 sprite{ id = "entities/bush_seaoak_grass", description = "Seaoak Grass" }
 sprite{ id = "entities/bush_small_tree", description = "small tree" }
+sprite{ id = "entities/bush_summergrass", description = "Summergrass" }
 sprite{ id = "entities/bush_violet", description = "Violet" }
 sprite{ id = "entities/bush_witch_hazel", description = "Witch Hazel" }
 sprite{ id = "entities/bush_yarrow_white", description = "Yarrow - white" }

@@ -51443,8 +51443,8 @@ teletransporter{
 
 door{
   layer = 0,
-  x = 1304,
-  y = 768,
+  x = 1320,
+  y = 784,
   direction = 3,
   sprite = "entities/door_locked",
   savegame_variable = "thrush_fort_front_door_state",

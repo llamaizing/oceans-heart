@@ -1086,66 +1086,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 64,
-  y = 512,
-  width = 32,
-  height = 32,
-  pattern = "633",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 560,
-  width = 32,
-  height = 32,
-  pattern = "633",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 64,
-  y = 608,
-  width = 32,
-  height = 32,
-  pattern = "633",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 512,
-  width = 32,
-  height = 32,
-  pattern = "631",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 560,
-  width = 32,
-  height = 32,
-  pattern = "631",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 608,
-  width = 32,
-  height = 32,
-  pattern = "631",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
   x = 200,
   y = 656,
   width = 16,
@@ -1320,66 +1260,6 @@ tile{
   width = 8,
   height = 32,
   pattern = "door.down.right_side",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 304,
-  width = 32,
-  height = 32,
-  pattern = "633",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 304,
-  width = 32,
-  height = 32,
-  pattern = "631",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 416,
-  width = 32,
-  height = 32,
-  pattern = "633",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 416,
-  width = 32,
-  height = 32,
-  pattern = "631",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 32,
-  y = 360,
-  width = 32,
-  height = 32,
-  pattern = "633",
-  tileset = "indoors_stone",
-}
-
-tile{
-  layer = 0,
-  x = 352,
-  y = 360,
-  width = 32,
-  height = 32,
-  pattern = "631",
-  tileset = "indoors_stone",
 }
 
 tile{
@@ -2303,8 +2183,8 @@ teletransporter{
   y = 672,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/poplar_coast",
-  destination = "from_thrush_fort",
+  destination_map = "stonefell_crossroads/sycamore_ferry",
+  destination = "from_herons_tomb",
 }
 
 separator{
@@ -2449,6 +2329,15 @@ enemy{
   y = 301,
   direction = 3,
   breed = "normal_enemies/squid_mage_1",
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 200,
+  y = 653,
+  width = 32,
+  height = 16,
 }
 
 tile{

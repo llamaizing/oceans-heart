@@ -14,10 +14,10 @@ function revenant:on_dead()
 fx:get_sprite():flash()
   glow:set_enabled(true)
   game:set_value("ancient_grove_marblecliff_activated", true)
---  if not game:get_value("quest_ancient_groves") then game:set_value("quest_ancient_groves", 0) end
+  if not game:get_value("quest_ancient_groves") then game:set_value("quest_ancient_groves", 0) end
   local amount = game:get_value("ancient_groves_activated") or 0
   game:set_value("ancient_groves_activated", amount + 1)
   if amount == 3 then
---    game:set_value("quest_ancient_groves", 1)
+    game:set_value("quest_ancient_groves", 1)
   end
 end
