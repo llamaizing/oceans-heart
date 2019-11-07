@@ -31701,26 +31701,6 @@ teletransporter{
   destination = "from_outside",
 }
 
-chest{
-  layer = 0,
-  x = 640,
-  y = 101,
-  treasure_name = "rupee",
-  treasure_variant = 3,
-  treasure_savegame_variable = "limestone_training_ground_chest",
-  sprite = "entities/chest",
-}
-
-dynamic_tile{
-  layer = 0,
-  x = 632,
-  y = 96,
-  width = 16,
-  height = 8,
-  pattern = "1048_2",
-  tileset = "oceanheart_outdoors_1",
-}
-
 destructible{
   layer = 0,
   x = 392,
