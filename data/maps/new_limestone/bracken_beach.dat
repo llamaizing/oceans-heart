@@ -11192,6 +11192,59 @@ destructible{
   can_be_cut = true,
 }
 
+destination{
+  name = "from_sycamore",
+  layer = 0,
+  x = 528,
+  y = 29,
+  direction = 3,
+}
+
+destination{
+  name = "from_limestone",
+  layer = 0,
+  x = 1224,
+  y = 269,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1232,
+  y = 248,
+  width = 16,
+  height = 48,
+  destination_map = "new_limestone/limestone_present",
+  destination = "from_bracken_beach",
+}
+
+destructible{
+  layer = 0,
+  x = 992,
+  y = 429,
+  treasure_name = "lavendar",
+  sprite = "entities/bush_lavendar",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 976,
+  y = 437,
+  treasure_name = "lavendar",
+  sprite = "entities/bush_lavendar",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 992,
+  y = 445,
+  treasure_name = "lavendar",
+  sprite = "entities/bush_lavendar",
+  can_be_cut = true,
+}
+
 tile{
   layer = 1,
   x = 312,

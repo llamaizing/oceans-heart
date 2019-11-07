@@ -31840,6 +31840,24 @@ jumper{
   jump_length = 48,
 }
 
+destination{
+  name = "from_bracken_beach",
+  layer = 0,
+  x = 24,
+  y = 317,
+  direction = 0,
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 296,
+  width = 16,
+  height = 48,
+  destination_map = "new_limestone/bracken_beach",
+  destination = "from_limestone",
+}
+
 tile{
   layer = 1,
   x = 832,

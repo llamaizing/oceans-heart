@@ -40654,6 +40654,24 @@ destination{
   direction = 3,
 }
 
+destination{
+  name = "from_bracken_beach",
+  layer = 0,
+  x = 528,
+  y = 2109,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 512,
+  y = 2112,
+  width = 32,
+  height = 16,
+  destination_map = "new_limestone/bracken_beach",
+  destination = "from_sycamore",
+}
+
 tile{
   layer = 1,
   x = 160,
