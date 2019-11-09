@@ -269,6 +269,7 @@ map{ id = "snapmast_reef/drowned_village", description = "Drowned Village" }
 map{ id = "snapmast_reef/smoldering_rock", description = "Smoldering Rock" }
 map{ id = "snapmast_reef/snapmast_landing", description = "Landing Area" }
 map{ id = "snapmast_reef/snapmast_lighthouse", description = "Snapmast Lighthouse" }
+map{ id = "stonefell_crossroads/TEMP", description = "TEMP" }
 map{ id = "stonefell_crossroads/caves/ancient_grove", description = "Ancient Grove" }
 map{ id = "stonefell_crossroads/caves/ancient_shrine", description = "AncientGroveShrine" }
 map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }

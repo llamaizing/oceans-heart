@@ -25999,6 +25999,22 @@ tile_pattern{
 }
 
 border_set{
+  id = "sandborder",
+  pattern_0 = "301",
+  pattern_1 = "295",
+  pattern_2 = "300",
+  pattern_3 = "294",
+  pattern_4 = "306",
+  pattern_5 = "307",
+  pattern_6 = "309",
+  pattern_7 = "308",
+  pattern_8 = "302",
+  pattern_9 = "303",
+  pattern_10 = "305",
+  pattern_11 = "304",
+}
+
+border_set{
   id = "shallow_water_borders",
   pattern_0 = "1831",
   pattern_1 = "1828",

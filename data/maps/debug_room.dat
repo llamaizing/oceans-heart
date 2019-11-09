@@ -4068,15 +4068,6 @@ destructible{
 
 destructible{
   layer = 0,
-  x = -56,
-  y = -3,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
   x = 152,
   y = -3,
   treasure_name = "lavendar",

@@ -20,6 +20,13 @@ map:register_event("on_started", function()
 end)
 
 
+
+function fort_crow_road_switch:on_activated()
+  sol.audio.play_sound"switch"
+  map:open_doors"fort_crow_road_door"
+end
+
+
 ----Fort------
 function fort_switch_1:on_activated()
   sol.audio.play_sound("switch")
@@ -38,4 +45,25 @@ end
 function boomerang_boss:on_dead()
   game:set_value("boomerang_fort_boss_killed", true)
   map:open_doors("fort_boss_door")
+  sol.audio.play_sound"switch"
+  sol.audio.play_sound"secret"
+end
+
+
+----Shoal Beast
+function bait_vase:on_lifting()
+  sol.timer.start(1200, function()
+    hero:unfreeze()
+    if map:has_entity("bait_monster") == true then bait_monster:set_enabled(true) end
+    sol.audio.play_sound("monster_roar_1")
+  end)
+end
+
+function bait_monster:on_dead()
+  if game:get_value("danley_convo_counter") == nil then
+    game:set_value("danley_convo_counter", "special")
+  else
+    game:set_value("danley_convo_counter", 2)
+    game:set_value("quest_crabhook_shoal_monster", 3) --quest log
+  end
 end

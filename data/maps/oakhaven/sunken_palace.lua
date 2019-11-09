@@ -18,6 +18,24 @@ map:register_event("on_started", function()
   bosses_killed = 0
 end)
 
+function entry_bridge_switch:on_activated()
+  sol.audio.play_sound"switch"
+  map:open_doors"entry_bridge_door"
+end
+
+function secondary_door_switch:on_activated()
+  map:focus_on(map:get_camera(), secondary_door, function()
+    sol.audio.play_sound"switch"
+    map:open_doors"secondary_door"
+  end)
+end
+
+function fiend_miniboss:on_dead()
+  map:focus_on(map:get_camera(), miniboss_door, function()
+    sol.audio.play_sound"secret"
+    map:open_doors"miniboss_door"
+  end)
+end
 
 function seaglint_ruins_lighthouse_door:on_opened()
   if   game:get_value("quest_seaglint_ruins_lighthouse") == 0 then
