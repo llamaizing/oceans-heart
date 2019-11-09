@@ -16770,6 +16770,18 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2424",
+  ground = "deep_water",
+  default_layer = 0,
+  x = { 0, 16, 32 },
+  y = { 360, 360, 360 },
+  width = 16,
+  height = 8,
+  frame_delay = 250,
+  mirror_loop = true,
+}
+
+tile_pattern{
   id = "2425",
   ground = "wall",
   default_layer = 0,
@@ -16831,6 +16843,114 @@ tile_pattern{
   x = 96,
   y = 448,
   width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2430",
+  ground = "wall_bottom_right",
+  default_layer = 0,
+  x = 592,
+  y = 192,
+  width = 32,
+  height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2431",
+  ground = "wall_top_left",
+  default_layer = 0,
+  x = 592,
+  y = 160,
+  width = 32,
+  height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2432",
+  ground = "wall_top_right",
+  default_layer = 0,
+  x = 656,
+  y = 160,
+  width = 32,
+  height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2433",
+  ground = "wall_bottom_left",
+  default_layer = 0,
+  x = 656,
+  y = 192,
+  width = 32,
+  height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2434",
+  ground = "traversable",
+  default_layer = 0,
+  x = 624,
+  y = 160,
+  width = 32,
+  height = 48,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "2435",
+  ground = "empty",
+  default_layer = 0,
+  x = 592,
+  y = 128,
+  width = 32,
+  height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2436",
+  ground = "wall",
+  default_layer = 0,
+  x = 624,
+  y = 128,
+  width = 32,
+  height = 16,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "2437",
+  ground = "empty",
+  default_layer = 0,
+  x = 656,
+  y = 128,
+  width = 32,
+  height = 32,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "2438",
+  ground = "wall",
+  default_layer = 0,
+  x = 688,
+  y = 144,
+  width = 8,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2439",
+  ground = "wall",
+  default_layer = 0,
+  x = 696,
+  y = 144,
+  width = 8,
   height = 16,
 }
 
@@ -25876,5 +25996,30 @@ tile_pattern{
   width = 48,
   height = 24,
   repeat_mode = "none",
+}
+
+border_set{
+  id = "shallow_water_borders",
+  pattern_0 = "1831",
+  pattern_1 = "1828",
+  pattern_2 = "1829",
+  pattern_3 = "1830",
+  pattern_8 = "196",
+  pattern_9 = "195",
+  pattern_10 = "207",
+  pattern_11 = "198",
+}
+
+border_set{
+  id = "water_borders_inside",
+  inner = true,
+  pattern_0 = "1829",
+  pattern_1 = "1830",
+  pattern_2 = "1831",
+  pattern_3 = "1828",
+  pattern_4 = "207",
+  pattern_5 = "198",
+  pattern_6 = "196",
+  pattern_7 = "195",
 }
 
