@@ -1968,7 +1968,7 @@ dialog{
   text = [[
 ARNI:
 If you're trying to lure that monster out to
-get it,I left bait down on Badger Shoal. I
+get it,I left bait down on Lotus Shoal. I
 was near the cliff with two spruces on it. If
 ARNI:
 you were to break open the vase of bait I
@@ -2259,11 +2259,11 @@ dialog{
   text = [[
 FISHERMAN:
 So, the fishing isn't bad here, but where they
-really bite is south of town on Badger Shoal.
-I'd be down there right now if it weren't for
+really bite is south of town on Lotus Shoal.
 FISHERMAN:
+I'd be down there right now if it weren't for
 this really pesky monster that's been attacking
-guys who go down there.
+folks who go down there.
 ]],
 }
 
@@ -2272,7 +2272,7 @@ dialog{
   text = [[
 FISHERMAN:
 So, the fishing isn't bad here, but where they
-really bite is south of town on Badger Shoal.
+really bite is south of town on Lotus Shoal.
 I'd be down there right now if it weren't for
 FISHERMAN:
 this really pesky monster that's been attacking
@@ -12611,7 +12611,13 @@ If you want to take the ferry, just climb
 aboard and I'll open the gate. You been
 through Stonefell Crossroads recently?
 TERRYWEATHER:
-Seems like 
+Seems like the monsters get tougher as
+you head up that way. If you ever wander
+into an area where the monsters are too
+TERRYWEATHER:
+tough for you, there's no shame in coming
+back later after you've improved your
+weapons or armor.
 ]],
 }
 
