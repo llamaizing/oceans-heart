@@ -40952,6 +40952,42 @@ teletransporter{
   destination = "from_lotus_shoal",
 }
 
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 536,
+  y = 29,
+  width = 32,
+  height = 16,
+}
+
+sensor{
+  name = "^map_banner_sensor_2",
+  layer = 0,
+  x = 24,
+  y = 565,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 600,
+  y = 1117,
+  width = 48,
+  height = 16,
+}
+
+sensor{
+  name = "^map_banner_sensor_4",
+  layer = 0,
+  x = 2472,
+  y = 685,
+  width = 16,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 1296,

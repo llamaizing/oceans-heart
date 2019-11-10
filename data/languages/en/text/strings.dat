@@ -107,6 +107,7 @@ text{ key = "location.kingsdown_isle", value = "Kingsdown Isle" }
 text{ key = "location.lighthouse", value = "Crumbling Lighthouse" }
 text{ key = "location.limestone_island", value = "Limestone Island" }
 text{ key = "location.limestone_present", value = "Limestone Island" }
+text{ key = "location.lotus_shoal", value = "Lotus Shoal" }
 text{ key = "location.marblecliff", value = "Marblecliff Mountain" }
 text{ key = "location.naerreturn_bay", value = "Naerreturn Bay" }
 text{ key = "location.oakhaven", value = "Oakhaven" }
@@ -122,7 +123,7 @@ text{ key = "location.snapmast_landing", value = "Snapmast Reef" }
 text{ key = "location.spruce_head", value = "Spruce Head" }
 text{ key = "location.spruce_head_shrine", value = "Spruce Head Shrine" }
 text{ key = "location.stonefell_crossroads", value = "Stonefell Crossroads" }
-text{ key = "location.sunken_palace", value = "Sunkan Palace" }
+text{ key = "location.sunken_palace", value = "Sunken Palace" }
 text{ key = "location.tern_marsh", value = "Tern Marsh" }
 text{ key = "location.thrush_fort", value = "Heron's Tomb" }
 text{ key = "location.umber_lake", value = "Lake Umber"}

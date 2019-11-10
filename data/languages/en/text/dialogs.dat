@@ -11755,6 +11755,19 @@ You remain completely safe.
 }
 
 dialog{
+  id = "_oakhaven.observations.misc.lighthouse_ephitat",
+  text = [[
+There's some very worn writing carved into
+the stone:
+Zephyrine, may we fight our friends, so they
+might not become our enemies. In the
+ruins of the palace he destoryed, I've
+built this lighthouse. Should you decide
+to follow it home, we can rebuild all.
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.misc.llama",
   text = [[
 It's a statue of a llama. You can tell someone

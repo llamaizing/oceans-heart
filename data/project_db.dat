@@ -250,6 +250,7 @@ map{ id = "oakhaven/oakhaven_old", description = "OLDhaven" }
 map{ id = "oakhaven/poison_grove", description = "Poison Grove" }
 map{ id = "oakhaven/port", description = "Port" }
 map{ id = "oakhaven/port_OLD", description = "OLDPort" }
+map{ id = "oakhaven/sunken_lighthouse", description = "Sunken Lighthouse" }
 map{ id = "oakhaven/sunken_palace", description = "Sunken Palace" }
 map{ id = "oakhaven/veilwood", description = "Veilwood" }
 map{ id = "oakhaven/waterfall_canyon", description = "Waterfall Canyon" }

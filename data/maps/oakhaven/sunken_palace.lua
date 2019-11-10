@@ -37,11 +37,13 @@ function fiend_miniboss:on_dead()
   end)
 end
 
+
 function seaglint_ruins_lighthouse_door:on_opened()
-  if   game:get_value("quest_seaglint_ruins_lighthouse") == 0 then
+  if game:get_value("quest_seaglint_ruins_lighthouse") == 0 then
     game:set_value("quest_seaglint_ruins_lighthouse", 1)
   end
 end
+
 
 function switch_1:on_activated()
   hero:freeze()
