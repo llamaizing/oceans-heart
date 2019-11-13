@@ -1,0 +1,1284 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 1664,
+  height = 720,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "overworld_oakhaven",
+  music = "goatshead_overworld_2",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 1664,
+  height = 720,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 64,
+  width = 192,
+  height = 16,
+  pattern = "17",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 80,
+  width = 192,
+  height = 224,
+  pattern = "87",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 160,
+  width = 48,
+  height = 112,
+  pattern = "87",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -24,
+  y = 160,
+  width = 24,
+  height = 112,
+  pattern = "88",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -40,
+  y = 160,
+  width = 16,
+  height = 96,
+  pattern = "88",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 160,
+  width = 16,
+  height = 72,
+  pattern = "88",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 152,
+  width = 48,
+  height = 8,
+  pattern = "90",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 160,
+  width = 8,
+  height = 112,
+  pattern = "96",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 240,
+  width = 8,
+  height = 16,
+  pattern = "92",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -40,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "94",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 264,
+  width = 8,
+  height = 8,
+  pattern = "92",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -24,
+  y = 272,
+  width = 24,
+  height = 8,
+  pattern = "94",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "89",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 232,
+  width = 8,
+  height = 8,
+  pattern = "97",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "93",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 256,
+  width = 8,
+  height = 8,
+  pattern = "97",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 272,
+  width = 8,
+  height = 8,
+  pattern = "93",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 272,
+  width = 8,
+  height = 8,
+  pattern = "95",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 152,
+  width = 8,
+  height = 8,
+  pattern = "95",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 16,
+  width = 16,
+  height = 128,
+  pattern = "14",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 320,
+  width = 64,
+  height = 16,
+  pattern = "9",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 336,
+  width = 64,
+  height = 16,
+  pattern = "6",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 272,
+  width = 64,
+  height = 16,
+  pattern = "12",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "23",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 352,
+  width = 64,
+  height = 32,
+  pattern = "24",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 288,
+  width = 64,
+  height = 16,
+  pattern = "9",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 304,
+  width = 64,
+  height = 16,
+  pattern = "6",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 144,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 144,
+  width = 32,
+  height = 16,
+  pattern = "17",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 464,
+  width = 96,
+  height = 16,
+  pattern = "17",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 528,
+  width = 96,
+  height = 16,
+  pattern = "9",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -64,
+  y = 480,
+  width = 16,
+  height = 32,
+  pattern = "15",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -64,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -64,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 544,
+  width = 96,
+  height = 16,
+  pattern = "6",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 512,
+  width = 96,
+  height = 16,
+  pattern = "12",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 480,
+  width = 16,
+  height = 32,
+  pattern = "14",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 560,
+  width = 16,
+  height = 32,
+  pattern = "23",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -64,
+  y = 560,
+  width = 16,
+  height = 32,
+  pattern = "25",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 560,
+  width = 96,
+  height = 32,
+  pattern = "24",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -64,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "18",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -64,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 480,
+  width = 96,
+  height = 32,
+  pattern = "87",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 368,
+  width = 8,
+  height = 16,
+  pattern = "1831",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = -32,
+  y = 160,
+  width = 48,
+  height = 32,
+  pattern = "36",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -24,
+  y = 200,
+  width = 32,
+  height = 24,
+  pattern = "35",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 480,
+  width = 8,
+  height = 16,
+  pattern = "1043",
+}
+
+tile{
+  layer = 0,
+  x = -64,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "1038",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 496,
+  width = 8,
+  height = 16,
+  pattern = "1041",
+}
+
+tile{
+  layer = 0,
+  x = -64,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "1040",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 224,
+  width = 48,
+  height = 24,
+  pattern = "58",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -24,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "27",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 256,
+  width = 32,
+  height = 16,
+  pattern = "55",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1648,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 72,
+  width = 8,
+  height = 8,
+  pattern = "89",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "876",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = -8,
+  width = 16,
+  height = 16,
+  pattern = "879",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "879",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "878",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "876",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "875",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "876",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "875",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "879",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "878",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "1498",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 72,
+  width = 16,
+  height = 8,
+  pattern = "1497",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "1498",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 72,
+  width = 16,
+  height = 8,
+  pattern = "1497",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = -16,
+  width = 16,
+  height = 8,
+  pattern = "1497",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = -16,
+  width = 16,
+  height = 8,
+  pattern = "1497",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "1930",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 96,
+  width = 16,
+  height = 8,
+  pattern = "1930",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1432,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "1930",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = -16,
+  width = 16,
+  height = 8,
+  pattern = "1930",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = -32,
+  width = 16,
+  height = 8,
+  pattern = "1930",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = -8,
+  width = 32,
+  height = 96,
+  pattern = "1928",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 320,
+  width = 192,
+  height = 16,
+  pattern = "9",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 80,
+  width = 16,
+  height = 224,
+  pattern = "15",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 336,
+  width = 192,
+  height = 16,
+  pattern = "6",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 304,
+  width = 128,
+  height = 16,
+  pattern = "12",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 80,
+  width = 16,
+  height = 224,
+  pattern = "14",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "23",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 352,
+  width = 16,
+  height = 32,
+  pattern = "25",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 352,
+  width = 192,
+  height = 32,
+  pattern = "24",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "18",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 208,
+  width = 128,
+  height = 16,
+  pattern = "17",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 368,
+  width = 224,
+  height = 16,
+  pattern = "9",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 224,
+  width = 16,
+  height = 128,
+  pattern = "15",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "8",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "7",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 384,
+  width = 224,
+  height = 16,
+  pattern = "6",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 352,
+  width = 224,
+  height = 16,
+  pattern = "12",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 320,
+  width = 16,
+  height = 32,
+  pattern = "14",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 400,
+  width = 16,
+  height = 32,
+  pattern = "23",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 400,
+  width = 16,
+  height = 32,
+  pattern = "25",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 400,
+  width = 224,
+  height = 32,
+  pattern = "24",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "18",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "13",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 224,
+  width = 208,
+  height = 128,
+  pattern = "87",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 1392,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "18",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 208,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 1,
+  x = -32,
+  y = 144,
+  width = 48,
+  height = 16,
+  pattern = "38",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 1,
+  x = -24,
+  y = 176,
+  width = 32,
+  height = 24,
+  pattern = "37",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 1,
+  x = -48,
+  y = 168,
+  width = 48,
+  height = 56,
+  pattern = "59",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 1,
+  x = -16,
+  y = 216,
+  width = 32,
+  height = 40,
+  pattern = "56",
+  tileset = "limestone",
+}
+

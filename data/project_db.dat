@@ -275,6 +275,8 @@ map{ id = "stonefell_crossroads/caves/ancient_grove", description = "Ancient Gro
 map{ id = "stonefell_crossroads/caves/ancient_shrine", description = "AncientGroveShrine" }
 map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }
 map{ id = "stonefell_crossroads/caves/sycamore_bombcave", description = "Sycamore Bombcave" }
+map{ id = "stonefell_crossroads/crow_road", description = "Crow Road" }
+map{ id = "stonefell_crossroads/fort_crow", description = "Fort Crow" }
 map{ id = "stonefell_crossroads/lotus_shoal", description = "Lotus Shoal" }
 map{ id = "stonefell_crossroads/spruce_head", description = "Spruce Head" }
 map{ id = "stonefell_crossroads/stonefell_crossroads", description = "Sonefell Crossroads" }
