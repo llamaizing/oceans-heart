@@ -14,6 +14,7 @@ map:register_event("on_started", function()
   if game:get_value("boomerang_fort_boss_killed") then
     boomerang_boss:set_enabled(false)
     map:set_doors_open("fort_boss_door")
+    lenda:set_enabled(false)
   end
 --  bait_monster:set_enabled(false)
 
@@ -27,7 +28,27 @@ function fort_crow_road_switch:on_activated()
 end
 
 
+----Lenda----
+function lenda:on_interaction()
+  if not game:get_value("quest_shoal_pirate_fort") then
+    game:start_dialog("_sycamore_ferry.npcs.lenda.1", function()
+      game:set_value("quest_shoal_pirate_fort", 0)
+      hero:start_treasure("key_shoal_pirate_fort")
+      game:get_item("key_shoal_pirate_fort"):set_variant(1)
+    end)
+  elseif game:get_value("quest_shoal_pirate_fort") == 0 then
+    game:start_dialog("_sycamore_ferry.npcs.lenda.2")
+  end
+end
+
+
 ----Fort------
+function pirate_door:on_interaction()
+  if game:has_item("key_shoal_pirate_fort") then
+    pirate_door:remove()
+  end
+end
+
 function fort_switch_1:on_activated()
   sol.audio.play_sound("switch")
   map:focus_on(map:get_camera(), fort_door_1, function()
@@ -44,6 +65,7 @@ end
 
 function boomerang_boss:on_dead()
   game:set_value("boomerang_fort_boss_killed", true)
+  game:set_value("quest_shoal_pirate_fort", 1)
   map:open_doors("fort_boss_door")
   sol.audio.play_sound"switch"
   sol.audio.play_sound"secret"

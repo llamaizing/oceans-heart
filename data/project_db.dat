@@ -1551,6 +1551,7 @@ item{ id = "key_mead_safehouse", description = "Key - Mead Safehouse" }
 item{ id = "key_mushroom_spot", description = "Key - Mushroom Spot" }
 item{ id = "key_palace_of_storms", description = "Key-Palace of Storms" }
 item{ id = "key_poplar_shack", description = "Key - Poplar Shack" }
+item{ id = "key_shoal_pirate_fort", description = "Key-ShoalPirateFort" }
 item{ id = "key_sinking_lighthouse", description = "Key - Sinking Lighthouse" }
 item{ id = "key_sometimes_cape_ruins", description = "Key - Sometimes Cape Ruins" }
 item{ id = "key_spruce_head", description = "Key - Spruce Head" }

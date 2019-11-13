@@ -337,6 +337,13 @@ side{
 }
 
 side{
+	dialog_id = "quest.side.shoal_pirate_fort",
+	calc_phase = "quest_shoal_pirate_fort",
+	items = {"key_shoal_pirate_fort.1"},
+	location = "location.lotus_shoal"
+}
+
+side{
     dialog_id = "quest.side.ballast_harbor.hornet_honey",
     calc_phase = "quest_ballast_harbor_hornet_honey",
     replace_v = {

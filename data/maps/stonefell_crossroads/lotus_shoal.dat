@@ -22,10 +22,250 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 96,
+  y = 88,
   width = 160,
   height = 768,
   pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 256,
+  width = 80,
+  height = 128,
+  pattern = "70",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 256,
+  width = 64,
+  height = 48,
+  pattern = "79",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 304,
+  width = 48,
+  height = 16,
+  pattern = "79",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 320,
+  width = 32,
+  height = 16,
+  pattern = "79",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 336,
+  width = 16,
+  height = 8,
+  pattern = "79",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 248,
+  width = 64,
+  height = 8,
+  pattern = "76",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 256,
+  width = 8,
+  height = 48,
+  pattern = "78",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 256,
+  width = 8,
+  height = 88,
+  pattern = "80",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "82",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 312,
+  width = 8,
+  height = 8,
+  pattern = "78",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "82",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 328,
+  width = 8,
+  height = 8,
+  pattern = "78",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "82",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 344,
+  width = 16,
+  height = 8,
+  pattern = "82",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 248,
+  width = 8,
+  height = 8,
+  pattern = "75",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 248,
+  width = 8,
+  height = 8,
+  pattern = "77",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 8,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "83",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 304,
+  width = 8,
+  height = 8,
+  pattern = "86",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "83",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 320,
+  width = 8,
+  height = 8,
+  pattern = "86",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "83",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 336,
+  width = 8,
+  height = 8,
+  pattern = "86",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 344,
+  width = 8,
+  height = 8,
+  pattern = "83",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 344,
+  width = 8,
+  height = 8,
+  pattern = "81",
+  tileset = "spruce_head",
 }
 
 tile{
@@ -21760,9 +22000,9 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 864,
+  y = 848,
   width = 80,
-  height = 336,
+  height = 352,
   pattern = "206",
 }
 
@@ -29143,7 +29383,7 @@ tile{
 tile{
   layer = 0,
   x = 56,
-  y = 392,
+  y = 432,
   width = 16,
   height = 16,
   pattern = "39",
@@ -33769,7 +34009,7 @@ tile{
 tile{
   layer = 0,
   x = -16,
-  y = 336,
+  y = 352,
   width = 48,
   height = 40,
   pattern = "111",
@@ -39061,15 +39301,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 0,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "46",
-}
-
-tile{
-  layer = 0,
   x = 512,
   y = 16,
   width = 8,
@@ -39477,6 +39708,294 @@ tile{
   tileset = "overworld_oakhaven",
 }
 
+tile{
+  layer = 0,
+  x = 2312,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 2392,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 2352,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 2448,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 2336,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 2136,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 1824,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 1792,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 8,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 400,
+  width = 32,
+  height = 32,
+  pattern = "24",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 400,
+  width = 16,
+  height = 32,
+  pattern = "23",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 384,
+  width = 32,
+  height = 16,
+  pattern = "12",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 256,
+  width = 16,
+  height = 128,
+  pattern = "14",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 240,
+  width = 64,
+  height = 16,
+  pattern = "17",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "110",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "10",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "11",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 16,
+  height = 64,
+  pattern = "14",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "limestone",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "2002",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 264,
+  width = 8,
+  height = 32,
+  pattern = "2010",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 240,
+  width = 32,
+  height = 32,
+  pattern = "109",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "686",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 272,
+  width = 24,
+  height = 16,
+  pattern = "1580",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "684",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 352,
+  width = 32,
+  height = 32,
+  pattern = "109",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "1460",
+  tileset = "overworld_yarrowmouth",
+}
+
 wall{
   layer = 0,
   x = 2064,
@@ -39641,6 +40160,7 @@ enemy{
   y = 77,
   direction = 3,
   breed = "normal_enemies/pirate_sword_brown_1",
+  savegame_variable = "boomerang_fort_pirate",
 }
 
 enemy{
@@ -39650,6 +40170,7 @@ enemy{
   y = 317,
   direction = 3,
   breed = "normal_enemies/pirate_sword_brown_1",
+  savegame_variable = "boomerang_fort_pirate_2",
 }
 
 enemy{
@@ -39659,6 +40180,7 @@ enemy{
   y = 461,
   direction = 3,
   breed = "normal_enemies/pirate_sword_brown_1",
+  savegame_variable = "boomerang_fort_pirate_3",
 }
 
 enemy{
@@ -39668,6 +40190,7 @@ enemy{
   y = 125,
   direction = 3,
   breed = "normal_enemies/pirate_sword_brown_1",
+  savegame_variable = "boomerang_fort_pirate_4",
 }
 
 enemy{
@@ -39677,6 +40200,7 @@ enemy{
   y = 309,
   direction = 3,
   breed = "normal_enemies/pirate_gunner",
+  savegame_variable = "boomerang_fort_pirate_5",
 }
 
 enemy{
@@ -39686,6 +40210,7 @@ enemy{
   y = 125,
   direction = 3,
   breed = "normal_enemies/pirate_gunner",
+  savegame_variable = "boomerang_fort_pirate_6",
 }
 
 npc{
@@ -40986,6 +41511,64 @@ sensor{
   y = 685,
   width = 16,
   height = 32,
+}
+
+destination{
+  name = "from_spruce_head_to_campsite",
+  layer = 0,
+  x = 24,
+  y = 333,
+  direction = 0,
+}
+
+dynamic_tile{
+  name = "campfire",
+  layer = 0,
+  x = 40,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "700",
+}
+
+chest{
+  layer = 0,
+  x = 24,
+  y = 269,
+  treasure_name = "bomb",
+  treasure_variant = 5,
+  treasure_savegame_variable = "lendas_secret_treasure_chest",
+  sprite = "entities/chest",
+}
+
+npc{
+  name = "lenda",
+  layer = 0,
+  x = 24,
+  y = 301,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/woman/woman_13.1",
+}
+
+npc{
+  name = "pirate_door",
+  layer = 0,
+  x = 1392,
+  y = 501,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/door_npc_tall",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "1460",
+  tileset = "overworld_yarrowmouth",
 }
 
 tile{
@@ -43588,7 +44171,7 @@ tile{
 tile{
   layer = 1,
   x = -16,
-  y = 312,
+  y = 328,
   width = 48,
   height = 24,
   pattern = "112",
@@ -43891,6 +44474,94 @@ tile{
   width = 16,
   height = 16,
   pattern = "240",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "2004",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 248,
+  width = 8,
+  height = 16,
+  pattern = "2008",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "2005",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 1,
+  x = 16,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "2013",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 1,
+  x = 32,
+  y = 232,
+  width = 8,
+  height = 16,
+  pattern = "2014",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "110",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 272,
+  width = 16,
+  height = 8,
+  pattern = "687",
+}
+
+tile{
+  layer = 1,
+  x = 40,
+  y = 264,
+  width = 24,
+  height = 8,
+  pattern = "1581",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 336,
+  width = 32,
+  height = 16,
+  pattern = "110",
+  tileset = "spruce_head",
 }
 
 enemy{

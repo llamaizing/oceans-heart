@@ -4655,14 +4655,12 @@ dialog{
   text = [[
 There's a letter here...
 Captain, bad news. We couldn't get into
-Thrush fort. Apparently it was locked from
+Heron's Tomb. Apparently it was locked from
 the inside hundreds of years ago by a
 guy called Heron, and only his ghost has
 the key. How can ghosts have keys?
-Spooky, anyway captain, we've started
+Spooky. Anyway captain, we've started
 building our own fort to impress Blackbeard.
-Unfortunately, our rivals have shown up
-and seem to be building their own fort!
 ]],
 }
 
@@ -12657,6 +12655,70 @@ the East.
 }
 
 dialog{
+  id = "_sycamore_ferry.npcs.lenda.1",
+  text = [[
+LENDA:
+Oh snails! I didn't think anyone would find
+me here! You're not with those pirates on
+the shoal, are you?
+TILIA:
+No way! You're hiding from them?
+
+
+LENDA:
+Yeah! I stole the key to the fort they built
+to lock them inside. I don't think any of
+them can swim.
+TILIA:
+Yeah, I mean, who can?
+
+
+LENDA:
+Right? I don't know anyone who can swim.
+It's bad luck.
+
+TILIA:
+So then now what?
+
+
+LENDA:
+$1...$3That's my whole plan. So, okay. It
+wasn't totally thought-through. Since then,
+I've been waiting here to make sure they
+LENDA:
+don't like... built a bridge to get out.
+They haven't yet.
+
+TILIA:
+What$1...$3 Do you want me to maybe just go
+beat them up? So you don't have to wait here
+forever?
+LENDA:
+OH! That's way better! Yeah, would you?
+Here's the key to their fort!
+
+(You got a Fort Key!)
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.lenda.2",
+  text = [[
+LENDA:
+So yeah, I guess my plan was just to lock
+those pirates in their fort and... well my
+plan was to lock the pirates in their fort.
+LENDA:
+Now I've gotta wait here to make sure they
+don't get out.
+
+TILIA:
+Don't worry, I'll go beat them up so you
+can stop camping here.
+]],
+}
+
+dialog{
   id = "_treasure.amulet.1",
   text = [[
 You received a magic amulet. Created
@@ -16391,17 +16453,31 @@ dialog{
   id = "quest.side.lighthouses",
   title = "Old Lighthouses",
   text = [[
-##You hear about four ancient
+##You heard about four ancient
 ##lighthouses built to guide a lost
 ##lover back from sea.
 @Light all four lighthouses$!:
 ! $v1 lighthouses are burning.
 @You feel drawn back to Naerreturn Bay
-!
-!It's on Yarrowmouth Island.
+!where the lighthouse keeper lives.
 @Board the ghost ship
 #::
 #%=ITEM FOUND: $ITEM{gust.1}   $ITEM_NAME
+]],
+}
+
+dialog{
+  id = "quest.side.shoal_pirate_fort",
+  title = "The Locked Fort",
+  text = [[
+##Someone locked some pirates in
+##their fort, but they won't stay
+##there forever.
+@Go into the fort and beat up
+!the pirates.
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -16774,4 +16850,3 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
-
