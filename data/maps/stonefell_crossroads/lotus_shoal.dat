@@ -39996,6 +39996,15 @@ tile{
   tileset = "overworld_yarrowmouth",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "206",
+}
+
 wall{
   layer = 0,
   x = 2064,
@@ -41559,6 +41568,34 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "entities/door_npc_tall",
+}
+
+destination{
+  name = "from_spruce_head",
+  layer = 0,
+  x = 24,
+  y = 573,
+  direction = 0,
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 560,
+  width = 16,
+  height = 32,
+  destination_map = "stonefell_crossroads/spruce_head",
+  destination = "from_lotus_shoal",
+}
+
+teletransporter{
+  layer = 0,
+  x = 0,
+  y = 304,
+  width = 16,
+  height = 48,
+  destination_map = "stonefell_crossroads/spruce_head",
+  destination = "from_lotus_shoal_campsite",
 }
 
 tile{

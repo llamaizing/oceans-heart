@@ -276,6 +276,7 @@ map{ id = "stonefell_crossroads/caves/ancient_shrine", description = "AncientGro
 map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }
 map{ id = "stonefell_crossroads/caves/sycamore_bombcave", description = "Sycamore Bombcave" }
 map{ id = "stonefell_crossroads/lotus_shoal", description = "Lotus Shoal" }
+map{ id = "stonefell_crossroads/spruce_head", description = "Spruce Head" }
 map{ id = "stonefell_crossroads/stonefell_crossroads", description = "Sonefell Crossroads" }
 map{ id = "stonefell_crossroads/sycamore_ferry", description = "Sycamore Ferry" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
