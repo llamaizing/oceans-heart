@@ -21,13 +21,6 @@ map:register_event("on_started", function()
 end)
 
 
-
-function fort_crow_road_switch:on_activated()
-  sol.audio.play_sound"switch"
-  map:open_doors"fort_crow_road_door"
-end
-
-
 ----Lenda----
 function lenda:on_interaction()
   if not game:get_value("quest_shoal_pirate_fort") then

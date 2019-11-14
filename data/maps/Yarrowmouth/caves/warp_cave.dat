@@ -1417,7 +1417,8 @@ chest{
   layer = 0,
   x = 208,
   y = 77,
-  treasure_name = "coral_ore",
+  treasure_name = "ether_bombs_pickable",
+  treasure_variant = 4,
   treasure_savegame_variable = "yarrowmouth_warp_cave_treasure",
   sprite = "entities/chest",
 }

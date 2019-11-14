@@ -18231,6 +18231,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2538",
+  ground = "wall",
+  default_layer = 1,
+  x = 544,
+  y = 960,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "2539",
+  ground = "wall",
+  default_layer = 1,
+  x = 560,
+  y = 960,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
   id = "254",
   ground = "wall",
   default_layer = 0,

@@ -26567,7 +26567,7 @@ teletransporter{
   y = 1568,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/eastoak_OLD",
+  destination_map = "stonefell_crossroads/fort_crow",
   destination = "from_fort_crow_front_door",
 }
 
