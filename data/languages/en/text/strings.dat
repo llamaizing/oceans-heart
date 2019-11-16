@@ -96,6 +96,7 @@ text{ key = "location.crabhook_village", value = "Crabhook Village" }
 text{ key = "location.drowned_village", value = "The Drowned Village" }
 text{ key = "location.eastoak", value = "Fort Crow" }
 text{ key = "location.foothills", value = "The Puzzlewood" }
+text{ key = "location.forest_of_tides", value = "Forest of Tides" }
 text{ key = "location.ghost_ship", value = "Zephyrine's Salvation" }
 text{ key = "location.goatshead_harbor", value = "Goatshead Harbor" }
 text{ key = "location.goatshead_island", value = "Goatshead Island" }
@@ -109,7 +110,7 @@ text{ key = "location.limestone_island", value = "Limestone Island" }
 text{ key = "location.limestone_present", value = "Limestone Island" }
 text{ key = "location.lotus_shoal", value = "Lotus Shoal" }
 text{ key = "location.marblecliff", value = "Marblecliff Mountain" }
-text{ key = "location.naerreturn_bay", value = "Naerreturn Bay" }
+text{ key = "location.naerreturn_bay", value = "Zephyr Bay" }
 text{ key = "location.oakhaven", value = "Oakhaven" }
 text{ key = "location.poplar_coast", value = "Spruce Head" }
 text{ key = "location.poplar_forest", value = "Poplar Forest" }
@@ -131,6 +132,7 @@ text{ key = "location.veilwood", value = "The Veilwood" }
 text{ key = "location.west_coast", value = "West Oak" }
 text{ key = "location.yarrowmouth", value = "Yarrowmouth" }
 text{ key = "location.yarrowmouth_village", value = "Yarrowmouth" }
+text{ key = "location.zephyr_bay", value = "Zephyr Bay" }
 text{ key = "menu.quest_log.back_prompt", value = "D Back" }
 text{ key = "menu.quest_log.main_quests_tab", value = "Main\nQuests" }
 text{ key = "menu.quest_log.no_main_quests", value = "You have no main quests" }

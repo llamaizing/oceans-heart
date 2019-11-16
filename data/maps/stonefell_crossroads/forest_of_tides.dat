@@ -21638,6 +21638,51 @@ teletransporter{
   destination = "from_forest_of_tides",
 }
 
+destructible{
+  layer = 0,
+  x = 1624,
+  y = 301,
+  sprite = "entities/block_stone_lv1",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+destructible{
+  layer = 0,
+  x = 1616,
+  y = 317,
+  sprite = "entities/block_stone_lv1",
+  weight = 1,
+  damage_on_enemies = 2,
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 24,
+  y = 141,
+  width = 16,
+  height = 48,
+}
+
+sensor{
+  name = "^map_banner_sensor_2",
+  layer = 0,
+  x = 1640,
+  y = 301,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 1464,
+  y = 701,
+  width = 64,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 1416,

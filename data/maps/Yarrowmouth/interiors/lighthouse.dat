@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "indoors_stone",
-  music = "driftwood-2",
+  music = "goatshead_overworld_2",
 }
 
 tile{
@@ -1765,7 +1765,7 @@ teletransporter{
   y = 184,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/naerreturn_bay",
+  destination_map = "stonefell_crossroads/zephyr_bay",
   destination = "from_lighthouse",
 }
 
