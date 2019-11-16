@@ -283,6 +283,7 @@ map{ id = "stonefell_crossroads/lotus_shoal", description = "Lotus Shoal" }
 map{ id = "stonefell_crossroads/spruce_head", description = "Spruce Head" }
 map{ id = "stonefell_crossroads/stonefell_crossroads", description = "Sonefell Crossroads" }
 map{ id = "stonefell_crossroads/sycamore_ferry", description = "Sycamore Ferry" }
+map{ id = "stonefell_crossroads/zephyr_bay", description = "Zephyr Bay" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }

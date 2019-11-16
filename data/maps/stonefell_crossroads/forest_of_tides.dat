@@ -20920,6 +20920,16 @@ tile{
   pattern = "103",
 }
 
+tile{
+  layer = 0,
+  x = 1648,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "262",
+  tileset = "oceanheart_outdoors_1",
+}
+
 teletransporter{
   layer = 0,
   x = 128,
@@ -21608,6 +21618,24 @@ enemy{
   y = 365,
   direction = 3,
   breed = "normal_enemies/triangle_crab_red",
+}
+
+destination{
+  name = "from_naerreturn_bay",
+  layer = 0,
+  x = 1640,
+  y = 309,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1648,
+  y = 288,
+  width = 16,
+  height = 32,
+  destination_map = "stonefell_crossroads/zephyr_bay",
+  destination = "from_forest_of_tides",
 }
 
 tile{
@@ -23413,6 +23441,16 @@ tile{
   width = 8,
   height = 8,
   pattern = "496",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 1648,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "253",
   tileset = "oceanheart_outdoors_1",
 }
 
