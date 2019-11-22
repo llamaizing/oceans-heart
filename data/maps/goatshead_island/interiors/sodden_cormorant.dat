@@ -2166,14 +2166,14 @@ destination{
   name = "from_outside",
   layer = 0,
   x = 264,
-  y = 333,
+  y = 349,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
   x = 256,
-  y = 336,
+  y = 352,
   width = 16,
   height = 16,
   destination_map = "goatshead_island/goatshead_harbor",

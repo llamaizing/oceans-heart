@@ -30859,7 +30859,7 @@ teletransporter{
   y = 1088,
   width = 32,
   height = 32,
-  destination_map = "goatshead_island/goatshead_harbor",
+  destination_map = "goatshead_island/goatshead_harbor_OLD",
   destination = "from_limestone",
 }
 

@@ -967,14 +967,14 @@ destination{
   name = "from_outside",
   layer = 0,
   x = 160,
-  y = 189,
+  y = 197,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
   x = 152,
-  y = 192,
+  y = 200,
   width = 16,
   height = 16,
   destination_map = "goatshead_island/goatshead_harbor",

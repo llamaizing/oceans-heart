@@ -3515,6 +3515,33 @@ arrows too.
 }
 
 dialog{
+  id = "_goatshead.npcs.market_people.15",
+  text = [[
+So I was weeding my garden last week, bear
+with me, this story has a point, but I was
+weeding, and pulled up a bush, and underneath
+the bush was a hole. I was off my balance
+and wasn't expecting that, so I fell right
+in, and wouldn't you know? There was a
+pirate cache down the hole! Some treasure!
+I figure any other buried treasure must be
+hidden under some distinctive markings, so
+the pirates can remember where they left
+their cache.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.market_people.16",
+  text = [[
+Have you seen the ruins just west of town
+near the ferry? It's an old tomb, quite
+a lovely little tourist destination honestly,
+if a bit grim.
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.market_people.2",
   text = [[
 I just don't understand. If you're selling
@@ -16467,21 +16494,6 @@ dialog{
 }
 
 dialog{
-  id = "quest.side.shoal_pirate_fort",
-  title = "The Locked Fort",
-  text = [[
-##Someone locked some pirates in
-##their fort, but they won't stay
-##there forever.
-@Go into the fort and beat up
-!the pirates.
-#::
-#%=$i0    QUEST ITEM:
-#%=    $ITEM_NAME
-]],
-}
-
-dialog{
   id = "quest.side.mysterious_doors",
   title = "Mysterious Doors",
   text = [[
@@ -16752,6 +16764,21 @@ dialog{
 }
 
 dialog{
+  id = "quest.side.shoal_pirate_fort",
+  title = "The Locked Fort",
+  text = [[
+##Someone locked some pirates in
+##their fort, but they won't stay
+##there forever.
+@Go into the fort and beat up
+!the pirates.
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+]],
+}
+
+dialog{
   id = "quest.side.yarrowmouth.iron_pinecone",
   title = "An Iron Pinecone",
   text = [[
@@ -16850,3 +16877,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+

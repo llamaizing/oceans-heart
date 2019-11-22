@@ -128,6 +128,7 @@ map{ id = "goatshead_island/caves/thrush_fort", description = "Thrush Fort" }
 map{ id = "goatshead_island/crabhook_village", description = "Crabhook Village" }
 map{ id = "goatshead_island/goat_hill", description = "goat hill" }
 map{ id = "goatshead_island/goatshead_harbor", description = "Goatshead Harbor" }
+map{ id = "goatshead_island/goatshead_harbor_OLD", description = "OLD Goatshead Harbor" }
 map{ id = "goatshead_island/interiors/CV_arni", description = "Crabhook - Arni" }
 map{ id = "goatshead_island/interiors/CV_dusit", description = "Dusit" }
 map{ id = "goatshead_island/interiors/CV_tavern", description = "Crabhook Tavern" }

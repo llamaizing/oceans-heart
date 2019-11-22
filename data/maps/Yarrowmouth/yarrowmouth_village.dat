@@ -34978,7 +34978,7 @@ teletransporter{
   y = 1336,
   width = 64,
   height = 32,
-  destination_map = "goatshead_island/goatshead_harbor",
+  destination_map = "goatshead_island/goatshead_harbor_OLD",
   destination = "ferry_landing",
 }
 

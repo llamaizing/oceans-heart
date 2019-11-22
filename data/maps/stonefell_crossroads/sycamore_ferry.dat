@@ -21628,15 +21628,6 @@ tile{
 tile{
   layer = 0,
   x = 1216,
-  y = 1136,
-  width = 16,
-  height = 224,
-  pattern = "70",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
   y = 1408,
   width = 16,
   height = 16,
@@ -28613,7 +28604,7 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 1120,
+  y = 1168,
   width = 16,
   height = 16,
   pattern = "26",
@@ -30792,36 +30783,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "153",
-}
-
-tile{
-  layer = 0,
-  x = 1168,
-  y = 1112,
-  width = 16,
-  height = 16,
-  pattern = "2337",
-  tileset = "oceanheart_outdoors_1",
-}
-
-tile{
-  layer = 0,
-  x = 1152,
-  y = 1120,
-  width = 16,
-  height = 16,
-  pattern = "2339",
-  tileset = "oceanheart_outdoors_1",
-}
-
-tile{
-  layer = 0,
-  x = 1168,
-  y = 1136,
-  width = 16,
-  height = 16,
-  pattern = "2338",
-  tileset = "oceanheart_outdoors_1",
 }
 
 tile{
@@ -39139,6 +39100,175 @@ tile{
   pattern = "127",
 }
 
+tile{
+  layer = 0,
+  x = 1216,
+  y = 1072,
+  width = 32,
+  height = 32,
+  pattern = "2440",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 1104,
+  width = 48,
+  height = 16,
+  pattern = "2441",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 1088,
+  width = 16,
+  height = 48,
+  pattern = "2441",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 1136,
+  width = 32,
+  height = 16,
+  pattern = "2455",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 1136,
+  width = 16,
+  height = 224,
+  pattern = "70",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 1104,
+  width = 16,
+  height = 32,
+  pattern = "2454",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 1088,
+  width = 16,
+  height = 32,
+  pattern = "2454",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 1072,
+  width = 32,
+  height = 16,
+  pattern = "2453",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 1120,
+  width = 32,
+  height = 32,
+  pattern = "2457",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 1144,
+  width = 32,
+  height = 32,
+  pattern = "2457",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 1136,
+  width = 32,
+  height = 32,
+  pattern = "2457",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 1136,
+  width = 16,
+  height = 16,
+  pattern = "2338",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "2337",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "2339",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 1096,
+  width = 16,
+  height = 16,
+  pattern = "2338",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 1080,
+  width = 16,
+  height = 16,
+  pattern = "97",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 1064,
+  width = 32,
+  height = 32,
+  pattern = "2457",
+  tileset = "oceanheart_outdoors_1",
+}
+
 teletransporter{
   layer = 0,
   x = 584,
@@ -40671,6 +40801,24 @@ teletransporter{
   height = 56,
   destination_map = "stonefell_crossroads/forest_of_tides",
   destination = "from_ferry",
+}
+
+destination{
+  name = "from_goatshead",
+  layer = 0,
+  x = 1224,
+  y = 1101,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1232,
+  y = 1072,
+  width = 16,
+  height = 48,
+  destination_map = "goatshead_island/goatshead_harbor",
+  destination = "from_sycamore_ferry",
 }
 
 tile{

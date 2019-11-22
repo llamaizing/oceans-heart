@@ -10,7 +10,6 @@
 local map = ...
 local game = map:get_game()
 
-
 local ferry_armed = false
 function ferryman:on_interaction()
   local index = game:get_value("merryweather_ferry_dialog_index")

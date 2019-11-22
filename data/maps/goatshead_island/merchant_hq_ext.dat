@@ -16257,7 +16257,7 @@ teletransporter{
   width = 48,
   height = 16,
   transition = "scrolling",
-  destination_map = "goatshead_island/goatshead_harbor",
+  destination_map = "goatshead_island/goatshead_harbor_OLD",
   destination = "_side",
 }
 
