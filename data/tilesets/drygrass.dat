@@ -10,6 +10,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "10",
+  ground = "empty",
+  default_layer = 0,
+  x = 64,
+  y = 24,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "11",
+  ground = "empty",
+  default_layer = 0,
+  x = 80,
+  y = 24,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "2",
   ground = "traversable",
   default_layer = 0,
@@ -257,6 +277,16 @@ tile_pattern{
   y = 0,
   width = 32,
   height = 24,
+}
+
+tile_pattern{
+  id = "9",
+  ground = "empty",
+  default_layer = 0,
+  x = 48,
+  y = 24,
+  width = 16,
+  height = 16,
 }
 
 border_set{
