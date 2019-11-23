@@ -1045,7 +1045,7 @@ teletransporter{
   y = 192,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor",
+  destination_map = "ballast_harbor/ballast_harbor_old",
   destination = "from_prometheus",
 }
 

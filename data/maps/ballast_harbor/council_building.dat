@@ -15094,7 +15094,7 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor",
+  destination_map = "ballast_harbor/ballast_harbor_old",
   destination = "from_council_building_basement",
 }
 
@@ -15501,7 +15501,7 @@ teletransporter{
   y = 944,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor",
+  destination_map = "ballast_harbor/ballast_harbor_old",
   destination = "from_pirate_building_upstairs",
 }
 
@@ -15971,7 +15971,7 @@ teletransporter{
   y = 720,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor",
+  destination_map = "ballast_harbor/ballast_harbor_old",
   destination = "from_council_bldg_roof",
 }
 

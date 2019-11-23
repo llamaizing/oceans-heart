@@ -61,6 +61,7 @@ map{ id = "Yarrowmouth/silent_glade", description = "Silent Glade" }
 map{ id = "Yarrowmouth/tern_marsh", description = "Kingsdown Isle" }
 map{ id = "Yarrowmouth/yarrowmouth_village", description = "Yarrowmouth Village" }
 map{ id = "ballast_harbor/ballast_harbor", description = "Ballast Harbor" }
+map{ id = "ballast_harbor/ballast_harbor_old", description = "OLDBallast Harbor" }
 map{ id = "ballast_harbor/cave_1", description = "Cave 1" }
 map{ id = "ballast_harbor/cave_alley", description = "Cave - Back Alley" }
 map{ id = "ballast_harbor/chart_shop", description = "Chart Shop" }
@@ -296,6 +297,7 @@ tileset{ id = "bear_catacombs_cave", description = "BearCatacombs-Cave" }
 tileset{ id = "boulderfield", description = "Boulderfield" }
 tileset{ id = "cave_2", description = "cave-mine" }
 tileset{ id = "cemetery_of_waves", description = "CemeteryOfTheWaves" }
+tileset{ id = "drygrass", description = "Drygrass" }
 tileset{ id = "fort_crow_walls", description = "Fort Crow Walls" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
 tileset{ id = "indoors_stone", description = "indoors - stone" }
