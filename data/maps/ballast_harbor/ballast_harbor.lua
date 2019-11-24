@@ -10,15 +10,8 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
-
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
-end
+map:register_event("on_started", function()
+  if hero:get_position() == from_back_alley_cave:get_position() then
+    destroyable_fence:set_enabled(false)
+  end
+end)

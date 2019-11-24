@@ -3837,8 +3837,8 @@ teletransporter{
   y = 448,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor_old",
-  destination = "from_well_pit",
+  destination_map = "stonefell_crossroads/forest_of_tides",
+  destination = "from_well_cave",
 }
 
 block{

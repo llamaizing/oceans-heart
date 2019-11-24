@@ -1426,7 +1426,7 @@ teletransporter{
   y = 224,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor_old",
+  destination_map = "ballast_harbor/ballast_harbor",
   destination = "from_back_alley_cave",
 }
 

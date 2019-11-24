@@ -276,6 +276,7 @@ map{ id = "snapmast_reef/snapmast_lighthouse", description = "Snapmast Lighthous
 map{ id = "stonefell_crossroads/TEMP", description = "TEMP" }
 map{ id = "stonefell_crossroads/caves/ancient_grove", description = "Ancient Grove" }
 map{ id = "stonefell_crossroads/caves/ancient_shrine", description = "AncientGroveShrine" }
+map{ id = "stonefell_crossroads/caves/ballast_cave", description = "BallastCave" }
 map{ id = "stonefell_crossroads/caves/fort_crow_coral_cave", description = "Fort Crow Coral Cave" }
 map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }
 map{ id = "stonefell_crossroads/caves/sycamore_bombcave", description = "Sycamore Bombcave" }
