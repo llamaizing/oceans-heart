@@ -10743,6 +10743,61 @@ enemy{
   breed = "normal_enemies/gel_black",
 }
 
+destructible{
+  layer = 0,
+  x = 752,
+  y = 133,
+  treasure_name = "apples",
+  sprite = "entities/bush_apple_tree",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 136,
+  y = 269,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 152,
+  y = 269,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 136,
+  y = 253,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = 464,
+  y = 48,
+  width = 16,
+  height = 16,
+  destination_map = "goatshead_island/caves/strength_charm",
+  destination = "from_outside",
+}
+
+destination{
+  name = "from_strength_charm",
+  layer = 0,
+  x = 472,
+  y = 77,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 464,
@@ -11694,53 +11749,6 @@ tile{
   pattern = "50",
 }
 
-teletransporter{
-  layer = 1,
-  x = 464,
-  y = 48,
-  width = 16,
-  height = 16,
-  destination_map = "goatshead_island/caves/strength_charm",
-  destination = "from_outside",
-}
-
-destructible{
-  layer = 1,
-  x = 752,
-  y = 133,
-  treasure_name = "apples",
-  sprite = "entities/bush_apple_tree",
-  weight = -1,
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 136,
-  y = 269,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 152,
-  y = 269,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 1,
-  x = 136,
-  y = 253,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
 tile{
   layer = 2,
   x = 472,
@@ -11748,13 +11756,5 @@ tile{
   width = 16,
   height = 8,
   pattern = "103",
-}
-
-destination{
-  name = "from_strength_charm",
-  layer = 2,
-  x = 472,
-  y = 77,
-  direction = 3,
 }
 
