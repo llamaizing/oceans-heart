@@ -34177,6 +34177,15 @@ tile{
   tileset = "boulderfield",
 }
 
+tile{
+  layer = 0,
+  x = 824,
+  y = 1040,
+  width = 16,
+  height = 8,
+  pattern = "249",
+}
+
 wall{
   layer = 0,
   x = 496,
@@ -35391,6 +35400,15 @@ door{
   direction = 3,
   sprite = "entities/door_posts",
   savegame_variable = "stonefell_dream_cannon_fort_doors",
+}
+
+npc{
+  layer = 0,
+  x = 832,
+  y = 1045,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_sycamore_ferry.signs.stonefell_1",
 }
 
 tile{
@@ -37517,6 +37535,24 @@ tile{
   height = 16,
   pattern = "3",
   tileset = "boulderfield",
+}
+
+tile{
+  layer = 1,
+  x = 824,
+  y = 1016,
+  width = 16,
+  height = 24,
+  pattern = "250",
+}
+
+tile{
+  layer = 1,
+  x = 824,
+  y = 1032,
+  width = 16,
+  height = 16,
+  pattern = "1571",
 }
 
 enemy{

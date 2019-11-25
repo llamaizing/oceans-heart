@@ -23,6 +23,10 @@ function prometheus:on_interaction()
       game:start_dialog("_ballast_harbor.npcs.prometheus_jones.2", function(answer)
         if answer == 2 then --make it explode
           flail:set_variant(2)
+          sol.audio.play_sound"clank"
+          sol.audio.play_sound"heart"
+          sol.audio.play_sound"ok"
+          sol.audio.play_sound"rupee_counter_end"
           game:start_dialog("_ballast_harbor.npcs.prometheus_jones.make_explode")
         else
           game:start_dialog("_ballast_harbor.npcs.prometheus_jones.dont_do_it")
@@ -33,6 +37,10 @@ function prometheus:on_interaction()
         if answer == 2 then --change it back
           game:start_dialog("_ballast_harbor.npcs.prometheus_jones.dont_do_it")
           flail:set_variant(1)
+          sol.audio.play_sound"clank"
+          sol.audio.play_sound"heart"
+          sol.audio.play_sound"ok"
+          sol.audio.play_sound"rupee_counter_end"
         else --nope, keep exploding
           game:start_dialog("_ballast_harbor.npcs.prometheus_jones.stay_exploding")
         end

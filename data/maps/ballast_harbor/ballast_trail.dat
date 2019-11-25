@@ -25964,6 +25964,15 @@ tile{
   pattern = "206",
 }
 
+tile{
+  layer = 0,
+  x = 1048,
+  y = 904,
+  width = 16,
+  height = 8,
+  pattern = "260",
+}
+
 sensor{
   name = "rsg_sensor",
   layer = 0,
@@ -27258,6 +27267,15 @@ teletransporter{
   height = 48,
   destination_map = "ballast_harbor/ballast_harbor",
   destination = "from_trail",
+}
+
+npc{
+  layer = 0,
+  x = 1056,
+  y = 909,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_ballast_harbor.signs.directions_1",
 }
 
 tile{
@@ -29271,5 +29289,23 @@ tile{
   width = 8,
   height = 8,
   pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 880,
+  width = 16,
+  height = 24,
+  pattern = "261",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 896,
+  width = 16,
+  height = 16,
+  pattern = "1571",
 }
 

@@ -40224,6 +40224,24 @@ tile{
   tileset = "limestone",
 }
 
+tile{
+  layer = 0,
+  x = 2240,
+  y = 912,
+  width = 16,
+  height = 8,
+  pattern = "249",
+}
+
+tile{
+  layer = 0,
+  x = 872,
+  y = 640,
+  width = 16,
+  height = 8,
+  pattern = "249",
+}
+
 wall{
   layer = 0,
   x = 2064,
@@ -40536,7 +40554,7 @@ wall{
 
 enemy{
   layer = 0,
-  x = 2352,
+  x = 2136,
   y = 701,
   direction = 3,
   breed = "normal_enemies/meandershroom_1",
@@ -40544,8 +40562,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 2320,
-  y = 717,
+  x = 2328,
+  y = 701,
   direction = 3,
   breed = "normal_enemies/rambleshroom",
 }
@@ -40553,14 +40571,14 @@ enemy{
 enemy{
   layer = 0,
   x = 2352,
-  y = 725,
+  y = 685,
   direction = 3,
   breed = "normal_enemies/rambleshroom",
 }
 
 enemy{
   layer = 0,
-  x = 2136,
+  x = 2128,
   y = 765,
   direction = 3,
   breed = "normal_enemies/rock_spider_brown",
@@ -40568,7 +40586,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 2144,
+  x = 2112,
   y = 709,
   direction = 3,
   breed = "normal_enemies/rambleshroom",
@@ -40576,16 +40594,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 2184,
-  y = 725,
-  direction = 3,
-  breed = "normal_enemies/rambleshroom",
-}
-
-enemy{
-  layer = 0,
-  x = 2208,
-  y = 757,
+  x = 2136,
+  y = 717,
   direction = 3,
   breed = "normal_enemies/rambleshroom",
 }
@@ -41787,6 +41797,24 @@ teletransporter{
   height = 16,
   destination_map = "stonefell_crossroads/crow_road",
   destination = "from_lotus_shoal",
+}
+
+npc{
+  layer = 0,
+  x = 2248,
+  y = 917,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_sycamore_ferry.signs.lotus_1",
+}
+
+npc{
+  layer = 0,
+  x = 880,
+  y = 645,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_sycamore_ferry.signs.lotus_2",
 }
 
 tile{
@@ -44770,6 +44798,42 @@ tile{
   height = 40,
   pattern = "56",
   tileset = "limestone",
+}
+
+tile{
+  layer = 1,
+  x = 2240,
+  y = 888,
+  width = 16,
+  height = 24,
+  pattern = "250",
+}
+
+tile{
+  layer = 1,
+  x = 2240,
+  y = 904,
+  width = 16,
+  height = 16,
+  pattern = "1571",
+}
+
+tile{
+  layer = 1,
+  x = 872,
+  y = 616,
+  width = 16,
+  height = 24,
+  pattern = "250",
+}
+
+tile{
+  layer = 1,
+  x = 872,
+  y = 632,
+  width = 16,
+  height = 16,
+  pattern = "1571",
 }
 
 enemy{

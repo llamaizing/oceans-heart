@@ -153,6 +153,7 @@ map{ id = "goatshead_island/lighthouse_cape", description = "Lighthouse Cape" }
 map{ id = "goatshead_island/merchant_hq_ext", description = "Merchant HQ Ext." }
 map{ id = "goatshead_island/poplar_coast", description = "Poplar Coast" }
 map{ id = "goatshead_island/poplar_forest", description = "Poplar Forest" }
+map{ id = "goatshead_island/riverbank", description = "Riverbank" }
 map{ id = "goatshead_island/spruce_head_shrine/spruce_head_shrine", description = "Spruce Head Shrine" }
 map{ id = "goatshead_island/spruce_head_shrine_old", description = "Spruce Head Shrine" }
 map{ id = "goatshead_island/west_goat", description = "West Goat" }

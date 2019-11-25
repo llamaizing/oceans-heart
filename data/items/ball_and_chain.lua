@@ -145,6 +145,7 @@ item:register_event("on_using", function(self)
 
   --if the movement collides with something
   local can_play_sound = true
+  local can_play_explosion_sound = true
   function m:on_obstacle_reached()
     if can_play_sound then
       sol.audio.play_sound("sword_tapping")
@@ -156,6 +157,11 @@ item:register_event("on_using", function(self)
     if item:get_variant() >= 2 then
       local spike_x, spike_y, spike_layer = spike_ball:get_position()
       map:create_explosion{layer = spike_layer, x = spike_x, y = spike_y}
+      if can_play_explosion_sound then
+        sol.audio.play_sound"explosion"
+        can_play_explosion_sound = false
+        sol.timer.start(game, 100, function() can_play_explosion_sound = true end)
+      end
     end
   end
 end)

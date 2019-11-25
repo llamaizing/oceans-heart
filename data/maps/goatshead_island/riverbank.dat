@@ -1,0 +1,182 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 896,
+  height = 576,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "redpine_forest",
+  music = "newfashioned_port_burg",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 896,
+  height = 576,
+  pattern = "87",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 184,
+  width = 8,
+  height = 40,
+  pattern = "96",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 176,
+  width = 8,
+  height = 8,
+  pattern = "89",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 224,
+  width = 8,
+  height = 8,
+  pattern = "95",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 16,
+  width = 8,
+  height = 80,
+  pattern = "96",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 8,
+  width = 8,
+  height = 8,
+  pattern = "89",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "95",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = -160,
+  width = 16,
+  height = 160,
+  pattern = "70",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -96,
+  y = 0,
+  width = 96,
+  height = 16,
+  pattern = "77",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 272,
+  width = 64,
+  height = 16,
+  pattern = "73",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 288,
+  width = 64,
+  height = 16,
+  pattern = "74",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -48,
+  y = 256,
+  width = 64,
+  height = 16,
+  pattern = "71",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 368,
+  width = 32,
+  height = 16,
+  pattern = "71",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 400,
+  enabled_at_start = false,
+  width = 32,
+  height = 16,
+  pattern = "113_2",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 416,
+  width = 32,
+  height = 16,
+  pattern = "114_2",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 384,
+  enabled_at_start = false,
+  width = 32,
+  height = 16,
+  pattern = "73",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "206",
+  tileset = "oceanheart_outdoors_1",
+}
+

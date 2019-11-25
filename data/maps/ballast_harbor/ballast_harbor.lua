@@ -13,6 +13,12 @@ local hero = map:get_hero()
 local dropoff_workers_dialog_index = 1
 
 map:register_event("on_started", function()
+  for person in map:get_entities"wandering_person" do
+    local m = sol.movement.create"random_path"
+    m:set_speed(15)
+    m:start(person)
+  end
+
   if hero:get_position() == from_back_alley_cave:get_position() then
     destroyable_fence:set_enabled(false)
   end

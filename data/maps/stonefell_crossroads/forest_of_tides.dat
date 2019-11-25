@@ -20978,6 +20978,36 @@ tile{
   tileset = "oceanheart_outdoors_1",
 }
 
+tile{
+  layer = 0,
+  x = 272,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "260",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 280,
+  y = 32,
+  width = 16,
+  height = 8,
+  pattern = "258",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 504,
+  width = 16,
+  height = 8,
+  pattern = "249",
+  tileset = "oceanheart_outdoors_1",
+}
+
 teletransporter{
   layer = 0,
   x = 128,
@@ -21785,6 +21815,33 @@ teletransporter{
   height = 16,
   destination_map = "ballast_harbor/well-pit",
   destination = "from_outside_downstairs",
+}
+
+npc{
+  layer = 0,
+  x = 280,
+  y = 37,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_sycamore_ferry.signs.forest_of_tides",
+}
+
+npc{
+  layer = 0,
+  x = 288,
+  y = 37,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_sycamore_ferry.signs.forest_of_tides",
+}
+
+npc{
+  layer = 0,
+  x = 1192,
+  y = 509,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_sycamore_ferry.signs.forest_of_tides_2",
 }
 
 tile{
@@ -23809,5 +23866,54 @@ tile{
   width = 64,
   height = 64,
   pattern = "172",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "261",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 280,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "259",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 480,
+  width = 16,
+  height = 24,
+  pattern = "250",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 480,
+  width = 16,
+  height = 16,
+  pattern = "1571",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 504,
+  width = 16,
+  height = 8,
+  pattern = "122",
 }
 

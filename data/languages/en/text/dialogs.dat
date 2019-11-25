@@ -724,6 +724,41 @@ orchard in Oakhaven. Don't ask how we got
 }
 
 dialog{
+  id = "_ballast_harbor.npcs.market_people.7",
+  text = [[
+Ballast Harbor is a pirate market. Pirates
+from all across the North Sea come here to
+peddle their ill-gotten gains. It's the
+right place if you're looking for some
+strange items, choice information, or
+rare trading cards. I'm here for the
+third category.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.market_people.8",
+  text = [[
+The Pirate Council's vault is on the
+outskirts of town- crews that have joined
+have been stashing treasure in there, so
+it's guarded pretty heavily. But I bet if
+I had maybe nine... ten other people, I
+could pull off the heist of the century.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.market_people.9",
+  text = [[
+Since this is a pirate market, you can find
+things here you can't buy anywhere else.
+I'm a chef in Oakhaven, I'm here looking
+for some... ilicit vegetables.
+]],
+}
+
+dialog{
   id = "_ballast_harbor.npcs.market_people.arrows_no_bow",
   text = [[
 I'm selling arrows. It doesn't look like you
@@ -1350,8 +1385,8 @@ Kelpton Sea Charts
 dialog{
   id = "_ballast_harbor.signs.directions_1",
   text = [[
-North - Tern Marsh, Marsh Meadery
-South - Ballast Harbor Market
+East - Ballast Harbor Market
+West - Forest of Tides
 ]],
 }
 
@@ -12742,6 +12777,48 @@ don't get out.
 TILIA:
 Don't worry, I'll go beat them up so you
 can stop camping here.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.forest_of_tides",
+  text = [[
+West - Goatshead
+East - Ballast Harbor Tunnel, Zephyr Bay
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.forest_of_tides_2",
+  text = [[
+South - Ballast Harbor Tunnel
+East - Zephyr Bay
+Northwest - Goatshead
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.lotus_1",
+  text = [[
+East - Goatshead
+West - Spruce Head, Fort Crow
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.lotus_2",
+  text = [[
+West - Spruce Head
+South - Fort Crow
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.stonefell_1",
+  text = [[
+North - Oakhaven
+East - Yarrowmouth
+South - Goatshead
 ]],
 }
 
