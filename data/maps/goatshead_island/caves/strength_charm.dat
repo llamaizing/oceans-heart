@@ -2493,6 +2493,138 @@ tile{
   pattern = "27",
 }
 
+tile{
+  layer = 0,
+  x = 184,
+  y = 40,
+  width = 32,
+  height = 24,
+  pattern = "55",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 40,
+  width = 32,
+  height = 24,
+  pattern = "52",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 56,
+  width = 32,
+  height = 24,
+  pattern = "50",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "66",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "64",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 344,
+  width = 16,
+  height = 16,
+  pattern = "112",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "227",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "217",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 168,
+  width = 32,
+  height = 16,
+  pattern = "229",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 176,
+  width = 32,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 184,
+  width = 16,
+  height = 16,
+  pattern = "111",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "134",
+}
+
 separator{
   layer = 0,
   x = 0,
@@ -2505,7 +2637,7 @@ destination{
   name = "from_outside",
   layer = 0,
   x = 160,
-  y = 429,
+  y = 445,
   direction = 1,
 }
 
@@ -2515,7 +2647,7 @@ teletransporter{
   y = 448,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/west_goat",
+  destination_map = "goatshead_island/riverbank",
   destination = "from_strength_charm",
 }
 
@@ -2556,7 +2688,7 @@ custom_entity{
 
 enemy{
   layer = 0,
-  x = 80,
+  x = 88,
   y = 293,
   direction = 0,
   breed = "misc/stone_dragon_turret",
@@ -2565,7 +2697,7 @@ enemy{
 enemy{
   layer = 0,
   x = 240,
-  y = 293,
+  y = 301,
   direction = 2,
   breed = "misc/stone_dragon_turret",
 }
@@ -2580,7 +2712,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 240,
+  x = 232,
   y = 421,
   direction = 2,
   breed = "misc/stone_dragon_turret",
@@ -2602,5 +2734,71 @@ tile{
   width = 32,
   height = 16,
   pattern = "door.down.high",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 16,
+  width = 48,
+  height = 24,
+  pattern = "56",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 16,
+  width = 32,
+  height = 24,
+  pattern = "53",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 32,
+  width = 32,
+  height = 24,
+  pattern = "51",
+  tileset = "underwater_plants",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "234",
+}
+
+tile{
+  layer = 1,
+  x = 224,
+  y = 152,
+  width = 32,
+  height = 16,
+  pattern = "232",
+}
+
+tile{
+  layer = 1,
+  x = 64,
+  y = 160,
+  width = 32,
+  height = 16,
+  pattern = "137",
+}
+
+tile{
+  layer = 1,
+  x = 240,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "135",
 }
 

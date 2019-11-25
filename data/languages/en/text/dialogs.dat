@@ -4571,15 +4571,15 @@ dialog{
   text = [[
 UPSET MAN:
 Ahoy! You in the Volunteer Navy colors! I've got
-you a job. Me manly fishing spot has been taken
+you a job. Me fishing spot has been taken
 over by beasts. And I left me carrot stash there!
 MAN WHO TAKES HIS CARROTS SERIOUSLY:
 Now, I'm a man who takes his carrots seriously,
 and this I can't abide. I'll pay you 80 crowns
 if you can clear out those monsters.
 MAN WHO TAKES HIS CARROTS SERIOUSLY:
-The manly fishing spot is just south of Poplar
-Forest. Little island. Lots o' carrots.
+The fishing spot is just East of here.
+Little island. Lots o' carrots.
 And monsters. Which is the problem.
 ]],
 }
@@ -4588,8 +4588,8 @@ dialog{
   id = "_goatshead.npcs.upset_fisher.2",
   text = [[
 UPSET MAN:
-Have you been over to the manly fishing spot
-south of Poplar Forest? The one with beasts?
+Have you been over to the fishing spot
+East of here? The one with beasts?
 The one where I left me stash of carrots!?
 TILIA:
 I was there. I took care of the monsters for you.
@@ -4608,7 +4608,7 @@ dialog{
   text = [[
 CALM MAN:
 Thank you for taking care of those beasts what
-had me manly fishing spot. I'm overtaken by a
+had me fishing spot. I'm overtaken by a
 calm reverie knowing I can return to me carrots.
 ]],
 }

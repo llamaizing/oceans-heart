@@ -10,15 +10,42 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+map:register_event("on_started", function()
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+end)
+
+
+function carrots:on_interaction()
+  if game:get_value("carrot_counter") == nil then
+    game:start_dialog("_goatshead.observations.carrots.1", function(answer)
+      if answer == 2 then
+        game:add_life(2)
+        game:set_value("carrot_counter", 1)
+      end
+    end)
+  elseif game:get_value("carrot_counter") == 1 then
+    game:start_dialog("_goatshead.observations.carrots.1", function(answer)
+      if answer == 2 then
+        game:add_life(2)
+        game:set_value("carrot_counter", 2)
+      end
+    end)
+  elseif game:get_value("carrot_counter") == 2 then
+    game:start_dialog("_goatshead.observations.carrots.2")
+
+  end
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
+function two_eye_rock_shroom:on_dead()
+  if game:get_value("quest_test13") == 0 then
+    game:set_value("quest_test13", 1)
+  end
+end
 
+function gerald:on_interaction()
+  if game:get_value("west_goat_cracked_block_2") ~= nil then
+    game:start_dialog("_goatshead.npcs.overworld.bomb_rocks_guy_2")
+  else
+    game:start_dialog("_goatshead.npcs.overworld.bomb_rocks_guy_1")
+  end
 end
