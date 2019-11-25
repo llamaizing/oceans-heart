@@ -9,58 +9,15 @@
 
 local map = ...
 local game = map:get_game()
-local hero = map:get_hero()
-local music
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  music = sol.audio.get_music()
-  if game:get_value("gtshd_music_headed_toward_town") == false then sol.audio.play_music("goatshead_harbor") end
-
-  local random_walk = sol.movement.create("random_path")
-  random_walk:set_speed(15)
-  random_walk:set_ignore_obstacles(false)
-  random_walk:start(goat_1)
-
-  local random_walk2 = sol.movement.create("random_path")
-  random_walk2:set_speed(10)
-  random_walk2:set_ignore_obstacles(false)
-  random_walk2:start(goat_2)
-
-  local random_walk3 = sol.movement.create("random_path")
-  random_walk3:set_speed(12)
-  random_walk3:set_ignore_obstacles(false)
-  random_walk3:start(goat_3)
-
-  local random_walk4 = sol.movement.create("random_path")
-  random_walk4:set_speed(19)
-  random_walk4:set_ignore_obstacles(false)
-  random_walk4:start(goat_4)
-
-  local random_walk5 = sol.movement.create("random_path")
-  random_walk5:set_speed(4)
-  random_walk5:set_ignore_obstacles(false)
-  random_walk5:start(abberforth)
-
-end
-
-
-function guard_3:on_interaction()
-  if game:get_value("barbell_brutes_defeated") ~= true then
-    game:start_dialog("_goatshead.npcs.guards.7")
-  else
-    game:start_dialog("_goatshead.npcs.guards.post_defeat.1")
+map:register_event("on_started", function()
+  if game:get_value("goatshead_lighthouse_activated") == true then
+    house_light_1:set_enabled(true)
+    house_light_2:set_enabled(true)
+    house_light_3:set_enabled(true)
+    house_light_4:set_enabled(true)
   end
-end
-
-function guard_4:on_interaction()
-  if game:get_value("barbell_brutes_defeated") ~= true then
-    game:start_dialog("_goatshead.npcs.guards.6")
-  else
-    game:start_dialog("_goatshead.npcs.guards.post_defeat.1")
-  end
-end
-
+end)
 
 local function unsummon_heron()
     local x, y, l = heron_ghost:get_position()
@@ -72,7 +29,7 @@ local function unsummon_heron()
     sol.audio.play_sound("sea_spirit")
     sol.audio.play_sound("summon_in")
     hero:unfreeze()
-    sol.audio.play_music(music)
+    sol.audio.play_music("newfashioned_port_burg")
 end
 
 
@@ -90,7 +47,6 @@ local function summon_heron()
     sol.audio.play_sound("summon_in")
     hero:freeze()
     sol.timer.start(map, 800, function()
-
       --receive the quest
       if not game:get_value("quest_heron_well") then
         game:start_dialog("_goatshead.npcs.heron_ghost.1", function()
@@ -110,8 +66,6 @@ local function summon_heron()
         end)
 
       end
-
-
     end) --end timer
 end
 
@@ -149,5 +103,4 @@ function well:on_interaction()
     end
   end)
 
-  
 end

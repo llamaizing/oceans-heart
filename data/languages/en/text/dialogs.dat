@@ -3057,7 +3057,7 @@ tomb is overrun with monsters summoned from
 HERON:
 the abyss by the Sea King in his life.
 Please, purify my resting place. Take this
-key, cleanse Thrush Fort to the northeast.
+key, cleanse my tomb, west of Goatshead.
 TILIA:
 Wait, what if I don't want-
 ]],
@@ -3069,15 +3069,15 @@ dialog{
 HERON:
 My champion. Cleanse my resting place.
 Destroy the Sea King's abominations, which
-overrun Thrush Fort. Do you want directions?
+overrun my tomb. Do you want directions?
 TILIA:
-Like, to Thrush Fort? Sure.
+Like, to your grave? Sure.
 
 
 HERON:
-Follow the east road through the Poplar
-Forest. North, past Spruce Head, you will
-find Thrush Fort. Farewell.
+Go West past Goatshead Harbor, then
+follow the road North. Near the
+ferry is where I lie. Good luck.
 ]],
 }
 

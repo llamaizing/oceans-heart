@@ -10197,6 +10197,123 @@ tile{
   pattern = "47",
 }
 
+tile{
+  layer = 0,
+  x = 680,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "34",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 56,
+  width = 16,
+  height = 8,
+  pattern = "154",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 80,
+  width = 16,
+  height = 8,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "105",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 8,
+  width = 16,
+  height = 8,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 96,
+  width = 16,
+  height = 8,
+  pattern = "101",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 96,
+  width = 16,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "102",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "106",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 72,
+  width = 16,
+  height = 8,
+  pattern = "103",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 96,
+  width = 16,
+  height = 8,
+  pattern = "104",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "153",
+}
+
 door{
   layer = 0,
   x = 752,
@@ -10796,6 +10913,33 @@ destination{
   x = 472,
   y = 77,
   direction = 3,
+}
+
+destination{
+  name = "from_lighthouse",
+  layer = 0,
+  x = 704,
+  y = 29,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 688,
+  y = 0,
+  width = 32,
+  height = 16,
+  destination_map = "goatshead_island/goat_hill",
+  destination = "from_westgoat",
+}
+
+pickable{
+  layer = 0,
+  x = 312,
+  y = 157,
+  treasure_name = "rupee",
+  treasure_variant = 3,
+  treasure_savegame_variable = "goatshead_riverbank_hidden_crowns_behind_tree",
 }
 
 tile{

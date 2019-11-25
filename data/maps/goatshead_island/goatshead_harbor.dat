@@ -30925,6 +30925,16 @@ teletransporter{
   destination = "from_goatshead",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1584,
+  y = 168,
+  width = 16,
+  height = 32,
+  destination_map = "goatshead_island/goat_hill",
+  destination = "from_goatshead_harbor",
+}
+
 tile{
   layer = 1,
   x = 784,

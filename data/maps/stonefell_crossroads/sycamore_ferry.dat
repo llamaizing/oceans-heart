@@ -32141,16 +32141,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1176,
-  y = 712,
-  width = 16,
-  height = 16,
-  pattern = "2174",
-  tileset = "overworld_oakhaven",
-}
-
-tile{
-  layer = 0,
   x = 1200,
   y = 728,
   width = 16,
@@ -39267,6 +39257,25 @@ tile{
   height = 32,
   pattern = "2457",
   tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 696,
+  width = 16,
+  height = 24,
+  pattern = "87",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 712,
+  width = 16,
+  height = 16,
+  pattern = "2174",
+  tileset = "overworld_oakhaven",
 }
 
 teletransporter{

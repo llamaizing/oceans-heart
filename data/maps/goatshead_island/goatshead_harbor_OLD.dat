@@ -30777,7 +30777,7 @@ teletransporter{
   width = 48,
   height = 16,
   transition = "scrolling",
-  destination_map = "goatshead_island/goat_hill",
+  destination_map = "goatshead_island/goat_hill_OLD",
   destination = "_side",
 }
 
@@ -30788,7 +30788,7 @@ teletransporter{
   width = 96,
   height = 16,
   transition = "scrolling",
-  destination_map = "goatshead_island/goat_hill",
+  destination_map = "goatshead_island/goat_hill_OLD",
   destination = "_side",
 }
 

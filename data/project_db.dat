@@ -128,7 +128,8 @@ map{ id = "goatshead_island/caves/spruce_head_cave", description = "spruce head 
 map{ id = "goatshead_island/caves/strength_charm", description = "Strength Charm Cave" }
 map{ id = "goatshead_island/caves/thrush_fort", description = "Thrush Fort" }
 map{ id = "goatshead_island/crabhook_village", description = "Crabhook Village" }
-map{ id = "goatshead_island/goat_hill", description = "goat hill" }
+map{ id = "goatshead_island/goat_hill" }
+map{ id = "goatshead_island/goat_hill_OLD", description = "OLDgoat hill" }
 map{ id = "goatshead_island/goatshead_harbor", description = "Goatshead Harbor" }
 map{ id = "goatshead_island/goatshead_harbor_OLD", description = "OLD Goatshead Harbor" }
 map{ id = "goatshead_island/interiors/CV_arni", description = "Crabhook - Arni" }
