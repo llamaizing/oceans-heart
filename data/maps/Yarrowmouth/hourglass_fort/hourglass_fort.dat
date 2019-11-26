@@ -22875,7 +22875,7 @@ teletransporter{
   y = 1184,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/tern_marsh",
+  destination_map = "Yarrowmouth/tern_marshOLD",
   destination = "from_hourglass_fort",
 }
 

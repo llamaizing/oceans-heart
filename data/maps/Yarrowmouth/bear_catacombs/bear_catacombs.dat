@@ -22856,7 +22856,7 @@ teletransporter{
   y = 1664,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/tern_marsh",
+  destination_map = "Yarrowmouth/tern_marshOLD",
   destination = "from_bear_catacombs",
 }
 
@@ -22866,7 +22866,7 @@ teletransporter{
   y = 224,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/tern_marsh",
+  destination_map = "Yarrowmouth/tern_marshOLD",
   destination = "from_catacombs_exit",
 }
 

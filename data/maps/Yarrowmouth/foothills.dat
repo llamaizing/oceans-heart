@@ -27908,7 +27908,7 @@ teletransporter{
   y = 1248,
   width = 16,
   height = 80,
-  destination_map = "Yarrowmouth/yarrowmouth_village",
+  destination_map = "Yarrowmouth/OLDyarrowmouth_village",
   destination = "_side",
 }
 
@@ -27918,7 +27918,7 @@ teletransporter{
   y = 1088,
   width = 16,
   height = 80,
-  destination_map = "Yarrowmouth/yarrowmouth_village",
+  destination_map = "Yarrowmouth/OLDyarrowmouth_village",
   destination = "_side",
 }
 
@@ -27958,7 +27958,7 @@ teletransporter{
   y = 1680,
   width = 48,
   height = 16,
-  destination_map = "Yarrowmouth/tern_marsh",
+  destination_map = "Yarrowmouth/tern_marshOLD",
   destination = "_side",
 }
 

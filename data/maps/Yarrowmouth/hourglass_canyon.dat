@@ -4809,7 +4809,7 @@ teletransporter{
   y = 720,
   width = 32,
   height = 16,
-  destination_map = "Yarrowmouth/tern_marsh",
+  destination_map = "Yarrowmouth/tern_marshOLD",
   destination = "_side",
 }
 
