@@ -51,6 +51,7 @@ map{ id = "Yarrowmouth/hourglass_fort/tunnel", description = "tunnel" }
 map{ id = "Yarrowmouth/interiors/briarwood_barn", description = "Briarwood Barn" }
 map{ id = "Yarrowmouth/interiors/briarwood_distillery", description = "Briarwood Distillery" }
 map{ id = "Yarrowmouth/interiors/carlov_house", description = "Carlov's House" }
+map{ id = "Yarrowmouth/interiors/crafting_house", description = "Crafting House" }
 map{ id = "Yarrowmouth/interiors/lighthouse", description = "Lighthouse" }
 map{ id = "Yarrowmouth/interiors/meadery_safehouse", description = "Meadery Safehouse" }
 map{ id = "Yarrowmouth/interiors/nina", description = "Nina's House" }

@@ -15480,6 +15480,15 @@ in the Northwest corner of town.
 }
 
 dialog{
+  id = "_yarrowmouth.npcs.town_people.crafting",
+  text = [[
+Oh, uh, do you want to use that crafting
+table? I'm not sure why else you'd be in
+here. Go ahead.
+]],
+}
+
+dialog{
   id = "_yarrowmouth.npcs.town_people.shopkeeper_1",
   text = [[
 A new face in Yarrowmouth. Did you come
