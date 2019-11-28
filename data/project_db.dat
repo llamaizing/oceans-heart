@@ -563,6 +563,8 @@ sprite{ id = "entities/bush_heather_purple", description = "Heather-Purple" }
 sprite{ id = "entities/bush_heather_white", description = "Heather-White" }
 sprite{ id = "entities/bush_kingscrown", description = "Kingscrown" }
 sprite{ id = "entities/bush_lavendar", description = "Lavendar" }
+sprite{ id = "entities/bush_lupine", description = "Lupine" }
+sprite{ id = "entities/bush_lupine_big", description = "Lupine-Big" }
 sprite{ id = "entities/bush_marigold", description = "Marigold" }
 sprite{ id = "entities/bush_monkshood", description = "Monkshood" }
 sprite{ id = "entities/bush_oak_forest", description = "Bush-Oak Forest" }

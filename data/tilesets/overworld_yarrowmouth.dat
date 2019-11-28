@@ -10357,6 +10357,26 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "1877",
+  ground = "wall",
+  default_layer = 1,
+  x = 416,
+  y = 656,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "1878",
+  ground = "wall",
+  default_layer = 1,
+  x = 432,
+  y = 656,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
   id = "1879",
   ground = "wall",
   default_layer = 0,
@@ -12335,6 +12355,26 @@ tile_pattern{
   y = 512,
   width = 64,
   height = 40,
+}
+
+tile_pattern{
+  id = "2052",
+  ground = "wall",
+  default_layer = 1,
+  x = 448,
+  y = 656,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "2053",
+  ground = "wall",
+  default_layer = 1,
+  x = 464,
+  y = 656,
+  width = 16,
+  height = 24,
 }
 
 tile_pattern{
@@ -21832,6 +21872,14 @@ tile_pattern{
   width = 48,
   height = 24,
   repeat_mode = "none",
+}
+
+border_set{
+  id = "tall_grass_edges",
+  pattern_0 = "1825",
+  pattern_1 = "1048",
+  pattern_2 = "1827",
+  pattern_3 = "1046",
 }
 
 border_set{

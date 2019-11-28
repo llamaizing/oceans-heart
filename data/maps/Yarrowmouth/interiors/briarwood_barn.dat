@@ -2172,7 +2172,7 @@ teletransporter{
   y = 352,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/OLDyarrowmouth_village",
+  destination_map = "Yarrowmouth/yarrowmouth_village",
   destination = "from_barn",
 }
 

@@ -4242,8 +4242,8 @@ sensor{
 destructible{
   name = "philodendron_bush",
   layer = 0,
-  x = -16,
-  y = 141,
+  x = -8,
+  y = 157,
   sprite = "entities/bush_philodendron",
   weight = -1,
   can_be_cut = true,
@@ -4272,8 +4272,8 @@ sensor{
 
 destructible{
   layer = 0,
-  x = -40,
-  y = 141,
+  x = -56,
+  y = 125,
   sprite = "entities/bush_seagrass",
   weight = -1,
   can_be_cut = true,
@@ -5879,6 +5879,22 @@ destructible{
   x = -24,
   y = 61,
   sprite = "entities/bush_summergrass",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = -16,
+  y = 133,
+  sprite = "entities/bush_lupine_big",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = -40,
+  y = 125,
+  sprite = "entities/bush_lupine",
   can_be_cut = true,
 }
 

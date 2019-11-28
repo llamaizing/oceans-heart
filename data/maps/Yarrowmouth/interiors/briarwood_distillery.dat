@@ -1760,7 +1760,7 @@ teletransporter{
   y = 208,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/OLDyarrowmouth_village",
+  destination_map = "Yarrowmouth/yarrowmouth_village",
   destination = "from_distillery",
 }
 
@@ -1832,15 +1832,6 @@ block{
 block{
   layer = 0,
   x = 80,
-  y = 149,
-  sprite = "entities/chairR",
-  pushable = true,
-  pullable = true,
-}
-
-block{
-  layer = 0,
-  x = 152,
   y = 149,
   sprite = "entities/chairR",
   pushable = true,
