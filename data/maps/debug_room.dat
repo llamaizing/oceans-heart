@@ -5790,7 +5790,8 @@ teletransporter{
   y = 1136,
   width = 48,
   height = 32,
-  destination_map = "heron_door_test_room",
+  destination_map = "Yarrowmouth/yarrowmouth_village",
+  destination = "from_shop",
 }
 
 npc{

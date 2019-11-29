@@ -2273,7 +2273,7 @@ teletransporter{
   y = 432,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor_old",
+  destination_map = "Yarrowmouth/tern_marsh",
   destination = "from_meadery",
 }
 

@@ -1,10 +1,11 @@
 properties{
-  x = 0,
-  y = 0,
+  x = 6208,
+  y = 1584,
   width = 1280,
   height = 1056,
   min_layer = 0,
   max_layer = 2,
+  world = "overworld",
   tileset = "overworld_yarrowmouth",
   music = "twisty_forest",
 }
@@ -36023,16 +36024,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 808,
-  y = 1048,
-  width = 16,
-  height = 8,
-  pattern = "3_2",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
   x = 736,
   y = 800,
   width = 16,
@@ -36047,6 +36038,71 @@ tile{
   width = 16,
   height = 16,
   pattern = "1107",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 808,
+  y = 1048,
+  width = 16,
+  height = 8,
+  pattern = "3_2",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 712,
+  width = 176,
+  height = 32,
+  pattern = "1047",
+}
+
+tile{
+  layer = 0,
+  x = 624,
+  y = 648,
+  width = 32,
+  height = 64,
+  pattern = "1047",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 696,
+  width = 16,
+  height = 16,
+  pattern = "1047",
+}
+
+tile{
+  layer = 0,
+  x = 528,
+  y = 664,
+  width = 16,
+  height = 48,
+  pattern = "1047",
+}
+
+tile{
+  layer = 0,
+  x = 536,
+  y = 672,
+  width = 32,
+  height = 16,
+  pattern = "1047",
 }
 
 destructible{
@@ -38617,6 +38673,14 @@ destructible{
   y = 741,
   sprite = "entities/bush_violet",
   can_be_cut = true,
+}
+
+enemy{
+  layer = 0,
+  x = 640,
+  y = 717,
+  direction = 0,
+  breed = "normal_enemies/triangle_crab_red",
 }
 
 tile{
@@ -42335,6 +42399,17 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/blacksmith_03",
+}
+
+teletransporter{
+  layer = 1,
+  x = 528,
+  y = 1056,
+  width = 256,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "Yarrowmouth/tern_marsh",
+  destination = "_side",
 }
 
 tile{

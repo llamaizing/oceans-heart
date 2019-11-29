@@ -504,6 +504,7 @@ sprite{ id = "enemies/normal_enemies/sword_soldier_blue", description = "sword s
 sprite{ id = "enemies/normal_enemies/sword_soldier_blue_weapon", description = "sword soldier blue weapon" }
 sprite{ id = "enemies/normal_enemies/triangle_crab_red", description = "Triangle crab-red" }
 sprite{ id = "enemies/normal_enemies/trumpet_player_disguise", description = "trumpet player disguise" }
+sprite{ id = "enemies/normal_enemies/willowisp", description = "Willowisp" }
 sprite{ id = "enemies/normal_enemies/zora", description = "Zora" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 sprite{ id = "entities/abysphere_egg", description = "Abysphere" }
@@ -1359,6 +1360,7 @@ sound{ id = "charge_warp", description = "charge_warp" }
 sound{ id = "chest_open", description = "chest_open" }
 sound{ id = "clank", description = "clank" }
 sound{ id = "click_low", description = "click_low" }
+sound{ id = "crackle1", description = "crackle1" }
 sound{ id = "cursor", description = "cursor" }
 sound{ id = "cursor_2", description = "cursor_2" }
 sound{ id = "danger", description = "danger" }
@@ -1377,7 +1379,9 @@ sound{ id = "enemy_hurt1", description = "enemy_hurt1" }
 sound{ id = "enemy_hurt_01", description = "enemy_hurt_01" }
 sound{ id = "enemy_hurt_default", description = "enemy_hurt_default" }
 sound{ id = "enemy_killed", description = "enemy_killed" }
+sound{ id = "ether_bomb", description = "ether_bomb" }
 sound{ id = "explosion", description = "explosion" }
+sound{ id = "explosion_ice", description = "explosion_ice" }
 sound{ id = "external_stairs_down", description = "external_stairs_down" }
 sound{ id = "external_stairs_up", description = "external_stairs_up" }
 sound{ id = "falling", description = "falling" }
@@ -1470,6 +1474,7 @@ sound{ id = "throw_01", description = "throw_01" }
 sound{ id = "thunder1", description = "thunder1" }
 sound{ id = "thunder2", description = "thunder2" }
 sound{ id = "thunder3", description = "thunder3" }
+sound{ id = "thunder4_short", description = "thunder4_short" }
 sound{ id = "thunder_double", description = "thunder_double" }
 sound{ id = "thunder_far", description = "thunder_far" }
 sound{ id = "thunk1", description = "thunk1" }
@@ -1770,6 +1775,7 @@ enemy{ id = "normal_enemies/stump_duck", description = "Stump Duck" }
 enemy{ id = "normal_enemies/sword_soldier_blue", description = "sword soldier blue" }
 enemy{ id = "normal_enemies/triangle_crab_red", description = "Triangle Crab-Red" }
 enemy{ id = "normal_enemies/trumpet_player_disguise", description = "Trumpet Player Disguise" }
+enemy{ id = "normal_enemies/willowisp", description = "Willowisp" }
 enemy{ id = "normal_enemies/zora", description = "Zora" }
 
 entity{ id = "ally", description = "ally" }

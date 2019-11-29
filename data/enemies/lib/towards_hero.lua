@@ -108,18 +108,26 @@ function behavior:create(enemy, properties)
     if properties.dying_sprite then self:set_dying_sprite_id(properties.dying_sprite) end
   end
 
-  function enemy:on_movement_changed(movement)
 
+  function enemy:on_movement_changed(movement)
     local direction4 = movement:get_direction4()
     local sprite = self:get_sprite()
     sprite:set_direction(direction4)
-
+--[[
     local ground = self:get_ground_below()
-    if self.grass_sprite == nil and ground == "grass" then
+print"a"
+
+    if not self.grass_sprite and ground == "grass" then
+print"b"
       self.grass_sprite = self:create_sprite("hero/ground1")
     elseif self.grass_sprite and ground ~= "grass" then
       self:remove_sprite(self.grass_sprite)
       self.grass_sprite = nil
+    end
+--]]
+    local ground = self:get_ground_below()
+    if ground == "grass" then
+      self:create_sprite("enemies/ground1")
     end
   end
 

@@ -662,7 +662,7 @@ teletransporter{
   y = 200,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/tern_marshOLD",
+  destination_map = "Yarrowmouth/tern_marsh",
   destination = "from_ambush_cave",
 }
 

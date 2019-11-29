@@ -411,6 +411,7 @@ end
     local wind_up_animation = "wind_up"
     if sprite:has_animation("summoning_wind_up") then wind_up_animation = "summoning_wind_up" end
     sprite:set_animation(wind_up_animation)
+    if properties.summoning_wind_up_sound then sol.audio.play_sound(properties.summoning_wind_up_sound) end
     if properties.protected_while_summoning then enemy:set_invincible() end
     local telegraph_time = properties.wind_up_time
     if properties.summon_attack_wind_up_time then telegraph_time = properties.summon_attack_wind_up_time end
@@ -420,9 +421,10 @@ end
       local i = 0
       sol.timer.start(map, properties.summon_group_delay, function()
         local herox, heroy, herol = hero:get_position()
-        map:create_enemy({
+        local summon_enemy = map:create_enemy({
           name = enemy_summon, layer = herol, x = herox, y = heroy, direction = 0, breed = properties.summon_breed,
         })
+        if promerties.summon_breed_damage then summon_enemy:set_damage(promerties.summon_breed_damage) end
         i = i + 1
         if i < properties.summon_group_size then return true end
       end)
