@@ -113,21 +113,12 @@ function behavior:create(enemy, properties)
     local direction4 = movement:get_direction4()
     local sprite = self:get_sprite()
     sprite:set_direction(direction4)
---[[
     local ground = self:get_ground_below()
-print"a"
-
     if not self.grass_sprite and ground == "grass" then
-print"b"
       self.grass_sprite = self:create_sprite("hero/ground1")
     elseif self.grass_sprite and ground ~= "grass" then
       self:remove_sprite(self.grass_sprite)
       self.grass_sprite = nil
-    end
---]]
-    local ground = self:get_ground_below()
-    if ground == "grass" then
-      self:create_sprite("enemies/ground1")
     end
   end
 

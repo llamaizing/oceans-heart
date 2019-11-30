@@ -1,6 +1,7 @@
 --Initialize map behavior specific to this quest.
 
 require"scripts/multi_events"
+local foraging_manager = require"scripts/maps/foraging_manager"
 
 local map_meta = sol.main.get_metatable"map"
 
@@ -9,6 +10,8 @@ map_meta:register_event("on_started", function(self)
 	local map = self
   local hero = map:get_hero()
   local game = map:get_game()
+
+  foraging_manager:remove_picked_plants(map)
 
 
   --sensors for triggering location title banners

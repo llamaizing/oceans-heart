@@ -198,19 +198,19 @@ function behavior:create(enemy, properties)
       can_teleport = false
       sol.timer.start(map, properties.teleport_cooldown + math.random(1000), function() can_teleport = true end)
 
-    elseif properties.has_dash_attack and can_dash_attack and dist_hero <= properties.dash_attack_distance then
-      attacking = true
-      going_hero = false
-      self:dash_attack()
-      can_dash_attack = false
-      sol.timer.start(map, properties.dash_attack_cooldown + math.random(1000), function() can_dash_attack = true end)
-
     elseif properties.has_summon_attack and can_summon and dist_hero <= properties.summon_attack_distance then
       attacking = true
       going_hero = false
       self:summon()
       can_summon = false
       sol.timer.start(map, properties.summon_attack_cooldown + math.random(1000), function() can_summon = true end)
+
+    elseif properties.has_dash_attack and can_dash_attack and dist_hero <= properties.dash_attack_distance then
+      attacking = true
+      going_hero = false
+      self:dash_attack()
+      can_dash_attack = false
+      sol.timer.start(map, properties.dash_attack_cooldown + math.random(1000), function() can_dash_attack = true end)
 
     elseif properties.has_airstrike_attack and can_airstrike_attack and dist_hero <= properties.airstrike_attack_distance then
       attacking = true

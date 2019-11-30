@@ -26,7 +26,7 @@ function normal_functions:initialize(enemy, properties)
 
     local ground = self:get_ground_below()
     if self.grass_sprite == nil and ground == "grass" then
-      self.grass_sprite = self:create_sprite("hero/ground1")
+      self.grass_sprite = self:create_sprite("enemies/ground1")
     elseif self.grass_sprite and ground ~= "grass" then
       self:remove_sprite(self.grass_sprite)
       self.grass_sprite = nil

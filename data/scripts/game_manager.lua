@@ -42,6 +42,9 @@ function game_manager:create(file_name, overwrite_game)
     initial_game:initialize_new_savegame(game)
   end
 
+  --set an empty array for holding foraged bushes
+  game.foraged_bushes = {}
+
   --for the location banner on entering locations
   game.map_banner = map_banner
 
