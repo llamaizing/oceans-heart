@@ -27935,16 +27935,6 @@ chest{
 teletransporter{
   layer = 0,
   x = 1280,
-  y = 736,
-  width = 16,
-  height = 32,
-  destination_map = "Yarrowmouth/silent_glade",
-  destination = "_side",
-}
-
-teletransporter{
-  layer = 0,
-  x = 1280,
   y = 1520,
   width = 16,
   height = 48,
@@ -28321,7 +28311,7 @@ wall{
 wall{
   layer = 0,
   x = 936,
-  y = 272,
+  y = 304,
   width = 32,
   height = 32,
   stops_enemies = true,
@@ -56307,15 +56297,6 @@ sensor{
   layer = 1,
   x = 1256,
   y = 1277,
-  width = 32,
-  height = 32,
-}
-
-sensor{
-  name = "^map_banner_sensor_6",
-  layer = 1,
-  x = 1256,
-  y = 749,
   width = 32,
   height = 32,
 }
