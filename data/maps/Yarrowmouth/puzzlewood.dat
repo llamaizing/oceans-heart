@@ -46517,15 +46517,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 576,
-  y = 160,
-  width = 64,
-  height = 40,
-  pattern = "2051",
-}
-
-tile{
-  layer = 0,
   x = 304,
   y = 432,
   width = 32,
@@ -50574,16 +50565,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
-  y = 56,
-  width = 16,
-  height = 16,
-  pattern = "25",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
   x = 520,
   y = 56,
   width = 16,
@@ -50620,36 +50601,6 @@ tile{
   height = 16,
   pattern = "25",
   tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
-  x = 480,
-  y = 56,
-  width = 16,
-  height = 24,
-  pattern = "162",
-  tileset = "redpine_forest",
-}
-
-tile{
-  layer = 0,
-  x = 496,
-  y = 56,
-  width = 32,
-  height = 24,
-  pattern = "160",
-  tileset = "redpine_forest",
-}
-
-tile{
-  layer = 0,
-  x = 448,
-  y = 56,
-  width = 32,
-  height = 24,
-  pattern = "161",
-  tileset = "redpine_forest",
 }
 
 tile{
@@ -55874,6 +55825,58 @@ tile{
   pattern = "1707",
 }
 
+tile{
+  layer = 0,
+  x = 496,
+  y = 56,
+  enabled_at_start = false,
+  width = 32,
+  height = 24,
+  pattern = "160_2",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 56,
+  enabled_at_start = false,
+  width = 32,
+  height = 24,
+  pattern = "161_2",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 56,
+  width = 16,
+  height = 24,
+  pattern = "162_2",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 192,
+  width = 16,
+  height = 8,
+  pattern = "4_8",
+  tileset = "drygrass",
+}
+
 sensor{
   name = "^layer_up_sensor",
   layer = 0,
@@ -57549,6 +57552,29 @@ door{
   sprite = "entities/door_weak_wall",
   savegame_variable = "puzzlewood_bombable_wall_1",
   opening_method = "explosion",
+}
+
+teletransporter{
+  layer = 0,
+  x = 480,
+  y = 16,
+  width = 16,
+  height = 16,
+  destination_map = "Yarrowmouth/caves/ancient_grove",
+  destination = "from_outside",
+}
+
+wall{
+  layer = 0,
+  x = 480,
+  y = 0,
+  width = 16,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -61549,16 +61575,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 464,
-  y = 8,
-  width = 48,
-  height = 48,
-  pattern = "163",
-  tileset = "redpine_forest",
-}
-
-tile{
-  layer = 1,
   x = 336,
   y = 0,
   width = 48,
@@ -61949,16 +61965,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 480,
-  y = 48,
-  width = 16,
-  height = 24,
-  pattern = "164",
-  tileset = "redpine_forest",
-}
-
-tile{
-  layer = 1,
   x = 744,
   y = 944,
   width = 32,
@@ -62272,6 +62278,36 @@ tile{
   height = 80,
   pattern = "34",
   tileset = "drygrass",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 8,
+  enabled_at_start = false,
+  width = 48,
+  height = 48,
+  pattern = "163_2",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 1,
+  x = 480,
+  y = 48,
+  width = 16,
+  height = 24,
+  pattern = "164_2",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 1,
+  x = 576,
+  y = 160,
+  width = 64,
+  height = 40,
+  pattern = "2051",
 }
 
 dynamic_tile{

@@ -30,5 +30,13 @@ function hero_meta:on_state_changed(state)
   end
 end
 
+function hero_meta:become_all_powerful()
+  local game = self:get_game()
+  game:set_value("sword_damage", 25)
+  game:set_value("bow_damage", 25)
+  game:set_value("defense", 25)
+  game:set_max_life(52)
+  game:set_life(52)
+end
 
 return true

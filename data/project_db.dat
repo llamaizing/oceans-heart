@@ -28,6 +28,7 @@ map{ id = "Limestone Island/sometimes_cape", description = "Sometimes Cape" }
 map{ id = "Limestone Island/west_limestone", description = "West Limestone" }
 map{ id = "Yarrowmouth/OLDyarrowmouth_village", description = "OLDYarrowmouth Village" }
 map{ id = "Yarrowmouth/bear_catacombs/bear_catacombs", description = "Bear Catacombs" }
+map{ id = "Yarrowmouth/caves/ancient_grove", description = "Ancient Grove" }
 map{ id = "Yarrowmouth/caves/beak_cave", description = "Beak Cave" }
 map{ id = "Yarrowmouth/caves/dandelion_charm_cave", description = "Dandelion Charm Cave" }
 map{ id = "Yarrowmouth/caves/deuling_arborgeist_cave", description = "Deuling Arborgeist Cave" }
