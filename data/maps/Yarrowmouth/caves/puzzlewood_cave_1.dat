@@ -1351,7 +1351,7 @@ chest{
   layer = 0,
   x = 200,
   y = 85,
-  treasure_name = "iron_candle_pickable",
+  treasure_name = "rupee",
   treasure_variant = 4,
   treasure_savegame_variable = "puzzlewood_cave_1_chest",
   sprite = "entities/chest",

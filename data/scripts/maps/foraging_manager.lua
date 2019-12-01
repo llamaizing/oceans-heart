@@ -14,7 +14,7 @@ local foraging_treasures = {
 }
 
 --game.foraged_bushes[map][x..","..y..","..z] = timer
-
+--this is just an example of how the table is laid out, so I can understand what I'm doing
 local example_table = {
   map = {
     coord_a = {x = "x", y = "y", timer = "timer"},
@@ -51,9 +51,7 @@ function foraging_manager:process_cut_bush(bush)
         game.foraged_bushes[map:get_id()] = {}
       end
       game.foraged_bushes[map:get_id()][coordinates] = {}
-      game.foraged_bushes[map:get_id()][coordinates].x = x
-      game.foraged_bushes[map:get_id()][coordinates].y = y
-      game.foraged_bushes[map:get_id()][coordinates].z = z
+      game.foraged_bushes[map:get_id()][coordinates] = {x = x ,y = y, z = z}
       game.foraged_bushes[map:get_id()][coordinates].timer = sol.timer.start(game, 180000, function()
         game.foraged_bushes[map:get_id()][coordinates] = nil
       end)

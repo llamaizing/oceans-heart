@@ -104,7 +104,7 @@ text{ key = "location.gull_rock", value = "Gull Rock" }
 text{ key = "location.hourglass_fort", value = "Hourglass Fort" }
 text{ key = "location.isle_of_storms", value = "Isle of Storms" }
 text{ key = "location.ivystump", value = "Ivystump Village" }
-text{ key = "location.kingsdown_isle", value = "Kingsdown Isle" }
+text{ key = "location.kingsdown", value = "Kingsdown Isle" }
 text{ key = "location.lighthouse", value = "Crumbling Lighthouse" }
 text{ key = "location.limestone_island", value = "Limestone Island" }
 text{ key = "location.limestone_present", value = "Limestone Island" }

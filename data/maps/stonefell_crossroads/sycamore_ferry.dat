@@ -39278,6 +39278,15 @@ tile{
   tileset = "overworld_oakhaven",
 }
 
+sensor{
+  name = "ferry_south_sensor",
+  layer = 0,
+  x = 808,
+  y = 669,
+  width = 48,
+  height = 48,
+}
+
 teletransporter{
   layer = 0,
   x = 584,
@@ -39389,15 +39398,6 @@ door{
   y = 640,
   direction = 3,
   sprite = "entities/door_post_water",
-}
-
-sensor{
-  name = "ferry_south_sensor",
-  layer = 0,
-  x = 808,
-  y = 669,
-  width = 48,
-  height = 48,
 }
 
 npc{

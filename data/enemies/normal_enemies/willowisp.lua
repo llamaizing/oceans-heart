@@ -37,7 +37,7 @@ local properties = {
   summoning_sound = "fire_burst_3",
   summon_breed = "misc/fire_blast",
   summon_breed_damage = 4,
-  summon_group_size = 5,
+  summon_group_size = 2,
   summon_group_delay = 300,
   protected_while_summoning = true,
 

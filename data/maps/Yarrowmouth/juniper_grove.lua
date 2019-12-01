@@ -43,6 +43,23 @@ function jerah:on_interaction()
       game:set_value("quest_log_a", "a6")
       game:set_value("quest_hourglass_fort", 1) --quest log
     end)
-
   end
+end
+
+function raft_sensor_a:on_activated()
+print"a"
+  sol.timer.start(map, 1000, function()
+print"b"
+    map:open_doors("raft_gate")
+    raft_b:remove()
+    raft_sensor_b:remove()
+  end)
+end
+
+function raft_sensor_b:on_activated()
+  sol.timer.start(map, 500, function()
+    map:open_doors("raft_gate")
+    raft_a:remove()
+    raft_sensor_a:remove()
+  end)
 end

@@ -424,7 +424,7 @@ end
         local summon_enemy = map:create_enemy({
           name = enemy_summon, layer = herol, x = herox, y = heroy, direction = 0, breed = properties.summon_breed,
         })
-        if promerties.summon_breed_damage then summon_enemy:set_damage(promerties.summon_breed_damage) end
+        if properties.summon_breed_damage then summon_enemy:set_damage(properties.summon_breed_damage) end
         i = i + 1
         if i < properties.summon_group_size then return true end
       end)

@@ -12873,46 +12873,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1088,
-  y = 952,
-  width = 16,
-  height = 8,
-  pattern = "20",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
-  x = 1104,
-  y = 984,
-  width = 16,
-  height = 8,
-  pattern = "20",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 1000,
-  width = 16,
-  height = 8,
-  pattern = "20",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
-  x = 1136,
-  y = 984,
-  width = 16,
-  height = 8,
-  pattern = "20",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
   x = 944,
   y = 1032,
   width = 16,
@@ -21279,7 +21239,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1104,
+  x = 1112,
   y = 736,
   width = 8,
   height = 8,
@@ -24135,132 +24095,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1088,
-  y = 848,
-  width = 32,
-  height = 64,
-  pattern = "1047",
-}
-
-tile{
-  layer = 0,
-  x = 1088,
-  y = 880,
-  width = 48,
-  height = 64,
-  pattern = "1047",
-}
-
-tile{
-  layer = 0,
-  x = 1104,
-  y = 928,
-  width = 48,
-  height = 48,
-  pattern = "1047",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 976,
-  width = 16,
-  height = 16,
-  pattern = "1047",
-}
-
-tile{
-  layer = 0,
-  x = 1088,
-  y = 840,
-  width = 32,
-  height = 8,
-  pattern = "1048",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1080,
-  y = 848,
-  width = 8,
-  height = 96,
-  pattern = "1827",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 848,
-  width = 8,
-  height = 32,
-  pattern = "1825",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 872,
-  width = 16,
-  height = 8,
-  pattern = "1048",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1136,
-  y = 880,
-  width = 8,
-  height = 48,
-  pattern = "1825",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1136,
-  y = 920,
-  width = 16,
-  height = 8,
-  pattern = "1048",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1152,
-  y = 928,
-  width = 8,
-  height = 48,
-  pattern = "1825",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1088,
-  y = 944,
-  width = 16,
-  height = 8,
-  pattern = "1046",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1096,
-  y = 944,
-  width = 8,
-  height = 32,
-  pattern = "1827",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
   x = 320,
   y = 968,
   width = 48,
@@ -24291,26 +24125,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1104,
-  y = 976,
-  width = 16,
-  height = 8,
-  pattern = "1046",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1136,
-  y = 976,
-  width = 16,
-  height = 8,
-  pattern = "1046",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
   x = 256,
   y = 984,
   width = 64,
@@ -24326,26 +24140,6 @@ tile{
   width = 32,
   height = 8,
   pattern = "1048",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1112,
-  y = 976,
-  width = 8,
-  height = 16,
-  pattern = "1827",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1136,
-  y = 976,
-  width = 8,
-  height = 16,
-  pattern = "1825",
   tileset = "overworld_yarrowmouth",
 }
 
@@ -24376,16 +24170,6 @@ tile{
   width = 8,
   height = 16,
   pattern = "1825",
-  tileset = "overworld_yarrowmouth",
-}
-
-tile{
-  layer = 0,
-  x = 1120,
-  y = 992,
-  width = 16,
-  height = 8,
-  pattern = "1046",
   tileset = "overworld_yarrowmouth",
 }
 
@@ -25678,7 +25462,7 @@ tile{
   layer = 0,
   x = 1088,
   y = 680,
-  width = 16,
+  width = 32,
   height = 48,
   pattern = "1047",
 }
@@ -25887,7 +25671,7 @@ tile{
   layer = 0,
   x = 1088,
   y = 672,
-  width = 16,
+  width = 32,
   height = 8,
   pattern = "1048",
   tileset = "overworld_yarrowmouth",
@@ -25905,7 +25689,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1104,
+  x = 1120,
   y = 680,
   width = 8,
   height = 48,
@@ -26067,7 +25851,7 @@ tile{
   layer = 0,
   x = 1088,
   y = 728,
-  width = 16,
+  width = 32,
   height = 8,
   pattern = "1046",
   tileset = "overworld_yarrowmouth",
@@ -34082,7 +33866,7 @@ tile{
 tile{
   layer = 0,
   x = 1128,
-  y = 504,
+  y = 496,
   width = 16,
   height = 16,
   pattern = "29",
@@ -34101,16 +33885,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1112,
-  y = 544,
-  width = 16,
-  height = 16,
-  pattern = "30",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
   x = 1096,
   y = 536,
   width = 16,
@@ -34120,17 +33894,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1112,
-  y = 552,
-  width = 16,
-  height = 8,
-  pattern = "1048",
-}
-
-tile{
-  layer = 0,
   x = 1128,
-  y = 512,
+  y = 504,
   width = 16,
   height = 8,
   pattern = "1048",
@@ -37931,6 +37696,439 @@ tile{
   tileset = "boulderfield",
 }
 
+tile{
+  layer = 0,
+  x = 1264,
+  y = 0,
+  width = 16,
+  height = 64,
+  pattern = "209",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "60",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "87",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 808,
+  width = 48,
+  height = 48,
+  pattern = "1047",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 864,
+  width = 32,
+  height = 8,
+  pattern = "20",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 800,
+  width = 48,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 840,
+  width = 8,
+  height = 16,
+  pattern = "1827",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 808,
+  width = 8,
+  height = 48,
+  pattern = "1825",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 856,
+  width = 48,
+  height = 8,
+  pattern = "1046",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 784,
+  width = 16,
+  height = 16,
+  pattern = "2038",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "2033",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 792,
+  width = 16,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 840,
+  width = 16,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 752,
+  width = 16,
+  height = 16,
+  pattern = "1999",
+}
+
+tile{
+  layer = 0,
+  x = 1168,
+  y = 760,
+  width = 16,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 832,
+  width = 48,
+  height = 64,
+  pattern = "1047",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 864,
+  width = 64,
+  height = 80,
+  pattern = "1047",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 896,
+  width = 48,
+  height = 80,
+  pattern = "1047",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 944,
+  width = 16,
+  height = 16,
+  pattern = "1047",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 984,
+  width = 48,
+  height = 8,
+  pattern = "20",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 968,
+  width = 16,
+  height = 8,
+  pattern = "20",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 952,
+  width = 16,
+  height = 8,
+  pattern = "20",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 824,
+  width = 48,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 832,
+  width = 8,
+  height = 32,
+  pattern = "1827",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 832,
+  width = 8,
+  height = 64,
+  pattern = "1825",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 856,
+  width = 16,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1064,
+  y = 864,
+  width = 8,
+  height = 80,
+  pattern = "1827",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1136,
+  y = 888,
+  width = 16,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 896,
+  width = 8,
+  height = 80,
+  pattern = "1825",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1072,
+  y = 944,
+  width = 16,
+  height = 8,
+  pattern = "1046",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 944,
+  width = 8,
+  height = 16,
+  pattern = "1827",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 960,
+  width = 16,
+  height = 8,
+  pattern = "1046",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1096,
+  y = 960,
+  width = 8,
+  height = 16,
+  pattern = "1827",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 976,
+  width = 48,
+  height = 8,
+  pattern = "1046",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 736,
+  width = 16,
+  height = 16,
+  pattern = "2038",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 744,
+  width = 16,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "2033",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 552,
+  width = 16,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "30",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 544,
+  width = 16,
+  height = 8,
+  pattern = "1048",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 944,
+  width = 16,
+  height = 16,
+  pattern = "1999",
+}
+
+tile{
+  layer = 0,
+  x = 1128,
+  y = 952,
+  width = 16,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 680,
+  width = 16,
+  height = 16,
+  pattern = "2033",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 688,
+  width = 16,
+  height = 8,
+  pattern = "1048",
+  tileset = "overworld_yarrowmouth",
+}
+
 destination{
   name = "from_seabird_cave",
   layer = 0,
@@ -39030,7 +39228,7 @@ npc{
   name = "pirate_guard",
   layer = 0,
   x = 216,
-  y = 37,
+  y = 45,
   direction = 3,
   subtype = 1,
   sprite = "npc/pirates/pirate_7.1",
@@ -39248,14 +39446,6 @@ destructible{
   layer = 0,
   x = 912,
   y = 317,
-  sprite = "entities/bush_lupine",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 928,
-  y = 325,
   sprite = "entities/bush_lupine",
   can_be_cut = true,
 }
@@ -41145,6 +41335,17 @@ enemy{
   breed = "normal_enemies/willowisp",
 }
 
+teletransporter{
+  layer = 0,
+  x = 1280,
+  y = 792,
+  width = 16,
+  height = 88,
+  transition = "scrolling",
+  destination_map = "Yarrowmouth/kingsdown",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 104,
@@ -41903,7 +42104,7 @@ tile{
 tile{
   layer = 1,
   x = 1128,
-  y = 424,
+  y = 416,
   width = 16,
   height = 80,
   pattern = "32",
@@ -41917,16 +42118,6 @@ tile{
   width = 16,
   height = 80,
   pattern = "31",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 1,
-  x = 1112,
-  y = 512,
-  width = 16,
-  height = 32,
-  pattern = "33",
   tileset = "drygrass",
 }
 
@@ -42308,6 +42499,79 @@ tile{
   height = 16,
   pattern = "3_2",
   tileset = "boulderfield",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 760,
+  width = 16,
+  height = 24,
+  pattern = "2040",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "2046",
+}
+
+tile{
+  layer = 1,
+  x = 1168,
+  y = 728,
+  width = 16,
+  height = 24,
+  pattern = "2000",
+}
+
+tile{
+  layer = 1,
+  x = 1016,
+  y = 712,
+  width = 16,
+  height = 24,
+  pattern = "2040",
+}
+
+tile{
+  layer = 1,
+  x = 1224,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "2046",
+}
+
+tile{
+  layer = 1,
+  x = 1104,
+  y = 504,
+  width = 16,
+  height = 32,
+  pattern = "33",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 1,
+  x = 1128,
+  y = 920,
+  width = 16,
+  height = 24,
+  pattern = "2000",
+}
+
+tile{
+  layer = 1,
+  x = 1080,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "2046",
 }
 
 enemy{

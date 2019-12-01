@@ -3522,7 +3522,7 @@ teletransporter{
   y = 448,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/foothills",
+  destination_map = "Yarrowmouth/puzzlewood",
   destination = "from_strength_charm",
 }
 

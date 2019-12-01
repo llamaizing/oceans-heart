@@ -43,7 +43,7 @@ map{ id = "Yarrowmouth/caves/seabird_shrine", description = "Seabird Shrine" }
 map{ id = "Yarrowmouth/caves/tern_marsh_ambush", description = "Marsh Ambush Cave" }
 map{ id = "Yarrowmouth/caves/village_cave", description = "Village Cave" }
 map{ id = "Yarrowmouth/caves/warp_cave", description = "Warp Cave" }
-map{ id = "Yarrowmouth/foothills", description = "Puzzlewood" }
+map{ id = "Yarrowmouth/foothills", description = "OLDPuzzlewood" }
 map{ id = "Yarrowmouth/hourglass_canyon", description = "Hourglass Fort" }
 map{ id = "Yarrowmouth/hourglass_fort/basement", description = "Basement" }
 map{ id = "Yarrowmouth/hourglass_fort/hourglass_fort", description = "Hourglass Fort - Outside" }
@@ -58,7 +58,9 @@ map{ id = "Yarrowmouth/interiors/nina", description = "Nina's House" }
 map{ id = "Yarrowmouth/interiors/shop", description = "Shop" }
 map{ id = "Yarrowmouth/interiors/silent_glade_health", description = "Silent Glade Health Upgrade" }
 map{ id = "Yarrowmouth/juniper_grove", description = "Juniper Grove" }
+map{ id = "Yarrowmouth/kingsdown", description = "Kingsdown" }
 map{ id = "Yarrowmouth/naerreturn_bay", description = "Naerreturn Bay" }
+map{ id = "Yarrowmouth/puzzlewood", description = "Puzzlewood" }
 map{ id = "Yarrowmouth/silent_glade", description = "Silent Glade" }
 map{ id = "Yarrowmouth/tern_marsh", description = "Tern Marsh" }
 map{ id = "Yarrowmouth/tern_marshOLD", description = "OLD marsh" }
