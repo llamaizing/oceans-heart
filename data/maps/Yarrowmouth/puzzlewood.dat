@@ -55802,7 +55802,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 440,
+  x = 448,
   y = 176,
   width = 16,
   height = 16,
@@ -56353,15 +56353,6 @@ enemy{
   y = 629,
   direction = 0,
   breed = "normal_enemies/rock_spider_brown",
-}
-
-door{
-  layer = 0,
-  x = 1176,
-  y = 296,
-  direction = 3,
-  sprite = "entities/door_weak_wall",
-  savegame_variable = "puzzlewood_bombable_wall_1",
 }
 
 destructible{
@@ -57538,6 +57529,26 @@ teletransporter{
   height = 16,
   destination_map = "Yarrowmouth/caves/grove_cave",
   destination = "from_grove",
+}
+
+teletransporter{
+  layer = 0,
+  x = 1184,
+  y = 240,
+  width = 16,
+  height = 16,
+  destination_map = "Yarrowmouth/caves/deuling_arborgeist_cave",
+  destination = "from_outside",
+}
+
+door{
+  layer = 0,
+  x = 1184,
+  y = 240,
+  direction = 3,
+  sprite = "entities/door_weak_wall",
+  savegame_variable = "puzzlewood_bombable_wall_1",
+  opening_method = "explosion",
 }
 
 tile{
@@ -61608,7 +61619,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 424,
+  x = 432,
   y = 96,
   width = 48,
   height = 80,

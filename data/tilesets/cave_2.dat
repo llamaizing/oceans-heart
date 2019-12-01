@@ -4618,6 +4618,7 @@ tile_pattern{
 
 border_set{
   id = "hole_edge",
+  inner = true,
   pattern_0 = "30",
   pattern_1 = "27",
   pattern_2 = "28",
