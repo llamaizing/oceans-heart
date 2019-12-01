@@ -34,9 +34,9 @@ map{ id = "Yarrowmouth/caves/docks_cave", description = "Docks Cave" }
 map{ id = "Yarrowmouth/caves/elixer_cave", description = "Elixer Cave" }
 map{ id = "Yarrowmouth/caves/ghost_orchid_cave", description = "Ghost Orchid Cave Yarrowmouth" }
 map{ id = "Yarrowmouth/caves/ghost_ship", description = "Ghost Ship" }
+map{ id = "Yarrowmouth/caves/grove_cave", description = "Grove Cave" }
 map{ id = "Yarrowmouth/caves/juniper_grove_cave", description = "Juniper Grove Cave" }
 map{ id = "Yarrowmouth/caves/marsh_cave", description = "Marsh Cave" }
-map{ id = "Yarrowmouth/caves/mushroom_cave", description = "Mushroom Cave" }
 map{ id = "Yarrowmouth/caves/naerreturn_cave", description = "Naerreturn Cave" }
 map{ id = "Yarrowmouth/caves/puzzlewood_cave_1", description = "Puzzlewood Cave 1" }
 map{ id = "Yarrowmouth/caves/seabird_shrine", description = "Seabird Shrine" }

@@ -3421,7 +3421,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 136,
+  x = 8,
   y = -3,
   treasure_name = "berries",
   sprite = "entities/bush_berries",
@@ -3440,7 +3440,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 40,
+  x = 56,
   y = -3,
   treasure_name = "arrow",
   treasure_variant = 2,
@@ -3461,7 +3461,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 24,
+  x = 80,
   y = -3,
   treasure_name = "firethorn_berries",
   sprite = "entities/bush_firethorn",
@@ -3543,7 +3543,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 64,
+  x = 32,
   y = -3,
   treasure_name = "apples",
   sprite = "entities/bush_apple_tree",
@@ -3553,7 +3553,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 88,
+  x = 96,
   y = -3,
   treasure_name = "kingscrown",
   sprite = "entities/bush_kingscrown",
@@ -4050,7 +4050,7 @@ pickable{
 
 destructible{
   layer = 0,
-  x = 120,
+  x = 144,
   y = -3,
   treasure_name = "chamomile",
   sprite = "entities/bush_chamomile",
@@ -4059,7 +4059,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 104,
+  x = 128,
   y = -3,
   treasure_name = "burdock",
   sprite = "entities/bush_burdock",
@@ -4068,7 +4068,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 152,
+  x = 160,
   y = -3,
   treasure_name = "lavendar",
   sprite = "entities/bush_lavendar",
@@ -4077,7 +4077,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 176,
+  x = 184,
   y = -3,
   treasure_name = "witch_hazel",
   sprite = "entities/bush_witch_hazel",
@@ -4107,7 +4107,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 8,
+  x = 112,
   y = -3,
   treasure_name = "ghost_orchid",
   sprite = "entities/bush_ghost_orchid",

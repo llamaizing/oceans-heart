@@ -3743,16 +3743,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 168,
-  y = 88,
-  width = 72,
-  height = 8,
-  pattern = "4",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
   x = 184,
   y = 80,
   width = 48,
@@ -3818,26 +3808,6 @@ tile{
   width = 48,
   height = 8,
   pattern = "4_5",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 80,
-  width = 8,
-  height = 8,
-  pattern = "4_5",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 88,
-  width = 8,
-  height = 8,
-  pattern = "4_2",
   tileset = "drygrass",
 }
 
@@ -3938,16 +3908,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "4_4",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 80,
-  width = 8,
-  height = 8,
-  pattern = "4_6",
   tileset = "drygrass",
 }
 
@@ -36679,6 +36639,142 @@ tile{
   pattern = "41",
 }
 
+tile{
+  layer = 0,
+  x = 144,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "87",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "90",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "1",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 88,
+  width = 72,
+  height = 8,
+  pattern = "4",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "4_5",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 80,
+  width = 8,
+  height = 8,
+  pattern = "4_6",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "4_8",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 96,
+  width = 16,
+  height = 8,
+  pattern = "4",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 88,
+  width = 8,
+  height = 8,
+  pattern = "4_10",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 152,
+  width = 16,
+  height = 8,
+  pattern = "528",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 760,
+  width = 16,
+  height = 8,
+  pattern = "560",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 944,
+  width = 16,
+  height = 8,
+  pattern = "3",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 872,
+  width = 16,
+  height = 8,
+  pattern = "3_4",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 584,
+  width = 16,
+  height = 8,
+  pattern = "3_3",
+  tileset = "drygrass",
+}
+
 destructible{
   layer = 0,
   x = 928,
@@ -39539,6 +39635,16 @@ teletransporter{
   destination = "_side",
 }
 
+jumper{
+  layer = 0,
+  x = 160,
+  y = 104,
+  width = 16,
+  height = 8,
+  direction = 6,
+  jump_length = 56,
+}
+
 tile{
   layer = 1,
   x = 912,
@@ -41753,16 +41859,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 488,
-  y = 872,
-  width = 16,
-  height = 8,
-  pattern = "3_4",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 1,
   x = 816,
   y = 648,
   width = 32,
@@ -42491,24 +42587,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1176,
-  y = 760,
-  width = 16,
-  height = 8,
-  pattern = "560",
-}
-
-tile{
-  layer = 1,
-  x = 152,
-  y = 152,
-  width = 16,
-  height = 8,
-  pattern = "528",
-}
-
-tile{
-  layer = 1,
   x = 440,
   y = -40,
   width = 48,
@@ -43188,26 +43266,6 @@ tile{
   width = 32,
   height = 48,
   pattern = "37",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 1,
-  x = 136,
-  y = 584,
-  width = 16,
-  height = 8,
-  pattern = "3_3",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 1,
-  x = 224,
-  y = 944,
-  width = 16,
-  height = 8,
-  pattern = "3",
   tileset = "drygrass",
 }
 
