@@ -36865,6 +36865,15 @@ tile{
   pattern = "1094",
 }
 
+sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 1256,
+  y = 365,
+  width = 32,
+  height = 48,
+}
+
 destructible{
   layer = 0,
   x = 928,
@@ -39819,6 +39828,24 @@ npc{
   subtype = 1,
   sprite = "npc/woman/sitting_4",
   behavior = "dialog#_yarrowmouth.npcs.town_people.8",
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 600,
+  y = 1053,
+  width = 192,
+  height = 16,
+}
+
+sensor{
+  name = "^map_banner_sensor_2",
+  layer = 0,
+  x = 8,
+  y = 157,
+  width = 16,
+  height = 48,
 }
 
 tile{
