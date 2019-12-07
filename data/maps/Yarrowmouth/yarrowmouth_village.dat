@@ -22387,15 +22387,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1088,
-  y = 560,
-  width = 16,
-  height = 16,
-  pattern = "4",
-}
-
-tile{
-  layer = 0,
   x = 1056,
   y = 656,
   width = 32,
@@ -31071,8 +31062,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1152,
-  y = 632,
+  x = 1136,
+  y = 664,
   width = 16,
   height = 16,
   pattern = "526",
@@ -31080,8 +31071,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1168,
-  y = 648,
+  x = 1152,
+  y = 680,
   width = 8,
   height = 8,
   pattern = "515",
@@ -33337,8 +33328,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 576,
-  y = 456,
+  x = 624,
+  y = 440,
   width = 16,
   height = 8,
   pattern = "2",
@@ -36021,15 +36012,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1088,
-  y = 560,
-  width = 16,
-  height = 16,
-  pattern = "12",
-}
-
-tile{
-  layer = 0,
   x = 1128,
   y = 584,
   width = 40,
@@ -36773,6 +36755,114 @@ tile{
   height = 8,
   pattern = "3_3",
   tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 1112,
+  y = 440,
+  width = 16,
+  height = 8,
+  pattern = "249",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "1094",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "1094",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 368,
+  width = 8,
+  height = 16,
+  pattern = "1092",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "491",
+}
+
+tile{
+  layer = 0,
+  x = 648,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "492",
+}
+
+tile{
+  layer = 0,
+  x = 656,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "493",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "491",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "492",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 456,
+  width = 8,
+  height = 8,
+  pattern = "493",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "1094",
 }
 
 destructible{
@@ -39643,6 +39733,92 @@ jumper{
   height = 8,
   direction = 6,
   jump_length = 56,
+}
+
+npc{
+  layer = 0,
+  x = 1120,
+  y = 445,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_yarrowmouth.signs.village_1",
+}
+
+npc{
+  layer = 0,
+  x = 688,
+  y = 621,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/man/man_23.3",
+  behavior = "dialog#_yarrowmouth.npcs.town_people.5",
+}
+
+npc{
+  layer = 0,
+  x = 552,
+  y = 389,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/sitting_5",
+  behavior = "dialog#_yarrowmouth.npcs.town_people.7",
+}
+
+npc{
+  layer = 0,
+  x = 592,
+  y = 397,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/woman/woman_19.6",
+  behavior = "dialog#_yarrowmouth.npcs.town_people.6",
+}
+
+npc{
+  name = "goat_3",
+  layer = 0,
+  x = 552,
+  y = 357,
+  direction = 0,
+  subtype = 1,
+  sprite = "entities/goat_03",
+}
+
+destructible{
+  layer = 0,
+  x = 1192,
+  y = 525,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1208,
+  y = 525,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1192,
+  y = 541,
+  treasure_name = "berries",
+  sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+npc{
+  layer = 0,
+  x = 584,
+  y = 365,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/woman/sitting_4",
+  behavior = "dialog#_yarrowmouth.npcs.town_people.8",
 }
 
 tile{
@@ -43450,6 +43626,78 @@ tile{
   width = 8,
   height = 8,
   pattern = "496",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 416,
+  width = 16,
+  height = 24,
+  pattern = "250",
+}
+
+tile{
+  layer = 1,
+  x = 1112,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "1571",
+}
+
+tile{
+  layer = 1,
+  x = 648,
+  y = 448,
+  width = 8,
+  height = 8,
+  pattern = "496",
+}
+
+tile{
+  layer = 1,
+  x = 656,
+  y = 448,
+  width = 8,
+  height = 8,
+  pattern = "497",
+}
+
+tile{
+  layer = 1,
+  x = 640,
+  y = 448,
+  width = 8,
+  height = 8,
+  pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 592,
+  y = 448,
+  width = 8,
+  height = 8,
+  pattern = "496",
+}
+
+tile{
+  layer = 1,
+  x = 600,
+  y = 448,
+  width = 8,
+  height = 8,
+  pattern = "497",
+}
+
+tile{
+  layer = 1,
+  x = 584,
+  y = 448,
+  width = 8,
+  height = 8,
+  pattern = "495",
 }
 
 npc{

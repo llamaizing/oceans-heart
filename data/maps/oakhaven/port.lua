@@ -18,14 +18,29 @@ map:register_event("on_started", function()
   if game:get_value("quest_hazel") then
     for block in map:get_entities("block_guy") do block:set_enabled(false) end
   end
+  --if you're coming out of the arena, remove the pots blocking the door
+  for pot in map:get_entities("blockpot") do
+    if pot:get_distance(hero) < 100 then pot:remove() end
+  end
 
+  --NPC movements:
+  local nailm = sol.movement.create("straight")
+  local nailmangle = 0
+  nailm:set_angle(nailmangle)
+  nailm:set_speed(20)
+  nailm:start(nailman)
+  function nailm:on_obstacle_reached()
+    nailmangle = nailmangle + math.pi
+    nailm:set_angle(nailmangle)
+    nailm:start(nailman)
+  end
+
+  --Setup for Quests:
   if game:get_value("find_burglars") == true then burglar_lookout:set_enabled(false) end
-
   if game:get_value("quest_mayors_dog") and game:get_value("quest_mayors_dog") >=8 then
     see_litton_sensor:set_enabled(false)
   end
   if game:get_value("quest_mayors_dog") == 7 then running_litton:set_enabled(true) end
-
   if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") >= 2 then
     gallery_door:set_enabled(false) 
     gallery_door_npc:set_enabled(false)

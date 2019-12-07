@@ -11231,12 +11231,38 @@ not pirates, but... burglars maybe?
 }
 
 dialog{
+  id = "_oakhaven.npcs.port.misc.10",
+  text = [[
+Ah, the Ivystump Apple Boat has arrived.
+You know you can walk through the Veilwood
+east of here to get to the source of these
+apples? I haven't been, but I'd love to
+one day see the apple... mine.
+The apple spring? The apple well. The
+apple factory. Wherever these things
+come from.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.11",
+  text = [[
+As big as Oakhaven City is, I heard a rumor
+there's some underground tunnels there.
+Can you believe it? As if they needed more
+to do there. Sounds like it'd be a
+nightmare for tourism. TOO much to do,
+if anything!
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.port.misc.2",
   text = [[
 There's always more fish in the sea. But
 what, you wanna go to the trouble of gettin'
 them out? No way! Buy my fish, pre-removed
-rom the sea for your eating convenience.
+from the sea for your eating convenience.
 ]],
 }
 
@@ -11256,6 +11282,74 @@ dialog{
   id = "_oakhaven.npcs.port.misc.3-2",
   text = [[
 (It's really, really bad)
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.4",
+  text = [[
+Are we the best shipyard in Oakhaven? Well
+here's how I think about it. Are we the
+only shipyard in Oakhaven? Yes. Are we any
+good at our jobs?.. We're the only shipyard.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.5",
+  text = [[
+Ugh. Big day for moving boxes of nails
+across the pier. Nail shipment day is
+the worst.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.6",
+  text = [[
+We are somehow, according to my calculations,
+36 boxes short on this shipment? How did
+this happen?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.7",
+  text = [[
+Look boss, I think the shipment was bigger
+when we picked it up, but the fact I'm a
+pirate definitely has absolutely no bearing
+on what might have happened...
+$1...$3uh, because I'm NOT a pirate. Am
+I communicating how exculpatory my lack
+of a profession is?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.8",
+  text = [[
+Even though the city of Oakhaven survived
+an ancient flood, its lighthouse didn't.
+Now superstition is that the Ocean accepted
+plunging Oakhaven into the dark as enough
+to appease her. So now nobody will build a
+lighthouse. But for some reason, these big
+torches are okay. Superstitions are weird
+and inconsistent.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.9",
+  text = [[
+I guess if you take the West road from this
+port, you can go south down to this mangrove
+thicket, or north up to some mountain? I
+don't know, I've never bothered traveling.
+There's a market in town, fish here at the
+port, why bother dealing with monsters on
+the roads.
 ]],
 }
 
@@ -11314,6 +11408,60 @@ dialog{
 There's many different papers scattered
 across the tables. Lots of charts and
 forms about imports and exports.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.1",
+  text = [[
+I'm sure you've fought in plenty of
+underground fighting arenas, but there's
+something special about this one. Everyone
+just really cares about each other. It's
+like a big family. All united in watching
+ferocious violent battles.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.arenamaster.gofight",
+  text = [[
+ARENA GUY:
+I'll open to doors. Cross that bridge to
+get in, then stand on the skull in the
+center and we'll release the monsters.
+ARENA GUY:
+Once you clear a round, stand at the center
+of the arena again, and we'll release the
+next round. No more rules. Go ahead.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.arenamaster.join",
+  text = [[
+ARENA GUY:
+You want to test yourself in the beast
+tournaments? You throw in 20 crowns, but
+there's big prizes if you make it out alive.
+ARENA GUY:
+There's a few different challenges. What
+do you think, kid?
+
+$?Level 1
+$?Level 2
+$?Level 3
+$?I'm not interested
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.bartender",
+  text = [[
+Welcome. Our underground fighting arena is
+so underground we don't even have a name.
+If you want in on the bloodsport, go talk to
+that seedy guy standing over by the wall.
 ]],
 }
 
@@ -15437,7 +15585,7 @@ Briarwood Gin to help you kids out.
 dialog{
   id = "_yarrowmouth.npcs.town_people.1",
   text = [[
-Have you explored the Puzzlewood east of
+Have you explored the Puzzlewood West of
 town? There's an old structure built by the
 Bear Warriors. They say one of their relics
 is hidden inside.
@@ -15480,11 +15628,108 @@ in the Northwest corner of town.
 }
 
 dialog{
+  id = "_yarrowmouth.npcs.town_people.5",
+  text = [[
+Southeast of town, there's a place called
+Kingsdown Isle. There's some pirates living
+in an old fort there, but Kingsdown is so
+much of a pain to travel to, they don't
+really bother us. Since the road from
+Tern Marsh is blocked off, I think the only
+way there is taking the a raft along
+Snapmast Reef, east of here.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.town_people.6",
+  text = [[
+So I've got this fascination with old
+architecture, right? Been to Oakhaven to
+study the old buildings and stuff. But I
+was in the Puzzlewood last month and I
+found some stone pillars that are like, old.
+Older than the buildings in Oakhaven, even
+than the Bear Warriors' ruins. But then
+some monster was there so I ran away.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.town_people.7",
+  text = [[
+I love coming here for drinks, their
+patio is goat friendly!
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.town_people.8",
+  text = [[
+Out in the wilds of Tern Marsh, there's
+actually a Meadery. You know, honey wine?
+I guess they somehow compete with Briarwood.
+And like, hometown pride and all so don't
+tell anyone but... I actually think they
+make better drinks.
+]],
+}
+
+dialog{
   id = "_yarrowmouth.npcs.town_people.crafting",
   text = [[
-Oh, uh, do you want to use that crafting
-table? I'm not sure why else you'd be in
-here. Go ahead.
+NATHAN:
+Oh, welcome to the apothecary. I'm the
+village healer, need anything for your
+ailments?
+TILIA:
+No, I'll be fine, thanks.
+
+
+NATHAN:
+Marvelous. Well if you need to whip
+anything up using that crafting table,
+help yourself.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.town_people.hurt_guy",
+  text = [[
+INJURED MAN:
+If you're ever injured, say, when some
+pirates sail over from Snapmast Reef and
+try to take over the town's pier, the
+INJURED MAN:
+healer makes a mean headache potion. I mean,
+one that cures them. Dunno about causing
+them.
+TILIA:
+Pirates tried to take control of Yarrowmouth's
+pier? Why?
+
+INJURED MAN:
+Dunno. Sail around the island to get to
+Oakhaven maybe? Threaten more people?
+We managed to send them off, the
+INJURED MAN:
+Volunteer Navywoman, Nina, knew this
+Mallow guy who came and helped.
+
+TILIA:
+Oh! That's my dad! Do you know where he
+went afterwards?
+
+INJURED MAN:
+Ballast Harbor maybe? This was a while ago
+though, he's likely gone on from there.
+I hear he was tracking pirates.
+TILIA:
+He is. Now I'm tracking him.
+
+
+INJURED MAN:
+Well, best of luck to you.
 ]],
 }
 
@@ -15868,9 +16113,8 @@ Yarrowmouth General Store
 dialog{
   id = "_yarrowmouth.signs.village_1",
   text = [[
-East - The Puzzlewood
-(Roads to Kingsdown Isle, Naerreturn Bay
-and Tern Marsh are all through Puzzlewood)
+East - Yarrowmouth Pier, Juniper Grove
+South - Trail to Kingsdown Isle
 ]],
 }
 
