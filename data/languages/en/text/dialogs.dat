@@ -11424,6 +11424,123 @@ ferocious violent battles.
 }
 
 dialog{
+  id = "_oakhaven.npcs.port.underground.10",
+  text = [[
+I used to be an explorer back in the day.
+The way waves and waves of beasts come at
+you here really takes me back. Reminds me
+of this old ruin in the fields east of town.
+What was it I had to do to get in there?
+There were a couple of those standing stones
+in particular you had to touch, I think...
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.11",
+  text = [[
+If you enjoy watching people risk their
+lives fighting monsters here, you should
+check out the tic-tac-toe championship
+in Oakhaven! It's in the southwest part
+of town, super high stakes!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.2",
+  text = [[
+One of the great things about the gladiator
+stuff here is that they bring in cool
+monsters from places I've never even heard
+of. It's a treat to get eviscerated by them.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.3",
+  text = [[
+I've always wondered why we have this
+fighting arena hidden away. I mean, it's
+cool and all, but, is fighting monsters
+illegal? Why all the subterfuge?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.4",
+  text = [[
+If you can take down all the monsters in
+the harder brackets here, you're probably
+pretty set anywhere, huh? Except maybe
+some big monsters at the end of long,
+winding quests, I guess. I heard there's
+even a monster stronger than... I dunno,
+around what you'd consider final boss level?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.5",
+  text = [[
+You here to watch the fight, or to BE
+the fight? I here for the first one,
+myself. I guess that's obvious since I'm
+not fighting right now.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.6",
+  text = [[
+Hey, new face at the gladiator arena! You
+find your way in yourself? I feel so badly
+the entrance is hidden, but it wouldn't be
+an underground fighting arena if we advertised.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.7",
+  text = [[
+This guy brought me here on a date, then
+tried to I guess show off by challenging the
+monsters in the arena? Anyway, he got
+knocked into the water and probably washed
+out to the port, but I can't take my drink
+outside to go look for him.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.8",
+  text = [[
+You know, this whole gladiator place isn't
+the only underground situation in Oakhaven.
+I used to be a plumber, and one time I had
+to get so deep in there, I found myself at
+an underground lake. Then some bandits
+chased me out. Anyway I guess what I'm
+saying is don't go into plumbing unless
+you're confident.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.9",
+  text = [[
+So the thing about Oakhaven is it's
+historical, and magnificent with its
+stained glass and libraries and stuff.
+But then you come down here to this
+underground fighting arena, and it's so
+relaxed and welcoming. Every city needs
+a good dive. The fact this one has fights
+against wild beasts is just icing on top.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.port.underground.arenamaster.gofight",
   text = [[
 ARENA GUY:

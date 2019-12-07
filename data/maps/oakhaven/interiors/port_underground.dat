@@ -4009,6 +4009,106 @@ npc{
   behavior = "dialog#_oakhaven.npcs.port.underground.1",
 }
 
+npc{
+  layer = 0,
+  x = 168,
+  y = 349,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_1.8",
+  behavior = "dialog#_oakhaven.npcs.port.underground.2",
+}
+
+npc{
+  layer = 0,
+  x = 152,
+  y = 261,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/man/man_16.3",
+  behavior = "dialog#_oakhaven.npcs.port.underground.3",
+}
+
+npc{
+  layer = 0,
+  x = 240,
+  y = 269,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/pirates/pirate_10.2",
+  behavior = "dialog#_oakhaven.npcs.port.underground.4",
+}
+
+npc{
+  layer = 0,
+  x = 392,
+  y = 269,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/pirates/pirate_2.4",
+  behavior = "dialog#_oakhaven.npcs.port.underground.5",
+}
+
+npc{
+  layer = 0,
+  x = 256,
+  y = 637,
+  direction = 1,
+  subtype = 1,
+  sprite = "npc/pirates/pirate_5.2",
+  behavior = "dialog#_oakhaven.npcs.port.underground.6",
+}
+
+npc{
+  layer = 0,
+  x = 200,
+  y = 645,
+  direction = 1,
+  subtype = 1,
+  sprite = "npc/woman/woman_5.6",
+  behavior = "dialog#_oakhaven.npcs.port.underground.7",
+}
+
+npc{
+  layer = 0,
+  x = 240,
+  y = 645,
+  direction = 1,
+  subtype = 1,
+  sprite = "npc/man/man_19.5",
+  behavior = "dialog#_oakhaven.npcs.port.underground.8",
+}
+
+npc{
+  layer = 0,
+  x = 336,
+  y = 645,
+  direction = 1,
+  subtype = 1,
+  sprite = "npc/woman/woman_10.7",
+  behavior = "dialog#_oakhaven.npcs.port.underground.9",
+}
+
+npc{
+  layer = 0,
+  x = 136,
+  y = 349,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/woman/woman_17.1",
+  behavior = "dialog#_oakhaven.npcs.port.underground.10",
+}
+
+npc{
+  layer = 0,
+  x = 360,
+  y = 645,
+  direction = 1,
+  subtype = 1,
+  sprite = "npc/old_man_1.2",
+  behavior = "dialog#_oakhaven.npcs.port.underground.11",
+}
+
 tile{
   layer = 1,
   x = 80,
