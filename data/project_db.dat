@@ -67,6 +67,7 @@ map{ id = "Yarrowmouth/silent_glade", description = "Silent Glade" }
 map{ id = "Yarrowmouth/tern_marsh", description = "Tern Marsh" }
 map{ id = "Yarrowmouth/tern_marshOLD", description = "OLD marsh" }
 map{ id = "Yarrowmouth/yarrowmouth_village", description = "Yarrowmouth Village" }
+map{ id = "ballast_harbor/ancient_grove", description = "Ancient Grove" }
 map{ id = "ballast_harbor/ballast_harbor", description = "Ballast Harbor" }
 map{ id = "ballast_harbor/ballast_harbor_old", description = "OLDBallast Harbor" }
 map{ id = "ballast_harbor/ballast_trail", description = "BallastTrail" }

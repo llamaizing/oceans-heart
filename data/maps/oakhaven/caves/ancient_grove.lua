@@ -1,3 +1,5 @@
+--Ancient Grove Marblecliff
+
 local map = ...
 local game = map:get_game()
 
@@ -16,7 +18,8 @@ fx:get_sprite():flash()
   game:set_value("ancient_grove_marblecliff_activated", true)
   if not game:get_value("quest_ancient_groves") then game:set_value("quest_ancient_groves", 0) end
   local amount = game:get_value("ancient_groves_activated") or 0
-  game:set_value("ancient_groves_activated", amount + 1)
+  amount = amount + 1
+  game:set_value("ancient_groves_activated", amount)
   if amount == 3 then
     game:set_value("quest_ancient_groves", 1)
   end
