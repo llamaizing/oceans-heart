@@ -31,6 +31,24 @@ tile{
 
 tile{
   layer = 0,
+  x = 832,
+  y = -8,
+  width = 240,
+  height = 208,
+  pattern = "1389",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "869",
+}
+
+tile{
+  layer = 0,
   x = 1072,
   y = 80,
   width = 176,
@@ -25664,15 +25682,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1024,
-  y = 200,
-  width = 16,
-  height = 16,
-  pattern = "883",
-}
-
-tile{
-  layer = 0,
   x = 1072,
   y = 200,
   width = 16,
@@ -27084,15 +27093,6 @@ tile{
   y = 0,
   width = 256,
   height = 32,
-  pattern = "1389",
-}
-
-tile{
-  layer = 0,
-  x = 832,
-  y = -8,
-  width = 240,
-  height = 208,
   pattern = "1389",
 }
 
@@ -36247,26 +36247,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1040,
-  y = 200,
-  width = 16,
-  height = 16,
-  pattern = "37",
-  tileset = "spruce_head",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 200,
-  width = 16,
-  height = 16,
-  pattern = "39",
-  tileset = "spruce_head",
-}
-
-tile{
-  layer = 0,
   x = 1032,
   y = 264,
   width = 16,
@@ -37140,6 +37120,107 @@ tile{
   width = 448,
   height = 16,
   pattern = "1389",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "1389",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "880",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "877",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "876",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "877",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "875",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "878",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "879",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "868",
 }
 
 teletransporter{
@@ -39120,6 +39201,16 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/caves/umber_lake",
   destination = "from_orangeporch",
+}
+
+teletransporter{
+  layer = 0,
+  x = 680,
+  y = 40,
+  width = 32,
+  height = 32,
+  destination_map = "oakhaven/palace_gardens_chase_sequence",
+  destination = "from_marblecliff_tunnel",
 }
 
 tile{
@@ -46065,26 +46156,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1048,
-  y = 224,
-  width = 32,
-  height = 48,
-  pattern = "5",
-  tileset = "spruce_head",
-}
-
-tile{
-  layer = 1,
-  x = 1040,
-  y = 208,
-  width = 32,
-  height = 32,
-  pattern = "121",
-  tileset = "spruce_head",
-}
-
-tile{
-  layer = 1,
   x = 1072,
   y = 296,
   width = 16,
@@ -46529,6 +46600,35 @@ tile{
   width = 16,
   height = 16,
   pattern = "878",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 368,
+  height = 160,
+  pattern = "1389",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 224,
+  width = 32,
+  height = 48,
+  pattern = "5",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "121",
+  tileset = "spruce_head",
 }
 
 npc{

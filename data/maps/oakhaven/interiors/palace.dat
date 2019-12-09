@@ -16363,6 +16363,24 @@ teletransporter{
   destination = "from_palace",
 }
 
+teletransporter{
+  layer = 0,
+  x = 464,
+  y = 704,
+  width = 32,
+  height = 16,
+  destination_map = "oakhaven/palace_gardens",
+  destination = "from_palace_inside",
+}
+
+destination{
+  name = "from_outer_gardens",
+  layer = 0,
+  x = 480,
+  y = 701,
+  direction = 1,
+}
+
 tile{
   layer = 1,
   x = 48,

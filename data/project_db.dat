@@ -262,6 +262,7 @@ map{ id = "oakhaven/marblecliff_OLD", description = "OLDMarblecliff" }
 map{ id = "oakhaven/oakhaven", description = "OakhavenCity" }
 map{ id = "oakhaven/oakhaven_old", description = "OLDhaven" }
 map{ id = "oakhaven/palace_gardens", description = "Palace Gardens" }
+map{ id = "oakhaven/palace_gardens_chase_sequence", description = "Palace Gardens-Chase" }
 map{ id = "oakhaven/poison_grove", description = "Poison Grove" }
 map{ id = "oakhaven/port", description = "Port" }
 map{ id = "oakhaven/port_OLD", description = "OLDPort" }
