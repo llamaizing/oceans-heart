@@ -18263,6 +18263,52 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2540",
+  ground = "wall",
+  default_layer = 1,
+  x = 240,
+  y = 1824,
+  width = 80,
+  height = 80,
+}
+
+tile_pattern{
+  id = "2541",
+  ground = "empty",
+  default_layer = 0,
+  x = { 672, 688, 704 },
+  y = { 1760, 1760, 1760 },
+  width = 16,
+  height = 32,
+  frame_delay = 310,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "2541_2",
+  ground = "empty",
+  default_layer = 0,
+  x = { 672, 688, 704 },
+  y = { 1792, 1792, 1792 },
+  width = 16,
+  height = 32,
+  frame_delay = 390,
+  mirror_loop = true,
+}
+
+tile_pattern{
+  id = "2542",
+  ground = "empty",
+  default_layer = 0,
+  x = { 608, 624, 640, 656 },
+  y = { 1792, 1792, 1792, 1792 },
+  width = 16,
+  height = 32,
+  frame_delay = 390,
+  mirror_loop = true,
+}
+
+tile_pattern{
   id = "255",
   ground = "wall",
   default_layer = 0,
@@ -27180,5 +27226,21 @@ tile_pattern{
   width = 48,
   height = 24,
   repeat_mode = "none",
+}
+
+border_set{
+  id = "bushes",
+  pattern_0 = "2065",
+  pattern_1 = "2059",
+  pattern_2 = "2067",
+  pattern_3 = "2069",
+  pattern_4 = "2060",
+  pattern_5 = "2058",
+  pattern_6 = "2068",
+  pattern_7 = "2070",
+  pattern_8 = "2064",
+  pattern_9 = "2063",
+  pattern_10 = "2062",
+  pattern_11 = "2061",
 }
 
