@@ -480,6 +480,7 @@ sprite{ id = "enemies/normal_enemies/pirate_bruiser_shield", description = "Shie
 sprite{ id = "enemies/normal_enemies/pirate_gunner", description = "Pirate Gunner" }
 sprite{ id = "enemies/normal_enemies/pirate_shield", description = "Pirate-Shield" }
 sprite{ id = "enemies/normal_enemies/pirate_shield_vulnerable", description = "Pirate-Shield-Vulnerable" }
+sprite{ id = "enemies/normal_enemies/pirate_sniper", description = "Pirate Sniper" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_1", description = "Pirate- Brown 1" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_1_weapon", description = "weapon - pirate brown 1" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_2", description = "Pirate - sword brown 2" }
@@ -1665,6 +1666,7 @@ enemy{ id = "bosses/thyme", description = "Captain Thyme" }
 enemy{ id = "bosses/zephyrine", description = "Zephyrine" }
 enemy{ id = "general_enemy_example", description = "General Enemy Example" }
 enemy{ id = "misc/arrow_4", description = "Arrow - 4 directions" }
+enemy{ id = "misc/arrow_any_direction", description = "Arrow-AnyDirection" }
 enemy{ id = "misc/barrel_cannon", description = "Barrel Cannon" }
 enemy{ id = "misc/big_stone", description = "Big Stone" }
 enemy{ id = "misc/black_blast", description = "Black Blast" }
@@ -1758,6 +1760,7 @@ enemy{ id = "normal_enemies/pirate_bow_brown_1", description = "Pirate - Bow/Dod
 enemy{ id = "normal_enemies/pirate_bruiser", description = "Pirate Bruiser" }
 enemy{ id = "normal_enemies/pirate_gunner", description = "Pirate Gunner" }
 enemy{ id = "normal_enemies/pirate_shield", description = "Pirate Shield Troop" }
+enemy{ id = "normal_enemies/pirate_sniper", description = "Pirate Sniper" }
 enemy{ id = "normal_enemies/pirate_sword_brown_1", description = "Pirate lv1" }
 enemy{ id = "normal_enemies/pirate_sword_brown_2", description = "Pirate lv2" }
 enemy{ id = "normal_enemies/pirate_sword_brown_3", description = "Pirate lv3" }

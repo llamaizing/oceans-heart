@@ -8350,6 +8350,27 @@ trees are getting sick.
 }
 
 dialog{
+  id = "_oakhaven.npcs.hazel.new_library.1",
+  text = [[
+PLACEHOLDER DIALOG
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.new_library.2",
+  text = [[
+HAZEL:
+Oh man, looks like the pirate council is
+closing in on me!
+
+TILIA:
+Take your book and get out of here! I'll
+take care of this problem and meet you back
+at the inn!
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.hazel.palace.1",
   text = [[
 TILIA:

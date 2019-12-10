@@ -35,6 +35,12 @@ function map:on_started()
   end
   if game:get_value("oakhaven_palace_rune_activated") then glowing_rune:set_enabled(true) end
 
+  --new hazel interaction stuff
+  if game:get_value("found_hazel_in_archives") then
+    new_hazel:remove()
+    found_hazel_sensor:remove()
+  end
+
   --moved to gardens:
   if game:get_value("quest_mayors_dog") and game:get_value("quest_mayors_dog") >= 7 and game:get_value("quest_mayors_dog") < 11 then
     happy_mayor:set_enabled(false)
@@ -150,11 +156,56 @@ end
 
 
 
+---REVISED SECRET ARCHIVES QUEST-----------------------------
+function found_hazel_sensor:on_activated()
+  found_hazel_sensor:remove()
+  game:set_value("found_hazel_in_archives")
+  hero:freeze()
+  hero:set_animation("walking")
+  local m = sol.movement.create("path")
+  m:set_path{2,2,2,1,1,2,2,2,2,2,2,2,2}
+  m:set_speed(80)
+  m:start(hero, function()
+    new_hazel:get_sprite():set_direction(3)
+    hero:set_animation"stopped"
+    map:talk_to_hazel()
+  end)
+end
+
+function map:talk_to_hazel()
+  game:start_dialog("_oakhaven.npcs.hazel.new_library.1", function()
+    for pirate in map:get_entities("pirate") do
+      hero:set_direction(3)
+      pirate:set_enabled()
+      local m = sol.movement.create("target")
+      m:set_speed(90)
+      m:set_target(map:get_entity("random_pirate_target_" .. math.random(1,8)))
+      m:start(pirate)
+    end
+    sol.timer.start(map, 900, function()
+      game:start_dialog("_oakhaven.npcs.hazel.new_library.2", function()
+        hero:unfreeze()
+        map:hazel_runs_away()
+      end)
+    end)
+
+  end)
+end
+
+function map:hazel_runs_away()
+  local m = sol.movement.create"path"
+  m:set_path{6,6,6,6,6,6,6,6,5,5,6,6,6,6,6,6}
+  m:set_ignore_obstacles()
+  m:set_speed(85)
+  m:start(new_hazel, function()
+    new_hazel:remove()
+    game:set_value("quest_hazel", 6) --quest log
+  end)
+end
 
 
 
-
---BREAKING IN, SECRET ARCHIVES QUEST
+--OLD BREAKING IN, SECRET ARCHIVES QUEST
 function first_see_archives_guard_sensor:on_activated()
   if not game:get_value("seen_archives_guard_first_time") then
     game:set_value("seen_archives_guard_first_time", true)
