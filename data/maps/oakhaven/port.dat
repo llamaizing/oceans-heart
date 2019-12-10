@@ -49155,19 +49155,6 @@ sensor{
   height = 16,
 }
 
-custom_entity{
-  name = "hazel",
-  layer = 0,
-  x = 1416,
-  y = 117,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "npc/hazel",
-  model = "ally",
-}
-
 npc{
   name = "hazel_dummy",
   layer = 0,

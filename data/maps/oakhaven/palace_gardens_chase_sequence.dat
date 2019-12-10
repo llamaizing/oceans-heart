@@ -8691,6 +8691,15 @@ tile{
   pattern = "874",
 }
 
+sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 136,
+  y = 357,
+  width = 16,
+  height = 32,
+}
+
 destination{
   name = "from_marblecliff_tunnel",
   layer = 0,

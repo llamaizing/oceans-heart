@@ -21669,19 +21669,6 @@ sensor{
   height = 32,
 }
 
-custom_entity{
-  name = "hazel",
-  layer = 0,
-  x = 592,
-  y = 1269,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "npc/hazel",
-  model = "ally",
-}
-
 destination{
   name = "from_port_south",
   layer = 0,

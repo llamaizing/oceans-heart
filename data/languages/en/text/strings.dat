@@ -112,6 +112,8 @@ text{ key = "location.lotus_shoal", value = "Lotus Shoal" }
 text{ key = "location.marblecliff", value = "Marblecliff Mountain" }
 text{ key = "location.naerreturn_bay", value = "Zephyr Bay" }
 text{ key = "location.oakhaven", value = "Oakhaven" }
+text{ key = "location.palace_gardens", value = "Oakhaven Palace" }
+text{ key = "location.palace_gardens_chase_sequence", value = "Oakhaven Palace" }
 text{ key = "location.poplar_coast", value = "Spruce Head" }
 text{ key = "location.poplar_forest", value = "Poplar Forest" }
 text{ key = "location.port", value = "Oakhaven Port" }

@@ -13,6 +13,8 @@ map:register_event("on_started", function()
   --put Hazel Ally on the map
   if game:get_value("hazel_is_currently_following_you") and not game:get_value("spoken_to_hazel_south_gate") then
     hazel_dummy:set_enabled(true)
+  elseif game:get_value("hazel_is_currently_following_you") and game:get_value("spoken_to_hazel_south_gate") then
+    require("scripts/action/hazel_ally"):summon(hero)
   end
   --That guy with the boxes that blocks the way into town if you haven't done the plot enough
   if game:get_value("quest_hazel") then
@@ -101,7 +103,13 @@ function meet_hazel_sensor:on_activated()
   if game:get_value("hazel_is_currently_following_you") and not game:get_value("spoken_to_hazel_south_gate") then
     game:start_dialog("_oakhaven.npcs.hazel.thicket.1")
     game:set_value("spoken_to_hazel_south_gate", true)
-    hazel:set_enabled(true)
+    local x,y,z = hazel_dummy:get_position()
+    map:create_custom_entity{
+      x=x, y=y, layer=z, direction=3, width=16, height=16,
+      sprite = "npc/hazel",
+      model = "ally",
+      name = "hazel"
+    }
   end
   meet_hazel_sensor:set_enabled(false)
   hazel_dummy:set_enabled(false)

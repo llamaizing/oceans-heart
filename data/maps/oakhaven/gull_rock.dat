@@ -7893,6 +7893,16 @@ tile{
   pattern = "1859",
 }
 
+tile{
+  layer = 0,
+  x = 768,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "abysphere_ruins",
+}
+
 destination{
   name = "from_tree",
   layer = 0,
@@ -8875,19 +8885,6 @@ destructible{
   sprite = "entities/bush_philodendron",
   weight = -1,
   can_be_cut = true,
-}
-
-custom_entity{
-  name = "hazel",
-  layer = 0,
-  x = 832,
-  y = 29,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "npc/hazel",
-  model = "ally",
 }
 
 sensor{

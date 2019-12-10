@@ -1,9 +1,11 @@
 local entity = ...
 local game = entity:get_game()
 local map = entity:get_map()
+local hero = map:get_hero()
 local sprite
 local SPEED = 120
 local following_hero
+local in_water
 
 function entity:on_created()
   sprite = entity:get_sprite()
@@ -17,10 +19,10 @@ function entity:on_created()
 end
 
 function entity:check_hero()
-  local dist = entity:get_distance(map:get_hero())
-  if dist <= 24 and following_hero then
+  local dist = entity:get_distance(hero)
+  if dist <= 16 and following_hero then
     entity:stop_walking()
-  elseif dist >= 50 and not following_hero then
+  elseif dist >= 32 and not following_hero then
     entity:follow_hero()
   end
 --  if dist > 400 then
@@ -33,6 +35,7 @@ function entity:follow_hero()
   following_hero = true
   local m = sol.movement.create("path_finding")
   m:set_speed(SPEED)
+  if entity:get_distance(hero) > 64 then m:set_speed(SPEED * 2) end
   m:start(entity)
 --  m:set_ignore_obstacles(true)
   sprite:set_animation("walking")
@@ -40,6 +43,14 @@ function entity:follow_hero()
   function m:on_changed()
     sprite:set_direction(m:get_direction4())
     m:set_ignore_obstacles(false)
+    local ground = entity:get_ground_below()
+    if not in_water and ground == "shallow_water" then
+      in_water = true 
+      entity:create_sprite("hero/ground2", "water_sprite")
+    elseif in_water and ground ~= "shallow_water" then
+      in_water = false
+      entity:remove_sprite(entity:get_sprite("water_sprite"))
+    end
   end
 
   function m:on_obstacle_reached()

@@ -9,7 +9,7 @@ map:register_event("on_started", function()
 
   --put Hazel Ally on the map
   if game:get_value("hazel_is_currently_following_you") and game:get_value("spoken_to_hazel_south_gate") then
-    hazel:set_enabled(true)
+    require("scripts/action/hazel_ally"):summon(hero)
   end
 
 end)
