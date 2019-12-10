@@ -39277,6 +39277,37 @@ jumper{
   jump_length = 160,
 }
 
+door{
+  name = "bar_storehouse_door",
+  layer = 0,
+  x = 1008,
+  y = 456,
+  direction = 3,
+  sprite = "entities/door_ext_1",
+  savegame_variable = "salamander_heartache_storehouse_door_open",
+  cannot_open_dialog = "_game.locked_door",
+}
+
+wall{
+  name = "watch_carrier_wall",
+  layer = 0,
+  x = 1120,
+  y = 624,
+  enabled_at_start = false,
+  width = 64,
+  height = 24,
+  stops_hero = true,
+}
+
+sensor{
+  name = "watch_barrel_carrier_sensor",
+  layer = 0,
+  x = 1008,
+  y = 485,
+  width = 32,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 72,

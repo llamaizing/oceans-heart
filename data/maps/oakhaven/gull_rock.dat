@@ -9353,7 +9353,7 @@ tile{
 tile{
   layer = 1,
   x = 1144,
-  y = 248,
+  y = 264,
   width = 64,
   height = 48,
   pattern = "1877",

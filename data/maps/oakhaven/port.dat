@@ -50894,6 +50894,14 @@ destructible{
   can_be_cut = true,
 }
 
+destination{
+  name = "morus_landing",
+  layer = 0,
+  x = 1472,
+  y = 1349,
+  direction = 0,
+}
+
 tile{
   layer = 1,
   x = 1600,
@@ -55900,5 +55908,16 @@ tile{
   width = 16,
   height = 8,
   pattern = "687",
+}
+
+dynamic_tile{
+  name = "morus_boat_steam",
+  layer = 2,
+  x = 1480,
+  y = 1320,
+  enabled_at_start = false,
+  width = 16,
+  height = 32,
+  pattern = "1540",
 }
 

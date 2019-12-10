@@ -47,9 +47,8 @@ function jerah:on_interaction()
 end
 
 function raft_sensor_a:on_activated()
-print"a"
+  raft_sensor_a:remove()
   sol.timer.start(map, 1000, function()
-print"b"
     map:open_doors("raft_gate")
     raft_b:remove()
     raft_sensor_b:remove()
@@ -57,6 +56,7 @@ print"b"
 end
 
 function raft_sensor_b:on_activated()
+  raft_sensor_b:remove()
   sol.timer.start(map, 500, function()
     map:open_doors("raft_gate")
     raft_a:remove()

@@ -66,5 +66,6 @@ function chest_mimic:on_dead()
   if not cemetery_of_the_waves_chest_d1_state then
     sol.audio.play_sound("secret")
     coral_ore_chest:set_enabled(true)
+    map:create_poof(coral_ore_chest:get_position())
   end
 end

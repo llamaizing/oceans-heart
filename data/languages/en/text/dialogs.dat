@@ -8519,7 +8519,9 @@ dialog{
   id = "_oakhaven.npcs.hazel.thicket.2",
   text = [[
 HAZEL:
-That's gotta be the tree. Hold on.
+That's gotta be the tree. Hold on. I brought
+some plants for a ritual... thing. I think
+this will work.
 ]],
 }
 
@@ -8527,8 +8529,10 @@ dialog{
   id = "_oakhaven.npcs.hazel.thicket.3",
   text = [[
 HAZEL:
-$1...$3Ocean, help us stop men from using your
-powers for themselves.
+$1...
+...
+...$3
+(She's whispering something you can't hear)
 ]],
 }
 
@@ -11781,7 +11785,7 @@ Maybe it's just me, but when they put up
 the walls for this new basement seating
 area, that spot right over there has always
 SALOON PATRON:
-looked a bit of. Like they did a bad job
+looked a bit off. Like they did a bad job
 just over there to our left.
 ]],
 }
