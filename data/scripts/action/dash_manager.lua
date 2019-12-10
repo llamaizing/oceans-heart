@@ -7,11 +7,14 @@ local movement_id = 1
 local current_movement
 
 function dash_manager:dash(game)
+    --if it consumes magic, make sure there's enough (doesn't consume magic anymore)
     enough_magic = false
     if game:has_item("dandelion_charm") and game:get_magic() >= MAGIC_COST then
         enough_magic = true
         game:remove_magic(MAGIC_COST)
     end
+
+    --create movement
     local hero = game:get_hero()
     local dir = hero:get_direction()
     local dd = {[0]=0,[1]=math.pi/2,[2]=math.pi,[3]=3*math.pi/2} --to convert 0-4 direction to radians
@@ -26,6 +29,8 @@ function dash_manager:dash(game)
         m:set_max_distance(64)
     end
     m:set_smooth(true)
+
+    --set appropriate animation
     if enough_magic then
         hero:get_sprite():set_animation("dash", function() hero:get_sprite():set_animation("walking") end)
         game:set_value("hero_dashing", true)
@@ -38,6 +43,27 @@ function dash_manager:dash(game)
     else sol.audio.play_sound("roll_2") end
     can_dash = false
 
+    --create little dust clouds
+    local x, y, z = hero:get_position()
+    local map = hero:get_map()
+    map:create_custom_entity({
+      direction = 0, x = x, y = y, layer = z, width = 16, height = 16,
+      sprite = "entities/dust_cloud_roll", model = "ephemeral_effect"
+    })
+    --this version does a couple little dust clouds
+    local num_clouds = 3
+    local cloud_delay = 100
+    sol.timer.start(map, cloud_delay, function()
+      for i = 1, num_clouds do
+        local hx, hy, hz = hero:get_position()
+        map:create_custom_entity({
+          direction = 0, x = hx, y = hy, layer = hz, width = 16, height = 16,
+          sprite = "entities/dust_cloud_roll", model = "ephemeral_effect"
+        })
+      end
+    end)
+
+    --start movement
     m:start(hero, function()
         hero:unfreeze()
         game:set_value("hero_dashing", false)

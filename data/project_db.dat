@@ -635,6 +635,7 @@ sprite{ id = "entities/door_unmarked_wall", description = "Door - Unmarked Wall"
 sprite{ id = "entities/door_vines", description = "Door-Vines" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/door_weak_wall", description = "Weak Wall Door" }
+sprite{ id = "entities/dust_cloud_roll", description = "Dust Cloud - Roll" }
 sprite{ id = "entities/elixer", description = "elixer" }
 sprite{ id = "entities/ether_bomb", description = "Ether Bomb" }
 sprite{ id = "entities/explosion", description = "Explosion" }
