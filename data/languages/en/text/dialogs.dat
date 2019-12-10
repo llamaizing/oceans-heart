@@ -8140,17 +8140,29 @@ dialog{
   id = "_oakhaven.npcs.hazel.inn.1",
   text = [[
 HAZEL:
-Good, you made it out! I got my books, too.
-That heist went pretty well, honestly.
+Tilia! Thank goodness you made it out. I
+got my books too, successful heist.
 
 TILIA:
-I'm glad I could help you rob a library?
-So you're trying to destroy the Ocean's
-Heart?
+I'm glad you're okay. Look, I was a little
+harsh about you not coming home to tell me
+you were fine, but it's okay-
 HAZEL:
-Exactly. Mallow wants to get it before the
-pirates do, but... if we can't, we'll need
-some way to stop them. Look at this book.
+Tilia,listen, I'm going to stop these pirates.
+Mallow's doing that too. And you don't have
+to help us, but we're not stopping just
+HAZEL:
+because you... what? You want Mallow to
+go back and run a bar? You want me to come
+home and pick flowers with you?
+TILIA:
+I... no. I mean, yeah, I do want that. Ugh.
+Just, I was worried about you. I hate having
+to pause my life to fight pirates.
+HAZEL:
+Me too, Tilia. But if we don't, who's going
+to? That's why I'm going to find the Sword
+of the Sea King to destroy the Ocean's Heart.
 TILIA:
 $1...$3The sword of the Sea King? I heard
 about this, his sword was supposed to be
@@ -8176,8 +8188,8 @@ So you'll help?
 
 
 TILIA:
-Well, yeah. You're my best friend, and
-my dad's doing this too. I'll do what I
+Well, yeah. You're my best friend, so if
+this is what we're doing... I'll do what I
 can, I guess.
 HAZEL:
 Thanks, Tilia. So, there's this guy at the
@@ -8188,9 +8200,9 @@ I'm gonna read up a little bit more about
 this mangrove offering legend. I'll meet
 you at the south gate of town, okay?
 TILIA:
-Alright. I'll meet you at the south gate
+Alright. I'll meet you at the gate
 once I ask the guy in the market where
-he gets his mangrove leaves.
+he gets his mangrove leaves. Got it.
 ]],
 }
 
@@ -8352,7 +8364,58 @@ trees are getting sick.
 dialog{
   id = "_oakhaven.npcs.hazel.new_library.1",
   text = [[
-PLACEHOLDER DIALOG
+TILIA:
+Hazel! I've been looking everywhere for
+you!
+
+HAZEL:
+Tilia? What are you doing here?
+
+
+TILIA:
+I feel like I already answered that, I've
+been looking everywhere for you! Where's
+dad?
+HAZEL:
+Uh, kind of a long story, but it's so good
+to see you, Tilia. I uh, need these secret
+books to find the Sword of the Sea King to
+HAZEL:
+destroy this terrible, powerful magic
+artifact? There's this pirate council and
+Blackbeard is trying to unite all the
+HAZEL:
+pirate crews so they can get this artifact
+that will let them control the sea, and
+storms, sea monsters-
+TILIA:
+You're talking about the Ocean's Heart?
+
+
+HAZEL:
+Yes! Oh, you must have had to go through
+a lot to find me, you've probably fought
+pirates and heard about this.
+TILIA:
+Yeah! I fought a lot of pirates! Because
+you and dad didn't come home so I needed
+to find you! Hazel, I'm happy to see
+TILIA:
+you but honestly? Also pretty angry that
+you're doing some treasure hunt instead
+of letting me know you're alive.
+HAZEL:
+I don't think you understand how dangerous
+Blackbeard is. The last person to weild the
+Ocean's Heart washed cities into the sea-
+TILIA:
+That does't even sound like a real thing!
+Yeah, pirates are bad, let's fight them,
+but couldn't you come home first?-
+HAZEL:
+I'm trying to stop an army of pirates,
+and you're angry I didn't stop to sail
+home? Just for you? Seriously?
 ]],
 }
 
@@ -8360,11 +8423,11 @@ dialog{
   id = "_oakhaven.npcs.hazel.new_library.2",
   text = [[
 HAZEL:
-Oh man, looks like the pirate council is
-closing in on me!
+Oh cannonballs, looks like the pirate council
+is closing in on me!
 
 TILIA:
-Take your book and get out of here! I'll
+Ugh! Take your book and get out of here! I'll
 take care of this problem and meet you back
 at the inn!
 ]],

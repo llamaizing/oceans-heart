@@ -4706,15 +4706,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1312,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = "871",
-}
-
-tile{
-  layer = 0,
   x = 1264,
   y = 256,
   width = 16,
@@ -4724,47 +4715,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 1280,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = "869",
-}
-
-tile{
-  layer = 0,
   x = 1264,
   y = 272,
   width = 16,
   height = 16,
   pattern = "876",
-}
-
-tile{
-  layer = 0,
-  x = 1264,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = "868",
-}
-
-tile{
-  layer = 0,
-  x = 1296,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = "870",
-}
-
-tile{
-  layer = 0,
-  x = 1328,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = "873",
 }
 
 tile{
@@ -4783,15 +4738,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "878",
-}
-
-tile{
-  layer = 0,
-  x = 1344,
-  y = 240,
-  width = 16,
-  height = 16,
-  pattern = "874",
 }
 
 tile{
@@ -7924,9 +7870,9 @@ tile{
 tile{
   layer = 0,
   x = 128,
-  y = 312,
+  y = 320,
   width = 16,
-  height = 48,
+  height = 32,
   pattern = "193",
 }
 
@@ -8691,6 +8637,60 @@ tile{
   pattern = "690",
 }
 
+tile{
+  layer = 0,
+  x = 1312,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "871",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "869",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "868",
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "870",
+}
+
+tile{
+  layer = 0,
+  x = 1328,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "873",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "874",
+}
+
 destination{
   name = "from_marblecliff_tunnel",
   layer = 0,
@@ -9295,7 +9295,7 @@ destructible{
 teletransporter{
   layer = 0,
   x = 200,
-  y = 112,
+  y = 136,
   width = 16,
   height = 16,
   destination_map = "oakhaven/interiors/palace",
@@ -9306,14 +9306,14 @@ destination{
   name = "from_secret_library",
   layer = 0,
   x = 208,
-  y = 141,
+  y = 165,
   direction = 1,
 }
 
 wall{
   layer = 0,
   x = 200,
-  y = 96,
+  y = 120,
   width = 16,
   height = 16,
   stops_hero = true,
@@ -9551,6 +9551,136 @@ enemy{
   enabled_at_start = false,
   direction = 3,
   breed = "normal_enemies/pirate_sniper",
+}
+
+door{
+  name = "eastwing_door",
+  layer = 0,
+  x = 1304,
+  y = 344,
+  direction = 3,
+  sprite = "entities/door_shutter_stone",
+}
+
+destination{
+  name = "from_eastwing",
+  layer = 0,
+  x = 1312,
+  y = 349,
+  direction = 3,
+}
+
+wall{
+  layer = 0,
+  x = 1280,
+  y = 312,
+  width = 16,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1328,
+  y = 312,
+  width = 16,
+  height = 24,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+wall{
+  layer = 0,
+  x = 1296,
+  y = 312,
+  width = 32,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1304,
+  y = 320,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/interiors/palace",
+  destination = "from_palace_gardens_eastwing",
+}
+
+teletransporter{
+  layer = 0,
+  x = 128,
+  y = 320,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/palace_tunnel",
+  destination = "from_palace",
+}
+
+tile{
+  layer = 1,
+  x = 1312,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "871",
+}
+
+tile{
+  layer = 1,
+  x = 1280,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "869",
+}
+
+tile{
+  layer = 1,
+  x = 1264,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "868",
+}
+
+tile{
+  layer = 1,
+  x = 1296,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "870",
+}
+
+tile{
+  layer = 1,
+  x = 1328,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "873",
+}
+
+tile{
+  layer = 1,
+  x = 1344,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "874",
 }
 
 tile{

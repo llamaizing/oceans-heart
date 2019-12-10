@@ -17,7 +17,7 @@ function map:on_started()
   self:get_camera():letterbox()
   if game:get_value("quest_hazel") >= 2 then map:set_doors_open("hazel_door") end
   if game:get_value("quest_manna_oaks") then hazel:set_enabled(false) end
-  if game:get_value("found_hazel") ~= true then
+  if game:get_value("found_hazel_in_archives") ~= true then
     hazel:set_enabled(false)
   else
     for book in map:get_entities("new_book") do book:set_enabled(true) end

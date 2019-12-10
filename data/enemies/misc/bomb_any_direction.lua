@@ -19,12 +19,16 @@ end
 
 function enemy:on_obstacle_reached()
   local bombx, bomby, bomblayer = enemy:get_position()
-
+  sol.audio.play_sound("explosion")
+  map:create_explosion({
+    layer = bomblayer,
+    x = bombx,
+    y = bomby,
+  })
   enemy:remove()
 end
 
 function enemy:go(angle)
-
   local movement = sol.movement.create("straight")
   movement:set_speed(150)
   movement:set_angle(angle)
