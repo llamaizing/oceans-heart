@@ -5,6 +5,8 @@ local hero = map:get_hero()
 local sprite
 local movement
 
+enemy.lighting_effect = 2
+
 function enemy:on_created()
 
   -- Initialize the properties of your enemy here,

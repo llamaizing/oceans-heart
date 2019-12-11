@@ -5,6 +5,7 @@ local hero = map:get_hero()
 local sprite
 local movement
 enemy.immobilize_immunity = true
+enemy.lighting_effect = 2
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())

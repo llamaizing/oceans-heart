@@ -4,6 +4,7 @@ local particles = {}
 local MAX_PARTICLES = 3
 local PARTICLE_SPEED = 11
 enemy.immobilize_immunity = true
+enemy.lighting_effect = 1
 
 function enemy:on_created()
   local map = enemy:get_map()
