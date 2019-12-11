@@ -17114,22 +17114,22 @@ have been cleared
 
 dialog{
   id = "quest.side.heron_doors",
-  title = "Heron Doors",
+  title = "The Seabird's Tear",
   text = [[
-!Explore the remaining shrines to
-!obtain the rest of the thunder charms.
-@?Explore all of the heron doors
+!Cleanse the remaining shrines to
+!strengthen the Seabird's Tear spell.
+@?Explore all of the shrines
 
-%~You haven't found any more heron doors
+%~You haven't found any more shrines
 %=!Locations to explore: --// The player must find at least one door for these lines to be visible
-?Heron doors explored: --// This line visible instead once quest is complete
+?Shrines explored: --// This line visible instead once quest is complete
 %1$@1 Tern Marsh
 %2$@2 Marble Summit
 %3$@3 Snapmast
 %=!
 %=!  Keep exploring to find them all.
 ::
-$ITEM{thunder_charm.1}   Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+$ITEM{thunder_charm.1}   Shrines cleared: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
 ]],
 }
 
@@ -17138,11 +17138,11 @@ dialog{
   title = "Heron's Well",
   text = [[
 ##The ghost of the hero Heron tasked you
-##with cleaning Thrush Fort.
+##with cleansing Thrush Fort.
 @Unlock Thrust fort
 !
-!It's north of Poplar Forest, past
-!Spruce Head
+!It's West of Goatshead, near
+!the ferry.
 @Destroy the monsters inside
 @Explore the tomb
 #::
@@ -17174,14 +17174,12 @@ dialog{
   title = "Mysterious Doors",
   text = [[
 @!? --// don't display checkmark for this phase
-You found a mysterious door at the
-following locations:
+You found a door marked with a
+Seabird carving at these locations:
 %1$@1 Tern Marsh
 %2$@2 Marble Summit
 %3$@3 Snapmast
 --//Note: the one in Goatshead is excluded because it is behind a regular locked door
-
-Keep exploring to find them all.
 ]],
 }
 
@@ -17553,4 +17551,3 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
-
