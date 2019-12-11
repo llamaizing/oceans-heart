@@ -11821,6 +11821,115 @@ just a normal warehouse is all.
 }
 
 dialog{
+  id = "_oakhaven.npcs.saloon.1",
+  text = [[
+The local music scene in Oakhaven has really
+taken off recently. Used to just the this
+once guy with a bagpipe, and boy I'm glad
+those days are behind us.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.2",
+  text = [[
+Yeah, you've heard of sea charts, but have
+you heard of A and B charts? Ar har har har.
+Actually though, I have heard there's some
+sea charts out there that chart the course
+to forgotten, inaccessible ports. Get your
+hands on those and you'd be able to sail
+to the old places, where nobody anchors
+anymore. Might be good stuff there.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.3",
+  text = [[
+Maybe this is judgemental, but the last
+guy who used to play at this bar? You
+couldn't pay me to drink here with him
+playing. It's not that he was bad,
+I just hate horns. They remind me of
+the time I was gored in the side by a
+monster's horns. It's a weird word
+association thing, I know.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.4",
+  text = [[
+Yo, can you understand what that woman is
+singing? I'm like, really into this song,
+but what if it's about something dumb? Like
+it's just about apples or something?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.5",
+  text = [[
+Back when this place had bad music, I'd
+spend my time down at the secret fighting
+arena at the port... oh, wait, that's not
+how secrets work. Pretend you didn't hear.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.6",
+  text = [[
+I thought I saw my doppleganger yesterday.
+But you know, when you get down to it,
+there really just aren't that many different
+faces in the world.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.7",
+  text = [[
+This last month has been a bad one for
+pirate attacks. There were three at the
+Isle of Lobb, and I heard not too long ago
+Yarrowmouth was raided as well, but they
+fought the pirates off. I think Oakhaven
+is generally pretty safe, but the Mayor
+is a bit... lackadasical? I wish his dog
+was in charge instead. I can trust him.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.8",
+  text = [[
+I usually try to catch a ferry to sail back
+when I want to visit my hometown, but I
+just walked the whole way last time. I
+definitely noticed a bunch of spots where,
+if I had been collecting items that gave me
+new abilities this whole time, I'd be able
+to get somewhere new. Really made me regret
+my life choices in not collecting those.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.9",
+  text = [[
+Hmm, me? I'm just a normal man sitting at
+a table in the corner of a tavern alone.
+Why, does it make me look significant? Like
+I might send you on some quest? Like there's
+more to my story?...
+...Great, that's exactly what I was going
+for. It's an aesthetic.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.saloon.bartender1",
   text = [[
 BARTENDER:

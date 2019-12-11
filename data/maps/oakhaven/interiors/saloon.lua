@@ -21,6 +21,7 @@ function map:on_started()
   else
     musician_1:set_enabled(false)
     musician_2:set_enabled(false)
+    for npc in map:get_entities"flaketron" do npc:set_enabled(false) end
   end
 end
 
