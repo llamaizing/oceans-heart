@@ -9070,6 +9070,43 @@ if people like you continue to protect them.
 }
 
 dialog{
+  id = "_oakhaven.npcs.ivystump.misc.carpenter1",
+  text = [[
+I didn't think this would work, but I had a
+dream where hammers were more effective than
+saws and I woke up needing to test it out,
+just to be sure.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.misc.inn1",
+  text = [[
+If keep your eyes peeled in the Veilwood, you
+can actually make a decent amount just
+gathering plants and selling them. The
+Veilwood is full of treasure! And that
+treasure is nature's bounty! Also the
+friends you make along the way, if you
+make any friends in the forest.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.misc.inn2",
+  text = [[
+Some people say the Veilwood is the North
+Seas' oldest forest, but I don't know. Have
+you seen those ancient grove with blocky
+stone pillars scattered around them?
+They seem older to me. There's one on
+Marblecliff, and one in the Puzzlewood on
+Yarrowmouth. There could be more, too,
+but that's just my intuition.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.ivystump.picker_paul.1",
   text = [[
 PICKER PAUL:

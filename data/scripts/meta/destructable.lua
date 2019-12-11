@@ -9,6 +9,7 @@ function destructible_meta:on_created()
 end
 
 local foraging_treasures = {
+  "arrow",
   "ghost_orchid",
   "firethorn_berries",
   "arrow",

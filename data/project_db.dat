@@ -256,6 +256,7 @@ map{ id = "oakhaven/ivystump_interiors/inn", description = "Inn" }
 map{ id = "oakhaven/ivystump_interiors/lamia", description = "Lamia's House" }
 map{ id = "oakhaven/ivystump_interiors/sawmill", description = "Sawmill" }
 map{ id = "oakhaven/ivystump_interiors/shop", description = "Shop" }
+map{ id = "oakhaven/ivystump_port", description = "Ivystump Port" }
 map{ id = "oakhaven/lobb_trail", description = "Lobb Trail" }
 map{ id = "oakhaven/marble_summit", description = "Marble Summit" }
 map{ id = "oakhaven/marblecliff", description = "Marblecliff" }
@@ -638,6 +639,8 @@ sprite{ id = "entities/door_vines", description = "Door-Vines" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/door_weak_wall", description = "Weak Wall Door" }
 sprite{ id = "entities/dust_cloud_roll", description = "Dust Cloud - Roll" }
+sprite{ id = "entities/effects/light_l", description = "Light - L" }
+sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/elixer", description = "elixer" }
 sprite{ id = "entities/ether_bomb", description = "Ether Bomb" }
 sprite{ id = "entities/explosion", description = "Explosion" }
