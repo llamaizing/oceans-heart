@@ -11932,6 +11932,53 @@ just over there to our left.
 }
 
 dialog{
+  id = "_oakhaven.npcs.sculptor.1",
+  text = [[
+SCULPTOR:
+Oh, you're carrying a sword into my house?
+Perfect! I need help destroying these clay
+monsters for material to make sculptures.
+TILIA:
+$?I'll help!
+$?That's a great idea JUST KIDDING, NO WAY!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.sculptor.2",
+  text = [[
+SCULPTOR:
+Fantastic! Effervescent! Marvelous! Go
+get 'em!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.sculptor.3",
+  text = [[
+SCULPTOR:
+Hey, thanks! You knocked those gravel guys
+out like they were just... I dunno, pebbles?
+I'm a sculpture guy, not a poet. Here, take
+SCULPTOR:
+a share of the materials!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.sculptor.4",
+  text = [[
+SCULPTOR:
+Hey, thanks for helping me smash those
+pebble punks. I got lots of good clay to
+make some statues. Monster statues. Yeah.
+SCULPTOR:
+Now I'm stocked up on materials and ready
+to create something truly horrifying.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.shipyard.1",
   text = [[
 I messed up, I messed up, I messed up...
@@ -17551,3 +17598,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+
