@@ -11,6 +11,11 @@ local map = ...
 local game = map:get_game()
 
 map:register_event("on_started", function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(4)
+  sol.menu.start(map, lighting_effects)
+
   if game:get_value("oakhaven_lakehouse_secret_switch_pulled") then
     local m=sol.movement.create"straight"
     m:set_max_distance(24)

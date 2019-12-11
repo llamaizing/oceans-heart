@@ -12,6 +12,11 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(3)
+  sol.menu.start(map, lighting_effects)
+
   if game:get_value("quest_ivy_orchard") >= 3 then
     for enemy in map:get_entities_by_type("enemy") do enemy:set_enabled(false) end
     map:set_doors_open("boss_door")

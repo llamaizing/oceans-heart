@@ -6642,6 +6642,26 @@ tile{
   tileset = "indoors_stone",
 }
 
+tile{
+  layer = 0,
+  x = 1408,
+  y = 112,
+  width = 32,
+  height = 32,
+  pattern = "565",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1472,
+  y = 112,
+  width = 32,
+  height = 32,
+  pattern = "565",
+  tileset = "indoors_stone",
+}
+
 sensor{
   name = "boss_sensor",
   layer = 0,
@@ -6918,6 +6938,318 @@ door{
   y = 256,
   direction = 3,
   sprite = "entities/door_shutter",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_13",
+  layer = 0,
+  x = 928,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 0,
+  x = 928,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_15",
+  layer = 0,
+  x = 1104,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_16",
+  layer = 0,
+  x = 1104,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1000,
+  y = 533,
+  sprite = "entities/bush_forsythia",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1048,
+  y = 533,
+  sprite = "entities/bush_forsythia",
+  can_be_cut = true,
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_17",
+  layer = 0,
+  x = 152,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_18",
+  layer = 0,
+  x = 200,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_19",
+  layer = 0,
+  x = 248,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_20",
+  layer = 0,
+  x = 1392,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_21",
+  layer = 0,
+  x = 1504,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_22",
+  layer = 0,
+  x = 1504,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_23",
+  layer = 0,
+  x = 1392,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_24",
+  layer = 0,
+  x = 1344,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_25",
+  layer = 0,
+  x = 1376,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_26",
+  layer = 0,
+  x = 1520,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_27",
+  layer = 0,
+  x = 1552,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_31",
+  layer = 0,
+  x = 1840,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_32",
+  layer = 0,
+  x = 1888,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_33",
+  layer = 0,
+  x = 1888,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_34",
+  layer = 0,
+  x = 1840,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_35",
+  layer = 0,
+  x = 1840,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_36",
+  layer = 0,
+  x = 1888,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_28",
+  layer = 0,
+  x = 1152,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_29",
+  layer = 0,
+  x = 1040,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_30",
+  layer = 0,
+  x = 1152,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+enemy{
+  layer = 0,
+  x = 1368,
+  y = 413,
+  direction = 0,
+  breed = "normal_enemies/bat_1",
+}
+
+enemy{
+  layer = 0,
+  x = 1464,
+  y = 413,
+  direction = 0,
+  breed = "normal_enemies/bat_1",
+}
+
+enemy{
+  layer = 0,
+  x = 1552,
+  y = 413,
+  direction = 0,
+  breed = "normal_enemies/bat_1",
+}
+
+enemy{
+  layer = 0,
+  x = 1456,
+  y = 349,
+  direction = 0,
+  breed = "normal_enemies/bat_1",
 }
 
 tile{
@@ -7677,6 +8009,26 @@ tile{
   height = 32,
   pattern = "1672",
   tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1408,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "566",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1472,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "566",
+  tileset = "indoors_stone",
 }
 
 tile{

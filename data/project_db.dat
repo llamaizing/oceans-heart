@@ -640,6 +640,7 @@ sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/door_weak_wall", description = "Weak Wall Door" }
 sprite{ id = "entities/dust_cloud_roll", description = "Dust Cloud - Roll" }
 sprite{ id = "entities/effects/light_l", description = "Light - L" }
+sprite{ id = "entities/effects/light_m", description = "Light - M" }
 sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/elixer", description = "elixer" }
 sprite{ id = "entities/ether_bomb", description = "Ether Bomb" }

@@ -2035,3 +2035,23 @@ tile{
   pattern = "232",
 }
 
+dynamic_tile{
+  name = "^lighting_effect_torch_13",
+  layer = 1,
+  x = 152,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 1,
+  x = 184,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+

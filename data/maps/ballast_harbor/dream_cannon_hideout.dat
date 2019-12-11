@@ -1684,3 +1684,13 @@ tile{
   pattern = "162",
 }
 
+dynamic_tile{
+  name = "^lighting_effect_torch_1",
+  layer = 1,
+  x = 192,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "208",
+}
+

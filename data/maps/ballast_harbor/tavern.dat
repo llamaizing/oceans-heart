@@ -2738,3 +2738,13 @@ npc{
   sprite = "npc/blacksmith_02",
 }
 
+dynamic_tile{
+  name = "^lighting_effect_torch_8",
+  layer = 1,
+  x = 152,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "208",
+}
+

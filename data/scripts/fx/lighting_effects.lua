@@ -2,7 +2,7 @@ local lighting_effects = {}
 
 local effects = {
   torch = sol.sprite.create"entities/effects/light_l",
-  candle = sol.sprite.create"entities/effects/light_l",
+  candle = sol.sprite.create"entities/effects/light_m",
   explosion = sol.sprite.create"entities/effects/light_xl",
   hero_aura = sol.sprite.create"entities/effects/light_l",
 }
@@ -14,13 +14,13 @@ local darkness_color
 
 function lighting_effects:initialize()
   --scale effects to proper size:
-  effects.hero_aura:set_scale(2, 2)
-  effects.torch:set_scale(2, 2)
-  effects.explosion:set_scale(1, 1)
+--  effects.hero_aura:set_scale(2, 2)
+--  effects.torch:set_scale(2, 2)
+--  effects.explosion:set_scale(1, 1)
 
   --add color to effects
   effects.torch:set_color_modulation{255, 230, 150}
-  effects.candle:set_color_modulation{255, 230, 150}
+  effects.candle:set_color_modulation{235, 210, 130}
   effects.hero_aura:set_color_modulation{255, 230, 180}
   effects.explosion:set_color_modulation{255, 240, 180}
 
@@ -46,7 +46,7 @@ function lighting_effects:set_darkness_level(level)
   elseif level == 2 then
     darkness_color = {100,115,135}
   elseif level == 3 then
-    darkness_color = {70,90,100}
+    darkness_color = {75,85,90}
   elseif level == 4 then
     darkness_color = {20,40,55}
   elseif level == 5 then

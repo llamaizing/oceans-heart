@@ -2456,6 +2456,26 @@ npc{
   subtype = 1,
 }
 
+dynamic_tile{
+  name = "^lighting_effect_torch_1",
+  layer = 0,
+  x = 128,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_2",
+  layer = 0,
+  x = 224,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
 enemy{
   layer = 0,
   x = 144,
@@ -2463,6 +2483,16 @@ enemy{
   direction = 3,
   breed = "normal_enemies/grim_1",
   savegame_variable = "oakhaven_lakehouse_grim_enemy",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_3",
+  layer = 0,
+  x = 432,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "41",
 }
 
 tile{

@@ -4969,7 +4969,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 1064,
+  x = 1056,
   y = 2416,
   width = 160,
   height = 32,
@@ -13296,6 +13296,123 @@ tile{
   tileset = "cave_2",
 }
 
+tile{
+  layer = 0,
+  x = 480,
+  y = 2800,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 2360,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 2392,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 2392,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 2608,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 720,
+  y = 2576,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 2528,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 2304,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 1976,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 2048,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 2192,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 2192,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 1848,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
 wall{
   layer = 0,
   x = 608,
@@ -14178,6 +14295,46 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/caves/abyss",
   destination = "from_lake_umber",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_1",
+  layer = 0,
+  x = 400,
+  y = 584,
+  width = 16,
+  height = 16,
+  pattern = "253",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_2",
+  layer = 0,
+  x = 512,
+  y = 584,
+  width = 16,
+  height = 16,
+  pattern = "253",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_3",
+  layer = 0,
+  x = 512,
+  y = 648,
+  width = 16,
+  height = 16,
+  pattern = "253",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_4",
+  layer = 0,
+  x = 400,
+  y = 648,
+  width = 16,
+  height = 16,
+  pattern = "253",
 }
 
 tile{
@@ -15420,6 +15577,166 @@ tile{
   height = 16,
   pattern = "252",
   tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_13",
+  layer = 1,
+  x = 480,
+  y = 2784,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 1,
+  x = 80,
+  y = 2344,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_15",
+  layer = 1,
+  x = 360,
+  y = 2376,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_16",
+  layer = 1,
+  x = 424,
+  y = 2376,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_17",
+  layer = 1,
+  x = 576,
+  y = 2592,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_18",
+  layer = 1,
+  x = 720,
+  y = 2560,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_19",
+  layer = 1,
+  x = 848,
+  y = 2512,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_20",
+  layer = 1,
+  x = 1184,
+  y = 2288,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_21",
+  layer = 1,
+  x = 1232,
+  y = 1960,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_22",
+  layer = 1,
+  x = 1232,
+  y = 2032,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_23",
+  layer = 1,
+  x = 1280,
+  y = 2176,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_24",
+  layer = 1,
+  x = 1152,
+  y = 2176,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_25",
+  layer = 1,
+  x = 1312,
+  y = 1832,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_26",
+  layer = 1,
+  x = 448,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_27",
+  layer = 1,
+  x = 496,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_28",
+  layer = 1,
+  x = 224,
+  y = 1520,
+  width = 16,
+  height = 16,
+  pattern = "41",
 }
 
 tile{

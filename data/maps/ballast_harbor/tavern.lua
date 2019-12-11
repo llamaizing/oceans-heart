@@ -12,7 +12,10 @@ local game = map:get_game()
 
 function map:on_started()
   map:get_camera():letterbox()
-
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(1)
+  sol.menu.start(map, lighting_effects)
 end
 
 function barkeeper:on_interaction()

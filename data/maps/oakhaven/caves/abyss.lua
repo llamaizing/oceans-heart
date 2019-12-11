@@ -15,6 +15,11 @@ local PARTICLE_SPEED = 11
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(5)
+  sol.menu.start(map, lighting_effects)
+
   if game:get_value("oakhaven_palace_rune_activated") then
     glowing_rune:set_enabled(true)
     rune_sensor:set_enabled(true)

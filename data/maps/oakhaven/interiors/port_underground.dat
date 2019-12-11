@@ -3368,13 +3368,44 @@ tile{
   tileset = "indoors_stone",
 }
 
-door{
-  name = "arena_wall",
+tile{
   layer = 0,
   x = 352,
-  y = 408,
-  direction = 3,
-  sprite = "entities/door_posts",
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 352,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
 }
 
 door{
@@ -3481,33 +3512,6 @@ door{
   layer = 0,
   x = 160,
   y = 408,
-  direction = 3,
-  sprite = "entities/door_posts",
-}
-
-door{
-  name = "arena_wall_14",
-  layer = 0,
-  x = 144,
-  y = 408,
-  direction = 3,
-  sprite = "entities/door_posts",
-}
-
-door{
-  name = "arena_wall_15",
-  layer = 0,
-  x = 352,
-  y = 416,
-  direction = 3,
-  sprite = "entities/door_posts",
-}
-
-door{
-  name = "arena_wall_16",
-  layer = 0,
-  x = 144,
-  y = 416,
   direction = 3,
   sprite = "entities/door_posts",
 }
@@ -3747,33 +3751,6 @@ door{
 }
 
 door{
-  name = "arena_wall_43",
-  layer = 0,
-  x = 144,
-  y = 544,
-  direction = 3,
-  sprite = "entities/door_posts",
-}
-
-door{
-  name = "arena_wall_44",
-  layer = 0,
-  x = 352,
-  y = 544,
-  direction = 3,
-  sprite = "entities/door_posts",
-}
-
-door{
-  name = "arena_wall_45",
-  layer = 0,
-  x = 352,
-  y = 552,
-  direction = 3,
-  sprite = "entities/door_posts",
-}
-
-door{
   name = "arena_wall_46",
   layer = 0,
   x = 336,
@@ -3876,15 +3853,6 @@ door{
   name = "arena_wall_57",
   layer = 0,
   x = 160,
-  y = 552,
-  direction = 3,
-  sprite = "entities/door_posts",
-}
-
-door{
-  name = "arena_wall_58",
-  layer = 0,
-  x = 144,
   y = 552,
   direction = 3,
   sprite = "entities/door_posts",
@@ -4297,5 +4265,135 @@ npc{
   subtype = 1,
   sprite = "npc/blacksmith_04",
   behavior = "dialog#",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_13",
+  layer = 1,
+  x = 96,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 1,
+  x = 400,
+  y = 608,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_15",
+  layer = 1,
+  x = 416,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_16",
+  layer = 1,
+  x = 360,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_17",
+  layer = 1,
+  x = 280,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_18",
+  layer = 1,
+  x = 200,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_19",
+  layer = 1,
+  x = 176,
+  y = 256,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_20",
+  layer = 1,
+  x = 176,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_21",
+  layer = 1,
+  x = 96,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_22",
+  layer = 1,
+  x = 352,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_23",
+  layer = 1,
+  x = 144,
+  y = 536,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_24",
+  layer = 1,
+  x = 144,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "1008",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_25",
+  layer = 1,
+  x = 352,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "1008",
 }
 

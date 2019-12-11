@@ -9221,6 +9221,75 @@ destination{
   direction = 3,
 }
 
+sensor{
+  name = "^lighting_effect_torch_7",
+  layer = 0,
+  x = 1344,
+  y = 789,
+  width = 16,
+  height = 16,
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_1",
+  layer = 0,
+  x = 1032,
+  y = 352,
+  width = 16,
+  height = 16,
+  pattern = "253",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_2",
+  layer = 0,
+  x = 872,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "253",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_3",
+  layer = 0,
+  x = 952,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "253",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_4",
+  layer = 0,
+  x = 1112,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "253",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_5",
+  layer = 0,
+  x = 1192,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "253",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_6",
+  layer = 0,
+  x = 1496,
+  y = 664,
+  width = 16,
+  height = 16,
+  pattern = "253",
+}
+
 tile{
   layer = 1,
   x = 264,
