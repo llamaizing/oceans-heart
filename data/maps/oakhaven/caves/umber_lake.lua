@@ -27,7 +27,7 @@ function activator:on_activated()
     sensor:set_enabled(true)
     sol.timer.start(map, 2000, function() sensor:set_enabled(false) end)
   end
-  map_banner_activator:set_enabled(false)
+  activator:set_enabled(false)
 end
 end
 

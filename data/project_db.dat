@@ -194,6 +194,7 @@ map{ id = "new_limestone/transition", description = "transition" }
 map{ id = "oakhaven/caves/abyss", description = "Abyss" }
 map{ id = "oakhaven/caves/amalenchier_tomb", description = "Amalenchier's Tomb" }
 map{ id = "oakhaven/caves/ancient_grove", description = "Ancient Grove" }
+map{ id = "oakhaven/caves/beach_cave", description = "Beach Cave" }
 map{ id = "oakhaven/caves/eastoak_coral_ore_cave", description = "Eastoak Coral Ore Cave" }
 map{ id = "oakhaven/caves/eastoak_health_shrine", description = "Eastoak Health Shrine" }
 map{ id = "oakhaven/caves/lighthouse", description = "Lighthouse - Sinking" }

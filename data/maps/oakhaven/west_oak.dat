@@ -20932,6 +20932,15 @@ tile{
   pattern = "2449",
 }
 
+tile{
+  layer = 0,
+  x = 520,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "591",
+}
+
 destination{
   name = "from_marblecliff",
   layer = 0,
@@ -21720,6 +21729,24 @@ wall{
   width = 16,
   height = 16,
   stops_enemies = true,
+}
+
+teletransporter{
+  layer = 0,
+  x = 520,
+  y = 832,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/beach_cave",
+  destination = "from_outside",
+}
+
+destination{
+  name = "from_beach_cave",
+  layer = 0,
+  x = 528,
+  y = 861,
+  direction = 3,
 }
 
 tile{

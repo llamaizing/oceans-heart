@@ -321,6 +321,8 @@ end
 
 
 ------------------------WALKING AROUND NPCS--------------------------------------
+local TOTAL_WAYPOINTS = 56
+
 function map:initialize_npc_movements()
   for npc in map:get_entities("random_walk") do
     local m = sol.movement.create("random_path")
@@ -328,24 +330,33 @@ function map:initialize_npc_movements()
     m:start(npc)
   end
 
+  --there are 56 waypoints
   for npc in map:get_entities("looping_walker") do
---    map:advance_waypoints(npc, npc:get_property("starting_waypoint"))
-              print("I'm going!")
-              npc:set_origin(8,13)
-              loop_waypoint_10:set_origin(8, 13)
-              local m = sol.movement.create("path_finding")
-              m:set_target(map:get_entity("loop_waypoint_10"))
-              m:start(npc, function() print("MADE IT") end)
-              function m:on_finished() print("end of movement") end
+    --set a random walking speed
+    npc.speed = math.random(25, 45)
+    --find closest waypoint
+    local starting_waypoint = loop_waypoint_1
+    for point in map:get_entities("loop_waypoint") do
+      if npc:get_distance(point) < npc:get_distance(starting_waypoint) then starting_waypoint = point end
+    end
+    --go over there
+    local m = sol.movement.create("target")
+    m:set_target(starting_waypoint)
+    m:set_speed(npc.speed)
+    m:start(npc, function()
+    local current_waypoint_num = string.match(starting_waypoint:get_name(), "%d+")
+    local next_waypoint_num = (current_waypoint_num + (npc:get_property("loop_backwards_value") or 1)) % TOTAL_WAYPOINTS
+    map:advance_waypoints(npc, next_waypoint_num)
+    end)
   end
 end --end initialize NPC movements
 
-
-local NUM_WAYPOINTS = 18
 function map:advance_waypoints(npc, waypoint_no)
-print("seeking waypoint " .. waypoint_no)
-  local m = sol.movement.create("path_finding")
+--print("seeking waypoint " .. waypoint_no)
+  local m = sol.movement.create("target")
+  m:set_speed(npc.speed)
+  m:set_ignore_obstacles()
   m:set_target(map:get_entity("loop_waypoint_" .. waypoint_no))
-  local next_waypoint = waypoint_no + 1 % NUM_WAYPOINTS
-  m:start(npc, function() map:advance_waypoints(npc, next_waypoint) end)
+  local next_waypoint_no = (waypoint_no + (npc:get_property("loop_backwards_value") or 1)) % TOTAL_WAYPOINTS
+  m:start(npc, function() map:advance_waypoints(npc, next_waypoint_no) end)
 end

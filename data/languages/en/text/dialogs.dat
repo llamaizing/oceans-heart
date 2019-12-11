@@ -7789,6 +7789,127 @@ though, as you can't swim up waterfalls.
 }
 
 dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.1",
+  text = [[
+Have you seen that empty house in the
+southwest part of town, near a small
+fountain? I knew the old man that used
+to live there. He said he'd catch a cold
+draft even on warm days. Hated it so much
+he moved to the Isle of Lobb. Anyways, it's
+empty now so of course monsters moved in.
+That's how it goes.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.2",
+  text = [[
+I heard a rumor that the ancient Oak tree
+in the Northeast part of town is hollow.
+They say if you stick your mouth right onto
+it and scream, you can hear it echo like
+an old well or cave or something. I like
+to think it's just the tree screaming back.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.3",
+  text = [[
+You know Oakhaven has its own Bomb Shop?
+On its surface, that seems normal enough,
+the world is full of obstructed passageways,
+but like... is that enough to sustain a
+business? Should that old man really just
+be selling bombs to the general public?
+Sounds like a recipe for disaster if you
+ask me! Anyway, if you collect Firethorn
+berries he'll cut you a deal, I've bought
+a bunch of bombs myself. Sockpiling them.
+Just in case!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.4",
+  text = [[
+The Mayor's dog is having a birthday party
+today! All the towns' upper crust will be
+there.... but it's also the day of the
+tic-tac-toe championship. I'm so torn.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.5",
+  text = [[
+Have you seen that man near the statue of the
+Ocean Goddess? He's always up there, feeding
+birds, every day. What's he up to? What's he
+get from them? What do the birds know?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.6",
+  text = [[
+Just visited Ivystump yesterday, have you
+seen there's an old shrine in the Veilwood?
+Couldn't get through the foliage to get a
+good look, but there's got to be some kind
+of tunnel or something, who'd build an
+ancient shrine then let foliage grow up
+around it? The entrance couldn't be far
+away.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.7",
+  text = [[
+You ever been out west of town, to that
+sandy beach south of Marblecliff? It's a
+great spot for a date, but also, there's
+a cave hidden under the bridge!
+...Which is an even BETTER spot for a date.
+Now don't go sharing this info. I've got
+someone picked out to ask and I don't want
+you stealing 'em out from under me!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.8",
+  text = [[
+Back in my day, there wasn't all this fetching
+water right from the well, we had to climb
+all the way up Marblecliff mountain to get
+fresh springwater! I mean, the well was
+here back then... I don't know why my
+parents sent me all the way up there. But
+it built character! Also I learned about
+the secret chamber built into the monstery!
+But I'll never tell where it is! Ehhehehehe.
+Because I never found it.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.9",
+  text = [[
+Ah dear, your face reminds me of my sister's.
+She fell down the well when we were children.
+I panicked, but she found a tunnel and swore
+she'd learn where water came from. When we
+dropped a ladder down, she said she'd found
+monsters down there! Imagine! We're all
+drinking monster water! That's why I never
+drink water.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.general_town.sculptor_sibling_outside",
   text = [[
 Oh, you're wearing Volunteer Navy colors!
