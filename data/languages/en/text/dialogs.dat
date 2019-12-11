@@ -3098,6 +3098,26 @@ Sure thing, ghost.
 }
 
 dialog{
+  id = "_goatshead.npcs.heron_ghost.4",
+  text = [[
+HERON:
+Ah, I see you've found all the shrines. The
+Sea Bird's Tear is at its strongest. It
+lends its strength to you, as it once
+HERON:
+brought the Ocean's strength to the Sea King.
+May you remain uncorrupted by the old magic.
+Balance the scales the king tipped, rid the
+HERON:
+seas of the abyssal beasts he summoned from
+the earth's corrupted core.
+
+TILIA:
+Yeah ghost, I'll try.
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.heron_ghost.well_choice",
   text = [[
 There's an ancient well nestled among the
