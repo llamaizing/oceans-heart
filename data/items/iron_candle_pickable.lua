@@ -8,7 +8,7 @@ item:register_event("on_created", function(self)
   item:set_brandish_when_picked(true)
 end)
 
-item:register_event("on_obtained", function(self, variant, savegame_variable)
+item:register_event("on_obtaining", function(self, variant, savegame_variable)
   if not game:has_item("iron_candle") then
     game:get_item("iron_candle"):set_variant(1)
   end

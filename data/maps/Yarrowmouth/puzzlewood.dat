@@ -58264,6 +58264,33 @@ npc{
   behavior = "dialog#_yarrowmouth.observations.mushroom_spot.2",
 }
 
+destination{
+  name = "from_ghoat_orchid_cave",
+  layer = 0,
+  x = 1064,
+  y = 605,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1056,
+  y = 576,
+  width = 16,
+  height = 16,
+  destination_map = "Yarrowmouth/caves/ghost_orchid_cave",
+  destination = "from_outside",
+}
+
+sensor{
+  name = "^map_banner_sensor_6",
+  layer = 0,
+  x = 1432,
+  y = 61,
+  width = 32,
+  height = 32,
+}
+
 tile{
   layer = 1,
   x = 576,
@@ -63696,33 +63723,6 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
-}
-
-destination{
-  name = "from_ghoat_orchid_cave",
-  layer = 1,
-  x = 1064,
-  y = 605,
-  direction = 3,
-}
-
-teletransporter{
-  layer = 1,
-  x = 1056,
-  y = 576,
-  width = 16,
-  height = 16,
-  destination_map = "Yarrowmouth/caves/ghost_orchid_cave",
-  destination = "from_outside",
-}
-
-sensor{
-  name = "^map_banner_sensor_6",
-  layer = 1,
-  x = 1432,
-  y = 61,
-  width = 32,
-  height = 32,
 }
 
 dynamic_tile{

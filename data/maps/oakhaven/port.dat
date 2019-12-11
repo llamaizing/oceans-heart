@@ -50889,6 +50889,44 @@ destination{
   direction = 0,
 }
 
+destructible{
+  layer = 0,
+  x = 296,
+  y = 485,
+  treasure_name = "firethorn_berries",
+  sprite = "entities/bush_firethorn",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1368,
+  y = 109,
+  treasure_name = "chamomile",
+  sprite = "entities/bush_chamomile",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1352,
+  y = 117,
+  treasure_name = "chamomile",
+  sprite = "entities/bush_chamomile",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1544,
+  y = 93,
+  treasure_name = "firethorn_berries",
+  sprite = "entities/bush_firethorn",
+  weight = -1,
+  can_be_cut = true,
+}
+
 tile{
   layer = 1,
   x = 1600,

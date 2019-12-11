@@ -10,7 +10,7 @@ item:register_event("on_started", function(self)
   item:set_assignable(false)
 end)
 
-item:register_event("on_obtained", function(self)
+item:register_event("on_obtaining", function(self)
   self:add_amount(1)
 end)
 

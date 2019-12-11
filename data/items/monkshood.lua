@@ -8,7 +8,7 @@ item:register_event("on_started", function(self)
   item:set_amount_savegame_variable("amount_monkshood")
 end)
 
-item:register_event("on_obtained", function(self)
+item:register_event("on_obtaining", function(self)
   self:add_amount(1)
   if game:get_value("quest_monkshood") then game:set_value("quest_monkshood", 1) end
 end)

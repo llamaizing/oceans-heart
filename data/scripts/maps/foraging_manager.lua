@@ -1,5 +1,7 @@
 local foraging_manager = {}
 
+local RESPAWN_TIME = 10 * 1000 * 60 --the first number is minutes
+
 local foraging_treasures = {
   "ghost_orchid",
   "firethorn_berries",
@@ -52,7 +54,7 @@ function foraging_manager:process_cut_bush(bush)
       end
       game.foraged_bushes[map:get_id()][coordinates] = {}
       game.foraged_bushes[map:get_id()][coordinates] = {x = x ,y = y, z = z}
-      game.foraged_bushes[map:get_id()][coordinates].timer = sol.timer.start(game, 180000, function()
+      game.foraged_bushes[map:get_id()][coordinates].timer = sol.timer.start(game, RESPAWN_TIME, function()
         game.foraged_bushes[map:get_id()][coordinates] = nil
       end)
     end
