@@ -72,6 +72,8 @@ function lighting_effects:on_draw(dst_surface)
   --color surfaces
   shadow_surface:fill_color(darkness_color)
 
+
+--=========================================================================================--
   --draw different light effects
   --hero aura:
   effects.hero_aura:draw(light_surface, hx - cam_x, hy - cam_y)
@@ -117,6 +119,26 @@ function lighting_effects:on_draw(dst_surface)
       effects.candle:draw(light_surface, x - cam_x, y - cam_y)
     end
   end
+  --lightning
+  for e in map:get_entities_by_type("custom_entity") do
+    if e:is_enabled() and e:get_name() == "lightning_attack" and e:get_distance(hero) <= 450 then
+      local x,y = e:get_center_position()
+      effects.torch:draw(light_surface, x - cam_x, y - cam_y)
+    end
+  end
+  --enemies
+  for e in map:get_entities_by_type("enemy") do
+    if e:is_enabled() and e.lighting_effect and e:get_distance(hero) <= 450 then
+      local x,y = e:get_center_position()
+      if e.lighting_effect == 1 then
+        effects.candle:draw(light_surface, x - cam_x, y - cam_y)
+      end
+      if e.lighting_effect == 2 then
+        effects.torch:draw(light_surface, x - cam_x, y - cam_y)
+      end
+    end
+  end
+
   
 
   light_surface:draw(shadow_surface)
