@@ -2117,6 +2117,26 @@ tile{
   tileset = "overworld_yarrowmouth",
 }
 
+dynamic_tile{
+  name = "^lighting_effect_torch_13",
+  layer = 1,
+  x = 296,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 1,
+  x = 344,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
 tile{
   layer = 2,
   x = -40,

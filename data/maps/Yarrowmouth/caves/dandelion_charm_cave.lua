@@ -13,6 +13,11 @@ local enemies_killed
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 function map:on_started()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(2)
+  sol.menu.start(map, lighting_effects)
+
   self:get_camera():letterbox()
   enemies_killed = 0
 end

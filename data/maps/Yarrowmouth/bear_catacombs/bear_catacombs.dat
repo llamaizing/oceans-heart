@@ -20375,6 +20375,136 @@ tile{
   tileset = "bear_catacombs_cave",
 }
 
+tile{
+  layer = 0,
+  x = 1312,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1552,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1552,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1944,
+  y = 776,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1840,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1880,
+  y = 600,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1384,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1048,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1088,
+  y = 320,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "indoors_stone",
+}
+
 separator{
   layer = 0,
   x = 408,
@@ -21515,10 +21645,10 @@ switch{
 
 chest{
   layer = 0,
-  x = 112,
+  x = 104,
   y = 781,
-  treasure_name = "rupee",
-  treasure_variant = 3,
+  treasure_name = "iron_candle_pickable",
+  treasure_variant = 4,
   treasure_savegame_variable = "bear_catacombs_opt_treasure_a4",
   sprite = "entities/chest",
 }
@@ -22856,7 +22986,7 @@ teletransporter{
   y = 1664,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/tern_marshOLD",
+  destination_map = "Yarrowmouth/kingsdown",
   destination = "from_bear_catacombs",
 }
 
@@ -22866,7 +22996,7 @@ teletransporter{
   y = 224,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/tern_marshOLD",
+  destination_map = "Yarrowmouth/kingsdown",
   destination = "from_catacombs_exit",
 }
 
@@ -23168,6 +23298,40 @@ enemy{
   breed = "normal_enemies/arborgeist_bomber",
   treasure_name = "arrow",
   treasure_variant = 4,
+}
+
+chest{
+  layer = 0,
+  x = 120,
+  y = 781,
+  treasure_name = "rupee",
+  treasure_variant = 4,
+  treasure_savegame_variable = "bear_catacombs_opt_treasure_a4_part2",
+  sprite = "entities/chest",
+}
+
+enemy{
+  layer = 0,
+  x = 592,
+  y = 773,
+  direction = 0,
+  breed = "normal_enemies/gel_black",
+}
+
+enemy{
+  layer = 0,
+  x = 624,
+  y = 853,
+  direction = 0,
+  breed = "normal_enemies/gel_black",
+}
+
+enemy{
+  layer = 0,
+  x = 496,
+  y = 909,
+  direction = 0,
+  breed = "normal_enemies/gel_black",
 }
 
 tile{
@@ -26029,6 +26193,149 @@ dynamic_tile{
   layer = 1,
   x = 1960,
   y = 1472,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_31",
+  layer = 1,
+  x = 1312,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_32",
+  layer = 1,
+  x = 1552,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_33",
+  layer = 1,
+  x = 1552,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_34",
+  layer = 1,
+  x = 1312,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_35",
+  layer = 1,
+  x = 1944,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_36",
+  layer = 1,
+  x = 1840,
+  y = 848,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_37",
+  layer = 1,
+  x = 1880,
+  y = 584,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_38",
+  layer = 1,
+  x = 1384,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_39",
+  layer = 1,
+  x = 1512,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_40",
+  layer = 1,
+  x = 1048,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_41",
+  layer = 1,
+  x = 1048,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_42",
+  layer = 1,
+  x = 912,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "44",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_43",
+  layer = 1,
+  x = 1088,
+  y = 304,
   width = 16,
   height = 16,
   pattern = "44",

@@ -110,6 +110,13 @@ function lighting_effects:on_draw(dst_surface)
       effects.candle:draw(light_surface, x - cam_x, y - cam_y)
     end
   end
+  --iron candles
+  for e in map:get_entities_by_type("custom_entity") do
+    if e:is_enabled() and e:get_name() == "iron_candle_entity" and e:get_distance(hero) <= 450 then
+      local x,y = e:get_center_position()
+      effects.candle:draw(light_surface, x - cam_x, y - cam_y)
+    end
+  end
   
 
   light_surface:draw(shadow_surface)

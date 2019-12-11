@@ -12,8 +12,12 @@ local game = map:get_game()
 
 
 map:register_event("on_started", function()
-  map:set_doors_open("boss_door")
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(4)
+  sol.menu.start(map, lighting_effects)
 
+  map:set_doors_open("boss_door")
 end)
 
 function boss_sensor:on_activated()

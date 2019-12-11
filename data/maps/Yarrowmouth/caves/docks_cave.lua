@@ -10,9 +10,9 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
+map:register_event("on_started", function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(3)
+  sol.menu.start(map, lighting_effects)
+end)

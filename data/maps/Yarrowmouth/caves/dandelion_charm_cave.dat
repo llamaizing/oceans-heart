@@ -3460,6 +3460,96 @@ tile{
   tileset = "misc",
 }
 
+tile{
+  layer = 0,
+  x = 64,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 416,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 64,
+  y = 264,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
 separator{
   layer = 0,
   x = 0,
@@ -3958,5 +4048,105 @@ tile{
   height = 24,
   pattern = "31",
   tileset = "misc",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_13",
+  layer = 1,
+  x = 64,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 1,
+  x = 240,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_15",
+  layer = 1,
+  x = 240,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_16",
+  layer = 1,
+  x = 64,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_17",
+  layer = 1,
+  x = 432,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_18",
+  layer = 1,
+  x = 512,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_19",
+  layer = 1,
+  x = 128,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_20",
+  layer = 1,
+  x = 176,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_21",
+  layer = 1,
+  x = 200,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_22",
+  layer = 1,
+  x = 104,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "44",
 }
 
