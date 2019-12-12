@@ -7651,7 +7651,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 264,
+  x = 272,
   y = 480,
   width = 32,
   height = 32,
@@ -11003,6 +11003,87 @@ enemy{
   breed = "normal_enemies/mandrake",
 }
 
+npc{
+  name = "fast_travel",
+  layer = 0,
+  x = 264,
+  y = 485,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/sign",
+}
+
+pickable{
+  layer = 0,
+  x = 240,
+  y = 509,
+  treasure_name = "fast_travel_chart_limestone",
+}
+
+pickable{
+  layer = 0,
+  x = 240,
+  y = 509,
+  treasure_name = "fast_travel_chart_ballast_harbor",
+}
+
+pickable{
+  layer = 0,
+  x = 240,
+  y = 509,
+  treasure_name = "fast_travel_chart_spruce_head",
+}
+
+pickable{
+  layer = 0,
+  x = 192,
+  y = 517,
+  treasure_name = "fast_travel_chart_goatshead",
+}
+
+pickable{
+  layer = 0,
+  x = 192,
+  y = 517,
+  treasure_name = "fast_travel_chart_ivystump",
+}
+
+pickable{
+  layer = 0,
+  x = 192,
+  y = 517,
+  treasure_name = "fast_travel_chart_kingsdown",
+}
+
+pickable{
+  layer = 0,
+  x = 240,
+  y = 509,
+  treasure_name = "fast_travel_chart_oakhaven",
+}
+
+pickable{
+  layer = 0,
+  x = 240,
+  y = 509,
+  treasure_name = "fast_travel_chart_snapmast",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 549,
+  treasure_name = "fast_travel_chart_yarrowmouth",
+}
+
+destination{
+  name = "fast_travel_destination",
+  layer = 0,
+  x = 160,
+  y = 669,
+  direction = 0,
+}
+
 tile{
   layer = 1,
   x = 536,
@@ -11645,7 +11726,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 264,
+  x = 272,
   y = 464,
   width = 32,
   height = 16,

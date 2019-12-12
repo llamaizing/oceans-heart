@@ -750,6 +750,7 @@ sprite{ id = "menus/cursor", description = "Cursor" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
 sprite{ id = "menus/inventory/inventory_background", description = "Inventory Background" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
+sprite{ id = "menus/maps/port_rune", description = "Port Rune" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/slider", description = "slider" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
@@ -1549,6 +1550,16 @@ item{ id = "elixer", description = "Elixer Vitae" }
 item{ id = "empty", description = "test" }
 item{ id = "ether_bombs", description = "Ether Bombs" }
 item{ id = "ether_bombs_pickable", description = "EtherBombsPickable-1.3.5.10" }
+item{ id = "fast_travel_chart_ballast_harbor", description = "Fast Travel Chart Ballast Harbor" }
+item{ id = "fast_travel_chart_goatshead", description = "Fast Travel Chart Goatshead" }
+item{ id = "fast_travel_chart_ivystump", description = "Fast Travel Chart Ivystump" }
+item{ id = "fast_travel_chart_kingsdown", description = "FTC Kingsdown" }
+item{ id = "fast_travel_chart_limestone", description = "Fast Travel Chart Limestone" }
+item{ id = "fast_travel_chart_oakhaven", description = "Fast Travel Chart Oakhaven" }
+item{ id = "fast_travel_chart_snapmast", description = "FTC Snapmast" }
+item{ id = "fast_travel_chart_spruce_head", description = "Fast Travel Chart Spruce Head" }
+item{ id = "fast_travel_chart_yarrowmouth", description = "FTC Yarrowmouth" }
+item{ id = "fast_travel_chart_zephyr_bay", description = "FTC Zephyr Bas" }
 item{ id = "firethorn_berries", description = "Firethorn Berries-1,5,10" }
 item{ id = "flippers", description = "flippers" }
 item{ id = "forsythia", description = "Forsythia-1,5,10" }

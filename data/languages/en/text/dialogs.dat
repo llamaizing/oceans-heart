@@ -1527,6 +1527,15 @@ $? No
 }
 
 dialog{
+  id = "_game.fast_travel_confirm",
+  text = [[
+Are you sure you want to travel here?
+$?Yes
+$?No
+]],
+}
+
+dialog{
   id = "_game.game_over",
   text = [[
 Game Over
@@ -14085,6 +14094,96 @@ dialog{
   text = [[
 You got some Ether Bombs. Once thrown, these
 will explode and temporarily freeze enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_ballast_harbor.1",
+  text = [[
+You found a sea chart of Ballast Harbor.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_goatshead.1",
+  text = [[
+You found a sea chart of Goatshead Harbor.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_ivystump.1",
+  text = [[
+You found a sea chart showing Ivystump Village.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_kingsdown.1",
+  text = [[
+You found a sea chart of Kingsdown Isle.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_limestone.1",
+  text = [[
+You found a sea chart of Limestone Island.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_oakhaven.1",
+  text = [[
+You found a sea chart to Oakhaven Port.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_snapmast.1",
+  text = [[
+You found a sea chart of Snapmast Reef.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_spruce_head.1",
+  text = [[
+You found a sea chart showing Spruce Head.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_yarrowmouth.1",
+  text = [[
+You found a sea chart showing Yarrowmouth
+Village. This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_zephyr_bay.1",
+  text = [[
+You found a sea chart of Zephyr Bay.
+This could be used to allow someone
+to navigate there without issue.
 ]],
 }
 

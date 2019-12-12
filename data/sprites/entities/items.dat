@@ -352,6 +352,76 @@ animation{
   },
 }
 animation{
+  name = "fast_travel_chart_ballast_harbor",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_goatshead",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_ivystump",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_kingsdown",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_limestone",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_oakhaven",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_snapmast",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_spruce_head",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_yarrowmouth",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_zephyr_bay",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "feather",
   src_image = "entities/items.png",
   directions = {
