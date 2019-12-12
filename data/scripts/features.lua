@@ -7,6 +7,7 @@
 
 require("scripts/menus/alttp_dialog_box")
 require("scripts/hud/hud")
+require("scripts/hud/small_key")
 require("scripts/meta/hero")
 require("scripts/meta/enemy")
 require("scripts/meta/destructable")

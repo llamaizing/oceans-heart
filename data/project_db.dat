@@ -740,12 +740,10 @@ sprite{ id = "hero/tunic2", description = "Hero tunic 2" }
 sprite{ id = "hero/tunic3", description = "Hero tunic 3" }
 sprite{ id = "hud/arrow_icon", description = "arrow icon" }
 sprite{ id = "hud/bomb_icon", description = "bomb icon" }
-sprite{ id = "hud/gameover_fade", description = "HUD: Game-over fade" }
-sprite{ id = "hud/icon_pause", description = "icon_pause" }
 sprite{ id = "hud/magic_bar", description = "magic bar" }
 sprite{ id = "hud/pause_infra", description = "Pause Infrastructure" }
-sprite{ id = "hud/piece_of_heart_icon", description = "Piece of Heart icon" }
 sprite{ id = "hud/quest_log_update_icon", description = "Quest Log Update Icon" }
+sprite{ id = "hud/small_key_icon", description = "Small Key Icon" }
 sprite{ id = "menus/arrows", description = "arrows" }
 sprite{ id = "menus/checkmark", description = "checkmark" }
 sprite{ id = "menus/cursor", description = "Cursor" }
