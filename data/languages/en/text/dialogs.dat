@@ -3451,17 +3451,18 @@ Thanks, Juglan. I'm sure I'll be back soon.
 
 
 JUGLAN:
-And I'm often sailing from market to market
-with my catches. If you ever need a ride
-back home to Limestone Island...
+Right. Well. Be careful. The Sodden Cormorant
+is in the northwest part of town. Remember
+to craft potions if you need!...
 TILIA:
 Juglan. I'll be fine. Thank you.
 
 
+
 JUGLAN:
-Right. Well. Be careful. The Sodden
-Cormorant Tavern is on the east side of the
-docks, again, yeh might start there...
+Oh, and take this sea chart. When you need
+to sail back to Limestone, this will help.
+Wouldn't want to hit a shoal or anything.
 TILIA:
 Juglan! I'll be fine$1...$3Thank you though.
 ]],
@@ -3471,12 +3472,9 @@ dialog{
   id = "_goatshead.npcs.juglan.ride_back",
   text = [[
 JUGLAN:
-Tilia! How's the hunt going? You need to
-catch a boat back to Limestone Island?
-
-TILIA:
-  $? Yes
-  $? No
+Tilia! I'm still unloading my fish. The
+Sodden Cormorant is in the northwest part
+of town. Take a look there for leads.
 ]],
 }
 

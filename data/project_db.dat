@@ -543,6 +543,7 @@ sprite{ id = "entities/boat_fishing", description = "Boat - Fishing" }
 sprite{ id = "entities/boat_ghost", description = "Boat - Ghost" }
 sprite{ id = "entities/boat_goatshead_ferry", description = "Goatshead Ferry" }
 sprite{ id = "entities/boat_juglan", description = "entities/boat_juglan" }
+sprite{ id = "entities/boat_lily", description = "Boat-Lily" }
 sprite{ id = "entities/boat_mallow", description = "Boat - Mallow" }
 sprite{ id = "entities/boat_morus", description = "Boat - Morus" }
 sprite{ id = "entities/boat_oakhaven_ferry", description = "Oakhaven Ferry" }
@@ -836,6 +837,9 @@ sprite{ id = "npc/kid/kid_6.2", description = "npc/kid/kid_6.2" }
 sprite{ id = "npc/kid/kid_6.3", description = "npc/kid/kid_6.3" }
 sprite{ id = "npc/kid/kid_6.4", description = "npc/kid/kid_6.4" }
 sprite{ id = "npc/leigha", description = "leigha" }
+sprite{ id = "npc/lily/lily_lounging", description = "Lily-Lounging" }
+sprite{ id = "npc/lily/lily_sitting", description = "Lily-Sitting" }
+sprite{ id = "npc/lily/lily_standing", description = "Lily-Standing" }
 sprite{ id = "npc/linden", description = "Linden" }
 sprite{ id = "npc/linden_sweeping", description = "Linden Sweeping" }
 sprite{ id = "npc/litton", description = "Litton" }

@@ -10359,6 +10359,91 @@ tile{
   tileset = "spruce_head",
 }
 
+tile{
+  layer = 0,
+  x = 176,
+  y = 640,
+  width = 24,
+  height = 16,
+  pattern = "690",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 640,
+  width = 24,
+  height = 16,
+  pattern = "690",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 648,
+  width = 16,
+  height = 16,
+  pattern = "1091",
+  tileset = "oceanheart_outdoors_1",
+}
+
+wall{
+  layer = 0,
+  x = 48,
+  y = 608,
+  width = 80,
+  height = 56,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 541,
+  treasure_name = "fast_travel_chart_ballast_harbor",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 541,
+  treasure_name = "fast_travel_chart_spruce_head",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 541,
+  treasure_name = "fast_travel_chart_goatshead",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 541,
+  treasure_name = "fast_travel_chart_ivystump",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 541,
+  treasure_name = "fast_travel_chart_kingsdown",
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 541,
+  treasure_name = "fast_travel_chart_oakhaven",
+}
+
 sensor{
   name = "^map_banner_sensor_2",
   layer = 0,
@@ -11003,76 +11088,24 @@ enemy{
   breed = "normal_enemies/mandrake",
 }
 
-npc{
-  name = "fast_travel",
-  layer = 0,
-  x = 264,
-  y = 485,
-  direction = 3,
-  subtype = 1,
-  sprite = "entities/sign",
-}
-
 pickable{
   layer = 0,
-  x = 240,
-  y = 509,
+  x = 200,
+  y = 541,
   treasure_name = "fast_travel_chart_limestone",
 }
 
 pickable{
   layer = 0,
-  x = 240,
-  y = 509,
-  treasure_name = "fast_travel_chart_ballast_harbor",
-}
-
-pickable{
-  layer = 0,
-  x = 240,
-  y = 509,
-  treasure_name = "fast_travel_chart_spruce_head",
-}
-
-pickable{
-  layer = 0,
-  x = 192,
-  y = 517,
-  treasure_name = "fast_travel_chart_goatshead",
-}
-
-pickable{
-  layer = 0,
-  x = 192,
-  y = 517,
-  treasure_name = "fast_travel_chart_ivystump",
-}
-
-pickable{
-  layer = 0,
-  x = 192,
-  y = 517,
-  treasure_name = "fast_travel_chart_kingsdown",
-}
-
-pickable{
-  layer = 0,
-  x = 240,
-  y = 509,
-  treasure_name = "fast_travel_chart_oakhaven",
-}
-
-pickable{
-  layer = 0,
-  x = 240,
-  y = 509,
+  x = 200,
+  y = 541,
   treasure_name = "fast_travel_chart_snapmast",
 }
 
 pickable{
   layer = 0,
   x = 200,
-  y = 549,
+  y = 541,
   treasure_name = "fast_travel_chart_yarrowmouth",
 }
 
@@ -11082,6 +11115,39 @@ destination{
   x = 160,
   y = 669,
   direction = 0,
+}
+
+pickable{
+  layer = 0,
+  x = 200,
+  y = 541,
+  treasure_name = "fast_travel_chart_zephyr_bay",
+}
+
+npc{
+  layer = 0,
+  x = 96,
+  y = 661,
+  direction = 2,
+  subtype = 1,
+  sprite = "entities/boat_lily",
+}
+
+npc{
+  name = "fast_travel_lily",
+  layer = 0,
+  x = 200,
+  y = 661,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/lily/lily_lounging",
+}
+
+pickable{
+  layer = 0,
+  x = 248,
+  y = 509,
+  treasure_name = "fast_travel_chart_limestone",
 }
 
 tile{
@@ -12152,5 +12218,25 @@ tile{
   height = 16,
   pattern = "113",
   tileset = "limestone",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 632,
+  width = 24,
+  height = 8,
+  pattern = "691",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 200,
+  y = 632,
+  width = 24,
+  height = 8,
+  pattern = "691",
+  tileset = "oceanheart_outdoors_1",
 }
 

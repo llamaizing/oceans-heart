@@ -5899,6 +5899,46 @@ destructible{
   can_be_cut = true,
 }
 
+wall{
+  layer = 0,
+  x = 144,
+  y = 328,
+  width = 80,
+  height = 56,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  name = "fast_travel_destination",
+  layer = 0,
+  x = 168,
+  y = 413,
+  direction = 0,
+}
+
+npc{
+  layer = 0,
+  x = 192,
+  y = 381,
+  direction = 2,
+  subtype = 1,
+  sprite = "entities/boat_lily",
+}
+
+npc{
+  name = "fast_travel_lily",
+  layer = 0,
+  x = 192,
+  y = 413,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/lily/lily_standing",
+}
+
 tile{
   layer = 1,
   x = 192,

@@ -5,7 +5,6 @@ local foraging_manager = require"scripts/maps/foraging_manager"
 
 local map_meta = sol.main.get_metatable"map"
 
-
 map_meta:register_event("on_started", function(self)
 	local map = self
   local hero = map:get_hero()
@@ -13,6 +12,20 @@ map_meta:register_event("on_started", function(self)
 
   foraging_manager:remove_picked_plants(map)
 
+  --Fast Travel
+  for lily in map:get_entities("fast_travel_lily") do
+    function lily:on_interaction()
+      local ft_menu = require("scripts/menus/fast_travel")
+      sol.menu.start(map, ft_menu)
+    end
+  end
+
+  --crafting tables
+  for table in map:get_entities("^crafting_table") do
+    function table:on_interaction()
+      sol.menu.start(game, require("scripts/shops/crafting"))
+    end
+  end
 
   --sensors for triggering location title banners
   for sensor in map:get_entities("^map_banner_sensor") do
@@ -21,12 +34,6 @@ map_meta:register_event("on_started", function(self)
       sensor:set_enabled(false)
     end
     sol.timer.start(map, 1000, function() sensor:set_enabled(false) end)
-  end
-
-  for table in map:get_entities("^crafting_table") do
-    function table:on_interaction()
-      sol.menu.start(game, require("scripts/shops/crafting"))
-    end
   end
 
   --make invisible stairs invisible

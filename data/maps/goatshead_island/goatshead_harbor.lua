@@ -12,7 +12,7 @@ local game = map:get_game()
 local hero = game:get_hero()
 
 map:register_event("on_started", function()
-  to_limestone:set_enabled(false)
+  if game:get_value("goatshead_opening") true then juglan:set_enabled(false) end
   if game:get_value("goatshead_tunnels_accepted") ~= true then adventurer_3:set_enabled(false) end
   if game:get_value("squid_fled") == true then squid_house_door:set_enabled(false) end
   if game:get_value("phantom_squid_quest_completed") == true then merchant_hopeful:set_enabled(false) end
@@ -88,6 +88,7 @@ end)
 map:register_event("on_opening_transition_finished", function()
   if game:get_value("goatshead_opening") ~= true then
     game:start_dialog("_goatshead.npcs.juglan.1", function()
+      hero:start_treasure("fast_travel_chart_limestone")
       game:set_value("quest_meet_juglan_at_pier",1)  --quest log
       game:set_value("goatshead_opening", true)
     end)

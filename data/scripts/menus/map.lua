@@ -6,7 +6,7 @@ multi_events:enable(map_screen)
 local map_id
 local map_img = sol.surface.create()
 --local map_bg = sol.surface.create("menus/maps/background.png")
-local map_bg = sol.surface.create("menus/maps/overworld_map.png")
+local map_bg = sol.surface.create("menus/maps/overworld_map_roads.png")
 local MAP_LIST = {
   new_limestone = "limestone",
   goatshead_island = "goatshead",

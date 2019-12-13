@@ -19,18 +19,20 @@ right now, the way unlocking ports works, you traverse the locations table one b
 --]]
 
 local locations = {
-  {name = "limestone", coordinates = {250, 200}, is_unlocked, map_id = "new_limestone/limestone_present"},
-  {name = "spruce_head", coordinates = {83, 158}, is_unlocked, map_id = "stonefell_crossroads/spruce_head"},
-  {name = "ballast_harbor", coordinates = {346, 184}, is_unlocked, map_id = "ballast_harbor/ballast_harbor"},
-  {name = "goatshead", coordinates = {262, 138}, is_unlocked, map_id = "goatshead_island/goatshead_harbor"},
-  {name = "oakhaven", coordinates = {123, 102}, is_unlocked, map_id = "oakhaven/port"},
   {name = "ivystump", coordinates = {180, 44}, is_unlocked, map_id = "oakhaven/ivystump_port"},
   {name = "yarrowmouth", coordinates = {299, 67}, is_unlocked, map_id = "Yarrowmouth/juniper_grove"},
   {name = "snapmast", coordinates = {330, 52}, is_unlocked, map_id = "snapmast_reef/snapmast_landing"},
+  {name = "oakhaven", coordinates = {123, 102}, is_unlocked, map_id = "oakhaven/port"},
+  {name = "goatshead", coordinates = {262, 138}, is_unlocked, map_id = "goatshead_island/goatshead_harbor"},
   {name = "kingsdown", coordinates = {319, 109}, is_unlocked, map_id = "Yarrowmouth/kingsdown"},
+  {name = "spruce_head", coordinates = {83, 158}, is_unlocked, map_id = "stonefell_crossroads/spruce_head"},
+  {name = "limestone", coordinates = {250, 200}, is_unlocked, map_id = "new_limestone/limestone_present"},
   {name = "zephyr_bay", coordinates = {315, 153}, is_unlocked, map_id = "stonefell_crossroads/zephyr_bay"},
+  {name = "ballast_harbor", coordinates = {346, 184}, is_unlocked, map_id = "ballast_harbor/ballast_harbor"},
 }
+local DEFAULT_PORT = 5
 
+local port_rune = sol.sprite.create("menus/maps/port_rune")
 local port_runes = {}
 local current_port = 1
 local map_surface = sol.surface.create("menus/maps/overworld_map.png")
@@ -41,7 +43,7 @@ function fast_travel_menu:on_started()
   game:get_hero():freeze()
   game:set_suspended(true)
   fast_travel_menu:update_unlocked_locations()
-  fast_travel_menu:update_current_port(game:get_value("fast_travel_menu_current_port") or 1)
+  fast_travel_menu:update_current_port(game:get_value("fast_travel_menu_current_port") or DEFAULT_PORT)
 end
 
 function fast_travel_menu:update_unlocked_locations()
@@ -55,9 +57,23 @@ function fast_travel_menu:update_unlocked_locations()
 end
 
 function fast_travel_menu:update_current_port(new_port)
-    port_runes[current_port]:set_animation("stopped")
-    port_runes[new_port]:set_animation("active")
+    if port_runes[current_port] then port_runes[current_port]:set_animation("stopped") end
+    if port_runes[new_port] then port_runes[new_port]:set_animation("active") end
+print("updating current port, from " .. current_port .. " to " .. new_port)
     current_port = new_port
+end
+
+--next or previous UNLOCKED port------
+function fast_travel_menu:calculate_next_port(test_port, step)
+print("current port: " .. current_port .. ", finding next port")
+  local next_port = test_port + step
+  if next_port > #locations then next_port = 1 end
+  if next_port <= 0 then next_port = #locations end
+  if locations[next_port].is_unlocked then
+    print("found next port: " .. next_port)
+    fast_travel_menu:update_current_port(next_port)
+  else fast_travel_menu:calculate_next_port(next_port, step)
+  end
 end
 
 function fast_travel_menu:confirm_selection()
@@ -86,16 +102,12 @@ function fast_travel_menu:on_command_pressed(command)
 
   elseif command == "left" or command == "up" then
     sol.audio.play_sound("cursor")
-    local next_port = current_port - 1
-    if next_port <= 0 then next_port = #port_runes end
-    fast_travel_menu:update_current_port(next_port)
+    fast_travel_menu:calculate_next_port(current_port, -1)
     handled = true
 
   elseif command == "right" or command == "down" then
     sol.audio.play_sound("cursor")
-    local next_port = current_port + 1
-    if next_port > #port_runes then next_port = 1 end
-    fast_travel_menu:update_current_port(next_port)
+    fast_travel_menu:calculate_next_port(current_port, 1)
     handled = true
 
   elseif command == "action" then
@@ -107,8 +119,10 @@ end
 
 function fast_travel_menu:on_draw(dst)
   map_surface:draw(dst)
-  for i=1, #port_runes do
+  for i=1, #locations do
+    if locations[i].is_unlocked then
       port_runes[i]:draw(dst, locations[i].coordinates[1],locations[i].coordinates[2])
+    end
   end
 end
 
