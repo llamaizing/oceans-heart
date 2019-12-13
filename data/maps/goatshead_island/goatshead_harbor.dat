@@ -29740,6 +29740,33 @@ tile{
   tileset = "redpine_forest",
 }
 
+tile{
+  layer = 0,
+  x = 1184,
+  y = 792,
+  width = 24,
+  height = 16,
+  pattern = "690",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 792,
+  width = 24,
+  height = 16,
+  pattern = "1723",
+}
+
+tile{
+  layer = 0,
+  x = 1176,
+  y = 800,
+  width = 16,
+  height = 16,
+  pattern = "1094",
+}
+
 sensor{
   name = "^map_banner_sensor",
   layer = 0,
@@ -30333,17 +30360,6 @@ npc{
   sprite = "npc/juglan",
 }
 
-teletransporter{
-  name = "to_limestone",
-  layer = 0,
-  x = 888,
-  y = 792,
-  width = 16,
-  height = 32,
-  destination_map = "new_limestone/limestone_present",
-  destination = "juglan_boat_destination",
-}
-
 destination{
   name = "from_limestone",
   layer = 0,
@@ -30445,8 +30461,8 @@ npc{
 
 npc{
   layer = 0,
-  x = 1168,
-  y = 885,
+  x = 1064,
+  y = 909,
   direction = 0,
   subtype = 1,
   sprite = "entities/boat_goatshead_ferry",
@@ -30472,8 +30488,8 @@ wall{
 
 wall{
   layer = 0,
-  x = 1088,
-  y = 824,
+  x = 984,
+  y = 848,
   width = 144,
   height = 8,
   stops_hero = true,
@@ -30933,6 +30949,46 @@ teletransporter{
   height = 32,
   destination_map = "goatshead_island/goat_hill",
   destination = "from_goatshead_harbor",
+}
+
+wall{
+  layer = 0,
+  x = 1112,
+  y = 744,
+  width = 80,
+  height = 48,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  name = "fast_travel_destination",
+  layer = 0,
+  x = 1160,
+  y = 813,
+  direction = 2,
+}
+
+npc{
+  layer = 0,
+  x = 1160,
+  y = 789,
+  direction = 2,
+  subtype = 1,
+  sprite = "entities/boat_lily",
+}
+
+npc{
+  name = "fast_travel_lily",
+  layer = 0,
+  x = 1184,
+  y = 813,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/lily/lily_sitting",
 }
 
 tile{
@@ -34135,6 +34191,24 @@ tile{
   height = 48,
   pattern = "49",
   tileset = "redpine_forest",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 784,
+  width = 24,
+  height = 8,
+  pattern = "691",
+}
+
+tile{
+  layer = 1,
+  x = 1184,
+  y = 776,
+  width = 24,
+  height = 16,
+  pattern = "1736",
 }
 
 dynamic_tile{

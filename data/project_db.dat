@@ -837,6 +837,7 @@ sprite{ id = "npc/kid/kid_6.2", description = "npc/kid/kid_6.2" }
 sprite{ id = "npc/kid/kid_6.3", description = "npc/kid/kid_6.3" }
 sprite{ id = "npc/kid/kid_6.4", description = "npc/kid/kid_6.4" }
 sprite{ id = "npc/leigha", description = "leigha" }
+sprite{ id = "npc/lily/lily_fishing_l", description = "Fishing-Left" }
 sprite{ id = "npc/lily/lily_lounging", description = "Lily-Lounging" }
 sprite{ id = "npc/lily/lily_sitting", description = "Lily-Sitting" }
 sprite{ id = "npc/lily/lily_standing", description = "Lily-Standing" }
@@ -1556,6 +1557,7 @@ item{ id = "ether_bombs", description = "Ether Bombs" }
 item{ id = "ether_bombs_pickable", description = "EtherBombsPickable-1.3.5.10" }
 item{ id = "fast_travel_chart_ballast_harbor", description = "Fast Travel Chart Ballast Harbor" }
 item{ id = "fast_travel_chart_goatshead", description = "Fast Travel Chart Goatshead" }
+item{ id = "fast_travel_chart_isle_of_storms", description = "Fast Travel Chart Isle of Storms" }
 item{ id = "fast_travel_chart_ivystump", description = "Fast Travel Chart Ivystump" }
 item{ id = "fast_travel_chart_kingsdown", description = "FTC Kingsdown" }
 item{ id = "fast_travel_chart_limestone", description = "Fast Travel Chart Limestone" }

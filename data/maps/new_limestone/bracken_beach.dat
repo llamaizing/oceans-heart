@@ -11245,6 +11245,16 @@ destructible{
   can_be_cut = true,
 }
 
+teletransporter{
+  layer = 0,
+  x = 512,
+  y = 0,
+  width = 32,
+  height = 16,
+  destination_map = "stonefell_crossroads/sycamore_ferry",
+  destination = "from_bracken_beach",
+}
+
 tile{
   layer = 1,
   x = 312,

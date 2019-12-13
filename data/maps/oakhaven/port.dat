@@ -49126,6 +49126,24 @@ tile{
   pattern = "690",
 }
 
+tile{
+  layer = 0,
+  x = 1232,
+  y = 1328,
+  width = 16,
+  height = 16,
+  pattern = "1094",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 1320,
+  width = 24,
+  height = 16,
+  pattern = "690",
+}
+
 sensor{
   name = "meet_hazel_sensor",
   layer = 0,
@@ -49852,7 +49870,7 @@ npc{
 
 npc{
   layer = 0,
-  x = 1248,
+  x = 1536,
   y = 1429,
   direction = 3,
   subtype = 1,
@@ -49950,26 +49968,6 @@ destructible{
   y = 861,
   sprite = "entities/bush_flowers_white",
   can_be_cut = true,
-}
-
-npc{
-  name = "boat_morus",
-  layer = 0,
-  x = 1520,
-  y = 1421,
-  direction = 0,
-  subtype = 1,
-  sprite = "entities/boat_morus",
-}
-
-npc{
-  name = "morus",
-  layer = 0,
-  x = 1512,
-  y = 1349,
-  direction = 2,
-  subtype = 1,
-  sprite = "npc/morus",
 }
 
 block{
@@ -50881,14 +50879,6 @@ destructible{
   can_be_cut = true,
 }
 
-destination{
-  name = "morus_landing",
-  layer = 0,
-  x = 1472,
-  y = 1349,
-  direction = 0,
-}
-
 destructible{
   layer = 0,
   x = 296,
@@ -50925,6 +50915,55 @@ destructible{
   sprite = "entities/bush_firethorn",
   weight = -1,
   can_be_cut = true,
+}
+
+wall{
+  layer = 0,
+  x = 1208,
+  y = 1384,
+  width = 80,
+  height = 56,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  name = "fast_travel_destination",
+  layer = 0,
+  x = 1264,
+  y = 1349,
+  direction = 0,
+}
+
+npc{
+  layer = 0,
+  x = 1256,
+  y = 1437,
+  direction = 2,
+  subtype = 1,
+  sprite = "entities/boat_lily",
+}
+
+npc{
+  name = "fast_travel_lily",
+  layer = 0,
+  x = 1240,
+  y = 1341,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/lily/lily_sitting",
+}
+
+npc{
+  layer = 0,
+  x = 1208,
+  y = 1365,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/ripple",
 }
 
 tile{
@@ -55773,6 +55812,24 @@ tile{
   pattern = "691",
 }
 
+tile{
+  layer = 1,
+  x = 1248,
+  y = 1312,
+  width = 24,
+  height = 8,
+  pattern = "691",
+}
+
+tile{
+  layer = 1,
+  x = 1256,
+  y = 1304,
+  width = 16,
+  height = 16,
+  pattern = "1091",
+}
+
 destructible{
   layer = 1,
   x = 1720,
@@ -55933,16 +55990,5 @@ tile{
   width = 16,
   height = 8,
   pattern = "687",
-}
-
-dynamic_tile{
-  name = "morus_boat_steam",
-  layer = 2,
-  x = 1480,
-  y = 1320,
-  enabled_at_start = false,
-  width = 16,
-  height = 32,
-  pattern = "1540",
 }
 

@@ -58,6 +58,7 @@ function map:on_draw(dst)
   black:draw(dst)
 end
 
+--[[
 function morus:on_interaction()
   game:start_dialog("_oakhaven.npcs.morus.ferry_2", function(answer)
     if answer == 1 then
@@ -69,7 +70,7 @@ function morus:on_interaction()
     end
   end)
 end
-
+--]]
 
 ----------------Sensors--------------------------------------
 function brutus_sensor:on_activated()

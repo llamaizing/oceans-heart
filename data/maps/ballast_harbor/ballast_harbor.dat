@@ -23595,6 +23595,15 @@ tile{
   tileset = "drygrass",
 }
 
+tile{
+  layer = 0,
+  x = 1352,
+  y = 912,
+  width = 16,
+  height = 16,
+  pattern = "1094",
+}
+
 sensor{
   name = "^map_banner_sensor",
   layer = 0,
@@ -24272,8 +24281,8 @@ wall{
 
 npc{
   layer = 0,
-  x = 1344,
-  y = 997,
+  x = 152,
+  y = 1165,
   direction = 0,
   subtype = 1,
   sprite = "entities/boat_fishing",
@@ -24637,6 +24646,46 @@ teletransporter{
   height = 16,
   destination_map = "ballast_harbor/ancient_grove",
   destination = "from_outside",
+}
+
+wall{
+  layer = 0,
+  x = 1336,
+  y = 944,
+  width = 80,
+  height = 56,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  name = "fast_travel_destination",
+  layer = 0,
+  x = 1336,
+  y = 925,
+  direction = 2,
+}
+
+npc{
+  layer = 0,
+  x = 1368,
+  y = 997,
+  direction = 0,
+  subtype = 1,
+  sprite = "entities/boat_lily",
+}
+
+npc{
+  name = "fast_travel_lily",
+  layer = 0,
+  x = 1360,
+  y = 925,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/lily/lily_sitting",
 }
 
 tile{

@@ -11594,23 +11594,6 @@ dynamic_tile{
   tileset = "cave_2",
 }
 
-npc{
-  layer = 0,
-  x = 240,
-  y = 525,
-  direction = 0,
-  subtype = 1,
-  sprite = "entities/boat_morus",
-}
-
-destination{
-  name = "ferry_landing",
-  layer = 0,
-  x = 200,
-  y = 549,
-  direction = 2,
-}
-
 separator{
   layer = 0,
   x = 416,
@@ -11690,16 +11673,6 @@ npc{
   direction = 2,
   subtype = 1,
   sprite = "entities/boat_mallow",
-}
-
-npc{
-  name = "morus",
-  layer = 0,
-  x = 224,
-  y = 549,
-  direction = 2,
-  subtype = 1,
-  sprite = "npc/morus",
 }
 
 npc{
@@ -11953,6 +11926,46 @@ destination{
   x = 1040,
   y = 557,
   direction = 1,
+}
+
+wall{
+  layer = 0,
+  x = 208,
+  y = 472,
+  width = 80,
+  height = 56,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  name = "fast_travel_destination",
+  layer = 0,
+  x = 208,
+  y = 549,
+  direction = 2,
+}
+
+npc{
+  layer = 0,
+  x = 256,
+  y = 525,
+  direction = 2,
+  subtype = 1,
+  sprite = "entities/boat_lily",
+}
+
+npc{
+  name = "fast_travel_lily",
+  layer = 0,
+  x = 224,
+  y = 541,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/lily/lily_standing",
 }
 
 tile{

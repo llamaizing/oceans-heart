@@ -1480,6 +1480,18 @@ Dad?
 }
 
 dialog{
+  id = "_fast_travel.ride_question",
+  text = [[
+Lily:
+Hey, we meet again. Looking to catch a
+ride, Tilia?
+
+$?Yes
+$?No
+]],
+}
+
+dialog{
   id = "_ferries.goatshead",
   text = [[
 This is the ferry to Goatshead Harbor.
@@ -14110,6 +14122,15 @@ dialog{
 You found a sea chart of Goatshead Harbor.
 This could be used to allow someone
 to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_isle_of_storms.1",
+  text = [[
+You found a sea chart showing the mythical
+Isle of Storms. This chart would actually
+allow someone to sail there.
 ]],
 }
 

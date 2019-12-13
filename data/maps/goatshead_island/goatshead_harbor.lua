@@ -12,7 +12,7 @@ local game = map:get_game()
 local hero = game:get_hero()
 
 map:register_event("on_started", function()
-  if game:get_value("goatshead_opening") true then juglan:set_enabled(false) end
+  if game:get_value("goatshead_opening") == true then juglan:set_enabled(false) juglan_boat:remove() end
   if game:get_value("goatshead_tunnels_accepted") ~= true then adventurer_3:set_enabled(false) end
   if game:get_value("squid_fled") == true then squid_house_door:set_enabled(false) end
   if game:get_value("phantom_squid_quest_completed") == true then merchant_hopeful:set_enabled(false) end

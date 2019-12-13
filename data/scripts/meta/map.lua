@@ -15,8 +15,7 @@ map_meta:register_event("on_started", function(self)
   --Fast Travel
   for lily in map:get_entities("fast_travel_lily") do
     function lily:on_interaction()
-      local ft_menu = require("scripts/menus/fast_travel")
-      sol.menu.start(map, ft_menu)
+      require("scripts/menus/fast_travel"):greeting()
     end
   end
 

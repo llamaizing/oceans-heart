@@ -5,11 +5,11 @@ map:register_event("on_started", function()
   --handle blackbeard
   blackbeard:set_enabled(false)
   --handle Morus
-  morus:set_enabled(false)
+--[[  morus:set_enabled(false)
   if game:get_value("morus_at_port") == true then
     morus_boat_steam:set_enabled(true)
     morus:set_enabled(true)
-  end
+  end --]]
   --put Hazel Ally on the map
   if game:get_value("hazel_is_currently_following_you") and not game:get_value("spoken_to_hazel_south_gate") then
     hazel_dummy:set_enabled(true)
@@ -77,6 +77,7 @@ end
 
 
 --Morus
+--[[
 function morus:on_interaction()
   if game:has_item("oceansheart_chart") == true then
     game:start_dialog("_oakhaven.npcs.morus.ferry_2", function(answer)
@@ -96,7 +97,7 @@ function morus:on_interaction()
     end)
   end
 end
-
+--]]
 
 --Hazel (go to Gull Rock)
 function meet_hazel_sensor:on_activated()

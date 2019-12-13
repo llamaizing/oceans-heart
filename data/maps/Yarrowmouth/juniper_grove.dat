@@ -11220,8 +11220,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 312,
-  y = 640,
+  x = 264,
+  y = 632,
   width = 16,
   height = 16,
   pattern = "39",
@@ -11229,8 +11229,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 280,
-  y = 624,
+  x = 232,
+  y = 616,
   width = 16,
   height = 16,
   pattern = "39",
@@ -12372,6 +12372,43 @@ tile{
   width = 16,
   height = 16,
   pattern = "350",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "1091",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 704,
+  width = 56,
+  height = 32,
+  pattern = "2423_2",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 440,
+  y = 664,
+  width = 40,
+  height = 16,
+  pattern = "694",
+}
+
+tile{
+  layer = 0,
+  x = 472,
+  y = 680,
+  width = 24,
+  height = 16,
+  pattern = "690",
 }
 
 sensor{
@@ -13539,25 +13576,10 @@ enemy{
 }
 
 enemy{
-  name = "blackbird_2",
-  layer = 0,
-  x = 392,
-  y = 549,
-  properties = {
-    {
-      key = "type",
-      value = "blackbird",
-    },
-  },
-  direction = 0,
-  breed = "misc/dove",
-}
-
-enemy{
   name = "blackbird_3",
   layer = 0,
-  x = 424,
-  y = 557,
+  x = 408,
+  y = 565,
   properties = {
     {
       key = "type",
@@ -13681,6 +13703,83 @@ door{
   sprite = "entities/door_weak_wall",
   savegame_variable = "juniper_grove_weak_wall",
   opening_method = "explosion",
+}
+
+wall{
+  layer = 0,
+  x = 288,
+  y = 608,
+  width = 80,
+  height = 56,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  name = "fast_travel_destination",
+  layer = 0,
+  x = 352,
+  y = 685,
+  direction = 0,
+}
+
+npc{
+  layer = 0,
+  x = 336,
+  y = 661,
+  direction = 2,
+  subtype = 1,
+  sprite = "entities/boat_lily",
+}
+
+npc{
+  name = "fast_travel_lily",
+  layer = 0,
+  x = 392,
+  y = 541,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/lily/lily_lounging",
+}
+
+enemy{
+  name = "blackbird_2",
+  layer = 0,
+  x = 376,
+  y = 557,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+npc{
+  layer = 0,
+  x = 520,
+  y = 757,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/boat_yarrowmouth_ferry",
+}
+
+wall{
+  layer = 0,
+  x = 448,
+  y = 696,
+  width = 48,
+  height = 8,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{
@@ -14645,5 +14744,23 @@ tile{
   height = 40,
   pattern = "2141",
   tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 440,
+  y = 648,
+  width = 40,
+  height = 16,
+  pattern = "695",
+}
+
+tile{
+  layer = 1,
+  x = 472,
+  y = 672,
+  width = 24,
+  height = 8,
+  pattern = "691",
 }
 
