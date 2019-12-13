@@ -750,6 +750,10 @@ sprite{ id = "menus/checkmark", description = "checkmark" }
 sprite{ id = "menus/cursor", description = "Cursor" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
 sprite{ id = "menus/inventory/inventory_background", description = "Inventory Background" }
+sprite{ id = "menus/inventory/life_empty_stitch", description = "Life Empty Slot Stitch" }
+sprite{ id = "menus/inventory/life_half_stitch", description = "Life Half Stitch" }
+sprite{ id = "menus/inventory/life_stitch", description = "Life Stitch" }
+sprite{ id = "menus/inventory/magic_stitch", description = "Magic Stitch" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
 sprite{ id = "menus/maps/port_rune", description = "Port Rune" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
