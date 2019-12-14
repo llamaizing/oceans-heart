@@ -9290,6 +9290,38 @@ dynamic_tile{
   pattern = "253",
 }
 
+enemy{
+  layer = 0,
+  x = 928,
+  y = 613,
+  direction = 3,
+  breed = "normal_enemies/pollutant_blob",
+}
+
+enemy{
+  layer = 0,
+  x = 1088,
+  y = 581,
+  direction = 3,
+  breed = "normal_enemies/pollutant_blob",
+}
+
+enemy{
+  layer = 0,
+  x = 1248,
+  y = 637,
+  direction = 3,
+  breed = "normal_enemies/pollutant_blob",
+}
+
+enemy{
+  layer = 0,
+  x = 1080,
+  y = 461,
+  direction = 3,
+  breed = "normal_enemies/pollutant_blob",
+}
+
 tile{
   layer = 1,
   x = 264,

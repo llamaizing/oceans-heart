@@ -12,10 +12,12 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
-  if game:get_value("left_limestone") then juglan:remove() end
+  if game:get_value("left_limestone") then
+    juglan:remove()
+  end
 end)
 
-
+--This juglan is only for your first ride out:
 function juglan:on_interaction()
   -- first time leaving
   if game:get_value("left_limestone") == nil then
@@ -35,6 +37,10 @@ function juglan:on_interaction()
         to_goatshead:set_enabled(true)
       end
       end)
-       
   end
+end
+
+--This Juglan comes back and is there for the rest of the game
+function juglan_2:on_interaction()
+  game:start_dialog"_new_limestone_island.npcs.juglan_2.1"
 end

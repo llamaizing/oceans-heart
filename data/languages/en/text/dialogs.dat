@@ -6217,7 +6217,6 @@ for you.
 dialog{
   id = "_new_limestone_island.npcs.hazel.2",
   text = [[
-you.
 HAZEL:
 You left it at my house last night. Is
 your dad teaching you any Volunteer Navy
@@ -6331,8 +6330,8 @@ The ocean?
 
 
 TILIA:
-That's the one. It's time we figured out
-what happened to Dad.
+That's the one. It's time we bring Dad
+and Hazel back home.
 ]],
 }
 
@@ -6346,6 +6345,26 @@ catch. You needin' a ride there?
 TILIA:
 $? Yes
 $? No
+]],
+}
+
+dialog{
+  id = "_new_limestone_island.npcs.juglan_2.1",
+  text = [[
+JUGLAN:
+Aye, Tilia, you're back. I can tell from yer
+eyes you ain't found your dad yet. Also from
+the fact he isn't here. But there ain't no
+JUGLAN:
+shame is not finishing your quest right at
+the start. This one might take time, but
+you don't need to feel bad comin' home to
+JUGLAN:
+check in before you're done. Maybe take a
+nap at home, or talk to your sister. We're
+glad to see you.
+TILIA:
+Thanks, Juglan.
 ]],
 }
 
@@ -6418,7 +6437,7 @@ So Tilia. Today's really the day?
 TILIA:
 I've been talking myself up for a couple months
 now. If Hazel and Dad aren't back yet, then...
-well I'll bring them back somehow.
+well, I'll bring them back somehow.
 LINDEN:
 It's not just because I make you do the
 dishes every night is it?
