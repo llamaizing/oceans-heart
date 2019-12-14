@@ -6216,7 +6216,8 @@ for you.
 
 dialog{
   id = "_new_limestone_island.npcs.hazel.2",
-  text = [[you.
+  text = [[
+you.
 HAZEL:
 You left it at my house last night. Is
 your dad teaching you any Volunteer Navy
@@ -9471,6 +9472,81 @@ and the Seabird', whatever that means.
 }
 
 dialog{
+  id = "_oakhaven.npcs.library.misc.3",
+  text = [[
+Ah, you caught me. I don't have a book.
+I'm just hiding out here to get away from
+it all.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.4",
+  text = [[
+I'm reading a book where the main character
+voyages to the center of the earth. They
+start by going down a tunnel here, in
+Oakhaven. I mean, it's got to just be
+fiction, but at the same time, I know
+there are tunnels under the city. I wonder
+just how deep they go.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.6",
+  text = [[
+This section here is about royal courts.
+Here's a book about the death of the Sea
+King's older brother. That door over there
+goes to the court...yard. Coincidence?
+...I mean, probably. Who would organize
+a library around puns?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.7",
+  text = [[
+You know Oakhaven's library has been
+operating continuously since before the
+great flood? Although I think they had an
+interruption of services during the flood.
+I guess books aren't supposed to get wet.
+Which, by the way, don't tell the librarian
+I know that, he might start to question
+just HOW I know that...
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.8",
+  text = [[
+I've been doing research for months and
+finding nothing, but scattered across the
+north sea archipelago are old circles of
+standing stones. I have no idea what they
+might be, or who erected them. Even how
+old they are. They seem to date back to
+before any other structures still standing.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.9",
+  text = [[
+I'm trying to write a definitive history
+of the rise of the Pirate Council. Did
+you know Blackbeard, who seems to lead
+the entire Council, wasn't actually its
+founder? He only seems to have joined after
+much of his crew was lost to monsters in an
+old ruin. Makes you wonder if he found
+something in there.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.market.1",
   text = [[
 I've got raw acorns, fresh from the
@@ -9540,6 +9616,35 @@ dialog{
 This here is the carpenter's shop. And
 this stool I'm sitting on... this is the
 display model.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.8",
+  text = [[
+Got some burroak bread fresh out of the
+oven if you're interested, hun. Five
+loaves for 40 crowns.
+
+$?Get that bread
+$?No thanks
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.9",
+  text = [[
+You know burroak break is baked with real
+acorns inside? I guess it makes it a good
+source of protein. But I think the whole
+idea is kinda...
+$1...nutty...$3
+
+
+...
+I know my material is kind of weak. I'm
+trying to get ready for open mic night at
+the Samander Heartache Saloon.
 ]],
 }
 
@@ -16483,6 +16588,18 @@ make better drinks.
 }
 
 dialog{
+  id = "_yarrowmouth.npcs.town_people.9",
+  text = [[
+Some people still call Yarrowmouth the
+Isle of Thorns. It's partially because of
+the briars that grow here, and partially
+because the people who lived here long ago
+were known for fighting with spears. Also
+for being pretty thorny in their personalities.
+]],
+}
+
+dialog{
   id = "_yarrowmouth.npcs.town_people.crafting",
   text = [[
 NATHAN:
@@ -17989,3 +18106,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+

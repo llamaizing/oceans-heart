@@ -56976,7 +56976,7 @@ destructible{
 
 enemy{
   layer = 0,
-  x = 1248,
+  x = 1272,
   y = 741,
   direction = 0,
   breed = "normal_enemies/meandershroom_1",
@@ -58356,6 +58356,342 @@ sensor{
   y = 61,
   width = 32,
   height = 32,
+}
+
+custom_entity{
+  layer = 0,
+  x = 1288,
+  y = 837,
+  width = 32,
+  height = 16,
+  direction = 0,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1224,
+  y = 725,
+  width = 32,
+  height = 16,
+  direction = 2,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1192,
+  y = 805,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1272,
+  y = 845,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1280,
+  y = 621,
+  width = 32,
+  height = 16,
+  direction = 0,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1152,
+  y = 637,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1296,
+  y = 661,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1128,
+  y = 645,
+  width = 32,
+  height = 16,
+  direction = 2,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1048,
+  y = 1053,
+  width = 32,
+  height = 16,
+  direction = 0,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1072,
+  y = 1061,
+  width = 32,
+  height = 16,
+  direction = 2,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1184,
+  y = 989,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1176,
+  y = 973,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1080,
+  y = 925,
+  width = 32,
+  height = 16,
+  direction = 0,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1008,
+  y = 877,
+  width = 32,
+  height = 16,
+  direction = 2,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1008,
+  y = 893,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1096,
+  y = 909,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 864,
+  y = 1189,
+  width = 32,
+  height = 16,
+  direction = 0,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1016,
+  y = 1293,
+  width = 32,
+  height = 16,
+  direction = 2,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 1080,
+  y = 1309,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 888,
+  y = 1205,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 512,
+  y = 1149,
+  width = 32,
+  height = 16,
+  direction = 0,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 232,
+  y = 1181,
+  width = 32,
+  height = 16,
+  direction = 2,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 216,
+  y = 1181,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 504,
+  y = 1157,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 504,
+  y = 869,
+  width = 32,
+  height = 16,
+  direction = 0,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 616,
+  y = 957,
+  width = 32,
+  height = 16,
+  direction = 2,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 488,
+  y = 877,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 616,
+  y = 941,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
 }
 
 tile{

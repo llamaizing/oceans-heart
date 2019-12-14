@@ -24,6 +24,10 @@ map:register_event("on_started", function()
   for pot in map:get_entities("blockpot") do
     if pot:get_distance(hero) < 100 then pot:remove() end
   end
+  --barbell brutes vice captain
+  if game:get_value("barbell_brutes_defeated") == true then
+    vice_captain:set_enabled(true) wine:set_enabled(true)
+  end
 
   --NPC movements:
   local nailm = sol.movement.create("straight")

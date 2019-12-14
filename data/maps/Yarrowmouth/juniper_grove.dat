@@ -12411,6 +12411,36 @@ tile{
   pattern = "690",
 }
 
+tile{
+  layer = 0,
+  x = 352,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "25",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 544,
+  y = 560,
+  width = 16,
+  height = 16,
+  pattern = "26",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 368,
+  width = 32,
+  height = 16,
+  pattern = "36",
+  tileset = "drygrass",
+}
+
 sensor{
   name = "raft_sensor_b",
   layer = 0,
@@ -13436,7 +13466,7 @@ enemy{
 enemy{
   layer = 0,
   x = 448,
-  y = 405,
+  y = 437,
   direction = 2,
   breed = "normal_enemies/dasher",
 }
@@ -13780,6 +13810,102 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+custom_entity{
+  layer = 0,
+  x = 328,
+  y = 269,
+  width = 32,
+  height = 16,
+  direction = 0,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 376,
+  y = 381,
+  width = 32,
+  height = 16,
+  direction = 2,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 296,
+  y = 301,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 304,
+  y = 309,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 448,
+  y = 381,
+  width = 32,
+  height = 16,
+  direction = 0,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 424,
+  y = 397,
+  width = 32,
+  height = 16,
+  direction = 2,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 496,
+  y = 437,
+  width = 16,
+  height = 16,
+  direction = 1,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
+  x = 504,
+  y = 421,
+  width = 16,
+  height = 16,
+  direction = 3,
+  sprite = "entities/thorns",
+  tiled = true,
+  model = "prickles_blocking",
 }
 
 tile{
@@ -14762,5 +14888,35 @@ tile{
   width = 24,
   height = 8,
   pattern = "691",
+}
+
+tile{
+  layer = 1,
+  x = 336,
+  y = 448,
+  width = 48,
+  height = 80,
+  pattern = "34",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 1,
+  x = 528,
+  y = 480,
+  width = 48,
+  height = 80,
+  pattern = "35",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 1,
+  x = 416,
+  y = 320,
+  width = 32,
+  height = 48,
+  pattern = "37",
+  tileset = "drygrass",
 }
 

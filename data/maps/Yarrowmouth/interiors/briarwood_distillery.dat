@@ -1848,6 +1848,15 @@ npc{
   behavior = "dialog#_yarrowmouth.npcs.town_people.2",
 }
 
+npc{
+  layer = 0,
+  x = 352,
+  y = 101,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/woman/woman_17.3",
+}
+
 tile{
   layer = 1,
   x = 440,

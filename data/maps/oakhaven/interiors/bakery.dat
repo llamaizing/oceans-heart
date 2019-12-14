@@ -1262,6 +1262,34 @@ teletransporter{
   destination = "from_bakery",
 }
 
+npc{
+  layer = 0,
+  x = 96,
+  y = 93,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/woman/woman_9.2",
+}
+
+npc{
+  name = "shopkeeper",
+  layer = 0,
+  x = 96,
+  y = 117,
+  direction = 3,
+  subtype = 1,
+}
+
+npc{
+  layer = 0,
+  x = 160,
+  y = 149,
+  direction = 0,
+  subtype = 1,
+  sprite = "npc/man/man_26.3",
+  behavior = "dialog#_oakhaven.npcs.market.9",
+}
+
 tile{
   layer = 1,
   x = 72,
