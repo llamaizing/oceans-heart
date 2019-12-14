@@ -14,11 +14,11 @@ Oh, you're in the Volunteer Navy, aren't you?
 I, uh... Could you help me? My boss,
 Michael, wants me to get some Hornet
 BENJAMIN:
-Honey from Tern Marsh, just north of here...
-But I don't think I can. The hornets are
-pretty dangerous. If you happen to go by
+Honey, but... The hornets are super dangerous.
+Not that I'm saying you shouldn't be
+careful. But if you happen to see any
 BENJAMIN:
-the marsh, and I know you're busy, but if
+in the marsh, and I know you're busy, but if
 you see some Hornet Honey, could you
 bring it by? I'll pay you 45 crowns.
 ]],
@@ -38,14 +38,11 @@ I'm hunting pirates right now.
 BENJAMIN:
 Oh, you're in the Volunteer Navy, aren't you?
 Could you lend me a hand? I need to get
-some Hornet Honey from Tern Marsh just
+some Hornet Honey, but I'm super busy.
 BENJAMIN:
-north of here, but I'm super busy. I just took
-over the Meadery from the previous owner.
-If you can grab some from the marsh and
-BENJAMIN:
-bring it by here, I'll pay you 60 crowns for
-it. If you're not too busy, I'd appreciate it.
+I just took over the Meadery from the previous
+owner. If you happen by some Hornet Honey, I'll
+buy it for 60 crowns.
 ]],
 }
 
@@ -559,6 +556,7 @@ No problem. I can get your charts back.
 KELPTON:
 I hear the pirates are sailing in with a
 haul of loot. Maybe check around there.
+To find a way into the Vault.
 ]],
 }
 
@@ -663,10 +661,7 @@ dialog{
 I heard the pirate council uses this building
 for storage, so I've been waiting to catch a
 glimpse of Blackbeard! But no famous
-captains have come in or out. Unless there's
-another way in or something. I guess
-sometimes buildings have more than one
-door.
+captains have come in or out...
 ]],
 }
 
@@ -1203,13 +1198,12 @@ dialog{
   id = "_ballast_harbor.observations.charts.3",
   text = [[
 How to read a map:
-Press M to see your map. To determine
+Open the menu to see your map. To determine
 your location, search for landmarks you
 can see, such as coastlines, bridges,
 or towns, and try to find corresponding
-areas shown on the map. Each area of
-the overworld has its own map. Keep in
-mind, not everything is shown on a map.
+areas shown on the map. Keep in mind,
+not everything is shown on a map.
 ]],
 }
 
@@ -1259,8 +1253,8 @@ hometown on Limestone Island...
 dialog{
   id = "_ballast_harbor.observations.council_book.5",
   text = [[
-There's a map of Yarrowmouth Island. A
-note by "Naerreturn Bay" says the Sea-King
+There's a map of Goatshead Island. A
+note by "Zephyr Bay" says the Sea-King
 visited once and lit a lighthouse.
 ]],
 }
@@ -1371,7 +1365,7 @@ dialog{
 Warning! The load of ore we stole was mixed
 in with a bunch of rock monsters! They've
 spread out all over the vault and resist
-swords. Be careful.
+swords. And bombs. Be careful.
 ]],
 }
 
@@ -1766,7 +1760,9 @@ dialog{
   id = "_generic_dialogs.buyer_guy.1",
   text = [[
 SALESMAN:
-Hey there! Looking to sell some items?
+Hey there! Looking to sell some
+of those deliiiightful items you've
+collected?
 ]],
 }
 
@@ -2321,7 +2317,7 @@ dialog{
   text = [[
 FISHERMAN:
 It's been a few months, but we're almost
-done with the cleanup after the attack?
+done with the cleanup after the attack.
 
 TILIA:
 What happened? Pirates?
@@ -2697,7 +2693,7 @@ Excellent! There aren't many merchants from
 the guild who haven't already been attacked.
 I want you to go down to Rilesdorf. He has
 EAMON:
-a shop on the wharf, next to the armorer. Tell
+a shop near the market, against the cliffs. Tell
 him I sent you, then go into his office, hide,
 and wait for the Phantom Squid to arrive. I
 EAMON:
@@ -2922,11 +2918,7 @@ dialog{
   text = [[
 GUARD:
 What are you doing on the pier? You aren't
-a dockworker! Do you even lift crates? Haha,
-just kidding. The ferries are down here if
-GUARD:
-you're trying to get to Yarrowmouth or
-Oakhaven.
+a dockworker! Do you even lift... crates?
 ]],
 }
 
@@ -2996,8 +2988,8 @@ I heard you guys all work for Eamon. Which
 strikes me as weird. Aren't you supposed to
 respect strength? He's a frail old man.
 GUARD:
-Well yeah, but$1... $3Well you're just a little
-girl. What are you going to do about it?
+Well yeah, but$1... $3Well you're just a young
+woman. What are you going to do about it?
 
 TILIA:
 I'm going to show you guys I'm stronger.
@@ -3598,7 +3590,7 @@ dialog{
   id = "_goatshead.npcs.juglan.ride_back",
   text = [[
 JUGLAN:
-Tilia! I'm still unloading my fish. The
+Hey, Tilia. I'm still unloading my fish. The
 Sodden Cormorant is in the northwest part
 of town. Take a look there for leads.
 ]],
@@ -3608,7 +3600,7 @@ dialog{
   id = "_goatshead.npcs.kids.1",
   text = [[
 OTHER KID:
-Hey, did you know there's a giant goat
+Hey, did you know there's a giant man
 west of here? It's supposed to be a
 statue but it's alive! It ate Clyde!
 ]],
@@ -3619,7 +3611,7 @@ dialog{
   text = [[
 OTHER KID:
 Me and my friends were exploring with no
-intention to graffiti the giant goat at all,
+intention to graffiti the giant statue at all,
 but then it got angry and swallowed a kid!
 ]],
 }
@@ -3683,8 +3675,8 @@ when you aren't feeling well, and they'll
 help a little. Of course, if you know that
 WEARY SALESMAN:
 you're going into a tough battle, maybe
-just buy some bread or potions, those are
-a lot more effective and don't grow on trees.
+just buy some bread or potions. Those are
+a lot more effective, but don't grow on trees.
 ]],
 }
 
@@ -3771,10 +3763,14 @@ magic to use it like that!
 dialog{
   id = "_goatshead.npcs.market_people.5",
   text = [[
-I can't decide if I should get some oranges
-or apples for lunch this week. They're so
-different! It's like trying to compare...
-I don't know. Different things.
+It's all well and good to cook fruit, but I
+really want to learn to cook with foraged
+ingredients. Out in the wilderness, you can
+recognize certain plants that are useful,
+cut them down and collect them. You can make
+potions at crafting tables, but I'm wondering,
+can you make pies that also give you stat
+boosts? Or salads?
 ]],
 }
 
@@ -3808,7 +3804,7 @@ dialog{
   id = "_goatshead.npcs.market_people.8",
   text = [[
 There's a town called Crabhook if you follow
-the east road out of town. It's quaint, but, I
+the West road out of town. It's quaint, but, I
 don't know... dirty? Something about it is
 offputting to me. Probably the poverty.
 ]],
@@ -3833,7 +3829,7 @@ dialog{
   text = [[
 HELGA:
 Welcome dear. I'm the town's alchemist.
-If you need any elixers, bait, or anything,
+If you need any elixers, berries, or anything,
 just take a look over on the shelf. Or
 HELGA:
 if you've got the ingredients, check that pot
@@ -4011,7 +4007,7 @@ Phantom Squid. The name is Aster. But
 please listen to me, for just a moment.
 ASTER:
 I'm from the village of Crabhook. It's
-a small fishing town to the north, but
+a small fishing town to the West, but
 Eamon despises my people. While we once
 ASTER:
 traded freely with Goatshead, Eamon
@@ -4467,8 +4463,8 @@ dialog{
   text = [[
 ADVENTURER:
 Excellent! The entrance to the tunnels is just
-East of the Juneberry Inn, northeast corner of
-town. We'll meet you there and let you in.
+outside the Tavern. We'll meet you there and
+let you in.
 ]],
 }
 
@@ -4477,8 +4473,7 @@ dialog{
   text = [[
 ADVENTURER:
 We'll meet you at the entrance to the city's
-old tunnels. It's just East of the Juneberry Inn.
-It's in the northeast corner of town.
+old tunnels. It's just outside the tavern.
 ]],
 }
 
@@ -4550,7 +4545,7 @@ So, seems like you've got some investigation
 to take care of. What'd these drunks tell you?
 The Hourglass Pirates looted Spruce Head,
 LEIGHA:
-out east of here, and that someone's seen them
+way West of here, and that someone's seen them
 in Ballast Harbor, a guy who sells sea charts?
 Better get looking, kid. Good luck.
 ]],
@@ -4587,7 +4582,7 @@ there's a trail out near Crabhook.
 
 LEIGHA:
 Alright. So we've got the pirates looting the
-shrine out at Spruce Head, east of here, and
+shrine out at Spruce Head, West of here, and
 someone who's seen them in Ballast Harbor.
 LEIGHA:
 Sounds like you've got a couple leads to follow.
@@ -4627,7 +4622,7 @@ from me crew when they joined the Pirate
 MAN:
 Council, but I wouldn't be a servant to those
 overambitious dogs. Think they can rule the
-seas like the ancients... grumble...
+seas like the ancient... grumble...
 (He lapses into muttered complaints)
 ]],
 }
@@ -4652,8 +4647,8 @@ And I saw smoke, and that hourglass was on
 the sails of a ship right there. Come to think
 of it, they must have plundered old Spruce Head
 THIEL:
-Shrine. It's out east of here on the road to
-Crabhook Village. Take a look.
+Shrine. It's out West of here, past Lotus Shoal.
+Go take a look.
 ]],
 }
 
@@ -4701,9 +4696,9 @@ How do I get to Ballast Harbor?
 
 
 THIESSON:
-Ain't supposed to be easy. It's a pirate market,
-south of Yarrowmouth. But I heard a man runs
-a ferry from somewhere around Crabhook Village.
+It's a Pirate Market, so it's not easy to get
+to. But south of town, in the Forest of Tides,
+there's a tunnel. Go through that, then South.
 ]],
 }
 
@@ -4809,7 +4804,7 @@ We are the Barbell Brutes! (rah rah)
 Enemies quake in their shoes! (rah rah)
 
 Are we weak? (No!) That's what we're not!
-We are so strong we can lift rocks! (Hwah!)
+We're so strong that we can lift rock! (Hwah!)
 
 
 ...You have to admit it's got heart at least.
@@ -4927,8 +4922,8 @@ Dearest Jacob,
 May you put on your hat in the morning to find
 it was a hive of angry bees all along. This is
 positively the worst spot for a treasure cache.
-Once you left, the goat's mouth closed behind
-you. I've been stuck inside for two days. I don't
+Once you left, the door closed behind you.
+I've been stuck inside for two days. I don't
 know that I'll ever find my way out, so if you
 ever come back for our gold, my spirit is sure
 to be haunting it. Thought you should know.
@@ -4960,7 +4955,8 @@ dialog{
   id = "_goatshead.observations.hq_papers.3",
   text = [[
 It's a book listing colors and trying to
-describe each.
+describe each with words. In fairness, that's
+a tough task.
 ]],
 }
 
@@ -6220,7 +6216,7 @@ for you.
 
 dialog{
   id = "_new_limestone_island.npcs.hazel.2",
-  text = [[
+  text = [[you.
 HAZEL:
 You left it at my house last night. Is
 your dad teaching you any Volunteer Navy
@@ -6836,6 +6832,7 @@ Basswood Tavern
 dialog{
   id = "_oakhaven.npcs.ana_orange.1",
   text = [[
+...
 ]],
 }
 
@@ -7043,7 +7040,7 @@ If you're looking for Monkshood to help me
 make a sleeping draught, try the northwest
 part of Marblecliff Mountain. It's northwest of
 ARAMIS:
-town. You'll follow the trail through a ruins on
+the port. You'll follow the trail through a ruins on
 the mountain, then you'll go through a narrow
 canyon.
 ]],
@@ -7231,11 +7228,11 @@ it's your own fault, but I can look into it.
 THE BOMB MAKER:
 Ah! Yes, fantastic! You will destory the
 monster I've unleashed on myself! Please,
-the saltpeter mine is souteast of town.
+the saltpeter mine is soutwest of the port.
 THE BOMB MAKER:
-Go out the south gate, then head east.
-My intern is stationed at the entrance,
-tell him I sent you, he'll let you in.
+Go out the south gate, then head west from.
+the port. My intern is stationed at the
+entrance, tell him I sent you, he'll let you in.
 ]],
 }
 
@@ -7257,8 +7254,8 @@ dialog{
   id = "_oakhaven.npcs.bomb_shop.owner.3",
   text = [[
 THE BOMB MAKER:
-Ah! You're back. You have destoryed the
-monster that lurked in the depts of the
+Ah! You're back. You have destroyed the
+monster that lurked in the depths of the
 saltpeter mine, yes?
 TILIA:
 I did. You said you'll pay me?
@@ -7370,7 +7367,7 @@ guess maybe he's here to get his butt
 kicked, it looks like.
 CAPTAIN AL-JAZARI:
 Yes, he's had it out for me ever since I
-accidentially sank his first ship while
+accidentally sank his first ship while
 testing my robotic sharks. But so is life.
 TILIA:
 Huh. You don't seem interested in fighting.
@@ -8066,8 +8063,8 @@ dialog{
   id = "_oakhaven.npcs.general_town.sculptor_sibling_outside",
   text = [[
 Oh, you're wearing Volunteer Navy colors!
-My sibling inside is a sculptor and needs
-someone to help collect clay from golems.
+My brother inside is a sculptor and needs
+someone to help collect stone from golems.
 It's the best for sculpting I guess? If
 you want, go inside and have a chat.
 ]],
@@ -8342,7 +8339,7 @@ dialog{
   id = "_oakhaven.npcs.guards.town.palace",
   text = [[
 GUARD:
-No entry permitted by the governor.
+No entry permitted by the mayor.
 ]],
 }
 
@@ -8484,8 +8481,8 @@ dialog{
   id = "_oakhaven.npcs.hazel.inn.4gochecktrees",
   text = [[
 HAZEL:
-Hey Tilia. Have you seen the big tree at the
-center of the city?
+Hey Tilia. Have you seen the big tree in the
+Northeast corner of the city?
 
 TILIA:
 Maybe? There's a lot of trees in this town.
@@ -8525,7 +8522,7 @@ dialog{
   text = [[
 HAZEL:
 There's two more big trees like the sick one
-in the center of the city. One in the
+in the corner of the city. One in the
 Veilwood, another on the summit of
 HAZEL:
 Marblecliff Mountain. Can you go get a twig
@@ -8842,9 +8839,9 @@ The Pirate Council might already have found
 the Isle of Storms. We need to know what
 they know.
 HAZEL:
-Oh, I have an idea! There's a pirate captain
-nearby. His name is Al-Jazari, and he's
-hiding out in Fort Crow. I don't know how
+Oh, I have an idea! There's this pirate
+captain, his name is Al-Jazari. He's all
+the way down at Fort Crow, and I don't know how
 HAZEL:
 you'd possibly be able to get in, but I do
 know this guy, Morus, who really, really
@@ -8885,7 +8882,7 @@ dialog{
 HAZEL:
 I'm sure you've got a lot to do. Well, the
 Salamander Heartache Saloon is in town,
-south of the inn, but north of the blacksmith.
+east of the Palace, above the market.
 HAZEL:
 I'm sure you'll be able to find it. Ask
 around for Morus, I bet you can help him
@@ -9413,9 +9410,9 @@ ancient Meurian Kingdom. Problem is we
 have some books on the subject, but all of
 the best scholarship was taken from the
 FESTUS:
-library by the Governor a while back. Was
-about when those pirates moved into Fort
-Crow out east. Anyway! I haven't seen Hazel
+library by the previous mayor. Was about
+when that pirate Al-Jazari left Oakhaven
+for Fort Crow. Anyway! I haven't seen Hazel
 FESTUS:
 in a couple days. I let her leave her research
 notes spread out in a room around the corner. Up
@@ -9519,7 +9516,7 @@ dialog{
   id = "_oakhaven.npcs.market.5",
   text = [[
 Tell you what, I'm selling tea like nobody's
-business these days. The governor is having
+business these days. The mayor is having
 a birthday party for his dog, and everybody
 wants to drink whatever the dog is drinking.
 Honestly, I'd love to get into that party.
@@ -9662,13 +9659,13 @@ thicket. Preferably like, a really
 old one. Ancient?
 
 GROVER:
-Oh, you want to head down to Gull Rock! If
-you head west from town and southwest along
-the road, you should find the thicket pretty
+Oh, you want to head down to Gull Rock! Go
+to Oakhaven Port, cross the bridge and go
+south, you should find the thicket pretty
 GROVER:
-easily. I heard some pirates took to keeping
-people from getting across the bridge, though,
-you might want to go around.
+easily. It's full of monsters though so
+watch out.
+
 TILIA:
 Thanks!
 ]],
@@ -10783,8 +10780,8 @@ dialog{
   id = "_oakhaven.npcs.monastery.monk.1",
   text = [[
 MONK:
-Ah, a pilgrim. No doubt you've come to bathe
-in the great spring. The waters that flow
+Ah, a pilgrim. No doubt you've come to drink
+from the great spring. The waters that flow
 through Oakhaven are all born here. And yet,
 MONK:
 even in this sacred place, the darkness that
@@ -10878,8 +10875,8 @@ something?
 
 MORUS:
 Nope. And they've got plenty of manpower
-to watch for sneaker-in-ers. Honestly, their
-numbers are great for the town's economy.
+to watch for sneaker-in-ers. Honestly, I don't
+know how they feed them all down at Fort Crow.
 TILIA:
 $1Hmm... $3Oh! Well here's what you don't understand.
 If you want to get into a pirate fort, you
@@ -10903,7 +10900,7 @@ like, an apothecary or something in town?
 MORUS:
 Yeah, up on the east side of town. Alright.
 I can find out where the pirates at Fort
-Crow get their grog is you can get something
+Crow get their grog if you can get something
 MORUS:
 effective to put inside a shipment.
 
@@ -10965,9 +10962,9 @@ storehouse next door. Somewhere in the
 basement. Those are headed down to
 Fort Crow, should do the trick. Meanwhile,
 MORUS:
-I'll go wait for you at Fort Crow. We can
-sneak in together once the pirates are
-knocked out.
+I'll sail to Fort Crow make sure the shipment
+gets in and has time to put them out. I'll
+meet you down there.
 ]],
 }
 
@@ -10985,17 +10982,15 @@ going to be delivered?
 MORUS:
 I asked around, they send a barrel down
 every day. That one should be going out
-anytime. I'd wager the pirates will be asleep
-MORUS:
-by the time you find you way down to
-Fort Crow.
-
+anytime.
 TILIA:
 Just what I wanted to hear.
 
 
 MORUS:
-Great. I'll meet you down at Fort Crow.
+Great. I'll sail ahead and make sure the
+ale gets in and knocks them out. I'll
+meet you at Fort Crow.
 ]],
 }
 
@@ -18061,4 +18056,3 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
-
