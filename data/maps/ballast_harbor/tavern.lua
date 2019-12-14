@@ -10,13 +10,13 @@
 local map = ...
 local game = map:get_game()
 
-function map:on_started()
+map:register_event("on_started", function()
   map:get_camera():letterbox()
   local lighting_effects = require"scripts/fx/lighting_effects"
   lighting_effects:initialize()
   lighting_effects:set_darkness_level(1)
   sol.menu.start(map, lighting_effects)
-end
+end)
 
 function barkeeper:on_interaction()
   game:start_dialog("_ballast_harbor.npcs.tavern.5", function()
@@ -29,7 +29,7 @@ function lost_pirate:on_interaction()
     game:start_dialog("_ballast_harbor.npcs.tavern.lost_pirate_1", function()
       map:create_pickable({
         name = "dropped_key",
-        x = 448, y = 192, layer = 0, 
+        x = 448, y = 192, layer = 0,
         treasure_name = "key_juneberry_inn", treasure_savegame_variable = "found_tipsy_pirate_inn_key",
       })
       game:set_value("quest_ballast_harbor_lost_inn_key", 0)

@@ -11,8 +11,8 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
 --initialize NPCs
 --entry guard
   if game:get_value("barbell_brutes_defeated") == true then entry_guard:set_enabled(false) else entry_guard_2:set_enabled(false) end
@@ -20,7 +20,7 @@ function map:on_started()
   if game:get_value("barbell_brutes_defeated") == true then map:close_doors("brute_door") end
   if game:get_value("barbell_boss_bested") == true then barbell_boss:set_enabled(false) end
 
-end
+end)
 
 
 --entry guard

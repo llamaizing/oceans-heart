@@ -1,17 +1,7 @@
--- Lua script of map oakhaven/ivystump_interiors/crab_cave.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   local lighting_effects = require"scripts/fx/lighting_effects"
   lighting_effects:initialize()
   lighting_effects:set_darkness_level(3)
@@ -22,7 +12,7 @@ function map:on_started()
     map:set_doors_open("boss_door")
     for box in map:get_entities("apple_box") do box:set_enabled(true) end
   end
-end
+end)
 
 
 function boss:on_dead()

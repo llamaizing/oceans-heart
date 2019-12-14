@@ -1,17 +1,7 @@
--- Lua script of map oakhaven/interiors/burglar_hideout.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
     burglar_3:set_enabled(false)
     burglar_4:set_enabled(false)
   if game:get_value("burglars_saved") == true then
@@ -21,8 +11,7 @@ function map:on_started()
     burglar_3:set_enabled(true)
     burglar_4:set_enabled(true)
   end
-
-end
+end)
 
 function sensor:on_activated()
   if game:get_value("oak_burglars_introduction_to_danger") ~= true then
@@ -52,11 +41,11 @@ function lookout:on_interaction()
     game:start_dialog("_oakhaven.npcs.port.burglars.yikes")
   else
     if game:get_value("oakhaven_palace_secret_passage_knowledge") ~= true then
-      game:start_dialog("_oakhaven.npcs.port.burglars.4", function() 
+      game:start_dialog("_oakhaven.npcs.port.burglars.4", function()
         game:set_value("oakhaven_palace_secret_passage_knowledge", true)
         game:set_value("quest_log_a", "a13")
         game:set_value("quest_hazel", 5) --quest log
-        
+
       end)
     else
       game:start_dialog("_oakhaven.npcs.port.burglars.5")

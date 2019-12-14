@@ -1,18 +1,9 @@
--- Lua script of map oakhaven/interiors/port_warehouse.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 local switch_count
 
 
-function map:on_started()
+map:register_event("on_started", function()
   switch_count = 0
 
   if game:get_value("quest_mayors_dog") and game:get_value("quest_mayors_dog") >= 7 then
@@ -21,7 +12,7 @@ function map:on_started()
   if game:get_value("quest_mayors_dog") and game:get_value("quest_mayors_dog") >= 11 then
     encounter_sensor:set_enabled(false)
   end
-end
+end)
 
 
 --secret switches

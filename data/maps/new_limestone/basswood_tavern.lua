@@ -11,12 +11,6 @@ local map = ...
 local game = map:get_game()
 local talked_to_linden
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
 
 
 function talk_to_dad_sensor:on_activated()
@@ -33,7 +27,7 @@ if dad_counter == nil then
       hero:unfreeze()
       game:set_value("dad_dialog_counter_tavern", 1)
       game:set_value("quest_whisky_for_juglan_phase", 0) --quest log
-      
+
       end)
   end)
 end
@@ -41,10 +35,10 @@ end
 
 function linden:on_interaction()
   if talked_to_linden == true then
-    game:start_dialog("_new_limestone_island.npcs.linden.2") 
+    game:start_dialog("_new_limestone_island.npcs.linden.2")
   else
     game:start_dialog("_new_limestone_island.npcs.linden.1")
-    talked_to_linden = true 
+    talked_to_linden = true
   end
 
 end

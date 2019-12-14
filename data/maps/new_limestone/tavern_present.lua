@@ -1,24 +1,15 @@
--- Lua script of map new_limestone/tavern_present.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
 
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("briarwood_distillery_quest_complete") == true then
     for entity in map:get_entities("briarwood_gin") do
       entity:set_enabled(true)
     end
   end
 
-end
+end)
 
 
 -- Mandatory Linden Talk

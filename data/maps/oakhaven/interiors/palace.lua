@@ -1,19 +1,9 @@
--- Lua script of map oakhaven/interiors/palace.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
 
-
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
   if game:get_value("mayors_dog_quest_cant_check_litton") == true then
     cant_check_litton_sensor:set_enabled(true)
   end
@@ -49,7 +39,7 @@ function map:on_started()
   end
 
 
-end
+end)
 
 
 

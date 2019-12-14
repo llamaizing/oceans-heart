@@ -1,9 +1,9 @@
 local map = ...
 local game = map:get_game()
 
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("aubrey_defeated") then walking_in_sensor:set_enabled(false) end
-end
+end)
 
 function walking_in_sensor:on_activated()
   game:start_dialog("_oakhaven.npcs.ana_orange.get_into_fight", function()

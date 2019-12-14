@@ -1,23 +1,13 @@
--- Lua script of map oakhaven/interiors/shipyard_gallery.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
-
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value"quest_bomb_arrows" >= 3 then
     for enemy in map:get_entities_by_type"enemy" do
       enemy:set_enabled(false)
     end
   end
-end
+end)
 
 for enemy in map:get_entities("bomb_pirate") do
   function enemy:on_dead()

@@ -10,8 +10,7 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if not game:get_value("sodden_cormorant_found_quest") then
     game:set_value("quest_meet_juglan_at_pier", 2)      ----quest log
     game:set_value("sodden_cormorant_found_quest", true)
@@ -22,13 +21,8 @@ function map:on_started()
     adventurer_3:set_enabled(false)
   end
 
-end
+end)
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
-end
 
 --Spruce Head Clue
 function thiel:on_interaction()

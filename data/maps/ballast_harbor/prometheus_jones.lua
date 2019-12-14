@@ -11,9 +11,7 @@ local map = ...
 local game = map:get_game()
 
 
-function map:on_started()
 
-end
 
 function prometheus:on_interaction()
   if game:has_item("ball_and_chain") then

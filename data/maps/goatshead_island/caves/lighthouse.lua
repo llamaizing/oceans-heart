@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("goatshead_lighthouse_activated") == true then
     torch_1:set_enabled(true)
     torch_2:set_enabled(true)
@@ -19,7 +19,7 @@ function map:on_started()
     torch_4:set_enabled(true)
     torch_5:set_enabled(true)
   end
-end
+end)
 
 function lighthouse_switch:on_activated()
   if not game:get_value("goatshead_lighthouse_activated") then

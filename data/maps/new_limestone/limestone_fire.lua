@@ -1,21 +1,11 @@
--- Lua script of map new_limestone/limestone_fire.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   sol.audio.play_music("fire_burning")
   timeskip_warp:set_enabled(false)
-  
-  
+
+
 --tim movement
   local tim_run = sol.movement.create("path")
   tim_run:set_path{0,0,0,0,0,0,4,4,4,4,4,4}
@@ -28,7 +18,7 @@ function map:on_started()
   juglan_movement:set_speed(25)
   juglan_movement:start(juglan)
 
-end
+end)
 
 function explosion_sensor:on_activated()
   local x,y,l = trigger_barrel:get_position()

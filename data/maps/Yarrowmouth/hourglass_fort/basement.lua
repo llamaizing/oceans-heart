@@ -1,12 +1,3 @@
--- Lua script of map Yarrowmouth/hourglass_fort/basement.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
@@ -15,9 +6,8 @@ door_manager:manage_map(map)
 local in_boss_battle
 local crab_spawn_timer
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
 
   in_boss_battle = false
   map:open_doors("boss_door_enter")
@@ -33,8 +23,7 @@ function map:on_started()
     end
   end
 
-
-end --end of on_started
+end)
 
 function talk_sensor:on_activated()
   if game:get_value("hourglass_fort_nobody_home_2") ~= true then
@@ -92,14 +81,14 @@ function enter_boss_room_sensor:on_activated()
       map:create_enemy({
         name = "boss_spawn_crab",
         layer = 0, x = 1048, y = 40,
-        direction = 3, 
-        breed = "normal_enemies/triangle_crab_red" 
+        direction = 3,
+        breed = "normal_enemies/triangle_crab_red"
       })
       map:create_enemy({
         name = "boss_spawn_crab",
         layer = 0, x = 1192, y = 40,
-        direction = 3, 
-        breed = "normal_enemies/triangle_crab_red" 
+        direction = 3,
+        breed = "normal_enemies/triangle_crab_red"
       })
       return true
     end)
@@ -132,7 +121,7 @@ function letter:on_interaction()
   if game:get_value("hourglass_fort_read_letter") ~= true then
     game:start_dialog("_yarrowmouth.observations.hourglass_fort.letter", function()
       game:set_value("quest_log_a", "a8")
-      
+
       game:set_value("quest_hourglass_fort", 3) --quest log
       game:set_value("quest_hazel", 0) --quest log
       hero:teleport("Yarrowmouth/tern_marsh", "from_hourglass_fort", "fade")

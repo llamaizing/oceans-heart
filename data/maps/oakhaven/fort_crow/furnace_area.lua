@@ -1,18 +1,8 @@
--- Lua script of map oakhaven/fort_crow/furnace_area.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
   al_jazari:set_enabled(false)
   for entity in map:get_entities("switchsteam_b") do entity:set_enabled(false) end
   if game:get_value("fort_crow_furnace_door_a") == true then map:set_doors_open("door_a") end
@@ -40,7 +30,7 @@ function map:on_started()
     return true
   end) --end of 4 sec timer a.
 
-end--end of on started
+end)
 
 
 --save/reset solid ground sensors
@@ -123,8 +113,8 @@ local function summon_automatons()
     map:create_enemy({
       name = "boss_spawn_crab",
       layer = 0, x = 240, y = 40,
-      direction = 3, 
-      breed = "normal_enemies/automatic_crow_knight", 
+      direction = 3,
+      breed = "normal_enemies/automatic_crow_knight",
     })
     if fighting_jizari == true then
       sol.timer.start(10000, function() summon_automatons() end)
@@ -145,8 +135,8 @@ function boss_sensor:on_activated()
     map:create_enemy({
       name = "boss_spawn_crow",
       layer = 0, x = 240, y = 40,
-      direction = 3, 
-      breed = "normal_enemies/crowbot", 
+      direction = 3,
+      breed = "normal_enemies/crowbot",
     })
     end --end of if fighting
   end)--end of timer function
@@ -155,8 +145,8 @@ function boss_sensor:on_activated()
     map:create_enemy({
       name = "boss_spawn_crow",
       layer = 0, x = 80, y = 40,
-      direction = 3, 
-      breed = "normal_enemies/crowbot", 
+      direction = 3,
+      breed = "normal_enemies/crowbot",
     })
     end --end of if fighting
   end)--end of timer function

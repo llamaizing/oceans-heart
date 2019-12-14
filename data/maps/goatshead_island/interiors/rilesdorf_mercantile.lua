@@ -13,9 +13,8 @@ local squid_1
 local squid_2
 local hero = game:get_hero()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
 --enable entities
   if game:get_value("squid_fled") ~= true then
     rilesdorf_2:set_enabled(false)
@@ -40,13 +39,7 @@ function map:on_started()
   squid_2:set_ignore_obstacles(true)
 
 
-end
-
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
-end
+end)
 
 function rilesdorf:on_interaction()
   if game:get_value("phantom_squid_quest_accepted") ~= true then
