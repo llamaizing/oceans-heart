@@ -22,7 +22,7 @@ local locations = {
   {name = "ivystump", coordinates = {180, 44}, is_unlocked, map_id = "oakhaven/ivystump_port"},
   {name = "yarrowmouth", coordinates = {299, 67}, is_unlocked, map_id = "Yarrowmouth/juniper_grove"},
   {name = "snapmast", coordinates = {330, 52}, is_unlocked, map_id = "snapmast_reef/snapmast_landing"},
-  {name = "oakhaven", coordinates = {123, 102}, is_unlocked, map_id = "oakhaven/port"},
+  {name = "oakhaven", coordinates = {118, 102}, is_unlocked, map_id = "oakhaven/port"},
   {name = "goatshead", coordinates = {262, 138}, is_unlocked, map_id = "goatshead_island/goatshead_harbor"},
   {name = "isle_of_storms", coordinates = {378, 130}, is_unlocked, map_id = "isle_of_storms/isle_of_storms_landing"},
   {name = "kingsdown", coordinates = {319, 109}, is_unlocked, map_id = "Yarrowmouth/kingsdown"},
