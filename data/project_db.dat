@@ -845,6 +845,7 @@ sprite{ id = "npc/lily/lily_fishing_l", description = "Fishing-Left" }
 sprite{ id = "npc/lily/lily_lounging", description = "Lily-Lounging" }
 sprite{ id = "npc/lily/lily_sitting", description = "Lily-Sitting" }
 sprite{ id = "npc/lily/lily_standing", description = "Lily-Standing" }
+sprite{ id = "npc/lily/lily_waving", description = "Lily-Waving" }
 sprite{ id = "npc/linden", description = "Linden" }
 sprite{ id = "npc/linden_sweeping", description = "Linden Sweeping" }
 sprite{ id = "npc/litton", description = "Litton" }

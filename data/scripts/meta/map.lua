@@ -14,6 +14,9 @@ map_meta:register_event("on_started", function(self)
 
   --Fast Travel
   for lily in map:get_entities("fast_travel_lily") do
+    if not game:get_value("lily_rescued") then
+      lily:set_enabled(false)
+    end
     function lily:on_interaction()
       require("scripts/menus/fast_travel"):greeting()
     end

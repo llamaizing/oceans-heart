@@ -39,25 +39,64 @@ local current_port = 1
 local map_surface = sol.surface.create("menus/maps/overworld_map.png")
 
 
-
 function fast_travel_menu:greeting()
-  fast_travel_menu:unlock_current_map_port()
   local game = sol.main.get_game()
-  game:start_dialog("_fast_travel.ride_question", function(answer)
-    if answer == 1 then
-      sol.menu.start(game:get_map(), fast_travel_menu)
+  local location_name = fast_travel_menu:get_current_location_name()
+  game:start_dialog("_fast_travel.location_" .. location_name, function()
+    -- if you have new charts
+    if fast_travel_menu:has_new_charts() then
+      fast_travel_menu:unlock_current_map_port()
+      game:start_dialog("_fast_travel.ride_question_new_chart", function(answer)
+        sol.menu.start(game:get_map(), fast_travel_menu)
+      end)
+    --if you don't have any new chart
+    else
+      fast_travel_menu:unlock_current_map_port()
+      game:start_dialog("_fast_travel.ride_question", function()
+        sol.menu.start(game:get_map(), fast_travel_menu)
+      end)
     end
   end)
 end
+
+
+function fast_travel_menu:get_current_location_name()
+  local game = sol.main.get_game()
+  local location_name
+  for i=1, #locations do
+    if game:get_map():get_id() == locations[i].map_id then
+      location_name = locations[i].name
+    end
+  end
+  return location_name
+end
+
+
+function fast_travel_menu:has_new_charts()
+  local new_chart_brought
+  local game = sol.main.get_game()
+  local known_charts = game:get_value("lily_chart_total") or 0
+  local held_charts = 0
+  for i=1, #locations do
+    if game:has_item("fast_travel_chart_" .. locations[i].name) then held_charts = held_charts + 1 end
+  end
+  if held_charts > known_charts then new_chart_brought = true end
+  game:set_value("lily_chart_total", held_charts)
+  return new_chart_brought
+end
+
 
 function fast_travel_menu:unlock_current_map_port()
   local game = sol.main.get_game()
   for i=1, #locations do
     if game:get_map():get_id() == locations[i].map_id then
-      game:get_item("fast_travel_chart_" .. locations[i].name):set_variant(1)
+      local item = game:get_item("fast_travel_chart_" .. locations[i].name)
+      item:set_variant(1)
+      game:set_value("lily_chart_total", game:get_value("lily_chart_total") + 1)
     end
   end
 end
+
 
 function fast_travel_menu:on_started()
   sol.main.get_game():get_hud():set_enabled(false)
@@ -68,9 +107,11 @@ function fast_travel_menu:on_started()
   fast_travel_menu:update_current_port(game:get_value("fast_travel_menu_current_port") or DEFAULT_PORT)
 end
 
+
 function fast_travel_menu:on_finished()
   sol.main.get_game():get_hud():set_enabled(true)
 end
+
 
 function fast_travel_menu:update_unlocked_locations()
   local game = sol.main.get_game()
@@ -82,11 +123,18 @@ function fast_travel_menu:update_unlocked_locations()
   end
 end
 
+
 function fast_travel_menu:update_current_port(new_port)
     if port_runes[current_port] then port_runes[current_port]:set_animation("stopped") end
     if port_runes[new_port] then port_runes[new_port]:set_animation("active") end
     current_port = new_port
 end
+
+
+
+--========================non-game logic functions=================================================--
+--=================================================================================================--
+
 
 --next or previous UNLOCKED port------
 function fast_travel_menu:calculate_next_port(test_port, step)

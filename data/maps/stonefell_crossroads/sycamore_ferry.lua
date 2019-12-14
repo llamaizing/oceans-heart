@@ -10,6 +10,14 @@
 local map = ...
 local game = map:get_game()
 
+map:register_event("on_started", function()
+  lily:get_sprite():set_animation("waving")
+  if game:get_value("lily_rescued") then
+    lily:set_enabled(false)
+    for sensor in map:get_entities("lily_attack_sensor") do sensor:remove() end
+  end
+end)
+
 local ferry_armed = false
 function ferryman:on_interaction()
   local index = game:get_value("merryweather_ferry_dialog_index")
@@ -44,3 +52,34 @@ function right_knee:on_interaction()
   sol.audio.play_sound"switch_2"
 end
 
+--lily rescue
+for sensor in map:get_entities("lily_attack_sensor") do
+function sensor:on_activated()
+  lily:get_sprite():set_animation("waving")
+  game:start_dialog("_sycamore_ferry.npcs.lily.help", function()
+--    lily:get_sprite():set_animation("stopped")
+  end)
+end
+end
+
+for enemy in map:get_entities("lily_enemy") do
+function enemy:on_dead()
+  if not map:has_entities("lily_enemy") then
+    for sensor in map:get_entities("lily_attack_sensor") do sensor:remove() end
+    lily:get_sprite():set_animation("stopped")
+    hero:freeze()
+    hero:set_animation"walking"
+    local m = sol.movement.create("target")
+    m:set_speed(80)
+    m:set_target(lily)
+    m:start(hero)
+    function m:on_changed() hero:set_direction(m:get_direction4()) end
+    sol.timer.start(map, 1000, function()
+      game:start_dialog("_sycamore_ferry.npcs.lily.saved", function()
+        hero:unfreeze()
+        game:set_value("lily_rescued", true)
+      end)
+    end)    
+  end
+end
+end

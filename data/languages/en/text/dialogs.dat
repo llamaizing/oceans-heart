@@ -1480,14 +1480,129 @@ Dad?
 }
 
 dialog{
+  id = "_fast_travel.location_ballast_harbor",
+  text = [[
+LILY:
+Fancy meetin' you here, Tilia. You joining
+the pirate council? Ahaha, just kidding,
+I don't get pirate vibes from you.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_goatshead",
+  text = [[
+LILY:
+Hey, Tilia! We meet again. Just dropped a
+load of cargo off at the Marchants' Guild.
+Literally the most generic cargo.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_isle_of_storms",
+  text = [[
+LILY:
+I don't like this place, Tilia. Look, I'm
+sure you can take care of yourself, but
+I'm gonna be worried while you're here.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_ivystump",
+  text = [[
+LILY:
+Oh, we meet again! Dude, I can't get
+enought of the birdsong around here. And
+how does the whole town smell like apples?
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_kingsdown",
+  text = [[
+LILY:
+Now this kind of little cove, I could put
+down roots here. Just sleep in the sunshine
+all day.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_limestone",
+  text = [[
+LILY:
+Good to see you, Tilia. I just had a chat
+with that Juglan guy, always love bumping
+into him at ports.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_oakhaven",
+  text = [[
+LILY:
+Oh, Tilia! I thought I'd see you in Oakhaven
+someday. You like the big city? Personally,
+I hate it. Nobody leaves you alone.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_snapmast",
+  text = [[
+LILY:
+Ugh, this is miserable. The rain doesn't
+show any signs of letting up. Whenever you're
+ready to get outta here, let's skedaddle.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_spruce_head",
+  text = [[
+LILY:
+Well, well, well, if it isn't Tilia. I had
+a meeting about some cargo here, but the
+other guy never showed up.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_yarrowmouth",
+  text = [[
+LILY:
+Oh, it's you! I had a delivery to
+Yarrowmouth then decided I'd take a quick
+nap.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_zephyr_bay",
+  text = [[
+LILY:
+Hey, Tilia. Can't believe I never knew
+about this little island.
+]],
+}
+
+dialog{
   id = "_fast_travel.ride_question",
   text = [[
-Lily:
-Hey, we meet again. Looking to catch a
-ride, Tilia?
+LILY:
+Anyway, you want a ride somewhere?
+]],
+}
 
-$?Yes
-$?No
+dialog{
+  id = "_fast_travel.ride_question_new_chart",
+  text = [[
+LILY:
+Hey, you brought me a new chart? Right on!
+If you want to sail here, just let me know.
+Anyway, you want to get out of here?
 ]],
 }
 
@@ -3468,7 +3583,6 @@ is in the northwest part of town. Remember
 to craft potions if you need!...
 TILIA:
 Juglan. I'll be fine. Thank you.
-
 
 
 JUGLAN:
@@ -13487,6 +13601,73 @@ can stop camping here.
 }
 
 dialog{
+  id = "_sycamore_ferry.npcs.lily.help",
+  text = [[
+WOMAN:
+Hey! You! Help a girl out, these monsters
+have me pinned in here!
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.lily.saved",
+  text = [[
+WOMAN:
+Hey, thanks, that was a tight spot. I'm
+Lily, of Lily's Delilveries.
+
+TILIA:
+No problem. You mean deliveries?
+
+
+LILY:
+No, it's... Delilveries, like Lil, short for
+Lily? I thought it was a good name. I've got
+a ship, I delilver cargo, you know.
+TILIA:
+Hey if that's part of your brand, go for
+it. Just stay out of the way of monsters.
+
+LILY:
+Hey, I want to do something for you. Since
+you really rescued me there. If you see me
+around, come talk to me. I'm always sailing,
+LILY:
+so I can sail you around to anywhere I've
+been. Or even places I haven't been, if you
+bring me a sea chart. I like traveling.
+TILIA:
+Alright, thanks. If I see you around, I'll
+be sure to catch up with you.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.lily.saved_follow_up",
+  text = [[
+LILY:
+Hey, thanks again. I'm just gonna catch my
+breath after watching you fight those
+monsters, but then it's back to the
+LILY:
+delilvery business... yeah, as I'm saying
+it out loud to you know, delilvery just
+doesn't roll off the tongue.
+TILIA:
+Not so much, no.
+
+
+LILY:
+Anyway, if you see me around, come talk to
+me. I'll be able to sail you around to
+palces I've been. Or if you have charts
+LILY:
+of places I haven't been, then those
+places too.
+]],
+}
+
+dialog{
   id = "_sycamore_ferry.signs.forest_of_tides",
   text = [[
 West - Goatshead
@@ -13525,6 +13706,24 @@ dialog{
 North - Oakhaven
 East - Yarrowmouth
 South - Goatshead
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.sycamore_ferry_1",
+  text = [[
+East - Forest of Tides, Ballast Harbor Trail
+South - Lotus Shoal, Limestone Island
+North - Goatshead Harbor
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.sycamore_ferry_2",
+  text = [[
+West - Lotus Shoal
+South - Limestone Island
+East - Goatshead Harbor, Forest of Tides
 ]],
 }
 
