@@ -206,7 +206,7 @@ function runic_stone:on_interaction()
       sol.audio.play_sound"charge_1"
       sol.audio.play_sound"sea_spirit"
       game:set_value("oakhaven_palace_rune_activated", true)
-      game:set_value("quest_abyss", 2)
+      if game:get_value("quest_abyss") == 1 then game:set_value("quest_abyss", 2) end
     end
   end)
 end

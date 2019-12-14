@@ -11014,19 +11014,8 @@ That's where I'm headed next. My dad was
 trying to find Blackbeard, so I'm sure he
 would have been looking for his hideout.
 MORUS:
-That's pretty determined. Look, I'm starting
-to think you might actually be able to do
-something about the pirate problem. I'll
-MORUS:
-take you down to Snapmast Reef if you
-think you can take down the Pirate Council.
-It's a dangerous place though.
-TILIA:
-Let's set sail.
-
-
-MORUS:
-I'll meet you down at the port.
+Good luck, Tilia. You might just be able to
+pull this off.
 ]],
 }
 
@@ -11035,8 +11024,8 @@ dialog{
   text = [[
 MORUS:
 If you think you can take down the pirate
-council, I'll take you to their hideout.
-I'll meet you down at the port.
+council, I believe you can. Good luck,
+Tilia.
 ]],
 }
 
@@ -11044,16 +11033,7 @@ dialog{
   id = "_oakhaven.npcs.morus.8_have_ocean_chart",
   text = [[
 MORUS:
-Ready to head out, Tilia?
-
-
-TILIA:
-Yeah. I got a chart that shows where the
-Isle of Storms is!
-
-MORUS:
-Alright, kiddo. If you're sure, then I can
-take you there.
+Wait, I shouldn't be here. This is a bug.
 ]],
 }
 
@@ -11061,12 +11041,8 @@ dialog{
   id = "_oakhaven.npcs.morus.ferry_1",
   text = [[
 MORUS:
-So, is it time to head to Snapmast Reef
-and track down the Pirate Council?
-
-TILIA:
-$?Anchors away!
-$?Not Yet.
+I shouldn't be here, this is a bug in
+the game.
 ]],
 }
 
@@ -11074,9 +11050,9 @@ dialog{
   id = "_oakhaven.npcs.morus.ferry_1_reef",
   text = [[
 MORUS:
-Do you need to go back to Oakhaven?
-
-
+How did I end up here? This should be
+Lily who ferries you around. Some kinda
+bug in the game, I guess.
 TILIA:
 $?Let's set sail.
 $?Not now.
@@ -11087,8 +11063,9 @@ dialog{
   id = "_oakhaven.npcs.morus.ferry_2",
   text = [[
 MORUS:
-Where to, Tilia?
-
+This isn't right, it should be
+Lily sailing with you, this is
+some kinda bug in the gam.
 
 $?Oakhaven
 $?Snapmast Reef
@@ -11197,16 +11174,16 @@ Hmm... yeah, that's Snapmast Reef. There's
 a chain of shipwrecks there called the
 Cemetery of the Waves, looks like their
 MORUS:
-hideout is nestled in there. I can get
-you there if you want. My current ship is
-at Oakhaven Port. I can take you there
+hideout is nestled in there. I won't sail
+there, too many pirates and I've gotten my
+revenge already. But I'll give you a ride
 MORUS:
-now, or meet you when you're ready.
+back to Oakhaven if you want.
 
 
 TILIA:
-$?Take me to your boat
-$?I'll meet you later
+$?Take me
+$?I'll travel myself.
 ]],
 }
 
@@ -11214,8 +11191,9 @@ dialog{
   id = "_oakhaven.npcs.morus.fort.9",
   text = [[
 MORUS:
-That's fine. I'll be waiting for you at
-Oakhaven Port.
+Thank you for helping me take
+Al Jazari down. If anyone can defeat
+the pirate council, it's you.
 ]],
 }
 
@@ -11310,7 +11288,7 @@ GUNTHER (singing):
 of the ironclad snail
 who repressed each and every emotion...
 TILIA:
-That's a pretty good song. Bravo.
+That's an entirely unique song.
 
 
 GUNTHER:
@@ -11389,7 +11367,16 @@ Hey, I hung a bunch of posters up. Now it's
 all up to you. You've gotta protect my posters
 from being torn up by monsters.
 TILIA:
-I'll go check them out.
+I'll go check them out. Where are they?
+
+
+GUNTHER:
+All over, man! The monster could be anywhere
+in the city, no poster is safe!
+
+TILIA:
+I guess I'll just take a walk around the
+city and see if I see anything.
 ]],
 }
 
@@ -11503,10 +11490,10 @@ reason?
 SHIFTY:
 Oh, you know Hazel? She's the best, we
 met her up on Marblecliff when we were rock
-climbing. She showed us these tasty roots...
+climbing. She showed us these tasty roots, uh...
 SHIFTY:
 Anyway, yesterday she was asking if we
-knew a way to get into the Governor's Palace.
+knew a way to get into the Mayor's Palace.
 She wants to sneak into his secret archives.
 TILIA:
 Do you know a way?
@@ -11515,11 +11502,11 @@ Do you know a way?
 SHIFTY:
 Oh, yeah. Up on Marblecliff, there's a ruins
 with a big statue of a bird in the middle. You
-go just east of that and there's three trees
+go just south of that and there's three trees
 SHIFTY:
 growing out of rocks. The middle one has
-a hidden tunnel you can see if you move the
-tree's roots. The tunnel can get you down
+a hidden tunnel you can see if you move some
+rocky... rocks. The tunnel can get you down
 SHIFTY
 to the palace. But hey, if you sneak in,
 don't take all the good stuff! We like to
@@ -11769,20 +11756,16 @@ dialog{
   text = [[
 The brochure is written in an overenthusiastic
 tone: Oakhaven City! Wander the market in the
-south, or visit the Governor's Palace in
+center, or visit the Governor's Palace in
 the north. A cool stream runs around the
-ancient library, through the city, and
+ancient library, under the city, and
 eventually empties out into the sea at
 the port, where you'll find many ferries
-and cargo ships. West is the Veilwood, a
+and cargo ships. East is the Veilwood, a
 shady forest that leads to the sleepy
-town of Ivystump. East is Fort Crow, once
-an ancient ruin, now converted into a
-factory or something? The tourism board
-could not investigate as it is controlled
-by pirates and we recommend staying away.
-Perhaps, instead, venture Northwest of town
-to Marblecliff Mountain! A picturesque
+town of Ivystump. Or perhaps leave west
+from the port and venture Northwest to
+Marblecliff Mountain! A picturesque
 monastery sits perched on top.
 ]],
 }
@@ -12329,9 +12312,9 @@ up is in the hands of pirates and what I'm
 getting at is if you want it, you gotta go
 get it from them. They're camped out down
 THE BOMB MAKER:
-at the shipyard, in one of the buildings.
-If you want to pick up that package,
-it's up to you now.
+at the port, in a building West, over
+the bridge. If you want to pick up that
+package, it's up to you now.
 ]],
 }
 
@@ -12685,13 +12668,13 @@ the Sea King. His love for his people has
 grown into hatred for any who hold something
 he doesn't. The tribes of Smoldering Rock
 did not pose the threat he claims. And yet
-his fearsome storm has completely destoryed
+his fearsome storm has completely destroyed
 their home. I have seen their village,
 or what remains of it after the storm. And
 I fear the Bear Warriors who resist his
-rule will meet a similar fate. His advisor,
+rule will meet a similar fate. His adviser,
 Heron, is close with the chief the king
-imposed on the warriors. I hope he disuades
+imposed on the warriors. I hope he dissuades
 the king.
 ]],
 }
@@ -12772,7 +12755,7 @@ dialog{
   id = "_oakhaven.observations.palace.painting_oakhaven",
   text = [[
 The painting is titled:
-''Oakhaven, Jewl of the North Seas''.
+''Oakhaven, Jewel of the North Seas''.
 It seems to depict the city before the flood.
 ]],
 }
@@ -13115,25 +13098,13 @@ Tilia? I... Tilia! Wow Little Gull, you look so
 strong. Wait... you must have beat up a lot of
 pirates to get here, didn't you? Tilia, that-
 TILIA:
-Hey! No, you listen! Linden and I figued you
-were dead for months! I get it, you're fighting
-pirates and stuff, but you didn't send any
+Hey! No, you listen! Linden and I didn't hear
+word from you for months! We thought you might
+have died! I'm also proud of you for doing so
 TILIA:
-letters? Stop chasing pirates for a week to come
-let us know what was going on?
-
-MALLOW:
-When would I have done that? While Hazel was a
-hostage in Hourglass Fort? When the Council was
-burning down towns to find this place? While
-MALLOW:
-Blackbeard was claiming the power of the Ocean
-for himself? Tilia, I want to help people. You
-have to make some sacrifices if you want that.
-TILIA:
-That might be what you need to be doing. But
-you aren't doing it how I need to you be
-doing it.
+much to help people and stop these pirates.
+Next time, maybe send a letter or something
+though. But I'm gonna help you finish this.
 MALLOW:
 $1...$3
 ]],
@@ -15700,13 +15671,13 @@ up with Dad and Hazel. And now you know
 Hazel is alright. And you know where they
 went. You're closer than ever. I've just
 TILIA:
-gotta catch a ferry going to Oakhaven,
-and figure it out when I get there...
-and definitely avoid these pirate guys. Or,
+gotta get over to Oakhaven, and figure
+it out when I get there... and definitely
+avoid these pirate guys. Or, well, if I
 TILIA:
-well, if I want to join the Volunteer Navy
-like Dad, I'd be trying to stop the
-pirates... Well, one step at a time.
+want to join the Volunteer Navy like Dad...
+I guess don't avoid them, but find them and
+stop them?... Well, one step at a time.
 ]],
 }
 
@@ -15825,12 +15796,8 @@ guy alone or else smack them around. I can
 manage that.
 NINA:
 Excellent. The meeting place they picked is
-at Seaweed Rock, in Tern Marsh. In the
-southeast corner of town, there's a tunnel
-NINA:
-that can get you to Tern Marsh, then
-I guess look for pirates to the west and say
-you're here on behalf of Carlov. Go get 'em!
+at Seaweed Rock, in Tern Marsh. It's on the
+west side of the marsh. Go get 'em!
 ]],
 }
 
@@ -15851,12 +15818,9 @@ dialog{
   id = "_yarrowmouth.npcs.nina.4",
   text = [[
 NINA:
-Haven't met with those pirates yet? Take the
-tunnel in the southeast corner of town to
-Tern Marsh, then meet the pirates at
-NINA:
-Seaweed Rock on the west side of the
-marsh. Tell them to stay away from Carlov-
+Haven't met with those pirates yet? Seaweed
+Rock is on the west side of Tern Marsh.
+Tell them to stay away from Carlov-
 if they give you any trouble, beat 'em up!
 ]],
 }
@@ -15889,13 +15853,8 @@ Sure. I'd like that, actually. Where is their
 hideout?
 
 NINA:
-They've got a spot outside Ballast Harbor.
-Northeast of the market, there's a little fort
-on the side of a cliff. You can get to Ballast
-NINA:
-Harbor through Tern Marsh. It's a little twisty,
-but it's near the southeast end of the marsh.
-Go get em! And I'll pay you extra!
+It's in Stonefell Crossroads, I think.
+Go finish 'em off, I'll pay you extra!
 ]],
 }
 
@@ -15904,12 +15863,11 @@ dialog{
   text = [[
 NINA:
 You need directions to give those pirates
-who ambushed you the what-for? Their fort
-is northeast of Ballast Harbor. The quickest
+who ambushed you the what-for? They're in
+Stonefell Crossroads. Go through Tern Marsh
 NINA:
-way to Ballast Harbor is to travel to the
-southeast end of Tern Marsh, there's a bridge
-to Ballast Harbor there.
+and just west of that is the crossroads.
+Their fort is around there.
 ]],
 }
 
@@ -15970,13 +15928,9 @@ Sure. I'd like that, actually. Where is their
 hideout?
 
 NINA:
-They've got a spot outside Ballast Harbor.
-Northeast of the market, there's a little fort
-on the side of a cliff. You can get to Ballast
-NINA:
-Harbor through Tern Marsh. It's a little twisty,
-but it's near the southeast end of the marsh.
-Go get em! And I'll pay you extra!
+It's in Stonefell Crossroads. Go through
+Tern Marsh and just west is the crossroads.
+Their fort is around there. Go get 'em!
 ]],
 }
 
@@ -16000,7 +15954,7 @@ maybe we could out-compete him. On the
 market. And make our own mead. So I got
 a whole bunch of bees. Well. Kinda.
 RICHARDO:
-I actually accidentially got a whole
+I actually accidentally got a whole
 bunch of hornets. It's bad.They've
 infested the whole barn. It's dangerous.
 RICHARDO:
@@ -16038,6 +15992,10 @@ RICHARDO:
 Ooh man. Thanks again, you saved my
 butt. If the boss had found out I
 infested the barn with hornets...
+RICHARDO:
+Well, he'd probably be like, Richardo!
+Not again! What did I tell you? And I'd
+be like... sorry...
 ]],
 }
 
@@ -16057,9 +16015,9 @@ Is it not lit? Lunos, I told you not to play
 upstairs! Could you do me a favor and go
 light it again? There's a switch upstairs.
 TILIA:
-Yeah, no problem. You know, this isn't the
-first lighthouse just like this one I've seen
-as I've been traveling.
+Yeah, no problem. You know, I don't think this
+is the first lighthouse just like this one I've
+seen as I've been traveling.
 STELLA:
 There are four, actually. According to legend,
 a man called Heron built them. When the
@@ -16182,6 +16140,10 @@ OLIN:
 to ask Jerah. He went up to the Juniper
 Grove... quite a while ago, come to think of
 it. Here, take the key and go check on him.
+OLIN:
+The Juniper Grove is by the dock, head
+northeast out of town.
+
 (Olin gave you the Juniper Grove Key)
 ]],
 }
@@ -16190,9 +16152,8 @@ dialog{
   id = "_yarrowmouth.npcs.tavern.Olin.3",
   text = [[
 OLIN:
-Did you go check on Jerah? The path
-to the Juniper Grove starts down by the
-docks.
+Did you go check on Jerah? Juniper Grove
+is northeast of town, by the dock.
 ]],
 }
 
@@ -16253,13 +16214,16 @@ dialog{
 JERAH:
 Hey, thanks again from saving me from
 that monster. If you're still looking for the
-pirates, head to Kingsdown Isle. It's south
+pirates, head to Kingsdown Isle. There's a
 JERAH:
-of the Puzzlewood. On the island is a bear
+raft that'll take you there east of town, so
+south before you get to the dock and Juniper
+Grove. Then on the island is a bear statue,
+JERAH:
 statue, and the leftmost pillar nearby has
 a secret keyhole that opens the path
-JERAH:
 to some catacombs you can cut through. But,
+JERAH:
 the key was lost a while ago. I think stolen
 by pirates...
 ]],
@@ -16298,13 +16262,9 @@ I'll see what I can do about it. Where is the
 mushroom picking spot?
 
 ROHIT:
-Head through the puzzlewood all the way to
-the eastern edge. You'll have to go up some
-old stairs and across a bridge, but there's
-ROHIT:
-a sign nearby. And you'll need this key to
-open the gate. Thank you for your help.
-
+Head through the Puzzlewood, on the western
+edge up some stairs is the spot. You'll
+need this key to open the gate.
 (You received a key to get to the mushroom
 picking spot)
 ]],
@@ -16316,11 +16276,7 @@ dialog{
 ROHIT:
 Did you find our mushroom picking spot and
 clear out the monsters? Head through the
-Puzzlewood, to the eastern edge. The spot
-ROHIT:
-is up some stairs and across a bridge.
-There's a sign there to guide you when
-you're close.
+Puzzlewood, to the western edge.
 ]],
 }
 
@@ -16598,7 +16554,8 @@ dialog{
   id = "_yarrowmouth.observations.ambush",
   text = [[
 TILIA:
-Wait, what!? Is this seriously an ambush?
+Wait, what, the door's shut? Is this
+really an ambush situation?
 ]],
 }
 
@@ -16606,7 +16563,8 @@ dialog{
   id = "_yarrowmouth.observations.ambush_2",
   text = [[
 TILIA:
-What? Is this someone's idea of a trap?
+What, is the gate spring loaded? Ugh, I
+can't believe I got caught in a trap!
 ]],
 }
 
@@ -16661,31 +16619,10 @@ dialog{
   text = [[
 There's a letter here that looks important:
 Dearest Pirates of Fort Crow,
-We've decided to take you up on your
-invitation to visit Oakhaven. Someone from
-the Volunteer Navy has been following us
-since we raided Limestone Island. I'll leave
-the main crew to man the fort here, but
-myself and the first mates will sail to
-Fort Crow immediately as a precaution. We
-have something that needs to be delivered
-to Blackbeard right away.
-Sincerely, Captain Thyme
-...
-
-
-
-TILIA:
-Looks like this is exactly what I was looking
-for- the Hourglass Captain ran away to Fort
-Crow on Oakhaven Island... and they were
-TILIA:
-being followed. That must be my dad, he
-probably came through here and chased
-the pirates out. I'd better go to Oakhaven
-TILIA:
-and look for this Captain Thyme guy, get
-him to tell me where my dad went.
+This part of the game was changed, and this
+letter doesn't need to be in the game
+anymore. If you've somehow found this,
+please disregard.
 ]],
 }
 
@@ -16725,7 +16662,7 @@ There's a letter here from Blackbeard!
 called 'Spruce Isle' frequently. Best he can
 piece together, its coast would look like
 this. Recognize it?''
-...There's a chart of Goatshead Harbor
+...There's a chart of Lotus Shoal
 attached.
 ]],
 }
@@ -16748,7 +16685,7 @@ Captain Blackbeard,
 The outlying sites haven't yielded any clues
 toward finding Ocean's Heart Isle, but our
 trip to Spruce Head was successful, but it
-seems like it's the last amulet. Everyone
+seems like it's the only amulet. Everyone
 might have to go in on one trip whenever we
 discover the Isle's location.
 ]],
@@ -17079,22 +17016,22 @@ Fast travel?
 
 dialog{
   id = "quest.heron_doors",
-  title = "Heron Doors",
+  title = "The Seabird Shrines",
   text = [[
-@?Explore all of the heron doors
+@?Find all of the Seabird Shrines
 !Explore the remaining shrines to
-!obtain the rest of the thunder charms.
+!empower the Seabird's Tear
 
-%~You haven't found any more heron doors
+%~You haven't found any more shrines
 %=!Locations to explore: --// The player must find at least one door for these lines to be visible
-?Heron doors explored: --// This line visible instead once quest is complete
+?Shrines explored: --// This line visible instead once quest is complete
 %1$@1   Tern Marsh
 %2$@2   Marble Summit
 %3$@3   Snapmast
 %=!
 %=!    Keep exploring to find them all.
 
-    Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+    Shrines found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
 ]],
 }
 
@@ -17114,11 +17051,11 @@ dialog{
 @!Search the library
 @!Hazel was going to meet pirates at
 !the port
-@Hazel's in the governor's secret
+@Hazel's in the mayor's secret
 archives
 !
 !There's a secret tunnel on Marblecliff
-!Mountain. Head east from the ruins,
+!Mountain. Head south from the ruins,
 !over the waterfalls.
 @Meet Hazel back at the inn
 ]],
@@ -17158,7 +17095,7 @@ dialog{
 ##Blackbeard's worried first mate gave
 ##you a chart showing the location of
 ##the Isle of Storms.
-@Ask Morus to sail you to the Isle
+@Find someone to sail you to the Isle
 ::!
 %=!$i0    QUEST ITEM:
 %=!    $ITEM_NAME
@@ -17201,7 +17138,7 @@ dialog{
 @Find a bottle of whisky in the secret
 stash
 !
-!The stash is on the east side of the
+!The stash is on the north end of the
 !island
 @Return the whisky to your dad
 #::
@@ -17272,7 +17209,7 @@ dialog{
   text = [[
 ##You need to find out if the Pirate
 ##Council knows where the Isle of Storms
-##is yet.
+##is. Hazel gave you a lead on a captain.
 @Speak with Morus
 !
 !He's a volunteer navyman who's usually
@@ -17292,8 +17229,6 @@ spike it
 !
 !Morus will meet you down at Fort Crow.
 @Find Captain Al-Jazari
-@Meet Morus at the port to sail to
-Snapmast Reef
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
@@ -17306,7 +17241,7 @@ dialog{
   text = [[
 ##You've found the location of the
 ##Pirate Council's hideout.
-@Meet Morus at Oakhaven Port
+@Sail to Snapmast Reef
 @Search for the Pirate Council's
 hideout
 @Find information on the Isle of Storms
@@ -17354,7 +17289,7 @@ matching brass lock, but where?
 @Explore the locked passage.
 @You activated... or awakened?
 Something?
-?All you know for sure is you
+@All you know for sure is you
 ?fought a big monster. What
 ?was it? Was it even real?
 #::
@@ -17375,7 +17310,7 @@ dialog{
 !after you found those 3. Is
 !there another grove like these?
 @Proceed through the ruins in the
-Grove of Mosses.
+Ancient Grove.
 
 ]],
 }
@@ -17428,7 +17363,7 @@ dialog{
 package
 !
 !They're hiding out at Oakhaven's
-!shipyard.
+!Port, west across the bridge.
 @Confront the pirates
 @Look around for the package
 #::
@@ -17448,8 +17383,8 @@ dialog{
 @Find the fishin' spot and destroy
 the monsters
 !
-!The fishing spot is just south of
-!Poplar Forest
+!The fishing spot is just East of
+!Goatshead Harbor.
 @ Return to the fisherman
 #::
 #REWARD: $ITEM{rupee.1}   80
@@ -17481,7 +17416,7 @@ dialog{
 !the monster is
 @!Arni was attacked recently, ask him
 !where
-@Search Badger Shoal
+@Search Lotus Shoal
 !
 !The monster was last seen near some
 !rocks by a cliff with two spruce trees
@@ -17524,8 +17459,8 @@ dialog{
 ##economic chaos.
 @Set a trap with Rilesdorf
 !
-!Rilesdorf's shop is by the pier and
-!blacksmith.
+!Rilesdorf's shop is by the market,
+!against the cliff.
 @Track the Phantom Squid!
 @Return to Eamon back at the Marchants'
 Guild
@@ -17588,10 +17523,10 @@ dialog{
   id = "quest.side.goatshead.poplar_shack_key",
   title = "Mossy Key",
   text = [[
-##You found a key laying in Poplar
-##Forest. Wonder where it goes?
+##You found a key laying in on the
+##ground. Wonder where it goes?
 @Find a locked door for the key you
-found in the woods
+found in the Forest of Tides
 ::
 %1!$i0    QUEST ITEM:
 %1!    $ITEM_NAME
@@ -17610,7 +17545,7 @@ dialog{
 @Meet the adventurers
 !
 !The entrance to the tunnels is near
-!the inn.
+!the tavern.
 @Defeat the big spider
 @Let the adventurers know the tunnels
 have been cleared
@@ -17696,10 +17631,10 @@ dialog{
 ##monster-realted supply chain issues.
 @!Check in with the shop in Oakhaven
 !City
-@Enter the saltpeter cave near Fort
-Crow
+@Enter the saltpeter cave
 !
-!Out the city's south gate, head east.
+!Out the city's south gate, head west
+!over the bridge, past the beach
 @Find and destroy the monster
 @Return to the bomb shop
 ::?
@@ -17777,7 +17712,7 @@ two giant oaks
 @Visit Ivystump $!and ask if anyone knows
 !about the Oaks
 !
-!Ivystump is on the western edge of
+!Ivystump is on the eastern edge of
 !Oakhaven, past the Veilwood Forest.
 @!?
 !
@@ -17885,8 +17820,8 @@ oranges to generate that many peels
 !Ask if they recall such a sale.
 @Take the shipment of oranges to Aubrey
 !
-!She lives across the river from the
-!market.
+!She lives in the southwest corner of
+!Oakhaven, a house with a green roof
 @!Go on in
 @Take the money back to the tic tac toe
 guy
@@ -17934,8 +17869,7 @@ dialog{
 ##likely unlocks a nearby door.
 @Find the locked door
 ?
-?It was a locked lighthouse in the
-?ruins.
+?You unlocked a bridge to a lighthouse
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
@@ -17990,7 +17924,7 @@ dialog{
 @Defeat the monsters at the mushroom
 picking spot
 !
-!The spot is east of the Puzzlewood
+!The spot is in the Puzzlewood
 @?Found a letter identifying Michael as
 ?the culprit behind the monsters
 !
@@ -18003,8 +17937,7 @@ picking spot
 Michael
 @Confront Michael the Mighty Mead Maker
 !
-!His meadery is just north of Ballast
-!Harbor.
+!His meadery is just in Tern Marsh
 @Return to Briarwood
 #::
 #!REWARD: $ITEM{rupee.1}   65 --// visible all phases but hidden once quest is complete
@@ -18022,7 +17955,7 @@ dialog{
 @Tell the pirates to piss off
 !
 !They'll meet you at Seaweed Rock,
-!west of Tern Marsh
+!in west Tern Marsh
 @!?
 !
 !What!? It's a trap!?
@@ -18034,8 +17967,8 @@ dialog{
 them not to mess with Yarrowmouth.
 Or you.
 !
-!If you go southeast of Tern Marsh and
-!east after you pass the meadery, you
+!If you go west of Tern Marsh to
+!Stonefell Crossroads, you
 !can find their hideout.
 @Let Nina know you defeated the pirate
 crew

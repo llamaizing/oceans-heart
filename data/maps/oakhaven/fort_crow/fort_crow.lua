@@ -229,7 +229,7 @@ function chart_npc:on_interaction()
         game:set_value("morus_available", false)
         game:set_value("morus_at_port", true)
         if answer == 2 then --right to port
-          hero:teleport("oakhaven/port", "morus_landing", "fade")
+          hero:teleport("oakhaven/port", "fast_travel_destination", "fade")
         else
           game:start_dialog("_oakhaven.npcs.morus.fort.9", function()
             hero:teleport("oakhaven/eastoak", "from_fort_crow_front_door", "fade")

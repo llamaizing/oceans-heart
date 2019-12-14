@@ -23052,19 +23052,10 @@ tile{
 tile{
   layer = 0,
   x = 320,
-  y = 112,
+  y = 120,
   width = 16,
   height = 16,
   pattern = "925",
-}
-
-tile{
-  layer = 0,
-  x = 320,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "103",
 }
 
 tile{
@@ -37148,7 +37139,7 @@ npc{
 npc{
   layer = 0,
   x = 328,
-  y = 125,
+  y = 133,
   direction = 3,
   subtype = 1,
   behavior = "dialog#_yarrowmouth.observations.mushroom_spot.3",
@@ -43725,6 +43716,15 @@ tile{
   width = 8,
   height = 8,
   pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "103",
 }
 
 npc{
