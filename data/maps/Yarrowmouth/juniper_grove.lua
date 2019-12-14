@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("talked_to_jerah_in_the_grove") == true then jerah:set_enabled(false) end
 
   if game:get_value("juniper_grove_fiend") == nil then
@@ -20,7 +20,7 @@ function map:on_started()
     end
   end
 
-end
+end)
 
 --[[
 function leftkeysensor:on_activated()
