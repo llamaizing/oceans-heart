@@ -20,6 +20,8 @@ item:register_event("on_using", function(self)
     sol.audio.play_sound("uncorking_and_drinking_1")
     game.take_half_damage = true
     sol.timer.start(game, 240000, function() --240000 is 4 minutes, 300000 is 5
+      sol.audio.play_sound"status_deactivated"
+      require("scripts/hud/message"):show_message("Potion effect expired", 2800)
       game.take_half_damage = false
     end)
   end

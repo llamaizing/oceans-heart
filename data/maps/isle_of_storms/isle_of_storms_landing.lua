@@ -138,6 +138,15 @@ function map:blackbeard_return_scene_2()
   end)
 end
 
+function save_sensor:on_activated()
+  game:start_dialog("_palace_of_storms.observations.final_battle_save", function(answer)
+    if answer == 3 then
+      game:save()
+      sol.audio.play_sound("elixer_upgrade")
+    end
+  end)
+end
+
 
 ---Teleport Down to Ruins
 function rune_sensor:on_activated()

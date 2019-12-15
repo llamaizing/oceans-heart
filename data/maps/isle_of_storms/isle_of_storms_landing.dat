@@ -11968,6 +11968,15 @@ npc{
   sprite = "npc/lily/lily_standing",
 }
 
+sensor{
+  name = "save_sensor",
+  layer = 0,
+  x = 1032,
+  y = 493,
+  width = 32,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 576,

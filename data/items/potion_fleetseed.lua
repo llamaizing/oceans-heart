@@ -21,6 +21,8 @@ item:register_event("on_using", function(self)
     game:get_hero():set_walking_speed(150)
     sol.timer.start(game, 30000, function() --240000 is 4 minutes, 300000 is 5
       game:get_hero():set_walking_speed(98)
+      sol.audio.play_sound"status_deactivated"
+      require("scripts/hud/message"):show_message("Potion effect expired", 2800)
     end)
   end
   item:set_finished()

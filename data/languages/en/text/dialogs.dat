@@ -13375,6 +13375,16 @@ arches will accept your offering.
 }
 
 dialog{
+  id = "_palace_of_storms.observations.final_battle_save",
+  text = [[
+(This is the final battle. You won't be able
+to save after this. Save your game?)
+$?Yes
+$?No
+]],
+}
+
+dialog{
   id = "_palace_of_storms.observations.smash_heart",
   text = [[
 TILIA:
