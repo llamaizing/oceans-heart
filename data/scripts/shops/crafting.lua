@@ -131,6 +131,10 @@ function crafting_menu:update_ingredients()
       font="white_digits",
       text = game:get_item(ingredients[i][1]):get_amount() .. "/" .. ingredients[i][2]
     }
+    -- grey out number if insufficient
+    if game:get_item(ingredients[i][1]):get_amount() < ingredients[i][2] then
+      qty_surface:set_color_modulation{100,100,100}
+    end
     qty_surface:draw(self.ingredients_surface, locations[i].x - 4, locations[i].y + 6)
   end
 end
