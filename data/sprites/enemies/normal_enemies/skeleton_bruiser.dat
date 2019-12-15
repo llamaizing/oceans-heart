@@ -1,6 +1,6 @@
 animation{
   name = "walking",
-  src_image = "enemies/bosses/skeleton_bruiser.png",
+  src_image = "enemies/normal_enemies/skeleton_bruiser.png",
   frame_delay = 140,
   frame_to_loop_on = 0,
   directions = {
@@ -12,7 +12,7 @@ animation{
 }
 animation{
   name = "attack",
-  src_image = "enemies/bosses/skeleton_bruiser.png",
+  src_image = "enemies/normal_enemies/skeleton_bruiser.png",
   frame_delay = 80,
   directions = {
     { x = 256, y = 8, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37, num_frames = 7 },
@@ -23,7 +23,7 @@ animation{
 }
 animation{
   name = "hurt",
-  src_image = "enemies/bosses/skeleton_bruiser.png",
+  src_image = "enemies/normal_enemies/skeleton_bruiser.png",
   frame_delay = 90,
   frame_to_loop_on = 0,
   directions = {
@@ -35,7 +35,7 @@ animation{
 }
 animation{
   name = "immobilized",
-  src_image = "enemies/bosses/skeleton_bruiser.png",
+  src_image = "enemies/normal_enemies/skeleton_bruiser.png",
   directions = {
     { x = 0, y = 8, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },
     { x = 0, y = 56, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },
@@ -45,7 +45,7 @@ animation{
 }
 animation{
   name = "shaking",
-  src_image = "enemies/bosses/skeleton_bruiser.png",
+  src_image = "enemies/normal_enemies/skeleton_bruiser.png",
   frame_delay = 180,
   frame_to_loop_on = 0,
   directions = {
@@ -57,7 +57,7 @@ animation{
 }
 animation{
   name = "shooting",
-  src_image = "enemies/bosses/skeleton_bruiser.png",
+  src_image = "enemies/normal_enemies/skeleton_bruiser.png",
   frame_delay = 80,
   directions = {
     { x = 256, y = 8, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37, num_frames = 7 },
@@ -68,7 +68,7 @@ animation{
 }
 animation{
   name = "wind_up",
-  src_image = "enemies/bosses/skeleton_bruiser.png",
+  src_image = "enemies/normal_enemies/skeleton_bruiser.png",
   directions = {
     { x = 256, y = 8, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },
     { x = 256, y = 56, frame_width = 32, frame_height = 40, origin_x = 16, origin_y = 37 },

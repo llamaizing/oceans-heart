@@ -30,7 +30,7 @@ item:register_event("on_obtained", function(self)
   bow_damage = game:get_value("bow_damage")
   bow_damage = bow_damage + 1
   game:set_value("bow_damage", bow_damage)
-  game:set_value("quest_bomb_arrows", 4) --quest log
+  game:set_value("quest_bomb_arrows", 5) --quest log
 end)
 
 

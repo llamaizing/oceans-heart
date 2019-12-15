@@ -7227,6 +7227,137 @@ I mean, to destroying it. Uh.
 }
 
 dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.quest1",
+  text = [[
+INTERN:
+Hey, oh, hi, it's you! Good job, with that
+monster? You beat it. Which is cool.
+OH! HEY! Is that, I'm sorry, those plans
+INTERN:
+you have? Those blueprints? Those are
+designs for, it looks like bomb arrows?
+
+TILIA:
+Oh, these? Yeah, I found them in a pirate
+fort. Can you make bomb arrows with this?
+
+INTERN:
+Well, I studied... bombs. In school? Not in
+school, that'd be wild if that was a class.
+Uh, in my free time... I mean, yes! I can!
+INTERN:
+It looks like I just need a couple things.
+Two things. Some tungsten, it's this metal,
+it won't melt, uh, that doesn't matter...
+TILIA:
+That's great, where can I find tungsten?
+
+
+INTERN:
+There's actually a cave, in the straight
+between Oakhaven and Yarrowmouth. It's
+called the Straight of Throns. Because of
+INTERN:
+the rocks, but there's a cave there. Then
+you'd have to take the tungsten to this
+guy Rusty, and he'll be like, oh, you have
+INTERN:
+tungsten, you're legit, take this machine
+part, oooh. I mean, he said he'd give me
+the machine part if I could prove I'd use it.
+TILIA:
+Okay, bring the tungsten to Rusty. Where
+does he live?
+
+INTERN:
+You can probably find him at the secret
+underground bar at the port. Did you know
+there's an underground bar? It's, you have
+INTERN:
+to go behind a merchant's stall, behind
+some pots? It's really secret. Rusty is
+usually there.
+TILIA:
+If you can build me bomb arrows, I can do
+this. Go get some tungsten from the cave,
+go find Rusty. Got it.
+INTERN:
+Woah, this will be really cool. These
+arrows will be, oh boy, really dangerous.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.quest2",
+  text = [[
+INTERN:
+Oh, so for the bomb arrows, you've gotta
+go get tungsten. It's this metal that won't
+melt. I know you can find ingots in this
+INTERN:
+cave in the straight between Yarrowmouth
+and Oakhaven. You can get there from
+Stonefell Crossroads.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.quest3",
+  text = [[
+INTERN:
+Oh, you got it! The tungsten! For the bomb
+arrows. That's great. If you take that to
+Rusty, down at the secret bar, he'll give
+INTERN:
+you the machine part I need. The bar is at
+the port, behind some pots. It's a secret
+bar. I'm not sure why?
+TILIA:
+Why won't Rusty just give you the machine
+thing?
+
+INTERN:
+Well, I'm only an intern. It's maybe sort
+of like a... hero's journey thing? I have
+to prove myself?
+TILIA:
+By... by me going and getting a lump of
+ore for you?
+
+INTERN:
+I don't know, I work with a lot of weird
+people! It makes me nervous!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.quest4",
+  text = [[
+INTERN:
+Oh, you did it! You got the tungsten ore and
+the machine part! This is exactly what I
+need to make the arrows this design shows.
+INTERN:
+Give me just a sec, and I'll make this
+happen!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.shop_dialog",
+  text = [[
+INTERN:
+Hey, it's you! You've really helped us out.
+With the whole monster, at the, the one at
+the mines. We needed that stuff. The
+INTERN
+saltpeter, not the monster. We didn't need
+the monster. Oh, obviously you knew that.
+Otherwise, you, I mean, well. Uh. Hi.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.bomb_shop.owner.1",
   text = [[
 THE BOMB MAKER:
@@ -17499,19 +17630,29 @@ other room, I guess?
 
 dialog{
   id = "quest.side.bomb_arrows",
-  title = "Thyme's Receipt",
+  title = "Thyme's Bombs",
   text = [[
-##You found a receipt to pick up an
-##order from the bomb shop.
-@Check the bomb shop $!in Oakhaven, where
-!it seems the receipt was issued
-@Track down the pirates who stole the
-package
-!
-!They're hiding out at Oakhaven's
-!Port, west across the bridge.
-@Confront the pirates
-@Look around for the package
+##You found some plans for explosive
+##arrows at Hourglass Fort
+@Find someone who can build these
+@Find some tungsten for the intern
+!He says there's a cave in the
+!Straight of Thorns, between
+!Oakhaven and Yarrowmouth. You
+!can get ther from Stonefell
+!Crossroads
+@Collect a machine part from
+Rusty in the Port Underground
+!Behind a merchant's stall at
+!Oakhaven Port is a secret door
+!to the underground
+@Get the machine part from the
+pirates that stole it
+!They're in a building across
+!the bridge on the west side
+!of the port
+@Return to the intern at the
+Bomb Shop
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME

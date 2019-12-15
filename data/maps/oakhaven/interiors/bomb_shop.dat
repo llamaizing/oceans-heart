@@ -1353,6 +1353,17 @@ destructible{
   can_be_cut = true,
 }
 
+npc{
+  name = "intern",
+  layer = 0,
+  x = 264,
+  y = 125,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_1.1",
+}
+
 tile{
   layer = 1,
   x = 256,
@@ -1481,7 +1492,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 256,
+  x = 248,
   y = 80,
   width = 16,
   height = 16,

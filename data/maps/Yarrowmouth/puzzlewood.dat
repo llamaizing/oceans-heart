@@ -56541,6 +56541,55 @@ tile{
   pattern = "1052",
 }
 
+tile{
+  layer = 0,
+  x = 0,
+  y = 1440,
+  width = 16,
+  height = 192,
+  pattern = "1",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1424,
+  width = 16,
+  height = 16,
+  pattern = "80",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1632,
+  width = 16,
+  height = 16,
+  pattern = "89",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1648,
+  width = 16,
+  height = 32,
+  pattern = "136",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 1264,
+  width = 16,
+  height = 160,
+  pattern = "206",
+}
+
 sensor{
   name = "^layer_up_sensor",
   layer = 0,

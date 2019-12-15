@@ -504,6 +504,7 @@ sprite{ id = "enemies/normal_enemies/shooty_fish", description = "Shooty Fish" }
 sprite{ id = "enemies/normal_enemies/skeleton_1", description = "Skeleton 1" }
 sprite{ id = "enemies/normal_enemies/skeleton_2", description = "Skeleton 2" }
 sprite{ id = "enemies/normal_enemies/skeleton_3", description = "Skeleton3-Armor" }
+sprite{ id = "enemies/normal_enemies/skeleton_bruiser", description = "enemies/normal_enemies/skeleton_bruiser" }
 sprite{ id = "enemies/normal_enemies/skeleton_summoner", description = "Skeleton Summoner" }
 sprite{ id = "enemies/normal_enemies/snail", description = "snail" }
 sprite{ id = "enemies/normal_enemies/spitrock_small", description = "Spitrock - Small" }
