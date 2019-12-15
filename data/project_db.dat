@@ -295,6 +295,7 @@ map{ id = "stonefell_crossroads/caves/ballast_cave", description = "BallastCave"
 map{ id = "stonefell_crossroads/caves/fort_crow_coral_cave", description = "Fort Crow Coral Cave" }
 map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }
 map{ id = "stonefell_crossroads/caves/sycamore_bombcave", description = "Sycamore Bombcave" }
+map{ id = "stonefell_crossroads/caves/yarrow_chart_cave", description = "YarrowChartCave" }
 map{ id = "stonefell_crossroads/crow_road", description = "Crow Road" }
 map{ id = "stonefell_crossroads/forest_of_tides", description = "Forest of Tides" }
 map{ id = "stonefell_crossroads/fort_crow", description = "Fort Crow" }

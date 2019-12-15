@@ -1855,6 +1855,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/woman/woman_17.3",
+  behavior = "dialog#_yarrowmouth.npcs.town_people.9",
 }
 
 tile{
