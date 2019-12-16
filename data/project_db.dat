@@ -208,6 +208,7 @@ map{ id = "oakhaven/caves/port_bush_hole", description = "Port Bush Hole" }
 map{ id = "oakhaven/caves/port_bush_hole_2", description = "Port Bush Hole 2" }
 map{ id = "oakhaven/caves/saltpeter_mines", description = "Saltpeter Mine" }
 map{ id = "oakhaven/caves/seabird_shrine_marblecliff", description = "Seabird Shrine Marblecliff" }
+map{ id = "oakhaven/caves/tungsten_cave", description = "Tungsten Cave" }
 map{ id = "oakhaven/caves/umber_lake", description = "Lake Umber" }
 map{ id = "oakhaven/caves/veilwood_health_upgrade_tunnel", description = "Veilwood Health Upgrade Tunnel" }
 map{ id = "oakhaven/caves/westoak_shrine", description = "Westoak Shrine" }
@@ -1621,6 +1622,7 @@ item{ id = "key_to_oakhaven", description = "Key to Oakhaven" }
 item{ id = "kingscrown", description = "Kingscrown Flowers" }
 item{ id = "lavendar", description = "Lavendar-1,5,10" }
 item{ id = "leaf_tornado", description = "Leaf Tornado" }
+item{ id = "machine_part", description = "Machine Part" }
 item{ id = "mandrake", description = "Mandrake-1,5,10" }
 item{ id = "mandrake_white", description = "white mandrake-1,3,5" }
 item{ id = "manna_oak_letter", description = "manna_oak_letter" }
@@ -1661,6 +1663,7 @@ item{ id = "tacklebox", description = "Tacklebox" }
 item{ id = "thunder_charm", description = "Thunder Charm" }
 item{ id = "tidal_starfruit", description = "Tidy Starnut" }
 item{ id = "tornado_dash", description = "Tornado Dash" }
+item{ id = "tungsten_ore", description = "Tungsten Ore" }
 item{ id = "unattainable_collectable", description = "placeholder for menu design" }
 item{ id = "violets", description = "violets-1,5,10" }
 item{ id = "watering_can", description = "watering can" }

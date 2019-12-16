@@ -813,6 +813,13 @@ animation{
   },
 }
 animation{
+  name = "machine_part",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 336, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "mandrake",
   src_image = "entities/items.png",
   directions = {
@@ -931,7 +938,7 @@ animation{
   name = "oranges_shipment",
   src_image = "entities/items.png",
   directions = {
-    { x = 272, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 432, y = 56, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
   },
 }
 animation{
@@ -1106,6 +1113,13 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 336, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "tungsten_ore",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 352, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{

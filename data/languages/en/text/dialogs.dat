@@ -7254,9 +7254,9 @@ That's great, where can I find tungsten?
 
 
 INTERN:
-There's actually a cave, in the straight
+There's actually a cave, in the strait
 between Oakhaven and Yarrowmouth. It's
-called the Straight of Throns. Because of
+called the Strait of Throns. Because of
 INTERN:
 the rocks, but there's a cave there. Then
 you'd have to take the tungsten to this
@@ -7295,7 +7295,7 @@ Oh, so for the bomb arrows, you've gotta
 go get tungsten. It's this metal that won't
 melt. I know you can find ingots in this
 INTERN:
-cave in the straight between Yarrowmouth
+cave in the strait between Yarrowmouth
 and Oakhaven. You can get there from
 Stonefell Crossroads.
 ]],
@@ -7340,6 +7340,20 @@ need to make the arrows this design shows.
 INTERN:
 Give me just a sec, and I'll make this
 happen!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.quest_already_tungsten",
+  text = [[
+TILIA:
+Oh, wait a second, I was actually
+already in that cave and found some
+tungsten ore. It's this stuff?
+INTERN:
+Oh, howdy! Yeah, that's tungsten ore, I'll
+need that. But go show it to Rusty down at
+the secret bar!
 ]],
 }
 
@@ -12044,6 +12058,58 @@ forms about imports and exports.
 }
 
 dialog{
+  id = "_oakhaven.npcs.port.rusty",
+  text = [[
+RUSTY:
+I'm actually a mechanist, I'm watching the
+fights to study how monsters move. I'm using
+that research to build machines for ships.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.rusty.1",
+  text = [[
+RUSTY:
+Hey, you need something?
+
+
+TILIA:
+Yeah, actually. I'm working with the intern
+at the bomb shop on a project, and he told
+me to bring you this tungsten ore, and
+TILIA:
+you'd be willing to hand over a machine
+part we need to build bomb arrows.
+
+RUSTY:
+Oh, you actually braved that cave to get
+tungsten ore? You're legit. Alright, so
+I'd gladly send the machine part up with
+RUSTY:
+you, but here's the thing, I was in a card
+game with some pirates, and they were betting
+high, and one thing lead to another...
+RUSTY:
+anyway, when things went bad for them they
+knocked me out and stole that machine part.
+I guess what I'm getting at is that if you
+RUSTY:
+want the machine part, you'll have to get
+it back from these pirates, I can't help
+you.
+TILIA:
+Alright, well where are these pirates?
+
+
+RUSTY:
+They're camped out in a building west of
+the port, across the bridge. It's up some
+stairs. Watch out, they're really into bombs.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.port.underground.1",
   text = [[
 I'm sure you've fought in plenty of
@@ -12519,8 +12585,8 @@ normal villager type people in here.
 Whatcha want?
 TILIA:
 Are you sure you guys aren't a bunch of
-pirates who stole something from the bomb
-shop?
+pirates who stole a machine part from a
+guy named Rusty?
 PERSON BEHIND DOOR:
 $1...$3Okay, yeah, we are. I'm gonna let
 you in so I can beat you up.
@@ -15159,6 +15225,15 @@ aid you in battle.
 }
 
 dialog{
+  id = "_treasure.machine_part.1",
+  text = [[
+You found the stolen machine part that the
+Bomb Shop's intern needs to make bomb
+arrows. Bring it back to him!
+]],
+}
+
+dialog{
   id = "_treasure.mandrake.1",
   text = [[
 You collected a mandrake root.
@@ -15577,6 +15652,15 @@ You received the Tornado Dash charm!
 Hold the button to start running in
 a single direction and smash into
 things.
+]],
+}
+
+dialog{
+  id = "_treasure.tungsten_ore.1",
+  text = [[
+You found a chunk of tungsten ore. This
+mineral is used by blacksmiths in certain
+high-heat situations.
 ]],
 }
 

@@ -47,7 +47,7 @@ map:register_event("on_started", function()
     see_litton_sensor:set_enabled(false)
   end
   if game:get_value("quest_mayors_dog") == 7 then running_litton:set_enabled(true) end
-  if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") >= 2 then
+  if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") >= 4 then
     gallery_door:set_enabled(false) 
     gallery_door_npc:set_enabled(false)
   end
@@ -170,11 +170,10 @@ end
 
 --Gallery for Bomb Arrows Quest
 function gallery_door_npc:on_interaction()
-  if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 1 then
+  if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 3 then
     game:start_dialog("_oakhaven.npcs.shipyard.gallery_door2", function()
       gallery_door:set_enabled(false)
       gallery_door_npc:set_enabled(false)
-      game:set_value("quest_bomb_arrows", 2)
     end)
   else
     game:start_dialog("_oakhaven.npcs.shipyard.gallery_door1")

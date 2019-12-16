@@ -9,6 +9,17 @@ map:register_event("on_started", function()
   sol.menu.start(map, lighting_effects)
 end)
 
+---Bomb Arrow Quest:
+function rusty:on_interaction()
+  if (game:get_value("quest_bomb_arrows") or 0) == 2 then
+    game:start_dialog("_oakhaven.npcs.port.rusty.1", function()
+      game:set_value("quest_bomb_arrows", 3)
+    end)
+  else
+    game:start_dialog"_oakhaven.npcs.port.rusty"
+  end
+end
+
 --Arena Fights----------------------------------------------------
 local random_potion_table = {"potion_burlyblade","potion_fleetseed","potion_stoneskin","elixer"}
 local random_consumable_table = {"ether_bombs_pickable","iron_candle_pickable","homing_eye_pickable","bomb"}

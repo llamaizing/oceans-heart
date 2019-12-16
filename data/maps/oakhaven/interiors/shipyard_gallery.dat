@@ -1426,8 +1426,8 @@ chest{
   layer = 0,
   x = 232,
   y = 77,
-  treasure_name = "bow_bombs",
-  treasure_savegame_variable = "bomb_arrows_chest",
+  treasure_name = "machine_part",
+  treasure_savegame_variable = "bomb_arrow_machine_part_chest",
   sprite = "entities/chest_big",
 }
 

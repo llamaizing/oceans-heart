@@ -7491,7 +7491,7 @@ tile{
 tile{
   layer = 0,
   x = 1200,
-  y = 688,
+  y = 680,
   width = 16,
   height = 16,
   pattern = "187",
@@ -13498,15 +13498,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "145",
-}
-
-tile{
-  layer = 0,
-  x = 1200,
-  y = 672,
-  width = 16,
-  height = 16,
-  pattern = "130",
 }
 
 tile{
@@ -24424,42 +24415,6 @@ tile{
   width = 8,
   height = 8,
   pattern = "501",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 720,
-  width = 16,
-  height = 16,
-  pattern = "1906",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 688,
-  width = 16,
-  height = 16,
-  pattern = "1904",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 736,
-  width = 16,
-  height = 16,
-  pattern = "1907",
-}
-
-tile{
-  layer = 0,
-  x = 1216,
-  y = 704,
-  width = 16,
-  height = 16,
-  pattern = "1905",
 }
 
 tile{
@@ -36900,6 +36855,213 @@ tile{
   pattern = "1879",
 }
 
+tile{
+  layer = 0,
+  x = 1232,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "88",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 688,
+  width = 112,
+  height = 16,
+  pattern = "1923",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "883",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "882",
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "881",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "885",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "880",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "884",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "883",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "882",
+}
+
+tile{
+  layer = 0,
+  x = 1264,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "881",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "885",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "880",
+}
+
+tile{
+  layer = 0,
+  x = 1296,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "884",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 720,
+  width = 64,
+  height = 32,
+  pattern = "1460",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "877",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "877",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 696,
+  width = 16,
+  height = 8,
+  pattern = "1929",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 744,
+  width = 16,
+  height = 16,
+  pattern = "1906",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 712,
+  width = 16,
+  height = 16,
+  pattern = "1904",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "1907",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 728,
+  width = 16,
+  height = 16,
+  pattern = "1905",
+}
+
+tile{
+  layer = 0,
+  x = 1200,
+  y = 656,
+  width = 16,
+  height = 16,
+  pattern = "130",
+}
+
 teletransporter{
   layer = 0,
   x = 152,
@@ -37699,22 +37861,6 @@ destructible{
   layer = 0,
   x = 760,
   y = 469,
-  sprite = "entities/bush_forest",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1208,
-  y = 701,
-  sprite = "entities/bush_forest",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 1208,
-  y = 717,
   sprite = "entities/bush_forest",
   can_be_cut = true,
 }
@@ -39231,6 +39377,24 @@ destructible{
   sprite = "entities/bush_arrowwood",
   weight = -1,
   can_be_cut = true,
+}
+
+destination{
+  name = "from_strait",
+  layer = 0,
+  x = 1256,
+  y = 701,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1264,
+  y = 688,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/lobb_trail",
+  destination = "from_veilwood",
 }
 
 tile{

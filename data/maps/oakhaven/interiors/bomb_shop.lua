@@ -63,7 +63,14 @@ function intern:on_interaction()
   --then, do bomb arrow quest if you have it:
   if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 0 then
     game:start_dialog("_oakhaven.npcs.bomb_shop.intern.quest1", function()
-      game:set_value("quest_bomb_arrows", 1)
+      --if you already found the tungsten:
+      if game:has_item("tungsten_ore") then
+        game:start_dialog("_oakhaven.npcs.bomb_shop.intern.quest_already_tungsten", function()
+          game:set_value("quest_bomb_arrows", 2)
+        end)
+      else
+        game:set_value("quest_bomb_arrows", 1)
+      end
       game:set_value("possession_bomb_arrow_ticket", nil)
     end)
   --get tungsten

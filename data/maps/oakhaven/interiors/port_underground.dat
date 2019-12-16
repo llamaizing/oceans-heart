@@ -3408,6 +3408,26 @@ tile{
   tileset = "indoors_stone",
 }
 
+tile{
+  layer = 0,
+  x = 128,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "485",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 248,
+  width = 16,
+  height = 8,
+  pattern = "486",
+  tileset = "indoors_stone",
+}
+
 door{
   name = "arena_wall_2",
   layer = 0,
@@ -3989,9 +4009,9 @@ npc{
 
 npc{
   layer = 0,
-  x = 152,
-  y = 261,
-  direction = 2,
+  x = 104,
+  y = 301,
+  direction = 3,
   subtype = 1,
   sprite = "npc/man/man_16.3",
   behavior = "dialog#_oakhaven.npcs.port.underground.3",
@@ -4075,6 +4095,16 @@ npc{
   subtype = 1,
   sprite = "npc/old_man_1.2",
   behavior = "dialog#_oakhaven.npcs.port.underground.11",
+}
+
+npc{
+  name = "rusty",
+  layer = 0,
+  x = 152,
+  y = 253,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/man/man_red_herring_2",
 }
 
 tile{
@@ -4254,6 +4284,16 @@ tile{
   width = 16,
   height = 16,
   pattern = "44",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 232,
+  width = 16,
+  height = 16,
+  pattern = "484",
   tileset = "indoors_stone",
 }
 
