@@ -23,6 +23,18 @@ animation{
   },
 }
 animation{
+  name = "hurt",
+  src_image = "enemies/ghost_smoke_large.png",
+  frame_delay = 120,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 77, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 77, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 77, num_frames = 6 },
+    { x = 0, y = 0, frame_width = 80, frame_height = 80, origin_x = 40, origin_y = 77, num_frames = 6 },
+  },
+}
+animation{
   name = "invisible",
   src_image = "enemies/ghost_smoke_large.png",
   directions = {

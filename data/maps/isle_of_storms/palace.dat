@@ -54388,22 +54388,11 @@ wall{
   stops_enemies = true,
 }
 
-dynamic_tile{
-  name = "boss_teleport_ref",
-  layer = 0,
-  x = 1032,
-  y = 2448,
-  width = 16,
-  height = 16,
-  pattern = "100",
-  tileset = "palace_of_storms",
-}
-
 enemy{
   name = "sea_king_boss",
   layer = 0,
   x = 1040,
-  y = 2493,
+  y = 2501,
   enabled_at_start = false,
   direction = 0,
   breed = "bosses/sea_king",
@@ -55245,19 +55234,11 @@ destination{
   direction = 1,
 }
 
-destination{
-  name = "boss_arena_center",
-  layer = 0,
-  x = 1040,
-  y = 2517,
-  direction = 3,
-}
-
 npc{
   name = "sneaky_blackbeard",
   layer = 0,
   x = 1040,
-  y = 2461,
+  y = 2485,
   enabled_at_start = false,
   direction = 3,
   subtype = 1,
@@ -55675,6 +55656,65 @@ destination{
   x = 1192,
   y = 3237,
   direction = 1,
+}
+
+dynamic_tile{
+  name = "boss_teleport_ref_3",
+  layer = 0,
+  x = 896,
+  y = 2464,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "boss_teleport_ref_4",
+  layer = 0,
+  x = 1176,
+  y = 2464,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "palace_of_storms",
+}
+
+dynamic_tile{
+  name = "boss_teleport_ref_5",
+  layer = 0,
+  x = 1136,
+  y = 2560,
+  width = 16,
+  height = 16,
+  pattern = "33",
+  tileset = "palace_of_storms",
+}
+
+sensor{
+  name = "boss_teleport_ref_2",
+  layer = 0,
+  x = 952,
+  y = 2565,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "boss_teleport_ref",
+  layer = 0,
+  x = 1040,
+  y = 2517,
+  width = 16,
+  height = 16,
+}
+
+destination{
+  name = "boss_arena_center",
+  layer = 0,
+  x = 1040,
+  y = 2517,
+  direction = 3,
 }
 
 tile{
