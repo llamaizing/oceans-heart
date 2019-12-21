@@ -269,6 +269,13 @@ animation{
   },
 }
 animation{
+  name = "crow_feather",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 432, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "crystal_spark",
   src_image = "entities/items.png",
   directions = {

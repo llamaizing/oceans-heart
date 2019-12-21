@@ -70,7 +70,7 @@ item:register_event("on_using", function(self)
           direction = 0,
           layer = layer,
           x = x + dx[i-9],
-          y = y + dy[i-9],
+          y = y + dy[i-9] + 16,
           width = 16,
           height = 16,
           sprite = "enemies/bosses/abyss_beast_teleport_flash",

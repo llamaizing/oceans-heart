@@ -312,6 +312,13 @@ side{
 }
 
 side{
+    dialog_id = "quest.side.crow_lord",
+    calc_phase = "quest_crow_lord",
+    location = "location.lotus_shoal",
+		items = {"crow_feather.1"},
+}
+
+side{
     dialog_id = "quest.side.crabhook.dusit",
     calc_phase = "quest_dusit",
     location = "location.crabhook_village"

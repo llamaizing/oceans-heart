@@ -3710,15 +3710,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "1934",
-}
-
-tile{
-  layer = 0,
   x = 176,
   y = 512,
   width = 16,
@@ -3773,8 +3764,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 112,
-  y = 400,
+  x = 168,
+  y = 472,
   width = 16,
   height = 16,
   pattern = "1932",
@@ -24624,6 +24615,113 @@ tile{
   pattern = "1859",
 }
 
+tile{
+  layer = 0,
+  x = 2088,
+  y = 592,
+  width = 32,
+  height = 16,
+  pattern = "1752",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2096,
+  y = 592,
+  width = 16,
+  height = 16,
+  pattern = "2546",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2088,
+  y = 568,
+  width = 32,
+  height = 24,
+  pattern = "1808",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 2096,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "2547",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 328,
+  width = 64,
+  height = 48,
+  pattern = "1877",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 384,
+  width = 32,
+  height = 16,
+  pattern = "1752",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 360,
+  width = 32,
+  height = 24,
+  pattern = "1808",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "1934",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 376,
+  width = 32,
+  height = 32,
+  pattern = "1951",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 384,
+  width = 16,
+  height = 16,
+  pattern = "2546",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 368,
+  width = 16,
+  height = 16,
+  pattern = "2547",
+  tileset = "overworld_oakhaven",
+}
+
 wall{
   layer = 0,
   x = 400,
@@ -25063,21 +25161,11 @@ enemy{
   breed = "normal_enemies/kappa",
 }
 
-chest{
-  layer = 0,
-  x = 144,
-  y = 397,
-  treasure_name = "homing_eye_pickable",
-  treasure_variant = 3,
-  treasure_savegame_variable = "sinking_palace_20_crowns_chest_west_edge",
-  sprite = "entities/chest",
-}
-
 destructible{
   name = "philodendron_bush_24",
   layer = 0,
-  x = 152,
-  y = 453,
+  x = 160,
+  y = 461,
   sprite = "entities/bush_philodendron",
   weight = -1,
   can_be_cut = true,
@@ -25087,7 +25175,7 @@ destructible{
   name = "philodendron_bush_25",
   layer = 0,
   x = 128,
-  y = 437,
+  y = 453,
   sprite = "entities/bush_philodendron",
   weight = -1,
   can_be_cut = true,
@@ -25522,6 +25610,24 @@ sensor{
   y = 941,
   width = 32,
   height = 16,
+}
+
+destructible{
+  name = "philodendron_bush_33",
+  layer = 0,
+  x = 144,
+  y = 469,
+  sprite = "entities/bush_philodendron",
+  weight = -1,
+  can_be_cut = true,
+}
+
+pickable{
+  layer = 0,
+  x = 136,
+  y = 421,
+  treasure_name = "crow_feather",
+  treasure_savegame_variable = "sunken_palace_crow_feather",
 }
 
 tile{
@@ -30125,15 +30231,6 @@ tile{
   width = 24,
   height = 16,
   pattern = "2184",
-}
-
-tile{
-  layer = 1,
-  x = 152,
-  y = 408,
-  width = 16,
-  height = 32,
-  pattern = "2179",
 }
 
 tile{

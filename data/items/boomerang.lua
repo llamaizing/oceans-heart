@@ -66,6 +66,24 @@ function item:do_boomerang(distance, speed, hero_animation, boom_sprite)
       return true
     end
   end)
+
+  if self:get_variant() >= 1 then
+    sol.timer.start(map, 160, function()
+      if map:has_entities("hero_thrown_boomerang") then
+        local x,y,z = boomerang:get_position()
+        local feather = map:create_custom_entity{
+          x=x, y=y, layer=z, direction=0, width=16, height=16,
+          model = "damaging_sparkle", sprite = "enemies/crow_feather"
+        }
+        local m = sol.movement.create("straight")
+        angle = 3* math.pi /2 + (math.random(-.3,.3))
+        m:start(feather)
+        sol.timer.start(map, 1000, function() feather:remove() end)
+        return true
+      end
+    end)
+  end
+
 end
 
 --come back!

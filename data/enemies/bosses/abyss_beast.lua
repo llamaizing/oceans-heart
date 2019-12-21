@@ -42,8 +42,8 @@ function enemy:on_created()
   enemy:set_invincible_sprite(smoke_sprite) --]]
   faces_sprite = enemy:create_sprite("enemies/bosses/abyss_beast_faces")
 
-  enemy:set_life(300)
-  enemy:set_damage(25)
+  enemy:set_life(400)
+  enemy:set_damage(30)
   enemy:set_pushed_back_when_hurt(false)
   enemy:set_hurt_style("boss")
 end

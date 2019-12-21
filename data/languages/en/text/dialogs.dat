@@ -13516,7 +13516,7 @@ dialog{
   id = "_palace_of_storms.cutscenes.sea_king.1",
   text = [[
 $2
-          ...
+                  ...
 
 
           Would you seek my curse?
@@ -13568,6 +13568,20 @@ There's a message inscribed on the stone.
 He who would visit the Spring Memorial must
 prove both marksmanship and faith. The
 arches will accept your offering.
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.observations.abyss_reaction",
+  text = [[
+        Ah, so you've seen the
+    source of the darkness, the abyss
+      at the center of the world...
+
+   I've not been made this way only by
+    the Ocean. The abyss corrupts,
+     and it will not be cleansed.
+
 ]],
 }
 
@@ -13965,6 +13979,16 @@ places too.
 }
 
 dialog{
+  id = "_sycamore_ferry.other.crow_lord_challenge",
+  text = [[
+It's the same statue as the one where you
+found the crow feather. Offer the feather?
+$?Yes
+$?No
+]],
+}
+
+dialog{
   id = "_sycamore_ferry.signs.forest_of_tides",
   text = [[
 West - Goatshead
@@ -14336,9 +14360,10 @@ how to throw it so it always comes back.
 dialog{
   id = "_treasure.boomerang.2",
   text = [[
-You found a really well-made boomerang.
-This one can be thrown harder, better, faster,
-and stronger.
+You found the Crowfeather Boomerang. This
+one can go further and quicker, and leaves
+a trail of sharp crow feathers in its wake
+that will damage enemies.
 ]],
 }
 
@@ -14500,6 +14525,16 @@ dialog{
 You found some Coral Ore. Using this rare
 material, blacksmiths can strengthen your
 equipment.
+]],
+}
+
+dialog{
+  id = "_treasure.crow_feather.1",
+  text = [[
+You found a Crow Feather. While you aren't
+sure why you're taking it, you can feel the
+statue you're standing in front of staring
+into the back of your head.
 ]],
 }
 
@@ -17813,6 +17848,19 @@ dialog{
 }
 
 dialog{
+  id = "quest.side.crow_lord",
+  title = "The Crow Feather",
+  text = [[
+##You found a crow feather sitting
+##in front of a winged statue
+@Figure out what to do with the feather
+?You summoned the Crow Lord for a duel
+::?
+?REWARD: $ITEM{boomerang.2}   Crowfeather Boomerang
+]],
+}
+
+dialog{
   id = "quest.side.ferris_tools",
   title = "Black Market Tools",
   text = [[
@@ -18244,7 +18292,7 @@ You let Aubrey keep the prize money.
 
 dialog{
   id = "quest.side.oakhaven.sinking_lighthouse",
-  title = "Seaglint Ruins Key",
+  title = "Sinking Ruins Key",
   text = [[
 ##You found a key in a sinking ruins. It
 ##likely unlocks a nearby door.

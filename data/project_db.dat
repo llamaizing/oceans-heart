@@ -298,6 +298,7 @@ map{ id = "stonefell_crossroads/caves/fort_crow_coral_cave", description = "Fort
 map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }
 map{ id = "stonefell_crossroads/caves/sycamore_bombcave", description = "Sycamore Bombcave" }
 map{ id = "stonefell_crossroads/caves/yarrow_chart_cave", description = "YarrowChartCave" }
+map{ id = "stonefell_crossroads/crow_arena", description = "Crow Arena" }
 map{ id = "stonefell_crossroads/crow_road", description = "Crow Road" }
 map{ id = "stonefell_crossroads/forest_of_tides", description = "Forest of Tides" }
 map{ id = "stonefell_crossroads/fort_crow", description = "Fort Crow" }
@@ -360,6 +361,7 @@ sprite{ id = "enemies/bosses/burrow_crab_2", description = "Burrow Crab 2" }
 sprite{ id = "enemies/bosses/centipede_king", description = "Centipede King" }
 sprite{ id = "enemies/bosses/centipede_king_legs", description = "CentiKing Legs" }
 sprite{ id = "enemies/bosses/charging_pirate_1", description = "Charging Pirate 1" }
+sprite{ id = "enemies/bosses/crow_lord", description = "Crow Lord" }
 sprite{ id = "enemies/bosses/crow_mech", description = "Crow Mech" }
 sprite{ id = "enemies/bosses/fiend_1", description = "Fiend 1" }
 sprite{ id = "enemies/bosses/forest_revenant", description = "Forest Revenant" }
@@ -377,6 +379,7 @@ sprite{ id = "enemies/bosses/sea_king", description = "Sea King" }
 sprite{ id = "enemies/bosses/skeleton_lord", description = "Skeleton Lord" }
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
 sprite{ id = "enemies/bosses/zephyrine", description = "Zeyphyrine" }
+sprite{ id = "enemies/crow_feather", description = "Crow Feather" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/enemy_killed_ko", description = "EnemyKilled-KO" }
 sprite{ id = "enemies/enemy_killed_projectile", description = "Enemy Killed-Projectile" }
@@ -1562,6 +1565,7 @@ item{ id = "chamomile", description = "Chamomile-1,5,10" }
 item{ id = "charts", description = "Charts (for Kelpton)" }
 item{ id = "contract", description = "contract" }
 item{ id = "coral_ore", description = "Coral Ore" }
+item{ id = "crow_feather" }
 item{ id = "crystal_spark", description = "Crystal Spark - Ophira's Ember" }
 item{ id = "cyclone_charm", description = "Cyclone Charm" }
 item{ id = "dandelion_charm", description = "Dandelion Charm" }
@@ -1690,6 +1694,7 @@ enemy{ id = "bosses/burrow_crab_2", description = "Burrow Crab 2" }
 enemy{ id = "bosses/centipede_king", description = "Centipede Boss" }
 enemy{ id = "bosses/centipede_king_legs", description = "CentipedeKingLegs" }
 enemy{ id = "bosses/charging_pirate_1", description = "Charging Pirate 1" }
+enemy{ id = "bosses/crow_lord", description = "Crow Lord" }
 enemy{ id = "bosses/crow_mech", description = "Crow Mech" }
 enemy{ id = "bosses/fiend_1", description = "Fiend 1" }
 enemy{ id = "bosses/forest_revenant", description = "Forest Revenant" }
