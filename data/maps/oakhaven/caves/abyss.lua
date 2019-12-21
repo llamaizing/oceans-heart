@@ -22,7 +22,7 @@ map:register_event("on_started", function()
 
   if game:get_value("oakhaven_palace_rune_activated") then
     glowing_rune:set_enabled(true)
-    rune_sensor:set_enabled(true)
+    rune_enabler:set_enabled(true)
   end
 
 --particle effect creation
@@ -50,10 +50,16 @@ function map_banner_activator:on_activated()
   map_banner_activator:set_enabled(false)
 end
 
+function rune_enabler:on_activated()
+  rune_sensor:set_enabled()
+end
+
 function rune_sensor:on_activated()
-  game:start_dialog("_oakhaven.observations.abyss.draw_in")
+  game:start_dialog("_oakhaven.observations.abyss.draw_in", function()
+    hero:teleport("oakhaven/caves/abyss_arena", "from_above")
+  end)
   --after beating the boss:
-  game:set_value("quest_abyss", 3)
+  --game:set_value("quest_abyss", 3)
 end
 
 

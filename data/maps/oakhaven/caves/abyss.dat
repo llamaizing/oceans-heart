@@ -9322,6 +9322,24 @@ enemy{
   breed = "normal_enemies/pollutant_blob",
 }
 
+destination{
+  name = "from_abyss_arena",
+  layer = 0,
+  x = 1344,
+  y = 789,
+  direction = 1,
+}
+
+sensor{
+  name = "rune_enabler",
+  layer = 0,
+  x = 1400,
+  y = 773,
+  enabled_at_start = false,
+  width = 16,
+  height = 48,
+}
+
 tile{
   layer = 1,
   x = 264,

@@ -192,6 +192,7 @@ map{ id = "new_limestone/tavern_upstairs", description = "Tavern Upstairs" }
 map{ id = "new_limestone/tim", description = "Tim" }
 map{ id = "new_limestone/transition", description = "transition" }
 map{ id = "oakhaven/caves/abyss", description = "Abyss" }
+map{ id = "oakhaven/caves/abyss_arena", description = "Abyss Arena" }
 map{ id = "oakhaven/caves/amalenchier_tomb", description = "Amalenchier's Tomb" }
 map{ id = "oakhaven/caves/ancient_grove", description = "Ancient Grove" }
 map{ id = "oakhaven/caves/beach_cave", description = "Beach Cave" }
