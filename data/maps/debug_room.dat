@@ -5939,6 +5939,13 @@ npc{
   sprite = "npc/lily/lily_standing",
 }
 
+pickable{
+  layer = 0,
+  x = 536,
+  y = 125,
+  treasure_name = "abyssal_flame",
+}
+
 tile{
   layer = 1,
   x = 192,

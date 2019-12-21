@@ -14025,6 +14025,16 @@ East - Goatshead Harbor, Forest of Tides
 }
 
 dialog{
+  id = "_treasure.abyssal_flame.1",
+  text = [[
+You received the Abyssal Flame. This spell
+summons dark energy from the abyss at the
+center of the earth. It will consume most
+of your magic power to use.
+]],
+}
+
+dialog{
   id = "_treasure.amulet.1",
   text = [[
 You received a magic amulet. Created

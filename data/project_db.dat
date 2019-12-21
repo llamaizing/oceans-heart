@@ -1531,6 +1531,7 @@ sound{ id = "wood_breaking_and_falling_into_water", description = "wood_breaking
 sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
+item{ id = "abyssal_flame", description = "Abyssal Flame" }
 item{ id = "amulet", description = "amulet" }
 item{ id = "apples", description = "Apples - 1,3,5,10" }
 item{ id = "armor_tools", description = "Armorer Tools" }
