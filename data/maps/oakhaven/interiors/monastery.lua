@@ -67,6 +67,9 @@ function hidden_book_2:on_interaction()
   end)
 end
 
+function spring_door_switch:on_activated()
+  map:open_door"spring_door"
+end
 
 function boss_sensor:on_activated()
   if game:get_value("quest_haunted_monastery") and game:get_value("quest_haunted_monastery") < 1 then
