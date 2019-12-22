@@ -51394,6 +51394,82 @@ tile{
   pattern = "146",
 }
 
+tile{
+  layer = 0,
+  x = 1880,
+  y = 1216,
+  width = 32,
+  height = 32,
+  pattern = "98",
+}
+
+tile{
+  layer = 0,
+  x = 1888,
+  y = 1200,
+  width = 16,
+  height = 24,
+  pattern = "48",
+}
+
+tile{
+  layer = 0,
+  x = 1904,
+  y = 1200,
+  width = 8,
+  height = 32,
+  pattern = "47",
+}
+
+tile{
+  layer = 0,
+  x = 1880,
+  y = 1200,
+  width = 8,
+  height = 32,
+  pattern = "46",
+}
+
+tile{
+  layer = 0,
+  x = 1840,
+  y = 1232,
+  width = 40,
+  height = 16,
+  pattern = "165",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 2008,
+  y = 1264,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1992,
+  y = 1272,
+  width = 24,
+  height = 16,
+  pattern = "161",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1912,
+  y = 1200,
+  width = 16,
+  height = 24,
+  pattern = "2178",
+  tileset = "oceanheart_outdoors_1",
+}
+
 sensor{
   name = "squid_mage_unblocker_2",
   layer = 0,
@@ -53391,7 +53467,7 @@ door{
   y = 1384,
   direction = 3,
   sprite = "entities/door_shutter_stone",
-  savegame_variable = "storm_palace_d15_door_state",
+  savegame_variable = "storm_palace_f6_door_state",
 }
 
 switch{
@@ -53713,7 +53789,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 1992,
+  x = 1976,
   y = 1277,
   direction = 3,
   breed = "normal_enemies/pirate_gunner",
@@ -55715,6 +55791,29 @@ destination{
   x = 1040,
   y = 2517,
   direction = 3,
+}
+
+chest{
+  layer = 0,
+  x = 1896,
+  y = 1229,
+  treasure_name = "bread",
+  treasure_variant = 2,
+  treasure_savegame_variable = "palace_of_storms_e6_chest",
+  sprite = "entities/chest",
+}
+
+custom_entity{
+  name = "rock_pile_24",
+  layer = 0,
+  x = 1888,
+  y = 1229,
+  width = 32,
+  height = 16,
+  origin_y = -3,
+  direction = 0,
+  sprite = "entities/rockpile",
+  model = "flail_obstacle",
 }
 
 tile{
@@ -60910,6 +61009,36 @@ tile{
   pattern = "185",
 }
 
+tile{
+  layer = 1,
+  x = 1840,
+  y = 1216,
+  width = 40,
+  height = 16,
+  pattern = "166",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 2008,
+  y = 1256,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1992,
+  y = 1264,
+  width = 24,
+  height = 8,
+  pattern = "162",
+  tileset = "indoors_stone",
+}
+
 wall{
   layer = 1,
   x = 1312,
@@ -61588,13 +61717,6 @@ teletransporter{
   destination = "from_entry_hub_center_door",
 }
 
-pickable{
-  layer = 1,
-  x = 2160,
-  y = 1365,
-  treasure_name = "key_palace_of_storms",
-}
-
 sensor{
   name = "^save_solid_ground_sensor_26",
   layer = 1,
@@ -61976,6 +62098,15 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+chest{
+  layer = 1,
+  x = 2160,
+  y = 1365,
+  treasure_name = "key_palace_of_storms",
+  treasure_savegame_variable = "palace_of_storms_f6_key_chest",
+  sprite = "entities/chest",
 }
 
 tile{

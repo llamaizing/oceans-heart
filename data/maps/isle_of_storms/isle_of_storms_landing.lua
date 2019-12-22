@@ -145,6 +145,7 @@ function save_sensor:on_activated()
       sol.audio.play_sound("elixer_upgrade")
     end
   end)
+  save_sensor:remove()
 end
 
 

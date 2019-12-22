@@ -130,7 +130,9 @@ function inventory:initialize(game)
                 --initialize the sprite
                 local equipment_sprite = sol.sprite.create("entities/items")
                 equipment_sprite:set_animation(item_name)
-                equipment_sprite:set_direction(variant - 1)
+--Actually, all items have one sprite for all variants, nothing changes sprite with variant except boomerang
+--                equipment_sprite:set_direction(variant - 1)
+                equipment_sprite:set_direction(0)
                 self.equipment_sprites[i] = equipment_sprite
 
                 --if the item has an amount, make a counter in the counters table
