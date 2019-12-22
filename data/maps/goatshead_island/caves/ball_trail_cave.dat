@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "cave_2",
-  music = "goatshead_overworld_2",
+  music = "ballast_harbor",
 }
 
 tile{
@@ -876,8 +876,8 @@ teletransporter{
   y = 224,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/ball_trail",
-  destination = "from_cave",
+  destination_map = "ballast_harbor/ballast_trail",
+  destination = "from_collapsing_leaf_cave",
 }
 
 enemy{

@@ -11,7 +11,9 @@ local map = ...
 local game = map:get_game()
 
 map:register_event("on_started", function()
-
+  if game:get_value("quest_test13") >= 1 then
+    two_eye_rock_shroom:remove()
+  end
 end)
 
 

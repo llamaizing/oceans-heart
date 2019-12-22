@@ -10407,7 +10407,6 @@ enemy{
   y = 437,
   direction = 0,
   breed = "normal_enemies/ogre_1",
-  savegame_variable = "two_eye_rock_shroom_defeated",
 }
 
 destructible{

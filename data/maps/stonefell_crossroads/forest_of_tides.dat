@@ -16104,7 +16104,7 @@ tile{
   layer = 0,
   x = 752,
   y = 352,
-  width = 160,
+  width = 16,
   height = 8,
   pattern = "121",
   tileset = "redpine_forest",
@@ -21008,6 +21008,15 @@ tile{
   tileset = "oceanheart_outdoors_1",
 }
 
+tile{
+  layer = 0,
+  x = 1184,
+  y = 504,
+  width = 16,
+  height = 8,
+  pattern = "122",
+}
+
 teletransporter{
   layer = 0,
   x = 128,
@@ -23906,14 +23915,5 @@ tile{
   height = 16,
   pattern = "1571",
   tileset = "oceanheart_outdoors_1",
-}
-
-tile{
-  layer = 1,
-  x = 1184,
-  y = 504,
-  width = 16,
-  height = 8,
-  pattern = "122",
 }
 

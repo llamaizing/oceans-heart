@@ -22609,6 +22609,42 @@ tile{
   tileset = "vault_walls",
 }
 
+tile{
+  layer = 0,
+  x = 128,
+  y = 1016,
+  width = 32,
+  height = 24,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 1016,
+  width = 32,
+  height = 24,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 1144,
+  width = 32,
+  height = 24,
+  pattern = "50",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 1144,
+  width = 32,
+  height = 24,
+  pattern = "50",
+}
+
 separator{
   layer = 0,
   x = 408,
@@ -36508,6 +36544,42 @@ tile{
   height = 16,
   pattern = "161",
   tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 992,
+  width = 32,
+  height = 24,
+  pattern = "51",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 992,
+  width = 32,
+  height = 24,
+  pattern = "51",
+}
+
+tile{
+  layer = 1,
+  x = 288,
+  y = 1120,
+  width = 32,
+  height = 24,
+  pattern = "51",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 1120,
+  width = 32,
+  height = 24,
+  pattern = "51",
 }
 
 crystal{

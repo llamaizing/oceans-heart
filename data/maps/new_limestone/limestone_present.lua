@@ -14,7 +14,8 @@ local game = map:get_game()
 map:register_event("on_started", function()
   if game:get_value("left_limestone") then
     juglan:remove()
-  end
+  end 
+  if not game:get_value("goatshead_opening") then juglan_2:remove() end
 end)
 
 --This juglan is only for your first ride out:
