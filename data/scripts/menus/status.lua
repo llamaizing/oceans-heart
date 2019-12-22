@@ -114,6 +114,9 @@ end
 function status_screen:process_selection()
   local game = sol.main.get_game()
   if cursor_index == 0 then --save
+    local total_playtime = game:get_value("total_playtime") or 0
+    total_playtime = total_playtime + sol.main.get_elapsed_time()
+    game:set_value("total_playtime", total_playtime)
     game:save()
     sol.audio.play_sound("elixer_upgrade")
     game:start_dialog("_game.game_saved")
