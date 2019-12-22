@@ -295,6 +295,7 @@ map{ id = "stonefell_crossroads/caves/ancient_grove", description = "Ancient Gro
 map{ id = "stonefell_crossroads/caves/ancient_shrine", description = "AncientGroveShrine" }
 map{ id = "stonefell_crossroads/caves/ballast_cave", description = "BallastCave" }
 map{ id = "stonefell_crossroads/caves/fort_crow_coral_cave", description = "Fort Crow Coral Cave" }
+map{ id = "stonefell_crossroads/caves/helpful_cave", description = "Helpful Cave" }
 map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }
 map{ id = "stonefell_crossroads/caves/sycamore_bombcave", description = "Sycamore Bombcave" }
 map{ id = "stonefell_crossroads/caves/yarrow_chart_cave", description = "YarrowChartCave" }

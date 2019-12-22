@@ -699,7 +699,7 @@ tile_pattern{
 
 tile_pattern{
   id = "invisible_stairs",
-  ground = "ladder",
+  ground = "traversable",
   default_layer = 1,
   x = 16,
   y = 0,

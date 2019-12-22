@@ -37755,78 +37755,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1264,
-  y = 336,
-  width = 8,
-  height = 8,
-  pattern = "494",
-}
-
-tile{
-  layer = 0,
-  x = 1272,
-  y = 336,
-  width = 8,
-  height = 8,
-  pattern = "494",
-}
-
-tile{
-  layer = 0,
-  x = 1264,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "494",
-}
-
-tile{
-  layer = 0,
-  x = 1272,
-  y = 384,
-  width = 8,
-  height = 8,
-  pattern = "494",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 328,
-  width = 8,
-  height = 8,
-  pattern = "494",
-}
-
-tile{
-  layer = 0,
-  x = 816,
-  y = 328,
-  width = 8,
-  height = 8,
-  pattern = "494",
-}
-
-tile{
-  layer = 0,
-  x = 808,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "494",
-}
-
-tile{
-  layer = 0,
-  x = 816,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "494",
-}
-
-tile{
-  layer = 0,
   x = 1184,
   y = 416,
   width = 16,
@@ -59042,78 +58970,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1264,
-  y = 328,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1272,
-  y = 328,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1264,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1272,
-  y = 376,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 808,
-  y = 320,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 320,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 808,
-  y = 368,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 816,
-  y = 368,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
   x = 968,
   y = 96,
   width = 16,
@@ -63932,7 +63788,7 @@ dynamic_tile{
   x = 1256,
   y = 336,
   width = 40,
-  height = 40,
+  height = 48,
   pattern = "invisible_stairs",
   tileset = "misc",
 }
@@ -63951,7 +63807,7 @@ wall{
   x = 1296,
   y = 336,
   width = 8,
-  height = 40,
+  height = 48,
   stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
@@ -63961,9 +63817,9 @@ wall{
 
 wall{
   layer = 1,
-  x = 1264,
+  x = 1256,
   y = 328,
-  width = 32,
+  width = 40,
   height = 8,
   stops_hero = true,
   stops_npcs = true,
@@ -63974,9 +63830,9 @@ wall{
 
 wall{
   layer = 1,
-  x = 1264,
-  y = 376,
-  width = 32,
+  x = 1256,
+  y = 384,
+  width = 40,
   height = 8,
   stops_hero = true,
   stops_npcs = true,
@@ -64115,7 +63971,7 @@ dynamic_tile{
   x = 792,
   y = 328,
   width = 40,
-  height = 40,
+  height = 48,
   pattern = "invisible_stairs",
   tileset = "misc",
 }
@@ -64134,7 +63990,7 @@ wall{
   x = 784,
   y = 328,
   width = 8,
-  height = 40,
+  height = 48,
   stops_hero = true,
   stops_npcs = true,
   stops_enemies = true,
@@ -64146,7 +64002,7 @@ wall{
   layer = 1,
   x = 792,
   y = 320,
-  width = 32,
+  width = 40,
   height = 8,
   stops_hero = true,
   stops_npcs = true,
@@ -64158,8 +64014,8 @@ wall{
 wall{
   layer = 1,
   x = 792,
-  y = 368,
-  width = 32,
+  y = 376,
+  width = 40,
   height = 8,
   stops_hero = true,
   stops_npcs = true,

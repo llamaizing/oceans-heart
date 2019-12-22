@@ -12949,8 +12949,9 @@ to follow it home, we can rebuild all.
 dialog{
   id = "_oakhaven.observations.misc.llama",
   text = [[
-It's a statue of a llama. You can tell someone
-really appreciates this llama.
+It's a statue of a llama. Someone seems to
+hold this llama in high regard, but there's
+no telling what it means.
 ]],
 }
 

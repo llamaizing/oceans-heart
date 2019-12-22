@@ -41199,6 +41199,33 @@ tile{
   tileset = "oceanheart_outdoors_1",
 }
 
+tile{
+  layer = 0,
+  x = 576,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "59",
+}
+
+destination{
+  name = "from_llama_cave",
+  layer = 0,
+  x = 584,
+  y = 829,
+  direction = 1,
+}
+
+teletransporter{
+  layer = 0,
+  x = 576,
+  y = 832,
+  width = 16,
+  height = 16,
+  destination_map = "stonefell_crossroads/caves/helpful_cave",
+  destination = "falling",
+}
+
 wall{
   layer = 0,
   x = 2064,
@@ -42790,6 +42817,14 @@ teletransporter{
   height = 16,
   destination_map = "stonefell_crossroads/caves/yarrow_chart_cave",
   destination = "from_outside",
+}
+
+destructible{
+  layer = 0,
+  x = 584,
+  y = 845,
+  sprite = "entities/bush_summergrass",
+  can_be_cut = true,
 }
 
 tile{
