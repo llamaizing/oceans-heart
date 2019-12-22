@@ -108,16 +108,20 @@ function meet_hazel_sensor:on_activated()
   if game:get_value("hazel_is_currently_following_you") and not game:get_value("spoken_to_hazel_south_gate") then
     game:start_dialog("_oakhaven.npcs.hazel.thicket.1")
     game:set_value("spoken_to_hazel_south_gate", true)
-    local x,y,z = hazel_dummy:get_position()
-    map:create_custom_entity{
-      x=x, y=y, layer=z, direction=3, width=16, height=16,
-      sprite = "npc/hazel",
-      model = "ally",
-      name = "hazel"
-    }
+    local m = sol.movement.create("target")
+    m:set_ignore_obstacles()
+    m:start(hazel_dummy, function()
+      hazel_dummy:set_enabled(false)
+      local x,y,z = hazel_dummy:get_position()
+      map:create_custom_entity{
+        x=x, y=y, layer=z, direction=3, width=16, height=16,
+        sprite = "npc/hazel",
+        model = "ally",
+        name = "hazel"
+      }
+    end)
   end
   meet_hazel_sensor:set_enabled(false)
-  hazel_dummy:set_enabled(false)
 end
 
 for guard in map:get_entities("guard") do

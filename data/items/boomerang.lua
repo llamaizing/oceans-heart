@@ -67,7 +67,7 @@ function item:do_boomerang(distance, speed, hero_animation, boom_sprite)
     end
   end)
 
-  if self:get_variant() >= 1 then
+  if self:get_variant() > 1 then
     sol.timer.start(map, 160, function()
       if map:has_entities("hero_thrown_boomerang") then
         local x,y,z = boomerang:get_position()

@@ -68,7 +68,7 @@ function hidden_book_2:on_interaction()
 end
 
 function spring_door_switch:on_activated()
-  map:open_door"spring_door"
+  map:open_doors"spring_door"
 end
 
 function boss_sensor:on_activated()

@@ -9,7 +9,7 @@ local ATTACK_RANGE = 150
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(enemy:get_property("life") or 15)
+  enemy:set_life(enemy:get_property("life") or 9)
   enemy:set_damage(enemy:get_property("damage") or 1)
   enemy:set_attack_consequence("sword", "protected")
   attacking = false

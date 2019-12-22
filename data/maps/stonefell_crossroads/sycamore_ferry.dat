@@ -41756,6 +41756,15 @@ sensor{
   height = 144,
 }
 
+npc{
+  layer = 0,
+  x = 168,
+  y = 1581,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_sycamore_ferry.signs.sycamore_ferry_2",
+}
+
 tile{
   layer = 1,
   x = 160,
@@ -45039,13 +45048,5 @@ enemy{
   y = 669,
   direction = 0,
   breed = "normal_enemies/crow",
-}
-
-npc{
-  layer = 1,
-  x = 168,
-  y = 1581,
-  direction = 3,
-  subtype = 1,
 }
 

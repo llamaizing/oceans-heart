@@ -28,7 +28,8 @@ function bomb_shop_intern:on_interaction()
     game:start_dialog("_oakhaven.npcs.bomb_shop.intern.2", function()
       game:set_value("quest_bomb_shop", 2)
       local m = sol.movement.create("path")
-      m:set_path{4,4}
+      m:set_path{0,0,6,6}
+      m:set_ignore_obstacles()
       m:start(bomb_shop_intern)
     end)
 

@@ -14042,7 +14042,7 @@ North - Goatshead Harbor
 dialog{
   id = "_sycamore_ferry.signs.sycamore_ferry_2",
   text = [[
-West - Lotus Shoal
+West - Lotus Shoal, Spruce Head
 South - Limestone Island
 East - Goatshead Harbor, Forest of Tides
 ]],
@@ -14980,6 +14980,9 @@ times, damaging enemies.
 dialog{
   id = "_treasure.iron_candle_pickable.4",
   text = [[
+You got salt candles. Throw these down and
+as they slowly burn, they'll pop several
+times, damaging enemies.
 ]],
 }
 
