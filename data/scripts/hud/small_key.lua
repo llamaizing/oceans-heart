@@ -32,6 +32,7 @@ local key_surface = sol.surface.create()
 local map_key_map = {}
   map_key_map["Yarrowmouth/bear_catacombs/bear_catacombs"] = "key_bear_catacombs"
   map_key_map["oakhaven/fort_crow/fort_crow"] = "key_fort_crow"
+  map_key_map["ballast_harbor/pirate_vault"] = "key_ballast_council_building"
   map_key_map["goatshead_island/caves/goat_caverns"] = "key_goat_caverns"
   map_key_map["goatshead_island/interiors/tunnels"] = "key_goat_tunnels"
   map_key_map["snapmast_reef/cemetery_of_the_waves/shipwreck_chain"] = "key_graveyard_of_the_waves"
