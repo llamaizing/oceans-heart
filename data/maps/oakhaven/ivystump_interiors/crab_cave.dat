@@ -2017,15 +2017,6 @@ door{
   sprite = "entities/door_post_stone",
 }
 
-door{
-  name = "boss_door_5",
-  layer = 0,
-  x = 272,
-  y = 64,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-}
-
 npc{
   name = "paul",
   layer = 0,
@@ -2523,6 +2514,65 @@ dynamic_tile{
   height = 16,
   pattern = "2085",
   tileset = "overworld_oakhaven",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_4",
+  layer = 0,
+  x = 272,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+door{
+  name = "boss_door_5",
+  layer = 0,
+  x = 272,
+  y = 64,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_5",
+  layer = 0,
+  x = 192,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_6",
+  layer = 0,
+  x = 176,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_7",
+  layer = 0,
+  x = 48,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_candle_8",
+  layer = 0,
+  x = 256,
+  y = 176,
+  width = 16,
+  height = 16,
+  pattern = "41",
 }
 
 tile{

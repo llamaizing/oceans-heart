@@ -2621,8 +2621,8 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/naerreturn_bay",
-  destination = "from_bomb_cave",
+  destination_map = "stonefell_crossroads/zephyr_bay",
+  destination = "from_armor_cave",
 }
 
 chest{

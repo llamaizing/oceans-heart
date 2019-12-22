@@ -15,7 +15,7 @@
 	
 	Usage:
 	Add an entry to hud_config.lua for this script along with the desired properties
-]]
+--]]
 
 require"scripts/multi_events"
 

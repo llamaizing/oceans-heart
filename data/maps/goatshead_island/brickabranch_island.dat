@@ -4427,6 +4427,15 @@ tile{
   pattern = "2340",
 }
 
+tile{
+  layer = 0,
+  x = 40,
+  y = 344,
+  width = 56,
+  height = 24,
+  pattern = "2344",
+}
+
 destination{
   name = "landing",
   layer = 0,
@@ -4534,15 +4543,6 @@ door{
   direction = 3,
   sprite = "entities/door_shutter",
   savegame_variable = "brickenbranch_shrine_door_status",
-}
-
-npc{
-  layer = 0,
-  x = 48,
-  y = 397,
-  direction = 0,
-  subtype = 1,
-  sprite = "entities/boat_small",
 }
 
 sensor{
@@ -4994,11 +4994,12 @@ tile{
 
 tile{
   layer = 2,
-  x = -56,
-  y = -40,
+  x = -40,
+  y = -32,
+  enabled_at_start = false,
   width = 672,
   height = 512,
-  pattern = "2076",
-  tileset = "overworld_oakhaven",
+  pattern = "2006",
+  tileset = "oceanheart_outdoors_1",
 }
 

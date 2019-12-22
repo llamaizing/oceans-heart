@@ -13,10 +13,16 @@ local hero = map:get_hero()
 local dropoff_workers_dialog_index = 1
 
 map:register_event("on_started", function()
-  if game:get_value("pirate_council_door_state") ~= nil then pirate_council_door:set_enabled(false) end
-  if game:get_value("nina_dialog_counter") ~= nil and game:get_value("nina_dialog_counter") >= 3 then
-    dream_cannon_guard:set_enabled(false)
+  for person in map:get_entities"wandering_person" do
+    local m = sol.movement.create"random_path"
+    m:set_speed(15)
+    m:start(person)
   end
+
+  if hero:get_position() == from_back_alley_cave:get_position() then
+    destroyable_fence:set_enabled(false)
+  end
+  if game:get_value("pirate_council_door_state") ~= nil then pirate_council_door:set_enabled(false) end
   if game:get_value("oakhaven_port_bridge_unblocked") then bomb_sale:set_enabed(false) end
   if game:get_value("talked_to_hornigold_in_ballast_harbor") then
     hornigold:set_enabled(false)
@@ -29,10 +35,7 @@ map:register_event("on_started", function()
       inviting_barrel:set_enabled(true)
     end
   end
-
 end)
-
-
 
 ---NPC INTERACTIONS
 --shop
@@ -91,14 +94,14 @@ end
 function hornigold_sensor:on_activated()
   hero:freeze()
   local m1 = sol.movement.create("path")
-  m1:set_path{4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4}
+  m1:set_path{6,6,6,6,6,6,6,6,0,0,0,0,0,0,0,0}
   m1:set_speed(60)
   m1:set_ignore_obstacles(true)
   m1:start(hornigold, function()
     game:start_dialog("_ballast_harbor.npcs.hornigold.1", function()
       m1:set_speed(70)
-      m1:set_path{4,4,4,4,4,4,4,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6}
-      hero:set_direction(3)
+      m1:set_path{0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6}
+      hero:set_direction(0)
       m1:start(hornigold, function()
         game:set_value("talked_to_hornigold_in_ballast_harbor", true)
         hero:unfreeze()
@@ -108,3 +111,4 @@ function hornigold_sensor:on_activated()
     end) --end of dialog callback
   end) --end of m1 callback
 end
+

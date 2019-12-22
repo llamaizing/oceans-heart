@@ -9,6 +9,13 @@ animation{
   },
 }
 animation{
+  name = "abyssal_flame",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 432, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "amulet",
   src_image = "entities/items.png",
   directions = {
@@ -262,6 +269,13 @@ animation{
   },
 }
 animation{
+  name = "crow_feather",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 432, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "crystal_spark",
   src_image = "entities/items.png",
   directions = {
@@ -352,6 +366,83 @@ animation{
   },
 }
 animation{
+  name = "fast_travel_chart_ballast_harbor",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_goatshead",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_isle_of_storms",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_ivystump",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_kingsdown",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_limestone",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_oakhaven",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_snapmast",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_spruce_head",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_yarrowmouth",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "fast_travel_chart_zephyr_bay",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "feather",
   src_image = "entities/items.png",
   directions = {
@@ -383,6 +474,7 @@ animation{
     { x = 256, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 256, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 256, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 256, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -541,6 +633,13 @@ animation{
   },
 }
 animation{
+  name = "key_brass",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 400, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "key_dandelion_charm",
   src_image = "entities/items.png",
   directions = {
@@ -653,6 +752,13 @@ animation{
   },
 }
 animation{
+  name = "key_shoal_pirate_fort",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 192, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "key_sinking_lighthouse",
   src_image = "entities/items.png",
   directions = {
@@ -718,6 +824,13 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 384, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "machine_part",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 336, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
@@ -839,7 +952,7 @@ animation{
   name = "oranges_shipment",
   src_image = "entities/items.png",
   directions = {
-    { x = 272, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 432, y = 56, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 21 },
   },
 }
 animation{
@@ -1014,6 +1127,13 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 336, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "tungsten_ore",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 352, y = 96, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{

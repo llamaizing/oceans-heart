@@ -1395,6 +1395,78 @@ tile{
   pattern = "ground1.rock3",
 }
 
+tile{
+  layer = 0,
+  x = 216,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 168,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "115",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 64,
+  width = 32,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "111",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "226",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "136",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 216,
+  width = 16,
+  height = 16,
+  pattern = "111",
+}
+
 teletransporter{
   layer = 0,
   x = 240,
@@ -1417,7 +1489,8 @@ chest{
   layer = 0,
   x = 208,
   y = 77,
-  treasure_name = "coral_ore",
+  treasure_name = "ether_bombs_pickable",
+  treasure_variant = 4,
   treasure_savegame_variable = "yarrowmouth_warp_cave_treasure",
   sprite = "entities/chest",
 }
@@ -1433,15 +1506,15 @@ enemy{
 enemy{
   layer = 0,
   x = 256,
-  y = 85,
+  y = 109,
   direction = 3,
   breed = "normal_enemies/bat_1",
 }
 
 enemy{
   layer = 0,
-  x = 144,
-  y = 85,
+  x = 152,
+  y = 109,
   direction = 3,
   breed = "normal_enemies/bat_1",
 }
@@ -1449,7 +1522,7 @@ enemy{
 enemy{
   layer = 0,
   x = 208,
-  y = 93,
+  y = 101,
   direction = 3,
   breed = "normal_enemies/bat_1",
 }
@@ -1472,5 +1545,50 @@ tile{
   width = 32,
   height = 16,
   pattern = "door.down.high",
+}
+
+tile{
+  layer = 1,
+  x = 216,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "137",
+}
+
+tile{
+  layer = 1,
+  x = 168,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "131",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 56,
+  width = 32,
+  height = 8,
+  pattern = "133",
+}
+
+tile{
+  layer = 1,
+  x = 128,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "235",
+}
+
+tile{
+  layer = 1,
+  x = 256,
+  y = 208,
+  width = 32,
+  height = 16,
+  pattern = "137",
 }
 

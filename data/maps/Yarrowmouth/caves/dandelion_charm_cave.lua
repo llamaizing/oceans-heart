@@ -12,10 +12,15 @@ local game = map:get_game()
 local enemies_killed
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(2)
+  sol.menu.start(map, lighting_effects)
+
+  map:get_camera():letterbox()
   enemies_killed = 0
-end
+end)
 
 
 function door_switch_1:on_activated()
@@ -27,6 +32,6 @@ for enemy in map:get_entities("room_1_enemy") do
     enemies_killed = enemies_killed + 1
     if enemies_killed == 2 then
       map:open_doors("room_1_door")
-    end    
+    end
   end
 end

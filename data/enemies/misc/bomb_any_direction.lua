@@ -29,7 +29,6 @@ function enemy:on_obstacle_reached()
 end
 
 function enemy:go(angle)
-
   local movement = sol.movement.create("straight")
   movement:set_speed(150)
   movement:set_angle(angle)

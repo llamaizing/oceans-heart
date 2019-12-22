@@ -30,5 +30,26 @@ function hero_meta:on_state_changed(state)
   end
 end
 
+function hero_meta:become_all_powerful()
+  local game = self:get_game()
+  game:set_value("sword_damage", 25)
+  game:set_value("bow_damage", 25)
+  game:set_value("defense", 25)
+  game:set_max_life(52)
+  game:set_life(52)
+end
+
+local MAX_BUFFER_SIZE = 48
+function hero_meta:on_position_changed(x,y,z)
+  local hero = self
+  if not hero.position_buffer then hero.position_buffer = {} end
+  local hero = self
+  local dir = hero:get_sprite():get_direction()
+  table.insert(hero.position_buffer, 1, {x=x,y=y,layer=l,direction=dir})
+
+  if #hero.position_buffer > MAX_BUFFER_SIZE then
+    table.remove(hero.position_buffer)
+  end
+end
 
 return true

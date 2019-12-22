@@ -5,6 +5,7 @@
 
 local enemy = ...
 enemy.immobilize_immunity = true
+enemy.lighting_effect = 1
 
 local sprites = {}
 

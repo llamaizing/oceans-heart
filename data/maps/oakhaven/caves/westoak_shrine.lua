@@ -10,10 +10,14 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+map:register_event("on_started", function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(3)
+  sol.menu.start(map, lighting_effects)
+
   map:set_doors_open("boss_door_b")
-end
+end)
 
 function entered_boss_room_sensor:on_activated()
   map:close_doors("boss_door")

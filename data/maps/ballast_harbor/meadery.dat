@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "indoors_stone",
-  music = "ballast_harbor",
+  music = "driftwood-2",
 }
 
 tile{
@@ -2273,7 +2273,7 @@ teletransporter{
   y = 432,
   width = 16,
   height = 16,
-  destination_map = "ballast_harbor/ballast_harbor",
+  destination_map = "Yarrowmouth/tern_marsh",
   destination = "from_meadery",
 }
 

@@ -41,6 +41,11 @@ function d5_door_switch:on_activated()
   map:focus_on(map:get_camera(), d5_door, function() map:open_doors("d5_door") end)
 end
 
+function b1_door_switch:on_activated()
+  sol.audio.play_sound("switch")
+  map:focus_on(map:get_camera(), b1_door, function() map:open_doors("b1_door") end)
+end
+
 function door_a1_switch:on_activated()
   sol.audio.play_sound("switch")
   map:open_doors("door_a1")
@@ -66,5 +71,6 @@ function chest_mimic:on_dead()
   if not cemetery_of_the_waves_chest_d1_state then
     sol.audio.play_sound("secret")
     coral_ore_chest:set_enabled(true)
+    map:create_poof(coral_ore_chest:get_position())
   end
 end

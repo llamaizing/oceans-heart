@@ -1735,10 +1735,10 @@ dynamic_tile{
   layer = 0,
   x = 48,
   y = 128,
-  pattern = "681",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "681",
 }
 
 dynamic_tile{
@@ -1746,10 +1746,10 @@ dynamic_tile{
   layer = 0,
   x = 48,
   y = 112,
-  pattern = "682",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "682",
 }
 
 dynamic_tile{
@@ -1757,10 +1757,10 @@ dynamic_tile{
   layer = 0,
   x = 48,
   y = 104,
-  pattern = "683",
+  enabled_at_start = false,
   width = 16,
   height = 8,
-  enabled_at_start = false,
+  pattern = "683",
 }
 
 dynamic_tile{
@@ -1768,10 +1768,10 @@ dynamic_tile{
   layer = 0,
   x = 48,
   y = 144,
-  pattern = "685",
+  enabled_at_start = false,
   width = 16,
   height = 16,
-  enabled_at_start = false,
+  pattern = "685",
 }
 
 npc{

@@ -10,12 +10,6 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
 
 for sensor in map:get_entities("ssg_sensor") do
 function sensor:on_activated() hero:save_solid_ground() end

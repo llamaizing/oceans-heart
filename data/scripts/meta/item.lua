@@ -71,6 +71,7 @@ item_meta:register_event("on_obtained", function(self, variant)
       item_id = name --use itself as the item id
       variant = self:get_variant()
     end
+  else return
   end
   
   local item = game:get_item(item_id) --item to be displayed (not necessarily the one obtained)

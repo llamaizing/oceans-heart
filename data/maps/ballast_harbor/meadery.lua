@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
 
   michael_enemy:set_enabled(false)
 
@@ -21,7 +21,7 @@ function map:on_started()
     benjamin_2:set_enabled(false)
   end
 
-end
+end)
 
 
 
@@ -44,7 +44,7 @@ function michael_enemy:on_dead()
   game:set_value("quest_briarwood_mushrooms", 4) --quest log, go back to distillery
   game:set_value("michael_defeated", true)
   game:set_value("rohit_dialog_counter", 6)
-  
+
 end
 
 

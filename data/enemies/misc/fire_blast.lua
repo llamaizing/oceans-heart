@@ -15,6 +15,7 @@ local hero = map:get_hero()
 local sprite
 local movement
 enemy.immobilize_immunity = true
+enemy.lighting_effect = 2
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()

@@ -3344,6 +3344,160 @@ enemy{
   breed = "normal_enemies/bat_1",
 }
 
+dynamic_tile{
+  name = "^lighting_effect_torch_1",
+  layer = 0,
+  x = 144,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_2",
+  layer = 0,
+  x = 224,
+  y = 768,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_3",
+  layer = 0,
+  x = 224,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_4",
+  layer = 0,
+  x = 144,
+  y = 720,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_5",
+  layer = 0,
+  x = 144,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_6",
+  layer = 0,
+  x = 224,
+  y = 672,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_7",
+  layer = 0,
+  x = 608,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_8",
+  layer = 0,
+  x = 688,
+  y = 864,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_9",
+  layer = 0,
+  x = 512,
+  y = 464,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_10",
+  layer = 0,
+  x = 656,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_11",
+  layer = 0,
+  x = 704,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_12",
+  layer = 0,
+  x = 1032,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_13",
+  layer = 0,
+  x = 1000,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 0,
+  x = 784,
+  y = 544,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "cave_2",
+}
+
 tile{
   layer = 1,
   x = 640,

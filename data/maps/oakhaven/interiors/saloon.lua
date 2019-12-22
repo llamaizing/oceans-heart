@@ -1,18 +1,8 @@
--- Lua script of map oakhaven/interiors/saloon.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
   if game:get_value("salamander_heartache_storehouse_door_open") == true then map:open_doors("storehouse_door") end
   if game:has_item("sleeping_draught") == true then star_barrel:set_enabled(true) end
   if game:get_value("morus_available") ~= true then morus:set_enabled(false) end
@@ -21,8 +11,9 @@ function map:on_started()
   else
     musician_1:set_enabled(false)
     musician_2:set_enabled(false)
+    for npc in map:get_entities"flaketron" do npc:set_enabled(false) end
   end
-end
+end)
 
 
 --------------------------------------------------------------
@@ -76,7 +67,7 @@ end
 function morus:on_interaction()
   if game:get_value("morus_counter") == nil then
     game:start_dialog("_oakhaven.npcs.morus.1", function()
-      
+
       game:set_value("quest_log_b", "b5")
       game:set_value("looking_for_sleeping_potion", true)
       game:set_value("quest_pirate_fort", 1) --quest log, go find sleeping potion
@@ -89,7 +80,7 @@ function morus:on_interaction()
   elseif game:get_value("morus_counter") == 2 then
     game:start_dialog("_oakhaven.npcs.morus.3-spike_ale", function()
       game:set_value("quest_log_b", "b8")
-      
+
       game:set_value("quest_pirate_fort", 3) --quest log, go spike ale
       game:set_value("morus_counter", 3)
     end)
@@ -102,7 +93,7 @@ function morus:on_interaction()
 
   elseif game:get_value("morus_counter") == 5 then
     game:start_dialog("_oakhaven.npcs.morus.6", function()
-      
+
       game:set_value("quest_pirate_fort", 7) --quest log, pirate fort complete
       game:set_value("quest_snapmast", 0) --start snapmast quest
       game:set_value("quest_log_b", "b11")
@@ -155,7 +146,7 @@ function star_barrel_2:on_interaction()
     game:start_dialog("_oakhaven.observations.saloon.star_barrel_1", function(answer)
       if answer == 1 then
         game:start_dialog("_oakhaven.observations.saloon.star_barrel_2", function()
-          
+
           game:set_value("quest_pirate_fort", 4) --quest log update, go sneak in now
           game:set_value("quest_log_b", "b9")
           game:set_value("morus_counter", 4)
@@ -166,4 +157,3 @@ function star_barrel_2:on_interaction()
     end)--end of dialog 1 function
   end
 end
-

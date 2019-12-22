@@ -14,11 +14,11 @@ Oh, you're in the Volunteer Navy, aren't you?
 I, uh... Could you help me? My boss,
 Michael, wants me to get some Hornet
 BENJAMIN:
-Honey from Tern Marsh, just north of here...
-But I don't think I can. The hornets are
-pretty dangerous. If you happen to go by
+Honey, but... The hornets are super dangerous.
+Not that I'm saying you shouldn't be
+careful. But if you happen to see any
 BENJAMIN:
-the marsh, and I know you're busy, but if
+in the marsh, and I know you're busy, but if
 you see some Hornet Honey, could you
 bring it by? I'll pay you 45 crowns.
 ]],
@@ -38,14 +38,11 @@ I'm hunting pirates right now.
 BENJAMIN:
 Oh, you're in the Volunteer Navy, aren't you?
 Could you lend me a hand? I need to get
-some Hornet Honey from Tern Marsh just
+some Hornet Honey, but I'm super busy.
 BENJAMIN:
-north of here, but I'm super busy. I just took
-over the Meadery from the previous owner.
-If you can grab some from the marsh and
-BENJAMIN:
-bring it by here, I'll pay you 60 crowns for
-it. If you're not too busy, I'd appreciate it.
+I just took over the Meadery from the previous
+owner. If you happen by some Hornet Honey, I'll
+buy it for 60 crowns.
 ]],
 }
 
@@ -559,6 +556,7 @@ No problem. I can get your charts back.
 KELPTON:
 I hear the pirates are sailing in with a
 haul of loot. Maybe check around there.
+To find a way into the Vault.
 ]],
 }
 
@@ -663,10 +661,7 @@ dialog{
 I heard the pirate council uses this building
 for storage, so I've been waiting to catch a
 glimpse of Blackbeard! But no famous
-captains have come in or out. Unless there's
-another way in or something. I guess
-sometimes buildings have more than one
-door.
+captains have come in or out...
 ]],
 }
 
@@ -720,6 +715,41 @@ Tryin' to ward off scurvy? I've got apples
 here, right from the mayor's personal
 orchard in Oakhaven. Don't ask how we got
 'em, it was a difficult process.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.market_people.7",
+  text = [[
+Ballast Harbor is a pirate market. Pirates
+from all across the North Sea come here to
+peddle their ill-gotten gains. It's the
+right place if you're looking for some
+strange items, choice information, or
+rare trading cards. I'm here for the
+third category.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.market_people.8",
+  text = [[
+The Pirate Council's vault is on the
+outskirts of town- crews that have joined
+have been stashing treasure in there, so
+it's guarded pretty heavily. But I bet if
+I had maybe nine... ten other people, I
+could pull off the heist of the century.
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.npcs.market_people.9",
+  text = [[
+Since this is a pirate market, you can find
+things here you can't buy anywhere else.
+I'm a chef in Oakhaven, I'm here looking
+for some... ilicit vegetables.
 ]],
 }
 
@@ -1168,13 +1198,12 @@ dialog{
   id = "_ballast_harbor.observations.charts.3",
   text = [[
 How to read a map:
-Press M to see your map. To determine
+Open the menu to see your map. To determine
 your location, search for landmarks you
 can see, such as coastlines, bridges,
 or towns, and try to find corresponding
-areas shown on the map. Each area of
-the overworld has its own map. Keep in
-mind, not everything is shown on a map.
+areas shown on the map. Keep in mind,
+not everything is shown on a map.
 ]],
 }
 
@@ -1224,8 +1253,8 @@ hometown on Limestone Island...
 dialog{
   id = "_ballast_harbor.observations.council_book.5",
   text = [[
-There's a map of Yarrowmouth Island. A
-note by "Naerreturn Bay" says the Sea-King
+There's a map of Goatshead Island. A
+note by "Zephyr Bay" says the Sea-King
 visited once and lit a lighthouse.
 ]],
 }
@@ -1336,7 +1365,7 @@ dialog{
 Warning! The load of ore we stole was mixed
 in with a bunch of rock monsters! They've
 spread out all over the vault and resist
-swords. Be careful.
+swords. And bombs. Be careful.
 ]],
 }
 
@@ -1350,8 +1379,8 @@ Kelpton Sea Charts
 dialog{
   id = "_ballast_harbor.signs.directions_1",
   text = [[
-North - Tern Marsh, Marsh Meadery
-South - Ballast Harbor Market
+East - Ballast Harbor Market
+West - Forest of Tides
 ]],
 }
 
@@ -1445,6 +1474,133 @@ Dad?
 }
 
 dialog{
+  id = "_fast_travel.location_ballast_harbor",
+  text = [[
+LILY:
+Fancy meetin' you here, Tilia. You joining
+the pirate council? Ahaha, just kidding,
+I don't get pirate vibes from you.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_goatshead",
+  text = [[
+LILY:
+Hey, Tilia! We meet again. Just dropped a
+load of cargo off at the Marchants' Guild.
+Literally the most generic cargo.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_isle_of_storms",
+  text = [[
+LILY:
+I don't like this place, Tilia. Look, I'm
+sure you can take care of yourself, but
+I'm gonna be worried while you're here.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_ivystump",
+  text = [[
+LILY:
+Oh, we meet again! Dude, I can't get
+enought of the birdsong around here. And
+how does the whole town smell like apples?
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_kingsdown",
+  text = [[
+LILY:
+Now this kind of little cove, I could put
+down roots here. Just sleep in the sunshine
+all day.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_limestone",
+  text = [[
+LILY:
+Good to see you, Tilia. I just had a chat
+with that Juglan guy, always love bumping
+into him at ports.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_oakhaven",
+  text = [[
+LILY:
+Oh, Tilia! I thought I'd see you in Oakhaven
+someday. You like the big city? Personally,
+I hate it. Nobody leaves you alone.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_snapmast",
+  text = [[
+LILY:
+Ugh, this is miserable. The rain doesn't
+show any signs of letting up. Whenever you're
+ready to get outta here, let's skedaddle.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_spruce_head",
+  text = [[
+LILY:
+Well, well, well, if it isn't Tilia. I had
+a meeting about some cargo here, but the
+other guy never showed up.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_yarrowmouth",
+  text = [[
+LILY:
+Oh, it's you! I had a delivery to
+Yarrowmouth then decided I'd take a quick
+nap.
+]],
+}
+
+dialog{
+  id = "_fast_travel.location_zephyr_bay",
+  text = [[
+LILY:
+Hey, Tilia. Can't believe I never knew
+about this little island.
+]],
+}
+
+dialog{
+  id = "_fast_travel.ride_question",
+  text = [[
+LILY:
+Anyway, you want a ride somewhere?
+]],
+}
+
+dialog{
+  id = "_fast_travel.ride_question_new_chart",
+  text = [[
+LILY:
+Hey, you brought me a new chart? Right on!
+If you want to sail here, just let me know.
+Anyway, you want to get out of here?
+]],
+}
+
+dialog{
   id = "_ferries.goatshead",
   text = [[
 This is the ferry to Goatshead Harbor.
@@ -1488,6 +1644,15 @@ It's a flat rock, perfect for holding
 monster bait. Place monster bait here?
 $? Yes
 $? No
+]],
+}
+
+dialog{
+  id = "_game.fast_travel_confirm",
+  text = [[
+Are you sure you want to travel here?
+$?Yes
+$?No
 ]],
 }
 
@@ -1595,7 +1760,9 @@ dialog{
   id = "_generic_dialogs.buyer_guy.1",
   text = [[
 SALESMAN:
-Hey there! Looking to sell some items?
+Hey there! Looking to sell some
+of those deliiiightful items you've
+collected?
 ]],
 }
 
@@ -1968,7 +2135,7 @@ dialog{
   text = [[
 ARNI:
 If you're trying to lure that monster out to
-get it,I left bait down on Badger Shoal. I
+get it,I left bait down on Lotus Shoal. I
 was near the cliff with two spruces on it. If
 ARNI:
 you were to break open the vase of bait I
@@ -2026,8 +2193,8 @@ dialog{
   id = "_goatshead.npcs.crabhook.dusit.2",
   text = [[
 DUSIT:
-Excellent! Alright, head down to the
-docks and take my boat and this map.
+Excellent! Alright, head down to my
+dock and take my boat and this map.
 It'll get you to Brickenbranch Island.
 DUSIT:
 As you can see from this treasure map,
@@ -2038,9 +2205,13 @@ or whatever is there, bring it back,
 and we'll split it.
 
 TILIA:
-I'm not sure what pirates you got this
-from that convinced you that is exactly
-how this will go, but alright man.
+I'm not sure how the pirates convinced
+you that is exactly how this will go,
+but alright man.
+DUSIT:
+Why would pirates try to trick me?
+My boat is tied up just outside,
+climb down the ladder and skedaddle.
 ]],
 }
 
@@ -2048,8 +2219,8 @@ dialog{
   id = "_goatshead.npcs.crabhook.dusit.3",
   text = [[
 DUSIT:
-Yeah, so just take my boat- it's down
-at the docks. Sail to Brickenbranch
+Yeah, so just take my boat- it's tied
+up just outside. Sail to Brickenbranch
 Island, which is totally haunted, and
 DUSIT:
 find the treasure that this map says
@@ -2142,6 +2313,48 @@ you, wasn't it. Thanks, then.
 }
 
 dialog{
+  id = "_goatshead.npcs.crabhook.market_people.11",
+  text = [[
+FISHERMAN:
+It's been a few months, but we're almost
+done with the cleanup after the attack.
+
+TILIA:
+What happened? Pirates?
+
+
+FISHERMAN:
+Yep. Caught a bunch of the town on fire.
+'Course fact that we're on stilts doesn't
+help in a fire. Luckily some Volunteer Navy
+FISHERMAN:
+guy was followin' the pirates, helped us
+put it out. Looked a bit like you, come
+to think of it.
+TILIA:
+That might have been my dad! He's been
+tracking some pirates.
+
+FISHERMAN:
+He helped up out of a right spot! Give him
+another thank you from me if you see him.
+
+TILIA:
+I hope I do.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.market_people.12",
+  text = [[
+There was a pirate attack a while ago, burned
+down a bunch of the town's bridges. Everything
+still smells like smoke, which honestly? Is
+great. Means it doesn't smell like fish.
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.crabhook.market_people.2",
   text = [[
 Interested in some fine fish? We've also
@@ -2213,11 +2426,11 @@ dialog{
   text = [[
 FISHERMAN:
 So, the fishing isn't bad here, but where they
-really bite is south of town on Badger Shoal.
-I'd be down there right now if it weren't for
+really bite is south of town on Lotus Shoal.
 FISHERMAN:
+I'd be down there right now if it weren't for
 this really pesky monster that's been attacking
-guys who go down there.
+folks who go down there.
 ]],
 }
 
@@ -2226,7 +2439,7 @@ dialog{
   text = [[
 FISHERMAN:
 So, the fishing isn't bad here, but where they
-really bite is south of town on Badger Shoal.
+really bite is south of town on Lotus Shoal.
 I'd be down there right now if it weren't for
 FISHERMAN:
 this really pesky monster that's been attacking
@@ -2480,7 +2693,7 @@ Excellent! There aren't many merchants from
 the guild who haven't already been attacked.
 I want you to go down to Rilesdorf. He has
 EAMON:
-a shop on the wharf, next to the armorer. Tell
+a shop near the market, against the cliffs. Tell
 him I sent you, then go into his office, hide,
 and wait for the Phantom Squid to arrive. I
 EAMON:
@@ -2705,11 +2918,7 @@ dialog{
   text = [[
 GUARD:
 What are you doing on the pier? You aren't
-a dockworker! Do you even lift crates? Haha,
-just kidding. The ferries are down here if
-GUARD:
-you're trying to get to Yarrowmouth or
-Oakhaven.
+a dockworker! Do you even lift... crates?
 ]],
 }
 
@@ -2779,8 +2988,8 @@ I heard you guys all work for Eamon. Which
 strikes me as weird. Aren't you supposed to
 respect strength? He's a frail old man.
 GUARD:
-Well yeah, but$1... $3Well you're just a little
-girl. What are you going to do about it?
+Well yeah, but$1... $3Well you're just a young
+woman. What are you going to do about it?
 
 TILIA:
 I'm going to show you guys I'm stronger.
@@ -2976,7 +3185,7 @@ tomb is overrun with monsters summoned from
 HERON:
 the abyss by the Sea King in his life.
 Please, purify my resting place. Take this
-key, cleanse Thrush Fort to the northeast.
+key, cleanse my tomb, west of Goatshead.
 TILIA:
 Wait, what if I don't want-
 ]],
@@ -2988,15 +3197,15 @@ dialog{
 HERON:
 My champion. Cleanse my resting place.
 Destroy the Sea King's abominations, which
-overrun Thrush Fort. Do you want directions?
+overrun my tomb. Do you want directions?
 TILIA:
-Like, to Thrush Fort? Sure.
+Like, to your grave? Sure.
 
 
 HERON:
-Follow the east road through the Poplar
-Forest. North, past Spruce Head, you will
-find Thrush Fort. Farewell.
+Go West past Goatshead Harbor, then
+follow the road North. Near the
+ferry is where I lie. Good luck.
 ]],
 }
 
@@ -3013,6 +3222,26 @@ The gift of the Sea Bird can grow stronger.
 Seek out the Sea Bird's shrines, champion$1...$3
 TILIA:
 Sure thing, ghost.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.heron_ghost.4",
+  text = [[
+HERON:
+Ah, I see you've found all the shrines. The
+Sea Bird's Tear is at its strongest. It
+lends its strength to you, as it once
+HERON:
+brought the Ocean's strength to the Sea King.
+May you remain uncorrupted by the old magic.
+Balance the scales the king tipped, rid the
+HERON:
+seas of the abyssal beasts he summoned from
+the earth's corrupted core.
+
+TILIA:
+Yeah ghost, I'll try.
 ]],
 }
 
@@ -3341,17 +3570,17 @@ Thanks, Juglan. I'm sure I'll be back soon.
 
 
 JUGLAN:
-And I'm often sailing from market to market
-with my catches. If you ever need a ride
-back home to Limestone Island...
+Right. Well. Be careful. The Sodden Cormorant
+is in the northwest part of town. Remember
+to craft potions if you need!...
 TILIA:
 Juglan. I'll be fine. Thank you.
 
 
 JUGLAN:
-Right. Well. Be careful. The Sodden
-Cormorant Tavern is on the east side of the
-docks, again, yeh might start there...
+Oh, and take this sea chart. When you need
+to sail back to Limestone, this will help.
+Wouldn't want to hit a shoal or anything.
 TILIA:
 Juglan! I'll be fine$1...$3Thank you though.
 ]],
@@ -3361,12 +3590,9 @@ dialog{
   id = "_goatshead.npcs.juglan.ride_back",
   text = [[
 JUGLAN:
-Tilia! How's the hunt going? You need to
-catch a boat back to Limestone Island?
-
-TILIA:
-  $? Yes
-  $? No
+Hey, Tilia. I'm still unloading my fish. The
+Sodden Cormorant is in the northwest part
+of town. Take a look there for leads.
 ]],
 }
 
@@ -3374,7 +3600,7 @@ dialog{
   id = "_goatshead.npcs.kids.1",
   text = [[
 OTHER KID:
-Hey, did you know there's a giant goat
+Hey, did you know there's a giant man
 west of here? It's supposed to be a
 statue but it's alive! It ate Clyde!
 ]],
@@ -3385,7 +3611,7 @@ dialog{
   text = [[
 OTHER KID:
 Me and my friends were exploring with no
-intention to graffiti the giant goat at all,
+intention to graffiti the giant statue at all,
 but then it got angry and swallowed a kid!
 ]],
 }
@@ -3449,8 +3675,8 @@ when you aren't feeling well, and they'll
 help a little. Of course, if you know that
 WEARY SALESMAN:
 you're going into a tough battle, maybe
-just buy some bread or potions, those are
-a lot more effective and don't grow on trees.
+just buy some bread or potions. Those are
+a lot more effective, but don't grow on trees.
 ]],
 }
 
@@ -3465,6 +3691,33 @@ VENDOR:
 potions to make you stronger, take a look
 inside. Sometimes she sells ammunitions like
 arrows too.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.market_people.15",
+  text = [[
+So I was weeding my garden last week, bear
+with me, this story has a point, but I was
+weeding, and pulled up a bush, and underneath
+the bush was a hole. I was off my balance
+and wasn't expecting that, so I fell right
+in, and wouldn't you know? There was a
+pirate cache down the hole! Some treasure!
+I figure any other buried treasure must be
+hidden under some distinctive markings, so
+the pirates can remember where they left
+their cache.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.market_people.16",
+  text = [[
+Have you seen the ruins just west of town
+near the ferry? It's an old tomb, quite
+a lovely little tourist destination honestly,
+if a bit grim.
 ]],
 }
 
@@ -3510,10 +3763,14 @@ magic to use it like that!
 dialog{
   id = "_goatshead.npcs.market_people.5",
   text = [[
-I can't decide if I should get some oranges
-or apples for lunch this week. They're so
-different! It's like trying to compare...
-I don't know. Different things.
+It's all well and good to cook fruit, but I
+really want to learn to cook with foraged
+ingredients. Out in the wilderness, you can
+recognize certain plants that are useful,
+cut them down and collect them. You can make
+potions at crafting tables, but I'm wondering,
+can you make pies that also give you stat
+boosts? Or salads?
 ]],
 }
 
@@ -3547,7 +3804,7 @@ dialog{
   id = "_goatshead.npcs.market_people.8",
   text = [[
 There's a town called Crabhook if you follow
-the east road out of town. It's quaint, but, I
+the West road out of town. It's quaint, but, I
 don't know... dirty? Something about it is
 offputting to me. Probably the poverty.
 ]],
@@ -3572,7 +3829,7 @@ dialog{
   text = [[
 HELGA:
 Welcome dear. I'm the town's alchemist.
-If you need any elixers, bait, or anything,
+If you need any elixers, berries, or anything,
 just take a look over on the shelf. Or
 HELGA:
 if you've got the ingredients, check that pot
@@ -3750,7 +4007,7 @@ Phantom Squid. The name is Aster. But
 please listen to me, for just a moment.
 ASTER:
 I'm from the village of Crabhook. It's
-a small fishing town to the north, but
+a small fishing town to the West, but
 Eamon despises my people. While we once
 ASTER:
 traded freely with Goatshead, Eamon
@@ -4206,8 +4463,8 @@ dialog{
   text = [[
 ADVENTURER:
 Excellent! The entrance to the tunnels is just
-East of the Juneberry Inn, northeast corner of
-town. We'll meet you there and let you in.
+outside the Tavern. We'll meet you there and
+let you in.
 ]],
 }
 
@@ -4216,8 +4473,7 @@ dialog{
   text = [[
 ADVENTURER:
 We'll meet you at the entrance to the city's
-old tunnels. It's just East of the Juneberry Inn.
-It's in the northeast corner of town.
+old tunnels. It's just outside the tavern.
 ]],
 }
 
@@ -4289,7 +4545,7 @@ So, seems like you've got some investigation
 to take care of. What'd these drunks tell you?
 The Hourglass Pirates looted Spruce Head,
 LEIGHA:
-out east of here, and that someone's seen them
+way West of here, and that someone's seen them
 in Ballast Harbor, a guy who sells sea charts?
 Better get looking, kid. Good luck.
 ]],
@@ -4326,7 +4582,7 @@ there's a trail out near Crabhook.
 
 LEIGHA:
 Alright. So we've got the pirates looting the
-shrine out at Spruce Head, east of here, and
+shrine out at Spruce Head, West of here, and
 someone who's seen them in Ballast Harbor.
 LEIGHA:
 Sounds like you've got a couple leads to follow.
@@ -4366,7 +4622,7 @@ from me crew when they joined the Pirate
 MAN:
 Council, but I wouldn't be a servant to those
 overambitious dogs. Think they can rule the
-seas like the ancients... grumble...
+seas like the ancient... grumble...
 (He lapses into muttered complaints)
 ]],
 }
@@ -4391,8 +4647,8 @@ And I saw smoke, and that hourglass was on
 the sails of a ship right there. Come to think
 of it, they must have plundered old Spruce Head
 THIEL:
-Shrine. It's out east of here on the road to
-Crabhook Village. Take a look.
+Shrine. It's out West of here, past Lotus Shoal.
+Go take a look.
 ]],
 }
 
@@ -4440,9 +4696,9 @@ How do I get to Ballast Harbor?
 
 
 THIESSON:
-Ain't supposed to be easy. It's a pirate market,
-south of Yarrowmouth. But I heard a man runs
-a ferry from somewhere around Crabhook Village.
+It's a Pirate Market, so it's not easy to get
+to. But south of town, in the Forest of Tides,
+there's a tunnel. Go through that, then South.
 ]],
 }
 
@@ -4463,15 +4719,15 @@ dialog{
   text = [[
 UPSET MAN:
 Ahoy! You in the Volunteer Navy colors! I've got
-you a job. Me manly fishing spot has been taken
+you a job. Me fishing spot has been taken
 over by beasts. And I left me carrot stash there!
 MAN WHO TAKES HIS CARROTS SERIOUSLY:
 Now, I'm a man who takes his carrots seriously,
 and this I can't abide. I'll pay you 80 crowns
 if you can clear out those monsters.
 MAN WHO TAKES HIS CARROTS SERIOUSLY:
-The manly fishing spot is just south of Poplar
-Forest. Little island. Lots o' carrots.
+The fishing spot is just East of here.
+Little island. Lots o' carrots.
 And monsters. Which is the problem.
 ]],
 }
@@ -4480,8 +4736,8 @@ dialog{
   id = "_goatshead.npcs.upset_fisher.2",
   text = [[
 UPSET MAN:
-Have you been over to the manly fishing spot
-south of Poplar Forest? The one with beasts?
+Have you been over to the fishing spot
+East of here? The one with beasts?
 The one where I left me stash of carrots!?
 TILIA:
 I was there. I took care of the monsters for you.
@@ -4500,7 +4756,7 @@ dialog{
   text = [[
 CALM MAN:
 Thank you for taking care of those beasts what
-had me manly fishing spot. I'm overtaken by a
+had me fishing spot. I'm overtaken by a
 calm reverie knowing I can return to me carrots.
 ]],
 }
@@ -4548,7 +4804,7 @@ We are the Barbell Brutes! (rah rah)
 Enemies quake in their shoes! (rah rah)
 
 Are we weak? (No!) That's what we're not!
-We are so strong we can lift rocks! (Hwah!)
+We're so strong that we can lift rock! (Hwah!)
 
 
 ...You have to admit it's got heart at least.
@@ -4609,14 +4865,12 @@ dialog{
   text = [[
 There's a letter here...
 Captain, bad news. We couldn't get into
-Thrush fort. Apparently it was locked from
+Heron's Tomb. Apparently it was locked from
 the inside hundreds of years ago by a
 guy called Heron, and only his ghost has
 the key. How can ghosts have keys?
-Spooky, anyway captain, we've started
+Spooky. Anyway captain, we've started
 building our own fort to impress Blackbeard.
-Unfortunately, our rivals have shown up
-and seem to be building their own fort!
 ]],
 }
 
@@ -4668,8 +4922,8 @@ Dearest Jacob,
 May you put on your hat in the morning to find
 it was a hive of angry bees all along. This is
 positively the worst spot for a treasure cache.
-Once you left, the goat's mouth closed behind
-you. I've been stuck inside for two days. I don't
+Once you left, the door closed behind you.
+I've been stuck inside for two days. I don't
 know that I'll ever find my way out, so if you
 ever come back for our gold, my spirit is sure
 to be haunting it. Thought you should know.
@@ -4701,7 +4955,8 @@ dialog{
   id = "_goatshead.observations.hq_papers.3",
   text = [[
 It's a book listing colors and trying to
-describe each.
+describe each with words. In fairness, that's
+a tough task.
 ]],
 }
 
@@ -6075,8 +6330,8 @@ The ocean?
 
 
 TILIA:
-That's the one. It's time we figured out
-what happened to Dad.
+That's the one. It's time we bring Dad
+and Hazel back home.
 ]],
 }
 
@@ -6090,6 +6345,26 @@ catch. You needin' a ride there?
 TILIA:
 $? Yes
 $? No
+]],
+}
+
+dialog{
+  id = "_new_limestone_island.npcs.juglan_2.1",
+  text = [[
+JUGLAN:
+Aye, Tilia, you're back. I can tell from yer
+eyes you ain't found your dad yet. Also from
+the fact he isn't here. But there ain't no
+JUGLAN:
+shame is not finishing your quest right at
+the start. This one might take time, but
+you don't need to feel bad comin' home to
+JUGLAN:
+check in before you're done. Maybe take a
+nap at home, or talk to your sister. We're
+glad to see you.
+TILIA:
+Thanks, Juglan.
 ]],
 }
 
@@ -6162,7 +6437,7 @@ So Tilia. Today's really the day?
 TILIA:
 I've been talking myself up for a couple months
 now. If Hazel and Dad aren't back yet, then...
-well I'll bring them back somehow.
+well, I'll bring them back somehow.
 LINDEN:
 It's not just because I make you do the
 dishes every night is it?
@@ -6577,6 +6852,7 @@ Basswood Tavern
 dialog{
   id = "_oakhaven.npcs.ana_orange.1",
   text = [[
+...
 ]],
 }
 
@@ -6784,7 +7060,7 @@ If you're looking for Monkshood to help me
 make a sleeping draught, try the northwest
 part of Marblecliff Mountain. It's northwest of
 ARAMIS:
-town. You'll follow the trail through a ruins on
+the port. You'll follow the trail through a ruins on
 the mountain, then you'll go through a narrow
 canyon.
 ]],
@@ -6951,6 +7227,151 @@ I mean, to destroying it. Uh.
 }
 
 dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.quest1",
+  text = [[
+INTERN:
+Hey, oh, hi, it's you! Good job, with that
+monster? You beat it. Which is cool.
+OH! HEY! Is that, I'm sorry, those plans
+INTERN:
+you have? Those blueprints? Those are
+designs for, it looks like bomb arrows?
+
+TILIA:
+Oh, these? Yeah, I found them in a pirate
+fort. Can you make bomb arrows with this?
+
+INTERN:
+Well, I studied... bombs. In school? Not in
+school, that'd be wild if that was a class.
+Uh, in my free time... I mean, yes! I can!
+INTERN:
+It looks like I just need a couple things.
+Two things. Some tungsten, it's this metal,
+it won't melt, uh, that doesn't matter...
+TILIA:
+That's great, where can I find tungsten?
+
+
+INTERN:
+There's actually a cave, in the strait
+between Oakhaven and Yarrowmouth. It's
+called the Strait of Throns. Because of
+INTERN:
+the rocks, but there's a cave there. Then
+you'd have to take the tungsten to this
+guy Rusty, and he'll be like, oh, you have
+INTERN:
+tungsten, you're legit, take this machine
+part, oooh. I mean, he said he'd give me
+the machine part if I could prove I'd use it.
+TILIA:
+Okay, bring the tungsten to Rusty. Where
+does he live?
+
+INTERN:
+You can probably find him at the secret
+underground bar at the port. Did you know
+there's an underground bar? It's, you have
+INTERN:
+to go behind a merchant's stall, behind
+some pots? It's really secret. Rusty is
+usually there.
+TILIA:
+If you can build me bomb arrows, I can do
+this. Go get some tungsten from the cave,
+go find Rusty. Got it.
+INTERN:
+Woah, this will be really cool. These
+arrows will be, oh boy, really dangerous.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.quest2",
+  text = [[
+INTERN:
+Oh, so for the bomb arrows, you've gotta
+go get tungsten. It's this metal that won't
+melt. I know you can find ingots in this
+INTERN:
+cave in the strait between Yarrowmouth
+and Oakhaven. You can get there from
+Stonefell Crossroads.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.quest3",
+  text = [[
+INTERN:
+Oh, you got it! The tungsten! For the bomb
+arrows. That's great. If you take that to
+Rusty, down at the secret bar, he'll give
+INTERN:
+you the machine part I need. The bar is at
+the port, behind some pots. It's a secret
+bar. I'm not sure why?
+TILIA:
+Why won't Rusty just give you the machine
+thing?
+
+INTERN:
+Well, I'm only an intern. It's maybe sort
+of like a... hero's journey thing? I have
+to prove myself?
+TILIA:
+By... by me going and getting a lump of
+ore for you?
+
+INTERN:
+I don't know, I work with a lot of weird
+people! It makes me nervous!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.quest4",
+  text = [[
+INTERN:
+Oh, you did it! You got the tungsten ore and
+the machine part! This is exactly what I
+need to make the arrows this design shows.
+INTERN:
+Give me just a sec, and I'll make this
+happen!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.quest_already_tungsten",
+  text = [[
+TILIA:
+Oh, wait a second, I was actually
+already in that cave and found some
+tungsten ore. It's this stuff?
+INTERN:
+Oh, howdy! Yeah, that's tungsten ore, I'll
+need that. But go show it to Rusty down at
+the secret bar!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.bomb_shop.intern.shop_dialog",
+  text = [[
+INTERN:
+Hey, it's you! You've really helped us out.
+With the whole monster, at the, the one at
+the mines. We needed that stuff. The
+INTERN
+saltpeter, not the monster. We didn't need
+the monster. Oh, obviously you knew that.
+Otherwise, you, I mean, well. Uh. Hi.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.bomb_shop.owner.1",
   text = [[
 THE BOMB MAKER:
@@ -6972,11 +7393,11 @@ it's your own fault, but I can look into it.
 THE BOMB MAKER:
 Ah! Yes, fantastic! You will destory the
 monster I've unleashed on myself! Please,
-the saltpeter mine is souteast of town.
+the saltpeter mine is soutwest of the port.
 THE BOMB MAKER:
-Go out the south gate, then head east.
-My intern is stationed at the entrance,
-tell him I sent you, he'll let you in.
+Go out the south gate, then head west from.
+the port. My intern is stationed at the
+entrance, tell him I sent you, he'll let you in.
 ]],
 }
 
@@ -6998,8 +7419,8 @@ dialog{
   id = "_oakhaven.npcs.bomb_shop.owner.3",
   text = [[
 THE BOMB MAKER:
-Ah! You're back. You have destoryed the
-monster that lurked in the depts of the
+Ah! You're back. You have destroyed the
+monster that lurked in the depths of the
 saltpeter mine, yes?
 TILIA:
 I did. You said you'll pay me?
@@ -7031,6 +7452,42 @@ I got into carpentry thinking I'd be making
 warehouses of fancy furniture. But it turns
 out what people want more than anything is
 boxes and barrels.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.eastoak.boyle.1",
+  text = [[
+BOYLE:
+So my fool brother dug up that cursed stone
+and won't put it back. It's bad luck though,
+to disturb the standing stones. Or the
+BOYLE:
+barrow in the fields. Probably the whole
+unit, just in general. Probably dumb that
+we farm here, but the soil is good.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.eastoak.brince.1",
+  text = [[
+BRINCE:
+You seen the standing stones all around the
+fields? Best not to disturb them, nobody
+knows who put 'em up or why, was so long
+BRINCE:
+ago. But I was diggin' around 'em, and I
+found a stone tablet, so I brought it home,
+as a decoration... but here's the thing.
+BRINCE:
+Ever since, I've been scared to go near
+the barrow in the middle of the fields.
+Can't explain why! Something about the
+BRINCE:
+stone tablet? But I'm keeping it as a
+decoration though. Makes me look well
+traveled.
 ]],
 }
 
@@ -7075,7 +7532,7 @@ guess maybe he's here to get his butt
 kicked, it looks like.
 CAPTAIN AL-JAZARI:
 Yes, he's had it out for me ever since I
-accidentially sank his first ship while
+accidentally sank his first ship while
 testing my robotic sharks. But so is life.
 TILIA:
 Huh. You don't seem interested in fighting.
@@ -7647,11 +8104,132 @@ though, as you can't swim up waterfalls.
 }
 
 dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.1",
+  text = [[
+Have you seen that empty house in the
+southwest part of town, near a small
+fountain? I knew the old man that used
+to live there. He said he'd catch a cold
+draft even on warm days. Hated it so much
+he moved to the Isle of Lobb. Anyways, it's
+empty now so of course monsters moved in.
+That's how it goes.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.2",
+  text = [[
+I heard a rumor that the ancient Oak tree
+in the Northeast part of town is hollow.
+They say if you stick your mouth right onto
+it and scream, you can hear it echo like
+an old well or cave or something. I like
+to think it's just the tree screaming back.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.3",
+  text = [[
+You know Oakhaven has its own Bomb Shop?
+On its surface, that seems normal enough,
+the world is full of obstructed passageways,
+but like... is that enough to sustain a
+business? Should that old man really just
+be selling bombs to the general public?
+Sounds like a recipe for disaster if you
+ask me! Anyway, if you collect Firethorn
+berries he'll cut you a deal, I've bought
+a bunch of bombs myself. Sockpiling them.
+Just in case!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.4",
+  text = [[
+The Mayor's dog is having a birthday party
+today! All the towns' upper crust will be
+there.... but it's also the day of the
+tic-tac-toe championship. I'm so torn.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.5",
+  text = [[
+Have you seen that man near the statue of the
+Ocean Goddess? He's always up there, feeding
+birds, every day. What's he up to? What's he
+get from them? What do the birds know?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.6",
+  text = [[
+Just visited Ivystump yesterday, have you
+seen there's an old shrine in the Veilwood?
+Couldn't get through the foliage to get a
+good look, but there's got to be some kind
+of tunnel or something, who'd build an
+ancient shrine then let foliage grow up
+around it? The entrance couldn't be far
+away.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.7",
+  text = [[
+You ever been out west of town, to that
+sandy beach south of Marblecliff? It's a
+great spot for a date, but also, there's
+a cave hidden under the bridge!
+...Which is an even BETTER spot for a date.
+Now don't go sharing this info. I've got
+someone picked out to ask and I don't want
+you stealing 'em out from under me!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.8",
+  text = [[
+Back in my day, there wasn't all this fetching
+water right from the well, we had to climb
+all the way up Marblecliff mountain to get
+fresh springwater! I mean, the well was
+here back then... I don't know why my
+parents sent me all the way up there. But
+it built character! Also I learned about
+the secret chamber built into the monstery!
+But I'll never tell where it is! Ehhehehehe.
+Because I never found it.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.general_town.loop_walkers.9",
+  text = [[
+Ah dear, your face reminds me of my sister's.
+She fell down the well when we were children.
+I panicked, but she found a tunnel and swore
+she'd learn where water came from. When we
+dropped a ladder down, she said she'd found
+monsters down there! Imagine! We're all
+drinking monster water! That's why I never
+drink water.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.general_town.sculptor_sibling_outside",
   text = [[
 Oh, you're wearing Volunteer Navy colors!
-My sibling inside is a sculptor and needs
-someone to help collect clay from golems.
+My brother inside is a sculptor and needs
+someone to help collect stone from golems.
 It's the best for sculpting I guess? If
 you want, go inside and have a chat.
 ]],
@@ -7880,9 +8458,45 @@ carring a sack with a dog in it?
 TOWN GUARD:
 Now that you mention it, that guy was kind
 of suspicious. Yeah, he ran into the
-warehouse up those stairs.
+warehouse around the corner.
 TILIA:
 Thanks. Keep up the good work.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.port.3",
+  text = [[
+TOWN GUARD:
+Good day. Welcome to Oakhaven, ancient
+city of moss and knowledge. That's not
+what anybody calls it, I make those up
+TOWN GUARD:
+for anybody who stops to talk to me on
+their way in. Anyway, have a safe trip
+through the city.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.guards.port.4",
+  text = [[
+TOWN GUARD:
+Good day. Headed to the port?
+
+
+TILIA:
+That guy who just ran past, he's a big
+wanted criminal. Looked like he was
+headed toward the port?
+TOWN GUARD:
+Oh! You know he did look like he had a
+sack with a living creature in it, but
+you know, sometimes that's just commerce.
+TOWN GUARD:
+Yeah, he looked to be headed to the port.
+Check with the guard by the archway down
+there!
 ]],
 }
 
@@ -7890,7 +8504,7 @@ dialog{
   id = "_oakhaven.npcs.guards.town.palace",
   text = [[
 GUARD:
-No entry permitted by the governor.
+No entry permitted by the mayor.
 ]],
 }
 
@@ -7962,17 +8576,29 @@ dialog{
   id = "_oakhaven.npcs.hazel.inn.1",
   text = [[
 HAZEL:
-Good, you made it out! I got my books, too.
-That heist went pretty well, honestly.
+Tilia! Thank goodness you made it out. I
+got my books too, successful heist.
 
 TILIA:
-I'm glad I could help you rob a library?
-So you're trying to destroy the Ocean's
-Heart?
+I'm glad you're okay. Look, I was a little
+harsh about you not coming home to tell me
+you were fine, but it's okay-
 HAZEL:
-Exactly. Mallow wants to get it before the
-pirates do, but... if we can't, we'll need
-some way to stop them. Look at this book.
+Tilia,listen, I'm going to stop these pirates.
+Mallow's doing that too. And you don't have
+to help us, but we're not stopping just
+HAZEL:
+because you... what? You want Mallow to
+go back and run a bar? You want me to come
+home and pick flowers with you?
+TILIA:
+I... no. I mean, yeah, I do want that. Ugh.
+Just, I was worried about you. I hate having
+to pause my life to fight pirates.
+HAZEL:
+Me too, Tilia. But if we don't, who's going
+to? That's why I'm going to find the Sword
+of the Sea King to destroy the Ocean's Heart.
 TILIA:
 $1...$3The sword of the Sea King? I heard
 about this, his sword was supposed to be
@@ -7998,8 +8624,8 @@ So you'll help?
 
 
 TILIA:
-Well, yeah. You're my best friend, and
-my dad's doing this too. I'll do what I
+Well, yeah. You're my best friend, so if
+this is what we're doing... I'll do what I
 can, I guess.
 HAZEL:
 Thanks, Tilia. So, there's this guy at the
@@ -8010,9 +8636,9 @@ I'm gonna read up a little bit more about
 this mangrove offering legend. I'll meet
 you at the south gate of town, okay?
 TILIA:
-Alright. I'll meet you at the south gate
+Alright. I'll meet you at the gate
 once I ask the guy in the market where
-he gets his mangrove leaves.
+he gets his mangrove leaves. Got it.
 ]],
 }
 
@@ -8020,8 +8646,8 @@ dialog{
   id = "_oakhaven.npcs.hazel.inn.4gochecktrees",
   text = [[
 HAZEL:
-Hey Tilia. Have you seen the big tree at the
-center of the city?
+Hey Tilia. Have you seen the big tree in the
+Northeast corner of the city?
 
 TILIA:
 Maybe? There's a lot of trees in this town.
@@ -8061,7 +8687,7 @@ dialog{
   text = [[
 HAZEL:
 There's two more big trees like the sick one
-in the center of the city. One in the
+in the corner of the city. One in the
 Veilwood, another on the summit of
 HAZEL:
 Marblecliff Mountain. Can you go get a twig
@@ -8172,6 +8798,78 @@ trees are getting sick.
 }
 
 dialog{
+  id = "_oakhaven.npcs.hazel.new_library.1",
+  text = [[
+TILIA:
+Hazel! I've been looking everywhere for
+you!
+
+HAZEL:
+Tilia? What are you doing here?
+
+
+TILIA:
+I feel like I already answered that, I've
+been looking everywhere for you! Where's
+dad?
+HAZEL:
+Uh, kind of a long story, but it's so good
+to see you, Tilia. I uh, need these secret
+books to find the Sword of the Sea King to
+HAZEL:
+destroy this terrible, powerful magic
+artifact? There's this pirate council and
+Blackbeard is trying to unite all the
+HAZEL:
+pirate crews so they can get this artifact
+that will let them control the sea, and
+storms, sea monsters-
+TILIA:
+You're talking about the Ocean's Heart?
+
+
+HAZEL:
+Yes! Oh, you must have had to go through
+a lot to find me, you've probably fought
+pirates and heard about this.
+TILIA:
+Yeah! I fought a lot of pirates! Because
+you and dad didn't come home so I needed
+to find you! Hazel, I'm happy to see
+TILIA:
+you but honestly? Also pretty angry that
+you're doing some treasure hunt instead
+of letting me know you're alive.
+HAZEL:
+I don't think you understand how dangerous
+Blackbeard is. The last person to weild the
+Ocean's Heart washed cities into the sea-
+TILIA:
+That does't even sound like a real thing!
+Yeah, pirates are bad, let's fight them,
+but couldn't you come home first?-
+HAZEL:
+I'm trying to stop an army of pirates,
+and you're angry I didn't stop to sail
+home? Just for you? Seriously?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.hazel.new_library.2",
+  text = [[
+HAZEL:
+Oh cannonballs, looks like the pirate council
+is closing in on me!
+
+TILIA:
+Ugh! Take your book and get out of here! I'll
+take care of this problem and meet you back
+at the inn!
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.hazel.palace.1",
   text = [[
 TILIA:
@@ -8257,7 +8955,9 @@ dialog{
   id = "_oakhaven.npcs.hazel.thicket.2",
   text = [[
 HAZEL:
-That's gotta be the tree. Hold on.
+That's gotta be the tree. Hold on. I brought
+some plants for a ritual... thing. I think
+this will work.
 ]],
 }
 
@@ -8265,8 +8965,10 @@ dialog{
   id = "_oakhaven.npcs.hazel.thicket.3",
   text = [[
 HAZEL:
-$1...$3Ocean, help us stop men from using your
-powers for themselves.
+$1...
+...
+...$3
+(She's whispering something you can't hear)
 ]],
 }
 
@@ -8302,9 +9004,9 @@ The Pirate Council might already have found
 the Isle of Storms. We need to know what
 they know.
 HAZEL:
-Oh, I have an idea! There's a pirate captain
-nearby. His name is Al-Jazari, and he's
-hiding out in Fort Crow. I don't know how
+Oh, I have an idea! There's this pirate
+captain, his name is Al-Jazari. He's all
+the way down at Fort Crow, and I don't know how
 HAZEL:
 you'd possibly be able to get in, but I do
 know this guy, Morus, who really, really
@@ -8345,7 +9047,7 @@ dialog{
 HAZEL:
 I'm sure you've got a lot to do. Well, the
 Salamander Heartache Saloon is in town,
-south of the inn, but north of the blacksmith.
+east of the Palace, above the market.
 HAZEL:
 I'm sure you'll be able to find it. Ask
 around for Morus, I bet you can help him
@@ -8663,6 +9365,43 @@ if people like you continue to protect them.
 }
 
 dialog{
+  id = "_oakhaven.npcs.ivystump.misc.carpenter1",
+  text = [[
+I didn't think this would work, but I had a
+dream where hammers were more effective than
+saws and I woke up needing to test it out,
+just to be sure.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.misc.inn1",
+  text = [[
+If keep your eyes peeled in the Veilwood, you
+can actually make a decent amount just
+gathering plants and selling them. The
+Veilwood is full of treasure! And that
+treasure is nature's bounty! Also the
+friends you make along the way, if you
+make any friends in the forest.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.misc.inn2",
+  text = [[
+Some people say the Veilwood is the North
+Seas' oldest forest, but I don't know. Have
+you seen those ancient grove with blocky
+stone pillars scattered around them?
+They seem older to me. There's one on
+Marblecliff, and one in the Puzzlewood on
+Yarrowmouth. There could be more, too,
+but that's just my intuition.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.ivystump.picker_paul.1",
   text = [[
 PICKER PAUL:
@@ -8836,9 +9575,9 @@ ancient Meurian Kingdom. Problem is we
 have some books on the subject, but all of
 the best scholarship was taken from the
 FESTUS:
-library by the Governor a while back. Was
-about when those pirates moved into Fort
-Crow out east. Anyway! I haven't seen Hazel
+library by the previous mayor. Was about
+when that pirate Al-Jazari left Oakhaven
+for Fort Crow. Anyway! I haven't seen Hazel
 FESTUS:
 in a couple days. I let her leave her research
 notes spread out in a room around the corner. Up
@@ -8897,6 +9636,81 @@ and the Seabird', whatever that means.
 }
 
 dialog{
+  id = "_oakhaven.npcs.library.misc.3",
+  text = [[
+Ah, you caught me. I don't have a book.
+I'm just hiding out here to get away from
+it all.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.4",
+  text = [[
+I'm reading a book where the main character
+voyages to the center of the earth. They
+start by going down a tunnel here, in
+Oakhaven. I mean, it's got to just be
+fiction, but at the same time, I know
+there are tunnels under the city. I wonder
+just how deep they go.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.6",
+  text = [[
+This section here is about royal courts.
+Here's a book about the death of the Sea
+King's older brother. That door over there
+goes to the court...yard. Coincidence?
+...I mean, probably. Who would organize
+a library around puns?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.7",
+  text = [[
+You know Oakhaven's library has been
+operating continuously since before the
+great flood? Although I think they had an
+interruption of services during the flood.
+I guess books aren't supposed to get wet.
+Which, by the way, don't tell the librarian
+I know that, he might start to question
+just HOW I know that...
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.8",
+  text = [[
+I've been doing research for months and
+finding nothing, but scattered across the
+north sea archipelago are old circles of
+standing stones. I have no idea what they
+might be, or who erected them. Even how
+old they are. They seem to date back to
+before any other structures still standing.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.library.misc.9",
+  text = [[
+I'm trying to write a definitive history
+of the rise of the Pirate Council. Did
+you know Blackbeard, who seems to lead
+the entire Council, wasn't actually its
+founder? He only seems to have joined after
+much of his crew was lost to monsters in an
+old ruin. Makes you wonder if he found
+something in there.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.market.1",
   text = [[
 I've got raw acorns, fresh from the
@@ -8942,7 +9756,7 @@ dialog{
   id = "_oakhaven.npcs.market.5",
   text = [[
 Tell you what, I'm selling tea like nobody's
-business these days. The governor is having
+business these days. The mayor is having
 a birthday party for his dog, and everybody
 wants to drink whatever the dog is drinking.
 Honestly, I'd love to get into that party.
@@ -8966,6 +9780,35 @@ dialog{
 This here is the carpenter's shop. And
 this stool I'm sitting on... this is the
 display model.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.8",
+  text = [[
+Got some burroak bread fresh out of the
+oven if you're interested, hun. Five
+loaves for 40 crowns.
+
+$?Get that bread
+$?No thanks
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.market.9",
+  text = [[
+You know burroak break is baked with real
+acorns inside? I guess it makes it a good
+source of protein. But I think the whole
+idea is kinda...
+$1...nutty...$3
+
+
+...
+I know my material is kind of weak. I'm
+trying to get ready for open mic night at
+the Samander Heartache Saloon.
 ]],
 }
 
@@ -9085,13 +9928,13 @@ thicket. Preferably like, a really
 old one. Ancient?
 
 GROVER:
-Oh, you want to head down to Gull Rock! If
-you head west from town and southwest along
-the road, you should find the thicket pretty
+Oh, you want to head down to Gull Rock! Go
+to Oakhaven Port, cross the bridge and go
+south, you should find the thicket pretty
 GROVER:
-easily. I heard some pirates took to keeping
-people from getting across the bridge, though,
-you might want to go around.
+easily. It's full of monsters though so
+watch out.
+
 TILIA:
 Thanks!
 ]],
@@ -10206,8 +11049,8 @@ dialog{
   id = "_oakhaven.npcs.monastery.monk.1",
   text = [[
 MONK:
-Ah, a pilgrim. No doubt you've come to bathe
-in the great spring. The waters that flow
+Ah, a pilgrim. No doubt you've come to drink
+from the great spring. The waters that flow
 through Oakhaven are all born here. And yet,
 MONK:
 even in this sacred place, the darkness that
@@ -10301,8 +11144,8 @@ something?
 
 MORUS:
 Nope. And they've got plenty of manpower
-to watch for sneaker-in-ers. Honestly, their
-numbers are great for the town's economy.
+to watch for sneaker-in-ers. Honestly, I don't
+know how they feed them all down at Fort Crow.
 TILIA:
 $1Hmm... $3Oh! Well here's what you don't understand.
 If you want to get into a pirate fort, you
@@ -10326,7 +11169,7 @@ like, an apothecary or something in town?
 MORUS:
 Yeah, up on the east side of town. Alright.
 I can find out where the pirates at Fort
-Crow get their grog is you can get something
+Crow get their grog if you can get something
 MORUS:
 effective to put inside a shipment.
 
@@ -10388,9 +11231,9 @@ storehouse next door. Somewhere in the
 basement. Those are headed down to
 Fort Crow, should do the trick. Meanwhile,
 MORUS:
-I'll go wait for you at Fort Crow. We can
-sneak in together once the pirates are
-knocked out.
+I'll sail to Fort Crow make sure the shipment
+gets in and has time to put them out. I'll
+meet you down there.
 ]],
 }
 
@@ -10408,17 +11251,15 @@ going to be delivered?
 MORUS:
 I asked around, they send a barrel down
 every day. That one should be going out
-anytime. I'd wager the pirates will be asleep
-MORUS:
-by the time you find you way down to
-Fort Crow.
-
+anytime.
 TILIA:
 Just what I wanted to hear.
 
 
 MORUS:
-Great. I'll meet you down at Fort Crow.
+Great. I'll sail ahead and make sure the
+ale gets in and knocks them out. I'll
+meet you at Fort Crow.
 ]],
 }
 
@@ -10442,19 +11283,8 @@ That's where I'm headed next. My dad was
 trying to find Blackbeard, so I'm sure he
 would have been looking for his hideout.
 MORUS:
-That's pretty determined. Look, I'm starting
-to think you might actually be able to do
-something about the pirate problem. I'll
-MORUS:
-take you down to Snapmast Reef if you
-think you can take down the Pirate Council.
-It's a dangerous place though.
-TILIA:
-Let's set sail.
-
-
-MORUS:
-I'll meet you down at the port.
+Good luck, Tilia. You might just be able to
+pull this off.
 ]],
 }
 
@@ -10463,8 +11293,8 @@ dialog{
   text = [[
 MORUS:
 If you think you can take down the pirate
-council, I'll take you to their hideout.
-I'll meet you down at the port.
+council, I believe you can. Good luck,
+Tilia.
 ]],
 }
 
@@ -10472,16 +11302,7 @@ dialog{
   id = "_oakhaven.npcs.morus.8_have_ocean_chart",
   text = [[
 MORUS:
-Ready to head out, Tilia?
-
-
-TILIA:
-Yeah. I got a chart that shows where the
-Isle of Storms is!
-
-MORUS:
-Alright, kiddo. If you're sure, then I can
-take you there.
+Wait, I shouldn't be here. This is a bug.
 ]],
 }
 
@@ -10489,12 +11310,8 @@ dialog{
   id = "_oakhaven.npcs.morus.ferry_1",
   text = [[
 MORUS:
-So, is it time to head to Snapmast Reef
-and track down the Pirate Council?
-
-TILIA:
-$?Anchors away!
-$?Not Yet.
+I shouldn't be here, this is a bug in
+the game.
 ]],
 }
 
@@ -10502,9 +11319,9 @@ dialog{
   id = "_oakhaven.npcs.morus.ferry_1_reef",
   text = [[
 MORUS:
-Do you need to go back to Oakhaven?
-
-
+How did I end up here? This should be
+Lily who ferries you around. Some kinda
+bug in the game, I guess.
 TILIA:
 $?Let's set sail.
 $?Not now.
@@ -10515,8 +11332,9 @@ dialog{
   id = "_oakhaven.npcs.morus.ferry_2",
   text = [[
 MORUS:
-Where to, Tilia?
-
+This isn't right, it should be
+Lily sailing with you, this is
+some kinda bug in the gam.
 
 $?Oakhaven
 $?Snapmast Reef
@@ -10625,16 +11443,16 @@ Hmm... yeah, that's Snapmast Reef. There's
 a chain of shipwrecks there called the
 Cemetery of the Waves, looks like their
 MORUS:
-hideout is nestled in there. I can get
-you there if you want. My current ship is
-at Oakhaven Port. I can take you there
+hideout is nestled in there. I won't sail
+there, too many pirates and I've gotten my
+revenge already. But I'll give you a ride
 MORUS:
-now, or meet you when you're ready.
+back to Oakhaven if you want.
 
 
 TILIA:
-$?Take me to your boat
-$?I'll meet you later
+$?Take me
+$?I'll travel myself.
 ]],
 }
 
@@ -10642,8 +11460,9 @@ dialog{
   id = "_oakhaven.npcs.morus.fort.9",
   text = [[
 MORUS:
-That's fine. I'll be waiting for you at
-Oakhaven Port.
+Thank you for helping me take
+Al Jazari down. If anyone can defeat
+the pirate council, it's you.
 ]],
 }
 
@@ -10738,7 +11557,7 @@ GUNTHER (singing):
 of the ironclad snail
 who repressed each and every emotion...
 TILIA:
-That's a pretty good song. Bravo.
+That's an entirely unique song.
 
 
 GUNTHER:
@@ -10817,7 +11636,16 @@ Hey, I hung a bunch of posters up. Now it's
 all up to you. You've gotta protect my posters
 from being torn up by monsters.
 TILIA:
-I'll go check them out.
+I'll go check them out. Where are they?
+
+
+GUNTHER:
+All over, man! The monster could be anywhere
+in the city, no poster is safe!
+
+TILIA:
+I guess I'll just take a walk around the
+city and see if I see anything.
 ]],
 }
 
@@ -10931,10 +11759,10 @@ reason?
 SHIFTY:
 Oh, you know Hazel? She's the best, we
 met her up on Marblecliff when we were rock
-climbing. She showed us these tasty roots...
+climbing. She showed us these tasty roots, uh...
 SHIFTY:
 Anyway, yesterday she was asking if we
-knew a way to get into the Governor's Palace.
+knew a way to get into the Mayor's Palace.
 She wants to sneak into his secret archives.
 TILIA:
 Do you know a way?
@@ -10943,11 +11771,11 @@ Do you know a way?
 SHIFTY:
 Oh, yeah. Up on Marblecliff, there's a ruins
 with a big statue of a bird in the middle. You
-go just east of that and there's three trees
+go just south of that and there's three trees
 SHIFTY:
 growing out of rocks. The middle one has
-a hidden tunnel you can see if you move the
-tree's roots. The tunnel can get you down
+a hidden tunnel you can see if you move some
+rocky... rocks. The tunnel can get you down
 SHIFTY
 to the palace. But hey, if you sneak in,
 don't take all the good stuff! We like to
@@ -11045,10 +11873,133 @@ knows where she is.
 dialog{
   id = "_oakhaven.npcs.port.misc.1",
   text = [[
-You know, up those stairs and past the Port
-Office, I've seen some shady characters up
+You know, up those stairs and past the statue
+of Ove, I've seen some shady characters up
 to no good. They don't have a boat, so they're
 not pirates, but... burglars maybe?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.10",
+  text = [[
+Ah, the Ivystump Apple Boat has arrived.
+You know you can walk through the Veilwood
+east of here to get to the source of these
+apples? I haven't been, but I'd love to
+one day see the apple... mine.
+The apple spring? The apple well. The
+apple factory. Wherever these things
+come from.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.11",
+  text = [[
+As big as Oakhaven City is, I heard a rumor
+there's some underground tunnels there.
+Can you believe it? As if they needed more
+to do there. Sounds like it'd be a
+nightmare for tourism. TOO much to do,
+if anything!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.2",
+  text = [[
+There's always more fish in the sea. But
+what, you wanna go to the trouble of gettin'
+them out? No way! Buy my fish, pre-removed
+from the sea for your eating convenience.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.3",
+  text = [[
+JOSE:
+Fish, crustaceans, invertebrates, gastropods,
+whatever sea creature you wanna eat, I got
+it here! You wanna sample of the hagfish?
+$? Yes
+$? No way, Jose
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.3-2",
+  text = [[
+(It's really, really bad)
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.4",
+  text = [[
+Are we the best shipyard in Oakhaven? Well
+here's how I think about it. Are we the
+only shipyard in Oakhaven? Yes. Are we any
+good at our jobs?.. We're the only shipyard.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.5",
+  text = [[
+Ugh. Big day for moving boxes of nails
+across the pier. Nail shipment day is
+the worst.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.6",
+  text = [[
+We are somehow, according to my calculations,
+36 boxes short on this shipment? How did
+this happen?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.7",
+  text = [[
+Look boss, I think the shipment was bigger
+when we picked it up, but the fact I'm a
+pirate definitely has absolutely no bearing
+on what might have happened...
+$1...$3uh, because I'm NOT a pirate. Am
+I communicating how exculpatory my lack
+of a profession is?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.8",
+  text = [[
+Even though the city of Oakhaven survived
+an ancient flood, its lighthouse didn't.
+Now superstition is that the Ocean accepted
+plunging Oakhaven into the dark as enough
+to appease her. So now nobody will build a
+lighthouse. But for some reason, these big
+torches are okay. Superstitions are weird
+and inconsistent.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.9",
+  text = [[
+I guess if you take the West road from this
+port, you can go south down to this mangrove
+thicket, or north up to some mountain? I
+don't know, I've never bothered traveling.
+There's a market in town, fish here at the
+port, why bother dealing with monsters on
+the roads.
 ]],
 }
 
@@ -11074,20 +12025,16 @@ dialog{
   text = [[
 The brochure is written in an overenthusiastic
 tone: Oakhaven City! Wander the market in the
-south, or visit the Governor's Palace in
+center, or visit the Governor's Palace in
 the north. A cool stream runs around the
-ancient library, through the city, and
+ancient library, under the city, and
 eventually empties out into the sea at
 the port, where you'll find many ferries
-and cargo ships. West is the Veilwood, a
+and cargo ships. East is the Veilwood, a
 shady forest that leads to the sleepy
-town of Ivystump. East is Fort Crow, once
-an ancient ruin, now converted into a
-factory or something? The tourism board
-could not investigate as it is controlled
-by pirates and we recommend staying away.
-Perhaps, instead, venture Northwest of town
-to Marblecliff Mountain! A picturesque
+town of Ivystump. Or perhaps leave west
+from the port and venture Northwest to
+Marblecliff Mountain! A picturesque
 monastery sits perched on top.
 ]],
 }
@@ -11111,11 +12058,343 @@ forms about imports and exports.
 }
 
 dialog{
+  id = "_oakhaven.npcs.port.rusty",
+  text = [[
+RUSTY:
+I'm actually a mechanist, I'm watching the
+fights to study how monsters move. I'm using
+that research to build machines for ships.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.rusty.1",
+  text = [[
+RUSTY:
+Hey, you need something?
+
+
+TILIA:
+Yeah, actually. I'm working with the intern
+at the bomb shop on a project, and he told
+me to bring you this tungsten ore, and
+TILIA:
+you'd be willing to hand over a machine
+part we need to build bomb arrows.
+
+RUSTY:
+Oh, you actually braved that cave to get
+tungsten ore? You're legit. Alright, so
+I'd gladly send the machine part up with
+RUSTY:
+you, but here's the thing, I was in a card
+game with some pirates, and they were betting
+high, and one thing lead to another...
+RUSTY:
+anyway, when things went bad for them they
+knocked me out and stole that machine part.
+I guess what I'm getting at is that if you
+RUSTY:
+want the machine part, you'll have to get
+it back from these pirates, I can't help
+you.
+TILIA:
+Alright, well where are these pirates?
+
+
+RUSTY:
+They're camped out in a building west of
+the port, across the bridge. It's up some
+stairs. Watch out, they're really into bombs.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.1",
+  text = [[
+I'm sure you've fought in plenty of
+underground fighting arenas, but there's
+something special about this one. Everyone
+just really cares about each other. It's
+like a big family. All united in watching
+ferocious violent battles.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.10",
+  text = [[
+I used to be an explorer back in the day.
+The way waves and waves of beasts come at
+you here really takes me back. Reminds me
+of this old ruin in the fields east of town.
+What was it I had to do to get in there?
+There were a couple of those standing stones
+in particular you had to touch, I think...
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.11",
+  text = [[
+If you enjoy watching people risk their
+lives fighting monsters here, you should
+check out the tic-tac-toe championship
+in Oakhaven! It's in the southwest part
+of town, super high stakes!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.2",
+  text = [[
+One of the great things about the gladiator
+stuff here is that they bring in cool
+monsters from places I've never even heard
+of. It's a treat to get eviscerated by them.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.3",
+  text = [[
+I've always wondered why we have this
+fighting arena hidden away. I mean, it's
+cool and all, but, is fighting monsters
+illegal? Why all the subterfuge?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.4",
+  text = [[
+If you can take down all the monsters in
+the harder brackets here, you're probably
+pretty set anywhere, huh? Except maybe
+some big monsters at the end of long,
+winding quests, I guess. I heard there's
+even a monster stronger than... I dunno,
+around what you'd consider final boss level?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.5",
+  text = [[
+You here to watch the fight, or to BE
+the fight? I here for the first one,
+myself. I guess that's obvious since I'm
+not fighting right now.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.6",
+  text = [[
+Hey, new face at the gladiator arena! You
+find your way in yourself? I feel so badly
+the entrance is hidden, but it wouldn't be
+an underground fighting arena if we advertised.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.7",
+  text = [[
+This guy brought me here on a date, then
+tried to I guess show off by challenging the
+monsters in the arena? Anyway, he got
+knocked into the water and probably washed
+out to the port, but I can't take my drink
+outside to go look for him.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.8",
+  text = [[
+You know, this whole gladiator place isn't
+the only underground situation in Oakhaven.
+I used to be a plumber, and one time I had
+to get so deep in there, I found myself at
+an underground lake. Then some bandits
+chased me out. Anyway I guess what I'm
+saying is don't go into plumbing unless
+you're confident.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.9",
+  text = [[
+So the thing about Oakhaven is it's
+historical, and magnificent with its
+stained glass and libraries and stuff.
+But then you come down here to this
+underground fighting arena, and it's so
+relaxed and welcoming. Every city needs
+a good dive. The fact this one has fights
+against wild beasts is just icing on top.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.arenamaster.gofight",
+  text = [[
+ARENA GUY:
+I'll open to doors. Cross that bridge to
+get in, then stand on the skull in the
+center and we'll release the monsters.
+ARENA GUY:
+Once you clear a round, stand at the center
+of the arena again, and we'll release the
+next round. No more rules. Go ahead.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.arenamaster.join",
+  text = [[
+ARENA GUY:
+You want to test yourself in the beast
+tournaments? You throw in 20 crowns, but
+there's big prizes if you make it out alive.
+ARENA GUY:
+There's a few different challenges. What
+do you think, kid?
+
+$?Level 1
+$?Level 2
+$?Level 3
+$?I'm not interested
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.underground.bartender",
+  text = [[
+Welcome. Our underground fighting arena is
+so underground we don't even have a name.
+If you want in on the bloodsport, go talk to
+that seedy guy standing over by the wall.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.port.warhouse_blocker_guy.1",
   text = [[
 STRIPED SHIRT GUY:
 Sorry man, no 'mittance here. This is
 just a normal warehouse is all.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.1",
+  text = [[
+The local music scene in Oakhaven has really
+taken off recently. Used to just the this
+once guy with a bagpipe, and boy I'm glad
+those days are behind us.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.2",
+  text = [[
+Yeah, you've heard of sea charts, but have
+you heard of A and B charts? Ar har har har.
+Actually though, I have heard there's some
+sea charts out there that chart the course
+to forgotten, inaccessible ports. Get your
+hands on those and you'd be able to sail
+to the old places, where nobody anchors
+anymore. Might be good stuff there.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.3",
+  text = [[
+Maybe this is judgemental, but the last
+guy who used to play at this bar? You
+couldn't pay me to drink here with him
+playing. It's not that he was bad,
+I just hate horns. They remind me of
+the time I was gored in the side by a
+monster's horns. It's a weird word
+association thing, I know.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.4",
+  text = [[
+Yo, can you understand what that woman is
+singing? I'm like, really into this song,
+but what if it's about something dumb? Like
+it's just about apples or something?
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.5",
+  text = [[
+Back when this place had bad music, I'd
+spend my time down at the secret fighting
+arena at the port... oh, wait, that's not
+how secrets work. Pretend you didn't hear.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.6",
+  text = [[
+I thought I saw my doppleganger yesterday.
+But you know, when you get down to it,
+there really just aren't that many different
+faces in the world.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.7",
+  text = [[
+This last month has been a bad one for
+pirate attacks. There were three at the
+Isle of Lobb, and I heard not too long ago
+Yarrowmouth was raided as well, but they
+fought the pirates off. I think Oakhaven
+is generally pretty safe, but the Mayor
+is a bit... lackadasical? I wish his dog
+was in charge instead. I can trust him.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.8",
+  text = [[
+I usually try to catch a ferry to sail back
+when I want to visit my hometown, but I
+just walked the whole way last time. I
+definitely noticed a bunch of spots where,
+if I had been collecting items that gave me
+new abilities this whole time, I'd be able
+to get somewhere new. Really made me regret
+my life choices in not collecting those.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.9",
+  text = [[
+Hmm, me? I'm just a normal man sitting at
+a table in the corner of a tavern alone.
+Why, does it make me look significant? Like
+I might send you on some quest? Like there's
+more to my story?...
+...Great, that's exactly what I was going
+for. It's an aesthetic.
 ]],
 }
 
@@ -11225,8 +12504,55 @@ Maybe it's just me, but when they put up
 the walls for this new basement seating
 area, that spot right over there has always
 SALOON PATRON:
-looked a bit of. Like they did a bad job
+looked a bit off. Like they did a bad job
 just over there to our left.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.sculptor.1",
+  text = [[
+SCULPTOR:
+Oh, you're carrying a sword into my house?
+Perfect! I need help destroying these clay
+monsters for material to make sculptures.
+TILIA:
+$?I'll help!
+$?That's a great idea JUST KIDDING, NO WAY!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.sculptor.2",
+  text = [[
+SCULPTOR:
+Fantastic! Effervescent! Marvelous! Go
+get 'em!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.sculptor.3",
+  text = [[
+SCULPTOR:
+Hey, thanks! You knocked those gravel guys
+out like they were just... I dunno, pebbles?
+I'm a sculpture guy, not a poet. Here, take
+SCULPTOR:
+a share of the materials!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.sculptor.4",
+  text = [[
+SCULPTOR:
+Hey, thanks for helping me smash those
+pebble punks. I got lots of good clay to
+make some statues. Monster statues. Yeah.
+SCULPTOR:
+Now I'm stocked up on materials and ready
+to create something truly horrifying.
 ]],
 }
 
@@ -11259,8 +12585,8 @@ normal villager type people in here.
 Whatcha want?
 TILIA:
 Are you sure you guys aren't a bunch of
-pirates who stole something from the bomb
-shop?
+pirates who stole a machine part from a
+guy named Rusty?
 PERSON BEHIND DOOR:
 $1...$3Okay, yeah, we are. I'm gonna let
 you in so I can beat you up.
@@ -11307,9 +12633,9 @@ up is in the hands of pirates and what I'm
 getting at is if you want it, you gotta go
 get it from them. They're camped out down
 THE BOMB MAKER:
-at the shipyard, in one of the buildings.
-If you want to pick up that package,
-it's up to you now.
+at the port, in a building West, over
+the bridge. If you want to pick up that
+package, it's up to you now.
 ]],
 }
 
@@ -11318,6 +12644,14 @@ dialog{
   text = [[
 Good day, hun. Have a look around, check
 out anything that catches your eye.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.shops.general_store.2",
+  text = [[
+Welcome to Oakhaven Portside Shop. You want
+to buy some portside groceries, maybe?
 ]],
 }
 
@@ -11567,12 +12901,48 @@ upstairs! Alright, buddy.
 }
 
 dialog{
+  id = "_oakhaven.observations.misc.ancient_grove_stone",
+  text = [[
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.misc.dog_went_back",
   text = [[
 TILIA:
 Huh. I guess that dog probably wanted to
 get back to his birthday party. Better go let
 the city guard captain know.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.lakehouse_switch1",
+  text = [[
+Oh, there's a hidden switch in the bookcase!
+Press it?
+$? Obviously!
+$? Could be some kinda trap.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.lakehouse_switch2",
+  text = [[
+You remain completely safe.
+]],
+}
+
+dialog{
+  id = "_oakhaven.observations.misc.lighthouse_ephitat",
+  text = [[
+There's some very worn writing carved into
+the stone:
+Zephyrine, may we fight our friends, so they
+might not become our enemies. In the
+ruins of the palace he destoryed, I've
+built this lighthouse. Should you decide
+to follow it home, we can rebuild all.
 ]],
 }
 
@@ -11619,13 +12989,13 @@ the Sea King. His love for his people has
 grown into hatred for any who hold something
 he doesn't. The tribes of Smoldering Rock
 did not pose the threat he claims. And yet
-his fearsome storm has completely destoryed
+his fearsome storm has completely destroyed
 their home. I have seen their village,
 or what remains of it after the storm. And
 I fear the Bear Warriors who resist his
-rule will meet a similar fate. His advisor,
+rule will meet a similar fate. His adviser,
 Heron, is close with the chief the king
-imposed on the warriors. I hope he disuades
+imposed on the warriors. I hope he dissuades
 the king.
 ]],
 }
@@ -11706,7 +13076,7 @@ dialog{
   id = "_oakhaven.observations.palace.painting_oakhaven",
   text = [[
 The painting is titled:
-''Oakhaven, Jewl of the North Seas''.
+''Oakhaven, Jewel of the North Seas''.
 It seems to depict the city before the flood.
 ]],
 }
@@ -11840,6 +13210,23 @@ Bomb Shop
 }
 
 dialog{
+  id = "_oakhaven.signs.eastoak1",
+  text = [[
+West - Oakhaven
+North - The Veilwood
+East - Stonefell Crossroads
+]],
+}
+
+dialog{
+  id = "_oakhaven.signs.eastoak2",
+  text = [[
+North - Oakhaven
+East - Stonefell Crossroads, The Veilwood
+]],
+}
+
+dialog{
   id = "_oakhaven.signs.fort_crow_deliveries",
   text = [[
 All deliveries use side door
@@ -11873,6 +13260,14 @@ dialog{
 Oakhaven South Gate
 South - Oakhaven Port
 West - Gull Rock, path to Marblecliff Moutain
+]],
+}
+
+dialog{
+  id = "_oakhaven.signs.poison_grove",
+  text = [[
+Poison Grove
+(Watch out for dangerous plants!)
 ]],
 }
 
@@ -11918,7 +13313,7 @@ dialog{
   text = [[
 East - Oakhaven
 North - Marblecliff Mountain
-West - Veilwood Forest, Ivystump Village
+South - Saltpeter Mine
 ]],
 }
 
@@ -12024,25 +13419,13 @@ Tilia? I... Tilia! Wow Little Gull, you look so
 strong. Wait... you must have beat up a lot of
 pirates to get here, didn't you? Tilia, that-
 TILIA:
-Hey! No, you listen! Linden and I figued you
-were dead for months! I get it, you're fighting
-pirates and stuff, but you didn't send any
+Hey! No, you listen! Linden and I didn't hear
+word from you for months! We thought you might
+have died! I'm also proud of you for doing so
 TILIA:
-letters? Stop chasing pirates for a week to come
-let us know what was going on?
-
-MALLOW:
-When would I have done that? While Hazel was a
-hostage in Hourglass Fort? When the Council was
-burning down towns to find this place? While
-MALLOW:
-Blackbeard was claiming the power of the Ocean
-for himself? Tilia, I want to help people. You
-have to make some sacrifices if you want that.
-TILIA:
-That might be what you need to be doing. But
-you aren't doing it how I need to you be
-doing it.
+much to help people and stop these pirates.
+Next time, maybe send a letter or something
+though. But I'm gonna help you finish this.
 MALLOW:
 $1...$3
 ]],
@@ -12133,7 +13516,7 @@ dialog{
   id = "_palace_of_storms.cutscenes.sea_king.1",
   text = [[
 $2
-          ...
+                  ...
 
 
           Would you seek my curse?
@@ -12185,6 +13568,30 @@ There's a message inscribed on the stone.
 He who would visit the Spring Memorial must
 prove both marksmanship and faith. The
 arches will accept your offering.
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.observations.abyss_reaction",
+  text = [[
+        Ah, so you've seen the
+    source of the darkness, the abyss
+      at the center of the world...
+
+   I've not been made this way only by
+    the Ocean. The abyss corrupts,
+     and it will not be cleansed.
+
+]],
+}
+
+dialog{
+  id = "_palace_of_storms.observations.final_battle_save",
+  text = [[
+(This is the final battle. You won't be able
+to save after this. Save your game?)
+$?Yes
+$?No
 ]],
 }
 
@@ -12384,6 +13791,270 @@ or something like that.
 
 TILIA:
 I hope I can too. Thanks, man.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.ferryboy.1",
+  text = [[
+TERRYWEATHER:
+If you want to take the ferry, just climb
+aboard and I'll open the gate. You been
+through Stonefell Crossroads recently?
+TERRYWEATHER:
+Seems like the monsters get tougher as
+you head up that way. If you ever wander
+into an area where the monsters are too
+TERRYWEATHER:
+tough for you, there's no shame in coming
+back later after you've improved your
+weapons or armor.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.ferryman.0",
+  text = [[
+MERRYWEATHER:
+Yeh lookin' to take the Sycamore Ferry
+across to Oakhaven or Yarrowmouth? No toll
+or fare, this one's a public service.
+TILIA:
+Yeah, sure.
+
+
+MERRYWEATHER:
+Alright, hop on the ferry and I'll let the
+gate down. Don't fall off or you'll have
+to wait for it to come back! Also watch
+MERRYWEATHER:
+your step when you're gettin' off, it
+just starts goin' back and forth once the
+gate is open. Weird currents, ya know.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.ferryman.1",
+  text = [[
+MERRYWEATHER:
+Just hop on the ferry and I'll let the
+gate down. On the other side of the channel
+is Stonefell Crossroads. You can get to
+MERRYWEATHER:
+Oakhaven to the West, or Yarrowmouth to
+the East.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.lenda.1",
+  text = [[
+LENDA:
+Oh snails! I didn't think anyone would find
+me here! You're not with those pirates on
+the shoal, are you?
+TILIA:
+No way! You're hiding from them?
+
+
+LENDA:
+Yeah! I stole the key to the fort they built
+to lock them inside. I don't think any of
+them can swim.
+TILIA:
+Yeah, I mean, who can?
+
+
+LENDA:
+Right? I don't know anyone who can swim.
+It's bad luck.
+
+TILIA:
+So then now what?
+
+
+LENDA:
+$1...$3That's my whole plan. So, okay. It
+wasn't totally thought-through. Since then,
+I've been waiting here to make sure they
+LENDA:
+don't like... built a bridge to get out.
+They haven't yet.
+
+TILIA:
+What$1...$3 Do you want me to maybe just go
+beat them up? So you don't have to wait here
+forever?
+LENDA:
+OH! That's way better! Yeah, would you?
+Here's the key to their fort!
+
+(You got a Fort Key!)
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.lenda.2",
+  text = [[
+LENDA:
+So yeah, I guess my plan was just to lock
+those pirates in their fort and... well my
+plan was to lock the pirates in their fort.
+LENDA:
+Now I've gotta wait here to make sure they
+don't get out.
+
+TILIA:
+Don't worry, I'll go beat them up so you
+can stop camping here.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.lily.help",
+  text = [[
+WOMAN:
+Hey! You! Help a girl out, these monsters
+have me pinned in here!
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.lily.saved",
+  text = [[
+WOMAN:
+Hey, thanks, that was a tight spot. I'm
+Lily, of Lily's Delilveries.
+
+TILIA:
+No problem. You mean deliveries?
+
+
+LILY:
+No, it's... Delilveries, like Lil, short for
+Lily? I thought it was a good name. I've got
+a ship, I delilver cargo, you know.
+TILIA:
+Hey if that's part of your brand, go for
+it. Just stay out of the way of monsters.
+
+LILY:
+Hey, I want to do something for you. Since
+you really rescued me there. If you see me
+around, come talk to me. I'm always sailing,
+LILY:
+so I can sail you around to anywhere I've
+been. Or even places I haven't been, if you
+bring me a sea chart. I like traveling.
+TILIA:
+Alright, thanks. If I see you around, I'll
+be sure to catch up with you.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.npcs.lily.saved_follow_up",
+  text = [[
+LILY:
+Hey, thanks again. I'm just gonna catch my
+breath after watching you fight those
+monsters, but then it's back to the
+LILY:
+delilvery business... yeah, as I'm saying
+it out loud to you know, delilvery just
+doesn't roll off the tongue.
+TILIA:
+Not so much, no.
+
+
+LILY:
+Anyway, if you see me around, come talk to
+me. I'll be able to sail you around to
+palces I've been. Or if you have charts
+LILY:
+of places I haven't been, then those
+places too.
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.other.crow_lord_challenge",
+  text = [[
+It's the same statue as the one where you
+found the crow feather. Offer the feather?
+$?Yes
+$?No
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.forest_of_tides",
+  text = [[
+West - Goatshead
+East - Ballast Harbor Tunnel, Zephyr Bay
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.forest_of_tides_2",
+  text = [[
+South - Ballast Harbor Tunnel
+East - Zephyr Bay
+Northwest - Goatshead
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.lotus_1",
+  text = [[
+East - Goatshead
+West - Spruce Head, Fort Crow
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.lotus_2",
+  text = [[
+West - Spruce Head
+South - Fort Crow
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.stonefell_1",
+  text = [[
+North - Oakhaven
+East - Yarrowmouth
+South - Goatshead
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.sycamore_ferry_1",
+  text = [[
+East - Forest of Tides, Ballast Harbor Trail
+South - Lotus Shoal, Limestone Island
+North - Goatshead Harbor
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.sycamore_ferry_2",
+  text = [[
+West - Lotus Shoal, Spruce Head
+South - Limestone Island
+East - Goatshead Harbor, Forest of Tides
+]],
+}
+
+dialog{
+  id = "_treasure.abyssal_flame.1",
+  text = [[
+You received the Abyssal Flame. This spell
+summons dark energy from the abyss at the
+center of the earth. It will consume most
+of your magic power to use.
 ]],
 }
 
@@ -12689,9 +14360,10 @@ how to throw it so it always comes back.
 dialog{
   id = "_treasure.boomerang.2",
   text = [[
-You found a really well-made boomerang.
-This one can be thrown harder, better, faster,
-and stronger.
+You found the Crowfeather Boomerang. This
+one can go further and quicker, and leaves
+a trail of sharp crow feathers in its wake
+that will damage enemies.
 ]],
 }
 
@@ -12857,6 +14529,16 @@ equipment.
 }
 
 dialog{
+  id = "_treasure.crow_feather.1",
+  text = [[
+You found a Crow Feather. While you aren't
+sure why you're taking it, you can feel the
+statue you're standing in front of staring
+into the back of your head.
+]],
+}
+
+dialog{
   id = "_treasure.crystal_spark.1",
   text = [[
 You received the Ophira's Ember.
@@ -12963,6 +14645,105 @@ dialog{
   text = [[
 You got some Ether Bombs. Once thrown, these
 will explode and temporarily freeze enemies.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_ballast_harbor.1",
+  text = [[
+You found a sea chart of Ballast Harbor.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_goatshead.1",
+  text = [[
+You found a sea chart of Goatshead Harbor.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_isle_of_storms.1",
+  text = [[
+You found a sea chart showing the mythical
+Isle of Storms. This chart would actually
+allow someone to sail there.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_ivystump.1",
+  text = [[
+You found a sea chart showing Ivystump Village.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_kingsdown.1",
+  text = [[
+You found a sea chart of Kingsdown Isle.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_limestone.1",
+  text = [[
+You found a sea chart of Limestone Island.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_oakhaven.1",
+  text = [[
+You found a sea chart to Oakhaven Port.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_snapmast.1",
+  text = [[
+You found a sea chart of Snapmast Reef.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_spruce_head.1",
+  text = [[
+You found a sea chart showing Spruce Head.
+This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_yarrowmouth.1",
+  text = [[
+You found a sea chart showing Yarrowmouth
+Village. This could be used to allow someone
+to navigate there without issue.
+]],
+}
+
+dialog{
+  id = "_treasure.fast_travel_chart_zephyr_bay.1",
+  text = [[
+You found a sea chart of Zephyr Bay.
+This could be used to allow someone
+to navigate there without issue.
 ]],
 }
 
@@ -13199,6 +14980,9 @@ times, damaging enemies.
 dialog{
   id = "_treasure.iron_candle_pickable.4",
   text = [[
+You got salt candles. Throw these down and
+as they slowly burn, they'll pop several
+times, damaging enemies.
 ]],
 }
 
@@ -13262,6 +15046,16 @@ in the area.
 }
 
 dialog{
+  id = "_treasure.key_brass.1",
+  text = [[
+You found an ancient brass key. Strange
+symbols and runes are etched around its
+teeth. It doesn't look like any of the
+locks around here...
+]],
+}
+
+dialog{
   id = "_treasure.key_dandelion_charm.1",
   text = [[
 You found a key. It will unlock a door
@@ -13299,6 +15093,14 @@ dialog{
   text = [[
 You found a key! It probably unlocks
 a door in this area.
+]],
+}
+
+dialog{
+  id = "_treasure.key_haunted_house.1",
+  text = [[
+You found a dusty old key with some
+oak leaves etched into the handle.
 ]],
 }
 
@@ -13467,6 +15269,15 @@ You received Amalenchier's Wrath. This
 spell consumes much of your magic power
 to summon the wrath of the forest to
 aid you in battle.
+]],
+}
+
+dialog{
+  id = "_treasure.machine_part.1",
+  text = [[
+You found the stolen machine part that the
+Bomb Shop's intern needs to make bomb
+arrows. Bring it back to him!
 ]],
 }
 
@@ -13893,6 +15704,15 @@ things.
 }
 
 dialog{
+  id = "_treasure.tungsten_ore.1",
+  text = [[
+You found a chunk of tungsten ore. This
+mineral is used by blacksmiths in certain
+high-heat situations.
+]],
+}
+
+dialog{
   id = "_treasure.violets.1",
   text = [[
 You collected some violet petals.
@@ -14248,13 +16068,13 @@ up with Dad and Hazel. And now you know
 Hazel is alright. And you know where they
 went. You're closer than ever. I've just
 TILIA:
-gotta catch a ferry going to Oakhaven,
-and figure it out when I get there...
-and definitely avoid these pirate guys. Or,
+gotta get over to Oakhaven, and figure
+it out when I get there... and definitely
+avoid these pirate guys. Or, well, if I
 TILIA:
-well, if I want to join the Volunteer Navy
-like Dad, I'd be trying to stop the
-pirates... Well, one step at a time.
+want to join the Volunteer Navy like Dad...
+I guess don't avoid them, but find them and
+stop them?... Well, one step at a time.
 ]],
 }
 
@@ -14373,12 +16193,8 @@ guy alone or else smack them around. I can
 manage that.
 NINA:
 Excellent. The meeting place they picked is
-at Seaweed Rock, in Tern Marsh. In the
-southeast corner of town, there's a tunnel
-NINA:
-that can get you to Tern Marsh, then
-I guess look for pirates to the west and say
-you're here on behalf of Carlov. Go get 'em!
+at Seaweed Rock, in Tern Marsh. It's on the
+west side of the marsh. Go get 'em!
 ]],
 }
 
@@ -14399,12 +16215,9 @@ dialog{
   id = "_yarrowmouth.npcs.nina.4",
   text = [[
 NINA:
-Haven't met with those pirates yet? Take the
-tunnel in the southeast corner of town to
-Tern Marsh, then meet the pirates at
-NINA:
-Seaweed Rock on the west side of the
-marsh. Tell them to stay away from Carlov-
+Haven't met with those pirates yet? Seaweed
+Rock is on the west side of Tern Marsh.
+Tell them to stay away from Carlov-
 if they give you any trouble, beat 'em up!
 ]],
 }
@@ -14437,13 +16250,8 @@ Sure. I'd like that, actually. Where is their
 hideout?
 
 NINA:
-They've got a spot outside Ballast Harbor.
-Northeast of the market, there's a little fort
-on the side of a cliff. You can get to Ballast
-NINA:
-Harbor through Tern Marsh. It's a little twisty,
-but it's near the southeast end of the marsh.
-Go get em! And I'll pay you extra!
+It's in Stonefell Crossroads, I think.
+Go finish 'em off, I'll pay you extra!
 ]],
 }
 
@@ -14452,12 +16260,11 @@ dialog{
   text = [[
 NINA:
 You need directions to give those pirates
-who ambushed you the what-for? Their fort
-is northeast of Ballast Harbor. The quickest
+who ambushed you the what-for? They're in
+Stonefell Crossroads. Go through Tern Marsh
 NINA:
-way to Ballast Harbor is to travel to the
-southeast end of Tern Marsh, there's a bridge
-to Ballast Harbor there.
+and just west of that is the crossroads.
+Their fort is around there.
 ]],
 }
 
@@ -14518,13 +16325,9 @@ Sure. I'd like that, actually. Where is their
 hideout?
 
 NINA:
-They've got a spot outside Ballast Harbor.
-Northeast of the market, there's a little fort
-on the side of a cliff. You can get to Ballast
-NINA:
-Harbor through Tern Marsh. It's a little twisty,
-but it's near the southeast end of the marsh.
-Go get em! And I'll pay you extra!
+It's in Stonefell Crossroads. Go through
+Tern Marsh and just west is the crossroads.
+Their fort is around there. Go get 'em!
 ]],
 }
 
@@ -14548,7 +16351,7 @@ maybe we could out-compete him. On the
 market. And make our own mead. So I got
 a whole bunch of bees. Well. Kinda.
 RICHARDO:
-I actually accidentially got a whole
+I actually accidentally got a whole
 bunch of hornets. It's bad.They've
 infested the whole barn. It's dangerous.
 RICHARDO:
@@ -14586,6 +16389,10 @@ RICHARDO:
 Ooh man. Thanks again, you saved my
 butt. If the boss had found out I
 infested the barn with hornets...
+RICHARDO:
+Well, he'd probably be like, Richardo!
+Not again! What did I tell you? And I'd
+be like... sorry...
 ]],
 }
 
@@ -14594,7 +16401,7 @@ dialog{
   text = [[
 STELLA:
 Don't see many people wandering out this
-far. Welcome to Naerreturn Lighthouse.
+far. Welcome to Zephyr Lighthouse.
 
 TILIA:
 Thanks. That lighthouse looks super old,
@@ -14605,9 +16412,9 @@ Is it not lit? Lunos, I told you not to play
 upstairs! Could you do me a favor and go
 light it again? There's a switch upstairs.
 TILIA:
-Yeah, no problem. You know, this isn't the
-first lighthouse just like this one I've seen
-as I've been traveling.
+Yeah, no problem. You know, I don't think this
+is the first lighthouse just like this one I've
+seen as I've been traveling.
 STELLA:
 There are four, actually. According to legend,
 a man called Heron built them. When the
@@ -14686,11 +16493,11 @@ I don't think so.
 
 LUNOS:
 If you're good at not getting lost, you should
-explore the puzzlewood. Mom won't let me
-because it's so confusing. But my friend told
+explore the Puzzlewood, on Yarrowmouth! My
+friend lives there and said there's this Tomb
 LUNOS:
-me there's a tomb somewhere in the forest.
-I bet there's ghosts! So cool.
+way back in there, but it's hard to find!
+I wonder if there's ghosts! Probably!
 ]],
 }
 
@@ -14730,6 +16537,10 @@ OLIN:
 to ask Jerah. He went up to the Juniper
 Grove... quite a while ago, come to think of
 it. Here, take the key and go check on him.
+OLIN:
+The Juniper Grove is by the dock, head
+northeast out of town.
+
 (Olin gave you the Juniper Grove Key)
 ]],
 }
@@ -14738,9 +16549,8 @@ dialog{
   id = "_yarrowmouth.npcs.tavern.Olin.3",
   text = [[
 OLIN:
-Did you go check on Jerah? The path
-to the Juniper Grove starts down by the
-docks.
+Did you go check on Jerah? Juniper Grove
+is northeast of town, by the dock.
 ]],
 }
 
@@ -14801,13 +16611,16 @@ dialog{
 JERAH:
 Hey, thanks again from saving me from
 that monster. If you're still looking for the
-pirates, head to Kingsdown Isle. It's south
+pirates, head to Kingsdown Isle. There's a
 JERAH:
-of the Puzzlewood. On the island is a bear
+raft that'll take you there east of town, so
+south before you get to the dock and Juniper
+Grove. Then on the island is a bear statue,
+JERAH:
 statue, and the leftmost pillar nearby has
 a secret keyhole that opens the path
-JERAH:
 to some catacombs you can cut through. But,
+JERAH:
 the key was lost a while ago. I think stolen
 by pirates...
 ]],
@@ -14846,13 +16659,9 @@ I'll see what I can do about it. Where is the
 mushroom picking spot?
 
 ROHIT:
-Head through the puzzlewood all the way to
-the eastern edge. You'll have to go up some
-old stairs and across a bridge, but there's
-ROHIT:
-a sign nearby. And you'll need this key to
-open the gate. Thank you for your help.
-
+Head through the Puzzlewood, on the western
+edge up some stairs is the spot. You'll
+need this key to open the gate.
 (You received a key to get to the mushroom
 picking spot)
 ]],
@@ -14864,11 +16673,7 @@ dialog{
 ROHIT:
 Did you find our mushroom picking spot and
 clear out the monsters? Head through the
-Puzzlewood, to the eastern edge. The spot
-ROHIT:
-is up some stairs and across a bridge.
-There's a sign there to guide you when
-you're close.
+Puzzlewood, to the western edge.
 ]],
 }
 
@@ -14984,7 +16789,7 @@ Briarwood Gin to help you kids out.
 dialog{
   id = "_yarrowmouth.npcs.town_people.1",
   text = [[
-Have you explored the Puzzlewood east of
+Have you explored the Puzzlewood West of
 town? There's an old structure built by the
 Bear Warriors. They say one of their relics
 is hidden inside.
@@ -15027,6 +16832,124 @@ in the Northwest corner of town.
 }
 
 dialog{
+  id = "_yarrowmouth.npcs.town_people.5",
+  text = [[
+Southeast of town, there's a place called
+Kingsdown Isle. There's some pirates living
+in an old fort there, but Kingsdown is so
+much of a pain to travel to, they don't
+really bother us. Since the road from
+Tern Marsh is blocked off, I think the only
+way there is taking the a raft along
+Snapmast Reef, east of here.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.town_people.6",
+  text = [[
+So I've got this fascination with old
+architecture, right? Been to Oakhaven to
+study the old buildings and stuff. But I
+was in the Puzzlewood last month and I
+found some stone pillars that are like, old.
+Older than the buildings in Oakhaven, even
+than the Bear Warriors' ruins. But then
+some monster was there so I ran away.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.town_people.7",
+  text = [[
+I love coming here for drinks, their
+patio is goat friendly!
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.town_people.8",
+  text = [[
+Out in the wilds of Tern Marsh, there's
+actually a Meadery. You know, honey wine?
+I guess they somehow compete with Briarwood.
+And like, hometown pride and all so don't
+tell anyone but... I actually think they
+make better drinks.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.town_people.9",
+  text = [[
+Some people still call Yarrowmouth the
+Isle of Thorns. It's partially because of
+the briars that grow here, and partially
+because the people who lived here long ago
+were known for fighting with spears. Also
+for being pretty thorny in their personalities.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.town_people.crafting",
+  text = [[
+NATHAN:
+Oh, welcome to the apothecary. I'm the
+village healer, need anything for your
+ailments?
+TILIA:
+No, I'll be fine, thanks.
+
+
+NATHAN:
+Marvelous. Well if you need to whip
+anything up using that crafting table,
+help yourself.
+]],
+}
+
+dialog{
+  id = "_yarrowmouth.npcs.town_people.hurt_guy",
+  text = [[
+INJURED MAN:
+If you're ever injured, say, when some
+pirates sail over from Snapmast Reef and
+try to take over the town's pier, the
+INJURED MAN:
+healer makes a mean headache potion. I mean,
+one that cures them. Dunno about causing
+them.
+TILIA:
+Pirates tried to take control of Yarrowmouth's
+pier? Why?
+
+INJURED MAN:
+Dunno. Sail around the island to get to
+Oakhaven maybe? Threaten more people?
+We managed to send them off, the
+INJURED MAN:
+Volunteer Navywoman, Nina, knew this
+Mallow guy who came and helped.
+
+TILIA:
+Oh! That's my dad! Do you know where he
+went afterwards?
+
+INJURED MAN:
+Ballast Harbor maybe? This was a while ago
+though, he's likely gone on from there.
+I hear he was tracking pirates.
+TILIA:
+He is. Now I'm tracking him.
+
+
+INJURED MAN:
+Well, best of luck to you.
+]],
+}
+
+dialog{
   id = "_yarrowmouth.npcs.town_people.shopkeeper_1",
   text = [[
 A new face in Yarrowmouth. Did you come
@@ -15040,7 +16963,8 @@ dialog{
   id = "_yarrowmouth.observations.ambush",
   text = [[
 TILIA:
-Wait, what!? Is this seriously an ambush?
+Wait, what, the door's shut? Is this
+really an ambush situation?
 ]],
 }
 
@@ -15048,7 +16972,8 @@ dialog{
   id = "_yarrowmouth.observations.ambush_2",
   text = [[
 TILIA:
-What? Is this someone's idea of a trap?
+What, is the gate spring loaded? Ugh, I
+can't believe I got caught in a trap!
 ]],
 }
 
@@ -15103,31 +17028,10 @@ dialog{
   text = [[
 There's a letter here that looks important:
 Dearest Pirates of Fort Crow,
-We've decided to take you up on your
-invitation to visit Oakhaven. Someone from
-the Volunteer Navy has been following us
-since we raided Limestone Island. I'll leave
-the main crew to man the fort here, but
-myself and the first mates will sail to
-Fort Crow immediately as a precaution. We
-have something that needs to be delivered
-to Blackbeard right away.
-Sincerely, Captain Thyme
-...
-
-
-
-TILIA:
-Looks like this is exactly what I was looking
-for- the Hourglass Captain ran away to Fort
-Crow on Oakhaven Island... and they were
-TILIA:
-being followed. That must be my dad, he
-probably came through here and chased
-the pirates out. I'd better go to Oakhaven
-TILIA:
-and look for this Captain Thyme guy, get
-him to tell me where my dad went.
+This part of the game was changed, and this
+letter doesn't need to be in the game
+anymore. If you've somehow found this,
+please disregard.
 ]],
 }
 
@@ -15167,7 +17071,7 @@ There's a letter here from Blackbeard!
 called 'Spruce Isle' frequently. Best he can
 piece together, its coast would look like
 this. Recognize it?''
-...There's a chart of Goatshead Harbor
+...There's a chart of Lotus Shoal
 attached.
 ]],
 }
@@ -15190,7 +17094,7 @@ Captain Blackbeard,
 The outlying sites haven't yielded any clues
 toward finding Ocean's Heart Isle, but our
 trip to Spruce Head was successful, but it
-seems like it's the last amulet. Everyone
+seems like it's the only amulet. Everyone
 might have to go in on one trip whenever we
 discover the Isle's location.
 ]],
@@ -15406,9 +17310,8 @@ Yarrowmouth General Store
 dialog{
   id = "_yarrowmouth.signs.village_1",
   text = [[
-East - The Puzzlewood
-(Roads to Kingsdown Isle, Naerreturn Bay
-and Tern Marsh are all through Puzzlewood)
+East - Yarrowmouth Pier, Juniper Grove
+South - Trail to Kingsdown Isle
 ]],
 }
 
@@ -15522,22 +17425,22 @@ Fast travel?
 
 dialog{
   id = "quest.heron_doors",
-  title = "Heron Doors",
+  title = "The Seabird Shrines",
   text = [[
-@?Explore all of the heron doors
+@?Find all of the Seabird Shrines
 !Explore the remaining shrines to
-!obtain the rest of the thunder charms.
+!empower the Seabird's Tear
 
-%~You haven't found any more heron doors
+%~You haven't found any more shrines
 %=!Locations to explore: --// The player must find at least one door for these lines to be visible
-?Heron doors explored: --// This line visible instead once quest is complete
+?Shrines explored: --// This line visible instead once quest is complete
 %1$@1   Tern Marsh
 %2$@2   Marble Summit
 %3$@3   Snapmast
 %=!
 %=!    Keep exploring to find them all.
 
-    Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+    Shrines found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
 ]],
 }
 
@@ -15557,11 +17460,11 @@ dialog{
 @!Search the library
 @!Hazel was going to meet pirates at
 !the port
-@Hazel's in the governor's secret
+@Hazel's in the mayor's secret
 archives
 !
 !There's a secret tunnel on Marblecliff
-!Mountain. Head east from the ruins,
+!Mountain. Head south from the ruins,
 !over the waterfalls.
 @Meet Hazel back at the inn
 ]],
@@ -15601,7 +17504,7 @@ dialog{
 ##Blackbeard's worried first mate gave
 ##you a chart showing the location of
 ##the Isle of Storms.
-@Ask Morus to sail you to the Isle
+@Find someone to sail you to the Isle
 ::!
 %=!$i0    QUEST ITEM:
 %=!    $ITEM_NAME
@@ -15644,7 +17547,7 @@ dialog{
 @Find a bottle of whisky in the secret
 stash
 !
-!The stash is on the east side of the
+!The stash is on the north end of the
 !island
 @Return the whisky to your dad
 #::
@@ -15715,7 +17618,7 @@ dialog{
   text = [[
 ##You need to find out if the Pirate
 ##Council knows where the Isle of Storms
-##is yet.
+##is. Hazel gave you a lead on a captain.
 @Speak with Morus
 !
 !He's a volunteer navyman who's usually
@@ -15735,8 +17638,6 @@ spike it
 !
 !Morus will meet you down at Fort Crow.
 @Find Captain Al-Jazari
-@Meet Morus at the port to sail to
-Snapmast Reef
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
@@ -15749,7 +17650,7 @@ dialog{
   text = [[
 ##You've found the location of the
 ##Pirate Council's hideout.
-@Meet Morus at Oakhaven Port
+@Sail to Snapmast Reef
 @Search for the Pirate Council's
 hideout
 @Find information on the Isle of Storms
@@ -15783,6 +17684,43 @@ dialog{
 @!Look southwest of town around Gull
 !Rock
 @Return the starfruit to Hazel
+]],
+}
+
+dialog{
+  id = "quest.side.abyss",
+  title = "The Brass Key",
+  text = [[
+##You found an ancient brass key
+##in the Sea King's sunken palace.
+@There's probably some kind of
+matching brass lock, but where?
+@Explore the locked passage.
+@You activated... or awakened?
+Something?
+@All you know for sure is you
+?fought a big monster. What
+?was it? Was it even real?
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+]],
+}
+
+dialog{
+  id = "quest.side.ancient_groves",
+  title = "The Ancient Groves",
+  text = [[
+##After defeating a monster in an
+##ancient grove, the rune stone at
+##its center started  glowing
+@You've found $v1 rune stones
+@!Something definitely happened
+!after you found those 3. Is
+!there another grove like these?
+@Proceed through the ruins in the
+Ancient Grove.
+
 ]],
 }
 
@@ -15824,19 +17762,29 @@ other room, I guess?
 
 dialog{
   id = "quest.side.bomb_arrows",
-  title = "Thyme's Receipt",
+  title = "Thyme's Bombs",
   text = [[
-##You found a receipt to pick up an
-##order from the bomb shop.
-@Check the bomb shop $!in Oakhaven, where
-!it seems the receipt was issued
-@Track down the pirates who stole the
-package
-!
-!They're hiding out at Oakhaven's
-!shipyard.
-@Confront the pirates
-@Look around for the package
+##You found some plans for explosive
+##arrows at Hourglass Fort
+@Find someone who can build these
+@Find some tungsten for the intern
+!He says there's a cave in the
+!Straight of Thorns, between
+!Oakhaven and Yarrowmouth. You
+!can get ther from Stonefell
+!Crossroads
+@Collect a machine part from
+Rusty in the Port Underground
+!Behind a merchant's stall at
+!Oakhaven Port is a secret door
+!to the underground
+@Get the machine part from the
+pirates that stole it
+!They're in a building across
+!the bridge on the west side
+!of the port
+@Return to the intern at the
+Bomb Shop
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
@@ -15854,8 +17802,8 @@ dialog{
 @Find the fishin' spot and destroy
 the monsters
 !
-!The fishing spot is just south of
-!Poplar Forest
+!The fishing spot is just East of
+!Goatshead Harbor.
 @ Return to the fisherman
 #::
 #REWARD: $ITEM{rupee.1}   80
@@ -15887,7 +17835,7 @@ dialog{
 !the monster is
 @!Arni was attacked recently, ask him
 !where
-@Search Badger Shoal
+@Search Lotus Shoal
 !
 !The monster was last seen near some
 !rocks by a cliff with two spruce trees
@@ -15899,6 +17847,19 @@ dialog{
 !Crabhook.
 #::
 #REWARD: $ITEM{rupee.1}   80
+]],
+}
+
+dialog{
+  id = "quest.side.crow_lord",
+  title = "The Crow Feather",
+  text = [[
+##You found a crow feather sitting
+##in front of a winged statue
+@Figure out what to do with the feather
+?You summoned the Crow Lord for a duel
+::?
+?REWARD: $ITEM{boomerang.2}   Crowfeather Boomerang
 ]],
 }
 
@@ -15930,8 +17891,8 @@ dialog{
 ##economic chaos.
 @Set a trap with Rilesdorf
 !
-!Rilesdorf's shop is by the pier and
-!blacksmith.
+!Rilesdorf's shop is by the market,
+!against the cliff.
 @Track the Phantom Squid!
 @Return to Eamon back at the Marchants'
 Guild
@@ -15994,10 +17955,10 @@ dialog{
   id = "quest.side.goatshead.poplar_shack_key",
   title = "Mossy Key",
   text = [[
-##You found a key laying in Poplar
-##Forest. Wonder where it goes?
+##You found a key laying in on the
+##ground. Wonder where it goes?
 @Find a locked door for the key you
-found in the woods
+found in the Forest of Tides
 ::
 %1!$i0    QUEST ITEM:
 %1!    $ITEM_NAME
@@ -16016,7 +17977,7 @@ dialog{
 @Meet the adventurers
 !
 !The entrance to the tunnels is near
-!the inn.
+!the tavern.
 @Defeat the big spider
 @Let the adventurers know the tunnels
 have been cleared
@@ -16025,22 +17986,22 @@ have been cleared
 
 dialog{
   id = "quest.side.heron_doors",
-  title = "Heron Doors",
+  title = "The Seabird's Tear",
   text = [[
-!Explore the remaining shrines to
-!obtain the rest of the thunder charms.
-@?Explore all of the heron doors
+!Cleanse the remaining shrines to
+!strengthen the Seabird's Tear spell.
+@?Explore all of the shrines
 
-%~You haven't found any more heron doors
+%~You haven't found any more shrines
 %=!Locations to explore: --// The player must find at least one door for these lines to be visible
-?Heron doors explored: --// This line visible instead once quest is complete
+?Shrines explored: --// This line visible instead once quest is complete
 %1$@1 Tern Marsh
 %2$@2 Marble Summit
 %3$@3 Snapmast
 %=!
 %=!  Keep exploring to find them all.
 ::
-$ITEM{thunder_charm.1}   Thunder charms found: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+$ITEM{thunder_charm.1}   Shrines cleared: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
 ]],
 }
 
@@ -16049,11 +18010,11 @@ dialog{
   title = "Heron's Well",
   text = [[
 ##The ghost of the hero Heron tasked you
-##with cleaning Thrush Fort.
+##with cleansing Thrush Fort.
 @Unlock Thrust fort
 !
-!It's north of Poplar Forest, past
-!Spruce Head
+!It's West of Goatshead, near
+!the ferry.
 @Destroy the monsters inside
 @Explore the tomb
 #::
@@ -16067,14 +18028,13 @@ dialog{
   id = "quest.side.lighthouses",
   title = "Old Lighthouses",
   text = [[
-##You hear about four ancient
+##You heard about four ancient
 ##lighthouses built to guide a lost
 ##lover back from sea.
 @Light all four lighthouses$!:
 ! $v1 lighthouses are burning.
 @You feel drawn back to Naerreturn Bay
-!
-!It's on Yarrowmouth Island.
+!where the lighthouse keeper lives.
 @Board the ghost ship
 #::
 #%=ITEM FOUND: $ITEM{gust.1}   $ITEM_NAME
@@ -16086,14 +18046,12 @@ dialog{
   title = "Mysterious Doors",
   text = [[
 @!? --// don't display checkmark for this phase
-You found a mysterious door at the
-following locations:
+You found a door marked with a
+Seabird carving at these locations:
 %1$@1 Tern Marsh
 %2$@2 Marble Summit
 %3$@3 Snapmast
 --//Note: the one in Goatshead is excluded because it is behind a regular locked door
-
-Keep exploring to find them all.
 ]],
 }
 
@@ -16105,14 +18063,32 @@ dialog{
 ##monster-realted supply chain issues.
 @!Check in with the shop in Oakhaven
 !City
-@Enter the saltpeter cave near Fort
-Crow
+@Enter the saltpeter cave
 !
-!Out the city's south gate, head east.
+!Out the city's south gate, head west
+!over the bridge, past the beach
 @Find and destroy the monster
 @Return to the bomb shop
 ::?
 ?REWARD: $ITEM{bomb.1}   70
+]],
+}
+
+dialog{
+  id = "quest.side.oakhaven.haunted_key",
+  title = "Key from a Cave",
+  text = [[
+##In some sort of treasure cache
+##hidden underground, you found an
+##old key.
+@Find an old lock, probably also
+in Oakhaven somewhere.
+?
+?The key unlocked an abandoned house
+?in east Oakhaven.
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
 ]],
 }
 
@@ -16168,7 +18144,7 @@ two giant oaks
 @Visit Ivystump $!and ask if anyone knows
 !about the Oaks
 !
-!Ivystump is on the western edge of
+!Ivystump is on the eastern edge of
 !Oakhaven, past the Veilwood Forest.
 @!?
 !
@@ -16276,8 +18252,8 @@ oranges to generate that many peels
 !Ask if they recall such a sale.
 @Take the shipment of oranges to Aubrey
 !
-!She lives across the river from the
-!market.
+!She lives in the southwest corner of
+!Oakhaven, a house with a green roof
 @!Go on in
 @Take the money back to the tic tac toe
 guy
@@ -16319,14 +18295,28 @@ You let Aubrey keep the prize money.
 
 dialog{
   id = "quest.side.oakhaven.sinking_lighthouse",
-  title = "Seaglint Ruins Key",
+  title = "Sinking Ruins Key",
   text = [[
 ##You found a key in a sinking ruins. It
 ##likely unlocks a nearby door.
 @Find the locked door
 ?
-?It was a locked lighthouse in the
-?ruins.
+?You unlocked a bridge to a lighthouse
+#::
+#%=$i0    QUEST ITEM:
+#%=    $ITEM_NAME
+]],
+}
+
+dialog{
+  id = "quest.side.shoal_pirate_fort",
+  title = "The Locked Fort",
+  text = [[
+##Someone locked some pirates in
+##their fort, but they won't stay
+##there forever.
+@Go into the fort and beat up
+!the pirates.
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
@@ -16366,7 +18356,7 @@ dialog{
 @Defeat the monsters at the mushroom
 picking spot
 !
-!The spot is east of the Puzzlewood
+!The spot is in the Puzzlewood
 @?Found a letter identifying Michael as
 ?the culprit behind the monsters
 !
@@ -16379,8 +18369,7 @@ picking spot
 Michael
 @Confront Michael the Mighty Mead Maker
 !
-!His meadery is just north of Ballast
-!Harbor.
+!His meadery is just in Tern Marsh
 @Return to Briarwood
 #::
 #!REWARD: $ITEM{rupee.1}   65 --// visible all phases but hidden once quest is complete
@@ -16398,7 +18387,7 @@ dialog{
 @Tell the pirates to piss off
 !
 !They'll meet you at Seaweed Rock,
-!west of Tern Marsh
+!in west Tern Marsh
 @!?
 !
 !What!? It's a trap!?
@@ -16410,8 +18399,8 @@ dialog{
 them not to mess with Yarrowmouth.
 Or you.
 !
-!If you go southeast of Tern Marsh and
-!east after you pass the meadery, you
+!If you go west of Tern Marsh to
+!Stonefell Crossroads, you
 !can find their hideout.
 @Let Nina know you defeated the pirate
 crew

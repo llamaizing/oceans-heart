@@ -6642,6 +6642,766 @@ tile{
   tileset = "indoors_stone",
 }
 
+tile{
+  layer = 0,
+  x = 1408,
+  y = 112,
+  width = 32,
+  height = 32,
+  pattern = "565",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1472,
+  y = 112,
+  width = 32,
+  height = 32,
+  pattern = "565",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 432,
+  width = 32,
+  height = 128,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 432,
+  width = 32,
+  height = 128,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 544,
+  width = 256,
+  height = 128,
+  pattern = "67",
+}
+
+tile{
+  layer = 0,
+  x = 1568,
+  y = 544,
+  width = 32,
+  height = 128,
+  pattern = "52",
+}
+
+tile{
+  layer = 0,
+  x = 1384,
+  y = 432,
+  width = 16,
+  height = 8,
+  pattern = "34",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1512,
+  y = 432,
+  width = 16,
+  height = 8,
+  pattern = "34",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 440,
+  width = 8,
+  height = 112,
+  pattern = "40",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1400,
+  y = 440,
+  width = 8,
+  height = 112,
+  pattern = "36",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 440,
+  width = 8,
+  height = 112,
+  pattern = "40",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 440,
+  width = 8,
+  height = 112,
+  pattern = "36",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1320,
+  y = 544,
+  width = 64,
+  height = 8,
+  pattern = "34",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 544,
+  width = 96,
+  height = 8,
+  pattern = "34",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 544,
+  width = 64,
+  height = 8,
+  pattern = "34",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 552,
+  width = 8,
+  height = 112,
+  pattern = "40",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1592,
+  y = 552,
+  width = 8,
+  height = 112,
+  pattern = "36",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1320,
+  y = 664,
+  width = 272,
+  height = 8,
+  pattern = "38",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "41",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1400,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "35",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "41",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 432,
+  width = 8,
+  height = 8,
+  pattern = "35",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "41",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "68",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1400,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "69",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1504,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "68",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "69",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1592,
+  y = 544,
+  width = 8,
+  height = 8,
+  pattern = "35",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 664,
+  width = 8,
+  height = 8,
+  pattern = "39",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1592,
+  y = 664,
+  width = 8,
+  height = 8,
+  pattern = "37",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 464,
+  width = 32,
+  height = 64,
+  pattern = "45",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 432,
+  width = 32,
+  height = 96,
+  pattern = "43",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1472,
+  y = 432,
+  width = 32,
+  height = 96,
+  pattern = "45",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 464,
+  width = 32,
+  height = 64,
+  pattern = "43",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 512,
+  width = 32,
+  height = 32,
+  pattern = "42",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 512,
+  width = 32,
+  height = 32,
+  pattern = "42",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1568,
+  y = 512,
+  width = 32,
+  height = 32,
+  pattern = "42",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 544,
+  width = 32,
+  height = 128,
+  pattern = "45",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1600,
+  y = 544,
+  width = 32,
+  height = 128,
+  pattern = "43",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1312,
+  y = 672,
+  width = 288,
+  height = 32,
+  pattern = "44",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 512,
+  width = 32,
+  height = 32,
+  pattern = "1",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 512,
+  width = 32,
+  height = 32,
+  pattern = "15",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 512,
+  width = 32,
+  height = 32,
+  pattern = "16",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1472,
+  y = 512,
+  width = 32,
+  height = 32,
+  pattern = "15",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 512,
+  width = 32,
+  height = 32,
+  pattern = "16",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1600,
+  y = 512,
+  width = 32,
+  height = 32,
+  pattern = "2",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 672,
+  width = 32,
+  height = 32,
+  pattern = "4",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1600,
+  y = 672,
+  width = 32,
+  height = 32,
+  pattern = "3",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1344,
+  y = 432,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1472,
+  y = 432,
+  width = 32,
+  height = 32,
+  pattern = "13",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1408,
+  y = 432,
+  width = 32,
+  height = 32,
+  pattern = "14",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 432,
+  width = 32,
+  height = 32,
+  pattern = "14",
+  tileset = "bear_catacombs",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 552,
+  width = 32,
+  height = 24,
+  pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 528,
+  width = 32,
+  height = 24,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1320,
+  y = 552,
+  width = 32,
+  height = 24,
+  pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 1320,
+  y = 528,
+  width = 32,
+  height = 24,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 552,
+  width = 32,
+  height = 24,
+  pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 528,
+  width = 32,
+  height = 24,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 616,
+  width = 32,
+  height = 24,
+  pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 592,
+  width = 32,
+  height = 24,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 616,
+  width = 32,
+  height = 24,
+  pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 1440,
+  y = 592,
+  width = 32,
+  height = 24,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1320,
+  y = 616,
+  width = 32,
+  height = 24,
+  pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 1320,
+  y = 592,
+  width = 32,
+  height = 24,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 1472,
+  y = 608,
+  width = 16,
+  height = 32,
+  pattern = "100",
+  tileset = "bear_catacombs_cave",
+}
+
+tile{
+  layer = 0,
+  x = 1544,
+  y = 608,
+  width = 16,
+  height = 32,
+  pattern = "100",
+  tileset = "bear_catacombs_cave",
+}
+
+tile{
+  layer = 0,
+  x = 1544,
+  y = 544,
+  width = 16,
+  height = 32,
+  pattern = "100",
+  tileset = "bear_catacombs_cave",
+}
+
+tile{
+  layer = 0,
+  x = 1472,
+  y = 544,
+  width = 16,
+  height = 32,
+  pattern = "100",
+  tileset = "bear_catacombs_cave",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 544,
+  width = 16,
+  height = 32,
+  pattern = "100",
+  tileset = "bear_catacombs_cave",
+}
+
+tile{
+  layer = 0,
+  x = 1352,
+  y = 608,
+  width = 16,
+  height = 32,
+  pattern = "100",
+  tileset = "bear_catacombs_cave",
+}
+
+tile{
+  layer = 0,
+  x = 1424,
+  y = 608,
+  width = 16,
+  height = 32,
+  pattern = "99",
+  tileset = "bear_catacombs_cave",
+}
+
+tile{
+  layer = 0,
+  x = 1416,
+  y = 608,
+  width = 8,
+  height = 32,
+  pattern = "98",
+  tileset = "bear_catacombs_cave",
+}
+
+tile{
+  layer = 0,
+  x = 1352,
+  y = 544,
+  width = 16,
+  height = 32,
+  pattern = "99",
+  tileset = "bear_catacombs_cave",
+}
+
+tile{
+  layer = 0,
+  x = 1368,
+  y = 544,
+  width = 8,
+  height = 32,
+  pattern = "97",
+  tileset = "bear_catacombs_cave",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 112,
+  width = 32,
+  height = 24,
+  pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 640,
+  y = 88,
+  width = 32,
+  height = 24,
+  pattern = "62",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 112,
+  width = 32,
+  height = 24,
+  pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 704,
+  y = 88,
+  width = 32,
+  height = 24,
+  pattern = "62",
+}
+
 sensor{
   name = "boss_sensor",
   layer = 0,
@@ -6895,11 +7655,11 @@ door{
 enemy{
   name = "boss",
   layer = 0,
-  x = 1936,
-  y = 333,
+  x = 1912,
+  y = 349,
   enabled_at_start = false,
   direction = 3,
-  breed = "normal_enemies/grim_1",
+  breed = "normal_enemies/skeleton_bruiser",
 }
 
 wall{
@@ -6918,6 +7678,505 @@ door{
   y = 256,
   direction = 3,
   sprite = "entities/door_shutter",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_13",
+  layer = 0,
+  x = 928,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 0,
+  x = 928,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_15",
+  layer = 0,
+  x = 1104,
+  y = 640,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_16",
+  layer = 0,
+  x = 1104,
+  y = 528,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+destructible{
+  layer = 0,
+  x = 1000,
+  y = 533,
+  sprite = "entities/bush_forsythia",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 1048,
+  y = 533,
+  sprite = "entities/bush_forsythia",
+  can_be_cut = true,
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_17",
+  layer = 0,
+  x = 152,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_18",
+  layer = 0,
+  x = 200,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_19",
+  layer = 0,
+  x = 248,
+  y = 304,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_20",
+  layer = 0,
+  x = 1392,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_21",
+  layer = 0,
+  x = 1504,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_22",
+  layer = 0,
+  x = 1504,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_23",
+  layer = 0,
+  x = 1392,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_24",
+  layer = 0,
+  x = 1344,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_25",
+  layer = 0,
+  x = 1376,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_26",
+  layer = 0,
+  x = 1520,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_27",
+  layer = 0,
+  x = 1552,
+  y = 296,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_31",
+  layer = 0,
+  x = 1840,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_32",
+  layer = 0,
+  x = 1888,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_33",
+  layer = 0,
+  x = 1888,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_34",
+  layer = 0,
+  x = 1840,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_35",
+  layer = 0,
+  x = 1840,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_36",
+  layer = 0,
+  x = 1888,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_28",
+  layer = 0,
+  x = 1152,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_29",
+  layer = 0,
+  x = 1040,
+  y = 400,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_30",
+  layer = 0,
+  x = 1152,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+enemy{
+  layer = 0,
+  x = 1368,
+  y = 413,
+  direction = 0,
+  breed = "normal_enemies/bat_1",
+}
+
+enemy{
+  layer = 0,
+  x = 1464,
+  y = 413,
+  direction = 0,
+  breed = "normal_enemies/bat_1",
+}
+
+enemy{
+  layer = 0,
+  x = 1552,
+  y = 413,
+  direction = 0,
+  breed = "normal_enemies/bat_1",
+}
+
+enemy{
+  layer = 0,
+  x = 1456,
+  y = 349,
+  direction = 0,
+  breed = "normal_enemies/bat_1",
+}
+
+chest{
+  layer = 0,
+  x = 184,
+  y = 149,
+  treasure_name = "rupee",
+  treasure_variant = 4,
+  treasure_savegame_variable = "marblecliff_monastery_hidden_library_room_treasure_2",
+  sprite = "entities/chest",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_37",
+  layer = 0,
+  x = 648,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_38",
+  layer = 0,
+  x = 712,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "41",
+  tileset = "indoors_stone",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_cande_1",
+  layer = 0,
+  x = 1448,
+  y = 616,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "temple",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_cande_2",
+  layer = 0,
+  x = 1328,
+  y = 616,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "temple",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_cande_3",
+  layer = 0,
+  x = 1328,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "temple",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_cande_4",
+  layer = 0,
+  x = 1448,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "temple",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_cande_5",
+  layer = 0,
+  x = 1568,
+  y = 552,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "temple",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_cande_6",
+  layer = 0,
+  x = 1568,
+  y = 616,
+  width = 16,
+  height = 16,
+  pattern = "16",
+  tileset = "temple",
+}
+
+door{
+  name = "spring_door",
+  layer = 0,
+  x = 1616,
+  y = 352,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "marblecliff_monastery_spring_door_state",
+}
+
+switch{
+  name = "spring_door_switch",
+  layer = 0,
+  x = 1448,
+  y = 640,
+  subtype = "walkable",
+  sprite = "entities/switch",
+  needs_block = false,
+  inactivate_when_leaving = false,
+}
+
+door{
+  name = "spring_door_2",
+  layer = 0,
+  x = 1616,
+  y = 360,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "marblecliff_monastery_spring_door_state",
+}
+
+door{
+  name = "spring_door_3",
+  layer = 0,
+  x = 1616,
+  y = 368,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "marblecliff_monastery_spring_door_state",
+}
+
+enemy{
+  layer = 0,
+  x = 1528,
+  y = 581,
+  direction = 3,
+  breed = "normal_enemies/skeleton_summoner",
+}
+
+enemy{
+  layer = 0,
+  x = 1384,
+  y = 605,
+  direction = 3,
+  breed = "normal_enemies/skeleton_summoner",
+}
+
+enemy{
+  layer = 0,
+  x = 1400,
+  y = 661,
+  direction = 3,
+  breed = "normal_enemies/skeleton_summoner",
+}
+
+enemy{
+  layer = 0,
+  x = 1528,
+  y = 661,
+  direction = 3,
+  breed = "normal_enemies/skeleton_summoner",
+}
+
+enemy{
+  layer = 0,
+  x = 1824,
+  y = 581,
+  direction = 3,
+  breed = "normal_enemies/skeleton_summoner",
+}
+
+enemy{
+  layer = 0,
+  x = 1920,
+  y = 597,
+  direction = 3,
+  breed = "normal_enemies/skeleton_summoner",
 }
 
 tile{
@@ -7677,6 +8936,26 @@ tile{
   height = 32,
   pattern = "1672",
   tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 1408,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "566",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1472,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "566",
+  tileset = "indoors_stone",
 }
 
 tile{

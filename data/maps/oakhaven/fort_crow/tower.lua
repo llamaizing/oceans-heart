@@ -1,19 +1,9 @@
--- Lua script of map oakhaven/fort_crow/tower.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 local hero = game:get_hero()
 
-
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
   if game:has_item("hideout_chart") == true then
   hideout_chart:set_enabled(false)
   end
@@ -40,7 +30,7 @@ function map:on_started()
     return true
   end) --end of 4 sec timer a.
 
-end
+end)
 
 
 --save/reset solid ground sensors

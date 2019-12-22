@@ -50765,24 +50765,6 @@ wall{
   stops_blocks = true,
 }
 
-destination{
-  name = "from_spruce_head_cave",
-  layer = 0,
-  x = 2192,
-  y = 1005,
-  direction = 3,
-}
-
-teletransporter{
-  layer = 0,
-  x = 2184,
-  y = 976,
-  width = 16,
-  height = 16,
-  destination_map = "goatshead_island/caves/spruce_head_cave",
-  destination = "from_outside",
-}
-
 npc{
   layer = 0,
   x = 464,
@@ -51167,24 +51149,6 @@ wall{
   stops_enemies = true,
 }
 
-destination{
-  name = "from_shrine",
-  layer = 0,
-  x = 2416,
-  y = 637,
-  direction = 3,
-}
-
-teletransporter{
-  layer = 0,
-  x = 2408,
-  y = 608,
-  width = 16,
-  height = 16,
-  destination_map = "goatshead_island/spruce_head_shrine/spruce_head_shrine",
-  destination = "from_outside",
-}
-
 wall{
   layer = 0,
   x = 96,
@@ -51443,8 +51407,8 @@ teletransporter{
 
 door{
   layer = 0,
-  x = 1304,
-  y = 768,
+  x = 1320,
+  y = 784,
   direction = 3,
   sprite = "entities/door_locked",
   savegame_variable = "thrush_fort_front_door_state",

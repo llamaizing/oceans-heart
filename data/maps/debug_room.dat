@@ -3421,7 +3421,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 136,
+  x = 8,
   y = -3,
   treasure_name = "berries",
   sprite = "entities/bush_berries",
@@ -3440,7 +3440,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 40,
+  x = 56,
   y = -3,
   treasure_name = "arrow",
   treasure_variant = 2,
@@ -3461,7 +3461,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 24,
+  x = 80,
   y = -3,
   treasure_name = "firethorn_berries",
   sprite = "entities/bush_firethorn",
@@ -3543,7 +3543,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 64,
+  x = 32,
   y = -3,
   treasure_name = "apples",
   sprite = "entities/bush_apple_tree",
@@ -3553,7 +3553,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 88,
+  x = 96,
   y = -3,
   treasure_name = "kingscrown",
   sprite = "entities/bush_kingscrown",
@@ -4050,7 +4050,7 @@ pickable{
 
 destructible{
   layer = 0,
-  x = 120,
+  x = 144,
   y = -3,
   treasure_name = "chamomile",
   sprite = "entities/bush_chamomile",
@@ -4059,7 +4059,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 104,
+  x = 128,
   y = -3,
   treasure_name = "burdock",
   sprite = "entities/bush_burdock",
@@ -4068,16 +4068,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 8,
-  y = 61,
-  treasure_name = "berries",
-  sprite = "entities/bush_berries",
-  can_be_cut = true,
-}
-
-destructible{
-  layer = 0,
-  x = 152,
+  x = 160,
   y = -3,
   treasure_name = "lavendar",
   sprite = "entities/bush_lavendar",
@@ -4086,7 +4077,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 176,
+  x = 184,
   y = -3,
   treasure_name = "witch_hazel",
   sprite = "entities/bush_witch_hazel",
@@ -4116,7 +4107,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 8,
+  x = 112,
   y = -3,
   treasure_name = "ghost_orchid",
   sprite = "entities/bush_ghost_orchid",
@@ -4251,8 +4242,8 @@ sensor{
 destructible{
   name = "philodendron_bush",
   layer = 0,
-  x = -16,
-  y = 141,
+  x = -8,
+  y = 157,
   sprite = "entities/bush_philodendron",
   weight = -1,
   can_be_cut = true,
@@ -4281,8 +4272,8 @@ sensor{
 
 destructible{
   layer = 0,
-  x = -40,
-  y = 141,
+  x = -56,
+  y = 125,
   sprite = "entities/bush_seagrass",
   weight = -1,
   can_be_cut = true,
@@ -5329,15 +5320,6 @@ pickable{
   treasure_variant = 8,
 }
 
-teletransporter{
-  layer = 0,
-  x = 240,
-  y = 480,
-  width = 16,
-  height = 16,
-  destination_map = "goat_hill_new_test",
-}
-
 pickable{
   layer = 0,
   x = 568,
@@ -5808,7 +5790,8 @@ teletransporter{
   y = 1136,
   width = 48,
   height = 32,
-  destination_map = "heron_door_test_room",
+  destination_map = "Yarrowmouth/yarrowmouth_village",
+  destination = "from_shop",
 }
 
 npc{
@@ -5846,6 +5829,7 @@ destructible{
 }
 
 enemy{
+  name = "dove_1",
   layer = 0,
   x = 392,
   y = -19,
@@ -5854,6 +5838,7 @@ enemy{
 }
 
 enemy{
+  name = "sparrow_1",
   layer = 0,
   x = 408,
   y = -19,
@@ -5868,6 +5853,7 @@ enemy{
 }
 
 enemy{
+  name = "blackbird_1",
   layer = 0,
   x = 424,
   y = -19,
@@ -5879,6 +5865,85 @@ enemy{
   },
   direction = 0,
   breed = "misc/dove",
+}
+
+destructible{
+  layer = 0,
+  x = -40,
+  y = 61,
+  sprite = "entities/bush_seaoak_grass",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = -24,
+  y = 61,
+  sprite = "entities/bush_summergrass",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = -16,
+  y = 133,
+  sprite = "entities/bush_lupine_big",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = -40,
+  y = 125,
+  sprite = "entities/bush_lupine",
+  can_be_cut = true,
+}
+
+wall{
+  layer = 0,
+  x = 144,
+  y = 328,
+  width = 80,
+  height = 56,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
+destination{
+  name = "fast_travel_destination",
+  layer = 0,
+  x = 168,
+  y = 413,
+  direction = 0,
+}
+
+npc{
+  layer = 0,
+  x = 192,
+  y = 381,
+  direction = 2,
+  subtype = 1,
+  sprite = "entities/boat_lily",
+}
+
+npc{
+  name = "fast_travel_lily",
+  layer = 0,
+  x = 192,
+  y = 413,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/lily/lily_standing",
+}
+
+pickable{
+  layer = 0,
+  x = 536,
+  y = 125,
+  treasure_name = "abyssal_flame",
 }
 
 tile{

@@ -1,18 +1,8 @@
--- Lua script of map oakhaven/fort_crow/basement.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
   --steams A start enabled, steams B start disabled
   crow_enemy:set_enabled(false)
   if game:get_value("fort_crow_entry_bridge_activated") == true then bridge:set_enabled(true) end
@@ -37,7 +27,7 @@ function map:on_started()
     return true
   end) --end of 4 sec timer a.
 
-end --end of map:on_started()
+end
 
 
 

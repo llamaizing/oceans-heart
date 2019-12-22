@@ -209,7 +209,7 @@ end
 function chart_npc:on_interaction()
   if game:has_item("hideout_chart") ~= true then
   hideout_chart:set_enabled(false)
-  hero:start_treasure("hideout_chart", 1, "found_snapmast_reef_hideout_map", function()
+  hero:start_treasure("fast_travel_chart_snapmast", 1, "found_snapmast_reef_hideout_map", function()
     game:set_value("quest_log_b", "b10")
     game:set_value("quest_pirate_fort", 6) --quest log, take chart to morus
     game:set_value("morus_counter", 5)
@@ -229,7 +229,7 @@ function chart_npc:on_interaction()
         game:set_value("morus_available", false)
         game:set_value("morus_at_port", true)
         if answer == 2 then --right to port
-          hero:teleport("oakhaven/port", "morus_landing", "fade")
+          hero:teleport("oakhaven/port", "fast_travel_destination", "fade")
         else
           game:start_dialog("_oakhaven.npcs.morus.fort.9", function()
             hero:teleport("oakhaven/eastoak", "from_fort_crow_front_door", "fade")

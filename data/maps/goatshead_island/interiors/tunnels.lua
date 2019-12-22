@@ -11,15 +11,20 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(2)
+  sol.menu.start(map, lighting_effects)
+
   --initialize adventurers if quest accepted
   if game:get_value("goatshead_tunnels_accepted") ~= true then
     adventurer_1:set_enabled(false)
     adventurer_2:set_enabled(false)
   end
 
-end
+end)
 
 function adventurer_1:on_interaction()
   --if quest complete

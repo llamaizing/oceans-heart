@@ -104,6 +104,7 @@ function behavior:create(enemy, properties)
   local can_radial_attack = true
   local can_flail_attack = true
   local can_boomerang_attack = true
+  local can_airstrike_attack = true
   local attacking = false
   local currently_dashing = false
   local currently_teleporting = false
@@ -197,6 +198,13 @@ function behavior:create(enemy, properties)
       can_teleport = false
       sol.timer.start(map, properties.teleport_cooldown + math.random(1000), function() can_teleport = true end)
 
+    elseif properties.has_summon_attack and can_summon and dist_hero <= properties.summon_attack_distance then
+      attacking = true
+      going_hero = false
+      self:summon()
+      can_summon = false
+      sol.timer.start(map, properties.summon_attack_cooldown + math.random(1000), function() can_summon = true end)
+
     elseif properties.has_dash_attack and can_dash_attack and dist_hero <= properties.dash_attack_distance then
       attacking = true
       going_hero = false
@@ -204,12 +212,12 @@ function behavior:create(enemy, properties)
       can_dash_attack = false
       sol.timer.start(map, properties.dash_attack_cooldown + math.random(1000), function() can_dash_attack = true end)
 
-    elseif properties.has_summon_attack and can_summon and dist_hero <= properties.summon_attack_distance then
+    elseif properties.has_airstrike_attack and can_airstrike_attack and dist_hero <= properties.airstrike_attack_distance then
       attacking = true
       going_hero = false
-      self:summon()
-      can_summon = false
-      sol.timer.start(map, properties.summon_attack_cooldown + math.random(1000), function() can_summon = true end)
+      self:airstrike()
+      can_airstrike_attack = false
+      sol.timer.start(map, properties.airstrike_attack_cooldown + math.random(1000), function() can_airstrike_attack = true end)
 
     elseif properties.has_ranged_attack and aligned and can_shoot and dist_hero <= properties.ranged_attack_distance then
       attacking = true
@@ -403,6 +411,7 @@ end
     local wind_up_animation = "wind_up"
     if sprite:has_animation("summoning_wind_up") then wind_up_animation = "summoning_wind_up" end
     sprite:set_animation(wind_up_animation)
+    if properties.summoning_wind_up_sound then sol.audio.play_sound(properties.summoning_wind_up_sound) end
     if properties.protected_while_summoning then enemy:set_invincible() end
     local telegraph_time = properties.wind_up_time
     if properties.summon_attack_wind_up_time then telegraph_time = properties.summon_attack_wind_up_time end
@@ -412,9 +421,10 @@ end
       local i = 0
       sol.timer.start(map, properties.summon_group_delay, function()
         local herox, heroy, herol = hero:get_position()
-        map:create_enemy({
+        local summon_enemy = map:create_enemy({
           name = enemy_summon, layer = herol, x = herox, y = heroy, direction = 0, breed = properties.summon_breed,
         })
+        if properties.summon_breed_damage then summon_enemy:set_damage(properties.summon_breed_damage) end
         i = i + 1
         if i < properties.summon_group_size then return true end
       end)
@@ -720,6 +730,31 @@ function enemy:boomerang_attack()
       enemy:check_hero()
     end
 
+  end)
+end
+
+--Airstrike Attack
+function enemy:airstrike()
+  enemy:stop_movement()
+  local sprite = enemy:get_sprite()
+  if properties.airstrike_sound then sol.audio.play_sound(properties.airstrike_sound) end
+  sprite:set_animation("airstrike")
+  local frames = sprite:get_num_frames()
+  local delay = sprite:get_frame_delay()
+  local animation_time = frames * delay
+  sol.timer.start(map, animation_time, function()
+    sol.timer.start(map, properties.airstrike_lag, function()
+      local map = enemy:get_map()
+      local x,y,l = map:get_hero():get_position()
+      local strike_enemy = map:create_enemy{
+        x=x,y=y,layer=l,direction=0,
+        breed=properties.airstrike_breed or "misc/falling_rock"
+      }
+      if properties.airstrike_damage then strike_enemy:set_damage(properties.airstrike_damage) end
+    end)
+    enemy:wrap_up_attack()
+    enemy:go_random()
+    enemy:check_hero()
   end)
 end
 

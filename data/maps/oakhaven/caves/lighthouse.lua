@@ -11,10 +11,6 @@ map:register_event("on_started", function()
   end
 end)
 
-function map:on_opening_transition_finished()
-
-end
-
 function lighthouse_switch:on_activated()
   if not game:get_value("sinking_palace_lighthouse_lit") then
     for fire in map:get_entities("lighthouse_flame") do

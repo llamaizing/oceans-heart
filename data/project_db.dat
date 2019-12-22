@@ -26,23 +26,26 @@ map{ id = "Limestone Island/limestone_village/wally", description = "Wally's Hou
 map{ id = "Limestone Island/sanctuary_ext", description = "Sanctuary Ext" }
 map{ id = "Limestone Island/sometimes_cape", description = "Sometimes Cape" }
 map{ id = "Limestone Island/west_limestone", description = "West Limestone" }
+map{ id = "Yarrowmouth/OLDyarrowmouth_village", description = "OLDYarrowmouth Village" }
 map{ id = "Yarrowmouth/bear_catacombs/bear_catacombs", description = "Bear Catacombs" }
+map{ id = "Yarrowmouth/caves/ancient_grove", description = "Ancient Grove" }
 map{ id = "Yarrowmouth/caves/beak_cave", description = "Beak Cave" }
 map{ id = "Yarrowmouth/caves/dandelion_charm_cave", description = "Dandelion Charm Cave" }
+map{ id = "Yarrowmouth/caves/deuling_arborgeist_cave", description = "Deuling Arborgeist Cave" }
 map{ id = "Yarrowmouth/caves/docks_cave", description = "Docks Cave" }
 map{ id = "Yarrowmouth/caves/elixer_cave", description = "Elixer Cave" }
 map{ id = "Yarrowmouth/caves/ghost_orchid_cave", description = "Ghost Orchid Cave Yarrowmouth" }
 map{ id = "Yarrowmouth/caves/ghost_ship", description = "Ghost Ship" }
+map{ id = "Yarrowmouth/caves/grove_cave", description = "Grove Cave" }
 map{ id = "Yarrowmouth/caves/juniper_grove_cave", description = "Juniper Grove Cave" }
 map{ id = "Yarrowmouth/caves/marsh_cave", description = "Marsh Cave" }
-map{ id = "Yarrowmouth/caves/mushroom_cave", description = "Mushroom Cave" }
 map{ id = "Yarrowmouth/caves/naerreturn_cave", description = "Naerreturn Cave" }
 map{ id = "Yarrowmouth/caves/puzzlewood_cave_1", description = "Puzzlewood Cave 1" }
 map{ id = "Yarrowmouth/caves/seabird_shrine", description = "Seabird Shrine" }
 map{ id = "Yarrowmouth/caves/tern_marsh_ambush", description = "Marsh Ambush Cave" }
 map{ id = "Yarrowmouth/caves/village_cave", description = "Village Cave" }
 map{ id = "Yarrowmouth/caves/warp_cave", description = "Warp Cave" }
-map{ id = "Yarrowmouth/foothills", description = "Puzzlewood" }
+map{ id = "Yarrowmouth/foothills", description = "OLDPuzzlewood" }
 map{ id = "Yarrowmouth/hourglass_canyon", description = "Hourglass Fort" }
 map{ id = "Yarrowmouth/hourglass_fort/basement", description = "Basement" }
 map{ id = "Yarrowmouth/hourglass_fort/hourglass_fort", description = "Hourglass Fort - Outside" }
@@ -50,17 +53,24 @@ map{ id = "Yarrowmouth/hourglass_fort/tunnel", description = "tunnel" }
 map{ id = "Yarrowmouth/interiors/briarwood_barn", description = "Briarwood Barn" }
 map{ id = "Yarrowmouth/interiors/briarwood_distillery", description = "Briarwood Distillery" }
 map{ id = "Yarrowmouth/interiors/carlov_house", description = "Carlov's House" }
+map{ id = "Yarrowmouth/interiors/crafting_house", description = "Crafting House" }
 map{ id = "Yarrowmouth/interiors/lighthouse", description = "Lighthouse" }
 map{ id = "Yarrowmouth/interiors/meadery_safehouse", description = "Meadery Safehouse" }
 map{ id = "Yarrowmouth/interiors/nina", description = "Nina's House" }
 map{ id = "Yarrowmouth/interiors/shop", description = "Shop" }
 map{ id = "Yarrowmouth/interiors/silent_glade_health", description = "Silent Glade Health Upgrade" }
 map{ id = "Yarrowmouth/juniper_grove", description = "Juniper Grove" }
+map{ id = "Yarrowmouth/kingsdown", description = "Kingsdown" }
 map{ id = "Yarrowmouth/naerreturn_bay", description = "Naerreturn Bay" }
+map{ id = "Yarrowmouth/puzzlewood", description = "Puzzlewood" }
 map{ id = "Yarrowmouth/silent_glade", description = "Silent Glade" }
-map{ id = "Yarrowmouth/tern_marsh", description = "Kingsdown Isle" }
+map{ id = "Yarrowmouth/tern_marsh", description = "Tern Marsh" }
+map{ id = "Yarrowmouth/tern_marshOLD", description = "OLD marsh" }
 map{ id = "Yarrowmouth/yarrowmouth_village", description = "Yarrowmouth Village" }
+map{ id = "ballast_harbor/ancient_grove", description = "Ancient Grove" }
 map{ id = "ballast_harbor/ballast_harbor", description = "Ballast Harbor" }
+map{ id = "ballast_harbor/ballast_harbor_old", description = "OLDBallast Harbor" }
+map{ id = "ballast_harbor/ballast_trail", description = "BallastTrail" }
 map{ id = "ballast_harbor/cave_1", description = "Cave 1" }
 map{ id = "ballast_harbor/cave_alley", description = "Cave - Back Alley" }
 map{ id = "ballast_harbor/chart_shop", description = "Chart Shop" }
@@ -126,8 +136,10 @@ map{ id = "goatshead_island/caves/spruce_head_cave", description = "spruce head 
 map{ id = "goatshead_island/caves/strength_charm", description = "Strength Charm Cave" }
 map{ id = "goatshead_island/caves/thrush_fort", description = "Thrush Fort" }
 map{ id = "goatshead_island/crabhook_village", description = "Crabhook Village" }
-map{ id = "goatshead_island/goat_hill", description = "goat hill" }
+map{ id = "goatshead_island/goat_hill" }
+map{ id = "goatshead_island/goat_hill_OLD", description = "OLDgoat hill" }
 map{ id = "goatshead_island/goatshead_harbor", description = "Goatshead Harbor" }
+map{ id = "goatshead_island/goatshead_harbor_OLD", description = "OLD Goatshead Harbor" }
 map{ id = "goatshead_island/interiors/CV_arni", description = "Crabhook - Arni" }
 map{ id = "goatshead_island/interiors/CV_dusit", description = "Dusit" }
 map{ id = "goatshead_island/interiors/CV_tavern", description = "Crabhook Tavern" }
@@ -150,6 +162,7 @@ map{ id = "goatshead_island/lighthouse_cape", description = "Lighthouse Cape" }
 map{ id = "goatshead_island/merchant_hq_ext", description = "Merchant HQ Ext." }
 map{ id = "goatshead_island/poplar_coast", description = "Poplar Coast" }
 map{ id = "goatshead_island/poplar_forest", description = "Poplar Forest" }
+map{ id = "goatshead_island/riverbank", description = "Riverbank" }
 map{ id = "goatshead_island/spruce_head_shrine/spruce_head_shrine", description = "Spruce Head Shrine" }
 map{ id = "goatshead_island/spruce_head_shrine_old", description = "Spruce Head Shrine" }
 map{ id = "goatshead_island/west_goat", description = "West Goat" }
@@ -162,8 +175,8 @@ map{ id = "indoor_template", description = "Temple/Cave Template" }
 map{ id = "isle_of_storms/isle_of_storms_landing", description = "Landing Area" }
 map{ id = "isle_of_storms/palace", description = "Palace" }
 map{ id = "isle_of_storms/test", description = "Test" }
-map{ id = "mysterious_wood", description = "Mysterious Wood" }
 map{ id = "new_limestone/basswood_tavern", description = "Basswood Tavern" }
+map{ id = "new_limestone/bracken_beach", description = "Bracken Beach" }
 map{ id = "new_limestone/cave_1", description = "Cave 1" }
 map{ id = "new_limestone/caves/pit", description = "pit" }
 map{ id = "new_limestone/hazel", description = "Hazel" }
@@ -179,7 +192,10 @@ map{ id = "new_limestone/tavern_upstairs", description = "Tavern Upstairs" }
 map{ id = "new_limestone/tim", description = "Tim" }
 map{ id = "new_limestone/transition", description = "transition" }
 map{ id = "oakhaven/caves/abyss", description = "Abyss" }
+map{ id = "oakhaven/caves/abyss_arena", description = "Abyss Arena" }
 map{ id = "oakhaven/caves/amalenchier_tomb", description = "Amalenchier's Tomb" }
+map{ id = "oakhaven/caves/ancient_grove", description = "Ancient Grove" }
+map{ id = "oakhaven/caves/beach_cave", description = "Beach Cave" }
 map{ id = "oakhaven/caves/eastoak_coral_ore_cave", description = "Eastoak Coral Ore Cave" }
 map{ id = "oakhaven/caves/eastoak_health_shrine", description = "Eastoak Health Shrine" }
 map{ id = "oakhaven/caves/lighthouse", description = "Lighthouse - Sinking" }
@@ -193,10 +209,13 @@ map{ id = "oakhaven/caves/port_bush_hole", description = "Port Bush Hole" }
 map{ id = "oakhaven/caves/port_bush_hole_2", description = "Port Bush Hole 2" }
 map{ id = "oakhaven/caves/saltpeter_mines", description = "Saltpeter Mine" }
 map{ id = "oakhaven/caves/seabird_shrine_marblecliff", description = "Seabird Shrine Marblecliff" }
+map{ id = "oakhaven/caves/tungsten_cave", description = "Tungsten Cave" }
+map{ id = "oakhaven/caves/umber_lake", description = "Lake Umber" }
 map{ id = "oakhaven/caves/veilwood_health_upgrade_tunnel", description = "Veilwood Health Upgrade Tunnel" }
 map{ id = "oakhaven/caves/westoak_shrine", description = "Westoak Shrine" }
 map{ id = "oakhaven/caves/westoak_warp_cave", description = "Westoak Warp Cave" }
 map{ id = "oakhaven/eastoak", description = "Eastoak" }
+map{ id = "oakhaven/eastoak_OLD", description = "Eastoak_OLD" }
 map{ id = "oakhaven/fort_crow/basement", description = "Basement" }
 map{ id = "oakhaven/fort_crow/courtyard", description = "Courtyard" }
 map{ id = "oakhaven/fort_crow/dandelion_charm", description = "Dendelion Charm Area" }
@@ -212,6 +231,7 @@ map{ id = "oakhaven/interiors/bomb_shop", description = "Bomb Shop" }
 map{ id = "oakhaven/interiors/burglar_hideout", description = "Burglar Hideout" }
 map{ id = "oakhaven/interiors/carpenter", description = "Carpenter" }
 map{ id = "oakhaven/interiors/cave_house", description = "Cave house" }
+map{ id = "oakhaven/interiors/eastoak_farm", description = "Eastoak Farm" }
 map{ id = "oakhaven/interiors/game_hall", description = "Game Hall" }
 map{ id = "oakhaven/interiors/general_store", description = "General Store" }
 map{ id = "oakhaven/interiors/guard_hq", description = "Guard HQ" }
@@ -223,6 +243,8 @@ map{ id = "oakhaven/interiors/melinda", description = "Melinda" }
 map{ id = "oakhaven/interiors/monastery", description = "Monastery" }
 map{ id = "oakhaven/interiors/palace", description = "Palace" }
 map{ id = "oakhaven/interiors/port_office", description = "Port Office" }
+map{ id = "oakhaven/interiors/port_shop", description = "Port Shop" }
+map{ id = "oakhaven/interiors/port_underground", description = "Port Underground" }
 map{ id = "oakhaven/interiors/port_warehouse", description = "Port Warehouse" }
 map{ id = "oakhaven/interiors/saloon", description = "Salamander Heartache" }
 map{ id = "oakhaven/interiors/sculptor", description = "sculptor" }
@@ -236,16 +258,25 @@ map{ id = "oakhaven/ivystump_interiors/inn", description = "Inn" }
 map{ id = "oakhaven/ivystump_interiors/lamia", description = "Lamia's House" }
 map{ id = "oakhaven/ivystump_interiors/sawmill", description = "Sawmill" }
 map{ id = "oakhaven/ivystump_interiors/shop", description = "Shop" }
+map{ id = "oakhaven/ivystump_port", description = "Ivystump Port" }
+map{ id = "oakhaven/lobb_trail", description = "Lobb Trail" }
 map{ id = "oakhaven/marble_summit", description = "Marble Summit" }
 map{ id = "oakhaven/marblecliff", description = "Marblecliff" }
+map{ id = "oakhaven/marblecliff_OLD", description = "OLDMarblecliff" }
 map{ id = "oakhaven/oakhaven", description = "OakhavenCity" }
 map{ id = "oakhaven/oakhaven_old", description = "OLDhaven" }
+map{ id = "oakhaven/palace_gardens", description = "Palace Gardens" }
+map{ id = "oakhaven/palace_gardens_chase_sequence", description = "Palace Gardens-Chase" }
 map{ id = "oakhaven/poison_grove", description = "Poison Grove" }
-map{ id = "oakhaven/port", description = "Oakhaven Port" }
+map{ id = "oakhaven/port", description = "Port" }
+map{ id = "oakhaven/port_OLD", description = "OLDPort" }
+map{ id = "oakhaven/sunken_lighthouse", description = "Sunken Lighthouse" }
 map{ id = "oakhaven/sunken_palace", description = "Sunken Palace" }
 map{ id = "oakhaven/veilwood", description = "Veilwood" }
 map{ id = "oakhaven/waterfall_canyon", description = "Waterfall Canyon" }
 map{ id = "oakhaven/west_coast", description = "West Coast" }
+map{ id = "oakhaven/west_oak", description = "Westoak" }
+map{ id = "redpine_test", description = "Redpine Test" }
 map{ id = "respawn_map", description = "blank room - leave empty" }
 map{ id = "snapmast_reef/caves/coral_cave", description = "Coral Cave" }
 map{ id = "snapmast_reef/caves/elixer_upgrade_tower", description = "Elixer Upgrade Tower" }
@@ -259,17 +290,35 @@ map{ id = "snapmast_reef/drowned_village", description = "Drowned Village" }
 map{ id = "snapmast_reef/smoldering_rock", description = "Smoldering Rock" }
 map{ id = "snapmast_reef/snapmast_landing", description = "Landing Area" }
 map{ id = "snapmast_reef/snapmast_lighthouse", description = "Snapmast Lighthouse" }
+map{ id = "stonefell_crossroads/TEMP", description = "TEMP" }
+map{ id = "stonefell_crossroads/caves/ancient_grove", description = "Ancient Grove" }
+map{ id = "stonefell_crossroads/caves/ancient_shrine", description = "AncientGroveShrine" }
+map{ id = "stonefell_crossroads/caves/ballast_cave", description = "BallastCave" }
+map{ id = "stonefell_crossroads/caves/fort_crow_coral_cave", description = "Fort Crow Coral Cave" }
+map{ id = "stonefell_crossroads/caves/stonefell_bombcave_1", description = "Stonefell Bombcave" }
+map{ id = "stonefell_crossroads/caves/sycamore_bombcave", description = "Sycamore Bombcave" }
+map{ id = "stonefell_crossroads/caves/yarrow_chart_cave", description = "YarrowChartCave" }
+map{ id = "stonefell_crossroads/crow_arena", description = "Crow Arena" }
+map{ id = "stonefell_crossroads/crow_road", description = "Crow Road" }
+map{ id = "stonefell_crossroads/forest_of_tides", description = "Forest of Tides" }
+map{ id = "stonefell_crossroads/fort_crow", description = "Fort Crow" }
+map{ id = "stonefell_crossroads/lotus_shoal", description = "Lotus Shoal" }
+map{ id = "stonefell_crossroads/spruce_head", description = "Spruce Head" }
+map{ id = "stonefell_crossroads/stonefell_crossroads", description = "Sonefell Crossroads" }
+map{ id = "stonefell_crossroads/sycamore_ferry", description = "Sycamore Ferry" }
+map{ id = "stonefell_crossroads/zephyr_bay", description = "Zephyr Bay" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }
-map{ id = "testtest", description = "yayayaya" }
 
 tileset{ id = "Full Hyrule", description = "Full Hyrule" }
 tileset{ id = "abysphere_ruins", description = "Abysphere Ruins" }
 tileset{ id = "bear_catacombs", description = "Bear Catacombs" }
 tileset{ id = "bear_catacombs_cave", description = "BearCatacombs-Cave" }
+tileset{ id = "boulderfield", description = "Boulderfield" }
 tileset{ id = "cave_2", description = "cave-mine" }
 tileset{ id = "cemetery_of_waves", description = "CemeteryOfTheWaves" }
+tileset{ id = "drygrass", description = "Drygrass" }
 tileset{ id = "fort_crow_walls", description = "Fort Crow Walls" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
 tileset{ id = "indoors_stone", description = "indoors - stone" }
@@ -282,6 +331,7 @@ tileset{ id = "overworld_oakhaven", description = "Overworld-Oakhaven" }
 tileset{ id = "overworld_yarrowmouth", description = "Overworld-Yarrowmouth" }
 tileset{ id = "palace_of_storms", description = "Palace of Storms" }
 tileset{ id = "pirate_overworld_test", description = "pirate_test1" }
+tileset{ id = "redpine_forest", description = "Redpine Forest" }
 tileset{ id = "sky_scroll", description = "Sky Scroll" }
 tileset{ id = "spruce_head", description = "Spruce Head" }
 tileset{ id = "temple", description = "temple" }
@@ -290,9 +340,15 @@ tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 tileset{ id = "treasure", description = "Treasure" }
 tileset{ id = "underwater_plants", description = "Underwater Plants" }
 tileset{ id = "vault_walls", description = "Vault Walls" }
+tileset{ id = "waves", description = "Waves" }
 
 sprite{ id = "console/cursor", description = "cursor" }
 sprite{ id = "console/icons", description = "icons" }
+sprite{ id = "enemies/bosses/abyss_beast", description = "Abyss Beast" }
+sprite{ id = "enemies/bosses/abyss_beast_faces", description = "AbyssBeast-Faces" }
+sprite{ id = "enemies/bosses/abyss_beast_ghost", description = "Abyss Beast Ghost" }
+sprite{ id = "enemies/bosses/abyss_beast_ring", description = "AbyssBeast-Ring" }
+sprite{ id = "enemies/bosses/abyss_beast_teleport_flash", description = "Abyss Beast Teleport Flash" }
 sprite{ id = "enemies/bosses/assassinbeard", description = "Assassinbeard" }
 sprite{ id = "enemies/bosses/aubrey", description = "Aubrey" }
 sprite{ id = "enemies/bosses/avalanche_golem", description = "Avalanche Golem" }
@@ -305,6 +361,7 @@ sprite{ id = "enemies/bosses/burrow_crab_2", description = "Burrow Crab 2" }
 sprite{ id = "enemies/bosses/centipede_king", description = "Centipede King" }
 sprite{ id = "enemies/bosses/centipede_king_legs", description = "CentiKing Legs" }
 sprite{ id = "enemies/bosses/charging_pirate_1", description = "Charging Pirate 1" }
+sprite{ id = "enemies/bosses/crow_lord", description = "Crow Lord" }
 sprite{ id = "enemies/bosses/crow_mech", description = "Crow Mech" }
 sprite{ id = "enemies/bosses/fiend_1", description = "Fiend 1" }
 sprite{ id = "enemies/bosses/forest_revenant", description = "Forest Revenant" }
@@ -322,6 +379,7 @@ sprite{ id = "enemies/bosses/sea_king", description = "Sea King" }
 sprite{ id = "enemies/bosses/skeleton_lord", description = "Skeleton Lord" }
 sprite{ id = "enemies/bosses/thyme", description = "Captain Thyme" }
 sprite{ id = "enemies/bosses/zephyrine", description = "Zeyphyrine" }
+sprite{ id = "enemies/crow_feather", description = "Crow Feather" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/enemy_killed_ko", description = "EnemyKilled-KO" }
 sprite{ id = "enemies/enemy_killed_projectile", description = "Enemy Killed-Projectile" }
@@ -338,6 +396,8 @@ sprite{ id = "enemies/misc/blackbird", description = "Blackbird" }
 sprite{ id = "enemies/misc/blue_fire", description = "Blue Fire" }
 sprite{ id = "enemies/misc/boomerang", description = "Boomerang" }
 sprite{ id = "enemies/misc/crusher", description = "Crusher" }
+sprite{ id = "enemies/misc/curse_blast", description = "Curse Blast" }
+sprite{ id = "enemies/misc/curse_skull", description = "Curse Skull" }
 sprite{ id = "enemies/misc/dove", description = "Dove" }
 sprite{ id = "enemies/misc/energy_ball", description = "Energy Ball" }
 sprite{ id = "enemies/misc/energy_ball_black", description = "Energy Ball-Black" }
@@ -345,12 +405,14 @@ sprite{ id = "enemies/misc/energy_ball_black_2", description = "EnergyBallBlack2
 sprite{ id = "enemies/misc/energy_ball_small", description = "Energy Ball - Small" }
 sprite{ id = "enemies/misc/energy_ball_small_black", description = "Energy Ball Small Black" }
 sprite{ id = "enemies/misc/explosive_barrel", description = "Explosive Barrel" }
+sprite{ id = "enemies/misc/falling_egg", description = "Falling Egg" }
 sprite{ id = "enemies/misc/falling_rock", description = "Falling Rock" }
 sprite{ id = "enemies/misc/fire", description = "fire" }
 sprite{ id = "enemies/misc/fire_blast", description = "Fire Blast" }
 sprite{ id = "enemies/misc/fireball_red_small", description = "fireball - small, red" }
 sprite{ id = "enemies/misc/gargoyle_cat", description = "Gargoyle Cat" }
 sprite{ id = "enemies/misc/jelly_needle", description = "Jelly Needle" }
+sprite{ id = "enemies/misc/lightning_strike", description = "Lightning Strike" }
 sprite{ id = "enemies/misc/lionhead" }
 sprite{ id = "enemies/misc/moss_bop_grass", description = "Moss Bop Grass" }
 sprite{ id = "enemies/misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
@@ -433,6 +495,7 @@ sprite{ id = "enemies/normal_enemies/pirate_bruiser_shield", description = "Shie
 sprite{ id = "enemies/normal_enemies/pirate_gunner", description = "Pirate Gunner" }
 sprite{ id = "enemies/normal_enemies/pirate_shield", description = "Pirate-Shield" }
 sprite{ id = "enemies/normal_enemies/pirate_shield_vulnerable", description = "Pirate-Shield-Vulnerable" }
+sprite{ id = "enemies/normal_enemies/pirate_sniper", description = "Pirate Sniper" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_1", description = "Pirate- Brown 1" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_1_weapon", description = "weapon - pirate brown 1" }
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_2", description = "Pirate - sword brown 2" }
@@ -441,6 +504,7 @@ sprite{ id = "enemies/normal_enemies/pirate_sword_brown_3", description = "pirat
 sprite{ id = "enemies/normal_enemies/pirate_sword_brown_3_weapon", description = "weapon - pirate sword brown 3" }
 sprite{ id = "enemies/normal_enemies/pollutant_blob", description = "Pollutant Blob" }
 sprite{ id = "enemies/normal_enemies/rambleshroom", description = "Rambleshroom" }
+sprite{ id = "enemies/normal_enemies/roc_bomber", description = "Roc Bomber" }
 sprite{ id = "enemies/normal_enemies/rock_spider_brown", description = "rock spider - brown" }
 sprite{ id = "enemies/normal_enemies/rock_spider_red", description = "enemies/normal_enemies/rock_spider_red" }
 sprite{ id = "enemies/normal_enemies/sea_hag_enemy", description = "SeaHag-Enemy" }
@@ -452,7 +516,9 @@ sprite{ id = "enemies/normal_enemies/shooty_fish", description = "Shooty Fish" }
 sprite{ id = "enemies/normal_enemies/skeleton_1", description = "Skeleton 1" }
 sprite{ id = "enemies/normal_enemies/skeleton_2", description = "Skeleton 2" }
 sprite{ id = "enemies/normal_enemies/skeleton_3", description = "Skeleton3-Armor" }
+sprite{ id = "enemies/normal_enemies/skeleton_bruiser", description = "enemies/normal_enemies/skeleton_bruiser" }
 sprite{ id = "enemies/normal_enemies/skeleton_summoner", description = "Skeleton Summoner" }
+sprite{ id = "enemies/normal_enemies/snail", description = "snail" }
 sprite{ id = "enemies/normal_enemies/spitrock_small", description = "Spitrock - Small" }
 sprite{ id = "enemies/normal_enemies/spitstump_small", description = "Spitstump - Small" }
 sprite{ id = "enemies/normal_enemies/squid_mage_1", description = "Squid Mage 1" }
@@ -463,8 +529,11 @@ sprite{ id = "enemies/normal_enemies/sword_soldier_blue", description = "sword s
 sprite{ id = "enemies/normal_enemies/sword_soldier_blue_weapon", description = "sword soldier blue weapon" }
 sprite{ id = "enemies/normal_enemies/triangle_crab_red", description = "Triangle crab-red" }
 sprite{ id = "enemies/normal_enemies/trumpet_player_disguise", description = "trumpet player disguise" }
+sprite{ id = "enemies/normal_enemies/willowisp", description = "Willowisp" }
 sprite{ id = "enemies/normal_enemies/zora", description = "Zora" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
+sprite{ id = "entities/abysphere_egg", description = "Abysphere" }
+sprite{ id = "entities/abysphere_egg_moss", description = "Abysphere Egg-Moss" }
 sprite{ id = "entities/apple", description = "apple" }
 sprite{ id = "entities/armor", description = "Armor" }
 sprite{ id = "entities/armor_tools", description = "Armor Tools" }
@@ -488,6 +557,7 @@ sprite{ id = "entities/boat_fishing", description = "Boat - Fishing" }
 sprite{ id = "entities/boat_ghost", description = "Boat - Ghost" }
 sprite{ id = "entities/boat_goatshead_ferry", description = "Goatshead Ferry" }
 sprite{ id = "entities/boat_juglan", description = "entities/boat_juglan" }
+sprite{ id = "entities/boat_lily", description = "Boat-Lily" }
 sprite{ id = "entities/boat_mallow", description = "Boat - Mallow" }
 sprite{ id = "entities/boat_morus", description = "Boat - Morus" }
 sprite{ id = "entities/boat_oakhaven_ferry", description = "Oakhaven Ferry" }
@@ -496,6 +566,7 @@ sprite{ id = "entities/boat_yarrowmouth_ferry", description = "Yarrowmouth Ferry
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/boomerang1", description = "Boomerang 1" }
 sprite{ id = "entities/boomerang2", description = "Boomerang 2" }
+sprite{ id = "entities/brass_door", description = "BrassDoor-DOOR" }
 sprite{ id = "entities/broken_fence_1", description = "Broken Fence" }
 sprite{ id = "entities/broken_fence_2", description = "Broken Fence 2" }
 sprite{ id = "entities/broken_fence_3", description = "Broken Fence 3" }
@@ -520,13 +591,17 @@ sprite{ id = "entities/bush_heather_purple", description = "Heather-Purple" }
 sprite{ id = "entities/bush_heather_white", description = "Heather-White" }
 sprite{ id = "entities/bush_kingscrown", description = "Kingscrown" }
 sprite{ id = "entities/bush_lavendar", description = "Lavendar" }
+sprite{ id = "entities/bush_lupine", description = "Lupine" }
+sprite{ id = "entities/bush_lupine_big", description = "Lupine-Big" }
 sprite{ id = "entities/bush_marigold", description = "Marigold" }
 sprite{ id = "entities/bush_monkshood", description = "Monkshood" }
 sprite{ id = "entities/bush_oak_forest", description = "Bush-Oak Forest" }
 sprite{ id = "entities/bush_oakgrass", description = "Oakgrass" }
 sprite{ id = "entities/bush_philodendron", description = "Philodendron Bush" }
 sprite{ id = "entities/bush_seagrass", description = "Seagrass" }
+sprite{ id = "entities/bush_seaoak_grass", description = "Seaoak Grass" }
 sprite{ id = "entities/bush_small_tree", description = "small tree" }
+sprite{ id = "entities/bush_summergrass", description = "Summergrass" }
 sprite{ id = "entities/bush_violet", description = "Violet" }
 sprite{ id = "entities/bush_witch_hazel", description = "Witch Hazel" }
 sprite{ id = "entities/bush_yarrow_white", description = "Yarrow - white" }
@@ -553,6 +628,7 @@ sprite{ id = "entities/destination", description = "Destination" }
 sprite{ id = "entities/dog_mayors", description = "Dog - Mayor's" }
 sprite{ id = "entities/door_archway_locked", description = "Door - Archway, locked" }
 sprite{ id = "entities/door_archway_shutter", description = "Door- Archway, Shutter" }
+sprite{ id = "entities/door_barrowstone", description = "Door-Barrowstone" }
 sprite{ id = "entities/door_bearwalls_unmarked", description = "Door-Bearwalls Unmarked" }
 sprite{ id = "entities/door_boarded", description = "Door-Boarded" }
 sprite{ id = "entities/door_cracked_wall", description = "Door-Cracked Wall" }
@@ -567,6 +643,7 @@ sprite{ id = "entities/door_locked_stone", description = "Door-Locked-Stone" }
 sprite{ id = "entities/door_mangrove_tree", description = "door-MangroveTree" }
 sprite{ id = "entities/door_npc_tall", description = "NPC door - tall" }
 sprite{ id = "entities/door_post_stone", description = "Door-Stone Post" }
+sprite{ id = "entities/door_post_water", description = "Posts-Water" }
 sprite{ id = "entities/door_posts", description = "Door - Posts" }
 sprite{ id = "entities/door_posts_pipes", description = "Door-Posts-Pipes" }
 sprite{ id = "entities/door_seabird", description = "Door-Seabird" }
@@ -576,11 +653,16 @@ sprite{ id = "entities/door_unmarked_wall", description = "Door - Unmarked Wall"
 sprite{ id = "entities/door_vines", description = "Door-Vines" }
 sprite{ id = "entities/door_weak_block", description = "Door (weak block)" }
 sprite{ id = "entities/door_weak_wall", description = "Weak Wall Door" }
+sprite{ id = "entities/dust_cloud_roll", description = "Dust Cloud - Roll" }
+sprite{ id = "entities/effects/light_l", description = "Light - L" }
+sprite{ id = "entities/effects/light_m", description = "Light - M" }
+sprite{ id = "entities/effects/light_xl", description = "Light XL" }
 sprite{ id = "entities/elixer", description = "elixer" }
 sprite{ id = "entities/ether_bomb", description = "Ether Bomb" }
 sprite{ id = "entities/explosion", description = "Explosion" }
 sprite{ id = "entities/explosion_3", description = "Explosion 3" }
 sprite{ id = "entities/explosion_blue", description = "Explosion-Blue" }
+sprite{ id = "entities/ferry_raft", description = "Ferry-Raft" }
 sprite{ id = "entities/fire", description = "Fire" }
 sprite{ id = "entities/fire_grate", description = "Fire Grate" }
 sprite{ id = "entities/fire_hole", description = "Fire Hole" }
@@ -603,6 +685,7 @@ sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/leaf_blowing", description = "Leaf - Blowing" }
 sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
 sprite{ id = "entities/leaf_whirl_green", description = "Leaf Whirl- Green" }
+sprite{ id = "entities/lightning_2", description = "Lightning-2" }
 sprite{ id = "entities/lightning_bolt_attack", description = "Lightning Bolt Attack" }
 sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/moving_platform", description = "Moving Platform" }
@@ -672,18 +755,21 @@ sprite{ id = "hero/tunic2", description = "Hero tunic 2" }
 sprite{ id = "hero/tunic3", description = "Hero tunic 3" }
 sprite{ id = "hud/arrow_icon", description = "arrow icon" }
 sprite{ id = "hud/bomb_icon", description = "bomb icon" }
-sprite{ id = "hud/gameover_fade", description = "HUD: Game-over fade" }
-sprite{ id = "hud/icon_pause", description = "icon_pause" }
 sprite{ id = "hud/magic_bar", description = "magic bar" }
 sprite{ id = "hud/pause_infra", description = "Pause Infrastructure" }
-sprite{ id = "hud/piece_of_heart_icon", description = "Piece of Heart icon" }
 sprite{ id = "hud/quest_log_update_icon", description = "Quest Log Update Icon" }
+sprite{ id = "hud/small_key_icon", description = "Small Key Icon" }
 sprite{ id = "menus/arrows", description = "arrows" }
 sprite{ id = "menus/checkmark", description = "checkmark" }
 sprite{ id = "menus/cursor", description = "Cursor" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
 sprite{ id = "menus/inventory/inventory_background", description = "Inventory Background" }
+sprite{ id = "menus/inventory/life_empty_stitch", description = "Life Empty Slot Stitch" }
+sprite{ id = "menus/inventory/life_half_stitch", description = "Life Half Stitch" }
+sprite{ id = "menus/inventory/life_stitch", description = "Life Stitch" }
+sprite{ id = "menus/inventory/magic_stitch", description = "Magic Stitch" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
+sprite{ id = "menus/maps/port_rune", description = "Port Rune" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/slider", description = "slider" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
@@ -720,6 +806,10 @@ sprite{ id = "npc/eamon", description = "Eamon" }
 sprite{ id = "npc/first_mate", description = "First Mate" }
 sprite{ id = "npc/fishing_2_left", description = "Fishing 2 - left" }
 sprite{ id = "npc/fishing_2_right", description = "Fishing 2 - Right" }
+sprite{ id = "npc/fishing_in_boats_1", description = "Fisher-Boat-1" }
+sprite{ id = "npc/fishing_in_boats_2", description = "Fisher-Boat" }
+sprite{ id = "npc/fishing_in_boats_3", description = "Fisher-Boat3" }
+sprite{ id = "npc/fishing_in_boats_4", description = "Fisher-Boat-4" }
 sprite{ id = "npc/fishing_left", description = "npc/fishing_left" }
 sprite{ id = "npc/fishing_right", description = "fishing-right" }
 sprite{ id = "npc/guards/big_npc_guard_goatshead", description = "Big Guard - Goatshead" }
@@ -765,6 +855,11 @@ sprite{ id = "npc/kid/kid_6.2", description = "npc/kid/kid_6.2" }
 sprite{ id = "npc/kid/kid_6.3", description = "npc/kid/kid_6.3" }
 sprite{ id = "npc/kid/kid_6.4", description = "npc/kid/kid_6.4" }
 sprite{ id = "npc/leigha", description = "leigha" }
+sprite{ id = "npc/lily/lily_fishing_l", description = "Fishing-Left" }
+sprite{ id = "npc/lily/lily_lounging", description = "Lily-Lounging" }
+sprite{ id = "npc/lily/lily_sitting", description = "Lily-Sitting" }
+sprite{ id = "npc/lily/lily_standing", description = "Lily-Standing" }
+sprite{ id = "npc/lily/lily_waving", description = "Lily-Waving" }
 sprite{ id = "npc/linden", description = "Linden" }
 sprite{ id = "npc/linden_sweeping", description = "Linden Sweeping" }
 sprite{ id = "npc/litton", description = "Litton" }
@@ -1288,6 +1383,7 @@ sound{ id = "boss_killed", description = "boss_killed" }
 sound{ id = "boss_killed1", description = "boss_killed1" }
 sound{ id = "bow", description = "bow" }
 sound{ id = "breaking_glass", description = "Breaking Glass" }
+sound{ id = "breaking_vase", description = "breaking_vase" }
 sound{ id = "burrow1", description = "Burrow 1" }
 sound{ id = "burrow2", description = "Burrow 2" }
 sound{ id = "bush", description = "bush" }
@@ -1303,6 +1399,7 @@ sound{ id = "charge_warp", description = "charge_warp" }
 sound{ id = "chest_open", description = "chest_open" }
 sound{ id = "clank", description = "clank" }
 sound{ id = "click_low", description = "click_low" }
+sound{ id = "crackle1", description = "crackle1" }
 sound{ id = "cursor", description = "cursor" }
 sound{ id = "cursor_2", description = "cursor_2" }
 sound{ id = "danger", description = "danger" }
@@ -1321,7 +1418,9 @@ sound{ id = "enemy_hurt1", description = "enemy_hurt1" }
 sound{ id = "enemy_hurt_01", description = "enemy_hurt_01" }
 sound{ id = "enemy_hurt_default", description = "enemy_hurt_default" }
 sound{ id = "enemy_killed", description = "enemy_killed" }
+sound{ id = "ether_bomb", description = "ether_bomb" }
 sound{ id = "explosion", description = "explosion" }
+sound{ id = "explosion_ice", description = "explosion_ice" }
 sound{ id = "external_stairs_down", description = "external_stairs_down" }
 sound{ id = "external_stairs_up", description = "external_stairs_up" }
 sound{ id = "falling", description = "falling" }
@@ -1414,6 +1513,7 @@ sound{ id = "throw_01", description = "throw_01" }
 sound{ id = "thunder1", description = "thunder1" }
 sound{ id = "thunder2", description = "thunder2" }
 sound{ id = "thunder3", description = "thunder3" }
+sound{ id = "thunder4_short", description = "thunder4_short" }
 sound{ id = "thunder_double", description = "thunder_double" }
 sound{ id = "thunder_far", description = "thunder_far" }
 sound{ id = "thunk1", description = "thunk1" }
@@ -1435,6 +1535,7 @@ sound{ id = "wood_breaking_and_falling_into_water", description = "wood_breaking
 sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
+item{ id = "abyssal_flame", description = "Abyssal Flame" }
 item{ id = "amulet", description = "amulet" }
 item{ id = "apples", description = "Apples - 1,3,5,10" }
 item{ id = "armor_tools", description = "Armorer Tools" }
@@ -1464,6 +1565,7 @@ item{ id = "chamomile", description = "Chamomile-1,5,10" }
 item{ id = "charts", description = "Charts (for Kelpton)" }
 item{ id = "contract", description = "contract" }
 item{ id = "coral_ore", description = "Coral Ore" }
+item{ id = "crow_feather" }
 item{ id = "crystal_spark", description = "Crystal Spark - Ophira's Ember" }
 item{ id = "cyclone_charm", description = "Cyclone Charm" }
 item{ id = "dandelion_charm", description = "Dandelion Charm" }
@@ -1474,6 +1576,17 @@ item{ id = "elixer", description = "Elixer Vitae" }
 item{ id = "empty", description = "test" }
 item{ id = "ether_bombs", description = "Ether Bombs" }
 item{ id = "ether_bombs_pickable", description = "EtherBombsPickable-1.3.5.10" }
+item{ id = "fast_travel_chart_ballast_harbor", description = "Fast Travel Chart Ballast Harbor" }
+item{ id = "fast_travel_chart_goatshead", description = "Fast Travel Chart Goatshead" }
+item{ id = "fast_travel_chart_isle_of_storms", description = "Fast Travel Chart Isle of Storms" }
+item{ id = "fast_travel_chart_ivystump", description = "Fast Travel Chart Ivystump" }
+item{ id = "fast_travel_chart_kingsdown", description = "FTC Kingsdown" }
+item{ id = "fast_travel_chart_limestone", description = "Fast Travel Chart Limestone" }
+item{ id = "fast_travel_chart_oakhaven", description = "Fast Travel Chart Oakhaven" }
+item{ id = "fast_travel_chart_snapmast", description = "FTC Snapmast" }
+item{ id = "fast_travel_chart_spruce_head", description = "Fast Travel Chart Spruce Head" }
+item{ id = "fast_travel_chart_yarrowmouth", description = "FTC Yarrowmouth" }
+item{ id = "fast_travel_chart_zephyr_bay", description = "FTC Zephyr Bas" }
 item{ id = "firethorn_berries", description = "Firethorn Berries-1,5,10" }
 item{ id = "flippers", description = "flippers" }
 item{ id = "forsythia", description = "Forsythia-1,5,10" }
@@ -1496,6 +1609,7 @@ item{ id = "ironwood_charm", description = "Ironwood Charm" }
 item{ id = "key_ballast_council_building", description = "Key - Ballast Council Building" }
 item{ id = "key_basswood_tavern", description = "key- Basswood Tavern" }
 item{ id = "key_bear_catacombs", description = "Key-Bear Catacombs" }
+item{ id = "key_brass", description = "Key-Brass" }
 item{ id = "key_dandelion_charm", description = "Key - Dandelion Charm" }
 item{ id = "key_fort_crow", description = "Key-Fort Crow" }
 item{ id = "key_goat_caverns", description = "Key - Goat Caverns" }
@@ -1512,6 +1626,7 @@ item{ id = "key_mead_safehouse", description = "Key - Mead Safehouse" }
 item{ id = "key_mushroom_spot", description = "Key - Mushroom Spot" }
 item{ id = "key_palace_of_storms", description = "Key-Palace of Storms" }
 item{ id = "key_poplar_shack", description = "Key - Poplar Shack" }
+item{ id = "key_shoal_pirate_fort", description = "Key-ShoalPirateFort" }
 item{ id = "key_sinking_lighthouse", description = "Key - Sinking Lighthouse" }
 item{ id = "key_sometimes_cape_ruins", description = "Key - Sometimes Cape Ruins" }
 item{ id = "key_spruce_head", description = "Key - Spruce Head" }
@@ -1520,6 +1635,7 @@ item{ id = "key_to_oakhaven", description = "Key to Oakhaven" }
 item{ id = "kingscrown", description = "Kingscrown Flowers" }
 item{ id = "lavendar", description = "Lavendar-1,5,10" }
 item{ id = "leaf_tornado", description = "Leaf Tornado" }
+item{ id = "machine_part", description = "Machine Part" }
 item{ id = "mandrake", description = "Mandrake-1,5,10" }
 item{ id = "mandrake_white", description = "white mandrake-1,3,5" }
 item{ id = "manna_oak_letter", description = "manna_oak_letter" }
@@ -1560,12 +1676,14 @@ item{ id = "tacklebox", description = "Tacklebox" }
 item{ id = "thunder_charm", description = "Thunder Charm" }
 item{ id = "tidal_starfruit", description = "Tidy Starnut" }
 item{ id = "tornado_dash", description = "Tornado Dash" }
+item{ id = "tungsten_ore", description = "Tungsten Ore" }
 item{ id = "unattainable_collectable", description = "placeholder for menu design" }
 item{ id = "violets", description = "violets-1,5,10" }
 item{ id = "watering_can", description = "watering can" }
 item{ id = "whisky_for_juglan", description = "Whisky for Juglan" }
 item{ id = "witch_hazel", description = "Witch Hazel-1,3,5,10" }
 
+enemy{ id = "bosses/abyss_beast", description = "Abyss Beast" }
 enemy{ id = "bosses/assassinbeard", description = "Assassinbeard" }
 enemy{ id = "bosses/aubrey", description = "Aubrey" }
 enemy{ id = "bosses/avalanche_golem", description = "Avalanche Golem" }
@@ -1576,6 +1694,7 @@ enemy{ id = "bosses/burrow_crab_2", description = "Burrow Crab 2" }
 enemy{ id = "bosses/centipede_king", description = "Centipede Boss" }
 enemy{ id = "bosses/centipede_king_legs", description = "CentipedeKingLegs" }
 enemy{ id = "bosses/charging_pirate_1", description = "Charging Pirate 1" }
+enemy{ id = "bosses/crow_lord", description = "Crow Lord" }
 enemy{ id = "bosses/crow_mech", description = "Crow Mech" }
 enemy{ id = "bosses/fiend_1", description = "Fiend 1" }
 enemy{ id = "bosses/forest_revenant", description = "Forest Revenant" }
@@ -1593,6 +1712,7 @@ enemy{ id = "bosses/thyme", description = "Captain Thyme" }
 enemy{ id = "bosses/zephyrine", description = "Zephyrine" }
 enemy{ id = "general_enemy_example", description = "General Enemy Example" }
 enemy{ id = "misc/arrow_4", description = "Arrow - 4 directions" }
+enemy{ id = "misc/arrow_any_direction", description = "Arrow-AnyDirection" }
 enemy{ id = "misc/barrel_cannon", description = "Barrel Cannon" }
 enemy{ id = "misc/big_stone", description = "Big Stone" }
 enemy{ id = "misc/black_blast", description = "Black Blast" }
@@ -1600,6 +1720,8 @@ enemy{ id = "misc/blue_fire", description = "Blue Fire" }
 enemy{ id = "misc/bomb_4_direction", description = "Bomb - 4 direction" }
 enemy{ id = "misc/bomb_any_direction", description = "Bomb-Any Direction" }
 enemy{ id = "misc/crusher", description = "Crusher" }
+enemy{ id = "misc/curse_blast", description = "Curse Blast" }
+enemy{ id = "misc/curse_skull", description = "Curse Skull" }
 enemy{ id = "misc/default", description = "default" }
 enemy{ id = "misc/dove", description = "Dove" }
 enemy{ id = "misc/enemy_weapon", description = "Enemy Weapon" }
@@ -1610,12 +1732,14 @@ enemy{ id = "misc/energy_ball_small", description = "Energy Ball Small" }
 enemy{ id = "misc/energy_ball_small_black", description = "EnergyBallSmallBlack" }
 enemy{ id = "misc/energy_ball_split", description = "Energy Ball Split" }
 enemy{ id = "misc/explosive_barrel", description = "explosive barrel" }
+enemy{ id = "misc/falling_egg", description = "Falling Egg" }
 enemy{ id = "misc/falling_rock", description = "Falling Rock" }
 enemy{ id = "misc/fire", description = "Fire" }
 enemy{ id = "misc/fire_blast", description = "Fire Blast" }
 enemy{ id = "misc/fireball_red_small", description = "Fireball - red, small" }
 enemy{ id = "misc/gargoyle_cat", description = "Gargoyle Cat" }
 enemy{ id = "misc/jelly_needle", description = "Jelly Needle" }
+enemy{ id = "misc/lightning_strike" }
 enemy{ id = "misc/lionhead", description = "Lionhead" }
 enemy{ id = "misc/nitrodendron_bomb", description = "Nitrodendron Bomb" }
 enemy{ id = "misc/octorok_stone", description = "Small Stone" }
@@ -1684,11 +1808,13 @@ enemy{ id = "normal_enemies/pirate_bow_brown_1", description = "Pirate - Bow/Dod
 enemy{ id = "normal_enemies/pirate_bruiser", description = "Pirate Bruiser" }
 enemy{ id = "normal_enemies/pirate_gunner", description = "Pirate Gunner" }
 enemy{ id = "normal_enemies/pirate_shield", description = "Pirate Shield Troop" }
+enemy{ id = "normal_enemies/pirate_sniper", description = "Pirate Sniper" }
 enemy{ id = "normal_enemies/pirate_sword_brown_1", description = "Pirate lv1" }
 enemy{ id = "normal_enemies/pirate_sword_brown_2", description = "Pirate lv2" }
 enemy{ id = "normal_enemies/pirate_sword_brown_3", description = "Pirate lv3" }
 enemy{ id = "normal_enemies/pollutant_blob", description = "Pollutant Blob" }
 enemy{ id = "normal_enemies/rambleshroom", description = "Rambleshroom" }
+enemy{ id = "normal_enemies/roc_bomber", description = "Roc Bomber" }
 enemy{ id = "normal_enemies/rock_spider_brown", description = "rock spider - brown" }
 enemy{ id = "normal_enemies/rock_spider_red", description = "rock spider - red" }
 enemy{ id = "normal_enemies/sea_hag_enemy", description = "SeaHag-enemy" }
@@ -1709,6 +1835,7 @@ enemy{ id = "normal_enemies/stump_duck", description = "Stump Duck" }
 enemy{ id = "normal_enemies/sword_soldier_blue", description = "sword soldier blue" }
 enemy{ id = "normal_enemies/triangle_crab_red", description = "Triangle Crab-Red" }
 enemy{ id = "normal_enemies/trumpet_player_disguise", description = "Trumpet Player Disguise" }
+enemy{ id = "normal_enemies/willowisp", description = "Willowisp" }
 enemy{ id = "normal_enemies/zora", description = "Zora" }
 
 entity{ id = "ally", description = "ally" }

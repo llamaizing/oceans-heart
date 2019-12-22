@@ -16,6 +16,12 @@ map:register_event("on_started", function()
   require("scripts/fx/sound_atmosphere_manager"):start_atmosphere(map, "rain")
   local world = map:get_world()
   game:set_world_rain_mode(world, "rain")
+
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(2)
+  sol.menu.start(map, lighting_effects)
+
   switches_pressed = 0
 
   if game:get_value("quest_dusit") == 0 then game:set_value("quest_dusit", 1) end

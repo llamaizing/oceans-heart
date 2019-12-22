@@ -1,23 +1,14 @@
--- Lua script of map oakhaven/interiors/hornwart_inn.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
 local inn_script = require"scripts/shops/inn"
 
 
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
   if game:get_value("quest_hazel") >= 2 then map:set_doors_open("hazel_door") end
   if game:get_value("quest_manna_oaks") then hazel:set_enabled(false) end
-  if game:get_value("found_hazel") ~= true then
+  if game:get_value("found_hazel_in_archives") ~= true then
     hazel:set_enabled(false)
   else
     for book in map:get_entities("new_book") do book:set_enabled(true) end
@@ -25,7 +16,7 @@ function map:on_started()
   if game:get_value("quest_mangrove_sword") and game:get_value("quest_mangrove_sword") < 4 then
       hazel:set_enabled(false)
   end
-end
+end)
 
 
 function beaufort:on_interaction()

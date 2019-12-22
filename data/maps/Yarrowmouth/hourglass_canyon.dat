@@ -4809,7 +4809,7 @@ teletransporter{
   y = 720,
   width = 32,
   height = 16,
-  destination_map = "Yarrowmouth/tern_marsh",
+  destination_map = "Yarrowmouth/tern_marshOLD",
   destination = "_side",
 }
 
@@ -4855,8 +4855,8 @@ teletransporter{
   y = 464,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/hourglass_canyon",
-  destination = "from_inside",
+  destination_map = "Yarrowmouth/kingsdown",
+  destination = "from_inside_fort",
 }
 
 npc{

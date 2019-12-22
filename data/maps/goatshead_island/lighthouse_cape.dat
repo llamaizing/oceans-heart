@@ -11984,7 +11984,7 @@ teletransporter{
   width = 16,
   height = 128,
   transition = "scrolling",
-  destination_map = "goatshead_island/goatshead_harbor",
+  destination_map = "goatshead_island/goatshead_harbor_OLD",
   destination = "_side",
 }
 
@@ -12481,7 +12481,7 @@ chest{
   layer = 0,
   x = 688,
   y = 429,
-  treasure_name = "rupee",
+  treasure_name = "bomb",
   treasure_variant = 3,
   treasure_savegame_variable = "lighthouse_cape_treasure_chest",
   sprite = "entities/chest",

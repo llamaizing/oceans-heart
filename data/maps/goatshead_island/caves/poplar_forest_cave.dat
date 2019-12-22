@@ -851,7 +851,7 @@ teletransporter{
   y = 40,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/poplar_forest",
+  destination_map = "stonefell_crossroads/forest_of_tides",
   destination = "from_cave",
 }
 

@@ -15,9 +15,14 @@ local PARTICLE_SPEED = 11
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(5)
+  sol.menu.start(map, lighting_effects)
+
   if game:get_value("oakhaven_palace_rune_activated") then
     glowing_rune:set_enabled(true)
-    rune_sensor:set_enabled(true)
+    rune_enabler:set_enabled(true)
   end
 
 --particle effect creation
@@ -37,9 +42,7 @@ map:register_event("on_started", function()
 end)
 
 
-function coral_boss:on_dead()
-  map:open_doors("coral_ore_door")
-end
+
 
 --map banner
 function map_banner_activator:on_activated()
@@ -47,8 +50,16 @@ function map_banner_activator:on_activated()
   map_banner_activator:set_enabled(false)
 end
 
+function rune_enabler:on_activated()
+  rune_sensor:set_enabled()
+end
+
 function rune_sensor:on_activated()
-  game:start_dialog("_oakhaven.observations.abyss.draw_in")
+  game:start_dialog("_oakhaven.observations.abyss.draw_in", function()
+    hero:teleport("oakhaven/caves/abyss_arena", "from_above")
+  end)
+  --after beating the boss:
+  --game:set_value("quest_abyss", 3)
 end
 
 

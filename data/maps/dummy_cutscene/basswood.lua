@@ -13,12 +13,6 @@ local black = sol.surface.create()
 black:fill_color{0,0,0}
 black:set_opacity(0)
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
 
 
 function map:on_opening_transition_finished()

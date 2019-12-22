@@ -10,8 +10,13 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
+
 map:register_event("on_started", function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(1)
+  sol.menu.start(map, lighting_effects)
+
   if game:get_value("quest_haunted_monastery") then
     map:set_doors_open("gate")
   end
@@ -62,6 +67,9 @@ function hidden_book_2:on_interaction()
   end)
 end
 
+function spring_door_switch:on_activated()
+  map:open_doors"spring_door"
+end
 
 function boss_sensor:on_activated()
   if game:get_value("quest_haunted_monastery") and game:get_value("quest_haunted_monastery") < 1 then

@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "indoors_stone",
-  music = "goatshead_overworld_2",
+  music = "newfashioned_port_burg",
 }
 
 tile{
@@ -1298,7 +1298,7 @@ teletransporter{
   y = 208,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/lighthouse_cape",
+  destination_map = "goatshead_island/goat_hill",
   destination = "from_lighthouse",
 }
 

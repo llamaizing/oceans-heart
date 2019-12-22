@@ -1,24 +1,37 @@
--- Lua script of map oakhaven/caves/eastoak_coral_ore_cave.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
+--skull switch order:
+--2,4,3,1
 
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+map:register_event("on_started", function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(4)
+  sol.menu.start(map, lighting_effects)
+end)
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+
+--Barrow Door
+local switch_index = 1
+local switches = {"skull_2", "skull_4", "skull_3", "skull_1"}
+
+for entity in map:get_entities("skull_") do
+  function entity:on_interaction()
+    map:press_switch(self:get_name())
+  end
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
+function map:press_switch(name)
+  if switches[switch_index] == name then
+    sol.audio.play_sound"switch"
+    switch_index = switch_index + 1
+    if switch_index == (#switches + 1) then
+      sol.audio.play_sound"switch"
+      map:open_doors("skull_door")
+    end
+  else
+    sol.audio.play_sound"wrong"
+    switch_index = 1
+  end
 end

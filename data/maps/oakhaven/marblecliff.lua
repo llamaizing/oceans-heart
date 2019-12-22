@@ -10,32 +10,21 @@
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
-  if game:get_value("marblecliff_secret_tunnel_opened") == true then
-    rock_door:set_enabled(false) rock_door_2:set_enabled(false) hidden_tunnel_npc:set_enabled(false) end
-
-  if game:get_value("marblecliff_weak_tree_fallen") == true then
-    weak_tree_enemy:set_enabled(false)
-    for entity in map:get_entities("fall_tree") do entity:set_enabled(true) end
+  if game:get_value("marblecliff_secret_tunnel_opened") then
+    rock_door:set_enabled(false)
+    hidden_tunnel_npc:set_enabled(false)
   end
-
 end)
 
 
 function hidden_tunnel_npc:on_interaction()
-  if game:get_value("burglars_saved") == true and game:get_value("marblecliff_secret_tunnel_opened") ~= true then
+  if game:get_value("burglars_saved") and not game:get_value("marblecliff_secret_tunnel_opened") then
     game:set_value("marblecliff_secret_tunnel_opened", true)
     sol.audio.play_sound("secret")
-    rock_door:set_enabled(false)
-    rock_door_2:set_enabled(false)
     hidden_tunnel_npc:set_enabled(false)
+    rock_door:set_enabled(false)
   end
-end
-
-function weak_tree_enemy:on_disabled()
-  for entity in map:get_entities("fall_tree") do entity:set_enabled(true) end
-  game:set_value("marblecliff_weak_tree_fallen", true)
 end
 
 function clue_sensor:on_activated()

@@ -1,25 +1,14 @@
--- Lua script of map oakhaven/interiors/library.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
   if game:get_value("visited_hazel_room") == true then
     for entity in map:get_entities("block_book") do entity:set_enabled(false) end
   end
 
   if game:get_value("quest_manna_oaks") and game:get_value("quest_manna_oaks") >= 1 then hazel:set_enabled(true) end
-
-end
+end)
 
 function festus:on_interaction()
   if game:get_value("lib_festus_counter") == nil then
@@ -44,7 +33,7 @@ function note:on_interaction()
   if game:get_value("find_burglars") ~= true then
     game:start_dialog("_oakhaven.observations.hazel_books.8-note", function()
       game:set_value("quest_hazel", 4)
-      
+
       game:set_value("quest_log_a", "a12")
       game:set_value("find_burglars", true)
     end)

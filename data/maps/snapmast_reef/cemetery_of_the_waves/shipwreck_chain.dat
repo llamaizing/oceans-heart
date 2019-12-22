@@ -77631,6 +77631,47 @@ tile{
   tileset = "cemetery_of_waves",
 }
 
+tile{
+  layer = 0,
+  x = 2296,
+  y = 224,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "160",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2296,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "98",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2312,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "161",
+  tileset = "cemetery_of_waves",
+}
+
+tile{
+  layer = 0,
+  x = 2312,
+  y = 240,
+  width = 16,
+  height = 8,
+  pattern = "100",
+  tileset = "cemetery_of_waves",
+}
+
 sensor{
   name = "^save_solid_ground_sensor_128",
   layer = 0,
@@ -81842,7 +81883,7 @@ custom_entity{
   name = "leaf_pile_58",
   layer = 0,
   x = 2312,
-  y = 253,
+  y = 277,
   properties = {
     {
       key = "can_respawn",
@@ -81882,7 +81923,7 @@ custom_entity{
   name = "leaf_pile_60",
   layer = 0,
   x = 2312,
-  y = 285,
+  y = 309,
   properties = {
     {
       key = "can_respawn",
@@ -87288,7 +87329,7 @@ door{
   y = 72,
   direction = 3,
   sprite = "entities/door_posts",
-  savegame_variable = "cemetery_of_waves_d5_door",
+  savegame_variable = "cemetery_of_waves_b1_door",
 }
 
 door{
@@ -87298,7 +87339,7 @@ door{
   y = 72,
   direction = 3,
   sprite = "entities/door_posts",
-  savegame_variable = "cemetery_of_waves_d5_door",
+  savegame_variable = "cemetery_of_waves_b1_door",
 }
 
 sensor{

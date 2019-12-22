@@ -25,7 +25,7 @@ map:register_event("on_started", function()
 end)
 
 
-
+--[[
 function morus:on_interaction()
   if game:has_item("oceansheart_chart") == true then
     if not game:get_value("showed_morus_the_oceansheart_chart") then
@@ -61,3 +61,4 @@ function morus:on_interaction()
     end)
   end
 end
+--]]

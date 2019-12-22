@@ -28,7 +28,8 @@ local all_equipment_items = {
     {item = "potion_burlyblade", assignable = false,},
     {item = "potion_fleetseed", assignable = false,},
     {item = "gust", assignable = true,},
-    {item = "crystal_spark", assignable = true,},
+--    {item = "crystal_spark", assignable = true,},
+    {item = "abyssal_flame", assignable = true,},
 --    {item = "cyclone_charm", assignable = true,},
 --    {item = "unattainable_collectable", assignable = false},
 --    {item = "unattainable_collectable", assignable = false},
@@ -89,6 +90,11 @@ end
 
 
 function inventory:initialize(game)
+  --handle life and magic
+  self.life_surface = sol.surface.create()
+  self.magic_surface = sol.surface.create()
+  sol.timer.start(game, 100, function() inventory:update_life_and_magic() end)
+
     --set the cursor index, or which item the cursor is over
     --remember, the cursor index is 0 based but the all_equipment_items table starts at 1
     --since the cursor index is zero based, so are rows and columns.
@@ -124,7 +130,9 @@ function inventory:initialize(game)
                 --initialize the sprite
                 local equipment_sprite = sol.sprite.create("entities/items")
                 equipment_sprite:set_animation(item_name)
-                equipment_sprite:set_direction(variant - 1)
+--Actually, all items have one sprite for all variants, nothing changes sprite with variant except boomerang
+--                equipment_sprite:set_direction(variant - 1)
+                equipment_sprite:set_direction(0)
                 self.equipment_sprites[i] = equipment_sprite
 
                 --if the item has an amount, make a counter in the counters table
@@ -170,6 +178,29 @@ function inventory:initialize(game)
     --get assigned item sprites
     self:initialize_assigned_item_sprites(game)
 
+end
+
+function inventory:update_life_and_magic()
+  local game = sol.main.get_game()
+  local has_half_heart = game:get_life() % 2
+  self.max_life = math.floor(game:get_max_life() / 2)
+  self.life = math.floor(game:get_life() / 2)
+  self.magic = math.floor(game:get_magic() / 3)
+  for i=1, self.max_life do
+    local stitch
+    if i <= self.life then
+      stitch = sol.sprite.create("menus/inventory/life_stitch")
+    elseif has_half_heart == 1 and i == self.life + 1 then
+      stitch = sol.sprite.create("menus/inventory/life_half_stitch")
+    else
+      stitch = sol.sprite.create("menus/inventory/life_empty_stitch")
+    end
+    stitch:draw(self.life_surface, i * 8 - 4, 8)
+  end
+  for i=1, self.magic do
+    local stitch = sol.sprite.create("menus/inventory/magic_stitch")
+    stitch:draw(self.magic_surface, i * 4, 8)
+  end
 end
 
 --get sprites for assigned items
@@ -295,6 +326,9 @@ function inventory:on_draw(dst_surface)
     self.menu_background:draw(dst_surface, self.x, self.y)
     self.cursor_sprite:draw(dst_surface, (self.cursor_column * 32 + GRID_ORIGIN_X + 32) + self.x,  (self.cursor_row * 32 + GRID_ORIGIN_Y) + self.y)
     self.description_panel:draw(dst_surface, ((COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16) + self.x, (ROWS *32 + GRID_ORIGIN_Y - 8)+self.y)
+    --draw health and magic
+    self.life_surface:draw(dst_surface, 75, 14)
+    self.magic_surface:draw(dst_surface, 75, 22)
     --draw assigned items:
       if self.assigned_item_sprite_1 then
         self.assigned_item_sprite_1:draw(dst_surface, self.x + 310, self.y + 35)

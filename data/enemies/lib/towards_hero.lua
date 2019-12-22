@@ -94,7 +94,7 @@ function behavior:create(enemy, properties)
 
     self:set_life(properties.life)
     self:set_damage(properties.damage)
-    self:create_sprite(properties.sprite)
+    self.sprite = self:create_sprite(properties.sprite)
     self:set_hurt_style(properties.hurt_style)
     self:set_pushed_back_when_hurt(properties.pushed_when_hurt)
     self:set_push_hero_on_sword(properties.push_hero_on_sword)
@@ -108,11 +108,18 @@ function behavior:create(enemy, properties)
     if properties.dying_sprite then self:set_dying_sprite_id(properties.dying_sprite) end
   end
 
-  function enemy:on_movement_changed(movement)
 
+  function enemy:on_movement_changed(movement)
     local direction4 = movement:get_direction4()
     local sprite = self:get_sprite()
     sprite:set_direction(direction4)
+    local ground = self:get_ground_below()
+    if not self.grass_sprite and ground == "grass" then
+      self.grass_sprite = self:create_sprite("hero/ground1")
+    elseif self.grass_sprite and ground ~= "grass" then
+      self:remove_sprite(self.grass_sprite)
+      self.grass_sprite = nil
+    end
   end
 
   function enemy:on_obstacle_reached(movement)

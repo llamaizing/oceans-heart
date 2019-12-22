@@ -11,16 +11,11 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("talked_to_ilex_1") == true then ilex:set_enabled(false) end
 
-end
+end)
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
-end
 
 function ilex:on_interaction()
   if game:get_value("talked_to_ilex_1") ~= true then

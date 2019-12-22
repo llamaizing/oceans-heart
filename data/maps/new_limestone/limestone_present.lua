@@ -12,17 +12,20 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
-  to_goatshead:set_enabled(false)
+  if game:get_value("left_limestone") then
+    juglan:remove()
+  end 
+  if not game:get_value("goatshead_opening") then juglan_2:remove() end
 end)
 
-
+--This juglan is only for your first ride out:
 function juglan:on_interaction()
   -- first time leaving
   if game:get_value("left_limestone") == nil then
     game:start_dialog("_new_limestone_island.npcs.juglan.first_time_leaving", function(answer)
       if answer == 2 then
         game:start_dialog("_new_limestone_island.npcs.juglan.first_time_leaving_confirm", function()
-          to_goatshead:set_enabled(true)
+          hero:teleport("goatshead_island/goatshead_harbor", "from_limestone")
           game:set_value("left_limestone", true)
 
         end)
@@ -35,6 +38,10 @@ function juglan:on_interaction()
         to_goatshead:set_enabled(true)
       end
       end)
-       
   end
+end
+
+--This Juglan comes back and is there for the rest of the game
+function juglan_2:on_interaction()
+  game:start_dialog"_new_limestone_island.npcs.juglan_2.1"
 end

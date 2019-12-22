@@ -677,7 +677,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
+  x = 144,
   y = 64,
   width = 16,
   height = 16,
@@ -686,7 +686,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 224,
+  x = 160,
   y = 64,
   width = 16,
   height = 16,
@@ -695,7 +695,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
+  x = 128,
   y = 64,
   width = 16,
   height = 16,
@@ -704,47 +704,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
-  y = 104,
-  width = 8,
-  height = 24,
-  pattern = "218",
-}
-
-tile{
-  layer = 0,
-  x = 176,
-  y = 104,
-  width = 16,
-  height = 24,
-  pattern = "219",
-}
-
-tile{
-  layer = 0,
-  x = 168,
-  y = 104,
-  width = 8,
-  height = 24,
-  pattern = "217",
-}
-
-tile{
-  layer = 0,
-  x = 152,
-  y = 120,
+  x = 136,
+  y = 136,
   width = 16,
   height = 16,
   pattern = "95",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 80,
-  width = 16,
-  height = 16,
-  pattern = "157",
 }
 
 tile{
@@ -875,7 +839,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
+  x = 120,
   y = 152,
   width = 8,
   height = 8,
@@ -912,19 +876,91 @@ tile{
 tile{
   layer = 0,
   x = 176,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "484",
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "644",
 }
 
 tile{
   layer = 0,
-  x = 144,
+  x = 176,
   y = 56,
-  width = 48,
+  width = 8,
+  height = 40,
+  pattern = "642",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "643",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 48,
+  width = 8,
+  height = 8,
+  pattern = "646",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 56,
+  width = 8,
+  height = 40,
+  pattern = "647",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 40,
+  width = 8,
+  height = 8,
+  pattern = "645",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 152,
+  width = 8,
   height = 24,
-  pattern = "169",
+  pattern = "218",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 152,
+  width = 16,
+  height = 24,
+  pattern = "219",
+}
+
+tile{
+  layer = 0,
+  x = 128,
+  y = 152,
+  width = 8,
+  height = 24,
+  pattern = "217",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "484",
 }
 
 destination{
@@ -945,6 +981,109 @@ teletransporter{
   destination = "from_sculptor",
 }
 
+dynamic_tile{
+  name = "cage_door_2",
+  layer = 0,
+  x = 184,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "650",
+}
+
+npc{
+  name = "sculptor",
+  layer = 0,
+  x = 144,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/pirates/pirate_8.3",
+}
+
+enemy{
+  name = "gravel_guy",
+  layer = 0,
+  x = 192,
+  y = 77,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  name = "gravel_guy_2",
+  layer = 0,
+  x = 192,
+  y = 85,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  name = "gravel_guy_3",
+  layer = 0,
+  x = 216,
+  y = 85,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  name = "gravel_guy_4",
+  layer = 0,
+  x = 224,
+  y = 77,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  name = "gravel_guy_5",
+  layer = 0,
+  x = 200,
+  y = 85,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  name = "gravel_guy_6",
+  layer = 0,
+  x = 224,
+  y = 85,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+enemy{
+  name = "gravel_guy_7",
+  layer = 0,
+  x = 208,
+  y = 77,
+  direction = 0,
+  breed = "normal_enemies/gravel_guy",
+}
+
+dynamic_tile{
+  name = "cage_door_3",
+  layer = 0,
+  x = 200,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "650",
+}
+
+dynamic_tile{
+  name = "cage_door_5",
+  layer = 0,
+  x = 216,
+  y = 88,
+  width = 16,
+  height = 8,
+  pattern = "650",
+}
+
 tile{
   layer = 1,
   x = 184,
@@ -956,7 +1095,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
+  x = 144,
   y = 56,
   width = 16,
   height = 8,
@@ -965,7 +1104,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 192,
+  x = 128,
   y = 56,
   width = 16,
   height = 8,
@@ -974,20 +1113,11 @@ tile{
 
 tile{
   layer = 1,
-  x = 224,
+  x = 160,
   y = 56,
   width = 16,
   height = 8,
   pattern = "132",
-}
-
-tile{
-  layer = 1,
-  x = 224,
-  y = 72,
-  width = 16,
-  height = 8,
-  pattern = "158",
 }
 
 tile{
@@ -1019,16 +1149,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 144,
-  y = 40,
-  width = 48,
-  height = 16,
-  pattern = "170",
-}
-
-tile{
-  layer = 1,
-  x = 192,
+  x = 128,
   y = 48,
   width = 16,
   height = 16,
@@ -1037,10 +1158,40 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
+  x = 144,
   y = 56,
   width = 16,
   height = 16,
   pattern = "183",
+}
+
+dynamic_tile{
+  name = "cage_door_1",
+  layer = 1,
+  x = 184,
+  y = 56,
+  width = 16,
+  height = 32,
+  pattern = "651",
+}
+
+dynamic_tile{
+  name = "cage_door_4",
+  layer = 1,
+  x = 200,
+  y = 56,
+  width = 16,
+  height = 32,
+  pattern = "651",
+}
+
+dynamic_tile{
+  name = "cage_door_6",
+  layer = 1,
+  x = 216,
+  y = 56,
+  width = 16,
+  height = 32,
+  pattern = "651",
 }
 

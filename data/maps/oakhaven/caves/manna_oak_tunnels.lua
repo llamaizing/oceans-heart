@@ -11,8 +11,14 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
-  self:get_camera():letterbox()
+map:register_event("on_started", function()
+  map:get_camera():letterbox()
+
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(4)
+  sol.menu.start(map, lighting_effects)
+
   if game:get_value("spoken_with_hazel_in_manna_oak_tunnels") then
     gonna_die_blob:set_enabled(false)
   end
@@ -22,7 +28,7 @@ function map:on_started()
       blob:remove()
     end
   end
-end
+end)
 
 --Hazel cutscene
 function see_hazel_sensor:on_activated()

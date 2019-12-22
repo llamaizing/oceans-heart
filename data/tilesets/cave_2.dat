@@ -1459,6 +1459,7 @@ tile_pattern{
   y = 400,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -1914,6 +1915,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "260",
+  ground = "traversable",
+  default_layer = 0,
+  x = 88,
+  y = 224,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
   id = "261",
   ground = "empty",
   default_layer = 0,
@@ -2095,6 +2106,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "278",
+  ground = "wall",
+  default_layer = 0,
+  x = 264,
+  y = 272,
+  width = 8,
+  height = 32,
+}
+
+tile_pattern{
   id = "279",
   ground = "wall",
   default_layer = 1,
@@ -2113,6 +2134,36 @@ tile_pattern{
   width = 8,
   height = 8,
   repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "280",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 272,
+  width = 8,
+  height = 32,
+}
+
+tile_pattern{
+  id = "281",
+  ground = "wall",
+  default_layer = 1,
+  x = 240,
+  y = 256,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "282",
+  ground = "wall",
+  default_layer = 0,
+  x = 368,
+  y = 0,
+  width = 16,
+  height = 32,
 }
 
 tile_pattern{
@@ -2486,6 +2537,7 @@ tile_pattern{
   y = 384,
   width = 16,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -2496,6 +2548,7 @@ tile_pattern{
   y = 368,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -2506,6 +2559,7 @@ tile_pattern{
   y = 368,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -2516,6 +2570,7 @@ tile_pattern{
   y = 384,
   width = 16,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -2526,6 +2581,7 @@ tile_pattern{
   y = 400,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -2536,6 +2592,7 @@ tile_pattern{
   y = 400,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -2546,6 +2603,7 @@ tile_pattern{
   y = 384,
   width = 16,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -2556,6 +2614,7 @@ tile_pattern{
   y = 368,
   width = 16,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -2566,6 +2625,7 @@ tile_pattern{
   y = 368,
   width = 8,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -2586,6 +2646,7 @@ tile_pattern{
   y = 368,
   width = 8,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -2696,6 +2757,7 @@ tile_pattern{
   y = 384,
   width = 8,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -2806,6 +2868,7 @@ tile_pattern{
   y = 400,
   width = 8,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -2886,6 +2949,7 @@ tile_pattern{
   y = 384,
   width = 8,
   height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -2896,6 +2960,7 @@ tile_pattern{
   y = 400,
   width = 8,
   height = 16,
+  repeat_mode = "none",
 }
 
 tile_pattern{
@@ -4506,10 +4571,12 @@ tile_pattern{
   id = "water_edge.down",
   ground = "deep_water",
   default_layer = 0,
-  x = 0,
-  y = 384,
-  width = 48,
+  x = { 0, 16, 32 },
+  y = { 384, 384, 384 },
+  width = 16,
   height = 16,
+  frame_delay = 250,
+  mirror_loop = true,
   repeat_mode = "horizontal",
 }
 
@@ -4566,6 +4633,7 @@ tile_pattern{
 
 border_set{
   id = "hole_edge",
+  inner = true,
   pattern_0 = "30",
   pattern_1 = "27",
   pattern_2 = "28",

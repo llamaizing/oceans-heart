@@ -1,24 +1,49 @@
--- Lua script of map oakhaven/interiors/sculptor.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
+local started_battle
+local won_battle
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
+  started_battle = false
+  won_battle = false
+end)
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+function sculptor:on_interaction()
+  if game:get_value("oakhaven_sculptor_battle") then
+    game:start_dialog"_oakhaven.npcs.sculptor.4"
+
+  elseif won_battle == true then
+    game:start_dialog("_oakhaven.npcs.sculptor.3", function()
+      game:set_value("oakhaven_sculptor_battle", true)
+      map:get_hero():start_treasure("geode", 4)
+    end)
+
+  elseif started_battle == true then
+    game:start_dialog"_oakhaven.npcs.sculptor.2"
+
+  else
+    game:start_dialog("_oakhaven.npcs.sculptor.1", function(answer)
+      game:start_dialog("_oakhaven.npcs.sculptor.2", function()
+        for door in map:get_entities"cage_door" do door:set_enabled(false) end
+        started_battle = true
+      end)
+    end)
+
+  end
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
+for enemy in map:get_entities"gravel_guy" do
+function enemy:on_dead()
+  if not map:has_entities"gravel_guy" then
+    won_battle = true
+    started_battle = false
+  end
 end
+end
+
+sol.timer.start(map, 100, function()
+  if started_battle and not map:has_entities"gravel_guy" then
+    won_battle = true
+    started_battle = false
+  end
+end)

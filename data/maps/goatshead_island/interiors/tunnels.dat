@@ -3377,33 +3377,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 208,
-  y = 480,
-  width = 8,
-  height = 48,
-  pattern = "ladder.left",
-}
-
-tile{
-  layer = 0,
-  x = 216,
-  y = 480,
-  width = 16,
-  height = 48,
-  pattern = "ladder.center",
-}
-
-tile{
-  layer = 0,
-  x = 232,
-  y = 480,
-  width = 8,
-  height = 48,
-  pattern = "ladder.right",
-}
-
-tile{
-  layer = 0,
   x = 144,
   y = 576,
   width = 32,
@@ -7812,6 +7785,105 @@ tile{
   pattern = "282",
 }
 
+tile{
+  layer = 0,
+  x = 816,
+  y = 1088,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 744,
+  y = 1024,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 736,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 384,
+  y = 504,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 840,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 480,
+  y = 1032,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 1056,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
+tile{
+  layer = 0,
+  x = 136,
+  y = 512,
+  width = 16,
+  height = 16,
+  pattern = "42",
+}
+
 separator{
   layer = 0,
   x = 312,
@@ -8189,24 +8261,6 @@ chest{
   sprite = "entities/chest",
 }
 
-destination{
-  name = "from_merchant_hq",
-  layer = 0,
-  x = 224,
-  y = 509,
-  direction = 3,
-}
-
-teletransporter{
-  layer = 0,
-  x = 216,
-  y = 480,
-  width = 16,
-  height = 16,
-  destination_map = "goatshead_island/merchant_hq_ext",
-  destination = "from_goat_tunnel",
-}
-
 destructible{
   layer = 0,
   x = 712,
@@ -8415,6 +8469,16 @@ destructible{
   can_be_cut = true,
 }
 
+chest{
+  layer = 0,
+  x = 208,
+  y = 517,
+  treasure_name = "bomb",
+  treasure_variant = 4,
+  treasure_savegame_variable = "goat_tunnels_chest_no_ladder_anymore",
+  sprite = "entities/chest",
+}
+
 tile{
   layer = 1,
   x = 864,
@@ -8458,15 +8522,6 @@ tile{
   width = 16,
   height = 8,
   pattern = "158",
-}
-
-tile{
-  layer = 1,
-  x = 208,
-  y = 472,
-  width = 32,
-  height = 8,
-  pattern = "ladder.top",
 }
 
 tile{
@@ -8737,6 +8792,116 @@ tile{
   width = 16,
   height = 16,
   pattern = "159",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_13",
+  layer = 1,
+  x = 816,
+  y = 1072,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 1,
+  x = 744,
+  y = 1008,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_15",
+  layer = 1,
+  x = 848,
+  y = 816,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_16",
+  layer = 1,
+  x = 832,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_17",
+  layer = 1,
+  x = 736,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_18",
+  layer = 1,
+  x = 384,
+  y = 488,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_19",
+  layer = 1,
+  x = 480,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_20",
+  layer = 1,
+  x = 448,
+  y = 824,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_21",
+  layer = 1,
+  x = 480,
+  y = 1016,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_22",
+  layer = 1,
+  x = 152,
+  y = 1040,
+  width = 16,
+  height = 16,
+  pattern = "44",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_23",
+  layer = 1,
+  x = 136,
+  y = 496,
+  width = 16,
+  height = 16,
+  pattern = "44",
 }
 
 tile{

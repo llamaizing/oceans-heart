@@ -12,14 +12,14 @@ local game = map:get_game()
 local guard_run
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-   self:get_camera():letterbox()
+map:register_event("on_started", function()
+   map:get_camera():letterbox()
 --enable entities
    if game:get_value("mhq_thomas_left") == true then thomas:set_enabled(false) end
    if game:get_value("phantom_squid_quest_completed") ~= true then merchant_hopeful:set_enabled(false) end
    if game:get_value("phantom_squid_quest_completed") ~= true then aster:set_enabled(false) end
    if game:get_value("phantom_squid_quest_completed") == true then eamon:set_enabled(false) end
-  
+
   eamon_winner:set_enabled(false)
   if game:get_value("aster_murdered") == true  and game:get_value("phantom_squid_quest_completed") ~= true then
     eamon:set_enabled(false)
@@ -33,7 +33,7 @@ function map:on_started()
   guard_run:set_loop(false)
   guard_run:set_ignore_obstacles(true)
 
-end
+end)
 
 
 
@@ -58,7 +58,7 @@ function eamon:on_interaction()
 
   --accepted Aster's quest
   elseif game:get_value("talked_to_eamon") == 2 then
-    game:start_dialog("_goatshead.npcs.eamon.4", function() 
+    game:start_dialog("_goatshead.npcs.eamon.4", function()
       game:add_money(10)
       game:set_value("talked_to_eamon", 3)
     end)

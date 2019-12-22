@@ -1,4 +1,4 @@
--- Lua script of map Goatshead Island/goatshead_harbor.
+-- Lua script of map goatshead_island/goatshead_harbor.
 -- This script is executed every time the hero enters this map.
 
 -- Feel free to modify the code below.
@@ -8,19 +8,11 @@
 -- http://www.solarus-games.org/doc/latest
 
 local map = ...
-require("scripts/multi_events")
 local game = map:get_game()
 local hero = game:get_hero()
-local step_up = sol.movement.create("path")
-       step_up:set_path{2,2,2,}
-       step_up:set_speed(20)
-       step_up:set_ignore_obstacles(true)
 
--- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
-  to_limestone:set_enabled(false)
-  yarrowmouth_teletransport:set_enabled(false)
-  oakhaven_teletransport:set_enabled(false)
+  if game:get_value("goatshead_opening") == true then juglan:set_enabled(false) juglan_boat:remove() end
   if game:get_value("goatshead_tunnels_accepted") ~= true then adventurer_3:set_enabled(false) end
   if game:get_value("squid_fled") == true then squid_house_door:set_enabled(false) end
   if game:get_value("phantom_squid_quest_completed") == true then merchant_hopeful:set_enabled(false) end
@@ -73,23 +65,6 @@ map:register_event("on_started", function()
   random_walk:set_ignore_obstacles(false)
   random_walk:start(goat_1)
 
-
-
---figure8
-  local f8_1_walk = sol.movement.create("path")
-  f8_1_walk:set_path{6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4}
-  f8_1_walk:set_speed(25)
-  f8_1_walk:set_loop(true)
-  f8_1_walk:set_ignore_obstacles(true)
-  f8_1_walk:start(figure_8_1)
-
-  local f8_2_walk = sol.movement.create("path")
-  f8_2_walk:set_path{6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,4,4,4,4,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,}
-  f8_2_walk:set_speed(35)
-  f8_2_walk:set_loop(true)
-  f8_2_walk:set_ignore_obstacles(true)
-  f8_2_walk:start(figure_8_2)
-
   --dock workers
   local horiz_walk = sol.movement.create("path")
   horiz_walk:set_path{0,0,0,0,0,0,0,0,0,0,0,0,4,4,4,4,4,4,4,4,4,4,4,4}
@@ -111,11 +86,10 @@ end)
 -- Event called after the opening transition effect of the map,
 -- that is, when the player takes control of the hero.
 map:register_event("on_opening_transition_finished", function()
-
   if game:get_value("goatshead_opening") ~= true then
     game:start_dialog("_goatshead.npcs.juglan.1", function()
+      hero:start_treasure("fast_travel_chart_limestone")
       game:set_value("quest_meet_juglan_at_pier",1)  --quest log
-      game:set_value("quest_log_a", "a3")
       game:set_value("goatshead_opening", true)
     end)
 
@@ -127,11 +101,11 @@ end)
 --NPC INTERACTIONS
 
 function juglan:on_interaction()
-game:start_dialog("_goatshead.npcs.juglan.ride_back", function(answer)
-      if answer == 2 then
-          to_limestone:set_enabled(true)
-      end
-      end)
+  game:start_dialog("_goatshead.npcs.juglan.ride_back", function(answer)
+    if answer == 2 then
+      to_limestone:set_enabled(true)
+    end
+end)
 end
 
 
@@ -149,12 +123,6 @@ function upset_fisher:on_interaction()
     end
   end
 end
-
-function orange_salesman:on_interaction()
-
-end
-
-
 
 function postaster_fisher:on_interaction()
   game:start_dialog("_goatshead.npcs.fish_mongers.5", function() game:add_life(4) end)
@@ -200,31 +168,4 @@ function guard_5:on_interaction()
   else
     game:start_dialog("_goatshead.npcs.guards.post_defeat.1")
   end
-end
-
---Ferries
-function yarrowmouth_ferry:on_interaction()
-  game:start_dialog("_ferries.yarrowmouth", function(answer)
-    if answer == 3 then
-      if game:get_money() >9 then
-        game:remove_money(10)
-        hero:teleport("Yarrowmouth/yarrowmouth_village", "ferry_landing")
-      else
-        game:start_dialog("_game.insufficient_funds")
-      end
-    end
-  end)
-end
-
-function oakhaven_ferry:on_interaction()
-  game:start_dialog("_ferries.oakhaven", function(answer)
-    if answer == 3 then
-      if game:get_money() >9 then
-        game:remove_money(10)
-        hero:teleport("oakhaven/port", "from_ferry")
-      else
-        game:start_dialog("_game.insufficient_funds")
-      end
-    end
-  end)
 end

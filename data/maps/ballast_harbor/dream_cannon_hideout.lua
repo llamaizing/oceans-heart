@@ -11,7 +11,12 @@ local map = ...
 local game = map:get_game()
 
 
-function map:on_started()
+map:register_event("on_started" function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(1)
+  sol.menu.start(map, lighting_effects)
+
   map:set_doors_open("ambush_door")
   if game:get_value("dream_cannons_defeated") == true then
     pirate_guard:set_enabled(false)
@@ -20,7 +25,7 @@ function map:on_started()
     end
   end
 
-end
+end)
 
 
 function sensor:on_activated()

@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("talked_to_jerah_in_the_grove") == true then jerah:set_enabled(false) end
 
   if game:get_value("juniper_grove_fiend") == nil then
@@ -20,7 +20,7 @@ function map:on_started()
     end
   end
 
-end
+end)
 
 --[[
 function leftkeysensor:on_activated()
@@ -43,6 +43,23 @@ function jerah:on_interaction()
       game:set_value("quest_log_a", "a6")
       game:set_value("quest_hourglass_fort", 1) --quest log
     end)
-
   end
+end
+
+function raft_sensor_a:on_activated()
+  raft_sensor_a:remove()
+  sol.timer.start(map, 1000, function()
+    map:open_doors("raft_gate")
+    raft_b:remove()
+    raft_sensor_b:remove()
+  end)
+end
+
+function raft_sensor_b:on_activated()
+  raft_sensor_b:remove()
+  sol.timer.start(map, 500, function()
+    map:open_doors("raft_gate")
+    raft_a:remove()
+    raft_sensor_a:remove()
+  end)
 end

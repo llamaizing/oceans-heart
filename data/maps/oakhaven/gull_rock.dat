@@ -3629,8 +3629,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 1232,
-  y = 144,
+  x = 1176,
+  y = 112,
   width = 16,
   height = 16,
   pattern = "603",
@@ -7830,6 +7830,79 @@ tile{
   pattern = "2211",
 }
 
+tile{
+  layer = 0,
+  x = 1264,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = 1256,
+  y = 264,
+  width = 48,
+  height = 24,
+  pattern = "1873",
+}
+
+tile{
+  layer = 0,
+  x = 1256,
+  y = 280,
+  width = 48,
+  height = 16,
+  pattern = "1859",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 144,
+  width = 32,
+  height = 48,
+  pattern = "38",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 136,
+  width = 32,
+  height = 8,
+  pattern = "1828",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 192,
+  width = 32,
+  height = 8,
+  pattern = "1830",
+}
+
+tile{
+  layer = 0,
+  x = 1272,
+  y = 0,
+  width = 48,
+  height = 16,
+  pattern = "1859",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 408,
+  width = 16,
+  height = 16,
+  pattern = "42",
+  tileset = "abysphere_ruins",
+}
+
 destination{
   name = "from_tree",
   layer = 0,
@@ -7870,7 +7943,7 @@ teletransporter{
   y = 0,
   width = 32,
   height = 16,
-  destination_map = "oakhaven/west_coast",
+  destination_map = "oakhaven/west_oak",
   destination = "from_gull_rock",
 }
 
@@ -8814,19 +8887,6 @@ destructible{
   can_be_cut = true,
 }
 
-custom_entity{
-  name = "hazel",
-  layer = 0,
-  x = 832,
-  y = 29,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "npc/hazel",
-  model = "ally",
-}
-
 sensor{
   name = "mangrove_scene_sensor",
   layer = 0,
@@ -8864,6 +8924,40 @@ npc{
   direction = 1,
   subtype = 1,
   sprite = "npc/hazel",
+}
+
+door{
+  layer = 0,
+  x = 1264,
+  y = 144,
+  direction = 3,
+  sprite = "entities/door_post_water",
+}
+
+door{
+  layer = 0,
+  x = 1264,
+  y = 176,
+  direction = 3,
+  sprite = "entities/door_post_water",
+}
+
+destination{
+  name = "from_lighthouse",
+  layer = 0,
+  x = 1256,
+  y = 173,
+  direction = 2,
+}
+
+teletransporter{
+  layer = 0,
+  x = 1264,
+  y = 160,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/sunken_lighthouse",
+  destination = "from_gull_rock",
 }
 
 tile{
@@ -9256,7 +9350,7 @@ tile{
 tile{
   layer = 1,
   x = 1144,
-  y = 256,
+  y = 264,
   width = 64,
   height = 48,
   pattern = "1877",
@@ -9328,7 +9422,7 @@ tile{
 tile{
   layer = 1,
   x = 1232,
-  y = 168,
+  y = 176,
   width = 48,
   height = 40,
   pattern = "1878",
@@ -10953,5 +11047,23 @@ tile{
   width = 16,
   height = 32,
   pattern = "2212",
+}
+
+tile{
+  layer = 1,
+  x = 1256,
+  y = 256,
+  width = 48,
+  height = 16,
+  pattern = "1876",
+}
+
+tile{
+  layer = 1,
+  x = 1248,
+  y = 232,
+  width = 64,
+  height = 48,
+  pattern = "1877",
 }
 

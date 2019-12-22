@@ -11,11 +11,15 @@ local map = ...
 local game = map:get_game()
 local trap_sprung
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(3)
+  sol.menu.start(map, lighting_effects)
+
   map:set_doors_open("ambush_door")
   trap_sprung = false
-end
+end)
 
 
 function sensor:on_activated()

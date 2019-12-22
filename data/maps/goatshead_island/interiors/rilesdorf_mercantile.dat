@@ -2036,7 +2036,7 @@ destination{
   name = "from_outside",
   layer = 0,
   x = 200,
-  y = 205,
+  y = 213,
   direction = 1,
 }
 
@@ -2055,7 +2055,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "goatshead_island/goatshead_harbor",
-  destination = "from_shop",
+  destination = "from_rilesdorf",
 }
 
 separator{

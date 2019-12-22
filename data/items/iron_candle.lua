@@ -32,7 +32,8 @@ item:register_event("on_using", function(self)
     local x,y,l = hero:get_position()
     local bomb = map:create_custom_entity({
       direction = 0, x = x, y = y, layer = l, width = 16, height = 16,
-      sprite = "entities/iron_candle"
+      sprite = "entities/iron_candle",
+      name = "iron_candle_entity",
     })
     local m = sol.movement.create("jump")
     m:set_direction8(sprite:get_direction()*2)

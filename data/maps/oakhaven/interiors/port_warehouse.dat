@@ -1671,7 +1671,7 @@ npc{
   layer = 0,
   x = 160,
   y = 397,
-  direction = 1,
+  direction = 3,
   subtype = 1,
   sprite = "npc/big_guy_1",
   behavior = "dialog#_oakhaven.npcs.port.warhouse_blocker_guy.1",

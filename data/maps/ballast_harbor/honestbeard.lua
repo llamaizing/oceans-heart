@@ -13,12 +13,12 @@ local item_lander_x = 152
 local item_lander_y = 128
 
 -- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   if game:get_value("honestbeard_coral") == true then coral_ore_icon:set_enabled(false) end
   if game:get_value("honestbeard_armor") == true then armor_icon:set_enabled(false) end
   if game:get_value("honestbeard_armor_tools") == true then armor_tools_icon:set_enabled(false) end
 
-end
+end)
 
 
 

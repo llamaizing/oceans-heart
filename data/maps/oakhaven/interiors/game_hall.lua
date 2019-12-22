@@ -1,18 +1,8 @@
--- Lua script of map oakhaven/interiors/game_hall.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
+map:register_event("on_started", function()
   guard:set_enabled(false)
   ana_2:set_enabled(false)
   if game:get_value("oakhaven_tic_tac_treasure_stolen") == nil then orange_peel:set_enabled(false) end
@@ -24,7 +14,7 @@ function map:on_started()
     competitor_4:set_enabled(false)
   end
 
-end
+end)
 
 function chest:on_interaction()
   game:start_dialog("_oakhaven.npcs.game_hall.chest1")

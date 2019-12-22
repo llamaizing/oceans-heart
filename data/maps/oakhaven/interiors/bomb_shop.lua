@@ -1,21 +1,12 @@
--- Lua script of map oakhaven/interiors/bomb_shop.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
+local black_screen = sol.surface.create()
 
--- Event called at initialization time, as soon as this map becomes is loaded.
-function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
+map:register_event("on_started", function()
+  if (game:get_value("quest_bomb_shop") or 0) >= 3 then
+    intern:set_enabled()
+  end
+end)
 
 function bomb_maker:on_interaction()
   --first, finish bomb shop quest:
@@ -48,17 +39,6 @@ function bomb_maker:on_interaction()
         end
       end)
     end
-
-
-  --then, do bomb arrow quest if you have it:
-  elseif game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 0 then
-    game:start_dialog("_oakhaven.npcs.shops.bomb_maker.quest1", function()
-      game:set_value("quest_bomb_arrows", 1)
-      game:set_value("possession_bomb_arrow_ticket", nil)
-    end)
-
-
-
   --otherwise, you can just buy bombs
   else
     game:start_dialog("_oakhaven.npcs.shops.bomb_maker.1", function(answer)
@@ -73,5 +53,57 @@ function bomb_maker:on_interaction()
       end
     end)
   end
+end
 
+
+
+
+---Intern-----------------
+function intern:on_interaction()
+  --then, do bomb arrow quest if you have it:
+  if game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 0 then
+    game:start_dialog("_oakhaven.npcs.bomb_shop.intern.quest1", function()
+      --if you already found the tungsten:
+      if game:has_item("tungsten_ore") then
+        game:start_dialog("_oakhaven.npcs.bomb_shop.intern.quest_already_tungsten", function()
+          game:set_value("quest_bomb_arrows", 2)
+        end)
+      else
+        game:set_value("quest_bomb_arrows", 1)
+      end
+      game:set_value("possession_bomb_arrow_ticket", nil)
+    end)
+  --get tungsten
+  elseif game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 1 then
+    game:start_dialog"_oakhaven.npcs.bomb_shop.intern.quest2"
+  --meet Rusty
+  elseif game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 2 then
+    game:start_dialog"_oakhaven.npcs.bomb_shop.intern.quest3"
+  --intern makes bomb arrows
+  elseif game:get_value("quest_bomb_arrows") and game:get_value("quest_bomb_arrows") == 4 then
+    game:start_dialog("_oakhaven.npcs.bomb_shop.intern.quest4", function()
+      hero:freeze()
+      black_screen:fade_in()
+      black_screen:fill_color{0,0,0}
+      sol.timer.start(map, 500, function() sol.audio.play_sound"sword_tapping" end)
+      sol.timer.start(map, 1200, function() sol.audio.play_sound"sword_tapping" end)
+      sol.timer.start(map, 1800, function() sol.audio.play_sound"sword_tapping" end)
+      sol.timer.start(map, 2000, function() sol.audio.play_sound"explosion_ice" end)
+      sol.timer.start(map, 3000, function()
+        black_screen:fade_out()
+        sol.timer.start(map, 800, function()
+          hero:unfreeze()
+          game:set_value("quest_bomb_arrows", 5)
+          hero:start_treasure("bow_bombs")
+        end)
+      end)
+    end)
+  --no quest
+  else
+    game:start_dialog"_oakhaven.npcs.bomb_shop.intern.shop_dialog"
+  end
+end
+
+function map:on_draw(dst)
+  black_screen:draw(dst)
 end

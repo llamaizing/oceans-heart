@@ -1,15 +1,33 @@
 --Initialize map behavior specific to this quest.
 
 require"scripts/multi_events"
+local foraging_manager = require"scripts/maps/foraging_manager"
 
 local map_meta = sol.main.get_metatable"map"
-
 
 map_meta:register_event("on_started", function(self)
 	local map = self
   local hero = map:get_hero()
   local game = map:get_game()
 
+  foraging_manager:remove_picked_plants(map)
+
+  --Fast Travel
+  for lily in map:get_entities("fast_travel_lily") do
+    if not game:get_value("lily_rescued") then
+      lily:set_enabled(false)
+    end
+    function lily:on_interaction()
+      require("scripts/menus/fast_travel"):greeting()
+    end
+  end
+
+  --crafting tables
+  for table in map:get_entities("^crafting_table") do
+    function table:on_interaction()
+      sol.menu.start(game, require("scripts/shops/crafting"))
+    end
+  end
 
   --sensors for triggering location title banners
   for sensor in map:get_entities("^map_banner_sensor") do
@@ -18,12 +36,6 @@ map_meta:register_event("on_started", function(self)
       sensor:set_enabled(false)
     end
     sol.timer.start(map, 1000, function() sensor:set_enabled(false) end)
-  end
-
-  for table in map:get_entities("^crafting_table") do
-    function table:on_interaction()
-      sol.menu.start(game, require("scripts/shops/crafting"))
-    end
   end
 
   --make invisible stairs invisible
@@ -74,7 +86,7 @@ end
 
 
 -----Map Focus-----
-function map_meta:focus_on(camera, target_entity, callback)
+function map_meta:focus_on(camera, target_entity, callback, return_delay)
   local game = sol.main.get_game()
   local hero = game:get_hero()
   hero:freeze()
@@ -87,7 +99,7 @@ function map_meta:focus_on(camera, target_entity, callback)
   m:set_ignore_obstacles(true)
   m:start(camera, function()
     callback()
-    sol.timer.start(game, 500, function()
+    sol.timer.start(game, return_delay or 500, function()
       m2 = sol.movement.create("target")
       m2:set_ignore_obstacles(true)
       m2:set_target(camera:get_position_to_track(hero))

@@ -1343,7 +1343,7 @@ teletransporter{
   y = 288,
   width = 16,
   height = 16,
-  destination_map = "Yarrowmouth/foothills",
+  destination_map = "Yarrowmouth/puzzlewood",
   destination = "from_cave_1",
 }
 
@@ -1351,8 +1351,8 @@ chest{
   layer = 0,
   x = 200,
   y = 85,
-  treasure_name = "geode",
-  treasure_variant = 3,
+  treasure_name = "rupee",
+  treasure_variant = 4,
   treasure_savegame_variable = "puzzlewood_cave_1_chest",
   sprite = "entities/chest",
 }

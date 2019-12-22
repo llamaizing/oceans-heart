@@ -58,6 +58,7 @@ function map:on_draw(dst)
   black:draw(dst)
 end
 
+--[[
 function morus:on_interaction()
   game:start_dialog("_oakhaven.npcs.morus.ferry_2", function(answer)
     if answer == 1 then
@@ -69,7 +70,7 @@ function morus:on_interaction()
     end
   end)
 end
-
+--]]
 
 ----------------Sensors--------------------------------------
 function brutus_sensor:on_activated()
@@ -135,6 +136,16 @@ function map:blackbeard_return_scene_2()
       end)
     end)
   end)
+end
+
+function save_sensor:on_activated()
+  game:start_dialog("_palace_of_storms.observations.final_battle_save", function(answer)
+    if answer == 3 then
+      game:save()
+      sol.audio.play_sound("elixer_upgrade")
+    end
+  end)
+  save_sensor:remove()
 end
 
 

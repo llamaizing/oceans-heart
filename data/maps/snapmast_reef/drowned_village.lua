@@ -50,22 +50,14 @@ end
 function bridge_switch:on_activated()
   if not game:get_value("snapmast_reef_drawbridge") then
     sol.audio.play_sound("switch")
-    for tile in map:get_entities("bridge_a") do
-      tile:set_enabled(true)
-    end
-    hero:freeze()
-    local camera = map:get_camera()
-    local m = sol.movement.create("target")
-    m:set_target(camera:get_position_to_track(bridge_a_1))
-    m:set_speed(160)
-    m:start(camera, function()
+
+    map:focus_on(map:get_camera(), bridge_a_1, function()
+      for tile in map:get_entities("bridge_a") do
+        tile:set_enabled(true)
+        map:create_poof(tile:get_position())
+      end
       sol.audio.play_sound("secret")
       map:open_doors("tower_door")
-      sol.timer.start(map, 500, function()
-        m:set_target(camera:get_position_to_track(hero))
-        m:set_speed(160)
-        m:start(camera, function() hero:unfreeze() camera:start_tracking(hero) end)
-      end)
     end)
     game:set_value("snapmast_reef_drawbridge", true)
   end

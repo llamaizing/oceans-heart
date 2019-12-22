@@ -31,6 +31,24 @@ tile{
 
 tile{
   layer = 0,
+  x = 832,
+  y = -8,
+  width = 240,
+  height = 208,
+  pattern = "1389",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "869",
+}
+
+tile{
+  layer = 0,
   x = 1072,
   y = 80,
   width = 176,
@@ -25664,15 +25682,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1024,
-  y = 200,
-  width = 16,
-  height = 16,
-  pattern = "883",
-}
-
-tile{
-  layer = 0,
   x = 1072,
   y = 200,
   width = 16,
@@ -27084,15 +27093,6 @@ tile{
   y = 0,
   width = 256,
   height = 32,
-  pattern = "1389",
-}
-
-tile{
-  layer = 0,
-  x = 832,
-  y = -8,
-  width = 240,
-  height = 208,
   pattern = "1389",
 }
 
@@ -34447,24 +34447,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 800,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "894",
-}
-
-tile{
-  layer = 0,
-  x = 752,
-  y = 0,
-  width = 16,
-  height = 16,
-  pattern = "906",
-}
-
-tile{
-  layer = 0,
   x = 728,
   y = 544,
   width = 16,
@@ -36265,26 +36247,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1040,
-  y = 200,
-  width = 16,
-  height = 16,
-  pattern = "37",
-  tileset = "spruce_head",
-}
-
-tile{
-  layer = 0,
-  x = 1056,
-  y = 200,
-  width = 16,
-  height = 16,
-  pattern = "39",
-  tileset = "spruce_head",
-}
-
-tile{
-  layer = 0,
   x = 1032,
   y = 264,
   width = 16,
@@ -36647,6 +36609,664 @@ tile{
   width = 24,
   height = 16,
   pattern = "917",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 1472,
+  width = 8,
+  height = 16,
+  pattern = "1460",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 1472,
+  width = 8,
+  height = 16,
+  pattern = "1460",
+}
+
+tile{
+  layer = 0,
+  x = 360,
+  y = 1472,
+  width = 8,
+  height = 16,
+  pattern = "913",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 1472,
+  width = 8,
+  height = 16,
+  pattern = "912",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "1923",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "898",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "896",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "893",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "885",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "897",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "882",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "903",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "894",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "883",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "901",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "889",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "890",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "877",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "888",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "887",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "881",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "880",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "884",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "891",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "904",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "899",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "902",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "886",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 96,
+  width = 16,
+  height = 16,
+  pattern = "906",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "895",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "879",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "878",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "875",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "876",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 80,
+  width = 8,
+  height = 32,
+  pattern = "2203",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 80,
+  width = 16,
+  height = 32,
+  pattern = "2204",
+}
+
+tile{
+  layer = 0,
+  x = 952,
+  y = 80,
+  width = 8,
+  height = 32,
+  pattern = "2202",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 40,
+  width = 32,
+  height = 16,
+  pattern = "120",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 936,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 920,
+  y = 72,
+  width = 16,
+  height = 32,
+  pattern = "123",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "36",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "878",
+}
+
+tile{
+  layer = 0,
+  x = 928,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "879",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "878",
+}
+
+tile{
+  layer = 0,
+  x = 976,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "879",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "875",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "876",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "876",
+}
+
+tile{
+  layer = 0,
+  x = 992,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "875",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = -16,
+  width = 752,
+  height = 16,
+  pattern = "1389",
+}
+
+tile{
+  layer = 0,
+  x = 832,
+  y = -16,
+  width = 448,
+  height = 16,
+  pattern = "1389",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "1389",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "880",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "877",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "37",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 200,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "876",
+}
+
+tile{
+  layer = 0,
+  x = 944,
+  y = 152,
+  width = 16,
+  height = 16,
+  pattern = "877",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "875",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 88,
+  width = 16,
+  height = 16,
+  pattern = "878",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "879",
+}
+
+tile{
+  layer = 0,
+  x = 896,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "868",
+}
+
+tile{
+  layer = 0,
+  x = 1016,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "870",
+}
+
+tile{
+  layer = 0,
+  x = 1024,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "871",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "873",
+}
+
+tile{
+  layer = 0,
+  x = 1040,
+  y = 72,
+  width = 16,
+  height = 16,
+  pattern = "872",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "905",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 48,
+  width = 16,
+  height = 32,
+  pattern = "892",
+}
+
+custom_entity{
+  name = "loop_waypoint_56",
+  layer = 0,
+  x = 1144,
+  y = 1349,
+  width = 16,
+  height = 16,
+  direction = 0,
 }
 
 teletransporter{
@@ -37545,6 +38165,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "oakhaven/interiors/cave_house",
+  destination = "from_outside",
 }
 
 destination{
@@ -37680,8 +38301,8 @@ teletransporter{
   y = 880,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/caves/abyss",
-  destination = "from_oakhaven",
+  destination_map = "oakhaven/caves/umber_lake",
+  destination = "fall_from_well",
 }
 
 destination{
@@ -37965,11 +38586,11 @@ destination{
 
 teletransporter{
   layer = 0,
-  x = 768,
+  x = 752,
   y = 0,
-  width = 32,
+  width = 64,
   height = 16,
-  destination_map = "oakhaven/interiors/palace",
+  destination_map = "oakhaven/palace_gardens",
   destination = "from_city",
 }
 
@@ -38122,7 +38743,7 @@ npc{
   y = 333,
   direction = 3,
   subtype = 1,
-  sprite = "npc/guards/oakhaven_2",
+  sprite = "npc/guards/oakhaven_1",
   behavior = "dialog#_oakhaven.npcs.guards.generic.palace_entrace",
 }
 
@@ -38169,7 +38790,7 @@ npc{
 npc{
   layer = 0,
   x = 568,
-  y = 1101,
+  y = 1093,
   direction = 3,
   subtype = 0,
   sprite = "npc/man/man_22.1",
@@ -38183,7 +38804,7 @@ npc{
   direction = 2,
   subtype = 1,
   sprite = "npc/woman/sitting_3",
-  behavior = "dialog#",
+  behavior = "dialog#_oakhaven.npcs.general_town.6",
 }
 
 npc{
@@ -38522,7 +39143,7 @@ npc{
   y = 757,
   direction = 3,
   subtype = 1,
-  sprite = "npc/guards/oakhaven_1",
+  sprite = "npc/guards/oakhaven_4",
   behavior = "dialog#_oakhaven.npcs.guards.generic.library_entrance",
 }
 
@@ -38575,29 +39196,802 @@ npc{
   behavior = "dialog#_oakhaven.npcs.general_town.15",
 }
 
-npc{
-  name = "looping_walker",
+teletransporter{
+  layer = 0,
+  x = 768,
+  y = 1408,
+  width = 32,
+  height = 16,
+  destination_map = "oakhaven/port",
+  destination = "from_oakhaven_city",
+}
+
+destination{
+  name = "from_orangeporch_cave",
+  layer = 0,
+  x = 240,
+  y = 1149,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 232,
+  y = 1120,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/caves/umber_lake",
+  destination = "from_orangeporch",
+}
+
+teletransporter{
+  layer = 0,
+  x = 680,
+  y = 40,
+  width = 32,
+  height = 32,
+  destination_map = "oakhaven/palace_gardens_chase_sequence",
+  destination = "from_marblecliff_tunnel",
+}
+
+teletransporter{
+  layer = 0,
+  x = 960,
+  y = 80,
+  width = 16,
+  height = 16,
+  destination_map = "oakhaven/interiors/palace",
+  destination = "from_oakhaven_jump_exit",
+}
+
+destination{
+  name = "palace_jump_exit",
+  layer = 0,
+  x = 968,
+  y = 109,
+  direction = 3,
+}
+
+jumper{
+  layer = 0,
+  x = 1024,
+  y = 216,
+  width = 16,
+  height = 8,
+  direction = 6,
+  jump_length = 160,
+}
+
+door{
+  name = "bar_storehouse_door",
+  layer = 0,
+  x = 1008,
+  y = 456,
+  direction = 3,
+  sprite = "entities/door_ext_1",
+  savegame_variable = "salamander_heartache_storehouse_door_open",
+  cannot_open_dialog = "_game.locked_door",
+}
+
+wall{
+  name = "watch_carrier_wall",
+  layer = 0,
+  x = 1120,
+  y = 624,
+  enabled_at_start = false,
+  width = 64,
+  height = 24,
+  stops_hero = true,
+}
+
+sensor{
+  name = "watch_barrel_carrier_sensor",
+  layer = 0,
+  x = 1008,
+  y = 485,
+  width = 32,
+  height = 16,
+}
+
+custom_entity{
+  name = "loop_waypoint_1",
+  layer = 0,
+  x = 1048,
+  y = 1349,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_2",
+  layer = 0,
+  x = 904,
+  y = 1349,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_3",
+  layer = 0,
+  x = 784,
+  y = 1349,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_4",
+  layer = 0,
+  x = 784,
+  y = 1205,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_5",
+  layer = 0,
+  x = 712,
+  y = 1189,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_6",
+  layer = 0,
+  x = 616,
+  y = 1197,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_7",
+  layer = 0,
+  x = 504,
+  y = 1181,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_8",
+  layer = 0,
+  x = 384,
+  y = 1189,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_9",
+  layer = 0,
+  x = 304,
+  y = 1205,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_10",
+  layer = 0,
+  x = 288,
+  y = 1261,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_11",
+  layer = 0,
+  x = 288,
+  y = 1349,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_12",
+  layer = 0,
+  x = 368,
+  y = 1357,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_13",
+  layer = 0,
+  x = 488,
+  y = 1357,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_14",
+  layer = 0,
+  x = 656,
+  y = 1357,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_15",
+  layer = 0,
+  x = 768,
+  y = 1357,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_16",
+  layer = 0,
+  x = 784,
+  y = 1293,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_17",
+  layer = 0,
+  x = 792,
+  y = 1189,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_18",
+  layer = 0,
+  x = 848,
+  y = 1149,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_19",
+  layer = 0,
+  x = 832,
+  y = 1101,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_20",
+  layer = 0,
+  x = 744,
+  y = 1101,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_21",
+  layer = 0,
+  x = 672,
+  y = 1077,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_22",
+  layer = 0,
+  x = 656,
+  y = 997,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_23",
+  layer = 0,
+  x = 656,
+  y = 933,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_24",
+  layer = 0,
+  x = 560,
+  y = 901,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_25",
+  layer = 0,
+  x = 456,
+  y = 901,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_26",
+  layer = 0,
+  x = 400,
+  y = 885,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_27",
+  layer = 0,
+  x = 304,
+  y = 885,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_28",
+  layer = 0,
+  x = 312,
+  y = 957,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_29",
+  layer = 0,
+  x = 392,
+  y = 965,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_30",
+  layer = 0,
+  x = 392,
+  y = 909,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_31",
+  layer = 0,
+  x = 528,
+  y = 909,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_32",
+  layer = 0,
+  x = 584,
+  y = 845,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_33",
+  layer = 0,
+  x = 632,
+  y = 821,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_34",
+  layer = 0,
+  x = 632,
+  y = 685,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_35",
+  layer = 0,
+  x = 632,
+  y = 621,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_36",
+  layer = 0,
+  x = 632,
+  y = 517,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_37",
+  layer = 0,
+  x = 664,
+  y = 453,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_38",
+  layer = 0,
+  x = 696,
+  y = 413,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_39",
+  layer = 0,
+  x = 792,
+  y = 389,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_40",
+  layer = 0,
+  x = 840,
+  y = 461,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_41",
+  layer = 0,
+  x = 904,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_42",
+  layer = 0,
+  x = 984,
+  y = 493,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_43",
+  layer = 0,
+  x = 1104,
+  y = 549,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_44",
+  layer = 0,
+  x = 1192,
+  y = 565,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_45",
+  layer = 0,
+  x = 1192,
+  y = 629,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_46",
+  layer = 0,
+  x = 1136,
+  y = 645,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_47",
+  layer = 0,
+  x = 1136,
+  y = 741,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_48",
+  layer = 0,
+  x = 1152,
+  y = 797,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_49",
+  layer = 0,
+  x = 1152,
+  y = 901,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_50",
+  layer = 0,
+  x = 1168,
+  y = 1029,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_51",
+  layer = 0,
+  x = 1168,
+  y = 1117,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_52",
+  layer = 0,
+  x = 1136,
+  y = 1149,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_53",
+  layer = 0,
+  x = 1040,
+  y = 1165,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_54",
+  layer = 0,
+  x = 1040,
+  y = 1221,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_55",
+  layer = 0,
+  x = 1136,
+  y = 1253,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+custom_entity{
+  name = "loop_waypoint_0",
   layer = 0,
   x = 1136,
   y = 1349,
+  width = 16,
+  height = 16,
+  direction = 0,
+}
+
+npc{
+  name = "looping_walker",
+  layer = 0,
+  x = 944,
+  y = 1357,
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/man/man_28.4",
+  behavior = "dialog#_oakhaven.npcs.general_town.loop_walkers.1",
+}
+
+npc{
+  name = "looping_walker_2",
+  layer = 0,
+  x = 1096,
+  y = 1165,
   properties = {
     {
-      key = "starting_waypoint",
+      key = "loop_backwards_value",
+      value = "-1",
+    },
+  },
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/woman/woman_1.2",
+  behavior = "dialog#_oakhaven.npcs.general_town.loop_walkers.2",
+}
+
+npc{
+  name = "looping_walker_3",
+  layer = 0,
+  x = 1120,
+  y = 765,
+  properties = {
+    {
+      key = "loop_backwards_value",
       value = "1",
     },
   },
   direction = 2,
   subtype = 1,
-  sprite = "npc/man/man_28.4",
+  sprite = "npc/woman/woman_18.7",
+  behavior = "dialog#_oakhaven.npcs.general_town.loop_walkers.3",
 }
 
-sensor{
-  name = "loop_waypoint_10",
+npc{
+  name = "looping_walker_4",
   layer = 0,
-  x = 1008,
-  y = 1349,
-  width = 16,
-  height = 16,
+  x = 880,
+  y = 485,
+  properties = {
+    {
+      key = "loop_backwards_value",
+      value = "1",
+    },
+  },
+  direction = 2,
+  subtype = 1,
+  sprite = "npc/woman/woman_19.5",
+  behavior = "dialog#_oakhaven.npcs.general_town.loop_walkers.4",
+}
+
+npc{
+  name = "looping_walker_5",
+  layer = 0,
+  x = 608,
+  y = 845,
+  properties = {
+    {
+      key = "loop_backwards_value",
+      value = "-1",
+    },
+  },
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_26.5",
+  behavior = "dialog#_oakhaven.npcs.general_town.loop_walkers.5",
+}
+
+npc{
+  name = "looping_walker_6",
+  layer = 0,
+  x = 656,
+  y = 949,
+  properties = {
+    {
+      key = "loop_backwards_value",
+      value = "-1",
+    },
+  },
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_3.8",
+  behavior = "dialog#_oakhaven.npcs.general_town.loop_walkers.6",
+}
+
+npc{
+  name = "looping_walker_7",
+  layer = 0,
+  x = 720,
+  y = 1101,
+  properties = {
+    {
+      key = "loop_backwards_value",
+      value = "-1",
+    },
+  },
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_6.3",
+  behavior = "dialog#_oakhaven.npcs.general_town.loop_walkers.7",
+}
+
+npc{
+  name = "looping_walker_8",
+  layer = 0,
+  x = 408,
+  y = 1189,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/man/man_9.6",
+  behavior = "dialog#_oakhaven.npcs.general_town.loop_walkers.8",
+}
+
+npc{
+  name = "looping_walker_9",
+  layer = 0,
+  x = 632,
+  y = 597,
+  properties = {
+    {
+      key = "loop_backwards_value",
+      value = "1",
+    },
+  },
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/woman/woman_11.7",
+  behavior = "dialog#_oakhaven.npcs.general_town.loop_walkers.9",
 }
 
 tile{
@@ -45543,26 +46937,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 1048,
-  y = 224,
-  width = 32,
-  height = 48,
-  pattern = "5",
-  tileset = "spruce_head",
-}
-
-tile{
-  layer = 1,
-  x = 1040,
-  y = 208,
-  width = 32,
-  height = 32,
-  pattern = "121",
-  tileset = "spruce_head",
-}
-
-tile{
-  layer = 1,
   x = 1072,
   y = 296,
   width = 16,
@@ -45912,6 +47286,130 @@ tile{
   width = 24,
   height = 16,
   pattern = "918",
+}
+
+tile{
+  layer = 1,
+  x = 320,
+  y = 1448,
+  width = 48,
+  height = 24,
+  pattern = "914",
+}
+
+tile{
+  layer = 1,
+  x = 328,
+  y = 1472,
+  width = 32,
+  height = 16,
+  pattern = "1460",
+}
+
+tile{
+  layer = 1,
+  x = 952,
+  y = 80,
+  width = 32,
+  height = 16,
+  pattern = "2205",
+}
+
+tile{
+  layer = 1,
+  x = 928,
+  y = -40,
+  width = 80,
+  height = 80,
+  pattern = "2540",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 0,
+  width = 16,
+  height = 16,
+  pattern = "39",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 1,
+  x = 736,
+  y = -16,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "879",
+}
+
+tile{
+  layer = 1,
+  x = 816,
+  y = -16,
+  width = 16,
+  height = 16,
+  pattern = "878",
+}
+
+tile{
+  layer = 1,
+  x = 0,
+  y = 0,
+  width = 368,
+  height = 160,
+  pattern = "1389",
+}
+
+tile{
+  layer = 1,
+  x = 1048,
+  y = 224,
+  width = 32,
+  height = 48,
+  pattern = "5",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 1,
+  x = 1040,
+  y = 208,
+  width = 32,
+  height = 32,
+  pattern = "121",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 1,
+  x = 992,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "35",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 1,
+  x = 1008,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "122",
+  tileset = "spruce_head",
+}
+
+tile{
+  layer = 1,
+  x = 1000,
+  y = 56,
+  width = 16,
+  height = 16,
+  pattern = "38",
+  tileset = "spruce_head",
 }
 
 npc{

@@ -645,7 +645,7 @@ teletransporter{
   y = 208,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/west_coast",
+  destination_map = "oakhaven/west_oak",
   destination = "from_warp_cave",
 }
 

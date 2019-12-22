@@ -1838,15 +1838,6 @@ block{
   pullable = true,
 }
 
-block{
-  layer = 0,
-  x = 152,
-  y = 149,
-  sprite = "entities/chairR",
-  pushable = true,
-  pullable = true,
-}
-
 npc{
   layer = 0,
   x = 152,
@@ -1855,6 +1846,16 @@ npc{
   subtype = 1,
   sprite = "npc/man/man_24.5",
   behavior = "dialog#_yarrowmouth.npcs.town_people.2",
+}
+
+npc{
+  layer = 0,
+  x = 352,
+  y = 101,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/woman/woman_17.3",
+  behavior = "dialog#_yarrowmouth.npcs.town_people.9",
 }
 
 tile{

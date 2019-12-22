@@ -4,7 +4,7 @@ properties{
   width = 960,
   height = 720,
   min_layer = 0,
-  max_layer = 2,
+  max_layer = 3,
   tileset = "overworld_yarrowmouth",
   music = "driftwood-2",
 }
@@ -731,8 +731,8 @@ tile{
 
 tile{
   layer = 0,
-  x = -8,
-  y = 16,
+  x = 0,
+  y = 0,
   width = 960,
   height = 720,
   pattern = "206",
@@ -13417,7 +13417,7 @@ npc{
 npc{
   layer = 1,
   x = 176,
-  y = 61,
+  y = 77,
   direction = 3,
   subtype = 1,
   behavior = "dialog#_yarrowmouth.observations.mushroom_spot.2",
@@ -14019,7 +14019,7 @@ tile{
 
 dynamic_tile{
   name = "fog",
-  layer = 2,
+  layer = 3,
   x = -40,
   y = -16,
   enabled_at_start = false,

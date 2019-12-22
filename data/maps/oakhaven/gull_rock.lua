@@ -14,7 +14,7 @@ local hero = map:get_hero()
 map:register_event("on_started", function()
   --put Hazel Ally on the map
   if game:get_value("hazel_is_currently_following_you") and game:get_value("spoken_to_hazel_south_gate") then
-    hazel:set_enabled(true)
+    require("scripts/action/hazel_ally"):summon(hero)
   end
   if game:has_item("sword_of_the_sea_king") and game:get_value("quest_mangrove_sword") < 4 then
     hazel_npc:set_enabled(true)
@@ -52,7 +52,26 @@ function mangrove_scene_sensor:on_activated()
       m:start(hazel_npc, function()
         hazel_npc:get_sprite():set_direction(1)
         game:start_dialog("_oakhaven.npcs.hazel.thicket.3", function()
-          print("some dope effects need to happen here, max")
+          sol.audio.play_sound"charge_sword"
+          sol.audio.play_sound"crackle1"
+          local dimming_iterations = 0
+          sol.timer.start(map, 25, function()
+            map:get_camera():get_surface():set_color_modulation{
+              255-dimming_iterations*5,
+              255-dimming_iterations*8,
+              255-dimming_iterations*15}
+            dimming_iterations = dimming_iterations + 1
+            if dimming_iterations <= 10 then return true end
+          end)
+          local dx,dy,dz = mangrove_door:get_position()
+          for i=1, 8 do
+            local leaf_effect = map:create_custom_entity{
+              x=dx-30+10*i,y=dy+math.random(-16,16),layer=dz+1,
+              direction=0,width=16,height=16,
+              sprite="entities/bush",model="ephereral_effect",}
+            leaf_effect:get_sprite():set_animation("destroy")
+            leaf_effect:get_sprite():set_blend_mode"add"
+          end
           map:open_doors("mangrove_door")
           game:set_value("hazel_is_currently_following_you", false)
           game:set_value("quest_mangrove_sword", 3)

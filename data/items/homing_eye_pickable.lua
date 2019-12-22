@@ -8,7 +8,7 @@ item:register_event("on_created", function(self)
   item:set_brandish_when_picked(true)
 end)
 
-item:register_event("on_obtained", function(self, variant, savegame_variable)
+item:register_event("on_obtaining", function(self, variant, savegame_variable)
   if not game:has_item("homing_eye") then
     game:get_item("homing_eye"):set_variant(1)
   end

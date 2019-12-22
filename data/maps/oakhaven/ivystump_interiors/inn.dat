@@ -1702,6 +1702,126 @@ tile{
   pattern = "149",
 }
 
+tile{
+  layer = 0,
+  x = 264,
+  y = 128,
+  width = 16,
+  height = 16,
+  pattern = "185",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "94",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "93",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "154",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 80,
+  width = 16,
+  height = 16,
+  pattern = "153",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "154",
+}
+
+tile{
+  layer = 0,
+  x = 24,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "153",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "545",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 104,
+  width = 16,
+  height = 8,
+  pattern = "544",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 104,
+  width = 8,
+  height = 8,
+  pattern = "543",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "306",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "307",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "308",
+}
+
 npc{
   name = "^crafting_table",
   layer = 0,
@@ -1806,6 +1926,26 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/ivystump",
   destination = "from_inn",
+}
+
+npc{
+  layer = 0,
+  x = 288,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/sitting_2",
+  behavior = "dialog#_oakhaven.npcs.ivystump.misc.inn1",
+}
+
+npc{
+  layer = 0,
+  x = 224,
+  y = 85,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/woman/sitting_3",
+  behavior = "dialog#_oakhaven.npcs.ivystump.misc.inn2",
 }
 
 tile{
@@ -1923,5 +2063,116 @@ tile{
   width = 8,
   height = 16,
   pattern = "344",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 48,
+  width = 8,
+  height = 16,
+  pattern = "92",
+}
+
+tile{
+  layer = 1,
+  x = 80,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "182",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "182",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 40,
+  width = 16,
+  height = 16,
+  pattern = "182",
+}
+
+tile{
+  layer = 1,
+  x = 48,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "92",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 40,
+  width = 8,
+  height = 16,
+  pattern = "94",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 40,
+  width = 32,
+  height = 16,
+  pattern = "93",
+}
+
+tile{
+  layer = 1,
+  x = 56,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "184",
+}
+
+tile{
+  layer = 1,
+  x = 72,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "184",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 96,
+  width = 16,
+  height = 8,
+  pattern = "541",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "542",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 88,
+  y = 96,
+  width = 8,
+  height = 8,
+  pattern = "540",
+  tileset = "indoors_stone",
 }
 

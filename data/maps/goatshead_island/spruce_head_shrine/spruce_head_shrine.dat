@@ -47803,7 +47803,7 @@ teletransporter{
   y = 1904,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/poplar_coast",
+  destination_map = "stonefell_crossroads/spruce_head",
   destination = "from_shrine",
 }
 

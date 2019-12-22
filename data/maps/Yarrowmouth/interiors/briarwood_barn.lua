@@ -12,6 +12,11 @@ local game = map:get_game()
 local talked_to_richardo
 
 map:register_event("on_started", function()
+  local lighting_effects = require"scripts/fx/lighting_effects"
+  lighting_effects:initialize()
+  lighting_effects:set_darkness_level(1)
+  sol.menu.start(map, lighting_effects)
+
   talked_to_richardo = false
   if game:get_value("briarwood_hornet_quest") and game:get_value("briarwood_hornet_quest") >= 1 then
     for hive in map:get_entities("hive") do

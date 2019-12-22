@@ -1102,7 +1102,7 @@ teletransporter{
   y = 448,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/sunken_palace",
+  destination_map = "oakhaven/sunken_lighthouse",
   destination = "from_sinking_lighthouse",
 }
 

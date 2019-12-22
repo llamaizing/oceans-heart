@@ -1054,6 +1054,7 @@ tile{
 }
 
 npc{
+  name = "^lighting_effect_torch_1",
   layer = 1,
   x = 160,
   y = 53,

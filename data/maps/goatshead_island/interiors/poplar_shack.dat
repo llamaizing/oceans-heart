@@ -662,17 +662,17 @@ destination{
   name = "from_outside",
   layer = 0,
   x = 160,
-  y = 197,
+  y = 205,
   direction = 1,
 }
 
 teletransporter{
   layer = 0,
   x = 152,
-  y = 200,
+  y = 208,
   width = 16,
   height = 16,
-  destination_map = "goatshead_island/poplar_forest",
+  destination_map = "stonefell_crossroads/forest_of_tides",
   destination = "from_poplar_shack",
 }
 

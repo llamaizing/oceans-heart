@@ -34650,7 +34650,7 @@ teletransporter{
   y = 1536,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/port",
+  destination_map = "oakhaven/port_OLD",
   destination = "from_westoak",
 }
 
@@ -35693,7 +35693,7 @@ teletransporter{
   width = 32,
   height = 16,
   destination_map = "oakhaven/veilwood",
-  destination = "from_westoak",
+  destination = "from_eastoak_east",
 }
 
 sensor{

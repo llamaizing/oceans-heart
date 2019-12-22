@@ -50,6 +50,6 @@ end
 
 function enemy:shoot()
   sol.audio.play_sound("shoot_magic")
-  local projectile = enemy:create_enemy({ breed = PROJECTILE_BREED, y = -4 })
+  local projectile = enemy:create_enemy({ breed = PROJECTILE_BREED,})
   projectile:go(enemy:get_angle(hero))
 end
