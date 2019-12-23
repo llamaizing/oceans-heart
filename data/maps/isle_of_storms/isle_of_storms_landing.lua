@@ -203,6 +203,7 @@ function blackbeard_boss:on_dead()
             hero:start_attack()
             sol.timer.start(map, 500, function() hero:freeze() end)
             sol.audio.play_sound"breaking_glass"
+            game:set_life(game:get_max_life())
             game:set_world_rain_mode(map:get_world(), nil)
             sound_atmosphere_manager:stop_sounds()
             oceans_heart:get_sprite():set_animation("shatter", function() oceans_heart:remove() end)
