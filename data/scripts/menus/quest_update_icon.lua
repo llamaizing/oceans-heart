@@ -16,7 +16,7 @@ function quest_update_icon:on_started()
 end
 
 function quest_update_icon:on_draw(dst_surface)
-  text_surface:draw(dst_surface, 300, 5)
+  text_surface:draw(dst_surface, 5, 24)
 end
 
 function quest_update_icon:get_opacity()
