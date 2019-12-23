@@ -96,7 +96,7 @@ function enemy:on_dying()
      layer = layer,
      x = x,
      y = y,
-     treasure_name = "mandrake",
+     treasure_name = "monster_heart",
      treasure_variant = 1,
      }
   end
