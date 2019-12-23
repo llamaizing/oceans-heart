@@ -9,6 +9,10 @@ item:register_event("on_created", function(self)
   self:set_assignable(true)
 end)
 
+--make it so when you enter a new map, you didn't leave the boomerang behind
+sol.main.get_metatable("map"):register_event("on_started", function()
+  item.can_throw = true
+end)
 
 item:register_event("on_using", function(self)
 
