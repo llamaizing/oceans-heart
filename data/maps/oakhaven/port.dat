@@ -49361,7 +49361,7 @@ teletransporter{
   y = 0,
   width = 16,
   height = 16,
-  destination_map = "oakhaven/marblecliff_OLD",
+  destination_map = "oakhaven/marblecliff",
   destination = "from_waterfall_canyon",
 }
 
