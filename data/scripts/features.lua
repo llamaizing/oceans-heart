@@ -6,6 +6,7 @@
 -- or uncommenting lines below.
 
 require("scripts/menus/alttp_dialog_box")
+require"scripts/action/hole_drop_landing"
 require("scripts/hud/hud")
 require("scripts/hud/small_key")
 require("scripts/meta/hero")

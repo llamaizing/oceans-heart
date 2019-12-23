@@ -211,6 +211,29 @@ animation{
   },
 }
 animation{
+  name = "landing",
+  src_image = "hero/landing.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 0, frame_width = 16, frame_height = 96, origin_x = 8, origin_y = 93, num_frames = 10 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 96, origin_x = 8, origin_y = 93, num_frames = 10 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 96, origin_x = 8, origin_y = 93, num_frames = 10 },
+    { x = 0, y = 0, frame_width = 16, frame_height = 96, origin_x = 8, origin_y = 93, num_frames = 10 },
+  },
+}
+animation{
+  name = "landing_stall",
+  src_image = "hero/landing.png",
+  frame_delay = 100,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 160, y = 0, frame_width = 16, frame_height = 96, origin_x = 8, origin_y = 93, num_frames = 4 },
+    { x = 160, y = 0, frame_width = 16, frame_height = 96, origin_x = 8, origin_y = 93, num_frames = 4 },
+    { x = 160, y = 0, frame_width = 16, frame_height = 96, origin_x = 8, origin_y = 93, num_frames = 4 },
+    { x = 160, y = 0, frame_width = 16, frame_height = 96, origin_x = 8, origin_y = 93, num_frames = 4 },
+  },
+}
+animation{
   name = "laying_down",
   src_image = "hero/waking_up.png",
   directions = {
