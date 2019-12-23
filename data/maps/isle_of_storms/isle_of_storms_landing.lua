@@ -181,6 +181,8 @@ end
 
 function blackbeard_boss:on_dead()
   hero:freeze()
+  --you're not really playing after this point, so
+  game:set_pause_allowed(false)
   sol.audio.stop_music()
   hero:set_animation("walking")
   local m = sol.movement.create("target") m:set_target(boss_teleport_ref)
