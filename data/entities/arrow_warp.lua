@@ -125,7 +125,7 @@ arrow:add_collision_test("sprite", function(arrow, entity)
     if arrow_reaction ~= "protected" and arrow_reaction ~= "ignored" then
       bow_damage = game:get_value("bow_damage")
       enemy:hurt(bow_damage)
-      warp_hero(entity)
+--      warp_hero(entity)
       arrow:remove()
     end
 
