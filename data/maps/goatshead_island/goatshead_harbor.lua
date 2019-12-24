@@ -49,7 +49,7 @@ map:register_event("on_started", function()
 
 --movements
   local apples_walk = sol.movement.create("path")
-  apples_walk:set_path{4,6,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,2,2,6,6,6,6,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,0}
+  apples_walk:set_path{4,6,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,6,6,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,2,2,2,2,2,2,0}
   apples_walk:set_speed(20)
   apples_walk:set_loop(true)
   apples_walk:set_ignore_obstacles(true)

@@ -17632,7 +17632,7 @@ chest{
 sensor{
   name = "^map_banner_sensor",
   layer = 0,
-  x = 920,
+  x = 936,
   y = 509,
   width = 16,
   height = 32,
