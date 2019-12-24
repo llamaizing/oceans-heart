@@ -1,0 +1,270 @@
+properties{
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  min_layer = 0,
+  max_layer = 2,
+  tileset = "oceanheart_outdoors_1",
+}
+
+custom_entity{
+  name = "map_bg",
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 416,
+  height = 240,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/overworld_blank",
+}
+
+custom_entity{
+  name = "yarrowmouth_island",
+  layer = 1,
+  x = 192,
+  y = 24,
+  width = 128,
+  height = 72,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/yarrowmouth_island",
+}
+
+custom_entity{
+  name = "oakhaven",
+  layer = 1,
+  x = 56,
+  y = 24,
+  width = 152,
+  height = 88,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/oakhaven",
+}
+
+custom_entity{
+  name = "goatshead_island",
+  layer = 1,
+  x = 160,
+  y = 104,
+  width = 160,
+  height = 72,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/goatshead_island",
+}
+
+custom_entity{
+  name = "ballast_harbor",
+  layer = 1,
+  x = 272,
+  y = 160,
+  width = 96,
+  height = 32,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/ballast_harbor",
+}
+
+custom_entity{
+  name = "crabhook",
+  layer = 1,
+  x = 160,
+  y = 112,
+  width = 40,
+  height = 24,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/crabhook",
+}
+
+custom_entity{
+  name = "crow_island",
+  layer = 1,
+  x = 48,
+  y = 152,
+  width = 88,
+  height = 48,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/crow_island",
+}
+
+custom_entity{
+  name = "gull_rock",
+  layer = 1,
+  x = 40,
+  y = 88,
+  width = 48,
+  height = 32,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/gull_rock",
+}
+
+custom_entity{
+  name = "isle_of_storms",
+  layer = 1,
+  x = 368,
+  y = 104,
+  width = 32,
+  height = 24,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/isle_of_storms",
+}
+
+custom_entity{
+  name = "kingsdown_isle",
+  layer = 1,
+  x = 288,
+  y = 72,
+  width = 40,
+  height = 40,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/kingsdown_isle",
+}
+
+custom_entity{
+  name = "limestone_island",
+  layer = 1,
+  x = 192,
+  y = 152,
+  width = 80,
+  height = 48,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/limestone_island",
+}
+
+custom_entity{
+  name = "lobb_trail",
+  layer = 1,
+  x = 184,
+  y = 48,
+  width = 16,
+  height = 32,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/lobb_trail",
+}
+
+custom_entity{
+  name = "lotus_shoal",
+  layer = 1,
+  x = 104,
+  y = 128,
+  width = 64,
+  height = 48,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/lotus_shoal",
+}
+
+custom_entity{
+  name = "snapmast_landing",
+  layer = 1,
+  x = 320,
+  y = 48,
+  width = 32,
+  height = 48,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/snapmast_landing",
+}
+
+custom_entity{
+  name = "snapmast_reef",
+  layer = 1,
+  x = 328,
+  y = 24,
+  width = 64,
+  height = 56,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/snapmast_reef",
+}
+
+custom_entity{
+  name = "spruce_head",
+  layer = 1,
+  x = 80,
+  y = 136,
+  width = 40,
+  height = 24,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/spruce_head",
+}
+
+custom_entity{
+  name = "stonefell_crossroads",
+  layer = 1,
+  x = 200,
+  y = 80,
+  width = 48,
+  height = 32,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/stonefell_crossroads",
+}
+
+custom_entity{
+  name = "sunken_palace",
+  layer = 1,
+  x = 88,
+  y = 104,
+  width = 48,
+  height = 32,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/sunken_palace",
+}
+
+custom_entity{
+  name = "tern_marsh",
+  layer = 1,
+  x = 248,
+  y = 80,
+  width = 40,
+  height = 32,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/tern_marsh",
+}
+
+custom_entity{
+  name = "zephyr_bay",
+  layer = 1,
+  x = 248,
+  y = 136,
+  width = 80,
+  height = 48,
+  origin_x = 0,
+  origin_y = 0,
+  direction = 0,
+  sprite = "menus/maps/landmasses/zephyr_bay",
+}
+

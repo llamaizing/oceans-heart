@@ -121,6 +121,7 @@ map{ id = "demo_1/sw_lift_cave_interior", description = "Lift cave interior" }
 map{ id = "demo_1/test_town", description = "test town" }
 map{ id = "demo_1/test_town_2", description = "test town 2-limestone" }
 map{ id = "demo_1/testing_room", description = "testing room" }
+map{ id = "dev/world_map" }
 map{ id = "dummy_cutscene/basswood", description = "Basswood" }
 map{ id = "goat_hill_new_test", description = "new goat hill test" }
 map{ id = "goatshead_island/ball_trail", description = "Ballast Trail" }
@@ -770,6 +771,27 @@ sprite{ id = "menus/inventory/life_half_stitch", description = "Life Half Stitch
 sprite{ id = "menus/inventory/life_stitch", description = "Life Stitch" }
 sprite{ id = "menus/inventory/magic_stitch", description = "Magic Stitch" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
+sprite{ id = "menus/maps/landmasses/ballast_harbor" }
+sprite{ id = "menus/maps/landmasses/crabhook" }
+sprite{ id = "menus/maps/landmasses/crow_island" }
+sprite{ id = "menus/maps/landmasses/goatshead_island" }
+sprite{ id = "menus/maps/landmasses/gull_rock" }
+sprite{ id = "menus/maps/landmasses/isle_of_storms" }
+sprite{ id = "menus/maps/landmasses/kingsdown_isle" }
+sprite{ id = "menus/maps/landmasses/landmass_mask" }
+sprite{ id = "menus/maps/landmasses/limestone_island" }
+sprite{ id = "menus/maps/landmasses/lobb_trail" }
+sprite{ id = "menus/maps/landmasses/lotus_shoal" }
+sprite{ id = "menus/maps/landmasses/oakhaven" }
+sprite{ id = "menus/maps/landmasses/snapmast_landing" }
+sprite{ id = "menus/maps/landmasses/snapmast_reef" }
+sprite{ id = "menus/maps/landmasses/spruce_head" }
+sprite{ id = "menus/maps/landmasses/stonefell_crossroads" }
+sprite{ id = "menus/maps/landmasses/sunken_palace" }
+sprite{ id = "menus/maps/landmasses/tern_marsh" }
+sprite{ id = "menus/maps/landmasses/yarrowmouth_island" }
+sprite{ id = "menus/maps/landmasses/zephyr_bay" }
+sprite{ id = "menus/maps/overworld_blank" }
 sprite{ id = "menus/maps/port_rune", description = "Port Rune" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/slider", description = "slider" }
