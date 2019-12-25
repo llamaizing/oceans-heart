@@ -1,6 +1,6 @@
 animation{
   name = "stopped",
-  src_image = "menus/maps/landmasses/tern_marsh.png",
+  src_image = "menus/maps/text/kingsdown_isle.png",
   directions = {
     { x = 0, y = 0, frame_width = 48, frame_height = 32, origin_x = 0, origin_y = 0 },
   },

@@ -793,6 +793,35 @@ sprite{ id = "menus/maps/landmasses/yarrowmouth_island" }
 sprite{ id = "menus/maps/landmasses/zephyr_bay" }
 sprite{ id = "menus/maps/overworld_blank" }
 sprite{ id = "menus/maps/port_rune", description = "Port Rune" }
+sprite{ id = "menus/maps/roads/ballast_harbor" }
+sprite{ id = "menus/maps/roads/crabhook" }
+sprite{ id = "menus/maps/roads/crow_island" }
+sprite{ id = "menus/maps/roads/goatshead_island" }
+sprite{ id = "menus/maps/roads/gull_rock" }
+sprite{ id = "menus/maps/roads/limestone" }
+sprite{ id = "menus/maps/roads/lotus_shoal" }
+sprite{ id = "menus/maps/roads/oakhaven" }
+sprite{ id = "menus/maps/roads/snapmast_landing" }
+sprite{ id = "menus/maps/roads/snapmast_reef" }
+sprite{ id = "menus/maps/roads/spruce_head" }
+sprite{ id = "menus/maps/roads/stonefell_crossroads" }
+sprite{ id = "menus/maps/roads/tern_marsh" }
+sprite{ id = "menus/maps/roads/yarrowmouth_island" }
+sprite{ id = "menus/maps/roads/zephyr_bay" }
+sprite{ id = "menus/maps/text/ballast_harbor" }
+sprite{ id = "menus/maps/text/crabhook" }
+sprite{ id = "menus/maps/text/fort_crow" }
+sprite{ id = "menus/maps/text/goatshead" }
+sprite{ id = "menus/maps/text/ivystump" }
+sprite{ id = "menus/maps/text/kingsdown_isle" }
+sprite{ id = "menus/maps/text/limestone" }
+sprite{ id = "menus/maps/text/lotus_shoal" }
+sprite{ id = "menus/maps/text/marblecliff" }
+sprite{ id = "menus/maps/text/oakhaven" }
+sprite{ id = "menus/maps/text/oakport" }
+sprite{ id = "menus/maps/text/snapmast_reef" }
+sprite{ id = "menus/maps/text/spruce_head" }
+sprite{ id = "menus/maps/text/yarrowmouth" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/slider", description = "slider" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
