@@ -6,6 +6,8 @@ function game_restart:reset_values(game)
   game:set_value("hero_dashing", false)
   game:set_value("gameovering", false)
   hero:set_sword_sprite_id("hero/sword1")
+  sol.audio.set_music_volume(game:get_value("music_volume") or 90)
+  sol.audio.set_sound_volume(game:get_value("sound_volume") or 100)
 end
 
 return game_restart
