@@ -31680,15 +31680,6 @@ teletransporter{
   destination = "from_outside",
 }
 
-npc{
-  layer = 0,
-  x = 632,
-  y = 1181,
-  direction = 0,
-  subtype = 0,
-  sprite = "entities/boat_juglan",
-}
-
 wall{
   layer = 0,
   x = 632,
@@ -33771,5 +33762,14 @@ tile{
   height = 8,
   pattern = "2429",
   tileset = "oceanheart_outdoors_1",
+}
+
+npc{
+  layer = 1,
+  x = 632,
+  y = 1181,
+  direction = 0,
+  subtype = 0,
+  sprite = "entities/boat_juglan",
 }
 
