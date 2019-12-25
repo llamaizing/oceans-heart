@@ -515,8 +515,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
-  y = 96,
+  x = 104,
+  y = 112,
   width = 16,
   height = 32,
   pattern = "206",
@@ -524,8 +524,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 128,
-  y = 104,
+  x = 104,
+  y = 120,
   width = 16,
   height = 16,
   pattern = "16",
@@ -578,7 +578,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 160,
+  x = 144,
   y = 120,
   width = 16,
   height = 16,
@@ -587,7 +587,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 176,
+  x = 160,
   y = 112,
   width = 8,
   height = 24,
@@ -596,7 +596,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 184,
+  x = 168,
   y = 112,
   width = 32,
   height = 24,
@@ -605,7 +605,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 216,
+  x = 200,
   y = 112,
   width = 8,
   height = 24,
@@ -614,7 +614,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 184,
+  x = 168,
   y = 112,
   width = 16,
   height = 16,
@@ -684,6 +684,16 @@ tile{
   pattern = "17",
 }
 
+tile{
+  layer = 0,
+  x = 208,
+  y = 120,
+  width = 32,
+  height = 32,
+  pattern = "57",
+  tileset = "misc",
+}
+
 wall{
   layer = 0,
   x = 144,
@@ -739,7 +749,7 @@ npc{
 
 npc{
   layer = 0,
-  x = 216,
+  x = 200,
   y = 133,
   direction = 3,
   subtype = 1,
@@ -748,7 +758,7 @@ npc{
 
 npc{
   layer = 0,
-  x = 216,
+  x = 200,
   y = 125,
   direction = 3,
   subtype = 1,
@@ -757,11 +767,29 @@ npc{
 
 npc{
   layer = 0,
-  x = 192,
+  x = 176,
   y = 133,
   direction = 3,
   subtype = 1,
   behavior = "dialog#_limestone_island.observations.juglan_fish",
+}
+
+npc{
+  name = "^crafting_table",
+  layer = 0,
+  x = 216,
+  y = 149,
+  direction = 3,
+  subtype = 1,
+}
+
+npc{
+  name = "^crafting_table_2",
+  layer = 0,
+  x = 232,
+  y = 149,
+  direction = 3,
+  subtype = 1,
 }
 
 tile{
@@ -838,7 +866,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
+  x = 192,
   y = 104,
   width = 16,
   height = 16,
@@ -847,7 +875,7 @@ tile{
 
 tile{
   layer = 1,
-  x = 208,
+  x = 192,
   y = 112,
   width = 8,
   height = 16,
