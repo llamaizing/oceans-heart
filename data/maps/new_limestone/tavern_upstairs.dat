@@ -1986,6 +1986,7 @@ destination{
   x = 160,
   y = 349,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 destination{
