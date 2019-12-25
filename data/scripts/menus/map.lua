@@ -4,91 +4,61 @@ local multi_events = require"scripts/multi_events"
 local WORLD_MAP_ID = "maps/dev/world_map.dat" --map id that contains world map info
 local MAP_LIST = {
   --key (string) map_id, value (table, array)
-    --index 1 (string) savegame variable name for landmass
-    --index 2 (string, optional) savegame variable name for text
-  --TODO add other variants of limestone island
-  ['new_limestone/new_limestone_island'] = {'world_map_landmass_limestone_island', 'world_map_text_limestone'},
-  ['new_limestone/new_limestone_island'] = {'world_map_landmass_limestone_island', 'world_map_text_limestone'},
-  ['new_limestone/limestone_present'] = {'world_map_landmass_limestone_island', 'world_map_text_limestone'},
-  ['new_limestone/bracken_beach'] = {'world_map_landmass_limestone_island'},
-  ['ballast_harbor/ballast_trail'] = {'world_map_landmass_ballast_island'},
-  ['ballast_harbor/ballast_harbor'] = {'world_map_landmass_ballast_island', 'world_map_text_ballast_harbor'},
-  ['goatshead_island/crabhook_village'] = {'world_map_landmass_crabhook', 'world_map_text_crabhook'},
-  ['goatshead_island/goat_hill'] = {'world_map_landmass_goatshead_island'},
-  ['goatshead_island/riverbank'] = {'world_map_landmass_goatshead_island'},
-  ['goatshead_island/goatshead_harbor'] = {'world_map_landmass_goatshead_island', 'world_map_text_goatshead'},
-  ['stonefell_crossroads/sycamore_ferry'] = {'world_map_landmass_goatshead_island'},
-  ['stonefell_crossroads/fort_crow'] = {'world_map_landmass_crow_island', 'world_map_text_fort_crow'},
-  ['stonefell_crossroads/crow_road'] = {'world_map_landmass_crow_island'},
-  ['stonefell_crossroads/crow_arena'] = {'world_map_landmass_crow_arena'},
-  ['stonefell_crossroads/lotus_shoal'] = {'world_map_landmass_lotus_shoal', 'world_map_text_lotus_shoal'},
-  ['stonefell_crossroads/spruce_head'] = {'world_map_landmass_spruce_head', 'world_map_text_spruce_head'},
-  ['stonefell_crossroads/forest_of_tides'] = {'world_map_landmass_zephyr_bay'},
-  ['stonefell_crossroads/zephyr_bay'] = {'world_map_landmass_zephyr_bay'},
-  ['stonefell_crossroads/stonefell_crossroads'] = {'world_map_landmass_stonefell_crossroads'},
-  ['oakhaven/sunken_palace'] = {'world_map_landmass_sunken_palace'},
-  ['oakhaven/sunken_lighthouse'] = {'world_map_landmass_sunken_palace'},
-  ['oakhaven/gull_rock'] = {'world_map_landmass_gull_rock'},
-  ['oakhaven/west_oak'] = {'world_map_landmass_oakhaven'},
-  ['oakhaven/marblecliff'] = {'world_map_landmass_oakhaven'},
-  ['oakhaven/marble_summit'] = {'world_map_landmass_oakhaven', 'world_map_text_marblecliff'},
-  ['oakhaven/ivystump'] = {'world_map_landmass_oakhaven', 'world_map_text_ivystump'},
-  ['oakhaven/ivystump_port'] = {'world_map_landmass_oakhaven'},
-  ['oakhaven/port'] = {'world_map_landmass_oakhaven', 'world_map_text_oakport'},
-  ['oakhaven/oakhaven'] = {'world_map_landmass_oakhaven', 'world_map_text_oakhaven'},
-  ['oakhaven/eastoak'] = {'world_map_landmass_oakhaven'},
-  ['oakhaven/veilwood'] = {'world_map_landmass_oakhaven'},
-  ['oakhaven/lobb_trail'] = {'world_map_landmass_lobb_trail'},
-  ['Yarrowmouth/puzzlewood'] = {'world_map_landmass_yarrowmouth_island'},
-  ['Yarrowmouth/yarrowmouth_village'] = {'world_map_landmass_yarrowmouth_island', 'world_map_text_yarrowmouth'},
-  ['Yarrowmouth/juniper_grove'] = {'world_map_landmass_yarrowmouth_island'},
-  ['Yarrowmouth/tern_marsh'] = {'world_map_landmass_tern_marsh'},
-  ['Yarrowmouth/kingsdown'] = {'world_map_landmass_kingsdown_isle', 'world_map_text_kingsdown_isle'},
-  ['snapmast_reef/snapmast_landing'] = {'world_map_landmass_snapmast_landing', 'world_map_text_snapmast_reef'},
-  ['snapmast_reef/drowned_village'] = {'world_map_landmass_snapmast_reef'},
-  ['snapmast_reef/smoldering_rock'] = {'world_map_landmass_snapmast_reef'},
-  ['snapmast_reef/snapmast_lighthouse'] = {'world_map_landmass_snapmast_reef'},
-  ['isle_of_storms/isle_of_storms_landing'] = {'world_map_landmass_isle_of_storms', 'world_map_text_isle_of_storms'},
+    --index 1 (string) savegame variable name for landmass; prefix with 'world_map_landmass_' for savegame variable name
+    --index 2 (string, optional) savegame variable name for text; prefix with 'world_map_text_' for savegame variable name
+  ['new_limestone/new_limestone_island'] = {'limestone_island', 'limestone'},
+  ['new_limestone/new_limestone_island'] = {'limestone_island', 'limestone'},
+  ['new_limestone/limestone_present'] = {'limestone_island', 'limestone'},
+  ['new_limestone/bracken_beach'] = {'limestone_island'},
+  ['ballast_harbor/ballast_trail'] = {'ballast_island'},
+  ['ballast_harbor/ballast_harbor'] = {'ballast_island', 'ballast_harbor'},
+  ['goatshead_island/crabhook_village'] = {'crabhook', 'crabhook'},
+  ['goatshead_island/goat_hill'] = {'goatshead_island'},
+  ['goatshead_island/riverbank'] = {'goatshead_island'},
+  ['goatshead_island/goatshead_harbor'] = {'goatshead_island', 'goatshead'},
+  ['stonefell_crossroads/sycamore_ferry'] = {'goatshead_island'},
+  ['stonefell_crossroads/fort_crow'] = {'crow_island', 'fort_crow'},
+  ['stonefell_crossroads/crow_road'] = {'crow_island'},
+  ['stonefell_crossroads/crow_arena'] = {'crow_arena'},
+  ['stonefell_crossroads/lotus_shoal'] = {'lotus_shoal', 'lotus_shoal'},
+  ['stonefell_crossroads/spruce_head'] = {'spruce_head', 'spruce_head'},
+  ['stonefell_crossroads/forest_of_tides'] = {'zephyr_bay'},
+  ['stonefell_crossroads/zephyr_bay'] = {'zephyr_bay'},
+  ['stonefell_crossroads/stonefell_crossroads'] = {'stonefell_crossroads'},
+  ['oakhaven/sunken_palace'] = {'sunken_palace'},
+  ['oakhaven/sunken_lighthouse'] = {'sunken_palace'},
+  ['oakhaven/gull_rock'] = {'gull_rock'},
+  ['oakhaven/west_oak'] = {'oakhaven'},
+  ['oakhaven/marblecliff'] = {'oakhaven'},
+  ['oakhaven/marble_summit'] = {'oakhaven', 'marblecliff'},
+  ['oakhaven/ivystump'] = {'oakhaven', 'ivystump'},
+  ['oakhaven/ivystump_port'] = {'oakhaven'},
+  ['oakhaven/port'] = {'oakhaven', 'oakport'},
+  ['oakhaven/oakhaven'] = {'oakhaven', 'oakhaven'},
+  ['oakhaven/eastoak'] = {'oakhaven'},
+  ['oakhaven/veilwood'] = {'oakhaven'},
+  ['oakhaven/lobb_trail'] = {'lobb_trail'},
+  ['Yarrowmouth/puzzlewood'] = {'yarrowmouth_island'},
+  ['Yarrowmouth/yarrowmouth_village'] = {'yarrowmouth_island', 'yarrowmouth'},
+  ['Yarrowmouth/juniper_grove'] = {'yarrowmouth_island'},
+  ['Yarrowmouth/tern_marsh'] = {'tern_marsh'},
+  ['Yarrowmouth/kingsdown'] = {'kingsdown_isle', 'kingsdown_isle'},
+  ['snapmast_reef/snapmast_landing'] = {'snapmast_landing', 'snapmast_reef'},
+  ['snapmast_reef/drowned_village'] = {'snapmast_reef'},
+  ['snapmast_reef/smoldering_rock'] = {'snapmast_reef'},
+  ['snapmast_reef/snapmast_lighthouse'] = {'snapmast_reef'},
+  ['isle_of_storms/isle_of_storms_landing'] = {'isle_of_storms', 'isle_of_storms'},
 }
-local LANDMASS_SPRITES = { --append "world_map_landmass_" or "world_map_roads_" to front to get corresponding savegame variable name
-  "ballast_island",
-  "crabhook",
-  --"crow_arena", --TODO add landmass for crow_arena
-  "crow_island",
-  "goatshead_island",
-  "gull_rock",
-  "isle_of_storms",
-  "kingsdown_isle",
-  "limestone_island",
-  "lobb_trail",
-  "lotus_shoal",
-  "oakhaven",
-  "snapmast_landing",
-  "snapmast_reef",
-  "spruce_head",
-  "stonefell_crossroads",
-  "sunken_palace",
-  "tern_marsh",
-  "yarrowmouth_island",
-  "zephyr_bay",
-}
-local TEXT_SPRITES = { --append "world_map_" to front to get corresponding savegame variable name
-  "text_ballast_harbor",
-  "text_crabhook",
-  "text_fort_crow",
-  "text_goatshead",
-  --"text_isle_of_storms", --TODO add text for isle of storms
-  "text_ivystump",
-  "text_kingsdown_isle",
-  "text_limestone",
-  "text_lotus_shoal",
-  "text_marblecliff",
-  "text_oakhaven",
-  "text_oakport",
-  "text_snapmast_reef",
-  "text_spruce_head",
-  "text_yarrowmouth",
-}
+--construct from MAP_LIST data
+local LANDMASS_SPRITES = {} --append "world_map_landmass_" or "world_map_roads_" to front to get corresponding savegame variable name
+local TEXT_SPRITES = {} --append "world_map_" to front to get corresponding savegame variable name
+for _,info in pairs(MAP_LIST) do
+  local landmass_entity = info[1]
+  if landmass_entity then table.insert(LANDMASS_SPRITES, landmass_entity) end
+
+  local text_entity = info[2]
+  if text_entity then table.insert(TEXT_SPRITES, text_entity) end
+end
 
 map_screen = {x=0, y=0}
 multi_events:enable(map_screen)
@@ -145,8 +115,19 @@ map_meta:register_event("on_started", function(self)
   local game = map:get_game()
   local map_id = map:get_id()
 
-  local savegame_variables = MAP_LIST[map_id] or {}
-  for _,save_var in ipairs(savegame_variables) do game:set_value(save_var, 1) end
+  local map_info = MAP_LIST[map_id] or {}
+  local landmass_save_var = map_info[1]
+  local text_save_var = map_info[2]
+  
+  if landmass_save_var then
+    landmass_save_var = "world_map_landmass_"..landmass_save_var
+    game:set_value(landmass_save_var, 1)
+  end
+  
+  if text_save_var then
+    text_save_var = "world_map_text_"..text_save_var
+    game:set_value(text_save_var, 1)
+  end
 end)
 
 --// Gets/sets the x,y position of the menu in pixels
@@ -173,19 +154,17 @@ function map_screen:on_started()
   for _,var_name in ipairs(LANDMASS_SPRITES) do
     local is_landmass_visible = not not game:get_value("world_map_landmass_"..var_name)
 
-    local landmass_entity_id = "landmass_"..var_name
-    local landmass_sprite = all_sprites[landmass_entity_id]
+    local landmass_sprite = all_sprites["landmass_"..var_name]
     if landmass_sprite then landmass_sprite.enabled = is_landmass_visible end
 
-    local roads_entity_id = "roads_"..var_name
-    local roads_sprite = all_sprites[roads_entity_id]
+    local roads_sprite = all_sprites["roads_"..var_name]
     if roads_sprite then roads_sprite.enabled = is_landmass_visible end --note: roads are always visible if corresponding landmass is visible
   end
 
-  for _,text_entity_id in ipairs(TEXT_SPRITES) do
-    local is_text_visible = not not game:get_value("world_map_"..text_entity_id)
+  for _,var_name in ipairs(TEXT_SPRITES) do
+    local is_text_visible = not not game:get_value("world_map_text_"..var_name)
 
-    local text_sprite = all_sprites[text_entity_id]
+    local text_sprite = all_sprites["text_"..var_name]
     if text_sprite then text_sprite.enabled = is_text_visible end
   end
 end
