@@ -14008,6 +14008,16 @@ Northwest - Goatshead
 }
 
 dialog{
+  id = "_sycamore_ferry.signs.forest_of_tides_mandrake",
+  text = [[
+DANGER:
+White Mandrake!
+(Some monsters are really tough, you might
+need to come back when you're stronger)
+]],
+}
+
+dialog{
   id = "_sycamore_ferry.signs.lotus_1",
   text = [[
 East - Goatshead

@@ -2613,6 +2613,106 @@ enemy{
   breed = "misc/explosive_barrel",
 }
 
+dynamic_tile{
+  name = "^lighting_effect_torch_5",
+  layer = 0,
+  x = 104,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_6",
+  layer = 0,
+  x = 208,
+  y = 432,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_7",
+  layer = 0,
+  x = 120,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_8",
+  layer = 0,
+  x = 184,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_9",
+  layer = 0,
+  x = 184,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_10",
+  layer = 0,
+  x = 120,
+  y = 160,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_11",
+  layer = 0,
+  x = 192,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_12",
+  layer = 0,
+  x = 112,
+  y = 624,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_13",
+  layer = 0,
+  x = 112,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
+dynamic_tile{
+  name = "^lighting_effect_torch_14",
+  layer = 0,
+  x = 192,
+  y = 576,
+  width = 16,
+  height = 16,
+  pattern = "41",
+}
+
 tile{
   layer = 1,
   x = 184,
@@ -2961,106 +3061,6 @@ destructible{
   sprite = "entities/bomb",
   can_be_cut = true,
   can_explode = true,
-}
-
-dynamic_tile{
-  name = "^lighting_effect_torch_5",
-  layer = 1,
-  x = 104,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "41",
-}
-
-dynamic_tile{
-  name = "^lighting_effect_torch_6",
-  layer = 1,
-  x = 208,
-  y = 432,
-  width = 16,
-  height = 16,
-  pattern = "41",
-}
-
-dynamic_tile{
-  name = "^lighting_effect_torch_7",
-  layer = 1,
-  x = 120,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "41",
-}
-
-dynamic_tile{
-  name = "^lighting_effect_torch_8",
-  layer = 1,
-  x = 184,
-  y = 104,
-  width = 16,
-  height = 16,
-  pattern = "41",
-}
-
-dynamic_tile{
-  name = "^lighting_effect_torch_9",
-  layer = 1,
-  x = 184,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "41",
-}
-
-dynamic_tile{
-  name = "^lighting_effect_torch_10",
-  layer = 1,
-  x = 120,
-  y = 160,
-  width = 16,
-  height = 16,
-  pattern = "41",
-}
-
-dynamic_tile{
-  name = "^lighting_effect_torch_11",
-  layer = 1,
-  x = 192,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "41",
-}
-
-dynamic_tile{
-  name = "^lighting_effect_torch_12",
-  layer = 1,
-  x = 112,
-  y = 624,
-  width = 16,
-  height = 16,
-  pattern = "41",
-}
-
-dynamic_tile{
-  name = "^lighting_effect_torch_13",
-  layer = 1,
-  x = 112,
-  y = 576,
-  width = 16,
-  height = 16,
-  pattern = "41",
-}
-
-dynamic_tile{
-  name = "^lighting_effect_torch_14",
-  layer = 1,
-  x = 192,
-  y = 576,
-  width = 16,
-  height = 16,
-  pattern = "41",
 }
 
 tile{

@@ -38,7 +38,7 @@ text{ key = "item.key_juniper_grove_2.1", value = "Juniper Grove Inner Gate Key"
 text{ key = "item.key_kingsdown.1", value = "Mallow's Key" }
 text{ key = "item.key_mead_safehouse.1", value = "Sticky Honey Key" }
 text{ key = "item.key_mushroom_spot.1", value = "Key to Mushroom Picking Spot" }
-text{ key = "item.key_poplar_shack.1", value = "Mossy Poplar Forest Key" }
+text{ key = "item.key_poplar_shack.1", value = "Mossy Key" }
 text{ key = "item.key_sinking_lighthouse.1", value = "Seaglint Ruins Key" }
 text{ key = "item.key_thrush_fort.1", value = "Thrush Fort Key" }
 text{ key = "item.kingscrown.1", value = "Kingscrown Blooms" }
