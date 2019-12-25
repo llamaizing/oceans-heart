@@ -1250,28 +1250,19 @@ dynamic_tile{
 
 crystal_block{
   layer = 0,
-  x = 192,
+  x = 176,
+  y = 288,
+  width = 16,
+  height = 16,
+  subtype = 0,
+}
+
+crystal_block{
+  layer = 0,
+  x = 160,
   y = 304,
   width = 16,
-  height = 16,
-  subtype = 0,
-}
-
-crystal_block{
-  layer = 0,
-  x = 176,
-  y = 320,
-  width = 16,
-  height = 32,
-  subtype = 0,
-}
-
-crystal_block{
-  layer = 0,
-  x = 192,
-  y = 352,
-  width = 16,
-  height = 16,
+  height = 48,
   subtype = 0,
 }
 
@@ -1407,18 +1398,9 @@ enemy{
 
 crystal_block{
   layer = 0,
-  x = 208,
-  y = 368,
-  width = 16,
-  height = 16,
-  subtype = 0,
-}
-
-crystal_block{
-  layer = 0,
-  x = 224,
+  x = 176,
   y = 384,
-  width = 16,
+  width = 64,
   height = 16,
   subtype = 0,
 }
@@ -1439,17 +1421,6 @@ crystal_block{
   width = 16,
   height = 16,
   subtype = 1,
-}
-
-dynamic_tile{
-  name = "torch_5",
-  layer = 0,
-  x = 152,
-  y = 344,
-  enabled_at_start = false,
-  width = 16,
-  height = 16,
-  pattern = "377",
 }
 
 tile{
@@ -1495,5 +1466,16 @@ tile{
   width = 16,
   height = 24,
   pattern = "287",
+}
+
+dynamic_tile{
+  name = "torch_5",
+  layer = 1,
+  x = 152,
+  y = 344,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "377",
 }
 
