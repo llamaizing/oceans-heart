@@ -3,8 +3,6 @@ local game = map:get_game()
 
 map:register_event("on_started", function()
   sol.audio.play_music("fire_burning")
-  timeskip_warp:set_enabled(false)
-
 
 --tim movement
   local tim_run = sol.movement.create("path")
@@ -25,7 +23,6 @@ function explosion_sensor:on_activated()
   map:create_explosion({
   layer = l, x = x, y = y,})
   explosion_sensor:remove()
-print("ahhhhh!")
 end
 
 function mallow:on_interaction()
@@ -33,9 +30,6 @@ function mallow:on_interaction()
   game:start_dialog("_new_limestone_island.npcs.mallow.3", function ()
     game:set_value("quest_whisky_for_juglan_phase", 2) --quest log
     game:set_life(game:get_max_life())
-    timeskip_warp:set_enabled(true)
-
+    hero:teleport("new_limestone/transition")
   end)
-
-
 end

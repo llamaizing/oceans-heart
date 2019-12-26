@@ -6408,6 +6408,15 @@ block{
   pullable = true,
 }
 
+chest{
+  layer = 0,
+  x = 824,
+  y = 645,
+  treasure_name = "potion_magic_restoration",
+  treasure_savegame_variable = "merchant_hq_money_chest",
+  sprite = "entities/chest",
+}
+
 tile{
   layer = 1,
   x = 768,
@@ -7867,15 +7876,6 @@ destructible{
   x = 160,
   y = 381,
   sprite = "entities/vase",
-}
-
-chest{
-  layer = 1,
-  x = 824,
-  y = 645,
-  treasure_name = "potion_magic_restoration",
-  treasure_savegame_variable = "merchant_hq_money_chest",
-  sprite = "entities/chest",
 }
 
 destructible{
