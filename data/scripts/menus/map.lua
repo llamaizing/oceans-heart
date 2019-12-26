@@ -1,11 +1,31 @@
+--[[
+    -------------
+  S | V | V | R |
+  a | i | i | v |
+  v | s | s | e |
+  e | i | i | a |
+  V | b | t | l |
+  a | l | e | e |
+  l | e | d | d |
+----+-----------+
+|nil| 0 | 0 | 0 | --map landmass not visible
+| 0 | 1 | 0 | 0 | --map landmass visible, will be revealed next time map is opened
+| 1 | 1 | 0 | 1 | --map landmass visible and has been revealed
+| 2 | 1 | 1 | 0 | --map landmass has been visited, will be revealed next time map is opened
+| 3 | 1 | 1 | 1 | --map landmass has been visited and revealed
+----+-----------+
+]]
+
 local multi_events = require"scripts/multi_events"
 
 --constants
 local WORLD_MAP_ID = "maps/dev/world_map.dat" --map id that contains world map info
+local REVEAL_DELAY = 1000 --delay time (in msec) before revealing new landmasses
+local FADE_IN_DELAY = 100 --delay time (in msec) between fade in frames when revealing a landmass
 local MAP_LIST = {
   --key (string) map_id, value (table, array)
-    --index 1 (string) savegame variable name for landmass; prefix with 'world_map_landmass_' for savegame variable name
-    --index 2 (string, optional) savegame variable name for text; prefix with 'world_map_text_' for savegame variable name
+    --index 1 (string) entity names for world_map landmasses; prefix with 'world_map_landmass_' for savegame variable name
+    --index 2 (string, optional) entity names name for world_map text; prefix with 'world_map_text_' for savegame variable name
   ['new_limestone/new_limestone_island'] = {'limestone_island', 'limestone'},
   ['new_limestone/new_limestone_island'] = {'limestone_island', 'limestone'},
   ['new_limestone/limestone_present'] = {'limestone_island', 'limestone'},
@@ -50,8 +70,8 @@ local MAP_LIST = {
   ['isle_of_storms/isle_of_storms_landing'] = {'isle_of_storms', 'isle_of_storms'},
 }
 --construct from MAP_LIST data
-local LANDMASS_SPRITES = {} --append "world_map_landmass_" or "world_map_roads_" to front to get corresponding savegame variable name
-local TEXT_SPRITES = {} --append "world_map_" to front to get corresponding savegame variable name
+local LANDMASS_SPRITES = {} --(table, array) add prefix "world_map_landmass_" or "world_map_roads_" to values to get corresponding savegame variable name
+local TEXT_SPRITES = {} --(table, array) add prefix "world_map_" to values to get corresponding savegame variable name
 for _,info in pairs(MAP_LIST) do
   local landmass_entity = info[1]
   if landmass_entity then table.insert(LANDMASS_SPRITES, landmass_entity) end
@@ -91,6 +111,7 @@ local function read_world_map()
     local layer = tonumber(properties.layer)
     assert(layer, "World Map Error: bad value for custom_entity property 'layer' (number expected)")
 
+    --generate corresponding sprite
     local sprite = sol.sprite.create(sprite_id)
     sprite:set_xy(x, y)
     sprite.layer = layer
@@ -102,11 +123,54 @@ local function read_world_map()
   setfenv(chunk, env)
   chunk()
 
+  --create list of sprites in draw order: layer 1 = landmasses, 2 = roads, 3 = text
   for layer=1,3 do
     for _,sprite in pairs(all_sprites) do
       if sprite.layer == layer then table.insert(sprite_draw_list, sprite) end
     end
   end
+end
+
+--TODO may want external access to these get/set functions
+
+--returns boolean whether landmass will be visible in map menu
+local function get_visible(save_var_id)
+  local game = sol.main.get_game()
+  return not not game:get_value(save_var_id)
+end
+
+--makes landmass that the player has not yet visited visible next time map menu is opened
+local function set_visible(save_var_id)
+  local game = sol.main.get_game()
+  if not game:get_value(save_var_id) then game:set_value(save_var_id, 0) end
+end
+
+--returns boolean whether player has set foot on the landmass
+local function get_visited(save_var_id)
+  local game = sol.main.get_game()
+  local val = game:get_value(save_var_id) or 0
+  return val >= 2
+end
+
+--marks landmass as visited by player, will be visible next time map menu is opened (if not already)
+local function set_visited(save_var_id)
+  local game = sol.main.get_game()
+  local val = game:get_value(save_var_id) or 0
+  if val < 2 then game:set_value(save_var_id, val+2) end
+end
+
+--returns boolean whether reveal animation has played for given landmass
+local function get_revealed(save_var_id)
+  local game = sol.main.get_game()
+  local val = game:get_value(save_var_id) or 0
+  return val % 2 == 1
+end
+
+--marks landmass as revealed when viewed in map menu for the first time
+local function set_revealed(save_var_id)
+  local game = sol.main.get_game()
+  local val = game:get_value(save_var_id)
+  if val and val % 2 == 0 then game:set_value(save_var_id, val+1) end
 end
 
 local map_meta = sol.main.get_metatable"map"
@@ -121,12 +185,12 @@ map_meta:register_event("on_started", function(self)
   
   if landmass_save_var then
     landmass_save_var = "world_map_landmass_"..landmass_save_var
-    game:set_value(landmass_save_var, 1)
+    set_visited(landmass_save_var)
   end
   
   if text_save_var then
     text_save_var = "world_map_text_"..text_save_var
-    game:set_value(text_save_var, 1)
+    set_visited(text_save_var)
   end
 end)
 
@@ -151,21 +215,55 @@ function map_screen:on_started()
   assert(map, "Error: cannot start map menu because no map is currently active")
   map_id = map:get_id()
 
+  local to_reveal = {} --(table, array) list of sprites to be revealed
+
   for _,var_name in ipairs(LANDMASS_SPRITES) do
-    local is_landmass_visible = not not game:get_value("world_map_landmass_"..var_name)
+    local landmass_val = game:get_value("world_map_landmass_"..var_name)
+    local is_landmass_visible = not not landmass_val
 
     local landmass_sprite = all_sprites["landmass_"..var_name]
-    if landmass_sprite then landmass_sprite.enabled = is_landmass_visible end
-
     local roads_sprite = all_sprites["roads_"..var_name]
+
+    if landmass_sprite then
+      landmass_sprite.enabled = is_landmass_visible
+      if (landmass_val or 0) % 2 == 0 then --check if not revealed
+        landmass_sprite:set_opacity(0) --hide until fade-in starts
+        table.insert(to_reveal, landmass_sprite)
+        --sol.timer.start(self, REVEAL_DELAY, function() landmass_sprite:fade_in(80) end)
+        if roads_sprite then
+          roads_sprite:set_opacity(0) --hide until fade-in starts
+          table.insert(to_reveal, roads_sprite)
+        end
+        set_revealed("world_map_landmass_"..var_name) --so won't be revealed again next time map is opened
+      end
+    end
+
     if roads_sprite then roads_sprite.enabled = is_landmass_visible end --note: roads are always visible if corresponding landmass is visible
   end
 
   for _,var_name in ipairs(TEXT_SPRITES) do
-    local is_text_visible = not not game:get_value("world_map_text_"..var_name)
+    local text_val = game:get_value("world_map_text_"..var_name)
+    local is_text_visible = not not text_val
 
     local text_sprite = all_sprites["text_"..var_name]
-    if text_sprite then text_sprite.enabled = is_text_visible end
+    if text_sprite then
+      text_sprite.enabled = is_text_visible
+      if (text_val or 0) % 2 == 0 then --check if not revealed
+        text_sprite:set_opacity(0) --hide until fade-in starts
+        table.insert(to_reveal, text_sprite)
+        set_revealed("world_map_text_"..var_name) --so won't be revealed again next time map is opened
+      end
+    end
+  end
+
+  --begin reveal animation
+  if #to_reveal>0 then
+    sol.timer.start(self, REVEAL_DELAY, function()
+      --TODO play reveal map sound
+      for _,sprite in ipairs(to_reveal) do
+        sprite:fade_in(FADE_IN_DELAY)
+      end
+    end)
   end
 end
 
@@ -174,7 +272,6 @@ function map_screen:on_draw(dst_surface)
   for _,sprite in ipairs(sprite_draw_list) do
     if sprite.enabled then sprite:draw(dst_surface, self.x, self.y) end
   end
---  map_img:draw(dst_surface, self.x, self.y)  
 end
 
 world_map_entities = read_world_map() --perform one time only when this script is loaded
