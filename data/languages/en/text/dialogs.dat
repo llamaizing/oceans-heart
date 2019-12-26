@@ -14660,7 +14660,7 @@ to navigate there without issue.
 }
 
 dialog{
-  id = "_treasure.fast_travel_chart_goatshead.1",
+  id = "_treasure.fast_travel_chart_goatshead_harbor.1",
   text = [[
 You found a sea chart of Goatshead Harbor.
 This could be used to allow someone
@@ -14696,7 +14696,7 @@ to navigate there without issue.
 }
 
 dialog{
-  id = "_treasure.fast_travel_chart_limestone.1",
+  id = "_treasure.fast_travel_chart_limestone_island.1",
   text = [[
 You found a sea chart of Limestone Island.
 This could be used to allow someone

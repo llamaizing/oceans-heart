@@ -88,7 +88,7 @@ end)
 map:register_event("on_opening_transition_finished", function()
   if game:get_value("goatshead_opening") ~= true then
     game:start_dialog("_goatshead.npcs.juglan.1", function()
-      hero:start_treasure("fast_travel_chart_limestone")
+      hero:start_treasure("fast_travel_chart_limestone_island")
       game:set_value("quest_meet_juglan_at_pier",1)  --quest log
       game:set_value("goatshead_opening", true)
     end)

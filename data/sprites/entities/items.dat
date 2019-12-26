@@ -373,7 +373,7 @@ animation{
   },
 }
 animation{
-  name = "fast_travel_chart_goatshead",
+  name = "fast_travel_chart_goatshead_harbor",
   src_image = "entities/items.png",
   directions = {
     { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
@@ -401,7 +401,7 @@ animation{
   },
 }
 animation{
-  name = "fast_travel_chart_limestone",
+  name = "fast_travel_chart_limestone_island",
   src_image = "entities/items.png",
   directions = {
     { x = 400, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },

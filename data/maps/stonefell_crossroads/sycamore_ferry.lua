@@ -77,7 +77,7 @@ function enemy:on_dead()
     function m:on_changed() hero:set_direction(m:get_direction4()) end
     sol.timer.start(map, 1000, function()
       game:start_dialog("_sycamore_ferry.npcs.lily.saved", function()
-        game:get_item("fast_travel_chart_goatshead"):set_variant(1)
+        game:get_item("fast_travel_chart_goatshead_harbor"):set_variant(1)
         hero:unfreeze()
         game:set_value("lily_rescued", true)
       end)
