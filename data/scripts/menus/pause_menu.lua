@@ -1,6 +1,6 @@
 --[[ pause_menu.lua
 	version 1.0.1
-	25 Dec 2019
+	26 Dec 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -378,6 +378,11 @@ function pause_menu:on_finished()
 	local game = sol.main.get_game()
 	
 	self:save_submenu()
+	
+	--tell submenus that pause menu is closing
+	for _,submenu in ipairs(SUBMENU_LIST) do
+		if submenu.on_pause_menu_finished then submenu:on_pause_menu_finished() end
+	end
 	
 	active_submenu = nil
 	is_changing_menus = false
