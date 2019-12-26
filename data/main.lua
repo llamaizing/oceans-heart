@@ -56,7 +56,6 @@ end
 
 --Starts a game.
 function sol.main:start_savegame(game)
-
   sol.main.game = game
   game:start()
 end

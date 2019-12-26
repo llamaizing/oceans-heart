@@ -143,6 +143,9 @@ end
 function status_screen:update_volume_levels()
   music_level = sol.audio.get_music_volume()
   sound_level = sol.audio.get_sound_volume()
+  local game = sol.main.get_game()
+  game:set_value("music_volume", music_level)
+  game:set_value("sound_volume", sound_level)
 end
 
 

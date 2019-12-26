@@ -2428,8 +2428,8 @@ dialog{
 FISHERMAN:
 So, the fishing isn't bad here, but where they
 really bite is south of town on Lotus Shoal.
-FISHERMAN:
 I'd be down there right now if it weren't for
+FISHERMAN:
 this really pesky monster that's been attacking
 folks who go down there.
 ]],
@@ -4563,6 +4563,7 @@ THIEL:
 was also a ship with triangles on its sails.
 Come to think of it, they must have plundered
 Spruce Head Shrine. Might look for clues there.
+Spruce Head is Southwest, past Lotus Shoal.
 ]],
 }
 
@@ -4578,8 +4579,8 @@ Ballast Harbor about them. Seemed to hear
 something from a man selling sea charts. You
 might find a way to Ballast Harbor and seek
 THIESSON:
-out the fellow selling sea charts. I hear
-there's a trail out near Crabhook.
+out the fellow selling sea charts.
+
 
 LEIGHA:
 Alright. So we've got the pirates looting the
@@ -6454,6 +6455,18 @@ look for leads, huh?
 TILIA:
 I know the pirates flew a white hourglass on
 their flag. Seems like enough to get started.
+
+LINDEN:
+You'll find them. Remember to get enough
+sleep. Staying at an inn will heal you, but
+you can always come home and sleep here too.
+TILIA:
+You sound like Juglan, don't worry so much.
+I love you, Linden.
+
+LINDEN:
+I love you too. I'll see you when you're
+back with Dad and Hazel.
 ]],
 }
 
@@ -14004,6 +14017,16 @@ dialog{
 South - Ballast Harbor Tunnel
 East - Zephyr Bay
 Northwest - Goatshead
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.forest_of_tides_mandrake",
+  text = [[
+DANGER:
+White Mandrake!
+(Some monsters are really tough, you might
+need to come back when you're stronger)
 ]],
 }
 

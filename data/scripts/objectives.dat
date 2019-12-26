@@ -193,8 +193,8 @@ main{
     dialog_id = "quest.main.spruce_head",
     calc_phase = "quest_spruce_head",
     location = {
-        "location.goatshead_island",
-        "location.goatshead_island",
+        "location.spruce_head",
+        "location.spruce_head",
         "location.yarrowmouth",
     },
 }

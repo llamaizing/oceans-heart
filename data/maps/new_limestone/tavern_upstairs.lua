@@ -34,6 +34,5 @@ function map:on_opening_transition_finished()
       end)
     end)
 
-    game:set_value("waking_up_beginning_of_game_cutscene", true)
   end
 end

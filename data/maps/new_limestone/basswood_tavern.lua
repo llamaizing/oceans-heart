@@ -11,6 +11,11 @@ local map = ...
 local game = map:get_game()
 local talked_to_linden
 
+map:register_event("on_started", function()
+  if not game:get_value"waking_up_beginning_of_game_cutscene" then
+    game:set_value("waking_up_beginning_of_game_cutscene", true)
+  end
+end)
 
 
 function talk_to_dad_sensor:on_activated()
