@@ -27,7 +27,7 @@ end
 function map_screen:on_started()
   map_bg = sol.surface.create("menus/maps/overworld_blank.png")
 
-  local sprites, to_reveal = world_map:get_sprites(true) --reveal new landmasses
+  local sprites, to_reveal, unvisited = world_map:get_sprites(true) --reveal new landmasses
   sprite_list = sprites
 
   --do reveal fade-in animation if any new landmasses
@@ -42,6 +42,13 @@ function map_screen:on_started()
         sprite:fade_in(FADE_IN_DELAY)
       end
     end)
+  end
+
+  --darken unvisited landmasses
+  if #unvisited > 0 then
+    for _,sprite in ipairs(unvisited) do
+      if sprite.layer==1 then sprite:set_color_modulation{210,235,255,255} end --landmasses are layer 1
+    end
   end
 end
 

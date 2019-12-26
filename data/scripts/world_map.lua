@@ -302,6 +302,7 @@ function world_map:get_sprites(do_reveal)
 		if info.visible then
 			local sprite = sol.sprite.create(info.sprite_id)
 			sprite:set_xy(info.x, info.y)
+			sprite.layer = info.layer
 			sprite.revealed = info.revealed
 			sprite.visited = info.visited
 			sprite.entity_id = info.entity_id
