@@ -106,7 +106,7 @@ function front_door_switch:on_activated()
 end
 
 function hub_room_door_switch:on_activated()
-  if not   game:get_value("pirate_vault_hub_room_door_switch")
+  if not   game:get_value("pirate_vault_hub_room_door_switch") then
     sol.audio.play_sound("switch_2")
     map:get_camera():shake({count = 8, amplitude = 4, speed = 80})
     game:start_dialog("_ballast_harbor.observations.pirate_vault.door_opened")
