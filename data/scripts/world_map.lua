@@ -170,6 +170,20 @@ function world_map:set_visible(save_var_id, boolean)
 	else game:set_value(save_var_id, false) end
 end
 
+--// Makes the landmass and text (if any) associated with the given map id visible (unvisited and unrevealed) in the world map
+	--map_id (string) - map id to reveal the associated landmass and text in map menu
+	--boolean (boolean, optional) - true reveals the landmass/text, false hides it, default true
+	--returns false if there is not a landmass associated with the given map id, else returns true
+	--NOTE: if the associated landmass and/or text is already visible then it has not effect, respectively
+function world_map:set_map_visible(map_id, boolean)
+	local info = MAP_LIST[map_id]
+	if info then
+		if info[1] then self:set_visible("world_map_landmass_"..info[1], boolean) end
+		if info[2] then self:set_visible("world_map_text_"..info[2], boolean) end
+		return true
+	else return false end
+end
+
 --// Returns boolean whether player has set foot on the landmass
 function world_map:get_visited(save_var_id)
 	local game = sol.main.get_game()
