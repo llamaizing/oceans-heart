@@ -4,6 +4,7 @@ local world_map = require"scripts/world_map"
 --constants
 local REVEAL_DELAY = 1000 --delay time (in msec) before revealing new landmasses
 local FADE_IN_DELAY = 100 --delay time (in msec) between fade in frames when revealing a landmass
+local UNVISITED_MODULATION = {210,235,255,255} --modulation color to darken unvisited landmasses
 
 local map_screen = {x=0, y=0}
 multi_events:enable(map_screen)
@@ -47,7 +48,7 @@ function map_screen:on_started()
   --darken unvisited landmasses
   if #unvisited > 0 then
     for _,sprite in ipairs(unvisited) do
-      if sprite.layer==1 then sprite:set_color_modulation{210,235,255,255} end --landmasses are layer 1
+      if sprite.layer==1 then sprite:set_color_modulation(UNVISITED_MODULATION) end --landmasses are layer 1
     end
   end
 end
