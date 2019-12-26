@@ -327,8 +327,8 @@ function inventory:on_draw(dst_surface)
     self.cursor_sprite:draw(dst_surface, (self.cursor_column * 32 + GRID_ORIGIN_X + 32) + self.x,  (self.cursor_row * 32 + GRID_ORIGIN_Y) + self.y)
     self.description_panel:draw(dst_surface, ((COLUMNS * 32) / 2 + GRID_ORIGIN_X + 16) + self.x, (ROWS *32 + GRID_ORIGIN_Y - 8)+self.y)
     --draw health and magic
-    self.life_surface:draw(dst_surface, 75, 14)
-    self.magic_surface:draw(dst_surface, 75, 22)
+    self.life_surface:draw(dst_surface, 75 + self.x, 14 + self.y)
+    self.magic_surface:draw(dst_surface, 75 + self.x, 22 + self.y)
     --draw assigned items:
       if self.assigned_item_sprite_1 then
         self.assigned_item_sprite_1:draw(dst_surface, self.x + 310, self.y + 35)
