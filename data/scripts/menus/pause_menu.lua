@@ -28,6 +28,7 @@ local pause_menu = {
 	inventory = inventory,
 	quest_log = quest_log,
 	map_screen = map_screen,
+	status_screen = status_screen,
 }
 multi_events:enable(pause_menu)
 
@@ -37,13 +38,13 @@ local is_changing_menus = false --true while switching between submenus to block
 local is_exiting = false --true or false - determines whether the pause command opens or closes the menu
 
 --constants
-local MOVEMENT_SPEED = 700
+local MOVEMENT_SPEED = 700 --menu movement speed in pixels per second
 
 local SUBMENU_LIST = { --order matters
 	inventory,
 	quest_log,
 	map_screen,
-  status_screen
+	status_screen,
 }
 for i,menu in ipairs(SUBMENU_LIST) do pause_menu[i] = menu end
 
