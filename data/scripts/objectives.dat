@@ -396,13 +396,7 @@ side{
 side{
     dialog_id = "quest.side.yarrowmouth.meadery",
     calc_phase = "quest_briarwood_mushrooms",
-    location = {
-        "location.yarrowmouth",
-        "location.yarrowmouth",
-        "location.yarrowmouth",
-        "location.ballast_harbor",
-        "location.yarrowmouth",
-    },
+    location = "location.yarrowmouth",
     items = {
         "key_mushroom_spot.1",
         "key_mead_safehouse.1",

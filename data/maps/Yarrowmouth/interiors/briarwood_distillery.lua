@@ -9,9 +9,11 @@ end)
 
 function olin:on_interaction()
   if game:get_value("have_juniper_key") == true then
-
-    game:start_dialog("_yarrowmouth.npcs.tavern.Olin.3")
-
+    if game:get_value"talked_to_jerah_in_the_grove" then
+      game:start_dialog"_yarrowmouth.npcs.tavern.Olin.4"
+    else
+      game:start_dialog("_yarrowmouth.npcs.tavern.Olin.3")
+    end
   else
 
     if game:get_value("quest_spruce_head") == 2 then

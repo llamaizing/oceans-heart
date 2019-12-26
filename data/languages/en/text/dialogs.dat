@@ -16579,6 +16579,16 @@ is northeast of town, by the dock.
 }
 
 dialog{
+  id = "_yarrowmouth.npcs.tavern.Olin.4",
+  text = [[
+OLIN:
+Glad to see Jerah's back! Don't know he
+managed to get himself trapped in the grove
+with a monster, but thanks for the help.
+]],
+}
+
+dialog{
   id = "_yarrowmouth.npcs.tavern.jerah.1",
   text = [[
 JERAH:
