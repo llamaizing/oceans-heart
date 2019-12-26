@@ -7928,17 +7928,6 @@ dynamic_tile{
 }
 
 dynamic_tile{
-  name = "^lighting_effect_torch_28",
-  layer = 0,
-  x = 1152,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "41",
-  tileset = "indoors_stone",
-}
-
-dynamic_tile{
   name = "^lighting_effect_torch_29",
   layer = 0,
   x = 1040,
