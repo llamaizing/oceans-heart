@@ -141,15 +141,6 @@ local function read_world_map()
 		local info = {sprite_id=sprite_id, x=x, y=y, layer=layer, entity_id=entity_id}
 		table.insert(all_sprites, info)
 		sprite_info[entity_id] = info --lookup using entity_id
-		
-		--[[
-		--generate corresponding sprite
-		local sprite = sol.sprite.create(sprite_id)
-		sprite:set_xy(x, y)
-		sprite.layer = layer
-
-		all_sprites[entity_id] = sprite
-		]]
 	end
 
 	local chunk, err = sol.main.load_file(WORLD_MAP_ID)
@@ -161,18 +152,6 @@ local function read_world_map()
 		for _,info in ipairs(all_sprites) do
 			if info.layer == layer then table.insert(sprite_info, info) end
 		end
-	end
-end
-
-function world_map:create_sprites()
-	--update visibility status
-	for _,var_name in ipairs(LANDMASS_SPRITES) do
-		local landmass_val = game:get_value("world_map_landmass_"..var_name)
-		local is_landmass_visible = not not landmass_val
-	end
-	
-	for _,info in ipairs(sprite_info) do
-		
 	end
 end
 
@@ -226,11 +205,38 @@ function world_map:set_revealed(save_var_id, boolean)
 end
 
 --// Reveal or hide full map
-function world_map:show_all(boolean)
-	--TODO
+	--value (boolean or number, optional) - value to set all world map savegame values to
+		--false hides entire map (writes value of false)
+		--true reveals entire map (writes value of 3), default
+		--0 makes entire map visible, unvisited and to be revealed in map menu
+		--1 makes entire map visible, unvisited and revealed in map menu
+		--2 makes entire map visible, visited, and to be revealed in map menu
+		--3 makes entire map visible, visited and revealed in map menu
+function world_map:show_all(value)
+	local val_num = tonumber(value)
+	assert(not value or value==true or val_num, "Bad argument #2 to 'show_all' (boolean or number or nil expected)")
+	
+	local game = sol.main.get_game()
+	local val --value to set all world map savegame values to
+	
+	if val_num then
+		val_num = math.floor(val_num)
+		assert(val_num>=0 and val_num<=3, "Bad argument #2 to 'show_all', number value must be from 0 to 3")
+		val = val_num --if value is a valid number, then use that number directly
+	else val = value~=false and 3 end --use 3 for values of nil or true, else use false
+	
+	for _,var_name in ipairs(LANDMASS_SPRITES) do
+		local save_var_id = "world_map_landmass_"..var_name
+		game:set_value(save_var_id, val)
+	end
+	
+	for _,var_name in ipairs(TEXT_SPRITES) do
+		local save_var_id = "world_map_text_"..var_name
+		game:set_value(save_var_id, val)
+	end
 end
 
-function world_map:get_sprites(do_reveal)
+function world_map:create_sprites(do_reveal)
 	local game = sol.main.get_game()
 	assert(game, "Error: cannot start map menu because no game is currently running")
 	

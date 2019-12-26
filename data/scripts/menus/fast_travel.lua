@@ -107,7 +107,7 @@ function fast_travel_menu:on_started()
   game:get_hero():freeze()
   game:set_suspended(true)
 
-  sprite_list = world_map:get_sprites(false) --does not use fade-in reveal of new landmasses
+  sprite_list = world_map:create_sprites(false) --does not use fade-in reveal of new landmasses
 
   fast_travel_menu:update_unlocked_locations()
   fast_travel_menu:update_current_port(game:get_value("fast_travel_menu_current_port") or DEFAULT_PORT)
