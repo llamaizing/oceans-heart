@@ -1484,7 +1484,7 @@ I don't get pirate vibes from you.
 }
 
 dialog{
-  id = "_fast_travel.location_goatshead",
+  id = "_fast_travel.location_goatshead_harbor",
   text = [[
 LILY:
 Hey, Tilia! We meet again. Just dropped a
@@ -1524,7 +1524,7 @@ all day.
 }
 
 dialog{
-  id = "_fast_travel.location_limestone",
+  id = "_fast_travel.location_limestone_island",
   text = [[
 LILY:
 Good to see you, Tilia. I just had a chat
@@ -1650,7 +1650,8 @@ $? No
 dialog{
   id = "_game.fast_travel_confirm",
   text = [[
-Are you sure you want to travel here?
+Are you sure you want to travel to the port at
+$v?
 $?Yes
 $?No
 ]],

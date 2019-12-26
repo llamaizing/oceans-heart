@@ -1629,11 +1629,11 @@ item{ id = "empty", description = "test" }
 item{ id = "ether_bombs", description = "Ether Bombs" }
 item{ id = "ether_bombs_pickable", description = "EtherBombsPickable-1.3.5.10" }
 item{ id = "fast_travel_chart_ballast_harbor", description = "Fast Travel Chart Ballast Harbor" }
-item{ id = "fast_travel_chart_goatshead", description = "Fast Travel Chart Goatshead" }
+item{ id = "fast_travel_chart_goatshead_harbor", description = "Fast Travel Chart Goatshead" }
 item{ id = "fast_travel_chart_isle_of_storms", description = "Fast Travel Chart Isle of Storms" }
 item{ id = "fast_travel_chart_ivystump", description = "Fast Travel Chart Ivystump" }
 item{ id = "fast_travel_chart_kingsdown", description = "FTC Kingsdown" }
-item{ id = "fast_travel_chart_limestone", description = "Fast Travel Chart Limestone" }
+item{ id = "fast_travel_chart_limestone_island", description = "Fast Travel Chart Limestone" }
 item{ id = "fast_travel_chart_oakhaven", description = "Fast Travel Chart Oakhaven" }
 item{ id = "fast_travel_chart_snapmast", description = "FTC Snapmast" }
 item{ id = "fast_travel_chart_spruce_head", description = "Fast Travel Chart Spruce Head" }

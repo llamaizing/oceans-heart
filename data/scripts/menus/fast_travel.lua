@@ -25,11 +25,11 @@ local locations = {
   {name = "yarrowmouth", coordinates = {299, 67}, is_unlocked, map_id = "Yarrowmouth/juniper_grove"},
   {name = "snapmast", coordinates = {330, 52}, is_unlocked, map_id = "snapmast_reef/snapmast_landing"},
   {name = "oakhaven", coordinates = {118, 102}, is_unlocked, map_id = "oakhaven/port"},
-  {name = "goatshead", coordinates = {262, 138}, is_unlocked, map_id = "goatshead_island/goatshead_harbor"},
+  {name = "goatshead_harbor", coordinates = {262, 138}, is_unlocked, map_id = "goatshead_island/goatshead_harbor"},
   {name = "isle_of_storms", coordinates = {378, 130}, is_unlocked, map_id = "isle_of_storms/isle_of_storms_landing"},
   {name = "kingsdown", coordinates = {319, 109}, is_unlocked, map_id = "Yarrowmouth/kingsdown"},
   {name = "spruce_head", coordinates = {83, 158}, is_unlocked, map_id = "stonefell_crossroads/spruce_head"},
-  {name = "limestone", coordinates = {250, 200}, is_unlocked, map_id = "new_limestone/limestone_present"},
+  {name = "limestone_island", coordinates = {250, 200}, is_unlocked, map_id = "new_limestone/limestone_present"},
   {name = "zephyr_bay", coordinates = {315, 153}, is_unlocked, map_id = "stonefell_crossroads/zephyr_bay"},
   {name = "ballast_harbor", coordinates = {346, 184}, is_unlocked, map_id = "ballast_harbor/ballast_harbor"},
 }
@@ -156,8 +156,9 @@ end
 
 function fast_travel_menu:confirm_selection()
   local game = sol.main.get_game()
-  game:start_dialog("_game.fast_travel_confirm", function(answer)
-    if answer == 2 then
+  local port_name = sol.language.get_string("location."..locations[current_port].name)
+  game:start_dialog("_game.fast_travel_confirm", port_name, function(answer)
+    if answer == 3 then
       sol.audio.play_sound"ok"
       game:set_value("fast_travel_menu_current_port", current_port)
       sol.menu.stop(self)
