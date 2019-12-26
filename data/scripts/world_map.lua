@@ -99,10 +99,16 @@ local LANDMASS_SPRITES = {} --(table, array) add prefix "world_map_landmass_" or
 local TEXT_SPRITES = {} --(table, array) add prefix "world_map_" to values to get corresponding savegame variable name
 for _,info in pairs(MAP_LIST) do
 	local landmass_entity = info[1]
-	if landmass_entity then table.insert(LANDMASS_SPRITES, landmass_entity) end
+	if landmass_entity and not LANDMASS_SPRITES[landmass_entity] then
+		table.insert(LANDMASS_SPRITES, landmass_entity)
+		LANDMASS_SPRITES[landmass_entity] = true --prevent adding duplicate entries
+	end
 
 	local text_entity = info[2]
-	if text_entity then table.insert(TEXT_SPRITES, text_entity) end
+	if text_entity and not TEXT_SPRITES[text_entity] then
+		table.insert(TEXT_SPRITES, text_entity)
+		TEXT_SPRITES[text_entity] = true --prevent adding duplicate entries
+	end
 end
 
 local world_map = {}
