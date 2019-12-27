@@ -31544,7 +31544,7 @@ destination{
 
 enemy{
   layer = 0,
-  x = 856,
+  x = 824,
   y = 877,
   direction = 0,
   breed = "misc/seagull",
@@ -31552,7 +31552,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 872,
+  x = 864,
   y = 885,
   direction = 2,
   breed = "misc/seagull",
@@ -31560,8 +31560,8 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 872,
-  y = 853,
+  x = 856,
+  y = 861,
   direction = 2,
   breed = "misc/seagull",
 }

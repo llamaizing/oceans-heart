@@ -185,6 +185,7 @@ function behavior:create(enemy, properties)
     fly_away = false
   end
 
+--[[
   function enemy:fly_away()
     enemy:set_invincible()
     if enemy:get_layer() < enemy:get_map():get_max_layer() then
@@ -204,6 +205,30 @@ function behavior:create(enemy, properties)
     sol.timer.start(5000, function()
       self:remove()
       end)
+  end
+--]]
+  function enemy:fly_away()
+  flying_away = true
+    local map = enemy:get_map()
+    local hero = map:get_hero()
+    local sprite = enemy:get_sprite()
+    flying = true
+    sprite:set_animation"walking"
+    sol.audio.play_sound"bird_flying_away"
+    local angle = hero:get_angle(enemy)
+    if angle > math.pi /2 and angle < 3 * math.pi / 2 then --hero is right of bird
+      angle = 2.5
+    else --hero is left of bird
+      angle = .5
+    end
+    local m = sol.movement.create("straight")
+    m:set_angle(angle)
+    m:set_speed(160)
+    m:set_ignore_obstacles()
+    m:set_max_distance(400)
+    enemy:set_layer(map:get_max_layer())
+    m:start(enemy, function() enemy:remove() end)
+    sprite:set_direction(m:get_direction4())
   end
 
 end
