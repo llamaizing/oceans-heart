@@ -41702,8 +41702,8 @@ npc{
 
 wall{
   layer = 0,
-  x = 544,
-  y = 1424,
+  x = 552,
+  y = 1416,
   width = 8,
   height = 112,
   stops_enemies = true,
@@ -41741,8 +41741,8 @@ npc{
 sensor{
   name = "lily_attack_sensor",
   layer = 0,
-  x = 560,
-  y = 1421,
+  x = 520,
+  y = 1429,
   width = 16,
   height = 128,
 }
@@ -41750,8 +41750,8 @@ sensor{
 sensor{
   name = "lily_attack_sensor_2",
   layer = 0,
-  x = 760,
-  y = 1421,
+  x = 816,
+  y = 1413,
   width = 16,
   height = 144,
 }
