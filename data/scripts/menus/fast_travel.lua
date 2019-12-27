@@ -18,16 +18,18 @@ right now, the way unlocking ports works, you traverse the locations table one b
 --Maybe just build the runes and then later, don't move along the rune table for selection, but move along the locations table, skipping any is_unlocked = false
 --]]
 
+local world_map = require"scripts/world_map"
+
 local locations = {
   {name = "ivystump", coordinates = {180, 44}, is_unlocked, map_id = "oakhaven/ivystump_port"},
   {name = "yarrowmouth", coordinates = {299, 67}, is_unlocked, map_id = "Yarrowmouth/juniper_grove"},
   {name = "snapmast", coordinates = {330, 52}, is_unlocked, map_id = "snapmast_reef/snapmast_landing"},
   {name = "oakhaven", coordinates = {118, 102}, is_unlocked, map_id = "oakhaven/port"},
-  {name = "goatshead", coordinates = {262, 138}, is_unlocked, map_id = "goatshead_island/goatshead_harbor"},
+  {name = "goatshead_harbor", coordinates = {262, 138}, is_unlocked, map_id = "goatshead_island/goatshead_harbor"},
   {name = "isle_of_storms", coordinates = {378, 130}, is_unlocked, map_id = "isle_of_storms/isle_of_storms_landing"},
   {name = "kingsdown", coordinates = {319, 109}, is_unlocked, map_id = "Yarrowmouth/kingsdown"},
   {name = "spruce_head", coordinates = {83, 158}, is_unlocked, map_id = "stonefell_crossroads/spruce_head"},
-  {name = "limestone", coordinates = {250, 200}, is_unlocked, map_id = "new_limestone/limestone_present"},
+  {name = "limestone_island", coordinates = {250, 200}, is_unlocked, map_id = "new_limestone/limestone_present"},
   {name = "zephyr_bay", coordinates = {315, 153}, is_unlocked, map_id = "stonefell_crossroads/zephyr_bay"},
   {name = "ballast_harbor", coordinates = {346, 184}, is_unlocked, map_id = "ballast_harbor/ballast_harbor"},
 }
@@ -36,7 +38,8 @@ local DEFAULT_PORT = 8
 local port_rune = sol.sprite.create("menus/maps/port_rune")
 local port_runes = {}
 local current_port = 1
-local map_surface = sol.surface.create("menus/maps/overworld_map.png")
+local map_bg = sol.surface.create("menus/maps/overworld_blank.png")
+local sprite_list --(table, array) list of landmass sprites and text in draw order (only if visible)
 
 
 function fast_travel_menu:greeting()
@@ -103,6 +106,9 @@ function fast_travel_menu:on_started()
   local game = sol.main.get_game()
   game:get_hero():freeze()
   game:set_suspended(true)
+
+  sprite_list = world_map:create_sprites(false) --does not use fade-in reveal of new landmasses
+
   fast_travel_menu:update_unlocked_locations()
   fast_travel_menu:update_current_port(game:get_value("fast_travel_menu_current_port") or DEFAULT_PORT)
 end
@@ -110,6 +116,7 @@ end
 
 function fast_travel_menu:on_finished()
   sol.main.get_game():get_hud():set_enabled(true)
+  sprite_list = nil
 end
 
 
@@ -149,8 +156,9 @@ end
 
 function fast_travel_menu:confirm_selection()
   local game = sol.main.get_game()
-  game:start_dialog("_game.fast_travel_confirm", function(answer)
-    if answer == 2 then
+  local port_name = sol.language.get_string("location."..locations[current_port].name)
+  game:start_dialog("_game.fast_travel_confirm", port_name, function(answer)
+    if answer == 3 then
       sol.audio.play_sound"ok"
       game:set_value("fast_travel_menu_current_port", current_port)
       sol.menu.stop(self)
@@ -189,7 +197,10 @@ function fast_travel_menu:on_command_pressed(command)
 end
 
 function fast_travel_menu:on_draw(dst)
-  map_surface:draw(dst)
+  map_bg:draw(dst)
+  for _,sprite in ipairs(sprite_list or {}) do
+    sprite:draw(dst)
+  end
   for i=1, #locations do
     if locations[i].is_unlocked then
       port_runes[i]:draw(dst, locations[i].coordinates[1],locations[i].coordinates[2])

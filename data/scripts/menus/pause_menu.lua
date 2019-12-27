@@ -1,6 +1,6 @@
 --[[ pause_menu.lua
-	version 1.0
-	22 Jun 2019
+	version 1.0.1
+	26 Dec 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -28,6 +28,7 @@ local pause_menu = {
 	inventory = inventory,
 	quest_log = quest_log,
 	map_screen = map_screen,
+	status_screen = status_screen,
 }
 multi_events:enable(pause_menu)
 
@@ -37,13 +38,13 @@ local is_changing_menus = false --true while switching between submenus to block
 local is_exiting = false --true or false - determines whether the pause command opens or closes the menu
 
 --constants
-local MOVEMENT_SPEED = 700
+local MOVEMENT_SPEED = 700 --menu movement speed in pixels per second
 
 local SUBMENU_LIST = { --order matters
 	inventory,
 	quest_log,
 	map_screen,
-  status_screen
+	status_screen,
 }
 for i,menu in ipairs(SUBMENU_LIST) do pause_menu[i] = menu end
 
@@ -64,10 +65,16 @@ local ANGLES = { --converts direction 0-3 to angle in radians
 --Create a transparent background behind the menus to lower distaction from game map
 local transparent_background = sol.surface.create()
 transparent_background:set_opacity(100)
-transparent_background:fill_color({0,0,0})
+transparent_background:fill_color{0,0,0}
 
 
---Begins a sliding transition for the specified submenu
+--// Begins a sliding transition for the specified submenu
+	--submenu_index (number, positive integer) index of submenu to slide
+	--direction (number, non-negative integer) the direction to move the submenu: 0 = right, 1 = up, 2 = left, 3 = down
+	--is_start_offscreen (boolean, optional) true slides submenu onscreen, false slides submenu offscreen, default: false
+		--if sliding submenu offscreen, then submenu starts from its current position
+	--callback (function, optional) function to call once movement is complete
+	--NOTE: to transition from active submenu to another, 2 slide transitions need to be performed simultaneously (close active & open new submenu)
 local function do_slide_transition(submenu_index, direction, is_start_offscreen, callback)
 	local screen_width,screen_height = sol.video.get_quest_size()
 	
@@ -79,7 +86,7 @@ local function do_slide_transition(submenu_index, direction, is_start_offscreen,
 		is_start_offscreen = false
 	end
 	
-	local max_dist = (direction % 2)==0 and screen_width or screen_height
+	local max_dist = (direction % 2)==0 and screen_width or screen_height --distance of the movement
 	
 	if is_start_offscreen then --move submenu offscreen before start of movement if is_start_offscreen is set
 		local x_mult = 0
@@ -96,13 +103,13 @@ local function do_slide_transition(submenu_index, direction, is_start_offscreen,
 			y_mult = -1
 		end
 		
-		submenu:set_xy(x_mult*screen_width, y_mult*screen_height)
+		submenu:set_xy(x_mult*screen_width, y_mult*screen_height) --set initial position of submenu
 	else --otherwise use current position of submenu to determine distance remaining to close it
 		local x,y = submenu:get_xy()
 		local mult = (direction % 3) > 0 and 1 or -1 --positive if moving up or left, negative if moving right or down
 		local offset = direction % 2 == 0 and x or y --use x position if moving left or right, y position if moving up or down
 		
-		max_dist = max_dist + mult*offset
+		max_dist = max_dist + mult*offset --recalculate distance based on current position
 	end
 	
 	--create and setup movement
@@ -134,6 +141,7 @@ end
 
 --// Aborts all active movements and replaces them with new movements to slide those submenus to the top of the screen and close them
 --// the active submenu is not assigned a new movement, which should be done by the user after calling this function
+	--callback (function, optional) callback function to call once movement is complete
 local function close_other_submenus(callback)
 	local submenu_count = 1 --start at 1 to include active submenu in count
 	
@@ -166,7 +174,8 @@ local function close_other_submenus(callback)
 	return on_finished --user should call do_slide_transition() on the active submenu and use on_finished as the callback
 end
 
---closes all submenus and opens the active submenu using a transition from the top of the screen
+--// Closes all submenus and opens the active submenu using a transition from the top of the screen
+	--callback (function, optional) callback function to call once movement is complete
 local function reopen_active_submenu(callback)
 	local game = sol.main.get_game()
 	
@@ -192,7 +201,7 @@ local function reopen_active_submenu(callback)
 	do_slide_transition(SUBMENU_LIST[active_submenu], 3, true, new_callback)
 end
 
---// Restores position of list from last time viewing menu
+--// Reopens the most recent submenu from last time menu was viewed
 function pause_menu:recall_saved_submenu()	
 	local game = sol.main.get_game()
 	
@@ -216,7 +225,8 @@ function pause_menu:save_submenu()
 	game:set_value("last_submenu", active_index)
 end
 
---// Starts the specified submenu
+--// Activates the specified submenu if not open, otherwise closes it
+	--index (number, positive integer) index of submenu to toggle
 function pause_menu:toggle_submenu(index)
 	index = tonumber(index)
 	assert(index, "Bad argument #2 to 'toggle_submenu' (number expected)")
@@ -297,6 +307,7 @@ function pause_menu:next_submenu(direction)
 end
 
 --// Slides the active submenu to the top of the screen then closes it (and closes the pause menu too)
+	--callback (function, optional) callback function to call once movement is complete
 function pause_menu:close(callback)
 	assert(sol.menu.is_started(self), "Error: pause menu must be started before it can be closed")
 	
@@ -367,6 +378,11 @@ function pause_menu:on_finished()
 	local game = sol.main.get_game()
 	
 	self:save_submenu()
+	
+	--tell submenus that pause menu is closing
+	for _,submenu in ipairs(SUBMENU_LIST) do
+		if submenu.on_pause_menu_finished then submenu:on_pause_menu_finished() end
+	end
 	
 	active_submenu = nil
 	is_changing_menus = false

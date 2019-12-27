@@ -53,6 +53,7 @@ function leigha:on_interaction()
               map:get_hero():unfreeze()
               game:set_value("quest_kelpton", 0) --quest log
               game:set_value("quest_spruce_head", 0) --quest log
+              game.world_map:set_map_visible("stonefell_crossroads/spruce_head")
             end)
           end
         end)

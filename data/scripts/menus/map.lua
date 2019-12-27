@@ -1,50 +1,69 @@
 local multi_events = require"scripts/multi_events"
+local world_map = require"scripts/world_map"
 
-map_screen = {x=0, y=0}
+--constants
+local REVEAL_DELAY = 1000 --delay time (in msec) before revealing new landmasses
+local FADE_IN_DELAY = 100 --delay time (in msec) between fade in frames when revealing a landmass
+local UNVISITED_MODULATION = {210,235,255,255} --modulation color to darken unvisited landmasses
+
+local map_screen = {x=0, y=0}
 multi_events:enable(map_screen)
 
-local map_id
-local map_img = sol.surface.create()
---local map_bg = sol.surface.create("menus/maps/background.png")
-local map_bg = sol.surface.create("menus/maps/overworld_map_roads.png")
-local MAP_LIST = {
-  new_limestone = "limestone",
-  goatshead_island = "goatshead",
-  Yarrowmouth = "yarrowmouth",
-  ballast_harbor = "yarrowmouth",
-  oakhaven = "oakhaven",
-  snapmast_reef = "yarrowmouth",
-  stonefell_crossroads = "yarrowmouth",
-  error = "test"
-}
+local sprite_list --(table, array) list of sprites in draw order (unrevealed landmasses not included)
+local map_bg --(sol.surface) blank map with no landmasses
 
 --// Gets/sets the x,y position of the menu in pixels
 function map_screen:get_xy() return self.x, self.y end
 function map_screen:set_xy(x, y)
-	x = tonumber(x)
-	assert(x, "Bad argument #2 to 'set_xy' (number expected)")
-	y = tonumber(y)
-	assert(y, "Bad argument #3 to 'set_xy' (number expected)")
-	
-	self.x = math.floor(x)
-	self.y = math.floor(y)
+  x = tonumber(x)
+  assert(x, "Bad argument #2 to 'set_xy' (number expected)")
+  y = tonumber(y)
+  assert(y, "Bad argument #3 to 'set_xy' (number expected)")
+
+  self.x = math.floor(x)
+  self.y = math.floor(y)
 end
 
+--retrieve visible landmass sprites from world_map script
 function map_screen:on_started()
-  local game = sol.main.get_game()
-  assert(game, "Error: cannot start map menu because no game is currently running")
-  map_id = game:get_map():get_id()
+  map_bg = sol.surface.create("menus/maps/overworld_blank.png")
 
-  local map_prefix = map_id:match"^([^/]+)/"
---  if map_prefix == nil then map_prefix = "error" end --this is a nice catch, but won't print any errors : /
-  local map_menu_name = MAP_LIST[map_prefix]
-  assert(map_menu_name or map_menu_name == "test", "Error: unmapped island ("..map_prefix..")")
-  map_img = sol.surface.create("menus/maps/"..map_menu_name..".png")
+  local sprites, to_reveal, unvisited = world_map:create_sprites(true) --reveal new landmasses
+  sprite_list = sprites
+
+  --do reveal fade-in animation if any new landmasses
+  if #to_reveal > 0 then
+    for _,sprite in ipairs(to_reveal) do
+      sprite:set_opacity(0) --hide until fade-in starts
+    end
+
+    sol.timer.start(self, REVEAL_DELAY, function()
+      --TODO play reveal map sound
+      for _,sprite in ipairs(to_reveal) do
+        sprite:fade_in(FADE_IN_DELAY)
+      end
+    end)
+  end
+
+  --darken unvisited landmasses
+  if #unvisited > 0 then
+    for _,sprite in ipairs(unvisited) do
+      if sprite.layer==1 then sprite:set_color_modulation(UNVISITED_MODULATION) end --landmasses are layer 1
+    end
+  end
+end
+
+--// Called when pause menu is closed, remove sprites from memory
+function map_screen:on_pause_menu_finished()
+  map_bg = nil
+  sprite_list = nil
 end
 
 function map_screen:on_draw(dst_surface)
   map_bg:draw(dst_surface, self.x, self.y)
---  map_img:draw(dst_surface, self.x, self.y)  
+  for _,sprite in ipairs(sprite_list or {}) do
+    sprite:draw(dst_surface, self.x, self.y)
+  end
 end
 
 return map_screen
