@@ -30609,6 +30609,15 @@ tile{
   tileset = "oceanheart_outdoors_1",
 }
 
+tile{
+  layer = 0,
+  x = 624,
+  y = 744,
+  width = 32,
+  height = 24,
+  pattern = "35",
+}
+
 door{
   layer = 0,
   x = 520,
@@ -33806,6 +33815,15 @@ tile{
   height = 16,
   pattern = "1076",
   tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 624,
+  y = 720,
+  width = 32,
+  height = 24,
+  pattern = "37",
 }
 
 tile{

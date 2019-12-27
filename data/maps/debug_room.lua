@@ -47,6 +47,6 @@ end
 
 function max:on_interaction()
   game:start_dialog("_generic_dialogs.max.beta_test_greeting", function()
-    map:get_hero():teleport("new_limestone/tavern_upstairs", "destination")
+    map:get_hero():teleport("new_limestone/new_limestone_island", "intro_cutscene")
   end)
 end
