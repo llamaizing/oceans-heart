@@ -34426,6 +34426,24 @@ tile{
   pattern = "494",
 }
 
+sensor{
+  name = "^map_banner_sensor_4",
+  layer = 0,
+  x = 216,
+  y = 29,
+  width = 32,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 24,
+  y = 269,
+  width = 32,
+  height = 32,
+}
+
 wall{
   layer = 0,
   x = 496,
@@ -35368,21 +35386,12 @@ wall{
 }
 
 sensor{
-  name = "^map_banner_sensor",
-  layer = 0,
-  x = 24,
-  y = 269,
-  width = 32,
-  height = 32,
-}
-
-sensor{
   name = "^map_banner_sensor_2",
   layer = 0,
   x = 864,
-  y = 1181,
+  y = 1165,
   width = 32,
-  height = 16,
+  height = 32,
 }
 
 destination{
@@ -35660,6 +35669,15 @@ teletransporter{
   transition = "scrolling",
   destination_map = "Yarrowmouth/tern_marsh",
   destination = "_side",
+}
+
+sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 1848,
+  y = 869,
+  width = 32,
+  height = 32,
 }
 
 tile{

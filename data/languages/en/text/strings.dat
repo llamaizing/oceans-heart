@@ -108,6 +108,7 @@ text{ key = "location.kingsdown", value = "Kingsdown Isle" }
 text{ key = "location.lighthouse", value = "Crumbling Lighthouse" }
 text{ key = "location.limestone_island", value = "Limestone Island" }
 text{ key = "location.limestone_present", value = "Limestone Island" }
+text{ key = "location.lobb_trail", value = "Strait of Thorns" }
 text{ key = "location.lotus_shoal", value = "Lotus Shoal" }
 text{ key = "location.marblecliff", value = "Marblecliff Mountain" }
 text{ key = "location.naerreturn_bay", value = "Zephyr Bay" }
