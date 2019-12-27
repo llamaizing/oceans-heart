@@ -223,7 +223,7 @@ end
 ------End treasure chest--------
 function warp_to_start_sensor:on_activated()
   if game:has_item("charts") then
-    hero:teleport("ballast_harbor/ballast_harbor", "from_pirate_building_upstairs")
+    hero:teleport("ballast_harbor/ballast_harbor", "vault_warp_exit")
   end
 end
 

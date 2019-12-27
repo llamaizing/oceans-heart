@@ -24688,6 +24688,14 @@ npc{
   sprite = "npc/lily/lily_sitting",
 }
 
+destination{
+  name = "vault_warp_exit",
+  layer = 0,
+  x = 1344,
+  y = 605,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 976,
