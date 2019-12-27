@@ -18,6 +18,7 @@ text{ key = "item.chamomile.1", value = "Chamomile Flowers" }
 text{ key = "item.charts.1", value = "Klepton's Charts" }
 text{ key = "item.contract.1", value = "Exploitative Contract" }
 text{ key = "item.coral_ore.1", value = "Coral Ore" }
+text{ key = "item.crow_feather.1", value = "Crow Feather" }
 text{ key = "item.crystal_spark.1", value = "Ophira's Ember" }
 text{ key = "item.cyclone_charm.1", value = "Cyclone Charm" }
 text{ key = "item.elixer.1", value = "Elixer Vitae" }
@@ -31,6 +32,8 @@ text{ key = "item.hideout_chart.1", value = "Pirate Council Hideout Chart" }
 text{ key = "item.homing_eye.1", value = "Seeker Eyes" }
 text{ key = "item.honeycomb.1", value = "Hornet Honeycomb" }
 text{ key = "item.iron_candle.1", value = "Salt Candles" }
+text{ key = "item.key_brass.1", value = "Brass Key" }
+text{ key = "item.key_haunted_house.1", value = "Key from Lake Umber" }
 text{ key = "item.iron_pinecone.1", value = "Iron Pinecone" }
 text{ key = "item.key_juneberry_inn.1", value = "Key to Another Inn?" }
 text{ key = "item.key_juniper_grove.1", value = "Juniper Grove Entrance Key" }
@@ -38,6 +41,7 @@ text{ key = "item.key_juniper_grove_2.1", value = "Juniper Grove Inner Gate Key"
 text{ key = "item.key_kingsdown.1", value = "Mallow's Key" }
 text{ key = "item.key_mead_safehouse.1", value = "Sticky Honey Key" }
 text{ key = "item.key_mushroom_spot.1", value = "Key to Mushroom Picking Spot" }
+text{ key = "item.key_shoal_pirate_fort.1", value = "Lotus Shoal Fort Key" }
 text{ key = "item.key_poplar_shack.1", value = "Mossy Key" }
 text{ key = "item.key_sinking_lighthouse.1", value = "Seaglint Ruins Key" }
 text{ key = "item.key_thrush_fort.1", value = "Thrush Fort Key" }
