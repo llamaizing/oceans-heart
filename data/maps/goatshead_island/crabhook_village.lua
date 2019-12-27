@@ -78,3 +78,9 @@ function boat_sensor:on_activated()
     end)
   end
 end
+
+function ballast_man:on_interaction()
+  game:start_dialog"_goatshead.npcs.crabhook.market_people.ballast_man_1"
+  game.world_map:set_map_visible("ballast_harbor/ballast_harbor") --make spruce head visible
+end
+

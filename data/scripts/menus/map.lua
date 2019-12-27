@@ -2,8 +2,8 @@ local multi_events = require"scripts/multi_events"
 local world_map = require"scripts/world_map"
 
 --constants
-local REVEAL_DELAY = 1000 --delay time (in msec) before revealing new landmasses
-local FADE_IN_DELAY = 100 --delay time (in msec) between fade in frames when revealing a landmass
+local REVEAL_DELAY = 200 --delay time (in msec) before revealing new landmasses
+local FADE_IN_DELAY = 40 --delay time (in msec) between fade in frames when revealing a landmass
 local UNVISITED_MODULATION = {210,235,255,255} --modulation color to darken unvisited landmasses
 
 local map_screen = {x=0, y=0}

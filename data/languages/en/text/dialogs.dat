@@ -2468,6 +2468,23 @@ it out.
 }
 
 dialog{
+  id = "_goatshead.npcs.crabhook.market_people.ballast_man_1",
+  text = [[
+Yeah, I see that look. The market here in
+Crabhook is pretty sad. Not what you're
+necessarily looking for, right? You want
+to know where to find the good stuff, yeah?
+Well I'll let you in on a secret. Ballast
+Harbor, the pirate market? I know how to
+get there. It's on the down-low because,
+you know, it's full of pirates. But if you
+go Southeast, down to the Forest of Tides?
+There's a tunnel there that'll take you
+to Ballast Harbor.
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.crabhook.salesman",
   text = [[
 VEGETABLE VENDOR:
@@ -4563,7 +4580,10 @@ THIEL:
 was also a ship with triangles on its sails.
 Come to think of it, they must have plundered
 Spruce Head Shrine. Might look for clues there.
-Spruce Head is Southwest, past Lotus Shoal.
+THIEL:
+Spruce Head is Southwest, past Lotus Shoal. You
+know what, let's add it to your map. You've seen 
+that in the pause menu, right?
 ]],
 }
 
@@ -4579,9 +4599,9 @@ Ballast Harbor about them. Seemed to hear
 something from a man selling sea charts. You
 might find a way to Ballast Harbor and seek
 THIESSON:
-out the fellow selling sea charts.
-
-
+out the fellow selling sea charts. Ballast
+Harbor is a pirate market, so I don't know
+exactly where it is to give directions...
 LEIGHA:
 Alright. So we've got the pirates looting the
 shrine out at Spruce Head, West of here, and
@@ -14007,14 +14027,14 @@ dialog{
   id = "_sycamore_ferry.signs.forest_of_tides",
   text = [[
 West - Goatshead
-East - Ballast Harbor Tunnel, Zephyr Bay
+East - Zephyr Bay
 ]],
 }
 
 dialog{
   id = "_sycamore_ferry.signs.forest_of_tides_2",
   text = [[
-South - Ballast Harbor Tunnel
+South - Tidal Tunnel
 East - Zephyr Bay
 Northwest - Goatshead
 ]],
@@ -14058,7 +14078,7 @@ South - Goatshead
 dialog{
   id = "_sycamore_ferry.signs.sycamore_ferry_1",
   text = [[
-East - Forest of Tides, Ballast Harbor Trail
+East - Forest of Tides
 South - Lotus Shoal, Limestone Island
 North - Goatshead Harbor
 ]],
@@ -18457,3 +18477,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+
