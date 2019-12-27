@@ -17559,6 +17559,7 @@ dialog{
 speaking with
 @Find a way into the Pirate Council's
 vault
+@Find Kelpton's charts
 @Return Kelpton's stolen sea charts
 @You received a key Mallow left with
 Kelpton
@@ -18455,4 +18456,3 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
-

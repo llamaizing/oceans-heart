@@ -29,7 +29,7 @@ function secret_keyhole:on_interaction()
           if game:get_value("quest_hourglass_fort") == 1 then
             game:set_value("quest_hourglass_fort", 2) --quest log
           end
-          game:set_value("quest_kelpton", 4) -- quest log
+          game:set_value("quest_kelpton", 5) -- quest log
 
       end
     end) --end of answer function
@@ -43,4 +43,3 @@ end
 function hourglass_bridge_switch:on_activated()
   map:open_doors("hourglass_door")
 end
-
