@@ -17448,6 +17448,15 @@ tile{
   pattern = "494",
 }
 
+tile{
+  layer = 0,
+  x = 392,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "1094",
+}
+
 wall{
   layer = 0,
   x = 48,
@@ -17857,6 +17866,16 @@ npc{
   subtype = 1,
   sprite = "npc/sitting_5",
   behavior = "dialog#_goatshead.npcs.crabhook.market_people.12",
+}
+
+npc{
+  name = "ballast_man",
+  layer = 0,
+  x = 400,
+  y = 237,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/sitting_7",
 }
 
 tile{

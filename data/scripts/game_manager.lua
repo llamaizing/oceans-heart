@@ -10,6 +10,7 @@ local quest_update_icon = require"scripts/menus/quest_update_icon"
 local objectives_manager = require"scripts/objectives_manager"
 local dash_manager = require"scripts/action/dash_manager"
 local map_banner = require"scripts/menus/map_banner"
+local world_map = require"scripts/world_map"
 
 local game_manager = {}
 
@@ -47,6 +48,9 @@ function game_manager:create(file_name, overwrite_game)
 
   --for the location banner on entering locations
   game.map_banner = map_banner
+
+  --allow accessing world_map script from game
+  game.world_map = world_map
 
   objectives_manager.create(game)
 

@@ -1484,7 +1484,7 @@ I don't get pirate vibes from you.
 }
 
 dialog{
-  id = "_fast_travel.location_goatshead",
+  id = "_fast_travel.location_goatshead_harbor",
   text = [[
 LILY:
 Hey, Tilia! We meet again. Just dropped a
@@ -1524,7 +1524,7 @@ all day.
 }
 
 dialog{
-  id = "_fast_travel.location_limestone",
+  id = "_fast_travel.location_limestone_island",
   text = [[
 LILY:
 Good to see you, Tilia. I just had a chat
@@ -1650,7 +1650,8 @@ $? No
 dialog{
   id = "_game.fast_travel_confirm",
   text = [[
-Are you sure you want to travel here?
+Are you sure you want to travel to the port at
+$v?
 $?Yes
 $?No
 ]],
@@ -2463,6 +2464,23 @@ Have you used monster bait before? Stones
 like this are perfect for setting bait out
 on, and then it lures out monsters. Check
 it out.
+]],
+}
+
+dialog{
+  id = "_goatshead.npcs.crabhook.market_people.ballast_man_1",
+  text = [[
+Yeah, I see that look. The market here in
+Crabhook is pretty sad. Not what you're
+necessarily looking for, right? You want
+to know where to find the good stuff, yeah?
+Well I'll let you in on a secret. Ballast
+Harbor, the pirate market? I know how to
+get there. It's on the down-low because,
+you know, it's full of pirates. But if you
+go Southeast, down to the Forest of Tides?
+There's a tunnel there that'll take you
+to Ballast Harbor.
 ]],
 }
 
@@ -4562,7 +4580,10 @@ THIEL:
 was also a ship with triangles on its sails.
 Come to think of it, they must have plundered
 Spruce Head Shrine. Might look for clues there.
-Spruce Head is Southwest, past Lotus Shoal.
+THIEL:
+Spruce Head is Southwest, past Lotus Shoal. You
+know what, let's add it to your map. You've seen 
+that in the pause menu, right?
 ]],
 }
 
@@ -4578,9 +4599,9 @@ Ballast Harbor about them. Seemed to hear
 something from a man selling sea charts. You
 might find a way to Ballast Harbor and seek
 THIESSON:
-out the fellow selling sea charts.
-
-
+out the fellow selling sea charts. Ballast
+Harbor is a pirate market, so I don't know
+exactly where it is to give directions...
 LEIGHA:
 Alright. So we've got the pirates looting the
 shrine out at Spruce Head, West of here, and
@@ -14006,14 +14027,14 @@ dialog{
   id = "_sycamore_ferry.signs.forest_of_tides",
   text = [[
 West - Goatshead
-East - Ballast Harbor Tunnel, Zephyr Bay
+East - Zephyr Bay
 ]],
 }
 
 dialog{
   id = "_sycamore_ferry.signs.forest_of_tides_2",
   text = [[
-South - Ballast Harbor Tunnel
+South - Tidal Tunnel
 East - Zephyr Bay
 Northwest - Goatshead
 ]],
@@ -14057,7 +14078,7 @@ South - Goatshead
 dialog{
   id = "_sycamore_ferry.signs.sycamore_ferry_1",
   text = [[
-East - Forest of Tides, Ballast Harbor Trail
+East - Forest of Tides
 South - Lotus Shoal, Limestone Island
 North - Goatshead Harbor
 ]],
@@ -14682,7 +14703,7 @@ to navigate there without issue.
 }
 
 dialog{
-  id = "_treasure.fast_travel_chart_goatshead.1",
+  id = "_treasure.fast_travel_chart_goatshead_harbor.1",
   text = [[
 You found a sea chart of Goatshead Harbor.
 This could be used to allow someone
@@ -14718,7 +14739,7 @@ to navigate there without issue.
 }
 
 dialog{
-  id = "_treasure.fast_travel_chart_limestone.1",
+  id = "_treasure.fast_travel_chart_limestone_island.1",
   text = [[
 You found a sea chart of Limestone Island.
 This could be used to allow someone
@@ -18456,3 +18477,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+

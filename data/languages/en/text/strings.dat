@@ -133,7 +133,7 @@ text{ key = "location.umber_lake", value = "Lake Umber"}
 text{ key = "location.veilwood", value = "The Veilwood" }
 text{ key = "location.west_coast", value = "West Oak" }
 text{ key = "location.yarrowmouth", value = "Yarrowmouth" }
-text{ key = "location.yarrowmouth_village", value = "Yarrowmouth" }
+text{ key = "location.yarrowmouth_village", value = "Yarrowmouth Village" }
 text{ key = "location.zephyr_bay", value = "Zephyr Bay" }
 text{ key = "menu.potion_expired", value = "Potion effect expired" }
 text{ key = "menu.quest_log.back_prompt", value = "D: Back" }

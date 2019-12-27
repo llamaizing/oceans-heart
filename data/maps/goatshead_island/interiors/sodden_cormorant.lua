@@ -45,6 +45,7 @@ function leigha:on_interaction()
       m1:start(thiel)
       function m1:on_finished()
         game:start_dialog("_goatshead.npcs.tavern_people.leigha.3", function()
+          game.world_map:set_map_visible("stonefell_crossroads/spruce_head") --make spruce head visible
           local m2 = sol.movement.create("path")
           m2:set_path{0,0}
           m2:start(thiesson)
@@ -53,6 +54,7 @@ function leigha:on_interaction()
               map:get_hero():unfreeze()
               game:set_value("quest_kelpton", 0) --quest log
               game:set_value("quest_spruce_head", 0) --quest log
+              game.world_map:set_map_visible("stonefell_crossroads/spruce_head")
             end)
           end
         end)
