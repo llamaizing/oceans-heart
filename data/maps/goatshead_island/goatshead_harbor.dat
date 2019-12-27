@@ -30991,6 +30991,160 @@ npc{
   sprite = "npc/lily/lily_sitting",
 }
 
+dynamic_tile{
+  name = "footprint",
+  layer = 0,
+  x = 656,
+  y = 264,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1696",
+}
+
+dynamic_tile{
+  name = "footprint_2",
+  layer = 0,
+  x = 680,
+  y = 304,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1695",
+}
+
+dynamic_tile{
+  name = "footprint_3",
+  layer = 0,
+  x = 792,
+  y = 288,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1695",
+}
+
+dynamic_tile{
+  name = "footprint_4",
+  layer = 0,
+  x = 1056,
+  y = 344,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1696",
+}
+
+dynamic_tile{
+  name = "footprint_5",
+  layer = 0,
+  x = 1048,
+  y = 480,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1696",
+}
+
+dynamic_tile{
+  name = "footprint_6",
+  layer = 0,
+  x = 912,
+  y = 560,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1697",
+}
+
+dynamic_tile{
+  name = "footprint_7",
+  layer = 0,
+  x = 824,
+  y = 680,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1696",
+}
+
+dynamic_tile{
+  name = "footprint_8",
+  layer = 0,
+  x = 720,
+  y = 712,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1697",
+}
+
+dynamic_tile{
+  name = "footprint_9",
+  layer = 0,
+  x = 552,
+  y = 656,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1697",
+}
+
+dynamic_tile{
+  name = "footprint_10",
+  layer = 0,
+  x = 488,
+  y = 584,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1694",
+}
+
+dynamic_tile{
+  name = "footprint_11",
+  layer = 0,
+  x = 448,
+  y = 480,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1697",
+}
+
+dynamic_tile{
+  name = "footprint_12",
+  layer = 0,
+  x = 288,
+  y = 456,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1697",
+}
+
+dynamic_tile{
+  name = "footprint_13",
+  layer = 0,
+  x = 176,
+  y = 472,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1697",
+}
+
+dynamic_tile{
+  name = "footprint_14",
+  layer = 0,
+  x = 128,
+  y = 424,
+  enabled_at_start = false,
+  width = 16,
+  height = 16,
+  pattern = "1694",
+}
+
 tile{
   layer = 1,
   x = 784,
