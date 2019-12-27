@@ -26,7 +26,7 @@ local locations = {
   {name = "snapmast", coordinates = {330, 52}, is_unlocked, map_id = "snapmast_reef/snapmast_landing"},
   {name = "oakhaven", coordinates = {118, 102}, is_unlocked, map_id = "oakhaven/port"},
   {name = "goatshead_harbor", coordinates = {262, 138}, is_unlocked, map_id = "goatshead_island/goatshead_harbor"},
-  {name = "isle_of_storms", coordinates = {378, 130}, is_unlocked, map_id = "isle_of_storms/isle_of_storms_landing"},
+  {name = "isle_of_storms", coordinates = {372, 116}, is_unlocked, map_id = "isle_of_storms/isle_of_storms_landing"},
   {name = "kingsdown", coordinates = {319, 109}, is_unlocked, map_id = "Yarrowmouth/kingsdown"},
   {name = "spruce_head", coordinates = {83, 158}, is_unlocked, map_id = "stonefell_crossroads/spruce_head"},
   {name = "limestone_island", coordinates = {250, 200}, is_unlocked, map_id = "new_limestone/limestone_present"},

@@ -121,7 +121,7 @@ map{ id = "demo_1/sw_lift_cave_interior", description = "Lift cave interior" }
 map{ id = "demo_1/test_town", description = "test town" }
 map{ id = "demo_1/test_town_2", description = "test town 2-limestone" }
 map{ id = "demo_1/testing_room", description = "testing room" }
-map{ id = "dev/world_map" }
+map{ id = "dev/world_map", description = "world_map" }
 map{ id = "dummy_cutscene/basswood", description = "Basswood" }
 map{ id = "goat_hill_new_test", description = "new goat hill test" }
 map{ id = "goatshead_island/ball_trail", description = "Ballast Trail" }
@@ -771,57 +771,58 @@ sprite{ id = "menus/inventory/life_half_stitch", description = "Life Half Stitch
 sprite{ id = "menus/inventory/life_stitch", description = "Life Stitch" }
 sprite{ id = "menus/inventory/magic_stitch", description = "Magic Stitch" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
-sprite{ id = "menus/maps/landmasses/ballast_harbor" }
-sprite{ id = "menus/maps/landmasses/crabhook" }
-sprite{ id = "menus/maps/landmasses/crow_island" }
-sprite{ id = "menus/maps/landmasses/goatshead_island" }
-sprite{ id = "menus/maps/landmasses/gull_rock" }
-sprite{ id = "menus/maps/landmasses/isle_of_storms" }
-sprite{ id = "menus/maps/landmasses/kingsdown_isle" }
-sprite{ id = "menus/maps/landmasses/landmass_mask" }
-sprite{ id = "menus/maps/landmasses/limestone_island" }
-sprite{ id = "menus/maps/landmasses/lobb_trail" }
-sprite{ id = "menus/maps/landmasses/lotus_shoal" }
-sprite{ id = "menus/maps/landmasses/oakhaven" }
-sprite{ id = "menus/maps/landmasses/snapmast_landing" }
-sprite{ id = "menus/maps/landmasses/snapmast_reef" }
-sprite{ id = "menus/maps/landmasses/spruce_head" }
-sprite{ id = "menus/maps/landmasses/stonefell_crossroads" }
-sprite{ id = "menus/maps/landmasses/sunken_palace" }
-sprite{ id = "menus/maps/landmasses/tern_marsh" }
-sprite{ id = "menus/maps/landmasses/yarrowmouth_island" }
-sprite{ id = "menus/maps/landmasses/zephyr_bay" }
-sprite{ id = "menus/maps/overworld_blank" }
+sprite{ id = "menus/maps/landmasses/ballast_harbor", description = "menus/maps/landmasses/ballast_harbor" }
+sprite{ id = "menus/maps/landmasses/crabhook", description = "menus/maps/landmasses/crabhook" }
+sprite{ id = "menus/maps/landmasses/crow_island", description = "menus/maps/landmasses/crow_island" }
+sprite{ id = "menus/maps/landmasses/goatshead_island", description = "menus/maps/landmasses/goatshead_island" }
+sprite{ id = "menus/maps/landmasses/gull_rock", description = "menus/maps/landmasses/gull_rock" }
+sprite{ id = "menus/maps/landmasses/isle_of_storms", description = "menus/maps/landmasses/isle_of_storms" }
+sprite{ id = "menus/maps/landmasses/kingsdown_isle", description = "menus/maps/landmasses/kingsdown_isle" }
+sprite{ id = "menus/maps/landmasses/landmass_mask", description = "menus/maps/landmasses/landmass_mask" }
+sprite{ id = "menus/maps/landmasses/limestone_island", description = "menus/maps/landmasses/limestone_island" }
+sprite{ id = "menus/maps/landmasses/lobb_trail", description = "menus/maps/landmasses/lobb_trail" }
+sprite{ id = "menus/maps/landmasses/lotus_shoal", description = "menus/maps/landmasses/lotus_shoal" }
+sprite{ id = "menus/maps/landmasses/oakhaven", description = "menus/maps/landmasses/oakhaven" }
+sprite{ id = "menus/maps/landmasses/snapmast_landing", description = "menus/maps/landmasses/snapmast_landing" }
+sprite{ id = "menus/maps/landmasses/snapmast_reef", description = "menus/maps/landmasses/snapmast_reef" }
+sprite{ id = "menus/maps/landmasses/spruce_head", description = "menus/maps/landmasses/spruce_head" }
+sprite{ id = "menus/maps/landmasses/stonefell_crossroads", description = "menus/maps/landmasses/stonefell_crossroads" }
+sprite{ id = "menus/maps/landmasses/sunken_palace", description = "menus/maps/landmasses/sunken_palace" }
+sprite{ id = "menus/maps/landmasses/tern_marsh", description = "menus/maps/landmasses/tern_marsh" }
+sprite{ id = "menus/maps/landmasses/yarrowmouth_island", description = "menus/maps/landmasses/yarrowmouth_island" }
+sprite{ id = "menus/maps/landmasses/zephyr_bay", description = "menus/maps/landmasses/zephyr_bay" }
+sprite{ id = "menus/maps/overworld_blank", description = "menus/maps/overworld_blank" }
 sprite{ id = "menus/maps/port_rune", description = "Port Rune" }
-sprite{ id = "menus/maps/roads/ballast_harbor" }
-sprite{ id = "menus/maps/roads/crabhook" }
-sprite{ id = "menus/maps/roads/crow_island" }
-sprite{ id = "menus/maps/roads/goatshead_island" }
-sprite{ id = "menus/maps/roads/gull_rock" }
-sprite{ id = "menus/maps/roads/limestone" }
-sprite{ id = "menus/maps/roads/lotus_shoal" }
-sprite{ id = "menus/maps/roads/oakhaven" }
-sprite{ id = "menus/maps/roads/snapmast_landing" }
-sprite{ id = "menus/maps/roads/snapmast_reef" }
-sprite{ id = "menus/maps/roads/spruce_head" }
-sprite{ id = "menus/maps/roads/stonefell_crossroads" }
-sprite{ id = "menus/maps/roads/tern_marsh" }
-sprite{ id = "menus/maps/roads/yarrowmouth_island" }
-sprite{ id = "menus/maps/roads/zephyr_bay" }
-sprite{ id = "menus/maps/text/ballast_harbor" }
-sprite{ id = "menus/maps/text/crabhook" }
-sprite{ id = "menus/maps/text/fort_crow" }
-sprite{ id = "menus/maps/text/goatshead" }
-sprite{ id = "menus/maps/text/ivystump" }
-sprite{ id = "menus/maps/text/kingsdown_isle" }
-sprite{ id = "menus/maps/text/limestone" }
-sprite{ id = "menus/maps/text/lotus_shoal" }
-sprite{ id = "menus/maps/text/marblecliff" }
-sprite{ id = "menus/maps/text/oakhaven" }
-sprite{ id = "menus/maps/text/oakport" }
-sprite{ id = "menus/maps/text/snapmast_reef" }
-sprite{ id = "menus/maps/text/spruce_head" }
-sprite{ id = "menus/maps/text/yarrowmouth" }
+sprite{ id = "menus/maps/roads/ballast_harbor", description = "menus/maps/roads/ballast_harbor" }
+sprite{ id = "menus/maps/roads/crabhook", description = "menus/maps/roads/crabhook" }
+sprite{ id = "menus/maps/roads/crow_island", description = "menus/maps/roads/crow_island" }
+sprite{ id = "menus/maps/roads/goatshead_island", description = "menus/maps/roads/goatshead_island" }
+sprite{ id = "menus/maps/roads/gull_rock", description = "menus/maps/roads/gull_rock" }
+sprite{ id = "menus/maps/roads/limestone", description = "menus/maps/roads/limestone" }
+sprite{ id = "menus/maps/roads/lotus_shoal", description = "menus/maps/roads/lotus_shoal" }
+sprite{ id = "menus/maps/roads/oakhaven", description = "menus/maps/roads/oakhaven" }
+sprite{ id = "menus/maps/roads/snapmast_landing", description = "menus/maps/roads/snapmast_landing" }
+sprite{ id = "menus/maps/roads/snapmast_reef", description = "menus/maps/roads/snapmast_reef" }
+sprite{ id = "menus/maps/roads/spruce_head", description = "menus/maps/roads/spruce_head" }
+sprite{ id = "menus/maps/roads/stonefell_crossroads", description = "menus/maps/roads/stonefell_crossroads" }
+sprite{ id = "menus/maps/roads/tern_marsh", description = "menus/maps/roads/tern_marsh" }
+sprite{ id = "menus/maps/roads/yarrowmouth_island", description = "menus/maps/roads/yarrowmouth_island" }
+sprite{ id = "menus/maps/roads/zephyr_bay", description = "menus/maps/roads/zephyr_bay" }
+sprite{ id = "menus/maps/text/ballast_harbor", description = "menus/maps/text/ballast_harbor" }
+sprite{ id = "menus/maps/text/crabhook", description = "menus/maps/text/crabhook" }
+sprite{ id = "menus/maps/text/fort_crow", description = "menus/maps/text/fort_crow" }
+sprite{ id = "menus/maps/text/goatshead", description = "Goatshead" }
+sprite{ id = "menus/maps/text/isle_of_storms", description = "Isle of Storms" }
+sprite{ id = "menus/maps/text/ivystump", description = "menus/maps/text/ivystump" }
+sprite{ id = "menus/maps/text/kingsdown_isle", description = "menus/maps/text/kingsdown_isle" }
+sprite{ id = "menus/maps/text/limestone", description = "menus/maps/text/limestone" }
+sprite{ id = "menus/maps/text/lotus_shoal", description = "menus/maps/text/lotus_shoal" }
+sprite{ id = "menus/maps/text/marblecliff", description = "menus/maps/text/marblecliff" }
+sprite{ id = "menus/maps/text/oakhaven", description = "menus/maps/text/oakhaven" }
+sprite{ id = "menus/maps/text/oakport", description = "menus/maps/text/oakport" }
+sprite{ id = "menus/maps/text/snapmast_reef", description = "menus/maps/text/snapmast_reef" }
+sprite{ id = "menus/maps/text/spruce_head", description = "menus/maps/text/spruce_head" }
+sprite{ id = "menus/maps/text/yarrowmouth", description = "menus/maps/text/yarrowmouth" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/slider", description = "slider" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
@@ -1629,11 +1630,13 @@ item{ id = "empty", description = "test" }
 item{ id = "ether_bombs", description = "Ether Bombs" }
 item{ id = "ether_bombs_pickable", description = "EtherBombsPickable-1.3.5.10" }
 item{ id = "fast_travel_chart_ballast_harbor", description = "Fast Travel Chart Ballast Harbor" }
-item{ id = "fast_travel_chart_goatshead_harbor", description = "Fast Travel Chart Goatshead" }
+item{ id = "fast_travel_chart_goatshead", description = "Fast Travel Chart Goatshead" }
+item{ id = "fast_travel_chart_goatshead_harbor", description = "FTC-Goatshead" }
 item{ id = "fast_travel_chart_isle_of_storms", description = "Fast Travel Chart Isle of Storms" }
 item{ id = "fast_travel_chart_ivystump", description = "Fast Travel Chart Ivystump" }
 item{ id = "fast_travel_chart_kingsdown", description = "FTC Kingsdown" }
-item{ id = "fast_travel_chart_limestone_island", description = "Fast Travel Chart Limestone" }
+item{ id = "fast_travel_chart_limestone", description = "Fast Travel Chart Limestone" }
+item{ id = "fast_travel_chart_limestone_island", description = "FTC-Limestone" }
 item{ id = "fast_travel_chart_oakhaven", description = "Fast Travel Chart Oakhaven" }
 item{ id = "fast_travel_chart_snapmast", description = "FTC Snapmast" }
 item{ id = "fast_travel_chart_spruce_head", description = "Fast Travel Chart Spruce Head" }
