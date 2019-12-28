@@ -14080,7 +14080,7 @@ dialog{
   text = [[
 East - Forest of Tides
 South - Lotus Shoal, Limestone Island
-North - Goatshead Harbor
+North - Goatshead Harbor, Stonefell Crossroads
 ]],
 }
 
@@ -14090,6 +14090,16 @@ dialog{
 West - Lotus Shoal, Spruce Head
 South - Limestone Island
 East - Goatshead Harbor, Forest of Tides
+]],
+}
+
+dialog{
+  id = "_sycamore_ferry.signs.sycamore_ferry_3",
+  text = [[
+North: Stonefell Crossroads, to Yarrowmouth
+and Oakhaven
+South: Forest of Tides, Lotus Shoal
+East: Goatshead Harbor
 ]],
 }
 

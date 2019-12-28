@@ -40173,6 +40173,25 @@ tile{
   pattern = "150_2",
 }
 
+tile{
+  layer = 0,
+  x = 960,
+  y = 1152,
+  width = 16,
+  height = 8,
+  pattern = "249",
+  tileset = "oceanheart_outdoors_1",
+}
+
+sensor{
+  name = "lily_attack_sensor_2",
+  layer = 0,
+  x = 816,
+  y = 1413,
+  width = 16,
+  height = 144,
+}
+
 sensor{
   name = "ferry_south_sensor",
   layer = 0,
@@ -40748,7 +40767,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 968,
+  x = 952,
   y = 1165,
   sprite = "entities/bush_summergrass",
   can_be_cut = true,
@@ -41405,8 +41424,8 @@ wall{
 
 enemy{
   layer = 0,
-  x = 936,
-  y = 1165,
+  x = 920,
+  y = 1149,
   direction = 0,
   breed = "normal_enemies/triangle_crab_red",
 }
@@ -41747,15 +41766,6 @@ sensor{
   height = 128,
 }
 
-sensor{
-  name = "lily_attack_sensor_2",
-  layer = 0,
-  x = 816,
-  y = 1413,
-  width = 16,
-  height = 144,
-}
-
 npc{
   layer = 0,
   x = 168,
@@ -41790,6 +41800,15 @@ wall{
   width = 8,
   height = 32,
   stops_enemies = true,
+}
+
+npc{
+  layer = 0,
+  x = 968,
+  y = 1157,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_sycamore_ferry.signs.sycamore_ferry_3",
 }
 
 tile{
@@ -44931,6 +44950,26 @@ tile{
   layer = 1,
   x = 160,
   y = 1568,
+  width = 16,
+  height = 16,
+  pattern = "1571",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 960,
+  y = 1128,
+  width = 16,
+  height = 24,
+  pattern = "250",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 960,
+  y = 1144,
   width = 16,
   height = 16,
   pattern = "1571",

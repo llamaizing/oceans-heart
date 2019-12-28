@@ -24755,7 +24755,7 @@ sensor{
   name = "^save_solid_ground_sensor_9",
   layer = 0,
   x = 200,
-  y = 669,
+  y = 685,
   width = 32,
   height = 16,
 }
@@ -26316,7 +26316,7 @@ custom_entity{
   name = "rock_pile_4",
   layer = 0,
   x = 208,
-  y = 653,
+  y = 669,
   width = 32,
   height = 16,
   origin_x = 16,
@@ -29542,6 +29542,24 @@ door{
   direction = 3,
   sprite = "entities/door_post_stone",
   savegame_variable = "pirate_vault_c8_door",
+}
+
+npc{
+  layer = 0,
+  x = 1328,
+  y = 797,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_ballast_harbor.observations.council_book.3",
+}
+
+npc{
+  layer = 0,
+  x = 1376,
+  y = 797,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_ballast_harbor.observations.council_book.2",
 }
 
 tile{
