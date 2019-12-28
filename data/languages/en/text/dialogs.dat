@@ -4582,7 +4582,7 @@ Come to think of it, they must have plundered
 Spruce Head Shrine. Might look for clues there.
 THIEL:
 Spruce Head is Southwest, past Lotus Shoal. You
-know what, let's add it to your map. You've seen 
+know what, let's add it to your map. You've seen
 that in the pause menu, right?
 ]],
 }
@@ -17588,9 +17588,8 @@ dialog{
 ##Someone saw Mallow in Ballast Harbor.
 @Talk to the Chart Salesman he was
 speaking with
-@Find a way into the Pirate Council's
-vault
-@Find Kelpton's charts
+@Enter the Pirate Council's Vault
+@!Find Kelpton's charts
 @Return Kelpton's stolen sea charts
 @You received a key Mallow left with
 Kelpton
@@ -18487,4 +18486,3 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
-

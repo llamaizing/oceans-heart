@@ -42,7 +42,7 @@ item:register_event("on_using", function(self)
     summoning_state:set_can_pick_treasure(false)
     hero:start_state(summoning_state)
 
-    local lightning_damage = game:get_value"sword_damage" * item:get_variant() * 1.5
+    local lightning_damage = 5 * item:get_variant() * 1.5
 
     hero:set_animation("charging")
     sol.audio.play_sound("charge_1")
