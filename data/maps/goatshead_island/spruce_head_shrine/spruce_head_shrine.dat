@@ -46109,6 +46109,24 @@ tile{
   pattern = "14",
 }
 
+tile{
+  layer = 0,
+  x = 816,
+  y = 832,
+  width = 32,
+  height = 16,
+  pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 832,
+  width = 16,
+  height = 16,
+  pattern = "61",
+}
+
 wall{
   name = "boss_wall_4",
   layer = 0,
@@ -48908,7 +48926,7 @@ tile{
   layer = 1,
   x = 800,
   y = 816,
-  width = 32,
+  width = 16,
   height = 48,
   pattern = "61",
 }
@@ -50047,15 +50065,6 @@ tile{
   height = 24,
   pattern = "1626",
   tileset = "oceanheart_outdoors_1",
-}
-
-tile{
-  layer = 1,
-  x = 400,
-  y = 832,
-  width = 16,
-  height = 16,
-  pattern = "61",
 }
 
 tile{
@@ -53596,9 +53605,9 @@ sensor{
 dynamic_tile{
   name = "^invisible_stairs_4",
   layer = 1,
-  x = 832,
+  x = 816,
   y = 832,
-  width = 16,
+  width = 32,
   height = 16,
   pattern = "invisible_stairs",
   tileset = "misc",

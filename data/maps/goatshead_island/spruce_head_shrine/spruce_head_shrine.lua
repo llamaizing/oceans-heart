@@ -66,7 +66,7 @@ for switch in map:get_entities"b1_switch" do
     map:open_doors"b1_door"
     sol.timer.start(map, 200, function()
       for other_switch in map:get_entities"b1_switch" do
-        if not other_switch:is_activated() then
+        if not other_switch:is_activated() and game:get_value("ssh_b1_door") == nil then
           switch:set_activated(false)
           map:close_doors"b1_door"
         end

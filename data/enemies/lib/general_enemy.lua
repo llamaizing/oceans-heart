@@ -309,7 +309,9 @@ function behavior:create(enemy, properties)
           attack_sprite:set_direction(direction)
           enemy:set_invincible_sprite(attack_sprite)
           enemy:set_attack_consequence_sprite(attack_sprite, "sword", "protected")
-          sol.timer.start(enemy, 1000, function() enemy:remove_sprite(attack_sprite) end)
+          sol.timer.start(enemy, 1000, function()
+            if attack_sprite then enemy:remove_sprite(attack_sprite) end
+          end)
         end
       end
       enemy:wrap_up_attack()

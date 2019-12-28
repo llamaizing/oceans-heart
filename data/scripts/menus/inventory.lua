@@ -299,7 +299,7 @@ function inventory:on_command_pressed(command)
         if all_equipment_items[cursor_index + 1] ~= nil
         and all_equipment_items[cursor_index + 1].assignable == false then
             local item = self:get_item_at_current_index()
-            item:on_using()
+            if item then item:on_using() end
             inventory:initialize(game)
             --use the item
         end
