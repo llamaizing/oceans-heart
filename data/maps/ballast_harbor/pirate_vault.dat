@@ -23739,6 +23739,7 @@ destination{
   x = 1040,
   y = 1037,
   direction = 3,
+  starting_location_mode = "no",
 }
 
 destination{
@@ -23747,6 +23748,7 @@ destination{
   x = 2816,
   y = 1597,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 teletransporter{
