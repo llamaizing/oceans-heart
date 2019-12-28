@@ -56610,6 +56610,15 @@ tile{
 }
 
 sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 24,
+  y = 621,
+  width = 16,
+  height = 16,
+}
+
+sensor{
   name = "^layer_up_sensor",
   layer = 0,
   x = 1272,
