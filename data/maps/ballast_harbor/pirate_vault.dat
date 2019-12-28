@@ -9238,9 +9238,9 @@ tile{
 tile{
   layer = 0,
   x = 720,
-  y = 848,
+  y = 816,
   width = 80,
-  height = 48,
+  height = 80,
   pattern = "33",
 }
 
@@ -9266,7 +9266,7 @@ tile{
   layer = 0,
   x = 272,
   y = 784,
-  width = 448,
+  width = 544,
   height = 32,
   pattern = "42",
   tileset = "vault_walls",
@@ -9284,20 +9284,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 736,
-  y = 816,
-  width = 64,
-  height = 32,
-  pattern = "42",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
   x = 800,
-  y = 848,
+  y = 816,
   width = 32,
-  height = 64,
+  height = 96,
   pattern = "43",
   tileset = "vault_walls",
 }
@@ -9306,7 +9296,7 @@ tile{
   layer = 0,
   x = 736,
   y = 896,
-  width = 64,
+  width = 96,
   height = 32,
   pattern = "44",
   tileset = "vault_walls",
@@ -9374,28 +9364,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 720,
-  y = 784,
-  width = 32,
-  height = 32,
-  pattern = "2",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
-  x = 720,
-  y = 816,
-  width = 32,
-  height = 32,
-  pattern = "16",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
   x = 800,
-  y = 816,
+  y = 784,
   width = 32,
   height = 32,
   pattern = "2",
@@ -9485,7 +9455,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 864,
+  y = 832,
   width = 64,
   height = 16,
   pattern = "33",
@@ -9494,7 +9464,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 864,
+  y = 832,
   width = 32,
   height = 16,
   pattern = "27",
@@ -9503,7 +9473,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 856,
+  y = 824,
   width = 32,
   height = 8,
   pattern = "25",
@@ -9512,7 +9482,7 @@ tile{
 tile{
   layer = 0,
   x = 800,
-  y = 880,
+  y = 848,
   width = 32,
   height = 8,
   pattern = "26",
@@ -9521,7 +9491,7 @@ tile{
 tile{
   layer = 0,
   x = 832,
-  y = 856,
+  y = 824,
   width = 32,
   height = 8,
   pattern = "28",
@@ -9530,7 +9500,7 @@ tile{
 tile{
   layer = 0,
   x = 832,
-  y = 864,
+  y = 832,
   width = 32,
   height = 16,
   pattern = "30",
@@ -9539,7 +9509,7 @@ tile{
 tile{
   layer = 0,
   x = 832,
-  y = 880,
+  y = 848,
   width = 32,
   height = 8,
   pattern = "29",
@@ -14076,16 +14046,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 712,
-  y = 824,
-  width = 8,
-  height = 32,
-  pattern = "36",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
   x = 456,
   y = 840,
   width = 80,
@@ -14107,7 +14067,7 @@ tile{
 tile{
   layer = 0,
   x = 712,
-  y = 848,
+  y = 816,
   width = 80,
   height = 8,
   pattern = "34",
@@ -14117,9 +14077,9 @@ tile{
 tile{
   layer = 0,
   x = 792,
-  y = 856,
+  y = 824,
   width = 8,
-  height = 32,
+  height = 64,
   pattern = "36",
   tileset = "vault_walls",
 }
@@ -14206,16 +14166,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 712,
-  y = 816,
-  width = 8,
-  height = 8,
-  pattern = "35",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
   x = 448,
   y = 840,
   width = 8,
@@ -14236,18 +14186,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 712,
-  y = 848,
-  width = 8,
-  height = 8,
-  pattern = "35",
-  tileset = "vault_walls",
-}
-
-tile{
-  layer = 0,
   x = 792,
-  y = 848,
+  y = 816,
   width = 8,
   height = 8,
   pattern = "35",
@@ -23905,7 +23845,7 @@ door{
   name = "hub_room_door",
   layer = 0,
   x = 848,
-  y = 864,
+  y = 832,
   direction = 0,
   sprite = "entities/door_shutter",
   savegame_variable = "ballast_pirate_vault_hub_room_door_state",
@@ -32789,7 +32729,7 @@ tile{
 tile{
   layer = 1,
   x = 832,
-  y = 856,
+  y = 824,
   width = 16,
   height = 32,
   pattern = "32",
@@ -32798,7 +32738,7 @@ tile{
 tile{
   layer = 1,
   x = 816,
-  y = 856,
+  y = 824,
   width = 16,
   height = 32,
   pattern = "31",
