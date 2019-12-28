@@ -1,6 +1,6 @@
 --[[ line2path.lua
-	version 0.1a1
-	22 Dec 2019
+	version 1.0
+	27 Dec 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -19,9 +19,17 @@
 	
 	Usage:
 	local line2path = require"scripts/line2path"
-	line2path(file_path_to_png)
+	local path_data = line2path(img_file_path)
 ]]
 
+--// Searches the given image file for a pixel matching the START_COLOR, then a continuous
+--// line matching the PATH_COLOR, ending with the STOP_COLOR and returns the path data.
+	--file_path (string) - path to the image file to use
+	--returns (table, combo) indices as sequence of directions to go from the start to end
+		--start_x & start_y keys (number, non-negative integer) coordinates of start pixel
+		--end_x & end_y keys (number, non-negative integer) coordinates of end pixel
+	--NOTE: There must be exactly one pixel of the start color, and the line's path cannot
+	--cross itself.
 return function(file_path)
 	assert(type(file_path)=="string", "Bad argument #1 to 'line2path' (string expected)")
 	
@@ -30,25 +38,26 @@ return function(file_path)
 	local START_COLOR = {0, 255, 0, 255} --pixel color at the beginning of the path
 	local STOP_COLOR = {255, 0, 0, 255} --pixels' color along the path
 	local PATH_COLOR = {0, 0, 255, 255} --pixel color at the end of the path
-	local BYTES = {
+	local BYTES = { --convert solarus colors to sequences of 4 RGBA bytes and use as keys
 		[string.char(unpack(START_COLOR))] = "start",
 		[string.char(unpack(STOP_COLOR))] = "stop",
 		[string.char(unpack(PATH_COLOR))] = "path",
 	}
 	
-	local surface = sol.surface.create(file_path)
+	local surface = sol.surface.create(file_path) --source image
 	local width, height = surface:get_size()
 	local pixels = surface:get_pixels()
-	local length = pixels:len()
+	local length = pixels:len() --4 bytes for each pixel
 	
 	
 	--## Convert pixels string bytes to table
 	
 	local data = {} --index = (row - 1)*(col - 1)
-	local index = 0
-	local start_count = 0
-	local start_index
+	local index = 0 --index 0 corresponds top left pixel
+	local start_count = 0 --keep track of number of pixels found matching start color (expect exactly one)
+	local start_index --index value corresponding to the start pixel
 	
+	--iterate thru each pixel of image and save info to data table
 	for i=1,length,4 do
 		local pixel_bytes = pixels:sub(i,i+3) --grabs next 4 bytes
 		local marker = BYTES[pixel_bytes]
@@ -70,11 +79,11 @@ return function(file_path)
 	
 	local seen_list = {} --list of indicies already checked
 	local path = {
-		x = math.floor(start_index / width) + 1,
-		y = (start_index % width) + 1,
+		start_x = (start_index % width) + 1, --add 1 to convert from 0-based to 1-based
+		start_y = math.floor(start_index / width) + 1,
 	}
 	
-	--// seeks and returns index of next pixel along path given current index
+	--// seeks and returns index of next pixel along path given current index (recursive)
 		--index (number, non-negative integer) - the current pixel along the path
 		--return #1 (number, non-negative integer or false) - the next index along the path
 			--false when the end of the path has been found
@@ -82,27 +91,32 @@ return function(file_path)
 			--0 east, 1 NE, 2 north, 3 NW, 4 west, 5 SW, 6 south, 7 SE
 			--no return if the first return is false
 	local function find_next(index)
-		if data[index] == "stop" then return false end --stop pixel found, end of path
+		if data[index] == "stop" then --stop pixel found, end of path
+			path.end_x = (start_index % width) + 1 --add 1 to convert from 0-based to 1-based
+			path.end_y = math.floor(start_index / width) + 1
+			return false --exit loop
+		end
+		
 		seen_list[index] = true --mark current pixel as checked
 		
 		local col = index % width
-		local is_left = col==0
-		local is_right = col==width-1
-		local is_top = index<width
-		local is_bottom = index>=width*(height-1)
-		local tmp_index
-		local next_index
+		local is_left = col==0 --true if pixel is along left edge of image
+		local is_right = col==width-1 --true if pixel is on right edge
+		local is_top = index<width --true if pixel is along top edge
+		local is_bottom = index>=width*(height-1) --true if pixel is along bottom edge
+		local adjacent_index --check each adjacent pixel, save each index temporarily
+		local next_index --keep track of the index of the next pixel along path
 		local next_dir --0 east, 1 NE, 2 north, 3 NW, 4 west, 5 SW, 6 south, 7 SE
-		local next_count = 0
+		local next_count = 0 --keep track of number of new path pixels connected to current (expect exactly one)
 		
 		
 		--## Check non-diagonals first
 		
 		--check pixel above
 		if not is_top then --pixel above doesn't exist if on top row
-			tmp_index = index - width
-			if not seen_list[tmp_index] and data[tmp_index] then --pixel above is either path or stop color
-				next_index = tmp_index
+			adjacent_index = index - width
+			if not seen_list[adjacent_index] and data[adjacent_index] then --pixel above is either path or stop color
+				next_index = adjacent_index
 				next_dir = 2
 				next_count = next_count + 1
 			end
@@ -110,9 +124,9 @@ return function(file_path)
 		
 		--check pixel to right
 		if not is_right then --pixel to right doesn't exist in right-most column
-			tmp_index = index + 1
-			if not seen_list[tmp_index] and data[tmp_index] then --pixel to right is either path or stop color
-				next_index = tmp_index
+			adjacent_index = index + 1
+			if not seen_list[adjacent_index] and data[adjacent_index] then --pixel to right is either path or stop color
+				next_index = adjacent_index
 				next_dir = 0
 				next_count = next_count + 1
 			end
@@ -120,9 +134,9 @@ return function(file_path)
 		
 		--check pixel below
 		if not is_bottom then --pixel below doesn't exist if on bottom row
-			tmp_index = index + width
-			if not seen_list[tmp_index] and data[tmp_index] then --pixel below is either path or stop color
-				next_index = tmp_index
+			adjacent_index = index + width
+			if not seen_list[adjacent_index] and data[adjacent_index] then --pixel below is either path or stop color
+				next_index = adjacent_index
 				next_dir = 6
 				next_count = next_count + 1
 			end
@@ -130,9 +144,9 @@ return function(file_path)
 		
 		--check pixel to left
 		if not is_right then --pixel to left doesn't exist in left-most column
-			tmp_index = index - 1
-			if not seen_list[tmp_index] and data[tmp_index] then --pixel to left is either path or stop color
-				next_index = tmp_index
+			adjacent_index = index - 1
+			if not seen_list[adjacent_index] and data[adjacent_index] then --pixel to left is either path or stop color
+				next_index = adjacent_index
 				next_dir = 4
 				next_count = next_count + 1
 			end
@@ -146,9 +160,9 @@ return function(file_path)
 		
 		--check upper-left pixel
 		if not is_top or not is_left then --pixel to upper-left doesn't exist if in top-left corner
-			tmp_index = index - width - 1
-			if not seen_list[tmp_index] and data[tmp_index] then --pixel to upper-left is either path or stop color
-				next_index = tmp_index
+			adjacent_index = index - width - 1
+			if not seen_list[adjacent_index] and data[adjacent_index] then --pixel to upper-left is either path or stop color
+				next_index = adjacent_index
 				next_dir = 3
 				next_count = next_count + 1
 			end
@@ -156,9 +170,9 @@ return function(file_path)
 		
 		--check upper-right pixel
 		if not is_top or not is_right then --pixel to upper-right doesn't exist if in top-right corner
-			tmp_index = index - width + 1
-			if not seen_list[tmp_index] and data[tmp_index] then --pixel to upper-right is either path or stop color
-				next_index = tmp_index
+			adjacent_index = index - width + 1
+			if not seen_list[adjacent_index] and data[adjacent_index] then --pixel to upper-right is either path or stop color
+				next_index = adjacent_index
 				next_dir = 1
 				next_count = next_count + 1
 			end
@@ -166,9 +180,9 @@ return function(file_path)
 		
 		--check lower-right pixel
 		if not is_bottom or not is_right then --pixel to lower-right doesn't exist if in bottom-right corner
-			tmp_index = index + width + 1
-			if not seen_list[tmp_index] and data[tmp_index] then --pixel to lower-right is either path or stop color
-				next_index = tmp_index
+			adjacent_index = index + width + 1
+			if not seen_list[adjacent_index] and data[adjacent_index] then --pixel to lower-right is either path or stop color
+				next_index = adjacent_index
 				next_dir = 7
 				next_count = next_count + 1
 			end
@@ -176,9 +190,9 @@ return function(file_path)
 		
 		--check lower-left pixel
 		if not is_bottom or not is_right then --pixel to lower-left doesn't exist if in bottom-left corner
-			tmp_index = index + width - 1
-			if not seen_list[tmp_index] and data[tmp_index] then --pixel to lower-left is either path or stop color
-				next_index = tmp_index
+			adjacent_index = index + width - 1
+			if not seen_list[adjacent_index] and data[adjacent_index] then --pixel to lower-left is either path or stop color
+				next_index = adjacent_index
 				next_dir = 5
 				next_count = next_count + 1
 			end
@@ -190,11 +204,11 @@ return function(file_path)
 		return next_index, next_dir
 	end
 	
-	index = start_index
+	index = start_index --starting pixel
 	local direction
 	while index do
 		index, direction = find_next(index)
-		path[#path+1] = direction --may be nil
+		path[#path+1] = direction --direction may be nil (at end pixel)
 	end
 	
 	return path
