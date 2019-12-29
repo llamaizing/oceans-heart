@@ -19645,7 +19645,7 @@ tile{
 tile{
   layer = 0,
   x = 720,
-  y = 48,
+  y = 56,
   width = 16,
   height = 16,
   pattern = "1094",
@@ -19655,7 +19655,7 @@ tile{
 tile{
   layer = 0,
   x = 704,
-  y = 48,
+  y = 56,
   width = 16,
   height = 16,
   pattern = "1094",
