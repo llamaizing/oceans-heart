@@ -40980,6 +40980,7 @@ chest{
   y = 1037,
   treasure_name = "ghost_orchid",
   treasure_variant = 2,
+  treasure_savegame_variable = "tern_marsh_ghost_orchids_chest",
   sprite = "entities/chest",
 }
 
@@ -41344,6 +41345,15 @@ teletransporter{
   transition = "scrolling",
   destination_map = "Yarrowmouth/kingsdown",
   destination = "_side",
+}
+
+sensor{
+  name = "^map_banner_sensor_4",
+  layer = 0,
+  x = 1272,
+  y = 805,
+  width = 16,
+  height = 96,
 }
 
 tile{
