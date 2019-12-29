@@ -133,6 +133,7 @@ function map_meta:helicopter_cam()
   local hero = map:get_hero()
   local game = map:get_game()
   game.helicopter_cam = true
+  game:get_hud():set_enabled(false)
   local state = sol.state.create()
   state:set_can_control_movement(true)
   state:set_visible(false)
@@ -154,6 +155,7 @@ function map_meta:exit_helicopter_cam()
   local hero = map:get_hero()
   local game = map:get_game()
   game.helicopter_cam = false
+  game:get_hud():set_enabled(true)
   hero:unfreeze()
 end
 
