@@ -17515,6 +17515,8 @@ dialog{
   text = [[
 #Hazel and Dad went to Oakhaven.
 @Investigate Oakhaven
+!The island lies in the
+!Northwest part of the sea
 @Search town for Hazel
 !
 !You were told to ask a man selling
