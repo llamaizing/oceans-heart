@@ -822,7 +822,9 @@ sprite{ id = "menus/maps/text/oakhaven", description = "menus/maps/text/oakhaven
 sprite{ id = "menus/maps/text/oakport", description = "menus/maps/text/oakport" }
 sprite{ id = "menus/maps/text/snapmast_reef", description = "menus/maps/text/snapmast_reef" }
 sprite{ id = "menus/maps/text/spruce_head", description = "menus/maps/text/spruce_head" }
+sprite{ id = "menus/maps/text/tern_marsh", description = "Tern Marsh" }
 sprite{ id = "menus/maps/text/yarrowmouth", description = "menus/maps/text/yarrowmouth" }
+sprite{ id = "menus/maps/text/zephyr_bay", description = "Zephyr Bay" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/slider", description = "slider" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
