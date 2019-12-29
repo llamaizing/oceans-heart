@@ -21,7 +21,6 @@ function hero_meta:on_taking_damage(damage)
   and game:get_life() >= game:get_max_life() * .4
   and damage >= game:get_max_life() * .6
   and not game.guts_save_used then
-print("saved you, xoxo, guts stat")
     --leave you with half a heart
     damage = game:get_life() - 1
     game:get_map():get_camera():shake()
