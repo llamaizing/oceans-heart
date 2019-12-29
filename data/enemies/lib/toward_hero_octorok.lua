@@ -163,16 +163,14 @@ local can_shoot = true
   function enemy:on_restarted()
 	  local map = self:get_map()
 	  local hero = map:get_hero()
-    local _, _, layer = self:get_position()
-    local _, _, hero_layer = hero:get_position()
     self:go_random()
     self:check_hero()
 	  can_shoot = true
 
 	  sol.timer.start(enemy, 100, function()
 
-			local hero_x, hero_y = hero:get_position()
-			local x, y = enemy:get_center_position()
+			local hero_x, hero_y, hero_layer = hero:get_position()
+			local x, y, layer = enemy:get_center_position()
       local aligned
 
 			if can_shoot == true then
