@@ -25,7 +25,7 @@ item:register_event("on_obtained", function(self, variant, savegame_variable)
 end)
 
 item:register_event("on_using", function(self)
-  MAGIC_COST = 40 + item:get_variant() * 5
+  MAGIC_COST = 85
   if game:get_magic() < MAGIC_COST then sol.audio.play_sound("no") item:set_finished()
   else
     game:remove_magic(MAGIC_COST)
@@ -42,7 +42,7 @@ item:register_event("on_using", function(self)
     summoning_state:set_can_pick_treasure(false)
     hero:start_state(summoning_state)
 
-    local lightning_damage = 5 * item:get_variant() * 1.5
+    local lightning_damage = 5 + (item:get_variant() * 3)
 
     hero:set_animation("charging")
     sol.audio.play_sound("charge_1")
