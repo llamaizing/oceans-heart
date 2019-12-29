@@ -3740,6 +3740,19 @@ if a bit grim.
 }
 
 dialog{
+  id = "_goatshead.npcs.market_people.17",
+  text = [[
+If you head west out of town, you'll probably
+see the statue of Goatshead's founder,
+Heron. My grandpappy always told me the
+founder's left knee was ticklish, and that
+goes for the statue too. Don't know why
+he would always tell me that. Sounded
+crazy. But now you've gotta hear it also.
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.market_people.2",
   text = [[
 I just don't understand. If you're selling
@@ -11941,6 +11954,33 @@ if anything!
 }
 
 dialog{
+  id = "_oakhaven.npcs.port.misc.12",
+  text = [[
+The city of Oakhaven is just north of here.
+It's the biggest city in the north sea,
+been around since before the great flood.
+Stories say the Sea King, from the flood
+legends, used to have his palace here before
+he moved it to a mystical island, but I
+think that's all just to drum up tourism.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.port.misc.13",
+  text = [[
+You ever notice how tall the old stone
+piers are? People built the lower, wooden
+piers because they got tired of climbing
+down. I've heard the piers are so tall
+because it took decades for the sealevels
+to go back down after the great flood, but
+my theory is that boats just used to be
+much taller.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.port.misc.2",
   text = [[
 There's always more fish in the sea. But
@@ -11975,7 +12015,8 @@ dialog{
 Are we the best shipyard in Oakhaven? Well
 here's how I think about it. Are we the
 only shipyard in Oakhaven? Yes. Are we any
-good at our jobs?.. We're the only shipyard.
+good at our jobs?..
+We're the only shipyard in Oakhaven.
 ]],
 }
 
@@ -15413,29 +15454,29 @@ dialog{
   id = "_treasure.monster_bones.1",
   text = [[
 You found the bones of an undead creature.
-Did these used to just be... dead bones? Alive
-bones? Have they always been undead? These really
-raise a lot of questions.
+Did these used to just be... dead bones?
+Alive bones? Have they always been undead?
+These really raise a lot of questions.
 ]],
 }
 
 dialog{
   id = "_treasure.monster_bones.2",
   text = [[
-  You found the bones of an undead creature.
-  Did these used to just be... dead bones? Alive
-  bones? Have they always been undead? These really
-  raise a lot of questions.
+You found the bones of an undead creature.
+Did these used to just be... dead bones?
+Alive bones? Have they always been undead?
+These really raise a lot of questions.
 ]],
 }
 
 dialog{
   id = "_treasure.monster_bones.3",
   text = [[
-  You found the bones of an undead creature.
-  Did these used to just be... dead bones? Alive
-  bones? Have they always been undead? These really
-  raise a lot of questions.
+You found the bones of an undead creature.
+Did these used to just be... dead bones?
+Alive bones? Have they always been undead?
+These really raise a lot of questions.
 ]],
 }
 
@@ -16796,11 +16837,12 @@ someone called Michael.
 ROHIT:
 Michael? Well... that's probably Michael
 the Mighty Mead Maker. He operates a
-pretentious Meadery down in Ballast Harbor.
+pretentious Meadery down in Tern Marsh.
 ROHIT:
 He's given us trouble before. Why don't you
-go down and confront him? He's on the north
-end of Ballast Harbor.
+go down and confront him? Go south of here
+to Tern Marsh, his distillery is just out
+in the wilds. Lots of beehives around it.
 ]],
 }
 
@@ -17781,7 +17823,7 @@ dialog{
 ##After defeating a monster in an
 ##ancient grove, the rune stone at
 ##its center started  glowing
-@You've found $v1 rune stones
+@Rune Stones found: $v1
 @!Something definitely happened
 !after you found those 3. Is
 !there another grove like these?
@@ -18488,3 +18530,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+

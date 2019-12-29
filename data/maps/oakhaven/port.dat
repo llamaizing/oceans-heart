@@ -50566,6 +50566,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/woman/sitting_1",
+  behavior = "dialog#_oakhaven.npcs.port.misc.13",
 }
 
 npc{
@@ -50575,6 +50576,7 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/sitting_4",
+  behavior = "dialog#_oakhaven.npcs.port.misc.12",
 }
 
 destructible{
@@ -55965,6 +55967,86 @@ tile{
   width = 24,
   height = 8,
   pattern = "691",
+}
+
+tile{
+  layer = 1,
+  x = 1472,
+  y = 800,
+  width = 16,
+  height = 24,
+  pattern = "608",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1392,
+  y = 800,
+  width = 16,
+  height = 24,
+  pattern = "608",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1240,
+  y = 872,
+  width = 16,
+  height = 24,
+  pattern = "608",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1192,
+  y = 872,
+  width = 16,
+  height = 24,
+  pattern = "608",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1144,
+  y = 872,
+  width = 16,
+  height = 24,
+  pattern = "608",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1288,
+  y = 872,
+  width = 16,
+  height = 24,
+  pattern = "608",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1552,
+  y = 1008,
+  width = 16,
+  height = 24,
+  pattern = "608",
+  tileset = "indoors_stone",
+}
+
+tile{
+  layer = 1,
+  x = 1456,
+  y = 1008,
+  width = 16,
+  height = 24,
+  pattern = "608",
+  tileset = "indoors_stone",
 }
 
 destructible{

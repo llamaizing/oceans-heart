@@ -28529,7 +28529,7 @@ tile{
 tile{
   layer = 0,
   x = 1024,
-  y = 392,
+  y = 384,
   width = 32,
   height = 16,
   pattern = "233",
@@ -29656,15 +29656,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "217",
-}
-
-tile{
-  layer = 0,
-  x = 1080,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "1686",
 }
 
 tile{
@@ -35807,6 +35798,16 @@ sensor{
   height = 32,
 }
 
+custom_entity{
+  layer = 0,
+  x = 1064,
+  y = 413,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "cliff",
+}
+
 tile{
   layer = 1,
   x = 1632,
@@ -37004,7 +37005,7 @@ tile{
 tile{
   layer = 1,
   x = 1024,
-  y = 376,
+  y = 368,
   width = 32,
   height = 16,
   pattern = "234",
@@ -37078,15 +37079,6 @@ tile{
   height = 40,
   pattern = "46",
   tileset = "redpine_forest",
-}
-
-tile{
-  layer = 1,
-  x = 1080,
-  y = 376,
-  width = 16,
-  height = 24,
-  pattern = "1688",
 }
 
 tile{
