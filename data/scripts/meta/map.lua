@@ -126,4 +126,33 @@ function map_meta:create_poof(x, y, layer)
 end
 
 
+--==================DEBUG===================--
+--Take camera control for filming for trailers
+function map_meta:drone_cam()
+  local map = self
+  local hero = map:get_hero()
+
+  local state = sol.state.create()
+  state:set_can_control_movement(true)
+  state:set_visible(false)
+  state:set_can_traverse(true)
+  state:set_can_traverse_ground("wall", true)
+  state:set_can_traverse_ground("low_wall", true)
+  state:set_can_traverse_ground("deep_water", true)
+  state:set_can_traverse_ground("hole", true)
+  state:set_can_traverse_ground("prickles", true)
+  state:set_gravity_enabled(false)
+  state:set_affected_by_ground("ladder", false)
+  state:set_can_be_hurt(false)
+  hero:start_state(state)
+  hero:set_layer(map:get_max_layer())
+end
+
+function map_meta:exit_drone_cam()
+  local map = self
+  local hero = map:get_hero()
+  hero:unfreeze()
+end
+
+
 return true
