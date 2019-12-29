@@ -1,6 +1,6 @@
 --[[ line2path.lua
 	version 1.0
-	27 Dec 2019
+	28 Dec 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -26,8 +26,9 @@
 --// line matching the PATH_COLOR, ending with the STOP_COLOR and returns the path data.
 	--file_path (string) - path to the image file to use
 	--returns (table, combo) indices as sequence of directions to go from the start to end
-		--start_x & start_y keys (number, non-negative integer) coordinates of start pixel
-		--end_x & end_y keys (number, non-negative integer) coordinates of end pixel
+		--x & y keys (number, non-negative integer) coordinates of start pixel
+		--x_end & y_end keys (number, non-negative integer) coordinates of end pixel
+	--returns nil if the specified image file cannot be found
 	--NOTE: There must be exactly one pixel of the start color, and the line's path cannot
 	--cross itself.
 return function(file_path)
@@ -45,6 +46,8 @@ return function(file_path)
 	}
 	
 	local surface = sol.surface.create(file_path) --source image
+	if not surface then return nil end --image not found
+	
 	local width, height = surface:get_size()
 	local pixels = surface:get_pixels()
 	local length = pixels:len() --4 bytes for each pixel
@@ -67,6 +70,21 @@ return function(file_path)
 				start_index = index
 				start_count = start_count + 1
 			end
+		else
+			--[[
+			if pixel_bytes:sub(4,4):byte()~=0 then
+				print(
+					"ignored color:",
+					"x:", (index % width) + 1,
+					"y:", math.floor(index / width) + 1,
+					"RGBA":,
+					pixel_bytes:sub(1,1):byte(),
+					pixel_bytes:sub(2,2):byte(),
+					pixel_bytes:sub(3,3):byte(),
+					pixel_bytes:sub(4,4):byte()
+				)
+			end
+			]]
 		end
 		index = index + 1
 	end
@@ -79,8 +97,8 @@ return function(file_path)
 	
 	local seen_list = {} --list of indicies already checked
 	local path = {
-		start_x = (start_index % width) + 1, --add 1 to convert from 0-based to 1-based
-		start_y = math.floor(start_index / width) + 1,
+		x = (start_index % width) + 1, --add 1 to convert from 0-based to 1-based
+		y = math.floor(start_index / width) + 1,
 	}
 	
 	--// seeks and returns index of next pixel along path given current index (recursive)
@@ -92,8 +110,8 @@ return function(file_path)
 			--no return if the first return is false
 	local function find_next(index)
 		if data[index] == "stop" then --stop pixel found, end of path
-			path.end_x = (start_index % width) + 1 --add 1 to convert from 0-based to 1-based
-			path.end_y = math.floor(start_index / width) + 1
+			path.x_end = (start_index % width) + 1 --add 1 to convert from 0-based to 1-based
+			path.y_end = math.floor(start_index / width) + 1
 			return false --exit loop
 		end
 		

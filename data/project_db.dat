@@ -771,6 +771,7 @@ sprite{ id = "menus/inventory/life_half_stitch", description = "Life Half Stitch
 sprite{ id = "menus/inventory/life_stitch", description = "Life Stitch" }
 sprite{ id = "menus/inventory/magic_stitch", description = "Magic Stitch" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
+sprite{ id = "menus/maps/boat", description = "Fast Travel Boat" }
 sprite{ id = "menus/maps/landmasses/ballast_harbor", description = "menus/maps/landmasses/ballast_harbor" }
 sprite{ id = "menus/maps/landmasses/crabhook", description = "menus/maps/landmasses/crabhook" }
 sprite{ id = "menus/maps/landmasses/crow_island", description = "menus/maps/landmasses/crow_island" }

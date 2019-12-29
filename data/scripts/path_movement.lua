@@ -1,6 +1,6 @@
 --[[ path_movement.lua
 	version 1.0
-	27 Dec 2019
+	28 Dec 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -152,7 +152,10 @@ function path_movement.create(properties)
 				next_delay = math.ceil(delay/10)*10 --round up to 10 msec increments
 				remainder = next_delay - delay
 				
-				set_direction(path_value) --update sprite direction to match next movement step
+				local next_value = path[index+1]
+				if direction ~= next_value or not next_value then --don't change direction if going to change back next step, reduces jitter
+					set_direction(path_value) --update sprite direction to match next movement step
+				end
 			else next_delay = path_value end --the path value is the delay (wait with no movement)
 		else movement_finished() end --no more path entries (returns nil)
 		
