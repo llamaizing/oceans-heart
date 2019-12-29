@@ -6,17 +6,23 @@ local hero_meta = sol.main.get_metatable("hero")
 
 -- Redefine how to calculate the damage received by the hero.
 function hero_meta:on_taking_damage(damage)
---TODO: make it so explosion damage ignores defense
   -- In the parameter, the damage unit is 1/2 of a heart.
   local game = self:get_game()
   local defense = game:get_value("defense")
-    damage = math.floor(damage*2 / defense)
-    if game.take_half_damage then
-      damage = damage / 2
-    end
-    if damage < 1 then
-      damage = 1
-    end
+  damage = math.floor(damage*2 / defense)
+  if game.take_half_damage then
+    damage = damage / 2
+  end
+  if damage < 1 then
+    damage = 1
+  end
+  --if you have 3 or more hearts, and a single attack would KO you
+  if game:get_life() >= 6 and damage >= game:get_life() then
+    --leave you with half a heart
+    damage = game:get_life() - 1
+    game:get_map():get_camera():shake()
+    sol.audio.play_sound"ohko"
+  end
   game:remove_life(damage)
 end
 
