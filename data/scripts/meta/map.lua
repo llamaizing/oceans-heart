@@ -128,10 +128,11 @@ end
 
 --==================DEBUG===================--
 --Take camera control for filming for trailers
-function map_meta:drone_cam()
+function map_meta:helicopter_cam()
   local map = self
   local hero = map:get_hero()
-
+  local game = map:get_game()
+  game.helicopter_cam = true
   local state = sol.state.create()
   state:set_can_control_movement(true)
   state:set_visible(false)
@@ -148,9 +149,11 @@ function map_meta:drone_cam()
   hero:set_layer(map:get_max_layer())
 end
 
-function map_meta:exit_drone_cam()
+function map_meta:exit_helicopter_cam()
   local map = self
   local hero = map:get_hero()
+  local game = map:get_game()
+  game.helicopter_cam = false
   hero:unfreeze()
 end
 

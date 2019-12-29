@@ -115,7 +115,7 @@ function game_manager:create(file_name, overwrite_game)
       pause_menu:next_submenu"right"
 
       --DEBUG FUNCTIONS
-    elseif key == "y" and DEBUG_MODE and game:has_item("sword") then
+    -- elseif key == "y" and DEBUG_MODE and game:has_item("sword") then
       -- game:set_ability("sword_knowledge", 1)
       -- hero:start_attack_loading(0)
       -- sol.timer.start(game, 10, function()
@@ -149,6 +149,15 @@ function game_manager:create(file_name, overwrite_game)
       print("You are on map: " .. game:get_map():get_id())
       local x, y, l = hero:get_position()
       print("at coordinates: " .. x .. ", " .. y .. ", " .. l)
+
+    elseif key == "y" and DEBUG_MODE then
+      --helicopter shot
+      if not game.helicopter_cam then
+        game:get_map():helicopter_cam()
+      else
+        game:get_map():exit_helicopter_cam()
+        require("scripts/action/hole_drop_landing"):play_landing_animation()
+      end
 
          --end of debug functions
           --]]
