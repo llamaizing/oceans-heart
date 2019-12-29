@@ -16,12 +16,18 @@ function hero_meta:on_taking_damage(damage)
   if damage < 1 then
     damage = 1
   end
-  --if you have 3 or more hearts, and a single attack would KO you
-  if game:get_life() >= 6 and damage >= game:get_life() then
+  --if this attack would kill you in 1 hit at above 40% max life
+  if damage >= game:get_life()
+  and game:get_life() >= game:get_max_life() * .4
+  and damage >= game:get_max_life() * .6
+  and not game.guts_save_used then
     --leave you with half a heart
     damage = game:get_life() - 1
     game:get_map():get_camera():shake()
     sol.audio.play_sound"ohko"
+    --set this mechanic on a cooldown
+    game.guts_save_used = true
+    sol.timer.start(game, 40 * 1000, function() game.guts_save_used = false end)
   end
   game:remove_life(damage)
 end
