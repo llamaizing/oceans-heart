@@ -5,7 +5,7 @@ text{ key = "item.aster_note.1", value = "Threatening Note" }
 text{ key = "item.ball_and_chain.1", value = "Flail" }
 text{ key = "item.barrier.1", value = "Devana's Barrier" }
 text{ key = "item.berries.1", value = "Berries" }
-text{ key = "item.bomb_arrow_ticket.1", value = "Bomb Shop Ticket" }
+text{ key = "item.bomb_arrow_ticket.1", value = "Explosive Arrow Plans" }
 text{ key = "item.bombs_counter_2.1", value = "Bombs" }
 text{ key = "item.boomerang.1", value = "Boomerang" }
 text{ key = "item.bow.1", value = "Bow" }

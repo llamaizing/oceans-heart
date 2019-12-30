@@ -14421,9 +14421,10 @@ throw it as well.
 dialog{
   id = "_treasure.bomb_arrow_ticket.1",
   text = [[
-You a slip of paper- it's a receipt from
-a special order that needs to be picked up
-from the bomb shop in Oakhaven.
+You found a diagram. It looks like blueprints
+to build some kind of explosive arrows?
+It's too complicated for you to follow, but
+someone might be able to build these.
 ]],
 }
 
