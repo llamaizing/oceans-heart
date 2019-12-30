@@ -7,7 +7,7 @@ enemy.immobilize_immunity = true
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),
   hurt_style = "monster",
-  life = 60,
+  life = 113,
   damage = 30,
   normal_speed = 20,
   faster_speed = 55,
@@ -29,7 +29,7 @@ local properties = {
   ranged_attack_distance = 170,
   ranged_attack_cooldown = 5000,
   ranged_attack_sound = "heart",
-  projectile_breed = "misc/energy_ball_bounce",
+  projectile_breed = "misc/energy_ball_black_2",
 --optional properties for ranged attack are projectile_damage, projectile_split_children, and projectile_num_bounces, if the projectile breed will accept them!
   projectile_angle = "any",
 

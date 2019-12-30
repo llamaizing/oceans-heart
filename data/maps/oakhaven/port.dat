@@ -49239,6 +49239,15 @@ tile{
   pattern = "686",
 }
 
+tile{
+  layer = 0,
+  x = 112,
+  y = 1304,
+  width = 64,
+  height = 24,
+  pattern = "2365",
+}
+
 sensor{
   name = "meet_hazel_sensor",
   layer = 0,
