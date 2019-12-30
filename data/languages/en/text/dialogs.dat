@@ -12959,6 +12959,14 @@ Hazel has been researching.
 }
 
 dialog{
+  id = "_oakhaven.observations.ivystmp.carpenter_books",
+  text = [[
+It appears someone was reading a pulpy
+dective story about a lumbering  villain.
+]],
+}
+
+dialog{
   id = "_oakhaven.observations.misc.amalenchier_grave",
   text = [[
 It's an old tomb. The writing on the
