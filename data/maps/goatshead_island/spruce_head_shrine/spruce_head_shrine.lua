@@ -26,6 +26,8 @@ map:register_event("on_started", function()
   if game:get_value"ssh_boss_defeated" then
     boss:set_enabled(false)
   end
+  --miniboss is REALLY unforgiving if you don't raise your stats, so we'll cheat
+  if game:get_value("defense") < 4 then miniboss:set_damage(1) end
 
 end)
 
@@ -73,6 +75,11 @@ for switch in map:get_entities"b1_switch" do
       end
     end)
   end
+end
+
+function d6_switch:on_activated()
+  sol.audio.play_sound"switch"
+  map:open_doors"d6_door"
 end
 
 
