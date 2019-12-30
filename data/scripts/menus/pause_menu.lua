@@ -1,6 +1,6 @@
 --[[ pause_menu.lua
 	version 1.0.1
-	26 Dec 2019
+	29 Dec 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -311,6 +311,7 @@ end
 function pause_menu:close(callback)
 	assert(sol.menu.is_started(self), "Error: pause menu must be started before it can be closed")
 	
+	sol.menu.bring_to_front(self) --bring pause menu to front temporarily so it can block inputs during transition
 	is_changing_menus = true
 	is_exiting = true
 	
@@ -398,12 +399,14 @@ function pause_menu:on_command_pressed(command)
 		else reopen_active_submenu() end
 		
 		return true
-	elseif not is_changing_menus then --must wait for transition to finish before changing submenus again
-		if command=="left" or command=="right" then
+	elseif command=="left" or command=="right" then
+		if not is_changing_menus and not is_exiting then --must wait for transition to finish before changing submenus again
 			self:next_submenu(command)
 			
 			return true
-		end
+		elseif is_exiting then return true end --block command from going to submenu
+	elseif command=="up" or command=="down" then
+		if is_exiting then return true end --block command from going to submenu
 	end
 end
 
