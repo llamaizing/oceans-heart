@@ -4961,6 +4961,15 @@ chest{
   sprite = "entities/chest",
 }
 
+npc{
+  layer = 0,
+  x = 256,
+  y = 317,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_yarrowmouth.observations.hourglass_fort.thyme_book",
+}
+
 tile{
   layer = 1,
   x = 144,

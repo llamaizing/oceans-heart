@@ -17223,6 +17223,19 @@ all fairly inscrutable.
 }
 
 dialog{
+  id = "_yarrowmouth.observations.hourglass_fort.thyme_book",
+  text = [[
+It looks like Captain Thyme started writing
+a memoir. He seems to regret killing people
+for the Pirate Council, but also seems to
+be whining a lot about how the Council was
+chasing him down for abandoning them.
+He struggles to find a cohesive narrative.
+4/10.
+]],
+}
+
+dialog{
   id = "_yarrowmouth.observations.lighthouse_note",
   text = [[
 Lighthouse closed for a bit. Happened
