@@ -43187,15 +43187,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1080,
-  y = 8,
-  width = 32,
-  height = 32,
-  pattern = "121",
-}
-
-tile{
-  layer = 0,
   x = 1072,
   y = 8,
   width = 16,
@@ -45592,15 +45583,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 848,
-  y = 24,
-  width = 16,
-  height = 32,
-  pattern = "123",
-}
-
-tile{
-  layer = 0,
   x = 1216,
   y = 32,
   width = 16,
@@ -46125,6 +46107,177 @@ tile{
   width = 16,
   height = 16,
   pattern = "61",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 960,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 912,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 1008,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 1056,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 1104,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 32,
+  width = 16,
+  height = 32,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 1152,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 1032,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "131",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "130",
+}
+
+tile{
+  layer = 0,
+  x = 1080,
+  y = 8,
+  width = 32,
+  height = 32,
+  pattern = "121",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 64,
+  width = 16,
+  height = 32,
+  pattern = "114",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 48,
+  width = 16,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 56,
+  width = 16,
+  height = 32,
+  pattern = "123",
+}
+
+tile{
+  layer = 0,
+  x = 848,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "6",
 }
 
 wall{
@@ -47891,7 +48044,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 872,
+  x = 880,
   y = 93,
   properties = {
     {
@@ -53247,15 +53400,6 @@ tile{
 
 tile{
   layer = 1,
-  x = 976,
-  y = 8,
-  width = 16,
-  height = 24,
-  pattern = "8",
-}
-
-tile{
-  layer = 1,
   x = 1448,
   y = 304,
   width = 16,
@@ -53534,6 +53678,24 @@ tile{
   height = 16,
   pattern = "1596",
   tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 984,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "132",
+}
+
+tile{
+  layer = 1,
+  x = 976,
+  y = 8,
+  width = 16,
+  height = 24,
+  pattern = "8",
 }
 
 dynamic_tile{
