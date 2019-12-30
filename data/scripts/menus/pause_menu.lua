@@ -255,8 +255,8 @@ function pause_menu:toggle_submenu(index)
 	end
 	
 	if is_closing then
-		reopen_active_submenu()
 		if old_submenu then do_slide_transition(SUBMENU_LIST[old_submenu], 1, false) end
+		reopen_active_submenu()
 	else self:close() end
 end
 
