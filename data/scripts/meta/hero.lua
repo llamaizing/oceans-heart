@@ -28,6 +28,8 @@ function hero_meta:on_taking_damage(damage)
     --set this mechanic on a cooldown
     game.guts_save_used = true
     sol.timer.start(game, 40 * 1000, function() game.guts_save_used = false end)
+  elseif damage >= game:get_max_life() * .5 then
+    sol.audio.play_sound"oh_lotsa_damage"
   end
   game:remove_life(damage)
 end

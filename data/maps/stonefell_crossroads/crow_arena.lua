@@ -12,7 +12,7 @@ map:register_event("on_started", function()
 end)
 
 function challenge_sensor:on_activated()
-  if game:get_value("quest_crow_lord") == 0 then
+  if game:get_value("quest_crow_lord") == 0 and not crow_lord:is_enabled() then
     game:start_dialog("_sycamore_ferry.other.crow_lord_challenge", function(answer)
       map:focus_on(map:get_camera(), crow_lord, function()
         map:create_poof(crow_lord:get_position())
