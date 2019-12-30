@@ -4820,7 +4820,7 @@ npc{
   y = 309,
   direction = 1,
   subtype = 1,
-  sprite = "enemies/bosses/thyme",
+  sprite = "npc/new_thyme",
 }
 
 destination{

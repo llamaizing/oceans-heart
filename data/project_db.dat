@@ -1148,6 +1148,7 @@ sprite{ id = "npc/monk_1", description = "Monk 1" }
 sprite{ id = "npc/morus", description = "Morus" }
 sprite{ id = "npc/musician_2", description = "Musician 2" }
 sprite{ id = "npc/musician_3", description = "Musician 3" }
+sprite{ id = "npc/new_thyme", description = "New Thyme" }
 sprite{ id = "npc/nina", description = "Nina" }
 sprite{ id = "npc/old_man_1.2", description = "Old Man 1.2" }
 sprite{ id = "npc/orange_ana", description = "Orange Ana" }
