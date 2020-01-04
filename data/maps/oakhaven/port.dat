@@ -49129,7 +49129,7 @@ tile{
 tile{
   layer = 0,
   x = 1232,
-  y = 1328,
+  y = 1336,
   width = 16,
   height = 16,
   pattern = "1094",
@@ -51048,7 +51048,7 @@ npc{
   name = "fast_travel_lily",
   layer = 0,
   x = 1240,
-  y = 1341,
+  y = 1349,
   direction = 2,
   subtype = 1,
   sprite = "npc/lily/lily_sitting",

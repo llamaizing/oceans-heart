@@ -11279,8 +11279,8 @@ basement. Those are headed down to
 Fort Crow, should do the trick. Meanwhile,
 MORUS:
 I'll sail to Fort Crow make sure the shipment
-gets in and has time to put them out. I'll
-meet you down there.
+gets in and has time to put them out. It's
+south of Lotus Shoal. Meet you there.
 ]],
 }
 
@@ -11304,9 +11304,13 @@ Just what I wanted to hear.
 
 
 MORUS:
-Great. I'll sail ahead and make sure the
-ale gets in and knocks them out. I'll
-meet you at Fort Crow.
+Great. I'll sail ahead and follow the
+shipment, make sure it isn't attacked by
+other pirates, and I'll meet you at
+MORUS:
+Fort Crow. It's down south of Lotus Shoal.
+I'm sure you'll be able to find you way
+there.
 ]],
 }
 
@@ -17765,8 +17769,8 @@ spike it
 !
 !Look for a barrel marked with a star.
 @Sneak into Fort Crow $!while the pirates
-!are asleep
-!
+!are asleep. The Fort is south of
+!Lotus Shoal
 !Morus will meet you down at Fort Crow.
 @Find Captain Al-Jazari
 #::
