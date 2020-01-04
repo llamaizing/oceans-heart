@@ -49,7 +49,7 @@ map:register_event("on_opening_transition_finished", function()
     end)
 
     --fade title card out after a little
-    sol.timer.start(map, 7000, function()
+    sol.timer.start(map, 8000, function()
       title_card:fade_out()
     end)
 
@@ -58,10 +58,10 @@ map:register_event("on_opening_transition_finished", function()
     local hm = sol.movement.create"target"
     hm:set_target(intro_hazel_destination)
     hm:set_speed(20)
-    sol.timer.start(map, 15 * 1000, function() hm:start(intro_hazel) end)
+    sol.timer.start(map, 17 * 1000, function() hm:start(intro_hazel) end)
 
     --move invisible hero near seagulls to spook them
-    sol.timer.start(map, 14 * 1000, function()
+    sol.timer.start(map, 17 * 1000, function()
       hero:set_position(872, 864)
     end)
   end

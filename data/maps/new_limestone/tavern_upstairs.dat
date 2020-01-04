@@ -2069,6 +2069,14 @@ block{
   pullable = true,
 }
 
+destination{
+  name = "respawn_point",
+  layer = 0,
+  x = 184,
+  y = 357,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = 104,

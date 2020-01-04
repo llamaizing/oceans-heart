@@ -14,6 +14,7 @@ local sprite = hero:get_sprite()
 
 
 map:register_event("on_started", function()
+  game:set_starting_location("new_limestone/tavern_upstairs", "respawn_point")
   hero:set_walking_speed(98) --can't do this in initial game because there is no hero
   game.world_map:set_map_visible("new_limestone/new_limestone_island")
   if not game:get_value("waking_up_beginning_of_game_cutscene") then
@@ -26,6 +27,7 @@ function map:on_opening_transition_finished()
   if not game:get_value("waking_up_beginning_of_game_cutscene") then
     hero:freeze()
     sprite:set_animation("asleep")
+    game:set_value("waking_up_beginning_of_game_cutscene", true)
     sol.timer.start(map, 500, function()
       sprite:set_animation("waking_up", function()
         sprite:set_animation("stopped")
