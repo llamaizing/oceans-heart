@@ -111,13 +111,13 @@ end
 
 
 -----Sensors----------
-function boss_sensor:on_activated()
+--[[function boss_sensor:on_activated()
   game:start_dialog("_oakhaven.npcs.fort_crow.jazari.2", function()
     jazari_dummy:set_enabled(false)
     jazari_boss:set_enabled(true)
   end)
 end
-
+--]]
 
 
 -----Enemies-----------
@@ -174,6 +174,7 @@ function boss_sensor:on_activated()
   m:start(hero, function()
     game:start_dialog("_oakhaven.npcs.fort_crow.jazari.2", function()
       hero:unfreeze()
+      sol.audio.play_music"boss_battle"
       jazari_dummy:set_enabled(false)
       jazari_boss:set_enabled(true)
     end)
@@ -190,6 +191,7 @@ end
 
 function jazari_boss:on_dead()
   if not game:get_value("quest_snapmast") then
+    map:fade_in_music()
     hero:freeze()
     map:open_doors("boss_door_2")
     jazari_dummy:set_enabled(true)

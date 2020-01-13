@@ -1386,6 +1386,7 @@ sprite{ id = "weather/rain", description = "Rain" }
 sprite{ id = "weather/snow", description = "Snow" }
 
 music{ id = "ballast_harbor", description = "Ballast Harbor" }
+music{ id = "boss_battle", description = "boss_battle" }
 music{ id = "brackish_melancholy", description = "Brackish Melancholy" }
 music{ id = "crabhook", description = "crabhook" }
 music{ id = "driftwood-2", description = "Driftwood 2" }

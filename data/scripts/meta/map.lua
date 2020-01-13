@@ -85,6 +85,21 @@ local function calculate_speed(entity1, entity2, duration)
 end
 
 
+--BG Music
+function map_meta:fade_in_music()
+  local map = self
+  local game = map:get_game()
+  sol.audio.set_music_volume(0)
+  sol.audio.play_music(map:get_music())
+  local i = 1
+  sol.timer.start(map, 100, function()
+    sol.audio.set_music_volume(i)
+    i = i + 5
+    if sol.audio.get_music_volume() < game:get_value"music_volume" then return true end
+  end)
+end
+
+
 -----Map Focus-----
 function map_meta:focus_on(camera, target_entity, callback, return_delay)
   local game = sol.main.get_game()

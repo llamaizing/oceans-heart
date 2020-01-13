@@ -10099,6 +10099,30 @@ teletransporter{
   destination = "from_elixer_upgrade",
 }
 
+enemy{
+  layer = 0,
+  x = 1096,
+  y = 797,
+  direction = 0,
+  breed = "normal_enemies/rock_spider_red",
+}
+
+enemy{
+  layer = 0,
+  x = 968,
+  y = 781,
+  direction = 0,
+  breed = "normal_enemies/rock_spider_red",
+}
+
+enemy{
+  layer = 0,
+  x = 1112,
+  y = 781,
+  direction = 0,
+  breed = "normal_enemies/rock_spider_red",
+}
+
 tile{
   layer = 1,
   x = 296,

@@ -13819,6 +13819,16 @@ Fast travel?
 }
 
 dialog{
+  id = "_snapmast.cemetery_of_the_waves.assassinbeard",
+  text = [[
+GAVRILLO:
+Ah, you again. Can't say I'm surprised, if
+you managed to track Thyme down. But I'm
+not about to let you get in Blackbeard's way.
+]],
+}
+
+dialog{
   id = "_snapmast.cemetery_of_the_waves.first_mate.1",
   text = [[
 HORNIGOLD:
