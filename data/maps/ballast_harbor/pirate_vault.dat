@@ -29504,6 +29504,15 @@ npc{
   behavior = "dialog#_ballast_harbor.observations.council_book.2",
 }
 
+wall{
+  layer = 0,
+  x = 2088,
+  y = 1136,
+  width = 64,
+  height = 32,
+  stops_enemies = true,
+}
+
 tile{
   layer = 1,
   x = 2392,

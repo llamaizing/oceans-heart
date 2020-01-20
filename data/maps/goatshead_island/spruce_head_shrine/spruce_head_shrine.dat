@@ -48794,56 +48794,6 @@ enemy{
   breed = "normal_enemies/moss_bop",
 }
 
-door{
-  name = "b1_door_2",
-  layer = 0,
-  x = 776,
-  y = 96,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_b1_door",
-}
-
-door{
-  name = "b1_door_3",
-  layer = 0,
-  x = 776,
-  y = 104,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_b1_door",
-}
-
-door{
-  name = "b1_door_4",
-  layer = 0,
-  x = 776,
-  y = 112,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_b1_door",
-}
-
-door{
-  name = "b1_door_5",
-  layer = 0,
-  x = 776,
-  y = 120,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_b1_door",
-}
-
-door{
-  name = "b1_door_6",
-  layer = 0,
-  x = 784,
-  y = 128,
-  direction = 3,
-  sprite = "entities/door_post_stone",
-  savegame_variable = "ssh_b1_door",
-}
-
 enemy{
   layer = 0,
   x = 128,
@@ -49359,6 +49309,56 @@ door{
   sprite = "entities/door_post_stone",
   savegame_variable = "shs_d6_door",
   opening_condition = "shs_d6_door",
+}
+
+door{
+  name = "b1_door_2",
+  layer = 0,
+  x = 776,
+  y = 96,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_b1_door",
+}
+
+door{
+  name = "b1_door_3",
+  layer = 0,
+  x = 776,
+  y = 104,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_b1_door",
+}
+
+door{
+  name = "b1_door_4",
+  layer = 0,
+  x = 776,
+  y = 112,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_b1_door",
+}
+
+door{
+  name = "b1_door_5",
+  layer = 0,
+  x = 776,
+  y = 120,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_b1_door",
+}
+
+door{
+  name = "b1_door_6",
+  layer = 0,
+  x = 784,
+  y = 128,
+  direction = 3,
+  sprite = "entities/door_post_stone",
+  savegame_variable = "ssh_b1_door",
 }
 
 tile{

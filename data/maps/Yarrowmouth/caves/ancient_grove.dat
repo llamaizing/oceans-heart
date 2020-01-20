@@ -3831,18 +3831,18 @@ npc{
 
 wall{
   layer = 0,
-  x = 280,
-  y = 104,
-  width = 48,
+  x = 256,
+  y = 120,
+  width = 56,
   height = 8,
   stops_enemies = true,
 }
 
 wall{
   layer = 0,
-  x = 304,
+  x = 296,
   y = 160,
-  width = 24,
+  width = 32,
   height = 24,
   stops_enemies = true,
 }
@@ -3868,7 +3868,7 @@ wall{
 wall{
   layer = 0,
   x = 56,
-  y = 304,
+  y = 312,
   width = 24,
   height = 8,
   stops_enemies = true,
@@ -3879,7 +3879,7 @@ wall{
   x = 80,
   y = 296,
   width = 24,
-  height = 8,
+  height = 16,
   stops_enemies = true,
 }
 
@@ -3894,7 +3894,7 @@ wall{
 
 wall{
   layer = 0,
-  x = 88,
+  x = 96,
   y = 144,
   width = 8,
   height = 64,
@@ -3981,10 +3981,10 @@ enemy{
 
 wall{
   layer = 0,
-  x = 352,
-  y = 312,
+  x = 336,
+  y = 304,
   width = 8,
-  height = 112,
+  height = 120,
   stops_enemies = true,
 }
 
@@ -4001,8 +4001,8 @@ wall{
   layer = 0,
   x = 16,
   y = 312,
-  width = 16,
-  height = 56,
+  width = 24,
+  height = 80,
   stops_enemies = true,
 }
 
