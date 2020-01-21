@@ -3781,6 +3781,27 @@ door{
   savegame_variable = "sycamore_ancient_grove_shrine_door",
 }
 
+sensor{
+  name = "boss_sensor",
+  layer = 0,
+  x = 192,
+  y = 269,
+  enabled_at_start = false,
+  width = 32,
+  height = 32,
+}
+
+npc{
+  name = "revenant_dummy",
+  layer = 0,
+  x = 200,
+  y = 141,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "enemies/bosses/forest_revenant",
+}
+
 tile{
   layer = 1,
   x = 296,
