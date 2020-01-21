@@ -11264,6 +11264,15 @@ chest{
   sprite = "entities/chest",
 }
 
+wall{
+  layer = 0,
+  x = 568,
+  y = 464,
+  width = 376,
+  height = 8,
+  stops_enemies = true,
+}
+
 tile{
   layer = 1,
   x = 312,
