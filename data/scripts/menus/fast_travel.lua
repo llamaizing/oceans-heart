@@ -19,6 +19,8 @@ right now, the way unlocking ports works, you traverse the locations table one b
 --]]
 
 local world_map = require"scripts/world_map"
+local path_movement = require"scripts/path_movement"
+local path_data = require"scripts/menus/fast_travel.dat"
 
 local locations = {
   {name = "ivystump", coordinates = {180, 44}, is_unlocked, map_id = "oakhaven/ivystump_port"},
@@ -35,7 +37,11 @@ local locations = {
 }
 local DEFAULT_PORT = 8
 
+local ROUTE_COLOR = {200, 50, 0}
+
 local port_rune = sol.sprite.create("menus/maps/port_rune")
+local boat = sol.sprite.create"menus/maps/boat"
+local route = sol.surface.create()
 local port_runes = {}
 local current_port = 1
 local map_bg = sol.surface.create("menus/maps/overworld_blank.png")
@@ -108,6 +114,7 @@ function fast_travel_menu:on_started()
   game:set_suspended(true)
 
   sprite_list = world_map:create_sprites(false) --does not use fade-in reveal of new landmasses
+  route:clear()
 
   fast_travel_menu:update_unlocked_locations()
   fast_travel_menu:update_current_port(game:get_value("fast_travel_menu_current_port") or DEFAULT_PORT)
@@ -157,14 +164,36 @@ end
 function fast_travel_menu:confirm_selection()
   local game = sol.main.get_game()
   local port_name = sol.language.get_string("location."..locations[current_port].name)
+
   game:start_dialog("_game.fast_travel_confirm", port_name, function(answer)
     if answer == 3 then
       sol.audio.play_sound"ok"
       game:set_value("fast_travel_menu_current_port", current_port)
-      sol.menu.stop(self)
-      game:get_hero():unfreeze()
-      game:set_suspended(false)
-      game:get_hero():teleport(locations[current_port].map_id, "fast_travel_destination")
+
+      local path = path_data.goatshead_harbor[locations[current_port].name] or {} --TODO only paths to/from goatshead harbor currently setup
+      local movement = path_movement.create{
+        object = boat,
+        x = path.x,
+        y = path.y,
+        path = path,
+        context = fast_travel_menu,
+        speed = 80, --max of 100
+        callback = function()
+          sol.menu.stop(self)
+          game:get_hero():unfreeze()
+          game:set_suspended(false)
+          game:get_hero():teleport(locations[current_port].map_id, "fast_travel_destination")
+        end,
+      }
+
+      local count = 0
+      function movement:on_position_changed()
+        count = count + 1
+        if count <= 2 then
+          local x, y = movement:get_xy()
+          route:fill_color(ROUTE_COLOR, x, y, 1, 1)
+        else count = 0 end
+      end
     end
   end)
 end
@@ -198,9 +227,11 @@ end
 
 function fast_travel_menu:on_draw(dst)
   map_bg:draw(dst)
-  for _,sprite in ipairs(sprite_list or {}) do
+  for _,sprite in ipairs(sprite_list or {}) do --landmass sprites and text
     sprite:draw(dst)
   end
+  route:draw(dst)
+  boat:draw(dst)
   for i=1, #locations do
     if locations[i].is_unlocked then
       port_runes[i]:draw(dst, locations[i].coordinates[1],locations[i].coordinates[2])
