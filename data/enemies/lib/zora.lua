@@ -86,10 +86,32 @@ function behavior:create(enemy, properties)
 
 
   function enemy:on_movement_changed(movement)
-
     local direction4 = movement:get_direction4()
     local sprite = self:get_sprite()
     sprite:set_direction(direction4)
+  end
+
+
+  function enemy:on_position_changed()
+    local x,y,z = enemy:get_facing_position()
+    local map = enemy:get_map()
+    local ground = map:get_ground(x,y,z)
+    if gound ~= "deep_water" and ground ~= "shallow_water" and not retreating_from_land then
+print"headed out of water!"
+      --enemy is out of the water
+      enemy:stop_movement()
+      retreating_from_land = true
+      local m = sol.movement.create"straight"
+      local angle = enemy:get_angle(x,y) + math.pi
+      m:set_angle(angle)
+      m:set_max_distance(4)
+      m:set_speed(80)
+      m:start(enemy, function()
+        retreating_from_land = false
+        enemy:go_random()
+      end)
+    end
+
   end
 
 
@@ -166,7 +188,6 @@ function behavior:create(enemy, properties)
 	  local direction = sprite:get_direction()
 
 	  sprite:set_animation("shooting")
-	  enemy:stop_movement()
 		sol.audio.play_sound("stone")
     --create projectile
     local projectile = enemy:create_enemy({
@@ -177,8 +198,8 @@ function behavior:create(enemy, properties)
     projectile:go(enemy:get_angle(hero))
 
 	  sprite:set_animation("walking")
-    self:go_random()
-    self:restart()
+--    self:go_random()
+--    self:restart()
 	end
 
 

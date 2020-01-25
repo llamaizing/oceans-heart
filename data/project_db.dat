@@ -706,6 +706,7 @@ sprite{ id = "entities/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/spike_ball", description = "Spike Ball" }
 sprite{ id = "entities/spikes", description = "Spikes" }
 sprite{ id = "entities/spirit_1", description = "Spirit 01" }
+sprite{ id = "entities/splash", description = "Splash" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/steam_stream", description = "Steam Stream" }

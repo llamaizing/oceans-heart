@@ -41226,42 +41226,6 @@ teletransporter{
   destination = "falling",
 }
 
-wall{
-  layer = 0,
-  x = 2064,
-  y = 456,
-  width = 48,
-  height = 24,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 2080,
-  y = 448,
-  width = 48,
-  height = 24,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 2064,
-  y = 400,
-  width = 64,
-  height = 16,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 2096,
-  y = 416,
-  width = 64,
-  height = 16,
-  stops_enemies = true,
-}
-
 switch{
   name = "fort_switch_1",
   layer = 0,
