@@ -54,13 +54,9 @@ function game_manager:create(file_name, overwrite_game)
 
   objectives_manager.create(game)
 
-  -- function game:on_started()
-  --   game:start_magic_regen_timer()
-  -- end
   game:register_event("on_started", function()
     game:start_magic_regen_timer()
   end)
-
 
   function game:on_paused()
     sol.menu.start(game, pause_menu)
