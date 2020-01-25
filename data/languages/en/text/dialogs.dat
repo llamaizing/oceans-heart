@@ -4883,15 +4883,19 @@ dialog{
   text = [[
 There's a note here:
 Captain, fort construction isn't going well.
-We couldn't get into Thrush Fort. Gossip
-in town says there's a well somwhere that
-has something to go with a key. Or a
-ghost? The gossip was inconsistent. We're
-going to try to build our own fort, but...
-I'm worried Blackbeard will never think
-we're cool enough to join the pirate council.
-Worse, our rivals have shown up! They're
-building a fort of their own!
+Since we refused to join the Pirate Council,
+Blackbeard has blacklisted us. If we want
+to get to Ballast Harbor, we'll have to
+find some way there other than sailing.
+]],
+}
+
+dialog{
+  id = "_goatshead.observations.coast_notes_1-2",
+  text = [[
+(There's a rough drawing of Ballast Harbor
+here too, it's detailed enough that you
+can sketch it onto your own world map)
 ]],
 }
 

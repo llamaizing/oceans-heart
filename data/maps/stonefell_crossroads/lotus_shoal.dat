@@ -41408,12 +41408,12 @@ enemy{
 }
 
 npc{
+  name = "pirate_note",
   layer = 0,
   x = 1464,
   y = 261,
   direction = 3,
   subtype = 1,
-  behavior = "dialog#_goatshead.observations.coast_notes_1",
 }
 
 door{
