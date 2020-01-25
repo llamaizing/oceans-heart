@@ -59,7 +59,7 @@ function game_manager:create(file_name, overwrite_game)
   end)
 
   function game:on_paused()
-    sol.menu.start(game, pause_menu)
+    if not sol.menu.is_started(pause_menu) then sol.menu.start(game, pause_menu) end
   end
 
 
@@ -104,6 +104,13 @@ function game_manager:create(file_name, overwrite_game)
 
   function game:on_key_pressed(key, modifiers)
     local hero = game:get_hero()
+
+    --if function key f2-f5 then open (or close if already open) the corresponding pause submenu directly
+    local submenu_index = pause_menu.quick_keys[key]
+    if submenu_index then
+      pause_menu:toggle_submenu(submenu_index)
+      return true
+    end
 
     if key == "f" and sol.menu.is_started(pause_menu) then
       pause_menu:next_submenu"left"

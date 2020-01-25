@@ -10,7 +10,7 @@ local map_screen = {x=0, y=0}
 multi_events:enable(map_screen)
 
 local sprite_list --(table, array) list of sprites in draw order (unrevealed landmasses not included)
-local map_bg --(sol.surface) blank map with no landmasses
+local map_bg = sol.surface.create("menus/maps/overworld_blank.png") --(sol.surface) blank map with no landmasses
 
 --// Gets/sets the x,y position of the menu in pixels
 function map_screen:get_xy() return self.x, self.y end
@@ -26,8 +26,6 @@ end
 
 --retrieve visible landmass sprites from world_map script
 function map_screen:on_started()
-  map_bg = sol.surface.create("menus/maps/overworld_blank.png")
-
   local sprites, to_reveal, unvisited = world_map:create_sprites(true) --reveal new landmasses
   sprite_list = sprites
 
@@ -55,7 +53,6 @@ end
 
 --// Called when pause menu is closed, remove sprites from memory
 function map_screen:on_pause_menu_finished()
-  map_bg = nil
   sprite_list = nil
 end
 

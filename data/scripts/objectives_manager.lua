@@ -1,6 +1,6 @@
 --[[ objectives_manager.lua
-	version 1.0.1a1
-	20 Aug 2019
+	version 1.0.1
+	30 Dec 2019
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -929,12 +929,23 @@ function objectives_manager.create(game)
 
 				--// parse split line special characters: $! & $?
 
+				--find first instance of either '$!' or '$?'
 				local start,_,char = stripped_text:find"%$([%!%?])"
 				if start then
-					entry.split_length = start - 1
-					entry.split_type = char
+					entry.split1_index = start - 1
+					entry.split1_char = char
+					stripped_text = stripped_text:gsub("%$[%"..char.."]", "") --remove all instances
+
+					--now search for just the opposite character
+					char = char=="!" and "?" or "!"
+					start = stripped_text:find("%$(%"..char..")")
+					if start then
+						entry.split2_index = start - 1
+						entry.split2_char = char
+						stripped_text = stripped_text:gsub("%$[%"..char.."]", "") --remove all instances
+					end
 				end
-				stripped_text = stripped_text:gsub("%$[%!%?]", "")
+
 
 				--// handle special characters at beginning of line
 
@@ -1033,23 +1044,56 @@ function objectives_manager.create(game)
 				end
 
 				if is_visible and not entry.is_comment then --don't bother with the rest if not visible
-					if entry.split_type then
-						local is_split_visible = SPECIAL_CHAR_VISIBILITY[entry.split_type](rank, phase)
-						if not is_split_visible then --otherwise don't need to do anything special
-							local max_length = entry.split_length --convenience
-							entry.text = entry.text:sub(1, max_length) --truncate line text
+					if entry.split1_char then
+						--hide stuff between hide_min and hide_max indices,
+						--or everything after hide_min if hide_max is not defined
+						local hide_min
+						local hide_max
 
+						local is_split1_visible = SPECIAL_CHAR_VISIBILITY[entry.split1_char](rank, phase)
+						if entry.split2_char then
+							local is_split2_visible = SPECIAL_CHAR_VISIBILITY[entry.split2_char](rank, phase)
+							if not is_split1_visible and not is_split2_visible then
+								hide_min = entry.split1_index
+								entry.text = entry.text:sub(1, hide_min) --truncate line text
+							elseif not is_split1_visible then
+								hide_min = entry.split1_index
+								hide_max = entry.split2_index
+								local text0 = entry.text:sub(1, hide_min)
+								local text2 = entry.text:sub(hide_max+1)
+								entry.text = text0..text2
+							elseif not is_split2_visible then
+								hide_min = entry.split2_index
+								entry.text = entry.text:sub(1, hide_min) --truncate line text
+							end --if both split1 and split2 visible then don't need to do anything special
+						elseif not is_split1_visible then --otherwise don't need to do anything special
+							hide_min = entry.split1_index
+							entry.text = entry.text:sub(1, hide_min) --truncate line text
+						end
+
+						--hide other dynamic elements on this line if within the hidden region of text
+						if hide_min then
+							--hide quest item icons, if applicable
 							local line_items = item_positions[i] or {}
 							for index,pre_text in pairs(line_items) do
-								if pre_text:len() > max_length then
-									line_items[index] = nil --hide item icon
+								local len = pre_text:len()
+								if len>hide_min and (not hide_max or len<=hide_max) then
+									line_items[index] = nil
 								end
 							end
-							if line_items['11'] and line_items['11'] > max_length then
-								line_items['11'] = nil --hide item icon
+
+							--hide misc item icon, if applicable
+							local misc_item_index = line_items['11']
+							if misc_item_index and misc_item_index > hide_min
+							and (not hide_max or misc_item_index<=hide_max) then
+								line_items['11'] = nil
 							end
-							if entry.check_position and entry.check_position > max_length then
-								entry.check_position = nil --hide dynamic checkmark
+
+							--hide dynamic checkmark, if applicable
+							local check_index = entry.check_position
+							if check_index and check_index > hide_min
+							and (not hide_max or check_index<=hide_max) then
+								entry.check_position = nil
 								entry.check_index = nil
 							end
 						end
