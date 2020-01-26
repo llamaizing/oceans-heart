@@ -37,7 +37,7 @@ local locations = {
 }
 local DEFAULT_PORT = 8
 
-local ROUTE_COLOR = {200, 50, 0}
+local ROUTE_COLOR = {90, 200, 240}
 
 local port_rune = sol.sprite.create("menus/maps/port_rune")
 local boat = sol.sprite.create"menus/maps/boat"
@@ -45,6 +45,9 @@ local route = sol.surface.create()
 local port_runes = {}
 local current_port = 1
 local map_bg = sol.surface.create("menus/maps/overworld_blank.png")
+local sea_bg = sol.surface.create()
+sea_bg:fill_color{10, 120, 150}
+sea_bg:set_opacity(0)
 local sprite_list --(table, array) list of landmass sprites and text in draw order (only if visible)
 
 local animation_playing
@@ -111,6 +114,7 @@ end
 
 function fast_travel_menu:on_started()
   animation_playing = false
+  sea_bg:set_opacity(0)
   sol.main.get_game():get_hud():set_enabled(false)
   local game = sol.main.get_game()
   game:get_hero():freeze()
@@ -177,6 +181,8 @@ function fast_travel_menu:confirm_selection()
     if answer == 3 then
       sol.audio.play_sound"ok"
       animation_playing = true
+--      sol.audio.play_sound"water_flowing_in_2"
+      sea_bg:fade_in(15)
       game:set_value("fast_travel_menu_current_port", current_port)
       local departure_port_name = fast_travel_menu:get_current_location_name()
       local path = path_data[departure_port_name]
@@ -190,7 +196,7 @@ function fast_travel_menu:confirm_selection()
         context = fast_travel_menu,
         speed = 80, --max of 100
         callback = function()
-          sol.menu.stop(self)
+--          sol.menu.stop(self)
           game:get_hero():unfreeze()
           game:set_suspended(false)
           game:get_hero():teleport(locations[current_port].map_id, "fast_travel_destination")
@@ -215,17 +221,21 @@ function fast_travel_menu:on_command_pressed(command)
   local game = sol.main.get_game()
   local hero = game:get_hero()
   if command == "attack" or command == "pause" then
-    sol.menu.stop(self)
-    hero:unfreeze()
-    game:set_suspended(false)
-    handled = true
+    if not animation_playing then
+      sol.menu.stop(self)
+      hero:unfreeze()
+      game:set_suspended(false)
+      handled = true
+    end
 
   elseif command == "left" or command == "up" then
+    if animation_playing then return end
     sol.audio.play_sound("cursor")
     fast_travel_menu:calculate_next_port(current_port, -1)
     handled = true
 
   elseif command == "right" or command == "down" then
+    if animation_playing then return end
     sol.audio.play_sound("cursor")
     fast_travel_menu:calculate_next_port(current_port, 1)
     handled = true
@@ -241,7 +251,34 @@ function fast_travel_menu:on_command_pressed(command)
   return handled
 end
 
+-----Sea Waves Thing?---------
+local fog = sol.surface.create("fog/big_water_light.png")
+fog:set_blend_mode("blend")
+fog:set_opacity(25)
+local fog2 = sol.surface.create("fog/big_water_dark.png")
+fog2:set_blend_mode("multiply")
+fog2:set_opacity(25)
+fog2:set_xy(-500,-150)
+local fog3 = sol.surface.create("fog/water_squiggles.png")
+fog3:set_blend_mode("blend")
+fog3:set_opacity(30)
+fog3:set_xy(-400,-270)
+  function move_fog(fog, angle, distance)
+    local m = sol.movement.create("straight")
+    m:set_angle(angle)
+    m:set_speed(20)
+    m:set_max_distance(distance)
+    m:start(fog, function() move_fog(fog, angle + math.pi, distance) end)
+  end
+move_fog(fog, 3, 180)
+move_fog(fog2, .3, 270)
+move_fog(fog3, -2.2, 220)
+
 function fast_travel_menu:on_draw(dst)
+  sea_bg:draw(dst)
+  fog:draw(sea_bg)
+  fog2:draw(sea_bg)
+  fog3:draw(sea_bg)
   map_bg:draw(dst)
   for _,sprite in ipairs(sprite_list or {}) do --landmass sprites and text
     sprite:draw(dst)
