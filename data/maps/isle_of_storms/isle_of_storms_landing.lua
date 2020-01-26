@@ -233,7 +233,8 @@ function endgame_sensor:on_activated()
     m:start(hero, function()
       hero:set_animation"stopped"
       game:start_dialog("_palace_of_storms.cutscenes.mallow.6", function()
-        black:fade_in(150, function() hero:teleport("dummy_cutscene/basswood") end)
+        game:get_hud():set_enabled(false)
+        black:fade_in(80, function() hero:teleport("dummy_cutscene/hazel_oakhaven") end)
       end)
     end)
   end
