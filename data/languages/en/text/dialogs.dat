@@ -1474,6 +1474,13 @@ Dad?
 }
 
 dialog{
+  id = "_fast_travel.already_here",
+  text = [[
+LILY:
+Tilia, that's where we already are.
+]],
+}
+
   id = "_endgame.oakhaven_1",
   text = [[
 HAZEL:
