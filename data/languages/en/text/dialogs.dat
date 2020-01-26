@@ -1474,6 +1474,29 @@ Dad?
 }
 
 dialog{
+  id = "_endgame.lily",
+  text = [[
+LILY:
+Hey. I hear the Pirate Council lost its
+captain. I think I know someone who could
+replace Blackbeard, and it's me.
+]],
+}
+
+dialog{
+  id = "_endgame.lily_2",
+  text = [[
+HORNIGOLD:
+...
+
+
+HORNIGOLD:
+Aye, I've a good feeling about you. Maybe
+let's see.
+]],
+}
+
+dialog{
   id = "_endgame.oakhaven_1",
   text = [[
   HAZEL:
@@ -18590,3 +18613,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+

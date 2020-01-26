@@ -29936,6 +29936,33 @@ tile{
   pattern = "2133",
 }
 
+tile{
+  layer = 0,
+  x = 1312,
+  y = 760,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 1280,
+  y = 920,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
+tile{
+  layer = 0,
+  x = 1400,
+  y = 928,
+  width = 16,
+  height = 16,
+  pattern = "39",
+}
+
 sensor{
   name = "^map_banner_sensor",
   layer = 0,

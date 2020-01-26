@@ -124,6 +124,7 @@ map{ id = "demo_1/testing_room", description = "testing room" }
 map{ id = "dev/world_map", description = "world_map" }
 map{ id = "dummy_cutscene/basswood", description = "Basswood" }
 map{ id = "dummy_cutscene/hazel_oakhaven", description = "Hazel Oakhaven" }
+map{ id = "dummy_cutscene/lily_pirate", description = "Lily Pirate" }
 map{ id = "dummy_cutscene/limestone", description = "limestone" }
 map{ id = "goat_hill_new_test", description = "new goat hill test" }
 map{ id = "goatshead_island/ball_trail", description = "Ballast Trail" }

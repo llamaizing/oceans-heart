@@ -14,7 +14,9 @@ black:fill_color{0,0,0}
 black:set_opacity(0)
 
 function map:on_started()
+  game:set_pause_allowed(false)
   game:get_hud():set_enabled(false)
+  hero:set_visible(false)
 end
 
 function map:on_opening_transition_finished()
@@ -30,7 +32,7 @@ function map:on_opening_transition_finished()
         m:start(linden,function() mallow:get_sprite():set_animation"hug_closed" end)
         sol.timer.start(map, 500, function()
           black:fade_in(60, function()
-            hero:teleport("dummy_cutscene/limestone", "cut_dest")
+            hero:teleport("dummy_cutscene/lily_pirate")
           end)
         end)
       end)

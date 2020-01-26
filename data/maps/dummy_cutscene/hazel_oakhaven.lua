@@ -6,6 +6,7 @@ black:set_opacity(0)
 
 function map:on_started()
     game:get_hud():set_enabled(false)
+    game:set_pause_allowed(false)
 end
 
 function map:on_opening_transition_finished()
