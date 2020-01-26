@@ -58,8 +58,12 @@ function return_sensor_2:on_activated()
   return_sensor:set_enabled(true)
 end
 
+local norm_bg
 function charging_pirate_sensor:on_activated()
   game:start_dialog("_ballast_harbor.npcs.charging_pirate.1", function()
+--    norm_bg = sol.audio.get_music()
+    sol.audio.play_music"boss_battle"
+print"MUSIC"
     fake_charger:set_enabled(false)
     charging_pirate:set_enabled(true)
     charging_pirate_sensor:set_enabled(false)
@@ -67,6 +71,7 @@ function charging_pirate_sensor:on_activated()
 end
 
 function charging_pirate:on_dead()
+  sol.audio.play_music(norm_bg)
   map:open_doors("boss_exit_door")
   game:set_value("ballast_charging_pirate_defeated", true)
 end

@@ -28529,7 +28529,7 @@ tile{
 tile{
   layer = 0,
   x = 1024,
-  y = 392,
+  y = 384,
   width = 32,
   height = 16,
   pattern = "233",
@@ -29656,15 +29656,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "217",
-}
-
-tile{
-  layer = 0,
-  x = 1080,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "1686",
 }
 
 tile{
@@ -34426,6 +34417,150 @@ tile{
   pattern = "494",
 }
 
+tile{
+  layer = 0,
+  x = 1536,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1544,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1552,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1560,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1568,
+  y = 208,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1360,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1368,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1376,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1536,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1528,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1520,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1448,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1456,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+tile{
+  layer = 0,
+  x = 1464,
+  y = 56,
+  width = 8,
+  height = 8,
+  pattern = "498",
+}
+
+sensor{
+  name = "^map_banner_sensor_4",
+  layer = 0,
+  x = 216,
+  y = 29,
+  width = 32,
+  height = 32,
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 24,
+  y = 269,
+  width = 32,
+  height = 32,
+}
+
 wall{
   layer = 0,
   x = 496,
@@ -35368,21 +35503,12 @@ wall{
 }
 
 sensor{
-  name = "^map_banner_sensor",
-  layer = 0,
-  x = 24,
-  y = 269,
-  width = 32,
-  height = 32,
-}
-
-sensor{
   name = "^map_banner_sensor_2",
   layer = 0,
   x = 864,
-  y = 1181,
+  y = 1165,
   width = 32,
-  height = 16,
+  height = 32,
 }
 
 destination{
@@ -35485,6 +35611,7 @@ destination{
   x = 1416,
   y = 109,
   direction = 3,
+  starting_location_mode = "yes",
 }
 
 teletransporter{
@@ -35660,6 +35787,25 @@ teletransporter{
   transition = "scrolling",
   destination_map = "Yarrowmouth/tern_marsh",
   destination = "_side",
+}
+
+sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 1848,
+  y = 869,
+  width = 32,
+  height = 32,
+}
+
+custom_entity{
+  layer = 0,
+  x = 1064,
+  y = 413,
+  width = 32,
+  height = 16,
+  direction = 0,
+  model = "cliff",
 }
 
 tile{
@@ -36859,7 +37005,7 @@ tile{
 tile{
   layer = 1,
   x = 1024,
-  y = 376,
+  y = 368,
   width = 32,
   height = 16,
   pattern = "234",
@@ -36933,15 +37079,6 @@ tile{
   height = 40,
   pattern = "46",
   tileset = "redpine_forest",
-}
-
-tile{
-  layer = 1,
-  x = 1080,
-  y = 376,
-  width = 16,
-  height = 24,
-  pattern = "1688",
 }
 
 tile{
@@ -37254,33 +37391,6 @@ tile{
 tile{
   layer = 1,
   x = 1360,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1368,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1376,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1360,
   y = 64,
   width = 8,
   height = 8,
@@ -37461,15 +37571,6 @@ tile{
 tile{
   layer = 1,
   x = 1536,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1536,
   y = 64,
   width = 8,
   height = 8,
@@ -37489,51 +37590,6 @@ tile{
   layer = 1,
   x = 1536,
   y = 80,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1528,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1520,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1448,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1456,
-  y = 56,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1464,
-  y = 56,
   width = 8,
   height = 8,
   pattern = "498",
@@ -37570,51 +37626,6 @@ tile{
   layer = 1,
   x = 1576,
   y = 328,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1536,
-  y = 208,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1544,
-  y = 208,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1552,
-  y = 208,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1560,
-  y = 208,
-  width = 8,
-  height = 8,
-  pattern = "498",
-}
-
-tile{
-  layer = 1,
-  x = 1568,
-  y = 208,
   width = 8,
   height = 8,
   pattern = "498",

@@ -111,9 +111,18 @@ end
 
 function upset_fisher:on_interaction()
   if not game:get_value("quest_test13") then
-    game:start_dialog("_goatshead.npcs.upset_fisher.1", function()
-      game:set_value("quest_test13", 0)
-    end)
+    --normal sequence
+    if not game:get_value"goatshead_island_two_eye_rock_shroom_dead" then
+      game:start_dialog("_goatshead.npcs.upset_fisher.1", function()
+        game:set_value("quest_test13", 0)
+      end)
+    else -- you defeated the monsters before talking to him
+      game:start_dialog("_goatshead.npcs.upset_fisher.2", function()
+        game:add_money(80)
+        game:set_value("quest_test13", 2)
+      end)
+    end
+
   elseif game:get_value("quest_test13") == 0 then
     game:start_dialog("_goatshead.npcs.upset_fisher.1")
   elseif game:get_value("quest_test13") == 1 then

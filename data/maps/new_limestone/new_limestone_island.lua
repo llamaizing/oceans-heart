@@ -2,6 +2,15 @@ local map = ...
 local game = map:get_game()
 local hero = game:get_hero()
 
+map:register_event("on_started", function()
+  --for intro cutscene
+  if not game:get_value("scrolling_limestone_intro_cutscene") then
+    map:get_hero():set_visible(false)
+    sol.main.get_game():get_hud():set_enabled(false)
+    game:set_pause_allowed(false)
+  end
+end)
+
 function hazel:on_interaction()
   if not game:has_ability("sword") then
     game:start_dialog("_new_limestone_island.npcs.hazel.1", function()
@@ -13,3 +22,47 @@ function hazel:on_interaction()
     game:start_dialog("_new_limestone_island.npcs.hazel.3")
   end
 end
+
+
+--=================Intro Cutscene=======================--
+map:register_event("on_opening_transition_finished", function()
+  if not game:get_value("scrolling_limestone_intro_cutscene") then
+    game:set_value("scrolling_limestone_intro_cutscene", true)
+    local title_card = require"scripts/menus/title_card"
+    sol.main.get_game():get_hud():set_enabled(false)
+    sol.menu.start(map, title_card)
+    hero:freeze()
+
+    --set up target to track
+    local x,y,z = hero:get_position()
+    local target = map:create_custom_entity{
+      x=x, y=y, layer=z, direction=0, width=16, height=16,
+    }
+    map:get_camera():start_tracking(target)
+    local m = sol.movement.create("target")
+    m:set_target(from_tavern)
+    m:set_ignore_obstacles()
+    m:set_speed(45)
+    m:start(target, function()
+      map:get_hero():teleport("new_limestone/tavern_upstairs", "destination")
+      hero:set_visible(true)
+    end)
+
+    --fade title card out after a little
+    sol.timer.start(map, 8000, function()
+      title_card:fade_out()
+    end)
+
+    --start hazel walking
+    intro_hazel:set_enabled(true)
+    local hm = sol.movement.create"target"
+    hm:set_target(intro_hazel_destination)
+    hm:set_speed(20)
+    sol.timer.start(map, 17 * 1000, function() hm:start(intro_hazel) end)
+
+    --move invisible hero near seagulls to spook them
+    sol.timer.start(map, 17 * 1000, function()
+      hero:set_position(872, 864)
+    end)
+  end
+end)

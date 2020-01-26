@@ -9,8 +9,8 @@ local ATTACK_RANGE = 150
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(enemy:get_property("life") or 9)
-  enemy:set_damage(enemy:get_property("damage") or 1)
+  enemy:set_life(14)
+  enemy:set_damage(1)
   enemy:set_attack_consequence("sword", "protected")
   attacking = false
 end
@@ -39,7 +39,7 @@ end
 function enemy:go_hero()
   local movement = sol.movement.create("target")
   movement:set_target(hero)
-  movement:set_speed(25)
+  movement:set_speed(35)
   movement:start(enemy)
 end
 
@@ -60,13 +60,13 @@ function enemy:choose_attack()
     attacking = true
     can_throw = false
     enemy:throw()
-    sol.timer.start(map, 5000, function() can_throw = true end)
+    sol.timer.start(map, 2000, function() can_throw = true end)
 
   elseif can_surround then
     attacking = true
     can_surround = false
     enemy:surround()
-    sol.timer.start(map, 13000, function() can_surround = true end)
+    sol.timer.start(map, 6000, function() can_surround = true end)
   end
 end
 

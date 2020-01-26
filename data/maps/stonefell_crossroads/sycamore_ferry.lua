@@ -57,8 +57,9 @@ end
 for sensor in map:get_entities("lily_attack_sensor") do
 function sensor:on_activated()
   lily:get_sprite():set_animation("waving")
-  game:start_dialog("_sycamore_ferry.npcs.lily.help", function()
---    lily:get_sprite():set_animation("stopped")
+  map:focus_on(map:get_camera(), lily, function()
+    game:start_dialog("_sycamore_ferry.npcs.lily.help")
+    sensor:remove()
   end)
 end
 end

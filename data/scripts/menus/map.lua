@@ -55,6 +55,7 @@ local marker = sol.sprite.create("menus/maps/marker_icon")
 marker:set_animation("active")
 local pos_x, pos_y
 
+
 --// Gets/sets the x,y position of the menu in pixels
 function map_screen:get_xy() return self.x, self.y end
 function map_screen:set_xy(x, y)
@@ -118,7 +119,6 @@ end
 
 --// Called when pause menu is closed, remove sprites from memory
 function map_screen:on_pause_menu_finished()
-  map_bg = nil
   sprite_list = nil
 end
 

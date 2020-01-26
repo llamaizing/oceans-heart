@@ -11,7 +11,7 @@ local map = ...
 local game = map:get_game()
 
 map:register_event("on_started", function()
-  if game:get_value("quest_test13") >= 1 then
+  if (game:get_value("quest_test13") or 0) >= 1 then
     two_eye_rock_shroom:remove()
   end
 end)
@@ -42,6 +42,7 @@ function two_eye_rock_shroom:on_dead()
   if game:get_value("quest_test13") == 0 then
     game:set_value("quest_test13", 1)
   end
+  game:set_value("goatshead_island_two_eye_rock_shroom_dead", true)
 end
 
 function gerald:on_interaction()

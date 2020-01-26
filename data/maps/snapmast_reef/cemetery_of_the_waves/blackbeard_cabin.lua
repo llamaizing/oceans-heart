@@ -27,11 +27,14 @@ end)
 function boss_sensor:on_activated()
   boss_wall:set_enabled(false)
   map:close_doors("boss_doors")
-  --insert dialog here
-  boss_sensor:set_enabled(false)
+  game:start_dialog("_snapmast.cemetery_of_the_waves.assassinbeard", function()
+    sol.audio.play_music"boss_battle"
+    boss_sensor:set_enabled(false)
+  end)
 end
 
 function assassinbeard:on_dead()
+  map:fade_in_music()
   game:set_value("assassinbeard_killed", true)
   map:open_doors("boss_doors")
   map:create_pickable({

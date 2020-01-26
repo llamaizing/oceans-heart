@@ -19,8 +19,10 @@ function hearts_builder:new(game, config)
 
   function hearts:repeat_danger_sound()
     if game:get_life() <= game:get_max_life() / 4 then
+      sol.menu.start(game, require"scripts/hud/danger_edges")
       sol.audio.play_sound("danger")
-      hearts.danger_sound_timer = sol.timer.start(hearts, 5000, function()
+      sol.audio.play_sound("heartbeat")
+      hearts.danger_sound_timer = sol.timer.start(hearts, 4000, function()
         hearts:repeat_danger_sound()
       end)
       hearts.danger_sound_timer:set_suspended_with_map(true)

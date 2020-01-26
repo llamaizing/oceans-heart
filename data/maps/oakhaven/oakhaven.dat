@@ -38792,7 +38792,7 @@ npc{
   x = 568,
   y = 1093,
   direction = 3,
-  subtype = 0,
+  subtype = 1,
   sprite = "npc/man/man_22.1",
   behavior = "dialog#_oakhaven.npcs.general_town.5",
 }

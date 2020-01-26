@@ -41226,42 +41226,6 @@ teletransporter{
   destination = "falling",
 }
 
-wall{
-  layer = 0,
-  x = 2064,
-  y = 456,
-  width = 48,
-  height = 24,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 2080,
-  y = 448,
-  width = 48,
-  height = 24,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 2064,
-  y = 400,
-  width = 64,
-  height = 16,
-  stops_enemies = true,
-}
-
-wall{
-  layer = 0,
-  x = 2096,
-  y = 416,
-  width = 64,
-  height = 16,
-  stops_enemies = true,
-}
-
 switch{
   name = "fort_switch_1",
   layer = 0,
@@ -41406,8 +41370,8 @@ enemy{
 enemy{
   name = "boomerang_fort_pirate_3",
   layer = 0,
-  x = 1400,
-  y = 461,
+  x = 1464,
+  y = 397,
   direction = 3,
   breed = "normal_enemies/pirate_sword_brown_1",
   savegame_variable = "boomerang_fort_pirate_3",
@@ -41444,12 +41408,12 @@ enemy{
 }
 
 npc{
+  name = "pirate_note",
   layer = 0,
   x = 1464,
   y = 261,
   direction = 3,
   subtype = 1,
-  behavior = "dialog#_goatshead.observations.coast_notes_1",
 }
 
 door{
@@ -42825,6 +42789,15 @@ destructible{
   y = 845,
   sprite = "entities/bush_summergrass",
   can_be_cut = true,
+}
+
+wall{
+  layer = 0,
+  x = 1368,
+  y = 432,
+  width = 48,
+  height = 56,
+  stops_enemies = true,
 }
 
 tile{

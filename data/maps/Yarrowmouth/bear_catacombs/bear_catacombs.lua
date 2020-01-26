@@ -116,12 +116,14 @@ end
 
 ---------Boss----------
 function boss_sensor:on_activated()
+  sol.audio.play_music"boss_battle"
   map:close_doors("boss_door")
   boss_wall:set_enabled(false)
   boss_sensor:set_enabled(false)
 end
 
 function boss:on_dead()
+  map:fade_in_music()
   game:set_value("bear_catacombs_boss_defeated", true)
   map:open_doors("boss_door")
 end

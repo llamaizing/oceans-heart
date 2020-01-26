@@ -1422,6 +1422,15 @@ tile{
   pattern = "161",
 }
 
+wall{
+  layer = 0,
+  x = 136,
+  y = 400,
+  width = 48,
+  height = 16,
+  stops_enemies = true,
+}
+
 destination{
   name = "from_outside",
   layer = 0,

@@ -56610,6 +56610,15 @@ tile{
 }
 
 sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 24,
+  y = 621,
+  width = 16,
+  height = 16,
+}
+
+sensor{
   name = "^layer_up_sensor",
   layer = 0,
   x = 1272,
@@ -58778,6 +58787,24 @@ teletransporter{
   height = 16,
   destination_map = "oakhaven/lobb_trail",
   destination = "from_puzzlewood",
+}
+
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 1448,
+  y = 765,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "^map_banner_sensor_4",
+  layer = 0,
+  x = 1448,
+  y = 1021,
+  width = 16,
+  height = 80,
 }
 
 tile{
@@ -64203,5 +64230,14 @@ tile{
   height = 80,
   pattern = "34",
   tileset = "drygrass",
+}
+
+tile{
+  layer = 2,
+  x = -8,
+  y = -8,
+  width = 1584,
+  height = 1760,
+  pattern = "606",
 }
 

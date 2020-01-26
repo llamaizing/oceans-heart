@@ -26,6 +26,8 @@ map:register_event("on_started", function()
   if game:get_value"ssh_boss_defeated" then
     boss:set_enabled(false)
   end
+  --miniboss is REALLY unforgiving if you don't raise your stats, so we'll cheat
+  if game:get_value("defense") < 4 then miniboss:set_damage(1) end
 
 end)
 
@@ -75,6 +77,11 @@ for switch in map:get_entities"b1_switch" do
   end
 end
 
+function d6_switch:on_activated()
+  sol.audio.play_sound"switch"
+  map:open_doors"d6_door"
+end
+
 
 
 --Sensors--------------------------------------------------
@@ -107,6 +114,7 @@ function boss_sensor:on_activated()
   if not game:get_value"ssh_boss_defeated" then
     boss_sensor:set_enabled(false)
     map:close_doors"boss_door"
+    sol.audio.play_music"boss_battle"
     for w in map:get_entities"boss_wall" do
       w:set_enabled(false)
     end
@@ -142,6 +150,7 @@ end
 
   --Boss--
 function boss:on_dead()
+  map:fade_in_music()
   game:set_value("ssh_boss_defeated", true)
   map:open_doors"boss_door"
   if map:has_entities"minion_boss" then

@@ -1971,6 +1971,15 @@ teletransporter{
   destination = "from_sawmill",
 }
 
+npc{
+  layer = 0,
+  x = 232,
+  y = 157,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_oakhaven.observations.ivystmp.carpenter_books",
+}
+
 tile{
   layer = 1,
   x = 104,

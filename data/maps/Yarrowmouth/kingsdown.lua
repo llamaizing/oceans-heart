@@ -14,7 +14,7 @@ function tern_door_switch:on_activated()
 end
 
 function secret_keyhole:on_interaction()
-  if game:has_item("key_kingsdown") == true and game:get_value("kingsdown_island_unlocked") ~= true then
+  if game:has_item("key_kingsdown") and game:get_value("kingsdown_island_unlocked") ~= true then
     game:start_dialog("_yarrowmouth.observations.secret_switch.2", function(answer)
       if answer == 3 then
         local x, y, l = block_statue_1:get_position()

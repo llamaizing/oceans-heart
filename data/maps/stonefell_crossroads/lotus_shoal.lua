@@ -64,6 +64,15 @@ function boomerang_boss:on_dead()
   sol.audio.play_sound"secret"
 end
 
+function pirate_note:on_interaction()
+  game:start_dialog("_goatshead.observations.coast_notes_1", function()
+    if not game.world_map:get_visible("world_map_landmass_ballast_island") then
+        game:start_dialog"_goatshead.observations.coast_notes_1-2"
+        game.world_map:set_map_visible("ballast_harbor/ballast_harbor")
+    end
+  end)
+end
+
 
 ----Shoal Beast
 function bait_vase:on_lifting()

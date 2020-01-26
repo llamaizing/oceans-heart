@@ -22,7 +22,9 @@ end)
 
 function boss_sensor:on_activated()
   boss_blocker:set_enabled(false)
-  game:start_dialog("_oakhaven.observations.misc.amalenchier_revenant_still_alive")
+  game:start_dialog("_oakhaven.observations.misc.amalenchier_revenant_still_alive", function()
+    sol.audio.play_music"boss_battle"
+  end)
   boss_sensor:set_enabled(false)
 end
 
@@ -30,6 +32,7 @@ function forest_revenant:on_dead()
   for entity in map:get_entities("pollutant_blocker") do
     entity:remove_life(100)
   end
+  map:fade_in_music()
   map:get_camera():shake({count = 12, amplitude = 7, speed = 80})
   game:set_value("quest_manna_oaks", 6)
 end

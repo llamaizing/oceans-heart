@@ -25807,15 +25807,6 @@ tile{
   tileset = "drygrass",
 }
 
-sensor{
-  name = "rsg_sensor",
-  layer = 0,
-  x = 376,
-  y = 981,
-  width = 16,
-  height = 32,
-}
-
 custom_entity{
   name = "leaf_pile_3",
   layer = 0,
@@ -26112,24 +26103,6 @@ destination{
   direction = 3,
 }
 
-sensor{
-  name = "rsg_sensor_2",
-  layer = 0,
-  x = 320,
-  y = 829,
-  width = 16,
-  height = 64,
-}
-
-sensor{
-  name = "ssg_sensor",
-  layer = 0,
-  x = 304,
-  y = 837,
-  width = 16,
-  height = 64,
-}
-
 teletransporter{
   layer = 0,
   x = 360,
@@ -26138,15 +26111,6 @@ teletransporter{
   height = 16,
   destination_map = "goatshead_island/caves/ball_trail_cave",
   destination = "from_outside",
-}
-
-sensor{
-  name = "ssg_sensor_2",
-  layer = 0,
-  x = 296,
-  y = 1005,
-  width = 80,
-  height = 16,
 }
 
 jumper{
@@ -27124,6 +27088,42 @@ wall{
   stops_enemies = true,
   stops_blocks = true,
   stops_projectiles = true,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor",
+  layer = 0,
+  x = 296,
+  y = 1005,
+  width = 80,
+  height = 16,
+}
+
+sensor{
+  name = "^save_solid_ground_sensor_2",
+  layer = 0,
+  x = 304,
+  y = 829,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "^reset_solid_ground_sensor_4",
+  layer = 0,
+  x = 320,
+  y = 829,
+  width = 16,
+  height = 64,
+}
+
+sensor{
+  name = "^reset_solid_ground_sensor_5",
+  layer = 0,
+  x = 376,
+  y = 981,
+  width = 16,
+  height = 32,
 }
 
 tile{
