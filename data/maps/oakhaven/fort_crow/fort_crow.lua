@@ -234,7 +234,7 @@ function chart_npc:on_interaction()
           hero:teleport("oakhaven/port", "fast_travel_destination", "fade")
         else
           game:start_dialog("_oakhaven.npcs.morus.fort.9", function()
-            hero:teleport("oakhaven/eastoak", "from_fort_crow_front_door", "fade")
+            hero:teleport("stonefell_crossroads/fort_crow", "from_fort_crow_front_door", "fade")
           end)
         end
       end)

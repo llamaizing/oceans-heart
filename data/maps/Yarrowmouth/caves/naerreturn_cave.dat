@@ -1361,15 +1361,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
-  y = 168,
-  width = 16,
-  height = 16,
-  pattern = "ground1.3",
-}
-
-tile{
-  layer = 0,
   x = 80,
   y = 184,
   width = 16,
@@ -1390,15 +1381,6 @@ tile{
   layer = 0,
   x = 232,
   y = 160,
-  width = 16,
-  height = 16,
-  pattern = "ground1.3",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 72,
   width = 16,
   height = 16,
   pattern = "ground1.3",
@@ -1498,15 +1480,6 @@ tile{
   layer = 0,
   x = 232,
   y = 136,
-  width = 8,
-  height = 8,
-  pattern = "ground1.rock3",
-}
-
-tile{
-  layer = 0,
-  x = 248,
-  y = 72,
   width = 8,
   height = 8,
   pattern = "ground1.rock3",
@@ -2057,113 +2030,14 @@ tile{
   x = 184,
   y = 112,
   width = 8,
-  height = 48,
-  pattern = "28",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 112,
-  width = 40,
-  height = 8,
-  pattern = "27",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 120,
-  width = 8,
-  height = 40,
-  pattern = "30",
-}
-
-tile{
-  layer = 0,
-  x = 192,
-  y = 152,
-  width = 32,
-  height = 8,
-  pattern = "29",
-}
-
-tile{
-  layer = 0,
-  x = 184,
-  y = 112,
-  width = 8,
   height = 8,
   pattern = "23",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 112,
-  width = 8,
-  height = 8,
-  pattern = "24",
-}
-
-tile{
-  layer = 0,
-  x = 224,
-  y = 152,
-  width = 8,
-  height = 8,
-  pattern = "26",
-}
-
-tile{
-  layer = 0,
-  x = 184,
-  y = 152,
-  width = 8,
-  height = 8,
-  pattern = "25",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 160,
-  width = 8,
-  height = 8,
-  pattern = "23",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 72,
-  width = 8,
-  height = 8,
-  pattern = "23",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 160,
-  width = 8,
-  height = 8,
-  pattern = "24",
 }
 
 tile{
   layer = 0,
   x = 192,
   y = 176,
-  width = 8,
-  height = 8,
-  pattern = "24",
-}
-
-tile{
-  layer = 0,
-  x = 264,
-  y = 72,
   width = 8,
   height = 8,
   pattern = "24",
@@ -2189,56 +2063,11 @@ tile{
 
 tile{
   layer = 0,
-  x = 136,
-  y = 200,
-  width = 8,
-  height = 8,
-  pattern = "25",
-}
-
-tile{
-  layer = 0,
   x = 256,
   y = 128,
   width = 8,
   height = 8,
   pattern = "25",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 96,
-  width = 8,
-  height = 8,
-  pattern = "25",
-}
-
-tile{
-  layer = 0,
-  x = 256,
-  y = 96,
-  width = 8,
-  height = 8,
-  pattern = "33",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 176,
-  width = 8,
-  height = 8,
-  pattern = "32",
-}
-
-tile{
-  layer = 0,
-  x = 248,
-  y = 72,
-  width = 16,
-  height = 8,
-  pattern = "27",
 }
 
 tile{
@@ -2252,33 +2081,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
-  y = 160,
-  width = 16,
-  height = 8,
-  pattern = "27",
-}
-
-tile{
-  layer = 0,
-  x = 136,
-  y = 168,
-  width = 8,
-  height = 32,
-  pattern = "28",
-}
-
-tile{
-  layer = 0,
-  x = 240,
-  y = 80,
-  width = 8,
-  height = 16,
-  pattern = "28",
-}
-
-tile{
-  layer = 0,
   x = 256,
   y = 104,
   width = 8,
@@ -2288,46 +2090,10 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
-  y = 200,
-  width = 48,
-  height = 8,
-  pattern = "29",
-}
-
-tile{
-  layer = 0,
-  x = 248,
-  y = 96,
-  width = 8,
-  height = 8,
-  pattern = "29",
-}
-
-tile{
-  layer = 0,
   x = 192,
   y = 184,
   width = 8,
   height = 16,
-  pattern = "30",
-}
-
-tile{
-  layer = 0,
-  x = 160,
-  y = 168,
-  width = 8,
-  height = 8,
-  pattern = "30",
-}
-
-tile{
-  layer = 0,
-  x = 264,
-  y = 80,
-  width = 8,
-  height = 48,
   pattern = "30",
 }
 
@@ -2549,6 +2315,18 @@ tile{
 
 custom_entity{
   layer = 0,
+  x = 256,
+  y = 85,
+  width = 24,
+  height = 32,
+  direction = 0,
+  sprite = "entities/spikes",
+  tiled = true,
+  model = "prickles_blocking",
+}
+
+custom_entity{
+  layer = 0,
   x = 96,
   y = 141,
   width = 32,
@@ -2644,21 +2422,9 @@ enemy{
 
 custom_entity{
   layer = 0,
-  x = 144,
-  y = 173,
-  width = 32,
-  height = 48,
-  direction = 0,
-  sprite = "entities/spikes",
-  tiled = true,
-  model = "prickles_blocking",
-}
-
-custom_entity{
-  layer = 0,
-  x = 176,
+  x = 152,
   y = 189,
-  width = 32,
+  width = 56,
   height = 32,
   direction = 0,
   sprite = "entities/spikes",
@@ -2670,19 +2436,7 @@ custom_entity{
   layer = 0,
   x = 192,
   y = 125,
-  width = 48,
-  height = 48,
-  direction = 0,
-  sprite = "entities/spikes",
-  tiled = true,
-  model = "prickles_blocking",
-}
-
-custom_entity{
-  layer = 0,
-  x = 248,
-  y = 85,
-  width = 32,
+  width = 24,
   height = 32,
   direction = 0,
   sprite = "entities/spikes",
