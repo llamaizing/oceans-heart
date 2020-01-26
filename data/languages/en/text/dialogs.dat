@@ -1474,21 +1474,22 @@ Dad?
 }
 
 dialog{
+  id = "_endgame.oakhaven_1",
+  text = [[
+  HAZEL:
+  You're back! I knew you'd do it!
+
+
+  TILIA:
+  Are you ready to go home?
+]],
+}
+
+dialog{
   id = "_fast_travel.already_here",
   text = [[
 LILY:
 Tilia, that's where we already are.
-]],
-}
-
-  id = "_endgame.oakhaven_1",
-  text = [[
-HAZEL:
-You're back! I knew you'd do it!
-
-
-TILIA:
-Are you ready to go home?
 ]],
 }
 
@@ -18589,4 +18590,3 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
-
