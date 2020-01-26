@@ -47,6 +47,8 @@ local current_port = 1
 local map_bg = sol.surface.create("menus/maps/overworld_blank.png")
 local sprite_list --(table, array) list of landmass sprites and text in draw order (only if visible)
 
+local animation_playing
+
 
 function fast_travel_menu:greeting()
   local game = sol.main.get_game()
@@ -108,6 +110,7 @@ end
 
 
 function fast_travel_menu:on_started()
+  animation_playing = false
   sol.main.get_game():get_hud():set_enabled(false)
   local game = sol.main.get_game()
   game:get_hero():freeze()
@@ -173,6 +176,7 @@ function fast_travel_menu:confirm_selection()
   game:start_dialog("_game.fast_travel_confirm", port_name, function(answer)
     if answer == 3 then
       sol.audio.play_sound"ok"
+      animation_playing = true
       game:set_value("fast_travel_menu_current_port", current_port)
       local departure_port_name = fast_travel_menu:get_current_location_name()
       local path = path_data[departure_port_name]
@@ -227,8 +231,12 @@ function fast_travel_menu:on_command_pressed(command)
     handled = true
 
   elseif command == "action" then
-    fast_travel_menu:confirm_selection()
-    handled = true
+    if not animation_playing then
+      fast_travel_menu:confirm_selection()
+      handled = true
+    else
+      game:get_hero():teleport(locations[current_port].map_id, "fast_travel_destination")
+    end
   end
   return handled
 end
