@@ -140,6 +140,9 @@ function fast_travel_menu:update_unlocked_locations()
     locations[i].is_unlocked = game:has_item("fast_travel_chart_" .. locations[i].name)
     if locations[i].is_unlocked then
       port_runes[i] = sol.sprite.create("menus/maps/port_rune")
+      if locations[i].name == fast_travel_menu:get_current_location_name() then
+        port_runes[i] = sol.sprite.create("menus/maps/port_rune_current")
+      end
     end
   end
 end

@@ -794,6 +794,7 @@ sprite{ id = "menus/maps/marker_icon", description = "Marker Icon" }
 sprite{ id = "menus/maps/marker_icon_2", description = "MarkerIcon2" }
 sprite{ id = "menus/maps/overworld_blank", description = "menus/maps/overworld_blank" }
 sprite{ id = "menus/maps/port_rune", description = "Port Rune" }
+sprite{ id = "menus/maps/port_rune_current", description = "port rune current" }
 sprite{ id = "menus/maps/roads/ballast_harbor", description = "menus/maps/roads/ballast_harbor" }
 sprite{ id = "menus/maps/roads/crabhook", description = "menus/maps/roads/crabhook" }
 sprite{ id = "menus/maps/roads/crow_island", description = "menus/maps/roads/crow_island" }
