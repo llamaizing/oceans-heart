@@ -165,12 +165,19 @@ function fast_travel_menu:confirm_selection()
   local game = sol.main.get_game()
   local port_name = sol.language.get_string("location."..locations[current_port].name)
 
+  if locations[current_port].name == fast_travel_menu:get_current_location_name() then
+    game:start_dialog"_fast_travel.already_here"
+    return
+  end
+
   game:start_dialog("_game.fast_travel_confirm", port_name, function(answer)
     if answer == 3 then
       sol.audio.play_sound"ok"
       game:set_value("fast_travel_menu_current_port", current_port)
+      local departure_port_name = fast_travel_menu:get_current_location_name()
+      local path = path_data[departure_port_name]
+      and path_data[departure_port_name][locations[current_port].name] or {}
 
-      local path = path_data.goatshead_harbor[locations[current_port].name] or {} --TODO only paths to/from goatshead harbor currently setup
       local movement = path_movement.create{
         object = boat,
         x = path.x,
@@ -197,6 +204,7 @@ function fast_travel_menu:confirm_selection()
     end
   end)
 end
+
 
 function fast_travel_menu:on_command_pressed(command)
   local handled = false

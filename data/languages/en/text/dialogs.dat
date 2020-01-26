@@ -1474,6 +1474,14 @@ Dad?
 }
 
 dialog{
+  id = "_fast_travel.already_here",
+  text = [[
+LILY:
+Tilia, that's where we already are.
+]],
+}
+
+dialog{
   id = "_fast_travel.location_ballast_harbor",
   text = [[
 LILY:
