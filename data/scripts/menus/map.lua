@@ -31,6 +31,7 @@ local MAP_LOCATIONS = {
 	['oakhaven/ivystump'] = {x=144, y=23, width=23, height=23},
 	['oakhaven/ivystump_port'] = {x=167, y=29, width=14, height=17},
 	['oakhaven/port'] = {x=78, y=68, width=62, height=35},
+	['oakhaven/lobb_trail'] = {x=186, y=55, width=9, height=24},
 	['oakhaven/oakhaven'] = {x=99, y=37, width=41, height=31},
 	['oakhaven/eastoak'] = {x=140, y=74, width=40, height=30},
 	['oakhaven/veilwood'] = {x=140, y=46, width=45, height=28},

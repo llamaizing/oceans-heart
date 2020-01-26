@@ -762,7 +762,6 @@ sprite{ id = "hud/small_key_icon", description = "Small Key Icon" }
 sprite{ id = "menus/arrows", description = "arrows" }
 sprite{ id = "menus/checkmark", description = "checkmark" }
 sprite{ id = "menus/cursor", description = "Cursor" }
-sprite{ id = "menus/hero_head", description = "Menu: hero head" }
 sprite{ id = "menus/inventory/inventory_background", description = "Inventory Background" }
 sprite{ id = "menus/inventory/life_empty_stitch", description = "Life Empty Slot Stitch" }
 sprite{ id = "menus/inventory/life_half_stitch", description = "Life Half Stitch" }
@@ -790,6 +789,8 @@ sprite{ id = "menus/maps/landmasses/sunken_palace", description = "menus/maps/la
 sprite{ id = "menus/maps/landmasses/tern_marsh", description = "menus/maps/landmasses/tern_marsh" }
 sprite{ id = "menus/maps/landmasses/yarrowmouth_island", description = "menus/maps/landmasses/yarrowmouth_island" }
 sprite{ id = "menus/maps/landmasses/zephyr_bay", description = "menus/maps/landmasses/zephyr_bay" }
+sprite{ id = "menus/maps/marker_icon", description = "Marker Icon" }
+sprite{ id = "menus/maps/marker_icon_2", description = "MarkerIcon2" }
 sprite{ id = "menus/maps/overworld_blank", description = "menus/maps/overworld_blank" }
 sprite{ id = "menus/maps/port_rune", description = "Port Rune" }
 sprite{ id = "menus/maps/roads/ballast_harbor", description = "menus/maps/roads/ballast_harbor" }
@@ -826,7 +827,6 @@ sprite{ id = "menus/maps/text/yarrowmouth", description = "menus/maps/text/yarro
 sprite{ id = "menus/maps/text/zephyr_bay", description = "menus/maps/text/zephyr_bay" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/slider", description = "slider" }
-sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
 sprite{ id = "menus/title_screen/background", description = "Background" }
 sprite{ id = "menus/title_screen/cloud_1", description = "Cloud 1" }
 sprite{ id = "menus/title_screen/cloud_2", description = "Cloud 2" }
