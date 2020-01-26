@@ -13,7 +13,9 @@ local black = sol.surface.create()
 black:fill_color{0,0,0}
 black:set_opacity(0)
 
-
+function map:on_started()
+  game:get_hud():set_enabled(false)
+end
 
 function map:on_opening_transition_finished()
   hero:freeze()
@@ -27,8 +29,8 @@ function map:on_opening_transition_finished()
         m:set_speed(50)
         m:start(linden,function() mallow:get_sprite():set_animation"hug_closed" end)
         sol.timer.start(map, 500, function()
-          black:fade_in(150, function()
-            sol.menu.start(sol.main, require("scripts/menus/credits"))
+          black:fade_in(60, function()
+            hero:teleport("dummy_cutscene/limestone", "cut_dest")
           end)
         end)
       end)

@@ -123,6 +123,8 @@ map{ id = "demo_1/test_town_2", description = "test town 2-limestone" }
 map{ id = "demo_1/testing_room", description = "testing room" }
 map{ id = "dev/world_map", description = "world_map" }
 map{ id = "dummy_cutscene/basswood", description = "Basswood" }
+map{ id = "dummy_cutscene/hazel_oakhaven", description = "Hazel Oakhaven" }
+map{ id = "dummy_cutscene/limestone", description = "limestone" }
 map{ id = "goat_hill_new_test", description = "new goat hill test" }
 map{ id = "goatshead_island/ball_trail", description = "Ballast Trail" }
 map{ id = "goatshead_island/brickabranch_island", description = "Brickabranch Island" }
@@ -706,7 +708,6 @@ sprite{ id = "entities/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/spike_ball", description = "Spike Ball" }
 sprite{ id = "entities/spikes", description = "Spikes" }
 sprite{ id = "entities/spirit_1", description = "Spirit 01" }
-sprite{ id = "entities/splash", description = "Splash" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/steam_stream", description = "Steam Stream" }
@@ -768,6 +769,7 @@ sprite{ id = "menus/inventory/life_half_stitch", description = "Life Half Stitch
 sprite{ id = "menus/inventory/life_stitch", description = "Life Stitch" }
 sprite{ id = "menus/inventory/magic_stitch", description = "Magic Stitch" }
 sprite{ id = "menus/inventory/selector", description = "Selector" }
+sprite{ id = "menus/maps/boat", description = "Fast Travel Boat" }
 sprite{ id = "menus/maps/landmasses/ballast_harbor", description = "menus/maps/landmasses/ballast_harbor" }
 sprite{ id = "menus/maps/landmasses/crabhook", description = "menus/maps/landmasses/crabhook" }
 sprite{ id = "menus/maps/landmasses/crow_island", description = "menus/maps/landmasses/crow_island" }
@@ -819,9 +821,9 @@ sprite{ id = "menus/maps/text/oakhaven", description = "menus/maps/text/oakhaven
 sprite{ id = "menus/maps/text/oakport", description = "menus/maps/text/oakport" }
 sprite{ id = "menus/maps/text/snapmast_reef", description = "menus/maps/text/snapmast_reef" }
 sprite{ id = "menus/maps/text/spruce_head", description = "menus/maps/text/spruce_head" }
-sprite{ id = "menus/maps/text/tern_marsh", description = "Tern Marsh" }
+sprite{ id = "menus/maps/text/tern_marsh", description = "menus/maps/text/tern_marsh" }
 sprite{ id = "menus/maps/text/yarrowmouth", description = "menus/maps/text/yarrowmouth" }
-sprite{ id = "menus/maps/text/zephyr_bay", description = "Zephyr Bay" }
+sprite{ id = "menus/maps/text/zephyr_bay", description = "menus/maps/text/zephyr_bay" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/slider", description = "slider" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
@@ -1149,7 +1151,6 @@ sprite{ id = "npc/monk_1", description = "Monk 1" }
 sprite{ id = "npc/morus", description = "Morus" }
 sprite{ id = "npc/musician_2", description = "Musician 2" }
 sprite{ id = "npc/musician_3", description = "Musician 3" }
-sprite{ id = "npc/new_thyme", description = "New Thyme" }
 sprite{ id = "npc/nina", description = "Nina" }
 sprite{ id = "npc/old_man_1.2", description = "Old Man 1.2" }
 sprite{ id = "npc/orange_ana", description = "Orange Ana" }
@@ -1387,7 +1388,6 @@ sprite{ id = "weather/rain", description = "Rain" }
 sprite{ id = "weather/snow", description = "Snow" }
 
 music{ id = "ballast_harbor", description = "Ballast Harbor" }
-music{ id = "boss_battle", description = "boss_battle" }
 music{ id = "brackish_melancholy", description = "Brackish Melancholy" }
 music{ id = "crabhook", description = "crabhook" }
 music{ id = "driftwood-2", description = "Driftwood 2" }
@@ -1510,7 +1510,6 @@ sound{ id = "monster_hurt", description = "monster_hurt" }
 sound{ id = "monster_roar_1", description = "Monster Roar 1" }
 sound{ id = "monster_scream", description = "Monster Scream" }
 sound{ id = "no", description = "no" }
-sound{ id = "ohko", description = "ohko" }
 sound{ id = "ok", description = "ok" }
 sound{ id = "ok_l", description = "ok_l" }
 sound{ id = "ok_r", description = "ok_r" }
