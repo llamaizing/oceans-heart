@@ -1,6 +1,6 @@
 --[[ line2path.lua
-	version 1.0
-	28 Dec 2019
+	version 1.0.1
+	25 Jan 2020
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -71,6 +71,7 @@ return function(file_path)
 				start_count = start_count + 1
 			end
 		else
+			--Uncomment this code to print all non-conforming pixel colors (may help troubleshooting)
 			--[[
 			if pixel_bytes:sub(4,4):byte()~=0 then
 				print(
@@ -110,8 +111,8 @@ return function(file_path)
 			--no return if the first return is false
 	local function find_next(index)
 		if data[index] == "stop" then --stop pixel found, end of path
-			path.x_end = (start_index % width) + 1 --add 1 to convert from 0-based to 1-based
-			path.y_end = math.floor(start_index / width) + 1
+			path.x_end = (index % width) + 1 --add 1 to convert from 0-based to 1-based
+			path.y_end = math.floor(index / width) + 1
 			return false --exit loop
 		end
 		
