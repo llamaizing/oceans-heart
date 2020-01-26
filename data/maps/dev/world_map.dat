@@ -464,6 +464,30 @@ custom_entity{
 }
 
 custom_entity{
+  name = "text_tern_marsh",
+  layer = 2,
+  x = 256,
+  y = 93,
+  width = 32,
+  height = 16,
+  origin_x = 16,
+  direction = 0,
+  sprite = "menus/maps/text/tern_marsh",
+}
+
+custom_entity{
+  name = "text_zephyr_bay",
+  layer = 2,
+  x = 272,
+  y = 165,
+  width = 32,
+  height = 16,
+  origin_x = 16,
+  direction = 0,
+  sprite = "menus/maps/text/zephyr_bay",
+}
+
+custom_entity{
   name = "text_ballast_harbor",
   layer = 3,
   x = 328,
@@ -545,7 +569,7 @@ custom_entity{
   name = "text_limestone",
   layer = 3,
   x = 232,
-  y = 168,
+  y = 176,
   width = 48,
   height = 24,
   origin_x = 0,

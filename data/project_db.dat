@@ -313,7 +313,6 @@ map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }
 
-tileset{ id = "Full Hyrule", description = "Full Hyrule" }
 tileset{ id = "abysphere_ruins", description = "Abysphere Ruins" }
 tileset{ id = "bear_catacombs", description = "Bear Catacombs" }
 tileset{ id = "bear_catacombs_cave", description = "BearCatacombs-Cave" }
@@ -324,7 +323,6 @@ tileset{ id = "drygrass", description = "Drygrass" }
 tileset{ id = "fort_crow_walls", description = "Fort Crow Walls" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
 tileset{ id = "indoors_stone", description = "indoors - stone" }
-tileset{ id = "light_world", description = "Light World" }
 tileset{ id = "limestone", description = "Limestone" }
 tileset{ id = "misc", description = "misc tiles" }
 tileset{ id = "oceanheart_outdoors_1", description = "Overworld" }
@@ -334,11 +332,9 @@ tileset{ id = "overworld_yarrowmouth", description = "Overworld-Yarrowmouth" }
 tileset{ id = "palace_of_storms", description = "Palace of Storms" }
 tileset{ id = "pirate_overworld_test", description = "pirate_test1" }
 tileset{ id = "redpine_forest", description = "Redpine Forest" }
-tileset{ id = "sky_scroll", description = "Sky Scroll" }
 tileset{ id = "spruce_head", description = "Spruce Head" }
 tileset{ id = "temple", description = "temple" }
 tileset{ id = "temple_2", description = "Ancient Temple" }
-tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 tileset{ id = "treasure", description = "Treasure" }
 tileset{ id = "underwater_plants", description = "Underwater Plants" }
 tileset{ id = "vault_walls", description = "Vault Walls" }
@@ -710,6 +706,7 @@ sprite{ id = "entities/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/spike_ball", description = "Spike Ball" }
 sprite{ id = "entities/spikes", description = "Spikes" }
 sprite{ id = "entities/spirit_1", description = "Spirit 01" }
+sprite{ id = "entities/splash", description = "Splash" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/steam_stream", description = "Steam Stream" }
@@ -823,7 +820,9 @@ sprite{ id = "menus/maps/text/oakhaven", description = "menus/maps/text/oakhaven
 sprite{ id = "menus/maps/text/oakport", description = "menus/maps/text/oakport" }
 sprite{ id = "menus/maps/text/snapmast_reef", description = "menus/maps/text/snapmast_reef" }
 sprite{ id = "menus/maps/text/spruce_head", description = "menus/maps/text/spruce_head" }
+sprite{ id = "menus/maps/text/tern_marsh", description = "Tern Marsh" }
 sprite{ id = "menus/maps/text/yarrowmouth", description = "menus/maps/text/yarrowmouth" }
+sprite{ id = "menus/maps/text/zephyr_bay", description = "Zephyr Bay" }
 sprite{ id = "menus/pause/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "menus/slider", description = "slider" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
@@ -1151,6 +1150,7 @@ sprite{ id = "npc/monk_1", description = "Monk 1" }
 sprite{ id = "npc/morus", description = "Morus" }
 sprite{ id = "npc/musician_2", description = "Musician 2" }
 sprite{ id = "npc/musician_3", description = "Musician 3" }
+sprite{ id = "npc/new_thyme", description = "New Thyme" }
 sprite{ id = "npc/nina", description = "Nina" }
 sprite{ id = "npc/old_man_1.2", description = "Old Man 1.2" }
 sprite{ id = "npc/orange_ana", description = "Orange Ana" }
@@ -1388,6 +1388,7 @@ sprite{ id = "weather/rain", description = "Rain" }
 sprite{ id = "weather/snow", description = "Snow" }
 
 music{ id = "ballast_harbor", description = "Ballast Harbor" }
+music{ id = "boss_battle", description = "boss_battle" }
 music{ id = "brackish_melancholy", description = "Brackish Melancholy" }
 music{ id = "crabhook", description = "crabhook" }
 music{ id = "driftwood-2", description = "Driftwood 2" }
@@ -1510,6 +1511,7 @@ sound{ id = "monster_hurt", description = "monster_hurt" }
 sound{ id = "monster_roar_1", description = "Monster Roar 1" }
 sound{ id = "monster_scream", description = "Monster Scream" }
 sound{ id = "no", description = "no" }
+sound{ id = "ohko", description = "ohko" }
 sound{ id = "ok", description = "ok" }
 sound{ id = "ok_l", description = "ok_l" }
 sound{ id = "ok_r", description = "ok_r" }

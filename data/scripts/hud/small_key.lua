@@ -54,7 +54,6 @@ map_meta:register_event("on_started", function(self)
 end)
 
 function small_key_menu:on_started()
-print"key menu started"
   --update number of keys every 200ms or so
   small_key_menu:update_keys()
   sol.timer.start(sol.main.get_game():get_map(), 200, function() small_key_menu:update_keys() return true end)

@@ -37062,6 +37062,15 @@ tile{
   pattern = "130",
 }
 
+sensor{
+  name = "^map_banner_sensor_3",
+  layer = 0,
+  x = 1256,
+  y = 701,
+  width = 16,
+  height = 16,
+}
+
 teletransporter{
   layer = 0,
   x = 152,

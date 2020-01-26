@@ -152,6 +152,7 @@ end
 --Sensor in center of arena
 function arena_center_sensor:on_activated()
   if current_bracket and not map:has_entity("arena_enemy") then
+    sol.audio.play_music"boss_battle"
     map:close_doors("arena_door")
     map:get_camera():shake()
     sol.audio.play_sound"cannon_fire"
@@ -176,6 +177,7 @@ end
 
 --Win!
 function map:win_tournament()
+  map:fade_in_music()
   map:open_doors("arena_door")
   map:close_doors("arena_wall")
   local x,y,z = arena_center_sensor:get_position()  

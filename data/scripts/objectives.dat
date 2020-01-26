@@ -447,7 +447,7 @@ side{
 side{
     dialog_id = "quest.side.oakhaven.sinking_lighthouse",
     calc_phase = "quest_seaglint_ruins_lighthouse",
-    location = "location.oakhaven",
+    location = "location.sunken_palace",
     items = {"key_sinking_lighthouse.1"},
 }
 

@@ -14402,6 +14402,15 @@ tile{
   pattern = "227",
 }
 
+sensor{
+  name = "^map_banner_sensor",
+  layer = 0,
+  x = 800,
+  y = 701,
+  width = 32,
+  height = 32,
+}
+
 dynamic_tile{
   name = "block_statue_1",
   layer = 0,
@@ -15372,14 +15381,6 @@ teletransporter{
 }
 
 door{
-  layer = 0,
-  x = 32,
-  y = 888,
-  direction = 3,
-  sprite = "",
-}
-
-door{
   name = "tern_door",
   layer = 0,
   x = 32,
@@ -15426,15 +15427,6 @@ teletransporter{
   height = 16,
   destination_map = "snapmast_reef/snapmast_landing",
   destination = "from_kingsdown",
-}
-
-sensor{
-  name = "^map_banner_sensor",
-  layer = 0,
-  x = 800,
-  y = 701,
-  width = 32,
-  height = 32,
 }
 
 sensor{

@@ -6,17 +6,31 @@ local hero_meta = sol.main.get_metatable("hero")
 
 -- Redefine how to calculate the damage received by the hero.
 function hero_meta:on_taking_damage(damage)
---TODO: make it so explosion damage ignores defense
   -- In the parameter, the damage unit is 1/2 of a heart.
   local game = self:get_game()
   local defense = game:get_value("defense")
-    damage = math.floor(damage*2 / defense)
-    if game.take_half_damage then
-      damage = damage / 2
-    end
-    if damage < 1 then
-      damage = 1
-    end
+  damage = math.floor(damage*2 / defense)
+  if game.take_half_damage then
+    damage = damage / 2
+  end
+  if damage < 1 then
+    damage = 1
+  end
+  --if this attack would kill you in 1 hit at above 40% max life
+  if damage >= game:get_life()
+  and game:get_life() >= game:get_max_life() * .4
+  and damage >= game:get_max_life() * .6
+  and not game.guts_save_used then
+    --leave you with half a heart
+    damage = game:get_life() - 1
+    game:get_map():get_camera():shake()
+    sol.audio.play_sound"ohko"
+    --set this mechanic on a cooldown
+    game.guts_save_used = true
+    sol.timer.start(game, 40 * 1000, function() game.guts_save_used = false end)
+  elseif damage >= game:get_max_life() * .5 then
+    sol.audio.play_sound"oh_lotsa_damage"
+  end
   game:remove_life(damage)
 end
 

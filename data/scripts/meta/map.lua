@@ -85,6 +85,21 @@ local function calculate_speed(entity1, entity2, duration)
 end
 
 
+--BG Music
+function map_meta:fade_in_music()
+  local map = self
+  local game = map:get_game()
+  sol.audio.set_music_volume(0)
+  sol.audio.play_music(map:get_music())
+  local i = 1
+  sol.timer.start(map, 100, function()
+    sol.audio.set_music_volume(i)
+    i = i + 5
+    if sol.audio.get_music_volume() < game:get_value"music_volume" then return true end
+  end)
+end
+
+
 -----Map Focus-----
 function map_meta:focus_on(camera, target_entity, callback, return_delay)
   local game = sol.main.get_game()
@@ -123,6 +138,40 @@ function map_meta:create_poof(x, y, layer)
     x = x, y = y+3, layer = layer, direction = 0, height = 16, width = 16,
     sprite = "entities/poof"
   })
+end
+
+
+--==================DEBUG===================--
+--Take camera control for filming for trailers
+function map_meta:helicopter_cam()
+  local map = self
+  local hero = map:get_hero()
+  local game = map:get_game()
+  game.helicopter_cam = true
+  game:get_hud():set_enabled(false)
+  local state = sol.state.create()
+  state:set_can_control_movement(true)
+  state:set_visible(false)
+  state:set_can_traverse(true)
+  state:set_can_traverse_ground("wall", true)
+  state:set_can_traverse_ground("low_wall", true)
+  state:set_can_traverse_ground("deep_water", true)
+  state:set_can_traverse_ground("hole", true)
+  state:set_can_traverse_ground("prickles", true)
+  state:set_gravity_enabled(false)
+  state:set_affected_by_ground("ladder", false)
+  state:set_can_be_hurt(false)
+  hero:start_state(state)
+  hero:set_layer(map:get_max_layer())
+end
+
+function map_meta:exit_helicopter_cam()
+  local map = self
+  local hero = map:get_hero()
+  local game = map:get_game()
+  game.helicopter_cam = false
+  game:get_hud():set_enabled(true)
+  hero:unfreeze()
 end
 
 

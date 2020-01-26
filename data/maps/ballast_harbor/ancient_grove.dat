@@ -3560,6 +3560,186 @@ tile{
   pattern = "3_4",
 }
 
+tile{
+  layer = 0,
+  x = 128,
+  y = 288,
+  width = 16,
+  height = 16,
+  pattern = "2339",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "2340",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 136,
+  width = 16,
+  height = 16,
+  pattern = "2301",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 272,
+  width = 16,
+  height = 16,
+  pattern = "2336",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 280,
+  width = 16,
+  height = 16,
+  pattern = "2337",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 96,
+  y = 168,
+  width = 16,
+  height = 16,
+  pattern = "2338",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 240,
+  width = 16,
+  height = 16,
+  pattern = "2339",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "2340",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 104,
+  width = 16,
+  height = 16,
+  pattern = "2301",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 120,
+  y = 376,
+  width = 16,
+  height = 16,
+  pattern = "2336",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 392,
+  width = 16,
+  height = 16,
+  pattern = "2337",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 248,
+  width = 16,
+  height = 16,
+  pattern = "2338",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "2339",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 224,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "2340",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "2301",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 336,
+  width = 16,
+  height = 16,
+  pattern = "2336",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 216,
+  y = 328,
+  width = 16,
+  height = 16,
+  pattern = "2337",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "2338",
+  tileset = "oceanheart_outdoors_1",
+}
+
 npc{
   name = "fx",
   layer = 0,
@@ -3577,6 +3757,7 @@ enemy{
   y = 229,
   direction = 3,
   breed = "bosses/forest_revenant",
+  treasure_name = "elixer",
 }
 
 destination{

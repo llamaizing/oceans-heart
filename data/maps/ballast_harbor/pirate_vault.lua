@@ -204,6 +204,7 @@ function boss_sensor:on_activated()
   if not game:has_item("charts") then
     map:close_doors("boss_door")
     game:start_dialog("_ballast_harbor.npcs.charging_pirate.1", function()
+      sol.audio.play_music"boss_battle"
       dummy_boss:set_enabled(false)
       boss:set_enabled(true)
       boss_sensor:set_enabled(false)
@@ -213,6 +214,7 @@ end
 
 
 function boss:on_dead()
+  map:fade_in_music()
   map:create_pickable({
     x = 1456, y = 1328, layer = 0, name = "health_upgrade"
   })

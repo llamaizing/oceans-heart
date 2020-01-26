@@ -7486,20 +7486,10 @@ tile{
 tile{
   layer = 0,
   x = 408,
-  y = 416,
+  y = 432,
   width = 16,
   height = 16,
   pattern = "698",
-  tileset = "oceanheart_outdoors_1",
-}
-
-tile{
-  layer = 0,
-  x = 432,
-  y = 400,
-  width = 16,
-  height = 16,
-  pattern = "1018",
   tileset = "oceanheart_outdoors_1",
 }
 
@@ -7520,16 +7510,6 @@ tile{
   width = 8,
   height = 32,
   pattern = "127",
-}
-
-tile{
-  layer = 0,
-  x = 416,
-  y = 392,
-  width = 16,
-  height = 16,
-  pattern = "1018",
-  tileset = "oceanheart_outdoors_1",
 }
 
 tile{
@@ -10770,6 +10750,16 @@ tile{
   tileset = "waves",
 }
 
+chest{
+  layer = 0,
+  x = 432,
+  y = 405,
+  treasure_name = "mandrake_white",
+  treasure_variant = 2,
+  treasure_savegame_variable = "bracken_beach_cave_chest",
+  sprite = "entities/chest",
+}
+
 enemy{
   layer = 0,
   x = 688,
@@ -10804,7 +10794,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 544,
+  x = 608,
   y = 445,
   direction = 3,
   breed = "normal_enemies/seaweed_golem_1",
@@ -11253,6 +11243,34 @@ teletransporter{
   height = 16,
   destination_map = "stonefell_crossroads/sycamore_ferry",
   destination = "from_bracken_beach",
+}
+
+wall{
+  layer = 0,
+  x = 560,
+  y = 416,
+  width = 8,
+  height = 136,
+  stops_enemies = true,
+}
+
+chest{
+  layer = 0,
+  x = 416,
+  y = 381,
+  treasure_name = "bomb",
+  treasure_variant = 5,
+  treasure_savegame_variable = "bracken_beach_cave_chest_2",
+  sprite = "entities/chest",
+}
+
+wall{
+  layer = 0,
+  x = 568,
+  y = 464,
+  width = 376,
+  height = 8,
+  stops_enemies = true,
 }
 
 tile{

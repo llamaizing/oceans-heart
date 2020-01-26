@@ -8,6 +8,7 @@ local seagull = sol.sprite.create("menus/title_screen/seagull")
 local cursor_sprite = sol.sprite.create("menus/cursor")
 local selection_surface = sol.surface.create(144, 72)
 local black_fill = sol.surface.create()
+local title_surface = sol.surface.create("menus/title_card.png")
 local text_surface = sol.text_surface.create({
         font = "oceansfont",
         vertical_alignment = "top",
@@ -59,6 +60,7 @@ end
 
 
 function title_screen:on_started()
+  title_surface:fade_in()
   sol.audio.play_music("title_screen_piano_only")
   black_fill:fill_color({0,0,0, 255})
   black_fill:fade_out(40)
@@ -79,9 +81,9 @@ function title_screen:on_started()
   sol.timer.start(title_screen, math.random(1000, 2000), function()
     local i = #leaves + 1
     leaves[i] = sol.sprite.create("entities/leaf_blowing")
-    leaves[i]:set_xy(math.random(-120, 30), 0)
+    leaves[i]:set_xy(math.random(-100, 50), 0)
     local m3 = sol.movement.create("straight")
-    m3:set_angle(math.random(5.3, 5.9))
+    m3:set_angle(math.random(5.3, 6))
     m3:set_speed(25)
     m3:set_max_distance(700)
     m3:start(leaves[i], function() table.remove(leaves, 1) end)
@@ -111,12 +113,12 @@ function title_screen:on_draw(dst_surface)
   sea_sparkle:draw(dst_surface)
   seagull:draw(dst_surface, 340, 42)
   selection_surface:draw(dst_surface, 344, 190)
---  selection_surface:draw(dst_surface, 300, 190)
   leaf_surface:draw(dst_surface)
   for i=1 , #leaves do
     leaves[i]:draw(dst_surface)
   end
-    cursor_sprite:draw(dst_surface, 347, 194 + cursor_index * 16)
+  title_surface:draw(dst_surface, 6, 24)
+  cursor_sprite:draw(dst_surface, 347, 194 + cursor_index * 16)
 
 
   black_fill:draw(dst_surface)

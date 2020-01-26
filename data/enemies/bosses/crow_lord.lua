@@ -17,7 +17,7 @@ function enemy:on_created()
 --  enemy:set_invincible_sprite(smoke_sprite)
 
   enemy:set_life(300)
-  enemy:set_damage(20)
+  enemy:set_damage(23)
   enemy:set_pushed_back_when_hurt(false)
   enemy:set_hurt_style("boss")
 end
@@ -142,6 +142,7 @@ function enemy:summon_crows()
           x = x, y = y, layer = layer, direction = direction,
           breed = "normal_enemies/crow"
         })
+        projectiles[i]:set_damage(10)
         local m = sol.movement.create("circle")
         m:set_center(enemy)
         m:set_radius(48)
@@ -228,6 +229,7 @@ end
 function enemy:make_bomb_go(type)
   local breed = type or "misc/energy_ball_black_2"
   local bomb = enemy:create_enemy{breed=breed}
+  bomb:set_damage(13)
   sol.audio.play_sound"shoot_magic_2"
   bomb:go(enemy:get_angle(hero))
 end

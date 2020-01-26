@@ -54,16 +54,12 @@ function game_manager:create(file_name, overwrite_game)
 
   objectives_manager.create(game)
 
-  -- function game:on_started()
-  --   game:start_magic_regen_timer()
-  -- end
   game:register_event("on_started", function()
     game:start_magic_regen_timer()
   end)
 
-
   function game:on_paused()
-    sol.menu.start(game, pause_menu)
+    if not sol.menu.is_started(pause_menu) then sol.menu.start(game, pause_menu) end
   end
 
 
@@ -109,13 +105,20 @@ function game_manager:create(file_name, overwrite_game)
   function game:on_key_pressed(key, modifiers)
     local hero = game:get_hero()
 
+    --if function key f2-f5 then open (or close if already open) the corresponding pause submenu directly
+    local submenu_index = pause_menu.quick_keys[key]
+    if submenu_index then
+      pause_menu:toggle_submenu(submenu_index)
+      return true
+    end
+
     if key == "f" and sol.menu.is_started(pause_menu) then
       pause_menu:next_submenu"left"
     elseif key == "g" and sol.menu.is_started(pause_menu) then
       pause_menu:next_submenu"right"
 
       --DEBUG FUNCTIONS
-    elseif key == "y" and DEBUG_MODE and game:has_item("sword") then
+    -- elseif key == "y" and DEBUG_MODE and game:has_item("sword") then
       -- game:set_ability("sword_knowledge", 1)
       -- hero:start_attack_loading(0)
       -- sol.timer.start(game, 10, function()
@@ -149,6 +152,15 @@ function game_manager:create(file_name, overwrite_game)
       print("You are on map: " .. game:get_map():get_id())
       local x, y, l = hero:get_position()
       print("at coordinates: " .. x .. ", " .. y .. ", " .. l)
+
+    elseif key == "y" and DEBUG_MODE then
+      --helicopter shot
+      if not game.helicopter_cam then
+        game:get_map():helicopter_cam()
+      else
+        game:get_map():exit_helicopter_cam()
+        require("scripts/action/hole_drop_landing"):play_landing_animation()
+      end
 
          --end of debug functions
           --]]

@@ -15,7 +15,7 @@ function initial_game:initialize_new_savegame(game)
                           --DON'T FORGET TO REMOVE ANY DEBUGGING FUNCTIONS FROM GAME_MANAGER, MAX! --
 
   game:set_starting_location("debug_room", "starting_destination")
---  game:set_starting_location("new_limestone/tavern_upstairs", "destination")
+--  game:set_starting_location("new_limestone/new_limestone_island", "intro_cutscene")
 
   sol.audio.set_music_volume(90)
   game:set_value("music_volume", 90)

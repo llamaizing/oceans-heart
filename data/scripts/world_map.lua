@@ -42,7 +42,7 @@
 	world_map:get_visible(id); world_map:set_visible(id, boolean)
 	world_map:get_visited(id); world_map:set_visited(id, boolean)
 	world_map:get_revealed(id); world_map:set_revealed(id, boolean)
-]]
+--]]
 
 --constants
 local WORLD_MAP_ID = "maps/dev/world_map.dat" --map id that contains world map info
@@ -66,7 +66,7 @@ local MAP_LIST = {
 	['stonefell_crossroads/crow_arena'] = {'crow_arena'},
 	['stonefell_crossroads/lotus_shoal'] = {'lotus_shoal', 'lotus_shoal'},
 	['stonefell_crossroads/spruce_head'] = {'spruce_head', 'spruce_head'},
-	['stonefell_crossroads/forest_of_tides'] = {'zephyr_bay'},
+	['stonefell_crossroads/forest_of_tides'] = {'zephyr_bay', 'zephyr_bay'},
 	['stonefell_crossroads/zephyr_bay'] = {'zephyr_bay'},
 	['stonefell_crossroads/stonefell_crossroads'] = {'stonefell_crossroads'},
 	['oakhaven/sunken_palace'] = {'sunken_palace'},
@@ -85,7 +85,7 @@ local MAP_LIST = {
 	['Yarrowmouth/puzzlewood'] = {'yarrowmouth_island'},
 	['Yarrowmouth/yarrowmouth_village'] = {'yarrowmouth_island', 'yarrowmouth'},
 	['Yarrowmouth/juniper_grove'] = {'yarrowmouth_island'},
-	['Yarrowmouth/tern_marsh'] = {'tern_marsh'},
+	['Yarrowmouth/tern_marsh'] = {'tern_marsh', 'tern_marsh'},
 	['Yarrowmouth/kingsdown'] = {'kingsdown_isle', 'kingsdown_isle'},
 	['snapmast_reef/snapmast_landing'] = {'snapmast_landing', 'snapmast_reef'},
 	['snapmast_reef/drowned_village'] = {'snapmast_reef'},

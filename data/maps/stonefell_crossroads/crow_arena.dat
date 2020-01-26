@@ -5314,6 +5314,246 @@ chest{
   sprite = "entities/chest_big",
 }
 
+enemy{
+  name = "blackbird_1",
+  layer = 0,
+  x = 304,
+  y = 317,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_2",
+  layer = 0,
+  x = 296,
+  y = 325,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_3",
+  layer = 0,
+  x = 208,
+  y = 285,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_4",
+  layer = 0,
+  x = 256,
+  y = 261,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_5",
+  layer = 0,
+  x = 264,
+  y = 269,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_6",
+  layer = 0,
+  x = 248,
+  y = 301,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_7",
+  layer = 0,
+  x = 240,
+  y = 309,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_8",
+  layer = 0,
+  x = 264,
+  y = 317,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_9",
+  layer = 0,
+  x = 120,
+  y = 277,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_10",
+  layer = 0,
+  x = 104,
+  y = 285,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_11",
+  layer = 0,
+  x = 408,
+  y = 205,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_12",
+  layer = 0,
+  x = 424,
+  y = 213,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_13",
+  layer = 0,
+  x = 424,
+  y = 309,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_14",
+  layer = 0,
+  x = 408,
+  y = 293,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_15",
+  layer = 0,
+  x = 400,
+  y = 333,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
+enemy{
+  name = "blackbird_16",
+  layer = 0,
+  x = 480,
+  y = 285,
+  properties = {
+    {
+      key = "type",
+      value = "blackbird",
+    },
+  },
+  direction = 0,
+  breed = "misc/dove",
+}
+
 tile{
   layer = 1,
   x = 192,

@@ -25,7 +25,7 @@ item:register_event("on_obtained", function(self, variant, savegame_variable)
 end)
 
 item:register_event("on_using", function(self)
-  MAGIC_COST = 40 + item:get_variant() * 5
+  MAGIC_COST = 85
   if game:get_magic() < MAGIC_COST then sol.audio.play_sound("no") item:set_finished()
   else
     game:remove_magic(MAGIC_COST)
@@ -41,6 +41,8 @@ item:register_event("on_using", function(self)
     summoning_state:set_can_grab(false)
     summoning_state:set_can_pick_treasure(false)
     hero:start_state(summoning_state)
+
+    local lightning_damage = 5 + (item:get_variant() * 3)
 
     hero:set_animation("charging")
     sol.audio.play_sound("charge_1")
@@ -62,7 +64,7 @@ item:register_event("on_using", function(self)
             sprite = "entities/lightning_bolt_attack",
             model = "damaging_sparkle"
             }
-            lightning:set_damage((game:get_value("sword_damage") * 3) or 10)
+            lightning:set_damage(lightning_damage)
             sol.timer.start(map, 2000, function() lightning:remove() end)
             if i >= item:get_variant() then
               hero:unfreeze()
