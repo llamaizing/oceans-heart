@@ -65456,7 +65456,7 @@ tile{
 tile{
   layer = 0,
   x = 1728,
-  y = 688,
+  y = 680,
   width = 112,
   height = 32,
   pattern = "60",
@@ -65466,7 +65466,7 @@ tile{
 tile{
   layer = 0,
   x = 1728,
-  y = 680,
+  y = 672,
   width = 112,
   height = 8,
   pattern = "1828",
@@ -65475,7 +65475,7 @@ tile{
 tile{
   layer = 0,
   x = 1720,
-  y = 688,
+  y = 680,
   width = 8,
   height = 32,
   pattern = "1829",
@@ -65484,7 +65484,7 @@ tile{
 tile{
   layer = 0,
   x = 1840,
-  y = 688,
+  y = 680,
   width = 8,
   height = 32,
   pattern = "1831",
@@ -66829,7 +66829,7 @@ tile{
 tile{
   layer = 0,
   x = 1696,
-  y = 672,
+  y = 664,
   width = 32,
   height = 32,
   pattern = "60",
@@ -66839,7 +66839,7 @@ tile{
 tile{
   layer = 0,
   x = 1696,
-  y = 664,
+  y = 656,
   width = 32,
   height = 8,
   pattern = "1828",
@@ -66848,7 +66848,7 @@ tile{
 tile{
   layer = 0,
   x = 1688,
-  y = 672,
+  y = 664,
   width = 8,
   height = 32,
   pattern = "1829",
@@ -66857,7 +66857,7 @@ tile{
 tile{
   layer = 0,
   x = 1728,
-  y = 672,
+  y = 664,
   width = 8,
   height = 16,
   pattern = "1831",
@@ -66866,7 +66866,7 @@ tile{
 tile{
   layer = 0,
   x = 1696,
-  y = 704,
+  y = 696,
   width = 32,
   height = 8,
   pattern = "1830",
@@ -77672,6 +77672,15 @@ tile{
   tileset = "cemetery_of_waves",
 }
 
+tile{
+  layer = 0,
+  x = 1728,
+  y = 712,
+  width = 112,
+  height = 8,
+  pattern = "1830",
+}
+
 sensor{
   name = "^save_solid_ground_sensor_128",
   layer = 0,
@@ -77730,7 +77739,7 @@ sensor{
   name = "^save_solid_ground_sensor_108",
   layer = 0,
   x = 1704,
-  y = 685,
+  y = 677,
   width = 32,
   height = 32,
 }
@@ -86486,7 +86495,7 @@ custom_entity{
 custom_entity{
   layer = 0,
   x = 1712,
-  y = 693,
+  y = 685,
   width = 16,
   height = 16,
   direction = 0,
@@ -86563,7 +86572,7 @@ sensor{
   name = "^save_solid_ground_sensor_109",
   layer = 0,
   x = 1768,
-  y = 701,
+  y = 693,
   width = 16,
   height = 32,
 }
@@ -86572,7 +86581,7 @@ sensor{
   name = "^save_solid_ground_sensor_110",
   layer = 0,
   x = 1752,
-  y = 701,
+  y = 693,
   width = 16,
   height = 32,
 }
