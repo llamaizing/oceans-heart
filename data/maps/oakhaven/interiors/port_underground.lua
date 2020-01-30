@@ -151,7 +151,7 @@ end
 
 --Sensor in center of arena
 function arena_center_sensor:on_activated()
-  if current_bracket and not map:has_entity("arena_enemy") then
+  if current_bracket and not map:has_entities("arena_enemy") then
     sol.audio.play_music"boss_battle"
     map:close_doors("arena_door")
     map:get_camera():shake()

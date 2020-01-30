@@ -50224,6 +50224,7 @@ destination{
   x = 1104,
   y = 973,
   direction = 3,
+  default = true,
 }
 
 teletransporter{
