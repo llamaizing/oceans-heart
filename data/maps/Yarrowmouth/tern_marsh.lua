@@ -41,3 +41,13 @@ function nina:on_interaction()
   end
 
 end
+
+
+function door_item_sensor:on_activated()
+  if not game:has_item("heron_door_tern_marsh") then
+    game:get_item("heron_door_tern_marsh"):set_variant(1)
+    game:set_value("found_heron_door_tern_marsh", 1) --TODO quest log issue #76
+    game.objectives:force_update() --TODO quest log issue #70
+  end
+end
+
