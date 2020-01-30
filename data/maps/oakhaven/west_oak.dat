@@ -23092,3 +23092,19 @@ tile{
   tileset = "overworld_oakhaven",
 }
 
+enemy{
+  layer = 2,
+  x = 96,
+  y = 365,
+  direction = 0,
+  breed = "normal_enemies/roc_bomber",
+}
+
+enemy{
+  layer = 2,
+  x = 272,
+  y = 573,
+  direction = 0,
+  breed = "normal_enemies/roc_bomber",
+}
+

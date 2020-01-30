@@ -23380,19 +23380,3 @@ door{
   savegame_variable = "eastoak_barrow_door_state",
 }
 
-enemy{
-  layer = 2,
-  x = 256,
-  y = 757,
-  direction = 0,
-  breed = "normal_enemies/roc_bomber",
-}
-
-enemy{
-  layer = 2,
-  x = 648,
-  y = 565,
-  direction = 0,
-  breed = "normal_enemies/roc_bomber",
-}
-
