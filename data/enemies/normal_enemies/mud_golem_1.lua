@@ -30,7 +30,7 @@ properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)
 
 enemy:register_event("on_created", function()
-  enemy:set_obstacle_behavior("flying")
+--  enemy:set_obstacle_behavior("flying")
   enemy:set_layer_independent_collisions(true)
 end)
 
