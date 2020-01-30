@@ -81883,7 +81883,7 @@ custom_entity{
   name = "leaf_pile_58",
   layer = 0,
   x = 2312,
-  y = 277,
+  y = 269,
   properties = {
     {
       key = "can_respawn",
@@ -81923,7 +81923,7 @@ custom_entity{
   name = "leaf_pile_60",
   layer = 0,
   x = 2312,
-  y = 309,
+  y = 301,
   properties = {
     {
       key = "can_respawn",
