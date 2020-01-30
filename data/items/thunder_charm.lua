@@ -3,8 +3,8 @@ require("scripts/multi_events")
 local item = ...
 local game = item:get_game()
 
-local RANGE = 120
-local MAGIC_COST = 40
+local RANGE = 180
+local MAGIC_COST = 85
 --The variant will determine the number of lightning bolts called
 
 item:register_event("on_started", function(self)
@@ -25,7 +25,6 @@ item:register_event("on_obtained", function(self, variant, savegame_variable)
 end)
 
 item:register_event("on_using", function(self)
-  MAGIC_COST = 85
   if game:get_magic() < MAGIC_COST then sol.audio.play_sound("no") item:set_finished()
   else
     game:remove_magic(MAGIC_COST)
@@ -53,25 +52,22 @@ item:register_event("on_using", function(self)
         if entity:get_type() == "enemy" and entity:get_distance(hero) <= RANGE then
           i = i + 1
           local x, y, layer = entity:get_position()
-          local lightning = map:create_custom_entity{
-            name = "lightning_attack",
-            direction = 0,
-            layer = layer,
-            x = x,
-            y = y,
-            width = 16,
-            height = 16,
-            sprite = "entities/lightning_bolt_attack",
-            model = "damaging_sparkle"
+          if not string.match(entity:get_breed(), "misc") then
+            local lightning = map:create_custom_entity{
+              name = "lightning_attack",direction = 0,
+              layer = layer,x = x,y = y,width = 16,height = 16,
+              sprite = "entities/lightning_bolt_attack",
+              model = "damaging_sparkle"
             }
             lightning:set_damage(lightning_damage)
             sol.timer.start(map, 2000, function() lightning:remove() end)
-            if i >= item:get_variant() then
-              hero:unfreeze()
-              item:set_finished()
-              return
-            end
           end
+          if i >= item:get_variant() then
+            hero:unfreeze()
+            item:set_finished()
+            return
+          end
+        end
       end
       hero:unfreeze()
 
