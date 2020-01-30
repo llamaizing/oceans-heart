@@ -17615,11 +17615,11 @@ Fast travel?
 
 dialog{
   id = "quest.heron_doors",
-  title = "The Seabird Shrines",
+  title = "REPLACED WITH QUEST.SIDE.HERON_DOORS",
   text = [[
-@?Find all of the Seabird Shrines
-!Explore the remaining shrines to
-!empower the Seabird's Tear
+@?This message is an error
+!tell Max!
+!make him fix it!!
 
 %~You haven't found any more shrines
 %=!Locations to explore: --// The player must find at least one door for these lines to be visible
@@ -18182,18 +18182,18 @@ dialog{
   text = [[
 !Cleanse the remaining shrines to
 !strengthen the Seabird's Tear spell.
-@?Explore all of the shrines
+@?Explore the remaining shrines
 
 %~You haven't found any more shrines
 %=!Locations to explore: --// The player must find at least one door for these lines to be visible
 ?Shrines explored: --// This line visible instead once quest is complete
 %1$@1 Tern Marsh
 %2$@2 Marble Summit
-%3$@3 Snapmast
+%3$@3 Smoldering Rock
 %=!
 %=!  Keep exploring to find them all.
 ::
-$ITEM{thunder_charm.1}   Shrines cleared: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
+$ITEM{thunder_charm.1}   Seabird's Tear Upgrades: $v1 of 4 --// this value will always be at least 1 while this alt quest is active
 ]],
 }
 
@@ -18242,7 +18242,7 @@ You found a door marked with a
 Seabird carving at these locations:
 %1$@1 Tern Marsh
 %2$@2 Marble Summit
-%3$@3 Snapmast
+%3$@3 Smoldering Rock
 --//Note: the one in Goatshead is excluded because it is behind a regular locked door
 ]],
 }
@@ -18613,4 +18613,3 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
-
