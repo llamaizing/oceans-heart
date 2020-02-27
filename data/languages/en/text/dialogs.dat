@@ -14434,7 +14434,7 @@ half a heart when you eat it.
 dialog{
   id = "_treasure.berries.4",
   text = [[
-You received 10 berries. Each will
+You received 20 berries. Each will
 restore half a heart when you eat it.
 Or you could bake them all into a pie
 if you beat the game and settle down.
