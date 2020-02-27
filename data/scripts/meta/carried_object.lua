@@ -8,4 +8,7 @@ function carried_object_meta:on_breaking()
   if string.match(sprite_name, "vase") then
     sol.audio.play_sound("breaking_vase")
   end
+  if string.match(sprite_name, "stone") then
+    sol.audio.play_sound("breaking_stone")
+  end
 end

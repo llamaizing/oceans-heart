@@ -61,7 +61,9 @@ end
 
 function title_screen:on_started()
   title_surface:fade_in()
-  sol.audio.play_music("title_screen_piano_only")
+  sol.timer.start(self, 100, function()
+    sol.audio.play_music("title_screen_piano_only")
+  end)
   black_fill:fill_color({0,0,0, 255})
   black_fill:fade_out(40)
   cursor_index = 0
@@ -135,6 +137,7 @@ function title_screen:on_key_pressed(command)
       cursor_index = cursor_index - 1
       if cursor_index <0 then cursor_index = MAX_CURSOR_INDEX end
 
+
   elseif command == "space" then
     --Continue
     if cursor_index == 0 and not confirming then
@@ -147,6 +150,7 @@ function title_screen:on_key_pressed(command)
     elseif cursor_index == 1 and not confirming then
       sol.audio.play_sound("danger")
       confirming = true
+      MAX_CURSOR_INDEX = 1
       selection_surface:clear()
       text_surface:set_text_key("menu.title.confirm")
       text_surface:draw(selection_surface, 12, 0)
@@ -164,6 +168,7 @@ function title_screen:on_key_pressed(command)
     elseif cursor_index == 1 and confirming then
       sol.audio.play_sound("no")
       confirming = false
+      MAX_CURSOR_INDEX = 2
       selection_surface:clear()
       text_surface:set_text_key("menu.title.continue")
       text_surface:draw(selection_surface, 12, 0)

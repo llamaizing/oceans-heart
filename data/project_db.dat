@@ -1439,6 +1439,7 @@ sound{ id = "boss_killed", description = "boss_killed" }
 sound{ id = "boss_killed1", description = "boss_killed1" }
 sound{ id = "bow", description = "bow" }
 sound{ id = "breaking_glass", description = "Breaking Glass" }
+sound{ id = "breaking_stone", description = "Breaking stone" }
 sound{ id = "breaking_vase", description = "breaking_vase" }
 sound{ id = "burrow1", description = "Burrow 1" }
 sound{ id = "burrow2", description = "Burrow 2" }

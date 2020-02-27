@@ -1838,15 +1838,19 @@ MAX:
 Hey! It's me, Max, the developer. Thanks for
 beta testing the game! There's a couple things
 I want to let you know about. First, the
-controls. Besides the normal ones, the "s"
-keyboard key is how you save right now.
-Other than that, all normal functions should
-work with a gamepad. There's a couple keys
+controls. Move with the arrow keys, and interact
+with Space. D is the menu, C is sword, and X and V
+are your items. F and G toggle through the menu
+subscreens. Everything should work with a gamepad,
+but the pause button might be mapped to the left bumper
+by default. There's a couple keys
 for debugging situations. Should you find
 youself stuck in a wall, try pressing 't',
 it toggles on/off a traverse-through-walls
 mechanic. 'r' sets the walking speed REALLY
 fast. 'h' will heal you, and 'j' hurts you.
+'Y' sends you up into the sky for filming
+footage for trailers.
 Besides that, just let me know what you
 think! What's rough, what's boring, what
 parts you really liked, definitely if you
@@ -17479,7 +17483,7 @@ North - it's confusing. Just explore.
 dialog{
   id = "_yarrowmouth.signs.puzzlewood_2",
   text = [[
-Right - Road to Naerreturn Bay
+Right - Road to Zephyr Bay
 ]],
 }
 
@@ -17890,9 +17894,10 @@ matching brass lock, but where?
 @Explore the locked passage.
 @You activated... or awakened?
 Something?
-@All you know for sure is you
-?fought a big monster. What
-?was it? Was it even real?
+?All you know for sure is you
+?fought a big monster in the
+?heart of the earth. What was
+?it?
 #::
 #%=$i0    QUEST ITEM:
 #%=    $ITEM_NAME
@@ -18225,7 +18230,7 @@ dialog{
 ##lover back from sea.
 @Light all four lighthouses$!:
 ! $v1 lighthouses are burning.
-@You feel drawn back to Naerreturn Bay
+@You feel drawn back to Zephyr Bay
 !where the lighthouse keeper lives.
 @Board the ghost ship
 #::
