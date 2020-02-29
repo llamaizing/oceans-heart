@@ -6,6 +6,12 @@ local won_battle
 map:register_event("on_started", function()
   started_battle = false
   won_battle = false
+  --already defeated monsters
+  if game:get_value("oakhaven_sculptor_battle") then
+    for e in map:get_entities_by_type"enemy" do
+      e:remove()
+    end
+  end
 end)
 
 function sculptor:on_interaction()
@@ -24,6 +30,7 @@ function sculptor:on_interaction()
   else
     game:start_dialog("_oakhaven.npcs.sculptor.1", function(answer)
       game:start_dialog("_oakhaven.npcs.sculptor.2", function()
+        sol.audio.play_sound"door_unlocked"
         for door in map:get_entities"cage_door" do door:set_enabled(false) end
         started_battle = true
       end)

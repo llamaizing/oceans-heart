@@ -23,6 +23,7 @@ map:register_event("on_started", function()
   if game:get_value("fort_crow_interior_morus_counter") == 2 then morus_2:set_enabled(true) end
   if game:get_value("fort_crow_interior_morus_counter") == 3 then morus_3:set_enabled(true) end
   if game:get_value("fort_crow_interior_morus_counter") == 4 then morus_4:set_enabled(true) end
+  if game:get_value"jazari_defeated" then boss_sensor:set_enabled(false) end
 
   --Alternating Steam Timer
   for steam in map:get_entities("alternating_steam_b") do steam:set_enabled(false) end
@@ -190,6 +191,7 @@ function jazari_boss:on_dying()
 end
 
 function jazari_boss:on_dead()
+  game:set_value("jazari_defeated", true)
   if not game:get_value("quest_snapmast") then
     map:fade_in_music()
     hero:freeze()
