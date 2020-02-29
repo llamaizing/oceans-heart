@@ -61,7 +61,9 @@ local function summon_heron()
         end)
 
       elseif game:get_item("thunder_charm"):get_variant() == 4 then
-        game:start_dialog("_goatshead.npcs.heron_ghost.4")
+        game:start_dialog("_goatshead.npcs.heron_ghost.4", function()
+          unsummon_heron()
+        end)
 
       elseif game:get_value("quest_heron_well") > 2 then
         game:start_dialog("_goatshead.npcs.heron_ghost.3", function()
