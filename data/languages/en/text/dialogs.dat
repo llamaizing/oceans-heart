@@ -1551,7 +1551,7 @@ dialog{
   text = [[
 LILY:
 Oh, we meet again! Dude, I can't get
-enought of the birdsong around here. And
+enough of the birdsong around here. And
 how does the whole town smell like apples?
 ]],
 }
@@ -7081,7 +7081,7 @@ I'm more in the market for practical
 potions. Heal you, hurt monsters. That
 kind of thing.
 ARAMIS:
-Oh! Well if you'd like to use the crafing
+Oh! Well if you'd like to use the crafting
 table, feel free.
 ]],
 }
@@ -18370,7 +18370,7 @@ dialog{
   id = "quest.side.oakhaven.master_thief",
   title = "The Dog's Birthday",
   text = [[
-##The guard captains wants you to find a
+##The guard captain wants you to find a
 ##thief at the mayor's dog's birthday
 ##party.
 @Head to the palace

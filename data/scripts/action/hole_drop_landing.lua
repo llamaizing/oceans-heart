@@ -26,15 +26,20 @@ end
 function hole_drop_landing:play_landing_animation()
   local hero = sol.main.get_game():get_hero()
   hero:freeze()
-  sol.audio.play_sound"falling"
+  sol.timer.start(hero:get_map(), 550, function()
+    sol.audio.play_sound"falling"
+  end)
   hero:set_visible(false)
+  sol.timer.start(hero:get_map(), 950, function()
+    sol.audio.play_sound"hero_lands"
+  end)
   --wait a beat, because destination:on_activated is called before map:on_opening_transition_finished,
   -- and that second event automatically calls hero:unfreeze, which resets the hero's animation to "stopped"
   sol.timer.start(sol.main.get_game(), 700, function()
+    hero:freeze()
     hero:set_visible(true)
     hero:set_animation("landing", function()
       hero:unfreeze()
-      sol.audio.play_sound"hero_lands"
     end)
   end)
 end
