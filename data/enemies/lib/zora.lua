@@ -97,7 +97,6 @@ function behavior:create(enemy, properties)
     local map = enemy:get_map()
     local ground = map:get_ground(x,y,z)
     if gound ~= "deep_water" and ground ~= "shallow_water" and not retreating_from_land then
-print"headed out of water!"
       --enemy is out of the water
       enemy:stop_movement()
       retreating_from_land = true

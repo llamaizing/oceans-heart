@@ -45,11 +45,37 @@ item:register_event("on_using", function(self)
 
     hero:set_animation("charging")
     sol.audio.play_sound("charge_1")
+
     sol.timer.start(game, 500, function()
       sol.audio.play_sound("thunder3")
+
+      local map = game:get_map()
+      if map:has_entities("seabird_tear_door") then
+        for door in map:get_entities("seabird_tear_door") do
+          if door:get_distance(map:get_hero()) < 240 and
+          door:is_in_same_region(map:get_hero()) then
+            local x, y, l = door:get_position()
+            local lightning = map:create_custom_entity{
+            name = "lightning_attack",
+            direction = 0,
+            layer = l + 1,
+            x = x + 8,
+            y = y + 8,
+            width = 16,
+            height = 16,
+            sprite = "entities/lightning_bolt_attack",
+            model = "damaging_sparkle"
+            }
+            map:create_poof(x + 8, y + 8, l + 1)
+            map:open_doors(door:get_name())
+          end
+        end
+      end
+
       local i = 0
       for entity in map:get_entities() do
-        if entity:get_type() == "enemy" and entity:get_distance(hero) <= RANGE then
+        if entity:get_type() == "enemy" and not string.match(entity:get_breed(), "misc")
+        and entity:get_distance(hero) <= RANGE then
           i = i + 1
           local x, y, layer = entity:get_position()
           if not string.match(entity:get_breed(), "misc") then
@@ -70,26 +96,6 @@ item:register_event("on_using", function(self)
         end
       end
       hero:unfreeze()
-
-      local map = game:get_map()
-      if map:has_entities("seabird_tear_door") then
-        for door in map:get_entities("seabird_tear_door") do
-          local x, y, l = door:get_position()
-          local lightning = map:create_custom_entity{
-          name = "lightning_attack",
-          direction = 0,
-          layer = l + 1,
-          x = x + 8,
-          y = y + 8,
-          width = 16,
-          height = 16,
-          sprite = "entities/lightning_bolt_attack",
-          model = "damaging_sparkle"
-          }
-          map:create_poof(x + 8, y + 8, l + 1)
-          map:open_doors(door:get_name())
-        end
-      end
 
       item:set_finished()
 
