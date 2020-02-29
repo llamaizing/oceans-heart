@@ -15,6 +15,7 @@ function revenant:on_dead()
   game:set_value("sycamore_revenant_dead", true)
   map:focus_on(map:get_camera(), rune_door, function()
     map:open_doors"rune_door"
+    if game:get_value("quest_ancient_groves") == 1 then game:set_value("quest_ancient_groves", 2) end
   end)
 end
 

@@ -18,6 +18,6 @@ item:register_event("on_variant_changed", function(self, variant)
 end)
 
 item:register_event("on_obtaining", function(self, variant)
-
   sol.audio.play_sound("treasure")
+  game:set_value("quest_ancient_groves", 3)
 end)

@@ -3793,7 +3793,7 @@ sensor{
 npc{
   name = "revenant_dummy",
   layer = 0,
-  x = 184,
+  x = 200,
   y = 141,
   enabled_at_start = false,
   direction = 3,
