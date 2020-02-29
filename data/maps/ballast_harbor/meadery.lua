@@ -13,7 +13,7 @@ local game = map:get_game()
 -- Event called at initialization time, as soon as this map becomes is loaded.
 map:register_event("on_started", function()
   michael_enemy:set_enabled(false)
-  if game:get_value("quest_briarwood_mushrooms") >= 4 then michael_npc:set_enabled(false) end
+  if (game:get_value("quest_briarwood_mushrooms") or 0) >= 4 then michael_npc:set_enabled(false) end
 
   if game:has_item("honeycomb") == true then
     benjamin:set_enabled(false)
