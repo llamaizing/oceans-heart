@@ -93,5 +93,8 @@ end
 function enemy_meta:hit_by_toss_ball()
 end
 
+function enemy_meta:hit_by_lightning()
+end
+
 
 return true

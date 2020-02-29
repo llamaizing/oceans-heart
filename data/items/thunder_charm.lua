@@ -86,6 +86,7 @@ item:register_event("on_using", function(self)
               model = "damaging_sparkle"
             }
             lightning:set_damage(lightning_damage)
+            entity:hit_by_lightning()
             sol.timer.start(map, 2000, function() lightning:remove() end)
           end
           if i >= item:get_variant() then

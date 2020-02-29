@@ -84,3 +84,7 @@ function enemy:attack()
   end)
 end
 
+function enemy:hit_by_lightning()
+  enemy:remove_life(5)
+end
+
