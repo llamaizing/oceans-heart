@@ -7997,7 +7997,7 @@ tile{
 tile{
   layer = 0,
   x = 760,
-  y = 136,
+  y = 144,
   width = 16,
   height = 16,
   pattern = "5",
@@ -14463,7 +14463,7 @@ tile{
 tile{
   layer = 1,
   x = 760,
-  y = 104,
+  y = 112,
   width = 16,
   height = 32,
   pattern = "7",
