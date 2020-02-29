@@ -12653,6 +12653,78 @@ tile{
   tileset = "oceanheart_outdoors_1",
 }
 
+tile{
+  layer = 0,
+  x = 120,
+  y = 968,
+  width = 8,
+  height = 8,
+  pattern = "493",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 968,
+  width = 8,
+  height = 8,
+  pattern = "492",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 968,
+  width = 8,
+  height = 8,
+  pattern = "491",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 896,
+  width = 24,
+  height = 8,
+  pattern = "492",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 896,
+  width = 8,
+  height = 8,
+  pattern = "491",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 904,
+  width = 8,
+  height = 8,
+  pattern = "558",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 888,
+  width = 8,
+  height = 16,
+  pattern = "257",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 920,
+  width = 8,
+  height = 8,
+  pattern = "494",
+}
+
 sensor{
   name = "raft_sensor_b",
   layer = 0,
@@ -14120,6 +14192,32 @@ custom_entity{
   model = "prickles_blocking",
 }
 
+destructible{
+  layer = 0,
+  x = 352,
+  y = 845,
+  treasure_name = "kingscrown",
+  sprite = "entities/bush_kingscrown",
+  weight = -1,
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 336,
+  y = 845,
+  sprite = "entities/bush_yarrow_yellow",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 360,
+  y = 861,
+  sprite = "entities/bush_yarrow_yellow",
+  can_be_cut = true,
+}
+
 tile{
   layer = 1,
   x = 656,
@@ -15198,5 +15296,59 @@ tile{
   width = 24,
   height = 8,
   pattern = "691",
+}
+
+tile{
+  layer = 1,
+  x = 112,
+  y = 960,
+  width = 8,
+  height = 8,
+  pattern = "496",
+}
+
+tile{
+  layer = 1,
+  x = 104,
+  y = 960,
+  width = 8,
+  height = 8,
+  pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 120,
+  y = 960,
+  width = 8,
+  height = 8,
+  pattern = "497",
+}
+
+tile{
+  layer = 1,
+  x = 152,
+  y = 888,
+  width = 24,
+  height = 8,
+  pattern = "496",
+}
+
+tile{
+  layer = 1,
+  x = 144,
+  y = 888,
+  width = 8,
+  height = 8,
+  pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 176,
+  y = 912,
+  width = 8,
+  height = 8,
+  pattern = "498",
 }
 

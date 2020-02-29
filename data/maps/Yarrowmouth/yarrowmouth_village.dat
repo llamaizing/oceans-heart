@@ -36937,6 +36937,123 @@ tile{
   pattern = "630",
 }
 
+tile{
+  layer = 0,
+  x = 1200,
+  y = 576,
+  width = 8,
+  height = 16,
+  pattern = "585",
+}
+
+tile{
+  layer = 0,
+  x = 1184,
+  y = 576,
+  width = 8,
+  height = 16,
+  pattern = "586",
+}
+
+tile{
+  layer = 0,
+  x = 1192,
+  y = 576,
+  width = 8,
+  height = 16,
+  pattern = "587",
+}
+
+tile{
+  layer = 0,
+  x = 1256,
+  y = 768,
+  width = 8,
+  height = 16,
+  pattern = "578",
+}
+
+tile{
+  layer = 0,
+  x = 1256,
+  y = 784,
+  width = 8,
+  height = 16,
+  pattern = "577",
+}
+
+tile{
+  layer = 0,
+  x = 1256,
+  y = 800,
+  width = 8,
+  height = 16,
+  pattern = "582",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 800,
+  width = 8,
+  height = 16,
+  pattern = "586",
+}
+
+tile{
+  layer = 0,
+  x = 1256,
+  y = 904,
+  width = 8,
+  height = 8,
+  pattern = "493",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 904,
+  width = 8,
+  height = 8,
+  pattern = "492",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 904,
+  width = 8,
+  height = 8,
+  pattern = "491",
+}
+
+tile{
+  layer = 0,
+  x = 1256,
+  y = 736,
+  width = 8,
+  height = 8,
+  pattern = "493",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 736,
+  width = 8,
+  height = 8,
+  pattern = "492",
+}
+
+tile{
+  layer = 0,
+  x = 1240,
+  y = 736,
+  width = 8,
+  height = 8,
+  pattern = "491",
+}
+
 sensor{
   name = "^map_banner_sensor_3",
   layer = 0,
@@ -43925,6 +44042,69 @@ tile{
   height = 80,
   pattern = "35",
   tileset = "drygrass",
+}
+
+tile{
+  layer = 1,
+  x = 1256,
+  y = 760,
+  width = 8,
+  height = 8,
+  pattern = "588",
+}
+
+tile{
+  layer = 1,
+  x = 1248,
+  y = 896,
+  width = 8,
+  height = 8,
+  pattern = "496",
+}
+
+tile{
+  layer = 1,
+  x = 1240,
+  y = 896,
+  width = 8,
+  height = 8,
+  pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 1256,
+  y = 896,
+  width = 8,
+  height = 8,
+  pattern = "497",
+}
+
+tile{
+  layer = 1,
+  x = 1248,
+  y = 728,
+  width = 8,
+  height = 8,
+  pattern = "496",
+}
+
+tile{
+  layer = 1,
+  x = 1240,
+  y = 728,
+  width = 8,
+  height = 8,
+  pattern = "495",
+}
+
+tile{
+  layer = 1,
+  x = 1256,
+  y = 728,
+  width = 8,
+  height = 8,
+  pattern = "497",
 }
 
 npc{

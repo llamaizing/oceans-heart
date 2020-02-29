@@ -11,11 +11,6 @@ item:register_event("on_created", function(self)
 
 end)
 
-item:register_event("on_started", function(self)
-
-end)
-
-
 item:register_event("on_obtaining", function(self, variant, savegame_variable)
   -- Obtaining arrows increases the counter of the bow.
   local amounts = { 1, 3, 5, 10, 20 }

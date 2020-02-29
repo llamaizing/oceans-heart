@@ -5,8 +5,10 @@ local game = item:get_game()
 
 item:register_event("on_created", function(self)
 
+  self:set_shadow("small")
   self:set_can_disappear(true)
   self:set_brandish_when_picked(false)
+
 end)
 
 item:register_event("on_obtaining", function(self, variant, savegame_variable)
@@ -19,6 +21,6 @@ item:register_event("on_obtaining", function(self, variant, savegame_variable)
   if amount == nil then
     error("Invalid variant '" .. variant .. "' for item 'bomb'")
   end
-  self:get_game():get_item("bombs_counter_2"):add_amount(amount)
+  game:get_item("bombs_counter_2"):add_amount(amount)
 
 end)

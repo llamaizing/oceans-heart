@@ -11,7 +11,7 @@ local all_items = {
       availability_variable = "available_in_shop_apples"},
     {item = "bread", price = 45, variant = 2,
       availability_variable = "available_in_shop_bread"},
-    {item = "elixer", price = 70, variant = 1,
+    {item = "elixer", price = 100, variant = 1,
       availability_variable = "available_in_shop_elixer"},
     {item = "potion_magic_restoration", price = 50, variant = 1,
       availability_variable = "available_in_shop_magic_restoring_potion"},
@@ -207,6 +207,11 @@ function inventory:on_command_pressed(command)
               if current_item.item == "arrow" then
                 current_amount = game:get_item("bow"):get_amount()
                 max_amount = game:get_item("bow"):get_max_amount()
+
+              elseif current_item.item == "bomb" then
+                current_amount = game:get_item("bombs_counter_2"):get_amount()
+                max_amount = game:get_item("bombs_counter_2"):get_max_amount()
+
               else
                 current_amount = game:get_item(current_item.item):get_amount()
                 max_amount = game:get_item(current_item.item):get_max_amount()
