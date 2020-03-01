@@ -76,7 +76,10 @@ function status_screen:on_started()
     )
   end
   if not game:has_item"bow" then
-    stat_name_surfaces[3]:set_text("")
+    stat_name_surfaces[3]:set_text("-")
+  end
+  if not game:has_item"sword" then
+    stat_name_surfaces[1]:set_text("-")
   end
 end
 
