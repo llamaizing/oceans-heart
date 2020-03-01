@@ -15,6 +15,10 @@ local hero = map:get_hero()
 map:register_event("on_started", function()
   local thyme_sprite = thyme:get_sprite()
   thyme_sprite:set_animation("stopped")
+  if game:get_value("quest_hazel") then
+    cutscene_sensor:set_enabled(false)
+    thyme:set_enabled(false)
+  end
 end)
 
 

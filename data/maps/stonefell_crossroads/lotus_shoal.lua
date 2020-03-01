@@ -16,7 +16,10 @@ map:register_event("on_started", function()
     map:set_doors_open("fort_boss_door")
     lenda:set_enabled(false)
   end
---  bait_monster:set_enabled(false)
+  if game:get_value"lotus_shoal_kappa_beast" then
+    bait_monster:remove()
+    bait_vase:remove()
+  end
 
 end)
 
@@ -85,6 +88,7 @@ function bait_vase:on_lifting()
 end
 
 function bait_monster:on_dead()
+  game:set_value("lotus_shoal_kappa_beast", true)
   if game:get_value("danley_convo_counter") == nil then
     game:set_value("danley_convo_counter", "special")
   else
