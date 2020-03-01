@@ -10919,7 +10919,6 @@ door{
   y = 384,
   direction = 3,
   sprite = "entities/door_posts",
-  savegame_variable = "limestone_stash_b2_door_state",
 }
 
 door{
@@ -10929,7 +10928,6 @@ door{
   y = 400,
   direction = 3,
   sprite = "entities/door_posts",
-  savegame_variable = "limestone_stash_b2_door_state",
 }
 
 switch{

@@ -17,3 +17,5 @@ map:register_event("on_started", function()
   if game:get_value("quest_pirate_fort") and game:get_value("quest_pirate_fort") >= 6 then
     jazari:set_enabled(true)
   end
+
+end)

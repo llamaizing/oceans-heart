@@ -49,6 +49,7 @@ text{ key = "item.key_thrush_fort.1", value = "Thrush Fort Key" }
 text{ key = "item.kingscrown.1", value = "Kingscrown Blooms" }
 text{ key = "item.lavendar.1", value = "Lavendar Flowers" }
 text{ key = "item.leaf_tornado.1", value = "Amalenchier's Wrath" }
+text{ key = "item.machine_part.1", value = "Machine Part" }
 text{ key = "item.mandrake.1", value = "Mandrake Root" }
 text{ key = "item.mandrake_white.1", value = "White Mandrake Roots" }
 text{ key = "item.manna_oak_letter.1", value = "Manna Oak Letter" }
@@ -71,6 +72,7 @@ text{ key = "item.spear.1", value = "Bear Warriors' Spear" }
 text{ key = "item.stone_beak.1", value = "A Beak-shaped Stone?" }
 text{ key = "item.sword_of_the_sea_king.1", value = "Sword of the Sea King" }
 text{ key = "item.thunder_charm.1", value = "Seabird's Tear" }
+text{ key = "item.tungsten_ore.1", value = "Tungsten Ore" }
 text{ key = "item.whisky_for_juglan.1", value = "Whisky" }
 text{ key = "item.witch_hazel.1", value = "Witch Hazel Flowers" }
 text{ key = "item_desc.apples.2", value = "Apples (set of 3) - each heals two hearts" }

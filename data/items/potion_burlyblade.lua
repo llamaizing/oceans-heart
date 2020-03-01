@@ -19,6 +19,7 @@ item:register_event("on_using", function(self)
     self:remove_amount(1)
     sol.audio.play_sound("uncorking_and_drinking_1")
     game.tilia_damage_multiplier = 1.5
+    game:start_dialog"_game.potion.burlyblade"
     local status_menu = require"scripts/hud/status_effect"
     if not sol.menu.is_started(status_menu) then sol.menu.start(game, status_menu) end
     status_menu.attack_surface:fade_in()

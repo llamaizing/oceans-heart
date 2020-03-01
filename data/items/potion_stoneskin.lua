@@ -18,6 +18,7 @@ item:register_event("on_using", function(self)
   if self:get_amount() > 0 then
     self:remove_amount(1)
     sol.audio.play_sound("uncorking_and_drinking_1")
+    game:start_dialog"_game.potion.stoneskin"
     game.take_half_damage = true
     local status_menu = require"scripts/hud/status_effect"
     if not sol.menu.is_started(status_menu) then sol.menu.start(game, status_menu) end

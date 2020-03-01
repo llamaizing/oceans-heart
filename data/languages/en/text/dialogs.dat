@@ -1806,6 +1806,27 @@ dialog{
 }
 
 dialog{
+  id = "_game.potion.burlyblade",
+  text = [[
+Your attack power is temporarily increased
+]],
+}
+
+dialog{
+  id = "_game.potion.fleetseed",
+  text = [[
+You speed is temporarily increased
+]],
+}
+
+dialog{
+  id = "_game.potion.stoneskin",
+  text = [[
+Your defense is temporarily doubled
+]],
+}
+
+dialog{
   id = "_game.quest_log_update",
   text = [[
 (Your quest log was updated)
