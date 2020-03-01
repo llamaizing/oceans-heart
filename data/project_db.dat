@@ -760,6 +760,10 @@ sprite{ id = "hud/magic_bar", description = "magic bar" }
 sprite{ id = "hud/pause_infra", description = "Pause Infrastructure" }
 sprite{ id = "hud/quest_log_update_icon", description = "Quest Log Update Icon" }
 sprite{ id = "hud/small_key_icon", description = "Small Key Icon" }
+sprite{ id = "hud/status_attack", description = "Status-Attack" }
+sprite{ id = "hud/status_defense", description = "Status-Defense" }
+sprite{ id = "hud/status_plus", description = "Status-Plus" }
+sprite{ id = "hud/status_speed", description = "Status-Speed" }
 sprite{ id = "menus/arrows", description = "arrows" }
 sprite{ id = "menus/checkmark", description = "checkmark" }
 sprite{ id = "menus/cursor", description = "Cursor" }

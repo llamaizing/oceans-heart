@@ -19,10 +19,14 @@ item:register_event("on_using", function(self)
     self:remove_amount(1)
     sol.audio.play_sound("uncorking_and_drinking_1")
     game:get_hero():set_walking_speed(150)
+    local status_menu = require"scripts/hud/status_effect"
+    if not sol.menu.is_started(status_menu) then sol.menu.start(game, status_menu) end
+    status_menu.speed_surface:fade_in()
     sol.timer.start(game, 30000, function() --240000 is 4 minutes, 300000 is 5
       game:get_hero():set_walking_speed(98)
+      status_menu.speed_surface:fade_out()
       sol.audio.play_sound"status_deactivated"
-      require("scripts/hud/message"):show_message("Potion effect expired", 2800)
+--      require("scripts/hud/message"):show_message("Potion effect expired", 2800)
     end)
   end
   item:set_finished()
