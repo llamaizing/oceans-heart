@@ -3626,7 +3626,7 @@ and uh... well, anyway, want to stay?
 dialog{
   id = "_goatshead.npcs.inn.2",
   text = [[
-JUDE:
+JUDE
 Oh, hi! A customer. Great! This is the
 Juneberry inn. We have one room open
 at the moment, at the end of the hall. The
@@ -18642,3 +18642,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+
