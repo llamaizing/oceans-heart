@@ -82,6 +82,7 @@ function map:cutscene_2()
               m3:start(gavrillo, function()
                 gavrillo:set_enabled(false)
                 game:start_dialog("_yarrowmouth.npcs.hourglass_encounter.5", function()
+                  thyme:remove()
                   game:set_value("quest_hourglass_fort", 3) --quest log
                   game:set_value("quest_hazel", 0) --quest log
                   hero:unfreeze()
