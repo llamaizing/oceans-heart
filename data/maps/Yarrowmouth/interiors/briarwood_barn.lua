@@ -19,7 +19,7 @@ map:register_event("on_started", function()
 
   talked_to_richardo = false
   if game:get_value("briarwood_hornet_quest") and game:get_value("briarwood_hornet_quest") >= 1 then
-    for hive in map:get_entities("hive") do
+    for hive in map:get_entities("briar_hive") do
       hive:remove()
     end
   end
