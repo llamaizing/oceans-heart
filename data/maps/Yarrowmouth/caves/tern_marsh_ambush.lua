@@ -19,6 +19,12 @@ map:register_event("on_started", function()
 
   map:set_doors_open("ambush_door")
   trap_sprung = false
+
+  if game:get_value"quest_yarrow_parley" or 0 >= 2 then
+    for e in map:get_entities("marsh_ambush_enemy") do
+      e:remove()
+    end
+  end
 end)
 
 
