@@ -228,6 +228,16 @@ function game_manager:create(file_name, overwrite_game)
 
 
   ------------------------------------------------------Game Over------------------------------------------------
+  local function game_over_stuff_part_2()
+      --send the hero to the respawn location saved earlier
+      local hero = game:get_hero()
+      game:set_value("gameovering", true)
+      game:set_life(game:get_max_life() * .8)
+      hero:set_invincible(true, 1500)
+      hero:teleport("respawn_map")
+      game:stop_game_over()
+  end
+
   local function game_over_stuff()
       local elixer = game:get_item("elixer")
       local amount_elixer = elixer:get_amount()
@@ -246,19 +256,14 @@ function game_manager:create(file_name, overwrite_game)
           --save and continue
           if answer == 2 then
             game:save()
+            game_over_stuff_part_2()
           --contine without saving
           elseif answer == 3 then
+            game_over_stuff_part_2()
           --quit
           elseif answer == 4 then
-            sol.main.exit()
+            sol.main.reset()
           end
-
-      --send the hero to the respawn location saved earlier
-      game:set_value("gameovering", true)
-      game:set_life(game:get_max_life() * .8)
-      hero:set_invincible(true, 1500)
-      hero:teleport("respawn_map")
-      game:stop_game_over()
 
         end) --end gameover dialog choice
       end --end "if elixers" condition
