@@ -23900,6 +23900,19 @@ enemy{
   breed = "normal_enemies/gel_black",
 }
 
+wall{
+  layer = 0,
+  x = 1016,
+  y = 952,
+  width = 48,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
+}
+
 tile{
   layer = 1,
   x = 1048,
