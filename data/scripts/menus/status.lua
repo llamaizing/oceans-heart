@@ -136,6 +136,7 @@ function status_screen:process_direction(direction)
 
   elseif cursor_index == 3 then --sounds
     sol.audio.set_sound_volume(sol.audio.get_sound_volume() + increment)
+    sol.audio.play_sound("cursor")
   end
   status_screen:update_volume_levels()
 end
