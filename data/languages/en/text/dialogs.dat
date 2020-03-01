@@ -1674,6 +1674,41 @@ $? No
 }
 
 dialog{
+  id = "_game.controls.action",
+  text = [[
+
+ Use the space bar to interact with the
+                world
+]],
+}
+
+dialog{
+  id = "_game.controls.move",
+  text = [[
+
+     Use the arrow keys to move
+]],
+}
+
+dialog{
+  id = "_game.controls.pause",
+  text = [[
+Press D to open your menu. You can scroll
+   left and right between different
+ subscreens. You can save your game on
+       the status subscreen.
+]],
+}
+
+dialog{
+  id = "_game.controls.switches",
+  text = [[
+Use your sword to interact with switches
+like this.
+]],
+}
+
+dialog{
   id = "_game.crafted_item",
   text = [[
 Item crafted!
@@ -14427,6 +14462,8 @@ dialog{
 You received Devana's Barrier. Use this
 spell to deflect incoming projectiles.
 It will use a small amount of your magic.
+
+Equip this item from the inventory menu.
 ]],
 }
 

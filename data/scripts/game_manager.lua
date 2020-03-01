@@ -98,7 +98,7 @@ function game_manager:create(file_name, overwrite_game)
   local ignoring_obstacles
   local can_dash = true
 
-  local DEBUG_MODE = true                       --HERE IS THE DEBUG MODE SWITCH, MAX!
+  local DEBUG_MODE = false                       --HERE IS THE DEBUG MODE SWITCH, MAX!
   pause_menu.quest_log:set_debug_mode(DEBUG_MODE)
 
 

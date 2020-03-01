@@ -10547,6 +10547,16 @@ tile{
   pattern = "42",
 }
 
+tile{
+  layer = 0,
+  x = 272,
+  y = 136,
+  width = 16,
+  height = 8,
+  pattern = "258",
+  tileset = "oceanheart_outdoors_1",
+}
+
 separator{
   layer = 0,
   x = -8,
@@ -11675,6 +11685,15 @@ custom_entity{
   model = "collapsing_floor",
 }
 
+npc{
+  layer = 0,
+  x = 280,
+  y = 141,
+  direction = 3,
+  subtype = 1,
+  behavior = "dialog#_game.controls.switches",
+}
+
 tile{
   layer = 1,
   x = 104,
@@ -12627,6 +12646,16 @@ tile{
   width = 8,
   height = 8,
   pattern = "498",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 272,
+  y = 120,
+  width = 16,
+  height = 16,
+  pattern = "259",
   tileset = "oceanheart_outdoors_1",
 }
 

@@ -42,3 +42,37 @@ function map:on_opening_transition_finished()
 
   end
 end
+
+--move
+--action
+--pause
+
+function controls_sensor:on_activated()
+  if not game:get_value("limestone_controls_explanation_move") then
+    game:get_dialog_box():set_style("empty")
+    game:start_dialog("_game.controls.move", function()
+      game:get_dialog_box():set_style("box")
+      game:set_value("limestone_controls_explanation_move", true)
+    end)
+  end
+end
+
+function controls_sensor_2:on_activated()
+  if not game:get_value("limestone_controls_explanation_action") then
+    game:get_dialog_box():set_style("empty")
+    game:start_dialog("_game.controls.action", function()
+      game:get_dialog_box():set_style("box")
+      game:set_value("limestone_controls_explanation_action", true)
+    end)
+  end
+end
+
+function controls_sensor_3:on_activated()
+  if not game:get_value("limestone_controls_explanation_pause") then
+    game:get_dialog_box():set_style("empty")
+    game:start_dialog("_game.controls.pause", function()
+      game:get_dialog_box():set_style("box")
+      game:set_value("limestone_controls_explanation_pause", true)
+    end)
+  end
+end

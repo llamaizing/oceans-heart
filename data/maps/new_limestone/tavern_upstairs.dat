@@ -2077,6 +2077,44 @@ destination{
   direction = 3,
 }
 
+sensor{
+  name = "controls_sensor",
+  layer = 0,
+  x = 184,
+  y = 349,
+  width = 16,
+  height = 32,
+}
+
+sensor{
+  name = "controls_sensor_2",
+  layer = 0,
+  x = 104,
+  y = 349,
+  width = 48,
+  height = 16,
+}
+
+door{
+  name = "bedroom_door",
+  layer = 0,
+  x = 112,
+  y = 304,
+  direction = 3,
+  sprite = "entities/door_int_1",
+  savegame_variable = "limestone_tilia_bedroom_door",
+  opening_method = "interaction",
+}
+
+sensor{
+  name = "controls_sensor_3",
+  layer = 0,
+  x = 192,
+  y = 221,
+  width = 48,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 104,
