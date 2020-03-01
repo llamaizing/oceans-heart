@@ -20998,6 +20998,17 @@ enemy{
   breed = "misc/dove",
 }
 
+npc{
+  name = "blacksmith_dummy",
+  layer = 1,
+  x = 248,
+  y = 437,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/blacksmith_03",
+  behavior = "dialog#_oakhaven.npcs.ivystump.misc.carpenter1",
+}
+
 tile{
   layer = 2,
   x = 104,

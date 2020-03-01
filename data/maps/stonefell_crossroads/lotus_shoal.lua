@@ -38,6 +38,7 @@ end
 ----Fort------
 function pirate_door:on_interaction()
   if game:has_item("key_shoal_pirate_fort") then
+    sol.audio.play_sound"door_unlocked"
     pirate_door:remove()
   end
 end

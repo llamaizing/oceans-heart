@@ -14,6 +14,7 @@ local bosses_killed
 
 -- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
+  if game:get_value("sinking_lighthouse_fiend") then fiend_miniboss:remove() end
   map:set_doors_open("boss_door")
   bosses_killed = 0
 end)
@@ -31,6 +32,7 @@ function secondary_door_switch:on_activated()
 end
 
 function fiend_miniboss:on_dead()
+  game:set_value("sinking_lighthouse_fiend", true)
   map:focus_on(map:get_camera(), miniboss_door, function()
     sol.audio.play_sound"secret"
     map:open_doors"miniboss_door"
@@ -46,19 +48,21 @@ end
 
 
 function switch_1:on_activated()
-  hero:freeze()
-  sol.audio.play_sound("switch_2")
-  local camera = map:get_camera()
-  local m = sol.movement.create("target")
-  m:set_target(camera:get_position_to_track(posts_a_1))
-  m:set_ignore_obstacles()
-  m:start(camera, function()
-    map:open_doors("posts_a")
-    sol.timer.start(map, 500, function()
-      m:set_target(camera:get_position_to_track(hero))
-      m:start(camera, function() hero:unfreeze() camera:start_tracking(hero) end)
+  if not game:get_value"oakhaven_sunken_palace_doors_a_state" then
+    hero:freeze()
+    sol.audio.play_sound("switch_2")
+    local camera = map:get_camera()
+    local m = sol.movement.create("target")
+    m:set_target(camera:get_position_to_track(posts_a_1))
+    m:set_ignore_obstacles()
+    m:start(camera, function()
+      map:open_doors("posts_a")
+      sol.timer.start(map, 500, function()
+        m:set_target(camera:get_position_to_track(hero))
+        m:start(camera, function() hero:unfreeze() camera:start_tracking(hero) end)
+      end)
     end)
-  end)
+  end
 end
 
 function boss_battle_sensor:on_activated()

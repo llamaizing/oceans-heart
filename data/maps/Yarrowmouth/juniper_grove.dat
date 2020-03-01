@@ -7876,36 +7876,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 488,
-  y = 8,
-  width = 32,
-  height = 24,
-  pattern = "6",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
-  x = 520,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "5",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
-  x = 504,
-  y = 32,
-  width = 16,
-  height = 16,
-  pattern = "5",
-  tileset = "drygrass",
-}
-
-tile{
-  layer = 0,
   x = 688,
   y = 16,
   width = 32,
@@ -12723,6 +12693,36 @@ tile{
   width = 8,
   height = 8,
   pattern = "494",
+}
+
+tile{
+  layer = 0,
+  x = 488,
+  y = 8,
+  width = 32,
+  height = 24,
+  pattern = "6",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 32,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "drygrass",
+}
+
+tile{
+  layer = 0,
+  x = 520,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "5",
+  tileset = "drygrass",
 }
 
 sensor{

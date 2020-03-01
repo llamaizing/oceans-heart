@@ -13,6 +13,9 @@ map:register_event("on_started", function()
     musician_2:set_enabled(false)
     for npc in map:get_entities"flaketron" do npc:set_enabled(false) end
   end
+  if game:get_value"salamander_heartache_saloon_bombable_door_state" then
+    associated_wall:remove()
+  end
 end)
 
 
@@ -127,13 +130,22 @@ end
 --------------RANDOM BAR NPCS-------------------------------------
 
 function weak_wall_clue_guy:on_interaction()
-  game:start_dialog("_oakhaven.npcs.saloon.weak_wall_guy.1")
+  if game:get_value"salamander_heartache_saloon_bombable_door_state" then
+    game:start_dialog("_oakhaven.npcs.saloon.weak_wall_guy.2")
+  else
+    game:start_dialog("_oakhaven.npcs.saloon.weak_wall_guy.1")
+  end
+
 end
 
 
 
 
 ------------INANIMATE OBJECTS-------------------------------------
+
+function weak_wall_door:on_opened()
+  associated_wall:remove()
+end
 
 function storehouse_door_switch:on_activated()
   sol.audio.play_sound("switch")

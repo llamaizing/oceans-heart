@@ -215,6 +215,12 @@ function teleport_to_surface_sensor:on_activated()
   end)
 end
 
+for sensor in map:get_entities("block_reset_sensor") do
+function sensor:on_activated()
+  fourway_block:reset()
+end
+end
+
 function boss_sensor:on_activated()
   boss_sensor:set_enabled(false)
   if not game:get_value("sea_king_defeated") then --replace with defeat seaking savegame variable later

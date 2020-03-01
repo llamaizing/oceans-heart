@@ -2702,24 +2702,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 768,
-  y = 112,
-  width = 32,
-  height = 16,
-  pattern = "bomb_door.right.low",
-}
-
-tile{
-  layer = 0,
-  x = 800,
-  y = 112,
-  width = 32,
-  height = 16,
-  pattern = "bomb_door.left.low",
-}
-
-tile{
-  layer = 0,
   x = 224,
   y = 48,
   width = 16,
@@ -5036,6 +5018,52 @@ tile{
   pattern = "183",
 }
 
+tile{
+  layer = 0,
+  x = 800,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "corner.out.2",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 80,
+  width = 32,
+  height = 32,
+  pattern = "corner.out.3",
+}
+
+tile{
+  layer = 0,
+  x = 800,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "corner.out.1",
+}
+
+tile{
+  layer = 0,
+  x = 768,
+  y = 128,
+  width = 32,
+  height = 32,
+  pattern = "corner.out.4",
+}
+
+dynamic_tile{
+  name = "associated_wall",
+  layer = 0,
+  x = 800,
+  y = 80,
+  width = 32,
+  height = 80,
+  pattern = "wall.left.1",
+}
+
 destination{
   name = "from_outside",
   layer = 0,
@@ -5090,6 +5118,7 @@ separator{
 }
 
 door{
+  name = "weak_wall_door",
   layer = 0,
   x = 816,
   y = 112,
@@ -5655,24 +5684,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "281",
-}
-
-tile{
-  layer = 1,
-  x = 784,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "bomb_door.right.high",
-}
-
-tile{
-  layer = 1,
-  x = 800,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "bomb_door.left.high",
 }
 
 tile{

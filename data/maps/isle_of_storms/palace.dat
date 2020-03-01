@@ -52013,6 +52013,7 @@ switch{
 }
 
 block{
+  name = "fourway_block",
   layer = 0,
   x = 632,
   y = 597,
@@ -55814,6 +55815,24 @@ custom_entity{
   direction = 0,
   sprite = "entities/rockpile",
   model = "flail_obstacle",
+}
+
+sensor{
+  name = "block_reset_sensor",
+  layer = 0,
+  x = 664,
+  y = 749,
+  width = 16,
+  height = 16,
+}
+
+sensor{
+  name = "block_reset_sensor_2",
+  layer = 0,
+  x = 856,
+  y = 597,
+  width = 16,
+  height = 16,
 }
 
 tile{

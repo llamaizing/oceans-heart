@@ -3624,6 +3624,20 @@ and uh... well, anyway, want to stay?
 }
 
 dialog{
+  id = "_goatshead.npcs.inn.2",
+  text = [[
+JUDE:
+Oh, hi! A customer. Great! This is the
+Juneberry inn. We have one room open
+at the moment, at the end of the hall. The
+JUDE:
+other room isn't locked anymore, but it
+got all dusty when it was closed and I
+haven't cleaned yet.
+]],
+}
+
+dialog{
   id = "_goatshead.npcs.juglan.1",
   text = [[
 JUGLAN:
@@ -12636,6 +12650,16 @@ area, that spot right over there has always
 SALOON PATRON:
 looked a bit off. Like they did a bad job
 just over there to our left.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.saloon.weak_wall_guy.2",
+  text = [[
+SALOON PATRON:
+Well you just blew that whole wall right
+up, didn't you? Great use of explosives
+indoors.
 ]],
 }
 

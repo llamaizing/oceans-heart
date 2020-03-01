@@ -32380,15 +32380,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 1384,
-  y = 80,
-  width = 64,
-  height = 16,
-  pattern = "41",
-}
-
-tile{
-  layer = 0,
   x = 1432,
   y = 80,
   width = 16,

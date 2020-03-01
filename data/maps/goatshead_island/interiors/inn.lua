@@ -17,9 +17,16 @@ end)
 
 
 function jude:on_interaction()
-  game:start_dialog("_goatshead.npcs.inn.1", function()
-      require("scripts/shops/inn"):start()
-  end)
+  if not game:get_value("quest_ballast_harbor_lost_inn_key") 
+  or game:get_value("quest_ballast_harbor_lost_inn_key") == 0 then
+    game:start_dialog("_goatshead.npcs.inn.1", function()
+        require("scripts/shops/inn"):start()
+    end)
+  else
+    game:start_dialog("_goatshead.npcs.inn.2", function()
+        require("scripts/shops/inn"):start()
+    end)
+  end
 end
 
 function found_your_way_inn_sensor:on_activated()

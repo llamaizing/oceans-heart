@@ -1287,6 +1287,15 @@ tile{
   pattern = "38",
 }
 
+tile{
+  layer = 0,
+  x = 176,
+  y = 88,
+  width = 80,
+  height = 8,
+  pattern = "133",
+}
+
 destructible{
   layer = 0,
   x = 144,
@@ -1461,15 +1470,6 @@ tile{
   width = 24,
   height = 16,
   pattern = "87",
-}
-
-tile{
-  layer = 1,
-  x = 176,
-  y = 88,
-  width = 80,
-  height = 8,
-  pattern = "133",
 }
 
 tile{

@@ -11440,6 +11440,7 @@ door{
   y = 144,
   direction = 3,
   sprite = "entities/door_weak_wall",
+  savegame_variable = "zeyphr_bay_secret_bombable_wall",
   opening_method = "explosion",
 }
 

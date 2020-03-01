@@ -9850,8 +9850,8 @@ tile{
 
 tile{
   layer = 0,
-  x = 296,
-  y = 200,
+  x = 304,
+  y = 208,
   width = 32,
   height = 16,
   pattern = "36",
@@ -11500,7 +11500,7 @@ destructible{
 
 destructible{
   layer = 0,
-  x = 496,
+  x = 488,
   y = 677,
   treasure_name = "burdock",
   sprite = "entities/bush_burdock",
@@ -12141,8 +12141,8 @@ tile{
 
 tile{
   layer = 1,
-  x = 296,
-  y = 152,
+  x = 304,
+  y = 160,
   width = 32,
   height = 48,
   pattern = "37",
