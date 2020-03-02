@@ -4,6 +4,7 @@ require("scripts/weather/weather_manager")
 local game_restart = require("scripts/game_restart")
 local initial_game = require("scripts/initial_game")
 local pause_menu = require"scripts/menus/pause_menu"
+local controls_menu = require"scripts/menus/controls"
 --local quest_log = require"scripts/menus/quest_log"
 --local pause_inventory = require"scripts/menus/inventory"
 local quest_update_icon = require"scripts/menus/quest_update_icon"
@@ -204,12 +205,12 @@ function game_manager:create(file_name, overwrite_game)
       handled = true
 
     elseif btn == 4 then --left bumper
-      if sol.menu.is_started(pause_menu) then
+      if sol.menu.is_started(pause_menu) and not sol.menu.is_started(controls_menu) then
         pause_menu:next_submenu"left"
       end
       handled = true
     elseif btn == 5 then --right bumper
-      if sol.menu.is_started(pause_menu) then
+      if sol.menu.is_started(pause_menu) and not sol.menu.is_started(controls_menu) then
         pause_menu:next_submenu"right"
       end
       handled = true

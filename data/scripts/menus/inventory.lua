@@ -255,9 +255,9 @@ end
 
 
 function inventory:on_command_pressed(command)
-    local game = sol.main.get_game()
-    local handled = false
-
+  local game = sol.main.get_game()
+  local handled = false
+  if not handled then
     if command == "right" then
         if self.cursor_column == COLUMNS - 1 then return false end
         sol.audio.play_sound("cursor")
@@ -306,6 +306,7 @@ function inventory:on_command_pressed(command)
         handled = true
     end
     return handled
+  end
 end
 
 function inventory:get_item_at_current_index()

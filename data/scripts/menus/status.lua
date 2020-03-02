@@ -4,7 +4,7 @@ local status_screen = {x=0,y=0}
 multi_events:enable(status_screen)
 
 local cursor_index
-local MAX_INDEX = 3
+local MAX_INDEX = 4
 local music_level = 0
 local sound_level = 0
 
@@ -20,7 +20,7 @@ local text_surface = sol.text_surface.create({
 })
 
 local options_strings = {
-  "Save", "Quit", "Music", "Sounds"
+  "Save", "Quit", "Controls", "Music", "Sounds"
 }
 local button_text_surfaces = {}
 for i=1, #options_strings do
@@ -100,18 +100,15 @@ function status_screen:on_command_pressed(command)
     status_screen:process_selection()
     handled = true
   elseif command == "left" then
-    if cursor_index >= 2 then
+    if cursor_index >= 3 then
       status_screen:process_direction("left")
       handled = true
     end
   elseif command == "right" then
-    if cursor_index >= 2 then
+    if cursor_index >= 3 then
       status_screen:process_direction("right")
       handled = true
     end
-  elseif command == "item_1" then
-    print"controls"
-    sol.menu.start(sol.main.get_game(),require"scripts/menus/controls")
   end
   return handled
 end
@@ -129,6 +126,9 @@ function status_screen:process_selection()
 
   elseif cursor_index == 1 then --quit
     sol.main.reset()
+
+  elseif cursor_index == 2 then
+    sol.menu.start(sol.main.get_game(),require"scripts/menus/controls")
   end
 end
 
@@ -137,10 +137,10 @@ function status_screen:process_direction(direction)
   if direction == "left" then increment = -10
   elseif direction == "right" then increment = 10 end
 
-  if cursor_index == 2 then --music
+  if cursor_index == 3 then --music
     sol.audio.set_music_volume(sol.audio.get_music_volume() + increment)
 
-  elseif cursor_index == 3 then --sounds
+  elseif cursor_index == 4 then --sounds
     sol.audio.set_sound_volume(sol.audio.get_sound_volume() + increment)
     sol.audio.play_sound("cursor")
   end
@@ -159,11 +159,11 @@ end
 function status_screen:on_draw(dst)
   background_image:draw(dst, self.x, self.y)
 --  stats_box:draw(dst, 210 + self.x, 162 + self.y)
-  cursor_sprite:draw(dst,66 + self.x,90 + self.y + cursor_index*32)
+  cursor_sprite:draw(dst,66 + self.x, 58 + self.y + cursor_index*32)
   music_sprite:draw(dst, 80 + music_level/2 + self.x, 170 + self.y)
   sound_sprite:draw(dst, 80 + sound_level/2 + self.x, 201 + self.y)
   for i=1, #options_strings do
-    button_text_surfaces[i]:draw(dst,74 +self.x,83 +self.y+ (i-1)*32)
+    button_text_surfaces[i]:draw(dst,74 +self.x, 51 +self.y+ (i-1)*32)
   end
   for i=1, #stat_names do
     stat_name_surfaces[i]:draw(dst,210 +self.x, 146 +self.y+ (i-1)*16)
