@@ -14,7 +14,7 @@ move:set_text"(Arrow Keys) Move"
 switch_subscreen:set_text"(F/G) Scroll Menus"
 item1:set_text"(X) Item 1"
 item2:set_text"(V) Item 2"
-action:set_text"(C) Sword"
+action:set_text"(C) Sword/Exit"
 sword:set_text"(Space)Interact/Roll"
 pause:set_text"(D) Pause"
 

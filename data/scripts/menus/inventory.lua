@@ -93,7 +93,9 @@ function inventory:initialize(game)
   --handle life and magic
   self.life_surface = sol.surface.create()
   self.magic_surface = sol.surface.create()
-  sol.timer.start(game, 100, function() inventory:update_life_and_magic() end)
+-- idk why I initially put this function on a timer?...
+--  sol.timer.start(require"scripts/menus/pause_menu", 10, function() inventory:update_life_and_magic() end)
+  self:update_life_and_magic()
 
     --set the cursor index, or which item the cursor is over
     --remember, the cursor index is 0 based but the all_equipment_items table starts at 1
@@ -106,7 +108,9 @@ function inventory:initialize(game)
     --update cursor's row and column
     self:update_cursor_position(cursor_index)
     --initialize background (basically just the frame)
-    self.menu_background = sol.surface.create("menus/inventory/inventory_background.png")
+    if not self.menu_background then
+      self.menu_background = sol.surface.create("menus/inventory/inventory_background.png")
+    end
     --initialize the cursor
     self.cursor_sprite = sol.sprite.create("menus/inventory/selector")
     --set the description panel text
@@ -201,6 +205,7 @@ function inventory:update_life_and_magic()
     local stitch = sol.sprite.create("menus/inventory/magic_stitch")
     stitch:draw(self.magic_surface, i * 4, 8)
   end
+
 end
 
 --get sprites for assigned items
