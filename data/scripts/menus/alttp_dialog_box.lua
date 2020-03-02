@@ -367,7 +367,7 @@ local function create_dialog_box(game)
 if self.line_index == 1 then
 local color_mod = {255,255,255}
 if line == "TILIA:" then color_mod = {130,220,255} end
-for i=1,4 do
+for i=1,1 do
  dialog_box.line_surfaces[i]:set_color_modulation(color_mod)
 end
 
