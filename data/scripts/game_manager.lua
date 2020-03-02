@@ -105,7 +105,6 @@ function game_manager:create(file_name, overwrite_game)
 
   function game:on_key_pressed(key, modifiers)
     local hero = game:get_hero()
-
     --if function key f2-f5 then open (or close if already open) the corresponding pause submenu directly
     local submenu_index = pause_menu.quick_keys[key]
     if submenu_index then
@@ -121,6 +120,21 @@ function game_manager:create(file_name, overwrite_game)
       if sol.menu.is_started(pause_menu) then
         pause_menu:next_submenu"right"
       end
+    elseif key == "return" then
+      game:simulate_command_pressed"action"
+
+    --[[
+    elseif key == "w" then
+      game:simulate_command_pressed"up"
+    elseif key == "a" then
+      game:simulate_command_pressed"left"
+    elseif key == "s" then
+      game:simulate_command_pressed"down"
+    elseif key == "d" then
+      game:simulate_command_pressed"right"
+    elseif key == "e" then
+      game:simulate_command_pressed"pause"
+    --]]
 
       --DEBUG FUNCTIONS
     -- elseif key == "y" and DEBUG_MODE and game:has_item("sword") then

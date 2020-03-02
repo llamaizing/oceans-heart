@@ -17836,7 +17836,7 @@ dialog{
   id = "quest.main.limestone.meet_juglan_at_pier",
   title = "Hitching A Ride",
   text = [[
-##Jugland will give you a ride to
+##Juglan will give you a ride to
 ##Goatshead Harbor.
 @Meet Juglan at the pier
 @Investigate the Sodden Cormorant
@@ -18698,4 +18698,3 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
-
