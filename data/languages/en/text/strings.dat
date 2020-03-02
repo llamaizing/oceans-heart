@@ -1,4 +1,11 @@
 text{ key = "action.back", value = "Back" }
+text{ key = "controls.action", value = "(Space) Interact/Roll" }
+text{ key = "controls.item1", value = "(X) Item 1" }
+text{ key = "controls.item2", value = "(V) Item 2" }
+text{ key = "controls.move", value = "(Arrow Keys) Move" }
+text{ key = "controls.pause", value = "(D) Pause)" }
+text{ key = "controls.switch_subscreen", value = "(F/G) Scroll Menus" }
+text{ key = "controls.sword", value = "(C) Sword/Exit" }
 text{ key = "item.abyssal_flame.1", value = "Abyssal Flame" }
 text{ key = "item.apples.1", value = "Apples" }
 text{ key = "item.armor_tools.1", value = "Armorer's Tool Set" }

@@ -10,15 +10,18 @@ local action = sol.text_surface.create()
 local sword = sol.text_surface.create()
 local pause = sol.text_surface.create()
 
-move:set_text"(Arrow Keys) Move"
-switch_subscreen:set_text"(F/G) Scroll Menus"
-item1:set_text"(X) Item 1"
-item2:set_text"(V) Item 2"
-action:set_text"(C) Sword/Exit"
-sword:set_text"(Space)Interact/Roll"
-pause:set_text"(D) Pause"
+
 
 function controls_menu:on_started()
+  move:set_text(sol.language.get_string("controls.move"))
+  switch_subscreen:set_text(sol.language.get_string("controls.switch_subscreen"))
+  item1:set_text(sol.language.get_string("controls.item1"))
+  item2:set_text(sol.language.get_string("controls.item2"))
+  action:set_text(sol.language.get_string("controls.sword"))
+  sword:set_text(sol.language.get_string("controls.action"))
+  pause:set_text(sol.language.get_string("controls.pause"))
+  bg:fade_in(5)
+
   local OFFSET = -31
   local YSET = 8
   move:draw(bg,96 + OFFSET,32 + YSET)
