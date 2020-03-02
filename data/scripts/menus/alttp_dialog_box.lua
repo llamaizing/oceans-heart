@@ -240,10 +240,14 @@ local function create_dialog_box(game)
     local dialog = self.dialog
 
     local text = dialog.text
+
     if dialog_box.info ~= nil then
       -- There is a "$v" sequence to substitute.
       text = text:gsub("%$v", dialog_box.info)
     end
+
+
+
     -- Split the text in lines.
     text = text:gsub("\r\n", "\n"):gsub("\r", "\n")
     self.line_it = text:gmatch("([^\n]*)\n")  -- Each line including empty ones.
@@ -358,8 +362,17 @@ local function create_dialog_box(game)
   -- If this is a special character (like $0, $v, etc.),
   -- the corresponding action is performed.
   function dialog_box:add_character()
-
     local line = self.lines[self.line_index]
+-------------------------------------------------------------------------------[TILIA TALKING BLUE]
+if self.line_index == 1 then
+local color_mod = {255,255,255}
+if line == "TILIA:" then color_mod = {130,220,255} end
+for i=1,4 do
+ dialog_box.line_surfaces[i]:set_color_modulation(color_mod)
+end
+
+end
+-------------------------------------------------------------------------------[END]
     local current_char = line:sub(self.char_index, self.char_index)
     if current_char == "" then
       error("No remaining character to add on this line")

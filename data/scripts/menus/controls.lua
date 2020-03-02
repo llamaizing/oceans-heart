@@ -12,21 +12,21 @@ local pause = sol.text_surface.create()
 
 move:set_text"(Arrow Keys) Move"
 switch_subscreen:set_text"(F/G) Scroll Menus"
-item1:set_text"(X) Use Item 1"
-item2:set_text"(V) Use Item 2"
-action:set_text"(C) Use Sword"
-sword:set_text"(Space) Interact"
+item1:set_text"(X) Item 1"
+item2:set_text"(V) Item 2"
+action:set_text"(C) Sword"
+sword:set_text"(Space)Interact/Roll"
 pause:set_text"(D) Pause"
 
 function controls_menu:on_started()
-  local OFFSET = -23
+  local OFFSET = -31
   local YSET = 8
   move:draw(bg,96 + OFFSET,32 + YSET)
   switch_subscreen:draw(bg,280 + OFFSET,48 + YSET)
   item1:draw(bg,328 + OFFSET,80 + YSET)
   item2:draw(bg,336 + OFFSET,96 + YSET)
-  action:draw(bg,344 + OFFSET,112 + YSET)
-  sword:draw(bg,304 + OFFSET,128 + YSET)
+  action:draw(bg,344 + OFFSET,112 + YSET) --this is sword
+  sword:draw(bg,312 + OFFSET,128 + YSET) --this is action. I guessed which was which when naming them
   pause:draw(bg,192 + OFFSET,192 + YSET)
 end
 
