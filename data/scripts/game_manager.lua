@@ -113,9 +113,13 @@ function game_manager:create(file_name, overwrite_game)
     end
 
     if key == "f" and sol.menu.is_started(pause_menu) then
-      pause_menu:next_submenu"left"
+      if sol.menu.is_started(pause_menu) then
+        pause_menu:next_submenu"left"
+      end
     elseif key == "g" and sol.menu.is_started(pause_menu) then
-      pause_menu:next_submenu"right"
+      if sol.menu.is_started(pause_menu) then
+        pause_menu:next_submenu"right"
+      end
 
       --DEBUG FUNCTIONS
     -- elseif key == "y" and DEBUG_MODE and game:has_item("sword") then
@@ -172,7 +176,6 @@ function game_manager:create(file_name, overwrite_game)
 
   ---------------------------------------------command inputs-------------------------------------------------
   function game:on_command_pressed(action)
-
   --Roll / Dash
   local ignoring_obstacles
   local hero = game:get_hero()
@@ -194,7 +197,26 @@ function game_manager:create(file_name, overwrite_game)
     end --end of if action == condition
   end
 
+  function game:on_joypad_button_pressed(btn)
+    local handled = false
+    if btn == 7 then
+      game:simulate_command_pressed"pause"
+      handled = true
 
+    elseif btn == 4 then --left bumper
+      if sol.menu.is_started(pause_menu) then
+        pause_menu:next_submenu"left"
+      end
+      handled = true
+    elseif btn == 5 then --right bumper
+      if sol.menu.is_started(pause_menu) then
+        pause_menu:next_submenu"right"
+      end
+      handled = true
+    end
+
+    return handled
+  end
 
 
   --Set Respawn point whenver map changes

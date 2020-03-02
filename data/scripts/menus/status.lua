@@ -109,6 +109,9 @@ function status_screen:on_command_pressed(command)
       status_screen:process_direction("right")
       handled = true
     end
+  elseif command == "item_1" then
+    print"controls"
+    sol.menu.start(sol.main.get_game(),require"scripts/menus/controls")
   end
   return handled
 end
