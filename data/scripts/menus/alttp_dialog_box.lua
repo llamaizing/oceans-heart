@@ -510,6 +510,16 @@ end
     end
   end
 
+  --Avoid analog stick from registering more than one directional event when held down:
+  local joy_avoid_repeat = {-2, -2}
+  function dialog_box:on_joypad_axis_moved(axis, state)  
+
+    local handled = joy_avoid_repeat[axis % 2] == state
+    joy_avoid_repeat[axis % 2] = state      
+
+    return handled
+  end
+
   function dialog_box:on_command_pressed(command)
 
     if command == "action" then
