@@ -12813,9 +12813,10 @@ Ah, a customer! I'm the bomb-maker. If you
 bring me Firethorn berries, I can make you
 explosives! For 5 bombs, I need 2 bunches
 of Firethorn berries, and 15 crowns for labor.
-Buy bombs?
-$? Yes
-$? No
+Bomb Options:
+$? 5 Bombs
+$? Upgrade Bombs
+$? Nevermind
 ]],
 }
 
@@ -12846,6 +12847,38 @@ THE BOMB MAKER:
 at the port, in a building West, over
 the bridge. If you want to pick up that
 package, it's up to you now.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.shops.bomb_maker.upgrade",
+  text = [[
+If you have some coral ore and 200 crowns,
+I can upgrade the amount of damage your
+bombs do to enemies. Hehehe. How does
+that strike you?
+$? Power 'em up
+$? No thanks
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.shops.bomb_maker.upgrade_done",
+  text = [[
+Your bombs were upgraded to do more
+damage to enemies!
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.shops.bomb_maker.upgrade_no_more",
+  text = [[
+Oh, actually, this is embarrassing. I've
+already made your bombs as damaging as
+possible. There's all kinds of stuff in
+there. You can't make them do any more
+damage, we're running up against the
+laws of nature here. Sorry about that!
 ]],
 }
 
@@ -18698,3 +18731,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+

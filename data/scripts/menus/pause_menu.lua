@@ -414,13 +414,14 @@ function pause_menu:on_draw(dst)
   transparent_background:draw(dst)
 end
 
-local joy_avoid_repeat = {-2, -2}
 
-function pause_menu:on_joypad_axis_moved(axis, state)
-  
+--Avoid analog stick from registering more than one directional event when held down:
+local joy_avoid_repeat = {-2, -2}
+function pause_menu:on_joypad_axis_moved(axis, state)  
+
   local handled = joy_avoid_repeat[axis % 2] == state
-  joy_avoid_repeat[axis % 2] = state
-      
+  joy_avoid_repeat[axis % 2] = state      
+
   return handled
 end
 

@@ -42,7 +42,8 @@ function bomb_maker:on_interaction()
   --otherwise, you can just buy bombs
   else
     game:start_dialog("_oakhaven.npcs.shops.bomb_maker.1", function(answer)
-      if answer == 2 then
+
+      if answer == 2 then --make bombs
         if game:get_item("firethorn_berries"):get_amount() >= 2 and game:get_money() >= 15 then
           game:remove_money(15)
           game:get_item("firethorn_berries"):remove_amount(2)
@@ -50,9 +51,32 @@ function bomb_maker:on_interaction()
         else
           game:start_dialog("_game.insufficient_items")
         end
+
+      elseif answer == 3 then
+        if game:get_value("bomb_damage") < 28 then --max bomb damage
+          map:upgrade_bombs()
+        else --can't upgrade bombs any further
+          game:start_dialog"_oakhaven.npcs.shops.bomb_maker.upgrade_no_more"
+        end
       end
     end)
   end
+end
+
+function map:upgrade_bombs()
+  local ore_amount = game:get_item("coral_ore"):get_amount()
+  game:start_dialog("_oakhaven.npcs.shops.bomb_maker.upgrade", function(answer)
+    if answer == 1 then
+      if game:get_money() >= 200 and ore_amount >= 1 then
+          game:set_value("bomb_damage", game:get_value"bomb_damage" + 4 )
+          game:remove_money(200)
+          game:get_item("coral_ore"):remove_amount(1)
+          game:start_dialog("_oakhaven.npcs.shops.bomb_maker.upgrade_done")
+      else --don't have ore and money
+        game:start_dialog("_game.insufficient_items")
+      end
+    end
+  end)
 end
 
 
