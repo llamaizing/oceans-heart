@@ -22,7 +22,7 @@ item:register_event("on_using", function(self)
     item.can_throw = false
   elseif item.can_throw then
     -- boomerang 2: longer and faster movement
-    self:do_boomerang(150, 250, "boomerang1", "entities/boomerang1")
+    self:do_boomerang(170, 250, "boomerang1", "entities/boomerang1")
     item.can_throw = false
   end
   self:set_finished()
@@ -71,16 +71,21 @@ function item:do_boomerang(distance, speed, hero_animation, boom_sprite)
     end
   end)
 
+  --Create feathers to hurt enemies if second level
   if self:get_variant() > 1 then
-    sol.timer.start(map, 160, function()
+    sol.timer.start(map, 130, function()
       if map:has_entities("hero_thrown_boomerang") then
         local x,y,z = boomerang:get_position()
         local feather = map:create_custom_entity{
           x=x, y=y, layer=z, direction=0, width=16, height=16,
           model = "damaging_sparkle", sprite = "enemies/crow_feather"
         }
+        feather:set_damage(game:get_value"sword_damage" / 2)
         local m = sol.movement.create("straight")
-        angle = 3* math.pi /2 + (math.random(-.3,.3))
+--        angle = 3* math.pi /2 + (math.random(-.3,.3))
+        local angle = hero:get_angle(feather)
+        angle = angle + math.random(-1.5,1.5)
+        m:set_angle(angle)
         m:start(feather)
         sol.timer.start(map, 1000, function() feather:remove() end)
         return true
