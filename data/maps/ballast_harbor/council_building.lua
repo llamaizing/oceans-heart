@@ -6,6 +6,8 @@ map:register_event("on_started", function()
   map:get_camera():letterbox()
 end)
 
-function front_door_switch:on_activated()
-  map:open_doors("front_door")
+function exit_switch:on_activated()
+  sol.audio.play_sound"switch"
+  map:open_doors("exit_door")
 end
+

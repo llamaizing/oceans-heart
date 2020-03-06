@@ -74,7 +74,7 @@ map{ id = "ballast_harbor/ballast_trail", description = "BallastTrail" }
 map{ id = "ballast_harbor/cave_1", description = "Cave 1" }
 map{ id = "ballast_harbor/cave_alley", description = "Cave - Back Alley" }
 map{ id = "ballast_harbor/chart_shop", description = "Chart Shop" }
-map{ id = "ballast_harbor/council_building", description = "Pirate Council Building" }
+map{ id = "ballast_harbor/council_building", description = "Sunken Palace Shrine (old council bldg)" }
 map{ id = "ballast_harbor/dream_cannon_hideout", description = "Dream Cannon Hideout" }
 map{ id = "ballast_harbor/honestbeard", description = "Honestbeard's Emporium" }
 map{ id = "ballast_harbor/meadery", description = "Meadery" }
@@ -213,6 +213,7 @@ map{ id = "oakhaven/caves/port_bush_hole", description = "Port Bush Hole" }
 map{ id = "oakhaven/caves/port_bush_hole_2", description = "Port Bush Hole 2" }
 map{ id = "oakhaven/caves/saltpeter_mines", description = "Saltpeter Mine" }
 map{ id = "oakhaven/caves/seabird_shrine_marblecliff", description = "Seabird Shrine Marblecliff" }
+map{ id = "oakhaven/caves/sunken_palace_shrine_end", description = "Sunken Palace Shrine End" }
 map{ id = "oakhaven/caves/tungsten_cave", description = "Tungsten Cave" }
 map{ id = "oakhaven/caves/umber_lake", description = "Lake Umber" }
 map{ id = "oakhaven/caves/veilwood_health_upgrade_tunnel", description = "Veilwood Health Upgrade Tunnel" }

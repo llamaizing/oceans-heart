@@ -11,12 +11,17 @@ local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
 local bosses_killed
+local secret_switches_pressed
 
--- Event called at initialization time, as soon as this map is loaded.
 map:register_event("on_started", function()
   if game:get_value("sinking_lighthouse_fiend") then fiend_miniboss:remove() end
   map:set_doors_open("boss_door")
   bosses_killed = 0
+  secret_switches_pressed = 0
+  if game:get_value"sunken_palace_secret_statue_door_opened" then
+    secret_door_statue_1:remove()
+    secret_door_statue_2:remove()
+  end
 end)
 
 function entry_bridge_switch:on_activated()
@@ -90,6 +95,24 @@ function boss:on_dead()
       x = 824, y = 824, layer = 0, treasure_name = "health_upgrade"
     }
     game:set_value("sunken_palace_bosses_defeated", true)
+  end
+end
+end
+
+--secret crow door switches
+for switch in map:get_entities"secret_door_switch" do
+function switch:on_activated()
+  sol.audio.play_sound"switch_2"
+  secret_switches_pressed = secret_switches_pressed + 1
+  if secret_switches_pressed == 3 then
+    map:focus_on(map:get_camera(), secret_door_statue_1, function()
+      local x,y,z = secret_door_statue_1:get_position()
+      map:create_poof(x + 16, y + 12, z)
+      sol.audio.play_sound"switch_2"
+      secret_door_statue_1:remove()
+      secret_door_statue_2:remove()
+      game:set_value("sunken_palace_secret_statue_door_opened", true)
+    end)
   end
 end
 end
