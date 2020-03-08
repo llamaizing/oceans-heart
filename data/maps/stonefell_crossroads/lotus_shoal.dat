@@ -6,7 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "oceanheart_outdoors_1",
-  music = "goatshead_overworld_2",
+  music = "lotus_shoal_1",
 }
 
 tile{

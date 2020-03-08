@@ -7,7 +7,7 @@ properties{
   max_layer = 2,
   world = "crow_arena",
   tileset = "oceanheart_outdoors_1",
-  music = "goatshead_overworld_2",
+  music = "lotus_shoal_1",
 }
 
 tile{

@@ -1398,6 +1398,7 @@ sprite{ id = "weather/rain", description = "Rain" }
 sprite{ id = "weather/snow", description = "Snow" }
 
 music{ id = "ballast_harbor", description = "Ballast Harbor" }
+music{ id = "boss_battle", description = "Boss Battle" }
 music{ id = "brackish_melancholy", description = "Brackish Melancholy" }
 music{ id = "crabhook", description = "crabhook" }
 music{ id = "driftwood-2", description = "Driftwood 2" }
@@ -1409,6 +1410,7 @@ music{ id = "goatshead_harbor", description = "Goatshead Harbor" }
 music{ id = "goatshead_harbor_old", description = "OLD goatshead Harbor" }
 music{ id = "goatshead_overworld_2", description = "Goatshead Overworld 2" }
 music{ id = "hourglass_fort", description = "Hourglass Fort" }
+music{ id = "lotus_shoal_1", description = "Lotus Shoal 1" }
 music{ id = "new_limestone_island", description = "New Limestone" }
 music{ id = "new_limestone_island_slow", description = "New Limestone Slow" }
 music{ id = "newfashioned_port_burg", description = "newfashioned port burg" }
