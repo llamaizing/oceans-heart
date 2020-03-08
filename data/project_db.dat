@@ -323,6 +323,7 @@ tileset{ id = "bear_catacombs_cave", description = "BearCatacombs-Cave" }
 tileset{ id = "boulderfield", description = "Boulderfield" }
 tileset{ id = "cave_2", description = "cave-mine" }
 tileset{ id = "cemetery_of_waves", description = "CemeteryOfTheWaves" }
+tileset{ id = "dapple", description = "Dappled Light" }
 tileset{ id = "drygrass", description = "Drygrass" }
 tileset{ id = "fort_crow_walls", description = "Fort Crow Walls" }
 tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
@@ -738,6 +739,7 @@ sprite{ id = "entities/warp_block", description = "Warp Block" }
 sprite{ id = "entities/weak_tree", description = "weak tree" }
 sprite{ id = "entities/whisky", description = "whisky" }
 sprite{ id = "entities/yarrow_bloom_particle", description = "Yarrow Bloom Particle" }
+sprite{ id = "fog/dapple", description = "Dapple" }
 sprite{ id = "hero/barrier", description = "Barrier" }
 sprite{ id = "hero/ground1", description = "Grass under hero" }
 sprite{ id = "hero/ground2", description = "Shallow water under hero" }

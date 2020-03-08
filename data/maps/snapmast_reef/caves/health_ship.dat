@@ -1646,7 +1646,7 @@ pickable{
   x = 256,
   y = 125,
   enabled_at_start = false,
-  treasure_name = "health_upgrade",
+  treasure_name = "coral_ore",
   treasure_savegame_variable = "snapmast_reef_health_ship_upgrade",
 }
 

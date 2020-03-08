@@ -4,18 +4,23 @@ local map = enemy:get_map()
 local startx, starty, startl
 enemy.immobilize_immunity = true
 
-function enemy:on_created()
+--[[
+This enemy will spin around the x,y where its starting location is set
 
+Properties you can set:
+damage
+speed (5 is default. Rad/sec)
+clockwise (leaving it nil means the movement will be anticlockwise)
+radius (64 is default)
+--]]
+
+function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(1)
   enemy:set_obstacle_behavior("flying")
   startx, starty, startl = enemy:get_position()
-  if enemy:get_property("damage") then
-    enemy:set_damage(enemy:get_property("damage"))
-  else
-    enemy:set_damage(2)
-    if enemy:get_property("damage") then enemy:set_damage(enemy:get_property("damage")) end
-  end
+  enemy:set_damage(2)
+  if enemy:get_property("damage") then enemy:set_damage(enemy:get_property("damage")) end
   enemy:set_invincible(true)
 end
 
