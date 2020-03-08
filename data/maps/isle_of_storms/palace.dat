@@ -55835,6 +55835,226 @@ sensor{
   height = 16,
 }
 
+npc{
+  name = "blackbeard_magic_blocker",
+  layer = 0,
+  x = 1080,
+  y = 2485,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_seal",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_2",
+  layer = 0,
+  x = 1064,
+  y = 2501,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_seal",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_3",
+  layer = 0,
+  x = 1032,
+  y = 2501,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_seal",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_4",
+  layer = 0,
+  x = 1016,
+  y = 2501,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_seal",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_5",
+  layer = 0,
+  x = 1000,
+  y = 2485,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_seal",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_6",
+  layer = 0,
+  x = 1000,
+  y = 2461,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_seal",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_7",
+  layer = 0,
+  x = 1080,
+  y = 2461,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_seal",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_8",
+  layer = 0,
+  x = 1056,
+  y = 2445,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_seal",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_9",
+  layer = 0,
+  x = 1024,
+  y = 2445,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_seal",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_10",
+  layer = 0,
+  x = 1000,
+  y = 2453,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_fire",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_11",
+  layer = 0,
+  x = 1024,
+  y = 2437,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_fire",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_12",
+  layer = 0,
+  x = 1056,
+  y = 2437,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_fire",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_13",
+  layer = 0,
+  x = 1080,
+  y = 2453,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_fire",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_14",
+  layer = 0,
+  x = 1072,
+  y = 2477,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_fire",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_15",
+  layer = 0,
+  x = 1064,
+  y = 2493,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_fire",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_16",
+  layer = 0,
+  x = 1032,
+  y = 2493,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_fire",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_17",
+  layer = 0,
+  x = 1016,
+  y = 2493,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_fire",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_18",
+  layer = 0,
+  x = 1000,
+  y = 2477,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_fire",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_19",
+  layer = 0,
+  x = 1048,
+  y = 2501,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_seal",
+}
+
+npc{
+  name = "blackbeard_magic_blocker_20",
+  layer = 0,
+  x = 1048,
+  y = 2493,
+  enabled_at_start = false,
+  direction = 3,
+  subtype = 1,
+  sprite = "entities/seaking_fire",
+}
+
 tile{
   layer = 1,
   x = 2224,

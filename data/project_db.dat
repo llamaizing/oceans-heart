@@ -704,6 +704,8 @@ sprite{ id = "entities/robot_parts", description = "RobotParts" }
 sprite{ id = "entities/rockpile", description = "Rock Pile" }
 sprite{ id = "entities/rupee_icon", description = "Rupee icon" }
 sprite{ id = "entities/sea_reflection_fog", description = "Sea Reflection Fog" }
+sprite{ id = "entities/seaking_fire", description = "SeaKing Fire" }
+sprite{ id = "entities/seaking_seal", description = "Seaking Seal" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/sign", description = "Sign" }
 sprite{ id = "entities/smashable_gate", description = "Smashable Gate" }

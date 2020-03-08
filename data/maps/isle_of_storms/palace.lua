@@ -400,6 +400,7 @@ sea_king_boss:register_event("on_dead", function()
   map:open_doors("boss_door")
   game:set_starting_location("isle_of_storms/palace", "boss_arena_center")
   hero:freeze()
+  hero:get_sprite():set_animation("floating")
   local m = sol.movement.create("target")
   m:set_target(boss_arena_center)
   m:start(hero, function()
@@ -428,6 +429,9 @@ end)
 
 
 function map:building_collapse()
+  for e in map:get_entities"blackbeard_magic_blocker" do
+    e:set_enabled(true)
+  end
   for entity in map:get_entities("palace_collapse_tile") do
     entity:set_enabled(true)
   end
