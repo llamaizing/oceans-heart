@@ -39,6 +39,14 @@ map:register_event("on_started", function()
 
 end)
 
+--Sail back to Ballast Harbor
+function boat_sensor:on_activated()
+  game:start_dialog("_ballast_harbor.observations.old_spruce_shrine_return", function(answer)
+    if answer == 2 then
+      hero:teleport("ballast_harbor/cave_1", "from_boat")
+    end
+  end)
+end
 
 
 

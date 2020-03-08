@@ -1335,6 +1335,25 @@ $?No
 }
 
 dialog{
+  id = "_ballast_harbor.observations.old_spruce_shrine_leave_dialog",
+  text = [[
+There's a location marked on the chart
+here. Take the boat and sail there?
+$? Set sail
+$? Nope
+]],
+}
+
+dialog{
+  id = "_ballast_harbor.observations.old_spruce_shrine_return",
+  text = [[
+Sail back to Ballast Harbor?
+$?Set sail
+$?Stay here
+]],
+}
+
+dialog{
   id = "_ballast_harbor.observations.outdoor_charts",
   text = [[
 A bunch of rolled up sea charts. It looks
@@ -18731,3 +18750,4 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
+

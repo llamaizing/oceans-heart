@@ -7,3 +7,11 @@ map:register_event("on_started", function()
   lighting_effects:set_darkness_level(2)
   sol.menu.start(map, lighting_effects)
 end)
+
+function boat_sensor:on_activated()
+  game:start_dialog("_ballast_harbor.observations.old_spruce_shrine_leave_dialog", function(answer)
+    if answer == 3 then
+      hero:teleport("goatshead_island/spruce_head_shrine_old", "from_outside")
+    end
+  end)
+end

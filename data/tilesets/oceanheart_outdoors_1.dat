@@ -8755,7 +8755,7 @@ tile_pattern{
 
 tile_pattern{
   id = "1739",
-  ground = "wall",
+  ground = "empty",
   default_layer = 0,
   x = 16,
   y = 1264,
