@@ -18370,7 +18370,7 @@ dialog{
   title = "Saltpeter Cave",
   text = [[
 ##The Oakhaven Bomb Shop is having
-##monster-realted supply chain issues.
+##monster-related supply chain issues.
 @!Check in with the shop in Oakhaven
 !City
 @Enter the saltpeter cave
@@ -18731,4 +18731,3 @@ dialog{
 #%=    $ITEM_NAME
 ]],
 }
-

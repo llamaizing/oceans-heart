@@ -1,27 +1,10 @@
--- Lua script of map goatshead_island/spruce_head_shrine.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 local hero = map:get_hero()
 
 
 map:register_event("on_started", function()
-  map:get_camera():letterbox()
-  ilex_2:set_enabled(false)
   statue_treasure_chest:set_enabled(false)
-  if game:get_value("spruce_head_arborgeist_defeated") == true then
-    health_upgrade_door:set_enabled(false)
-    spruce_head_arborgeist:set_enabled(false)
-  end
-  if game:get_value("shsstatue_switch_3") == true then boss_door:set_enabled(false) end
-
 
 --keep fountains on even if you die
   if game:get_value("shsf1") == true then
@@ -58,16 +41,6 @@ end)
 
 
 
---arborgeist battle
-function spruce_head_arborgeist:on_dead()
-  game:set_value("spruce_head_arborgeist_defeated", true)
-  sol.audio.play_sound("door_open")
-  sol.audio.play_sound("secret")
-  health_upgrade_door:set_enabled(false)
-  map:create_pickable({
-    layer = 0, x = 1120, y = 136, treasure_name = "health_upgrade",
-  })
-end
 
 --cyclops battle
 function miniboss:on_dead()
@@ -76,66 +49,6 @@ function miniboss:on_dead()
 end
 
 
---Ilex
-function ilex:on_interaction()
-  if game:get_value("spruce_head_shrine_central_door") == true then
-    game:start_dialog("_goatshead.npcs.ilex.5")
-  elseif game:get_value("talked_to_ilex_2") ~= true then
-    game:start_dialog("_goatshead.npcs.ilex.3")
-    game:set_value("talked_to_ilex_2", true)
-    game:set_value("quest_spruce_head", 2) --quest log
-  else
-    game:start_dialog("_goatshead.npcs.ilex.4")
-  end
-end
-
---cutscene
-function cutscene_sensor:on_activated()
-  if game:get_value("seen_spruce_sanctuary") ~= true then
-    ilex_2:set_enabled(true)
-    ilex:set_enabled(false)
-    local m = sol.movement.create("path")
-    m:set_path{2,2,2,2,2,2,2,2,2,2,2,2,2,6}
-    m:set_ignore_obstacles(true)
-    m:start(ilex_2)
-    local t = sol.movement.create("target")
-    t:set_target(target_gin)
-    t:is_smooth(true)
-    t:start(hero)
---    hero:freeze()
-      function m:on_finished()
-          game:start_dialog("_goatshead.npcs.ilex.6", function()
-
-            game:start_dialog("_goatshead.npcs.ilex.9", function()
-
-              game:set_value("quest_log_a", "a5")
-              game:set_value("quest_spruce_head", 3) --quest log
-              hero:unfreeze()
-              game:set_value("seen_spruce_sanctuary", true)
-
-              game:start_dialog("_game.quest_log_update", function()
-                hero:teleport("goatshead/poplar_coast", "from_shrine", "fade")
-              end)
-
-            end)
-
-          end)
-
-      end
-  end
-end
---when ilex is done walking
-
-
-function ilex_2:on_interaction()
-    game:start_dialog("_goatshead.npcs.ilex.8")
-end
-
-function gin_bottles:on_interaction()
-  game:start_dialog("_goatshead.observations.shrine_bottles")
-  game:set_value("checked_spruce_liquer", true)
-  game:set_value("spruce_head_shrine_complete", true)
-end
 
 
 --central door
@@ -177,7 +90,7 @@ function fountain_switch_1:on_activated()
     and game:get_value("shsf2") == true
     and game:get_value("shsf3") == true
     and game:get_value("shsf4") == true
-    then sol.audio.play_sound("secret") end
+    then sol.audio.play_sound("secret") map:open_central_door() end
 end
 
 function fountain_switch_2:on_activated()
@@ -195,7 +108,7 @@ function fountain_switch_2:on_activated()
     and game:get_value("shsf2") == true
     and game:get_value("shsf3") == true
     and game:get_value("shsf4") == true
-    then sol.audio.play_sound("secret") end
+    then sol.audio.play_sound("secret") map:open_central_door() end
 end
 
 function fountain_switch_3:on_activated()
@@ -213,7 +126,7 @@ function fountain_switch_3:on_activated()
     and game:get_value("shsf2") == true
     and game:get_value("shsf3") == true
     and game:get_value("shsf4") == true
-    then sol.audio.play_sound("secret") end
+    then sol.audio.play_sound("secret") map:open_central_door() end
 end
 
 function fountain_switch_4:on_activated()
@@ -231,7 +144,14 @@ function fountain_switch_4:on_activated()
     and game:get_value("shsf2") == true
     and game:get_value("shsf3") == true
     and game:get_value("shsf4") == true
-    then sol.audio.play_sound("secret") end
+    then sol.audio.play_sound("secret") map:open_central_door() end
+end
+
+function map:open_central_door()
+  map:focus_on(map:get_camera(), central_door, function()
+    central_door:remove()
+    game:set_value("spruce_head_shrine_central_door", true)
+  end)
 end
 
 

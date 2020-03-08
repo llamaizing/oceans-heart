@@ -603,6 +603,7 @@ sprite{ id = "entities/bush_philodendron", description = "Philodendron Bush" }
 sprite{ id = "entities/bush_seagrass", description = "Seagrass" }
 sprite{ id = "entities/bush_seaoak_grass", description = "Seaoak Grass" }
 sprite{ id = "entities/bush_small_tree", description = "small tree" }
+sprite{ id = "entities/bush_sprucebell", description = "Bush-Sprucebell" }
 sprite{ id = "entities/bush_summergrass", description = "Summergrass" }
 sprite{ id = "entities/bush_violet", description = "Violet" }
 sprite{ id = "entities/bush_witch_hazel", description = "Witch Hazel" }

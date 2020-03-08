@@ -17729,11 +17729,303 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "2504",
+  ground = "wall",
+  default_layer = 0,
+  x = 672,
+  y = 560,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2504_10",
+  ground = "wall",
+  default_layer = 0,
+  x = 688,
+  y = 448,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2504_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 688,
+  y = 560,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2504_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 688,
+  y = 544,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2504_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 672,
+  y = 544,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2504_5",
+  ground = "wall",
+  default_layer = 0,
+  x = 688,
+  y = 528,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2504_6",
+  ground = "wall",
+  default_layer = 0,
+  x = 672,
+  y = 528,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2504_7",
+  ground = "wall",
+  default_layer = 0,
+  x = 672,
+  y = 496,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2504_8",
+  ground = "wall",
+  default_layer = 0,
+  x = 672,
+  y = 512,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2504_9",
+  ground = "wall",
+  default_layer = 0,
+  x = 672,
+  y = 448,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2505",
+  ground = "wall",
+  default_layer = 0,
+  x = 704,
+  y = 560,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2505_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 704,
+  y = 544,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2505_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 704,
+  y = 528,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2505_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 704,
+  y = 448,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2506",
+  ground = "wall",
+  default_layer = 0,
+  x = 720,
+  y = 560,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2506_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 720,
+  y = 544,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2506_3",
+  ground = "wall",
+  default_layer = 0,
+  x = 720,
+  y = 528,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2506_4",
+  ground = "wall",
+  default_layer = 0,
+  x = 720,
+  y = 512,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2506_5",
+  ground = "wall",
+  default_layer = 0,
+  x = 720,
+  y = 496,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2506_6",
+  ground = "wall",
+  default_layer = 0,
+  x = 720,
+  y = 448,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2507",
+  ground = "wall",
+  default_layer = 0,
+  x = 672,
+  y = 464,
+  width = 16,
+  height = 32,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "2508",
+  ground = "wall",
+  default_layer = 0,
+  x = 720,
+  y = 464,
+  width = 16,
+  height = 32,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "2509",
+  ground = "wall",
+  default_layer = 0,
+  x = 688,
+  y = 464,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "251",
   ground = "wall",
   default_layer = 0,
   x = 112,
   y = 184,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "2510",
+  ground = "wall",
+  default_layer = 0,
+  x = 704,
+  y = 464,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2511",
+  ground = "wall",
+  default_layer = 0,
+  x = 688,
+  y = 480,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2512",
+  ground = "wall",
+  default_layer = 0,
+  x = 704,
+  y = 480,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2513",
+  ground = "traversable",
+  default_layer = 0,
+  x = 688,
+  y = 576,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "2514",
+  ground = "traversable",
+  default_layer = 0,
+  x = 704,
+  y = 584,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "2515",
+  ground = "traversable",
+  default_layer = 0,
+  x = 704,
+  y = 576,
   width = 16,
   height = 8,
 }
