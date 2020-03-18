@@ -6649,6 +6649,13 @@ dialog{
 LINDEN:
 What, are you back already? I've got things
 covered here at the tavern, go look for Dad.
+...
+LINDEN:
+Although, do come back from time to time.
+I'm gonna miss you.
+
+TILIA:
+I'll miss you too, Linden. I will.
 ]],
 }
 
@@ -6677,6 +6684,128 @@ LINDEN:
 I'm sure if you ask around in the right places,
 you'll find clues. Be sure to come back and
 visit from time to time. Now get going!
+]],
+}
+
+dialog{
+  id = "_new_limestone_island.npcs.linden.plot_updates.catacombs",
+  text = [[
+LINDEN:
+Hey Tilia. Things are going well here,
+how is the search going?
+
+TILIA:
+I've got a couple clues. I found a man
+who'd met dad, and got this key dad had
+with him. I'm trying to figure out
+TILIA:
+what it unlocks. Sounds like dad has
+been messing with this Pirate Council.
+
+LINDEN:
+If there's something called a Pirate
+Council, of course dad would mess with
+them. Well, keep following the clues.
+]],
+}
+
+dialog{
+  id = "_new_limestone_island.npcs.linden.plot_updates.fort_crow",
+  text = [[
+LINDEN:
+Tilia, lovely to see you back! Did you
+find anyone yet?
+
+TILIA:
+I found her! I found Hazel. She's in
+Oakhaven. She and dad are involved in
+this whole pirate-fighting plot and...
+LINDEN:
+Hey, don't get caught up in all the
+details, you found your best friend!
+Let's celebrate that!
+TILIA:
+...yeah! You're right, she's safe.
+Thanks, Linden.
+]],
+}
+
+dialog{
+  id = "_new_limestone_island.npcs.linden.plot_updates.isle_of_storms",
+  text = [[
+LINDEN:
+Hey kiddo! Where is your hunt taking you
+now?
+
+TILIA:
+Some mythical island where the ancient
+Sea King's palace was supposed to be.
+Stupid pirates are going after this dumb
+TILIA:
+artifact that's there, gonna wreck the
+whole ocean if they get it.
+
+LINDEN:
+Alright, adventure tourism. Sounds like
+you'll get to see something nobody else
+gets to. You think dad is there?
+TILIA:
+He probably is, knowing him. But either
+way, I think I need to stop these pirates.
+
+LINDEN:
+Well, you do what you need to. I'm proud
+you've made it this far.
+]],
+}
+
+dialog{
+  id = "_new_limestone_island.npcs.linden.plot_updates.oakhaven",
+  text = [[
+LINDEN:
+Nice to see you back, Tilia. Any news
+on finding dad or Hazel?
+
+TILIA:
+I'm close! Hazel is in Oakhaven somewhere.
+
+
+LINDEN:
+That's fantastic! You'll find her in no
+time, and then I'm sure you'll be able
+to track dad down.
+]],
+}
+
+dialog{
+  id = "_new_limestone_island.npcs.linden.plot_updates.snapmast",
+  text = [[
+LINDEN:
+Good to see you back, Tilia! How's Hazel?
+
+
+TILIA:
+She's doing good! She's staying in
+Oakhaven for now since we're trying to
+destabilize the Pirate Council's plans.
+LINDEN:
+Great. Had some sailors come through
+yesterday who were complaining about that
+council. They're trying to conscript
+LINDEN:
+anyone they can, it sounds like. What
+do they want?
+
+TILIA:
+Some magic artifact thing so they can
+control storms and stuff.
+
+LINDEN:
+Well definitely nobody should have that.
+Keep it away from them, Tilia!
+
+TILIA:
+Thanks, Linden.
 ]],
 }
 

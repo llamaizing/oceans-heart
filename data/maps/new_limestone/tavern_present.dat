@@ -1096,7 +1096,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/linden",
-  behavior = "dialog#_new_limestone_island.npcs.linden.5",
 }
 
 npc{

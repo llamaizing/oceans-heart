@@ -43,5 +43,22 @@ end
 end
 
 function linden:on_interaction()
-  game:start_dialog("_new_limestone_island.npcs.linden.5")
+  if game:get_value"quest_isle_of_storms" then
+    game:start_dialog"_new_limestone_island.npcs.linden.plot_updates.isle_of_storms"
+
+  elseif game:get_value"quest_snapmast" then
+    game:start_dialog"_new_limestone_island.npcs.linden.plot_updates.snapmast"
+
+  elseif game:get_value"quest_pirate_fort" then
+    game:start_dialog"_new_limestone_island.npcs.linden.plot_updates.fort_crow"
+
+  elseif game:get_value"quest_hazel" then
+    game:start_dialog"_new_limestone_island.npcs.linden.plot_updates.oakhaven"
+
+  elseif game:get_value"quest_kelpton" >= 4 then
+    game:start_dialog"_new_limestone_island.npcs.linden.plot_updates.catacombs"
+
+  else
+    game:start_dialog("_new_limestone_island.npcs.linden.5")
+  end
 end

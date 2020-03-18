@@ -28075,16 +28075,6 @@ npc{
   sprite = "enemies/bosses/assassinbeard",
 }
 
-npc{
-  name = "blackbeard",
-  layer = 0,
-  x = 2688,
-  y = 1533,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/blackbeard",
-}
-
 sensor{
   name = "^save_solid_ground_sensor_10",
   layer = 0,
@@ -36601,6 +36591,16 @@ wall{
   stops_npcs = true,
   stops_enemies = true,
   stops_blocks = true,
+}
+
+npc{
+  name = "blackbeard",
+  layer = 1,
+  x = 2688,
+  y = 1533,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/blackbeard",
 }
 
 tile{

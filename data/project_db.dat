@@ -332,6 +332,9 @@ tileset{ id = "limestone", description = "Limestone" }
 tileset{ id = "misc", description = "misc tiles" }
 tileset{ id = "oceanheart_outdoors_1", description = "Overworld" }
 tileset{ id = "oceanheart_outdoors_spring", description = "Overworld-Spring" }
+tileset{ id = "oceanset_cave", description = "Oceanset-Cave" }
+tileset{ id = "oceanset_inside", description = "Oceanset-Inside" }
+tileset{ id = "oceanset_outside", description = "Oceanset-Outside" }
 tileset{ id = "overworld_oakhaven", description = "Overworld-Oakhaven" }
 tileset{ id = "overworld_yarrowmouth", description = "Overworld-Yarrowmouth" }
 tileset{ id = "palace_of_storms", description = "Palace of Storms" }
