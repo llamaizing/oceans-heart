@@ -56,6 +56,12 @@ function map:intro_cutscene_2()
       sol.timer.start(map, 700, function()
         sol.audio.play_sound("sword4")
         sol.audio.play_sound("sword1")
+        local x,y,z = blackbeard:get_position()
+        map:create_custom_entity{
+          x=x,y=y,layer=z,width=16,height=16,direction=3,
+          model = "ephemeral_effect",
+          sprite = "enemies/misc/sword_slash"
+        }
         blackbeard:get_sprite():set_animation("attack", function()
           blackbeard:get_sprite():set_animation("stopped")
           blackbeard:get_sprite():set_ignore_suspend(true)
