@@ -316,6 +316,7 @@ map{ id = "stonefell_crossroads/zephyr_bay", description = "Zephyr Bay" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }
+map{ id = "test_oceansettown", description = "test-oceansettown" }
 
 tileset{ id = "abysphere_ruins", description = "Abysphere Ruins" }
 tileset{ id = "bear_catacombs", description = "Bear Catacombs" }
