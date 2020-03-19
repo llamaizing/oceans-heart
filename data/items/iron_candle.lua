@@ -5,9 +5,9 @@ local game = item:get_game()
 local map
 local hero
 local sprite
-local NUM_EXPLOSIONS = 8
+local NUM_EXPLOSIONS = 6
 local DISTANCE = 250
-local EXP_DELAY = 150
+local EXP_DELAY = 250
 local SPEED = 200
 
 item:register_event("on_created", function(self)
