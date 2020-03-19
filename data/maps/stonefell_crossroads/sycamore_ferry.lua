@@ -86,3 +86,11 @@ function enemy:on_dead()
   end
 end
 end
+
+function lily:on_interaction()
+  if not game:get_value"lily_rescued" then
+    game:start_dialog"_sycamore_ferry.npcs.lily.help"
+  else
+    game:start_dialog"_sycamore_ferry.npcs.lily.saved_follow_up"
+  end
+end

@@ -41754,7 +41754,6 @@ npc{
   direction = 3,
   subtype = 1,
   sprite = "npc/lily/lily_standing",
-  behavior = "dialog#_sycamore_ferry.npcs.lily.saved_follow_up",
 }
 
 sensor{

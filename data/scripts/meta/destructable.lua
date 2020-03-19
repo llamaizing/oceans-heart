@@ -38,3 +38,9 @@ destructible_meta:register_event("on_lifting", function(self)
   local bush = self
   require("scripts/maps/foraging_manager"):process_cut_bush(bush)
 end)
+
+destructible_meta:register_event("on_contact_fire", function(self)
+  if string.match(sprite_name, "bush") then
+    --burn
+  end
+end)
