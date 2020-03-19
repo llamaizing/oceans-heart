@@ -105,7 +105,7 @@ function behavior:create(enemy, properties)
     local r = math.random(1500, 7000)
     sol.timer.start(r, function()
       sprite:set_direction(math.random(0,3))
-      return true
+      if not awaken then return true end
     end)
 
   end
@@ -223,7 +223,7 @@ function behavior:create(enemy, properties)
     end
     local m = sol.movement.create("straight")
     m:set_angle(angle)
-    m:set_speed(160)
+    m:set_speed(200)
     m:set_ignore_obstacles()
     m:set_max_distance(400)
     enemy:set_layer(map:get_max_layer())
