@@ -126,6 +126,7 @@ map{ id = "dummy_cutscene/basswood", description = "Basswood" }
 map{ id = "dummy_cutscene/hazel_oakhaven", description = "Hazel Oakhaven" }
 map{ id = "dummy_cutscene/lily_pirate", description = "Lily Pirate" }
 map{ id = "dummy_cutscene/limestone", description = "limestone" }
+map{ id = "example_town_a", description = "example_town_a" }
 map{ id = "goat_hill_new_test", description = "new goat hill test" }
 map{ id = "goatshead_island/ball_trail", description = "Ballast Trail" }
 map{ id = "goatshead_island/brickabranch_island", description = "Brickabranch Island" }
@@ -282,6 +283,7 @@ map{ id = "oakhaven/waterfall_canyon", description = "Waterfall Canyon" }
 map{ id = "oakhaven/west_coast", description = "West Coast" }
 map{ id = "oakhaven/west_oak", description = "Westoak" }
 map{ id = "redpine_test", description = "Redpine Test" }
+map{ id = "refref", description = "refref" }
 map{ id = "respawn_map", description = "blank room - leave empty" }
 map{ id = "snapmast_reef/caves/coral_cave", description = "Coral Cave" }
 map{ id = "snapmast_reef/caves/elixer_upgrade_tower", description = "Elixer Upgrade Tower" }
@@ -316,7 +318,6 @@ map{ id = "stonefell_crossroads/zephyr_bay", description = "Zephyr Bay" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }
-map{ id = "test_oceansettown", description = "test-oceansettown" }
 
 tileset{ id = "abysphere_ruins", description = "Abysphere Ruins" }
 tileset{ id = "bear_catacombs", description = "Bear Catacombs" }

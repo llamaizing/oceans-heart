@@ -102,6 +102,8 @@ end
 
 -----Map Focus-----
 function map_meta:focus_on(camera, target_entity, callback, return_delay)
+--  if not target_entity then print("error-no target entity for map_meta:focus_on") return end
+  assert(target_entity, "target_entity is invalid for map_meta:focus_on")
   local game = sol.main.get_game()
   local hero = game:get_hero()
   hero:freeze()

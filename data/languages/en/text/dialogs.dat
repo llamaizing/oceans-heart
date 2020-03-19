@@ -15375,8 +15375,8 @@ just eat it straight.
 dialog{
   id = "_treasure.iron_candle.1",
   text = [[
-You got salt candles. Throw these down and
-as they slowly burn, they'll pop several
+You got salt candles. Throw these and
+as they burn, they'll pop several
 times, damaging enemies.
 ]],
 }
@@ -15384,8 +15384,8 @@ times, damaging enemies.
 dialog{
   id = "_treasure.iron_candle_pickable.1",
   text = [[
-You got salt candles. Throw these down and
-as they slowly burn, they'll pop several
+You got salt candles. Throw these and
+as they burn, they'll pop several
 times, damaging enemies.
 ]],
 }
@@ -15393,8 +15393,8 @@ times, damaging enemies.
 dialog{
   id = "_treasure.iron_candle_pickable.2",
   text = [[
-You got salt candles. Throw these down and
-as they slowly burn, they'll pop several
+You got salt candles. Throw these and
+as they burn, they'll pop several
 times, damaging enemies.
 ]],
 }
@@ -15402,8 +15402,8 @@ times, damaging enemies.
 dialog{
   id = "_treasure.iron_candle_pickable.3",
   text = [[
-You got salt candles. Throw these down and
-as they slowly burn, they'll pop several
+You got salt candles. Throw these and
+as they burn, they'll pop several
 times, damaging enemies.
 ]],
 }
@@ -15411,8 +15411,8 @@ times, damaging enemies.
 dialog{
   id = "_treasure.iron_candle_pickable.4",
   text = [[
-You got salt candles. Throw these down and
-as they slowly burn, they'll pop several
+You got salt candles. Throw these and
+as they burn, they'll pop several
 times, damaging enemies.
 ]],
 }
@@ -15420,8 +15420,8 @@ times, damaging enemies.
 dialog{
   id = "_treasure.iron_candle_pickable.5",
   text = [[
-You got salt candles. Throw these down and
-as they slowly burn, they'll pop several
+You got salt candles. Throw these and
+as they burn, they'll pop several
 times, damaging enemies.
 ]],
 }
