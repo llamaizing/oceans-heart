@@ -38,3 +38,9 @@ function enemy:launch_bees()
     breed = "normal_enemies/hornet",
   }
 end
+
+enemy.weak_to_fire = true
+function enemy:react_to_fire()
+  enemy:propagate_fire()
+end
+

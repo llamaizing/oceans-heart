@@ -77,8 +77,8 @@ function enemy_meta:on_hurt(attack)
     local game = self:get_game()
     local fire_damage = game:get_value("sword_damage")
     if self.weak_to_fire then fire_damage = fire_damage * 2 end
-    self:remove_life(fire_damage)
     self:react_to_fire()
+    self:remove_life(fire_damage)
   end
 
 end
@@ -96,5 +96,30 @@ end
 function enemy_meta:hit_by_lightning()
 end
 
+
+--Common Methods:
+------------------------------------------------------
+
+function enemy_meta:propagate_fire()
+  local enemy = self
+  if enemy.reacting_to_fire then return end
+  enemy.reacting_to_fire = true
+  sol.timer.start(enemy, 800, function() enemy.reacting_to_fire = false end)
+  local map = enemy:get_map()
+  local x,y,z = enemy:get_position()
+  local dx = {12,0,-12,0}
+  local dy = {0,-12,0,12}
+  local NUM_FLAMES = 6
+  for i=1, NUM_FLAMES do
+    local flame = map:create_fire{
+      x=x, y=y, layer=z
+    }
+    local m = sol.movement.create"straight"
+    m:set_angle(2 * math.pi / NUM_FLAMES * i)
+    m:set_max_distance(16)
+    m:set_speed(110)
+    m:start(flame)
+  end
+end
 
 return true

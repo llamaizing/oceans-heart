@@ -29,3 +29,9 @@ function enemy:on_dying()
      }
   end
 end
+
+
+enemy.weak_to_fire = true
+function enemy:react_to_fire()
+  enemy:propagate_fire()
+end

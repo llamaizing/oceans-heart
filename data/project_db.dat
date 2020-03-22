@@ -1926,6 +1926,7 @@ entity{ id = "collapsing_floor", description = "Collapsing Floor" }
 entity{ id = "damaging_sparkle", description = "Damaging Sparkle" }
 entity{ id = "dash_moth", description = "Dash Moth" }
 entity{ id = "ephemeral_effect", description = "Ephereral Effect" }
+entity{ id = "fire", description = "Fire" }
 entity{ id = "fire_grate", description = "Fire Grate" }
 entity{ id = "flail_obstacle", description = "Flail Obstacle" }
 entity{ id = "leaf_pile", description = "Leaf Pile" }

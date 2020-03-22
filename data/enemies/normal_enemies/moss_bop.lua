@@ -68,3 +68,9 @@ function enemy:shoot()
   projectile:set_damage(1)
   projectile:go(enemy:get_angle(hero))
 end
+
+enemy.weak_to_fire = true
+function enemy:react_to_fire()
+  enemy:propagate_fire()
+end
+

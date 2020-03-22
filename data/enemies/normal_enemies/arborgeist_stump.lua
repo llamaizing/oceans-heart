@@ -50,3 +50,9 @@ function enemy:attack()
     sol.timer.start(enemy, 1500, function() can_attack = true end)
     return true
 end
+
+enemy.weak_to_fire = true
+function enemy:react_to_fire()
+  enemy:propagate_fire()
+end
+

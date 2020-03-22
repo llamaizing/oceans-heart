@@ -5,6 +5,7 @@ local foraging_manager = require"scripts/maps/foraging_manager"
 
 local map_meta = sol.main.get_metatable"map"
 
+--===================================================================================--
 map_meta:register_event("on_started", function(self)
 	local map = self
   local hero = map:get_hero()
@@ -72,9 +73,17 @@ map_meta:register_event("on_started", function(self)
   end
 
 end) --end of on_started registered event
+--==================================================================================--
 
-
-
+function map_meta:create_fire(props)
+  --props: name, x, y, layer, enabled_at_start, properties
+  local map = self
+  local fire = map:create_custom_entity{
+    x = props.x, y = props.y, layer = props.layer, width = 16, height = 16, direction = 0,
+    sprite = "entities/fire", model = "fire"
+  }
+  return fire
+end
 
 
 local function calculate_speed(entity1, entity2, duration)
