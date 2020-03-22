@@ -25,8 +25,17 @@ fire:set_can_traverse_ground("low_wall", true)
 fire:set_drawn_in_y_order(true)
 
 function fire:on_created()
-  sprite = sol.sprite.create"entities/fire"
+  sprite = fire:get_sprite()
+  local animations = {"fire_a", "fire_b"}
+  sprite:set_animation(animations[math.random(1,2)], function() fire:remove() end)
+--  sprite:set_blend_mode"add"
+--[[  local second_sprite = fire:create_sprite("entities/fire")
+  second_sprite:set_animation(animations[math.random(1,2)])
+  second_sprite:set_blend_mode"add"
+--]]
 end
+
+
 
 -- Collision
 fire:add_collision_test("sprite", function(fire, entity)

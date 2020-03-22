@@ -104,6 +104,7 @@ function enemy_meta:propagate_fire()
   local enemy = self
   if enemy.reacting_to_fire then return end
   enemy.reacting_to_fire = true
+  sol.audio.play_sound"fire_burst_3"
   sol.timer.start(enemy, 800, function() enemy.reacting_to_fire = false end)
   local map = enemy:get_map()
   local x,y,z = enemy:get_position()
