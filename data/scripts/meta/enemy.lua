@@ -65,6 +65,25 @@ function enemy_meta:on_hurt(attack)
       map:get_camera():shake({count = 4, amplitude = 5, speed = 100})
      end) --end of timer
 
+  --particle effect
+  local hurt_particles = {}
+  local _, sprite_height = self:get_sprite():get_size()
+  local NUM_PARTICLES = sprite_height / 3
+  local x,y,z = self:get_position()
+  for i=1, NUM_PARTICLES do
+    hurt_particles[i] = map:create_custom_entity{x=x,y=y,layer=z,width=8,height=8,direction=0,
+      model="ephemeral_effect",sprite="entities/pollution_ash"}
+    hurt_particles[i]:set_duration(500)
+    hurt_particles[i]:start()
+    local m = sol.movement.create"straight"
+    m:set_max_distance(math.random(25,38))
+    m:set_speed(200)
+    m:set_ignore_obstacles()
+    local angle = map:get_hero():get_angle(self)
+    m:set_angle(angle + math.random(1,300) / 300)
+    m:start(hurt_particles[i])
+  end
+
   if attack == "explosion" then
     local game = self:get_game()
     local bomb_pain = game:get_value("bomb_damage")
