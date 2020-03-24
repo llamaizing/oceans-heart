@@ -152,12 +152,12 @@ text{ key = "location.yarrowmouth_village", value = "Yarrowmouth Village" }
 text{ key = "location.zephyr_bay", value = "Zephyr Bay" }
 text{ key = "menu.potion_expired", value = "Potion effect expired" }
 text{ key = "menu.quest_log.back_prompt", value = "D: Back" }
-text{ key = "menu.quest_log.main_quests_tab", value = "Main\nQuests" }
+text{ key = "menu.quest_log.main_quests_tab", value = "Main\\nQuests" }
 text{ key = "menu.quest_log.no_main_quests", value = "You have no main quests" }
 text{ key = "menu.quest_log.no_side_quests", value = "You have no side quests" }
 text{ key = "menu.quest_log.quest_log_update", value = "Quest Log Updated!" }
 text{ key = "menu.quest_log.quests_count", value = "$v1 of $v2 complete" }
-text{ key = "menu.quest_log.side_quests_tab", value = "Side\nQuests" }
+text{ key = "menu.quest_log.side_quests_tab", value = "Side\\nQuests" }
 text{ key = "menu.quest_log.title", value = "Quest Log" }
 text{ key = "menu.quest_update.quest_updated", value = "Quest Log Updated!" }
 text{ key = "menu.sell.item_price", value = "%d crowns" }

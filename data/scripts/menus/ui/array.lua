@@ -1,6 +1,6 @@
 --[[ array.lua
-	version 1.0
-	15 Dec 2018
+	version 1.0.1
+	22 Mar 2020
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -158,6 +158,7 @@ function control.create(properties, width, height)
 		assert(lang_code, "Language has not been set")
 		
 		local text = sol.language.get_string(key)
+		text = text:gsub("\\n", "\n") --silly workaround for Solarus issue #468
 		assert(text, "strings.dat key '"..key.."' not found for language: "..lang_code)
 		
 		self:set_text(text)
@@ -271,7 +272,7 @@ end
 
 return control
 
---[[ Copyright 2016-2018 Llamazing
+--[[ Copyright 2016-2020 Llamazing
   [] 
   [] This program is free software: you can redistribute it and/or modify it under the
   [] terms of the GNU General Public License as published by the Free Software Foundation,
