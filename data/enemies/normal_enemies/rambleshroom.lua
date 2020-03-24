@@ -14,3 +14,7 @@ local properties = {
 }
 
 behavior:create(enemy, properties)
+
+function enemy:on_dying()
+  enemy:explode_into_spores(20)
+end

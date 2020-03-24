@@ -34,6 +34,14 @@ function enemy:go(direction4)
   enemy:get_sprite():set_direction(direction4)
 end
 
+function enemy:go_any_angle(angle)
+  local m = sol.movement.create"straight"
+  m:set_speed(150)
+  m:set_angle(angle)
+  m:set_smooth(false)
+  m:start(enemy)
+end
+
 --destroy if hit with sword
 --
 function enemy:on_custom_attack_received(attack, sprite)

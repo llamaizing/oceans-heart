@@ -439,6 +439,7 @@ sprite{ id = "enemies/misc/skeleton_hand", description = "Skeleton Hand" }
 sprite{ id = "enemies/misc/sparrow", description = "Sparrow" }
 sprite{ id = "enemies/misc/spirit_sword", description = "Spirit Sword" }
 sprite{ id = "enemies/misc/splash", description = "Splash" }
+sprite{ id = "enemies/misc/spore", description = "Spore" }
 sprite{ id = "enemies/misc/steam_attack", description = "Steam Attack" }
 sprite{ id = "enemies/misc/stone_dragon_turret", description = "Stone Dragon Turret" }
 sprite{ id = "enemies/misc/stone_projectile", description = "Stone projectile" }
@@ -1564,6 +1565,7 @@ sound{ id = "stairs_down_end", description = "stairs_down_end" }
 sound{ id = "stairs_down_start", description = "stairs_down_start" }
 sound{ id = "stairs_up_end", description = "stairs_up_end" }
 sound{ id = "stairs_up_start", description = "stairs_up_start" }
+sound{ id = "status_deactivated", description = "status_deactivated" }
 sound{ id = "steam_01", description = "Steam 01" }
 sound{ id = "steam_high", description = "Steam - High" }
 sound{ id = "stone", description = "stone" }
@@ -1827,6 +1829,7 @@ enemy{ id = "misc/root_small", description = "Root - Small" }
 enemy{ id = "misc/sea_blast", description = "SeaBlast" }
 enemy{ id = "misc/seagull", description = "Seagull" }
 enemy{ id = "misc/skeleton_hand", description = "Skeleton Hand" }
+enemy{ id = "misc/spore", description = "spore" }
 enemy{ id = "misc/steam_attack", description = "Steam Attack" }
 enemy{ id = "misc/stone_dragon_turret", description = "Stone Dragon Turret" }
 enemy{ id = "misc/stone_projectile", description = "Stone Projectile" }

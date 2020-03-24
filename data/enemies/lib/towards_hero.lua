@@ -181,6 +181,19 @@ function behavior:create(enemy, properties)
     m:start(self)
     self:get_sprite():set_animation("walking")
   end
+
+
+  function enemy:explode_into_spores(num_spores, distance, damage, duration)
+    for i = 1, num_spores do
+      local spore = enemy:create_enemy{breed = "misc/spore"}
+      if distance then spore:set_disperse_distance(distance) end
+      if damage then spore:set_damage(damage) end
+      if duration then spore:set_duration(duration) end
+      spore:disperse()
+    end
+  end
+
+
 end
 
 return behavior

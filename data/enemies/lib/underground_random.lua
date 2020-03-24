@@ -151,12 +151,29 @@ function behavior:create(enemy, properties)
     self:get_sprite():set_animation("burrowing")
     if enemy:get_distance(hero) < 300 then sol.audio.play_sound(properties.burrow_sound) end
     sol.timer.start(self, 800, function() self:go_underground() end)
+    enemy:create_dust()
   end
 
   function enemy:burrow_up()
     self:get_sprite():set_animation("burrowing")
     if enemy:get_distance(hero) < 300 then sol.audio.play_sound(properties.burrow_sound) end
     sol.timer.start(self, 800, function() self:go_aboveground() end)
+    enemy:create_dust()
+  end
+
+  function enemy:create_dust()
+    local i = 1
+    sol.timer.start(enemy, 100, function()
+      local x,y,z = enemy:get_position()
+      local dust = map:create_custom_entity{x=x+math.random(-4,4),y=y+2,layer=z,width=16,height=16,direction=0,
+        sprite="entities/dust_cloud_roll"}
+      dust:set_drawn_in_y_order(true)
+      local m = sol.movement.create"random"
+      m:start(dust)
+      sol.timer.start(map,2000,function() dust:remove() end)
+      i = i+1
+      return i <= 11
+    end)
   end
 
   function enemy:go_underground()
@@ -169,6 +186,7 @@ function behavior:create(enemy, properties)
   function enemy:go_aboveground()
     self:set_can_attack(true)
     self:get_sprite():set_animation("walking")
+    if properties.aboveground_callback then properties.aboveground_callback() end
     self:restart()
   end
 

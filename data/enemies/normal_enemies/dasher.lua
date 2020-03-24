@@ -25,6 +25,7 @@ local properties = {
   dash_attack_speed = 130,
   dash_attack_wind_up = 600,  
   dash_attack_sound = "running",
+  dash_attack_smooth = true,
 
 
 }

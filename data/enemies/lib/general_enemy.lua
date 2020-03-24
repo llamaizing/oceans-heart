@@ -380,7 +380,7 @@ end
         m:set_angle(enemy:get_movement():get_direction4())
       end
       m:set_speed(properties.dash_attack_speed)
-      m:set_smooth(false)
+      m:set_smooth(properties.dash_attack_smooth or false)
       sol.audio.play_sound(properties.dash_attack_sound or "gravel")
       if properties.invincible_while_dashing then enemy:set_invincible() end
       m:start(enemy, function()

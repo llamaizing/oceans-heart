@@ -56,12 +56,17 @@ fire:add_collision_test("sprite", function(fire, entity)
   if entity:get_type() == "destructible" then
     local sprite_name = entity:get_sprite():get_animation_set()
     if string.match(sprite_name, "bush") then
+      if entity.burning_bush then fire:clear_collision_tests() end
+      entity.burning_bush = true
       sol.audio.play_sound("bush")
       local x,y,z = entity:get_position()
       entity:remove()
       map:create_fire{x=x,y=y,layer=z}
       sol.audio.play_sound"fire_burst_3"
-      sol.timer.start(map, 200, function()
+      sol.timer.start(map, 100, function()
+
+--Static Fire:
+--[[
         local dx = {8,0,-8,0}
         local dy = {0,-8,0,8}
         for i=1, 4 do
@@ -69,6 +74,30 @@ fire:add_collision_test("sprite", function(fire, entity)
             x=x + dx[i], y=y + dy[i], layer=z
           }
         end
+--]]
+--Moving Fire:
+        local NUM_PROP_FLAMES = 5
+        for i=1, NUM_PROP_FLAMES do
+          local flame = map:create_fire{
+            x=x, y=y, layer=z
+          }
+          local m = sol.movement.create"straight" m:set_speed(70) m:set_max_distance(12)
+          m:set_angle(2*math.pi / NUM_PROP_FLAMES * i)
+          m:set_ignore_obstacles(true)
+          m:start(flame)
+        end
+-- Wayy too much fire if you want to just break the game:
+--[[
+        local SPEWSPEW = 10
+        for i=1, SPEWSPEW do
+          local flame = map:create_fire{
+            x=x, y=y, layer=z
+          }
+          local m = sol.movement.create"straight" m:set_speed(200) m:set_max_distance(280)
+          m:set_angle(2*math.pi / SPEWSPEW * i)
+          m:start(flame)
+        end
+--]]
       end)
     end
   end

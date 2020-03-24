@@ -17,6 +17,25 @@ map:register_event("on_started", function()
 end)
 
 
+function map:test_m()
+  local x,y,z = hero:get_position()
+  local entity_1 = map:create_custom_entity{
+    x=x,y=y,layer=z,width=16,height=16,direction=0,sprite="enemies/misc/spore"
+  }
+  local entity_2 = map:create_custom_entity{
+    x=x,y=y,layer=z,width=16,height=16,direction=0,sprite="enemies/misc/spore"
+  }
+  local m = sol.movement.create"straight"
+  m:set_max_distance(24)
+  m:set_speed(100)
+  m:start(entity_2)
+  m:set_speed(m:get_speed() - 10)
+  sol.timer.start(map, 1000, function()
+    m:set_speed(m:get_speed() - 10)
+    return m:get_speed() >40
+  end)
+end
+
 function broken_bird_statue:on_interaction()
   if game:has_item("stone_beak") == true then
     game:start_dialog("_yarrowmouth.observations.broken_bird.2", function(answer)

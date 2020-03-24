@@ -16,6 +16,10 @@ local properties = {
 
 behavior:create(enemy, properties)
 
+function enemy:on_dying()
+  enemy:explode_into_spores(29, 24, 2, nil)
+end
+
 function enemy:on_dead()
   random = math.random(100)
   if random < 25 then
