@@ -30,6 +30,7 @@ local properties = {
   movement_circle_hero_radius = 54,
     movement_circle_hero_radius_speed = 10,
 }
+enemy.height = 24
 
 properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)

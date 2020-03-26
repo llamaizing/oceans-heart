@@ -3,6 +3,7 @@ local enemy = ...
 local properties_setter = require("enemies/lib/properties_setter")
 local behavior = require("enemies/lib/general_enemy")
 enemy.immobilize_immunity = true
+enemy.height = 16
 
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),

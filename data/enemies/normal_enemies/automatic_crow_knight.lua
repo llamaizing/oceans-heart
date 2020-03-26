@@ -3,6 +3,7 @@ local enemy = ...
 
 local behavior = require("enemies/lib/sentry")
 enemy.immobilize_immunity = true
+enemy.height = 40
 
 local properties = {
   sprite = "enemies/" .. enemy:get_breed(),

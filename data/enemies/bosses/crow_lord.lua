@@ -22,6 +22,25 @@ function enemy:on_created()
   enemy:set_hurt_style("boss")
 end
 
+  --Allow to go "behind" taller enemies without taking damage
+  enemy.height = 24
+  function enemy:on_attacking_hero(hero, enemy_sprite)
+    if enemy_sprite == enemy:get_sprite() then
+      local hx,hy,hz = hero:get_position()
+      local ex,ey,ez = enemy:get_position()
+      if hy + enemy.height < ey then
+        --nothing, hero "behind" enemy
+--      elseif hy > ey + 20 then --allow for hero's head to overlap enemy some
+        --nothing again
+      else
+        hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
+      end
+    else
+      hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
+    end
+  end
+
+
 function enemy:go_hero()
   local m = sol.movement.create("target")
   m:set_speed(50)

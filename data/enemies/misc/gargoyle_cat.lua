@@ -13,6 +13,8 @@ function enemy:on_created()
   enemy:set_damage(1)
   enemy:set_invincible()
   enemy:set_size(32, 24)
+  enemy:set_attacking_collision_mode("overlapping")
+  enemy:set_size(32,16)
 end
 
 function enemy:on_restarted()

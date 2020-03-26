@@ -46,6 +46,9 @@ function enemy:on_created()
   enemy:set_damage(30)
   enemy:set_pushed_back_when_hurt(false)
   enemy:set_hurt_style("boss")
+
+  enemy:set_attacking_collision_mode("overlapping")
+  enemy:set_size(32,32)
 end
 
 function enemy:follow_hero()

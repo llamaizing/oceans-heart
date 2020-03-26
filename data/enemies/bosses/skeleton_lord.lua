@@ -81,6 +81,7 @@ local properties = {
   
 
 }
+enemy.height = 16
 
 properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)

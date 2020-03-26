@@ -23,12 +23,11 @@ function entity:shoot_fire()
     sprite:set_animation("off")
     if entity:get_distance(map:get_hero()) < 300 and entity:is_in_same_region(hero) then sol.audio.play_sound("fire_burst_2") end
     local x, y, layer = entity:get_position()
-    map:create_enemy({
-      x = x, y = y-8, layer = layer, direction = 0, breed = "misc/fire_blast"
+    local fire_blast = map:create_enemy({
+      x = x, y = y-4, layer = layer, direction = 0, breed = "misc/fire_blast"
     })
-    map:create_enemy({
-      x = x, y = y-16, layer = layer, direction = 0, breed = "misc/fire_blast"
-    })
+    local extra_fire_sprite = fire_blast:create_sprite("entities/fire")
+    extra_fire_sprite:set_animation("fire_a")
   end)
 end
 

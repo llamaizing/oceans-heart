@@ -18,6 +18,8 @@ function enemy:on_created()
   enemy:set_attack_consequence("arrow", "ignored")
   bounces = 0
   enemy:set_dying_sprite_id("enemies/enemy_killed_small")
+  enemy:set_attacking_collision_mode("overlapping")
+  enemy:set_size(16,12)
 end
 
 function enemy:set_max_bounces(amount)

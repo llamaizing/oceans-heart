@@ -46,6 +46,7 @@ local properties = {
   dash_attack_wind_up = 600,
   dash_attack_sound = "running",
 }
+enemy.height = 24
 
 properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)

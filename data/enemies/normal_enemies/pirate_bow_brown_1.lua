@@ -14,6 +14,7 @@ local properties = {
   attack_sound = "bow",
   projectile_breed = "misc/arrow_4"
 }
+enemy.height = 16
 
 behavior:create(enemy, properties)
 enemy:set_dying_sprite_id("enemies/enemy_killed_ko")

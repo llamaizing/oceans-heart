@@ -53,6 +53,7 @@ local properties = {
   orbit_attack_projectile_breed = "misc/energy_ball_small",
   orbit_attack_radius = 16,
 }
+enemy.height = 24
 
 properties_setter:set_properties(enemy, properties)
 behavior:create(enemy, properties)

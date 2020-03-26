@@ -31,6 +31,8 @@ function enemy:on_created()
   enemy:set_attack_consequence("explosion", 1)
   enemy:set_can_attack(false)
   enemy:set_dying_sprite_id("enemies/enemy_killed_small")
+  enemy:set_attacking_collision_mode("overlapping")
+  enemy:set_size(16,16)
   sprite:set_animation("burrowing")
 
 

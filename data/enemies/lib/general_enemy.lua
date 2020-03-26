@@ -129,7 +129,7 @@ function behavior:create(enemy, properties)
     if enemy_sprite == enemy:get_sprite() then
       local hx,hy,hz = hero:get_position()
       local ex,ey,ez = enemy:get_position()
-      if hy + enemy.height - 20 < ey then
+      if hy + enemy.height < ey then
         --nothing, hero "behind" enemy
 --      elseif hy > ey + 20 then --allow for hero's head to overlap enemy some
         --nothing again
