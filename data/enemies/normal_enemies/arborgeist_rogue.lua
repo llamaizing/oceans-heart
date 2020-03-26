@@ -14,6 +14,7 @@ local properties = {
   attack_sound = "bow",
   projectile_breed = "misc/arrow_4"
 }
+enemy.height = 40
 
 behavior:create(enemy, properties)
 

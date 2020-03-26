@@ -105,6 +105,13 @@ function lighting_effects:on_draw(dst_surface)
       effects.torch:draw(light_surface, x - cam_x, y - cam_y)
     end
   end
+  for e in map:get_entities_by_type("custom_entity") do
+    if e:get_model() == "fire" and e:is_enabled() and e:get_distance(hero) <= 450 then
+      local x,y = e:get_center_position()
+      effects.torch:draw(light_surface, x - cam_x, y - cam_y)
+    end
+  end
+
   --fire arrows
   for e in map:get_entities_by_type("custom_entity") do
     if e:is_enabled() and e:get_model() == "arrow_fire" and e:get_distance(hero) <= 450 then

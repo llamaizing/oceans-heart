@@ -41810,6 +41810,15 @@ npc{
   behavior = "dialog#_sycamore_ferry.signs.sycamore_ferry_3",
 }
 
+destination{
+  name = "destination",
+  layer = 0,
+  x = 680,
+  y = 1117,
+  direction = 3,
+  default = true,
+}
+
 tile{
   layer = 1,
   x = 160,

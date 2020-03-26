@@ -13,7 +13,7 @@ local properties = {
   projectile_breed = "misc/energy_ball_split",
   projectile_angle = "any",
   projectile_damage = 2,
-  projectile_split_children = 8,
+  projectile_split_children = 6,
 }
 
 properties_setter:set_properties(enemy, properties)

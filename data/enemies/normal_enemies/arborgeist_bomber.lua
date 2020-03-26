@@ -12,6 +12,7 @@ local properties = {
   projectile_breed = "misc/nitrodendron_bomb",
   explosion_consequence = "protected",
 }
+enemy.height = 40
 
 behavior:create(enemy, properties)
 

@@ -15,10 +15,10 @@ animation{
   src_image = "enemies/normal_enemies/ogre_1.png",
   frame_delay = 100,
   directions = {
-    { x = 256, y = 0, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29, num_frames = 4 },
-    { x = 256, y = 32, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 4 },
-    { x = 256, y = 80, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29, num_frames = 4 },
-    { x = 256, y = 112, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 4 },
+    { x = 304, y = 0, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29, num_frames = 5 },
+    { x = 304, y = 32, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 45, num_frames = 5 },
+    { x = 304, y = 80, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29, num_frames = 5 },
+    { x = 304, y = 112, frame_width = 48, frame_height = 48, origin_x = 24, origin_y = 29, num_frames = 5 },
   },
 }
 animation{
@@ -76,10 +76,12 @@ animation{
 animation{
   name = "wind_up",
   src_image = "enemies/normal_enemies/ogre_1.png",
+  frame_delay = 180,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 256, y = 0, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29 },
-    { x = 256, y = 48, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29 },
-    { x = 256, y = 80, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29 },
-    { x = 256, y = 112, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29 },
+    { x = 256, y = 0, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29, num_frames = 2 },
+    { x = 256, y = 48, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29, num_frames = 2 },
+    { x = 256, y = 80, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29, num_frames = 2 },
+    { x = 256, y = 112, frame_width = 48, frame_height = 32, origin_x = 24, origin_y = 29, num_frames = 2 },
   },
 }

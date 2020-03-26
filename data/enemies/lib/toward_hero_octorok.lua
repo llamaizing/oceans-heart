@@ -125,6 +125,7 @@ local can_shoot = true
     self:set_attack_consequence("arrow", properties.arrow_consequence)
   end
 
+
   function enemy:on_movement_changed(movement)
 
     local direction4 = movement:get_direction4()
@@ -159,6 +160,27 @@ local can_shoot = true
       self:check_hero()
     end
   end
+
+
+  --Allow to go "behind" taller enemies without taking damage
+  if enemy.height then
+  function enemy:on_attacking_hero(hero, enemy_sprite)
+    if enemy_sprite == enemy:get_sprite() then
+      local hx,hy,hz = hero:get_position()
+      local ex,ey,ez = enemy:get_position()
+      if hy + enemy.height - 20 < ey then
+        --nothing, hero "behind" enemy
+--      elseif hy > ey + 20 then --allow for hero's head to overlap enemy some
+        --nothing again
+      else
+        hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
+      end
+    else
+      hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
+    end
+  end
+  end --end of if enemy.height
+
 
   function enemy:on_restarted()
 	  local map = self:get_map()

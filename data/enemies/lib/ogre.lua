@@ -11,6 +11,10 @@ function behavior:create(enemy, properties)
   local can_attack = true
   local attacking = false
 
+  function enemy:on_started()
+    enemy:set_size(24,24)
+  end
+
   --initialize universal enemy stuff:
   normal_functions:initialize(enemy, properties)
   --this is pretty notmal too, but needs check_hero()
@@ -18,6 +22,23 @@ function behavior:create(enemy, properties)
     if not going_hero then
       self:go_random()
       self:check_hero()
+    end
+  end
+
+  function enemy:on_attacking_hero(hero, enemy_sprite)
+    if enemy_sprite == enemy:get_sprite() then
+      local hx,hy,hz = hero:get_position()
+      local ex,ey,ez = enemy:get_position()
+      local e_height, e_width = enemy_sprite:get_size()
+      if hy + e_height - 20 < ey then
+        --nothing, hero "behind" enemy
+      elseif hy > ey + 20 then --allow for hero's head to overlap enemy some
+        --nothing again
+      else
+        hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
+      end
+    else
+      hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
     end
   end
 
@@ -81,6 +102,7 @@ function behavior:create(enemy, properties)
     enemy:get_sprite():set_animation("wind_up")
     enemy:set_attack_consequence("sword", "protected")
     sol.timer.start(map, properties.wind_up_time, function()
+      sol.audio.play_sound"sword4"
       enemy:get_sprite():set_animation("attack", function()
         enemy:set_attack_consequence("sword", "protected")
         enemy:set_attack_consequence("sword", 1)

@@ -184,6 +184,27 @@ function behavior:create(enemy, properties)
   end
 
 
+  --Allow to go "behind" taller enemies without taking damage
+  if enemy.height then
+  function enemy:on_attacking_hero(hero, enemy_sprite)
+    if enemy_sprite == enemy:get_sprite() then
+      local hx,hy,hz = hero:get_position()
+      local ex,ey,ez = enemy:get_position()
+      if hy + enemy.height - 20 < ey then
+        --nothing, hero "behind" enemy
+--      elseif hy > ey + 20 then --allow for hero's head to overlap enemy some
+        --nothing again
+      else
+        hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
+      end
+    else
+      hero:start_hurt(enemy, enemy_sprite, enemy:get_damage())
+    end
+  end
+  end --end of if enemy.height
+
+
+
   function enemy:check_hero()
 
     local hero = self:get_map():get_entity("hero")
