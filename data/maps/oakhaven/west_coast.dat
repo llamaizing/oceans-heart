@@ -60042,6 +60042,7 @@ destructible{
   x = 720,
   y = 77,
   treasure_name = "witch_hazel",
+  weight = -1,
   sprite = "entities/bush_witch_hazel",
   can_be_cut = true,
 }
@@ -61711,4 +61712,3 @@ tile{
   height = 16,
   pattern = "1893",
 }
-
