@@ -40183,6 +40183,108 @@ tile{
   tileset = "oceanheart_outdoors_1",
 }
 
+tile{
+  layer = 0,
+  x = 1224,
+  y = 1064,
+  width = 32,
+  height = 16,
+  pattern = "575",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1216,
+  y = 1064,
+  width = 32,
+  height = 16,
+  pattern = "576",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1208,
+  y = 1064,
+  enabled_at_start = false,
+  width = 8,
+  height = 16,
+  pattern = "586",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 1112,
+  width = 16,
+  height = 8,
+  pattern = "90",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 1120,
+  width = 8,
+  height = 8,
+  pattern = "96",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 1112,
+  width = 8,
+  height = 8,
+  pattern = "99",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 1248,
+  y = 1112,
+  width = 8,
+  height = 8,
+  pattern = "89",
+  tileset = "redpine_forest",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 1112,
+  width = 32,
+  height = 16,
+  pattern = "575",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1232,
+  y = 1112,
+  width = 16,
+  height = 16,
+  pattern = "576",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 0,
+  x = 1224,
+  y = 1112,
+  enabled_at_start = false,
+  width = 8,
+  height = 16,
+  pattern = "586",
+  tileset = "oceanheart_outdoors_1",
+}
+
 sensor{
   name = "lily_attack_sensor_2",
   layer = 0,
@@ -44982,6 +45084,24 @@ tile{
   height = 16,
   pattern = "1571",
   tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 1216,
+  y = 1120,
+  width = 16,
+  height = 16,
+  pattern = "76",
+}
+
+tile{
+  layer = 1,
+  x = 1232,
+  y = 1120,
+  width = 32,
+  height = 16,
+  pattern = "77",
 }
 
 dynamic_tile{
