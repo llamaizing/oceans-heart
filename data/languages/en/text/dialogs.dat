@@ -9681,12 +9681,49 @@ if people like you continue to protect them.
 }
 
 dialog{
+  id = "_oakhaven.npcs.ivystump.misc.apple_sample_1",
+  text = [[
+The crisp air means the Ivystump apple
+harvest is starting. Here, have a sample
+apple. A sapple.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.misc.apple_sample_2",
+  text = [[
+You know, my granny said the forest used
+to be full of Mandrakes, but when the
+apple orchard was planted, it drove them
+off and they fled to Marblecliff. I think
+it's just folklore, but... there aren't
+any mandrakes in the Veilwood. Eheheh.
+]],
+}
+
+dialog{
   id = "_oakhaven.npcs.ivystump.misc.carpenter1",
   text = [[
 I didn't think this would work, but I had a
 dream where hammers were more effective than
 saws and I woke up needing to test it out,
 just to be sure.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.misc.elder",
+  text = [[
+You must have come through the Veilwood
+to get here, so you probably saw some of
+the Arborgeists. You know, those wooden
+monsters? It's said that used to be,
+they we just trees and bushes, but a
+curse coming from the center of the earth
+got into their roots and turned them into
+monsters... Whatever they are though,
+the shrine in the southwest corner of
+town keeps them away from the village.
 ]],
 }
 
@@ -9714,6 +9751,20 @@ They seem older to me. There's one on
 Marblecliff, and one in the Puzzlewood on
 Yarrowmouth. There could be more, too,
 but that's just my intuition.
+]],
+}
+
+dialog{
+  id = "_oakhaven.npcs.ivystump.misc.lumberjack_1",
+  text = [[
+Being a lumberjack isn't all songs and
+pancakes, you know. It's dangerous work.
+Besides trees splintering or hitting you,
+the forest is full of monsters. The ones
+that look like plants, they call 'em
+Arborgeists. Anyway, here's a hint, they're
+weak to fire. If you can find a way to
+make fire, it'll keep 'em away.
 ]],
 }
 

@@ -28,6 +28,20 @@ map:register_event("on_started", function()
 end)
 
 
+function apple_sample:on_interaction()
+  if not game:get_value"ivystump_sampple" then
+    game:start_dialog("_oakhaven.npcs.ivystump.misc.apple_sample_1", function()
+--      game:get_item("apples"):add_amount(1)
+      hero:start_treasure("apples")
+      game:set_value("ivystump_sampple", true)
+    end)
+  else
+    game:start_dialog"_oakhaven.npcs.ivystump.misc.apple_sample_2"
+  end
+end
+
+
+
 --quest numbers: 0 = clear orchard, 1 = return to paul, 2 = save paul, 3 = done
 function picker_paul:on_interaction()
   if not game:get_value("quest_ivy_orchard") then

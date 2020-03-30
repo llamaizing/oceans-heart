@@ -43526,10 +43526,11 @@ dynamic_tile{
 
 tile{
   layer = 3,
-  x = -32,
-  y = -24,
-  width = 1408,
-  height = 1584,
-  pattern = "606",
+  x = -80,
+  y = 0,
+  width = 1664,
+  height = 1440,
+  pattern = "2",
+  tileset = "dapple",
 }
 
