@@ -318,6 +318,7 @@ map{ id = "stonefell_crossroads/zephyr_bay", description = "Zephyr Bay" }
 map{ id = "test-rockcliffs", description = "test rock cliffs" }
 map{ id = "test_island", description = "test_island" }
 map{ id = "test_island_2", description = "test_island_2" }
+map{ id = "tests/pagoda", description = "pagoda" }
 
 tileset{ id = "abysphere_ruins", description = "Abysphere Ruins" }
 tileset{ id = "bear_catacombs", description = "Bear Catacombs" }
@@ -346,6 +347,7 @@ tileset{ id = "spruce_head", description = "Spruce Head" }
 tileset{ id = "temple", description = "temple" }
 tileset{ id = "temple_2", description = "Ancient Temple" }
 tileset{ id = "treasure", description = "Treasure" }
+tileset{ id = "tundra", description = "Tundra" }
 tileset{ id = "underwater_plants", description = "Underwater Plants" }
 tileset{ id = "vault_walls", description = "Vault Walls" }
 tileset{ id = "waves", description = "Waves" }
@@ -1935,6 +1937,8 @@ entity{ id = "flail_obstacle", description = "Flail Obstacle" }
 entity{ id = "leaf_pile", description = "Leaf Pile" }
 entity{ id = "moving_platform", description = "Moving Platform" }
 entity{ id = "moving_platform_OLD", description = "OLDmoving Platform" }
+entity{ id = "particle_emitter", description = "Particle emitter" }
+entity{ id = "particle_emitter_2", description = "Particle Emitter 2" }
 entity{ id = "prickles_blocking", description = "Prickles-Blocking" }
 entity{ id = "rockpile", description = "Rock Pile" }
 entity{ id = "rockpile_3", description = "rockpile 3" }
