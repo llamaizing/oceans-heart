@@ -1,3 +1,4 @@
+--[[
 local title_screen = {}
 local game_manager = require("scripts/game_manager")
 

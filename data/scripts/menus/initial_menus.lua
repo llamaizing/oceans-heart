@@ -16,7 +16,7 @@
 	Usage:
 	local initial_menus = require"scripts/menus/initial_menu"
 	initial_menus.start(context, on_top)
-]]
+--]]
 
 local multi_events = require"scripts/multi_events"
 
@@ -24,7 +24,7 @@ local multi_events = require"scripts/multi_events"
 --NOTE: the last menu is responsible for starting the game
 local MENU_LIST = {
   "scripts/menus/language",
-  "scripts/menus/title_screen",
+  "scripts/menus/title_screen_menus/top_menu",
 }
 
 local initial_menus = {}
