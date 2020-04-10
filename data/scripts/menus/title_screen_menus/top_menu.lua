@@ -9,6 +9,10 @@ function title_screen:on_started()
   current_submenu = cont_new_etc
 end
 
+function title_screen:set_current_submenu(new_menu)
+  current_submenu = new_menu
+end
+
 
 ---KEYBOARD---------------------------------------------------------------
 
