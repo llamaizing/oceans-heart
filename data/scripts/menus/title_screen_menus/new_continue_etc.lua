@@ -28,6 +28,11 @@ local MAX_CURSOR_INDEX = 2
 function menu:on_started()
   cursor_index = 0
 
+  if not sol.game.exists("save1.dat") then
+    menu.no_save_game = true
+    text_surface:set_color_modulation{200,200,200}
+  end
+
   text_surface:set_text_key("menu.title.continue")
   text_surface:draw(selection_surface, 12, 0)
   text_surface2:set_text_key("menu.title.new_game")
@@ -42,8 +47,10 @@ function menu:set_parent_menu(dad)
 end
 
 function menu:on_draw(dst_surface)
-  selection_surface:draw(dst_surface, 344, 190)
-  cursor_sprite:draw(dst_surface, 347, 194 + cursor_index * 16)
+  local x = 340
+  local y = 185
+  selection_surface:draw(dst_surface, x, y)
+  cursor_sprite:draw(dst_surface, x + 3, y + 4 + cursor_index * 16)
 end
 
 
@@ -61,6 +68,7 @@ function menu:process_input(command)
   elseif command == "space" then
     --Continue
     if cursor_index == 0 and not confirming then
+      if menu.no_save_game then sol.audio.play_sound"no" return end
       sol.audio.play_sound("elixer_upgrade")
       local game = game_manager:create("save1.dat")
       sol.main:start_savegame(game)
