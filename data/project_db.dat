@@ -699,6 +699,7 @@ sprite{ id = "entities/leaf_pile", description = "Leaf Pile" }
 sprite{ id = "entities/leaf_whirl_green", description = "Leaf Whirl- Green" }
 sprite{ id = "entities/lightning_2", description = "Lightning-2" }
 sprite{ id = "entities/lightning_bolt_attack", description = "Lightning Bolt Attack" }
+sprite{ id = "entities/mock_bee", description = "Mock Bee" }
 sprite{ id = "entities/moth", description = "Moth" }
 sprite{ id = "entities/moving_platform", description = "Moving Platform" }
 sprite{ id = "entities/moving_platform_wood", description = "Moving platform-Wood" }
@@ -722,6 +723,7 @@ sprite{ id = "entities/solid_switch", description = "Solid switch" }
 sprite{ id = "entities/spike_ball", description = "Spike Ball" }
 sprite{ id = "entities/spikes", description = "Spikes" }
 sprite{ id = "entities/spirit_1", description = "Spirit 01" }
+sprite{ id = "entities/stair_entity", description = "Stair Entity" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/steam_stream", description = "Steam Stream" }
@@ -1925,6 +1927,7 @@ entity{ id = "arrow_bomb", description = "Bomb Arrow" }
 entity{ id = "arrow_fire", description = "arrow_fire" }
 entity{ id = "arrow_trap", description = "Arrow Trap" }
 entity{ id = "arrow_warp", description = "Arrow- Warp" }
+entity{ id = "bee", description = "bee" }
 entity{ id = "chain_link", description = "Chain Link" }
 entity{ id = "cliff", description = "cliff" }
 entity{ id = "collapsing_floor", description = "Collapsing Floor" }
@@ -1942,6 +1945,7 @@ entity{ id = "particle_emitter_2", description = "Particle Emitter 2" }
 entity{ id = "prickles_blocking", description = "Prickles-Blocking" }
 entity{ id = "rockpile", description = "Rock Pile" }
 entity{ id = "rockpile_3", description = "rockpile 3" }
+entity{ id = "stair_entity", description = "Stair Entity" }
 entity{ id = "torch", description = "torch" }
 entity{ id = "toss_ball", description = "Toss Ball" }
 entity{ id = "warp_block", description = "Warp Block" }
