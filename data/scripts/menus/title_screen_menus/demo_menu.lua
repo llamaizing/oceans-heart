@@ -26,15 +26,10 @@ local text_surface3 = sol.text_surface.create({
         vertical_alignment = "top",
         horizontal_alignment = "left",
 })
-local text_surface4 = sol.text_surface.create({
-        font = "oceansfont",
-        vertical_alignment = "top",
-        horizontal_alignment = "left",
-})
 
 local confirming = false
 local cursor_index
-local MAX_CURSOR_INDEX = #selection_options - 1
+local MAX_CURSOR_INDEX = 2
 
 
 function menu:on_started()
@@ -51,8 +46,6 @@ function menu:on_started()
   text_surface2:draw(selection_surface, 12, 16)
   text_surface3:set_text_key("menu.title.quit")
   text_surface3:draw(selection_surface, 12, 32)
-  text_surface4:set_text_key("menu.title.quit")
-  text_surface4:draw(selection_surface, 12, 48)
 
 end
 
@@ -106,8 +99,6 @@ function menu:process_selected_option(selection)
     elseif  selection == "quit" then
       sol.main.exit()
 
-    elseif selection == "demo" then
-      print("demo : )")
     end --end cursor index cases
 end
 

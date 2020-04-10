@@ -165,6 +165,7 @@ text{ key = "menu.shop.item_price", value = "Price: %2d crowns" }
 text{ key = "menu.title.cancel", value = "Cancel" }
 text{ key = "menu.title.confirm", value = "Confirm" }
 text{ key = "menu.title.continue", value = "Continue" }
+text{ key = "menu.title.demo", value = "Demo" }
 text{ key = "menu.title.new_game", value = "New Game" }
 text{ key = "menu.title.quit", value = "Quit" }
 text{ key = "player_name", value = "Tilia" }
