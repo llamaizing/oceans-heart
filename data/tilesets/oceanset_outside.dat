@@ -1681,7 +1681,7 @@ tile_pattern{
 tile_pattern{
   id = "180",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 112,
   y = 1616,
   width = 16,
@@ -1692,7 +1692,7 @@ tile_pattern{
 tile_pattern{
   id = "181",
   ground = "wall",
-  default_layer = 0,
+  default_layer = 1,
   x = 112,
   y = 1600,
   width = 16,
@@ -3441,11 +3441,179 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "272",
+  ground = "traversable",
+  default_layer = 0,
+  x = 224,
+  y = 160,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "272_2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 240,
+  y = 160,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "272_3",
+  ground = "traversable",
+  default_layer = 0,
+  x = 224,
+  y = 176,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "272_4",
+  ground = "traversable",
+  default_layer = 0,
+  x = 240,
+  y = 176,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "272_5",
+  ground = "traversable",
+  default_layer = 0,
+  x = 224,
+  y = 192,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "272_6",
+  ground = "traversable",
+  default_layer = 0,
+  x = 240,
+  y = 192,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "273",
+  ground = "traversable",
+  default_layer = 0,
+  x = 224,
+  y = 208,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "273_2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 232,
+  y = 208,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "274",
+  ground = "ladder",
+  default_layer = 0,
+  x = 80,
+  y = 704,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "275",
+  ground = "empty",
+  default_layer = 0,
+  x = 168,
+  y = 104,
+  width = 8,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "276",
+  ground = "empty",
+  default_layer = 0,
+  x = 152,
+  y = 96,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "277",
+  ground = "empty",
+  default_layer = 0,
+  x = 144,
+  y = 104,
+  width = 8,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "278",
+  ground = "empty",
+  default_layer = 0,
+  x = 152,
+  y = 120,
+  width = 16,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "279",
+  ground = "traversable",
+  default_layer = 0,
+  x = 160,
+  y = 128,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "28",
   ground = "wall",
   default_layer = 0,
   x = 96,
   y = 256,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "280",
+  ground = "traversable",
+  default_layer = 0,
+  x = 144,
+  y = 128,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "281",
+  ground = "traversable",
+  default_layer = 0,
+  x = 144,
+  y = 144,
   width = 16,
   height = 16,
   repeat_mode = "none",
@@ -3471,6 +3639,70 @@ tile_pattern{
   height = 16,
   frame_delay = 250,
   mirror_loop = true,
+}
+
+tile_pattern{
+  id = "284",
+  ground = "traversable",
+  default_layer = 0,
+  x = 160,
+  y = 144,
+  width = 16,
+  height = 16,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "285",
+  ground = "ladder",
+  default_layer = 0,
+  x = 88,
+  y = 704,
+  width = 16,
+  height = 8,
+}
+
+tile_pattern{
+  id = "286",
+  ground = "ladder",
+  default_layer = 0,
+  x = 104,
+  y = 704,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "287",
+  ground = "wall",
+  default_layer = 1,
+  x = 112,
+  y = 656,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "288",
+  ground = "wall",
+  default_layer = 1,
+  x = 128,
+  y = 656,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "289",
+  ground = "wall",
+  default_layer = 1,
+  x = 144,
+  y = 656,
+  width = 16,
+  height = 16,
+  repeat_mode = "vertical",
 }
 
 tile_pattern{
@@ -4595,6 +4827,60 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "Wood_tree_trunk_big_left",
+  ground = "traversable",
+  default_layer = 0,
+  x = 64,
+  y = 1024,
+  width = 8,
+  height = 56,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "Wood_tree_trunk_big_middle",
+  ground = "wall",
+  default_layer = 0,
+  x = 72,
+  y = 1032,
+  width = 48,
+  height = 32,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "Wood_tree_trunk_big_right",
+  ground = "traversable",
+  default_layer = 0,
+  x = 120,
+  y = 1024,
+  width = 8,
+  height = 56,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "Wood_tree_trunk_big_up",
+  ground = "wall",
+  default_layer = 0,
+  x = 72,
+  y = 1024,
+  width = 48,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "bush_1",
+  ground = "wall",
+  default_layer = 0,
+  x = 128,
+  y = 1008,
+  width = 32,
+  height = 32,
+}
+
+tile_pattern{
   id = "chimney",
   ground = "wall",
   default_layer = 1,
@@ -4863,6 +5149,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "dirt_2",
+  ground = "traversable",
+  default_layer = 0,
+  x = 152,
+  y = 104,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "dirt_edge_1",
   ground = "empty",
   default_layer = 0,
@@ -4875,35 +5171,32 @@ tile_pattern{
 
 tile_pattern{
   id = "dirt_edge_10",
-  ground = "empty",
+  ground = "traversable",
   default_layer = 0,
-  x = 104,
+  x = 96,
   y = 64,
-  width = 8,
-  height = 8,
-  repeat_mode = "none",
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
   id = "dirt_edge_11",
-  ground = "empty",
+  ground = "traversable",
   default_layer = 0,
-  x = 104,
-  y = 72,
-  width = 8,
-  height = 8,
-  repeat_mode = "none",
+  x = 96,
+  y = 80,
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
   id = "dirt_edge_12",
-  ground = "empty",
+  ground = "traversable",
   default_layer = 0,
-  x = 96,
-  y = 72,
-  width = 8,
-  height = 8,
-  repeat_mode = "none",
+  x = 80,
+  y = 80,
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
@@ -4985,13 +5278,12 @@ tile_pattern{
 
 tile_pattern{
   id = "dirt_edge_9",
-  ground = "empty",
+  ground = "traversable",
   default_layer = 0,
-  x = 96,
+  x = 80,
   y = 64,
-  width = 8,
-  height = 8,
-  repeat_mode = "none",
+  width = 16,
+  height = 16,
 }
 
 tile_pattern{
@@ -5062,6 +5354,17 @@ tile_pattern{
   y = 64,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "down",
+  ground = "wall",
+  default_layer = 0,
+  x = 72,
+  y = 1064,
+  width = 48,
+  height = 16,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -6806,6 +7109,46 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "sign_1",
+  ground = "empty",
+  default_layer = 0,
+  x = 224,
+  y = 1552,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "sign_2",
+  ground = "empty",
+  default_layer = 0,
+  x = 224,
+  y = 1568,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "sign_3",
+  ground = "empty",
+  default_layer = 0,
+  x = 224,
+  y = 1584,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "sign_4",
+  ground = "empty",
+  default_layer = 0,
+  x = 224,
+  y = 1600,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
   id = "smoke",
   ground = "empty",
   default_layer = 1,
@@ -7130,6 +7473,50 @@ tile_pattern{
   mirror_loop = true,
 }
 
+tile_pattern{
+  id = "wood_tree_green_center",
+  ground = "wall",
+  default_layer = 1,
+  x = 8,
+  y = 1024,
+  width = 48,
+  height = 56,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "wood_tree_green_left",
+  ground = "empty",
+  default_layer = 1,
+  x = 0,
+  y = 1024,
+  width = 8,
+  height = 48,
+  repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "wood_tree_green_low",
+  ground = "empty",
+  default_layer = 1,
+  x = 8,
+  y = 1080,
+  width = 48,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "wood_tree_green_right",
+  ground = "empty",
+  default_layer = 1,
+  x = 56,
+  y = 1024,
+  width = 8,
+  height = 48,
+  repeat_mode = "none",
+}
+
 border_set{
   id = "cobblestone_edges",
   pattern_0 = "cobblestone_edge_4",
@@ -7140,6 +7527,18 @@ border_set{
   pattern_5 = "cobblestone_edge_1",
   pattern_6 = "cobblestone_edge_7",
   pattern_7 = "cobblestone_edge_5",
+}
+
+border_set{
+  id = "dirt_2_edges",
+  pattern_0 = "275",
+  pattern_1 = "276",
+  pattern_2 = "277",
+  pattern_3 = "278",
+  pattern_8 = "279",
+  pattern_9 = "280",
+  pattern_10 = "281",
+  pattern_11 = "284",
 }
 
 border_set{

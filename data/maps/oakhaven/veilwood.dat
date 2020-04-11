@@ -38789,8 +38789,8 @@ destructible{
   x = 112,
   y = 1021,
   treasure_name = "witch_hazel",
-  weight = -1,
   sprite = "entities/bush_witch_hazel",
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -38799,8 +38799,8 @@ destructible{
   x = 136,
   y = 1045,
   treasure_name = "witch_hazel",
-  weight = -1,
   sprite = "entities/bush_witch_hazel",
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -38918,8 +38918,8 @@ destructible{
   x = 56,
   y = 1069,
   treasure_name = "witch_hazel",
-  weight = -1,
   sprite = "entities/bush_witch_hazel",
+  weight = -1,
   can_be_cut = true,
 }
 
@@ -43536,3 +43536,4 @@ tile{
   pattern = "2",
   tileset = "dapple",
 }
+

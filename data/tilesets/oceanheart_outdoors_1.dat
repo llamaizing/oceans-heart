@@ -26983,6 +26983,99 @@ tile_pattern{
   repeat_mode = "none",
 }
 
+tile_pattern{
+  id = "lotus",
+  ground = "empty",
+  default_layer = 0,
+  x = 336,
+  y = 336,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "lotus_2",
+  ground = "empty",
+  default_layer = 0,
+  x = 352,
+  y = 336,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "lotus_3",
+  ground = "empty",
+  default_layer = 0,
+  x = 368,
+  y = 336,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "lotus_4",
+  ground = "empty",
+  default_layer = 0,
+  x = 384,
+  y = 336,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "lotus_7",
+  ground = "empty",
+  default_layer = 0,
+  x = { 336, 352 },
+  y = { 320, 320 },
+  width = 16,
+  height = 16,
+  frame_delay = 420,
+}
+
+tile_pattern{
+  id = "lotus_8",
+  ground = "empty",
+  default_layer = 0,
+  x = { 368, 384 },
+  y = { 320, 320 },
+  width = 16,
+  height = 16,
+  frame_delay = 390,
+}
+
+tile_pattern{
+  id = "lotus_big",
+  ground = "empty",
+  default_layer = 0,
+  x = { 336, 368 },
+  y = { 352, 352 },
+  width = 32,
+  height = 24,
+  frame_delay = 470,
+}
+
+tile_pattern{
+  id = "lotus_flower_1",
+  ground = "empty",
+  default_layer = 0,
+  x = 304,
+  y = 320,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "lotus_flower_2",
+  ground = "empty",
+  default_layer = 0,
+  x = 320,
+  y = 320,
+  width = 16,
+  height = 16,
+}
+
 border_set{
   id = "sandborder",
   pattern_0 = "301",
