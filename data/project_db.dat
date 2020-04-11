@@ -121,6 +121,7 @@ map{ id = "demo_1/sw_lift_cave_interior", description = "Lift cave interior" }
 map{ id = "demo_1/test_town", description = "test town" }
 map{ id = "demo_1/test_town_2", description = "test town 2-limestone" }
 map{ id = "demo_1/testing_room", description = "testing room" }
+map{ id = "demo_2/test_1", description = "test 1" }
 map{ id = "dev/world_map", description = "world_map" }
 map{ id = "dummy_cutscene/basswood", description = "Basswood" }
 map{ id = "dummy_cutscene/hazel_oakhaven", description = "Hazel Oakhaven" }

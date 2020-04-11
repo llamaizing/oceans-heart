@@ -51,7 +51,7 @@ function menu:on_started()
   text_surface2:draw(selection_surface, 12, 16)
   text_surface3:set_text_key("menu.title.quit")
   text_surface3:draw(selection_surface, 12, 32)
-  text_surface4:set_text_key("menu.title.quit")
+  text_surface4:set_text_key("menu.title.demo")
   text_surface4:draw(selection_surface, 12, 48)
 
 end
@@ -62,7 +62,7 @@ end
 
 function menu:on_draw(dst_surface)
   local x = 340
-  local y = 185
+  local y = 175
   selection_surface:draw(dst_surface, x, y)
   cursor_sprite:draw(dst_surface, x + 3, y + 4 + cursor_index * 16)
 end
@@ -107,7 +107,11 @@ function menu:process_selected_option(selection)
       sol.main.exit()
 
     elseif selection == "demo" then
-      print("demo : )")
+      sol.audio.play_sound("elixer_upgrade")
+      local game = game_manager:create("demo.dat")
+      game:set_starting_location("demo_2/test_1")
+      sol.main:start_savegame(game)
+      sol.menu.stop(parent_menu)
     end --end cursor index cases
 end
 
