@@ -95,6 +95,7 @@ end
 
 
 --BG Music
+--Fade In
 function map_meta:fade_in_music()
   local map = self
   local game = map:get_game()

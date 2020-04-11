@@ -20570,8 +20570,8 @@ tile{
   x = 624,
   y = 384,
   width = 128,
-  height = 32,
-  pattern = "24",
+  height = 16,
+  pattern = "3",
   tileset = "limestone",
 }
 
@@ -20600,8 +20600,8 @@ tile{
   x = 608,
   y = 384,
   width = 16,
-  height = 32,
-  pattern = "25",
+  height = 16,
+  pattern = "1",
   tileset = "limestone",
 }
 

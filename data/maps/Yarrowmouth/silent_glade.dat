@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 3,
   tileset = "overworld_yarrowmouth",
+  music = "driftwood-2",
 }
 
 tile{
@@ -12961,10 +12962,12 @@ tile{
 
 tile{
   layer = 3,
-  x = -48,
-  y = -72,
-  width = 1056,
-  height = 880,
-  pattern = "606",
+  x = -40,
+  y = -208,
+  enabled_at_start = false,
+  width = 1248,
+  height = 960,
+  pattern = "2",
+  tileset = "dapple",
 }
 
