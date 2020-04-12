@@ -128,6 +128,8 @@ map{ id = "dummy_cutscene/hazel_oakhaven", description = "Hazel Oakhaven" }
 map{ id = "dummy_cutscene/lily_pirate", description = "Lily Pirate" }
 map{ id = "dummy_cutscene/limestone", description = "limestone" }
 map{ id = "example_town_a", description = "example_town_a" }
+map{ id = "fykonos/beach", description = "beach" }
+map{ id = "fykonos/village", description = "Fykonos Village" }
 map{ id = "goat_hill_new_test", description = "new goat hill test" }
 map{ id = "goatshead_island/ball_trail", description = "Ballast Trail" }
 map{ id = "goatshead_island/brickabranch_island", description = "Brickabranch Island" }
@@ -1421,6 +1423,7 @@ music{ id = "fire_burning", description = "fire_burning" }
 music{ id = "forest_of_bops", description = "Forest of Bops" }
 music{ id = "forest_town", description = "Forest Town" }
 music{ id = "fort_crow", description = "Fort Crow" }
+music{ id = "fykonos", description = "Fykonos" }
 music{ id = "goatshead_harbor", description = "Goatshead Harbor" }
 music{ id = "goatshead_harbor_old", description = "OLD goatshead Harbor" }
 music{ id = "goatshead_overworld_2", description = "Goatshead Overworld 2" }

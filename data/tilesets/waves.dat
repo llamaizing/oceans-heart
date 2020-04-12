@@ -8,6 +8,7 @@ tile_pattern{
   width = 16,
   height = 32,
   frame_delay = 120,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -19,6 +20,7 @@ tile_pattern{
   width = 16,
   height = 32,
   frame_delay = 120,
+  repeat_mode = "horizontal",
 }
 
 tile_pattern{
@@ -30,5 +32,6 @@ tile_pattern{
   width = 16,
   height = 32,
   frame_delay = 120,
+  repeat_mode = "horizontal",
 }
 
