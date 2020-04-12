@@ -334,6 +334,7 @@ tileset{ id = "indoors_cabin", description = "Indoors - Cabin" }
 tileset{ id = "indoors_stone", description = "indoors - stone" }
 tileset{ id = "limestone", description = "Limestone" }
 tileset{ id = "misc", description = "misc tiles" }
+tileset{ id = "mykonos", description = "Mykonos" }
 tileset{ id = "oceanheart_outdoors_1", description = "Overworld" }
 tileset{ id = "oceanheart_outdoors_spring", description = "Overworld-Spring" }
 tileset{ id = "oceanset_cave", description = "Oceanset-Cave" }
