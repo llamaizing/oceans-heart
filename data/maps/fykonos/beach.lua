@@ -1,24 +1,32 @@
--- Lua script of map fykonos/beach.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
+map:register_event("on_started", function()
+  if hero:get_position() == from_shipwreck:get_position() and not game:get_value"fykonos_shipwreck_scene" then
+    game:get_hud():set_enabled(false)
+    hero:freeze()
+    hero:get_sprite():set_animation("asleep")
+  end
+end)
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
-end
+map:register_event("on_opening_transition_finished", function()
+  local sprite = hero:get_sprite()
+  if not game:get_value"fykonos_shipwreck_scene" then
+    hero:freeze()
+    sprite:set_animation("asleep")
+    game:set_value("fykonos_shipwreck_scene", true)
+    sol.timer.start(map, 500, function()
+      sprite:set_animation("waking_up", function()
+        sprite:set_animation("stopped")
+        hero:start_jumping(0, 24, true)
+        sol.timer.start(map, 500, function()
+          sol.main.get_game():get_hud():set_enabled(true)
+          game:set_pause_allowed(true)
+          hero:unfreeze()
+        end)
+      end)
+    end)
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
+  end
+end)
 
-end

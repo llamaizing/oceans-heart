@@ -5987,14 +5987,6 @@ destination{
   default = true,
 }
 
-stairs{
-  layer = 0,
-  x = 368,
-  y = 368,
-  direction = 1,
-  subtype = 0,
-}
-
 tile{
   layer = 1,
   x = 192,

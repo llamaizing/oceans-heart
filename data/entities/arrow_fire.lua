@@ -86,6 +86,7 @@ local function attach_to_obstacle()
       y = y,
       layer = layer,
     })
+--
     map:create_fire({
       x = x+8,
       y = y,
@@ -107,6 +108,7 @@ local function attach_to_obstacle()
       y = y-8,
       layer = layer,
     })
+--]]
     -- Remove the arrow after fire.
     arrow:remove()
   end
@@ -159,7 +161,6 @@ end
 
 -- Hurt enemies.
 arrow:add_collision_test("sprite", function(arrow, entity)
-
   if entity:get_type() == "enemy" then
     local enemy = entity
     if enemies_touched[enemy] then
@@ -218,6 +219,5 @@ function arrow:go()
 end
 
 function arrow:on_obstacle_reached()
-
   attach_to_obstacle()
 end

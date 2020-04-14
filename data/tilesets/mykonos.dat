@@ -1646,6 +1646,78 @@ tile_pattern{
   repeat_mode = "horizontal",
 }
 
+tile_pattern{
+  id = "94",
+  ground = "traversable",
+  default_layer = 0,
+  x = 224,
+  y = 0,
+  width = 32,
+  height = 16,
+}
+
+tile_pattern{
+  id = "95",
+  ground = "wall",
+  default_layer = 0,
+  x = 224,
+  y = 32,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "95_2",
+  ground = "wall",
+  default_layer = 0,
+  x = 240,
+  y = 32,
+  width = 16,
+  height = 24,
+}
+
+tile_pattern{
+  id = "96",
+  ground = "wall",
+  default_layer = 1,
+  x = 224,
+  y = 16,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "96_2",
+  ground = "wall",
+  default_layer = 1,
+  x = 240,
+  y = 16,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "98",
+  ground = "wall",
+  default_layer = 0,
+  x = { 240, 240, 240, 240 },
+  y = { 64, 80, 96, 112 },
+  width = 16,
+  height = 16,
+  frame_delay = 180,
+}
+
+tile_pattern{
+  id = "99",
+  ground = "wall",
+  default_layer = 0,
+  x = { 176, 192, 208 },
+  y = { 96, 96, 96 },
+  width = 16,
+  height = 24,
+  frame_delay = 250,
+}
+
 border_set{
   id = "grass_edges-dark",
   pattern_0 = "82_2",
@@ -1659,6 +1731,7 @@ border_set{
   pattern_8 = "83_5",
   pattern_9 = "83_7",
   pattern_10 = "83_8",
+  pattern_11 = "83_6",
 }
 
 border_set{

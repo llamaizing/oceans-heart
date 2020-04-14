@@ -38,7 +38,20 @@ end
 
 
 -- Collision
+local burned_entities = {}
 fire:add_collision_test("sprite", function(fire, entity)
+  --Don't do callback twice for same entity
+  if burned_entities[entity] then return end
+  burned_entities[entity] = true
+
+--  print"COLLISION"
+--  print("NAME: ", entity:get_name())
+--  print("TYPE: ", entity:get_type())
+--  print" "
+
+  if entity.on_collision_fire then 
+    entity:on_collision_fire()
+  end
 
   --Hurt enemies
   if entity:get_type() == "enemy" then

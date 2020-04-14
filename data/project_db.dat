@@ -129,6 +129,7 @@ map{ id = "dummy_cutscene/lily_pirate", description = "Lily Pirate" }
 map{ id = "dummy_cutscene/limestone", description = "limestone" }
 map{ id = "example_town_a", description = "example_town_a" }
 map{ id = "fykonos/beach", description = "beach" }
+map{ id = "fykonos/ruined_tomb", description = "Ruined Tomb" }
 map{ id = "fykonos/village", description = "Fykonos Village" }
 map{ id = "goat_hill_new_test", description = "new goat hill test" }
 map{ id = "goatshead_island/ball_trail", description = "Ballast Trail" }
@@ -659,6 +660,7 @@ sprite{ id = "entities/door_locked", description = "Door - Locked" }
 sprite{ id = "entities/door_locked_stone", description = "Door-Locked-Stone" }
 sprite{ id = "entities/door_mangrove_tree", description = "door-MangroveTree" }
 sprite{ id = "entities/door_npc_tall", description = "NPC door - tall" }
+sprite{ id = "entities/door_ophira", description = "Door-Ophira" }
 sprite{ id = "entities/door_post_stone", description = "Door-Stone Post" }
 sprite{ id = "entities/door_post_water", description = "Posts-Water" }
 sprite{ id = "entities/door_posts", description = "Door - Posts" }
@@ -731,6 +733,7 @@ sprite{ id = "entities/spirit_1", description = "Spirit 01" }
 sprite{ id = "entities/stair_entity", description = "Stair Entity" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
+sprite{ id = "entities/statue_base", description = "StatueBase-ForFireCollisions,etc" }
 sprite{ id = "entities/steam_stream", description = "Steam Stream" }
 sprite{ id = "entities/stone_person", description = "Stone Person" }
 sprite{ id = "entities/stone_white1", description = "stone: white 1" }
