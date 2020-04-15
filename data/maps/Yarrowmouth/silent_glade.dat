@@ -12964,7 +12964,6 @@ tile{
   layer = 3,
   x = -40,
   y = -208,
-  enabled_at_start = false,
   width = 1248,
   height = 960,
   pattern = "2",

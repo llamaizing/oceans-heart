@@ -2527,7 +2527,6 @@ tile{
   layer = 1,
   x = 144,
   y = 168,
-  enabled_at_start = false,
   width = 32,
   height = 8,
   pattern = "hole_stairs_overlay",

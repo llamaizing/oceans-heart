@@ -129,8 +129,12 @@ map{ id = "dummy_cutscene/lily_pirate", description = "Lily Pirate" }
 map{ id = "dummy_cutscene/limestone", description = "limestone" }
 map{ id = "example_town_a", description = "example_town_a" }
 map{ id = "fykonos/beach", description = "beach" }
+map{ id = "fykonos/interiors/west_windmill", description = "West Windmill" }
+map{ id = "fykonos/orange_orchard", description = "Orange Orchard" }
 map{ id = "fykonos/ruined_tomb", description = "Ruined Tomb" }
 map{ id = "fykonos/village", description = "Fykonos Village" }
+map{ id = "fykonos/west_trail", description = "West Trail" }
+map{ id = "fykonos/witchthicket", description = "Witchthicket" }
 map{ id = "goat_hill_new_test", description = "new goat hill test" }
 map{ id = "goatshead_island/ball_trail", description = "Ballast Trail" }
 map{ id = "goatshead_island/brickabranch_island", description = "Brickabranch Island" }
@@ -560,6 +564,7 @@ sprite{ id = "entities/arrow_silver", description = "arrow_silver" }
 sprite{ id = "entities/arrow_warp", description = "arrow warp" }
 sprite{ id = "entities/bait", description = "bait" }
 sprite{ id = "entities/bear_caverns_arrow_slot", description = "Bear Caverns Arrow Slot" }
+sprite{ id = "entities/bell", description = "bell" }
 sprite{ id = "entities/bell_jar", description = "Bell Jar" }
 sprite{ id = "entities/big_barrel", description = "Big Barrel" }
 sprite{ id = "entities/block", description = "Block" }
@@ -602,6 +607,7 @@ sprite{ id = "entities/bush_flowers_white", description = "Flowers - White" }
 sprite{ id = "entities/bush_flowers_yellow", description = "Bush - Yellow Flowers" }
 sprite{ id = "entities/bush_forest", description = "Bush (forest)" }
 sprite{ id = "entities/bush_forsythia", description = "Forsythia" }
+sprite{ id = "entities/bush_fykonos", description = "Bush-Fykonos" }
 sprite{ id = "entities/bush_ghost_orchid", description = "Ghost Orchid" }
 sprite{ id = "entities/bush_green", description = "Bush (oracle)" }
 sprite{ id = "entities/bush_heather_purple", description = "Heather-Purple" }
@@ -758,6 +764,8 @@ sprite{ id = "entities/vase_berries", description = "Vase-Berries" }
 sprite{ id = "entities/warp_block", description = "Warp Block" }
 sprite{ id = "entities/weak_tree", description = "weak tree" }
 sprite{ id = "entities/whisky", description = "whisky" }
+sprite{ id = "entities/windmill_blades", description = "Windmill Blades" }
+sprite{ id = "entities/windmill_shadow", description = "Windmill Blade Shadow" }
 sprite{ id = "entities/yarrow_bloom_particle", description = "Yarrow Bloom Particle" }
 sprite{ id = "fog/dapple", description = "Dapple" }
 sprite{ id = "hero/barrier", description = "Barrier" }

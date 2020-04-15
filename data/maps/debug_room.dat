@@ -5987,6 +5987,14 @@ destination{
   default = true,
 }
 
+destructible{
+  layer = 0,
+  x = -56,
+  y = 149,
+  sprite = "entities/bush_fykonos",
+  can_be_cut = true,
+}
+
 tile{
   layer = 1,
   x = 192,

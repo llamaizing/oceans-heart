@@ -2854,7 +2854,6 @@ tile{
   layer = 0,
   x = 128,
   y = 240,
-  enabled_at_start = false,
   width = 160,
   height = 32,
   pattern = "630",

@@ -109,7 +109,15 @@ function menu:process_selected_option(selection)
     elseif selection == "demo" then
       sol.audio.play_sound("elixer_upgrade")
       local game = game_manager:create("demo.dat")
-      game:set_starting_location("fykonos/beach", "from_shipwreck")
+--      if not string.match(game:get_starting_location(), "fykonos") then
+      if not game:get_value"fykonos_shipwreck_scene" then
+        game:set_starting_location("fykonos/beach", "from_shipwreck")
+        game:set_max_life(10)
+        game:set_life(10)
+        game:set_value("defense", 4)
+        game:set_value("sword_damage", 5)
+        game:set_value("bow_damage", 6)
+      end
       sol.main:start_savegame(game)
       sol.menu.stop(parent_menu)
     end --end cursor index cases

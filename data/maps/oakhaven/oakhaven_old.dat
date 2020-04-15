@@ -61218,7 +61218,6 @@ tile{
   layer = 1,
   x = 944,
   y = 160,
-  enabled_at_start = false,
   width = 16,
   height = 96,
   pattern = "208",

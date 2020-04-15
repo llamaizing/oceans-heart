@@ -5,7 +5,6 @@ properties{
   height = 240,
   min_layer = 0,
   max_layer = 2,
-  world = "fykonos",
   tileset = "oceanheart_outdoors_1",
   music = "fykonos",
 }
@@ -979,16 +978,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 104,
-  y = 16,
-  width = 48,
-  height = 32,
-  pattern = "47",
-  tileset = "redpine_forest",
-}
-
-tile{
-  layer = 0,
   x = 376,
   y = 144,
   width = 16,
@@ -1565,6 +1554,26 @@ tile{
   tileset = "boulderfield",
 }
 
+tile{
+  layer = 0,
+  x = 208,
+  y = 24,
+  width = 160,
+  height = 8,
+  pattern = "cliff_base_grass",
+  tileset = "mykonos",
+}
+
+tile{
+  layer = 0,
+  x = 104,
+  y = 16,
+  width = 48,
+  height = 32,
+  pattern = "47",
+  tileset = "redpine_forest",
+}
+
 teletransporter{
   layer = 0,
   x = -16,
@@ -1715,6 +1724,30 @@ destructible{
   y = 69,
   treasure_name = "berries",
   sprite = "entities/bush_berries",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 224,
+  y = 37,
+  sprite = "entities/bush_fykonos",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 240,
+  y = 37,
+  sprite = "entities/bush_fykonos",
+  can_be_cut = true,
+}
+
+destructible{
+  layer = 0,
+  x = 184,
+  y = 53,
+  sprite = "entities/bush_fykonos",
   can_be_cut = true,
 }
 

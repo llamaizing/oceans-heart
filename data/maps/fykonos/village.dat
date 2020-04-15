@@ -5,7 +5,6 @@ properties{
   height = 720,
   min_layer = 0,
   max_layer = 2,
-  world = "fykonos",
   tileset = "oceanheart_outdoors_1",
   music = "fykonos",
 }
@@ -7502,6 +7501,45 @@ tile{
   tileset = "mykonos",
 }
 
+tile{
+  layer = 0,
+  x = -16,
+  y = 704,
+  width = 16,
+  height = 16,
+  pattern = "206",
+}
+
+tile{
+  layer = 0,
+  x = -16,
+  y = 408,
+  width = 32,
+  height = 40,
+  pattern = "1",
+  tileset = "mykonos",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "22",
+  tileset = "mykonos",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 224,
+  width = 32,
+  height = 16,
+  pattern = "22",
+  tileset = "mykonos",
+}
+
 wall{
   layer = 0,
   x = 416,
@@ -7810,6 +7848,17 @@ enemy{
   y = 365,
   direction = 0,
   breed = "misc/dove",
+}
+
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 288,
+  width = 16,
+  height = 128,
+  transition = "scrolling",
+  destination_map = "fykonos/west_trail",
+  destination = "_side",
 }
 
 tile{
@@ -8880,6 +8929,86 @@ tile{
   pattern = "691",
 }
 
+tile{
+  layer = 1,
+  x = 160,
+  y = 232,
+  width = 16,
+  height = 24,
+  pattern = "2425",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 96,
+  y = 232,
+  width = 16,
+  height = 24,
+  pattern = "2423",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 464,
+  y = 136,
+  width = 16,
+  height = 24,
+  pattern = "2425",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 432,
+  y = 136,
+  width = 16,
+  height = 24,
+  pattern = "2423",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 400,
+  y = 136,
+  width = 16,
+  height = 24,
+  pattern = "2424",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 368,
+  y = 136,
+  width = 16,
+  height = 24,
+  pattern = "2422",
+  tileset = "overworld_oakhaven",
+}
+
+tile{
+  layer = 1,
+  x = 800,
+  y = 312,
+  width = 16,
+  height = 16,
+  pattern = "1535",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 1,
+  x = 568,
+  y = 224,
+  width = 16,
+  height = 16,
+  pattern = "1535",
+  tileset = "oceanheart_outdoors_1",
+}
+
 dynamic_tile{
   name = "^invisible_stairs_2",
   layer = 1,
@@ -9040,5 +9169,36 @@ enemy{
   y = 173,
   direction = 0,
   breed = "misc/dove",
+}
+
+custom_entity{
+  name = "bell",
+  layer = 1,
+  x = 136,
+  y = 133,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/bell",
+}
+
+tile{
+  layer = 2,
+  x = 576,
+  y = 184,
+  width = 16,
+  height = 32,
+  pattern = "1540",
+  tileset = "oceanheart_outdoors_1",
+}
+
+tile{
+  layer = 2,
+  x = 808,
+  y = 272,
+  width = 16,
+  height = 32,
+  pattern = "1540",
+  tileset = "oceanheart_outdoors_1",
 }
 

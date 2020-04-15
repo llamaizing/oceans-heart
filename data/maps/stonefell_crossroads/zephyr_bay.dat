@@ -4023,7 +4023,6 @@ tile{
   layer = 0,
   x = 496,
   y = 176,
-  enabled_at_start = false,
   width = 48,
   height = 8,
   pattern = "90",

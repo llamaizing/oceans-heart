@@ -21,7 +21,6 @@ tile{
   layer = 0,
   x = 0,
   y = 0,
-  enabled_at_start = false,
   width = 416,
   height = 480,
   pattern = "1",
