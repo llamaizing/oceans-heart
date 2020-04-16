@@ -129,6 +129,10 @@ map{ id = "dummy_cutscene/lily_pirate", description = "Lily Pirate" }
 map{ id = "dummy_cutscene/limestone", description = "limestone" }
 map{ id = "example_town_a", description = "example_town_a" }
 map{ id = "fykonos/beach", description = "beach" }
+map{ id = "fykonos/caves/fire_arrow_cave", description = "Fire Arrow Cave" }
+map{ id = "fykonos/caves/witchthicket_hole", description = "Witchthicket Hole" }
+map{ id = "fykonos/caves/witchthicket_tree", description = "Witchthicket Tree" }
+map{ id = "fykonos/interiors/village/elder", description = "Elder" }
 map{ id = "fykonos/interiors/west_windmill", description = "West Windmill" }
 map{ id = "fykonos/orange_orchard", description = "Orange Orchard" }
 map{ id = "fykonos/ruined_tomb", description = "Ruined Tomb" }
@@ -883,6 +887,7 @@ sprite{ id = "npc/blacksmith_01", description = "Blacksmith 1" }
 sprite{ id = "npc/blacksmith_02", description = "Blacksmith 2 - Stationary" }
 sprite{ id = "npc/blacksmith_03", description = "Blacksmith 3" }
 sprite{ id = "npc/blacksmith_04", description = "Blacksmith 4 - stationary" }
+sprite{ id = "npc/bombino", description = "Bombino" }
 sprite{ id = "npc/bouncer_1", description = "bouncer 1" }
 sprite{ id = "npc/bouncer_2", description = "Bouncer 2" }
 sprite{ id = "npc/buyer_guy", description = "Buyer Guy" }
@@ -1649,6 +1654,7 @@ item{ id = "barrier", description = "Barrier" }
 item{ id = "berries", description = "Berries-1,3,5,20" }
 item{ id = "bomb", description = "bombs-map-1,3,5,10,20" }
 item{ id = "bomb_arrow_ticket", description = "Bomb Arrow Ticket" }
+item{ id = "bombino_backpack", description = "Bombino Backpack" }
 item{ id = "bombs_counter", description = "bombs inventory item" }
 item{ id = "bombs_counter_2", description = "Bombs" }
 item{ id = "boomerang", description = "Boomerang" }
@@ -1980,4 +1986,6 @@ font{ id = "pixolde/Pixolde-Bold", description = "pixolde/Pixolde-Bold" }
 font{ id = "proggy/ProggyTinySZ", description = "proggy/ProggyTinySZ" }
 font{ id = "white_digits", description = "White digits" }
 
+shader{ id = "noise_reducer", description = "noise reducer" }
 
+file{ path = "shaders/noise_reducer.dat", author = "std_gregwar", }

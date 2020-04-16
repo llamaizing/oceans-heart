@@ -7861,6 +7861,16 @@ teletransporter{
   destination = "_side",
 }
 
+teletransporter{
+  layer = 0,
+  x = 136,
+  y = 48,
+  width = 16,
+  height = 16,
+  destination_map = "fykonos/interiors/village/elder",
+  destination = "from_outside",
+}
+
 tile{
   layer = 1,
   x = 320,

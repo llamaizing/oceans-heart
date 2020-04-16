@@ -156,6 +156,13 @@ animation{
   },
 }
 animation{
+  name = "bombino_backpack",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 448, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
   name = "bombs_counter",
   src_image = "entities/items.png",
   directions = {

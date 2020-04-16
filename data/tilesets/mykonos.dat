@@ -393,6 +393,67 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "130",
+  ground = "empty",
+  default_layer = 1,
+  x = { 208, 208, 208, 208 },
+  y = { 32, 48, 64, 80 },
+  width = 16,
+  height = 16,
+  frame_delay = 250,
+}
+
+tile_pattern{
+  id = "131",
+  ground = "empty",
+  default_layer = 0,
+  x = 224,
+  y = 56,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "131_2",
+  ground = "empty",
+  default_layer = 0,
+  x = 232,
+  y = 56,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "132",
+  ground = "empty",
+  default_layer = 0,
+  x = 224,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "133",
+  ground = "empty",
+  default_layer = 0,
+  x = 224,
+  y = 80,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "134",
+  ground = "wall",
+  default_layer = 0,
+  x = 224,
+  y = 96,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "14",
   ground = "wall",
   default_layer = 0,

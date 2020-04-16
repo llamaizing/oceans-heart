@@ -1693,6 +1693,112 @@ $? No
 }
 
 dialog{
+  id = "_fykonos.npcs.bombino.1",
+  text = [[
+BOMBINO:
+Oh, ah, hey! I saw you coming through the
+thicket, you can like, you're actually
+managing to get through the monsters!
+TILIA:
+Yeah, fighting monsters is kind of what
+I do. Also I have a sword, which it seems
+like you don't, so...
+BOMBINO:
+That's true, I don't! I've made a mistake
+coming here! In fact, I'm kind of pinned
+down here, just out of reach of those
+BOMBINO:
+Arborgeists' roots. I'd love to leave,
+but some goblins stole my backpack and
+threw it up just north of here.
+TILIA:
+You want me to get your backpack? I find
+myself helping people like this a lot.
+I can get it.
+BOMBINO:
+Ah, I mean, if you're okay with that!
+I'd really appreciate it. 
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.bombino.1.2",
+  text = [[
+BOMBINO:
+It's really not my fault that I'm stuck
+here. Goblins have been stealing all kinds
+of things. I think it's because somebody's
+BOMBINO:
+messing with like, the old tombs or ruins.
+That'd make the ghosts angry!
+
+TILIA:
+Yeah, I heard there were some ghost
+problems around here.
+
+BOMBINO:
+There are! A sailor told me there used
+to be a Witch Queen that lived on this
+island, and her spirit gets mad.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.bombino.2",
+  text = [[
+BOMBINO:
+Hey! That's my backpack! Do you think, if
+you want, could you bring it over here to
+me? I'm trapped by the monster trees.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.bombino.3",
+  text = [[
+BOMBINO:
+You got my backpack! I owe you, uh, maybe
+not my whole life, but... I guess in this
+case my backpack? That doesn't make sense.
+TILIA:
+Don't worry about figuring out the exact
+value of me helping you, okay.
+
+BOMBINO:
+Phew, thanks. I'm not great at math. I
+am something of a demolitions expert
+though! Here, take these!
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.bombino.4",
+  text = [[
+BOMBINO:
+Well, I've gotta get back to town. If
+you want to buy some more bombs, I sell
+'em at the shop! Thanks, woods lady!
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.elder.1",
+  text = [[
+VILLAGE ELDER:
+Well, you're a new face. What brings you
+to Fykonos Island?
+
+TILIA:
+A shipwreck, actually. I woke up on the
+beach and all my stuff was stolen too.
+
+VILLAGE ELDER:
+Ah, sounds like the work of the goblin
+spirits. 
+]],
+}
+
+dialog{
   id = "_game.controls.action",
   text = [[
 
@@ -14820,6 +14926,14 @@ You found a diagram. It looks like blueprints
 to build some kind of explosive arrows?
 It's too complicated for you to follow, but
 someone might be able to build these.
+]],
+}
+
+dialog{
+  id = "_treasure.bombino_backpack.1",
+  text = [[
+You found a cute backpack. It's got a
+little pattern hand-stitched on the side.
 ]],
 }
 
