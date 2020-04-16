@@ -1793,8 +1793,54 @@ A shipwreck, actually. I woke up on the
 beach and all my stuff was stolen too.
 
 VILLAGE ELDER:
-Ah, sounds like the work of the goblin
-spirits. 
+Ah, sounds like the earth spirits. Some
+pirates have been disturbing the sacred
+places. The Witch's Ghost has been seen.
+TILIA:
+Sorry, ghosts stole my equipment? Is that
+just a normal thing to say in this
+town?
+VILLAGE ELDER:
+Oh, not normal at all. Normally the
+Witch's Ghost is contained to the tomb
+east of the beach. But it seems the
+VILLAGE ELDER:
+pirates' activities have disturbed her
+and riled up her earth spirits. Until we
+solve this problem, we're closing the
+VILLAGE ELDER:
+ferry back to Goatshead Harbor$1...
+...$3You wouldn't be interested in helping
+us solve our ghost problem, would you?
+TILIA:
+Well, solving these kind of problems seems
+to have become kinda my thing. What does
+it involve?
+VILLAGE ELDER:
+You'll have to find a way into the sealed
+tomb and fight the Witch's Ghost. I think
+that will calm things down.
+TILIA:
+If you say so. Also I was shipwrecked
+here and if the ferry isn't running, you
+really aren't leaving me much choice.
+VILLAGE ELDER:
+All I'm saying is I'd really appreciate
+help with this. Here, take this sword.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.elder.2",
+  text = [[
+VILLAGE ELDER:
+You'll need to find a way into the
+Sealed Tomb east of the beach. I'm not
+sure how to get in there, but if you
+VILLAGE ELDER:
+explore the island, I'm sure you'll find
+something that'll help you get in. Maybe
+even some of the equipment the spirits took!
 ]],
 }
 
@@ -16212,6 +16258,15 @@ You got your sword! Your dad gave this to
 you a long time ago, when you said you
 wanted to defend your island like him.
 Press the attack button to use it.
+]],
+}
+
+dialog{
+  id = "_treasure.sword_fykonos.1",
+  text = [[
+You received a sword from the Elder! It's
+pretty beat up, but it'll do until you
+get yours back.
 ]],
 }
 

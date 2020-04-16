@@ -1,24 +1,23 @@
--- Lua script of map fykonos/interiors/village/elder.
--- This script is executed every time the hero enters this map.
-
--- Feel free to modify the code below.
--- You can add more events and remove the ones you don't need.
-
--- See the Solarus Lua API documentation:
--- http://www.solarus-games.org/doc/latest
-
 local map = ...
 local game = map:get_game()
 
--- Event called at initialization time, as soon as this map is loaded.
-function map:on_started()
 
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+map:register_event("on_started", function()
+
+end)
+
+
+function elder:on_interaction()
+  if not game:get_value"fykonos_elder_counter" then
+    game:start_dialog("_fykonos.npcs.elder.1", function()
+      hero:start_treasure("sword_fykonos", 1, nil, function()
+        game:set_value("fykonos_elder_counter", 1)
+        game:start_dialog"_fykonos.npcs.elder.2"
+      end)
+    end)
+
+  elseif game:get_value"fykonos_elder_counter" == 1 then
+    game:start_dialog"_fykonos.npcs.elder.2"
+  end
 end
 
--- Event called after the opening transition effect of the map,
--- that is, when the player takes control of the hero.
-function map:on_opening_transition_finished()
-
-end

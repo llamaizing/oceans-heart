@@ -135,7 +135,9 @@ map{ id = "fykonos/caves/witchthicket_tree", description = "Witchthicket Tree" }
 map{ id = "fykonos/interiors/village/elder", description = "Elder" }
 map{ id = "fykonos/interiors/west_windmill", description = "West Windmill" }
 map{ id = "fykonos/orange_orchard", description = "Orange Orchard" }
+map{ id = "fykonos/pirate_fort", description = "Pirate Fort" }
 map{ id = "fykonos/ruined_tomb", description = "Ruined Tomb" }
+map{ id = "fykonos/sunflower_field", description = "Sunflower Field" }
 map{ id = "fykonos/village", description = "Fykonos Village" }
 map{ id = "fykonos/west_trail", description = "West Trail" }
 map{ id = "fykonos/witchthicket", description = "Witchthicket" }
@@ -1775,6 +1777,7 @@ item{ id = "stockpot", description = "stockpot" }
 item{ id = "stone_beak", description = "Stone Beak" }
 item{ id = "sword", description = "sword" }
 item{ id = "sword_2", description = "Sword 2 - TEST" }
+item{ id = "sword_fykonos", description = "Sword-Fykonos" }
 item{ id = "sword_of_the_sea_king", description = "Sword of the Sea King" }
 item{ id = "sword_upgrade", description = "sword upgrade" }
 item{ id = "tacklebox", description = "Tacklebox" }
