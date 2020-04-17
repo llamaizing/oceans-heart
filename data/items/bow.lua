@@ -26,8 +26,8 @@ item:register_event("on_started", function(self)
   item:set_max_amount(999)
 end)
 
--- set to item slot 1
-item:register_event("on_obtained", function(self)
+
+item:register_event("on_obtaining", function(self)
   game:set_value("bow_damage", 1)
   self:add_amount(20)
   game:set_value("available_in_shop_arrows", true)

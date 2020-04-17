@@ -11,6 +11,17 @@ animation{
   },
 }
 animation{
+  name = "airstrike",
+  src_image = "enemies/bosses/avalanche_golem.png",
+  frame_delay = 80,
+  directions = {
+    { x = 0, y = 72, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 69, num_frames = 4 },
+    { x = 0, y = 72, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 69, num_frames = 4 },
+    { x = 0, y = 72, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 69, num_frames = 4 },
+    { x = 0, y = 72, frame_width = 72, frame_height = 72, origin_x = 36, origin_y = 69, num_frames = 4 },
+  },
+}
+animation{
   name = "attack",
   src_image = "enemies/bosses/avalanche_golem.png",
   frame_delay = 90,

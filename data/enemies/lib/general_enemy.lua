@@ -764,6 +764,7 @@ function enemy:airstrike()
   local delay = sprite:get_frame_delay()
   local animation_time = frames * delay
   sol.timer.start(map, animation_time, function()
+    local i = properties.airstrike_num_projectiles or 1
     sol.timer.start(map, properties.airstrike_lag, function()
       local map = enemy:get_map()
       local x,y,l = map:get_hero():get_position()
@@ -772,6 +773,7 @@ function enemy:airstrike()
         breed=properties.airstrike_breed or "misc/falling_rock"
       }
       if properties.airstrike_damage then strike_enemy:set_damage(properties.airstrike_damage) end
+      if i > 1 then i = i -1 return math.random(100,500) end
     end)
     enemy:wrap_up_attack()
     enemy:go_random()

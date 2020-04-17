@@ -54,6 +54,15 @@ local properties = {
   orbit_attack_projectile_delay = 300,
   orbit_attack_projectile_breed = "misc/stone_projectile",
   orbit_attack_radius = 32,
+
+  --Attacks--
+  has_airstrike_attack = true,
+  airstrike_breed = "misc/falling_rock",
+  airstrike_lag = 1,
+  airstrike_sound="jump",
+  airstrike_attack_cooldown = 4000,
+  airstrike_attack_distance = 125,
+  airstrike_num_projectiles = 4,
 }
 
 properties_setter:set_properties(enemy, properties)

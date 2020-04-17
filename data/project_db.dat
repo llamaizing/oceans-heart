@@ -132,6 +132,7 @@ map{ id = "fykonos/beach", description = "beach" }
 map{ id = "fykonos/caves/fire_arrow_cave", description = "Fire Arrow Cave" }
 map{ id = "fykonos/caves/witchthicket_hole", description = "Witchthicket Hole" }
 map{ id = "fykonos/caves/witchthicket_tree", description = "Witchthicket Tree" }
+map{ id = "fykonos/interiors/pirate_fort_inside", description = "Pirate Fort" }
 map{ id = "fykonos/interiors/village/elder", description = "Elder" }
 map{ id = "fykonos/interiors/west_windmill", description = "West Windmill" }
 map{ id = "fykonos/orange_orchard", description = "Orange Orchard" }
