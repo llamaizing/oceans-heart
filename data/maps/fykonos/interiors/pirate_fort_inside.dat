@@ -2459,7 +2459,7 @@ switch{
 }
 
 destination{
-  name = "from_outside_upstairs_2",
+  name = "from_outside_downstairs",
   layer = 0,
   x = 424,
   y = 677,

@@ -8195,6 +8195,17 @@ enemy{
   breed = "normal_enemies/rock_spider_red",
 }
 
+teletransporter{
+  layer = 0,
+  x = -16,
+  y = 120,
+  width = 16,
+  height = 152,
+  transition = "scrolling",
+  destination_map = "fykonos/barrowfield",
+  destination = "_side",
+}
+
 tile{
   layer = 1,
   x = 408,

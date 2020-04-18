@@ -120,16 +120,6 @@ tile{
 
 tile{
   layer = 0,
-  x = -8,
-  y = 32,
-  width = 8,
-  height = 80,
-  pattern = "78_2",
-  tileset = "mykonos",
-}
-
-tile{
-  layer = 0,
   x = 40,
   y = 32,
   width = 8,
@@ -430,9 +420,9 @@ tile{
 
 tile{
   layer = 0,
-  x = -32,
+  x = 0,
   y = 0,
-  width = 112,
+  width = 80,
   height = 32,
   pattern = "5",
   tileset = "mykonos",

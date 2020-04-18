@@ -128,7 +128,9 @@ map{ id = "dummy_cutscene/hazel_oakhaven", description = "Hazel Oakhaven" }
 map{ id = "dummy_cutscene/lily_pirate", description = "Lily Pirate" }
 map{ id = "dummy_cutscene/limestone", description = "limestone" }
 map{ id = "example_town_a", description = "example_town_a" }
+map{ id = "fykonos/barrowfield", description = "Barrowfield" }
 map{ id = "fykonos/beach", description = "beach" }
+map{ id = "fykonos/caves/boomerang_cave", description = "Boomerang Cave" }
 map{ id = "fykonos/caves/fire_arrow_cave", description = "Fire Arrow Cave" }
 map{ id = "fykonos/caves/witchthicket_hole", description = "Witchthicket Hole" }
 map{ id = "fykonos/caves/witchthicket_tree", description = "Witchthicket Tree" }
@@ -138,6 +140,7 @@ map{ id = "fykonos/interiors/west_windmill", description = "West Windmill" }
 map{ id = "fykonos/orange_orchard", description = "Orange Orchard" }
 map{ id = "fykonos/pirate_fort", description = "Pirate Fort" }
 map{ id = "fykonos/ruined_tomb", description = "Ruined Tomb" }
+map{ id = "fykonos/statue_garden", description = "Statue Garden" }
 map{ id = "fykonos/sunflower_field", description = "Sunflower Field" }
 map{ id = "fykonos/village", description = "Fykonos Village" }
 map{ id = "fykonos/west_trail", description = "West Trail" }
@@ -747,6 +750,7 @@ sprite{ id = "entities/stair_entity", description = "Stair Entity" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "entities/statue", description = "Statue" }
 sprite{ id = "entities/statue_base", description = "StatueBase-ForFireCollisions,etc" }
+sprite{ id = "entities/statue_owl", description = "Statue-Owl" }
 sprite{ id = "entities/steam_stream", description = "Steam Stream" }
 sprite{ id = "entities/stone_person", description = "Stone Person" }
 sprite{ id = "entities/stone_white1", description = "stone: white 1" }
