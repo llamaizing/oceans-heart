@@ -23,6 +23,26 @@ end)
 
 
 
+function greeter:on_interaction()
+  if not game:get_value"fykonos_talked_with_greeter" then
+    game:start_dialog"_fykonos.npcs.village.greeter.1"
+  else
+    game:start_dialog"_fykonos.npcs.village.greeter.2"
+  end
+end
+
+
+
+function ferry_counter:on_interaction()
+  if not game:get_value"fykonos_ferry_open" then
+    --ferry closed
+    game:start_dialog"_fykonos.npcs.village.ferry.closed"
+  else
+    --ferry open
+
+  end
+end
+
 
 
 

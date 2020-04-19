@@ -16,6 +16,7 @@ text{ key = "item.berries.1", value = "Berries" }
 text{ key = "item.bomb_arrow_ticket.1", value = "Explosive Arrow Plans" }
 text{ key = "item.bombs_counter_2.1", value = "Bombs" }
 text{ key = "item.boomerang.1", value = "Boomerang" }
+text{ key = "item.boomerang.2", value = "Crowfeather Boomerang" }
 text{ key = "item.bow.1", value = "Bow" }
 text{ key = "item.bow_bombs.1", value = "Bomb Arrows" }
 text{ key = "item.bow_fire.1", value = "Flame Arrows" }
@@ -76,9 +77,14 @@ text{ key = "item.potion_stoneskin.1", value = "Stoneskin Potion" }
 text{ key = "item.prize_money.1", value = "Prize Money (200 Crowns)" }
 text{ key = "item.sleeping_draught.1", value = "Sleeping Draught" }
 text{ key = "item.spear.1", value = "Bear Warriors' Spear" }
+text{ key = "item.spear.2", value = "Sunflower Spear" }
 text{ key = "item.stone_beak.1", value = "A Beak-shaped Stone?" }
 text{ key = "item.sword_of_the_sea_king.1", value = "Sword of the Sea King" }
 text{ key = "item.thunder_charm.1", value = "Seabird's Tear" }
+text{ key = "item.thunder_charm.2", value = "Seabird's Tear" }
+text{ key = "item.thunder_charm.3", value = "Seabird's Tear" }
+text{ key = "item.thunder_charm.4", value = "Seabird's Tear" }
+text{ key = "item.thunder_charm.5", value = "Seabird's Tear" }
 text{ key = "item.tungsten_ore.1", value = "Tungsten Ore" }
 text{ key = "item.whisky_for_juglan.1", value = "Whisky" }
 text{ key = "item.witch_hazel.1", value = "Witch Hazel Flowers" }

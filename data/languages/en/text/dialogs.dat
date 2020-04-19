@@ -1693,6 +1693,61 @@ $? No
 }
 
 dialog{
+  id = "_fykonos.npcs.blackbeard.1",
+  text = [[
+BLACKBEARD:
+Well, looks like someone defeated the
+Witch's Ghost for me. Who are you, girl?
+Eh, actually I don't suppose it matters.
+BLACKBEARD:
+As long as you stay out of my way, you
+don't need to worry about my killing you,
+you've saved me some time with the ghost.
+BLACKBEARD:
+Looks like she was trying to use that
+sword of yours to place a magic seal on
+this tomb. Let's see if whatever she was
+BLACKBEARD:
+trying to hide will help me locate the
+man who murdered her.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.blackbeard.2",
+  text = [[
+BLACKBEARD:
+Hmm... ugh. Old folk magic. This won't
+help me locate the Sea King's palace.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.blackbeard.4-tilia",
+  text = [[
+TILIA:
+Hey, you're in charge of the Pirate
+Council, right? 
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.blackbeard.heheheh",
+  text = [[
+BLACKBEARD:
+Heh heh heh...
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.blackbeard.to_be_contd",
+  text = [[
+
+          To Be Continued...
+]],
+}
+
+dialog{
   id = "_fykonos.npcs.bombino.1",
   text = [[
 BOMBINO:
@@ -1845,6 +1900,79 @@ even some of the equipment the spirits took!
 }
 
 dialog{
+  id = "_fykonos.npcs.village.1",
+  text = [[
+WOMAN:
+They say that sunflowers repel malicious
+spirits. That's why they keep them around
+doors and windows.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.ferry.closed",
+  text = [[
+TICKET COUNTER GUY:
+Hello! Lovely to see a customer, but I'm
+terribly sorry, the ferry isn't running
+at the moment.
+TILIA:
+Do you know when it'll open back up?
+
+
+TICKET COUNTER GUY:
+Hey, great question, lovely question.
+I don't know. You could ask the Village
+Elder. He closed it as it was being
+TICKET COUNTER:
+by ghosts in the night. He might have
+a better idea when it'll run again.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.greeter.1",
+  text = [[
+WOMAN:
+Oh, hello there. I don't recognize your
+face... the ferry isn't running. No new
+boats at the pier... you look a little
+WOMAN:
+rough too... Did you...
+...
+Dig here from the other side of the earth??
+TILIA:
+Uh, I was shipwrecked actually.
+
+
+WOMAN:
+Oh, that makes a lot more sense really.
+Either way, you should talk to the village
+Elder. He can help you get your bearings.
+TILIA:
+Thanks, where is he?
+
+
+WOMAN:
+He lives in the northwest corner of town.
+There's a large bell outside his house.
+
+TILIA:
+Thanks, I'll go chat with him.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.greeter.2",
+  text = [[
+WOMAN:
+If you're new around here, you should
+chat with the Village Elder. If you need
+help with anything, he'd know what to do.
+]],
+}
+
+dialog{
   id = "_fykonos.observations.pirate_fort.1",
   text = [[
 There's an unfinished report addressed
@@ -1859,6 +1987,21 @@ be some clue to the Sea King's lost
 palace. We've also disturbed some sort
 of ghost. Appreciate some help with that.
             Sincerely, Captain Allardyce
+]],
+}
+
+dialog{
+  id = "_fykonos.observations.tomb.see_sword",
+  text = [[
+TILIA:
+Hey, that's my sword!
+]],
+}
+
+dialog{
+  id = "_fykonos.observations.village.shop",
+  text = [[
+Fykonos Emporium
 ]],
 }
 
@@ -15943,6 +16086,13 @@ aid you in battle.
 }
 
 dialog{
+  id = "_treasure.limestone_sword.1",
+  text = [[
+You got your sword back!
+]],
+}
+
+dialog{
   id = "_treasure.machine_part.1",
   text = [[
 You found the stolen machine part that the
@@ -16246,8 +16396,15 @@ dialog{
   id = "_treasure.spear.1",
   text = [[
 You found the Bear Warriors' Spear. It has
-a longer reach than a sword and can do a
-little more damage.
+a longer reach than a sword.
+]],
+}
+
+dialog{
+  id = "_treasure.spear.2",
+  text = [[
+You found the Sunflower Spear. It creates
+a burst of flame at the end of its attack.
 ]],
 }
 

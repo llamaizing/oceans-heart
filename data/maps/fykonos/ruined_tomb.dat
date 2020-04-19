@@ -2185,6 +2185,24 @@ destructible{
   can_be_cut = true,
 }
 
+teletransporter{
+  layer = 0,
+  x = 232,
+  y = 32,
+  width = 16,
+  height = 16,
+  destination_map = "fykonos/caves/ophiras_tomb",
+  destination = "from_outside",
+}
+
+destination{
+  name = "from_tomb",
+  layer = 0,
+  x = 240,
+  y = 61,
+  direction = 3,
+}
+
 tile{
   layer = 1,
   x = -8,

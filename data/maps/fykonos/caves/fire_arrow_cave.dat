@@ -989,26 +989,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 192,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "102_5",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 0,
-  x = 208,
-  y = 16,
-  width = 16,
-  height = 16,
-  pattern = "101_6",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 0,
   x = 240,
   y = 24,
   width = 16,
@@ -1044,16 +1024,6 @@ tile{
   width = 16,
   height = 16,
   pattern = "101_6",
-  tileset = "oceanset_inside",
-}
-
-tile{
-  layer = 0,
-  x = 208,
-  y = 24,
-  width = 16,
-  height = 16,
-  pattern = "102_5",
   tileset = "oceanset_inside",
 }
 
@@ -1102,30 +1072,44 @@ tile{
   pattern = "42",
 }
 
-wall{
+tile{
   layer = 0,
-  x = 224,
-  y = 40,
-  width = 8,
-  height = 24,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
+  x = 208,
+  y = 48,
+  width = 32,
+  height = 16,
+  pattern = "133_2",
+  tileset = "oceanset_inside",
 }
 
-wall{
+tile{
   layer = 0,
-  x = 200,
-  y = 40,
+  x = 216,
+  y = 16,
+  width = 16,
+  height = 32,
+  pattern = "131_2",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 232,
+  y = 16,
   width = 8,
-  height = 24,
-  stops_hero = true,
-  stops_npcs = true,
-  stops_enemies = true,
-  stops_blocks = true,
-  stops_projectiles = true,
+  height = 32,
+  pattern = "132_2",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 16,
+  width = 8,
+  height = 32,
+  pattern = "130_2",
+  tileset = "oceanset_inside",
 }
 
 door{
@@ -1144,15 +1128,6 @@ door{
   y = 104,
   direction = 3,
   sprite = "entities/door_post_stone",
-}
-
-chest{
-  layer = 0,
-  x = 216,
-  y = 61,
-  treasure_name = "bow_fire",
-  treasure_savegame_variable = "fykonos_fire_arrows_found",
-  sprite = "entities/chest_big",
 }
 
 destination{
@@ -1230,6 +1205,34 @@ dynamic_tile{
   width = 16,
   height = 16,
   pattern = "44",
+}
+
+destination{
+  name = "from_lone_windmill",
+  layer = 0,
+  x = 224,
+  y = 53,
+  direction = 3,
+}
+
+teletransporter{
+  layer = 0,
+  x = 216,
+  y = 24,
+  width = 16,
+  height = 16,
+  destination_map = "fykonos/lone_windmill",
+  destination = "from_cave",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 16,
+  width = 32,
+  height = 16,
+  pattern = "53_10",
+  tileset = "oceanset_inside",
 }
 
 tile{
@@ -1357,6 +1360,36 @@ tile{
   width = 16,
   height = 16,
   pattern = "vines2",
+}
+
+tile{
+  layer = 1,
+  x = 192,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "102_5",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 16,
+  width = 16,
+  height = 16,
+  pattern = "101_6",
+  tileset = "oceanset_inside",
+}
+
+tile{
+  layer = 1,
+  x = 208,
+  y = 24,
+  width = 16,
+  height = 16,
+  pattern = "102_5",
+  tileset = "oceanset_inside",
 }
 
 dynamic_tile{

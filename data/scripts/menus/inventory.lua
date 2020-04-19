@@ -134,9 +134,13 @@ function inventory:initialize(game)
                 --initialize the sprite
                 local equipment_sprite = sol.sprite.create("entities/items")
                 equipment_sprite:set_animation(item_name)
---Actually, all items have one sprite for all variants, nothing changes sprite with variant except boomerang
---                equipment_sprite:set_direction(variant - 1)
-                equipment_sprite:set_direction(0)
+-- If an item is assignable, it might have variants
+-- If it isn't assignable, it likely has "amounts" as variants, which we don't want to show up in the inventory
+                if all_equipment_items[i].assignable then
+                  equipment_sprite:set_direction(variant - 1)
+                else
+                  equipment_sprite:set_direction(0)
+                end
                 self.equipment_sprites[i] = equipment_sprite
 
                 --if the item has an amount, make a counter in the counters table
@@ -251,7 +255,15 @@ function inventory:update_description_panel()
     if self.description_panel then
         local item = self:get_item_at_current_index()
         if item then
-          local item_desc = sol.language.get_string("item."..item:get_name()..".1") or ""
+--          local item_desc = sol.language.get_string("item."..item:get_name().."." .. item:get_variant()) or ""
+--          local item_desc = sol.language.get_string("item."..item:get_name()..".1") or ""
+          local item_desc
+          if all_equipment_items[cursor_index + 1].assignable then
+            item_desc = sol.language.get_string("item."..item:get_name().."." .. item:get_variant()) or ""
+          else
+            item_desc = sol.language.get_string("item."..item:get_name()..".1") or ""
+          end
+--
           self.description_panel:set_text(item_desc)
         else self.description_panel:set_text("")
         end

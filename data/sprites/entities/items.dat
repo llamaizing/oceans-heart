@@ -834,6 +834,13 @@ animation{
   },
 }
 animation{
+  name = "limestone_sword",
+  src_image = "entities/items.png",
+  directions = {
+    { x = 112, y = 0, frame_width = 32, frame_height = 16, origin_x = 16, origin_y = 13 },
+  },
+}
+animation{
   name = "machine_part",
   src_image = "entities/items.png",
   directions = {
@@ -1064,6 +1071,7 @@ animation{
   src_image = "entities/items.png",
   directions = {
     { x = 336, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 448, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
   },
 }
 animation{
