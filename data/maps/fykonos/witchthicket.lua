@@ -31,6 +31,7 @@ function bombino:on_interaction()
 
   elseif game:get_value"fykonos_bombino_counter" == 2 then
     game:set_value("fykonos_bombino_counter", 3)
+    game:set_value("fykonos_bombs_available", true)
     game:start_dialog("_fykonos.npcs.bombino.3", function()
       hero:start_treasure("bomb", 4, nil, function()
         game:start_dialog("_fykonos.npcs.bombino.4", function()

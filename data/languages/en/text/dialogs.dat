@@ -1910,6 +1910,109 @@ doors and windows.
 }
 
 dialog{
+  id = "_fykonos.npcs.village.2",
+  text = [[
+WOMAN:
+Across the bridge to the west there's a
+darling orange orchard. North of that is
+the Witchthicket. They say in ancient times,
+WOMAN:
+the witch that lived on the island cursed
+it to protect it from invaders.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.4",
+  text = [[
+LOUNGING MAN:
+Out east of here there's a statue garden.
+If you push or pull on them, you can
+actually scoot them around. If you're,
+LOUNGING MAN:
+looking for some kind of statutory
+workout or something. Is that how you
+use the word "statutory"?
+TILIA:
+I don't think so. But thanks for the
+tip anyway, I guess.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.5",
+  text = [[
+NERVOUS WOMAN:
+Hmm, did you hear the ferry isn't running?
+We're... well effectively we're all trapped
+on this island. There's a fortress of
+NERVOUS WOMAN:
+pirates on the Northeast side of the island.
+Who knows what they're up to? I heard
+they've ties to the pirate Blackbeard, even...
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.6",
+  text = [[
+WOMAN:
+If you're feeling tired, or low on health
+for example, come on inn! Ahaha, get it?
+Anyway, staying here will heal you.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.7",
+  text = [[
+WISTFUL MAN:
+My whole backpack was full of plants it'd
+foraged after cutting them down, I was
+bringing it down to the shop to sell...
+WISTFUL MAN:
+And these goblin things showed up and
+robbed me! Snatched my backpack and ran
+off into the hills!
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.bombino.1",
+  text = [[
+BOMBINO:
+Oh, hey! The woods lady! Thanks for helping
+me out back there. If you want to buy
+any bombs, you can at the counter.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.cafe.1",
+  text = [[
+BARISTA:
+Good afternoon! Care for a cup of coffee?
+I'll heal 3 hearts and also make you
+walk faster, because the caffeine.
+BARISTA:
+But you have to drink it right here.
+Open container laws, you know.
+
+(Buy a cup of coffee for 10 crowns?)
+$?Sure
+$?No thanks
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.cafe.2",
+  text = [[
+BARISTA:
+Here you go!
+]],
+}
+
+dialog{
   id = "_fykonos.npcs.village.ferry.closed",
   text = [[
 TICKET COUNTER GUY:
@@ -1923,7 +2026,7 @@ Do you know when it'll open back up?
 TICKET COUNTER GUY:
 Hey, great question, lovely question.
 I don't know. You could ask the Village
-Elder. He closed it as it was being
+Elder. He closed it as it was being attacked
 TICKET COUNTER:
 by ghosts in the night. He might have
 a better idea when it'll run again.
@@ -1933,11 +2036,11 @@ a better idea when it'll run again.
 dialog{
   id = "_fykonos.npcs.village.greeter.1",
   text = [[
-WOMAN:
+FISHERMAN:
 Oh, hello there. I don't recognize your
 face... the ferry isn't running. No new
 boats at the pier... you look a little
-WOMAN:
+FISHERMAN:
 rough too... Did you...
 ...
 Dig here from the other side of the earth??
@@ -1945,7 +2048,7 @@ TILIA:
 Uh, I was shipwrecked actually.
 
 
-WOMAN:
+FISHERMAN:
 Oh, that makes a lot more sense really.
 Either way, you should talk to the village
 Elder. He can help you get your bearings.
@@ -1953,7 +2056,7 @@ TILIA:
 Thanks, where is he?
 
 
-WOMAN:
+FISHERMAN:
 He lives in the northwest corner of town.
 There's a large bell outside his house.
 
@@ -1965,10 +2068,20 @@ Thanks, I'll go chat with him.
 dialog{
   id = "_fykonos.npcs.village.greeter.2",
   text = [[
-WOMAN:
+FISHERMAN:
 If you're new around here, you should
 chat with the Village Elder. If you need
 help with anything, he'd know what to do.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.inkkeper",
+  text = [[
+INNKEEPER:
+Good day! Sorry if you had to endure the
+bad innkeeping pun my assistant outside
+is telling everyone. Beds are 30 crowns.
 ]],
 }
 
@@ -2002,6 +2115,7 @@ dialog{
   id = "_fykonos.observations.village.shop",
   text = [[
 Fykonos Emporium
+Buy things! Sell things! We do it both!
 ]],
 }
 

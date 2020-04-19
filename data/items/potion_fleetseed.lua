@@ -17,6 +17,13 @@ end)
 item:register_event("on_using", function(self)
   if self:get_amount() > 0 then
     self:remove_amount(1)
+    item:drink()
+  end
+  item:set_finished()
+end)
+
+
+function item:drink()
     sol.audio.play_sound("uncorking_and_drinking_1")
     game:get_hero():set_walking_speed(150)
     game:start_dialog"_game.potion.fleetseed"
@@ -29,6 +36,4 @@ item:register_event("on_using", function(self)
       sol.audio.play_sound"status_deactivated"
 --      require("scripts/hud/message"):show_message("Potion effect expired", 2800)
     end)
-  end
-  item:set_finished()
-end)
+end

@@ -141,14 +141,20 @@ map{ id = "fykonos/caves/witchthicket_tree", description = "Witchthicket Tree" }
 map{ id = "fykonos/interiors/lone_windmill_int", description = "Lone Windmill" }
 map{ id = "fykonos/interiors/pirate_fort_inside", description = "Pirate Fort" }
 map{ id = "fykonos/interiors/village/elder", description = "Elder" }
+map{ id = "fykonos/interiors/village/house_a", description = "House A" }
+map{ id = "fykonos/interiors/village/house_b", description = "House B" }
+map{ id = "fykonos/interiors/village/inn", description = "Inn" }
+map{ id = "fykonos/interiors/village/shop", description = "Shop" }
 map{ id = "fykonos/interiors/west_windmill", description = "West Windmill" }
+map{ id = "fykonos/intro/goatshead", description = "Goatshead" }
+map{ id = "fykonos/intro/ship_deck", description = "Ship Deck" }
 map{ id = "fykonos/lone_windmill", description = "Lone Windmill" }
 map{ id = "fykonos/orange_orchard", description = "Orange Orchard" }
 map{ id = "fykonos/pirate_fort", description = "Pirate Fort" }
 map{ id = "fykonos/ruined_tomb", description = "Ruined Tomb" }
 map{ id = "fykonos/statue_garden", description = "Statue Garden" }
 map{ id = "fykonos/sunflower_field", description = "Sunflower Field" }
-map{ id = "fykonos/village", description = "Fykonos Village" }
+map{ id = "fykonos/village", description = "Village" }
 map{ id = "fykonos/west_trail", description = "West Trail" }
 map{ id = "fykonos/witchthicket", description = "Witchthicket" }
 map{ id = "fykonos/zzz_end", description = "zzz_end" }

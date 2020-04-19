@@ -26,6 +26,7 @@ end)
 function greeter:on_interaction()
   if not game:get_value"fykonos_talked_with_greeter" then
     game:start_dialog"_fykonos.npcs.village.greeter.1"
+    game:set_value("fykonos_talked_with_greeter", true)
   else
     game:start_dialog"_fykonos.npcs.village.greeter.2"
   end
@@ -41,6 +42,22 @@ function ferry_counter:on_interaction()
     --ferry open
 
   end
+end
+
+
+function cafe_counter:on_interaction()
+  game:start_dialog("_fykonos.npcs.village.cafe.1", function(answer)
+    if answer == 2 then --buy
+      if game:get_money() >= 10 then
+        game:remove_money(10)
+        game:add_life(6)
+        game:get_item("potion_fleetseed"):drink()
+        
+      else
+        game:start_dialog"_game.insufficient_funds"
+      end
+    end
+  end)
 end
 
 

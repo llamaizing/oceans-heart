@@ -61,6 +61,12 @@ function inventory:set_xy(x, y)
 end
 
 
+--Set different array of items and prices for a shop to sell:
+function inventory:set_items_for_sale(new_items)
+  all_items = new_items
+end
+
+
 function inventory:initialize(game, item_array)
     --first, we don't need the hero walking around with the menu open, so
     game:get_hero():freeze()
