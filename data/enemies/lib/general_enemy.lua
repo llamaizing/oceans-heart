@@ -402,6 +402,7 @@ end
       m:set_smooth(properties.dash_attack_smooth or false)
       sol.audio.play_sound(properties.dash_attack_sound or "gravel")
       if properties.invincible_while_dashing then enemy:set_invincible() end
+      if enemy:get_life() <= 0 then return end --this is to prevent the death animation of the enemy from rushing at you
       m:start(enemy, function()
 --        print("movement done"..n)n=n+1
         currently_dashing = false

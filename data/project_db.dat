@@ -130,6 +130,9 @@ map{ id = "dummy_cutscene/limestone", description = "limestone" }
 map{ id = "example_town_a", description = "example_town_a" }
 map{ id = "fykonos/barrowfield", description = "Barrowfield" }
 map{ id = "fykonos/beach", description = "beach" }
+map{ id = "fykonos/caves/barrow_a", description = "Barrow A" }
+map{ id = "fykonos/caves/barrow_b", description = "Barrow B" }
+map{ id = "fykonos/caves/barrow_strength", description = "Barrow-Strength Charm" }
 map{ id = "fykonos/caves/boomerang_cave", description = "Boomerang Cave" }
 map{ id = "fykonos/caves/fire_arrow_cave", description = "Fire Arrow Cave" }
 map{ id = "fykonos/caves/witchthicket_hole", description = "Witchthicket Hole" }

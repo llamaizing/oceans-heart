@@ -7005,7 +7005,7 @@ switch{
   x = 336,
   y = 312,
   subtype = "arrow_target",
-  sprite = "entities/switch_arrow",
+  sprite = "entities/switch_solid",
   needs_block = false,
   inactivate_when_leaving = false,
 }
