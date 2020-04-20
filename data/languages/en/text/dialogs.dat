@@ -1900,6 +1900,84 @@ even some of the equipment the spirits took!
 }
 
 dialog{
+  id = "_fykonos.npcs.goatshead_messenger.1",
+  text = [[
+MESSENGER:
+Hey! ...huff, huff. I've been looking
+everywhere for you. When you came into
+town, you were the thirtieth person to
+MESSENGER:
+come into town today. There was a contest,
+one of those morning show types. The
+thirtieth person to come through the
+MESSENGER:
+gates wins a ticket to Fykonos Isle.
+It's like a, it's one of those vacation
+spots.
+TILIA:
+Wait, I just won passage on a ship for
+walking into town?
+
+MESSENGER:
+Yeah, it's a bit weird. Don't think about
+it too much, that's not really the point.
+It's kind of just an excuse for the demo.
+TILIA:
+I'll agree not to break the fourth wall
+if you don't anymore.
+
+MESSENGER:
+Sounds good. Sorry the justification is
+so thin. It's not usually like that around
+here. Anyway, here's the ticket.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.goatshead_messenger.2",
+  text = [[
+MESSENGER:
+Well, I gotta get going. Have a good trip!
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.goatshead_messenger.4",
+  text = [[
+MESSENGER:
+Puff, huff. Whoo. Running around made
+me super tired. Anyway, check the pier
+for the ship to use that ticket.
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.max.1",
+  text = [[
+INAUSPICIOUS-LOOKING CAPTAIN:
+Hey! You here to catch the ferry to
+Fykonos Island?
+
+TILIA:
+Yeah, I've got a ticket, do you like,
+you want this? Rip it in half?
+
+INAUSPICIOUS-LOOKING CAPTAIN:
+Nah, you're good. Hop on board! We're
+about to head out!
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.max.been_attack",
+  text = [[
+INAUSPICIOUS-LOOKING CAPTAIN:
+Hey! I sure hope you can help, the ship
+is under attack! Some kinda monster!
+]],
+}
+
+dialog{
   id = "_fykonos.npcs.village.1",
   text = [[
 WOMAN:
@@ -2108,6 +2186,14 @@ dialog{
   text = [[
 TILIA:
 Hey, that's my sword!
+]],
+}
+
+dialog{
+  id = "_fykonos.observations.tutorial.sword",
+  text = [[
+Press the attack button (C) to
+swing your sword.
 ]],
 }
 
@@ -15720,6 +15806,15 @@ dialog{
   id = "_treasure.forsythia.3",
   text = [[
 You found 10 branches of forsithya flowers!
+]],
+}
+
+dialog{
+  id = "_treasure.fykonos_ticket.1",
+  text = [[
+You received a ticket for the ferry to
+Fykonos Isle! Better head down to the
+pier and catch the boat!
 ]],
 }
 

@@ -147,6 +147,7 @@ map{ id = "fykonos/interiors/village/inn", description = "Inn" }
 map{ id = "fykonos/interiors/village/shop", description = "Shop" }
 map{ id = "fykonos/interiors/west_windmill", description = "West Windmill" }
 map{ id = "fykonos/intro/goatshead", description = "Goatshead" }
+map{ id = "fykonos/intro/ship_below_deck", description = "Ship-Belowdeck" }
 map{ id = "fykonos/intro/ship_deck", description = "Ship Deck" }
 map{ id = "fykonos/lone_windmill", description = "Lone Windmill" }
 map{ id = "fykonos/orange_orchard", description = "Orange Orchard" }
@@ -354,6 +355,7 @@ map{ id = "tests/pagoda", description = "pagoda" }
 tileset{ id = "abysphere_ruins", description = "Abysphere Ruins" }
 tileset{ id = "bear_catacombs", description = "Bear Catacombs" }
 tileset{ id = "bear_catacombs_cave", description = "BearCatacombs-Cave" }
+tileset{ id = "boatdeck", description = "Boatdeck" }
 tileset{ id = "boulderfield", description = "Boulderfield" }
 tileset{ id = "cave_2", description = "cave-mine" }
 tileset{ id = "cemetery_of_waves", description = "CemeteryOfTheWaves" }
@@ -1210,6 +1212,7 @@ sprite{ id = "npc/man/man_9.8", description = "npc/man/man_9.8" }
 sprite{ id = "npc/man/man_red_herring_1", description = "Man-Red Herring 1" }
 sprite{ id = "npc/man/man_red_herring_2", description = "Man-Red Herring 2" }
 sprite{ id = "npc/max", description = "Max" }
+sprite{ id = "npc/max_small", description = "Max-Small" }
 sprite{ id = "npc/mayor_oakhaven", description = "Mayor of Oakhaven" }
 sprite{ id = "npc/mayor_oakhaven_sad", description = "Mayor of Oakhaven-Sad" }
 sprite{ id = "npc/monk_1", description = "Monk 1" }
@@ -1557,6 +1560,7 @@ sound{ id = "gravel", description = "gravel" }
 sound{ id = "gravel2", description = "gravel2" }
 sound{ id = "hand_cannon", description = "hand_cannon" }
 sound{ id = "heart", description = "heart" }
+sound{ id = "heartbeat", description = "heartbeat" }
 sound{ id = "hero_dying", description = "hero_dying" }
 sound{ id = "hero_falls", description = "hero_falls" }
 sound{ id = "hero_hurt", description = "hero_hurt" }
@@ -1579,6 +1583,8 @@ sound{ id = "monster_hurt", description = "monster_hurt" }
 sound{ id = "monster_roar_1", description = "Monster Roar 1" }
 sound{ id = "monster_scream", description = "Monster Scream" }
 sound{ id = "no", description = "no" }
+sound{ id = "oh_lotsa_damage", description = "oh_lotsa_damage" }
+sound{ id = "ohko", description = "ohko" }
 sound{ id = "ok", description = "ok" }
 sound{ id = "ok_l", description = "ok_l" }
 sound{ id = "ok_r", description = "ok_r" }
@@ -1604,6 +1610,8 @@ sound{ id = "rupee_counter_end", description = "rupee_counter_end" }
 sound{ id = "sea_spirit", description = "Sea Spirit" }
 sound{ id = "secret", description = "secret" }
 sound{ id = "shield", description = "shield" }
+sound{ id = "ship_creak", description = "ship_creak" }
+sound{ id = "ship_creak_lowpass", description = "ship_creak_lowpass" }
 sound{ id = "shoot", description = "shoot" }
 sound{ id = "shoot_magic", description = "shoot_magic" }
 sound{ id = "shoot_magic_2", description = "shoot_magic_2" }
@@ -1717,6 +1725,7 @@ item{ id = "fast_travel_chart_zephyr_bay", description = "FTC Zephyr Bas" }
 item{ id = "firethorn_berries", description = "Firethorn Berries-1,5,10" }
 item{ id = "flippers", description = "flippers" }
 item{ id = "forsythia", description = "Forsythia-1,5,10" }
+item{ id = "fykonos_ticket", description = "Fykonos Ticket" }
 item{ id = "geode", description = "Geode-1,5,10" }
 item{ id = "ghost_orchid", description = "Ghost Orchid-1,3,5" }
 item{ id = "gust", description = "Gust" }
