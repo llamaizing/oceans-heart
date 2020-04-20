@@ -474,6 +474,7 @@ sprite{ id = "enemies/misc/sea_beam", description = "Sea Beam" }
 sprite{ id = "enemies/misc/sea_blast", description = "Sea Blast" }
 sprite{ id = "enemies/misc/sea_king_sword_slash", description = "SeaKing Sword Slash" }
 sprite{ id = "enemies/misc/seagull", description = "seagull" }
+sprite{ id = "enemies/misc/seamonster_tentacle", description = "Seamonster Tentacle" }
 sprite{ id = "enemies/misc/skeleton_hand", description = "Skeleton Hand" }
 sprite{ id = "enemies/misc/sparrow", description = "Sparrow" }
 sprite{ id = "enemies/misc/spirit_sword", description = "Spirit Sword" }
@@ -1890,6 +1891,7 @@ enemy{ id = "misc/pollution_puddle", description = "Pollution Puddle" }
 enemy{ id = "misc/root_small", description = "Root - Small" }
 enemy{ id = "misc/sea_blast", description = "SeaBlast" }
 enemy{ id = "misc/seagull", description = "Seagull" }
+enemy{ id = "misc/seamonster_tentacle", description = "Seamonster Tentacle" }
 enemy{ id = "misc/skeleton_hand", description = "Skeleton Hand" }
 enemy{ id = "misc/spore", description = "spore" }
 enemy{ id = "misc/steam_attack", description = "Steam Attack" }

@@ -846,6 +846,16 @@ destructible{
   can_be_cut = true,
 }
 
+sensor{
+  name = "crash_sensor",
+  layer = 0,
+  x = 288,
+  y = 117,
+  enabled_at_start = false,
+  width = 48,
+  height = 16,
+}
+
 tile{
   layer = 1,
   x = 280,

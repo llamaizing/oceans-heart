@@ -2182,10 +2182,37 @@ of ghost. Appreciate some help with that.
 }
 
 dialog{
+  id = "_fykonos.observations.shipwreck.bad_sound",
+  text = [[
+TILIA:
+Huh. That's not a great noise for a boat
+to be making.
+]],
+}
+
+dialog{
+  id = "_fykonos.observations.shipwreck.enemies_defeated",
+  text = [[
+TILIA:
+Looks like that scared them off. Better
+go below deck and see where the
+captain went off to.
+]],
+}
+
+dialog{
   id = "_fykonos.observations.tomb.see_sword",
   text = [[
 TILIA:
 Hey, that's my sword!
+]],
+}
+
+dialog{
+  id = "_fykonos.observations.tutorial.equip",
+  text = [[
+Open the menu with D to equip weapons
+and other items.
 ]],
 }
 
