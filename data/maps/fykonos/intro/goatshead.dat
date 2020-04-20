@@ -32737,6 +32737,15 @@ tile{
   tileset = "indoors_stone",
 }
 
+tile{
+  layer = 0,
+  x = 344,
+  y = 416,
+  width = 32,
+  height = 8,
+  pattern = "636",
+}
+
 wall{
   layer = 0,
   x = 872,
@@ -33351,17 +33360,6 @@ npc{
   subtype = 1,
   sprite = "npc/kid/kid_6.4",
   behavior = "dialog#_goatshead.npcs.kids.2",
-}
-
-npc{
-  name = "figure_8_2",
-  layer = 0,
-  x = 824,
-  y = 293,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/man/man_14.8",
-  behavior = "dialog#_goatshead.npcs.market_people.9",
 }
 
 npc{
@@ -35839,15 +35837,6 @@ tile{
   width = 48,
   height = 8,
   pattern = "1557",
-}
-
-tile{
-  layer = 1,
-  x = 344,
-  y = 416,
-  width = 32,
-  height = 8,
-  pattern = "636",
 }
 
 tile{
@@ -38625,5 +38614,15 @@ enemy{
   y = 781,
   direction = 0,
   breed = "misc/seagull",
+}
+
+custom_entity{
+  name = "camera_guide",
+  layer = 2,
+  x = 1384,
+  y = 157,
+  width = 16,
+  height = 16,
+  direction = 0,
 }
 

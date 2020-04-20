@@ -177,4 +177,5 @@ text{ key = "menu.title.quit", value = "Quit" }
 text{ key = "menu.title.full_demo", value = "Full Demo" }
 text{ key = "menu.title.beach_demo", value = "Beach" }
 text{ key = "menu.title.boss_demo", value = "Boss" }
+text{ key = "menu.title.clear_save", value = "Clear Save" }
 text{ key = "player_name", value = "Tilia" }

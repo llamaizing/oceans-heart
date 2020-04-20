@@ -13,7 +13,7 @@ map:register_event("on_started", function()
 
   if not game:get_value"fykonos_have_ticket" then
     game:get_hud():set_enabled(false)
-    map:fykonos_ticket_dropoff()
+    map:opening_pan()
   end
 
 
@@ -53,6 +53,29 @@ map:register_event("on_started", function()
 end)
 
 
+function map:opening_pan()
+  local title_card = require"scripts/menus/title_card"
+  sol.menu.start(map, title_card)
+  --fade title card out after a little
+  sol.timer.start(map, 8000, function()
+    title_card:fade_out()
+  end)
+
+  map:get_camera():start_tracking(camera_guide)
+  local angle = camera_guide:get_angle(hero)
+  local distance = camera_guide:get_distance(hero)
+  local m = sol.movement.create"straight"
+  m:set_max_distance(distance)
+  m:set_angle(angle)
+  m:set_speed(100)
+  m:start(camera_guide, function()
+    map:get_camera():start_tracking(hero)
+    map:fykonos_ticket_dropoff()
+  end)
+
+end
+
+
 function map:fykonos_ticket_dropoff()
   hero:freeze()
   messenger:set_enabled(true)
@@ -69,7 +92,11 @@ function map:fykonos_ticket_dropoff()
           m:start(messenger, function()
             game:get_hud():set_enabled(true)
             hero:unfreeze()
-            game:set_value"fykonos_have_ticket"
+            game:set_value("fykonos_have_ticket", true) --savegame for not doing this all again
+              game:get_dialog_box():set_style("empty")
+              game:start_dialog("_fykonos.observations.tutorial.walk", function()
+                game:get_dialog_box():set_style("box")
+              end)
           end)
         end)
       end)

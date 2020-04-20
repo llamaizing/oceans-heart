@@ -2198,6 +2198,13 @@ swing your sword.
 }
 
 dialog{
+  id = "_fykonos.observations.tutorial.walk",
+  text = [[
+Walk around using the arrow keys
+]],
+}
+
+dialog{
   id = "_fykonos.observations.village.shop",
   text = [[
 Fykonos Emporium

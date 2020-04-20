@@ -107,7 +107,10 @@ function menu:process_selected_option(selection)
       sol.main.exit()
 
     elseif selection == "demo" then
-      local demo_menu = require"scripts/menus/title_screen_menus/demo_menu"
+      sol.audio.play_sound("ok")
+      local demo_menu
+      if sol.game.exists("demo.dat") then demo_menu = require"scripts/menus/title_screen_menus/demo_continue" 
+      else demo_menu = require"scripts/menus/title_screen_menus/demo_menu" end
       sol.menu.start(parent_menu, demo_menu)
       demo_menu:set_parent_menu(parent_menu)
       parent_menu:set_current_submenu(demo_menu)

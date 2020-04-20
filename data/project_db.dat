@@ -1497,6 +1497,7 @@ music{ id = "wavesick-the-wavening", description = "Cemetery of the Waves" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "beam", description = "beam" }
+sound{ id = "bell_town", description = "bell_town" }
 sound{ id = "bird_flying_away", description = "bird_flying_away" }
 sound{ id = "bird_many_birds", description = "bird_many_birds" }
 sound{ id = "boiling", description = "boiling" }

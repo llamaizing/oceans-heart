@@ -3,8 +3,9 @@ local game = map:get_game()
 
 map:register_event("on_started", function()
   game:get_dialog_box():set_style("empty")
-  game:start_dialog("_fykonos.observations.tutorial.sword")
-  game:get_dialog_box():set_style("box")
+  game:start_dialog("_fykonos.observations.tutorial.sword", function()
+    game:get_dialog_box():set_style("box")
+  end)
   sol.timer.start(map, 0, function()
     sol.audio.play_sound"ship_creak_lowpass"
     return 60000
