@@ -29,6 +29,7 @@ function enemy:surface()
   sprite:set_animation("surfacing", function()
     enemy.surfaced = true
     sprite:set_animation"walking"
+    enemy:on_restarted()
   end)
 end
 

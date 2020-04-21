@@ -737,6 +737,7 @@ stairs{
 }
 
 teletransporter{
+  name = "tele",
   layer = 0,
   x = 288,
   y = 64,

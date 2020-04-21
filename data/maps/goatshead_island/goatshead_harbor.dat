@@ -33857,6 +33857,17 @@ npc{
   sprite = "entities/boat_goatshead_ferry",
 }
 
+npc{
+  name = "fishing_guy",
+  layer = 0,
+  x = 816,
+  y = 837,
+  direction = 3,
+  subtype = 1,
+  sprite = "npc/fishing_left",
+  behavior = "dialog#_goatshead.npcs.dockworkers.4",
+}
+
 tile{
   layer = 1,
   x = 0,
@@ -38365,17 +38376,6 @@ enemy{
   y = 789,
   direction = 2,
   breed = "misc/seagull",
-}
-
-npc{
-  name = "fishing_guy",
-  layer = 1,
-  x = 816,
-  y = 837,
-  direction = 3,
-  subtype = 1,
-  sprite = "npc/fishing_left",
-  behavior = "dialog#_goatshead.npcs.dockworkers.4",
 }
 
 destructible{

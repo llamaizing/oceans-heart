@@ -14,6 +14,7 @@ map:register_event("on_started", function()
 
   if game:get_value"fykonos_ship_defended" then
     crash_sensor:set_enabled(true)
+    tele:set_enabled(false)
   end
 
   sol.timer.start(map, 0, function()
