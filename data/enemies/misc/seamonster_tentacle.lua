@@ -14,18 +14,18 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  sol.timer.start(enemy, math.random(1000, 4000), function()
-    enemy:shoot()
+  sol.timer.start(enemy, math.random(1000, 8000), function()
+--    enemy:shoot()
   end)
 end
 
 function enemy:shoot()
   sprite:set_animation("wind_up", function()
     sprite:set_animation"stopped"
-    local projectile = enemy:create_enemy{breed="misc/energy_ball_small"}
+    local projectile = enemy:create_enemy{breed="misc/fireball_red_small"}
     projectile:go(projectile:get_angle(hero))
   end)
-  sol.timer.start(enemy, math.random(4000, 6000), function()
+  sol.timer.start(enemy, math.random(6000, 10000), function()
     if enemy:exists() then enemy:shoot() end
   end)
 end

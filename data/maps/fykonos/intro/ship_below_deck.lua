@@ -54,6 +54,9 @@ function crash_sensor:on_activated()
   sol.audio.play_sound"thunk1"
   sol.audio.play_sound"switch_2"
   sol.audio.play_sound"wood_breaking_and_falling_into_water"
+  sol.timer.start(map, 400, function() sol.audio.play_sound"wood_breaking_and_falling_into_water" end)
+  sol.timer.start(map, 600, function() sol.audio.play_sound"wood_breaking_and_falling_into_water" end)
+  sol.timer.start(map, 900, function() sol.audio.play_sound"wood_breaking_and_falling_into_water" end)
   game:start_dialog("_fykonos.observations.shipwreck.bad_sound", function()
     black_screen:fill_color{0,0,0}
     game:get_hud():set_enabled(false)

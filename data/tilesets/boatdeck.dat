@@ -1,7 +1,7 @@
 background_color{ 255, 255, 255 }
 tile_pattern{
   id = "1",
-  ground = "wall_top_left",
+  ground = "low_wall",
   default_layer = 0,
   x = 32,
   y = 16,
@@ -113,7 +113,7 @@ tile_pattern{
 
 tile_pattern{
   id = "2",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 0,
   x = 32,
   y = 96,
@@ -156,7 +156,7 @@ tile_pattern{
 
 tile_pattern{
   id = "3",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 0,
   x = 16,
   y = 88,
@@ -176,7 +176,7 @@ tile_pattern{
 
 tile_pattern{
   id = "5",
-  ground = "wall_top_left",
+  ground = "low_wall",
   default_layer = 0,
   x = 0,
   y = 32,
