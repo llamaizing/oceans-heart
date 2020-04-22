@@ -95,6 +95,7 @@ function behavior:create(enemy, properties)
     else
       projectile:go(direction)
     end
+    sol.audio.play_sound"shoot_magic"
     --initialize projectile properties
     if properties.projectile_damage then
       projectile:set_damage(properties.projectile_damage)

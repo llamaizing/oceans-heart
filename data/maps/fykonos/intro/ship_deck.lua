@@ -40,6 +40,7 @@ function map:wave_2()
   game:start_dialog("_fykonos.observations.tutorial.equip", function()
     game:get_dialog_box():set_style("box")
     sol.audio.play_sound"monster_scream"
+    sol.audio.play_music"boss_battle"
 
     --enable head
     seamonster:get_sprite():set_animation("underwater")
@@ -127,6 +128,7 @@ function map:shipwreck()
     sol.audio.play_sound"thunk1"
     sol.audio.play_sound"switch_2"
     sol.audio.play_sound"hand_cannon"
+    map:fade_in_music()
 
     sol.timer.start(map, 1000, function()
       game:start_dialog("_fykonos.observations.shipwreck.enemies_defeated", function()

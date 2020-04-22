@@ -1967,6 +1967,15 @@ dynamic_tile{
   pattern = "41",
 }
 
+sensor{
+  name = "boss_music_sensor",
+  layer = 0,
+  x = 88,
+  y = 365,
+  width = 16,
+  height = 48,
+}
+
 tile{
   layer = 1,
   x = 72,

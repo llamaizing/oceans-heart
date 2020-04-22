@@ -1467,6 +1467,7 @@ music{ id = "forest_of_bops", description = "Forest of Bops" }
 music{ id = "forest_town", description = "Forest Town" }
 music{ id = "fort_crow", description = "Fort Crow" }
 music{ id = "fykonos", description = "Fykonos" }
+music{ id = "fykonos_village", description = "fykonos_village" }
 music{ id = "goatshead_harbor", description = "Goatshead Harbor" }
 music{ id = "goatshead_harbor_old", description = "OLD goatshead Harbor" }
 music{ id = "goatshead_overworld_2", description = "Goatshead Overworld 2" }

@@ -4,6 +4,7 @@ local MAX_BOUNCES = 0
 local FUSE_LENGTH = 2000
 enemy.immobilize_immunity = true
 enemy.lighting_effect = 1
+enemy.height = 15
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/".. enemy:get_breed())

@@ -729,6 +729,7 @@ destination{
 }
 
 stairs{
+  name = "stair",
   layer = 0,
   x = 288,
   y = 64,
@@ -855,6 +856,19 @@ sensor{
   enabled_at_start = false,
   width = 48,
   height = 16,
+}
+
+wall{
+  layer = 0,
+  x = 280,
+  y = 40,
+  width = 32,
+  height = 16,
+  stops_hero = true,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 
 tile{

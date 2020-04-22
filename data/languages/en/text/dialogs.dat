@@ -2164,6 +2164,32 @@ is telling everyone. Beds are 30 crowns.
 }
 
 dialog{
+  id = "_fykonos.npcs.village.shopkeeper.1",
+  text = [[
+Helcome, er. I started  saying hello then
+switched to welcome. Uh, anyway, wanna
+buy anything?
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.shopkeeper.2",
+  text = [[
+Hellooooo, have a look around. Anything
+catch your interest?
+]],
+}
+
+dialog{
+  id = "_fykonos.npcs.village.shopkeeper.3",
+  text = [[
+Welcome! Want to buy anything to
+heal your tired soul? Make you
+stronger? Have a look.
+]],
+}
+
+dialog{
   id = "_fykonos.observations.pirate_fort.1",
   text = [[
 There's an unfinished report addressed
@@ -2197,6 +2223,20 @@ TILIA:
 Looks like that scared them off. Better
 go below deck and see where the
 captain went off to.
+]],
+}
+
+dialog{
+  id = "_fykonos.observations.shipwreck.no_items",
+  text = [[
+TILIA:
+Ugh, my head hurts. Did a seamonster
+really pull that ship under? And...
+wait, where is all my equipment?
+TILIA:
+Even my sword is gone? Arrrrgh! Alright.
+I need to figure out what's going on
+around here.
 ]],
 }
 

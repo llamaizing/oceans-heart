@@ -20,11 +20,17 @@ for enemy in map:get_entities"boss_enemy" do
 function enemy:on_dead()
   sol.timer.start(map, 299, function()
     if not map:has_entities("boss_enemy") then
+      map:fade_in_music()
       sol.audio.play_sound"secret"
       map:open_doors"boss_door"
     end
   end)
 end
+end
+
+function boss_music_sensor:on_activated()
+  boss_music_sensor:remove()
+  sol.audio.play_music"boss_battle"
 end
 
 

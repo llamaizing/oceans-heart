@@ -2,37 +2,41 @@ local map = ...
 local game = map:get_game()
 
 map:register_event("on_started", function()
+  --already Max came and said there was an attack
   if game:get_value"fykonos_ship_attacked" then
     cabin_door:remove()
     max:remove()
+
+  --If the attack hasn't yet happened
   else
     game:get_dialog_box():set_style("empty")
     game:start_dialog("_fykonos.observations.tutorial.sword", function()
       game:get_dialog_box():set_style("box")
     end)
-  end
+    --Set up Max coming down stairs
+    sol.timer.start(map, 5000, function()
+      sol.audio.play_sound"thunk1"
+      sol.audio.play_sound"switch_2"
+      sol.audio.play_sound"hand_cannon"
+      sol.timer.start(map, 500, function()
+        sol.audio.play_sound"stairs_down_end"
+        sol.timer.start(map, 500, function()
+          map:theres_been_an_attack()
+        end)
+      end)
+    end)
+  end --end attack hasn't yet happened
+
 
   if game:get_value"fykonos_ship_defended" then
     crash_sensor:set_enabled(true)
     tele:set_enabled(false)
+    stair:set_enabled(false)
   end
 
   sol.timer.start(map, 0, function()
     sol.audio.play_sound"ship_creak_lowpass"
     return 60000
-  end)
-
-
-  sol.timer.start(map, 5000, function()
-    sol.audio.play_sound"thunk1"
-    sol.audio.play_sound"switch_2"
-    sol.audio.play_sound"hand_cannon"
-    sol.timer.start(map, 500, function()
-      sol.audio.play_sound"stairs_down_end"
-      sol.timer.start(map, 500, function()
-        map:theres_been_an_attack()
-      end)
-    end)
   end)
 
 end)
@@ -52,6 +56,7 @@ end
 
 local black_screen = sol.surface.create()
 function crash_sensor:on_activated()
+  crash_sensor:remove()
   sol.audio.play_sound"thunk1"
   sol.audio.play_sound"switch_2"
   sol.audio.play_sound"wood_breaking_and_falling_into_water"

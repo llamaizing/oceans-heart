@@ -54,19 +54,26 @@ end
 
 --3 -just keeping this pasted here so I can copy it, since my three key is broken
 function enemy:breathe_fire()
+  local flame_reps = 1
+  sol.timer.start(enemy, 1, function()
+    sol.audio.play_sound"fire_burst_3"
+    if flame_reps < 4 then flame_reps = flame_reps + 1 return 200 end
+  end)
   local NUM_FLAMES = 10
   local ATTACK_DURATION = 800
   local angle_variation = math.rad(30)
   local angle = enemy:get_angle(hero)
   for i = 1, NUM_FLAMES do
     sol.timer.start(enemy, math.random(1,ATTACK_DURATION), function()
-      sol.audio.play_sound"fire_burst_3"
+      
       local flame = enemy:create_enemy{ y = -16, breed = "misc/blue_fire"}
       local m = sol.movement.create"straight"
       m:set_angle(angle + angle_variation - (math.random() * 2 * angle_variation) )
       m:set_speed(100)
+      m:set_smooth(false)
       m:set_max_distance(300)
       m:start(flame, function() flame:remove() end)
+      function m:on_obstacle_reached() flame:remove() end
     end)
   end
 

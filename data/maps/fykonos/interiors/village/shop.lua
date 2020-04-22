@@ -41,7 +41,8 @@ end)
 
 
 function shopkeeper:on_interaction()
-  game:start_dialog("_yarrowmouth.npcs.town_people.shopkeeper_1", function()
+  local dialog = "_fykonos.npcs.village.shopkeeper." .. math.random(1, 3)
+  game:start_dialog(dialog, function()
     local shop_menu = require("scripts/shops/shop_menu")
     shop_menu:set_items_for_sale(shop_items)
     shop_menu:initialize(game)
