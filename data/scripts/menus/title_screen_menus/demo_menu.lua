@@ -119,8 +119,39 @@ function menu:process_selected_option(selection)
       sol.main:start_savegame(game)
       sol.menu.stop(parent_menu)
 
+    --Start at final boss
     elseif selection == "boss" then
-
+      sol.audio.play_sound("elixer_upgrade")
+      local game = game_manager:create("demo.dat")
+      if not game:get_value"fykonos_seen_ophira" then
+        game:set_starting_location("fykonos/caves/ophiras_tomb", "from_outside")
+        game:set_max_life(14)
+        game:set_life(game:get_max_life())
+        game:set_money(100)
+        game:set_value("defense", 5)
+        game:set_value("sword_damage", 5)
+        game:set_value("bow_damage", 6)
+        game:get_item("sword"):set_variant(1)
+        game:get_item("bow"):set_variant(1)
+        game:get_item("bow"):add_amount(20)
+        game:get_item("boomerang"):set_variant(1)
+        game:get_item("barrier"):set_variant(1)
+        game:get_item("spear"):set_variant(2)
+        game:get_item("bombs_counter_2"):set_variant(1)
+        game:get_item("bombs_counter_2"):set_amount(15)
+        game:set_ability("lift", 1)
+        game:get_item("berries"):set_variant(1)
+        game:get_item("berries"):set_amount(15)
+        game:get_item("apples"):set_variant(1)
+        game:get_item("apples"):set_amount(4)
+        game:set_value("fykonos_shipwreck_scene", true)
+        game:set_value("fykonos_elder_counter", 1)
+        game:set_value("fykonos_bombs_available", true)
+        game:set_value("fykonos_bombino_counter", 3)
+        game:set_value("fykonos_island_ophira_tomb_door", true)
+      end
+      sol.main:start_savegame(game)
+      sol.menu.stop(parent_menu)
 
     --Cancel
     elseif selection == "return" then

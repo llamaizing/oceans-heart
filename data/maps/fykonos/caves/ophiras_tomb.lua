@@ -11,6 +11,8 @@ map:register_event("on_started", function()
 
   map:set_doors_open"boss_door"
 
+ game:set_value("fykonos_seen_ophira", true) --this is so the demo doesn't do init values if loading save from boss starting location
+
   if game:has_item"limestone_sword" then
 --    sword:set_enabled(false)
 --    boss_start_sensor:set_enabled(false)
