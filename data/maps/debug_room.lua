@@ -15,6 +15,7 @@ local hero = map:get_hero()
 map:register_event("on_started", function()
   local hero = game:get_hero()
 --  hero:set_walking_speed(96)
+bloblo:set_weight(1)
 end)
 
 -----------------___TEMP---------------

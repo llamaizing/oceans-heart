@@ -62,7 +62,7 @@ function enemy_meta:on_hurt(attack)
     game:set_suspended(true)
     sol.timer.start(game, 120, function()
       game:set_suspended(false)
-      map:get_camera():shake({count = 4, amplitude = 5, speed = 100})
+      map:get_camera():shake({count = 4, amplitude = 5, speed = 100, zoom_factor = 1.005})
      end) --end of timer
 
   --particle effect

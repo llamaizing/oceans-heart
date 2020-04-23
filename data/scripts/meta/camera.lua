@@ -2,6 +2,7 @@
 
 local camera_meta = sol.main.get_metatable("camera")
 
+
 function camera_meta:shake(config, callback)
 
   local shaking_count_max = config ~= nil and config.count or 9
@@ -54,6 +55,22 @@ function camera_meta:shake(config, callback)
   end
 
   shake_step()
+
+  --in addition, add some zooming:
+  local camera_surface = camera:get_surface()
+  local cam_wid, cam_hig = camera:get_size()
+  camera_surface:set_transformation_origin(cam_wid / 2, cam_hig / 2)
+  local zoom_amount = config.zoom_factor or 1.05
+  local dx = {[1] = 1, [0] = zoom_amount}
+  local dy = {[1] = 1, [0] = zoom_amount}
+  local i = 1
+  sol.timer.start(camera, 1, function()
+    camera_surface:set_scale(dx[i % 2], dy[i % 2])
+    if i <= shaking_count_max * 1.5 then
+      i = i + 1
+      return 15
+    end
+  end)
 end
 
 -- Set the camera to a 4:3 aspect ratio for this map.

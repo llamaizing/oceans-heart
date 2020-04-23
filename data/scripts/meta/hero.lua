@@ -32,6 +32,11 @@ function hero_meta:on_taking_damage(damage)
     sol.audio.play_sound"oh_lotsa_damage"
   end
   game:remove_life(damage)
+    game:set_suspended(true)
+    sol.timer.start(game, 120, function()
+      game:set_suspended(false)
+      self:get_map():get_camera():shake({count = 4, amplitude = 5, speed = 100})
+     end) --end of timer
 end
 
 

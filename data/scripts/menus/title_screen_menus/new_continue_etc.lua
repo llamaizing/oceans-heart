@@ -4,6 +4,11 @@ local game_manager = require("scripts/game_manager")
 
 local DEMO_MODE = true
 
+function sol.main.set_demo_mode(mode)
+  DEMO_MODE = mode
+  menu:on_started()
+end
+
 local selection_options = {
   "continue",
   "new",
