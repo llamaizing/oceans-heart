@@ -881,7 +881,7 @@ teletransporter{
   width = 16,
   height = 16,
   destination_map = "fykonos/interiors/village/inn",
-  destination = "from_downstairs",
+  destination = "from_upstairs",
 }
 
 teletransporter{
