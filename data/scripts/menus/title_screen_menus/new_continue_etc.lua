@@ -2,6 +2,8 @@ local menu = {}
 local parent_menu
 local game_manager = require("scripts/game_manager")
 
+local DEMO_MODE = true
+
 local selection_options = {
   "continue",
   "new",
@@ -43,6 +45,11 @@ function menu:on_started()
   if not sol.game.exists("save1.dat") then
     menu.no_save_game = true
     text_surface:set_color_modulation{200,200,200}
+  end
+  if DEMO_MODE then
+    local darkened_color = {180, 170, 150}
+    text_surface:set_color_modulation(darkened_color)
+    text_surface2:set_color_modulation(darkened_color)
   end
 
   text_surface:set_text_key("menu.title.continue")
@@ -89,6 +96,7 @@ function menu:process_selected_option(selection)
     --Continue
     if selection == "continue" then
       if menu.no_save_game then sol.audio.play_sound"no" return end
+      if DEMO_MODE then sol.audio.play_sound"no" return end
       sol.audio.play_sound("elixer_upgrade")
       local game = game_manager:create("save1.dat")
       sol.main:start_savegame(game)
@@ -96,6 +104,7 @@ function menu:process_selected_option(selection)
 
     --New Game?
     elseif selection == "new" then
+      if DEMO_MODE then sol.audio.play_sound"no" return end
       sol.audio.play_sound("danger")
       local confirm_menu = require"scripts/menus/title_screen_menus/new_game_confirm"
       sol.menu.start(parent_menu, confirm_menu)
