@@ -23,6 +23,8 @@ function title_screen:on_key_pressed(command)
     current_submenu:process_input("up")
   elseif command == "space" then
     current_submenu:process_input("space")
+  elseif command == "return" then
+    current_submenu:process_input("space")
   end
 
 end
