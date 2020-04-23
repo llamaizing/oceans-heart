@@ -16,6 +16,11 @@ function upstairs_switch:on_activated()
   end)
 end
 
+function boom_unblocker:on_activated()
+  for wall in map:get_entities"boom_block" do
+    wall:remove()
+  end
+end
 
 function boomerang_pirate:on_dead()
   map:open_doors"downstairs_door"

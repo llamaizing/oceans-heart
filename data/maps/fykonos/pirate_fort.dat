@@ -6247,6 +6247,7 @@ door{
   y = 432,
   direction = 3,
   sprite = "entities/door_posts",
+  savegame_variable = "fykonos_pirate_fort_bridges_door",
 }
 
 door{
@@ -6256,6 +6257,7 @@ door{
   y = 432,
   direction = 3,
   sprite = "entities/door_posts",
+  savegame_variable = "fykonos_pirate_fort_bridges_door",
 }
 
 destination{

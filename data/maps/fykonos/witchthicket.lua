@@ -2,8 +2,8 @@ local map = ...
 local game = map:get_game()
 
 map:register_event("on_started", function()
-  if game:get_value("fykonos_bombino_counter") or 0 >= 3 then bombino:remove() end  
-  if game:get_value("fykonos_bombino_counter") or 0 >= 2 then backpack:remove() end
+  if (game:get_value("fykonos_bombino_counter") or 0) >= 3 then bombino:remove() end  
+  if (game:get_value("fykonos_bombino_counter") or 0) >= 2 then backpack:remove() end
 
   for enemy in map:get_entities_by_type"enemy" do
     if enemy:get_breed() == "normal_enemies/arborgeist_stump" then

@@ -2182,11 +2182,20 @@ tile{
   tileset = "cave_2",
 }
 
+sensor{
+  name = "boom_unblocker",
+  layer = 0,
+  x = 408,
+  y = 565,
+  width = 48,
+  height = 128,
+}
+
 destination{
   name = "from_downstairs",
   layer = 0,
   x = 688,
-  y = 61,
+  y = 77,
   direction = 3,
 }
 
@@ -2224,14 +2233,6 @@ teletransporter{
   height = 16,
   destination_map = "fykonos/interiors/pirate_fort_inside",
   destination = "from_upstairs",
-}
-
-stairs{
-  layer = 0,
-  x = 680,
-  y = 48,
-  direction = 1,
-  subtype = 1,
 }
 
 separator{
@@ -2388,24 +2389,24 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 672,
-  y = 93,
+  x = 528,
+  y = 189,
   direction = 3,
   breed = "normal_enemies/pirate_bruiser",
 }
 
 enemy{
   layer = 0,
-  x = 568,
-  y = 101,
+  x = 488,
+  y = 109,
   direction = 3,
   breed = "normal_enemies/pirate_sword_brown_1",
 }
 
 enemy{
   layer = 0,
-  x = 648,
-  y = 117,
+  x = 480,
+  y = 157,
   direction = 3,
   breed = "normal_enemies/pirate_sword_brown_1",
 }
@@ -2480,7 +2481,7 @@ destination{
   name = "from_upstairs",
   layer = 0,
   x = 424,
-  y = 549,
+  y = 565,
   direction = 3,
 }
 
@@ -2497,8 +2498,8 @@ teletransporter{
 enemy{
   name = "boomerang_pirate",
   layer = 0,
-  x = 344,
-  y = 621,
+  x = 296,
+  y = 669,
   enabled_at_start = false,
   direction = 0,
   breed = "normal_enemies/pirate_boomerang_boss",
@@ -2605,14 +2606,6 @@ teletransporter{
   destination = "from_cave",
 }
 
-stairs{
-  layer = 0,
-  x = 416,
-  y = 536,
-  direction = 1,
-  subtype = 0,
-}
-
 wall{
   layer = 0,
   x = 680,
@@ -2628,6 +2621,26 @@ wall{
   y = 552,
   width = 16,
   height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  name = "boom_block",
+  layer = 0,
+  x = 272,
+  y = 616,
+  width = 104,
+  height = 16,
+  stops_enemies = true,
+}
+
+wall{
+  name = "boom_block_2",
+  layer = 0,
+  x = 320,
+  y = 632,
+  width = 16,
+  height = 48,
   stops_enemies = true,
 }
 

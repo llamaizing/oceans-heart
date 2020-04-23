@@ -235,7 +235,7 @@ function game_manager:create(file_name, overwrite_game)
   end
 
 
-  --Set Respawn point whenver map changes
+  --Set Respawn point whenver map changes --------------------------------------------------------------
 
   local map_meta = sol.main.get_metatable("map")
   map_meta:register_event("on_opening_transition_finished", function()
@@ -258,7 +258,7 @@ function game_manager:create(file_name, overwrite_game)
       game:set_value("respawn_x", x) game:set_value("respawn_y", y) game:set_value("respawn_layer", layer)
       game:set_value("respawn_direction", hero:get_direction())
 
-    end -- end of if gameovering is true
+    end -- end of if gameovering is true or not
 
   end)
 
