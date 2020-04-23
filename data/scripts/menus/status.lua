@@ -125,7 +125,7 @@ function status_screen:process_selection()
     game:start_dialog("_game.game_saved")
 
   elseif cursor_index == 1 then --quit
-    sol.main.reset()
+    sol.timer.start(game, 100, function() sol.main.reset() end)
 
   elseif cursor_index == 2 then
     sol.menu.start(sol.main.get_game(),require"scripts/menus/controls")
