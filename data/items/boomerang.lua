@@ -44,6 +44,7 @@ function item:do_boomerang(distance, speed, hero_animation, boom_sprite)
   boomerang:set_can_traverse_ground("shallow_water", true)
   boomerang:set_can_traverse_ground("hole", true)
   boomerang:set_can_traverse_ground("lava", true)
+  boomerang:set_can_traverse_ground("low_wall", true)
   boomerang:set_can_traverse("hero", true)
 
   --manage hitting stuff
