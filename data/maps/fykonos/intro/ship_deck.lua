@@ -10,6 +10,14 @@ map:register_event("on_started", function()
     sol.audio.play_sound"ship_creak"
     return 60000
   end)
+
+  if game:get_item("bombs_counter_2"):get_amount() < 11 then
+    game:get_item("bombs_counter_2"):set_amount(10) end
+  if game:get_item("bow"):get_amount() < 21 then
+    game:get_item("bow"):set_amount(20) end
+  if game:get_item("berries"):get_amount() < 8
+    game:get_item("berries"):set_amount(8)
+
 end)
 
 
