@@ -5995,16 +5995,6 @@ destructible{
   can_be_cut = true,
 }
 
-block{
-  name = "bloblo",
-  layer = 0,
-  x = 296,
-  y = 373,
-  sprite = "entities/block",
-  pushable = true,
-  pullable = false,
-}
-
 tile{
   layer = 1,
   x = 192,

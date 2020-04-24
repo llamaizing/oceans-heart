@@ -16,6 +16,10 @@ function door_switch:on_inactivated()
   map:close_doors"door"
 end
 
+function opendoor_sensor:on_activated()
+  map:open_doors"door"
+end
+
 for enemy in map:get_entities"boss_enemy" do
 function enemy:on_dead()
   sol.timer.start(map, 299, function()

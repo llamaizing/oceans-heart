@@ -386,7 +386,7 @@ tile_pattern{
 
 tile_pattern{
   id = "125",
-  ground = "wall",
+  ground = "low_wall",
   default_layer = 0,
   x = 96,
   y = 64,
