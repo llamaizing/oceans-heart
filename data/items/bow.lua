@@ -28,7 +28,9 @@ end)
 
 
 item:register_event("on_obtaining", function(self)
-  game:set_value("bow_damage", 1)
+  if not game:get_value"bow_damage" then
+    game:set_value("bow_damage", 1)
+  end
   self:add_amount(20)
   game:set_value("available_in_shop_arrows", true)
 end)

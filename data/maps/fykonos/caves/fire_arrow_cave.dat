@@ -1119,6 +1119,7 @@ door{
   y = 104,
   direction = 3,
   sprite = "entities/door_post_stone",
+  savegame_variable = "fykonos_fire_arrow_cave_door",
 }
 
 door{
@@ -1128,6 +1129,7 @@ door{
   y = 104,
   direction = 3,
   sprite = "entities/door_post_stone",
+  savegame_variable = "fykonos_fire_arrow_cave_door",
 }
 
 destination{
