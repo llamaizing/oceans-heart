@@ -1,6 +1,6 @@
 --[[ swipe_fade.lua
-	version 0.1a1
-	2 Feb 2019
+	version 1.0
+	25 Apr 2020
 	GNU General Public License Version 3
 	author: Llamazing
 
@@ -43,7 +43,7 @@ COMPAT_VARYING vec2 sol_vtex_coord;
 
 void main() {
 	vec4 texel = COMPAT_TEXTURE(sol_texture, sol_vtex_coord).rgba;
-	float alpha = 1 - 4*clamp(position - sol_vtex_coord.x, 0, 0.25);
+	float alpha = 1.0 - 4.0*clamp(position - sol_vtex_coord.x, 0.0, 0.25);
 	FragColor = vec4(texel*alpha);
 }
 ]],
@@ -80,7 +80,7 @@ end
 
 return shader_controller
 
---[[ Copyright 2019 Llamazing
+--[[ Copyright 2019-2020 Llamazing
   [[ 
   [[ This program is free software: you can redistribute it and/or modify it under the
   [[ terms of the GNU General Public License as published by the Free Software Foundation,
