@@ -7,16 +7,17 @@ map:register_event("on_started", function()
   game:set_world_rain_mode(world, "storm")
 
   sol.timer.start(map, 0, function()
-    sol.audio.play_sound"ship_creak"
-    return 60000
+    sol.audio.play_sound"ship_creak_6s"
+    return 6000
   end)
 
   if game:get_item("bombs_counter_2"):get_amount() < 11 then
     game:get_item("bombs_counter_2"):set_amount(10) end
   if game:get_item("bow"):get_amount() < 21 then
     game:get_item("bow"):set_amount(20) end
-  if game:get_item("berries"):get_amount() < 8
+  if game:get_item("berries"):get_amount() < 8 then
     game:get_item("berries"):set_amount(8)
+  end
 
 end)
 

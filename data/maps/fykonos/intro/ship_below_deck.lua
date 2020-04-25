@@ -35,8 +35,8 @@ map:register_event("on_started", function()
   end
 
   sol.timer.start(map, 0, function()
-    sol.audio.play_sound"ship_creak_lowpass"
-    return 60000
+    sol.audio.play_sound"ship_creak_lowpass_7s"
+    return 7000
   end)
 
 end)
